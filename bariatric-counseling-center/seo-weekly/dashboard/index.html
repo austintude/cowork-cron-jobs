@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BCC Weekly SEO Dashboard</title>
+<meta name="robots" content="noindex,nofollow" />
+<style>
+  :root {
+    --teal: #4ECDC4;
+    --teal-soft: #e7f9f7;
+    --teal-line: #b5e8e3;
+    --navy: #2c3e50;
+    --navy-soft: #f4f6f8;
+    --text: #1f2d3a;
+    --muted: #5b6b78;
+    --bg: #f8fafb;
+    --card: #ffffff;
+    --line: #e3e9ee;
+    --green: #1e8a4f;
+    --green-soft: #e6f5ec;
+    --red: #b3261e;
+    --red-soft: #fbeae9;
+    --amber: #8a5a00;
+    --amber-soft: #fdf3dc;
+    --shadow: 0 1px 3px rgba(44,62,80,0.06), 0 4px 14px rgba(44,62,80,0.05);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1240px; margin: 0 auto; padding: 32px 24px 80px; }
+  header.top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
+  header.top h1 { font-size: 22px; font-weight: 700; margin: 0; color: var(--navy); }
+  header.top h1 .accent { color: var(--navy); border-left: 3px solid var(--teal); padding-left: 10px; }
+  header.top .meta { font-size: 13px; color: var(--muted); }
+  .controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+  .controls label { font-size: 13px; color: var(--muted); }
+  .controls select, .controls button {
+    font-size: 13px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 6px;
+    background: var(--card); color: var(--text); cursor: pointer; font-family: inherit;
+  }
+  .controls button.primary { background: var(--navy); color: white; border-color: var(--navy); }
+  .controls button.primary:hover { background: #1f2d3a; }
+  .controls .source { font-size: 12px; color: var(--muted); }
+
+  .alert { margin: 14px 0; padding: 12px 16px; border-radius: 8px; border-left: 4px solid var(--amber); background: var(--amber-soft); font-size: 14px; }
+  .alert.error { border-left-color: var(--red); background: var(--red-soft); color: #6b160e; }
+  .alert.info { border-left-color: var(--teal); background: var(--teal-soft); }
+
+  .grid-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 20px 0 6px; }
+  @media (max-width: 800px) { .grid-stats { grid-template-columns: repeat(2, 1fr); } }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 18px 16px; box-shadow: var(--shadow); }
+  .stat .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); font-weight: 600; }
+  .stat .value { font-size: 32px; font-weight: 700; color: var(--navy); margin-top: 4px; line-height: 1.1; }
+  .stat .delta { font-size: 12px; margin-top: 4px; color: var(--muted); }
+  .stat .delta.up { color: var(--green); font-weight: 600; }
+  .stat .delta.down { color: var(--red); font-weight: 600; }
+  .stat .accent-bar { height: 3px; background: var(--teal); border-radius: 2px; margin-top: 12px; width: 28px; }
+
+  .section { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 22px; margin-top: 20px; box-shadow: var(--shadow); }
+  .section h2 { font-size: 16px; font-weight: 700; color: var(--navy); margin: 0 0 14px; padding-left: 10px; border-left: 3px solid var(--teal); }
+  .section h3 { font-size: 14px; font-weight: 700; color: var(--navy); margin: 18px 0 8px; }
+  .section .meta-line { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+
+  .movers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .movers { grid-template-columns: 1fr; } }
+  .mover-card { border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--bg); }
+  .mover-card.rising { border-left: 4px solid var(--green); }
+  .mover-card.new { border-left: 4px solid var(--teal); }
+  .mover-card.declining { border-left: 4px solid var(--red); }
+  .mover-card h4 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); font-weight: 700; }
+  .mover-card ul { margin: 0; padding-left: 18px; font-size: 14px; }
+  .mover-card li { margin-bottom: 8px; }
+  .mover-card .kw { font-weight: 600; color: var(--navy); }
+  .mover-card .pos { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: 600; margin-left: 6px; }
+  .pos-1 { background: var(--green-soft); color: var(--green); }
+  .pos-top10 { background: var(--teal-soft); color: var(--navy); }
+  .pos-low { background: var(--amber-soft); color: var(--amber); }
+  .pos-out { background: var(--red-soft); color: var(--red); }
+  .mover-card .note { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+
+  table.kw-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  table.kw-table thead th { text-align: left; padding: 10px 8px; border-bottom: 2px solid var(--line); font-weight: 700; color: var(--navy); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; cursor: pointer; user-select: none; }
+  table.kw-table thead th.sortable:hover { color: var(--teal); }
+  table.kw-table thead th .sort-arrow { font-size: 10px; margin-left: 4px; opacity: 0.5; }
+  table.kw-table tbody td { padding: 9px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.kw-table tbody tr:hover { background: var(--navy-soft); }
+  table.kw-table .kw-name { font-weight: 600; color: var(--navy); }
+  table.kw-table .cat-pill { display: inline-block; padding: 1px 7px; border-radius: 10px; font-size: 11px; font-weight: 500; background: var(--navy-soft); color: var(--muted); border: 1px solid var(--line); }
+
+  .filters { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .filters button { font-size: 12px; padding: 5px 12px; border: 1px solid var(--line); background: var(--card); border-radius: 14px; cursor: pointer; color: var(--muted); font-family: inherit; }
+  .filters button.active { background: var(--navy); color: white; border-color: var(--navy); }
+  .filters input { font-size: 13px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; flex: 1; max-width: 280px; font-family: inherit; }
+
+  .competitor-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .competitor-card { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; background: var(--bg); }
+  .competitor-card .domain { font-weight: 600; color: var(--navy); font-size: 14px; }
+  .competitor-card .count { color: var(--teal); font-weight: 700; font-size: 13px; margin-left: 6px; }
+  .competitor-card .keywords { font-size: 12px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+
+  .actions-list { list-style: none; padding: 0; margin: 0; }
+  .actions-list li { padding: 10px 14px; border-left: 3px solid var(--teal); background: var(--bg); border-radius: 0 6px 6px 0; margin-bottom: 8px; font-size: 14px; }
+  .actions-list li.urgent { border-left-color: var(--red); background: var(--red-soft); }
+  .actions-list li.high { border-left-color: var(--amber); background: var(--amber-soft); }
+  .actions-list li .level { font-weight: 700; font-size: 12px; text-transform: uppercase; margin-right: 8px; }
+  .actions-list li.urgent .level { color: var(--red); }
+  .actions-list li.high .level { color: var(--amber); }
+  .actions-list li.medium .level, .actions-list li.info .level { color: var(--muted); }
+
+  .pages-list { list-style: none; padding: 0; margin: 0; }
+  .pages-list li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+  .pages-list li:last-child { border-bottom: none; }
+  .pages-list li code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; background: var(--navy-soft); padding: 2px 6px; border-radius: 3px; color: var(--navy); }
+
+  .footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+  .footer code { font-family: ui-monospace, monospace; font-size: 11px; }
+
+  .skeleton { display: flex; align-items: center; justify-content: center; min-height: 200px; color: var(--muted); font-size: 14px; }
+  .spinner { width: 16px; height: 16px; border: 2px solid var(--teal-line); border-top-color: var(--teal); border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 10px; display: inline-block; vertical-align: middle; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="top">
+    <h1><span class="accent">BCC Weekly SEO Dashboard</span></h1>
+    <div class="meta" id="last-updated">Loading...</div>
+  </header>
+  <div class="controls">
+    <label for="date-select">Report date:</label>
+    <select id="date-select"><option>Loading...</option></select>
+    <button id="reload-btn" class="primary" title="Force refresh from GitHub">Reload</button>
+    <span class="source" id="source-line"></span>
+  </div>
+
+  <div id="alerts-container"></div>
+
+  <div id="loading" class="section skeleton"><span class="spinner"></span> Fetching latest SEO data from GitHub...</div>
+
+  <div id="content" class="hidden">
+    <div class="grid-stats" id="stats"></div>
+
+    <div class="section">
+      <h2>Movement vs Last Week</h2>
+      <div class="meta-line" id="movement-meta"></div>
+      <div class="movers">
+        <div class="mover-card rising">
+          <h4>Rising</h4>
+          <ul id="rising-list"></ul>
+        </div>
+        <div class="mover-card new">
+          <h4>New Entries</h4>
+          <ul id="new-list"></ul>
+        </div>
+        <div class="mover-card declining">
+          <h4>Declining</h4>
+          <ul id="declining-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Quick Wins (Positions 11-20 + Top 5 Stable)</h2>
+      <div class="meta-line">Pages a small push could move into the top 10 or up to #1.</div>
+      <div class="movers" style="grid-template-columns: 1fr;">
+        <ul id="quickwins-list" class="pages-list"></ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>This Week's Action Items</h2>
+      <ul class="actions-list" id="actions-list"></ul>
+    </div>
+
+    <div class="section">
+      <h2>All Tracked Keywords</h2>
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="top10">Top 10</button>
+        <button data-filter="11-20">Pos 11-20</button>
+        <button data-filter="out">Not in Top 20</button>
+        <button data-filter="rising">Rising</button>
+        <button data-filter="declining">Declining</button>
+        <input type="text" id="kw-search" placeholder="Filter by keyword..." />
+      </div>
+      <div style="overflow-x: auto;">
+        <table class="kw-table">
+          <thead>
+            <tr>
+              <th class="sortable" data-sort="keyword">Keyword <span class="sort-arrow"></span></th>
+              <th class="sortable" data-sort="position">Pos <span class="sort-arrow"></span></th>
+              <th class="sortable" data-sort="change">Change <span class="sort-arrow"></span></th>
+              <th>Category</th>
+              <th>Trend</th>
+              <th>Competitor at #1</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody id="kw-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Newly Published Pages on Production</h2>
+      <div class="meta-line">Landing pages that moved from staging to live since the previous run.</div>
+      <ul id="new-pages-list" class="pages-list"></ul>
+    </div>
+
+    <div class="section">
+      <h2>Pages Still in Staging (Drafts)</h2>
+      <div class="meta-line">Drafts on staging12 that have not yet been published. Listed by priority.</div>
+      <ul id="staging-list" class="pages-list"></ul>
+    </div>
+
+    <div class="section">
+      <h2>Competitors Outranking BCC at #1</h2>
+      <div id="competitors-grid" class="competitor-grid"></div>
+    </div>
+
+    <div class="section">
+      <h2>Link Integrity Checks</h2>
+      <div class="meta-line">Pages crawled this run -- status code, broken link count.</div>
+      <ul id="link-list" class="pages-list"></ul>
+    </div>
+
+    <div class="footer">
+      Data source: <code id="footer-source">cowork-cron-jobs / GitHub</code><br/>
+      Dashboard auto-fetches on each page load. No SiteGround cron required.
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+
+// ---- CONFIG -----------------------------------------------------------------
+const REPO_OWNER = "austintude";
+const REPO_NAME  = "cowork-cron-jobs";
+const SUBPATH    = "bariatric-counseling-center/seo-weekly";
+
+// jsdelivr is CDN-cached and faster than raw.githubusercontent.com
+// Fallback to raw.githubusercontent if jsdelivr 404s (new file not propagated yet)
+const JSDELIVR  = (path) => `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@main/${SUBPATH}/${path}`;
+const RAW_GH    = (path) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SUBPATH}/${path}`;
+
+// ---- STATE ------------------------------------------------------------------
+let state = {
+  manifest: null,
+  data: null,
+  selectedDate: null,
+  filter: "all",
+  search: "",
+  sort: { key: "position", dir: "asc" },
+  source: "jsdelivr"
+};
+
+// ---- FETCH HELPERS ----------------------------------------------------------
+async function fetchJSON(path, { bypassCache = false } = {}) {
+  const cacheBuster = bypassCache ? `?t=${Date.now()}` : "";
+  const errors = [];
+  for (const fetcher of [JSDELIVR, RAW_GH]) {
+    const url = fetcher(path) + cacheBuster;
+    try {
+      const res = await fetch(url, { cache: bypassCache ? "no-store" : "default" });
+      if (!res.ok) { errors.push(`${url} -> ${res.status}`); continue; }
+      state.source = fetcher === JSDELIVR ? "jsdelivr" : "raw.githubusercontent.com";
+      return await res.json();
+    } catch (e) {
+      errors.push(`${url} -> ${e.message}`);
+    }
+  }
+  throw new Error("All fetch attempts failed: " + errors.join(" | "));
+}
+
+async function loadManifest({ bypassCache = false } = {}) {
+  const m = await fetchJSON("manifest.json", { bypassCache });
+  // Normalize between old (availableDates/latestDate) and new (latest/files) shapes
+  const files = m.files || (m.availableDates ? m.availableDates.map(d => `seo-data-${d}.json`) : []);
+  const latest = m.latest || (m.latestDate ? `seo-data-${m.latestDate}.json` : files[0]);
+  const updated = m.updated || m.updatedAt || null;
+  return { latest, updated, files };
+}
+
+async function loadData(filename, { bypassCache = false } = {}) {
+  return await fetchJSON(`data/${filename}`, { bypassCache });
+}
+
+// ---- RENDERERS --------------------------------------------------------------
+function el(tag, attrs = {}, ...children) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "className") e.className = v;
+    else if (k === "html") e.innerHTML = v;
+    else if (k.startsWith("on")) e.addEventListener(k.slice(2).toLowerCase(), v);
+    else e.setAttribute(k, v);
+  }
+  for (const c of children) {
+    if (c == null) continue;
+    e.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+  }
+  return e;
+}
+
+function posClass(pos) {
+  if (pos == null) return "pos-out";
+  if (pos === 1) return "pos-1";
+  if (pos <= 10) return "pos-top10";
+  if (pos <= 20) return "pos-low";
+  return "pos-out";
+}
+
+function posLabel(pos) {
+  return pos == null ? "Not in top 20" : `#${pos}`;
+}
+
+function renderHeader(data) {
+  document.getElementById("last-updated").textContent =
+    `Report date: ${data.date} | Source: ${data.source || "Browser SERP + GSC"}`;
+  document.getElementById("source-line").textContent = `via ${state.source}`;
+  document.getElementById("footer-source").textContent =
+    `${REPO_OWNER}/${REPO_NAME}/${SUBPATH}/data/seo-data-${data.date}.json (via ${state.source})`;
+}
+
+function renderStats(data) {
+  const b = data.brave || {};
+  const stats = [
+    { label: "Keywords Checked", value: b.keywords_checked ?? "--", delta: "" },
+    { label: "In Top 1", value: b.keywords_in_top_1 ?? "--", delta: "" },
+    { label: "In Top 10", value: b.keywords_in_top_10 ?? "--", delta: "" },
+    { label: "Avg Position (Top 10)", value: b.avg_position_top10_only != null ? b.avg_position_top10_only.toFixed(2) : "--", delta: "" }
+  ];
+  const c = document.getElementById("stats");
+  c.innerHTML = "";
+  for (const s of stats) {
+    c.appendChild(
+      el("div", { className: "stat" },
+        el("div", { className: "label" }, s.label),
+        el("div", { className: "value" }, String(s.value)),
+        el("div", { className: "accent-bar" })
+      )
+    );
+  }
+}
+
+function renderMovers(data) {
+  const a = data.analysis || {};
+  fillMoverList("rising-list",     a.rising     || [], "rising");
+  fillMoverList("new-list",        a.new_entries || [], "new");
+  fillMoverList("declining-list",  a.declining  || [], "declining");
+}
+
+function fillMoverList(elementId, items, kind) {
+  const ul = document.getElementById(elementId);
+  ul.innerHTML = "";
+  if (!items.length) {
+    ul.appendChild(el("li", { className: "note" }, "No keywords in this category this week."));
+    return;
+  }
+  for (const it of items) {
+    const li = el("li", {});
+    const kw = el("span", { className: "kw" }, it.keyword);
+    const pos = el("span", { className: "pos " + posClass(it.position) }, posLabel(it.position));
+    li.appendChild(kw);
+    li.appendChild(pos);
+    if (kind === "rising" || kind === "declining") {
+      const prev = it.prev_position != null ? `was #${it.prev_position}` : "";
+      if (prev) li.appendChild(el("span", { className: "note" }, prev));
+    }
+    if (it.note) li.appendChild(el("span", { className: "note" }, it.note));
+    ul.appendChild(li);
+  }
+}
+
+function renderQuickWins(data) {
+  const items = (data.analysis && data.analysis.low_hanging_fruit) || [];
+  const ul = document.getElementById("quickwins-list");
+  ul.innerHTML = "";
+  if (!items.length) {
+    ul.appendChild(el("li", {}, "No quick-win keywords flagged this week."));
+    return;
+  }
+  for (const it of items) {
+    const li = el("li", {});
+    li.appendChild(el("span", { className: "kw-name" }, it.keyword + " "));
+    li.appendChild(el("span", { className: "pos " + posClass(it.position) }, posLabel(it.position)));
+    if (it.trend) li.appendChild(el("span", { className: "cat-pill", style: "margin-left: 6px;" }, it.trend));
+    if (it.note) li.appendChild(el("div", { className: "note", style: "color: var(--muted); font-size:12px; margin-top:4px;" }, it.note));
+    ul.appendChild(li);
+  }
+}
+
+function renderActions(data) {
+  const ul = document.getElementById("actions-list");
+  ul.innerHTML = "";
+  const items = data.action_items || [];
+  if (!items.length) { ul.appendChild(el("li", {}, "No action items.")); return; }
+  for (const txt of items) {
+    let cls = "medium";
+    let level = "MEDIUM";
+    if (/^URGENT/i.test(txt)) { cls = "urgent"; level = "URGENT"; }
+    else if (/^HIGH/i.test(txt)) { cls = "high"; level = "HIGH"; }
+    else if (/^INFO/i.test(txt)) { cls = "info"; level = "INFO"; }
+    else if (/^MEDIUM/i.test(txt)) { cls = "medium"; level = "MEDIUM"; }
+    const cleaned = txt.replace(/^(URGENT|HIGH|MEDIUM|INFO)\s*\([A-Z0-9]+\)?\s*--?\s*/i, "")
+                       .replace(/^(URGENT|HIGH|MEDIUM|INFO)\s*--?\s*/i, "");
+    const li = el("li", { className: cls });
+    li.appendChild(el("span", { className: "level" }, level + ":"));
+    li.appendChild(document.createTextNode(cleaned));
+    ul.appendChild(li);
+  }
+}
+
+function renderTable(data) {
+  const all = data.brave && data.brave.all_keywords ? data.brave.all_keywords : {};
+  const rows = Object.entries(all).map(([keyword, v]) => ({ keyword, ...v }));
+
+  // Filter
+  const f = state.filter;
+  const search = state.search.toLowerCase();
+  let filtered = rows.filter(r => {
+    if (search && !r.keyword.toLowerCase().includes(search)) return false;
+    if (f === "top10") return r.position != null && r.position <= 10;
+    if (f === "11-20") return r.position != null && r.position > 10 && r.position <= 20;
+    if (f === "out") return r.position == null;
+    if (f === "rising") return r.trend === "rising" || r.trend === "new_entry";
+    if (f === "declining") return r.trend === "declining";
+    return true;
+  });
+
+  // Sort
+  const { key, dir } = state.sort;
+  const m = dir === "asc" ? 1 : -1;
+  filtered.sort((a, b) => {
+    let av = a[key], bv = b[key];
+    if (key === "position") { av = av == null ? 999 : av; bv = bv == null ? 999 : bv; }
+    if (key === "change")   { av = av == null ? 0 : av;   bv = bv == null ? 0 : bv; }
+    if (key === "keyword")  { return m * String(av).localeCompare(String(bv)); }
+    return m * (av - bv);
+  });
+
+  const tbody = document.getElementById("kw-tbody");
+  tbody.innerHTML = "";
+  for (const r of filtered) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", { className: "kw-name" }, r.keyword));
+    tr.appendChild(el("td", {}, el("span", { className: "pos " + posClass(r.position) }, posLabel(r.position))));
+    let chTxt = r.change == null ? "--" : (r.change > 0 ? `+${r.change}` : String(r.change));
+    let chCls = r.change > 0 ? "delta up" : (r.change < 0 ? "delta down" : "delta");
+    tr.appendChild(el("td", { className: chCls }, chTxt));
+    tr.appendChild(el("td", {}, el("span", { className: "cat-pill" }, r.category || "--")));
+    tr.appendChild(el("td", {}, r.trend || "stable"));
+    tr.appendChild(el("td", {}, r.competitor_at_1 || "--"));
+    tr.appendChild(el("td", { style: "color: var(--muted); font-size: 12px;" }, r.note || ""));
+    tbody.appendChild(tr);
+  }
+
+  // Sort arrows
+  document.querySelectorAll("th.sortable").forEach(th => {
+    const arrow = th.querySelector(".sort-arrow");
+    if (th.dataset.sort === key) arrow.textContent = dir === "asc" ? "↑" : "↓";
+    else arrow.textContent = "";
+  });
+}
+
+function renderNewPages(data) {
+  const ul = document.getElementById("new-pages-list");
+  ul.innerHTML = "";
+  const pages = data.newly_published_prod_pages || [];
+  if (!pages.length) {
+    ul.appendChild(el("li", {}, "No new pages published this week."));
+    return;
+  }
+  for (const p of pages) {
+    const li = el("li", {});
+    li.appendChild(el("code", {}, p));
+    ul.appendChild(li);
+  }
+}
+
+function renderStaging(data) {
+  const ul = document.getElementById("staging-list");
+  ul.innerHTML = "";
+  const items = data.still_in_staging_draft || [];
+  if (!items.length) { ul.appendChild(el("li", {}, "No staging drafts tracked.")); return; }
+  for (const it of items) {
+    const li = el("li", {});
+    li.appendChild(el("span", { className: "kw-name" }, it.keyword));
+    if (it.priority) {
+      const cls = it.priority === "URGENT" ? "pos-out" : (it.priority === "HIGH" ? "pos-low" : "pos-top10");
+      li.appendChild(el("span", { className: "pos " + cls, style: "margin-left:8px;" }, it.priority));
+    }
+    if (it.stagingId) li.appendChild(el("span", { style: "color: var(--muted); font-size:12px; margin-left:8px;" }, `staging ID ${it.stagingId}`));
+    ul.appendChild(li);
+  }
+}
+
+function renderCompetitors(data) {
+  const grid = document.getElementById("competitors-grid");
+  grid.innerHTML = "";
+  const comps = (data.brave && data.brave.competitors) || [];
+  if (!comps.length) { grid.appendChild(el("div", {}, "No competitor data.")); return; }
+  for (const c of comps) {
+    const card = el("div", { className: "competitor-card" });
+    const head = el("div", {});
+    head.appendChild(el("span", { className: "domain" }, c.domain));
+    head.appendChild(el("span", { className: "count" }, `(${c.appearance_count_at_1 || c.appearance_count || 0})`));
+    card.appendChild(head);
+    if (c.keywords && c.keywords.length) {
+      card.appendChild(el("div", { className: "keywords" }, c.keywords.join(", ")));
+    }
+    grid.appendChild(card);
+  }
+}
+
+function renderLinkChecks(data) {
+  const ul = document.getElementById("link-list");
+  ul.innerHTML = "";
+  const checks = data.link_checks || [];
+  if (!checks.length) { ul.appendChild(el("li", {}, "No link checks recorded.")); return; }
+  for (const c of checks) {
+    const li = el("li", {});
+    const status = c.status === "ok" ? `<span style="color:var(--green);font-weight:600;">${c.status}</span>` : `<span style="color:var(--red);font-weight:600;">${c.status}</span>`;
+    li.innerHTML = `<code>${c.url}</code> -- ${status}` + (c.note ? ` <span style="color:var(--muted);font-size:12px;"> | ${escapeHTML(c.note)}</span>` : "");
+    ul.appendChild(li);
+  }
+}
+
+function escapeHTML(s) {
+  return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+}
+
+function renderAlerts(data) {
+  const c = document.getElementById("alerts-container");
+  c.innerHTML = "";
+  if (data.notes) {
+    c.appendChild(el("div", { className: "alert info" }, "Run notes: " + data.notes));
+  }
+  if (data.google && data.google.error) {
+    c.appendChild(el("div", { className: "alert" }, "GSC: " + data.google.error));
+  }
+}
+
+// ---- POPULATE DATE PICKER ---------------------------------------------------
+function fillDatePicker(manifest) {
+  const sel = document.getElementById("date-select");
+  sel.innerHTML = "";
+  const files = manifest.files || [];
+  for (const f of files) {
+    const m = f.match(/seo-data-(\d{4}-\d{2}-\d{2})\.json/);
+    if (!m) continue;
+    const date = m[1];
+    const opt = el("option", { value: f }, date + (f === manifest.latest ? " (latest)" : ""));
+    sel.appendChild(opt);
+  }
+  if (manifest.latest) sel.value = manifest.latest;
+}
+
+// ---- BOOT -------------------------------------------------------------------
+async function boot({ bypassCache = false } = {}) {
+  const loading = document.getElementById("loading");
+  const content = document.getElementById("content");
+  loading.classList.remove("hidden");
+  content.classList.add("hidden");
+
+  try {
+    state.manifest = await loadManifest({ bypassCache });
+    fillDatePicker(state.manifest);
+    state.selectedDate = state.manifest.latest;
+    state.data = await loadData(state.selectedDate, { bypassCache });
+    renderAll();
+    loading.classList.add("hidden");
+    content.classList.remove("hidden");
+  } catch (e) {
+    loading.innerHTML = `<div class="alert error" style="margin:0;width:100%;">Could not load SEO data from GitHub.<br/><br/><strong>Error:</strong> ${escapeHTML(e.message)}<br/><br/>Try clicking Reload, or check that <code>${REPO_OWNER}/${REPO_NAME}</code> has a <code>${SUBPATH}/manifest.json</code> file with at least one data file in <code>data/</code>.</div>`;
+  }
+}
+
+function renderAll() {
+  renderAlerts(state.data);
+  renderHeader(state.data);
+  renderStats(state.data);
+  renderMovers(state.data);
+  renderQuickWins(state.data);
+  renderActions(state.data);
+  renderTable(state.data);
+  renderNewPages(state.data);
+  renderStaging(state.data);
+  renderCompetitors(state.data);
+  renderLinkChecks(state.data);
+}
+
+// ---- INTERACTIONS -----------------------------------------------------------
+document.getElementById("date-select").addEventListener("change", async (e) => {
+  state.selectedDate = e.target.value;
+  state.data = await loadData(state.selectedDate, { bypassCache: true });
+  renderAll();
+});
+
+document.getElementById("reload-btn").addEventListener("click", () => boot({ bypassCache: true }));
+
+document.querySelectorAll(".filters [data-filter]").forEach(b => {
+  b.addEventListener("click", () => {
+    document.querySelectorAll(".filters [data-filter]").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    state.filter = b.dataset.filter;
+    renderTable(state.data);
+  });
+});
+
+document.getElementById("kw-search").addEventListener("input", (e) => {
+  state.search = e.target.value;
+  renderTable(state.data);
+});
+
+document.querySelectorAll("th.sortable").forEach(th => {
+  th.addEventListener("click", () => {
+    const key = th.dataset.sort;
+    if (state.sort.key === key) state.sort.dir = state.sort.dir === "asc" ? "desc" : "asc";
+    else { state.sort.key = key; state.sort.dir = "asc"; }
+    renderTable(state.data);
+  });
+});
+
+boot();
+</script>
+</body>
+</html>
