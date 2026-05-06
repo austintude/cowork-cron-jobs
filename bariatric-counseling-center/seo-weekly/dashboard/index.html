@@ -264,34 +264,53 @@ let state = {
 };
 
 // ---- FETCH HELPERS ----------------------------------------------------------
-async function fetchJSON(path, { bypassCache = false } = {}) {
-  const cacheBuster = bypassCache ? `?t=${Date.now()}` : "";
-  const errors = [];
-  for (const fetcher of [JSDELIVR, RAW_GH]) {
-    const url = fetcher(path) + cacheBuster;
-    try {
-      const res = await fetch(url, { cache: bypassCache ? "no-store" : "default" });
-      if (!res.ok) { errors.push(`${url} -> ${res.status}`); continue; }
-      state.source = fetcher === JSDELIVR ? "jsdelivr" : "raw.githubusercontent.com";
-      return await res.json();
-    } catch (e) {
-      errors.push(`${url} -> ${e.message}`);
-    }
+// jsdelivr ignores query strings so we cannot cache-bust on it. It's also a 12-hour cache
+// which is unacceptable for the manifest (the "what's the latest" pointer).
+// raw.githubusercontent.com has a ~5-minute cache and DOES honor query-string cache-busting.
+//
+// Strategy:
+//   - manifest.json -> raw.githubusercontent.com with cache-bust (always fresh)
+//   - data/seo-data-*.json -> jsdelivr (CDN, fast, files never change once written)
+
+async function fetchJSON(url, { bypassCache = false } = {}) {
+  const finalUrl = bypassCache ? `${url}${url.includes("?") ? "&" : "?"}t=${Date.now()}` : url;
+  const res = await fetch(finalUrl, { cache: bypassCache ? "no-store" : "default" });
+  if (!res.ok) throw new Error(`${url} -> HTTP ${res.status}`);
+  return await res.json();
+}
+
+async function loadManifest() {
+  // Always raw.githubusercontent.com + cache-bust. Manifest is tiny (~200 bytes), small cost.
+  const url = RAW_GH("manifest.json");
+  state.source = "raw.githubusercontent.com (manifest, no-cache)";
+  try {
+    const m = await fetchJSON(url, { bypassCache: true });
+    const files = m.files || (m.availableDates ? m.availableDates.map(d => `seo-data-${d}.json`) : []);
+    const latest = m.latest || (m.latestDate ? `seo-data-${m.latestDate}.json` : files[0]);
+    const updated = m.updated || m.updatedAt || null;
+    return { latest, updated, files };
+  } catch (e) {
+    // Fallback: jsdelivr (may serve stale, but better than nothing if raw.githubusercontent rate-limits)
+    console.warn("raw.githubusercontent failed for manifest, falling back to jsdelivr (may be stale):", e.message);
+    const m = await fetchJSON(JSDELIVR("manifest.json"));
+    state.source = "jsdelivr (manifest fallback - may be stale)";
+    const files = m.files || (m.availableDates ? m.availableDates.map(d => `seo-data-${d}.json`) : []);
+    const latest = m.latest || (m.latestDate ? `seo-data-${m.latestDate}.json` : files[0]);
+    const updated = m.updated || m.updatedAt || null;
+    return { latest, updated, files };
   }
-  throw new Error("All fetch attempts failed: " + errors.join(" | "));
 }
 
-async function loadManifest({ bypassCache = false } = {}) {
-  const m = await fetchJSON("manifest.json", { bypassCache });
-  // Normalize between old (availableDates/latestDate) and new (latest/files) shapes
-  const files = m.files || (m.availableDates ? m.availableDates.map(d => `seo-data-${d}.json`) : []);
-  const latest = m.latest || (m.latestDate ? `seo-data-${m.latestDate}.json` : files[0]);
-  const updated = m.updated || m.updatedAt || null;
-  return { latest, updated, files };
-}
-
-async function loadData(filename, { bypassCache = false } = {}) {
-  return await fetchJSON(`data/${filename}`, { bypassCache });
+async function loadData(filename) {
+  // Data files never change once written, so jsdelivr CDN is ideal here -- fast and CORS-safe.
+  // Fall back to raw if jsdelivr 404s (file not yet propagated, can take a few minutes after push).
+  try {
+    const d = await fetchJSON(JSDELIVR(`data/${filename}`));
+    return d;
+  } catch (e) {
+    console.warn("jsdelivr failed for data file, falling back to raw.githubusercontent:", e.message);
+    return await fetchJSON(RAW_GH(`data/${filename}`), { bypassCache: true });
+  }
 }
 
 // ---- RENDERERS --------------------------------------------------------------
@@ -594,43 +613,4 @@ function renderAll() {
   renderTable(state.data);
   renderNewPages(state.data);
   renderStaging(state.data);
-  renderCompetitors(state.data);
-  renderLinkChecks(state.data);
-}
-
-// ---- INTERACTIONS -----------------------------------------------------------
-document.getElementById("date-select").addEventListener("change", async (e) => {
-  state.selectedDate = e.target.value;
-  state.data = await loadData(state.selectedDate, { bypassCache: true });
-  renderAll();
-});
-
-document.getElementById("reload-btn").addEventListener("click", () => boot({ bypassCache: true }));
-
-document.querySelectorAll(".filters [data-filter]").forEach(b => {
-  b.addEventListener("click", () => {
-    document.querySelectorAll(".filters [data-filter]").forEach(x => x.classList.remove("active"));
-    b.classList.add("active");
-    state.filter = b.dataset.filter;
-    renderTable(state.data);
-  });
-});
-
-document.getElementById("kw-search").addEventListener("input", (e) => {
-  state.search = e.target.value;
-  renderTable(state.data);
-});
-
-document.querySelectorAll("th.sortable").forEach(th => {
-  th.addEventListener("click", () => {
-    const key = th.dataset.sort;
-    if (state.sort.key === key) state.sort.dir = state.sort.dir === "asc" ? "desc" : "asc";
-    else { state.sort.key = key; state.sort.dir = "asc"; }
-    renderTable(state.data);
-  });
-});
-
-boot();
-</script>
-</body>
-</html>
+  renderCo

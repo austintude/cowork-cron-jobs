@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+<title>BCC Online Reach -- Bariatric Counseling Center</title>
+<meta name="description" content="How people in San Antonio find compassionate, evidence-based weight management and behavioral health care from the Bariatric Counseling Center." />
+<style>
+  :root {
+    --teal: #4ECDC4;
+    --teal-soft: #e7f9f7;
+    --teal-line: #b5e8e3;
+    --navy: #2c3e50;
+    --navy-soft: #f4f6f8;
+    --text: #1f2d3a;
+    --muted: #5b6b78;
+    --bg: #ffffff;
+    --bg-soft: #f8fafb;
+    --line: #e3e9ee;
+    --shadow-sm: 0 1px 2px rgba(44,62,80,0.04);
+    --shadow-md: 0 1px 3px rgba(44,62,80,0.06), 0 4px 14px rgba(44,62,80,0.05);
+    --shadow-lg: 0 4px 12px rgba(44,62,80,0.08), 0 12px 40px rgba(44,62,80,0.06);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ----- Layout ----- */
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+  @media (max-width: 600px) { .container { padding: 0 18px; } }
+
+  /* ----- Hero ----- */
+  .hero {
+    background: linear-gradient(180deg, var(--navy-soft) 0%, var(--bg) 100%);
+    padding: 56px 0 48px;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+  .hero-eyebrow::before { content: ""; display: inline-block; width: 24px; height: 2px; background: var(--teal); }
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--navy);
+    margin: 0 0 14px;
+    max-width: 760px;
+  }
+  @media (min-width: 800px) { .hero h1 { font-size: 42px; } }
+  .hero p.lede {
+    font-size: 17px;
+    color: var(--muted);
+    max-width: 680px;
+    margin: 0;
+    line-height: 1.65;
+  }
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 22px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .hero-meta .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 14px;
+    background: var(--teal-soft);
+    color: var(--navy);
+    font-weight: 500;
+    border: 1px solid var(--teal-line);
+  }
+  .hero-meta .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+
+  /* ----- Section ----- */
+  section { padding: 56px 0; }
+  section.alt { background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .section-eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-eyebrow::before { content: ""; display: inline-block; width: 18px; height: 2px; background: var(--teal); }
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0 0 12px;
+    line-height: 1.25;
+    max-width: 720px;
+  }
+  @media (min-width: 800px) { h2 { font-size: 30px; } }
+  p.section-lede {
+    font-size: 16px;
+    color: var(--muted);
+    margin: 0 0 32px;
+    max-width: 680px;
+    line-height: 1.6;
+  }
+
+  /* ----- Stat grid ----- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 36px;
+  }
+  @media (max-width: 900px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .stats { grid-template-columns: 1fr; } }
+  .stat-card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px 22px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+  }
+  .stat-card::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 22px;
+    height: 3px;
+    background: var(--teal);
+    border-radius: 2px;
+  }
+  .stat-card .stat-number {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    margin-top: 18px;
+    letter-spacing: -0.02em;
+  }
+  .stat-card .stat-label {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 8px;
+    line-height: 1.45;
+  }
+  .stat-card .stat-context {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--line);
+    line-height: 1.5;
+  }
+
+  /* ----- Topic list ----- */
+  .topics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  @media (max-width: 720px) { .topics { grid-template-columns: 1fr; } }
+  .topic {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--teal);
+    border-radius: 4px 8px 8px 4px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+  .topic-name { font-weight: 600; color: var(--navy); font-size: 15px; line-height: 1.4; }
+  .topic-meta { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .topic-rank {
+    flex-shrink: 0;
+    background: var(--teal-soft);
+    color: var(--navy);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 14px;
+    border: 1px solid var(--teal-line);
+    white-space: nowrap;
+  }
+  .topic-rank.top-of-page { background: var(--navy); color: white; border-color: var(--navy); }
+
+  /* ----- Growth callouts ----- */
+  .growth {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .growth-card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+  }
+  .growth-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--teal) 0%, var(--teal-soft) 100%);
+  }
+  .growth-card .growth-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--teal-soft);
+    border: 1px solid var(--teal-line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    color: var(--navy);
+  }
+  .growth-card .growth-title {
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .growth-card .growth-body {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+
+  /* ----- Trend chart ----- */
+  .trend-card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: var(--shadow-md);
+    margin-top: 24px;
+  }
+  .trend-card .trend-title { font-weight: 700; color: var(--navy); font-size: 16px; margin-bottom: 4px; }
+  .trend-card .trend-sub { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+  .trend-chart-wrap { position: relative; height: 280px; }
+
+  /* ----- Why callouts ----- */
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  @media (max-width: 900px) { .why-grid { grid-template-columns: 1fr; } }
+  .why-card {
+    padding: 26px 24px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+  .why-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0 0 10px;
+    padding-left: 12px;
+    border-left: 3px solid var(--teal);
+  }
+  .why-card p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ----- Footer ----- */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.85);
+    padding: 40px 0;
+    margin-top: 0;
+  }
+  footer .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  footer .brand {
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+  }
+  footer .brand-line {
+    width: 28px;
+    height: 2px;
+    background: var(--teal);
+    margin: 8px 0 12px;
+  }
+  footer .brand-tag { font-size: 13px; color: rgba(255,255,255,0.7); }
+  footer .meta { font-size: 12px; color: rgba(255,255,255,0.55); text-align: right; line-height: 1.6; }
+  footer .meta a { color: rgba(255,255,255,0.85); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
+  footer .meta a:hover { border-bottom-color: var(--teal); }
+
+  /* ----- States ----- */
+  .loading {
+    text-align: center;
+    color: var(--muted);
+    padding: 80px 20px;
+    font-size: 14px;
+  }
+  .spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--teal-line);
+    border-top-color: var(--teal);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .hidden { display: none !important; }
+  .error {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--navy);
+    padding: 18px 22px;
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 14px;
+    margin: 24px 0;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">Bariatric Counseling Center -- Online Reach</div>
+    <h1 id="hero-headline">How people in our community find compassionate, evidence-based weight management care</h1>
+    <p class="lede">A snapshot of where BCC shows up online when San Antonio families search for the integrated, trauma-informed support we offer -- updated each week.</p>
+    <div class="hero-meta">
+      <div class="badge"><span class="dot"></span><span id="report-date-line">Loading latest report...</span></div>
+      <div class="badge"><span class="dot"></span><span id="services-line">--</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div id="loading" class="loading"><span class="spinner"></span> Loading the latest snapshot of BCC's online reach...</div>
+  <div id="content" class="hidden">
+
+  <!-- ===== Stats ===== -->
+  <section>
+    <div class="container">
+      <div class="section-eyebrow">This week's snapshot</div>
+      <h2>Where BCC shows up when people search for support</h2>
+      <p class="section-lede">Each week we measure how visible BCC is to people searching for the services we provide -- nutrition counseling, mental health support, intensive outpatient programming, and integrated weight management care.</p>
+
+      <div class="stats" id="stats-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Where BCC leads ===== -->
+  <section class="alt">
+    <div class="container">
+      <div class="section-eyebrow">Areas of recognized expertise</div>
+      <h2>Topics where BCC is the top result in our community</h2>
+      <p class="section-lede">For each topic below, BCC's website appears at the top of the page when someone in San Antonio (or, where noted, anywhere in the country) searches for that kind of support. This reflects years of patient-centered, anti-diet, integrated care being recognized by both readers and search engines.</p>
+
+      <div class="topics" id="topics-list"></div>
+    </div>
+  </section>
+
+  <!-- ===== Growth ===== -->
+  <section>
+    <div class="container">
+      <div class="section-eyebrow">New this period</div>
+      <h2>Where BCC is reaching new audiences</h2>
+      <p class="section-lede">As BCC's specialized services expand -- pre-surgery psychological evaluation, behavioral support alongside GLP-1 medications, virtual care across Texas -- new groups of searchers are finding us for the first time.</p>
+
+      <div class="growth" id="growth-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Trend chart ===== -->
+  <section class="alt">
+    <div class="container">
+      <div class="section-eyebrow">Reach over time</div>
+      <h2>BCC's growing footprint in online search</h2>
+      <p class="section-lede">The number of search topics where BCC appears on the first page of results -- a proxy for how many people, week by week, are likely to find our services when they look for them.</p>
+
+      <div class="trend-card">
+        <div class="trend-title">Search topics where BCC ranks on page one</div>
+        <div class="trend-sub">Each bar represents a weekly check across roughly 50 search queries relevant to BCC's services.</div>
+        <div class="trend-chart-wrap"><canvas id="trend-chart"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== What this means ===== -->
+  <section>
+    <div class="container">
+      <div class="section-eyebrow">What this means for our community</div>
+      <h2>Visibility is a public-health outcome</h2>
+      <p class="section-lede">When BCC is easy to find, people who need support reach it sooner. Especially in a field crowded with diet-culture messaging and quick-fix promises, being a discoverable home for evidence-based, dignified care matters.</p>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>People-first care, found first</h3>
+          <p>When someone in San Antonio is searching for compassionate support around eating, weight, or mental health, BCC is who they find -- not a fad-diet ad. That access is the point.</p>
+        </div>
+        <div class="why-card">
+          <h3>Integrated care, in plain language</h3>
+          <p>BCC's combination of behavioral health, nutrition, and intensive outpatient care doesn't fit the stereotypes most search results return. Showing up at the top of real-world queries means more families can find a different kind of provider.</p>
+        </div>
+        <div class="why-card">
+          <h3>Reach beyond San Antonio</h3>
+          <p>BCC also appears nationally for queries about behavioral support, pre-surgery psychological evaluation, and integrated weight management -- demonstrating the model's broader credibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- /#content -->
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="brand">Bariatric Counseling Center</div>
+        <div class="brand-line"></div>
+        <div class="brand-tag">San Antonio's integrated weight management facility -- nutrition counseling, behavioral health, and IOP under one compassionate roof.</div>
+      </div>
+      <div class="meta">
+        <div id="footer-updated">Last updated --</div>
+        <div style="margin-top:6px;">Visit <a href="https://www.bariatriccounselingcenter.com" rel="noopener">bariatriccounselingcenter.com</a> to learn more about our services.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+"use strict";
+
+// ===== CONFIG =====
+const REPO_OWNER = "austintude";
+const REPO_NAME  = "cowork-cron-jobs";
+const SUBPATH    = "bariatric-counseling-center/seo-weekly";
+
+const RAW_GH   = (path) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SUBPATH}/${path}`;
+const JSDELIVR = (path) => `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@main/${SUBPATH}/${path}`;
+
+const STATE = { manifest: null, latestData: null, history: [] };
+
+// ===== KEYWORD PRESENTATION =====
+
+// Map raw keywords -> board-friendly labels.
+// Anything not in this map gets generic title-casing.
+// Keywords listed here as null are SKIPPED entirely (branded queries that don't tell a story to a board).
+const KEYWORD_LABELS = {
+  "bariatric counseling san antonio":             { label: "Bariatric counseling",                          locale: "San Antonio" },
+  "weight loss counseling san antonio":           { label: "Counseling around weight management",            locale: "San Antonio" },
+  "obesity counseling san antonio":               { label: "Counseling for people in larger bodies",         locale: "San Antonio" },
+  "weight management therapist san antonio":      { label: "Weight management therapy",                      locale: "San Antonio" },
+  "registered dietitian san antonio":             { label: "Registered dietitian services",                  locale: "San Antonio" },
+  "emotional eating therapy san antonio":         { label: "Emotional eating therapy",                       locale: "San Antonio" },
+  "binge eating treatment san antonio":           { label: "Support for binge eating",                       locale: "San Antonio" },
+  "food addiction treatment san antonio":         { label: "Support around food and addiction",              locale: "San Antonio" },
+  "weight loss therapy san antonio":              { label: "Therapy supporting weight management",            locale: "San Antonio" },
+  "overeating treatment san antonio":             { label: "Support for compulsive overeating",              locale: "San Antonio" },
+  "eating disorder iop san antonio":              { label: "Intensive outpatient eating disorder care",      locale: "San Antonio" },
+  "bariatric surgery counseling san antonio":     { label: "Bariatric surgery counseling",                   locale: "San Antonio" },
+  "weight management program san antonio":        { label: "Weight management program",                      locale: "San Antonio" },
+  "eating disorder therapist san antonio":        { label: "Eating disorder therapy",                        locale: "San Antonio" },
+  "bariatric counseling":                          { label: "Bariatric counseling",                           locale: "National searches" },
+  "bariatric therapy":                             { label: "Bariatric therapy",                              locale: "National searches" },
+  "emotional eating therapy":                      { label: "Emotional eating therapy",                       locale: "National searches" },
+  "binge eating disorder treatment":               { label: "Support for binge eating disorder",              locale: "National searches" },
+  "food addiction treatment":                      { label: "Support around food and addiction",              locale: "National searches" },
+  "weight loss counseling":                        { label: "Counseling around weight management",            locale: "National searches" },
+  "bariatric surgery psychological evaluation san antonio": { label: "Pre-surgery psychological evaluation", locale: "San Antonio" },
+  "eating disorder treatment san antonio":         { label: "Eating disorder treatment",                      locale: "San Antonio" },
+  "semaglutide behavioral support":                { label: "Behavioral support alongside GLP-1 medications", locale: "National searches" },
+  "semaglutide behavioral support san antonio":    { label: "Behavioral support alongside GLP-1 medications", locale: "San Antonio" },
+  "ozempic counseling":                            { label: "Counseling for people on GLP-1 medications",     locale: "National searches" },
+  "behavioral support for weight loss medications":{ label: "Behavioral support for weight management medications", locale: "National searches" },
+  "telehealth weight management texas":            { label: "Virtual weight management care",                 locale: "Texas" },
+  "online weight management therapy texas":        { label: "Online weight management therapy",               locale: "Texas" },
+  "virtual emotional eating therapy texas":        { label: "Virtual emotional eating therapy",               locale: "Texas" },
+  "eating disorder counseling san antonio":        { label: "Eating disorder counseling",                     locale: "San Antonio" },
+  "bariatric therapy san antonio":                 { label: "Bariatric therapy",                              locale: "San Antonio" },
+  "weight management counseling san antonio":      { label: "Weight management counseling",                   locale: "San Antonio" },
+  "ozempic behavioral support san antonio":        { label: "Behavioral support alongside GLP-1 medications", locale: "San Antonio" },
+  "compulsive overeating san antonio":             { label: "Support for compulsive overeating",              locale: "San Antonio" },
+  "nutrition counseling san antonio":              { label: "Nutrition counseling",                           locale: "San Antonio" },
+  "weight loss therapy":                           { label: "Therapy supporting weight management",            locale: "National searches" },
+  "weight management therapy":                     { label: "Weight management therapy",                      locale: "National searches" },
+  "overeating treatment":                          { label: "Support for compulsive overeating",              locale: "National searches" },
+  "eating disorder iop":                           { label: "Intensive outpatient eating disorder care",      locale: "National searches" },
+  "bariatric surgery counseling":                  { label: "Bariatric surgery counseling",                   locale: "National searches" },
+  "nutrition counseling":                          { label: "Nutrition counseling",                           locale: "National searches" },
+  "registered dietitian weight loss":              { label: "Dietitian-led weight management",                locale: "National searches" },
+  "bariatric surgery psychological evaluation":    { label: "Pre-surgery psychological evaluation",           locale: "National searches" },
+  "how to stop emotional eating":                  { label: "Articles on emotional eating",                   locale: "National searches" },
+  "how to overcome emotional eating":              { label: "Articles on emotional eating",                   locale: "National searches" },
+  "therapy for emotional eating":                  { label: "Therapy for emotional eating",                   locale: "National searches" },
+  "weight management after bariatric surgery":     { label: "Long-term post-surgery support",                  locale: "National searches" },
+  "binge eating disorder therapy":                  { label: "Therapy for binge eating",                       locale: "National searches" },
+  "online bariatric counseling texas":             { label: "Online bariatric counseling",                    locale: "Texas" },
+  "consejeria bariatrica san antonio":             { label: "Bariatric counseling -- Spanish-language",       locale: "San Antonio" },
+  "dietista registrada san antonio":               { label: "Dietitian services -- Spanish-language",         locale: "San Antonio" },
+  // Branded -- skip (not interesting to a board, would feel self-serving)
+  "bariatric counseling center san antonio": null,
+  "BCC san antonio weight management": null
+};
+
+function friendlyKeyword(rawKey) {
+  if (rawKey in KEYWORD_LABELS) return KEYWORD_LABELS[rawKey];
+  // Generic fallback: title case + strip "san antonio"
+  let label = rawKey
+    .replace(/\bsan antonio\b/i, "")
+    .replace(/\btexas\b/i, "")
+    .trim()
+    .replace(/\s+/g, " ");
+  label = label.replace(/\b\w/g, c => c.toUpperCase());
+  let locale = "Search";
+  if (/san antonio/i.test(rawKey)) locale = "San Antonio";
+  else if (/texas/i.test(rawKey)) locale = "Texas";
+  else locale = "National searches";
+  return { label, locale };
+}
+
+function formatRank(pos) {
+  if (pos == null) return null;
+  if (pos === 1) return "#1 result";
+  if (pos === 2) return "Top 3";
+  if (pos === 3) return "Top 3";
+  if (pos <= 5) return `Top 5`;
+  if (pos <= 10) return `Page one (#${pos})`;
+  return `Position ${pos}`;
+}
+
+// ===== FETCH =====
+async function fetchJSON(url, { bypassCache = false } = {}) {
+  const finalUrl = bypassCache ? `${url}${url.includes("?") ? "&" : "?"}t=${Date.now()}` : url;
+  const res = await fetch(finalUrl, { cache: bypassCache ? "no-store" : "default" });
+  if (!res.ok) throw new Error(`${url} -> HTTP ${res.status}`);
+  return await res.json();
+}
+
+async function loadManifest() {
+  // Always raw.github + cache-bust (jsdelivr's cache is too long for the manifest)
+  return await fetchJSON(RAW_GH("manifest.json"), { bypassCache: true });
+}
+
+async function loadDataFile(filename) {
+  // Data files don't change once written -- jsdelivr is fine
+  try {
+    return await fetchJSON(JSDELIVR(`data/${filename}`));
+  } catch (e) {
+    return await fetchJSON(RAW_GH(`data/${filename}`), { bypassCache: true });
+  }
+}
+
+// ===== RENDER =====
+
+function setText(id, text) { const e = document.getElementById(id); if (e) e.textContent = text; }
+function el(tag, attrs = {}, ...children) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "className") e.className = v;
+    else if (k === "html") e.innerHTML = v;
+    else e.setAttribute(k, v);
+  }
+  for (const c of children) {
+    if (c == null) continue;
+    e.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+  }
+  return e;
+}
+
+function renderHero(data) {
+  const dateStr = new Date(data.date + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+  setText("report-date-line", `Latest update: ${dateStr}`);
+  // Count unique service categories represented in keywords
+  const all = Object.entries(data.brave.all_keywords || {});
+  setText("services-line", `${all.length} search queries monitored`);
+}
+
+function renderStats(data) {
+  const b = data.brave || {};
+  const all = Object.entries(b.all_keywords || {});
+  const top1 = all.filter(([_, v]) => v.position === 1).length;
+  const top10 = all.filter(([_, v]) => v.position != null && v.position <= 10).length;
+  // Distinct service topics where BCC ranks at all -- use unique friendly labels
+  const labelsRanked = new Set();
+  for (const [k, v] of all) {
+    if (v.position == null || v.position > 10) continue;
+    const f = friendlyKeyword(k);
+    if (f) labelsRanked.add(f.label);
+  }
+  const newEntries = (data.analysis && data.analysis.new_entries) ? data.analysis.new_entries.length : 0;
+
+  const stats = [
+    { number: top1,             label: "Search topics where BCC is the top result",      context: "When someone searches for these services, BCC's website is the first organic result they see." },
+    { number: top10,             label: "Search topics where BCC appears on page one",   context: "Roughly 95% of all clicks happen on page one of search results -- this is where reach lives." },
+    { number: labelsRanked.size, label: "Distinct service areas reaching new searchers", context: "Each represents a different way people seek the kind of integrated, compassionate care BCC offers." },
+    { number: newEntries,        label: "Service topics newly reaching the community",   context: "Areas where BCC began appearing on page one for the first time during the most recent week's check." }
+  ];
+
+  const grid = document.getElementById("stats-grid");
+  grid.innerHTML = "";
+  for (const s of stats) {
+    grid.appendChild(
+      el("div", { className: "stat-card" },
+        el("div", { className: "stat-number" }, String(s.number)),
+        el("div", { className: "stat-label" }, s.label),
+        el("div", { className: "stat-context" }, s.context)
+      )
+    );
+  }
+}
+
+function renderTopics(data) {
+  const all = Object.entries(data.brave.all_keywords || {});
+  // Filter: only items that rank on page one. Then group by friendly label, pick best position per label.
+  const byLabel = new Map();
+  for (const [raw, v] of all) {
+    if (v.position == null || v.position > 10) continue;
+    const f = friendlyKeyword(raw);
+    if (!f) continue; // skip branded
+    const key = `${f.label}__${f.locale}`;
+    const existing = byLabel.get(key);
+    if (!existing || v.position < existing.position) {
+      byLabel.set(key, { label: f.label, locale: f.locale, position: v.position });
+    }
+  }
+  const items = Array.from(byLabel.values()).sort((a, b) => a.position - b.position);
+
+  const ul = document.getElementById("topics-list");
+  ul.innerHTML = "";
+  if (!items.length) {
+    ul.appendChild(el("div", { className: "error" }, "No top-of-page rankings recorded in the most recent check."));
+    return;
+  }
+  for (const it of items) {
+    const card = el("div", { className: "topic" });
+    card.appendChild(
+      el("div", {},
+        el("div", { className: "topic-name" }, it.label),
+        el("div", { className: "topic-meta" }, it.locale)
+      )
+    );
+    const rankCls = it.position === 1 ? "topic-rank top-of-page" : "topic-rank";
+    card.appendChild(el("div", { className: rankCls }, formatRank(it.position)));
+    ul.appendChild(card);
+  }
+}
+
+function renderGrowth(data) {
+  const newEntries = (data.analysis && data.analysis.new_entries) || [];
+  const rising = (data.analysis && data.analysis.rising) || [];
+  const items = [];
+
+  for (const e of newEntries) {
+    const f = friendlyKeyword(e.keyword);
+    if (!f) continue;
+    items.push({
+      title: `New audience reached: ${f.label.toLowerCase()}`,
+      body: `BCC began appearing on page one of search results in ${f.locale.toLowerCase()} for this topic during the most recent check, opening a path to people who hadn't been finding our services before.`,
+    });
+  }
+  for (const e of rising) {
+    const f = friendlyKeyword(e.keyword);
+    if (!f) continue;
+    items.push({
+      title: `Climbing for ${f.label.toLowerCase()}`,
+      body: `BCC's visibility moved up in ${f.locale.toLowerCase()} for this topic, putting our services in front of more people seeking this kind of support.`,
+    });
+  }
+
+  const grid = document.getElementById("growth-grid");
+  grid.innerHTML = "";
+  if (!items.length) {
+    grid.appendChild(el("div", { className: "error" }, "No new audience areas tracked this period -- BCC's existing rankings held steady."));
+    return;
+  }
+  // Limit to top 6 to keep board view clean
+  for (const it of items.slice(0, 6)) {
+    grid.appendChild(
+      el("div", { className: "growth-card" },
+        el("div", { className: "growth-icon", html: "<svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M7 17l5-5 5 5'></path><path d='M7 7l5 5 5-5'></path></svg>" }),
+        el("div", { className: "growth-title" }, it.title),
+        el("div", { className: "growth-body" }, it.body)
+      )
+    );
+  }
+}
+
+async function renderTrendChart(manifest) {
+  const files = (manifest.files || []).slice(0, 12).reverse(); // oldest -> newest
+  const points = [];
+  for (const f of files) {
+    try {
+      const d = await loadDataFile(f);
+      const top10 = Object.values(d.brave?.all_keywords || {}).filter(v => v.position != null && v.position <= 10).length;
+      const dateStr = new Date(d.date + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+      points.push({ x: dateStr, y: top10 });
+    } catch (_) { /* skip files that fail */ }
+  }
+  if (!points.length) return;
+
+  const ctx = document.getElementById("trend-chart").getContext("2d");
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: points.map(p => p.x),
+      datasets: [{
+        label: "Search topics on page one",
+        data: points.map(p => p.y),
+        backgroundColor: "rgba(78, 205, 196, 0.65)",
+        borderColor: "rgba(78, 205, 196, 1)",
+        borderWidth: 1.5,
+        borderRadius: 6,
+        barPercentage: 0.6,
+        categoryPercentage: 0.7
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: "#2c3e50",
+          titleColor: "#ffffff",
+          bodyColor: "#ffffff",
+          padding: 12,
+          cornerRadius: 6,
+          callbacks: {
+            label: (c) => `${c.parsed.y} topics on page one`
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: { color: "#5b6b78", font: { size: 12 } }
+        },
+        y: {
+          beginAtZero: true,
+          grid: { color: "#e3e9ee", drawBorder: false },
+          ticks: { color: "#5b6b78", font: { size: 12 }, stepSize: 5 },
+          title: { display: true, text: "Topics on page one", color: "#5b6b78", font: { size: 12 } }
+        }
+      }
+    }
+  });
+}
+
+function renderFooter(data) {
+  const dateStr = new Date(data.date + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+  setText("footer-updated", `Last data refresh: ${dateStr}`);
+}
+
+// ===== BOOT =====
+async function boot() {
+  const loading = document.getElementById("loading");
+  const content = document.getElementById("content");
+  try {
+    const manifest = await loadManifest();
+    STATE.manifest = manifest;
+    const latest = manifest.latest || (manifest.files && manifest.files[0]);
+    const data = await loadDataFile(latest);
+    STATE.latestData = data;
+
+    renderHero(data);
+    renderStats(data);
+    renderTopics(data);
+    renderGrowth(data);
+    renderFooter(data);
+    loading.classList.add("hidden");
+    content.classList.remove("hidden");
+
+    // Chart loads after main content -- non-blocking
+    renderTrendChart(manifest).catch(e => console.warn("Chart failed:", e));
+  } catch (e) {
+    loading.innerHTML = `<div class="error" style="max-width:680px;margin:0 auto;text-align:left;">We're temporarily unable to load the latest snapshot. Please try refreshing the page in a moment.<br/><br/><small style="color:var(--muted);">Technical detail: ${(e.message || e).toString().replace(/[<>]/g, "")}</small></div>`;
+  }
+}
+
+boot();
+</script>
+
+</body>
+</html>
