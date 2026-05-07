@@ -1,0 +1,292 @@
+{
+  "timestamp": "2026-04-27T08:05:00-06:00",
+  "date": "2026-04-27",
+  "source": "Browser SERP check (Google) -- GSC unavailable (Insufficient plan error, same as previous run)",
+  "notes": "Second run. GSC MCP returned Insufficient plan again. SERP checks conducted via Claude in Chrome. cowork-cron-jobs not yet cloned on this machine -- local file saved; copy to repo manually or clone first. Staging pages with status:draft not publicly accessible (expected); prod site is ranking for those keywords. One Chrome extension disconnect mid-run recovered after 10s wait.",
+  "brave": {
+    "keywords_checked": 49,
+    "keywords_in_top_1": 11,
+    "keywords_in_top_3": 13,
+    "keywords_in_top_10": 16,
+    "avg_position_top10_only": 2.44,
+    "top_3_keywords": [
+      { "keyword": "bariatric counseling san antonio", "position": 1, "category": "local-primary" },
+      { "keyword": "weight loss counseling san antonio", "position": 1, "category": "local-primary" },
+      { "keyword": "bariatric counseling", "position": 1, "category": "national-primary" }
+    ],
+    "all_keywords": {
+      "bariatric counseling san antonio": {
+        "position": 1, "category": "local-primary", "trend": "stable", "change": 0,
+        "competitor_at_1": "bariatriccounselingcenter.com"
+      },
+      "weight loss counseling san antonio": {
+        "position": 1, "category": "local-primary", "trend": "stable", "change": 0,
+        "competitor_at_1": "bariatriccounselingcenter.com"
+      },
+      "obesity counseling san antonio": {
+        "position": 1, "category": "local-primary", "trend": "stable", "change": 0,
+        "competitor_at_1": "bariatriccounselingcenter.com"
+      },
+      "weight management therapist san antonio": {
+        "position": 2, "category": "local-service", "trend": "stable", "change": 0,
+        "competitor_at_1": "psychologytoday.com"
+      },
+      "registered dietitian san antonio": {
+        "position": null, "category": "local-service", "trend": "stable", "change": null,
+        "competitor_at_1": "mynutritionstudio.com"
+      },
+      "emotional eating therapy san antonio": {
+        "position": 2, "category": "local-service", "trend": "stable", "change": 0,
+        "competitor_at_1": "balancedcounselingsa.com"
+      },
+      "binge eating treatment san antonio": {
+        "position": 8, "category": "local-service", "trend": "stable", "change": 0,
+        "competitor_at_1": "esperanzaedc.com"
+      },
+      "food addiction treatment san antonio": {
+        "position": 11, "category": "local-service", "trend": "declining", "change": -3,
+        "competitor_at_1": "recovery.com",
+        "note": "Fell out of top 10 -- was #8 last week. Staging page exists but not on prod."
+      },
+      "weight loss therapy san antonio": {
+        "position": null, "category": "local-service", "trend": "stable", "change": null,
+        "competitor_at_1": "drcvip.com"
+      },
+      "overeating treatment san antonio": {
+        "position": null, "category": "local-service", "trend": "stable", "change": null,
+        "competitor_at_1": "recovery.com"
+      },
+      "eating disorder iop san antonio": {
+        "position": null, "category": "local-service", "trend": "stable", "change": null,
+        "competitor_at_1": "recovery.com"
+      },
+      "bariatric surgery counseling san antonio": {
+        "position": 1, "category": "local-service", "trend": "stable", "change": 0,
+        "competitor_at_1": "bariatriccounselingcenter.com"
+      },
+      "weight management program san antonio": {
+        "position": null, "category": "local-service", "trend": "stable", "change": null,
+        "competitor_at_1": "drcvip.com"
+      },
+      "eating disorder therapist san antonio": {
+        "position": null, "category": "local-service", "trend": "stable", "change": null,
+        "competitor_at_1": "balancedcounselingsa.com"
+      },
+      "bariatric counseling": {
+        "position": 1, "category": "national-primary", "trend": "stable", "change": 0,
+        "competitor_at_1": "bariatriccounselingcenter.com"
+      },
+      "bariatric therapy": {
+        "position": 4, "category": "national-primary", "trend": "new_entry", "change": null,
+        "competitor_at_1": "mayoclinic.org",
+        "note": "New entry in top 10 -- was null last week (SERP previously dominated by hyperbaric/wound therapy content)"
+      },
+      "emotional eating therapy": {
+        "position": null, "category": "national-primary", "trend": "stable", "change": null,
+        "competitor_at_1": "nationaleatingdisorders.org"
+      },
+      "binge eating disorder treatment": {
+        "position": null, "category": "national-primary", "trend": "stable", "change": null,
+        "competitor_at_1": "psychiatry.org"
+      },
+      "food addiction treatment": {
+        "position": null, "category": "national-primary", "trend": "stable", "change": null,
+        "competitor_at_1": "nationaleatingdisorders.org"
+      },
+      "weight loss counseling": {
+        "position": 7, "category": "national-primary", "trend": "rising", "change": 1,
+        "competitor_at_1": "austinheart.com"
+      },
+      "bariatric surgery psychological evaluation san antonio": {
+        "position": 1, "category": "local-service", "trend": "new_entry", "change": null,
+        "competitor_at_1": "bariatriccounselingcenter.com",
+        "note": "Prod homepage ranking #1 for this keyword. Staging draft page (ID 5168) is not the ranking URL -- publish to prod to claim with a dedicated page.",
+        "ranking_url": "https://www.bariatriccounselingcenter.com/"
+      },
+      "eating disorder treatment san antonio": {
+        "position": null, "category": "local-service", "trend": "stable", "change": null,
+        "competitor_at_1": "esperanzaedc.com"
+      },
+      "semaglutide behavioral support": {
+        "position": null, "category": "national-long-tail", "trend": "stable", "change": null,
+        "competitor_at_1": "pmc.ncbi.nlm.nih.gov"
+      },
+      "semaglutide behavioral support san antonio": {
+        "position": null, "category": "local-service", "trend": "stable", "change": null,
+        "competitor_at_1": "alamocityuc.com"
+      },
+      "ozempic counseling": {
+        "position": null, "category": "national-long-tail", "trend": "stable", "change": null,
+        "competitor_at_1": "pharmacytimes.com"
+      },
+      "behavioral support for weight loss medications": {
+        "position": null, "category": "national-long-tail", "trend": "stable", "change": null,
+        "competitor_at_1": "ncbi.nlm.nih.gov"
+      },
+      "telehealth weight management texas": {
+        "position": null, "category": "telehealth", "trend": "stable", "change": null,
+        "competitor_at_1": "txtelehealth.com"
+      },
+      "online weight management therapy texas": {
+        "position": null, "category": "telehealth", "trend": "stable", "change": null,
+        "competitor_at_1": "texpts.com"
+      },
+      "bariatric counseling center san antonio": {
+        "position": 1, "category": "branded", "trend": "stable", "change": 0,
+        "competitor_at_1": "bariatriccounselingcenter.com"
+      },
+      "BCC san antonio weight management": {
+        "position": 1, "category": "branded", "trend": "stable", "change": 0,
+        "competitor_at_1": "bariatriccounselingcenter.com"
+      },
+      "compulsive overeating san antonio": {
+        "position": 6, "category": "local-service", "trend": "stable", "change": 0,
+        "competitor_at_1": "balancedcounselingsa.com"
+      },
+      "nutrition counseling san antonio": {
+        "position": null, "category": "local-service", "trend": "stable", "change": null,
+        "competitor_at_1": "wellness360.uthealthsa.org"
+      },
+      "weight loss therapy": {
+        "position": null, "category": "national-primary", "trend": "stable", "change": null,
+        "competitor_at_1": "cnn.com"
+      },
+      "weight management therapy": {
+        "position": null, "category": "national-primary", "trend": "stable", "change": null,
+        "competitor_at_1": "hopkinsmedicine.org"
+      },
+      "overeating treatment": {
+        "position": null, "category": "national-primary", "trend": "stable", "change": null,
+        "competitor_at_1": "nhs.uk"
+      },
+      "eating disorder iop": {
+        "position": null, "category": "national-primary", "trend": "stable", "change": null,
+        "competitor_at_1": "nationaleatingdisorders.org"
+      },
+      "bariatric surgery counseling": {
+        "position": 1, "category": "national-primary", "trend": "stable", "change": 0,
+        "competitor_at_1": "bariatriccounselingcenter.com"
+      },
+      "nutrition counseling": {
+        "position": null, "category": "national-primary", "trend": "stable", "change": null,
+        "competitor_at_1": "crohnscolitisfoundation.org"
+      },
+      "registered dietitian weight loss": {
+        "position": null, "category": "national-primary", "trend": "stable", "change": null,
+        "competitor_at_1": "faynutrition.com"
+      },
+      "bariatric surgery psychological evaluation": {
+        "position": null, "category": "national-long-tail", "trend": "stable", "change": null,
+        "competitor_at_1": "pmc.ncbi.nlm.nih.gov"
+      },
+      "how to stop emotional eating": {
+        "position": null, "category": "national-long-tail", "trend": "stable", "change": null,
+        "competitor_at_1": "mayoclinic.org"
+      },
+      "how to overcome emotional eating": {
+        "position": null, "category": "national-long-tail", "trend": "stable", "change": null,
+        "competitor_at_1": "mayoclinic.org"
+      },
+      "therapy for emotional eating": {
+        "position": null, "category": "national-long-tail", "trend": "stable", "change": null,
+        "competitor_at_1": "nationaleatingdisorders.org"
+      },
+      "weight management after bariatric surgery": {
+        "position": null, "category": "national-long-tail", "trend": "stable", "change": null,
+        "competitor_at_1": "asmbs.org"
+      },
+      "binge eating disorder therapy": {
+        "position": null, "category": "national-long-tail", "trend": "stable", "change": null,
+        "competitor_at_1": "nationaleatingdisorders.org"
+      },
+      "online bariatric counseling texas": {
+        "position": 1, "category": "telehealth", "trend": "stable", "change": 0,
+        "competitor_at_1": "bariatriccounselingcenter.com"
+      },
+      "virtual emotional eating therapy texas": {
+        "position": null, "category": "telehealth", "trend": "stable", "change": null,
+        "competitor_at_1": "alsana.com"
+      },
+      "consejeria bariatrica san antonio": {
+        "position": 1, "category": "bilingual", "trend": "stable", "change": 0,
+        "competitor_at_1": "bariatriccounselingcenter.com"
+      },
+      "dietista registrada san antonio": {
+        "position": null, "category": "bilingual", "trend": "stable", "change": null,
+        "competitor_at_1": "healthprofs.com"
+      }
+    },
+    "competitors": [
+      { "domain": "balancedcounselingsa.com", "appearance_count_at_1": 3, "keywords": ["emotional eating therapy san antonio", "eating disorder therapist san antonio", "compulsive overeating san antonio"] },
+      { "domain": "recovery.com", "appearance_count_at_1": 2, "keywords": ["food addiction treatment san antonio", "overeating treatment san antonio"] },
+      { "domain": "psychologytoday.com", "appearance_count_at_1": 1, "keywords": ["weight management therapist san antonio"] },
+      { "domain": "esperanzaedc.com", "appearance_count_at_1": 1, "keywords": ["binge eating treatment san antonio"] },
+      { "domain": "mayoclinic.org", "appearance_count_at_1": 1, "keywords": ["bariatric therapy (national)"] }
+    ]
+  },
+  "google": {
+    "error": "GSC MCP returned: Insufficient plan (second consecutive week)",
+    "keywords_in_top_1": null,
+    "keywords_in_top_10": null,
+    "avg_position": null,
+    "data_range": { "start": "2026-04-20", "end": "2026-04-27" },
+    "all_keywords": {}
+  },
+  "analysis": {
+    "rising": [
+      { "keyword": "weight loss counseling", "position": 7, "prev_position": 8, "change": 1, "category": "national-primary" }
+    ],
+    "new_entries": [
+      { "keyword": "bariatric therapy", "position": 4, "category": "national-primary", "note": "Previously unranked nationally -- new top-10 entry" },
+      { "keyword": "bariatric surgery psychological evaluation san antonio", "position": 1, "category": "local-service", "note": "Prod homepage ranking #1 -- no dedicated prod page yet; staging draft exists (ID 5168)" }
+    ],
+    "declining": [
+      { "keyword": "food addiction treatment san antonio", "position": 11, "prev_position": 8, "change": -3, "category": "local-service", "note": "Fell out of top 10. Staging landing page exists but not on prod. Publishing it could recover and strengthen this ranking." }
+    ],
+    "low_hanging_fruit": [
+      { "keyword": "weight management therapist san antonio", "position": 2, "trend": "stable", "category": "local-service", "note": "One spot from #1 -- staging page live at staging12. Publishing to prod is the move." },
+      { "keyword": "emotional eating therapy san antonio", "position": 2, "trend": "stable", "category": "local-service", "note": "One spot from #1 -- staging page live. balancedcounselingsa.com holding #1." },
+      { "keyword": "compulsive overeating san antonio", "position": 6, "trend": "stable", "category": "local-service", "note": "Top 10 with no dedicated landing page." },
+      { "keyword": "binge eating treatment san antonio", "position": 8, "trend": "stable", "category": "local-service", "note": "Top 10 -- staging page exists, not on prod." },
+      { "keyword": "food addiction treatment san antonio", "position": 11, "trend": "declining", "category": "local-service", "note": "Just dropped off top 10 -- URGENT: publish staging page to prod." },
+      { "keyword": "weight loss counseling", "position": 7, "trend": "rising", "category": "national-primary", "note": "Rising nationally with homepage only -- dedicated page could push to top 5." }
+    ]
+  },
+  "link_checks": [
+    {
+      "url": "https://www.bariatriccounselingcenter.com/",
+      "status": "ok",
+      "internal_links_checked": 5,
+      "broken_links": [],
+      "links_verified": [
+        "https://www.bariatriccounselingcenter.com/about/ -- 200 OK",
+        "https://www.bariatriccounselingcenter.com/faq/ -- 200 OK",
+        "https://www.bariatriccounselingcenter.com/ourprogram/ -- 200 OK",
+        "https://www.bariatriccounselingcenter.com/ourprogram/meet-with-licensed-therapists/ -- 200 OK",
+        "https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dietitians/ -- 200 OK"
+      ]
+    },
+    {
+      "url": "https://staging12.bariatriccounselingcenter.com/weight-management-therapist-in-san-antonio-tx/",
+      "status": "ok",
+      "internal_links_checked": 0,
+      "broken_links": [],
+      "note": "Page loads correctly on staging -- ready to publish to prod."
+    },
+    {
+      "url": "https://staging12.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
+      "status": "404",
+      "internal_links_checked": 0,
+      "broken_links": [],
+      "note": "Page returns 404 on staging (draft status, not published). Prod homepage is ranking #1 for this keyword regardless. Staging page ID 5168 needs to be published before it can rank independently."
+    }
+  ],
+  "action_items": [
+    "URGENT: Publish food-addiction-treatment-san-antonio staging page to prod -- dropped from #8 to #11 this week.",
+    "HIGH: Publish weight-management-therapist-san-antonio staging page to prod -- sitting at #2, one slot from #1.",
+    "HIGH: Publish emotional-eating-therapy-san-antonio staging page to prod -- sitting at #2, balancedcounselingsa.com holding #1.",
+    "MEDIUM: Publish bariatric-surgery-psychological-evaluation staging page (ID 5168) to prod to replace homepage as the ranking URL.",
+    "MEDIUM: Investigate why bariatric therapy (national) entered top 10 at #4 -- identify which page is ranking and optimize it.",
+    "INFO: GSC MCP plan still insufficient -- Daniel may want to upgrade or connect directly via API for click/impression data."
+  ]
+}

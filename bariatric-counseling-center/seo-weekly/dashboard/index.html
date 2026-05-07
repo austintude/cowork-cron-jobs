@@ -149,6 +149,109 @@
   .kw-history-cell .pos-bubble.low { background: var(--amber-soft); color: var(--amber); border-color: #f4d796; }
   .kw-history-cell .pos-bubble.out { background: #f6f9fa; color: var(--muted); border-style: dashed; }
   .kw-history-cell .pos-date { font-size: 10px; color: var(--muted); }
+
+  /* v3 -- service areas, tracked pages, heatmap, coverage gaps, velocity */
+  .areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .areas-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .areas-grid { grid-template-columns: 1fr; } }
+  .area-card { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; position: relative; overflow: hidden; }
+  .area-card::before { content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 3px; background: var(--teal); }
+  .area-card:hover { border-color: var(--teal-line); box-shadow: var(--shadow); }
+  .area-card.expanded { border-color: var(--teal); }
+  .area-card-head { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+  .area-card-name { font-size: 13px; font-weight: 700; color: var(--navy); flex: 1; line-height: 1.3; }
+  .area-card-num { font-size: 24px; font-weight: 700; color: var(--navy); line-height: 1; letter-spacing: -0.02em; }
+  .area-card-num small { display: block; font-size: 10px; color: var(--muted); font-weight: 500; margin-top: 2px; }
+  .area-card-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; font-size: 11px; }
+  .area-card-meta .pip { padding: 2px 7px; border-radius: 9px; background: var(--teal-soft); border: 1px solid var(--teal-line); color: var(--navy); font-weight: 600; }
+  .area-card-meta .pip.stagnant { background: var(--amber-soft); border-color: #f4d796; color: var(--amber); }
+  .area-card-spark { margin-top: 10px; height: 22px; }
+  .area-card-spark svg { width: 100%; height: 100%; }
+  .area-card-detail { display: none; margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line); }
+  .area-card.expanded .area-card-detail { display: block; }
+  .area-card-detail .kw-line { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 5px 0; font-size: 12px; border-bottom: 1px solid var(--line); }
+  .area-card-detail .kw-line:last-child { border-bottom: none; }
+  .area-card-detail .kw-line-name { color: var(--text); flex: 1; }
+  .area-card-detail .kw-line-pos { padding: 1px 7px; border-radius: 9px; font-size: 11px; font-weight: 700; }
+  .area-card-detail .kw-line-pos.t1 { background: var(--green-soft); color: var(--green); border: 1px solid var(--green); }
+  .area-card-detail .kw-line-pos.t10 { background: var(--teal-soft); color: var(--navy); border: 1px solid var(--teal-line); }
+  .area-card-detail .kw-line-pos.t20 { background: var(--amber-soft); color: var(--amber); border: 1px solid #f4d796; }
+  .area-card-detail .kw-line-pos.out { background: #f6f9fa; color: var(--muted); border: 1px dashed var(--line); }
+
+  /* tracked pages by cluster */
+  .cluster-block { margin-bottom: 22px; }
+  .cluster-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .cluster-head-name { font-size: 12px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.05em; }
+  .cluster-head-count { font-size: 11px; color: var(--muted); padding: 2px 8px; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; }
+  .cluster-head-line { flex: 1; height: 1px; background: var(--line); }
+  .pages-grid-internal { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .ipage-card { background: var(--bg); border: 1px solid var(--line); border-left: 3px solid var(--teal); border-radius: 7px; padding: 13px 16px; font-size: 13px; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; }
+  .ipage-card:hover { border-color: var(--teal-line); box-shadow: var(--shadow); }
+  .ipage-card.expanded { border-left-color: var(--navy); border-left-width: 4px; }
+  .ipage-title { font-weight: 700; color: var(--navy); font-size: 13px; line-height: 1.3; }
+  .ipage-meta { font-size: 11px; color: var(--muted); margin-top: 4px; }
+  .ipage-meta strong { color: var(--text); font-weight: 600; }
+  .ipage-stats { display: flex; gap: 14px; margin-top: 9px; padding-top: 8px; border-top: 1px dashed var(--line); }
+  .ipage-stat-num { font-size: 18px; font-weight: 700; color: var(--navy); line-height: 1; }
+  .ipage-stat-num.building { font-size: 12px; color: var(--muted); font-weight: 600; }
+  .ipage-stat-label { font-size: 10px; color: var(--muted); margin-top: 3px; }
+  .ipage-spark { margin-top: 8px; height: 22px; }
+  .ipage-spark svg { width: 100%; height: 100%; }
+  .ipage-detail { display: none; margin-top: 11px; padding-top: 10px; border-top: 1px dashed var(--line); font-size: 12px; }
+  .ipage-card.expanded .ipage-detail { display: block; }
+  .ipage-detail .ipage-url { font-family: ui-monospace, monospace; font-size: 11px; color: var(--muted); word-break: break-all; padding: 4px 8px; background: var(--navy-soft); border-radius: 4px; margin-bottom: 10px; display: inline-block; }
+  .ipage-detail .ipage-url a { color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--line); }
+  .ipage-detail .ipage-url a:hover { border-bottom-color: var(--teal); }
+  .ipage-detail .kw-line { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-bottom: 1px solid var(--line); }
+  .ipage-detail .kw-line:last-child { border-bottom: none; }
+  .ipage-detail .kw-line-name { flex: 1; color: var(--text); }
+  .ipage-detail .kw-line-change { font-size: 11px; color: var(--muted); margin-right: 6px; }
+  .ipage-detail .kw-line-change.up { color: var(--green); font-weight: 600; }
+  .ipage-detail .kw-line-change.down { color: var(--red); font-weight: 600; }
+  .ipage-detail .kw-line-pos { padding: 1px 7px; border-radius: 9px; font-size: 11px; font-weight: 700; }
+  .ipage-detail .kw-line-pos.t1 { background: var(--green-soft); color: var(--green); border: 1px solid var(--green); }
+  .ipage-detail .kw-line-pos.t10 { background: var(--teal-soft); color: var(--navy); border: 1px solid var(--teal-line); }
+  .ipage-detail .kw-line-pos.t20 { background: var(--amber-soft); color: var(--amber); border: 1px solid #f4d796; }
+  .ipage-detail .ipage-empty-line { color: var(--muted); font-style: italic; font-size: 11px; padding: 4px 0; }
+
+  /* internal heatmap (reuse client styles concept) */
+  .iheatmap-wrap { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px 20px; overflow-x: auto; }
+  .iheatmap { display: grid; gap: 4px; min-width: 480px; }
+  .iheatmap-row { display: grid; gap: 4px; align-items: center; }
+  .iheatmap-label { font-size: 11px; color: var(--muted); text-align: right; padding-right: 10px; font-weight: 500; }
+  .iheatmap-label.head { font-weight: 700; color: var(--navy); }
+  .iheatmap-cell { height: 26px; border-radius: 4px; background: #f6f9fa; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; color: var(--navy); border: 1px solid transparent; }
+  .iheatmap-cell.h0 { background: #f6f9fa; color: #aab4be; border-color: var(--line); }
+  .iheatmap-cell.h1 { background: #e7f9f7; }
+  .iheatmap-cell.h2 { background: #c1ecea; }
+  .iheatmap-cell.h3 { background: #8ddad5; }
+  .iheatmap-cell.h4 { background: #4ECDC4; }
+  .iheatmap-cell.h5 { background: #2eb1a8; color: white; }
+  .iheatmap-cell.head { background: transparent; color: var(--muted); font-size: 10px; font-weight: 600; height: 20px; }
+
+  /* coverage gaps */
+  .gaps-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  @media (max-width: 800px) { .gaps-grid { grid-template-columns: 1fr; } }
+  .gap-card { background: var(--bg); border: 1px solid var(--line); border-left: 3px solid var(--amber); border-radius: 7px; padding: 14px 16px; }
+  .gap-card.high { border-left-color: var(--red); }
+  .gap-card-title { font-size: 12px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
+  .gap-card-desc { font-size: 12px; color: var(--muted); margin-bottom: 10px; line-height: 1.5; }
+  .gap-card-list { list-style: none; padding: 0; margin: 0; max-height: 220px; overflow-y: auto; }
+  .gap-card-list li { padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .gap-card-list li:last-child { border-bottom: none; }
+  .gap-card-list .gap-pos { font-size: 10px; padding: 1px 6px; border-radius: 8px; background: var(--bg-soft); color: var(--muted); border: 1px solid var(--line); white-space: nowrap; }
+  .gap-card-list .gap-pos.urgent { background: var(--red-soft); color: var(--red); border-color: var(--red); }
+  .gap-card-empty { color: var(--muted); font-style: italic; font-size: 12px; }
+
+  /* velocity metrics row */
+  .velocity-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  @media (max-width: 800px) { .velocity-row { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .velocity-row { grid-template-columns: 1fr; } }
+  .velocity-card { background: var(--bg); border: 1px solid var(--line); border-radius: 7px; padding: 12px 14px; }
+  .velocity-card .v-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); font-weight: 700; }
+  .velocity-card .v-value { font-size: 22px; font-weight: 700; color: var(--navy); margin-top: 4px; line-height: 1.1; }
+  .velocity-card .v-context { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
 </style>
 </head>
 <body>
@@ -177,6 +280,18 @@
       <div class="trend-chart-card">
         <div class="trend-chart-wrap"><canvas id="trend-chart"></canvas></div>
       </div>
+    </div>
+
+    <div class="section">
+      <h2>Velocity</h2>
+      <div class="meta-line">How fast BCC is publishing pages and how fast they reach page one.</div>
+      <div class="velocity-row" id="velocity-row"></div>
+    </div>
+
+    <div class="section">
+      <h2>Service Areas</h2>
+      <div class="meta-line">Click any area to drill into the keywords inside it.</div>
+      <div class="areas-grid" id="areas-grid"></div>
     </div>
 
     <div class="section">
@@ -242,9 +357,25 @@
     </div>
 
     <div class="section">
-      <h2>Newly Published Pages on Production</h2>
-      <div class="meta-line">Landing pages that moved from staging to live since the previous run.</div>
-      <ul id="new-pages-list" class="pages-list"></ul>
+      <h2>Tracked Strategic Pages</h2>
+      <div class="meta-line">Each card shows ranking strength + days live. Click to see all keywords pointing at the page and their position history.</div>
+      <div id="ipages-wrap"></div>
+      <details style="margin-top: 18px;">
+        <summary style="cursor:pointer; font-size:12px; color:var(--muted); font-weight:600;">Show legacy &quot;Newly Published Pages&quot; list</summary>
+        <ul id="new-pages-list" class="pages-list" style="margin-top:10px;"></ul>
+      </details>
+    </div>
+
+    <div class="section">
+      <h2>Reach Across Recent Weeks</h2>
+      <div class="meta-line">Service areas down the side, weekly checks across the top. Cell shading shows page-one ranking density that week.</div>
+      <div class="iheatmap-wrap"><div class="iheatmap" id="iheatmap"></div></div>
+    </div>
+
+    <div class="section">
+      <h2>Coverage Gaps &amp; Opportunities</h2>
+      <div class="meta-line">Where the strategy is not yet matching the data -- prioritized for action.</div>
+      <div class="gaps-grid" id="gaps-grid"></div>
     </div>
 
     <div class="section">
@@ -284,6 +415,69 @@ const SUBPATH    = "bariatric-counseling-center/seo-weekly";
 // Fallback to raw.githubusercontent if jsdelivr 404s (new file not propagated yet)
 const JSDELIVR  = (path) => `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@main/${SUBPATH}/${path}`;
 const RAW_GH    = (path) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SUBPATH}/${path}`;
+
+
+// ===== TAXONOMIES (mirror the client board) =====
+const SERVICE_AREAS = [
+  { id: "bariatric", name: "Bariatric Counseling & Surgery Support", keywords: [
+    "bariatric counseling san antonio","bariatric counseling","bariatric surgery counseling san antonio","bariatric surgery counseling",
+    "bariatric surgery psychological evaluation san antonio","bariatric surgery psychological evaluation",
+    "bariatric therapy san antonio","bariatric therapy","online bariatric counseling texas","consejeria bariatrica san antonio"
+  ]},
+  { id: "weight-mgmt", name: "Weight Management", keywords: [
+    "weight loss counseling san antonio","weight loss counseling","obesity counseling san antonio",
+    "weight management therapist san antonio","weight management program san antonio","weight management counseling san antonio",
+    "weight loss therapy san antonio","weight loss therapy","weight management therapy","weight management after bariatric surgery"
+  ]},
+  { id: "eating-concerns", name: "Eating Concerns", keywords: [
+    "emotional eating therapy san antonio","emotional eating therapy","therapy for emotional eating","how to stop emotional eating","how to overcome emotional eating",
+    "binge eating treatment san antonio","binge eating disorder treatment","binge eating disorder therapy",
+    "food addiction treatment san antonio","food addiction treatment","overeating treatment san antonio","overeating treatment","compulsive overeating san antonio",
+    "eating disorder iop san antonio","eating disorder iop","eating disorder therapist san antonio","eating disorder treatment san antonio","eating disorder counseling san antonio"
+  ]},
+  { id: "med-adjunct", name: "Behavioral Support with Medications", keywords: [
+    "semaglutide behavioral support san antonio","semaglutide behavioral support","ozempic counseling","ozempic behavioral support san antonio","behavioral support for weight loss medications"
+  ]},
+  { id: "nutrition", name: "Nutrition Care", keywords: [
+    "registered dietitian san antonio","nutrition counseling san antonio","nutrition counseling","registered dietitian weight loss","dietista registrada san antonio"
+  ]},
+  { id: "telehealth", name: "Telehealth & Online Care", keywords: [
+    "telehealth weight management texas","online weight management therapy texas","virtual emotional eating therapy texas"
+  ]}
+];
+
+const TRACKED_PAGES = [
+  { cluster: "Eating disorder support", pages: [
+    { path: "/eating-disorder-treatment-in-san-antonio-tx/",  name: "Eating Disorder Treatment in SA" },
+    { path: "/eating-disorder-counseling-in-san-antonio-tx/", name: "Eating Disorder Counseling in SA" },
+    { path: "/eating-disorder-therapist-in-san-antonio-tx/",  name: "Eating Disorder Therapist in SA" }
+  ]},
+  { cluster: "Bariatric surgery support", pages: [
+    { path: "/bariatric-therapy-in-san-antonio-tx/",                          name: "Bariatric Therapy in SA" },
+    { path: "/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/", name: "Pre-Surgery Psychological Eval" },
+    { path: "/bariatric-surgery-counseling-in-san-antonio-tx/",               name: "Bariatric Surgery Counseling" }
+  ]},
+  { cluster: "Weight management counseling", pages: [
+    { path: "/weight-management-counseling-in-san-antonio-tx/",  name: "Weight Management Counseling" },
+    { path: "/weight-management-program-in-san-antonio-tx/",     name: "Weight Management Program" },
+    { path: "/weight-loss-therapy-in-san-antonio-tx/",           name: "Weight Loss Therapy" },
+    { path: "/online-weight-management-therapy-in-texas/",       name: "Online Weight Mgmt (TX)" }
+  ]},
+  { cluster: "GLP-1 behavioral support", pages: [
+    { path: "/ozempic-behavioral-support-in-san-antonio-tx/",     name: "Ozempic Behavioral Support" },
+    { path: "/semaglutide-behavioral-support-in-san-antonio-tx/", name: "Semaglutide Behavioral Support" }
+  ]},
+  { cluster: "Emotional & compulsive overeating", pages: [
+    { path: "/binge-eating-treatment-in-san-antonio-tx/",       name: "Binge Eating Treatment" },
+    { path: "/virtual-emotional-eating-therapy-in-texas/",      name: "Virtual Emotional Eating (TX)" },
+    { path: "/compulsive-overeating-counseling-san-antonio-tx/",name: "Compulsive Overeating Counseling" }
+  ]}
+];
+
+function areaForKeyword(rawKey) {
+  for (const a of SERVICE_AREAS) if (a.keywords.includes(rawKey)) return a;
+  return null;
+}
 
 // ---- STATE ------------------------------------------------------------------
 let state = {
@@ -677,14 +871,24 @@ async function loadAllHistory() {
   const files = (state.manifest.files || []).slice(0, 12).reverse();
   const results = await Promise.all(files.map(function(f) { return loadData(f).catch(function(){ return null; }); }));
   const valid = results.filter(function(d) { return d && d.brave; });
+  state.allData = valid;
   state.history = valid.map(function(d) {
     const all = Object.entries(d.brave.all_keywords || {});
+    // Compute per-area top10 counts for heatmap and area sparklines
+    const perAreaTop10 = {};
+    for (const a of SERVICE_AREAS) perAreaTop10[a.id] = 0;
+    for (const [kw, v] of all) {
+      if (v.position == null || v.position > 10) continue;
+      const a = areaForKeyword(kw);
+      if (a) perAreaTop10[a.id]++;
+    }
     return {
       date: d.date,
       top1:  all.filter(function(e) { return e[1].position === 1; }).length,
       top10: all.filter(function(e) { return e[1].position != null && e[1].position <= 10; }).length,
       top20: all.filter(function(e) { return e[1].position != null && e[1].position <= 20; }).length,
-      total: all.length
+      total: all.length,
+      perAreaTop10: perAreaTop10
     };
   });
   const byKw = {};
@@ -733,6 +937,426 @@ function renderTrendChart() {
   });
 }
 
+
+// ---- v3: SPARKLINES + SERVICE AREAS ------------------------------------------
+function sparklineSVG(values, { width = 160, height = 22 } = {}) {
+  if (!values.length) return "";
+  const max = Math.max(...values, 1);
+  const stepX = width / Math.max(values.length - 1, 1);
+  const points = values.map((v, i) => {
+    const x = i * stepX;
+    const y = height - ((v / max) * (height - 4)) - 2;
+    return x.toFixed(1) + "," + y.toFixed(1);
+  });
+  const linePts = points.join(" ");
+  const areaPts = "0," + height + " " + linePts + " " + width + "," + height;
+  const lastVal = values[values.length - 1];
+  const lastX = (values.length - 1) * stepX;
+  const lastY = height - ((lastVal / max) * (height - 4)) - 2;
+  return '<svg viewBox="0 0 ' + width + ' ' + height + '" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">' +
+    '<polygon points="' + areaPts + '" fill="rgba(78,205,196,0.18)"/>' +
+    '<polyline points="' + linePts + '" fill="none" stroke="#2eb1a8" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>' +
+    '<circle cx="' + lastX.toFixed(1) + '" cy="' + lastY.toFixed(1) + '" r="2.2" fill="#2c3e50"/></svg>';
+}
+
+function rankClass(p) {
+  if (p == null) return "out";
+  if (p === 1) return "t1";
+  if (p <= 10) return "t10";
+  if (p <= 20) return "t20";
+  return "out";
+}
+
+function renderServiceAreas(latestData) {
+  const grid = document.getElementById("areas-grid");
+  if (!grid) return;
+  grid.innerHTML = "";
+  const allKw = (latestData && latestData.brave && latestData.brave.all_keywords) || {};
+
+  for (const a of SERVICE_AREAS) {
+    let top10 = 0, top1 = 0, stagnantCount = 0;
+    const kwInArea = [];
+    for (const kw of a.keywords) {
+      const v = allKw[kw];
+      if (!v) continue;
+      kwInArea.push({ keyword: kw, position: v.position, change: v.change });
+      if (v.position === 1) top1++;
+      if (v.position != null && v.position <= 10) top10++;
+      if (typeof isStagnant === "function" && isStagnant(kw)) stagnantCount++;
+    }
+    // Sort by position (best first, nulls last)
+    kwInArea.sort((x, y) => {
+      const xp = x.position == null ? 999 : x.position;
+      const yp = y.position == null ? 999 : y.position;
+      return xp - yp;
+    });
+
+    // Sparkline of historical top10 count for this area
+    const trend = (state.history || []).map(h => {
+      let count = 0;
+      if (h.perAreaTop10) count = h.perAreaTop10[a.id] || 0;
+      return count;
+    });
+
+    const card = el("div", { className: "area-card", "data-area-id": a.id });
+    const head = el("div", { className: "area-card-head" });
+    head.appendChild(el("div", { className: "area-card-name" }, a.name));
+    const numEl = el("div", { className: "area-card-num" });
+    numEl.appendChild(document.createTextNode(String(top10)));
+    numEl.appendChild(el("small", {}, "on page one"));
+    head.appendChild(numEl);
+    card.appendChild(head);
+
+    const meta = el("div", { className: "area-card-meta" });
+    if (top1 > 0) meta.appendChild(el("span", { className: "pip" }, top1 + " at #1"));
+    meta.appendChild(el("span", { className: "pip", style: "background:var(--bg-soft); color:var(--muted); border-color:var(--line);" }, a.keywords.length + " keywords"));
+    if (stagnantCount > 0) meta.appendChild(el("span", { className: "pip stagnant" }, stagnantCount + " stagnant"));
+    card.appendChild(meta);
+
+    if (trend.length > 1) {
+      const sparkDiv = el("div", { className: "area-card-spark", html: sparklineSVG(trend) });
+      card.appendChild(sparkDiv);
+    }
+
+    // Detail (initially hidden)
+    const detail = el("div", { className: "area-card-detail" });
+    if (!kwInArea.length) {
+      detail.appendChild(el("div", { className: "ipage-empty-line", style: "color:var(--muted);font-style:italic;" }, "No keywords tracked in this area yet."));
+    } else {
+      for (const k of kwInArea) {
+        const line = el("div", { className: "kw-line" });
+        line.appendChild(el("div", { className: "kw-line-name" }, k.keyword));
+        const cls = rankClass(k.position);
+        const label = k.position == null ? "not in top 20" : "#" + k.position;
+        line.appendChild(el("div", { className: "kw-line-pos " + cls }, label));
+        detail.appendChild(line);
+      }
+    }
+    card.appendChild(detail);
+
+    card.addEventListener("click", () => card.classList.toggle("expanded"));
+    grid.appendChild(card);
+  }
+}
+
+// ---- v3: TRACKED PAGES PERFORMANCE -------------------------------------------
+function buildPageMetrics(path) {
+  // For the given page path, walk all loaded historical data files (state has full data per date)
+  // and compute trajectory
+  const dataFiles = state.allData || [];
+  let firstSeen = null;
+  for (const d of dataFiles) {
+    const newPages = d.newly_published_prod_pages || [];
+    if (newPages.includes(path) && !firstSeen) firstSeen = d.date;
+  }
+  if (!firstSeen) {
+    for (const d of dataFiles) {
+      const all = (d.brave && d.brave.all_keywords) || {};
+      for (const v of Object.values(all)) {
+        if (v.ranking_url && v.ranking_url.includes(path)) { firstSeen = d.date; break; }
+      }
+      if (firstSeen) break;
+    }
+  }
+  const today = (dataFiles[dataFiles.length - 1] || {}).date;
+  const trajectory = [];
+  let bestPosLatest = null, kwsLatest = [];
+  for (const d of dataFiles) {
+    if (firstSeen && d.date < firstSeen) continue;
+    let bestPos = null;
+    const matchedKws = [];
+    const all = (d.brave && d.brave.all_keywords) || {};
+    for (const [kw, v] of Object.entries(all)) {
+      const url = v.ranking_url || "";
+      if (!url.includes(path)) continue;
+      matchedKws.push({ keyword: kw, position: v.position, change: v.change });
+      if (v.position != null && (bestPos == null || v.position < bestPos)) bestPos = v.position;
+    }
+    trajectory.push({ date: d.date, position: bestPos });
+    if (d.date === today) { bestPosLatest = bestPos; kwsLatest = matchedKws; }
+  }
+  return { firstSeen, daysLive: firstSeen && today ? Math.max(0, Math.round((new Date(today + "T12:00:00") - new Date(firstSeen + "T12:00:00")) / 86400000)) : null, trajectory, bestPosLatest, keywords: kwsLatest };
+}
+
+function renderTrackedPages(latestData) {
+  const wrap = document.getElementById("ipages-wrap");
+  if (!wrap) return;
+  wrap.innerHTML = "";
+  for (const cluster of TRACKED_PAGES) {
+    const block = el("div", { className: "cluster-block" });
+    const head = el("div", { className: "cluster-head" });
+    head.appendChild(el("div", { className: "cluster-head-name" }, cluster.cluster));
+    head.appendChild(el("div", { className: "cluster-head-count" }, cluster.pages.length + " pages"));
+    head.appendChild(el("div", { className: "cluster-head-line" }));
+    block.appendChild(head);
+
+    const grid = el("div", { className: "pages-grid-internal" });
+    for (const pageDef of cluster.pages) {
+      const m = buildPageMetrics(pageDef.path);
+      const card = el("div", { className: "ipage-card", "data-page-path": pageDef.path });
+      card.appendChild(el("div", { className: "ipage-title" }, pageDef.name));
+
+      const meta = el("div", { className: "ipage-meta" });
+      if (m.firstSeen) {
+        meta.innerHTML = "Live since <strong>" + new Date(m.firstSeen + "T12:00:00").toLocaleDateString("en-US", {month:"short",day:"numeric"}) + "</strong> &middot; <strong>" + m.daysLive + "</strong> day" + (m.daysLive === 1 ? "" : "s") + " live";
+      } else {
+        meta.innerHTML = '<em style="color:var(--muted);">Not yet detected on prod</em>';
+      }
+      card.appendChild(meta);
+
+      const stats = el("div", { className: "ipage-stats" });
+      const s1 = el("div", {});
+      const s1n = el("div", { className: "ipage-stat-num" + (m.bestPosLatest == null ? " building" : "") });
+      s1n.textContent = m.bestPosLatest != null ? "#" + m.bestPosLatest : "Building";
+      s1.appendChild(s1n);
+      s1.appendChild(el("div", { className: "ipage-stat-label" }, "Best position"));
+      stats.appendChild(s1);
+
+      const s2 = el("div", {});
+      s2.appendChild(el("div", { className: "ipage-stat-num" }, String(m.keywords.length)));
+      s2.appendChild(el("div", { className: "ipage-stat-label" }, "Keywords ranking"));
+      stats.appendChild(s2);
+      card.appendChild(stats);
+
+      if (m.trajectory.length > 1) {
+        const sparkValues = m.trajectory.map(t => t.position == null ? 0 : Math.max(0, 30 - t.position));
+        const sparkDiv = el("div", { className: "ipage-spark", html: sparklineSVG(sparkValues, {width: 200, height: 22}) });
+        card.appendChild(sparkDiv);
+      }
+
+      // Click-to-expand detail
+      const detail = el("div", { className: "ipage-detail" });
+      const fullUrl = "https://www.bariatriccounselingcenter.com" + pageDef.path;
+      const urlBox = el("div", { className: "ipage-url" });
+      const urlLink = el("a", { href: fullUrl, target: "_blank", rel: "noopener" }, fullUrl);
+      urlBox.appendChild(urlLink);
+      detail.appendChild(urlBox);
+
+      if (m.keywords.length) {
+        for (const k of m.keywords) {
+          const line = el("div", { className: "kw-line" });
+          line.appendChild(el("div", { className: "kw-line-name" }, k.keyword));
+          let chTxt = "";
+          let chCls = "";
+          if (k.change != null && k.change !== 0) {
+            chTxt = (k.change > 0 ? "+" : "") + k.change;
+            chCls = k.change > 0 ? "up" : "down";
+          }
+          if (chTxt) line.appendChild(el("div", { className: "kw-line-change " + chCls }, chTxt));
+          line.appendChild(el("div", { className: "kw-line-pos " + rankClass(k.position) }, k.position == null ? "out" : "#" + k.position));
+          detail.appendChild(line);
+        }
+      } else {
+        detail.appendChild(el("div", { className: "ipage-empty-line" }, "No keywords currently ranking on this page."));
+      }
+      card.appendChild(detail);
+
+      card.addEventListener("click", (ev) => {
+        if (ev.target.tagName === "A") return; // don't toggle if clicking the URL link
+        card.classList.toggle("expanded");
+      });
+      grid.appendChild(card);
+    }
+    block.appendChild(grid);
+    wrap.appendChild(block);
+  }
+}
+
+// ---- v3: HEATMAP -------------------------------------------------------------
+function renderInternalHeatmap() {
+  const wrap = document.getElementById("iheatmap");
+  if (!wrap) return;
+  wrap.innerHTML = "";
+  const history = state.history || [];
+  if (!history.length) {
+    wrap.appendChild(el("div", { className: "ipage-empty-line" }, "No history yet -- the heatmap will populate as more weeks accumulate."));
+    return;
+  }
+  const labelW = 220;
+  const colTpl = labelW + "px repeat(" + history.length + ", minmax(40px, 1fr))";
+  // Header
+  const headRow = el("div", { className: "iheatmap-row", style: "grid-template-columns: " + colTpl + ";" });
+  headRow.appendChild(el("div", { className: "iheatmap-label head" }, "Service area"));
+  for (const h of history) headRow.appendChild(el("div", { className: "iheatmap-cell head" }, new Date(h.date + "T12:00:00").toLocaleDateString("en-US", {month:"short",day:"numeric"})));
+  wrap.appendChild(headRow);
+  // Compute max for scaling
+  let max = 0;
+  for (const h of history) {
+    if (!h.perAreaTop10) continue;
+    for (const a of SERVICE_AREAS) {
+      const v = h.perAreaTop10[a.id] || 0;
+      if (v > max) max = v;
+    }
+  }
+  if (max === 0) max = 1;
+  function bin(v) {
+    if (v === 0) return "h0";
+    const r = v / max;
+    if (r < 0.2) return "h1";
+    if (r < 0.4) return "h2";
+    if (r < 0.6) return "h3";
+    if (r < 0.85) return "h4";
+    return "h5";
+  }
+  for (const a of SERVICE_AREAS) {
+    const row = el("div", { className: "iheatmap-row", style: "grid-template-columns: " + colTpl + ";" });
+    row.appendChild(el("div", { className: "iheatmap-label" }, a.name));
+    for (const h of history) {
+      const v = (h.perAreaTop10 && h.perAreaTop10[a.id]) || 0;
+      row.appendChild(el("div", { className: "iheatmap-cell " + bin(v), title: a.name + " -- " + h.date + ": " + v }, v > 0 ? String(v) : ""));
+    }
+    wrap.appendChild(row);
+  }
+}
+
+// ---- v3: COVERAGE GAPS -------------------------------------------------------
+function renderCoverageGaps(latestData) {
+  const grid = document.getElementById("gaps-grid");
+  if (!grid) return;
+  grid.innerHTML = "";
+  const allKw = (latestData && latestData.brave && latestData.brave.all_keywords) || {};
+
+  // Gap 1: Keywords with NO ranking_url at all (no ranking)
+  const orphaned = [];
+  for (const [kw, v] of Object.entries(allKw)) {
+    if (v.position == null && !v.ranking_url) orphaned.push({ keyword: kw, category: v.category });
+  }
+
+  // Gap 2: Keywords ranking via the homepage that should rank on a dedicated page
+  // Look for keywords whose ranking_url is exactly bariatriccounselingcenter.com/ (homepage)
+  const homepageCannibal = [];
+  for (const [kw, v] of Object.entries(allKw)) {
+    if (!v.ranking_url) continue;
+    const url = v.ranking_url.replace(/\/$/, "").replace(/^https?:\/\/(www\.)?/, "");
+    if (url === "bariatriccounselingcenter.com" && v.position != null && v.position <= 20) {
+      homepageCannibal.push({ keyword: kw, position: v.position });
+    }
+  }
+  homepageCannibal.sort((a, b) => a.position - b.position);
+
+  // Gap 3: Tracked pages with 0 keywords matching them
+  const emptyPages = [];
+  for (const cluster of TRACKED_PAGES) {
+    for (const pageDef of cluster.pages) {
+      const m = buildPageMetrics(pageDef.path);
+      if (m.firstSeen && m.keywords.length === 0) emptyPages.push({ name: pageDef.name, path: pageDef.path });
+    }
+  }
+
+  // Gap 4: Keywords stuck in 11-20 (nearly there)
+  const onTheBubble = [];
+  for (const [kw, v] of Object.entries(allKw)) {
+    if (v.position != null && v.position > 10 && v.position <= 20) onTheBubble.push({ keyword: kw, position: v.position });
+  }
+  onTheBubble.sort((a, b) => a.position - b.position);
+
+  function renderGapCard(title, desc, cls, items, renderItem, emptyMsg) {
+    const card = el("div", { className: "gap-card" + (cls ? " " + cls : "") });
+    card.appendChild(el("div", { className: "gap-card-title" }, title));
+    card.appendChild(el("div", { className: "gap-card-desc" }, desc));
+    if (!items.length) {
+      card.appendChild(el("div", { className: "gap-card-empty" }, emptyMsg || "Nothing here this week."));
+    } else {
+      const ul = el("ul", { className: "gap-card-list" });
+      for (const it of items) ul.appendChild(renderItem(it));
+      card.appendChild(ul);
+    }
+    return card;
+  }
+
+  grid.appendChild(renderGapCard(
+    "Pages with no rankings yet",
+    "Tracked pages live on prod but no keywords are matching them. Likely needs internal links + content tightening.",
+    "high",
+    emptyPages,
+    (it) => { const li = el("li"); li.appendChild(el("span", {}, it.name)); li.appendChild(el("span", { className: "gap-pos urgent" }, "0 ranking")); return li; },
+    "All tracked pages have at least one keyword ranking. Nice."
+  ));
+
+  grid.appendChild(renderGapCard(
+    "On the bubble (positions 11-20)",
+    "One small push could move these into the top 10.",
+    "",
+    onTheBubble,
+    (it) => { const li = el("li"); li.appendChild(el("span", {}, it.keyword)); li.appendChild(el("span", { className: "gap-pos" }, "#" + it.position)); return li; },
+    "No keywords sitting in the 11-20 range right now."
+  ));
+
+  grid.appendChild(renderGapCard(
+    "Homepage carrying keywords that need their own page",
+    "These keywords currently rank via the homepage. A dedicated landing page should consolidate the ranking.",
+    "",
+    homepageCannibal,
+    (it) => { const li = el("li"); li.appendChild(el("span", {}, it.keyword)); li.appendChild(el("span", { className: "gap-pos" }, "#" + it.position)); return li; },
+    "No homepage cannibalization detected."
+  ));
+
+  grid.appendChild(renderGapCard(
+    "Keywords with no detected ranking URL",
+    "These appear in the keyword list but no page is ranking for them. New page candidates.",
+    "",
+    orphaned,
+    (it) => { const li = el("li"); li.appendChild(el("span", {}, it.keyword)); if (it.category) li.appendChild(el("span", { className: "gap-pos" }, it.category)); return li; },
+    "Every tracked keyword has a known ranking URL or has dropped out entirely."
+  ));
+}
+
+// ---- v3: VELOCITY ------------------------------------------------------------
+function renderVelocity(latestData) {
+  const wrap = document.getElementById("velocity-row");
+  if (!wrap) return;
+  wrap.innerHTML = "";
+  const dataFiles = state.allData || [];
+  // Pages launched per week (median, total)
+  let pagesThisWeek = (latestData.newly_published_prod_pages || []).length;
+  let totalPages = 0;
+  for (const d of dataFiles) totalPages += (d.newly_published_prod_pages || []).length;
+
+  // Average days from publish to first top-10
+  // For each tracked page that has a firstSeen + a top-10 in its trajectory:
+  let publishToTop10Days = [];
+  for (const cluster of TRACKED_PAGES) {
+    for (const pageDef of cluster.pages) {
+      const m = buildPageMetrics(pageDef.path);
+      if (!m.firstSeen) continue;
+      for (const t of m.trajectory) {
+        if (t.position != null && t.position <= 10) {
+          const days = Math.max(0, Math.round((new Date(t.date + "T12:00:00") - new Date(m.firstSeen + "T12:00:00")) / 86400000));
+          publishToTop10Days.push(days);
+          break;
+        }
+      }
+    }
+  }
+  const avgDaysToTop10 = publishToTop10Days.length ? Math.round(publishToTop10Days.reduce((a,b)=>a+b,0) / publishToTop10Days.length) : null;
+
+  // Net top-10 change vs previous week
+  const history = state.history || [];
+  let netChange = null;
+  if (history.length >= 2) {
+    netChange = history[history.length-1].top10 - history[history.length-2].top10;
+  }
+
+  // Stagnant count
+  let stagnantCount = 0;
+  if (typeof isStagnant === "function") {
+    const all = latestData.brave && latestData.brave.all_keywords ? latestData.brave.all_keywords : {};
+    for (const kw of Object.keys(all)) if (isStagnant(kw)) stagnantCount++;
+  }
+
+  function vCard(label, value, ctx) {
+    const c = el("div", { className: "velocity-card" });
+    c.appendChild(el("div", { className: "v-label" }, label));
+    c.appendChild(el("div", { className: "v-value" }, String(value)));
+    if (ctx) c.appendChild(el("div", { className: "v-context" }, ctx));
+    return c;
+  }
+  wrap.appendChild(vCard("Pages shipped this run", pagesThisWeek, totalPages + " across all tracked weeks"));
+  wrap.appendChild(vCard("Avg days to first top-10", avgDaysToTop10 == null ? "n/a" : avgDaysToTop10, publishToTop10Days.length + " tracked pages have hit top 10"));
+  wrap.appendChild(vCard("Net top-10 change vs last week", netChange == null ? "n/a" : (netChange > 0 ? "+" + netChange : String(netChange)), netChange == null ? "Need 2+ weeks of data" : "Across all tracked keywords"));
+  wrap.appendChild(vCard("Stagnant keywords", stagnantCount, "Same position " + STAGNATION_WEEKS + "+ weeks running"));
+}
+
 // ---- BOOT -------------------------------------------------------------------
 async function boot({ bypassCache = false } = {}) {
   const loading = document.getElementById("loading");
@@ -756,6 +1380,11 @@ async function boot({ bypassCache = false } = {}) {
     // Background: load history for chart + per-keyword history.
     loadAllHistory().then(function() {
       renderTrendChart();
+      renderServiceAreas(state.data);
+      renderTrackedPages(state.data);
+      renderInternalHeatmap();
+      renderCoverageGaps(state.data);
+      renderVelocity(state.data);
       renderTable(state.data); // re-render so stagnant badges + history panels show
     }).catch(function(err) { console.warn("History load failed:", err); });
   } catch (e) {
@@ -770,6 +1399,10 @@ function renderAll() {
   renderMovers(state.data);
   renderQuickWins(state.data);
   renderActions(state.data);
+  renderServiceAreas(state.data);  // first paint -- sparklines empty until history loads
+  renderTrackedPages(state.data);  // first paint -- trajectories empty until history loads
+  renderCoverageGaps(state.data);
+  renderVelocity(state.data);
   renderTable(state.data);
   renderNewPages(state.data);
   renderStaging(state.data);
