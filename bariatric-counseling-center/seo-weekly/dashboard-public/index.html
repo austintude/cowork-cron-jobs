@@ -741,7 +741,17 @@ async function loadManifest() {
   return await fetchJSON(RAW_GH("manifest.json"), { bypassCache: true });
 }
 
-async function loadDataFile(filename) {
+async function loadDataFile(filename, opts = {}) {
+  // Latest file may get retroactive edits (e.g., GSC merged after the run).
+  // Caller passes opts.isLatest=true for the manifest.latest file -> we use raw.github with cache-bust.
+  // Historical files use jsdelivr (cached, fine since they don't change).
+  if (opts.isLatest) {
+    try {
+      return await fetchJSON(RAW_GH(`data/${filename}`), { bypassCache: true });
+    } catch (e) {
+      return await fetchJSON(JSDELIVR(`data/${filename}`));
+    }
+  }
   try {
     return await fetchJSON(JSDELIVR(`data/${filename}`));
   } catch (e) {
@@ -1183,8 +1193,9 @@ async function boot() {
     if (!files.length) throw new Error("No data files in manifest.");
 
     // Load all data files in parallel
+    const latestFilename = manifest.latest;
     const dataFiles = await Promise.all(
-      files.map(f => loadDataFile(f).catch(() => null))
+      files.map(f => loadDataFile(f, { isLatest: f === latestFilename }).catch(() => null))
     );
     const valid = dataFiles.filter(d => d && d.brave);
     if (!valid.length) throw new Error("No usable data files.");

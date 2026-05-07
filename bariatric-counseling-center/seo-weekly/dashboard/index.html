@@ -615,7 +615,11 @@ async function loadManifest({ bypassCache = false } = {}) {
 }
 
 async function loadData(filename, { bypassCache = false } = {}) {
-  return await fetchJSON(`data/${filename}`, { bypassCache });
+  // Latest file may receive retroactive edits (e.g., GSC merged after the run finishes).
+  // Always cache-bust when loading the manifest's latest file. Historical files are stable.
+  const isLatest = state.manifest && state.manifest.latest === filename;
+  const force = bypassCache || isLatest;
+  return await fetchJSON(`data/${filename}`, { bypassCache: force });
 }
 
 // ---- RENDERERS --------------------------------------------------------------
@@ -1687,16 +1691,4 @@ document.getElementById("kw-search").addEventListener("input", (e) => {
 });
 
 document.querySelectorAll("th.sortable").forEach(th => {
-  th.addEventListener("click", () => {
-    const key = th.dataset.sort;
-    if (state.sort.key === key) state.sort.dir = state.sort.dir === "asc" ? "desc" : "asc";
-    else { state.sort.key = key; state.sort.dir = "asc"; }
-    renderTable(state.data);
-  });
-});
-
-boot();
-attachGscInteractions();
-</script>
-</body>
-</html>
+  th.addEventListe
