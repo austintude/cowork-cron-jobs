@@ -1487,7 +1487,7 @@ function renderGscStats(google) {
     { label: "Total impressions", value: (s.total_impressions || 0).toLocaleString(), ctx: "across " + (s.total_queries || 0) + " queries" },
     { label: "Total clicks", value: (s.total_clicks || 0).toLocaleString(), ctx: s.total_impressions ? "CTR " + ((s.total_clicks/s.total_impressions)*100).toFixed(2) + "%" : "" },
     { label: "Avg position (impression-weighted)", value: s.avg_position_impression_weighted != null ? s.avg_position_impression_weighted.toFixed(2) : "--", ctx: "lower is better" },
-    { label: "Discovery candidates", value: s.discovery_candidates_count || 0, ctx: "untracked queries with 5+ impressions" }
+    { label: "Discovery candidates", value: String(s.discovery_candidates_count || 0), ctx: "untracked queries with 5+ impressions" }
   ];
   el2.innerHTML = "";
   for (const st of stats) {
@@ -1691,4 +1691,14 @@ document.getElementById("kw-search").addEventListener("input", (e) => {
 });
 
 document.querySelectorAll("th.sortable").forEach(th => {
-  th.addEventListe
+  th.addEventListener("click", () => {
+    const key = th.dataset.sort;
+    if (state.sort.key === key) state.sort.dir = state.sort.dir === "asc" ? "desc" : "asc";
+    else { state.sort.key = key; state.sort.dir = "asc"; }
+    renderTable(state.data);
+  });
+});
+
+boot();
+</script>
+</body>
