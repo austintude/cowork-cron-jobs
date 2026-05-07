@@ -347,6 +347,47 @@
   }
   @keyframes spin { to { transform: rotate(360deg); } }
   .hidden { display: none !important; }
+
+  /* v3 -- area card topic list + expand */
+  .area { display: flex; flex-direction: column; }
+  .area-topics { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--line); display: flex; flex-direction: column; gap: 6px; }
+  .area-topic { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 12px; line-height: 1.35; }
+  .area-topic-name { color: var(--text); flex: 1; }
+  .area-topic-locale { color: var(--muted); font-size: 11px; margin-left: 4px; }
+  .area-topic-rank { flex-shrink: 0; padding: 1px 7px; border-radius: 10px; font-size: 11px; font-weight: 700; }
+  .area-topic-rank.t1 { background: var(--navy); color: white; }
+  .area-topic-rank.t10 { background: var(--teal-soft); color: var(--navy); border: 1px solid var(--teal-line); }
+  .area-topic-rank.t20 { background: var(--bg-soft); color: var(--muted); border: 1px solid var(--line); }
+  .area-expand-btn { margin-top: 8px; background: none; border: none; padding: 4px 0; color: var(--teal-deep); font-size: 11px; font-weight: 600; cursor: pointer; text-align: left; font-family: inherit; }
+  .area-expand-btn:hover { color: var(--navy); }
+  .area-topics-all { display: none; flex-direction: column; gap: 6px; padding-top: 6px; }
+  .area-topics-all.shown { display: flex; }
+  .area-empty { font-size: 11px; color: var(--muted); font-style: italic; padding: 6px 0; }
+
+
+  /* v4 -- cluster groupings for tracked pages */
+  .cluster { margin-bottom: 26px; }
+  .cluster-head { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; padding: 0 4px; }
+  .cluster-head .cluster-name { font-size: 13px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.04em; }
+  .cluster-head .cluster-count { font-size: 11px; color: var(--muted); padding: 2px 8px; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; }
+  .cluster-head .cluster-line { flex: 1; height: 1px; background: var(--line); }
+  .page-card .page-stat-num.building { font-size: 14px; color: var(--muted); font-weight: 600; }
+
+  /* v3 -- recently published pages */
+  .pages-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+  .page-card { background: var(--bg); border: 1px solid var(--line); border-left: 3px solid var(--teal); border-radius: 8px; padding: 16px 18px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 10px; }
+  .page-card .page-title { font-size: 14px; font-weight: 700; color: var(--navy); line-height: 1.3; }
+  .page-card .page-meta { font-size: 11px; color: var(--muted); }
+  .page-card .page-meta strong { color: var(--text); font-weight: 600; }
+  .page-card .page-stats { display: flex; gap: 18px; padding-top: 8px; border-top: 1px dashed var(--line); }
+  .page-card .page-stat { display: flex; flex-direction: column; }
+  .page-card .page-stat-num { font-size: 22px; font-weight: 700; color: var(--navy); line-height: 1; }
+  .page-card .page-stat-label { font-size: 10px; color: var(--muted); margin-top: 4px; line-height: 1.3; }
+  .page-card .page-spark { height: 28px; }
+  .page-card .page-spark svg { width: 100%; height: 100%; }
+  .page-card .page-keywords-list { font-size: 11px; color: var(--muted); padding-top: 8px; border-top: 1px dashed var(--line); line-height: 1.5; }
+  .page-card .page-keywords-list strong { color: var(--text); font-weight: 600; }
+
   .error {
     background: var(--bg);
     border: 1px solid var(--line);
@@ -381,6 +422,11 @@
       <section>
         <h2>Service Areas</h2>
         <div class="areas" id="areas"></div>
+      </section>
+
+      <section>
+        <h2>Tracked Strategic Pages</h2>
+        <div id="clusters-wrap"></div>
       </section>
 
       <section>
@@ -515,6 +561,59 @@ const SERVICE_AREAS = [
       "telehealth weight management texas",
       "online weight management therapy texas",
       "virtual emotional eating therapy texas"
+    ]
+  }
+];
+
+
+// ===== TRACKED STRATEGIC PAGES =====
+// Daniel's curated list of priority landing pages -- always shown, grouped by cluster.
+// New pages auto-detected by the runner via WP REST API will appear here too once they're
+// added to this list (or in a future "Auto-detected" section).
+const TRACKED_PAGES = [
+  {
+    cluster: "Eating disorder support",
+    blurb: "The highest-volume keyword cluster for BCC.",
+    pages: [
+      { path: "/eating-disorder-treatment-in-san-antonio-tx/",  name: "Eating Disorder Treatment in San Antonio" },
+      { path: "/eating-disorder-counseling-in-san-antonio-tx/", name: "Eating Disorder Counseling in San Antonio" },
+      { path: "/eating-disorder-therapist-in-san-antonio-tx/",  name: "Eating Disorder Therapist in San Antonio" }
+    ]
+  },
+  {
+    cluster: "Bariatric surgery support",
+    blurb: "Pages targeting people considering or recovering from bariatric surgery.",
+    pages: [
+      { path: "/bariatric-therapy-in-san-antonio-tx/",                          name: "Bariatric Therapy in San Antonio" },
+      { path: "/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/", name: "Bariatric Surgery Psychological Evaluation" },
+      { path: "/bariatric-surgery-counseling-in-san-antonio-tx/",               name: "Bariatric Surgery Counseling" }
+    ]
+  },
+  {
+    cluster: "Weight management counseling",
+    blurb: "Anti-diet, behavioral approach -- distinct from medical weight loss clinics.",
+    pages: [
+      { path: "/weight-management-counseling-in-san-antonio-tx/",  name: "Weight Management Counseling in San Antonio" },
+      { path: "/weight-management-program-in-san-antonio-tx/",     name: "Weight Management Program in San Antonio" },
+      { path: "/weight-loss-therapy-in-san-antonio-tx/",           name: "Weight Loss Therapy in San Antonio" },
+      { path: "/online-weight-management-therapy-in-texas/",       name: "Online Weight Management Therapy (Texas)" }
+    ]
+  },
+  {
+    cluster: "GLP-1 behavioral support",
+    blurb: "Capturing the medication wave -- Ozempic, Wegovy, semaglutide, and similar.",
+    pages: [
+      { path: "/ozempic-behavioral-support-in-san-antonio-tx/",     name: "Ozempic Behavioral Support" },
+      { path: "/semaglutide-behavioral-support-in-san-antonio-tx/", name: "Semaglutide Behavioral Support" }
+    ]
+  },
+  {
+    cluster: "Emotional & compulsive overeating",
+    blurb: "Behavioral support for emotional eating, binge eating, and compulsive patterns.",
+    pages: [
+      { path: "/binge-eating-treatment-in-san-antonio-tx/",       name: "Binge Eating Treatment in San Antonio" },
+      { path: "/virtual-emotional-eating-therapy-in-texas/",      name: "Virtual Emotional Eating Therapy (Texas)" },
+      { path: "/compulsive-overeating-counseling-san-antonio-tx/",name: "Compulsive Overeating Counseling" }
     ]
   }
 ];
@@ -661,12 +760,34 @@ function sparklineSVG(values, { width = 160, height = 28 } = {}) {
     </svg>`;
 }
 
-function renderAreas(latestSummary, history) {
+function renderAreas(latestSummary, history, latestData) {
   const grid = document.getElementById("areas");
   grid.innerHTML = "";
+  const allKw = (latestData && latestData.brave && latestData.brave.all_keywords) || {};
+
   for (const a of SERVICE_AREAS) {
     const cur = latestSummary.perArea[a.id];
     const trend = history.map(h => (h.perArea[a.id] && h.perArea[a.id].top10) || 0);
+
+    // Get topics in this area sorted by rank (best first), only those that are ranking on page one
+    const topics = [];
+    for (const rawKw of a.keywords) {
+      const v = allKw[rawKw];
+      if (!v) continue;
+      const f = friendlyKeyword(rawKw);
+      if (!f) continue;
+      topics.push({ raw: rawKw, label: f.label, locale: f.locale, position: v.position == null ? null : v.position });
+    }
+    topics.sort((x, y) => {
+      const xp = x.position == null ? 999 : x.position;
+      const yp = y.position == null ? 999 : y.position;
+      return xp - yp;
+    });
+    const ranking = topics.filter(t => t.position != null && t.position <= 10);
+    const visible = ranking.slice(0, 3);
+    const more = ranking.slice(3);
+    const notRanking = topics.filter(t => t.position == null || t.position > 10);
+
     const card = el("div", { className: "area" });
     const head = el("div", { className: "area-head" });
     head.appendChild(el("div", { className: "area-name" }, a.name));
@@ -676,17 +797,59 @@ function renderAreas(latestSummary, history) {
     card.appendChild(head);
 
     const meta = el("div", { className: "area-meta" });
-    if (cur.top1 > 0) {
-      meta.appendChild(el("span", { className: "pip" }, `${cur.top1} at #1`));
-    }
+    if (cur.top1 > 0) meta.appendChild(el("span", { className: "pip" }, `${cur.top1} at #1`));
     meta.appendChild(el("span", {}, `${cur.total} topics tracked`));
     card.appendChild(meta);
+
+    if (visible.length || more.length) {
+      const topicsDiv = el("div", { className: "area-topics" });
+      for (const t of visible) {
+        topicsDiv.appendChild(buildTopicRow(t));
+      }
+      card.appendChild(topicsDiv);
+
+      // Expand button if there are more (top-10 OR not-yet-ranking)
+      const totalMore = more.length + notRanking.length;
+      if (totalMore > 0) {
+        const expandBtn = el("button", { className: "area-expand-btn", type: "button" }, `See all ${ranking.length + notRanking.length} topics in this area`);
+        const allDiv = el("div", { className: "area-topics-all" });
+        for (const t of more) allDiv.appendChild(buildTopicRow(t));
+        if (notRanking.length) {
+          allDiv.appendChild(el("div", { className: "area-empty", style: "margin-top:8px;" }, "Topics where BCC is still building presence:"));
+          for (const t of notRanking) allDiv.appendChild(buildTopicRow(t, true));
+        }
+        expandBtn.addEventListener("click", () => {
+          const isOpen = allDiv.classList.contains("shown");
+          allDiv.classList.toggle("shown", !isOpen);
+          expandBtn.textContent = isOpen ? `See all ${ranking.length + notRanking.length} topics in this area` : "Show less";
+        });
+        card.appendChild(expandBtn);
+        card.appendChild(allDiv);
+      }
+    } else {
+      card.appendChild(el("div", { className: "area-empty" }, "BCC is still building presence in this area."));
+    }
 
     const sparkDiv = el("div", { className: "area-spark", html: sparklineSVG(trend) });
     card.appendChild(sparkDiv);
 
     grid.appendChild(card);
   }
+}
+
+function buildTopicRow(t, dim) {
+  const row = el("div", { className: "area-topic" });
+  const name = el("div", { className: "area-topic-name" });
+  name.appendChild(document.createTextNode(t.label));
+  name.appendChild(el("span", { className: "area-topic-locale" }, " (" + t.locale + ")"));
+  row.appendChild(name);
+  let cls = "t20", label = "Building";
+  if (t.position === 1) { cls = "t1"; label = "#1"; }
+  else if (t.position != null && t.position <= 10) { cls = "t10"; label = "#" + t.position; }
+  else if (t.position != null) { cls = "t20"; label = "#" + t.position; }
+  if (dim) cls = "t20";
+  row.appendChild(el("div", { className: "area-topic-rank " + cls }, label));
+  return row;
 }
 
 function renderHeatmap(history) {
@@ -736,6 +899,138 @@ function renderHeatmap(history) {
   }
 }
 
+
+function daysBetween(a, b) {
+  if (!a || !b) return 0;
+  const ad = new Date(a + "T12:00:00");
+  const bd = new Date(b + "T12:00:00");
+  return Math.max(0, Math.round((bd - ad) / 86400000));
+}
+
+function buildPageMetricsForPath(path, allDataFiles) {
+  // Walk all historical files and compute trajectory for THIS path
+  // Returns { firstSeen, daysLive, trajectory, bestPosLatest, keywordsRankingLatest, topicLabel }
+  let firstSeen = null;
+  for (const d of allDataFiles) {
+    const newPages = d.newly_published_prod_pages || [];
+    if (newPages.includes(path) && !firstSeen) firstSeen = d.date;
+  }
+  // If never appeared in newly_published_prod_pages, infer first seen as the earliest date
+  // any keyword's ranking_url contained this path
+  if (!firstSeen) {
+    for (const d of allDataFiles) {
+      const all = (d.brave && d.brave.all_keywords) || {};
+      for (const v of Object.values(all)) {
+        if (v.ranking_url && v.ranking_url.includes(path)) { firstSeen = d.date; break; }
+      }
+      if (firstSeen) break;
+    }
+  }
+  const today = (allDataFiles[allDataFiles.length - 1] || {}).date;
+  const trajectory = [];
+  let bestPosLatest = null, keywordsRankingLatest = 0, topicLabel = null;
+  for (const d of allDataFiles) {
+    if (firstSeen && d.date < firstSeen) continue;
+    let bestPos = null, keywordsRanking = 0, bestKwRaw = null;
+    const all = (d.brave && d.brave.all_keywords) || {};
+    for (const [kw, v] of Object.entries(all)) {
+      const url = v.ranking_url || "";
+      if (!url.includes(path)) continue;
+      if (v.position != null) keywordsRanking++;
+      if (v.position != null && (bestPos == null || v.position < bestPos)) {
+        bestPos = v.position;
+        bestKwRaw = kw;
+      }
+    }
+    trajectory.push({ date: d.date, position: bestPos, keywordsRanking });
+    if (d.date === today) {
+      bestPosLatest = bestPos;
+      keywordsRankingLatest = keywordsRanking;
+      if (bestKwRaw) {
+        const f = friendlyKeyword(bestKwRaw);
+        topicLabel = f ? f.label : bestKwRaw;
+      }
+    }
+  }
+  return {
+    firstSeen,
+    daysLive: firstSeen && today ? daysBetween(firstSeen, today) : null,
+    trajectory,
+    bestPosLatest,
+    keywordsRankingLatest,
+    topicLabel
+  };
+}
+
+function renderPages(allDataFiles) {
+  const wrap = document.getElementById("clusters-wrap");
+  wrap.innerHTML = "";
+  for (const cluster of TRACKED_PAGES) {
+    const clusterDiv = el("div", { className: "cluster" });
+    const head = el("div", { className: "cluster-head" });
+    head.appendChild(el("div", { className: "cluster-name" }, cluster.cluster));
+    head.appendChild(el("div", { className: "cluster-count" }, cluster.pages.length + " page" + (cluster.pages.length === 1 ? "" : "s")));
+    head.appendChild(el("div", { className: "cluster-line" }));
+    clusterDiv.appendChild(head);
+
+    const grid = el("div", { className: "pages-grid" });
+    for (const pageDef of cluster.pages) {
+      const m = buildPageMetricsForPath(pageDef.path, allDataFiles);
+      const card = el("div", { className: "page-card" });
+      card.appendChild(el("div", { className: "page-title" }, pageDef.name));
+
+      const metaParts = [];
+      if (m.firstSeen) {
+        metaParts.push("Live since <strong>" + formatPublishDate(m.firstSeen) + "</strong>");
+        metaParts.push("<strong>" + m.daysLive + "</strong> day" + (m.daysLive === 1 ? "" : "s") + " live");
+      } else {
+        metaParts.push("<em style=\"color: var(--muted);\">Not yet detected on prod</em>");
+      }
+      const meta = el("div", { className: "page-meta" });
+      meta.innerHTML = metaParts.join(" &middot; ");
+      card.appendChild(meta);
+
+      const stats = el("div", { className: "page-stats" });
+      const bestPosStat = el("div", { className: "page-stat" });
+      const bestPosNum = el("div", { className: "page-stat-num" + (m.bestPosLatest == null ? " building" : "") });
+      bestPosNum.textContent = m.bestPosLatest != null ? "#" + m.bestPosLatest : "Building";
+      bestPosStat.appendChild(bestPosNum);
+      bestPosStat.appendChild(el("div", { className: "page-stat-label" }, "Current best position"));
+      stats.appendChild(bestPosStat);
+
+      const kwStat = el("div", { className: "page-stat" });
+      kwStat.appendChild(el("div", { className: "page-stat-num" }, String(m.keywordsRankingLatest)));
+      kwStat.appendChild(el("div", { className: "page-stat-label" }, "Topics ranking"));
+      stats.appendChild(kwStat);
+      card.appendChild(stats);
+
+      if (m.topicLabel) {
+        const topicLine = el("div", { className: "page-keywords-list" });
+        topicLine.innerHTML = "Top topic: <strong>" + m.topicLabel + "</strong>";
+        card.appendChild(topicLine);
+      }
+
+      if (m.trajectory.length > 1) {
+        const sparkValues = m.trajectory.map(t => {
+          if (t.position == null) return 0;
+          return Math.max(0, 30 - t.position);
+        });
+        const sparkDiv = el("div", { className: "page-spark", html: sparklineSVG(sparkValues, { width: 180, height: 28 }) });
+        card.appendChild(sparkDiv);
+      }
+
+      grid.appendChild(card);
+    }
+    clusterDiv.appendChild(grid);
+    wrap.appendChild(clusterDiv);
+  }
+}
+
+function formatPublishDate(d) {
+  if (!d) return "--";
+  return new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+}
+
 // ===== BOOT =====
 async function boot() {
   const loading = document.getElementById("loading");
@@ -758,7 +1053,8 @@ async function boot() {
 
     renderHeader(latest);
     renderStats(latestSummary, history);
-    renderAreas(latestSummary, history);
+    renderAreas(latestSummary, history, latest);
+    renderPages(valid);
     renderHeatmap(history);
 
     loading.classList.add("hidden");
