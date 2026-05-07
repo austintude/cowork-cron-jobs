@@ -126,6 +126,29 @@
   .spinner { width: 16px; height: 16px; border: 2px solid var(--teal-line); border-top-color: var(--teal); border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 10px; display: inline-block; vertical-align: middle; }
   @keyframes spin { to { transform: rotate(360deg); } }
   .hidden { display: none !important; }
+
+  .trend-chart-card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px 22px; box-shadow: var(--shadow); }
+  .trend-chart-wrap { position: relative; height: 220px; }
+  table.kw-table tbody tr.kw-row { cursor: pointer; }
+  table.kw-table tbody tr.kw-detail-row > td { padding: 0; border-bottom: 1px solid var(--line); background: var(--navy-soft); }
+  table.kw-table tbody tr.kw-detail-row.hidden { display: none; }
+  table.kw-table .kw-name-wrap { display: flex; align-items: center; gap: 6px; }
+  table.kw-table .serp-link { color: var(--muted); text-decoration: none; font-size: 11px; padding: 2px 6px; border: 1px solid var(--line); border-radius: 4px; line-height: 1; flex-shrink: 0; opacity: 0.6; }
+  table.kw-table .serp-link:hover { color: var(--teal); border-color: var(--teal-line); opacity: 1; background: var(--teal-soft); }
+  table.kw-table .expand-caret { display: inline-block; transition: transform 0.15s; color: var(--muted); font-size: 9px; flex-shrink: 0; }
+  table.kw-table tr.kw-row.expanded .expand-caret { transform: rotate(90deg); color: var(--teal); }
+  table.kw-table .stagnant-badge { display: inline-block; padding: 1px 6px; border-radius: 8px; font-size: 10px; font-weight: 600; background: var(--amber-soft); color: var(--amber); border: 1px solid #f4d796; margin-left: 4px; }
+  .kw-history-panel { padding: 14px 18px; }
+  .kw-history-panel .panel-title { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 10px; }
+  .kw-history-panel .panel-empty { font-size: 12px; color: var(--muted); padding: 4px 0; }
+  .kw-history-grid { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; }
+  .kw-history-cell { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .kw-history-cell .pos-bubble { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: var(--navy); border: 2px solid var(--line); background: var(--card); }
+  .kw-history-cell .pos-bubble.top1 { background: var(--green-soft); color: var(--green); border-color: var(--green); }
+  .kw-history-cell .pos-bubble.top10 { background: var(--teal-soft); color: var(--navy); border-color: var(--teal-line); }
+  .kw-history-cell .pos-bubble.low { background: var(--amber-soft); color: var(--amber); border-color: #f4d796; }
+  .kw-history-cell .pos-bubble.out { background: #f6f9fa; color: var(--muted); border-style: dashed; }
+  .kw-history-cell .pos-date { font-size: 10px; color: var(--muted); }
 </style>
 </head>
 <body>
@@ -147,6 +170,14 @@
 
   <div id="content" class="hidden">
     <div class="grid-stats" id="stats"></div>
+
+    <div class="section">
+      <h2>BCC Reach Trend</h2>
+      <div class="meta-line">Total tracked keywords ranking on page one of Google, week over week.</div>
+      <div class="trend-chart-card">
+        <div class="trend-chart-wrap"><canvas id="trend-chart"></canvas></div>
+      </div>
+    </div>
 
     <div class="section">
       <h2>Movement vs Last Week</h2>
@@ -189,6 +220,7 @@
         <button data-filter="out">Not in Top 20</button>
         <button data-filter="rising">Rising</button>
         <button data-filter="declining">Declining</button>
+        <button data-filter="stagnant">Stagnant 4+ wk</button>
         <input type="text" id="kw-search" placeholder="Filter by keyword..." />
       </div>
       <div style="overflow-x: auto;">
@@ -239,6 +271,7 @@
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script>
 "use strict";
 
@@ -260,57 +293,43 @@ let state = {
   filter: "all",
   search: "",
   sort: { key: "position", dir: "asc" },
-  source: "jsdelivr"
+  source: "jsdelivr",
+  history: [],
+  keywordHistory: {},
+  trendChart: null
 };
 
+const STAGNATION_WEEKS = 4;
+
 // ---- FETCH HELPERS ----------------------------------------------------------
-// jsdelivr ignores query strings so we cannot cache-bust on it. It's also a 12-hour cache
-// which is unacceptable for the manifest (the "what's the latest" pointer).
-// raw.githubusercontent.com has a ~5-minute cache and DOES honor query-string cache-busting.
-//
-// Strategy:
-//   - manifest.json -> raw.githubusercontent.com with cache-bust (always fresh)
-//   - data/seo-data-*.json -> jsdelivr (CDN, fast, files never change once written)
-
-async function fetchJSON(url, { bypassCache = false } = {}) {
-  const finalUrl = bypassCache ? `${url}${url.includes("?") ? "&" : "?"}t=${Date.now()}` : url;
-  const res = await fetch(finalUrl, { cache: bypassCache ? "no-store" : "default" });
-  if (!res.ok) throw new Error(`${url} -> HTTP ${res.status}`);
-  return await res.json();
+async function fetchJSON(path, { bypassCache = false } = {}) {
+  const cacheBuster = bypassCache ? `?t=${Date.now()}` : "";
+  const errors = [];
+  for (const fetcher of [JSDELIVR, RAW_GH]) {
+    const url = fetcher(path) + cacheBuster;
+    try {
+      const res = await fetch(url, { cache: bypassCache ? "no-store" : "default" });
+      if (!res.ok) { errors.push(`${url} -> ${res.status}`); continue; }
+      state.source = fetcher === JSDELIVR ? "jsdelivr" : "raw.githubusercontent.com";
+      return await res.json();
+    } catch (e) {
+      errors.push(`${url} -> ${e.message}`);
+    }
+  }
+  throw new Error("All fetch attempts failed: " + errors.join(" | "));
 }
 
-async function loadManifest() {
-  // Always raw.githubusercontent.com + cache-bust. Manifest is tiny (~200 bytes), small cost.
-  const url = RAW_GH("manifest.json");
-  state.source = "raw.githubusercontent.com (manifest, no-cache)";
-  try {
-    const m = await fetchJSON(url, { bypassCache: true });
-    const files = m.files || (m.availableDates ? m.availableDates.map(d => `seo-data-${d}.json`) : []);
-    const latest = m.latest || (m.latestDate ? `seo-data-${m.latestDate}.json` : files[0]);
-    const updated = m.updated || m.updatedAt || null;
-    return { latest, updated, files };
-  } catch (e) {
-    // Fallback: jsdelivr (may serve stale, but better than nothing if raw.githubusercontent rate-limits)
-    console.warn("raw.githubusercontent failed for manifest, falling back to jsdelivr (may be stale):", e.message);
-    const m = await fetchJSON(JSDELIVR("manifest.json"));
-    state.source = "jsdelivr (manifest fallback - may be stale)";
-    const files = m.files || (m.availableDates ? m.availableDates.map(d => `seo-data-${d}.json`) : []);
-    const latest = m.latest || (m.latestDate ? `seo-data-${m.latestDate}.json` : files[0]);
-    const updated = m.updated || m.updatedAt || null;
-    return { latest, updated, files };
-  }
+async function loadManifest({ bypassCache = false } = {}) {
+  const m = await fetchJSON("manifest.json", { bypassCache });
+  // Normalize between old (availableDates/latestDate) and new (latest/files) shapes
+  const files = m.files || (m.availableDates ? m.availableDates.map(d => `seo-data-${d}.json`) : []);
+  const latest = m.latest || (m.latestDate ? `seo-data-${m.latestDate}.json` : files[0]);
+  const updated = m.updated || m.updatedAt || null;
+  return { latest, updated, files };
 }
 
-async function loadData(filename) {
-  // Data files never change once written, so jsdelivr CDN is ideal here -- fast and CORS-safe.
-  // Fall back to raw if jsdelivr 404s (file not yet propagated, can take a few minutes after push).
-  try {
-    const d = await fetchJSON(JSDELIVR(`data/${filename}`));
-    return d;
-  } catch (e) {
-    console.warn("jsdelivr failed for data file, falling back to raw.githubusercontent:", e.message);
-    return await fetchJSON(RAW_GH(`data/${filename}`), { bypassCache: true });
-  }
+async function loadData(filename, { bypassCache = false } = {}) {
+  return await fetchJSON(`data/${filename}`, { bypassCache });
 }
 
 // ---- RENDERERS --------------------------------------------------------------
@@ -438,6 +457,41 @@ function renderActions(data) {
   }
 }
 
+function isStagnant(keyword) {
+  const hist = state.keywordHistory[keyword] || [];
+  if (hist.length < STAGNATION_WEEKS) return false;
+  const recent = hist.slice(-STAGNATION_WEEKS).map(h => h.position);
+  if (recent.some(p => p == null)) return false;
+  return recent.every(p => p === recent[0]);
+}
+
+function buildKeywordHistoryPanel(keyword) {
+  const wrap = el("div", { className: "kw-history-panel" });
+  wrap.appendChild(el("div", { className: "panel-title" }, "Position history -- " + keyword));
+  const hist = state.keywordHistory[keyword] || [];
+  if (!hist.length) {
+    wrap.appendChild(el("div", { className: "panel-empty" }, "Loading history..."));
+    return wrap;
+  }
+  const grid = el("div", { className: "kw-history-grid" });
+  for (const h of hist) {
+    const cell = el("div", { className: "kw-history-cell" });
+    let bubbleCls = "out", label = "--";
+    if (h.position != null) {
+      label = "#" + h.position;
+      if (h.position === 1) bubbleCls = "top1";
+      else if (h.position <= 10) bubbleCls = "top10";
+      else if (h.position <= 20) bubbleCls = "low";
+      else bubbleCls = "out";
+    }
+    cell.appendChild(el("div", { className: "pos-bubble " + bubbleCls }, label));
+    cell.appendChild(el("div", { className: "pos-date" }, h.date));
+    grid.appendChild(cell);
+  }
+  wrap.appendChild(grid);
+  return wrap;
+}
+
 function renderTable(data) {
   const all = data.brave && data.brave.all_keywords ? data.brave.all_keywords : {};
   const rows = Object.entries(all).map(([keyword, v]) => ({ keyword, ...v }));
@@ -452,6 +506,7 @@ function renderTable(data) {
     if (f === "out") return r.position == null;
     if (f === "rising") return r.trend === "rising" || r.trend === "new_entry";
     if (f === "declining") return r.trend === "declining";
+    if (f === "stagnant") return isStagnant(r.keyword);
     return true;
   });
 
@@ -469,10 +524,25 @@ function renderTable(data) {
   const tbody = document.getElementById("kw-tbody");
   tbody.innerHTML = "";
   for (const r of filtered) {
-    const tr = el("tr", {});
-    tr.appendChild(el("td", { className: "kw-name" }, r.keyword));
+    const tr = el("tr", { className: "kw-row", "data-keyword": r.keyword });
+
+    // Keyword cell with caret + name + (stagnant badge) + serp link
+    const kwCell = el("td", { className: "kw-name" });
+    const wrap = el("span", { className: "kw-name-wrap" });
+    wrap.appendChild(el("span", { className: "expand-caret" }, "▶"));
+    const nameSpan = el("span", {});
+    nameSpan.appendChild(document.createTextNode(r.keyword));
+    if (isStagnant(r.keyword)) nameSpan.appendChild(el("span", { className: "stagnant-badge", title: "Same position for " + STAGNATION_WEEKS + "+ weeks" }, "stagnant"));
+    wrap.appendChild(nameSpan);
+    const serpUrl = "https://www.google.com/search?q=" + encodeURIComponent(r.keyword) + "&gl=us&hl=en";
+    const serpLink = el("a", { className: "serp-link", href: serpUrl, target: "_blank", rel: "noopener", title: "Open live Google results" }, "SERP ↗");
+    serpLink.addEventListener("click", function(ev) { ev.stopPropagation(); });
+    wrap.appendChild(serpLink);
+    kwCell.appendChild(wrap);
+    tr.appendChild(kwCell);
+
     tr.appendChild(el("td", {}, el("span", { className: "pos " + posClass(r.position) }, posLabel(r.position))));
-    let chTxt = r.change == null ? "--" : (r.change > 0 ? `+${r.change}` : String(r.change));
+    let chTxt = r.change == null ? "--" : (r.change > 0 ? "+" + r.change : String(r.change));
     let chCls = r.change > 0 ? "delta up" : (r.change < 0 ? "delta down" : "delta");
     tr.appendChild(el("td", { className: chCls }, chTxt));
     tr.appendChild(el("td", {}, el("span", { className: "cat-pill" }, r.category || "--")));
@@ -480,10 +550,29 @@ function renderTable(data) {
     tr.appendChild(el("td", {}, r.competitor_at_1 || "--"));
     tr.appendChild(el("td", { style: "color: var(--muted); font-size: 12px;" }, r.note || ""));
     tbody.appendChild(tr);
+
+    const detailTr = el("tr", { className: "kw-detail-row hidden", "data-keyword-detail": r.keyword });
+    const detailTd = el("td", { colspan: "7" });
+    detailTd.appendChild(buildKeywordHistoryPanel(r.keyword));
+    detailTr.appendChild(detailTd);
+    tbody.appendChild(detailTr);
   }
 
+  // Row click -> toggle history panel
+  tbody.querySelectorAll("tr.kw-row").forEach(function(tr) {
+    tr.addEventListener("click", function() {
+      const kw = tr.getAttribute("data-keyword");
+      const detail = tbody.querySelector('tr[data-keyword-detail="' + CSS.escape(kw) + '"]');
+      if (!detail) return;
+      const isOpen = !detail.classList.contains("hidden");
+      tbody.querySelectorAll("tr.kw-detail-row").forEach(function(d) { d.classList.add("hidden"); });
+      tbody.querySelectorAll("tr.kw-row").forEach(function(r) { r.classList.remove("expanded"); });
+      if (!isOpen) { detail.classList.remove("hidden"); tr.classList.add("expanded"); }
+    });
+  });
+
   // Sort arrows
-  document.querySelectorAll("th.sortable").forEach(th => {
+  document.querySelectorAll("th.sortable").forEach(function(th) {
     const arrow = th.querySelector(".sort-arrow");
     if (th.dataset.sort === key) arrow.textContent = dir === "asc" ? "↑" : "↓";
     else arrow.textContent = "";
@@ -583,6 +672,67 @@ function fillDatePicker(manifest) {
   if (manifest.latest) sel.value = manifest.latest;
 }
 
+// ---- HISTORY + TREND CHART --------------------------------------------------
+async function loadAllHistory() {
+  const files = (state.manifest.files || []).slice(0, 12).reverse();
+  const results = await Promise.all(files.map(function(f) { return loadData(f).catch(function(){ return null; }); }));
+  const valid = results.filter(function(d) { return d && d.brave; });
+  state.history = valid.map(function(d) {
+    const all = Object.entries(d.brave.all_keywords || {});
+    return {
+      date: d.date,
+      top1:  all.filter(function(e) { return e[1].position === 1; }).length,
+      top10: all.filter(function(e) { return e[1].position != null && e[1].position <= 10; }).length,
+      top20: all.filter(function(e) { return e[1].position != null && e[1].position <= 20; }).length,
+      total: all.length
+    };
+  });
+  const byKw = {};
+  for (const d of valid) {
+    for (const e of Object.entries(d.brave.all_keywords || {})) {
+      const k = e[0], v = e[1];
+      if (!byKw[k]) byKw[k] = [];
+      byKw[k].push({ date: d.date, position: v.position == null ? null : v.position });
+    }
+  }
+  state.keywordHistory = byKw;
+}
+
+function renderTrendChart() {
+  if (!state.history || !state.history.length) return;
+  const canvas = document.getElementById("trend-chart");
+  if (!canvas || typeof Chart === "undefined") return;
+  const ctx = canvas.getContext("2d");
+  if (state.trendChart) state.trendChart.destroy();
+  state.trendChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: state.history.map(function(h) { return h.date; }),
+      datasets: [
+        { label: "On page one (top 10)", data: state.history.map(function(h) { return h.top10; }), backgroundColor: "rgba(78,205,196,0.7)", borderColor: "rgba(78,205,196,1)", borderWidth: 1.5, borderRadius: 5, barPercentage: 0.7, categoryPercentage: 0.7 },
+        { label: "At #1 (subset)", data: state.history.map(function(h) { return h.top1; }), type: "line", tension: 0.3, pointRadius: 4, pointBackgroundColor: "#2c3e50", borderColor: "rgba(44,62,80,0.85)", borderWidth: 2, fill: false }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: true, position: "bottom", labels: { font: { size: 11 }, color: "#5b6b78" } },
+        tooltip: { backgroundColor: "#2c3e50", titleColor: "#ffffff", bodyColor: "#ffffff", padding: 10, cornerRadius: 6 }
+      },
+      scales: {
+        x: { grid: { display: false }, ticks: { color: "#5b6b78", font: { size: 11 } } },
+        y: {
+          beginAtZero: true,
+          grid: { color: "#e3e9ee", drawBorder: false },
+          ticks: { color: "#5b6b78", font: { size: 11 }, stepSize: 5 },
+          title: { display: true, text: "Keywords ranking", color: "#5b6b78", font: { size: 11 } }
+        }
+      }
+    }
+  });
+}
+
 // ---- BOOT -------------------------------------------------------------------
 async function boot({ bypassCache = false } = {}) {
   const loading = document.getElementById("loading");
@@ -595,9 +745,19 @@ async function boot({ bypassCache = false } = {}) {
     fillDatePicker(state.manifest);
     state.selectedDate = state.manifest.latest;
     state.data = await loadData(state.selectedDate, { bypassCache });
+
+    state.history = [];
+    state.keywordHistory = {};
+
     renderAll();
     loading.classList.add("hidden");
     content.classList.remove("hidden");
+
+    // Background: load history for chart + per-keyword history.
+    loadAllHistory().then(function() {
+      renderTrendChart();
+      renderTable(state.data); // re-render so stagnant badges + history panels show
+    }).catch(function(err) { console.warn("History load failed:", err); });
   } catch (e) {
     loading.innerHTML = `<div class="alert error" style="margin:0;width:100%;">Could not load SEO data from GitHub.<br/><br/><strong>Error:</strong> ${escapeHTML(e.message)}<br/><br/>Try clicking Reload, or check that <code>${REPO_OWNER}/${REPO_NAME}</code> has a <code>${SUBPATH}/manifest.json</code> file with at least one data file in <code>data/</code>.</div>`;
   }
@@ -613,4 +773,43 @@ function renderAll() {
   renderTable(state.data);
   renderNewPages(state.data);
   renderStaging(state.data);
-  renderCo
+  renderCompetitors(state.data);
+  renderLinkChecks(state.data);
+}
+
+// ---- INTERACTIONS -----------------------------------------------------------
+document.getElementById("date-select").addEventListener("change", async (e) => {
+  state.selectedDate = e.target.value;
+  state.data = await loadData(state.selectedDate, { bypassCache: true });
+  renderAll();
+});
+
+document.getElementById("reload-btn").addEventListener("click", () => boot({ bypassCache: true }));
+
+document.querySelectorAll(".filters [data-filter]").forEach(b => {
+  b.addEventListener("click", () => {
+    document.querySelectorAll(".filters [data-filter]").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    state.filter = b.dataset.filter;
+    renderTable(state.data);
+  });
+});
+
+document.getElementById("kw-search").addEventListener("input", (e) => {
+  state.search = e.target.value;
+  renderTable(state.data);
+});
+
+document.querySelectorAll("th.sortable").forEach(th => {
+  th.addEventListener("click", () => {
+    const key = th.dataset.sort;
+    if (state.sort.key === key) state.sort.dir = state.sort.dir === "asc" ? "desc" : "asc";
+    else { state.sort.key = key; state.sort.dir = "asc"; }
+    renderTable(state.data);
+  });
+});
+
+boot();
+</script>
+</body>
+</html>

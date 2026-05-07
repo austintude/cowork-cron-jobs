@@ -4,13 +4,14 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
-<title>BCC Online Reach -- Bariatric Counseling Center</title>
-<meta name="description" content="How people in San Antonio find compassionate, evidence-based weight management and behavioral health care from the Bariatric Counseling Center." />
+<title>BCC Online Reach</title>
+<meta name="description" content="Bariatric Counseling Center -- live snapshot of where BCC shows up online for searches relevant to its services." />
 <style>
   :root {
     --teal: #4ECDC4;
     --teal-soft: #e7f9f7;
     --teal-line: #b5e8e3;
+    --teal-deep: #2eb1a8;
     --navy: #2c3e50;
     --navy-soft: #f4f6f8;
     --text: #1f2d3a;
@@ -20,323 +21,322 @@
     --line: #e3e9ee;
     --shadow-sm: 0 1px 2px rgba(44,62,80,0.04);
     --shadow-md: 0 1px 3px rgba(44,62,80,0.06), 0 4px 14px rgba(44,62,80,0.05);
-    --shadow-lg: 0 4px 12px rgba(44,62,80,0.08), 0 12px 40px rgba(44,62,80,0.06);
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: var(--text);
-    background: var(--bg);
-    line-height: 1.6;
+    background: var(--bg-soft);
+    line-height: 1.55;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* ----- Layout ----- */
-  .container { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
-  @media (max-width: 600px) { .container { padding: 0 18px; } }
+  .container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+  @media (max-width: 600px) { .container { padding: 0 16px; } }
 
-  /* ----- Hero ----- */
-  .hero {
-    background: linear-gradient(180deg, var(--navy-soft) 0%, var(--bg) 100%);
-    padding: 56px 0 48px;
+  /* ----- Header (compact, dashboard-like) ----- */
+  .topbar {
+    background: var(--bg);
     border-bottom: 1px solid var(--line);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: var(--shadow-sm);
   }
-  .hero-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 16px;
-  }
-  .hero-eyebrow::before { content: ""; display: inline-block; width: 24px; height: 2px; background: var(--teal); }
-  .hero h1 {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: var(--navy);
-    margin: 0 0 14px;
-    max-width: 760px;
-  }
-  @media (min-width: 800px) { .hero h1 { font-size: 42px; } }
-  .hero p.lede {
-    font-size: 17px;
-    color: var(--muted);
-    max-width: 680px;
-    margin: 0;
-    line-height: 1.65;
-  }
-  .hero-meta {
+  .topbar-inner {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
     flex-wrap: wrap;
-    gap: 18px;
-    margin-top: 22px;
-    font-size: 13px;
-    color: var(--muted);
   }
-  .hero-meta .badge {
+  .topbar h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .topbar h1::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 22px;
+    background: var(--teal);
+    border-radius: 2px;
+  }
+  .topbar .updated {
+    font-size: 12px;
+    color: var(--muted);
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    padding: 4px 12px;
-    border-radius: 14px;
-    background: var(--teal-soft);
-    color: var(--navy);
-    font-weight: 500;
-    border: 1px solid var(--teal-line);
   }
-  .hero-meta .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); }
+  .topbar .updated .pulse {
+    width: 7px; height: 7px; border-radius: 50%; background: var(--teal);
+    box-shadow: 0 0 0 0 rgba(78,205,196,0.6);
+    animation: pulse 2.4s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(78,205,196,0.6); }
+    70% { box-shadow: 0 0 0 8px rgba(78,205,196,0); }
+    100% { box-shadow: 0 0 0 0 rgba(78,205,196,0); }
+  }
 
-  /* ----- Section ----- */
-  section { padding: 56px 0; }
-  section.alt { background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .section-eyebrow {
+  /* ----- Page sections ----- */
+  section { padding: 28px 0; }
+  section.tight { padding: 18px 0 28px; }
+
+  /* ----- Stat row ----- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  @media (max-width: 900px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .stats { grid-template-columns: 1fr; } }
+  .stat {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+  }
+  .stat::after {
+    content: "";
+    position: absolute;
+    top: 18px; right: 20px;
+    width: 22px; height: 2px;
+    background: var(--teal);
+    border-radius: 1px;
+  }
+  .stat .num {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-top: 8px;
+  }
+  .stat .label {
     font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+
+  /* ----- Section titles ----- */
+  h2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0 0 14px;
     text-transform: uppercase;
-    color: var(--teal);
-    margin-bottom: 10px;
+    letter-spacing: 0.06em;
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .section-eyebrow::before { content: ""; display: inline-block; width: 18px; height: 2px; background: var(--teal); }
-  h2 {
-    font-size: 26px;
-    font-weight: 700;
-    color: var(--navy);
-    margin: 0 0 12px;
-    line-height: 1.25;
-    max-width: 720px;
-  }
-  @media (min-width: 800px) { h2 { font-size: 30px; } }
-  p.section-lede {
-    font-size: 16px;
-    color: var(--muted);
-    margin: 0 0 32px;
-    max-width: 680px;
-    line-height: 1.6;
-  }
-
-  /* ----- Stat grid ----- */
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
-    margin-top: 36px;
-  }
-  @media (max-width: 900px) { .stats { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 480px) { .stats { grid-template-columns: 1fr; } }
-  .stat-card {
-    background: var(--bg);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 24px 22px;
-    box-shadow: var(--shadow-md);
-    position: relative;
-  }
-  .stat-card::before {
+  h2::before {
     content: "";
-    position: absolute;
-    top: 24px;
-    left: 22px;
-    width: 22px;
-    height: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 2px;
     background: var(--teal);
-    border-radius: 2px;
-  }
-  .stat-card .stat-number {
-    font-size: 44px;
-    font-weight: 700;
-    color: var(--navy);
-    line-height: 1;
-    margin-top: 18px;
-    letter-spacing: -0.02em;
-  }
-  .stat-card .stat-label {
-    font-size: 13px;
-    color: var(--muted);
-    margin-top: 8px;
-    line-height: 1.45;
-  }
-  .stat-card .stat-context {
-    font-size: 12px;
-    color: var(--muted);
-    margin-top: 14px;
-    padding-top: 12px;
-    border-top: 1px dashed var(--line);
-    line-height: 1.5;
+    border-radius: 1px;
   }
 
-  /* ----- Topic list ----- */
-  .topics {
+  /* ----- Service area grid ----- */
+  .areas {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 14px;
   }
-  @media (max-width: 720px) { .topics { grid-template-columns: 1fr; } }
-  .topic {
-    background: var(--bg);
-    border: 1px solid var(--line);
-    border-left: 3px solid var(--teal);
-    border-radius: 4px 8px 8px 4px;
-    padding: 16px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    box-shadow: var(--shadow-sm);
-  }
-  .topic-name { font-weight: 600; color: var(--navy); font-size: 15px; line-height: 1.4; }
-  .topic-meta { font-size: 12px; color: var(--muted); margin-top: 4px; }
-  .topic-rank {
-    flex-shrink: 0;
-    background: var(--teal-soft);
-    color: var(--navy);
-    font-size: 12px;
-    font-weight: 700;
-    padding: 6px 12px;
-    border-radius: 14px;
-    border: 1px solid var(--teal-line);
-    white-space: nowrap;
-  }
-  .topic-rank.top-of-page { background: var(--navy); color: white; border-color: var(--navy); }
-
-  /* ----- Growth callouts ----- */
-  .growth {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 16px;
-  }
-  .growth-card {
+  @media (max-width: 900px) { .areas { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .areas { grid-template-columns: 1fr; } }
+  .area {
     background: var(--bg);
     border: 1px solid var(--line);
     border-radius: 10px;
-    padding: 22px;
-    box-shadow: var(--shadow-md);
+    padding: 18px 20px;
+    box-shadow: var(--shadow-sm);
     position: relative;
     overflow: hidden;
   }
-  .growth-card::before {
+  .area::before {
     content: "";
     position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--teal) 0%, var(--teal-soft) 100%);
+    top: 0; left: 0; bottom: 0;
+    width: 3px;
+    background: var(--teal);
   }
-  .growth-card .growth-icon {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
+  .area-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .area-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.3;
+    flex: 1;
+  }
+  .area-num {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: right;
+    margin-top: 2px;
+  }
+  .area-num small {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+    display: block;
+    margin-top: 2px;
+    letter-spacing: 0;
+  }
+  .area-meta {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .area-meta .pip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 7px;
     background: var(--teal-soft);
     border: 1px solid var(--teal-line);
+    color: var(--navy);
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  .area-spark {
+    margin-top: 12px;
+    height: 28px;
+    width: 100%;
+  }
+  .area-spark svg { width: 100%; height: 100%; }
+
+  /* ----- Heatmap ----- */
+  .heatmap-wrap {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px 22px;
+    box-shadow: var(--shadow-sm);
+    overflow-x: auto;
+  }
+  .heatmap {
+    display: grid;
+    gap: 4px;
+    min-width: 480px;
+  }
+  .heatmap-row { display: grid; gap: 4px; align-items: center; }
+  .heatmap-label {
+    font-size: 11px;
+    color: var(--muted);
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 500;
+  }
+  .heatmap-label.head { font-weight: 700; color: var(--navy); }
+  .heatmap-cell {
+    height: 28px;
+    border-radius: 4px;
+    background: var(--bg-soft);
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 14px;
+    font-size: 11px;
+    font-weight: 600;
     color: var(--navy);
+    border: 1px solid transparent;
   }
-  .growth-card .growth-title {
-    font-weight: 700;
-    color: var(--navy);
-    font-size: 15px;
-    margin-bottom: 6px;
-  }
-  .growth-card .growth-body {
-    font-size: 14px;
+  .heatmap-cell.h0 { background: #f6f9fa; color: #aab4be; border-color: var(--line); }
+  .heatmap-cell.h1 { background: #e7f9f7; color: var(--navy); }
+  .heatmap-cell.h2 { background: #c1ecea; color: var(--navy); }
+  .heatmap-cell.h3 { background: #8ddad5; color: var(--navy); }
+  .heatmap-cell.h4 { background: var(--teal); color: var(--navy); }
+  .heatmap-cell.h5 { background: var(--teal-deep); color: white; }
+  .heatmap-cell.head {
+    background: transparent;
     color: var(--muted);
-    line-height: 1.55;
+    font-size: 10px;
+    font-weight: 600;
+    height: 20px;
   }
-
-  /* ----- Trend chart ----- */
-  .trend-card {
-    background: var(--bg);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 28px;
-    box-shadow: var(--shadow-md);
-    margin-top: 24px;
-  }
-  .trend-card .trend-title { font-weight: 700; color: var(--navy); font-size: 16px; margin-bottom: 4px; }
-  .trend-card .trend-sub { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
-  .trend-chart-wrap { position: relative; height: 280px; }
-
-  /* ----- Why callouts ----- */
-  .why-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-  }
-  @media (max-width: 900px) { .why-grid { grid-template-columns: 1fr; } }
-  .why-card {
-    padding: 26px 24px;
-    background: var(--bg);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    box-shadow: var(--shadow-sm);
-  }
-  .why-card h3 {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--navy);
-    margin: 0 0 10px;
-    padding-left: 12px;
-    border-left: 3px solid var(--teal);
-  }
-  .why-card p {
-    font-size: 14px;
+  .heatmap-key {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
     color: var(--muted);
-    line-height: 1.65;
-    margin: 0;
   }
+  .heatmap-key .scale {
+    display: inline-flex;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+  .heatmap-key .scale span { display: inline-block; width: 22px; height: 12px; }
 
   /* ----- Footer ----- */
   footer {
     background: var(--navy);
-    color: rgba(255,255,255,0.85);
-    padding: 40px 0;
-    margin-top: 0;
+    color: rgba(255,255,255,0.65);
+    padding: 22px 0;
+    margin-top: 28px;
+    font-size: 12px;
   }
   footer .footer-inner {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 18px;
+    flex-wrap: wrap;
   }
-  footer .brand {
-    font-weight: 700;
+  footer .brand-mark {
     color: white;
-    font-size: 16px;
-    letter-spacing: -0.01em;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
-  footer .brand-line {
-    width: 28px;
-    height: 2px;
-    background: var(--teal);
-    margin: 8px 0 12px;
+  footer .brand-mark::before {
+    content: "";
+    display: inline-block;
+    width: 14px; height: 2px; background: var(--teal);
   }
-  footer .brand-tag { font-size: 13px; color: rgba(255,255,255,0.7); }
-  footer .meta { font-size: 12px; color: rgba(255,255,255,0.55); text-align: right; line-height: 1.6; }
-  footer .meta a { color: rgba(255,255,255,0.85); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
-  footer .meta a:hover { border-bottom-color: var(--teal); }
+  footer a { color: rgba(255,255,255,0.85); text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,0.3); }
+  footer a:hover { border-bottom-color: var(--teal); color: white; }
 
   /* ----- States ----- */
   .loading {
     text-align: center;
     color: var(--muted);
     padding: 80px 20px;
-    font-size: 14px;
+    font-size: 13px;
   }
   .spinner {
-    width: 18px;
-    height: 18px;
+    width: 14px; height: 14px;
     border: 2px solid var(--teal-line);
     border-top-color: var(--teal);
     border-radius: 50%;
@@ -348,128 +348,73 @@
   @keyframes spin { to { transform: rotate(360deg); } }
   .hidden { display: none !important; }
   .error {
-    background: var(--bg-soft);
+    background: var(--bg);
     border: 1px solid var(--line);
     border-left: 3px solid var(--navy);
-    padding: 18px 22px;
+    padding: 14px 18px;
     border-radius: 6px;
     color: var(--text);
-    font-size: 14px;
-    margin: 24px 0;
+    font-size: 13px;
+    max-width: 680px;
+    margin: 0 auto;
   }
 </style>
 </head>
 <body>
 
-<header class="hero">
-  <div class="container">
-    <div class="hero-eyebrow">Bariatric Counseling Center -- Online Reach</div>
-    <h1 id="hero-headline">How people in our community find compassionate, evidence-based weight management care</h1>
-    <p class="lede">A snapshot of where BCC shows up online when San Antonio families search for the integrated, trauma-informed support we offer -- updated each week.</p>
-    <div class="hero-meta">
-      <div class="badge"><span class="dot"></span><span id="report-date-line">Loading latest report...</span></div>
-      <div class="badge"><span class="dot"></span><span id="services-line">--</span></div>
-    </div>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <h1>BCC Online Reach</h1>
+    <div class="updated"><span class="pulse"></span><span id="updated-line">--</span></div>
   </div>
-</header>
+</div>
 
 <main>
-
-  <div id="loading" class="loading"><span class="spinner"></span> Loading the latest snapshot of BCC's online reach...</div>
+  <div id="loading" class="loading"><span class="spinner"></span> Loading latest snapshot...</div>
   <div id="content" class="hidden">
-
-  <!-- ===== Stats ===== -->
-  <section>
     <div class="container">
-      <div class="section-eyebrow">This week's snapshot</div>
-      <h2>Where BCC shows up when people search for support</h2>
-      <p class="section-lede">Each week we measure how visible BCC is to people searching for the services we provide -- nutrition counseling, mental health support, intensive outpatient programming, and integrated weight management care.</p>
 
-      <div class="stats" id="stats-grid"></div>
-    </div>
-  </section>
+      <section class="tight">
+        <div class="stats" id="stats"></div>
+      </section>
 
-  <!-- ===== Where BCC leads ===== -->
-  <section class="alt">
-    <div class="container">
-      <div class="section-eyebrow">Areas of recognized expertise</div>
-      <h2>Topics where BCC is the top result in our community</h2>
-      <p class="section-lede">For each topic below, BCC's website appears at the top of the page when someone in San Antonio (or, where noted, anywhere in the country) searches for that kind of support. This reflects years of patient-centered, anti-diet, integrated care being recognized by both readers and search engines.</p>
+      <section>
+        <h2>Service Areas</h2>
+        <div class="areas" id="areas"></div>
+      </section>
 
-      <div class="topics" id="topics-list"></div>
-    </div>
-  </section>
-
-  <!-- ===== Growth ===== -->
-  <section>
-    <div class="container">
-      <div class="section-eyebrow">New this period</div>
-      <h2>Where BCC is reaching new audiences</h2>
-      <p class="section-lede">As BCC's specialized services expand -- pre-surgery psychological evaluation, behavioral support alongside GLP-1 medications, virtual care across Texas -- new groups of searchers are finding us for the first time.</p>
-
-      <div class="growth" id="growth-grid"></div>
-    </div>
-  </section>
-
-  <!-- ===== Trend chart ===== -->
-  <section class="alt">
-    <div class="container">
-      <div class="section-eyebrow">Reach over time</div>
-      <h2>BCC's growing footprint in online search</h2>
-      <p class="section-lede">The number of search topics where BCC appears on the first page of results -- a proxy for how many people, week by week, are likely to find our services when they look for them.</p>
-
-      <div class="trend-card">
-        <div class="trend-title">Search topics where BCC ranks on page one</div>
-        <div class="trend-sub">Each bar represents a weekly check across roughly 50 search queries relevant to BCC's services.</div>
-        <div class="trend-chart-wrap"><canvas id="trend-chart"></canvas></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== What this means ===== -->
-  <section>
-    <div class="container">
-      <div class="section-eyebrow">What this means for our community</div>
-      <h2>Visibility is a public-health outcome</h2>
-      <p class="section-lede">When BCC is easy to find, people who need support reach it sooner. Especially in a field crowded with diet-culture messaging and quick-fix promises, being a discoverable home for evidence-based, dignified care matters.</p>
-
-      <div class="why-grid">
-        <div class="why-card">
-          <h3>People-first care, found first</h3>
-          <p>When someone in San Antonio is searching for compassionate support around eating, weight, or mental health, BCC is who they find -- not a fad-diet ad. That access is the point.</p>
+      <section>
+        <h2>Reach Across Recent Weeks</h2>
+        <div class="heatmap-wrap">
+          <div class="heatmap" id="heatmap"></div>
+          <div class="heatmap-key">
+            <span>Page-one rankings per area:</span>
+            <span class="scale">
+              <span style="background:#f6f9fa;"></span>
+              <span style="background:#e7f9f7;"></span>
+              <span style="background:#c1ecea;"></span>
+              <span style="background:#8ddad5;"></span>
+              <span style="background:var(--teal);"></span>
+              <span style="background:var(--teal-deep);"></span>
+            </span>
+            <span>none -> many</span>
+          </div>
         </div>
-        <div class="why-card">
-          <h3>Integrated care, in plain language</h3>
-          <p>BCC's combination of behavioral health, nutrition, and intensive outpatient care doesn't fit the stereotypes most search results return. Showing up at the top of real-world queries means more families can find a different kind of provider.</p>
-        </div>
-        <div class="why-card">
-          <h3>Reach beyond San Antonio</h3>
-          <p>BCC also appears nationally for queries about behavioral support, pre-surgery psychological evaluation, and integrated weight management -- demonstrating the model's broader credibility.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  </div><!-- /#content -->
+    </div>
+  </div>
 </main>
 
 <footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div>
-        <div class="brand">Bariatric Counseling Center</div>
-        <div class="brand-line"></div>
-        <div class="brand-tag">San Antonio's integrated weight management facility -- nutrition counseling, behavioral health, and IOP under one compassionate roof.</div>
-      </div>
-      <div class="meta">
-        <div id="footer-updated">Last updated --</div>
-        <div style="margin-top:6px;">Visit <a href="https://www.bariatriccounselingcenter.com" rel="noopener">bariatriccounselingcenter.com</a> to learn more about our services.</div>
-      </div>
+  <div class="container footer-inner">
+    <div class="brand-mark">Bariatric Counseling Center</div>
+    <div>
+      <span id="footer-updated">--</span> &middot; <a href="https://www.bariatriccounselingcenter.com" rel="noopener">bariatriccounselingcenter.com</a>
     </div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script>
 "use strict";
 
@@ -481,94 +426,110 @@ const SUBPATH    = "bariatric-counseling-center/seo-weekly";
 const RAW_GH   = (path) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SUBPATH}/${path}`;
 const JSDELIVR = (path) => `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@main/${SUBPATH}/${path}`;
 
-const STATE = { manifest: null, latestData: null, history: [] };
+// ===== SERVICE AREA TAXONOMY =====
+// Maps raw keywords from the JSON to BCC service areas. Anything not listed is grouped as "Other".
+// Branded keywords (BCC name) are skipped.
+const SERVICE_AREAS = [
+  {
+    id: "bariatric",
+    name: "Bariatric Counseling & Surgery Support",
+    keywords: [
+      "bariatric counseling san antonio",
+      "bariatric counseling",
+      "bariatric surgery counseling san antonio",
+      "bariatric surgery counseling",
+      "bariatric surgery psychological evaluation san antonio",
+      "bariatric surgery psychological evaluation",
+      "bariatric therapy san antonio",
+      "bariatric therapy",
+      "online bariatric counseling texas",
+      "consejeria bariatrica san antonio"
+    ]
+  },
+  {
+    id: "weight-mgmt",
+    name: "Weight Management",
+    keywords: [
+      "weight loss counseling san antonio",
+      "weight loss counseling",
+      "obesity counseling san antonio",
+      "weight management therapist san antonio",
+      "weight management program san antonio",
+      "weight management counseling san antonio",
+      "weight loss therapy san antonio",
+      "weight loss therapy",
+      "weight management therapy",
+      "weight management after bariatric surgery"
+    ]
+  },
+  {
+    id: "eating-concerns",
+    name: "Eating Concerns",
+    keywords: [
+      "emotional eating therapy san antonio",
+      "emotional eating therapy",
+      "therapy for emotional eating",
+      "how to stop emotional eating",
+      "how to overcome emotional eating",
+      "binge eating treatment san antonio",
+      "binge eating disorder treatment",
+      "binge eating disorder therapy",
+      "food addiction treatment san antonio",
+      "food addiction treatment",
+      "overeating treatment san antonio",
+      "overeating treatment",
+      "compulsive overeating san antonio",
+      "eating disorder iop san antonio",
+      "eating disorder iop",
+      "eating disorder therapist san antonio",
+      "eating disorder treatment san antonio",
+      "eating disorder counseling san antonio"
+    ]
+  },
+  {
+    id: "med-adjunct",
+    name: "Behavioral Support with Medications",
+    keywords: [
+      "semaglutide behavioral support san antonio",
+      "semaglutide behavioral support",
+      "ozempic counseling",
+      "ozempic behavioral support san antonio",
+      "behavioral support for weight loss medications"
+    ]
+  },
+  {
+    id: "nutrition",
+    name: "Nutrition Care",
+    keywords: [
+      "registered dietitian san antonio",
+      "nutrition counseling san antonio",
+      "nutrition counseling",
+      "registered dietitian weight loss",
+      "dietista registrada san antonio"
+    ]
+  },
+  {
+    id: "telehealth",
+    name: "Telehealth & Online Care",
+    keywords: [
+      "telehealth weight management texas",
+      "online weight management therapy texas",
+      "virtual emotional eating therapy texas"
+    ]
+  }
+];
 
-// ===== KEYWORD PRESENTATION =====
+// Skipped (branded queries -- noise for board view)
+const SKIP_KEYWORDS = new Set([
+  "bariatric counseling center san antonio",
+  "BCC san antonio weight management"
+]);
 
-// Map raw keywords -> board-friendly labels.
-// Anything not in this map gets generic title-casing.
-// Keywords listed here as null are SKIPPED entirely (branded queries that don't tell a story to a board).
-const KEYWORD_LABELS = {
-  "bariatric counseling san antonio":             { label: "Bariatric counseling",                          locale: "San Antonio" },
-  "weight loss counseling san antonio":           { label: "Counseling around weight management",            locale: "San Antonio" },
-  "obesity counseling san antonio":               { label: "Counseling for people in larger bodies",         locale: "San Antonio" },
-  "weight management therapist san antonio":      { label: "Weight management therapy",                      locale: "San Antonio" },
-  "registered dietitian san antonio":             { label: "Registered dietitian services",                  locale: "San Antonio" },
-  "emotional eating therapy san antonio":         { label: "Emotional eating therapy",                       locale: "San Antonio" },
-  "binge eating treatment san antonio":           { label: "Support for binge eating",                       locale: "San Antonio" },
-  "food addiction treatment san antonio":         { label: "Support around food and addiction",              locale: "San Antonio" },
-  "weight loss therapy san antonio":              { label: "Therapy supporting weight management",            locale: "San Antonio" },
-  "overeating treatment san antonio":             { label: "Support for compulsive overeating",              locale: "San Antonio" },
-  "eating disorder iop san antonio":              { label: "Intensive outpatient eating disorder care",      locale: "San Antonio" },
-  "bariatric surgery counseling san antonio":     { label: "Bariatric surgery counseling",                   locale: "San Antonio" },
-  "weight management program san antonio":        { label: "Weight management program",                      locale: "San Antonio" },
-  "eating disorder therapist san antonio":        { label: "Eating disorder therapy",                        locale: "San Antonio" },
-  "bariatric counseling":                          { label: "Bariatric counseling",                           locale: "National searches" },
-  "bariatric therapy":                             { label: "Bariatric therapy",                              locale: "National searches" },
-  "emotional eating therapy":                      { label: "Emotional eating therapy",                       locale: "National searches" },
-  "binge eating disorder treatment":               { label: "Support for binge eating disorder",              locale: "National searches" },
-  "food addiction treatment":                      { label: "Support around food and addiction",              locale: "National searches" },
-  "weight loss counseling":                        { label: "Counseling around weight management",            locale: "National searches" },
-  "bariatric surgery psychological evaluation san antonio": { label: "Pre-surgery psychological evaluation", locale: "San Antonio" },
-  "eating disorder treatment san antonio":         { label: "Eating disorder treatment",                      locale: "San Antonio" },
-  "semaglutide behavioral support":                { label: "Behavioral support alongside GLP-1 medications", locale: "National searches" },
-  "semaglutide behavioral support san antonio":    { label: "Behavioral support alongside GLP-1 medications", locale: "San Antonio" },
-  "ozempic counseling":                            { label: "Counseling for people on GLP-1 medications",     locale: "National searches" },
-  "behavioral support for weight loss medications":{ label: "Behavioral support for weight management medications", locale: "National searches" },
-  "telehealth weight management texas":            { label: "Virtual weight management care",                 locale: "Texas" },
-  "online weight management therapy texas":        { label: "Online weight management therapy",               locale: "Texas" },
-  "virtual emotional eating therapy texas":        { label: "Virtual emotional eating therapy",               locale: "Texas" },
-  "eating disorder counseling san antonio":        { label: "Eating disorder counseling",                     locale: "San Antonio" },
-  "bariatric therapy san antonio":                 { label: "Bariatric therapy",                              locale: "San Antonio" },
-  "weight management counseling san antonio":      { label: "Weight management counseling",                   locale: "San Antonio" },
-  "ozempic behavioral support san antonio":        { label: "Behavioral support alongside GLP-1 medications", locale: "San Antonio" },
-  "compulsive overeating san antonio":             { label: "Support for compulsive overeating",              locale: "San Antonio" },
-  "nutrition counseling san antonio":              { label: "Nutrition counseling",                           locale: "San Antonio" },
-  "weight loss therapy":                           { label: "Therapy supporting weight management",            locale: "National searches" },
-  "weight management therapy":                     { label: "Weight management therapy",                      locale: "National searches" },
-  "overeating treatment":                          { label: "Support for compulsive overeating",              locale: "National searches" },
-  "eating disorder iop":                           { label: "Intensive outpatient eating disorder care",      locale: "National searches" },
-  "bariatric surgery counseling":                  { label: "Bariatric surgery counseling",                   locale: "National searches" },
-  "nutrition counseling":                          { label: "Nutrition counseling",                           locale: "National searches" },
-  "registered dietitian weight loss":              { label: "Dietitian-led weight management",                locale: "National searches" },
-  "bariatric surgery psychological evaluation":    { label: "Pre-surgery psychological evaluation",           locale: "National searches" },
-  "how to stop emotional eating":                  { label: "Articles on emotional eating",                   locale: "National searches" },
-  "how to overcome emotional eating":              { label: "Articles on emotional eating",                   locale: "National searches" },
-  "therapy for emotional eating":                  { label: "Therapy for emotional eating",                   locale: "National searches" },
-  "weight management after bariatric surgery":     { label: "Long-term post-surgery support",                  locale: "National searches" },
-  "binge eating disorder therapy":                  { label: "Therapy for binge eating",                       locale: "National searches" },
-  "online bariatric counseling texas":             { label: "Online bariatric counseling",                    locale: "Texas" },
-  "consejeria bariatrica san antonio":             { label: "Bariatric counseling -- Spanish-language",       locale: "San Antonio" },
-  "dietista registrada san antonio":               { label: "Dietitian services -- Spanish-language",         locale: "San Antonio" },
-  // Branded -- skip (not interesting to a board, would feel self-serving)
-  "bariatric counseling center san antonio": null,
-  "BCC san antonio weight management": null
-};
-
-function friendlyKeyword(rawKey) {
-  if (rawKey in KEYWORD_LABELS) return KEYWORD_LABELS[rawKey];
-  // Generic fallback: title case + strip "san antonio"
-  let label = rawKey
-    .replace(/\bsan antonio\b/i, "")
-    .replace(/\btexas\b/i, "")
-    .trim()
-    .replace(/\s+/g, " ");
-  label = label.replace(/\b\w/g, c => c.toUpperCase());
-  let locale = "Search";
-  if (/san antonio/i.test(rawKey)) locale = "San Antonio";
-  else if (/texas/i.test(rawKey)) locale = "Texas";
-  else locale = "National searches";
-  return { label, locale };
-}
-
-function formatRank(pos) {
-  if (pos == null) return null;
-  if (pos === 1) return "#1 result";
-  if (pos === 2) return "Top 3";
-  if (pos === 3) return "Top 3";
-  if (pos <= 5) return `Top 5`;
-  if (pos <= 10) return `Page one (#${pos})`;
-  return `Position ${pos}`;
+function areaForKeyword(rawKey) {
+  for (const a of SERVICE_AREAS) {
+    if (a.keywords.includes(rawKey)) return a;
+  }
+  return null;
 }
 
 // ===== FETCH =====
@@ -580,12 +541,10 @@ async function fetchJSON(url, { bypassCache = false } = {}) {
 }
 
 async function loadManifest() {
-  // Always raw.github + cache-bust (jsdelivr's cache is too long for the manifest)
   return await fetchJSON(RAW_GH("manifest.json"), { bypassCache: true });
 }
 
 async function loadDataFile(filename) {
-  // Data files don't change once written -- jsdelivr is fine
   try {
     return await fetchJSON(JSDELIVR(`data/${filename}`));
   } catch (e) {
@@ -593,9 +552,33 @@ async function loadDataFile(filename) {
   }
 }
 
+// ===== DATA SHAPING =====
+
+// For one data file, return: per-area count of page-one rankings + count of #1 rankings
+function summarize(data) {
+  const all = Object.entries((data.brave && data.brave.all_keywords) || {});
+  const summary = {};
+  for (const a of SERVICE_AREAS) {
+    summary[a.id] = { name: a.name, top10: 0, top1: 0, total: a.keywords.length };
+  }
+  let totalTop1 = 0, totalTop10 = 0, totalTracked = 0;
+  for (const [raw, v] of all) {
+    if (SKIP_KEYWORDS.has(raw)) continue;
+    totalTracked++;
+    const inTop10 = v.position != null && v.position <= 10;
+    const isTop1 = v.position === 1;
+    if (inTop10) totalTop10++;
+    if (isTop1) totalTop1++;
+    const area = areaForKeyword(raw);
+    if (!area) continue;
+    if (inTop10) summary[area.id].top10++;
+    if (isTop1) summary[area.id].top1++;
+  }
+  return { perArea: summary, totalTop1, totalTop10, totalTracked, date: data.date };
+}
+
 // ===== RENDER =====
 
-function setText(id, text) { const e = document.getElementById(id); if (e) e.textContent = text; }
 function el(tag, attrs = {}, ...children) {
   const e = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs)) {
@@ -610,188 +593,147 @@ function el(tag, attrs = {}, ...children) {
   return e;
 }
 
-function renderHero(data) {
-  const dateStr = new Date(data.date + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
-  setText("report-date-line", `Latest update: ${dateStr}`);
-  // Count unique service categories represented in keywords
-  const all = Object.entries(data.brave.all_keywords || {});
-  setText("services-line", `${all.length} search queries monitored`);
+function setText(id, text) { const e = document.getElementById(id); if (e) e.textContent = text; }
+
+function fmtDate(d) {
+  return new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+}
+function fmtDateLong(d) {
+  return new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 }
 
-function renderStats(data) {
-  const b = data.brave || {};
-  const all = Object.entries(b.all_keywords || {});
-  const top1 = all.filter(([_, v]) => v.position === 1).length;
-  const top10 = all.filter(([_, v]) => v.position != null && v.position <= 10).length;
-  // Distinct service topics where BCC ranks at all -- use unique friendly labels
-  const labelsRanked = new Set();
-  for (const [k, v] of all) {
-    if (v.position == null || v.position > 10) continue;
-    const f = friendlyKeyword(k);
-    if (f) labelsRanked.add(f.label);
-  }
-  const newEntries = (data.analysis && data.analysis.new_entries) ? data.analysis.new_entries.length : 0;
+function renderHeader(latest) {
+  setText("updated-line", `Updated ${fmtDateLong(latest.date)}`);
+  setText("footer-updated", `Last refreshed ${fmtDateLong(latest.date)}`);
+}
 
-  const stats = [
-    { number: top1,             label: "Search topics where BCC is the top result",      context: "When someone searches for these services, BCC's website is the first organic result they see." },
-    { number: top10,             label: "Search topics where BCC appears on page one",   context: "Roughly 95% of all clicks happen on page one of search results -- this is where reach lives." },
-    { number: labelsRanked.size, label: "Distinct service areas reaching new searchers", context: "Each represents a different way people seek the kind of integrated, compassionate care BCC offers." },
-    { number: newEntries,        label: "Service topics newly reaching the community",   context: "Areas where BCC began appearing on page one for the first time during the most recent week's check." }
-  ];
-
-  const grid = document.getElementById("stats-grid");
+function renderStats(latestSummary, history) {
+  const grid = document.getElementById("stats");
   grid.innerHTML = "";
+  // 4 stats: top 1, page one, distinct active areas, new this period
+  const distinctAreasActive = Object.values(latestSummary.perArea).filter(a => a.top10 > 0).length;
+  // new this period: compare per-area top10 to previous run
+  let newThisPeriod = 0;
+  if (history.length >= 2) {
+    const prev = history[history.length - 2];
+    for (const aid of Object.keys(latestSummary.perArea)) {
+      const cur = latestSummary.perArea[aid].top10;
+      const old = (prev.perArea[aid] && prev.perArea[aid].top10) || 0;
+      if (cur > old) newThisPeriod += (cur - old);
+    }
+  }
+  const stats = [
+    { num: latestSummary.totalTop1,   label: "Topics where BCC is the top result" },
+    { num: latestSummary.totalTop10,  label: "Topics where BCC appears on page one" },
+    { num: distinctAreasActive,       label: "Service areas with page-one presence" },
+    { num: newThisPeriod,             label: "New page-one rankings this week" }
+  ];
   for (const s of stats) {
     grid.appendChild(
-      el("div", { className: "stat-card" },
-        el("div", { className: "stat-number" }, String(s.number)),
-        el("div", { className: "stat-label" }, s.label),
-        el("div", { className: "stat-context" }, s.context)
+      el("div", { className: "stat" },
+        el("div", { className: "num" }, String(s.num)),
+        el("div", { className: "label" }, s.label)
       )
     );
   }
 }
 
-function renderTopics(data) {
-  const all = Object.entries(data.brave.all_keywords || {});
-  // Filter: only items that rank on page one. Then group by friendly label, pick best position per label.
-  const byLabel = new Map();
-  for (const [raw, v] of all) {
-    if (v.position == null || v.position > 10) continue;
-    const f = friendlyKeyword(raw);
-    if (!f) continue; // skip branded
-    const key = `${f.label}__${f.locale}`;
-    const existing = byLabel.get(key);
-    if (!existing || v.position < existing.position) {
-      byLabel.set(key, { label: f.label, locale: f.locale, position: v.position });
-    }
-  }
-  const items = Array.from(byLabel.values()).sort((a, b) => a.position - b.position);
-
-  const ul = document.getElementById("topics-list");
-  ul.innerHTML = "";
-  if (!items.length) {
-    ul.appendChild(el("div", { className: "error" }, "No top-of-page rankings recorded in the most recent check."));
-    return;
-  }
-  for (const it of items) {
-    const card = el("div", { className: "topic" });
-    card.appendChild(
-      el("div", {},
-        el("div", { className: "topic-name" }, it.label),
-        el("div", { className: "topic-meta" }, it.locale)
-      )
-    );
-    const rankCls = it.position === 1 ? "topic-rank top-of-page" : "topic-rank";
-    card.appendChild(el("div", { className: rankCls }, formatRank(it.position)));
-    ul.appendChild(card);
-  }
-}
-
-function renderGrowth(data) {
-  const newEntries = (data.analysis && data.analysis.new_entries) || [];
-  const rising = (data.analysis && data.analysis.rising) || [];
-  const items = [];
-
-  for (const e of newEntries) {
-    const f = friendlyKeyword(e.keyword);
-    if (!f) continue;
-    items.push({
-      title: `New audience reached: ${f.label.toLowerCase()}`,
-      body: `BCC began appearing on page one of search results in ${f.locale.toLowerCase()} for this topic during the most recent check, opening a path to people who hadn't been finding our services before.`,
-    });
-  }
-  for (const e of rising) {
-    const f = friendlyKeyword(e.keyword);
-    if (!f) continue;
-    items.push({
-      title: `Climbing for ${f.label.toLowerCase()}`,
-      body: `BCC's visibility moved up in ${f.locale.toLowerCase()} for this topic, putting our services in front of more people seeking this kind of support.`,
-    });
-  }
-
-  const grid = document.getElementById("growth-grid");
-  grid.innerHTML = "";
-  if (!items.length) {
-    grid.appendChild(el("div", { className: "error" }, "No new audience areas tracked this period -- BCC's existing rankings held steady."));
-    return;
-  }
-  // Limit to top 6 to keep board view clean
-  for (const it of items.slice(0, 6)) {
-    grid.appendChild(
-      el("div", { className: "growth-card" },
-        el("div", { className: "growth-icon", html: "<svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M7 17l5-5 5 5'></path><path d='M7 7l5 5 5-5'></path></svg>" }),
-        el("div", { className: "growth-title" }, it.title),
-        el("div", { className: "growth-body" }, it.body)
-      )
-    );
-  }
-}
-
-async function renderTrendChart(manifest) {
-  const files = (manifest.files || []).slice(0, 12).reverse(); // oldest -> newest
-  const points = [];
-  for (const f of files) {
-    try {
-      const d = await loadDataFile(f);
-      const top10 = Object.values(d.brave?.all_keywords || {}).filter(v => v.position != null && v.position <= 10).length;
-      const dateStr = new Date(d.date + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
-      points.push({ x: dateStr, y: top10 });
-    } catch (_) { /* skip files that fail */ }
-  }
-  if (!points.length) return;
-
-  const ctx = document.getElementById("trend-chart").getContext("2d");
-  new Chart(ctx, {
-    type: "bar",
-    data: {
-      labels: points.map(p => p.x),
-      datasets: [{
-        label: "Search topics on page one",
-        data: points.map(p => p.y),
-        backgroundColor: "rgba(78, 205, 196, 0.65)",
-        borderColor: "rgba(78, 205, 196, 1)",
-        borderWidth: 1.5,
-        borderRadius: 6,
-        barPercentage: 0.6,
-        categoryPercentage: 0.7
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: "#2c3e50",
-          titleColor: "#ffffff",
-          bodyColor: "#ffffff",
-          padding: 12,
-          cornerRadius: 6,
-          callbacks: {
-            label: (c) => `${c.parsed.y} topics on page one`
-          }
-        }
-      },
-      scales: {
-        x: {
-          grid: { display: false },
-          ticks: { color: "#5b6b78", font: { size: 12 } }
-        },
-        y: {
-          beginAtZero: true,
-          grid: { color: "#e3e9ee", drawBorder: false },
-          ticks: { color: "#5b6b78", font: { size: 12 }, stepSize: 5 },
-          title: { display: true, text: "Topics on page one", color: "#5b6b78", font: { size: 12 } }
-        }
-      }
-    }
+function sparklineSVG(values, { width = 160, height = 28 } = {}) {
+  if (!values.length) return "";
+  const max = Math.max(...values, 1);
+  const stepX = width / Math.max(values.length - 1, 1);
+  const points = values.map((v, i) => {
+    const x = i * stepX;
+    const y = height - ((v / max) * (height - 4)) - 2;
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
   });
+  const linePoints = points.join(" ");
+  // Area under
+  const areaPoints = `0,${height} ${linePoints} ${width},${height}`;
+  const lastVal = values[values.length - 1];
+  const lastX = (values.length - 1) * stepX;
+  const lastY = height - ((lastVal / max) * (height - 4)) - 2;
+  return `
+    <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="${areaPoints}" fill="rgba(78,205,196,0.18)"/>
+      <polyline points="${linePoints}" fill="none" stroke="#2eb1a8" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="${lastX.toFixed(1)}" cy="${lastY.toFixed(1)}" r="2.5" fill="#2c3e50"/>
+    </svg>`;
 }
 
-function renderFooter(data) {
-  const dateStr = new Date(data.date + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
-  setText("footer-updated", `Last data refresh: ${dateStr}`);
+function renderAreas(latestSummary, history) {
+  const grid = document.getElementById("areas");
+  grid.innerHTML = "";
+  for (const a of SERVICE_AREAS) {
+    const cur = latestSummary.perArea[a.id];
+    const trend = history.map(h => (h.perArea[a.id] && h.perArea[a.id].top10) || 0);
+    const card = el("div", { className: "area" });
+    const head = el("div", { className: "area-head" });
+    head.appendChild(el("div", { className: "area-name" }, a.name));
+    const numWrap = el("div", {});
+    numWrap.appendChild(el("div", { className: "area-num", html: `${cur.top10}<small>on page one</small>` }));
+    head.appendChild(numWrap);
+    card.appendChild(head);
+
+    const meta = el("div", { className: "area-meta" });
+    if (cur.top1 > 0) {
+      meta.appendChild(el("span", { className: "pip" }, `${cur.top1} at #1`));
+    }
+    meta.appendChild(el("span", {}, `${cur.total} topics tracked`));
+    card.appendChild(meta);
+
+    const sparkDiv = el("div", { className: "area-spark", html: sparklineSVG(trend) });
+    card.appendChild(sparkDiv);
+
+    grid.appendChild(card);
+  }
+}
+
+function renderHeatmap(history) {
+  const wrap = document.getElementById("heatmap");
+  wrap.innerHTML = "";
+  if (!history.length) {
+    wrap.appendChild(el("div", { className: "heatmap-row", style: "grid-template-columns: 1fr;" }, el("div", { className: "heatmap-label" }, "No history yet -- the heatmap will populate as more weekly checks accumulate.")));
+    return;
+  }
+  // Determine grid columns: label + N week columns
+  const weeks = history.length;
+  const labelWidth = 160;
+  const cellMin = 40;
+  const colTpl = `${labelWidth}px repeat(${weeks}, minmax(${cellMin}px, 1fr))`;
+  // Header row: blank label cell + dates
+  const headRow = el("div", { className: "heatmap-row", style: `grid-template-columns: ${colTpl};` });
+  headRow.appendChild(el("div", { className: "heatmap-label head" }, "Service area"));
+  for (const h of history) {
+    headRow.appendChild(el("div", { className: "heatmap-cell head" }, fmtDate(h.date)));
+  }
+  wrap.appendChild(headRow);
+  // Body: one row per area
+  // Determine max top10 across history for color binning
+  let max = 0;
+  for (const h of history) for (const a of SERVICE_AREAS) {
+    const v = (h.perArea[a.id] && h.perArea[a.id].top10) || 0;
+    if (v > max) max = v;
+  }
+  if (max === 0) max = 1;
+  function cls(v) {
+    if (v === 0) return "h0";
+    const ratio = v / max;
+    if (ratio < 0.2) return "h1";
+    if (ratio < 0.4) return "h2";
+    if (ratio < 0.6) return "h3";
+    if (ratio < 0.85) return "h4";
+    return "h5";
+  }
+  for (const a of SERVICE_AREAS) {
+    const row = el("div", { className: "heatmap-row", style: `grid-template-columns: ${colTpl};` });
+    row.appendChild(el("div", { className: "heatmap-label" }, a.name));
+    for (const h of history) {
+      const v = (h.perArea[a.id] && h.perArea[a.id].top10) || 0;
+      row.appendChild(el("div", { className: `heatmap-cell ${cls(v)}`, title: `${a.name} -- ${fmtDate(h.date)}: ${v} on page one` }, v > 0 ? String(v) : ""));
+    }
+    wrap.appendChild(row);
+  }
 }
 
 // ===== BOOT =====
@@ -800,23 +742,29 @@ async function boot() {
   const content = document.getElementById("content");
   try {
     const manifest = await loadManifest();
-    STATE.manifest = manifest;
-    const latest = manifest.latest || (manifest.files && manifest.files[0]);
-    const data = await loadDataFile(latest);
-    STATE.latestData = data;
+    const files = (manifest.files || []).slice(0, 12).reverse(); // oldest -> newest
+    if (!files.length) throw new Error("No data files in manifest.");
 
-    renderHero(data);
-    renderStats(data);
-    renderTopics(data);
-    renderGrowth(data);
-    renderFooter(data);
+    // Load all data files in parallel
+    const dataFiles = await Promise.all(
+      files.map(f => loadDataFile(f).catch(() => null))
+    );
+    const valid = dataFiles.filter(d => d && d.brave);
+    if (!valid.length) throw new Error("No usable data files.");
+
+    const history = valid.map(summarize);
+    const latest = valid[valid.length - 1];
+    const latestSummary = history[history.length - 1];
+
+    renderHeader(latest);
+    renderStats(latestSummary, history);
+    renderAreas(latestSummary, history);
+    renderHeatmap(history);
+
     loading.classList.add("hidden");
     content.classList.remove("hidden");
-
-    // Chart loads after main content -- non-blocking
-    renderTrendChart(manifest).catch(e => console.warn("Chart failed:", e));
   } catch (e) {
-    loading.innerHTML = `<div class="error" style="max-width:680px;margin:0 auto;text-align:left;">We're temporarily unable to load the latest snapshot. Please try refreshing the page in a moment.<br/><br/><small style="color:var(--muted);">Technical detail: ${(e.message || e).toString().replace(/[<>]/g, "")}</small></div>`;
+    loading.innerHTML = `<div class="error">Unable to load the latest snapshot. Please refresh in a moment.<br/><small style="color:var(--muted);">${(e.message || e).toString().replace(/[<>]/g, "")}</small></div>`;
   }
 }
 
@@ -825,3 +773,4 @@ boot();
 
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
