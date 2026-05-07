@@ -252,6 +252,33 @@
   .velocity-card .v-value { font-size: 22px; font-weight: 700; color: var(--navy); margin-top: 4px; line-height: 1.1; }
   .velocity-card .v-context { font-size: 11px; color: var(--muted); margin-top: 4px; }
 
+
+  /* v3 -- GSC top queries + discovery candidates */
+  .gsc-stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+  @media (max-width: 800px) { .gsc-stat-row { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .gsc-stat-row { grid-template-columns: 1fr; } }
+  .gsc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+  .gsc-stat .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); font-weight: 700; }
+  .gsc-stat .value { font-size: 26px; font-weight: 700; color: var(--navy); margin-top: 4px; line-height: 1; }
+  .gsc-stat .ctx { font-size: 11px; color: var(--muted); margin-top: 4px; }
+  .gsc-table-wrap { overflow-x: auto; }
+  table.gsc-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  table.gsc-table thead th { text-align: left; padding: 8px 6px; border-bottom: 2px solid var(--line); font-weight: 700; color: var(--navy); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; cursor: pointer; user-select: none; white-space: nowrap; }
+  table.gsc-table thead th:hover { color: var(--teal); }
+  table.gsc-table tbody td { padding: 7px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.gsc-table tbody tr:hover { background: var(--navy-soft); }
+  table.gsc-table .num-cell { text-align: right; font-variant-numeric: tabular-nums; }
+  table.gsc-table .pos-good { color: var(--green); font-weight: 600; }
+  table.gsc-table .pos-mid { color: var(--amber); font-weight: 600; }
+  table.gsc-table .pos-poor { color: var(--muted); }
+  table.gsc-table .ctr-good { color: var(--green); font-weight: 600; }
+  table.gsc-table .ctr-poor { color: var(--red); }
+  .gsc-tracked-badge { display: inline-block; padding: 1px 6px; font-size: 10px; font-weight: 600; background: var(--teal-soft); color: var(--navy); border: 1px solid var(--teal-line); border-radius: 8px; margin-left: 4px; }
+  .gsc-filter { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .gsc-filter button { font-size: 12px; padding: 5px 12px; border: 1px solid var(--line); background: var(--card); border-radius: 14px; cursor: pointer; color: var(--muted); font-family: inherit; }
+  .gsc-filter button.active { background: var(--navy); color: white; border-color: var(--navy); }
+  .gsc-filter input { font-size: 13px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; flex: 1; max-width: 280px; font-family: inherit; }
+
 </style>
 </head>
 <body>
@@ -370,6 +397,71 @@
       <h2>Reach Across Recent Weeks</h2>
       <div class="meta-line">Service areas down the side, weekly checks across the top. Cell shading shows page-one ranking density that week.</div>
       <div class="iheatmap-wrap"><div class="iheatmap" id="iheatmap"></div></div>
+    </div>
+
+    <div class="section">
+      <h2>Google Search Console -- This Week</h2>
+      <div class="meta-line" id="gsc-data-range">Loading GSC data...</div>
+      <div class="gsc-stat-row" id="gsc-stats"></div>
+    </div>
+
+    <div class="section">
+      <h2>Top Queries People Used to Find BCC</h2>
+      <div class="meta-line">Real Google search queries. Click headers to sort. Tracked = in keywords-master.json. Discovery = candidates to add.</div>
+      <div class="gsc-filter">
+        <button data-gsc-filter="all" class="active">All</button>
+        <button data-gsc-filter="tracked">Tracked</button>
+        <button data-gsc-filter="discovery">Discovery</button>
+        <button data-gsc-filter="clicks">Got clicks</button>
+        <input type="text" id="gsc-search" placeholder="Filter by query..." />
+      </div>
+      <div class="gsc-table-wrap">
+        <table class="gsc-table" id="gsc-queries-table">
+          <thead><tr>
+            <th data-gsc-sort="keyword">Query</th>
+            <th data-gsc-sort="impressions" class="num-cell">Impressions</th>
+            <th data-gsc-sort="clicks" class="num-cell">Clicks</th>
+            <th data-gsc-sort="ctr" class="num-cell">CTR</th>
+            <th data-gsc-sort="position" class="num-cell">Avg Pos</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Discovery Candidates -- Searches Worth Tracking</h2>
+      <div class="meta-line">Top queries with impressions but NOT in keywords-master.json. Triage to expand the master list or spin up dedicated pages.</div>
+      <div class="gsc-table-wrap">
+        <table class="gsc-table" id="gsc-discovery-table">
+          <thead><tr>
+            <th>Query</th>
+            <th class="num-cell">Impressions</th>
+            <th class="num-cell">Clicks</th>
+            <th class="num-cell">CTR</th>
+            <th class="num-cell">Avg Pos</th>
+            <th>Suggestion</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Top BCC Pages by Search Visibility</h2>
+      <div class="meta-line">Pages getting the most impressions. High-impression / low-click pages = title/meta optimization opportunities.</div>
+      <div class="gsc-table-wrap">
+        <table class="gsc-table" id="gsc-pages-table">
+          <thead><tr>
+            <th>Page</th>
+            <th class="num-cell">Impressions</th>
+            <th class="num-cell">Clicks</th>
+            <th class="num-cell">CTR</th>
+            <th class="num-cell">Avg Pos</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
 
     <div class="section">
@@ -1357,6 +1449,163 @@ function renderVelocity(latestData) {
   wrap.appendChild(vCard("Stagnant keywords", stagnantCount, "Same position " + STAGNATION_WEEKS + "+ weeks running"));
 }
 
+
+// ---- v3: GSC RENDERING --------------------------------------------------------
+let gscState = { filter: "all", search: "", sort: { key: "impressions", dir: "desc" } };
+
+function fmtPct(n) { return (n * 100).toFixed(2) + "%"; }
+function fmtPos(p) { return p == null ? "--" : p.toFixed(1); }
+function posCellClass(p) {
+  if (p == null) return "pos-poor";
+  if (p <= 10) return "pos-good";
+  if (p <= 20) return "pos-mid";
+  return "pos-poor";
+}
+function ctrCellClass(ctr, hasImps) {
+  if (!hasImps) return "";
+  if (ctr >= 0.03) return "ctr-good";
+  if (ctr <= 0.005) return "ctr-poor";
+  return "";
+}
+
+function renderGscStats(google) {
+  const el2 = document.getElementById("gsc-stats");
+  const range = document.getElementById("gsc-data-range");
+  if (!el2 || !google || google.error) {
+    if (range) range.textContent = google && google.error ? ("GSC: " + google.error) : "No GSC data this run.";
+    if (el2) el2.innerHTML = "";
+    return;
+  }
+  const s = google.summary || {};
+  const dr = google.data_range || {};
+  if (range) range.textContent = (dr.start || "") + " -> " + (dr.end || "") + " (" + (dr.days || 7) + " days)";
+  const stats = [
+    { label: "Total impressions", value: (s.total_impressions || 0).toLocaleString(), ctx: "across " + (s.total_queries || 0) + " queries" },
+    { label: "Total clicks", value: (s.total_clicks || 0).toLocaleString(), ctx: s.total_impressions ? "CTR " + ((s.total_clicks/s.total_impressions)*100).toFixed(2) + "%" : "" },
+    { label: "Avg position (impression-weighted)", value: s.avg_position_impression_weighted != null ? s.avg_position_impression_weighted.toFixed(2) : "--", ctx: "lower is better" },
+    { label: "Discovery candidates", value: s.discovery_candidates_count || 0, ctx: "untracked queries with 5+ impressions" }
+  ];
+  el2.innerHTML = "";
+  for (const st of stats) {
+    const card = el("div", { className: "gsc-stat" });
+    card.appendChild(el("div", { className: "label" }, st.label));
+    card.appendChild(el("div", { className: "value" }, st.value));
+    if (st.ctx) card.appendChild(el("div", { className: "ctx" }, st.ctx));
+    el2.appendChild(card);
+  }
+}
+
+function renderGscQueries(google) {
+  const tbody = document.querySelector("#gsc-queries-table tbody");
+  if (!tbody || !google || !google.top_queries) return;
+  const trackedSet = new Set(Object.keys(google.per_keyword_metrics || {}).map(k => k.toLowerCase()));
+  let rows = google.top_queries.map(q => Object.assign({}, q, { _tracked: trackedSet.has(q.keyword.toLowerCase()) }));
+
+  const f = gscState.filter;
+  const search = gscState.search.toLowerCase();
+  rows = rows.filter(r => {
+    if (search && !r.keyword.toLowerCase().includes(search)) return false;
+    if (f === "tracked") return r._tracked;
+    if (f === "discovery") return !r._tracked;
+    if (f === "clicks") return r.clicks > 0;
+    return true;
+  });
+
+  const { key, dir } = gscState.sort;
+  const m = dir === "asc" ? 1 : -1;
+  rows.sort((a, b) => {
+    if (key === "keyword") return m * String(a[key]).localeCompare(String(b[key]));
+    return m * ((a[key] || 0) - (b[key] || 0));
+  });
+
+  tbody.innerHTML = "";
+  for (const r of rows.slice(0, 200)) {
+    const tr = el("tr", {});
+    const kwCell = el("td", {});
+    kwCell.appendChild(document.createTextNode(r.keyword));
+    if (r._tracked) kwCell.appendChild(el("span", { className: "gsc-tracked-badge" }, "tracked"));
+    tr.appendChild(kwCell);
+    tr.appendChild(el("td", { className: "num-cell" }, (r.impressions || 0).toLocaleString()));
+    tr.appendChild(el("td", { className: "num-cell" }, String(r.clicks || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + ctrCellClass(r.ctr, r.impressions > 0) }, fmtPct(r.ctr || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + posCellClass(r.position) }, fmtPos(r.position)));
+    tbody.appendChild(tr);
+  }
+}
+
+function renderGscDiscovery(google) {
+  const tbody = document.querySelector("#gsc-discovery-table tbody");
+  if (!tbody || !google) return;
+  const items = google.discovery_candidates || [];
+  tbody.innerHTML = "";
+  if (!items.length) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", { colspan: "6", style: "color:var(--muted); font-style:italic; padding:14px;" }, "No discovery candidates this week."));
+    tbody.appendChild(tr);
+    return;
+  }
+  for (const r of items) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", {}, r.keyword));
+    tr.appendChild(el("td", { className: "num-cell" }, (r.impressions || 0).toLocaleString()));
+    tr.appendChild(el("td", { className: "num-cell" }, String(r.clicks || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + ctrCellClass(r.ctr, r.impressions > 0) }, fmtPct(r.ctr || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + posCellClass(r.position) }, fmtPos(r.position)));
+    let suggestion = "Track + monitor";
+    if (r.impressions >= 100 && r.position <= 20) suggestion = "Spin up dedicated page";
+    else if (r.impressions >= 30 && r.position <= 15) suggestion = "Add to master list";
+    else if (r.position <= 10) suggestion = "Already ranking -- amplify";
+    tr.appendChild(el("td", { style: "color:var(--muted); font-size:11px;" }, suggestion));
+    tbody.appendChild(tr);
+  }
+}
+
+function renderGscPages(google) {
+  const tbody = document.querySelector("#gsc-pages-table tbody");
+  if (!tbody || !google) return;
+  const items = (google.top_pages || []).slice().sort((a, b) => (b.impressions || 0) - (a.impressions || 0)).slice(0, 30);
+  tbody.innerHTML = "";
+  for (const r of items) {
+    const tr = el("tr", {});
+    const pageCell = el("td", {});
+    const url = r.page || "";
+    const shortUrl = url.replace(/^https?:\/\/(www\.)?bariatriccounselingcenter\.com/, "") || url;
+    const link = el("a", { href: url, target: "_blank", rel: "noopener", style: "color:var(--navy); text-decoration:none; border-bottom: 1px dashed var(--line);" }, shortUrl);
+    pageCell.appendChild(link);
+    tr.appendChild(pageCell);
+    tr.appendChild(el("td", { className: "num-cell" }, (r.impressions || 0).toLocaleString()));
+    tr.appendChild(el("td", { className: "num-cell" }, String(r.clicks || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + ctrCellClass(r.ctr, r.impressions > 0) }, fmtPct(r.ctr || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + posCellClass(r.position) }, fmtPos(r.position)));
+    tbody.appendChild(tr);
+  }
+}
+
+function attachGscInteractions() {
+  document.querySelectorAll(".gsc-filter [data-gsc-filter]").forEach(b => {
+    b.addEventListener("click", () => {
+      document.querySelectorAll(".gsc-filter [data-gsc-filter]").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      gscState.filter = b.dataset.gscFilter;
+      renderGscQueries(state.data && state.data.google);
+    });
+  });
+  const search = document.getElementById("gsc-search");
+  if (search) search.addEventListener("input", e => {
+    gscState.search = e.target.value;
+    renderGscQueries(state.data && state.data.google);
+  });
+  document.querySelectorAll("#gsc-queries-table thead th[data-gsc-sort]").forEach(th => {
+    th.addEventListener("click", () => {
+      const k = th.dataset.gscSort;
+      if (gscState.sort.key === k) gscState.sort.dir = gscState.sort.dir === "asc" ? "desc" : "asc";
+      else { gscState.sort.key = k; gscState.sort.dir = (k === "keyword") ? "asc" : "desc"; }
+      renderGscQueries(state.data && state.data.google);
+    });
+  });
+}
+
+
 // ---- BOOT -------------------------------------------------------------------
 async function boot({ bypassCache = false } = {}) {
   const loading = document.getElementById("loading");
@@ -1408,6 +1657,10 @@ function renderAll() {
   renderStaging(state.data);
   renderCompetitors(state.data);
   renderLinkChecks(state.data);
+  renderGscStats(state.data && state.data.google);
+  renderGscQueries(state.data && state.data.google);
+  renderGscDiscovery(state.data && state.data.google);
+  renderGscPages(state.data && state.data.google);
 }
 
 // ---- INTERACTIONS -----------------------------------------------------------
@@ -1443,6 +1696,7 @@ document.querySelectorAll("th.sortable").forEach(th => {
 });
 
 boot();
+attachGscInteractions();
 </script>
 </body>
 </html>

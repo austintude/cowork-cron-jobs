@@ -399,6 +399,22 @@
     max-width: 680px;
     margin: 0 auto;
   }
+
+  /* v5 -- GSC reach panel */
+  .reach-banner { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 22px 26px; box-shadow: var(--shadow-sm); margin-bottom: 24px; position: relative; }
+  .reach-banner::before { content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 4px; background: var(--teal); border-radius: 12px 0 0 12px; }
+  .reach-banner h3 { margin: 0 0 6px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+  .reach-banner h3::before { content: ""; width: 14px; height: 2px; background: var(--teal); }
+  .reach-banner .reach-line { font-size: 17px; color: var(--text); line-height: 1.55; max-width: 720px; }
+  .reach-banner .reach-line strong { color: var(--navy); font-weight: 700; }
+
+  .topics-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; margin-top: 10px; }
+  @media (max-width: 720px) { .topics-list { grid-template-columns: 1fr; } }
+  .topic-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px dotted var(--line); font-size: 14px; }
+  .topic-row .t-name { color: var(--text); }
+  .topic-row .t-imp { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; flex-shrink: 0; }
+  .topic-row .t-imp strong { color: var(--navy); font-weight: 700; }
+
 </style>
 </head>
 <body>
@@ -417,6 +433,20 @@
 
       <section class="tight">
         <div class="stats" id="stats"></div>
+      </section>
+
+      <section>
+        <div class="reach-banner" id="reach-banner" style="display:none;">
+          <h3>This week's online reach</h3>
+          <div class="reach-line" id="reach-line"></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Top searches that reached BCC this week</h2>
+        <div class="reach-banner" id="top-searches-card" style="padding:18px 22px;">
+          <div class="topics-list" id="top-searches-list"></div>
+        </div>
       </section>
 
       <section>
@@ -1099,6 +1129,50 @@ function formatPublishDate(d) {
   return new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 
+
+function renderReachBanner(latestData) {
+  const banner = document.getElementById("reach-banner");
+  const line = document.getElementById("reach-line");
+  if (!banner || !line) return;
+  const g = latestData && latestData.google;
+  if (!g || g.error || !g.summary) {
+    banner.style.display = "none";
+    return;
+  }
+  const s = g.summary;
+  const dr = g.data_range || {};
+  const imps = (s.total_impressions || 0).toLocaleString();
+  const queries = s.total_queries || 0;
+  banner.style.display = "block";
+  line.innerHTML = "Last week, BCC's website was shown in <strong>" + imps + "</strong> Google searches across <strong>" + queries + "</strong> different queries -- people seeking compassionate, evidence-based weight-management and behavioral-health support.";
+}
+
+function renderTopSearches(latestData) {
+  const wrap = document.getElementById("top-searches-list");
+  const card = document.getElementById("top-searches-card");
+  if (!wrap) return;
+  const g = latestData && latestData.google;
+  if (!g || g.error || !g.top_queries || !g.top_queries.length) {
+    if (card) card.innerHTML = "<div style=\"color:var(--muted); font-style:italic; padding:6px;\">No GSC data this week.</div>";
+    return;
+  }
+  // Filter out branded queries for client view (keep board clean)
+  const isBranded = (q) => /bcc|bariatric counseling center|bariatriccounselingcenter|sara hamilton/i.test(q);
+  const items = g.top_queries
+    .filter(q => !isBranded(q.keyword) && q.impressions > 0)
+    .slice(0, 12);
+  wrap.innerHTML = "";
+  for (const q of items) {
+    const row = el("div", { className: "topic-row" });
+    row.appendChild(el("div", { className: "t-name" }, q.keyword));
+    const imp = el("div", { className: "t-imp" });
+    imp.innerHTML = "<strong>" + (q.impressions || 0).toLocaleString() + "</strong> impressions";
+    row.appendChild(imp);
+    wrap.appendChild(row);
+  }
+}
+
+
 // ===== BOOT =====
 async function boot() {
   const loading = document.getElementById("loading");
@@ -1120,6 +1194,8 @@ async function boot() {
     const latestSummary = history[history.length - 1];
 
     renderHeader(latest);
+    renderReachBanner(latest);
+    renderTopSearches(latest);
     renderStats(latestSummary, history);
     renderAreas(latestSummary, history, latest);
     renderPages(valid);
