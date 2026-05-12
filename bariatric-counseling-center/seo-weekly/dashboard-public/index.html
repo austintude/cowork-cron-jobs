@@ -495,12 +495,14 @@
 "use strict";
 
 // ===== CONFIG =====
-const REPO_OWNER = "austintude";
-const REPO_NAME  = "cowork-cron-jobs";
-const SUBPATH    = "bariatric-counseling-center/seo-weekly";
+// Data is SFTP'd directly to SiteGround at /seo/bcc/data/. No GitHub round-trip.
+// Function names RAW_GH / JSDELIVR are kept for minimal diff -- both now point at
+// the same same-origin path. The runner uploads seo-data-*.json + manifest.json
+// to this folder via sftp-upload.py.
+const DATA_BASE = "/seo/bcc/data";
 
-const RAW_GH   = (path) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SUBPATH}/${path}`;
-const JSDELIVR = (path) => `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@main/${SUBPATH}/${path}`;
+const RAW_GH   = (path) => `${DATA_BASE}/${path}`;
+const JSDELIVR = (path) => `${DATA_BASE}/${path}`;
 
 // ===== SERVICE AREA TAXONOMY =====
 // Maps raw keywords from the JSON to BCC service areas. Anything not listed is grouped as "Other".
