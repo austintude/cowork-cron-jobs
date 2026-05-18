@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+<title>BCC Daily Pulse</title>
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #4ECDC4;
+    --teal-soft: #e7f9f7;
+    --teal-line: #b5e8e3;
+    --teal-deep: #2eb1a8;
+    --navy: #1f2d3a;
+    --navy-soft: #2c3e50;
+    --text: #1f2d3a;
+    --muted: #5b6b78;
+    --muted-soft: #8a96a3;
+    --bg: #ffffff;
+    --bg-soft: #f6f8fa;
+    --bg-dark: #0e1620;
+    --bg-dark-soft: #18222e;
+    --line: #e3e9ee;
+    --line-dark: #28333f;
+    --crit: #b34c4c;
+    --crit-soft: #fbecec;
+    --major: #c97a2e;
+    --major-soft: #faf0e3;
+    --minor: #5b8aa5;
+    --minor-soft: #e9f1f6;
+    --info: #6b7a87;
+    --info-soft: #eef2f5;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: "JetBrains Mono", "SF Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--sans);
+    color: var(--text);
+    background: var(--bg-dark);
+    line-height: 1.45;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Top bar (dark, terminal-ish to signal "internal operations") */
+  .topbar {
+    background: var(--bg-dark);
+    border-bottom: 1px solid var(--line-dark);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    color: white;
+  }
+  .container { max-width: 1380px; margin: 0 auto; padding: 0 24px; }
+  .topbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .topbar h1 {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .topbar h1::before {
+    content: "";
+    width: 8px; height: 8px;
+    background: var(--teal);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--teal);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.4; }
+  }
+  .topbar .meta {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: rgba(255,255,255,0.55);
+  }
+  .topbar .meta strong { color: white; font-weight: 500; }
+
+  /* Main body has a light bg */
+  main { background: var(--bg-soft); min-height: calc(100vh - 60px); padding-bottom: 60px; }
+
+  /* Hero strip */
+  .hero {
+    background: white;
+    border-bottom: 1px solid var(--line);
+    padding: 28px 0;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+  }
+  @media (max-width: 1100px) { .hero-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 640px)  { .hero-grid { grid-template-columns: repeat(2, 1fr); } }
+  .hero-stat {
+    background: white;
+    padding: 4px 0;
+    position: relative;
+  }
+  .hero-stat .num {
+    font-family: var(--mono);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    font-feature-settings: "tnum";
+  }
+  .hero-stat .label {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .hero-stat .delta {
+    font-family: var(--mono);
+    font-size: 11px;
+    margin-top: 6px;
+    font-weight: 600;
+    color: var(--muted);
+  }
+  .hero-stat .delta.up   { color: var(--teal-deep); }
+  .hero-stat .delta.down { color: var(--crit); }
+
+  /* Anomaly cards */
+  .section { padding: 24px 0; }
+  .section-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .section-head h2 {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+  }
+  .section-head .count {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    padding: 2px 8px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+  .section-head .line { flex: 1; height: 1px; background: var(--line); }
+
+  .anomaly-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--muted);
+    border-radius: 6px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .anomaly-card.crit  { border-left-color: var(--crit); }
+  .anomaly-card.major { border-left-color: var(--major); }
+  .anomaly-card.minor { border-left-color: var(--minor); }
+  .anomaly-card.info  { border-left-color: var(--info); }
+
+  .anomaly-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 18px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .anomaly-head:hover { background: var(--bg-soft); }
+
+  .sev-pill {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    flex-shrink: 0;
+  }
+  .sev-pill.crit  { background: var(--crit-soft);  color: var(--crit); }
+  .sev-pill.major { background: var(--major-soft); color: var(--major); }
+  .sev-pill.minor { background: var(--minor-soft); color: var(--minor); }
+  .sev-pill.info  { background: var(--info-soft);  color: var(--info); }
+
+  .anomaly-headline {
+    flex: 1;
+    font-size: 14px;
+    color: var(--navy);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .anomaly-headline .arrow { font-family: var(--mono); font-weight: 700; margin-right: 6px; }
+  .anomaly-headline .arrow.up   { color: var(--teal-deep); }
+  .anomaly-headline .arrow.down { color: var(--crit); }
+
+  .anomaly-toggle {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted-soft);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .anomaly-body {
+    padding: 4px 18px 18px;
+    border-top: 1px dashed var(--line);
+    display: none;
+  }
+  .anomaly-body.shown { display: block; }
+
+  .step {
+    padding: 12px 0;
+    border-bottom: 1px dotted var(--line);
+  }
+  .step:last-child { border-bottom: none; }
+  .step-name {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--teal-deep);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .step-finding {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.55;
+    margin-bottom: 8px;
+  }
+  .step-data {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    background: var(--bg-soft);
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-top: 6px;
+  }
+  .step-data .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 2px 0;
+  }
+  .step-data .row .k { color: var(--muted); }
+  .step-data .row .v { color: var(--navy); font-weight: 600; }
+
+  /* Side-by-side panels */
+  .panels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 900px) { .panels { grid-template-columns: 1fr; } }
+  .panel {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 16px 18px;
+  }
+  .panel h3 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+    color: var(--navy);
+  }
+  .row-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .row-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 0;
+    border-bottom: 1px dotted var(--line);
+    font-size: 13px;
+    gap: 12px;
+  }
+  .row-item:last-child { border-bottom: none; }
+  .row-item .name { color: var(--text); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .row-item .name a { color: inherit; text-decoration: none; }
+  .row-item .name a:hover { color: var(--teal-deep); text-decoration: underline; }
+  .row-item .v {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    flex-shrink: 0;
+    font-feature-settings: "tnum";
+  }
+  .row-item .v strong { color: var(--navy); font-weight: 700; }
+
+  /* Trend chart */
+  .trend-wrap {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 16px 18px;
+  }
+  .trend-svg { width: 100%; height: 160px; }
+  .trend-legend {
+    display: flex;
+    gap: 18px;
+    margin-top: 10px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .trend-legend .dot {
+    display: inline-block;
+    width: 8px; height: 8px; border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+  /* Channel chips */
+  .chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .chip {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 7px 12px;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .chip .num {
+    font-family: var(--mono);
+    font-weight: 700;
+    color: var(--navy);
+    font-feature-settings: "tnum";
+  }
+  .chip .label { color: var(--muted); }
+
+  /* Footer */
+  footer {
+    color: var(--muted);
+    font-size: 11px;
+    padding: 24px 0 8px;
+    text-align: center;
+  }
+  footer .mono { font-family: var(--mono); color: var(--muted-soft); }
+
+  /* Loading + empty */
+  .loading { text-align: center; padding: 80px 20px; color: var(--muted); font-size: 13px; }
+  .spinner {
+    width: 12px; height: 12px;
+    border: 2px solid var(--teal-line);
+    border-top-color: var(--teal);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .empty { color: var(--muted); font-style: italic; padding: 14px 0; font-size: 12px; }
+  .hidden { display: none !important; }
+  .error {
+    background: white;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--crit);
+    padding: 16px 20px;
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 13px;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <h1>BCC Daily Pulse</h1>
+    <div class="meta" id="meta-line">loading...</div>
+  </div>
+</div>
+
+<main>
+  <div id="loading" class="loading"><span class="spinner"></span>Loading latest pulse...</div>
+  <div id="content" class="hidden">
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid" id="hero-stats"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Anomalies</h2>
+          <span class="count" id="anomaly-count">--</span>
+          <span class="line"></span>
+        </div>
+        <div id="anomalies"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>28-day trend</h2>
+          <span class="line"></span>
+        </div>
+        <div class="trend-wrap">
+          <svg class="trend-svg" id="trend-chart" viewBox="0 0 1000 160" preserveAspectRatio="none"></svg>
+          <div class="trend-legend">
+            <span><span class="dot" style="background: var(--teal-deep);"></span>Sessions</span>
+            <span><span class="dot" style="background: var(--minor);"></span>Users</span>
+            <span><span class="dot" style="background: var(--muted-soft); height:2px; width:14px; border-radius:1px;"></span>28d median</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="panels">
+          <div class="panel">
+            <h3>Yesterday's traffic by channel</h3>
+            <div class="chip-row" id="channels"></div>
+          </div>
+          <div class="panel">
+            <h3>Yesterday's top sources</h3>
+            <div class="row-list" id="sources"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="panels">
+          <div class="panel">
+            <h3>Top landing pages yesterday</h3>
+            <div class="row-list" id="landing-pages"></div>
+          </div>
+          <div class="panel">
+            <h3>Recent site changes (last 7 days)</h3>
+            <div class="row-list" id="wp-changes"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <span id="footer-meta" class="mono">--</span>
+  </div>
+</footer>
+
+<script>
+"use strict";
+
+const REPO_OWNER = "austintude";
+const REPO_NAME  = "cowork-cron-jobs";
+const SUBPATH    = "bariatric-counseling-center/daily-pulse";
+const RAW_GH = (p) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SUBPATH}/${p}`;
+const JSDELIVR = (p) => `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@main/${SUBPATH}/${p}`;
+
+async function fetchJSON(url, { bypass = false } = {}) {
+  const u = bypass ? `${url}${url.includes("?") ? "&" : "?"}t=${Date.now()}` : url;
+  const r = await fetch(u, { cache: bypass ? "no-store" : "default" });
+  if (!r.ok) throw new Error(`${url} -> HTTP ${r.status}`);
+  return r.json();
+}
+
+function el(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "className") e.className = v;
+    else if (k === "html") e.innerHTML = v;
+    else if (k === "onclick") e.onclick = v;
+    else e.setAttribute(k, v);
+  }
+  for (const c of kids) {
+    if (c == null) continue;
+    e.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+  }
+  return e;
+}
+const fmt = (n) => (n ?? 0).toLocaleString("en-US");
+const fmtDate = (d) => new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
+const fmtDateLong = (d) => new Date(d + "T12:00:00").toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+const ucfirst = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+
+function severityClass(sev) {
+  if (sev === "CRITICAL") return "crit";
+  if (sev === "MAJOR") return "major";
+  if (sev === "MINOR") return "minor";
+  return "info";
+}
+
+function renderHero(data) {
+  const s = data.snapshot || {};
+  const sum = data.anomaly_summary || {};
+  const wrap = document.getElementById("hero-stats");
+  wrap.innerHTML = "";
+  const stats = [
+    { num: fmt(s.sessions),                 label: "Sessions yesterday" },
+    { num: fmt(s.users),                    label: "Users" },
+    { num: fmt(s.pageviews),                label: "Pageviews" },
+    { num: s.avg_session_duration ? Math.round(s.avg_session_duration) + "s" : "--", label: "Avg session" },
+    { num: fmt(s.gsc_impressions),          label: "GSC impressions" },
+    { num: (sum.critical || 0) + "/" + (sum.major || 0), label: "Critical / Major" },
+  ];
+  for (const st of stats) {
+    wrap.appendChild(el("div", { className: "hero-stat" },
+      el("div", { className: "num" }, String(st.num)),
+      el("div", { className: "label" }, st.label),
+    ));
+  }
+}
+
+function renderAnomalies(data) {
+  const anomalies = data.anomalies || [];
+  document.getElementById("anomaly-count").textContent =
+    `${anomalies.length} flagged`;
+  const wrap = document.getElementById("anomalies");
+  wrap.innerHTML = "";
+
+  if (!anomalies.length) {
+    wrap.appendChild(el("div", { className: "empty" },
+      "No anomalies flagged. All metrics within 15% of 28-day baseline."));
+    return;
+  }
+
+  // Sort: severity, then magnitude
+  const order = { CRITICAL: 0, MAJOR: 1, MINOR: 2, INFO: 3 };
+  anomalies.sort((a, b) => {
+    const sa = order[a.severity] ?? 9;
+    const sb = order[b.severity] ?? 9;
+    if (sa !== sb) return sa - sb;
+    return Math.abs(b.pct_delta || 0) - Math.abs(a.pct_delta || 0);
+  });
+
+  for (const a of anomalies) {
+    const sev = severityClass(a.severity);
+    const card = el("div", { className: "anomaly-card " + sev });
+    const head = el("div", { className: "anomaly-head" });
+    head.appendChild(el("span", { className: "sev-pill " + sev }, a.severity));
+
+    // Pretty-print the headline (strip UP/DOWN tokens, add arrow span)
+    let headline = a.headline || "";
+    const arrowMatch = headline.match(/^(UP|DOWN)\s+/);
+    let arrowHTML = "";
+    if (arrowMatch) {
+      const dir = arrowMatch[1].toLowerCase();
+      arrowHTML = `<span class="arrow ${dir}">${dir === "up" ? "&uarr;" : "&darr;"}</span>`;
+      headline = headline.replace(/^(UP|DOWN)\s+/, "");
+    }
+    const headlineEl = el("div", { className: "anomaly-headline", html: arrowHTML + escapeHtml(headline) });
+    head.appendChild(headlineEl);
+
+    const hasBody = a.unpacked && a.unpacked.chain && a.unpacked.chain.length;
+    if (hasBody) head.appendChild(el("div", { className: "anomaly-toggle" }, "[expand +]"));
+    card.appendChild(head);
+
+    if (hasBody) {
+      const body = el("div", { className: "anomaly-body" });
+      for (const step of a.unpacked.chain) {
+        const s = el("div", { className: "step" });
+        s.appendChild(el("div", { className: "step-name" }, step.step));
+        s.appendChild(el("div", { className: "step-finding" }, step.finding));
+        if (step.breakdown && step.breakdown.length) {
+          const data = el("div", { className: "step-data" });
+          for (const it of step.breakdown.slice(0, 6)) {
+            if (it.channel) {
+              data.appendChild(el("div", { className: "row" },
+                el("span", { className: "k" }, it.channel),
+                el("span", { className: "v", html: `<strong>${it.yesterday}</strong> vs baseline ${it.baseline_28d_median} (${it.delta >= 0 ? "+" : ""}${it.delta})` })
+              ));
+            } else {
+              data.appendChild(el("div", { className: "row" }, JSON.stringify(it)));
+            }
+          }
+          s.appendChild(data);
+        }
+        if (step.data && Array.isArray(step.data) && step.data.length) {
+          const data = el("div", { className: "step-data" });
+          for (const it of step.data.slice(0, 6)) {
+            if (it.landingPagePlusQueryString) {
+              data.appendChild(el("div", { className: "row" },
+                el("span", { className: "k" }, it.landingPagePlusQueryString),
+                el("span", { className: "v", html: `<strong>${it.sessions}</strong> sess / ${it.totalUsers || 0} users` })
+              ));
+            } else if (it.title && it.modified) {
+              data.appendChild(el("div", { className: "row" },
+                el("span", { className: "k" }, decodeEntities(it.title)),
+                el("span", { className: "v" }, "mod " + it.modified.slice(0, 10))
+              ));
+            } else if (typeof it === "object") {
+              data.appendChild(el("div", { className: "row" }, JSON.stringify(it)));
+            } else {
+              data.appendChild(el("div", { className: "row" }, String(it)));
+            }
+          }
+          s.appendChild(data);
+        }
+        body.appendChild(s);
+      }
+      card.appendChild(body);
+
+      // Toggle on click
+      head.addEventListener("click", () => {
+        const isOpen = body.classList.toggle("shown");
+        head.querySelector(".anomaly-toggle").textContent = isOpen ? "[collapse -]" : "[expand +]";
+      });
+    }
+
+    wrap.appendChild(card);
+  }
+}
+
+function renderTrendChart(data) {
+  const svg = document.getElementById("trend-chart");
+  svg.innerHTML = "";
+  const W = 1000, H = 160, P = 30;
+  const daily = (data.ga4_data && data.ga4_data.daily_totals) || [];
+  if (daily.length < 2) {
+    svg.innerHTML = `<text x="${W/2}" y="${H/2}" text-anchor="middle" fill="var(--muted)" font-size="12">Not enough history yet.</text>`;
+    return;
+  }
+  const dates = daily.map(r => r.date).sort();
+  const sessByDate = Object.fromEntries(daily.map(r => [r.date, r.sessions || 0]));
+  const usersByDate = Object.fromEntries(daily.map(r => [r.date, r.totalUsers || 0]));
+  const sessVals = dates.map(d => sessByDate[d] || 0);
+  const userVals = dates.map(d => usersByDate[d] || 0);
+  const maxY = Math.max(...sessVals, ...userVals, 5) * 1.1;
+
+  const x = (i) => P + (i / (dates.length - 1)) * (W - 2 * P);
+  const y = (v) => H - P - (v / maxY) * (H - 2 * P);
+
+  // 28-day median line for sessions
+  const sortedSess = [...sessVals].sort((a, b) => a - b);
+  const median = sortedSess[Math.floor(sortedSess.length / 2)];
+  const medianY = y(median);
+
+  // Grid baseline
+  svg.innerHTML += `<line x1="${P}" y1="${medianY}" x2="${W - P}" y2="${medianY}" stroke="var(--muted-soft)" stroke-width="1" stroke-dasharray="4,4"/>`;
+  svg.innerHTML += `<text x="${W - P + 4}" y="${medianY + 4}" font-size="9" font-family="var(--mono)" fill="var(--muted)">med</text>`;
+
+  // Sessions line
+  const sessPath = sessVals.map((v, i) => `${i === 0 ? "M" : "L"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+  svg.innerHTML += `<path d="${sessPath}" fill="none" stroke="var(--teal-deep)" stroke-width="2" stroke-linejoin="round"/>`;
+  // Users line
+  const userPath = userVals.map((v, i) => `${i === 0 ? "M" : "L"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(" ");
+  svg.innerHTML += `<path d="${userPath}" fill="none" stroke="var(--minor)" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="2,2"/>`;
+
+  // Date labels (first, middle, last)
+  const labelIdx = [0, Math.floor(dates.length / 2), dates.length - 1];
+  for (const i of labelIdx) {
+    svg.innerHTML += `<text x="${x(i)}" y="${H - 8}" text-anchor="middle" font-size="10" font-family="var(--mono)" fill="var(--muted)">${fmtDate(dates[i])}</text>`;
+  }
+  // Y-axis max
+  svg.innerHTML += `<text x="${P - 4}" y="${P + 4}" text-anchor="end" font-size="9" font-family="var(--mono)" fill="var(--muted)">${Math.round(maxY)}</text>`;
+  svg.innerHTML += `<text x="${P - 4}" y="${H - P + 4}" text-anchor="end" font-size="9" font-family="var(--mono)" fill="var(--muted)">0</text>`;
+}
+
+function renderChannels(data) {
+  const wrap = document.getElementById("channels");
+  wrap.innerHTML = "";
+  const yest = data.for_date;
+  const ch = {};
+  for (const r of (data.ga4_data?.daily_by_channel || [])) {
+    if (r.date === yest) {
+      ch[r.sessionDefaultChannelGroup] = (ch[r.sessionDefaultChannelGroup] || 0) + (r.sessions || 0);
+    }
+  }
+  const sorted = Object.entries(ch).sort((a, b) => b[1] - a[1]);
+  if (!sorted.length) {
+    wrap.appendChild(el("div", { className: "empty" }, "No channel data yet."));
+    return;
+  }
+  for (const [name, n] of sorted) {
+    wrap.appendChild(el("div", { className: "chip" },
+      el("span", { className: "num" }, String(n)),
+      el("span", { className: "label" }, name),
+    ));
+  }
+}
+
+function renderSources(data) {
+  const wrap = document.getElementById("sources");
+  wrap.innerHTML = "";
+  const sources = data.ga4_data?.yesterday_sources || [];
+  if (!sources.length) {
+    wrap.appendChild(el("div", { className: "empty" }, "No source data yet."));
+    return;
+  }
+  for (const s of sources.slice(0, 10)) {
+    wrap.appendChild(el("div", { className: "row-item" },
+      el("span", { className: "name" }, s.sessionSourceMedium),
+      el("span", { className: "v", html: `<strong>${s.sessions}</strong> sess / ${s.totalUsers || 0} users` })
+    ));
+  }
+}
+
+function renderLandingPages(data) {
+  const wrap = document.getElementById("landing-pages");
+  wrap.innerHTML = "";
+  const pages = data.ga4_data?.yesterday_landing_pages || [];
+  if (!pages.length) {
+    wrap.appendChild(el("div", { className: "empty" }, "No landing-page data yet."));
+    return;
+  }
+  for (const p of pages.slice(0, 10)) {
+    const path = p.landingPagePlusQueryString || "(not set)";
+    const linkable = path.startsWith("/") ? `https://www.bariatriccounselingcenter.com${path}` : null;
+    const nameEl = linkable
+      ? el("a", { href: linkable, target: "_blank", rel: "noopener" }, path)
+      : document.createTextNode(path);
+    wrap.appendChild(el("div", { className: "row-item" },
+      el("span", { className: "name" }, nameEl),
+      el("span", { className: "v", html: `<strong>${p.sessions}</strong> sess` })
+    ));
+  }
+}
+
+function renderWpChanges(data) {
+  const wrap = document.getElementById("wp-changes");
+  wrap.innerHTML = "";
+  const wp = data.wp_recent_changes || {};
+  const items = [...(wp.pages || []).map(p => ({ ...p, kind: "PAGE" })),
+                 ...(wp.posts || []).map(p => ({ ...p, kind: "POST" }))];
+  items.sort((a, b) => (b.modified || "").localeCompare(a.modified || ""));
+  if (!items.length) {
+    wrap.appendChild(el("div", { className: "empty" }, "No site changes in the last 7 days."));
+    return;
+  }
+  for (const it of items.slice(0, 12)) {
+    wrap.appendChild(el("div", { className: "row-item" },
+      el("span", { className: "name" },
+        el("a", { href: it.link, target: "_blank", rel: "noopener" }, decodeEntities(it.title))
+      ),
+      el("span", { className: "v" }, `${it.kind} · ${(it.modified || "").slice(0, 10)}`)
+    ));
+  }
+}
+
+function renderHeader(data) {
+  const meta = document.getElementById("meta-line");
+  const forDate = fmtDateLong(data.for_date);
+  const fetched = data.fetched_at ? new Date(data.fetched_at).toLocaleString() : "--";
+  meta.innerHTML = `data for <strong>${forDate}</strong> · fetched <strong>${fetched}</strong>`;
+  document.getElementById("footer-meta").textContent =
+    `GA4 property ${data.ga4_property_id || "?"} · GSC ${data.gsc_property || "?"} · 28-day baseline window`;
+}
+
+function decodeEntities(s) {
+  if (!s) return "";
+  const ta = document.createElement("textarea");
+  ta.innerHTML = s;
+  return ta.value;
+}
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+async function boot() {
+  const loading = document.getElementById("loading");
+  const content = document.getElementById("content");
+  try {
+    // Load manifest -> latest -> data
+    const manifest = await fetchJSON(RAW_GH("manifest.json"), { bypass: true });
+    const latest = manifest.latest;
+    if (!latest) throw new Error("No latest file in manifest.");
+    let data;
+    try {
+      data = await fetchJSON(RAW_GH(`data/${latest}`), { bypass: true });
+    } catch (e) {
+      data = await fetchJSON(JSDELIVR(`data/${latest}`));
+    }
+
+    renderHeader(data);
+    renderHero(data);
+    renderAnomalies(data);
+    renderTrendChart(data);
+    renderChannels(data);
+    renderSources(data);
+    renderLandingPages(data);
+    renderWpChanges(data);
+
+    loading.classList.add("hidden");
+    content.classList.remove("hidden");
+  } catch (e) {
+    loading.innerHTML = `<div class="error">Unable to load daily pulse.<br/><small>${(e.message || e).toString().replace(/[<>]/g, "")}</small><br/><br/><small style="color:var(--muted);">If this is your first run, trigger the daily-pulse job manually and wait for the push.</small></div>`;
+  }
+}
+
+boot();
+</script>
+
+</body>
+</html>
