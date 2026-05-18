@@ -1,10 +1,13 @@
 {
-  "latest": "seo-data-2026-05-07.json",
-  "updated": "2026-05-07T17:25:00-06:00",
+  "latest": "seo-data-2026-05-18.json",
+  "updated": "2026-05-18T07:32:00-06:00",
   "files": [
+    "seo-data-2026-05-18.json",
+    "seo-data-2026-05-11.json",
     "seo-data-2026-05-07.json",
     "seo-data-2026-05-06.json",
     "seo-data-2026-04-27.json",
     "seo-data-2026-04-23.json"
-  ]
+  ],
+  "audit_note": "This manifest mirrors the historical audit copy in cron-jobs/. The live board at https://drbdig.com/seo/bcc/board/ reads its own manifest from SiteGround (see seo-tools/sftp-upload.py). SFTP upload for 2026-05-18 was deferred to manual run -- see seo-tools/output/NEXT-STEP-2026-05-18.txt."
 }
