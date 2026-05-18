@@ -1197,11 +1197,24 @@ async function boot() {
   const content = document.getElementById("content");
   try {
     const manifest = await loadManifest();
-    const files = (manifest.files || []).slice(0, 12).reverse(); // oldest -> newest
+    // Accept both manifest shapes:
+    //   A (runner-shape):     { latest: "seo-data-X.json", files: ["seo-data-X.json", ...] }
+    //   B (legacy date-list): { latestDate: "YYYY-MM-DD", availableDates: ["YYYY-MM-DD", ...] }
+    let files = [];
+    let latestFilename = null;
+    if (Array.isArray(manifest.files) && manifest.files.length) {
+      files = manifest.files.slice(0, 12).reverse(); // oldest -> newest
+      latestFilename = manifest.latest;
+    } else if (Array.isArray(manifest.availableDates) && manifest.availableDates.length) {
+      const dates = manifest.availableDates.slice(0, 12).reverse();
+      files = dates.map(d => `seo-data-${d}.json`);
+      latestFilename = manifest.latestDate
+        ? `seo-data-${manifest.latestDate}.json`
+        : files[files.length - 1];
+    }
     if (!files.length) throw new Error("No data files in manifest.");
 
     // Load all data files in parallel
-    const latestFilename = manifest.latest;
     const dataFiles = await Promise.all(
       files.map(f => loadDataFile(f, { isLatest: f === latestFilename }).catch(() => null))
     );
