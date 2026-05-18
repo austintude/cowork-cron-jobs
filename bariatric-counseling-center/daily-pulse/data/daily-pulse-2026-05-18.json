@@ -1,0 +1,1379 @@
+{
+  "fetched_at": "2026-05-18T20:36:12.238377Z",
+  "for_date": "2026-05-17",
+  "baseline_window": {
+    "start": "2026-04-19",
+    "end": "2026-05-16",
+    "days": 28
+  },
+  "ga4_property_id": "254059736",
+  "gsc_property": "https://www.bariatriccounselingcenter.com/",
+  "snapshot": {
+    "sessions": 12,
+    "users": 11,
+    "new_users": 8,
+    "pageviews": 74,
+    "engagement_rate": 0.9167,
+    "avg_session_duration": 372.9662,
+    "gsc_impressions": 0,
+    "gsc_clicks": 0,
+    "gsc_position": 0.0
+  },
+  "anomaly_summary": {
+    "total": 5,
+    "critical": 1,
+    "major": 3,
+    "minor": 0
+  },
+  "anomalies": [
+    {
+      "metric": "GA4 avg session dur",
+      "actual": 372.9662,
+      "baseline_28d_median": 114.68,
+      "yoy_same_day": null,
+      "pct_delta": 225.2,
+      "severity": "CRITICAL",
+      "direction": "up",
+      "headline": "UP GA4 avg session dur: 372.966 (+225.2% vs 28d median of 115)"
+    },
+    {
+      "metric": "GA4 new users",
+      "actual": 8,
+      "baseline_28d_median": 14.0,
+      "yoy_same_day": null,
+      "pct_delta": -42.9,
+      "severity": "MAJOR",
+      "direction": "down",
+      "headline": "DOWN GA4 new users: 8 (-42.9% vs 28d median of 14)"
+    },
+    {
+      "metric": "GA4 users",
+      "actual": 11,
+      "baseline_28d_median": 18.5,
+      "yoy_same_day": 10,
+      "pct_delta": -40.5,
+      "severity": "MAJOR",
+      "direction": "down",
+      "headline": "DOWN GA4 users: 11 (-40.5% vs 28d median of 18) (YoY same day: +10.0%)"
+    },
+    {
+      "metric": "GA4 sessions",
+      "actual": 12,
+      "baseline_28d_median": 20.0,
+      "yoy_same_day": 10,
+      "pct_delta": -40.0,
+      "severity": "MAJOR",
+      "direction": "down",
+      "headline": "DOWN GA4 sessions: 12 (-40.0% vs 28d median of 20) (YoY same day: +20.0%)",
+      "unpacked": {
+        "chain": [
+          {
+            "step": "Source attribution",
+            "finding": "Direct fell from baseline 10 to 5 (-5).",
+            "breakdown": [
+              {
+                "channel": "Direct",
+                "yesterday": 5,
+                "baseline_28d_median": 10.0,
+                "delta": -5.0
+              },
+              {
+                "channel": "Organic Search",
+                "yesterday": 6,
+                "baseline_28d_median": 9.5,
+                "delta": -3.5
+              }
+            ]
+          },
+          {
+            "step": "Direct-traffic investigation",
+            "finding": "Direct anomaly almost always means either (a) untagged email/SMS/QR campaign, (b) a bot spike, or (c) a referrer that strips Referer headers (some mobile apps). If this was unplanned, check server logs for unusual user agents."
+          },
+          {
+            "step": "Top landing pages yesterday",
+            "finding": "Top page: / with 6 sessions.",
+            "data": [
+              {
+                "landingPagePlusQueryString": "/",
+                "sessions": 6,
+                "totalUsers": 6,
+                "engagementRate": 1
+              },
+              {
+                "landingPagePlusQueryString": "/self-improvement/mental-health/why-stress-eating-happens/",
+                "sessions": 2,
+                "totalUsers": 2,
+                "engagementRate": 1
+              },
+              {
+                "landingPagePlusQueryString": "(not set)",
+                "sessions": 1,
+                "totalUsers": 1,
+                "engagementRate": 0
+              },
+              {
+                "landingPagePlusQueryString": "/author/shamilton/",
+                "sessions": 1,
+                "totalUsers": 1,
+                "engagementRate": 1
+              },
+              {
+                "landingPagePlusQueryString": "/testimonials/",
+                "sessions": 1,
+                "totalUsers": 1,
+                "engagementRate": 1
+              }
+            ]
+          },
+          {
+            "step": "Recent site changes (last 7 days)",
+            "finding": "7 pages/posts modified -- cross-reference with affected pages.",
+            "data": [
+              {
+                "id": 2091,
+                "title": "Home &#8211; Bariatric Counseling Center",
+                "modified": "2026-05-13T13:57:46"
+              },
+              {
+                "id": 5270,
+                "title": "Bariatric Therapist in San Antonio, TX",
+                "modified": "2026-05-12T13:40:20"
+              },
+              {
+                "id": 5269,
+                "title": "Body Confidence Counseling in San Antonio, TX",
+                "modified": "2026-05-12T13:40:11"
+              },
+              {
+                "id": 5266,
+                "title": "Holistic Weight Loss Counseling in San Antonio, TX",
+                "modified": "2026-05-12T13:40:00"
+              },
+              {
+                "id": 5267,
+                "title": "Nutritional Counseling in San Antonio, TX",
+                "modified": "2026-05-12T13:39:49"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "severity": "INFO",
+      "metric": "GSC data freshness",
+      "actual": 0,
+      "baseline_28d_median": 1011.0,
+      "pct_delta": null,
+      "headline": "GSC data for 2026-05-17 not yet available (typical 1-3 day reporting lag). Latest GSC day with data: 2026-05-16.",
+      "direction": "info"
+    }
+  ],
+  "ga4_data": {
+    "daily_totals": [
+      {
+        "date": "2026-04-19",
+        "sessions": 12,
+        "totalUsers": 11,
+        "newUsers": 11,
+        "screenPageViews": 34,
+        "engagementRate": 1,
+        "averageSessionDuration": 141.0763
+      },
+      {
+        "date": "2026-04-20",
+        "sessions": 39,
+        "totalUsers": 34,
+        "newUsers": 26,
+        "screenPageViews": 97,
+        "engagementRate": 0.9231,
+        "averageSessionDuration": 33.8561
+      },
+      {
+        "date": "2026-04-21",
+        "sessions": 34,
+        "totalUsers": 27,
+        "newUsers": 25,
+        "screenPageViews": 117,
+        "engagementRate": 0.9118,
+        "averageSessionDuration": 80.2709
+      },
+      {
+        "date": "2026-04-22",
+        "sessions": 37,
+        "totalUsers": 33,
+        "newUsers": 29,
+        "screenPageViews": 85,
+        "engagementRate": 0.9189,
+        "averageSessionDuration": 76.1851
+      },
+      {
+        "date": "2026-04-23",
+        "sessions": 21,
+        "totalUsers": 20,
+        "newUsers": 15,
+        "screenPageViews": 58,
+        "engagementRate": 1,
+        "averageSessionDuration": 109.6133
+      },
+      {
+        "date": "2026-04-24",
+        "sessions": 28,
+        "totalUsers": 24,
+        "newUsers": 20,
+        "screenPageViews": 94,
+        "engagementRate": 0.8929,
+        "averageSessionDuration": 128.843
+      },
+      {
+        "date": "2026-04-25",
+        "sessions": 17,
+        "totalUsers": 15,
+        "newUsers": 14,
+        "screenPageViews": 44,
+        "engagementRate": 0.8824,
+        "averageSessionDuration": 211.1594
+      },
+      {
+        "date": "2026-04-26",
+        "sessions": 13,
+        "totalUsers": 13,
+        "newUsers": 11,
+        "screenPageViews": 30,
+        "engagementRate": 0.9231,
+        "averageSessionDuration": 27.5276
+      },
+      {
+        "date": "2026-04-27",
+        "sessions": 46,
+        "totalUsers": 41,
+        "newUsers": 34,
+        "screenPageViews": 147,
+        "engagementRate": 1,
+        "averageSessionDuration": 206.4255
+      },
+      {
+        "date": "2026-04-28",
+        "sessions": 35,
+        "totalUsers": 30,
+        "newUsers": 24,
+        "screenPageViews": 100,
+        "engagementRate": 0.9429,
+        "averageSessionDuration": 85.2207
+      },
+      {
+        "date": "2026-04-29",
+        "sessions": 19,
+        "totalUsers": 15,
+        "newUsers": 10,
+        "screenPageViews": 52,
+        "engagementRate": 0.8947,
+        "averageSessionDuration": 47.2693
+      },
+      {
+        "date": "2026-04-30",
+        "sessions": 32,
+        "totalUsers": 28,
+        "newUsers": 23,
+        "screenPageViews": 96,
+        "engagementRate": 0.9688,
+        "averageSessionDuration": 181.352
+      },
+      {
+        "date": "2026-05-01",
+        "sessions": 23,
+        "totalUsers": 20,
+        "newUsers": 13,
+        "screenPageViews": 85,
+        "engagementRate": 0.9565,
+        "averageSessionDuration": 263.5303
+      },
+      {
+        "date": "2026-05-02",
+        "sessions": 6,
+        "totalUsers": 6,
+        "newUsers": 4,
+        "screenPageViews": 12,
+        "engagementRate": 0.8333,
+        "averageSessionDuration": 22.8684
+      },
+      {
+        "date": "2026-05-03",
+        "sessions": 7,
+        "totalUsers": 7,
+        "newUsers": 6,
+        "screenPageViews": 18,
+        "engagementRate": 0.8571,
+        "averageSessionDuration": 147.6497
+      },
+      {
+        "date": "2026-05-04",
+        "sessions": 25,
+        "totalUsers": 24,
+        "newUsers": 20,
+        "screenPageViews": 91,
+        "engagementRate": 1,
+        "averageSessionDuration": 116.2913
+      },
+      {
+        "date": "2026-05-05",
+        "sessions": 19,
+        "totalUsers": 17,
+        "newUsers": 11,
+        "screenPageViews": 125,
+        "engagementRate": 0.8947,
+        "averageSessionDuration": 388.8489
+      },
+      {
+        "date": "2026-05-06",
+        "sessions": 37,
+        "totalUsers": 32,
+        "newUsers": 27,
+        "screenPageViews": 163,
+        "engagementRate": 0.9189,
+        "averageSessionDuration": 113.0655
+      },
+      {
+        "date": "2026-05-07",
+        "sessions": 15,
+        "totalUsers": 14,
+        "newUsers": 12,
+        "screenPageViews": 90,
+        "engagementRate": 0.8,
+        "averageSessionDuration": 291.6904
+      },
+      {
+        "date": "2026-05-08",
+        "sessions": 14,
+        "totalUsers": 14,
+        "newUsers": 11,
+        "screenPageViews": 63,
+        "engagementRate": 1,
+        "averageSessionDuration": 223.7028
+      },
+      {
+        "date": "2026-05-09",
+        "sessions": 8,
+        "totalUsers": 8,
+        "newUsers": 6,
+        "screenPageViews": 16,
+        "engagementRate": 1,
+        "averageSessionDuration": 14.6939
+      },
+      {
+        "date": "2026-05-10",
+        "sessions": 6,
+        "totalUsers": 6,
+        "newUsers": 6,
+        "screenPageViews": 24,
+        "engagementRate": 1,
+        "averageSessionDuration": 17.4475
+      },
+      {
+        "date": "2026-05-11",
+        "sessions": 27,
+        "totalUsers": 24,
+        "newUsers": 21,
+        "screenPageViews": 149,
+        "engagementRate": 0.9259,
+        "averageSessionDuration": 162.4119
+      },
+      {
+        "date": "2026-05-12",
+        "sessions": 16,
+        "totalUsers": 16,
+        "newUsers": 14,
+        "screenPageViews": 49,
+        "engagementRate": 0.9375,
+        "averageSessionDuration": 84.6505
+      },
+      {
+        "date": "2026-05-13",
+        "sessions": 18,
+        "totalUsers": 15,
+        "newUsers": 11,
+        "screenPageViews": 73,
+        "engagementRate": 0.8889,
+        "averageSessionDuration": 1377.3681
+      },
+      {
+        "date": "2026-05-14",
+        "sessions": 51,
+        "totalUsers": 44,
+        "newUsers": 41,
+        "screenPageViews": 167,
+        "engagementRate": 0.9412,
+        "averageSessionDuration": 436.9901
+      },
+      {
+        "date": "2026-05-15",
+        "sessions": 24,
+        "totalUsers": 23,
+        "newUsers": 21,
+        "screenPageViews": 75,
+        "engagementRate": 1,
+        "averageSessionDuration": 85.4929
+      },
+      {
+        "date": "2026-05-16",
+        "sessions": 15,
+        "totalUsers": 12,
+        "newUsers": 10,
+        "screenPageViews": 42,
+        "engagementRate": 1,
+        "averageSessionDuration": 28.4325
+      },
+      {
+        "date": "2026-05-17",
+        "sessions": 12,
+        "totalUsers": 11,
+        "newUsers": 8,
+        "screenPageViews": 74,
+        "engagementRate": 0.9167,
+        "averageSessionDuration": 372.9662
+      }
+    ],
+    "daily_by_channel": [
+      {
+        "date": "2026-05-14",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 40,
+        "totalUsers": 35
+      },
+      {
+        "date": "2026-04-27",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 28,
+        "totalUsers": 26
+      },
+      {
+        "date": "2026-04-28",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 22,
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-04-22",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 18,
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-04-22",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 18,
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-05-06",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 17,
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-05-06",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 17,
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-05-15",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 17,
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-04-20",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 16,
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-04-21",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 16,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-04-20",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 15,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-04-29",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 15,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-04-30",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 15,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-04-21",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 14,
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-04-30",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 14,
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-04-24",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-04-24",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 12,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-05-01",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 12,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-05-11",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-04-19",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 11,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-04-27",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-04-28",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-04",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-05-04",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-05-11",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-04-23",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 10,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-04-25",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 10,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-05",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 10,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-05-16",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 10,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-05-01",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 9,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-08",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 9,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-13",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 9,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-05-14",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 9,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-04-23",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-04-26",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-05-05",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-05-07",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-12",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-05-13",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-04-26",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-07",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-12",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-15",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-17",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-04-20",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 5,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-05-02",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-05-03",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-05-09",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-05-17",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-04-21",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 4,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-04-25",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-04-27",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 4,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-29",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 4,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-05-08",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-05-10",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-05-11",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 4,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-16",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 4,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-04-23",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-04-27",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-04-30",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-05-04",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-12",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-04-20",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-04-24",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-04-24",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-25",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-03",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-05",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-06",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-07",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-09",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-10",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-14",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-19",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-20",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-22",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-23",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-25",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-28",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-28",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-01",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-01",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-02",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-06",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-08",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-09",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-13",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-13",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-15",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-16",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-17",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      }
+    ],
+    "yesterday_landing_pages": [
+      {
+        "landingPagePlusQueryString": "/",
+        "sessions": 6,
+        "totalUsers": 6,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/self-improvement/mental-health/why-stress-eating-happens/",
+        "sessions": 2,
+        "totalUsers": 2,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "(not set)",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 0
+      },
+      {
+        "landingPagePlusQueryString": "/author/shamilton/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/testimonials/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      }
+    ],
+    "yesterday_sources": [
+      {
+        "sessionSourceMedium": "google / organic",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "sessionSourceMedium": "(direct) / (none)",
+        "sessions": 5,
+        "totalUsers": 4
+      },
+      {
+        "sessionSourceMedium": "sagebariatric.com / referral",
+        "sessions": 1,
+        "totalUsers": 1
+      }
+    ],
+    "yesterday_devices": [
+      {
+        "deviceCategory": "desktop",
+        "sessions": 8
+      },
+      {
+        "deviceCategory": "mobile",
+        "sessions": 4
+      }
+    ],
+    "yoy_same_day": {
+      "sessions": 10,
+      "totalUsers": 10,
+      "screenPageViews": 53
+    },
+    "_wp_recent": {
+      "pages": [
+        {
+          "id": 2091,
+          "slug": "home-2",
+          "link": "https://www.bariatriccounselingcenter.com/",
+          "title": "Home &#8211; Bariatric Counseling Center",
+          "date": "2026-01-08T10:17:00",
+          "modified": "2026-05-13T13:57:46"
+        },
+        {
+          "id": 5270,
+          "slug": "bariatric-therapist-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/",
+          "title": "Bariatric Therapist in San Antonio, TX",
+          "date": "2026-05-12T13:40:20",
+          "modified": "2026-05-12T13:40:20"
+        },
+        {
+          "id": 5269,
+          "slug": "body-confidence-counseling-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/body-confidence-counseling-in-san-antonio-tx/",
+          "title": "Body Confidence Counseling in San Antonio, TX",
+          "date": "2026-05-12T13:40:11",
+          "modified": "2026-05-12T13:40:11"
+        },
+        {
+          "id": 5266,
+          "slug": "holistic-weight-loss-counseling-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/holistic-weight-loss-counseling-in-san-antonio-tx/",
+          "title": "Holistic Weight Loss Counseling in San Antonio, TX",
+          "date": "2026-05-12T13:40:00",
+          "modified": "2026-05-12T13:40:00"
+        },
+        {
+          "id": 5267,
+          "slug": "nutritional-counseling-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/",
+          "title": "Nutritional Counseling in San Antonio, TX",
+          "date": "2026-05-12T13:39:49",
+          "modified": "2026-05-12T13:39:49"
+        },
+        {
+          "id": 5268,
+          "slug": "therapy-for-depression-and-weight-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/",
+          "title": "Therapy for Depression and Weight Concerns in San Antonio, TX",
+          "date": "2026-05-12T13:39:40",
+          "modified": "2026-05-12T13:39:40"
+        },
+        {
+          "id": 5271,
+          "slug": "therapy-for-eating-disorders-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/therapy-for-eating-disorders-in-san-antonio-tx/",
+          "title": "Therapy for Eating Disorders in San Antonio, TX",
+          "date": "2026-05-12T13:39:27",
+          "modified": "2026-05-12T13:39:27"
+        }
+      ],
+      "posts": []
+    }
+  },
+  "gsc_data": {
+    "daily_totals": [
+      {
+        "date": "2026-04-19",
+        "clicks": 0,
+        "impressions": 709,
+        "ctr": 0.0,
+        "position": 12.44
+      },
+      {
+        "date": "2026-04-20",
+        "clicks": 5,
+        "impressions": 1175,
+        "ctr": 0.0043,
+        "position": 10.42
+      },
+      {
+        "date": "2026-04-21",
+        "clicks": 9,
+        "impressions": 1237,
+        "ctr": 0.0073,
+        "position": 9.32
+      },
+      {
+        "date": "2026-04-22",
+        "clicks": 10,
+        "impressions": 1321,
+        "ctr": 0.0076,
+        "position": 11.15
+      },
+      {
+        "date": "2026-04-23",
+        "clicks": 8,
+        "impressions": 1288,
+        "ctr": 0.0062,
+        "position": 10.73
+      },
+      {
+        "date": "2026-04-24",
+        "clicks": 6,
+        "impressions": 978,
+        "ctr": 0.0061,
+        "position": 11.32
+      },
+      {
+        "date": "2026-04-25",
+        "clicks": 11,
+        "impressions": 966,
+        "ctr": 0.0114,
+        "position": 11.18
+      },
+      {
+        "date": "2026-04-26",
+        "clicks": 4,
+        "impressions": 726,
+        "ctr": 0.0055,
+        "position": 11.98
+      },
+      {
+        "date": "2026-04-27",
+        "clicks": 6,
+        "impressions": 646,
+        "ctr": 0.0093,
+        "position": 10.89
+      },
+      {
+        "date": "2026-04-28",
+        "clicks": 7,
+        "impressions": 663,
+        "ctr": 0.0106,
+        "position": 10.83
+      },
+      {
+        "date": "2026-04-29",
+        "clicks": 6,
+        "impressions": 1000,
+        "ctr": 0.006,
+        "position": 11.29
+      },
+      {
+        "date": "2026-04-30",
+        "clicks": 6,
+        "impressions": 1292,
+        "ctr": 0.0046,
+        "position": 12.3
+      },
+      {
+        "date": "2026-05-01",
+        "clicks": 0,
+        "impressions": 1179,
+        "ctr": 0.0,
+        "position": 13.67
+      },
+      {
+        "date": "2026-05-02",
+        "clicks": 0,
+        "impressions": 1114,
+        "ctr": 0.0,
+        "position": 13.64
+      },
+      {
+        "date": "2026-05-03",
+        "clicks": 2,
+        "impressions": 1131,
+        "ctr": 0.0018,
+        "position": 14.55
+      },
+      {
+        "date": "2026-05-04",
+        "clicks": 6,
+        "impressions": 850,
+        "ctr": 0.0071,
+        "position": 12.96
+      },
+      {
+        "date": "2026-05-05",
+        "clicks": 4,
+        "impressions": 1101,
+        "ctr": 0.0036,
+        "position": 13.87
+      },
+      {
+        "date": "2026-05-06",
+        "clicks": 5,
+        "impressions": 1255,
+        "ctr": 0.004,
+        "position": 12.26
+      },
+      {
+        "date": "2026-05-07",
+        "clicks": 3,
+        "impressions": 1079,
+        "ctr": 0.0028,
+        "position": 14.58
+      },
+      {
+        "date": "2026-05-08",
+        "clicks": 1,
+        "impressions": 1055,
+        "ctr": 0.0009,
+        "position": 13.04
+      },
+      {
+        "date": "2026-05-09",
+        "clicks": 2,
+        "impressions": 715,
+        "ctr": 0.0028,
+        "position": 12.21
+      },
+      {
+        "date": "2026-05-10",
+        "clicks": 3,
+        "impressions": 881,
+        "ctr": 0.0034,
+        "position": 14.56
+      },
+      {
+        "date": "2026-05-11",
+        "clicks": 5,
+        "impressions": 876,
+        "ctr": 0.0057,
+        "position": 14.47
+      },
+      {
+        "date": "2026-05-12",
+        "clicks": 2,
+        "impressions": 1134,
+        "ctr": 0.0018,
+        "position": 12.86
+      },
+      {
+        "date": "2026-05-13",
+        "clicks": 4,
+        "impressions": 857,
+        "ctr": 0.0047,
+        "position": 14.62
+      },
+      {
+        "date": "2026-05-14",
+        "clicks": 3,
+        "impressions": 1022,
+        "ctr": 0.0029,
+        "position": 16.35
+      },
+      {
+        "date": "2026-05-15",
+        "clicks": 2,
+        "impressions": 948,
+        "ctr": 0.0021,
+        "position": 15.32
+      },
+      {
+        "date": "2026-05-16",
+        "clicks": 1,
+        "impressions": 840,
+        "ctr": 0.0012,
+        "position": 17.0
+      }
+    ],
+    "yesterday_queries": [],
+    "yesterday_pages": []
+  },
+  "wp_recent_changes": {
+    "pages": [
+      {
+        "id": 2091,
+        "slug": "home-2",
+        "link": "https://www.bariatriccounselingcenter.com/",
+        "title": "Home &#8211; Bariatric Counseling Center",
+        "date": "2026-01-08T10:17:00",
+        "modified": "2026-05-13T13:57:46"
+      },
+      {
+        "id": 5270,
+        "slug": "bariatric-therapist-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/",
+        "title": "Bariatric Therapist in San Antonio, TX",
+        "date": "2026-05-12T13:40:20",
+        "modified": "2026-05-12T13:40:20"
+      },
+      {
+        "id": 5269,
+        "slug": "body-confidence-counseling-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/body-confidence-counseling-in-san-antonio-tx/",
+        "title": "Body Confidence Counseling in San Antonio, TX",
+        "date": "2026-05-12T13:40:11",
+        "modified": "2026-05-12T13:40:11"
+      },
+      {
+        "id": 5266,
+        "slug": "holistic-weight-loss-counseling-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/holistic-weight-loss-counseling-in-san-antonio-tx/",
+        "title": "Holistic Weight Loss Counseling in San Antonio, TX",
+        "date": "2026-05-12T13:40:00",
+        "modified": "2026-05-12T13:40:00"
+      },
+      {
+        "id": 5267,
+        "slug": "nutritional-counseling-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/",
+        "title": "Nutritional Counseling in San Antonio, TX",
+        "date": "2026-05-12T13:39:49",
+        "modified": "2026-05-12T13:39:49"
+      },
+      {
+        "id": 5268,
+        "slug": "therapy-for-depression-and-weight-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/",
+        "title": "Therapy for Depression and Weight Concerns in San Antonio, TX",
+        "date": "2026-05-12T13:39:40",
+        "modified": "2026-05-12T13:39:40"
+      },
+      {
+        "id": 5271,
+        "slug": "therapy-for-eating-disorders-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/therapy-for-eating-disorders-in-san-antonio-tx/",
+        "title": "Therapy for Eating Disorders in San Antonio, TX",
+        "date": "2026-05-12T13:39:27",
+        "modified": "2026-05-12T13:39:27"
+      }
+    ],
+    "posts": []
+  }
+}
