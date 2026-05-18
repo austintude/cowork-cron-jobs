@@ -495,14 +495,20 @@
 "use strict";
 
 // ===== CONFIG =====
-// Data is SFTP'd directly to SiteGround at /seo/bcc/data/. No GitHub round-trip.
-// Function names RAW_GH / JSDELIVR are kept for minimal diff -- both now point at
-// the same same-origin path. The runner uploads seo-data-*.json + manifest.json
-// to this folder via sftp-upload.py.
-const DATA_BASE = "/seo/bcc/data";
+// Data is read directly from the public GitHub repo (austintude/cowork-cron-jobs).
+// The runner writes seo-data-*.json + manifest.json into the local clone of that
+// repo, then a `git push` publishes it. The board fetches from raw.githubusercontent
+// with jsdelivr as a CDN fallback.
+//
+// NOTE -- earlier (2026-05-12) this was switched to a SiteGround /seo/bcc/data/
+// path with SFTP uploads. That direction was reverted on 2026-05-18 because it
+// required a separate hosting account and broke the single-source-of-truth design.
+const REPO_OWNER = "austintude";
+const REPO_NAME  = "cowork-cron-jobs";
+const SUBPATH    = "bariatric-counseling-center/seo-weekly";
 
-const RAW_GH   = (path) => `${DATA_BASE}/${path}`;
-const JSDELIVR = (path) => `${DATA_BASE}/${path}`;
+const RAW_GH   = (path) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SUBPATH}/${path}`;
+const JSDELIVR = (path) => `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@main/${SUBPATH}/${path}`;
 
 // ===== SERVICE AREA TAXONOMY =====
 // Maps raw keywords from the JSON to BCC service areas. Anything not listed is grouped as "Other".
