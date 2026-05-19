@@ -4,43 +4,56 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
-<title>BCC Online Reach</title>
-<meta name="description" content="Bariatric Counseling Center -- live snapshot of where BCC shows up online for searches relevant to its services." />
+<title>BCC Online Performance</title>
+<meta name="description" content="Bariatric Counseling Center -- weekly snapshot of how people are finding and engaging with BCC online." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+Pro:wght@600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --teal: #4ECDC4;
     --teal-soft: #e7f9f7;
     --teal-line: #b5e8e3;
     --teal-deep: #2eb1a8;
+    --teal-shade: #c8efeb;
     --navy: #2c3e50;
-    --navy-soft: #f4f6f8;
+    --navy-deep: #1f2d3a;
     --text: #1f2d3a;
-    --muted: #5b6b78;
+    --text-soft: #3f5061;
+    --muted: #6b7a87;
+    --muted-soft: #8a96a3;
     --bg: #ffffff;
-    --bg-soft: #f8fafb;
+    --bg-soft: #f6f8fa;
+    --bg-band: #fbfcfd;
     --line: #e3e9ee;
+    --line-soft: #eef2f5;
     --shadow-sm: 0 1px 2px rgba(44,62,80,0.04);
-    --shadow-md: 0 1px 3px rgba(44,62,80,0.06), 0 4px 14px rgba(44,62,80,0.05);
+    --shadow-md: 0 1px 3px rgba(44,62,80,0.05), 0 4px 14px rgba(44,62,80,0.04);
+    --shadow-lg: 0 4px 12px rgba(44,62,80,0.06), 0 12px 28px rgba(44,62,80,0.05);
+    --serif: "Source Serif Pro", Georgia, "Times New Roman", serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--sans);
     color: var(--text);
-    background: var(--bg-soft);
+    background: var(--bg);
     line-height: 1.55;
+    font-size: 15px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss01", "cv11";
   }
 
-  .container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
-  @media (max-width: 600px) { .container { padding: 0 16px; } }
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+  @media (max-width: 600px) { .container { padding: 0 18px; } }
 
-  /* ----- Header (compact, dashboard-like) ----- */
+  /* ----- Sticky top bar ----- */
   .topbar {
     background: var(--bg);
     border-bottom: 1px solid var(--line);
-    padding: 18px 0;
+    padding: 16px 0;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -54,19 +67,20 @@
     flex-wrap: wrap;
   }
   .topbar h1 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--navy);
     margin: 0;
     display: flex;
     align-items: center;
     gap: 12px;
+    letter-spacing: -0.005em;
   }
   .topbar h1::before {
     content: "";
     display: inline-block;
     width: 4px;
-    height: 22px;
+    height: 18px;
     background: var(--teal);
     border-radius: 2px;
   }
@@ -75,99 +89,216 @@
     color: var(--muted);
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
   }
-  .topbar .updated .pulse {
+  .topbar .pulse {
     width: 7px; height: 7px; border-radius: 50%; background: var(--teal);
     box-shadow: 0 0 0 0 rgba(78,205,196,0.6);
     animation: pulse 2.4s infinite;
   }
   @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(78,205,196,0.6); }
-    70% { box-shadow: 0 0 0 8px rgba(78,205,196,0); }
+    0%   { box-shadow: 0 0 0 0 rgba(78,205,196,0.55); }
+    70%  { box-shadow: 0 0 0 8px rgba(78,205,196,0); }
     100% { box-shadow: 0 0 0 0 rgba(78,205,196,0); }
   }
 
-  /* ----- Page sections ----- */
-  section { padding: 28px 0; }
-  section.tight { padding: 18px 0 28px; }
-
-  /* ----- Stat row ----- */
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px;
-  }
-  @media (max-width: 900px) { .stats { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 480px) { .stats { grid-template-columns: 1fr; } }
-  .stat {
-    background: var(--bg);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 18px 20px;
-    box-shadow: var(--shadow-sm);
+  /* ----- Hero banner ----- */
+  .hero {
+    background: linear-gradient(180deg, #ffffff 0%, var(--teal-soft) 100%);
+    border-bottom: 1px solid var(--teal-line);
+    padding: 56px 0 64px;
     position: relative;
+    overflow: hidden;
   }
-  .stat::after {
+  .hero::before {
     content: "";
     position: absolute;
-    top: 18px; right: 20px;
+    top: 24px; right: 8%;
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, var(--teal-shade) 0%, transparent 70%);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--teal-deep);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-bottom: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero-eyebrow::before {
+    content: "";
     width: 22px; height: 2px;
     background: var(--teal);
     border-radius: 1px;
   }
-  .stat .num {
+  .hero-headline {
+    font-family: var(--serif);
     font-size: 38px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.18;
+    letter-spacing: -0.015em;
+    margin: 0 0 16px;
+    max-width: 820px;
+  }
+  .hero-headline .accent {
+    color: var(--teal-deep);
+    font-weight: 700;
+  }
+  .hero-sub {
+    font-size: 16px;
+    color: var(--text-soft);
+    margin: 0 0 32px;
+    max-width: 680px;
+    line-height: 1.55;
+  }
+  @media (max-width: 720px) {
+    .hero { padding: 36px 0 44px; }
+    .hero-headline { font-size: 28px; }
+    .hero-sub { font-size: 14px; }
+  }
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 8px;
+  }
+  @media (max-width: 880px) { .hero-stats { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .hero-stats { grid-template-columns: 1fr; } }
+  .hero-stat {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 20px 16px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+  }
+  .hero-stat::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 32px; height: 3px;
+    background: var(--teal);
+    border-radius: 12px 0 0 0;
+  }
+  .hero-stat-num {
+    font-family: var(--sans);
+    font-size: 32px;
     font-weight: 700;
     color: var(--navy);
     line-height: 1;
-    letter-spacing: -0.02em;
-    margin-top: 8px;
+    letter-spacing: -0.025em;
+    font-feature-settings: "tnum";
+    margin-bottom: 8px;
   }
-  .stat .label {
+  .hero-stat-label {
     font-size: 12px;
     color: var(--muted);
-    margin-top: 8px;
     line-height: 1.4;
   }
+  .hero-stat-delta {
+    margin-top: 8px;
+    font-size: 11px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+  }
+  .hero-stat-delta.up   { color: var(--teal-deep); }
+  .hero-stat-delta.flat { color: var(--muted); }
+  .hero-stat-delta.down { color: #b34c4c; }
 
-  /* ----- Section titles ----- */
-  h2 {
-    font-size: 14px;
+  /* ----- Sections ----- */
+  section.band { padding: 56px 0; border-bottom: 1px solid var(--line-soft); }
+  section.band.alt { background: var(--bg-soft); }
+
+  .section-head { margin-bottom: 32px; max-width: 760px; }
+  .section-eyebrow {
+    font-size: 11px;
     font-weight: 700;
-    color: var(--navy);
-    margin: 0 0 14px;
+    color: var(--teal-deep);
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    display: flex;
+    letter-spacing: 0.14em;
+    margin-bottom: 10px;
+    display: inline-flex;
     align-items: center;
     gap: 10px;
   }
-  h2::before {
+  .section-eyebrow::before {
     content: "";
-    display: inline-block;
-    width: 16px;
-    height: 2px;
+    width: 18px; height: 2px;
     background: var(--teal);
     border-radius: 1px;
   }
+  .section-eyebrow .src {
+    color: var(--muted);
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 11px;
+    margin-left: 8px;
+    padding-left: 10px;
+    border-left: 1px solid var(--line);
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.2;
+    letter-spacing: -0.012em;
+    margin: 0 0 10px;
+  }
+  .section-sub {
+    font-size: 15px;
+    color: var(--text-soft);
+    margin: 0;
+    line-height: 1.55;
+    max-width: 640px;
+  }
 
-  /* ----- Service area grid ----- */
+  /* ----- Generic card ----- */
+  .card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px 22px;
+    box-shadow: var(--shadow-sm);
+  }
+  .card.flush { padding: 0; overflow: hidden; }
+  .card-header {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+  }
+
+  /* ----- Visibility section ----- */
   .areas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
+    gap: 16px;
   }
-  @media (max-width: 900px) { .areas { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 540px) { .areas { grid-template-columns: 1fr; } }
+  @media (max-width: 980px) { .areas { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .areas { grid-template-columns: 1fr; } }
   .area {
     background: var(--bg);
     border: 1px solid var(--line);
     border-radius: 10px;
-    padding: 18px 20px;
+    padding: 20px 22px;
     box-shadow: var(--shadow-sm);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
   .area::before {
     content: "";
@@ -180,36 +311,37 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 10px;
+    gap: 12px;
   }
   .area-name {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--navy);
     line-height: 1.3;
     flex: 1;
   }
   .area-num {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
     color: var(--navy);
     line-height: 1;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
     text-align: right;
-    margin-top: 2px;
+    font-feature-settings: "tnum";
   }
   .area-num small {
-    font-size: 11px;
+    display: block;
+    font-size: 10px;
     font-weight: 500;
     color: var(--muted);
-    display: block;
-    margin-top: 2px;
-    letter-spacing: 0;
+    margin-top: 4px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
   .area-meta {
     font-size: 11px;
     color: var(--muted);
-    margin-top: 10px;
+    margin-top: 12px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -218,55 +350,446 @@
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    padding: 2px 7px;
+    padding: 3px 8px;
     background: var(--teal-soft);
     border: 1px solid var(--teal-line);
     color: var(--navy);
     border-radius: 10px;
     font-weight: 600;
   }
-  .area-spark {
-    margin-top: 12px;
-    height: 28px;
-    width: 100%;
+  .area-meta .pip.muted {
+    background: var(--bg-soft);
+    border-color: var(--line);
+    color: var(--muted);
   }
+  .area-topics {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--line);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .area-topic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 12.5px;
+    line-height: 1.4;
+  }
+  .area-topic-name { color: var(--text); flex: 1; }
+  .area-topic-locale { color: var(--muted-soft); font-size: 11px; margin-left: 4px; }
+  .area-topic-rank {
+    flex-shrink: 0;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    font-feature-settings: "tnum";
+  }
+  .area-topic-rank.t1  { background: var(--navy); color: white; }
+  .area-topic-rank.t10 { background: var(--teal-soft); color: var(--navy); border: 1px solid var(--teal-line); }
+  .area-topic-rank.t20 { background: var(--bg-soft); color: var(--muted); border: 1px solid var(--line); }
+  .area-expand-btn {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    padding: 4px 0;
+    color: var(--teal-deep);
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+  }
+  .area-expand-btn:hover { color: var(--navy); }
+  .area-topics-all { display: none; flex-direction: column; gap: 8px; padding-top: 8px; }
+  .area-topics-all.shown { display: flex; }
+  .area-empty {
+    font-size: 12px;
+    color: var(--muted);
+    font-style: italic;
+    padding: 14px 0 4px;
+    margin-top: 4px;
+  }
+  .area-spark { margin-top: 14px; height: 28px; }
   .area-spark svg { width: 100%; height: 100%; }
+
+  /* ----- Discovery (GSC) section ----- */
+  .gsc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 780px) { .gsc-grid { grid-template-columns: 1fr; } }
+  .gsc-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  @media (max-width: 980px) { .gsc-stats { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .gsc-stats { grid-template-columns: 1fr; } }
+  .gsc-stat {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px 14px;
+    position: relative;
+  }
+  section.band.alt .gsc-stat { background: var(--bg); }
+  .gsc-stat::after {
+    content: "";
+    position: absolute;
+    top: 16px; right: 18px;
+    width: 22px; height: 2px;
+    background: var(--teal);
+    border-radius: 1px;
+  }
+  .gsc-stat .num {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    letter-spacing: -0.022em;
+    font-feature-settings: "tnum";
+    margin-top: 6px;
+    margin-bottom: 8px;
+  }
+  .gsc-stat .label {
+    font-size: 11.5px;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+  .gsc-list h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  .gsc-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 9px 0;
+    border-bottom: 1px dotted var(--line);
+    font-size: 13.5px;
+  }
+  .gsc-row:last-child { border-bottom: none; }
+  .gsc-row-name { color: var(--text); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .gsc-row-name a { color: inherit; text-decoration: none; }
+  .gsc-row-name a:hover { color: var(--teal-deep); text-decoration: underline; }
+  .gsc-row-metric {
+    flex-shrink: 0;
+    font-size: 12px;
+    color: var(--muted);
+    font-feature-settings: "tnum";
+    text-align: right;
+  }
+  .gsc-row-metric strong { color: var(--navy); font-weight: 700; }
+
+  /* ----- Engagement (GA4) section ----- */
+  .ga4-placeholder {
+    background: var(--bg);
+    border: 1px dashed var(--teal-line);
+    border-radius: 10px;
+    padding: 28px 26px;
+    text-align: center;
+    color: var(--muted);
+  }
+  .ga4-placeholder .label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--teal-deep);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+  }
+  .ga4-placeholder .msg {
+    color: var(--text-soft);
+    font-size: 14px;
+    line-height: 1.55;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  /* ----- Priority Pages ----- */
+  .cluster { margin-bottom: 32px; }
+  .cluster:last-child { margin-bottom: 0; }
+  .cluster-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 14px;
+    padding: 0 2px;
+  }
+  .cluster-head .cluster-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .cluster-head .cluster-count {
+    font-size: 11px;
+    color: var(--muted);
+    padding: 2px 9px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+  .cluster-head .cluster-line { flex: 1; height: 1px; background: var(--line); }
+  .pages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 14px;
+  }
+  .page-card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--teal);
+    border-radius: 8px;
+    padding: 16px 18px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .page-card .page-title { font-size: 13.5px; font-weight: 700; color: var(--navy); line-height: 1.3; }
+  .page-card .page-meta { font-size: 11px; color: var(--muted); }
+  .page-card .page-meta strong { color: var(--text); font-weight: 600; }
+  .page-card .page-meta .new-badge {
+    display: inline-block;
+    background: var(--teal-soft);
+    color: var(--navy);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-left: 6px;
+    border: 1px solid var(--teal-line);
+  }
+  .page-card .page-stats {
+    display: flex;
+    gap: 16px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--line);
+  }
+  .page-card .page-stat { flex: 1; }
+  .page-card .page-stat-num { font-size: 20px; font-weight: 700; color: var(--navy); line-height: 1; font-feature-settings: "tnum"; }
+  .page-card .page-stat-num.muted { color: var(--muted); font-size: 13px; font-weight: 600; }
+  .page-card .page-stat-label { font-size: 10px; color: var(--muted); margin-top: 4px; line-height: 1.3; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* ----- Opportunities ----- */
+  .opps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 980px) { .opps-grid { grid-template-columns: 1fr; } }
+  .opp-card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+  }
+  .opp-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 22px; right: 22px;
+    height: 2px;
+    background: var(--teal);
+    border-radius: 2px;
+  }
+  .opp-card h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--teal-deep);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 6px 0 6px;
+  }
+  .opp-card .opp-title {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.3;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+  }
+  .opp-card .opp-sub { font-size: 12.5px; color: var(--text-soft); margin-bottom: 14px; line-height: 1.55; }
+  .opp-card .opp-list { list-style: none; padding: 0; margin: 0; }
+  .opp-card .opp-list li {
+    font-size: 12.5px;
+    color: var(--text);
+    padding: 8px 0;
+    border-top: 1px dotted var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .opp-card .opp-list li:first-child { border-top: none; padding-top: 0; }
+  .opp-card .opp-list .meta { color: var(--muted); font-size: 11px; flex-shrink: 0; font-feature-settings: "tnum"; }
+  .opp-card .opp-list .meta strong { color: var(--navy); font-weight: 700; }
+  .opp-card .opp-empty { color: var(--muted); font-style: italic; font-size: 12px; padding: 8px 0; }
+
+  /* ----- Rollup section (Last 30 days of work) ----- */
+  .rollup-hero {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 26px 30px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 24px;
+    position: relative;
+  }
+  .rollup-hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 64px; height: 3px;
+    background: var(--teal);
+    border-radius: 12px 0 0 0;
+  }
+  .rollup-hero .narrative {
+    font-family: var(--serif);
+    font-size: 19px;
+    color: var(--navy);
+    line-height: 1.55;
+    margin: 0 0 22px;
+    letter-spacing: -0.005em;
+  }
+  .rollup-hero .narrative strong {
+    color: var(--teal-deep);
+    font-weight: 700;
+  }
+  .rollup-hero .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line-soft);
+  }
+  @media (max-width: 880px) { .rollup-hero .stat-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 480px) { .rollup-hero .stat-grid { grid-template-columns: repeat(2, 1fr); } }
+  .rollup-hero .stat-grid .stat .n {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    font-feature-settings: "tnum";
+    letter-spacing: -0.02em;
+  }
+  .rollup-hero .stat-grid .stat .l {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 6px;
+    line-height: 1.35;
+  }
+
+  .recent-launches {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 22px 24px;
+    box-shadow: var(--shadow-sm);
+  }
+  .recent-launches h4 {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  .launch-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 180px;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px dotted var(--line);
+    align-items: center;
+  }
+  @media (max-width: 720px) { .launch-row { grid-template-columns: 1fr; } }
+  .launch-row:last-child { border-bottom: none; }
+  .launch-row .when {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .launch-row .when strong { color: var(--navy); font-weight: 600; display: block; }
+  .launch-row .what {
+    font-size: 13.5px;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .launch-row .what a { color: var(--navy); text-decoration: none; border-bottom: 1px dotted var(--line); }
+  .launch-row .what a:hover { color: var(--teal-deep); border-bottom-color: var(--teal); }
+  .launch-row .what .blurb { color: var(--muted); font-size: 12px; margin-top: 3px; }
+  .launch-row .perf {
+    display: flex;
+    gap: 14px;
+    justify-content: flex-end;
+    font-size: 11px;
+  }
+  @media (max-width: 720px) { .launch-row .perf { justify-content: flex-start; } }
+  .launch-row .perf .m { text-align: right; }
+  @media (max-width: 720px) { .launch-row .perf .m { text-align: left; } }
+  .launch-row .perf .m .n {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--navy);
+    line-height: 1;
+    font-feature-settings: "tnum";
+  }
+  .launch-row .perf .m .n.muted { color: var(--muted-soft); font-weight: 600; font-size: 13px; }
+  .launch-row .perf .m .l {
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 3px;
+    font-weight: 600;
+  }
 
   /* ----- Heatmap ----- */
   .heatmap-wrap {
     background: var(--bg);
     border: 1px solid var(--line);
     border-radius: 10px;
-    padding: 18px 20px 22px;
+    padding: 22px 24px 26px;
     box-shadow: var(--shadow-sm);
     overflow-x: auto;
   }
-  .heatmap {
-    display: grid;
-    gap: 4px;
-    min-width: 480px;
-  }
-  .heatmap-row { display: grid; gap: 4px; align-items: center; }
-  .heatmap-label {
-    font-size: 11px;
-    color: var(--muted);
-    text-align: right;
-    padding-right: 10px;
-    font-weight: 500;
-  }
+  .heatmap { display: grid; gap: 5px; min-width: 540px; }
+  .heatmap-row { display: grid; gap: 5px; align-items: center; }
+  .heatmap-label { font-size: 11px; color: var(--muted); text-align: right; padding-right: 12px; font-weight: 500; }
   .heatmap-label.head { font-weight: 700; color: var(--navy); }
   .heatmap-cell {
-    height: 28px;
-    border-radius: 4px;
+    height: 30px;
+    border-radius: 5px;
     background: var(--bg-soft);
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 11px;
-    font-weight: 600;
+    font-size: 11.5px;
+    font-weight: 700;
     color: var(--navy);
     border: 1px solid transparent;
+    font-feature-settings: "tnum";
   }
   .heatmap-cell.h0 { background: #f6f9fa; color: #aab4be; border-color: var(--line); }
   .heatmap-cell.h1 { background: #e7f9f7; color: var(--navy); }
@@ -274,13 +797,7 @@
   .heatmap-cell.h3 { background: #8ddad5; color: var(--navy); }
   .heatmap-cell.h4 { background: var(--teal); color: var(--navy); }
   .heatmap-cell.h5 { background: var(--teal-deep); color: white; }
-  .heatmap-cell.head {
-    background: transparent;
-    color: var(--muted);
-    font-size: 10px;
-    font-weight: 600;
-    height: 20px;
-  }
+  .heatmap-cell.head { background: transparent; color: var(--muted); font-size: 10px; font-weight: 600; height: 20px; }
   .heatmap-key {
     margin-top: 14px;
     display: flex;
@@ -289,52 +806,26 @@
     font-size: 11px;
     color: var(--muted);
   }
-  .heatmap-key .scale {
-    display: inline-flex;
-    border-radius: 4px;
-    overflow: hidden;
-    border: 1px solid var(--line);
-  }
+  .heatmap-key .scale { display: inline-flex; border-radius: 4px; overflow: hidden; border: 1px solid var(--line); }
   .heatmap-key .scale span { display: inline-block; width: 22px; height: 12px; }
 
   /* ----- Footer ----- */
   footer {
     background: var(--navy);
-    color: rgba(255,255,255,0.65);
-    padding: 22px 0;
-    margin-top: 28px;
+    color: rgba(255,255,255,0.7);
+    padding: 28px 0 32px;
+    margin-top: 0;
     font-size: 12px;
   }
-  footer .footer-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 18px;
-    flex-wrap: wrap;
-  }
-  footer .brand-mark {
-    color: white;
-    font-weight: 700;
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  footer .brand-mark::before {
-    content: "";
-    display: inline-block;
-    width: 14px; height: 2px; background: var(--teal);
-  }
+  footer .footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; flex-wrap: wrap; }
+  footer .brand-mark { color: white; font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+  footer .brand-mark::before { content: ""; display: inline-block; width: 14px; height: 2px; background: var(--teal); border-radius: 1px; }
+  footer .footer-sub { color: rgba(255,255,255,0.55); font-size: 11.5px; line-height: 1.55; margin-top: 4px; max-width: 480px; }
   footer a { color: rgba(255,255,255,0.85); text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,0.3); }
   footer a:hover { border-bottom-color: var(--teal); color: white; }
 
   /* ----- States ----- */
-  .loading {
-    text-align: center;
-    color: var(--muted);
-    padding: 80px 20px;
-    font-size: 13px;
-  }
+  .loading { text-align: center; color: var(--muted); padding: 100px 20px; font-size: 13px; }
   .spinner {
     width: 14px; height: 14px;
     border: 2px solid var(--teal-line);
@@ -347,81 +838,24 @@
   }
   @keyframes spin { to { transform: rotate(360deg); } }
   .hidden { display: none !important; }
-
-  /* v3 -- area card topic list + expand */
-  .area { display: flex; flex-direction: column; }
-  .area-topics { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--line); display: flex; flex-direction: column; gap: 6px; }
-  .area-topic { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 12px; line-height: 1.35; }
-  .area-topic-name { color: var(--text); flex: 1; }
-  .area-topic-locale { color: var(--muted); font-size: 11px; margin-left: 4px; }
-  .area-topic-rank { flex-shrink: 0; padding: 1px 7px; border-radius: 10px; font-size: 11px; font-weight: 700; }
-  .area-topic-rank.t1 { background: var(--navy); color: white; }
-  .area-topic-rank.t10 { background: var(--teal-soft); color: var(--navy); border: 1px solid var(--teal-line); }
-  .area-topic-rank.t20 { background: var(--bg-soft); color: var(--muted); border: 1px solid var(--line); }
-  .area-expand-btn { margin-top: 8px; background: none; border: none; padding: 4px 0; color: var(--teal-deep); font-size: 11px; font-weight: 600; cursor: pointer; text-align: left; font-family: inherit; }
-  .area-expand-btn:hover { color: var(--navy); }
-  .area-topics-all { display: none; flex-direction: column; gap: 6px; padding-top: 6px; }
-  .area-topics-all.shown { display: flex; }
-  .area-empty { font-size: 11px; color: var(--muted); font-style: italic; padding: 6px 0; }
-
-
-  /* v4 -- cluster groupings for tracked pages */
-  .cluster { margin-bottom: 26px; }
-  .cluster-head { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; padding: 0 4px; }
-  .cluster-head .cluster-name { font-size: 13px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.04em; }
-  .cluster-head .cluster-count { font-size: 11px; color: var(--muted); padding: 2px 8px; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; }
-  .cluster-head .cluster-line { flex: 1; height: 1px; background: var(--line); }
-  .page-card .page-stat-num.building { font-size: 14px; color: var(--muted); font-weight: 600; }
-
-  /* v3 -- recently published pages */
-  .pages-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
-  .page-card { background: var(--bg); border: 1px solid var(--line); border-left: 3px solid var(--teal); border-radius: 8px; padding: 16px 18px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 10px; }
-  .page-card .page-title { font-size: 14px; font-weight: 700; color: var(--navy); line-height: 1.3; }
-  .page-card .page-meta { font-size: 11px; color: var(--muted); }
-  .page-card .page-meta strong { color: var(--text); font-weight: 600; }
-  .page-card .page-stats { display: flex; gap: 18px; padding-top: 8px; border-top: 1px dashed var(--line); }
-  .page-card .page-stat { display: flex; flex-direction: column; }
-  .page-card .page-stat-num { font-size: 22px; font-weight: 700; color: var(--navy); line-height: 1; }
-  .page-card .page-stat-label { font-size: 10px; color: var(--muted); margin-top: 4px; line-height: 1.3; }
-  .page-card .page-spark { height: 28px; }
-  .page-card .page-spark svg { width: 100%; height: 100%; }
-  .page-card .page-keywords-list { font-size: 11px; color: var(--muted); padding-top: 8px; border-top: 1px dashed var(--line); line-height: 1.5; }
-  .page-card .page-keywords-list strong { color: var(--text); font-weight: 600; }
-
   .error {
     background: var(--bg);
     border: 1px solid var(--line);
     border-left: 3px solid var(--navy);
-    padding: 14px 18px;
+    padding: 16px 20px;
     border-radius: 6px;
     color: var(--text);
     font-size: 13px;
     max-width: 680px;
     margin: 0 auto;
   }
-
-  /* v5 -- GSC reach panel */
-  .reach-banner { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 22px 26px; box-shadow: var(--shadow-sm); margin-bottom: 24px; position: relative; }
-  .reach-banner::before { content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 4px; background: var(--teal); border-radius: 12px 0 0 12px; }
-  .reach-banner h3 { margin: 0 0 6px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); display: flex; align-items: center; gap: 8px; }
-  .reach-banner h3::before { content: ""; width: 14px; height: 2px; background: var(--teal); }
-  .reach-banner .reach-line { font-size: 17px; color: var(--text); line-height: 1.55; max-width: 720px; }
-  .reach-banner .reach-line strong { color: var(--navy); font-weight: 700; }
-
-  .topics-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; margin-top: 10px; }
-  @media (max-width: 720px) { .topics-list { grid-template-columns: 1fr; } }
-  .topic-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px dotted var(--line); font-size: 14px; }
-  .topic-row .t-name { color: var(--text); }
-  .topic-row .t-imp { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; flex-shrink: 0; }
-  .topic-row .t-imp strong { color: var(--navy); font-weight: 700; }
-
 </style>
 </head>
 <body>
 
 <div class="topbar">
   <div class="container topbar-inner">
-    <h1>BCC Online Reach</h1>
+    <h1>BCC Online Performance</h1>
     <div class="updated"><span class="pulse"></span><span id="updated-line">--</span></div>
   </div>
 </div>
@@ -429,38 +863,107 @@
 <main>
   <div id="loading" class="loading"><span class="spinner"></span> Loading latest snapshot...</div>
   <div id="content" class="hidden">
-    <div class="container">
 
-      <section class="tight">
-        <div class="stats" id="stats"></div>
-      </section>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-eyebrow">This week's reach</div>
+        <h2 class="hero-headline" id="hero-headline">--</h2>
+        <p class="hero-sub" id="hero-sub">--</p>
+        <div class="hero-stats" id="hero-stats"></div>
+      </div>
+    </section>
 
-      <section>
-        <div class="reach-banner" id="reach-banner" style="display:none;">
-          <h3>This week's online reach</h3>
-          <div class="reach-line" id="reach-line"></div>
+    <!-- SECTION 1: VISIBILITY -->
+    <section class="band">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-eyebrow">Section 1<span class="src">Source: Live Google searches</span></div>
+          <h3 class="section-title">Where BCC shows up on Google right now</h3>
+          <p class="section-sub">When people search Google for these services, here's where BCC currently appears. Numbers reflect a fresh check today.</p>
         </div>
-      </section>
-
-      <section>
-        <h2>Top searches that reached BCC this week</h2>
-        <div class="reach-banner" id="top-searches-card" style="padding:18px 22px;">
-          <div class="topics-list" id="top-searches-list"></div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Service Areas</h2>
         <div class="areas" id="areas"></div>
-      </section>
+      </div>
+    </section>
 
-      <section>
-        <h2>Tracked Strategic Pages</h2>
+    <!-- SECTION 2: DISCOVERY (GSC) -->
+    <section class="band alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-eyebrow">Section 2<span class="src">Source: Google Search Console</span></div>
+          <h3 class="section-title">How people discovered BCC last week</h3>
+          <p class="section-sub">Google tracks every time BCC appeared in someone's search results. Here's what people searched for, and which BCC pages showed up.</p>
+        </div>
+        <div class="gsc-stats" id="gsc-stats"></div>
+        <div class="gsc-grid">
+          <div class="card gsc-list">
+            <h4>Top searches that surfaced BCC</h4>
+            <div id="gsc-top-queries"></div>
+          </div>
+          <div class="card gsc-list">
+            <h4>BCC pages that earned the most attention</h4>
+            <div id="gsc-top-pages"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: ENGAGEMENT (GA4) -->
+    <section class="band">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-eyebrow">Section 3<span class="src">Source: Google Analytics 4</span></div>
+          <h3 class="section-title">What visitors did on the site</h3>
+          <p class="section-sub">Once someone clicks through to bariatriccounselingcenter.com, this tracks where they went and how long they stayed.</p>
+        </div>
+        <div id="ga4-section"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PRIORITY PAGES -->
+    <section class="band alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-eyebrow">Section 4<span class="src">Combined sources</span></div>
+          <h3 class="section-title">Priority service pages</h3>
+          <p class="section-sub">The pages we're actively trying to rank on Google. Each card shows how the page is performing in Google searches and how many people saw it last week.</p>
+        </div>
         <div id="clusters-wrap"></div>
-      </section>
+      </div>
+    </section>
 
-      <section>
-        <h2>Reach Across Recent Weeks</h2>
+    <!-- SECTION 5: LAST 30 DAYS OF WORK -->
+    <section class="band">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-eyebrow">Section 5<span class="src">Efficacy of recent work</span></div>
+          <h3 class="section-title">What we've shipped, and how it's performing</h3>
+          <p class="section-sub">Auto-tracked actions over the past 30 days, with the results each one has driven so far. Some pages take 1-2 weeks before Google starts showing them in search results.</p>
+        </div>
+        <div id="rollup-section"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: OPPORTUNITIES -->
+    <section class="band alt">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-eyebrow">Section 6<span class="src">Recommendations</span></div>
+          <h3 class="section-title">Where to focus next</h3>
+          <p class="section-sub">Three concrete opportunities surfaced by this week's data.</p>
+        </div>
+        <div class="opps-grid" id="opps-grid"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: TREND -->
+    <section class="band">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-eyebrow">Section 7<span class="src">Historical trend</span></div>
+          <h3 class="section-title">Reach across recent weeks</h3>
+          <p class="section-sub">Each row is a service area. Darker teal cells mean BCC ranked on Google's first page for more topics that week.</p>
+        </div>
         <div class="heatmap-wrap">
           <div class="heatmap" id="heatmap"></div>
           <div class="heatmap-key">
@@ -473,20 +976,24 @@
               <span style="background:var(--teal);"></span>
               <span style="background:var(--teal-deep);"></span>
             </span>
-            <span>none -> many</span>
+            <span>fewer -> more</span>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-    </div>
   </div>
 </main>
 
 <footer>
   <div class="container footer-inner">
-    <div class="brand-mark">Bariatric Counseling Center</div>
     <div>
-      <span id="footer-updated">--</span> &middot; <a href="https://www.bariatriccounselingcenter.com" rel="noopener">bariatriccounselingcenter.com</a>
+      <div class="brand-mark">Bariatric Counseling Center</div>
+      <div class="footer-sub">Weekly performance report combining live Google rankings, Google Search Console, and Google Analytics. Updated automatically each Monday.</div>
+    </div>
+    <div style="text-align:right;">
+      <div id="footer-updated">--</div>
+      <div style="margin-top:6px;"><a href="https://www.bariatriccounselingcenter.com" rel="noopener">bariatriccounselingcenter.com</a></div>
     </div>
   </div>
 </footer>
@@ -499,114 +1006,31 @@
 // The runner writes seo-data-*.json + manifest.json into the local clone of that
 // repo, then a `git push` publishes it. The board fetches from raw.githubusercontent
 // with jsdelivr as a CDN fallback.
-//
-// NOTE -- earlier (2026-05-12) this was switched to a SiteGround /seo/bcc/data/
-// path with SFTP uploads. That direction was reverted on 2026-05-18 because it
-// required a separate hosting account and broke the single-source-of-truth design.
 const REPO_OWNER = "austintude";
 const REPO_NAME  = "cowork-cron-jobs";
 const SUBPATH    = "bariatric-counseling-center/seo-weekly";
+const PARENT_SUBPATH = "bariatric-counseling-center";  // for efficacy.json + launches.json
 
 const RAW_GH   = (path) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SUBPATH}/${path}`;
 const JSDELIVR = (path) => `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@main/${SUBPATH}/${path}`;
+const RAW_GH_PARENT = (path) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${PARENT_SUBPATH}/${path}`;
 
 // ===== SERVICE AREA TAXONOMY =====
-// Maps raw keywords from the JSON to BCC service areas. Anything not listed is grouped as "Other".
-// Branded keywords (BCC name) are skipped.
 const SERVICE_AREAS = [
-  {
-    id: "bariatric",
-    name: "Bariatric Counseling & Surgery Support",
-    keywords: [
-      "bariatric counseling san antonio",
-      "bariatric counseling",
-      "bariatric surgery counseling san antonio",
-      "bariatric surgery counseling",
-      "bariatric surgery psychological evaluation san antonio",
-      "bariatric surgery psychological evaluation",
-      "bariatric therapy san antonio",
-      "bariatric therapy",
-      "online bariatric counseling texas",
-      "consejeria bariatrica san antonio"
-    ]
-  },
-  {
-    id: "weight-mgmt",
-    name: "Weight Management",
-    keywords: [
-      "weight loss counseling san antonio",
-      "weight loss counseling",
-      "obesity counseling san antonio",
-      "weight management therapist san antonio",
-      "weight management program san antonio",
-      "weight management counseling san antonio",
-      "weight loss therapy san antonio",
-      "weight loss therapy",
-      "weight management therapy",
-      "weight management after bariatric surgery"
-    ]
-  },
-  {
-    id: "eating-concerns",
-    name: "Eating Concerns",
-    keywords: [
-      "emotional eating therapy san antonio",
-      "emotional eating therapy",
-      "therapy for emotional eating",
-      "how to stop emotional eating",
-      "how to overcome emotional eating",
-      "binge eating treatment san antonio",
-      "binge eating disorder treatment",
-      "binge eating disorder therapy",
-      "food addiction treatment san antonio",
-      "food addiction treatment",
-      "overeating treatment san antonio",
-      "overeating treatment",
-      "compulsive overeating san antonio",
-      "eating disorder iop san antonio",
-      "eating disorder iop",
-      "eating disorder therapist san antonio",
-      "eating disorder treatment san antonio",
-      "eating disorder counseling san antonio"
-    ]
-  },
-  {
-    id: "med-adjunct",
-    name: "Behavioral Support with Medications",
-    keywords: [
-      "semaglutide behavioral support san antonio",
-      "semaglutide behavioral support",
-      "ozempic counseling",
-      "ozempic behavioral support san antonio",
-      "behavioral support for weight loss medications"
-    ]
-  },
-  {
-    id: "nutrition",
-    name: "Nutrition Care",
-    keywords: [
-      "registered dietitian san antonio",
-      "nutrition counseling san antonio",
-      "nutrition counseling",
-      "registered dietitian weight loss",
-      "dietista registrada san antonio"
-    ]
-  },
-  {
-    id: "telehealth",
-    name: "Telehealth & Online Care",
-    keywords: [
-      "telehealth weight management texas",
-      "online weight management therapy texas",
-      "virtual emotional eating therapy texas"
-    ]
-  }
+  { id: "bariatric", name: "Bariatric Counseling & Surgery Support",
+    keywords: ["bariatric counseling san antonio","bariatric counseling","bariatric surgery counseling san antonio","bariatric surgery counseling","bariatric surgery psychological evaluation san antonio","bariatric surgery psychological evaluation","bariatric therapy san antonio","bariatric therapy","online bariatric counseling texas","consejeria bariatrica san antonio","bariatric therapist san antonio"] },
+  { id: "weight-mgmt", name: "Weight Management",
+    keywords: ["weight loss counseling san antonio","weight loss counseling","obesity counseling san antonio","weight management therapist san antonio","weight management program san antonio","weight management counseling san antonio","weight loss therapy san antonio","weight loss therapy","weight management therapy","weight management after bariatric surgery","holistic weight loss counseling san antonio","therapy for depression and weight san antonio","body confidence counseling san antonio"] },
+  { id: "eating-concerns", name: "Eating Concerns",
+    keywords: ["emotional eating therapy san antonio","emotional eating therapy","therapy for emotional eating","how to stop emotional eating","how to overcome emotional eating","binge eating treatment san antonio","binge eating disorder treatment","binge eating disorder therapy","food addiction treatment san antonio","food addiction treatment","overeating treatment san antonio","overeating treatment","compulsive overeating san antonio","eating disorder iop san antonio","eating disorder iop","eating disorder therapist san antonio","eating disorder treatment san antonio","eating disorder counseling san antonio","eating disorders san antonio","therapy for eating disorders san antonio"] },
+  { id: "med-adjunct", name: "Behavioral Support with Medications",
+    keywords: ["semaglutide behavioral support san antonio","semaglutide behavioral support","ozempic counseling","ozempic behavioral support san antonio","behavioral support for weight loss medications"] },
+  { id: "nutrition", name: "Nutrition Care",
+    keywords: ["registered dietitian san antonio","nutrition counseling san antonio","nutrition counseling","registered dietitian weight loss","dietista registrada san antonio","nutritional counseling san antonio tx"] },
+  { id: "telehealth", name: "Telehealth & Online Care",
+    keywords: ["telehealth weight management texas","online weight management therapy texas","virtual emotional eating therapy texas"] },
 ];
 
-
-
-// ===== KEYWORD PRESENTATION =====
-// Map raw keywords -> board-friendly labels with locale tag.
 const KEYWORD_LABELS = {
   "bariatric counseling san antonio":             { label: "Bariatric counseling",                          locale: "San Antonio" },
   "weight loss counseling san antonio":           { label: "Counseling around weight management",            locale: "San Antonio" },
@@ -643,6 +1067,13 @@ const KEYWORD_LABELS = {
   "ozempic behavioral support san antonio":        { label: "Behavioral support alongside GLP-1 medications", locale: "San Antonio" },
   "compulsive overeating san antonio":             { label: "Support for compulsive overeating",              locale: "San Antonio" },
   "nutrition counseling san antonio":              { label: "Nutrition counseling",                           locale: "San Antonio" },
+  "nutritional counseling san antonio tx":         { label: "Nutritional counseling",                         locale: "San Antonio" },
+  "holistic weight loss counseling san antonio":   { label: "Holistic weight management counseling",          locale: "San Antonio" },
+  "therapy for depression and weight san antonio": { label: "Therapy for depression and weight concerns",     locale: "San Antonio" },
+  "body confidence counseling san antonio":        { label: "Body confidence counseling",                     locale: "San Antonio" },
+  "bariatric therapist san antonio":               { label: "Bariatric therapist",                            locale: "San Antonio" },
+  "eating disorders san antonio":                  { label: "Eating disorder support",                        locale: "San Antonio" },
+  "therapy for eating disorders san antonio":      { label: "Therapy for eating disorders",                   locale: "San Antonio" },
   "weight loss therapy":                           { label: "Therapy supporting weight management",            locale: "National searches" },
   "weight management therapy":                     { label: "Weight management therapy",                      locale: "National searches" },
   "overeating treatment":                          { label: "Support for compulsive overeating",              locale: "National searches" },
@@ -658,7 +1089,7 @@ const KEYWORD_LABELS = {
   "binge eating disorder therapy":                  { label: "Therapy for binge eating",                       locale: "National searches" },
   "online bariatric counseling texas":             { label: "Online bariatric counseling",                    locale: "Texas" },
   "consejeria bariatrica san antonio":             { label: "Bariatric counseling -- Spanish-language",       locale: "San Antonio" },
-  "dietista registrada san antonio":               { label: "Dietitian services -- Spanish-language",         locale: "San Antonio" }
+  "dietista registrada san antonio":               { label: "Dietitian services -- Spanish-language",         locale: "San Antonio" },
 };
 
 function friendlyKeyword(rawKey) {
@@ -673,62 +1104,45 @@ function friendlyKeyword(rawKey) {
 }
 
 // ===== TRACKED STRATEGIC PAGES =====
-// Daniel's curated list of priority landing pages -- always shown, grouped by cluster.
-// New pages auto-detected by the runner via WP REST API will appear here too once they're
-// added to this list (or in a future "Auto-detected" section).
 const TRACKED_PAGES = [
-  {
-    cluster: "Eating disorder support",
-    blurb: "The highest-volume keyword cluster for BCC.",
-    pages: [
-      { path: "/eating-disorder-treatment-in-san-antonio-tx/",  name: "Eating Disorder Treatment in San Antonio" },
-      { path: "/eating-disorder-counseling-in-san-antonio-tx/", name: "Eating Disorder Counseling in San Antonio" },
-      { path: "/eating-disorder-therapist-in-san-antonio-tx/",  name: "Eating Disorder Therapist in San Antonio" }
-    ]
-  },
-  {
-    cluster: "Bariatric surgery support",
-    blurb: "Pages targeting people considering or recovering from bariatric surgery.",
-    pages: [
-      { path: "/bariatric-therapy-in-san-antonio-tx/",                          name: "Bariatric Therapy in San Antonio" },
-      { path: "/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/", name: "Bariatric Surgery Psychological Evaluation" },
-      { path: "/bariatric-surgery-counseling-in-san-antonio-tx/",               name: "Bariatric Surgery Counseling" }
-    ]
-  },
-  {
-    cluster: "Weight management counseling",
-    blurb: "Anti-diet, behavioral approach -- distinct from medical weight loss clinics.",
-    pages: [
-      { path: "/weight-management-counseling-in-san-antonio-tx/",  name: "Weight Management Counseling in San Antonio" },
-      { path: "/weight-management-program-in-san-antonio-tx/",     name: "Weight Management Program in San Antonio" },
-      { path: "/weight-loss-therapy-in-san-antonio-tx/",           name: "Weight Loss Therapy in San Antonio" },
-      { path: "/online-weight-management-therapy-in-texas/",       name: "Online Weight Management Therapy (Texas)" }
-    ]
-  },
-  {
-    cluster: "GLP-1 behavioral support",
-    blurb: "Capturing the medication wave -- Ozempic, Wegovy, semaglutide, and similar.",
-    pages: [
-      { path: "/ozempic-behavioral-support-in-san-antonio-tx/",     name: "Ozempic Behavioral Support" },
-      { path: "/semaglutide-behavioral-support-in-san-antonio-tx/", name: "Semaglutide Behavioral Support" }
-    ]
-  },
-  {
-    cluster: "Emotional & compulsive overeating",
-    blurb: "Behavioral support for emotional eating, binge eating, and compulsive patterns.",
-    pages: [
-      { path: "/binge-eating-treatment-in-san-antonio-tx/",       name: "Binge Eating Treatment in San Antonio" },
-      { path: "/virtual-emotional-eating-therapy-in-texas/",      name: "Virtual Emotional Eating Therapy (Texas)" },
-      { path: "/compulsive-overeating-counseling-san-antonio-tx/",name: "Compulsive Overeating Counseling" }
-    ]
-  }
+  { cluster: "Eating disorder support", pages: [
+    { path: "/eating-disorder-treatment-in-san-antonio-tx/",   name: "Eating Disorder Treatment in San Antonio", targetKw: "eating disorder treatment san antonio" },
+    { path: "/eating-disorder-counseling-in-san-antonio-tx/",  name: "Eating Disorder Counseling in San Antonio", targetKw: "eating disorder counseling san antonio" },
+    { path: "/eating-disorder-therapist-in-san-antonio-tx/",   name: "Eating Disorder Therapist in San Antonio", targetKw: "eating disorder therapist san antonio" },
+    { path: "/therapy-for-eating-disorders-in-san-antonio-tx/",name: "Therapy for Eating Disorders in San Antonio", targetKw: "therapy for eating disorders san antonio" },
+  ]},
+  { cluster: "Bariatric surgery support", pages: [
+    { path: "/bariatric-therapy-in-san-antonio-tx/",                          name: "Bariatric Therapy in San Antonio", targetKw: "bariatric therapy san antonio" },
+    { path: "/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/", name: "Bariatric Surgery Psychological Evaluation", targetKw: "bariatric surgery psychological evaluation san antonio" },
+    { path: "/bariatric-surgery-counseling-in-san-antonio-tx/",               name: "Bariatric Surgery Counseling", targetKw: "bariatric surgery counseling san antonio" },
+    { path: "/bariatric-therapist-in-san-antonio-tx/",                        name: "Bariatric Therapist in San Antonio", targetKw: "bariatric therapist san antonio" },
+  ]},
+  { cluster: "Weight management counseling", pages: [
+    { path: "/weight-management-counseling-in-san-antonio-tx/",  name: "Weight Management Counseling in San Antonio", targetKw: "weight management counseling san antonio" },
+    { path: "/weight-management-program-in-san-antonio-tx/",     name: "Weight Management Program in San Antonio", targetKw: "weight management program san antonio" },
+    { path: "/weight-loss-therapy-in-san-antonio-tx/",           name: "Weight Loss Therapy in San Antonio", targetKw: "weight loss therapy san antonio" },
+    { path: "/online-weight-management-therapy-in-texas/",       name: "Online Weight Management Therapy (Texas)", targetKw: "online weight management therapy texas" },
+    { path: "/holistic-weight-loss-counseling-in-san-antonio-tx/", name: "Holistic Weight Management Counseling", targetKw: "holistic weight loss counseling san antonio" },
+    { path: "/therapy-for-depression-and-weight-in-san-antonio-tx/", name: "Therapy for Depression and Weight Concerns", targetKw: "therapy for depression and weight san antonio" },
+    { path: "/body-confidence-counseling-in-san-antonio-tx/",    name: "Body Confidence Counseling", targetKw: "body confidence counseling san antonio" },
+  ]},
+  { cluster: "GLP-1 behavioral support", pages: [
+    { path: "/ozempic-behavioral-support-in-san-antonio-tx/",     name: "Ozempic Behavioral Support", targetKw: "ozempic behavioral support san antonio" },
+    { path: "/semaglutide-behavioral-support-in-san-antonio-tx/", name: "Semaglutide Behavioral Support", targetKw: "semaglutide behavioral support san antonio" },
+  ]},
+  { cluster: "Emotional & compulsive overeating", pages: [
+    { path: "/binge-eating-treatment-in-san-antonio-tx/",       name: "Binge Eating Treatment in San Antonio", targetKw: "binge eating treatment san antonio" },
+    { path: "/virtual-emotional-eating-therapy-in-texas/",      name: "Virtual Emotional Eating Therapy (Texas)", targetKw: "virtual emotional eating therapy texas" },
+    { path: "/compulsive-overeating-counseling-san-antonio-tx/",name: "Compulsive Overeating Counseling", targetKw: "compulsive overeating san antonio" },
+    { path: "/nutritional-counseling-in-san-antonio-tx/",       name: "Nutritional Counseling", targetKw: "nutritional counseling san antonio tx" },
+  ]},
 ];
 
-// Skipped (branded queries -- noise for board view)
-const SKIP_KEYWORDS = new Set([
+const SKIP_BRANDED = new Set([
   "bariatric counseling center san antonio",
-  "BCC san antonio weight management"
+  "BCC san antonio weight management",
 ]);
+const isBrandedQuery = (q) => /bcc|bariatric counseling center|bariatriccounselingcenter|sara hamilton|todd mccord/i.test(q || "");
 
 function areaForKeyword(rawKey) {
   for (const a of SERVICE_AREAS) {
@@ -750,26 +1164,15 @@ async function loadManifest() {
 }
 
 async function loadDataFile(filename, opts = {}) {
-  // Latest file may get retroactive edits (e.g., GSC merged after the run).
-  // Caller passes opts.isLatest=true for the manifest.latest file -> we use raw.github with cache-bust.
-  // Historical files use jsdelivr (cached, fine since they don't change).
   if (opts.isLatest) {
-    try {
-      return await fetchJSON(RAW_GH(`data/${filename}`), { bypassCache: true });
-    } catch (e) {
-      return await fetchJSON(JSDELIVR(`data/${filename}`));
-    }
+    try { return await fetchJSON(RAW_GH(`data/${filename}`), { bypassCache: true }); }
+    catch (e) { return await fetchJSON(JSDELIVR(`data/${filename}`)); }
   }
-  try {
-    return await fetchJSON(JSDELIVR(`data/${filename}`));
-  } catch (e) {
-    return await fetchJSON(RAW_GH(`data/${filename}`), { bypassCache: true });
-  }
+  try { return await fetchJSON(JSDELIVR(`data/${filename}`)); }
+  catch (e) { return await fetchJSON(RAW_GH(`data/${filename}`), { bypassCache: true }); }
 }
 
 // ===== DATA SHAPING =====
-
-// For one data file, return: per-area count of page-one rankings + count of #1 rankings
 function summarize(data) {
   const all = Object.entries((data.brave && data.brave.all_keywords) || {});
   const summary = {};
@@ -778,7 +1181,7 @@ function summarize(data) {
   }
   let totalTop1 = 0, totalTop10 = 0, totalTracked = 0;
   for (const [raw, v] of all) {
-    if (SKIP_KEYWORDS.has(raw)) continue;
+    if (SKIP_BRANDED.has(raw)) continue;
     totalTracked++;
     const inTop10 = v.position != null && v.position <= 10;
     const isTop1 = v.position === 1;
@@ -792,13 +1195,13 @@ function summarize(data) {
   return { perArea: summary, totalTop1, totalTop10, totalTracked, date: data.date };
 }
 
-// ===== RENDER =====
-
+// ===== RENDER UTILITIES =====
 function el(tag, attrs = {}, ...children) {
   const e = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs)) {
     if (k === "className") e.className = v;
     else if (k === "html") e.innerHTML = v;
+    else if (k === "onclick") e.onclick = v;
     else e.setAttribute(k, v);
   }
   for (const c of children) {
@@ -807,85 +1210,110 @@ function el(tag, attrs = {}, ...children) {
   }
   return e;
 }
-
 function setText(id, text) { const e = document.getElementById(id); if (e) e.textContent = text; }
+function fmt(n) { return (n || 0).toLocaleString("en-US"); }
+function fmtDate(d) { return new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" }); }
+function fmtDateLong(d) { return new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }); }
+function daysBetween(a, b) {
+  if (!a || !b) return 0;
+  const ad = new Date(a + "T12:00:00"); const bd = new Date(b + "T12:00:00");
+  return Math.max(0, Math.round((bd - ad) / 86400000));
+}
+function sparklineSVG(values, { width = 160, height = 28 } = {}) {
+  if (!values.length) return "";
+  const max = Math.max(...values, 1);
+  const stepX = width / Math.max(values.length - 1, 1);
+  const points = values.map((v, i) => `${(i * stepX).toFixed(1)},${(height - ((v / max) * (height - 4)) - 2).toFixed(1)}`);
+  const linePoints = points.join(" ");
+  const areaPoints = `0,${height} ${linePoints} ${width},${height}`;
+  const lastVal = values[values.length - 1];
+  const lastX = (values.length - 1) * stepX;
+  const lastY = height - ((lastVal / max) * (height - 4)) - 2;
+  return `<svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="${areaPoints}" fill="rgba(78,205,196,0.18)"/>
+    <polyline points="${linePoints}" fill="none" stroke="#2eb1a8" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="${lastX.toFixed(1)}" cy="${lastY.toFixed(1)}" r="2.5" fill="#2c3e50"/>
+  </svg>`;
+}
 
-function fmtDate(d) {
-  return new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
-}
-function fmtDateLong(d) {
-  return new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
-}
+// ===== RENDERERS =====
 
 function renderHeader(latest) {
   setText("updated-line", `Updated ${fmtDateLong(latest.date)}`);
   setText("footer-updated", `Last refreshed ${fmtDateLong(latest.date)}`);
 }
 
-function renderStats(latestSummary, history) {
-  const grid = document.getElementById("stats");
-  grid.innerHTML = "";
-  // 4 stats: top 1, page one, distinct active areas, new this period
-  const distinctAreasActive = Object.values(latestSummary.perArea).filter(a => a.top10 > 0).length;
-  // new this period: compare per-area top10 to previous run
-  let newThisPeriod = 0;
-  if (history.length >= 2) {
-    const prev = history[history.length - 2];
-    for (const aid of Object.keys(latestSummary.perArea)) {
-      const cur = latestSummary.perArea[aid].top10;
-      const old = (prev.perArea[aid] && prev.perArea[aid].top10) || 0;
-      if (cur > old) newThisPeriod += (cur - old);
-    }
-  }
-  const stats = [
-    { num: latestSummary.totalTop1,   label: "Topics where BCC is the top result" },
-    { num: latestSummary.totalTop10,  label: "Topics where BCC appears on page one" },
-    { num: distinctAreasActive,       label: "Service areas with page-one presence" },
-    { num: newThisPeriod,             label: "New page-one rankings this week" }
+function renderHero(latest, latestSummary, history) {
+  const g = latest.google || {};
+  const summary = g.summary || {};
+  const imps = summary.total_impressions || 0;
+  const queries = summary.total_queries || 0;
+  const clicks = summary.total_clicks || 0;
+  const newPages = (latest.newly_published_this_week_pages || []).length;
+
+  // Headline emphasises Google reach (impressions = most relatable scale number).
+  const headline = imps > 0
+    ? `This week, BCC was seen by <span class="accent">${fmt(imps)}</span> people searching Google.`
+    : `BCC ranks on Google for <span class="accent">${latestSummary.totalTop10}</span> service topics today.`;
+  document.getElementById("hero-headline").innerHTML = headline;
+
+  const subParts = [];
+  if (queries > 0) subParts.push(`Across <strong>${fmt(queries)}</strong> different search queries`);
+  if (latestSummary.totalTop10 > 0) subParts.push(`BCC appears on Google's first page for <strong>${latestSummary.totalTop10}</strong> tracked service topics`);
+  if (latestSummary.totalTop1 > 0) subParts.push(`<strong>${latestSummary.totalTop1}</strong> of those at the very top result`);
+  document.getElementById("hero-sub").innerHTML = subParts.join(" -- ") + ".";
+
+  // Build delta vs previous run for each hero stat
+  const prev = history.length >= 2 ? history[history.length - 2] : null;
+  const heroStats = [
+    { num: fmt(imps),                       label: "Google search impressions",      delta: null },
+    { num: latestSummary.totalTop10,        label: "Service topics on Google page 1", delta: prev ? latestSummary.totalTop10 - prev.totalTop10 : null },
+    { num: latestSummary.totalTop1,         label: "Topics where BCC ranks #1",       delta: prev ? latestSummary.totalTop1 - prev.totalTop1 : null },
+    { num: newPages,                        label: "New service pages live this week", delta: null },
   ];
-  for (const s of stats) {
-    grid.appendChild(
-      el("div", { className: "stat" },
-        el("div", { className: "num" }, String(s.num)),
-        el("div", { className: "label" }, s.label)
-      )
+  const wrap = document.getElementById("hero-stats");
+  wrap.innerHTML = "";
+  for (const s of heroStats) {
+    const card = el("div", { className: "hero-stat" },
+      el("div", { className: "hero-stat-num" }, String(s.num)),
+      el("div", { className: "hero-stat-label" }, s.label),
     );
+    if (s.delta != null && s.delta !== 0) {
+      const cls = s.delta > 0 ? "up" : "down";
+      const arrow = s.delta > 0 ? "&uarr;" : "&darr;";
+      const sign = s.delta > 0 ? "+" : "";
+      card.appendChild(el("div", { className: `hero-stat-delta ${cls}`, html: `${arrow} ${sign}${s.delta} vs last week` }));
+    } else if (s.delta === 0) {
+      card.appendChild(el("div", { className: "hero-stat-delta flat", html: "&middot; no change vs last week" }));
+    }
+    wrap.appendChild(card);
   }
 }
 
-function sparklineSVG(values, { width = 160, height = 28 } = {}) {
-  if (!values.length) return "";
-  const max = Math.max(...values, 1);
-  const stepX = width / Math.max(values.length - 1, 1);
-  const points = values.map((v, i) => {
-    const x = i * stepX;
-    const y = height - ((v / max) * (height - 4)) - 2;
-    return `${x.toFixed(1)},${y.toFixed(1)}`;
-  });
-  const linePoints = points.join(" ");
-  // Area under
-  const areaPoints = `0,${height} ${linePoints} ${width},${height}`;
-  const lastVal = values[values.length - 1];
-  const lastX = (values.length - 1) * stepX;
-  const lastY = height - ((lastVal / max) * (height - 4)) - 2;
-  return `
-    <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <polygon points="${areaPoints}" fill="rgba(78,205,196,0.18)"/>
-      <polyline points="${linePoints}" fill="none" stroke="#2eb1a8" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
-      <circle cx="${lastX.toFixed(1)}" cy="${lastY.toFixed(1)}" r="2.5" fill="#2c3e50"/>
-    </svg>`;
+function buildTopicRow(t, dim) {
+  const row = el("div", { className: "area-topic" });
+  const name = el("div", { className: "area-topic-name" });
+  name.appendChild(document.createTextNode(t.label));
+  name.appendChild(el("span", { className: "area-topic-locale" }, " (" + t.locale + ")"));
+  row.appendChild(name);
+  let cls = "t20", label = "Building";
+  if (t.position === 1) { cls = "t1"; label = "#1"; }
+  else if (t.position != null && t.position <= 10) { cls = "t10"; label = "#" + t.position; }
+  else if (t.position != null) { cls = "t20"; label = "#" + t.position; }
+  if (dim) cls = "t20";
+  row.appendChild(el("div", { className: "area-topic-rank " + cls }, label));
+  return row;
 }
 
-function renderAreas(latestSummary, history, latestData) {
+function renderAreas(latestSummary, history, latest) {
   const grid = document.getElementById("areas");
   grid.innerHTML = "";
-  const allKw = (latestData && latestData.brave && latestData.brave.all_keywords) || {};
+  const allKw = (latest && latest.brave && latest.brave.all_keywords) || {};
 
   for (const a of SERVICE_AREAS) {
     const cur = latestSummary.perArea[a.id];
     const trend = history.map(h => (h.perArea[a.id] && h.perArea[a.id].top10) || 0);
 
-    // Get topics in this area sorted by rank (best first), only those that are ranking on page one
     const topics = [];
     for (const rawKw of a.keywords) {
       const v = allKw[rawKw];
@@ -908,87 +1336,488 @@ function renderAreas(latestSummary, history, latestData) {
     const head = el("div", { className: "area-head" });
     head.appendChild(el("div", { className: "area-name" }, a.name));
     const numWrap = el("div", {});
-    numWrap.appendChild(el("div", { className: "area-num", html: `${cur.top10}<small>on page one</small>` }));
+    numWrap.appendChild(el("div", { className: "area-num", html: `${cur.top10}<small>on page 1</small>` }));
     head.appendChild(numWrap);
     card.appendChild(head);
 
     const meta = el("div", { className: "area-meta" });
     if (cur.top1 > 0) meta.appendChild(el("span", { className: "pip" }, `${cur.top1} at #1`));
-    meta.appendChild(el("span", {}, `${cur.total} topics tracked`));
+    meta.appendChild(el("span", { className: "pip muted" }, `${cur.total} topics tracked`));
     card.appendChild(meta);
 
     if (visible.length || more.length) {
       const topicsDiv = el("div", { className: "area-topics" });
-      for (const t of visible) {
-        topicsDiv.appendChild(buildTopicRow(t));
-      }
+      for (const t of visible) topicsDiv.appendChild(buildTopicRow(t));
       card.appendChild(topicsDiv);
 
-      // Expand button if there are more (top-10 OR not-yet-ranking)
       const totalMore = more.length + notRanking.length;
       if (totalMore > 0) {
-        const expandBtn = el("button", { className: "area-expand-btn", type: "button" }, `See all ${ranking.length + notRanking.length} topics in this area`);
+        const expandBtn = el("button", { className: "area-expand-btn", type: "button" }, `See all ${ranking.length + notRanking.length} topics`);
         const allDiv = el("div", { className: "area-topics-all" });
         for (const t of more) allDiv.appendChild(buildTopicRow(t));
         if (notRanking.length) {
-          allDiv.appendChild(el("div", { className: "area-empty", style: "margin-top:8px;" }, "Topics where BCC is still building presence:"));
+          allDiv.appendChild(el("div", { className: "area-empty", style: "margin-top:6px;" }, "Still building presence:"));
           for (const t of notRanking) allDiv.appendChild(buildTopicRow(t, true));
         }
         expandBtn.addEventListener("click", () => {
           const isOpen = allDiv.classList.contains("shown");
           allDiv.classList.toggle("shown", !isOpen);
-          expandBtn.textContent = isOpen ? `See all ${ranking.length + notRanking.length} topics in this area` : "Show less";
+          expandBtn.textContent = isOpen ? `See all ${ranking.length + notRanking.length} topics` : "Show less";
         });
         card.appendChild(expandBtn);
         card.appendChild(allDiv);
       }
     } else {
-      card.appendChild(el("div", { className: "area-empty" }, "BCC is still building presence in this area."));
+      card.appendChild(el("div", { className: "area-empty" }, "Still building presence in this area."));
     }
 
-    const sparkDiv = el("div", { className: "area-spark", html: sparklineSVG(trend) });
-    card.appendChild(sparkDiv);
-
+    card.appendChild(el("div", { className: "area-spark", html: sparklineSVG(trend) }));
     grid.appendChild(card);
   }
 }
 
-function buildTopicRow(t, dim) {
-  const row = el("div", { className: "area-topic" });
-  const name = el("div", { className: "area-topic-name" });
-  name.appendChild(document.createTextNode(t.label));
-  name.appendChild(el("span", { className: "area-topic-locale" }, " (" + t.locale + ")"));
-  row.appendChild(name);
-  let cls = "t20", label = "Building";
-  if (t.position === 1) { cls = "t1"; label = "#1"; }
-  else if (t.position != null && t.position <= 10) { cls = "t10"; label = "#" + t.position; }
-  else if (t.position != null) { cls = "t20"; label = "#" + t.position; }
-  if (dim) cls = "t20";
-  row.appendChild(el("div", { className: "area-topic-rank " + cls }, label));
-  return row;
+function renderGSC(latest) {
+  const g = latest.google || {};
+  const summary = g.summary || {};
+
+  // Stats row
+  const statsWrap = document.getElementById("gsc-stats");
+  statsWrap.innerHTML = "";
+  const stats = [
+    { num: fmt(summary.total_impressions),  label: "Times BCC appeared in someone's Google search results" },
+    { num: fmt(summary.total_clicks),       label: "People who clicked through to bariatriccounselingcenter.com" },
+    { num: fmt(summary.total_queries),      label: "Distinct search terms that surfaced BCC" },
+    { num: fmt(summary.total_pages),        label: "BCC pages that appeared in search results" },
+  ];
+  for (const s of stats) {
+    statsWrap.appendChild(el("div", { className: "gsc-stat" },
+      el("div", { className: "num" }, String(s.num)),
+      el("div", { className: "label" }, s.label),
+    ));
+  }
+
+  // Top queries (filtered + capped)
+  const tqWrap = document.getElementById("gsc-top-queries");
+  tqWrap.innerHTML = "";
+  const topQ = (g.top_queries || [])
+    .filter(q => !isBrandedQuery(q.keyword) && (q.impressions || 0) >= 3)
+    .slice(0, 10);
+  if (!topQ.length) {
+    tqWrap.appendChild(el("div", { className: "area-empty" }, "No discovery queries with meaningful volume this week."));
+  } else {
+    for (const q of topQ) {
+      tqWrap.appendChild(el("div", { className: "gsc-row" },
+        el("div", { className: "gsc-row-name", title: q.keyword }, q.keyword),
+        el("div", { className: "gsc-row-metric", html: `<strong>${fmt(q.impressions)}</strong> impressions` }),
+      ));
+    }
+  }
+
+  // Top pages
+  const tpWrap = document.getElementById("gsc-top-pages");
+  tpWrap.innerHTML = "";
+  const topP = (g.top_pages || []).slice(0, 10);
+  if (!topP.length) {
+    tpWrap.appendChild(el("div", { className: "area-empty" }, "No page-level data this week."));
+  } else {
+    for (const p of topP) {
+      const path = p.page ? p.page.replace(/^https?:\/\/[^/]+/, "") || "/" : "/";
+      tpWrap.appendChild(el("div", { className: "gsc-row" },
+        el("div", { className: "gsc-row-name", title: p.page },
+          el("a", { href: p.page, target: "_blank", rel: "noopener" }, path)
+        ),
+        el("div", { className: "gsc-row-metric", html: `<strong>${fmt(p.impressions)}</strong> imp &middot; <strong>${fmt(p.clicks)}</strong> clicks` }),
+      ));
+    }
+  }
+}
+
+function renderGA4(latest) {
+  const wrap = document.getElementById("ga4-section");
+  wrap.innerHTML = "";
+  const ga4 = latest.ga4 || null;
+
+  if (!ga4 || ga4.error || !ga4.summary) {
+    // Graceful placeholder
+    wrap.appendChild(el("div", { className: "ga4-placeholder" },
+      el("div", { className: "label" }, "Coming soon"),
+      el("div", { className: "msg", html:
+        `Google Analytics 4 integration is being wired up this week. ` +
+        `Once connected, this section will show how many people visited bariatriccounselingcenter.com, ` +
+        `which pages they read, where they came from, and how long they stayed.`
+      }),
+    ));
+    return;
+  }
+
+  const s = ga4.summary;
+  const statsWrap = el("div", { className: "gsc-stats" });
+  const stats = [
+    { num: fmt(s.sessions),         label: "Total visits to bariatriccounselingcenter.com" },
+    { num: fmt(s.users),            label: "Unique people who visited" },
+    { num: fmt(s.pageviews),        label: "Pages viewed across the site" },
+    { num: s.avg_session_duration_sec != null ? `${Math.round(s.avg_session_duration_sec)}s` : "--", label: "Average time spent per visit" },
+  ];
+  for (const st of stats) {
+    statsWrap.appendChild(el("div", { className: "gsc-stat" },
+      el("div", { className: "num" }, String(st.num)),
+      el("div", { className: "label" }, st.label),
+    ));
+  }
+  wrap.appendChild(statsWrap);
+
+  const grid = el("div", { className: "gsc-grid" });
+  // Top landing pages
+  const lpCard = el("div", { className: "card gsc-list" }, el("h4", {}, "Top landing pages"));
+  for (const p of (ga4.top_landing_pages || []).slice(0, 8)) {
+    const path = (p.page || "/").replace(/^https?:\/\/[^/]+/, "") || "/";
+    lpCard.appendChild(el("div", { className: "gsc-row" },
+      el("div", { className: "gsc-row-name", title: p.page }, path),
+      el("div", { className: "gsc-row-metric", html: `<strong>${fmt(p.sessions)}</strong> visits` }),
+    ));
+  }
+  grid.appendChild(lpCard);
+
+  // Traffic sources
+  const srcCard = el("div", { className: "card gsc-list" }, el("h4", {}, "Where visitors came from"));
+  for (const s of (ga4.top_sources || []).slice(0, 8)) {
+    srcCard.appendChild(el("div", { className: "gsc-row" },
+      el("div", { className: "gsc-row-name" }, s.source_medium || s.source || "(direct)"),
+      el("div", { className: "gsc-row-metric", html: `<strong>${fmt(s.sessions)}</strong> visits` }),
+    ));
+  }
+  grid.appendChild(srcCard);
+  wrap.appendChild(grid);
+}
+
+function renderPages(allDataFiles) {
+  const wrap = document.getElementById("clusters-wrap");
+  wrap.innerHTML = "";
+  const latest = allDataFiles[allDataFiles.length - 1] || {};
+  const newlyPublished = new Set((latest.newly_published_prod_pages || []));
+
+  for (const cluster of TRACKED_PAGES) {
+    const clusterDiv = el("div", { className: "cluster" });
+    const head = el("div", { className: "cluster-head" });
+    head.appendChild(el("div", { className: "cluster-name" }, cluster.cluster));
+    head.appendChild(el("div", { className: "cluster-count" }, cluster.pages.length + " page" + (cluster.pages.length === 1 ? "" : "s")));
+    head.appendChild(el("div", { className: "cluster-line" }));
+    clusterDiv.appendChild(head);
+
+    const grid = el("div", { className: "pages-grid" });
+    for (const pageDef of cluster.pages) {
+      const m = buildPageMetrics(pageDef, allDataFiles);
+      const card = el("div", { className: "page-card" });
+
+      const titleEl = el("div", { className: "page-title" }, pageDef.name);
+      if (newlyPublished.has(pageDef.path)) {
+        titleEl.appendChild(el("span", { className: "new-badge", html: "&nbsp;NEW" }));
+      }
+      card.appendChild(titleEl);
+
+      const meta = el("div", { className: "page-meta" });
+      if (m.firstSeen) {
+        meta.innerHTML = `Live since <strong>${fmtDate(m.firstSeen)}</strong> &middot; <strong>${m.daysLive}</strong> day${m.daysLive === 1 ? "" : "s"} live`;
+      } else {
+        meta.innerHTML = `<em style="color: var(--muted);">Not yet detected on prod</em>`;
+      }
+      card.appendChild(meta);
+
+      const stats = el("div", { className: "page-stats" });
+      // Stat 1: live SERP position for target keyword
+      const posStat = el("div", { className: "page-stat" });
+      const posNum = el("div", { className: "page-stat-num" + (m.serpPosition == null ? " muted" : "") });
+      posNum.textContent = m.serpPosition != null ? "#" + m.serpPosition : "Building";
+      posStat.appendChild(posNum);
+      posStat.appendChild(el("div", { className: "page-stat-label" }, "Google rank"));
+      stats.appendChild(posStat);
+
+      // Stat 2: GSC impressions (per page)
+      const impStat = el("div", { className: "page-stat" });
+      const impNum = el("div", { className: "page-stat-num" + (m.gscImpressions === 0 ? " muted" : "") });
+      impNum.textContent = m.gscImpressions != null ? fmt(m.gscImpressions) : "--";
+      impStat.appendChild(impNum);
+      impStat.appendChild(el("div", { className: "page-stat-label" }, "Impressions, last 7d"));
+      stats.appendChild(impStat);
+
+      // Stat 3: GSC clicks (per page)
+      const clkStat = el("div", { className: "page-stat" });
+      const clkNum = el("div", { className: "page-stat-num" + (m.gscClicks === 0 ? " muted" : "") });
+      clkNum.textContent = m.gscClicks != null ? fmt(m.gscClicks) : "--";
+      clkStat.appendChild(clkNum);
+      clkStat.appendChild(el("div", { className: "page-stat-label" }, "Clicks, last 7d"));
+      stats.appendChild(clkStat);
+
+      card.appendChild(stats);
+      grid.appendChild(card);
+    }
+    clusterDiv.appendChild(grid);
+    wrap.appendChild(clusterDiv);
+  }
+}
+
+function buildPageMetrics(pageDef, allDataFiles) {
+  const latest = allDataFiles[allDataFiles.length - 1] || {};
+  const today = latest.date;
+  // First-seen detection from history (newly_published_prod_pages array)
+  let firstSeen = null;
+  for (const d of allDataFiles) {
+    const nps = d.newly_published_prod_pages || [];
+    if (nps.includes(pageDef.path) && !firstSeen) firstSeen = d.date;
+  }
+  // Fallback: published_pages_index in any file
+  if (!firstSeen) {
+    for (const d of allDataFiles) {
+      for (const p of (d.published_pages_index || [])) {
+        if (p.link && p.link.includes(pageDef.path)) {
+          firstSeen = (p.first_seen_run && p.first_seen_run !== "pre-tracking") ? p.first_seen_run : (p.date ? p.date.slice(0, 10) : null);
+          break;
+        }
+      }
+      if (firstSeen) break;
+    }
+  }
+  // Per-page GSC metrics from latest data
+  let gscImpressions = null, gscClicks = null;
+  const pageMetrics = (latest.google && latest.google.per_page_metrics) || {};
+  for (const [url, m] of Object.entries(pageMetrics)) {
+    if (url.includes(pageDef.path)) {
+      gscImpressions = (gscImpressions || 0) + (m.impressions || 0);
+      gscClicks = (gscClicks || 0) + (m.clicks || 0);
+    }
+  }
+  if (gscImpressions == null) gscImpressions = 0;
+  if (gscClicks == null) gscClicks = 0;
+  // Live SERP position for the target keyword
+  let serpPosition = null;
+  if (pageDef.targetKw && latest.brave && latest.brave.all_keywords) {
+    const k = latest.brave.all_keywords[pageDef.targetKw];
+    if (k && k.position != null) serpPosition = k.position;
+  }
+  return {
+    firstSeen,
+    daysLive: firstSeen && today ? daysBetween(firstSeen, today) : null,
+    gscImpressions, gscClicks, serpPosition,
+  };
+}
+
+function renderRollup(efficacy) {
+  const wrap = document.getElementById("rollup-section");
+  if (!wrap) return;
+  wrap.innerHTML = "";
+
+  if (!efficacy || !efficacy.last_30_days_rollup) {
+    wrap.appendChild(el("div", { className: "ga4-placeholder" },
+      el("div", { className: "label" }, "Pending"),
+      el("div", { className: "msg" }, "Efficacy data hasn't been computed yet. Once the daily pulse runs, this section fills in.")
+    ));
+    return;
+  }
+
+  const r = efficacy.last_30_days_rollup;
+
+  // --- Hero card with narrative + stat strip ---
+  const hero = el("div", { className: "rollup-hero" });
+  const pieces = [];
+  if (r.pages_launched > 0) {
+    pieces.push(`In the last 30 days, we shipped <strong>${r.pages_launched}</strong> new page${r.pages_launched === 1 ? "" : "s"}`);
+  } else {
+    pieces.push(`No new pages launched in the last 30 days`);
+  }
+  if (r.pages_modified > 0) {
+    pieces.push(`and refreshed <strong>${r.pages_modified}</strong> existing one${r.pages_modified === 1 ? "" : "s"}`);
+  }
+  let line1 = pieces.join(" ") + ".";
+
+  const results = [];
+  if (r.ranking_at_top_10 > 0) {
+    results.push(`<strong>${r.ranking_at_top_10}</strong> of these launches already rank on Google's first page`);
+  }
+  if (r.gsc_impressions_attributed > 0) {
+    results.push(`driving <strong>${fmt(r.gsc_impressions_attributed)}</strong> Google impressions`);
+  }
+  if (r.ga4_sessions_attributed > 0) {
+    results.push(`and <strong>${fmt(r.ga4_sessions_attributed)}</strong> visits to those pages`);
+  }
+  let line2 = "";
+  if (results.length) {
+    line2 = "So far, " + results.join(", ") + ".";
+  } else if (r.pages_launched > 0) {
+    line2 = "GSC impressions for the new pages haven't accumulated yet -- Google typically takes 1-2 weeks to start showing new pages in search results.";
+  }
+
+  hero.appendChild(el("p", { className: "narrative", html: line1 + (line2 ? " " + line2 : "") }));
+
+  const stats = [
+    { n: r.pages_launched,   l: "Pages launched" },
+    { n: r.pages_modified,   l: "Pages refreshed" },
+    { n: r.ranking_at_top_10, l: "Ranking top 10" },
+    { n: r.ranking_at_top_3,  l: "Ranking top 3" },
+    { n: fmt(r.gsc_impressions_attributed), l: "GSC impressions" },
+    { n: fmt(r.ga4_sessions_attributed),    l: "Site visits driven" },
+  ];
+  const sg = el("div", { className: "stat-grid" });
+  for (const s of stats) {
+    sg.appendChild(el("div", { className: "stat" },
+      el("div", { className: "n" }, String(s.n ?? "--")),
+      el("div", { className: "l" }, s.l),
+    ));
+  }
+  hero.appendChild(sg);
+  wrap.appendChild(hero);
+
+  // --- Recent launches detail ---
+  const recent = el("div", { className: "recent-launches" });
+  recent.appendChild(el("h4", {}, "Top 8 recent launches"));
+
+  // Filter to high-signal launches: pages launched/modified, ad signals -- skip git commits for exec view
+  const interesting = (efficacy.launches || []).filter(e => {
+    const t = (e.launch || {}).type || "";
+    return t.includes("publish") || t.includes("modify") || t.includes("campaign");
+  }).slice(0, 8);
+
+  if (!interesting.length) {
+    recent.appendChild(el("div", { className: "area-empty" }, "No recent launches to show."));
+  } else {
+    for (const e of interesting) {
+      const l = e.launch || {};
+      const m = e.milestones || {};
+      const row = el("div", { className: "launch-row" });
+
+      const days = e.days_since_launch;
+      row.appendChild(el("div", { className: "when" },
+        el("strong", {}, days != null ? `${days} day${days === 1 ? "" : "s"} ago` : "?"),
+        el("span", {}, (l.launched_at || "").slice(0, 10)),
+      ));
+
+      const what = el("div", { className: "what" });
+      const titleText = decodeEntities(l.title || "(no title)");
+      const linkUrl = l.url ? `https://www.bariatriccounselingcenter.com${l.url}` : null;
+      if (linkUrl) {
+        what.appendChild(el("a", { href: linkUrl, target: "_blank", rel: "noopener" }, titleText));
+      } else {
+        what.appendChild(document.createTextNode(titleText));
+      }
+      if (e.summary) {
+        what.appendChild(el("div", { className: "blurb" }, e.summary));
+      }
+      row.appendChild(what);
+
+      const perf = el("div", { className: "perf" });
+      perf.appendChild(el("div", { className: "m" },
+        el("div", { className: m.current_serp_position == null ? "n muted" : "n" },
+           m.current_serp_position != null ? "#" + m.current_serp_position : "—"),
+        el("div", { className: "l" }, "Google rank"),
+      ));
+      perf.appendChild(el("div", { className: "m" },
+        el("div", { className: (m.gsc_impressions_total || 0) === 0 ? "n muted" : "n" }, fmt(m.gsc_impressions_total)),
+        el("div", { className: "l" }, "Impressions"),
+      ));
+      perf.appendChild(el("div", { className: "m" },
+        el("div", { className: (m.ga4_sessions_total || 0) === 0 ? "n muted" : "n" }, fmt(m.ga4_sessions_total)),
+        el("div", { className: "l" }, "Visits"),
+      ));
+      row.appendChild(perf);
+
+      recent.appendChild(row);
+    }
+  }
+  wrap.appendChild(recent);
+}
+
+function decodeEntities(s) {
+  if (!s) return "";
+  const ta = document.createElement("textarea");
+  ta.innerHTML = s;
+  return ta.value;
+}
+
+function renderOpportunities(latest) {
+  const grid = document.getElementById("opps-grid");
+  grid.innerHTML = "";
+  const allKw = (latest.brave && latest.brave.all_keywords) || {};
+  const g = latest.google || {};
+
+  // Opp 1 -- Push to #1 (SERP position 2-5)
+  const pushItems = Object.entries(allKw)
+    .filter(([k, v]) => !SKIP_BRANDED.has(k) && v.position && v.position >= 2 && v.position <= 5)
+    .map(([k, v]) => {
+      const f = friendlyKeyword(k);
+      return { name: f ? f.label : k, locale: f ? f.locale : "", position: v.position, competitor: v.competitor_at_1 };
+    })
+    .sort((a, b) => a.position - b.position)
+    .slice(0, 6);
+  grid.appendChild(buildOppCard({
+    eyebrow: "Push to first place",
+    title: `${pushItems.length} topics are within reach of #1`,
+    sub: "Already on Google's first page at #2-5. Small improvements to these pages -- internal links, schema, content depth -- often close the gap fast.",
+    items: pushItems.map(p => ({ name: p.name + " (" + p.locale + ")", meta: `#${p.position}` })),
+  }));
+
+  // Opp 2 -- High impressions, low CTR (GSC discovery insight)
+  const lowCtrItems = (g.top_queries || [])
+    .filter(q => !isBrandedQuery(q.keyword) && (q.impressions || 0) >= 20 && (q.clicks || 0) === 0 && (q.position || 99) > 5)
+    .slice(0, 6)
+    .map(q => ({ name: q.keyword, meta: `${fmt(q.impressions)} imp &middot; pos ${q.position ? q.position.toFixed(1) : "--"}` }));
+  grid.appendChild(buildOppCard({
+    eyebrow: "Win attention we already have",
+    title: `${lowCtrItems.length} searches show BCC but get no clicks`,
+    sub: "People are seeing BCC in Google for these searches but not clicking through. Usually a sign the page title or snippet doesn't speak to the search intent. Title/meta refresh recommended.",
+    items: lowCtrItems,
+  }));
+
+  // Opp 3 -- New pages this week
+  const newPages = (latest.newly_published_this_week_pages || []);
+  const newPagesData = (latest.published_pages_index || [])
+    .filter(p => newPages.includes(p.id))
+    .slice(0, 8)
+    .map(p => ({ name: p.title || p.slug, meta: "Live " + fmtDate((p.date || "").slice(0, 10)) }));
+  grid.appendChild(buildOppCard({
+    eyebrow: "Just shipped",
+    title: `${newPages.length} new service pages went live this week`,
+    sub: "These need Google's URL Inspection + indexing request, plus at least one inbound internal link from the homepage. Quick win to lock in early rankings.",
+    items: newPagesData,
+  }));
+}
+
+function buildOppCard({ eyebrow, title, sub, items }) {
+  const card = el("div", { className: "opp-card" });
+  card.appendChild(el("h4", {}, eyebrow));
+  card.appendChild(el("div", { className: "opp-title" }, title));
+  card.appendChild(el("div", { className: "opp-sub" }, sub));
+  if (items && items.length) {
+    const ul = el("ul", { className: "opp-list" });
+    for (const it of items) {
+      const li = el("li", {});
+      li.appendChild(el("span", {}, it.name));
+      if (it.meta) li.appendChild(el("span", { className: "meta", html: it.meta }));
+      ul.appendChild(li);
+    }
+    card.appendChild(ul);
+  } else {
+    card.appendChild(el("div", { className: "opp-empty" }, "Nothing flagged this week."));
+  }
+  return card;
 }
 
 function renderHeatmap(history) {
   const wrap = document.getElementById("heatmap");
   wrap.innerHTML = "";
   if (!history.length) {
-    wrap.appendChild(el("div", { className: "heatmap-row", style: "grid-template-columns: 1fr;" }, el("div", { className: "heatmap-label" }, "No history yet -- the heatmap will populate as more weekly checks accumulate.")));
+    wrap.appendChild(el("div", { className: "heatmap-row", style: "grid-template-columns: 1fr;" },
+      el("div", { className: "heatmap-label" }, "No history yet -- this fills in over time.")));
     return;
   }
-  // Determine grid columns: label + N week columns
   const weeks = history.length;
-  const labelWidth = 160;
-  const cellMin = 40;
+  const labelWidth = 200;
+  const cellMin = 44;
   const colTpl = `${labelWidth}px repeat(${weeks}, minmax(${cellMin}px, 1fr))`;
-  // Header row: blank label cell + dates
+
   const headRow = el("div", { className: "heatmap-row", style: `grid-template-columns: ${colTpl};` });
   headRow.appendChild(el("div", { className: "heatmap-label head" }, "Service area"));
-  for (const h of history) {
-    headRow.appendChild(el("div", { className: "heatmap-cell head" }, fmtDate(h.date)));
-  }
+  for (const h of history) headRow.appendChild(el("div", { className: "heatmap-cell head" }, fmtDate(h.date)));
   wrap.appendChild(headRow);
-  // Body: one row per area
-  // Determine max top10 across history for color binning
+
   let max = 0;
   for (const h of history) for (const a of SERVICE_AREAS) {
     const v = (h.perArea[a.id] && h.perArea[a.id].top10) || 0;
@@ -1009,187 +1838,11 @@ function renderHeatmap(history) {
     row.appendChild(el("div", { className: "heatmap-label" }, a.name));
     for (const h of history) {
       const v = (h.perArea[a.id] && h.perArea[a.id].top10) || 0;
-      row.appendChild(el("div", { className: `heatmap-cell ${cls(v)}`, title: `${a.name} -- ${fmtDate(h.date)}: ${v} on page one` }, v > 0 ? String(v) : ""));
+      row.appendChild(el("div", { className: `heatmap-cell ${cls(v)}`, title: `${a.name} -- ${fmtDate(h.date)}: ${v} on page 1` }, v > 0 ? String(v) : ""));
     }
     wrap.appendChild(row);
   }
 }
-
-
-function daysBetween(a, b) {
-  if (!a || !b) return 0;
-  const ad = new Date(a + "T12:00:00");
-  const bd = new Date(b + "T12:00:00");
-  return Math.max(0, Math.round((bd - ad) / 86400000));
-}
-
-function buildPageMetricsForPath(path, allDataFiles) {
-  // Walk all historical files and compute trajectory for THIS path
-  // Returns { firstSeen, daysLive, trajectory, bestPosLatest, keywordsRankingLatest, topicLabel }
-  let firstSeen = null;
-  for (const d of allDataFiles) {
-    const newPages = d.newly_published_prod_pages || [];
-    if (newPages.includes(path) && !firstSeen) firstSeen = d.date;
-  }
-  // If never appeared in newly_published_prod_pages, infer first seen as the earliest date
-  // any keyword's ranking_url contained this path
-  if (!firstSeen) {
-    for (const d of allDataFiles) {
-      const all = (d.brave && d.brave.all_keywords) || {};
-      for (const v of Object.values(all)) {
-        if (v.ranking_url && v.ranking_url.includes(path)) { firstSeen = d.date; break; }
-      }
-      if (firstSeen) break;
-    }
-  }
-  const today = (allDataFiles[allDataFiles.length - 1] || {}).date;
-  const trajectory = [];
-  let bestPosLatest = null, keywordsRankingLatest = 0, topicLabel = null;
-  for (const d of allDataFiles) {
-    if (firstSeen && d.date < firstSeen) continue;
-    let bestPos = null, keywordsRanking = 0, bestKwRaw = null;
-    const all = (d.brave && d.brave.all_keywords) || {};
-    for (const [kw, v] of Object.entries(all)) {
-      const url = v.ranking_url || "";
-      if (!url.includes(path)) continue;
-      if (v.position != null) keywordsRanking++;
-      if (v.position != null && (bestPos == null || v.position < bestPos)) {
-        bestPos = v.position;
-        bestKwRaw = kw;
-      }
-    }
-    trajectory.push({ date: d.date, position: bestPos, keywordsRanking });
-    if (d.date === today) {
-      bestPosLatest = bestPos;
-      keywordsRankingLatest = keywordsRanking;
-      if (bestKwRaw) {
-        const f = friendlyKeyword(bestKwRaw);
-        topicLabel = f ? f.label : bestKwRaw;
-      }
-    }
-  }
-  return {
-    firstSeen,
-    daysLive: firstSeen && today ? daysBetween(firstSeen, today) : null,
-    trajectory,
-    bestPosLatest,
-    keywordsRankingLatest,
-    topicLabel
-  };
-}
-
-function renderPages(allDataFiles) {
-  const wrap = document.getElementById("clusters-wrap");
-  wrap.innerHTML = "";
-  for (const cluster of TRACKED_PAGES) {
-    const clusterDiv = el("div", { className: "cluster" });
-    const head = el("div", { className: "cluster-head" });
-    head.appendChild(el("div", { className: "cluster-name" }, cluster.cluster));
-    head.appendChild(el("div", { className: "cluster-count" }, cluster.pages.length + " page" + (cluster.pages.length === 1 ? "" : "s")));
-    head.appendChild(el("div", { className: "cluster-line" }));
-    clusterDiv.appendChild(head);
-
-    const grid = el("div", { className: "pages-grid" });
-    for (const pageDef of cluster.pages) {
-      const m = buildPageMetricsForPath(pageDef.path, allDataFiles);
-      const card = el("div", { className: "page-card" });
-      card.appendChild(el("div", { className: "page-title" }, pageDef.name));
-
-      const metaParts = [];
-      if (m.firstSeen) {
-        metaParts.push("Live since <strong>" + formatPublishDate(m.firstSeen) + "</strong>");
-        metaParts.push("<strong>" + m.daysLive + "</strong> day" + (m.daysLive === 1 ? "" : "s") + " live");
-      } else {
-        metaParts.push("<em style=\"color: var(--muted);\">Not yet detected on prod</em>");
-      }
-      const meta = el("div", { className: "page-meta" });
-      meta.innerHTML = metaParts.join(" &middot; ");
-      card.appendChild(meta);
-
-      const stats = el("div", { className: "page-stats" });
-      const bestPosStat = el("div", { className: "page-stat" });
-      const bestPosNum = el("div", { className: "page-stat-num" + (m.bestPosLatest == null ? " building" : "") });
-      bestPosNum.textContent = m.bestPosLatest != null ? "#" + m.bestPosLatest : "Building";
-      bestPosStat.appendChild(bestPosNum);
-      bestPosStat.appendChild(el("div", { className: "page-stat-label" }, "Current best position"));
-      stats.appendChild(bestPosStat);
-
-      const kwStat = el("div", { className: "page-stat" });
-      kwStat.appendChild(el("div", { className: "page-stat-num" }, String(m.keywordsRankingLatest)));
-      kwStat.appendChild(el("div", { className: "page-stat-label" }, "Topics ranking"));
-      stats.appendChild(kwStat);
-      card.appendChild(stats);
-
-      if (m.topicLabel) {
-        const topicLine = el("div", { className: "page-keywords-list" });
-        topicLine.innerHTML = "Top topic: <strong>" + m.topicLabel + "</strong>";
-        card.appendChild(topicLine);
-      }
-
-      if (m.trajectory.length > 1) {
-        const sparkValues = m.trajectory.map(t => {
-          if (t.position == null) return 0;
-          return Math.max(0, 30 - t.position);
-        });
-        const sparkDiv = el("div", { className: "page-spark", html: sparklineSVG(sparkValues, { width: 180, height: 28 }) });
-        card.appendChild(sparkDiv);
-      }
-
-      grid.appendChild(card);
-    }
-    clusterDiv.appendChild(grid);
-    wrap.appendChild(clusterDiv);
-  }
-}
-
-function formatPublishDate(d) {
-  if (!d) return "--";
-  return new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
-}
-
-
-function renderReachBanner(latestData) {
-  const banner = document.getElementById("reach-banner");
-  const line = document.getElementById("reach-line");
-  if (!banner || !line) return;
-  const g = latestData && latestData.google;
-  if (!g || g.error || !g.summary) {
-    banner.style.display = "none";
-    return;
-  }
-  const s = g.summary;
-  const dr = g.data_range || {};
-  const imps = (s.total_impressions || 0).toLocaleString();
-  const queries = s.total_queries || 0;
-  banner.style.display = "block";
-  line.innerHTML = "Last week, BCC's website was shown in <strong>" + imps + "</strong> Google searches across <strong>" + queries + "</strong> different queries -- people seeking compassionate, evidence-based weight-management and behavioral-health support.";
-}
-
-function renderTopSearches(latestData) {
-  const wrap = document.getElementById("top-searches-list");
-  const card = document.getElementById("top-searches-card");
-  if (!wrap) return;
-  const g = latestData && latestData.google;
-  if (!g || g.error || !g.top_queries || !g.top_queries.length) {
-    if (card) card.innerHTML = "<div style=\"color:var(--muted); font-style:italic; padding:6px;\">No GSC data this week.</div>";
-    return;
-  }
-  // Filter out branded queries for client view (keep board clean)
-  const isBranded = (q) => /bcc|bariatric counseling center|bariatriccounselingcenter|sara hamilton/i.test(q);
-  const items = g.top_queries
-    .filter(q => !isBranded(q.keyword) && q.impressions > 0)
-    .slice(0, 12);
-  wrap.innerHTML = "";
-  for (const q of items) {
-    const row = el("div", { className: "topic-row" });
-    row.appendChild(el("div", { className: "t-name" }, q.keyword));
-    const imp = el("div", { className: "t-imp" });
-    imp.innerHTML = "<strong>" + (q.impressions || 0).toLocaleString() + "</strong> impressions";
-    row.appendChild(imp);
-    wrap.appendChild(row);
-  }
-}
-
 
 // ===== BOOT =====
 async function boot() {
@@ -1203,18 +1856,15 @@ async function boot() {
     let files = [];
     let latestFilename = null;
     if (Array.isArray(manifest.files) && manifest.files.length) {
-      files = manifest.files.slice(0, 12).reverse(); // oldest -> newest
+      files = manifest.files.slice(0, 12).reverse();
       latestFilename = manifest.latest;
     } else if (Array.isArray(manifest.availableDates) && manifest.availableDates.length) {
       const dates = manifest.availableDates.slice(0, 12).reverse();
       files = dates.map(d => `seo-data-${d}.json`);
-      latestFilename = manifest.latestDate
-        ? `seo-data-${manifest.latestDate}.json`
-        : files[files.length - 1];
+      latestFilename = manifest.latestDate ? `seo-data-${manifest.latestDate}.json` : files[files.length - 1];
     }
     if (!files.length) throw new Error("No data files in manifest.");
 
-    // Load all data files in parallel
     const dataFiles = await Promise.all(
       files.map(f => loadDataFile(f, { isLatest: f === latestFilename }).catch(() => null))
     );
@@ -1225,12 +1875,22 @@ async function boot() {
     const latest = valid[valid.length - 1];
     const latestSummary = history[history.length - 1];
 
+    // Pull efficacy.json from the parent folder (shared with operational dashboard)
+    let efficacy = null;
+    try {
+      efficacy = await fetchJSON(RAW_GH_PARENT("efficacy.json"), { bypassCache: true });
+    } catch (e) {
+      console.warn("Efficacy data not available:", e.message);
+    }
+
     renderHeader(latest);
-    renderReachBanner(latest);
-    renderTopSearches(latest);
-    renderStats(latestSummary, history);
+    renderHero(latest, latestSummary, history);
     renderAreas(latestSummary, history, latest);
+    renderGSC(latest);
+    renderGA4(latest);
     renderPages(valid);
+    renderRollup(efficacy);
+    renderOpportunities(latest);
     renderHeatmap(history);
 
     loading.classList.add("hidden");

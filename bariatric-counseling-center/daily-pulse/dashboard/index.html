@@ -322,6 +322,127 @@
   }
   .row-item .v strong { color: var(--navy); font-weight: 700; }
 
+  /* Rollup card -- the "last 30 days at a glance" summary */
+  .rollup-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--teal);
+    border-radius: 6px;
+    padding: 20px 24px;
+  }
+  .rollup-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+    margin-bottom: 16px;
+  }
+  @media (max-width: 980px) { .rollup-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 540px) { .rollup-grid { grid-template-columns: repeat(2, 1fr); } }
+  .rollup-num {
+    font-family: var(--mono);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    font-feature-settings: "tnum";
+    margin-bottom: 4px;
+  }
+  .rollup-label {
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+  .rollup-prose {
+    padding-top: 14px;
+    border-top: 1px dashed var(--line);
+    font-size: 13.5px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .rollup-prose strong { color: var(--navy); }
+
+  /* Launch list */
+  .launch-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--minor);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    display: grid;
+    grid-template-columns: 100px 1fr 220px;
+    gap: 16px;
+    align-items: center;
+  }
+  @media (max-width: 780px) {
+    .launch-card { grid-template-columns: 1fr; gap: 8px; }
+  }
+  .launch-card.high { border-left-color: var(--teal-deep); }
+  .launch-card.medium { border-left-color: var(--minor); }
+  .launch-card.low { border-left-color: var(--muted-soft); opacity: 0.85; }
+
+  .launch-meta {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .launch-meta .age {
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 12px;
+  }
+  .launch-meta .type {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--teal-deep);
+    font-weight: 600;
+  }
+
+  .launch-title {
+    font-size: 13.5px;
+    color: var(--navy);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .launch-title a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--line); }
+  .launch-title a:hover { color: var(--teal-deep); border-bottom-color: var(--teal); }
+  .launch-summary { font-size: 12px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+
+  .launch-metrics {
+    display: flex;
+    gap: 14px;
+    justify-content: flex-end;
+    font-family: var(--mono);
+    font-size: 11px;
+  }
+  @media (max-width: 780px) { .launch-metrics { justify-content: flex-start; } }
+  .launch-metric { text-align: right; }
+  @media (max-width: 780px) { .launch-metric { text-align: left; } }
+  .launch-metric .v {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+    font-feature-settings: "tnum";
+  }
+  .launch-metric .v.muted { color: var(--muted-soft); font-size: 13px; font-weight: 600; }
+  .launch-metric .k {
+    font-size: 9px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 3px;
+    font-weight: 600;
+  }
+
   /* Trend chart */
   .trend-wrap {
     background: white;
@@ -438,6 +559,27 @@
     <section class="section">
       <div class="container">
         <div class="section-head">
+          <h2>Last 30 days of work</h2>
+          <span class="line"></span>
+        </div>
+        <div class="rollup-card" id="rollup-card"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Recent launches &amp; efficacy</h2>
+          <span class="count" id="launch-count">--</span>
+          <span class="line"></span>
+        </div>
+        <div id="launches"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
           <h2>28-day trend</h2>
           <span class="line"></span>
         </div>
@@ -497,8 +639,10 @@
 const REPO_OWNER = "austintude";
 const REPO_NAME  = "cowork-cron-jobs";
 const SUBPATH    = "bariatric-counseling-center/daily-pulse";
+const PARENT_PATH = "bariatric-counseling-center";  // for launches.json + efficacy.json
 const RAW_GH = (p) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SUBPATH}/${p}`;
 const JSDELIVR = (p) => `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@main/${SUBPATH}/${p}`;
+const RAW_GH_PARENT = (p) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${PARENT_PATH}/${p}`;
 
 async function fetchJSON(url, { bypass = false } = {}) {
   const u = bypass ? `${url}${url.includes("?") ? "&" : "?"}t=${Date.now()}` : url;
@@ -780,6 +924,127 @@ function renderWpChanges(data) {
   }
 }
 
+function renderRollup(efficacy) {
+  const wrap = document.getElementById("rollup-card");
+  if (!wrap) return;
+  if (!efficacy || !efficacy.last_30_days_rollup) {
+    wrap.innerHTML = `<div class="empty">Efficacy data not yet computed. Run the daily pulse to populate.</div>`;
+    return;
+  }
+  const r = efficacy.last_30_days_rollup;
+  const stats = [
+    { num: r.pages_launched,                label: "Pages launched" },
+    { num: r.pages_modified,                label: "Pages modified" },
+    { num: r.git_commits,                   label: "Strategic commits" },
+    { num: r.ranking_at_top_10,             label: "Now ranking top 10" },
+    { num: fmt(r.gsc_impressions_attributed), label: "GSC impressions attributed" },
+    { num: fmt(r.ga4_sessions_attributed),  label: "GA4 sessions attributed" },
+  ];
+  const grid = el("div", { className: "rollup-grid" });
+  for (const s of stats) {
+    grid.appendChild(el("div", {},
+      el("div", { className: "rollup-num" }, String(s.num ?? "--")),
+      el("div", { className: "rollup-label" }, s.label),
+    ));
+  }
+  wrap.innerHTML = "";
+  wrap.appendChild(grid);
+
+  // Plain-English summary
+  const prose = el("div", { className: "rollup-prose" });
+  const pieces = [];
+  if (r.pages_launched > 0) {
+    pieces.push(`You shipped <strong>${r.pages_launched}</strong> new page${r.pages_launched === 1 ? "" : "s"} in the last 30 days.`);
+  }
+  if (r.ranking_at_top_10 > 0) {
+    pieces.push(`<strong>${r.ranking_at_top_10}</strong> of those launches now rank in the top 10 on Google.`);
+  }
+  if (r.gsc_impressions_attributed > 0) {
+    pieces.push(`Combined, they've driven <strong>${fmt(r.gsc_impressions_attributed)}</strong> GSC impressions and <strong>${fmt(r.gsc_clicks_attributed)}</strong> clicks.`);
+  } else {
+    pieces.push(`GSC impressions for the new pages haven't accumulated yet (typical 1-2 week indexing-warmup window).`);
+  }
+  if (r.ga4_sessions_attributed > 0) {
+    pieces.push(`<strong>${fmt(r.ga4_sessions_attributed)}</strong> GA4 sessions landed on the new pages.`);
+  }
+  if (r.ad_signals > 0) {
+    pieces.push(`Auto-detected <strong>${r.ad_signals}</strong> ad/social campaign signal${r.ad_signals === 1 ? "" : "s"} in the window.`);
+  }
+  if (!pieces.length) {
+    pieces.push(`Nothing shipped in the last 30 days yet -- ledger is empty.`);
+  }
+  prose.innerHTML = pieces.join(" ");
+  wrap.appendChild(prose);
+}
+
+function renderLaunches(efficacy) {
+  const wrap = document.getElementById("launches");
+  const countEl = document.getElementById("launch-count");
+  if (!wrap) return;
+  if (!efficacy || !efficacy.launches || !efficacy.launches.length) {
+    countEl.textContent = "0";
+    wrap.innerHTML = `<div class="empty">No launches in ledger yet.</div>`;
+    return;
+  }
+  // Show only the most recent 20 launches with meaningful data; filter out git-commits with low confidence
+  const launches = efficacy.launches
+    .filter(l => l.launch && l.launch.launched_at)
+    .slice(0, 20);
+
+  countEl.textContent = `${launches.length} of ${efficacy.launches.length} total`;
+  wrap.innerHTML = "";
+
+  for (const e of launches) {
+    const l = e.launch || {};
+    const conf = (l.confidence || "low").toLowerCase();
+    const card = el("div", { className: `launch-card ${conf}` });
+
+    // Left: date + age + type
+    const meta = el("div", { className: "launch-meta" });
+    const ageDays = e.days_since_launch;
+    meta.appendChild(el("div", { className: "age" }, ageDays != null ? `${ageDays}d ago` : "?"));
+    meta.appendChild(el("div", {}, (l.launched_at || "").slice(0, 10)));
+    meta.appendChild(el("div", { className: "type" }, (l.type || "?").replace(/-/g, " ")));
+    card.appendChild(meta);
+
+    // Middle: title + summary
+    const titleWrap = el("div", {});
+    const titleText = decodeEntities(l.title || "(no title)");
+    const linkUrl = l.url ? `https://www.bariatriccounselingcenter.com${l.url}` : null;
+    const titleEl = el("div", { className: "launch-title" });
+    if (linkUrl) {
+      titleEl.appendChild(el("a", { href: linkUrl, target: "_blank", rel: "noopener" }, titleText));
+    } else {
+      titleEl.appendChild(document.createTextNode(titleText));
+    }
+    titleWrap.appendChild(titleEl);
+    if (e.summary) {
+      titleWrap.appendChild(el("div", { className: "launch-summary" }, e.summary));
+    }
+    card.appendChild(titleWrap);
+
+    // Right: metrics
+    const metrics = el("div", { className: "launch-metrics" });
+    const m = e.milestones || {};
+    const serpVal = m.current_serp_position;
+    metrics.appendChild(el("div", { className: "launch-metric" },
+      el("div", { className: serpVal == null ? "v muted" : "v" }, serpVal != null ? "#" + serpVal : "—"),
+      el("div", { className: "k" }, "SERP"),
+    ));
+    metrics.appendChild(el("div", { className: "launch-metric" },
+      el("div", { className: (m.gsc_impressions_total || 0) === 0 ? "v muted" : "v" }, fmt(m.gsc_impressions_total)),
+      el("div", { className: "k" }, "GSC imp"),
+    ));
+    metrics.appendChild(el("div", { className: "launch-metric" },
+      el("div", { className: (m.ga4_sessions_total || 0) === 0 ? "v muted" : "v" }, fmt(m.ga4_sessions_total)),
+      el("div", { className: "k" }, "GA4 sess"),
+    ));
+    card.appendChild(metrics);
+
+    wrap.appendChild(card);
+  }
+}
+
 function renderHeader(data) {
   const meta = document.getElementById("meta-line");
   const forDate = fmtDateLong(data.for_date);
@@ -814,9 +1079,19 @@ async function boot() {
       data = await fetchJSON(JSDELIVR(`data/${latest}`));
     }
 
+    // Efficacy data lives one folder up (shared with the exec dashboard)
+    let efficacy = null;
+    try {
+      efficacy = await fetchJSON(RAW_GH_PARENT("efficacy.json"), { bypass: true });
+    } catch (e) {
+      console.warn("Efficacy data not available yet:", e.message);
+    }
+
     renderHeader(data);
     renderHero(data);
     renderAnomalies(data);
+    renderRollup(efficacy);
+    renderLaunches(efficacy);
     renderTrendChart(data);
     renderChannels(data);
     renderSources(data);
