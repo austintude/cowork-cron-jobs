@@ -1,6 +1,6 @@
 # BCC Daily Pulse -- 2026-05-18
 
-_Generated 2026-05-19 12:00 UTC_
+_Generated 2026-05-19 12:43 UTC_
 
 
 ## Yesterday at a glance
@@ -40,3 +40,7 @@ _Generated 2026-05-19 12:00 UTC_
 - [PAGE] Nutritional Counseling in San Antonio, TX -- 2026-05-12 (https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/)
 - [PAGE] Therapy for Depression and Weight Concerns in San Antonio, TX -- 2026-05-12 (https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/)
 - [PAGE] Therapy for Eating Disorders in San Antonio, TX -- 2026-05-12 (https://www.bariatriccounselingcenter.com/therapy-for-eating-disorders-in-san-antonio-tx/)
+- [PAGE] Weight Management Counseling in San Antonio, TX -- 2026-05-08 (https://www.bariatriccounselingcenter.com/weight-management-counseling-in-san-antonio-tx/)
+- [PAGE] Virtual Emotional Eating Therapy in Texas -- 2026-05-08 (https://www.bariatriccounselingcenter.com/virtual-emotional-eating-therapy-in-texas/)
+- [PAGE] Ozempic Behavioral Support in San Antonio, TX -- 2026-05-08 (https://www.bariatriccounselingcenter.com/ozempic-behavioral-support-in-san-antonio-tx/)
+- [POST] Why Stress Eating Happens: Understanding Why Food Can Feel Out of Control During Stress -- 2026-05-11 (https://www.bariatriccounselingcenter.com/self-improvement/mental-health/why-stress-eating-happens/)
