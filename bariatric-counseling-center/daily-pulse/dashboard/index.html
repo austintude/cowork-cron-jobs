@@ -1424,11 +1424,15 @@ function renderWpChanges(data) {
 }
 
 // Minimal markdown -> HTML for the briefing.
-// Supports: ### headings, **bold**, *italic*, numbered lists (1. ...), paragraphs.
+// Supports: ### headings, **bold**, *italic*, numbered lists (1. ...), bullets, paragraphs.
 // Intentionally limited -- the LLM output is constrained to these features.
 function renderMarkdownBriefing(md) {
   if (!md) return "";
   const escape = (s) => String(s).replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+  // Normalize: ensure every H3 heading is its own block by inserting blank lines
+  // around it. The LLM often writes "### Heading\n- bullet" with no blank line
+  // between heading and the bullets that follow, which breaks block splitting.
+  md = md.replace(/^(###\s+.+)$/gm, "\n$1\n");
   // Split into blocks separated by blank lines
   const blocks = md.split(/\n\s*\n+/);
   const htmlBlocks = [];
