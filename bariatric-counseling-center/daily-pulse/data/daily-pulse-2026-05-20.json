@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-20T14:30:27.522777Z",
+  "fetched_at": "2026-05-20T16:30:25.157305Z",
   "for_date": "2026-05-19",
   "baseline_window": {
     "start": "2026-04-21",
@@ -112,6 +112,17 @@
                 "sessions": 1,
                 "totalUsers": 1,
                 "engagementRate": 1
+              }
+            ]
+          },
+          {
+            "step": "Recent site changes (last 7 days)",
+            "finding": "1 pages/posts modified -- cross-reference with affected pages.",
+            "data": [
+              {
+                "id": 4997,
+                "title": "Why Stress Eating Happens: Understanding Why Food Can Feel Out of Control During Stress",
+                "modified": "2026-05-11T10:43:37"
               }
             ]
           }
@@ -1038,9 +1049,18 @@
     },
     "_wp_recent": {
       "pages": [],
-      "posts": [],
-      "pages_http_status": 202,
-      "posts_http_status": 202
+      "posts": [
+        {
+          "id": 4997,
+          "slug": "why-stress-eating-happens",
+          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/why-stress-eating-happens/",
+          "title": "Why Stress Eating Happens: Understanding Why Food Can Feel Out of Control During Stress",
+          "date": "2026-04-24T13:26:28",
+          "modified": "2026-05-11T10:43:37",
+          "status": "publish"
+        }
+      ],
+      "pages_error": "HTTPSConnectionPool(host='www.bariatriccounselingcenter.com', port=443): Read timed out. (read timeout=15)"
     }
   },
   "gsc_data": {
@@ -1245,13 +1265,144 @@
     "yesterday_queries": [],
     "yesterday_pages": []
   },
+  "gmb_data": null,
   "wp_recent_changes": {
     "pages": [],
-    "posts": [],
-    "pages_http_status": 202,
-    "posts_http_status": 202
+    "posts": [
+      {
+        "id": 4997,
+        "slug": "why-stress-eating-happens",
+        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/why-stress-eating-happens/",
+        "title": "Why Stress Eating Happens: Understanding Why Food Can Feel Out of Control During Stress",
+        "date": "2026-04-24T13:26:28",
+        "modified": "2026-05-11T10:43:37",
+        "status": "publish"
+      }
+    ],
+    "pages_error": "HTTPSConnectionPool(host='www.bariatriccounselingcenter.com', port=443): Read timed out. (read timeout=15)"
   },
   "launches_this_run": [
+    {
+      "launched_at": "2026-05-11",
+      "type": "post-modify",
+      "title": "Why Stress Eating Happens: Understanding Why Food Can Feel Out of Control During Stress",
+      "url": "/self-improvement/mental-health/why-stress-eating-happens/",
+      "wp_id": 4997,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-05-11-post-modify-4997--self-improvement-mental-health-why-stress-eating-happens",
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: fix markdown renderer -- H3 headings adjacent to bullets now split into their own blocks",
+      "commit_hash": "03e0de1",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-03e0de1",
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: tighten daily briefing to bullets + ul markdown support",
+      "commit_hash": "a28c5ce",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-a28c5ce",
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: tighten daily briefing to bullets + ul markdown support",
+      "commit_hash": "280c19b",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-280c19b",
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: deeper briefing + 7/14-day rollups + history nav + briefing tabs",
+      "commit_hash": "49f480e",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-49f480e",
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: deeper briefing + 7/14-day rollups + history nav + briefing tabs",
+      "commit_hash": "51c2a8d",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-51c2a8d",
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: valence-aware colors + tuned narrative prompt",
+      "commit_hash": "610ad78",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-610ad78",
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: valence-aware colors + tuned narrative prompt",
+      "commit_hash": "13725f1",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-13725f1",
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: first LLM morning briefing",
+      "commit_hash": "914b32f",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-914b32f",
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc dashboards: GMB panel, backlinks ledger, briefing slot, launch markers, daily GSC",
+      "commit_hash": "c890860",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-c890860",
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-05-20",
+      "commit_hash": "d9e843e",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-d9e843e",
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
+    },
     {
       "launched_at": "2026-05-20",
       "type": "git-commit",
@@ -1261,7 +1412,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-05-20-git-commit-9a18215",
-      "first_seen_at": "2026-05-20T14:30:27.514778Z"
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
     },
     {
       "launched_at": "2026-05-19",
@@ -1272,7 +1423,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-05-19-git-commit-0808dcd",
-      "first_seen_at": "2026-05-20T14:30:27.514778Z"
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
     },
     {
       "launched_at": "2026-05-19",
@@ -1283,7 +1434,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-05-19-git-commit-9fa89ae",
-      "first_seen_at": "2026-05-20T14:30:27.514778Z"
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
     },
     {
       "launched_at": "2026-05-19",
@@ -1294,7 +1445,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-05-19-git-commit-49d32cc",
-      "first_seen_at": "2026-05-20T14:30:27.514778Z"
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
     },
     {
       "launched_at": "2026-05-18",
@@ -1305,7 +1456,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-05-18-git-commit-591d051",
-      "first_seen_at": "2026-05-20T14:30:27.514778Z"
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
     },
     {
       "launched_at": "2026-05-18",
@@ -1316,7 +1467,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-05-18-git-commit-3f1e8bf",
-      "first_seen_at": "2026-05-20T14:30:27.514778Z"
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
     },
     {
       "launched_at": "2026-05-18",
@@ -1327,7 +1478,7 @@
       "source": "git-log",
       "confidence": "medium",
       "id": "auto-2026-05-18-git-commit-7131f6d",
-      "first_seen_at": "2026-05-20T14:30:27.514778Z"
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
     },
     {
       "launched_at": "2026-05-18",
@@ -1338,12 +1489,72 @@
       "source": "git-log",
       "confidence": "medium",
       "id": "auto-2026-05-18-git-commit-a46c5ec",
-      "first_seen_at": "2026-05-20T14:30:27.514778Z"
+      "first_seen_at": "2026-05-20T16:30:25.156305Z"
     }
   ],
-  "launches_ledger_size": 28,
+  "launches_ledger_size": 38,
   "paid_social_spikes": [],
   "git_commits_recent": [
+    {
+      "date": "2026-05-20T11:22:32-05:00",
+      "hash": "03e0de1",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: fix markdown renderer -- H3 headings adjacent to bullets now split into their own blocks"
+    },
+    {
+      "date": "2026-05-20T11:14:49-05:00",
+      "hash": "a28c5ce",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: tighten daily briefing to bullets + ul markdown support"
+    },
+    {
+      "date": "2026-05-20T11:14:48-05:00",
+      "hash": "280c19b",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: tighten daily briefing to bullets + ul markdown support"
+    },
+    {
+      "date": "2026-05-20T10:59:17-05:00",
+      "hash": "49f480e",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: deeper briefing + 7/14-day rollups + history nav + briefing tabs"
+    },
+    {
+      "date": "2026-05-20T10:59:08-05:00",
+      "hash": "51c2a8d",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: deeper briefing + 7/14-day rollups + history nav + briefing tabs"
+    },
+    {
+      "date": "2026-05-20T10:01:13-05:00",
+      "hash": "610ad78",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: valence-aware colors + tuned narrative prompt"
+    },
+    {
+      "date": "2026-05-20T10:01:12-05:00",
+      "hash": "13725f1",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: valence-aware colors + tuned narrative prompt"
+    },
+    {
+      "date": "2026-05-20T09:50:27-05:00",
+      "hash": "914b32f",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: first LLM morning briefing"
+    },
+    {
+      "date": "2026-05-20T09:39:51-05:00",
+      "hash": "c890860",
+      "author": "Daniel Bisett",
+      "subject": "bcc dashboards: GMB panel, backlinks ledger, briefing slot, launch markers, daily GSC"
+    },
+    {
+      "date": "2026-05-20T09:30:27-05:00",
+      "hash": "d9e843e",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-05-20"
+    },
     {
       "date": "2026-05-20T07:00:25-05:00",
       "hash": "9a18215",
@@ -1403,66 +1614,6 @@
       "hash": "a46c5ec",
       "author": "Daniel Bisett",
       "subject": "bcc: fresh GSC pull for 2026-05-11 to 2026-05-18 window"
-    },
-    {
-      "date": "2026-05-18T09:19:45-05:00",
-      "hash": "06f86a8",
-      "author": "Daniel Bisett",
-      "subject": "autosync from BisettGaming @ 2026-05-18T09:19:45"
-    },
-    {
-      "date": "2026-05-18T02:49:44-05:00",
-      "hash": "d37eb5a",
-      "author": "Daniel Bisett",
-      "subject": "autosync from BisettGaming @ 2026-05-18T02:49:44"
-    },
-    {
-      "date": "2026-05-20T07:19:38-05:00",
-      "hash": "a7abf91",
-      "author": "Daniel Bisett",
-      "subject": "autosync from BisettGaming @ 2026-05-20T07:19:38"
-    },
-    {
-      "date": "2026-05-19T16:49:38-05:00",
-      "hash": "585dd96",
-      "author": "Daniel Bisett",
-      "subject": "autosync from BisettGaming @ 2026-05-19T16:49:38"
-    },
-    {
-      "date": "2026-05-19T08:19:38-05:00",
-      "hash": "128901a",
-      "author": "Daniel Bisett",
-      "subject": "autosync from BisettGaming @ 2026-05-19T08:19:38"
-    },
-    {
-      "date": "2026-05-19T07:49:38-05:00",
-      "hash": "15f0208",
-      "author": "Daniel Bisett",
-      "subject": "autosync from BisettGaming @ 2026-05-19T07:49:38"
-    },
-    {
-      "date": "2026-05-19T07:19:38-05:00",
-      "hash": "410cc6b",
-      "author": "Daniel Bisett",
-      "subject": "autosync from BisettGaming @ 2026-05-19T07:19:38"
-    },
-    {
-      "date": "2026-05-18T16:49:38-05:00",
-      "hash": "d23374a",
-      "author": "Daniel Bisett",
-      "subject": "autosync from BisettGaming @ 2026-05-18T16:49:38"
-    },
-    {
-      "date": "2026-05-18T15:49:37-05:00",
-      "hash": "a11e199",
-      "author": "Daniel Bisett",
-      "subject": "autosync from BisettGaming @ 2026-05-18T15:49:37"
-    },
-    {
-      "date": "2026-05-18T15:19:38-05:00",
-      "hash": "f620b8c",
-      "author": "Daniel Bisett",
-      "subject": "autosync from BisettGaming @ 2026-05-18T15:19:38"
     }
   ]
 }

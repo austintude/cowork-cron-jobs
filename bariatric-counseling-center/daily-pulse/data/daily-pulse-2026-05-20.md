@@ -1,6 +1,6 @@
 # BCC Daily Pulse -- 2026-05-19
 
-_Generated 2026-05-20 14:30 UTC_
+_Generated 2026-05-20 16:30 UTC_
 
 
 ## Yesterday at a glance
@@ -33,6 +33,9 @@ _Generated 2026-05-20 14:30 UTC_
   - `/contact/` -- 1 sessions, 1 users
   - `/diet-and-nutrition/healthy-living/fiesta-san-antonio-bariatric/` -- 1 sessions, 1 users
 
+**Recent site changes (last 7 days)** -- 1 pages/posts modified -- cross-reference with affected pages.
+  - Why Stress Eating Happens: Understanding Why Food Can Feel Out of Control During Stress (modified 2026-05-11)
+
 
 ### [CRITICAL] UP GA4 users: 30 (+66.7% vs 28d median of 18) (YoY same day: +42.9%)
 
@@ -49,3 +52,7 @@ _Generated 2026-05-20 14:30 UTC_
 -   26 sess  Direct
 -   10 sess  Organic Search
 -    1 sess  Unassigned
+
+## Site changes in the last 7 days
+
+- [POST] Why Stress Eating Happens: Understanding Why Food Can Feel Out of Control During Stress -- 2026-05-11 (https://www.bariatriccounselingcenter.com/self-improvement/mental-health/why-stress-eating-happens/)
