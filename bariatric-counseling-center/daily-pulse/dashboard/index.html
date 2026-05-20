@@ -359,6 +359,97 @@
   }
   .row-item .v strong { color: var(--navy); font-weight: 700; }
 
+  /* History date strip + briefing tabs */
+  .history-bar {
+    background: white;
+    border-bottom: 1px solid var(--line);
+    padding: 14px 0;
+  }
+  .history-inner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .history-label {
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+  }
+  .date-strip {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .date-pill {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border: 1px solid var(--line);
+    background: white;
+    color: var(--text);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    font-feature-settings: "tnum";
+  }
+  .date-pill:hover {
+    border-color: var(--teal);
+    color: var(--teal-deep);
+  }
+  .date-pill.active {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: white;
+  }
+  .date-pill.today { font-weight: 700; }
+  .date-pill .day-label {
+    display: block;
+    font-size: 9px;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .briefing-tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+  }
+  .briefing-tab {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.1s ease;
+    margin-bottom: -1px;
+  }
+  .briefing-tab:hover { color: var(--navy); }
+  .briefing-tab.active {
+    color: var(--navy);
+    border-bottom-color: var(--teal);
+  }
+  .briefing-tab .word-count {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted-soft);
+    margin-left: 6px;
+    font-weight: 400;
+  }
+  .briefing-tab.active .word-count { color: var(--teal-deep); }
+
   /* Morning briefing (LLM narrative) */
   .briefing {
     background: white;
@@ -393,6 +484,67 @@
     line-height: 1.65;
     letter-spacing: -0.005em;
   }
+  .briefing .briefing-text h3 {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--teal-deep);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 18px 0 10px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .briefing .briefing-text h3:first-child {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .briefing .briefing-text h3::before {
+    content: "";
+    width: 14px;
+    height: 2px;
+    background: var(--teal);
+    border-radius: 1px;
+  }
+  .briefing .briefing-text p {
+    margin: 0 0 12px;
+  }
+  .briefing .briefing-text ol {
+    margin: 8px 0 12px;
+    padding-left: 24px;
+    counter-reset: actionnum;
+    list-style: none;
+  }
+  .briefing .briefing-text ol li {
+    counter-increment: actionnum;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 6px;
+  }
+  .briefing .briefing-text ol li::before {
+    content: counter(actionnum);
+    position: absolute;
+    left: -22px;
+    top: 1px;
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--teal-deep);
+    background: var(--teal-soft);
+    border: 1px solid var(--teal-line);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .briefing .briefing-text strong { color: var(--navy); font-weight: 700; }
+  .briefing .briefing-text em { color: var(--text); font-style: italic; }
   .briefing .briefing-meta {
     margin-top: 14px;
     padding-top: 12px;
@@ -746,6 +898,13 @@
   <div id="loading" class="loading"><span class="spinner"></span>Loading latest pulse...</div>
   <div id="content" class="hidden">
 
+    <div class="history-bar">
+      <div class="container history-inner">
+        <span class="history-label">History</span>
+        <div class="date-strip" id="date-strip"></div>
+      </div>
+    </div>
+
     <section class="hero">
       <div class="container">
         <div class="hero-grid" id="hero-stats"></div>
@@ -754,6 +913,11 @@
 
     <section class="section">
       <div class="container">
+        <div class="briefing-tabs" id="briefing-tabs">
+          <button class="briefing-tab active" data-kind="daily">Today<span class="word-count" id="tab-wc-daily"></span></button>
+          <button class="briefing-tab" data-kind="weekly">Last 7 days<span class="word-count" id="tab-wc-weekly"></span></button>
+          <button class="briefing-tab" data-kind="biweekly">Last 14 days<span class="word-count" id="tab-wc-biweekly"></span></button>
+        </div>
         <div id="briefing-slot"></div>
       </div>
     </section>
@@ -1240,6 +1404,51 @@ function renderWpChanges(data) {
   }
 }
 
+// Minimal markdown -> HTML for the briefing.
+// Supports: ### headings, **bold**, *italic*, numbered lists (1. ...), paragraphs.
+// Intentionally limited -- the LLM output is constrained to these features.
+function renderMarkdownBriefing(md) {
+  if (!md) return "";
+  const escape = (s) => String(s).replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+  // Split into blocks separated by blank lines
+  const blocks = md.split(/\n\s*\n+/);
+  const htmlBlocks = [];
+
+  for (const raw of blocks) {
+    const block = raw.trim();
+    if (!block) continue;
+
+    // ### Heading
+    const h3Match = block.match(/^###\s+(.+)$/);
+    if (h3Match) {
+      htmlBlocks.push(`<h3>${escape(h3Match[1].trim())}</h3>`);
+      continue;
+    }
+    // Numbered list (block of lines like "1. foo")
+    if (/^\s*\d+\.\s+/.test(block)) {
+      const items = block.split(/\n(?=\s*\d+\.)/).map(line => {
+        const m = line.match(/^\s*\d+\.\s+(.+)$/s);
+        return m ? m[1].trim() : line.trim();
+      });
+      const lis = items.map(it => `<li>${inline(escape(it))}</li>`).join("");
+      htmlBlocks.push(`<ol>${lis}</ol>`);
+      continue;
+    }
+    // Plain paragraph (preserve single-line breaks inside as <br>... actually just collapse)
+    const para = block.replace(/\n/g, " ").trim();
+    htmlBlocks.push(`<p>${inline(escape(para))}</p>`);
+  }
+
+  return htmlBlocks.join("\n");
+
+  // Inline transforms: **bold** and *italic* (run AFTER escaping)
+  function inline(s) {
+    return s
+      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+      .replace(/\*(.+?)\*/g, "<em>$1</em>");
+  }
+}
+
 function renderBriefing(narrative) {
   const wrap = document.getElementById("briefing-slot");
   if (!wrap) return;
@@ -1249,16 +1458,9 @@ function renderBriefing(narrative) {
   }
   wrap.innerHTML = "";
   const card = el("div", { className: "briefing" });
-  card.appendChild(el("div", { className: "briefing-eyebrow" }, "Morning briefing"));
-  // Briefing is plain text from the model; preserve paragraph breaks
+  card.appendChild(el("div", { className: "briefing-eyebrow" }, narrative.kind || "Morning briefing"));
   const text = el("div", { className: "briefing-text" });
-  const paragraphs = (narrative.briefing || "").split(/\n\n+/);
-  for (const p of paragraphs) {
-    const para = document.createElement("p");
-    para.style.margin = "0 0 12px";
-    para.textContent = p.trim();
-    text.appendChild(para);
-  }
+  text.innerHTML = renderMarkdownBriefing(narrative.briefing || "");
   card.appendChild(text);
   const meta = el("div", { className: "briefing-meta" });
   meta.appendChild(el("span", {}, `Generated ${narrative.generated_at ? new Date(narrative.generated_at).toLocaleString() : "--"}`));
@@ -1490,60 +1692,185 @@ function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
 
+// ---- Global state for history navigation ----
+const state = {
+  manifest: null,            // daily-pulse manifest (list of available dates)
+  efficacy: null,            // shared across all dates
+  launchesLedger: null,      // shared
+  backlinks: null,           // shared
+  briefings: {               // narratives loaded once, then we just switch tabs
+    daily: null,
+    weekly: null,
+    biweekly: null,
+  },
+  activeKind: "daily",       // which briefing tab is showing
+  activeDate: null,          // which date is loaded into the day-specific sections
+  loadedPulses: {},          // cache: { "YYYY-MM-DD": pulseData }
+};
+
+function filenameToDate(fname) {
+  const m = (fname || "").match(/daily-pulse-(\d{4}-\d{2}-\d{2})\.json/);
+  return m ? m[1] : null;
+}
+function dateToFilename(d) { return `daily-pulse-${d}.json`; }
+
+async function fetchPulseForDate(d) {
+  if (state.loadedPulses[d]) return state.loadedPulses[d];
+  const fname = dateToFilename(d);
+  let data;
+  try {
+    data = await fetchJSON(RAW_GH(`data/${fname}`), { bypass: true });
+  } catch (e) {
+    data = await fetchJSON(JSDELIVR(`data/${fname}`));
+  }
+  state.loadedPulses[d] = data;
+  return data;
+}
+
+async function fetchBriefingForDate(d) {
+  // Try date-specific narrative first, fall back to latest if d is most-recent
+  const tries = [
+    RAW_GH(`narratives/narrative-${d}.json`),
+    RAW_GH("narratives/latest.json"),
+  ];
+  for (const u of tries) {
+    try { return await fetchJSON(u, { bypass: true }); }
+    catch (e) { continue; }
+  }
+  return null;
+}
+
+function renderDateStrip() {
+  const strip = document.getElementById("date-strip");
+  if (!strip || !state.manifest) return;
+  const files = (state.manifest.files || []).slice(0, 14);  // most recent 14
+  const dates = files.map(filenameToDate).filter(Boolean);
+  strip.innerHTML = "";
+  const today = new Date().toISOString().slice(0, 10);
+  for (const d of dates) {
+    const isActive = d === state.activeDate;
+    const isToday = d === today;
+    const dt = new Date(d + "T12:00:00");
+    const dayLabel = dt.toLocaleDateString("en-US", { weekday: "short" });
+    const monthDay = dt.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+    const pill = el("button", {
+      className: "date-pill" + (isActive ? " active" : "") + (isToday ? " today" : ""),
+      onclick: () => switchToDate(d),
+    });
+    pill.appendChild(document.createTextNode(monthDay));
+    pill.appendChild(el("span", { className: "day-label" }, dayLabel));
+    strip.appendChild(pill);
+  }
+}
+
+async function switchToDate(d) {
+  if (d === state.activeDate) return;
+  state.activeDate = d;
+
+  // Fetch that day's pulse + that day's briefing in parallel
+  const [pulse, dailyBrief] = await Promise.all([
+    fetchPulseForDate(d).catch(() => null),
+    fetchBriefingForDate(d).catch(() => null),
+  ]);
+  state.briefings.daily = dailyBrief;
+
+  if (pulse) {
+    renderHeader(pulse);
+    renderHero(pulse);
+    renderAnomalies(pulse);
+    renderTrendChart(pulse, state.launchesLedger);
+    renderChannels(pulse);
+    renderSources(pulse);
+    renderLandingPages(pulse);
+    renderWpChanges(pulse);
+    renderGMB(pulse);
+  }
+  // If user is on the "Today" tab, also refresh the briefing pane
+  if (state.activeKind === "daily") {
+    renderBriefing(dailyBrief);
+  }
+  // Update tab word-counts
+  refreshTabWordCounts();
+  // Redraw date strip to highlight new active date
+  renderDateStrip();
+}
+
+function switchTab(kind) {
+  state.activeKind = kind;
+  document.querySelectorAll(".briefing-tab").forEach(t => {
+    t.classList.toggle("active", t.dataset.kind === kind);
+  });
+  renderBriefing(state.briefings[kind]);
+}
+
+function refreshTabWordCounts() {
+  for (const kind of ["daily", "weekly", "biweekly"]) {
+    const el = document.getElementById(`tab-wc-${kind}`);
+    if (!el) continue;
+    const wc = state.briefings[kind] ? state.briefings[kind].word_count : null;
+    el.textContent = wc ? `(${wc}w)` : "";
+  }
+}
+
+function wireBriefingTabs() {
+  document.querySelectorAll(".briefing-tab").forEach(t => {
+    t.addEventListener("click", () => switchTab(t.dataset.kind));
+  });
+}
+
 async function boot() {
   const loading = document.getElementById("loading");
   const content = document.getElementById("content");
   try {
-    // Load manifest -> latest -> data
-    const manifest = await fetchJSON(RAW_GH("manifest.json"), { bypass: true });
-    const latest = manifest.latest;
-    if (!latest) throw new Error("No latest file in manifest.");
-    let data;
-    try {
-      data = await fetchJSON(RAW_GH(`data/${latest}`), { bypass: true });
-    } catch (e) {
-      data = await fetchJSON(JSDELIVR(`data/${latest}`));
-    }
+    // 1. Manifest -> list of available dates
+    state.manifest = await fetchJSON(RAW_GH("manifest.json"), { bypass: true });
+    const latestFile = state.manifest.latest;
+    state.activeDate = filenameToDate(latestFile);
 
-    // Efficacy + launches data lives one folder up (shared with exec dashboard)
-    let efficacy = null;
-    let launchesLedger = null;
-    try {
-      efficacy = await fetchJSON(RAW_GH_PARENT("efficacy.json"), { bypass: true });
-    } catch (e) {
-      console.warn("Efficacy data not available yet:", e.message);
-    }
-    try {
-      launchesLedger = await fetchJSON(RAW_GH_PARENT("launches.json"), { bypass: true });
-    } catch (e) {
-      console.warn("Launches ledger not available yet:", e.message);
-    }
-    let backlinks = null;
-    try {
-      backlinks = await fetchJSON(RAW_GH_PARENT("backlinks.json"), { bypass: true });
-    } catch (e) {
-      console.warn("Backlinks ledger not available yet:", e.message);
-    }
-    let narrative = null;
-    try {
-      narrative = await fetchJSON(RAW_GH("narratives/latest.json"), { bypass: true });
-    } catch (e) {
-      console.warn("Morning briefing not available yet:", e.message);
-    }
+    // 2. Fetch shared context (efficacy, launches, backlinks) -- these don't change per-date
+    try { state.efficacy       = await fetchJSON(RAW_GH_PARENT("efficacy.json"),  { bypass: true }); }
+    catch (e) { console.warn("Efficacy not available:", e.message); }
+    try { state.launchesLedger = await fetchJSON(RAW_GH_PARENT("launches.json"), { bypass: true }); }
+    catch (e) { console.warn("Launches not available:", e.message); }
+    try { state.backlinks      = await fetchJSON(RAW_GH_PARENT("backlinks.json"),{ bypass: true }); }
+    catch (e) { console.warn("Backlinks not available:", e.message); }
 
-    renderHeader(data);
-    renderHero(data);
-    renderBriefing(narrative);
-    renderAnomalies(data);
-    renderRollup(efficacy);
-    renderLaunches(efficacy);
-    renderTrendChart(data, launchesLedger);
-    renderChannels(data);
-    renderSources(data);
-    renderLandingPages(data);
-    renderWpChanges(data);
-    renderGMB(data);
-    renderBacklinks(backlinks);
+    // 3. Latest pulse + all three briefings in parallel
+    const [latestPulse, dailyB, weeklyB, biweeklyB] = await Promise.all([
+      fetchPulseForDate(state.activeDate).catch(() => null),
+      fetchJSON(RAW_GH("narratives/latest.json"),         { bypass: true }).catch(() => null),
+      fetchJSON(RAW_GH("narratives/weekly-latest.json"),  { bypass: true }).catch(() => null),
+      fetchJSON(RAW_GH("narratives/biweekly-latest.json"),{ bypass: true }).catch(() => null),
+    ]);
+    state.briefings.daily    = dailyB;
+    state.briefings.weekly   = weeklyB;
+    state.briefings.biweekly = biweeklyB;
+
+    if (!latestPulse) throw new Error("No pulse data could be loaded.");
+
+    // 4. Render once-only sections (these read from shared context, don't change with date)
+    renderRollup(state.efficacy);
+    renderLaunches(state.efficacy);
+    renderBacklinks(state.backlinks);
+
+    // 5. Render date-specific sections for today
+    renderHeader(latestPulse);
+    renderHero(latestPulse);
+    renderAnomalies(latestPulse);
+    renderTrendChart(latestPulse, state.launchesLedger);
+    renderChannels(latestPulse);
+    renderSources(latestPulse);
+    renderLandingPages(latestPulse);
+    renderWpChanges(latestPulse);
+    renderGMB(latestPulse);
+
+    // 6. Render briefing (defaults to daily tab)
+    renderBriefing(state.briefings.daily);
+    refreshTabWordCounts();
+
+    // 7. Wire interactivity
+    renderDateStrip();
+    wireBriefingTabs();
 
     loading.classList.add("hidden");
     content.classList.remove("hidden");
