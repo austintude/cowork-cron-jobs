@@ -1,6 +1,6 @@
 # BCC Daily Pulse -- 2026-05-19
 
-_Generated 2026-05-20 12:00 UTC_
+_Generated 2026-05-20 14:30 UTC_
 
 
 ## Yesterday at a glance
@@ -29,7 +29,7 @@ _Generated 2026-05-20 12:00 UTC_
 **Top landing pages yesterday** -- Top page: / with 19 sessions.
   - `/` -- 19 sessions, 16 users
   - `/self-improvement/mental-health/why-stress-eating-happens/` -- 12 sessions, 11 users
-  - `` -- 1 sessions, 1 users
+  - `(not set)` -- 1 sessions, 1 users
   - `/contact/` -- 1 sessions, 1 users
   - `/diet-and-nutrition/healthy-living/fiesta-san-antonio-bariatric/` -- 1 sessions, 1 users
 

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-20T12:00:24.700151Z",
+  "fetched_at": "2026-05-20T14:30:27.522777Z",
   "for_date": "2026-05-19",
   "baseline_window": {
     "start": "2026-04-21",
@@ -96,7 +96,7 @@
                 "engagementRate": 1
               },
               {
-                "landingPagePlusQueryString": "",
+                "landingPagePlusQueryString": "(not set)",
                 "sessions": 1,
                 "totalUsers": 1,
                 "engagementRate": 0
@@ -968,7 +968,7 @@
         "engagementRate": 1
       },
       {
-        "landingPagePlusQueryString": "",
+        "landingPagePlusQueryString": "(not set)",
         "sessions": 1,
         "totalUsers": 1,
         "engagementRate": 0
@@ -1039,7 +1039,8 @@
     "_wp_recent": {
       "pages": [],
       "posts": [],
-      "pages_error": "HTTPSConnectionPool(host='www.bariatriccounselingcenter.com', port=443): Read timed out. (read timeout=15)"
+      "pages_http_status": 202,
+      "posts_http_status": 202
     }
   },
   "gsc_data": {
@@ -1247,9 +1248,21 @@
   "wp_recent_changes": {
     "pages": [],
     "posts": [],
-    "pages_error": "HTTPSConnectionPool(host='www.bariatriccounselingcenter.com', port=443): Read timed out. (read timeout=15)"
+    "pages_http_status": 202,
+    "posts_http_status": 202
   },
   "launches_this_run": [
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-05-20",
+      "commit_hash": "9a18215",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-9a18215",
+      "first_seen_at": "2026-05-20T14:30:27.514778Z"
+    },
     {
       "launched_at": "2026-05-19",
       "type": "git-commit",
@@ -1259,7 +1272,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-05-19-git-commit-0808dcd",
-      "first_seen_at": "2026-05-20T12:00:24.688152Z"
+      "first_seen_at": "2026-05-20T14:30:27.514778Z"
     },
     {
       "launched_at": "2026-05-19",
@@ -1270,7 +1283,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-05-19-git-commit-9fa89ae",
-      "first_seen_at": "2026-05-20T12:00:24.688152Z"
+      "first_seen_at": "2026-05-20T14:30:27.514778Z"
     },
     {
       "launched_at": "2026-05-19",
@@ -1281,7 +1294,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-05-19-git-commit-49d32cc",
-      "first_seen_at": "2026-05-20T12:00:24.688152Z"
+      "first_seen_at": "2026-05-20T14:30:27.514778Z"
     },
     {
       "launched_at": "2026-05-18",
@@ -1292,7 +1305,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-05-18-git-commit-591d051",
-      "first_seen_at": "2026-05-20T12:00:24.688152Z"
+      "first_seen_at": "2026-05-20T14:30:27.514778Z"
     },
     {
       "launched_at": "2026-05-18",
@@ -1303,7 +1316,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-05-18-git-commit-3f1e8bf",
-      "first_seen_at": "2026-05-20T12:00:24.688152Z"
+      "first_seen_at": "2026-05-20T14:30:27.514778Z"
     },
     {
       "launched_at": "2026-05-18",
@@ -1314,7 +1327,7 @@
       "source": "git-log",
       "confidence": "medium",
       "id": "auto-2026-05-18-git-commit-7131f6d",
-      "first_seen_at": "2026-05-20T12:00:24.688152Z"
+      "first_seen_at": "2026-05-20T14:30:27.514778Z"
     },
     {
       "launched_at": "2026-05-18",
@@ -1325,12 +1338,18 @@
       "source": "git-log",
       "confidence": "medium",
       "id": "auto-2026-05-18-git-commit-a46c5ec",
-      "first_seen_at": "2026-05-20T12:00:24.688152Z"
+      "first_seen_at": "2026-05-20T14:30:27.514778Z"
     }
   ],
-  "launches_ledger_size": 27,
+  "launches_ledger_size": 28,
   "paid_social_spikes": [],
   "git_commits_recent": [
+    {
+      "date": "2026-05-20T07:00:25-05:00",
+      "hash": "9a18215",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-05-20"
+    },
     {
       "date": "2026-05-19T16:21:58-05:00",
       "hash": "0808dcd",
@@ -1398,6 +1417,12 @@
       "subject": "autosync from BisettGaming @ 2026-05-18T02:49:44"
     },
     {
+      "date": "2026-05-20T07:19:38-05:00",
+      "hash": "a7abf91",
+      "author": "Daniel Bisett",
+      "subject": "autosync from BisettGaming @ 2026-05-20T07:19:38"
+    },
+    {
       "date": "2026-05-19T16:49:38-05:00",
       "hash": "585dd96",
       "author": "Daniel Bisett",
@@ -1438,18 +1463,6 @@
       "hash": "f620b8c",
       "author": "Daniel Bisett",
       "subject": "autosync from BisettGaming @ 2026-05-18T15:19:38"
-    },
-    {
-      "date": "2026-05-18T13:49:39-05:00",
-      "hash": "976d7b3",
-      "author": "Daniel Bisett",
-      "subject": "autosync from BisettGaming @ 2026-05-18T13:49:39"
-    },
-    {
-      "date": "2026-05-18T13:19:40-05:00",
-      "hash": "e566e3e",
-      "author": "Daniel Bisett",
-      "subject": "autosync from BisettGaming @ 2026-05-18T13:19:40"
     }
   ]
 }
