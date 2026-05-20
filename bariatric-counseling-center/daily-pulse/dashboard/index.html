@@ -26,6 +26,7 @@
     --bg-dark-soft: #18222e;
     --line: #e3e9ee;
     --line-dark: #28333f;
+    /* Severity colors (legacy / fallback for non-valenced events) */
     --crit: #b34c4c;
     --crit-soft: #fbecec;
     --major: #c97a2e;
@@ -34,6 +35,24 @@
     --minor-soft: #e9f1f6;
     --info: #6b7a87;
     --info-soft: #eef2f5;
+
+    /* Valence palette -- psychologically meaningful:
+       GREEN family = good news (something positive happened, no matter how dramatic).
+       RED family   = bad news (something negative happened, no matter how dramatic).
+       Brighter saturation = more dramatic; restrained, brand-harmonious tones. */
+    --good-strong: #1e8c4a;  /* CRITICAL good -- deep forest green, healthy + confident */
+    --good-mid:    #3da566;  /* MAJOR good -- sage */
+    --good-soft:   #6dbc8a;  /* MINOR good -- mint */
+    --good-bg-strong: #d6f0e0;
+    --good-bg-mid:    #e3f4ea;
+    --good-bg-soft:   #eef7f1;
+
+    --bad-strong:  #b8392a;  /* CRITICAL bad -- warm red, not garish */
+    --bad-mid:     #cb6a3a;  /* MAJOR bad -- burnt orange */
+    --bad-soft:    #c79d3d;  /* MINOR bad -- mustard */
+    --bad-bg-strong: #fbecec;
+    --bad-bg-mid:    #faf0e3;
+    --bad-bg-soft:   #fcf4e0;
     --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
     --mono: "JetBrains Mono", "SF Mono", Consolas, monospace;
   }
@@ -180,10 +199,18 @@
     margin-bottom: 12px;
     overflow: hidden;
   }
-  .anomaly-card.crit  { border-left-color: var(--crit); }
-  .anomaly-card.major { border-left-color: var(--major); }
-  .anomaly-card.minor { border-left-color: var(--minor); }
-  .anomaly-card.info  { border-left-color: var(--info); }
+  /* Valence-aware: card border tells you good/bad at a glance, not just "severe" */
+  .anomaly-card.crit-good   { border-left-color: var(--good-strong); }
+  .anomaly-card.major-good  { border-left-color: var(--good-mid); }
+  .anomaly-card.minor-good  { border-left-color: var(--good-soft); }
+  .anomaly-card.crit-bad    { border-left-color: var(--bad-strong); }
+  .anomaly-card.major-bad   { border-left-color: var(--bad-mid); }
+  .anomaly-card.minor-bad   { border-left-color: var(--bad-soft); }
+  .anomaly-card.info        { border-left-color: var(--info); }
+  /* Fallback for legacy severity-only (no valence) -- gray */
+  .anomaly-card.crit-neutral, .anomaly-card.major-neutral, .anomaly-card.minor-neutral {
+    border-left-color: var(--muted);
+  }
 
   .anomaly-head {
     display: flex;
@@ -205,10 +232,17 @@
     letter-spacing: 0.04em;
     flex-shrink: 0;
   }
-  .sev-pill.crit  { background: var(--crit-soft);  color: var(--crit); }
-  .sev-pill.major { background: var(--major-soft); color: var(--major); }
-  .sev-pill.minor { background: var(--minor-soft); color: var(--minor); }
-  .sev-pill.info  { background: var(--info-soft);  color: var(--info); }
+  /* Valence-aware severity pills */
+  .sev-pill.crit-good   { background: var(--good-bg-strong); color: var(--good-strong); }
+  .sev-pill.major-good  { background: var(--good-bg-mid);    color: var(--good-mid); }
+  .sev-pill.minor-good  { background: var(--good-bg-soft);   color: var(--good-soft); }
+  .sev-pill.crit-bad    { background: var(--bad-bg-strong);  color: var(--bad-strong); }
+  .sev-pill.major-bad   { background: var(--bad-bg-mid);     color: var(--bad-mid); }
+  .sev-pill.minor-bad   { background: var(--bad-bg-soft);    color: var(--bad-soft); }
+  .sev-pill.info        { background: var(--info-soft);      color: var(--info); }
+  .sev-pill.crit-neutral, .sev-pill.major-neutral, .sev-pill.minor-neutral {
+    background: var(--bg-soft); color: var(--muted);
+  }
 
   .anomaly-headline {
     flex: 1;
@@ -218,8 +252,11 @@
     line-height: 1.4;
   }
   .anomaly-headline .arrow { font-family: var(--mono); font-weight: 700; margin-right: 6px; }
-  .anomaly-headline .arrow.up   { color: var(--teal-deep); }
-  .anomaly-headline .arrow.down { color: var(--crit); }
+  /* Arrow color = how to FEEL about it (valence), not which direction the number moved.
+     Up-arrow + bad valence (e.g. bounce rate climbed) is still red. */
+  .anomaly-headline .arrow.good    { color: var(--good-strong); }
+  .anomaly-headline .arrow.bad     { color: var(--bad-strong); }
+  .anomaly-headline .arrow.neutral { color: var(--muted); }
 
   .anomaly-toggle {
     font-family: var(--mono);
@@ -876,6 +913,46 @@ function severityClass(sev) {
   return "info";
 }
 
+// ---- Metric directionality map ----
+// "up_good" = the metric going up is a positive signal (sessions, users, clicks)
+// "up_bad"  = the metric going up is a negative signal (bounce rate, GSC avg position
+//              where higher rank-number = worse)
+// "neutral" = direction alone doesn't tell us if it's good or bad
+const METRIC_VALENCE = {
+  // Engagement / reach -- up is good
+  "GA4 sessions":           "up_good",
+  "GA4 users":              "up_good",
+  "GA4 new users":          "up_good",
+  "GA4 pageviews":          "up_good",
+  "GA4 engagement rate":    "up_good",
+  "GA4 avg session dur":    "up_good",
+  "GSC impressions":        "up_good",
+  "GSC clicks":             "up_good",
+  // GMB conversion-like actions -- up is good
+  "GMB call clicks":        "up_good",
+  "GMB direction requests": "up_good",
+  "GMB website clicks":     "up_good",
+  "GMB impressions":        "up_good",
+  // Reverse-direction metrics -- up is BAD
+  "GSC avg position":       "up_bad",  // higher position number = worse rank
+  "GA4 bounce rate":        "up_bad",
+};
+
+function valenceFor(metric, direction) {
+  const policy = METRIC_VALENCE[metric];
+  if (!policy || !direction || direction === "info") return "neutral";
+  if (policy === "up_good") return direction === "up" ? "good" : "bad";
+  if (policy === "up_bad")  return direction === "up" ? "bad"  : "good";
+  return "neutral";
+}
+
+function colorClassFor(severity, valence) {
+  // severity in {CRITICAL, MAJOR, MINOR, INFO}; valence in {good, bad, neutral}
+  if (severity === "INFO") return "info";
+  const sev = severityClass(severity);
+  return `${sev}-${valence}`;  // e.g. "crit-good", "major-bad"
+}
+
 function renderHero(data) {
   const s = data.snapshot || {};
   const sum = data.anomaly_summary || {};
@@ -920,18 +997,23 @@ function renderAnomalies(data) {
   });
 
   for (const a of anomalies) {
-    const sev = severityClass(a.severity);
-    const card = el("div", { className: "anomaly-card " + sev });
+    // Determine valence (good/bad/neutral) based on metric + direction
+    const valence = valenceFor(a.metric, a.direction);
+    const colorCls = colorClassFor(a.severity, valence);
+
+    const card = el("div", { className: "anomaly-card " + colorCls });
     const head = el("div", { className: "anomaly-head" });
-    head.appendChild(el("span", { className: "sev-pill " + sev }, a.severity));
+    head.appendChild(el("span", { className: "sev-pill " + colorCls }, a.severity));
 
     // Pretty-print the headline (strip UP/DOWN tokens, add arrow span)
+    // Arrow COLOR reflects valence, not direction (green = good news, red = bad news)
     let headline = a.headline || "";
     const arrowMatch = headline.match(/^(UP|DOWN)\s+/);
     let arrowHTML = "";
     if (arrowMatch) {
       const dir = arrowMatch[1].toLowerCase();
-      arrowHTML = `<span class="arrow ${dir}">${dir === "up" ? "&uarr;" : "&darr;"}</span>`;
+      const symbol = dir === "up" ? "&uarr;" : "&darr;";
+      arrowHTML = `<span class="arrow ${valence}">${symbol}</span>`;
       headline = headline.replace(/^(UP|DOWN)\s+/, "");
     }
     const headlineEl = el("div", { className: "anomaly-headline", html: arrowHTML + escapeHtml(headline) });
