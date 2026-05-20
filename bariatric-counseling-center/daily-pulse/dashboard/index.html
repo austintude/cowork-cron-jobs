@@ -513,6 +513,25 @@
   .briefing .briefing-text p {
     margin: 0 0 12px;
   }
+  .briefing .briefing-text ul {
+    margin: 6px 0 10px;
+    padding-left: 18px;
+    list-style: none;
+  }
+  .briefing .briefing-text ul li {
+    position: relative;
+    margin-bottom: 6px;
+    padding-left: 4px;
+  }
+  .briefing .briefing-text ul li::before {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 11px;
+    width: 6px;
+    height: 1px;
+    background: var(--teal-deep);
+  }
   .briefing .briefing-text ol {
     margin: 8px 0 12px;
     padding-left: 24px;
@@ -1428,10 +1447,20 @@ function renderMarkdownBriefing(md) {
     if (/^\s*\d+\.\s+/.test(block)) {
       const items = block.split(/\n(?=\s*\d+\.)/).map(line => {
         const m = line.match(/^\s*\d+\.\s+(.+)$/s);
-        return m ? m[1].trim() : line.trim();
+        return m ? m[1].trim().replace(/\n\s+/g, " ") : line.trim();
       });
       const lis = items.map(it => `<li>${inline(escape(it))}</li>`).join("");
       htmlBlocks.push(`<ol>${lis}</ol>`);
+      continue;
+    }
+    // Unordered list (block of lines like "- foo" or "* foo")
+    if (/^\s*[-*]\s+/.test(block)) {
+      const items = block.split(/\n(?=\s*[-*]\s+)/).map(line => {
+        const m = line.match(/^\s*[-*]\s+(.+)$/s);
+        return m ? m[1].trim().replace(/\n\s+/g, " ") : line.trim();
+      });
+      const lis = items.map(it => `<li>${inline(escape(it))}</li>`).join("");
+      htmlBlocks.push(`<ul>${lis}</ul>`);
       continue;
     }
     // Plain paragraph (preserve single-line breaks inside as <br>... actually just collapse)
