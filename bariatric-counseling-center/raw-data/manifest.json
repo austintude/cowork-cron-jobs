@@ -1,8 +1,7 @@
-﻿{
-    "sources":  {
-                    "gsc":  "raw-data/gsc/gsc-data-2026-05-20.json"
-                },
-    "description":  "Raw per-source data files (GSC, GA4, GMB). Each is the most recent fetch result, suitable for ANY downstream task -- Cowork, online dashboard, or external automation.",
-    "github_raw_base":  "https://raw.githubusercontent.com/austintude/cowork-cron-jobs/main/bariatric-counseling-center/",
-    "updated":  "2026-05-20T16:31:55Z"
+{
+  "description": "Raw per-source data files (GSC, GA4, GMB).",
+  "updated": "2026-05-20T16:39:05.952944Z",
+  "sources": {
+    "ga4": "raw-data/ga4/ga4-data-2026-05-20.json"
+  }
 }
