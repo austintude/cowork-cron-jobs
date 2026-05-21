@@ -1,0 +1,1665 @@
+{
+  "fetched_at": "2026-05-21T12:00:17.573176Z",
+  "for_date": "2026-05-20",
+  "baseline_window": {
+    "start": "2026-04-22",
+    "end": "2026-05-19",
+    "days": 28
+  },
+  "ga4_property_id": "254059736",
+  "gsc_property": "https://www.bariatriccounselingcenter.com/",
+  "snapshot": {
+    "sessions": 27,
+    "users": 25,
+    "new_users": 20,
+    "pageviews": 92,
+    "engagement_rate": 0.963,
+    "avg_session_duration": 77.9661,
+    "gsc_impressions": 0,
+    "gsc_clicks": 0,
+    "gsc_position": 0.0
+  },
+  "anomaly_summary": {
+    "total": 6,
+    "critical": 0,
+    "major": 4,
+    "minor": 1
+  },
+  "anomalies": [
+    {
+      "metric": "GA4 new users",
+      "actual": 20,
+      "baseline_28d_median": 14.0,
+      "yoy_same_day": null,
+      "pct_delta": 42.9,
+      "severity": "MAJOR",
+      "direction": "up",
+      "headline": "UP GA4 new users: 20 (+42.9% vs 28d median of 14)"
+    },
+    {
+      "metric": "GA4 users",
+      "actual": 25,
+      "baseline_28d_median": 18.0,
+      "yoy_same_day": 25,
+      "pct_delta": 38.9,
+      "severity": "MAJOR",
+      "direction": "up",
+      "headline": "UP GA4 users: 25 (+38.9% vs 28d median of 18) (YoY same day: +0.0%)"
+    },
+    {
+      "metric": "GA4 avg session dur",
+      "actual": 77.9661,
+      "baseline_28d_median": 122.57,
+      "yoy_same_day": null,
+      "pct_delta": -36.4,
+      "severity": "MAJOR",
+      "direction": "down",
+      "headline": "DOWN GA4 avg session dur: 77.9661 (-36.4% vs 28d median of 123)"
+    },
+    {
+      "metric": "GA4 sessions",
+      "actual": 27,
+      "baseline_28d_median": 20.0,
+      "yoy_same_day": 27,
+      "pct_delta": 35.0,
+      "severity": "MAJOR",
+      "direction": "up",
+      "headline": "UP GA4 sessions: 27 (+35.0% vs 28d median of 20) (YoY same day: +0.0%)",
+      "unpacked": {
+        "chain": [
+          {
+            "step": "Source attribution",
+            "finding": "Direct rose from baseline 9.5 to 19 (+9.5).",
+            "breakdown": [
+              {
+                "channel": "Direct",
+                "yesterday": 19,
+                "baseline_28d_median": 9.5,
+                "delta": 9.5
+              },
+              {
+                "channel": "Organic Search",
+                "yesterday": 3,
+                "baseline_28d_median": 9.0,
+                "delta": -6.0
+              },
+              {
+                "channel": "Organic Social",
+                "yesterday": 4,
+                "baseline_28d_median": 1.0,
+                "delta": 3.0
+              }
+            ]
+          },
+          {
+            "step": "Direct-traffic investigation",
+            "finding": "Direct anomaly almost always means either (a) untagged email/SMS/QR campaign, (b) a bot spike, or (c) a referrer that strips Referer headers (some mobile apps). If this was unplanned, check server logs for unusual user agents."
+          },
+          {
+            "step": "Top landing pages yesterday",
+            "finding": "Top page: / with 9 sessions.",
+            "data": [
+              {
+                "landingPagePlusQueryString": "/",
+                "sessions": 9,
+                "totalUsers": 9,
+                "engagementRate": 1
+              },
+              {
+                "landingPagePlusQueryString": "/self-improvement/mental-health/why-stress-eating-happens/",
+                "sessions": 5,
+                "totalUsers": 4,
+                "engagementRate": 1
+              },
+              {
+                "landingPagePlusQueryString": "/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+                "sessions": 2,
+                "totalUsers": 2,
+                "engagementRate": 1
+              },
+              {
+                "landingPagePlusQueryString": "",
+                "sessions": 1,
+                "totalUsers": 1,
+                "engagementRate": 0
+              },
+              {
+                "landingPagePlusQueryString": "/?page_id=5279&preview=true",
+                "sessions": 1,
+                "totalUsers": 1,
+                "engagementRate": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "metric": "GA4 pageviews",
+      "actual": 92,
+      "baseline_28d_median": 74.5,
+      "yoy_same_day": 96,
+      "pct_delta": 23.5,
+      "severity": "MINOR",
+      "direction": "up",
+      "headline": "UP GA4 pageviews: 92 (+23.5% vs 28d median of 74) (YoY same day: -4.2%)"
+    },
+    {
+      "severity": "INFO",
+      "metric": "GSC data freshness",
+      "actual": 0,
+      "baseline_28d_median": 972.0,
+      "pct_delta": null,
+      "headline": "GSC data for 2026-05-20 not yet available (typical 1-3 day reporting lag). Latest GSC day with data: 2026-05-19.",
+      "direction": "info"
+    }
+  ],
+  "ga4_data": {
+    "daily_totals": [
+      {
+        "date": "2026-04-22",
+        "sessions": 37,
+        "totalUsers": 33,
+        "newUsers": 29,
+        "screenPageViews": 85,
+        "engagementRate": 0.9189,
+        "averageSessionDuration": 76.1851
+      },
+      {
+        "date": "2026-04-23",
+        "sessions": 21,
+        "totalUsers": 20,
+        "newUsers": 15,
+        "screenPageViews": 58,
+        "engagementRate": 1,
+        "averageSessionDuration": 109.6133
+      },
+      {
+        "date": "2026-04-24",
+        "sessions": 28,
+        "totalUsers": 24,
+        "newUsers": 20,
+        "screenPageViews": 94,
+        "engagementRate": 0.8929,
+        "averageSessionDuration": 128.843
+      },
+      {
+        "date": "2026-04-25",
+        "sessions": 17,
+        "totalUsers": 15,
+        "newUsers": 14,
+        "screenPageViews": 44,
+        "engagementRate": 0.8824,
+        "averageSessionDuration": 211.1594
+      },
+      {
+        "date": "2026-04-26",
+        "sessions": 13,
+        "totalUsers": 13,
+        "newUsers": 11,
+        "screenPageViews": 30,
+        "engagementRate": 0.9231,
+        "averageSessionDuration": 27.5276
+      },
+      {
+        "date": "2026-04-27",
+        "sessions": 46,
+        "totalUsers": 41,
+        "newUsers": 34,
+        "screenPageViews": 147,
+        "engagementRate": 1,
+        "averageSessionDuration": 206.4255
+      },
+      {
+        "date": "2026-04-28",
+        "sessions": 35,
+        "totalUsers": 30,
+        "newUsers": 24,
+        "screenPageViews": 100,
+        "engagementRate": 0.9429,
+        "averageSessionDuration": 85.2207
+      },
+      {
+        "date": "2026-04-29",
+        "sessions": 19,
+        "totalUsers": 15,
+        "newUsers": 10,
+        "screenPageViews": 52,
+        "engagementRate": 0.8947,
+        "averageSessionDuration": 47.2693
+      },
+      {
+        "date": "2026-04-30",
+        "sessions": 32,
+        "totalUsers": 28,
+        "newUsers": 23,
+        "screenPageViews": 96,
+        "engagementRate": 0.9688,
+        "averageSessionDuration": 181.352
+      },
+      {
+        "date": "2026-05-01",
+        "sessions": 23,
+        "totalUsers": 20,
+        "newUsers": 13,
+        "screenPageViews": 85,
+        "engagementRate": 0.9565,
+        "averageSessionDuration": 263.5303
+      },
+      {
+        "date": "2026-05-02",
+        "sessions": 6,
+        "totalUsers": 6,
+        "newUsers": 4,
+        "screenPageViews": 12,
+        "engagementRate": 0.8333,
+        "averageSessionDuration": 22.8684
+      },
+      {
+        "date": "2026-05-03",
+        "sessions": 7,
+        "totalUsers": 7,
+        "newUsers": 6,
+        "screenPageViews": 18,
+        "engagementRate": 0.8571,
+        "averageSessionDuration": 147.6497
+      },
+      {
+        "date": "2026-05-04",
+        "sessions": 25,
+        "totalUsers": 24,
+        "newUsers": 20,
+        "screenPageViews": 91,
+        "engagementRate": 1,
+        "averageSessionDuration": 116.2913
+      },
+      {
+        "date": "2026-05-05",
+        "sessions": 19,
+        "totalUsers": 17,
+        "newUsers": 11,
+        "screenPageViews": 125,
+        "engagementRate": 0.8947,
+        "averageSessionDuration": 388.8489
+      },
+      {
+        "date": "2026-05-06",
+        "sessions": 37,
+        "totalUsers": 32,
+        "newUsers": 27,
+        "screenPageViews": 163,
+        "engagementRate": 0.9189,
+        "averageSessionDuration": 113.0655
+      },
+      {
+        "date": "2026-05-07",
+        "sessions": 15,
+        "totalUsers": 14,
+        "newUsers": 12,
+        "screenPageViews": 90,
+        "engagementRate": 0.8,
+        "averageSessionDuration": 291.6904
+      },
+      {
+        "date": "2026-05-08",
+        "sessions": 14,
+        "totalUsers": 14,
+        "newUsers": 11,
+        "screenPageViews": 63,
+        "engagementRate": 1,
+        "averageSessionDuration": 223.7028
+      },
+      {
+        "date": "2026-05-09",
+        "sessions": 8,
+        "totalUsers": 8,
+        "newUsers": 6,
+        "screenPageViews": 16,
+        "engagementRate": 1,
+        "averageSessionDuration": 14.6939
+      },
+      {
+        "date": "2026-05-10",
+        "sessions": 6,
+        "totalUsers": 6,
+        "newUsers": 6,
+        "screenPageViews": 24,
+        "engagementRate": 1,
+        "averageSessionDuration": 17.4475
+      },
+      {
+        "date": "2026-05-11",
+        "sessions": 27,
+        "totalUsers": 24,
+        "newUsers": 21,
+        "screenPageViews": 149,
+        "engagementRate": 0.9259,
+        "averageSessionDuration": 162.4119
+      },
+      {
+        "date": "2026-05-12",
+        "sessions": 16,
+        "totalUsers": 16,
+        "newUsers": 14,
+        "screenPageViews": 49,
+        "engagementRate": 0.9375,
+        "averageSessionDuration": 84.6505
+      },
+      {
+        "date": "2026-05-13",
+        "sessions": 18,
+        "totalUsers": 15,
+        "newUsers": 11,
+        "screenPageViews": 73,
+        "engagementRate": 0.8889,
+        "averageSessionDuration": 1377.3681
+      },
+      {
+        "date": "2026-05-14",
+        "sessions": 51,
+        "totalUsers": 44,
+        "newUsers": 41,
+        "screenPageViews": 167,
+        "engagementRate": 0.9412,
+        "averageSessionDuration": 436.9901
+      },
+      {
+        "date": "2026-05-15",
+        "sessions": 24,
+        "totalUsers": 23,
+        "newUsers": 21,
+        "screenPageViews": 75,
+        "engagementRate": 1,
+        "averageSessionDuration": 85.4929
+      },
+      {
+        "date": "2026-05-16",
+        "sessions": 15,
+        "totalUsers": 12,
+        "newUsers": 10,
+        "screenPageViews": 42,
+        "engagementRate": 1,
+        "averageSessionDuration": 28.4325
+      },
+      {
+        "date": "2026-05-17",
+        "sessions": 12,
+        "totalUsers": 11,
+        "newUsers": 8,
+        "screenPageViews": 74,
+        "engagementRate": 0.9167,
+        "averageSessionDuration": 372.9662
+      },
+      {
+        "date": "2026-05-18",
+        "sessions": 24,
+        "totalUsers": 19,
+        "newUsers": 16,
+        "screenPageViews": 56,
+        "engagementRate": 0.875,
+        "averageSessionDuration": 44.267
+      },
+      {
+        "date": "2026-05-19",
+        "sessions": 37,
+        "totalUsers": 30,
+        "newUsers": 28,
+        "screenPageViews": 142,
+        "engagementRate": 0.9459,
+        "averageSessionDuration": 143.219
+      },
+      {
+        "date": "2026-05-20",
+        "sessions": 27,
+        "totalUsers": 25,
+        "newUsers": 20,
+        "screenPageViews": 92,
+        "engagementRate": 0.963,
+        "averageSessionDuration": 77.9661
+      }
+    ],
+    "daily_by_channel": [
+      {
+        "date": "2026-05-14",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 40,
+        "totalUsers": 35
+      },
+      {
+        "date": "2026-04-27",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 28,
+        "totalUsers": 26
+      },
+      {
+        "date": "2026-05-19",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 26,
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-04-28",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 22,
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-05-20",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 19,
+        "totalUsers": 17
+      },
+      {
+        "date": "2026-04-22",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 18,
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-04-22",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 18,
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-05-06",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 17,
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-05-06",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 17,
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-05-15",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 17,
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-04-29",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 15,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-04-30",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 15,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-04-30",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 14,
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-04-24",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-04-24",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 12,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-05-01",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 12,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-05-11",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-05-18",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-04-27",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-04-28",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-04",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-05-04",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-05-11",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-04-23",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 10,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-04-25",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 10,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-05",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 10,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-05-16",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 10,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-05-19",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 10,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-05-01",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 9,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-08",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 9,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-13",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 9,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-05-14",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 9,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-18",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 9,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-04-23",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-04-26",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-05-05",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-05-07",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-12",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-05-13",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-04-26",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-07",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-12",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-15",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-17",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-02",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-05-03",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-05-09",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-05-17",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-04-25",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-04-27",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 4,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-29",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 4,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-05-08",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-05-10",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-05-11",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 4,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-16",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 4,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-05-20",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-04-23",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-04-27",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-04-30",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-05-04",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-12",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-05-18",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-20",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-04-24",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-04-24",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-25",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-03",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-05",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-06",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-07",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-09",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-10",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-14",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-22",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-23",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-25",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-28",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-04-28",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-01",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-01",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-02",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-06",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-08",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-09",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-13",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-13",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-15",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-16",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-17",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-19",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-20",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      }
+    ],
+    "yesterday_landing_pages": [
+      {
+        "landingPagePlusQueryString": "/",
+        "sessions": 9,
+        "totalUsers": 9,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/self-improvement/mental-health/why-stress-eating-happens/",
+        "sessions": 5,
+        "totalUsers": 4,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+        "sessions": 2,
+        "totalUsers": 2,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 0
+      },
+      {
+        "landingPagePlusQueryString": "/?page_id=5279&preview=true",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/in-the-media/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/recipes/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/self-improvement/mental-health/why-stress-eating-happens/?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAEeBmQlcAnLSaEHw59uxKFNsiCn724nd0pQdgyXtEKxanp25-xANH33cXYkwaU_aem_ZwgezLUsRrsd84MvqCDUtA",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/self-improvement/mental-health/why-stress-eating-happens/?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAEecZY_AZvWaTPmhqDX3OCH0cJo-Gvc4XsF2OnK_rmyQ1W1sX_8-YENLkLDNio_aem_XUSOo79kF1T-DmhgpgimcA",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/self-improvement/mental-health/why-stress-eating-happens/?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAEeqB4FMqNXtyUUHVM0OQ7tXrZjIScxG0mbcLLb0QDwKZ9HB2o_Z-FpUcdFKJQ_aem_M7-rt17fRWHXTO5LaLzBCA",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/self-improvement/mental-health/why-stress-eating-happens/?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAEezs0Evg3BbcW9eqiQhIr601IB6WNKHsn1mV-dj367DvlmAKROmRXFRxBkBg0_aem_o8rU5e2IqDMArwM5-a3Lhg",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      }
+    ],
+    "yesterday_sources": [
+      {
+        "sessionSourceMedium": "(direct) / (none)",
+        "sessions": 19,
+        "totalUsers": 17
+      },
+      {
+        "sessionSourceMedium": "facebook.com / referral",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "sessionSourceMedium": "google / organic",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "sessionSourceMedium": "mail.google.com / referral",
+        "sessions": 1,
+        "totalUsers": 1
+      }
+    ],
+    "yesterday_devices": [
+      {
+        "deviceCategory": "desktop",
+        "sessions": 20
+      },
+      {
+        "deviceCategory": "mobile",
+        "sessions": 7
+      }
+    ],
+    "yoy_same_day": {
+      "sessions": 27,
+      "totalUsers": 25,
+      "screenPageViews": 96
+    },
+    "_wp_recent": {
+      "pages": [],
+      "posts": [],
+      "pages_http_status": 202,
+      "posts_http_status": 202
+    }
+  },
+  "gsc_data": {
+    "daily_totals": [
+      {
+        "date": "2026-04-22",
+        "clicks": 10,
+        "impressions": 1321,
+        "ctr": 0.0076,
+        "position": 11.15
+      },
+      {
+        "date": "2026-04-23",
+        "clicks": 8,
+        "impressions": 1288,
+        "ctr": 0.0062,
+        "position": 10.73
+      },
+      {
+        "date": "2026-04-24",
+        "clicks": 6,
+        "impressions": 978,
+        "ctr": 0.0061,
+        "position": 11.32
+      },
+      {
+        "date": "2026-04-25",
+        "clicks": 11,
+        "impressions": 966,
+        "ctr": 0.0114,
+        "position": 11.18
+      },
+      {
+        "date": "2026-04-26",
+        "clicks": 4,
+        "impressions": 726,
+        "ctr": 0.0055,
+        "position": 11.98
+      },
+      {
+        "date": "2026-04-27",
+        "clicks": 6,
+        "impressions": 646,
+        "ctr": 0.0093,
+        "position": 10.89
+      },
+      {
+        "date": "2026-04-28",
+        "clicks": 7,
+        "impressions": 663,
+        "ctr": 0.0106,
+        "position": 10.83
+      },
+      {
+        "date": "2026-04-29",
+        "clicks": 6,
+        "impressions": 1000,
+        "ctr": 0.006,
+        "position": 11.29
+      },
+      {
+        "date": "2026-04-30",
+        "clicks": 6,
+        "impressions": 1292,
+        "ctr": 0.0046,
+        "position": 12.3
+      },
+      {
+        "date": "2026-05-01",
+        "clicks": 0,
+        "impressions": 1179,
+        "ctr": 0.0,
+        "position": 13.67
+      },
+      {
+        "date": "2026-05-02",
+        "clicks": 0,
+        "impressions": 1114,
+        "ctr": 0.0,
+        "position": 13.64
+      },
+      {
+        "date": "2026-05-03",
+        "clicks": 2,
+        "impressions": 1131,
+        "ctr": 0.0018,
+        "position": 14.55
+      },
+      {
+        "date": "2026-05-04",
+        "clicks": 6,
+        "impressions": 850,
+        "ctr": 0.0071,
+        "position": 12.96
+      },
+      {
+        "date": "2026-05-05",
+        "clicks": 4,
+        "impressions": 1101,
+        "ctr": 0.0036,
+        "position": 13.87
+      },
+      {
+        "date": "2026-05-06",
+        "clicks": 5,
+        "impressions": 1255,
+        "ctr": 0.004,
+        "position": 12.26
+      },
+      {
+        "date": "2026-05-07",
+        "clicks": 3,
+        "impressions": 1079,
+        "ctr": 0.0028,
+        "position": 14.58
+      },
+      {
+        "date": "2026-05-08",
+        "clicks": 1,
+        "impressions": 1055,
+        "ctr": 0.0009,
+        "position": 13.04
+      },
+      {
+        "date": "2026-05-09",
+        "clicks": 2,
+        "impressions": 715,
+        "ctr": 0.0028,
+        "position": 12.21
+      },
+      {
+        "date": "2026-05-10",
+        "clicks": 3,
+        "impressions": 881,
+        "ctr": 0.0034,
+        "position": 14.56
+      },
+      {
+        "date": "2026-05-11",
+        "clicks": 5,
+        "impressions": 876,
+        "ctr": 0.0057,
+        "position": 14.47
+      },
+      {
+        "date": "2026-05-12",
+        "clicks": 2,
+        "impressions": 1134,
+        "ctr": 0.0018,
+        "position": 12.86
+      },
+      {
+        "date": "2026-05-13",
+        "clicks": 4,
+        "impressions": 857,
+        "ctr": 0.0047,
+        "position": 14.62
+      },
+      {
+        "date": "2026-05-14",
+        "clicks": 3,
+        "impressions": 1022,
+        "ctr": 0.0029,
+        "position": 16.35
+      },
+      {
+        "date": "2026-05-15",
+        "clicks": 2,
+        "impressions": 948,
+        "ctr": 0.0021,
+        "position": 15.32
+      },
+      {
+        "date": "2026-05-16",
+        "clicks": 1,
+        "impressions": 840,
+        "ctr": 0.0012,
+        "position": 17.0
+      },
+      {
+        "date": "2026-05-17",
+        "clicks": 3,
+        "impressions": 938,
+        "ctr": 0.0032,
+        "position": 16.6
+      },
+      {
+        "date": "2026-05-18",
+        "clicks": 4,
+        "impressions": 879,
+        "ctr": 0.0046,
+        "position": 18.27
+      },
+      {
+        "date": "2026-05-19",
+        "clicks": 5,
+        "impressions": 821,
+        "ctr": 0.0061,
+        "position": 15.22
+      }
+    ],
+    "yesterday_queries": [],
+    "yesterday_pages": []
+  },
+  "gmb_data": null,
+  "wp_recent_changes": {
+    "pages": [],
+    "posts": [],
+    "pages_http_status": 202,
+    "posts_http_status": 202
+  },
+  "launches_this_run": [
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc: publish GA4 raw data alongside GSC",
+      "commit_hash": "fa72a94",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "medium",
+      "id": "auto-2026-05-20-git-commit-fa72a94",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-05-20",
+      "commit_hash": "2c5bce1",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-2c5bce1",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-05-20",
+      "commit_hash": "bf77a25",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-bf77a25",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: fix markdown renderer -- H3 headings adjacent to bullets now split into their own blocks",
+      "commit_hash": "03e0de1",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-03e0de1",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: tighten daily briefing to bullets + ul markdown support",
+      "commit_hash": "a28c5ce",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-a28c5ce",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: tighten daily briefing to bullets + ul markdown support",
+      "commit_hash": "280c19b",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-280c19b",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: deeper briefing + 7/14-day rollups + history nav + briefing tabs",
+      "commit_hash": "49f480e",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-49f480e",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: deeper briefing + 7/14-day rollups + history nav + briefing tabs",
+      "commit_hash": "51c2a8d",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-51c2a8d",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: valence-aware colors + tuned narrative prompt",
+      "commit_hash": "610ad78",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-610ad78",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: valence-aware colors + tuned narrative prompt",
+      "commit_hash": "13725f1",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-13725f1",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: first LLM morning briefing",
+      "commit_hash": "914b32f",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-914b32f",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc dashboards: GMB panel, backlinks ledger, briefing slot, launch markers, daily GSC",
+      "commit_hash": "c890860",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-c890860",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-05-20",
+      "commit_hash": "d9e843e",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-d9e843e",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-20",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-05-20",
+      "commit_hash": "9a18215",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-20-git-commit-9a18215",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-19",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-05-19",
+      "commit_hash": "0808dcd",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-19-git-commit-0808dcd",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-19",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-05-19",
+      "commit_hash": "9fa89ae",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-19-git-commit-9fa89ae",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-19",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-05-19",
+      "commit_hash": "49d32cc",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-19-git-commit-49d32cc",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-18",
+      "type": "git-commit",
+      "title": "bcc daily-pulse: ship internal operational dashboard",
+      "commit_hash": "591d051",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-18-git-commit-591d051",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-18",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-05-18",
+      "commit_hash": "3f1e8bf",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-18-git-commit-3f1e8bf",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-18",
+      "type": "git-commit",
+      "title": "bcc: merge GA4 data (168 sessions, 141 users, YoY -19.2%) into 2026-05-18 weekly",
+      "commit_hash": "7131f6d",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "medium",
+      "id": "auto-2026-05-18-git-commit-7131f6d",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    },
+    {
+      "launched_at": "2026-05-18",
+      "type": "git-commit",
+      "title": "bcc: fresh GSC pull for 2026-05-11 to 2026-05-18 window",
+      "commit_hash": "a46c5ec",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "medium",
+      "id": "auto-2026-05-18-git-commit-a46c5ec",
+      "first_seen_at": "2026-05-21T12:00:17.563177Z"
+    }
+  ],
+  "launches_ledger_size": 41,
+  "paid_social_spikes": [],
+  "git_commits_recent": [
+    {
+      "date": "2026-05-20T11:39:06-05:00",
+      "hash": "fa72a94",
+      "author": "Daniel Bisett",
+      "subject": "bcc: publish GA4 raw data alongside GSC"
+    },
+    {
+      "date": "2026-05-20T11:31:55-05:00",
+      "hash": "2c5bce1",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-05-20"
+    },
+    {
+      "date": "2026-05-20T11:31:42-05:00",
+      "hash": "bf77a25",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-05-20"
+    },
+    {
+      "date": "2026-05-20T11:22:32-05:00",
+      "hash": "03e0de1",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: fix markdown renderer -- H3 headings adjacent to bullets now split into their own blocks"
+    },
+    {
+      "date": "2026-05-20T11:14:49-05:00",
+      "hash": "a28c5ce",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: tighten daily briefing to bullets + ul markdown support"
+    },
+    {
+      "date": "2026-05-20T11:14:48-05:00",
+      "hash": "280c19b",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: tighten daily briefing to bullets + ul markdown support"
+    },
+    {
+      "date": "2026-05-20T10:59:17-05:00",
+      "hash": "49f480e",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: deeper briefing + 7/14-day rollups + history nav + briefing tabs"
+    },
+    {
+      "date": "2026-05-20T10:59:08-05:00",
+      "hash": "51c2a8d",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: deeper briefing + 7/14-day rollups + history nav + briefing tabs"
+    },
+    {
+      "date": "2026-05-20T10:01:13-05:00",
+      "hash": "610ad78",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: valence-aware colors + tuned narrative prompt"
+    },
+    {
+      "date": "2026-05-20T10:01:12-05:00",
+      "hash": "13725f1",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: valence-aware colors + tuned narrative prompt"
+    },
+    {
+      "date": "2026-05-20T09:50:27-05:00",
+      "hash": "914b32f",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: first LLM morning briefing"
+    },
+    {
+      "date": "2026-05-20T09:39:51-05:00",
+      "hash": "c890860",
+      "author": "Daniel Bisett",
+      "subject": "bcc dashboards: GMB panel, backlinks ledger, briefing slot, launch markers, daily GSC"
+    },
+    {
+      "date": "2026-05-20T09:30:27-05:00",
+      "hash": "d9e843e",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-05-20"
+    },
+    {
+      "date": "2026-05-20T07:00:25-05:00",
+      "hash": "9a18215",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-05-20"
+    },
+    {
+      "date": "2026-05-19T16:21:58-05:00",
+      "hash": "0808dcd",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-05-19"
+    },
+    {
+      "date": "2026-05-19T07:49:46-05:00",
+      "hash": "32007a9",
+      "author": "Daniel Bisett",
+      "subject": "autosync from BisettGaming @ 2026-05-19T07:49:46"
+    },
+    {
+      "date": "2026-05-19T07:43:11-05:00",
+      "hash": "9fa89ae",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-05-19"
+    },
+    {
+      "date": "2026-05-19T07:00:10-05:00",
+      "hash": "49d32cc",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-05-19"
+    },
+    {
+      "date": "2026-05-18T15:37:26-05:00",
+      "hash": "591d051",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily-pulse: ship internal operational dashboard"
+    },
+    {
+      "date": "2026-05-18T15:36:12-05:00",
+      "hash": "3f1e8bf",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-05-18"
+    }
+  ]
+}
