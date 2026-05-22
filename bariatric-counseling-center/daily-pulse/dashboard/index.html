@@ -697,6 +697,63 @@
   }
 
   /* GMB panel */
+  /* GSC raw section (last-7-day search performance) */
+  .gsc-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  @media (max-width: 760px) { .gsc-stats { grid-template-columns: repeat(2, 1fr); } }
+  .gsc-stat {
+    background: white;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--teal);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .gsc-stat .num {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    font-family: var(--mono);
+    font-feature-settings: "tnum";
+    line-height: 1.15;
+  }
+  .gsc-stat .label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .gsc-stat .sub {
+    font-size: 11px;
+    color: var(--muted-soft);
+    margin-top: 2px;
+  }
+  .gsc-range-note {
+    font-size: 11px;
+    color: var(--muted);
+    margin: -4px 0 14px;
+    font-family: var(--mono);
+  }
+  .row-item .pos {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    margin-left: 8px;
+    white-space: nowrap;
+  }
+  .row-item .pos strong { color: var(--navy); font-weight: 700; }
+  .gsc-empty {
+    padding: 14px 0;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+
   .gmb-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1034,6 +1091,28 @@
     <section class="section">
       <div class="container">
         <div class="section-head">
+          <h2>Google Search Console -- last 7 days</h2>
+          <span class="count" id="gsc-range">--</span>
+          <span class="line"></span>
+        </div>
+        <div class="gsc-range-note" id="gsc-range-note"></div>
+        <div class="gsc-stats" id="gsc-stats"></div>
+        <div class="panels">
+          <div class="panel">
+            <h3>Top queries</h3>
+            <div class="row-list" id="gsc-top-queries"></div>
+          </div>
+          <div class="panel">
+            <h3>Top pages</h3>
+            <div class="row-list" id="gsc-top-pages"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
           <h2>Backlinks ledger</h2>
           <span class="count" id="backlinks-count">--</span>
           <span class="line"></span>
@@ -1062,6 +1141,7 @@ const PARENT_PATH = "bariatric-counseling-center";  // for launches.json + effic
 const RAW_GH = (p) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SUBPATH}/${p}`;
 const JSDELIVR = (p) => `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@main/${SUBPATH}/${p}`;
 const RAW_GH_PARENT = (p) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${PARENT_PATH}/${p}`;
+const RAW_GH_RAWDATA = (p) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${PARENT_PATH}/raw-data/${p}`;
 
 async function fetchJSON(url, { bypass = false } = {}) {
   const u = bypass ? `${url}${url.includes("?") ? "&" : "?"}t=${Date.now()}` : url;
@@ -1739,6 +1819,7 @@ const state = {
   activeKind: "daily",       // which briefing tab is showing
   activeDate: null,          // which date is loaded into the day-specific sections
   loadedPulses: {},          // cache: { "YYYY-MM-DD": pulseData }
+  gscRaw: null,              // raw 7-day GSC pull (top_queries, top_pages, summary)
 };
 
 function filenameToDate(fname) {
@@ -1851,6 +1932,120 @@ function wireBriefingTabs() {
   });
 }
 
+// ---- GSC raw section (last 7 days) ----
+async function fetchGSCRaw() {
+  // raw-data/manifest.json points to the latest gsc file. Fall back to today's date if missing.
+  let gscPath = null;
+  try {
+    const m = await fetchJSON(RAW_GH_PARENT("raw-data/manifest.json"), { bypass: true });
+    gscPath = m && m.sources && m.sources.gsc;
+  } catch (e) {
+    console.warn("raw-data manifest missing:", e.message);
+  }
+  if (!gscPath) {
+    // Fallback -- try today's date in YYYY-MM-DD
+    const today = new Date().toISOString().slice(0, 10);
+    gscPath = `raw-data/gsc/gsc-data-${today}.json`;
+  }
+  // gscPath is repo-relative like "raw-data/gsc/gsc-data-2026-05-21.json"
+  const repoRelative = gscPath.replace(/^raw-data\//, "");
+  return fetchJSON(RAW_GH_RAWDATA(repoRelative), { bypass: true });
+}
+
+function renderGSCRaw(g) {
+  const statsWrap   = document.getElementById("gsc-stats");
+  const queriesWrap = document.getElementById("gsc-top-queries");
+  const pagesWrap   = document.getElementById("gsc-top-pages");
+  const rangeChip   = document.getElementById("gsc-range");
+  const rangeNote   = document.getElementById("gsc-range-note");
+  if (!g) {
+    rangeChip.textContent = "unavailable";
+    statsWrap.innerHTML   = `<div class="gsc-empty">No GSC data published yet. The next 7 AM run will populate this section.</div>`;
+    queriesWrap.innerHTML = "";
+    pagesWrap.innerHTML   = "";
+    return;
+  }
+  const dr = g.data_range || {};
+  const s  = g.summary    || {};
+  rangeChip.textContent = `${dr.start || "?"} -> ${dr.end || "?"}`;
+  rangeNote.textContent = `Property: ${g.property || "?"} · fetched ${g.fetched_at ? new Date(g.fetched_at).toLocaleString() : "?"}`;
+
+  // Stat strip
+  statsWrap.innerHTML = "";
+  const stats = [
+    { num: fmt(s.total_clicks),       label: "Clicks",       sub: "7-day total" },
+    { num: fmt(s.total_impressions),  label: "Impressions",  sub: "7-day total" },
+    { num: ((s.total_clicks && s.total_impressions) ? ((s.total_clicks / s.total_impressions) * 100).toFixed(2) : "0.00") + "%", label: "CTR", sub: "Clicks / impressions" },
+    { num: (s.avg_position_impression_weighted != null ? s.avg_position_impression_weighted.toFixed(2) : "--"), label: "Avg position", sub: "Impression-weighted" },
+  ];
+  for (const st of stats) {
+    statsWrap.appendChild(
+      el("div", { className: "gsc-stat" },
+        el("div", { className: "num" }, st.num),
+        el("div", { className: "label" }, st.label),
+        el("div", { className: "sub" }, st.sub),
+      )
+    );
+  }
+
+  // Top queries -- sort by impressions desc, then clicks desc
+  const queries = (g.top_queries || []).slice()
+    .sort((a, b) => (b.impressions || 0) - (a.impressions || 0) || (b.clicks || 0) - (a.clicks || 0))
+    .slice(0, 15);
+  queriesWrap.innerHTML = "";
+  if (queries.length === 0) {
+    queriesWrap.appendChild(el("div", { className: "gsc-empty" }, "No queries in this window."));
+  } else {
+    for (const q of queries) {
+      queriesWrap.appendChild(
+        el("div", { className: "row-item" },
+          el("div", { className: "name" }, q.keyword || "(unknown)"),
+          el("div", { className: "v" },
+            el("strong", {}, fmt(q.clicks || 0)),
+            document.createTextNode(" clk · "),
+            document.createTextNode(`${fmt(q.impressions || 0)} imp`),
+          ),
+          el("div", { className: "pos" },
+            document.createTextNode("pos "),
+            el("strong", {}, (q.position != null ? q.position.toFixed(1) : "--")),
+          ),
+        )
+      );
+    }
+  }
+
+  // Top pages -- same sort
+  const pages = (g.top_pages || []).slice()
+    .sort((a, b) => (b.impressions || 0) - (a.impressions || 0) || (b.clicks || 0) - (a.clicks || 0))
+    .slice(0, 15);
+  pagesWrap.innerHTML = "";
+  if (pages.length === 0) {
+    pagesWrap.appendChild(el("div", { className: "gsc-empty" }, "No pages in this window."));
+  } else {
+    for (const p of pages) {
+      // Strip the host part for compact display
+      let label = p.page || "(unknown)";
+      try { label = new URL(p.page).pathname || "/"; } catch (_e) { /* keep raw */ }
+      pagesWrap.appendChild(
+        el("div", { className: "row-item" },
+          el("div", { className: "name" },
+            el("a", { href: p.page, target: "_blank", rel: "noopener" }, label),
+          ),
+          el("div", { className: "v" },
+            el("strong", {}, fmt(p.clicks || 0)),
+            document.createTextNode(" clk · "),
+            document.createTextNode(`${fmt(p.impressions || 0)} imp`),
+          ),
+          el("div", { className: "pos" },
+            document.createTextNode("pos "),
+            el("strong", {}, (p.position != null ? p.position.toFixed(1) : "--")),
+          ),
+        )
+      );
+    }
+  }
+}
+
 async function boot() {
   const loading = document.getElementById("loading");
   const content = document.getElementById("content");
@@ -1868,16 +2063,18 @@ async function boot() {
     try { state.backlinks      = await fetchJSON(RAW_GH_PARENT("backlinks.json"),{ bypass: true }); }
     catch (e) { console.warn("Backlinks not available:", e.message); }
 
-    // 3. Latest pulse + all three briefings in parallel
-    const [latestPulse, dailyB, weeklyB, biweeklyB] = await Promise.all([
+    // 3. Latest pulse + all three briefings + raw GSC in parallel
+    const [latestPulse, dailyB, weeklyB, biweeklyB, gscRaw] = await Promise.all([
       fetchPulseForDate(state.activeDate).catch(() => null),
       fetchJSON(RAW_GH("narratives/latest.json"),         { bypass: true }).catch(() => null),
       fetchJSON(RAW_GH("narratives/weekly-latest.json"),  { bypass: true }).catch(() => null),
       fetchJSON(RAW_GH("narratives/biweekly-latest.json"),{ bypass: true }).catch(() => null),
+      fetchGSCRaw().catch(() => null),
     ]);
     state.briefings.daily    = dailyB;
     state.briefings.weekly   = weeklyB;
     state.briefings.biweekly = biweeklyB;
+    state.gscRaw             = gscRaw;
 
     if (!latestPulse) throw new Error("No pulse data could be loaded.");
 
@@ -1896,6 +2093,7 @@ async function boot() {
     renderLandingPages(latestPulse);
     renderWpChanges(latestPulse);
     renderGMB(latestPulse);
+    renderGSCRaw(state.gscRaw);
 
     // 6. Render briefing (defaults to daily tab)
     renderBriefing(state.briefings.daily);
