@@ -1709,13 +1709,27 @@ function renderGMB(data) {
   if (!wrap) return;
   const gmb = data.gmb_data;
   if (!gmb || !gmb.summary) {
-    rangeEl.textContent = "not yet connected";
-    wrap.innerHTML = `<div class="empty" style="grid-column: 1 / -1;">GMB not set up yet. Run gmb-setup.py via the runner queue once to OAuth + auto-discover the BCC location.</div>`;
+    rangeEl.textContent = "awaiting export";
+    wrap.innerHTML = `<div class="empty" style="grid-column: 1 / -1;">
+      <strong>GMB awaiting weekly export.</strong><br/>
+      Google's APIs (mybusinessaccountmanagement + businessprofileperformance) are quota-locked to zero requests/min for our Cloud project.<br/>
+      Workflow: business.google.com -> BCC listing -> Performance -> Download -> drop the CSV/XLSX into <code>seo-tools/inbox/gmb/</code>. Next 7am run ingests it automatically.
+    </div>`;
     return;
   }
   const s = gmb.summary;
   const dr = gmb.data_range || {};
-  rangeEl.textContent = `${dr.start || "?"} -> ${dr.end || "?"}`;
+  // Freshness badge: how old is the data?
+  let freshNote = "";
+  if (dr.end) {
+    const endDate = new Date(dr.end + "T12:00:00");
+    const today   = new Date();
+    const ageDays = Math.floor((today - endDate) / (1000 * 60 * 60 * 24));
+    if      (ageDays <= 7)  freshNote = "  · fresh";
+    else if (ageDays <= 14) freshNote = `  · ${ageDays}d old (export soon)`;
+    else                    freshNote = `  · ${ageDays}d old -- STALE`;
+  }
+  rangeEl.textContent = `${dr.start || "?"} -> ${dr.end || "?"}${freshNote}`;
 
   const tiles = [
     { n: fmt(s.total_impressions),    l: "Total impressions",  sub: `${fmt(s.impressions_mobile_search)} mobile-search / ${fmt(s.impressions_mobile_maps)} mobile-maps` },
