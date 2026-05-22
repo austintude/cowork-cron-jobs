@@ -296,6 +296,12 @@
 
   <div id="alerts-container"></div>
 
+  <div class="section" id="narrative-section" style="border-left: 3px solid var(--teal); display:none;">
+    <h2>What I'm focused on this week</h2>
+    <div class="meta-line">Daniel's read of the data &mdash; the conclusion, not the numbers.</div>
+    <div id="narrative-body" style="font-size:14px; line-height:1.6; color:var(--ink);"></div>
+  </div>
+
   <div id="loading" class="section skeleton"><span class="spinner"></span> Fetching latest SEO data from GitHub...</div>
 
   <div id="content" class="hidden">
@@ -394,6 +400,25 @@
     </div>
 
     <div class="section">
+      <h2>All Pages Published Since April 1</h2>
+      <div class="meta-line" id="since-april-summary">Every page in this push, with last-7-day GSC performance and status. Sort by clicking a column.</div>
+      <div class="gsc-table-wrap">
+        <table class="gsc-table" id="since-april-table">
+          <thead><tr>
+            <th data-sa-sort="date">Published</th>
+            <th data-sa-sort="title">Page</th>
+            <th data-sa-sort="impressions" class="num-cell">Impr.</th>
+            <th data-sa-sort="clicks" class="num-cell">Clicks</th>
+            <th data-sa-sort="ctr" class="num-cell">CTR</th>
+            <th data-sa-sort="position" class="num-cell">Avg Pos</th>
+            <th data-sa-sort="status">Status</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
       <h2>Reach Across Recent Weeks</h2>
       <div class="meta-line">Service areas down the side, weekly checks across the top. Cell shading shows page-one ranking density that week.</div>
       <div class="iheatmap-wrap"><div class="iheatmap" id="iheatmap"></div></div>
@@ -441,6 +466,46 @@
             <th class="num-cell">CTR</th>
             <th class="num-cell">Avg Pos</th>
             <th>Suggestion</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Hidden Wins &mdash; queries we rank for but aren't capturing</h2>
+      <div class="meta-line" id="hidden-wins-summary">High-impression queries where BCC is on page 1-3 but CTR is &lt; 2%. These are the "popping that we haven't done anything with" opportunities.</div>
+      <div class="gsc-table-wrap">
+        <table class="gsc-table" id="hidden-wins-table">
+          <thead><tr>
+            <th>Query</th>
+            <th class="num-cell">Impr.</th>
+            <th class="num-cell">Clicks</th>
+            <th class="num-cell">CTR</th>
+            <th class="num-cell">Avg Pos</th>
+            <th>Lost clicks/mo<sup>*</sup></th>
+            <th>Suggested move</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div style="font-size:11px; color:var(--muted); margin-top:8px;">
+        <sup>*</sup>Estimated monthly clicks lost = impressions &times; (expected CTR at position &minus; actual CTR), where expected CTR is a position-based heuristic.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Stuck Pages &mdash; high impressions, low clicks</h2>
+      <div class="meta-line">Pages with &ge;1,000 impressions but CTR &lt; 1%. Title/meta description fix is usually the biggest unlock.</div>
+      <div class="gsc-table-wrap">
+        <table class="gsc-table" id="stuck-pages-table">
+          <thead><tr>
+            <th>Page</th>
+            <th class="num-cell">Impr.</th>
+            <th class="num-cell">Clicks</th>
+            <th class="num-cell">CTR</th>
+            <th class="num-cell">Avg Pos</th>
+            <th>Diagnosis</th>
           </tr></thead>
           <tbody></tbody>
         </table>
@@ -1585,6 +1650,260 @@ function renderGscPages(google) {
   }
 }
 
+// ---- NEW SECTIONS (added 2026-05-22 from Todd call) ------------------------
+
+const SINCE_APRIL_CUTOFF = "2026-04-01";
+
+let sinceAprilState = { sort: { key: "date", dir: "desc" } };
+
+function buildPageUrl(slug) {
+  if (!slug) return "";
+  return `https://www.bariatriccounselingcenter.com/${slug.replace(/^\//, "")}/`;
+}
+
+function shortUrl(url) {
+  return (url || "").replace(/^https?:\/\/(www\.)?bariatriccounselingcenter\.com/, "") || url || "";
+}
+
+function daysSince(dateStr) {
+  if (!dateStr) return null;
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return null;
+  return Math.round((Date.now() - d.getTime()) / 86400000);
+}
+
+function getPageMetrics(google, slug) {
+  if (!google || !google.per_page_metrics) return null;
+  const candidates = [
+    buildPageUrl(slug),
+    buildPageUrl(slug).replace(/\/$/, ""),
+    `https://www.bariatriccounselingcenter.com/${slug}/`,
+    `https://www.bariatriccounselingcenter.com/${slug}`
+  ];
+  for (const c of candidates) {
+    if (google.per_page_metrics[c]) return google.per_page_metrics[c];
+  }
+  return null;
+}
+
+function pageStatus(metrics, daysLive) {
+  if (!metrics || (metrics.impressions || 0) < 5) {
+    if (daysLive != null && daysLive >= 14) return { label: "Hidden", className: "pos-out" };
+    return { label: "New", className: "pos-low" };
+  }
+  const pos = metrics.position;
+  if (pos != null && pos <= 10) return { label: "Climbing", className: "pos-top10" };
+  if (pos != null && pos <= 20) return { label: "Flat", className: "pos-low" };
+  return { label: "Hidden", className: "pos-out" };
+}
+
+function renderSinceApril(data) {
+  const tbody = document.querySelector("#since-april-table tbody");
+  const summary = document.getElementById("since-april-summary");
+  if (!tbody) return;
+  const allPages = data.published_pages_index || [];
+  const recent = allPages.filter(p => (p.date || "") >= SINCE_APRIL_CUTOFF);
+  const google = data.google || {};
+
+  // Hydrate each with metrics
+  const rows = recent.map(p => {
+    const m = getPageMetrics(google, p.slug) || {};
+    const daysLive = daysSince(p.date);
+    return {
+      date: p.date,
+      slug: p.slug,
+      title: p.title || p.slug,
+      url: p.link || buildPageUrl(p.slug),
+      impressions: m.impressions || 0,
+      clicks: m.clicks || 0,
+      ctr: m.ctr || 0,
+      position: m.position == null ? 999 : m.position,
+      positionDisplay: m.position,
+      daysLive: daysLive,
+      status: pageStatus(m, daysLive)
+    };
+  });
+
+  // Sort
+  const { key, dir } = sinceAprilState.sort;
+  rows.sort((a, b) => {
+    let va = a[key], vb = b[key];
+    if (key === "status") { va = a.status.label; vb = b.status.label; }
+    if (va == null) va = "";
+    if (vb == null) vb = "";
+    if (va < vb) return dir === "asc" ? -1 : 1;
+    if (va > vb) return dir === "asc" ? 1 : -1;
+    return 0;
+  });
+
+  if (summary) {
+    const counts = rows.reduce((acc, r) => { acc[r.status.label] = (acc[r.status.label] || 0) + 1; return acc; }, {});
+    const breakdown = Object.entries(counts).map(([k, v]) => `${v} ${k}`).join(" · ");
+    summary.textContent = `${rows.length} pages live since ${SINCE_APRIL_CUTOFF}. ${breakdown}. Click a column to sort.`;
+  }
+
+  tbody.innerHTML = "";
+  if (!rows.length) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", { colspan: "7", style: "color:var(--muted); font-style:italic; padding:14px;" }, `No pages published since ${SINCE_APRIL_CUTOFF}.`));
+    tbody.appendChild(tr);
+    return;
+  }
+  for (const r of rows) {
+    const tr = el("tr", {});
+    const dateCell = el("td", { style: "white-space:nowrap; color:var(--muted); font-size:11px;" }, (r.date || "").slice(0, 10));
+    tr.appendChild(dateCell);
+    const titleCell = el("td", {});
+    const link = el("a", { href: r.url, target: "_blank", rel: "noopener", style: "color:var(--navy); text-decoration:none; border-bottom:1px dashed var(--line); font-size:12px;" }, shortUrl(r.url));
+    titleCell.appendChild(link);
+    if (r.daysLive != null) titleCell.appendChild(el("div", { style: "font-size:10px; color:var(--muted); margin-top:2px;" }, `${r.daysLive} days live`));
+    tr.appendChild(titleCell);
+    tr.appendChild(el("td", { className: "num-cell" }, (r.impressions || 0).toLocaleString()));
+    tr.appendChild(el("td", { className: "num-cell" }, String(r.clicks || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + ctrCellClass(r.ctr, r.impressions > 0) }, fmtPct(r.ctr || 0)));
+    const posCell = el("td", { className: "num-cell " + posCellClass(r.positionDisplay) }, r.positionDisplay == null ? "--" : `#${r.positionDisplay.toFixed(1)}`);
+    tr.appendChild(posCell);
+    const statusCell = el("td", {});
+    const badge = el("span", { className: "pos " + r.status.className, style: "padding:3px 9px; border-radius:11px; font-size:11px; font-weight:600;" }, r.status.label);
+    statusCell.appendChild(badge);
+    tr.appendChild(statusCell);
+    tbody.appendChild(tr);
+  }
+}
+
+// Position-CTR benchmarks (from public Advanced Web Ranking data, rounded conservatively)
+const CTR_BENCHMARKS = {
+  1: 0.275, 2: 0.155, 3: 0.110, 4: 0.080, 5: 0.060,
+  6: 0.045, 7: 0.035, 8: 0.030, 9: 0.025, 10: 0.022,
+  11: 0.015, 12: 0.012, 13: 0.010, 14: 0.009, 15: 0.008,
+  16: 0.007, 17: 0.006, 18: 0.006, 19: 0.005, 20: 0.005
+};
+function expectedCtr(pos) {
+  if (pos == null) return 0;
+  const rounded = Math.round(pos);
+  if (rounded < 1) return CTR_BENCHMARKS[1];
+  if (rounded > 20) return 0.003;
+  return CTR_BENCHMARKS[rounded] || 0.005;
+}
+
+function suggestedMove(row) {
+  const pos = row.position || 999;
+  if (pos <= 10 && row.impressions >= 200) return "Title/meta rewrite + FAQ block";
+  if (pos <= 10) return "Strengthen on-page (TL;DR, headers)";
+  if (pos <= 15 && row.impressions >= 100) return "Expand existing page + interlink";
+  if (pos <= 20) return "Build cluster content + interlink";
+  if (row.impressions >= 50) return "New dedicated page";
+  return "Track and monitor";
+}
+
+function renderHiddenWins(data) {
+  const tbody = document.querySelector("#hidden-wins-table tbody");
+  const summary = document.getElementById("hidden-wins-summary");
+  if (!tbody) return;
+  const google = data.google || {};
+  const candidates = google.discovery_candidates || [];
+  // Hidden wins criteria: impressions >= 30, position 5-30, CTR < 2%
+  const rows = candidates
+    .filter(c => (c.impressions || 0) >= 30 && c.position != null && c.position >= 5 && c.position <= 30 && (c.ctr || 0) < 0.02)
+    .map(c => {
+      const expCtr = expectedCtr(c.position);
+      const lostClicksWeekly = Math.max(0, c.impressions * (expCtr - (c.ctr || 0)));
+      const lostMonthly = Math.round(lostClicksWeekly * 4.3);
+      return { ...c, lost: lostMonthly };
+    })
+    .sort((a, b) => b.lost - a.lost)
+    .slice(0, 15);
+
+  if (summary) {
+    const totalLost = rows.reduce((s, r) => s + r.lost, 0);
+    summary.textContent = `${rows.length} unclaimed opportunities. Estimated ${totalLost.toLocaleString()} clicks/month being left on the table.`;
+  }
+
+  tbody.innerHTML = "";
+  if (!rows.length) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", { colspan: "7", style: "color:var(--muted); font-style:italic; padding:14px;" }, "No hidden wins this week (need >=30 impressions, position 5-30, CTR <2%)."));
+    tbody.appendChild(tr);
+    return;
+  }
+  for (const r of rows) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", { style: "font-weight:600;" }, r.keyword));
+    tr.appendChild(el("td", { className: "num-cell" }, (r.impressions || 0).toLocaleString()));
+    tr.appendChild(el("td", { className: "num-cell" }, String(r.clicks || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + ctrCellClass(r.ctr, r.impressions > 0) }, fmtPct(r.ctr || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + posCellClass(r.position) }, fmtPos(r.position)));
+    tr.appendChild(el("td", { className: "num-cell", style: "font-weight:700; color:var(--teal);" }, `+${r.lost.toLocaleString()}`));
+    tr.appendChild(el("td", { style: "font-size:11px; color:var(--muted);" }, suggestedMove(r)));
+    tbody.appendChild(tr);
+  }
+}
+
+function renderStuckPages(data) {
+  const tbody = document.querySelector("#stuck-pages-table tbody");
+  if (!tbody) return;
+  const google = data.google || {};
+  const pages = google.top_pages || [];
+  const rows = pages
+    .filter(p => (p.impressions || 0) >= 1000 && (p.ctr || 0) < 0.01)
+    .sort((a, b) => (b.impressions || 0) - (a.impressions || 0))
+    .slice(0, 15);
+
+  tbody.innerHTML = "";
+  if (!rows.length) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", { colspan: "6", style: "color:var(--muted); font-style:italic; padding:14px;" }, "No stuck pages this week (need >=1,000 impressions and CTR <1%)."));
+    tbody.appendChild(tr);
+    return;
+  }
+  for (const r of rows) {
+    const tr = el("tr", {});
+    const url = r.page || "";
+    const cell = el("td", {});
+    const link = el("a", { href: url, target: "_blank", rel: "noopener", style: "color:var(--navy); text-decoration:none; border-bottom:1px dashed var(--line); font-size:12px;" }, shortUrl(url));
+    cell.appendChild(link);
+    tr.appendChild(cell);
+    tr.appendChild(el("td", { className: "num-cell" }, (r.impressions || 0).toLocaleString()));
+    tr.appendChild(el("td", { className: "num-cell" }, String(r.clicks || 0)));
+    tr.appendChild(el("td", { className: "num-cell ctr-poor" }, fmtPct(r.ctr || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + posCellClass(r.position) }, fmtPos(r.position)));
+    let diag = "Title/meta rewrite";
+    if (r.position > 20) diag = "Position too low to convert - on-page work";
+    else if (r.position > 10) diag = "Push to top 10 + improve snippet";
+    else diag = "Snippet rewrite (title + meta + schema)";
+    tr.appendChild(el("td", { style: "font-size:11px; color:var(--muted);" }, diag));
+    tbody.appendChild(tr);
+  }
+}
+
+function renderNarrative(data) {
+  const sec = document.getElementById("narrative-section");
+  const body = document.getElementById("narrative-body");
+  if (!sec || !body) return;
+  const note = data.weekly_narrative || (data.action_items && data.action_items[0] && data.action_items[0].narrative) || null;
+  if (!note) { sec.style.display = "none"; return; }
+  sec.style.display = "block";
+  // Render light markdown: ** -> bold, line break -> <br>, - -> bullet
+  let html = String(note)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/^- (.+)$/gm, "<li>$1</li>");
+  if (html.indexOf("<li>") >= 0) html = "<ul>" + html.replace(/(<li>.+?<\/li>)/gs, "$1") + "</ul>";
+  html = html.replace(/\n/g, "<br>");
+  body.innerHTML = html;
+}
+
+function attachSinceAprilInteractions() {
+  document.querySelectorAll("#since-april-table thead th[data-sa-sort]").forEach(th => {
+    th.addEventListener("click", () => {
+      const k = th.dataset.saSort;
+      if (sinceAprilState.sort.key === k) sinceAprilState.sort.dir = sinceAprilState.sort.dir === "asc" ? "desc" : "asc";
+      else { sinceAprilState.sort.key = k; sinceAprilState.sort.dir = (k === "date") ? "desc" : "desc"; }
+      renderSinceApril(state.data);
+    });
+  });
+}
+
 function attachGscInteractions() {
   document.querySelectorAll(".gsc-filter [data-gsc-filter]").forEach(b => {
     b.addEventListener("click", () => {
@@ -1647,6 +1966,7 @@ async function boot({ bypassCache = false } = {}) {
 
 function renderAll() {
   renderAlerts(state.data);
+  renderNarrative(state.data);
   renderHeader(state.data);
   renderStats(state.data);
   renderMovers(state.data);
@@ -1654,6 +1974,7 @@ function renderAll() {
   renderActions(state.data);
   renderServiceAreas(state.data);  // first paint -- sparklines empty until history loads
   renderTrackedPages(state.data);  // first paint -- trajectories empty until history loads
+  renderSinceApril(state.data);
   renderCoverageGaps(state.data);
   renderVelocity(state.data);
   renderTable(state.data);
@@ -1664,6 +1985,8 @@ function renderAll() {
   renderGscStats(state.data && state.data.google);
   renderGscQueries(state.data && state.data.google);
   renderGscDiscovery(state.data && state.data.google);
+  renderHiddenWins(state.data);
+  renderStuckPages(state.data);
   renderGscPages(state.data && state.data.google);
 }
 
@@ -1698,6 +2021,9 @@ document.querySelectorAll("th.sortable").forEach(th => {
     renderTable(state.data);
   });
 });
+
+attachSinceAprilInteractions();
+attachGscInteractions();
 
 boot();
 </script>
