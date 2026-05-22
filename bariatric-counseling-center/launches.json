@@ -1,6 +1,39 @@
 {
   "launches": [
     {
+      "launched_at": "2026-05-21",
+      "type": "git-commit",
+      "title": "bcc daily-pulse dashboard: switch GMB section to manual-ingest mode + freshness badge",
+      "commit_hash": "81d2bad",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-21-git-commit-81d2bad",
+      "first_seen_at": "2026-05-22T12:00:25.071910Z"
+    },
+    {
+      "launched_at": "2026-05-21",
+      "type": "git-commit",
+      "title": "bcc daily-pulse dashboard: add GSC last-7-days section (stats + top queries + top pages) at bottom",
+      "commit_hash": "21f5d23",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-21-git-commit-21f5d23",
+      "first_seen_at": "2026-05-22T12:00:25.071910Z"
+    },
+    {
+      "launched_at": "2026-05-21",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-05-21",
+      "commit_hash": "07559fe",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-05-21-git-commit-07559fe",
+      "first_seen_at": "2026-05-22T12:00:25.071910Z"
+    },
+    {
       "launched_at": "2026-05-20",
       "type": "git-commit",
       "title": "bcc: publish GA4 raw data alongside GSC",
@@ -469,5 +502,5 @@
     }
   ],
   "dismissed": [],
-  "last_updated": "2026-05-21T12:00:17.573176Z"
+  "last_updated": "2026-05-22T12:00:25.080910Z"
 }
