@@ -796,18 +796,32 @@ function renderActions(data) {
   ul.innerHTML = "";
   const items = data.action_items || [];
   if (!items.length) { ul.appendChild(el("li", {}, "No action items.")); return; }
-  for (const txt of items) {
-    let cls = "medium";
-    let level = "MEDIUM";
-    if (/^URGENT/i.test(txt)) { cls = "urgent"; level = "URGENT"; }
-    else if (/^HIGH/i.test(txt)) { cls = "high"; level = "HIGH"; }
-    else if (/^INFO/i.test(txt)) { cls = "info"; level = "INFO"; }
-    else if (/^MEDIUM/i.test(txt)) { cls = "medium"; level = "MEDIUM"; }
-    const cleaned = txt.replace(/^(URGENT|HIGH|MEDIUM|INFO)\s*\([A-Z0-9]+\)?\s*--?\s*/i, "")
-                       .replace(/^(URGENT|HIGH|MEDIUM|INFO)\s*--?\s*/i, "");
+  for (const item of items) {
+    // Support both legacy (string) and new (object) shapes.
+    let txt, cls = "medium", level = "MEDIUM";
+    if (typeof item === "string") {
+      txt = item;
+      if (/^URGENT/i.test(txt)) { cls = "urgent"; level = "URGENT"; }
+      else if (/^HIGH/i.test(txt)) { cls = "high"; level = "HIGH"; }
+      else if (/^INFO/i.test(txt)) { cls = "info"; level = "INFO"; }
+      else if (/^MEDIUM/i.test(txt)) { cls = "medium"; level = "MEDIUM"; }
+      txt = txt.replace(/^(URGENT|HIGH|MEDIUM|INFO)\s*\([A-Z0-9]+\)?\s*--?\s*/i, "")
+               .replace(/^(URGENT|HIGH|MEDIUM|INFO)\s*--?\s*/i, "");
+    } else if (item && typeof item === "object") {
+      // New shape: { priority, type, title, details, keywords }
+      const p = (item.priority || "").toLowerCase();
+      if (p === "urgent" || p === "critical") { cls = "urgent"; level = "URGENT"; }
+      else if (p === "high")   { cls = "high"; level = "HIGH"; }
+      else if (p === "info")   { cls = "info"; level = "INFO"; }
+      else                     { cls = "medium"; level = (item.priority || "MEDIUM").toUpperCase(); }
+      txt = item.title || item.details || JSON.stringify(item);
+      if (item.details && item.title) txt += " — " + item.details;
+    } else {
+      continue;
+    }
     const li = el("li", { className: cls });
     li.appendChild(el("span", { className: "level" }, level + ":"));
-    li.appendChild(document.createTextNode(cleaned));
+    li.appendChild(document.createTextNode(txt));
     ul.appendChild(li);
   }
 }
