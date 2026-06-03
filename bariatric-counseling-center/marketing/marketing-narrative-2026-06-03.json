@@ -1,20 +1,24 @@
 {
   "generated_at": "2026-06-03",
   "working": [
-    "Open rates are elite across every send — 40–55% (Alumni eNews June 55.3%, Alumni April 53.2%, Reminder 2 March 51.2%), roughly double the ~25% health/nonprofit benchmark. List health and subject lines are a genuine strength.",
-    "The large Staff-Client eNews (~9,500 recipients) is the one send type that reliably moves site traffic: +66.5% sessions on May 19 (17 → 28/day) and +16.2% on Mar 16. Big-list sends work.",
-    "Organic Search is a healthy 35.7% of traffic (827 of 2,314 sessions over 90 days) — the SEO program is pulling its weight as the #2 channel behind Direct."
+    "Staff-Client eNews - May 2026 (sent 5/19, ~9,731 sends) was the strongest send of the window at +66.5% lift, raising daily sessions from a 17.0 baseline to 28.3 — the big Staff-Client list is the traffic engine.",
+    "Open rates are elite: the 100-campaign average is 51.92% open, roughly double the ~25-35% health/nonprofit benchmark; Alumni eNews - June (55.31%) and Alumni eNews - April (53.18%) lead.",
+    "Two more big-list sends posted clean positive lift: Staff-Client eNews - March (3/16, +16.2%, 49.99% open, 60 direct sessions in 3d) and Alumni eNews - April (4/6, +21.7%, 48 direct sessions in 3d).",
+    "Organic Search is a healthy #2 channel at 35.7% of sessions (827 of 2,314 over 90 days) — the SEO program is carrying real volume behind Direct."
   ],
   "not_working": [
-    "Newsletter links have NO UTM tags — GA4 logged 0 Email-channel sessions around all 13 sends (Email isn't even one of the 6 channels GA4 saw). Every newsletter click is being miscredited, mostly into Direct, which is an outsized 57% of traffic (1,319 sessions). You currently cannot see email's true contribution in GA4.",
-    "Click-through is weak: CTR 0.3–1.8% and click-to-open usually under 2%. Readers open at elite rates but rarely click through to the site — opens aren't converting to visits.",
-    "Small Alumni sends (~1,000 recipients) and reminders don't move traffic — most show flat-to-negative lift (Alumni reminders ranged -1% to -52%, today's Final Reminder -52%). They're too small and reminder-heavy to drive sessions."
+    "UTM leakage is the headline problem: all 13 in-window sends show email_sessions_3d = 0 while posting heavy direct_sessions_3d (Staff-Client 5/19 = 53 direct/0 email; Staff-Client 3/16 = 60 direct/0 email; Reminder 1 Alumni 3/13 = 76 direct/0 email). Email is not even one of the 6 channels GA4 saw — untagged newsletter links mean GA4 mis-credits email traffic as Direct, inflating Direct to 57.0% (1,319 sessions).",
+    "Reminder/final-reminder sends consistently backfire: Alumni 'Final Reminder' (6/3) was -52.4% lift with a weak 23.57% open (below benchmark) and 0.1% click; Alumni eNews - May (5/2) -50.2%; Reminder 2 Alumni - March -31.1%; Movement Reminder Staff-Client - March -30.7%.",
+    "Click-through is soft despite elite opens: average click rate is 2.06% and most sends land 0.1-1.2% (Final Reminder 6/3 = 0.10%, Reminder 1 Alumni 3/13 = 0.30%) — opens are not converting to site visits.",
+    "Organic Social is negligible at 1.5% of sessions (34) and Paid Search effectively zero (1 session); neither channel is contributing.",
+    "GSC signal is thin: 2 clicks on 1,681 impressions over the 7-day window at an impression-weighted average position of 21.36 (page 2-3) — high impressions, almost no clicks."
   ],
   "do_next": [
-    "Tag every newsletter link with utm_source=constantcontact&utm_medium=email&utm_campaign=<campaign-name>. This one change makes Email a real GA4 channel, de-inflates the 57% Direct bucket, and lets every future report attribute sends precisely. Highest priority by far.",
-    "Lift click-through: fewer, clearer CTAs and link the lead story to a specific site page. A ~50% open / ~1% click gap is the single biggest lever — even doubling CTR roughly doubles email-driven sessions.",
-    "Use the Staff-Client list (~9,500) for traffic goals and treat small Alumni reminders as retention, not traffic drivers. Feature the content you most want visited in the next Staff-Client send.",
-    "Re-promote the content from the May 19 Staff-Client eNews (+66.5%) — it's your best traffic-driving example to date."
+    "Add utm_source=constantcontact&utm_medium=email&utm_campaign=<send-name> to every link in Constant Contact templates. This is the #1 move: it reclaims email traffic now mislabeled as Direct, de-inflates the 57% Direct bucket, and lets lift be measured honestly going forward.",
+    "Lead with the Staff-Client eNews format and its large list — it produced the two best lifts (+66.5%, +16.2%) and the highest 3-day direct-session counts; repromote those content themes rather than the small Alumni reminder cascade.",
+    "Cut or consolidate 'final reminder' sends — the 6/3 Final Reminder (-52.4%, 23.57% open) and the May/March reminder cascades all underperformed; main Mon/Tue sends (5/19, 4/6, 3/16) carried the wins.",
+    "Lift click-through with fewer, clearer CTAs linking the lead story to a specific site page — a ~50% open / ~1% click gap is the biggest lever; even doubling CTR roughly doubles email-driven sessions.",
+    "Work the GSC page-2 keywords: with avg position 21.36 and 2 clicks on 1,681 impressions, prioritize on-page and internal-linking improvements to move high-impression terms onto page 1."
   ],
-  "summary": "Newsletters have elite open rates but almost no click-through, and because links are untagged, GA4 hides their real impact inside a 57% \"Direct\" bucket. Tag the links and sharpen the CTAs and email becomes both visible and bigger."
+  "summary": "All three data sources are live this run. The 90-day window holds 2,314 sessions led by Direct (57.0%) and Organic Search (35.7%), and the Staff-Client eNews on 5/19 drove the biggest newsletter lift (+66.5%). The dominant issue is UTM leakage: every send shows 0 email sessions but heavy Direct, so newsletter traffic is mis-credited and Direct is artificially inflated."
 }
