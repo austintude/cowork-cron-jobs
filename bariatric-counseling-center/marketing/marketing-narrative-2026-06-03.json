@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-06-03",
+  "working": [
+    "Open rates are elite across every send — 40–55% (Alumni eNews June 55.3%, Alumni April 53.2%, Reminder 2 March 51.2%), roughly double the ~25% health/nonprofit benchmark. List health and subject lines are a genuine strength.",
+    "The large Staff-Client eNews (~9,500 recipients) is the one send type that reliably moves site traffic: +66.5% sessions on May 19 (17 → 28/day) and +16.2% on Mar 16. Big-list sends work.",
+    "Organic Search is a healthy 35.7% of traffic (827 of 2,314 sessions over 90 days) — the SEO program is pulling its weight as the #2 channel behind Direct."
+  ],
+  "not_working": [
+    "Newsletter links have NO UTM tags — GA4 logged 0 Email-channel sessions around all 13 sends (Email isn't even one of the 6 channels GA4 saw). Every newsletter click is being miscredited, mostly into Direct, which is an outsized 57% of traffic (1,319 sessions). You currently cannot see email's true contribution in GA4.",
+    "Click-through is weak: CTR 0.3–1.8% and click-to-open usually under 2%. Readers open at elite rates but rarely click through to the site — opens aren't converting to visits.",
+    "Small Alumni sends (~1,000 recipients) and reminders don't move traffic — most show flat-to-negative lift (Alumni reminders ranged -1% to -52%, today's Final Reminder -52%). They're too small and reminder-heavy to drive sessions."
+  ],
+  "do_next": [
+    "Tag every newsletter link with utm_source=constantcontact&utm_medium=email&utm_campaign=<campaign-name>. This one change makes Email a real GA4 channel, de-inflates the 57% Direct bucket, and lets every future report attribute sends precisely. Highest priority by far.",
+    "Lift click-through: fewer, clearer CTAs and link the lead story to a specific site page. A ~50% open / ~1% click gap is the single biggest lever — even doubling CTR roughly doubles email-driven sessions.",
+    "Use the Staff-Client list (~9,500) for traffic goals and treat small Alumni reminders as retention, not traffic drivers. Feature the content you most want visited in the next Staff-Client send.",
+    "Re-promote the content from the May 19 Staff-Client eNews (+66.5%) — it's your best traffic-driving example to date."
+  ],
+  "summary": "Newsletters have elite open rates but almost no click-through, and because links are untagged, GA4 hides their real impact inside a 57% \"Direct\" bucket. Tag the links and sharpen the CTAs and email becomes both visible and bigger."
+}
