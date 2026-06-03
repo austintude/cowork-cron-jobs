@@ -62,6 +62,12 @@
   .picker select{font-size:12.5px;padding:5px 8px;border:1px solid #b7c6d2;border-radius:8px;background:#fff;color:var(--navy)}
   .snapshot-note{clear:both;font-size:12px;color:var(--warn);margin-top:6px;display:none}
   .banner{background:#fff7e6;border:1px solid #f0d9a8;color:#8a6d1f;border-radius:10px;padding:12px 16px;font-size:13.5px;margin:14px 0}
+  .group-label{margin:30px 0 2px;font-size:13px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--teal-dk);border-top:2px solid var(--teal-lt);padding-top:16px}
+  .rk{display:inline-block;padding:1px 8px;border-radius:999px;font-size:11.5px;font-weight:700}
+  .rk1{background:#e2f6ec;color:#1f8f5f}.rk23{background:#e4eefb;color:#2a6fd0}.rk410{background:#fdf4d6;color:#8a6d1f}.rk1120{background:#eef3f5;color:#6b7d8c}.rk21{background:#f6e9e6;color:#b5564f}
+  .mv-up{color:var(--good);font-weight:700}.mv-dn{color:var(--bad);font-weight:700}.mv-fl{color:var(--muted)}
+  .narr .attention h3{color:var(--bad)} .narr .actions h3{color:var(--teal-dk)} .narr .wins h3{color:var(--good)}
+  .cov{font-size:12px;color:var(--muted);margin-top:8px}
 </style>
 </head>
 <body>
@@ -117,6 +123,34 @@
     <div id="narrBody"><p class="empty">No analysis written yet &mdash; the first scheduled run will populate this.</p></div>
   </div>
 
+  <div class="group-label">SEO performance &mdash; Search Console</div>
+
+  <div class="section">
+    <h2>Search visibility trend</h2>
+    <p class="hint">From the daily Search Console snapshots. Bars are total impressions (trailing 7-day window per snapshot); the line is the impression-weighted average position (lower = better). This catches position/impression drift the monthly report can miss.</p>
+    <div class="chart-box" style="height:300px"><canvas id="seoTrend"></canvas></div>
+  </div>
+
+  <div class="cards">
+    <div class="section" style="margin:0">
+      <h2>Keyword rankings</h2>
+      <p class="hint" id="seoRankHint">Tracked terms with Search Console data, best position first. Movement vs. ~2 weeks prior.</p>
+      <div id="seoRankings"></div>
+      <p class="cov" id="seoCoverage"></p>
+    </div>
+    <div class="section" style="margin:0">
+      <h2>Position distribution</h2>
+      <p class="hint">Tracked terms by Search Console position tier.</p>
+      <div id="seoDist"></div>
+    </div>
+  </div>
+
+  <div class="section narr" id="seoNarrative">
+    <h2>SEO &mdash; needs attention &middot; priority actions &middot; wins</h2>
+    <p class="hint">Written by the Monday/Wednesday SEO analysis run (fires shortly after the marketing pulse). GSC + keyword-list derived; competitor and AI-visibility sections stay manual.</p>
+    <div id="seoActionBody"><p class="empty">No SEO analysis written yet &mdash; the first scheduled SEO run will populate this.</p></div>
+  </div>
+
   <div class="foot" id="foot"></div>
 </div>
 
@@ -145,7 +179,7 @@ async function loadJSON(file, bypass){
 const fmt = n => (n==null? "—" : Number(n).toLocaleString());
 const pct = n => (n==null? "—" : n + "%");
 const CH_COLORS = {Email:"#7b5cd6","Direct":"#e0a528","Organic Search":"#2eb1a8","Referral":"#5a9bd4","Organic Social":"#3fbf9b","Paid Search":"#d9534f","Unassigned":"#b7c6d2"};
-let chart=null;
+let chart=null, seoChart=null;
 
 function setStatus(d){
   const ds = d&&d.data_sources || {};
@@ -302,7 +336,77 @@ function drawNarrative(n){
      <p class="asof">Analysis as of ${n.generated_at||n.as_of||"?"}</p>`;
 }
 
-async function renderFrom(impactFile, narrFile, bypass){
+// ---------- SEO half (seo-impact + seo-action) ----------
+const RK_CLASS = {"#1":"rk1","#2-3":"rk23","#4-10":"rk410","#11-20":"rk1120","21+":"rk21","not ranking":"rk21"};
+function moveCell(delta){
+  if(delta==null) return '<td class="num mv-fl">&mdash;</td>';
+  if(delta>0) return `<td class="num mv-up">&uarr; +${delta}</td>`;
+  if(delta<0) return `<td class="num mv-dn">&darr; ${delta}</td>`;
+  return '<td class="num mv-fl">&bull;</td>';
+}
+function drawSeoTrend(si){
+  const tl=(si&&si.visibility_timeline)||[];
+  if(seoChart) seoChart.destroy();
+  const ctx=document.getElementById("seoTrend");
+  if(!ctx) return;
+  if(!tl.length){ ctx.parentElement.innerHTML='<p class="empty">No GSC snapshots yet.</p>'; return; }
+  const labels=tl.map(r=>r.date);
+  seoChart=new Chart(ctx,{
+    data:{labels,datasets:[
+      {type:"bar",label:"Impressions",data:tl.map(r=>r.impressions),backgroundColor:"rgba(46,177,168,.35)",borderColor:"#2eb1a8",borderWidth:1,yAxisID:"y",order:2},
+      {type:"line",label:"Avg position",data:tl.map(r=>r.position),borderColor:"#7b5cd6",backgroundColor:"rgba(123,92,214,.08)",borderWidth:2.2,tension:.25,pointRadius:2,yAxisID:"y1",order:1},
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,interaction:{mode:"index",intersect:false},
+      plugins:{legend:{display:true,labels:{boxWidth:14,font:{size:11.5}}}},
+      scales:{
+        x:{grid:{display:false},ticks:{maxTicksLimit:12,font:{size:10}}},
+        y:{position:"left",beginAtZero:true,grid:{color:"#eef3f5"},title:{display:true,text:"Impressions"}},
+        y1:{position:"right",reverse:true,grid:{display:false},title:{display:true,text:"Avg position (lower=better)"}}
+      }}
+  });
+}
+function drawSeoRankings(si){
+  const box=document.getElementById("seoRankings");
+  const ranked=(si&&si.ranked_sorted)||[];
+  if(!ranked.length){ box.innerHTML='<p class="empty">No tracked keywords have GSC data yet.</p>'; }
+  else {
+    box.innerHTML=`<table><thead><tr><th>Keyword</th><th class="num">Pos</th><th>Tier</th><th class="num">Impr</th><th class="num">Move</th></tr></thead><tbody>${
+      ranked.slice(0,20).map(r=>`<tr>
+        <td>${String(r.keyword).replace(/</g,"&lt;")}</td>
+        <td class="num">${r.position}</td>
+        <td><span class="rk ${RK_CLASS[r.tier]||'rk21'}">${r.tier}</span></td>
+        <td class="num">${fmt(r.impressions)}</td>
+        ${moveCell(r.delta)}
+      </tr>`).join("")}</tbody></table>`;
+  }
+  const cov=(si&&si.coverage)||{};
+  const c=document.getElementById("seoCoverage");
+  if(c) c.textContent = cov.tracked_total? `Coverage: ${cov.with_data} of ${cov.tracked_total} tracked terms have Search Console impressions. Single-impression positions move sharply day to day.` : "";
+}
+function drawSeoDist(si){
+  const box=document.getElementById("seoDist");
+  const dist=(si&&si.position_distribution)||null;
+  if(!dist){ box.innerHTML='<p class="empty">No distribution yet.</p>'; return; }
+  const order=["#1","#2-3","#4-10","#11-20","21+","not ranking"];
+  const colors={"#1":"#1f8f5f","#2-3":"#2a6fd0","#4-10":"#e0a528","#11-20":"#6b7d8c","21+":"#d9534f","not ranking":"#c7d0d8"};
+  const max=Math.max(...order.map(k=>dist[k]||0),1);
+  box.innerHTML=order.map(k=>`<div class="bar-row"><div class="name">${k}</div>
+    <div class="bar-track"><div class="bar-fill" style="width:${Math.max(2,100*(dist[k]||0)/max)}%;background:${colors[k]}"></div></div>
+    <div class="val">${dist[k]||0} terms</div></div>`).join("");
+}
+function drawSeoAction(sa){
+  const box=document.getElementById("seoActionBody");
+  if(!sa){ return; }
+  const list=(arr)=> (arr&&arr.length)? "<ul>"+arr.map(x=>`<li>${String(x).replace(/</g,"&lt;")}</li>`).join("")+"</ul>" : '<p class="empty">&mdash;</p>';
+  box.innerHTML=
+    `<div class="attention"><h3>&#9888; Needs attention</h3>${list(sa.needs_attention)}</div>
+     <div class="actions"><h3>&rarr; Priority actions</h3>${list(sa.priority_actions)}</div>
+     <div class="wins"><h3>&#9989; Wins</h3>${list(sa.wins)}</div>
+     ${sa.summary? `<p style="font-size:14px;margin-top:10px">${String(sa.summary).replace(/</g,"&lt;")}</p>`:""}
+     <p class="asof">SEO analysis as of ${sa.generated_at||"?"}</p>`;
+}
+
+async function renderFrom(impactFile, narrFile, bypass, seoImpactFile, seoActionFile){
   const d = await loadJSON(impactFile, bypass);
   if(!d){
     document.getElementById("banner").innerHTML='<div class="banner"><b>No data found.</b> Run marketing-impact.py (or wait for the scheduled run) so '+impactFile+' exists.</div>';
@@ -311,6 +415,11 @@ async function renderFrom(impactFile, narrFile, bypass){
   setStatus(d); setKPIs(d); drawTimeline(d); drawNewsletterTable(d); drawChannelMix(d); drawGSC(d);
   const narr = await loadJSON(narrFile, bypass);
   drawNarrative(narr);
+  // SEO half
+  const si = await loadJSON(seoImpactFile||"seo-impact-latest.json", bypass);
+  drawSeoTrend(si); drawSeoRankings(si); drawSeoDist(si);
+  const sa = await loadJSON(seoActionFile||"seo-action-latest.json", bypass);
+  drawSeoAction(sa);
   const isLatest = impactFile.indexOf("latest")>=0;
   const note=document.getElementById("snapshotNote");
   if(note){
@@ -336,9 +445,12 @@ async function populateSnapshots(bypass){
   sel.innerHTML=opts.join("");
   sel.onchange=()=>{
     const f=sel.value;
-    const narr = f.indexOf("latest")>=0 ? "marketing-narrative-latest.json"
-                 : "marketing-narrative-"+f.replace("marketing-impact-","");
-    renderFrom(f, narr, true);
+    const isLatest = f.indexOf("latest")>=0;
+    const dstr = f.replace("marketing-impact-","");   // 'latest.json' or 'YYYY-MM-DD.json'
+    const narr = isLatest ? "marketing-narrative-latest.json" : "marketing-narrative-"+dstr;
+    const seoI = isLatest ? "seo-impact-latest.json"   : "seo-impact-"+dstr;
+    const seoA = isLatest ? "seo-action-latest.json"   : "seo-action-"+dstr;
+    renderFrom(f, narr, true, seoI, seoA);
   };
 }
 
