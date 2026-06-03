@@ -326,7 +326,8 @@ async function populateSnapshots(bypass){
   const sel=document.getElementById("snapshotPick");
   if(!sel) return;
   const m=await loadJSON("manifest.json", bypass);
-  const files=(m&&m.files)||[];
+  let files=(m&&m.files)||[];
+  if(typeof files==="string") files=[files];   // PowerShell serializes a single file as a scalar
   const opts=['<option value="marketing-impact-latest.json">Latest</option>']
     .concat(files.map(f=>{
       const dt=f.replace("marketing-impact-","").replace(".json","");
