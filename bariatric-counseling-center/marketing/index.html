@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BCC Marketing Impact</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root{
+    --teal:#2eb1a8; --teal-dk:#1f8f87; --teal-lt:#e7f9f7;
+    --navy:#2c3e50; --navy-deep:#1f2d3a; --text:#1f2d3a; --muted:#6b7d8c;
+    --bg:#f6f9fa; --card:#ffffff; --line:#e3e9ee;
+    --good:#2eb1a8; --warn:#e0a528; --bad:#d9534f;
+    --email:#7b5cd6; --direct:#e0a528; --organic:#2eb1a8;
+    --sans:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.45}
+  header{background:linear-gradient(135deg,var(--navy-deep),var(--navy));color:#fff;padding:22px 28px}
+  header h1{margin:0;font-size:22px;letter-spacing:.2px}
+  header .sub{margin-top:4px;font-size:13px;color:#b7c6d2}
+  .wrap{max-width:1180px;margin:0 auto;padding:22px 28px 60px}
+  .status-row{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 4px}
+  .pill{font-size:12px;padding:4px 11px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+  .pill .dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+  .pill.on{color:var(--teal-dk);border-color:#bfe9e5;background:var(--teal-lt)}
+  .pill.on .dot{background:var(--teal)}
+  .pill.off .dot{background:#c7d0d8}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:18px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .kpi .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+  .kpi .value{font-size:28px;font-weight:700;margin-top:4px;color:var(--navy)}
+  .kpi .meta{font-size:12px;color:var(--muted);margin-top:3px}
+  .section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:18px 0}
+  .section h2{margin:0 0 4px;font-size:16px;color:var(--navy)}
+  .section .hint{font-size:12.5px;color:var(--muted);margin:0 0 14px}
+  .chart-box{position:relative;height:360px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+  th{font-size:11.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:600}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  tr:hover td{background:#fafdfd}
+  .lift{font-weight:700}
+  .lift.pos{color:var(--good)} .lift.neg{color:var(--bad)} .lift.na{color:var(--muted);font-weight:400}
+  .bar-row{display:flex;align-items:center;gap:10px;margin:7px 0}
+  .bar-row .name{width:130px;font-size:13px;color:var(--navy)}
+  .bar-track{flex:1;background:#eef3f5;border-radius:6px;height:16px;overflow:hidden}
+  .bar-fill{height:100%;background:var(--teal);border-radius:6px}
+  .bar-row .val{width:120px;text-align:right;font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+  .narr h3{font-size:13px;margin:14px 0 6px;text-transform:uppercase;letter-spacing:.5px}
+  .narr .working h3{color:var(--good)} .narr .notworking h3{color:var(--bad)} .narr .next h3{color:var(--teal-dk)}
+  .narr ul{margin:0 0 6px;padding-left:20px} .narr li{margin:4px 0;font-size:14px}
+  .narr .asof{font-size:12px;color:var(--muted);margin-top:10px}
+  .empty{color:var(--muted);font-size:13.5px;font-style:italic}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin-bottom:8px}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .legend i{width:12px;height:3px;border-radius:2px;display:inline-block}
+  .foot{font-size:12px;color:var(--muted);margin-top:24px;text-align:center}
+  .reload{float:right;background:#fff;border:1px solid #b7c6d2;color:var(--navy);border-radius:8px;padding:6px 12px;font-size:12.5px;cursor:pointer}
+  .reload:hover{background:var(--teal-lt)}
+  .picker{float:right;margin-right:12px;font-size:12.5px;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+  .picker select{font-size:12.5px;padding:5px 8px;border:1px solid #b7c6d2;border-radius:8px;background:#fff;color:var(--navy)}
+  .snapshot-note{clear:both;font-size:12px;color:var(--warn);margin-top:6px;display:none}
+  .banner{background:#fff7e6;border:1px solid #f0d9a8;color:#8a6d1f;border-radius:10px;padding:12px 16px;font-size:13.5px;margin:14px 0}
+</style>
+</head>
+<body>
+<header>
+  <h1>BCC Marketing Impact</h1>
+  <div class="sub">Newsletters, SEO &amp; channel traffic in one view &mdash; how marketing moves the website</div>
+</header>
+<div class="wrap">
+  <button class="reload" onclick="boot(true)">&#x21bb; Refresh</button>
+  <div class="picker"><label for="snapshotPick">View report</label>
+    <select id="snapshotPick"><option value="marketing-impact-latest.json">Latest</option></select></div>
+  <div class="snapshot-note" id="snapshotNote"></div>
+  <div class="status-row" id="statusRow"></div>
+  <div id="banner"></div>
+
+  <div class="cards" id="kpis"></div>
+
+  <div class="section">
+    <h2>Traffic timeline &amp; newsletter sends</h2>
+    <p class="hint">Daily sessions over the window. Dashed purple lines mark Constant Contact send dates &mdash; watch the Email and Direct lines around them (newsletter clicks often land as &ldquo;Direct&rdquo; when links carry no UTM).</p>
+    <div class="legend">
+      <span><i style="background:#2c3e50"></i>Total sessions</span>
+      <span><i style="background:#7b5cd6"></i>Email</span>
+      <span><i style="background:#e0a528"></i>Direct</span>
+      <span><i style="background:#2eb1a8"></i>Organic Search</span>
+      <span><i style="border-top:2px dashed #7b5cd6;height:0;width:14px"></i>Newsletter sent</span>
+    </div>
+    <div class="chart-box"><canvas id="timeline"></canvas></div>
+  </div>
+
+  <div class="section">
+    <h2>Newsletter performance &amp; traffic lift</h2>
+    <p class="hint">For each send inside the window: email engagement, plus the traffic lift (send day + next 2 days vs. the prior 14-day median). &ldquo;Email 3d&rdquo; / &ldquo;Direct 3d&rdquo; are sessions in those channels across the 3-day window.</p>
+    <div id="newsletterTable"></div>
+  </div>
+
+  <div class="cards">
+    <div class="section" style="margin:0">
+      <h2>Channel mix</h2>
+      <p class="hint">Share of sessions over the window.</p>
+      <div id="channelMix"></div>
+    </div>
+    <div class="section" style="margin:0">
+      <h2>Search visibility (GSC)</h2>
+      <p class="hint">Context for the same period.</p>
+      <div id="gscBox"></div>
+    </div>
+  </div>
+
+  <div class="section narr" id="narrative">
+    <h2>What&rsquo;s working &middot; what&rsquo;s not &middot; do next</h2>
+    <p class="hint">Written by the Monday/Wednesday 4am analysis run.</p>
+    <div id="narrBody"><p class="empty">No analysis written yet &mdash; the first scheduled run will populate this.</p></div>
+  </div>
+
+  <div class="foot" id="foot"></div>
+</div>
+
+<script>
+// ---- data sources: GitHub raw (deployed) -> jsdelivr -> local relative (dev) ----
+const OWNER="austintude", REPO="cowork-cron-jobs", SUB="bariatric-counseling-center/marketing";
+function candidates(file){
+  return [
+    `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${SUB}/${file}`,
+    `https://cdn.jsdelivr.net/gh/${OWNER}/${REPO}@main/${SUB}/${file}`,
+    `../output/${file}`,            // local: seo-tools/marketing-dashboard/ -> ../output/
+    `./${file}`
+  ];
+}
+async function loadJSON(file, bypass){
+  for(const base of candidates(file)){
+    try{
+      const url = bypass ? base + (base.includes("?")?"&":"?") + "t=" + Date.now() : base;
+      const r = await fetch(url, {cache: bypass?"no-store":"default"});
+      if(r.ok) return await r.json();
+    }catch(e){/* try next */}
+  }
+  return null;
+}
+
+const fmt = n => (n==null? "—" : Number(n).toLocaleString());
+const pct = n => (n==null? "—" : n + "%");
+const CH_COLORS = {Email:"#7b5cd6","Direct":"#e0a528","Organic Search":"#2eb1a8","Referral":"#5a9bd4","Organic Social":"#3fbf9b","Paid Search":"#d9534f","Unassigned":"#b7c6d2"};
+let chart=null;
+
+function setStatus(d){
+  const ds = d&&d.data_sources || {};
+  const row = document.getElementById("statusRow");
+  const item = (label,on)=>`<span class="pill ${on?'on':'off'}"><span class="dot"></span>${label}: ${on?'connected':'not yet connected'}</span>`;
+  row.innerHTML =
+    item("GA4", ds.ga4) + item("Constant Contact", ds.constant_contact) + item("Google Search Console", ds.gsc)
+    + `<span class="pill"><span class="dot"></span>Window: ${(d&&d.timeline_start)||'?'} → ${(d&&d.timeline_end)||'?'} (${(d&&d.window_days)||'?'}d)</span>`;
+  const banner=document.getElementById("banner");
+  if(!ds.constant_contact){
+    banner.innerHTML = `<div class="banner"><b>Constant Contact isn't connected yet.</b> Newsletter send markers and email engagement will appear once it's authorized (see CONSTANT-CONTACT-SETUP.md). Everything else below is live.</div>`;
+  } else banner.innerHTML="";
+}
+
+function setKPIs(d){
+  const cc = (d&&d.cc_summary) || {};
+  const nl = ((d&&d.newsletters)||[]).filter(e=>e.lift_pct!=null);
+  const best = nl.length? nl.reduce((a,b)=>b.lift_pct>a.lift_pct?b:a) : null;
+  const mix = (d&&d.channel_mix)||[];
+  const cards=[
+    {label:"Sessions ("+((d&&d.window_days)||"")+"d)", value:fmt(d&&d.window_total_sessions), meta:(mix[0]? "Top: "+mix[0].channel+" "+mix[0].pct+"%":"")},
+    {label:"Avg open rate", value: cc.avg_open_rate!=null? cc.avg_open_rate+"%":"—", meta:(cc.n_sent? cc.n_sent+" campaigns sent":"newsletter data pending")},
+    {label:"Avg click rate", value: cc.avg_click_rate!=null? cc.avg_click_rate+"%":"—", meta:(cc.total_sends? fmt(cc.total_sends)+" total sends":"")},
+    {label:"Newsletters in window", value: fmt(((d&&d.newsletters)||[]).length), meta:(cc.most_recent_send? "Last: "+String(cc.most_recent_send).slice(0,10):"")},
+    {label:"Best newsletter lift", value: best? (best.lift_pct>=0?"+":"")+best.lift_pct+"%":"—", meta: best? (best.name||"").slice(0,28)+" ("+best.send_date+")":"no overlap yet"},
+  ];
+  document.getElementById("kpis").innerHTML = cards.map(c=>
+    `<div class="card kpi"><div class="label">${c.label}</div><div class="value">${c.value}</div><div class="meta">${c.meta||""}</div></div>`).join("");
+}
+
+// vertical send-date markers as a Chart.js plugin (positioned by label index)
+function sendMarkerPlugin(sends, labels){
+  const idxByDate = {}; labels.forEach((l,i)=>{ idxByDate[l]=i; });
+  return {
+    id:"sendMarkers",
+    afterDraw(c){
+      const {ctx, chartArea:{top,bottom}, scales:{x}} = c;
+      ctx.save();
+      sends.forEach(s=>{
+        const idx = idxByDate[s.date];
+        if(idx==null) return;
+        const xp = x.getPixelForValue(idx);
+        if(xp==null||isNaN(xp)) return;
+        ctx.beginPath(); ctx.setLineDash([5,4]); ctx.lineWidth=1.5; ctx.strokeStyle="rgba(123,92,214,.75)";
+        ctx.moveTo(xp,top); ctx.lineTo(xp,bottom); ctx.stroke();
+        ctx.setLineDash([]); ctx.fillStyle="rgba(123,92,214,.95)";
+        ctx.beginPath(); ctx.arc(xp,top+3,3,0,Math.PI*2); ctx.fill();
+      });
+      ctx.restore();
+    }
+  };
+}
+
+function drawTimeline(d){
+  const tl=(d&&d.timeline)||[];
+  const labels=tl.map(r=>r.date);
+  const total=tl.map(r=>r.total);
+  const email=tl.map(r=>(r.channels&&r.channels.Email)||0);
+  const direct=tl.map(r=>(r.channels&&r.channels.Direct)||0);
+  const organic=tl.map(r=>(r.channels&&r.channels["Organic Search"])||0);
+  const sends=((d&&d.newsletters)||[]).map(e=>({date:e.send_date,name:e.name,open:e.open_rate,click:e.click_rate}));
+  const sendByDate={}; sends.forEach(s=>{sendByDate[s.date]=s;});
+  if(chart) chart.destroy();
+  const ctx=document.getElementById("timeline");
+  if(!tl.length){ ctx.parentElement.innerHTML='<p class="empty">No GA4 timeline yet — connect GA4 / run the fetch.</p>'; return; }
+  chart=new Chart(ctx,{
+    type:"line",
+    data:{labels,datasets:[
+      {label:"Total",data:total,borderColor:"#2c3e50",backgroundColor:"rgba(44,62,80,.06)",borderWidth:2.4,fill:true,tension:.25,pointRadius:0},
+      {label:"Email",data:email,borderColor:"#7b5cd6",borderWidth:1.8,fill:false,tension:.25,pointRadius:0},
+      {label:"Direct",data:direct,borderColor:"#e0a528",borderWidth:1.6,fill:false,tension:.25,pointRadius:0},
+      {label:"Organic Search",data:organic,borderColor:"#2eb1a8",borderWidth:1.6,fill:false,tension:.25,pointRadius:0},
+    ]},
+    options:{
+      responsive:true,maintainAspectRatio:false,interaction:{mode:"index",intersect:false},
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{afterBody:(items)=>{
+          const dt=items[0] && items[0].label; const s=sendByDate[dt];
+          return s? ["","📧 Newsletter: "+(s.name||""),"   open "+(s.open==null?"?":s.open)+"%  ·  click "+(s.click==null?"?":s.click)+"%"]:[];
+        }}}
+      },
+      scales:{
+        x:{ticks:{maxTicksLimit:12,autoSkip:true},grid:{display:false}},
+        y:{beginAtZero:true,grid:{color:"#eef3f5"},title:{display:true,text:"Sessions / day"}}
+      }
+    },
+    plugins:[sendMarkerPlugin(sends, labels)]
+  });
+}
+
+function drawNewsletterTable(d){
+  const rows=(d&&d.newsletters)||[];
+  const box=document.getElementById("newsletterTable");
+  if(!rows.length){ box.innerHTML='<p class="empty">No newsletter sends inside the window yet.</p>'; return; }
+  const liftCell=e=>{
+    if(e.lift_pct==null) return '<td class="num lift na">n/a</td>';
+    const cls=e.lift_pct>=0?"pos":"neg"; const sign=e.lift_pct>=0?"+":"";
+    return `<td class="num lift ${cls}">${sign}${e.lift_pct}%</td>`;
+  };
+  box.innerHTML=`<table><thead><tr>
+      <th>Sent</th><th>Campaign</th><th class="num">Sends</th><th class="num">Open</th><th class="num">Click</th><th class="num">CTOR</th>
+      <th class="num">Baseline/day</th><th class="num">Spike/day</th><th class="num">Lift</th><th class="num">Email 3d</th><th class="num">Direct 3d</th>
+    </tr></thead><tbody>${rows.map(e=>`<tr>
+      <td>${e.send_date}</td>
+      <td>${(e.name||"").replace(/</g,"&lt;")}</td>
+      <td class="num">${fmt(e.sends)}</td>
+      <td class="num">${pct(e.open_rate)}</td>
+      <td class="num">${pct(e.click_rate)}</td>
+      <td class="num">${pct(e.click_to_open_rate)}</td>
+      <td class="num">${fmt(e.baseline_daily_sessions)}</td>
+      <td class="num">${fmt(e.spike_mean_daily_sessions)}</td>
+      ${liftCell(e)}
+      <td class="num">${fmt(e.email_sessions_3d)}</td>
+      <td class="num">${fmt(e.direct_sessions_3d)}</td>
+    </tr>`).join("")}</tbody></table>`;
+}
+
+function drawChannelMix(d){
+  const mix=(d&&d.channel_mix)||[];
+  const box=document.getElementById("channelMix");
+  if(!mix.length){ box.innerHTML='<p class="empty">No channel data yet.</p>'; return; }
+  const max=mix[0].sessions||1;
+  box.innerHTML=mix.slice(0,8).map(c=>{
+    const col=CH_COLORS[c.channel]||"#2eb1a8";
+    return `<div class="bar-row"><div class="name">${c.channel}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${Math.max(2,100*c.sessions/max)}%;background:${col}"></div></div>
+      <div class="val">${fmt(c.sessions)} (${c.pct}%)</div></div>`;
+  }).join("");
+}
+
+function drawGSC(d){
+  const s=d&&d.gsc_summary; const box=document.getElementById("gscBox");
+  if(!s){ box.innerHTML='<p class="empty">No GSC data loaded.</p>'; return; }
+  const items=[
+    ["Clicks", fmt(s.total_clicks)],
+    ["Impressions", fmt(s.total_impressions)],
+    ["Avg position", s.avg_position_impression_weighted!=null? Number(s.avg_position_impression_weighted).toFixed(1):"—"],
+    ["Queries w/ data", fmt(s.total_queries)],
+  ];
+  box.innerHTML='<div class="cards" style="margin:0;grid-template-columns:1fr 1fr">'+
+    items.map(([l,v])=>`<div class="card kpi" style="padding:12px 14px"><div class="label">${l}</div><div class="value" style="font-size:22px">${v}</div></div>`).join("")+'</div>';
+}
+
+function drawNarrative(n){
+  const box=document.getElementById("narrBody");
+  if(!n){ return; } // keep default empty message
+  const list=(arr)=> (arr&&arr.length)? "<ul>"+arr.map(x=>`<li>${String(x).replace(/</g,"&lt;")}</li>`).join("")+"</ul>" : '<p class="empty">—</p>';
+  box.innerHTML=
+    `<div class="working"><h3>✅ Working</h3>${list(n.working)}</div>
+     <div class="notworking"><h3>⚠ Not working</h3>${list(n.not_working)}</div>
+     <div class="next"><h3>→ Do next</h3>${list(n.do_next)}</div>
+     ${n.summary? `<p style="font-size:14px;margin-top:10px">${String(n.summary).replace(/</g,"&lt;")}</p>`:""}
+     <p class="asof">Analysis as of ${n.generated_at||n.as_of||"?"}</p>`;
+}
+
+async function renderFrom(impactFile, narrFile, bypass){
+  const d = await loadJSON(impactFile, bypass);
+  if(!d){
+    document.getElementById("banner").innerHTML='<div class="banner"><b>No data found.</b> Run marketing-impact.py (or wait for the scheduled run) so '+impactFile+' exists.</div>';
+    return;
+  }
+  setStatus(d); setKPIs(d); drawTimeline(d); drawNewsletterTable(d); drawChannelMix(d); drawGSC(d);
+  const narr = await loadJSON(narrFile, bypass);
+  drawNarrative(narr);
+  const isLatest = impactFile.indexOf("latest")>=0;
+  const note=document.getElementById("snapshotNote");
+  if(note){
+    if(isLatest){ note.style.display="none"; }
+    else { note.style.display="block";
+      note.textContent="⏳ Viewing an archived report ("+impactFile.replace("marketing-impact-","").replace(".json","")+"). Set the dropdown back to Latest for current data."; }
+  }
+  document.getElementById("foot").textContent = "Report generated "+((d&&d.generated_at)||"?")+(isLatest?" · latest":" · archived snapshot")+" · BCC Marketing Impact dashboard";
+}
+
+// Populate the report dropdown from the published manifest (retained ~90 days of snapshots)
+async function populateSnapshots(bypass){
+  const sel=document.getElementById("snapshotPick");
+  if(!sel) return;
+  const m=await loadJSON("manifest.json", bypass);
+  const files=(m&&m.files)||[];
+  const opts=['<option value="marketing-impact-latest.json">Latest</option>']
+    .concat(files.map(f=>{
+      const dt=f.replace("marketing-impact-","").replace(".json","");
+      return `<option value="${f}">${dt}</option>`;
+    }));
+  sel.innerHTML=opts.join("");
+  sel.onchange=()=>{
+    const f=sel.value;
+    const narr = f.indexOf("latest")>=0 ? "marketing-narrative-latest.json"
+                 : "marketing-narrative-"+f.replace("marketing-impact-","");
+    renderFrom(f, narr, true);
+  };
+}
+
+async function boot(bypass){
+  await renderFrom("marketing-impact-latest.json","marketing-narrative-latest.json",bypass);
+  await populateSnapshots(bypass);
+}
+boot(false);
+</script>
+</body>
+</html>
