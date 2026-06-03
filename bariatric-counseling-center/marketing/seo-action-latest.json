@@ -7,18 +7,18 @@
     "Two blog posts carry the most search visibility: the hydration post (2,837 impressions, avg pos 9.0) and the weight-loss-medications explainer (2,424 impressions, avg pos 10.1) — strong page-1 informational footholds."
   ],
   "needs_attention": [
-    "Coverage gap: only 20 of 67 tracked terms register any GSC impressions; 47 are invisible — most of these target staging12 service-page URLs that aren't live/indexed on www yet, so they cannot rank.",
+    "Keyword-tracking coverage: of 67 tracked KEYWORDS, 20 currently show GSC impressions and 47 show none yet. Those 67 keywords map to 42 distinct target pages — 21 live www pages and 21 staging URLs (service pages the tracker points at staging, not all of which are necessarily still unpublished). Keywords aimed at not-yet-live pages naturally have no impressions. NOTE: 47 is a keyword count, NOT a number of unpublished pages.",
     "Visibility is drifting the wrong way: impression-weighted average position slipped from 14.9 (May 7) to 21.4 (June 3), and trailing-7-day impressions fell ~31% (2,447 → 1,681) over the same span.",
     "Click-through is effectively zero — 2 clicks on 1,681 impressions this window. The two highest-impression pages are blog posts ranking at position 9-10 that aren't converting impressions to visits.",
     "Specific rank slips on commercial terms: 'weight management therapist san antonio' fell to ~position 53 and 'weight loss counseling san antonio' to ~position 46 (both down 30+ spots vs. two weeks prior).",
     "Note: at this traffic level many tracked terms show only 1-5 impressions, so single-impression position deltas swing sharply day to day — treat them as directional, not precise."
   ],
   "priority_actions": [
-    "Publish/migrate the staging12 service pages to live www URLs so the 47 zero-impression tracked terms (weight management therapist, binge eating treatment, food addiction, GLP-1, McAllen, etc.) can actually be indexed and rank.",
+    "Review the staging-targeted service pages in the keyword tracker (21 of the 42 target pages point at staging), confirm which are genuinely not yet live, and publish those to www so their keywords can begin ranking. The set of pages to publish is small — the '47' is keywords without impressions, not 47 separate pages.",
     "Capture the blog traffic: add prominent CTAs and internal links from the two high-impression posts (hydration; Wegovy/Ozempic/Zepbound/Mounjaro) into the matching service pages — this is the fastest lever on the near-zero CTR.",
     "Investigate the position/impression drift: confirm whether it's seasonal or ranking loss, and run on-page refreshes on the slipped commercial terms ('weight management therapist san antonio', 'weight loss counseling san antonio').",
     "Defend the core local #1-#3 terms (bariatric surgery counseling SA, bariatric counseling SA, emotional eating therapy SA) — keep their pages fresh; these are BCC's strongest assets.",
     "Add FAQ schema to live service pages to improve rich-result/AI-overview eligibility (the broad query set keeps surfacing long-tail impressions that aren't earning clicks)."
   ],
-  "summary": "Core San Antonio rankings are strong (three terms at #1-#3), but the bigger picture is drifting: impression-weighted position slipped from ~15 to ~21 and 7-day impressions fell ~31% over four weeks, with near-zero CTR. The single biggest unlock is getting the 47 invisible tracked terms onto live, indexed pages — most point at staging12 URLs that can't rank yet."
+  "summary": "Core San Antonio rankings are strong (three terms at #1-#3), but the bigger picture is drifting: impression-weighted position slipped from ~15 to ~21 and 7-day impressions fell ~31% over four weeks, with near-zero CTR. The biggest unlock is publishing the still-staged service pages to live www; note the '47' figure is tracked keywords without impressions, not 47 separate pages (the 67 keywords map to 42 pages, 21 of them staging-targeted)."
 }
