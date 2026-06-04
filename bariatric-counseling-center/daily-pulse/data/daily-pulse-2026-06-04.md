@@ -1,6 +1,6 @@
 # BCC Daily Pulse -- 2026-06-03
 
-_Generated 2026-06-04 08:03 UTC_
+_Generated 2026-06-04 16:01 UTC_
 
 
 ## Yesterday at a glance
@@ -9,6 +9,18 @@ _Generated 2026-06-04 08:03 UTC_
 - **0 GSC impressions** / 0 clicks / avg position 0.0
 - Engagement rate: 97.6%
 - Avg session duration: 248s
+
+## Last 28 days vs prior 28 days
+
+_2026-05-07 -> 2026-06-03 vs 2026-04-09 -> 2026-05-06_
+
+| Metric | This period | Prior | Change |
+|--------|-------------|-------|--------|
+| Active users | 448 | 565 | -20.7% |
+| New users | 430 | 534 | -19.5% |
+| Sessions | 577 | 743 | -22.3% |
+| Views | 2,142 | 2,514 | -14.8% |
+| Avg engagement time (per active user) | 67s | 54s | +22.8% |
 
 ## 5 anomalies flagged
 
@@ -37,15 +49,15 @@ _Generated 2026-06-04 08:03 UTC_
   - `/` -- 14 sessions, 14 users
   - `/author/sara-broussard/` -- 13 sessions, 13 users
   - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 2 sessions, 2 users
-  - `` -- 1 sessions, 1 users
+  - `(not set)` -- 1 sessions, 1 users
   - `/?page_id=5331&preview=true` -- 1 sessions, 1 users
 
-**Recent site changes (last 7 days)** -- 27 pages/posts modified -- cross-reference with affected pages.
-  - Therapy for Eating Disorders in San Antonio, TX (modified 2026-06-03)
-  - Therapy for Depression and Weight Concerns in San Antonio, TX (modified 2026-06-03)
-  - Nutritional Counseling in San Antonio, TX (modified 2026-06-03)
-  - Holistic Weight Loss Counseling in San Antonio, TX (modified 2026-06-03)
-  - Body Confidence Counseling in San Antonio, TX (modified 2026-06-03)
+**Recent site changes (last 7 days)** -- 29 pages/posts modified -- cross-reference with affected pages.
+  - Binge Eating Disorder Treatment in San Antonio (modified 2026-06-03)
+  - Bariatric Therapy in San Antonio, TX (modified 2026-06-03)
+  - Eating Disorder Counseling in San Antonio, TX (modified 2026-06-03)
+  - Ozempic Behavioral Support in San Antonio, TX (modified 2026-06-03)
+  - Virtual Emotional Eating Therapy in Texas (modified 2026-06-03)
 
 
 ## Notes
@@ -61,18 +73,18 @@ _Generated 2026-06-04 08:03 UTC_
 
 ## Site changes in the last 7 days
 
-- [PAGE] Therapy for Eating Disorders in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/therapy-for-eating-disorders-in-san-antonio-tx/)
-- [PAGE] Therapy for Depression and Weight Concerns in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/)
-- [PAGE] Nutritional Counseling in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/)
-- [PAGE] Holistic Weight Loss Counseling in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/holistic-weight-loss-counseling-in-san-antonio-tx/)
-- [PAGE] Body Confidence Counseling in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/body-confidence-counseling-in-san-antonio-tx/)
-- [PAGE] Bariatric Therapist in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/)
-- [PAGE] Weight Loss Programs in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/weight-loss-programs-in-san-antonio-tx/)
-- [PAGE] Online Therapy for Emotional Eating in McAllen, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/online-therapy-for-emotional-eating-in-mcallen-tx/)
-- [PAGE] Counseling for Anxiety and Weight in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/counseling-for-anxiety-and-weight-in-san-antonio-tx/)
-- [PAGE] Mind-Body Approach to Weight Loss in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/mind-body-approach-to-weight-loss-in-san-antonio-tx/)
-- [POST] How to Improve Self-Esteem While Losing Weight the Healthy Way -- 2026-05-22 (https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/)
-- [POST] Preparing for Bariatric Surgery: A Mental Health Checklist -- 2026-05-21 (https://www.bariatriccounselingcenter.com/self-improvement/mental-health/preparing-for-bariatric-surgery-a-mental-health-checklist/)
-- [POST] Five Ways to Develop Motivation for Behaviors You Don’t Enjoy -- 2026-05-21 (https://www.bariatriccounselingcenter.com/weight-loss-counseling/five-ways-to-develop-motivation-for-behaviors-you-dont-enjoy/)
-- [POST] How to Stop Stress Eating: Simple Strategies to Take Control of Your Habits -- 2026-05-21 (https://www.bariatriccounselingcenter.com/eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/)
-- [POST] Better Sleep for Weight Loss: How Rest Impacts Your Metabolism and Cravings -- 2026-05-21 (https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/)
+- [PAGE] Binge Eating Disorder Treatment in San Antonio -- 2026-06-03 (https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/)
+- [PAGE] Bariatric Therapy in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/)
+- [PAGE] Eating Disorder Counseling in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/eating-disorder-counseling-in-san-antonio-tx/)
+- [PAGE] Ozempic Behavioral Support in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/ozempic-behavioral-support-in-san-antonio-tx/)
+- [PAGE] Virtual Emotional Eating Therapy in Texas -- 2026-06-03 (https://www.bariatriccounselingcenter.com/virtual-emotional-eating-therapy-in-texas/)
+- [PAGE] Weight Management Counseling in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/weight-management-counseling-in-san-antonio-tx/)
+- [PAGE] Weight Management Program in San Antonio, TX -- 2026-06-03 (https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/)
+- [PAGE] Compulsive Overeating Counseling &amp; Food Addiction Treatment in San Antonio, TX -- 2026-05-22 (https://www.bariatriccounselingcenter.com/compulsive-overeating-counseling-san-antonio-tx/)
+- [PAGE] Undergoing (or Having Undergone) Bariatric Surgery: A Comprehensive Guide to Psychological Support and Success -- 2026-05-22 (https://www.bariatriccounselingcenter.com/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/)
+- [PAGE] Understanding Weight Loss Medications: Wegovy, Ozempic, Zepbound, and Mounjaro -- 2026-05-22 (https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/)
+- [POST] Why Stress Eating Happens: Understanding Why Food Can Feel Out of Control During Stress -- 2026-06-04 (https://www.bariatriccounselingcenter.com/self-improvement/mental-health/why-stress-eating-happens/)
+- [POST] A Day Inside BCC&#8217;s Binge Eating IOP -- 2026-06-04 (https://www.bariatriccounselingcenter.com/self-improvement/mental-health/day-inside-bcc-binge-eating-iop/)
+- [POST] Binge Eating Disorder and Ozempic: What Nobody Tells You -- 2026-06-04 (https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-disorder-ozempic-what-nobody-tells-you/)
+- [POST] Binge Eating vs. Emotional Eating: The Clinical Differences That Matter -- 2026-06-04 (https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-vs-emotional-eating-clinical-differences/)
+- [POST] Pre-Bariatric Surgery and Binge Eating Screening: Why Surgeons Want It Caught Before the OR -- 2026-06-04 (https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/)
