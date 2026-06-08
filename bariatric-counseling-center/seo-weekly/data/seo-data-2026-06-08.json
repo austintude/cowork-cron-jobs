@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-08T10:19:25.969521+00:00",
+  "timestamp": "2026-06-08T10:21:54.930507+00:00",
   "date": "2026-06-08",
   "source": "Browser SERP check (9 live) + GSC merge",
   "run_mode": "hybrid",
@@ -77,7 +77,7 @@
       "registered dietitian san antonio": {
         "position": null,
         "category": "local-service",
-        "trend": "declining",
+        "trend": "lost_data",
         "change": null,
         "source": "no_data"
       },
@@ -266,7 +266,7 @@
       "eating disorder treatment san antonio": {
         "position": null,
         "category": "local-service",
-        "trend": "declining",
+        "trend": "lost_data",
         "change": null,
         "source": "live_serp"
       },
@@ -490,7 +490,7 @@
       "weight loss therapist": {
         "position": null,
         "category": "national-primary",
-        "trend": "declining",
+        "trend": "lost_data",
         "change": null,
         "source": "no_data"
       },
@@ -1714,12 +1714,6 @@
     ],
     "declining": [
       {
-        "keyword": "registered dietitian san antonio",
-        "position": null,
-        "change": null,
-        "category": "local-service"
-      },
-      {
         "keyword": "weight loss counseling",
         "position": 56,
         "change": -8,
@@ -1732,12 +1726,6 @@
         "category": "national-primary"
       },
       {
-        "keyword": "eating disorder treatment san antonio",
-        "position": null,
-        "change": null,
-        "category": "local-service"
-      },
-      {
         "keyword": "nutritional counseling san antonio tx",
         "position": 28,
         "change": -2,
@@ -1748,12 +1736,6 @@
         "position": 48,
         "change": -1,
         "category": "local-service"
-      },
-      {
-        "keyword": "weight loss therapist",
-        "position": null,
-        "change": null,
-        "category": "national-primary"
       },
       {
         "keyword": "holistic approach to weight loss",
@@ -1786,6 +1768,23 @@
         "position": 15,
         "trend": "rising",
         "category": "national-primary"
+      }
+    ],
+    "lost_visibility": [
+      {
+        "keyword": "registered dietitian san antonio",
+        "category": "local-service",
+        "note": "Had a position last week; no GSC impressions and not in top-20 live SERP this week"
+      },
+      {
+        "keyword": "eating disorder treatment san antonio",
+        "category": "local-service",
+        "note": "Had a position last week; no GSC impressions and not in top-20 live SERP this week"
+      },
+      {
+        "keyword": "weight loss therapist",
+        "category": "national-primary",
+        "note": "Had a position last week; no GSC impressions and not in top-20 live SERP this week"
       }
     ]
   },
