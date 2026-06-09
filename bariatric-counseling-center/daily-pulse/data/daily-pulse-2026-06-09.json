@@ -1,0 +1,2019 @@
+{
+  "fetched_at": "2026-06-09T08:03:42.594232Z",
+  "for_date": "2026-06-08",
+  "baseline_window": {
+    "start": "2026-05-11",
+    "end": "2026-06-07",
+    "days": 28
+  },
+  "ga4_property_id": "254059736",
+  "gsc_property": "https://www.bariatriccounselingcenter.com/",
+  "snapshot": {
+    "sessions": 17,
+    "users": 15,
+    "new_users": 9,
+    "pageviews": 62,
+    "engagement_rate": 0.9412,
+    "avg_session_duration": 267.166,
+    "gsc_impressions": 0,
+    "gsc_clicks": 0,
+    "gsc_position": 0.0
+  },
+  "period_over_period": {
+    "window_days": 28,
+    "current": {
+      "start": "2026-05-12",
+      "end": "2026-06-08",
+      "sessions": 609,
+      "active_users": 469,
+      "total_users": 469,
+      "new_users": 443,
+      "pageviews": 2112,
+      "avg_session_duration": 199.1656,
+      "avg_engagement_time_per_active_user": 63.3
+    },
+    "prior": {
+      "start": "2026-04-14",
+      "end": "2026-05-11",
+      "sessions": 700,
+      "active_users": 541,
+      "total_users": 542,
+      "new_users": 513,
+      "pageviews": 2319,
+      "avg_session_duration": 129.4576,
+      "avg_engagement_time_per_active_user": 47.4
+    },
+    "pct_change": {
+      "sessions_pct": -13.0,
+      "active_users_pct": -13.3,
+      "total_users_pct": -13.5,
+      "new_users_pct": -13.6,
+      "pageviews_pct": -8.9,
+      "avg_session_duration_pct": 53.8,
+      "avg_engagement_time_per_active_user_pct": 33.5
+    }
+  },
+  "anomaly_summary": {
+    "total": 5,
+    "critical": 1,
+    "major": 1,
+    "minor": 2
+  },
+  "anomalies": [
+    {
+      "metric": "GA4 avg session dur",
+      "actual": 267.166,
+      "baseline_28d_median": 114.17,
+      "yoy_same_day": null,
+      "pct_delta": 134.0,
+      "severity": "CRITICAL",
+      "direction": "up",
+      "headline": "UP GA4 avg session dur: 267.166 (+134.0% vs 28d median of 114)"
+    },
+    {
+      "metric": "GA4 new users",
+      "actual": 9,
+      "baseline_28d_median": 15.0,
+      "yoy_same_day": null,
+      "pct_delta": -40.0,
+      "severity": "MAJOR",
+      "direction": "down",
+      "headline": "DOWN GA4 new users: 9 (-40.0% vs 28d median of 15)"
+    },
+    {
+      "metric": "GA4 users",
+      "actual": 15,
+      "baseline_28d_median": 19.0,
+      "yoy_same_day": 13,
+      "pct_delta": -21.1,
+      "severity": "MINOR",
+      "direction": "down",
+      "headline": "DOWN GA4 users: 15 (-21.1% vs 28d median of 19) (YoY same day: +15.4%)"
+    },
+    {
+      "metric": "GA4 sessions",
+      "actual": 17,
+      "baseline_28d_median": 21.5,
+      "yoy_same_day": 14,
+      "pct_delta": -20.9,
+      "severity": "MINOR",
+      "direction": "down",
+      "headline": "DOWN GA4 sessions: 17 (-20.9% vs 28d median of 22) (YoY same day: +21.4%)"
+    },
+    {
+      "severity": "INFO",
+      "metric": "GSC data freshness",
+      "actual": 0,
+      "baseline_28d_median": 1232.5,
+      "pct_delta": null,
+      "headline": "GSC data for 2026-06-08 not yet available (typical 1-3 day reporting lag). Latest GSC day with data: 2026-06-07.",
+      "direction": "info"
+    }
+  ],
+  "ga4_data": {
+    "daily_totals": [
+      {
+        "date": "2026-05-11",
+        "sessions": 27,
+        "totalUsers": 24,
+        "newUsers": 21,
+        "screenPageViews": 149,
+        "engagementRate": 0.9259,
+        "averageSessionDuration": 162.4119
+      },
+      {
+        "date": "2026-05-12",
+        "sessions": 16,
+        "totalUsers": 16,
+        "newUsers": 13,
+        "screenPageViews": 49,
+        "engagementRate": 0.9375,
+        "averageSessionDuration": 84.6505
+      },
+      {
+        "date": "2026-05-13",
+        "sessions": 18,
+        "totalUsers": 15,
+        "newUsers": 11,
+        "screenPageViews": 73,
+        "engagementRate": 0.8889,
+        "averageSessionDuration": 1377.3681
+      },
+      {
+        "date": "2026-05-14",
+        "sessions": 51,
+        "totalUsers": 44,
+        "newUsers": 41,
+        "screenPageViews": 167,
+        "engagementRate": 0.9412,
+        "averageSessionDuration": 436.9901
+      },
+      {
+        "date": "2026-05-15",
+        "sessions": 24,
+        "totalUsers": 23,
+        "newUsers": 21,
+        "screenPageViews": 75,
+        "engagementRate": 1,
+        "averageSessionDuration": 85.4929
+      },
+      {
+        "date": "2026-05-16",
+        "sessions": 15,
+        "totalUsers": 12,
+        "newUsers": 10,
+        "screenPageViews": 42,
+        "engagementRate": 1,
+        "averageSessionDuration": 28.4325
+      },
+      {
+        "date": "2026-05-17",
+        "sessions": 12,
+        "totalUsers": 11,
+        "newUsers": 8,
+        "screenPageViews": 74,
+        "engagementRate": 0.9167,
+        "averageSessionDuration": 372.9662
+      },
+      {
+        "date": "2026-05-18",
+        "sessions": 24,
+        "totalUsers": 19,
+        "newUsers": 15,
+        "screenPageViews": 56,
+        "engagementRate": 0.875,
+        "averageSessionDuration": 44.267
+      },
+      {
+        "date": "2026-05-19",
+        "sessions": 37,
+        "totalUsers": 30,
+        "newUsers": 24,
+        "screenPageViews": 142,
+        "engagementRate": 0.9459,
+        "averageSessionDuration": 143.219
+      },
+      {
+        "date": "2026-05-20",
+        "sessions": 27,
+        "totalUsers": 25,
+        "newUsers": 20,
+        "screenPageViews": 92,
+        "engagementRate": 0.963,
+        "averageSessionDuration": 77.9661
+      },
+      {
+        "date": "2026-05-21",
+        "sessions": 21,
+        "totalUsers": 19,
+        "newUsers": 15,
+        "screenPageViews": 58,
+        "engagementRate": 1,
+        "averageSessionDuration": 128.2244
+      },
+      {
+        "date": "2026-05-22",
+        "sessions": 24,
+        "totalUsers": 21,
+        "newUsers": 16,
+        "screenPageViews": 94,
+        "engagementRate": 0.875,
+        "averageSessionDuration": 71.5584
+      },
+      {
+        "date": "2026-05-23",
+        "sessions": 9,
+        "totalUsers": 9,
+        "newUsers": 7,
+        "screenPageViews": 16,
+        "engagementRate": 0.8889,
+        "averageSessionDuration": 26.7212
+      },
+      {
+        "date": "2026-05-24",
+        "sessions": 11,
+        "totalUsers": 11,
+        "newUsers": 10,
+        "screenPageViews": 38,
+        "engagementRate": 1,
+        "averageSessionDuration": 231.1453
+      },
+      {
+        "date": "2026-05-25",
+        "sessions": 13,
+        "totalUsers": 12,
+        "newUsers": 9,
+        "screenPageViews": 42,
+        "engagementRate": 0.9231,
+        "averageSessionDuration": 64.5814
+      },
+      {
+        "date": "2026-05-26",
+        "sessions": 31,
+        "totalUsers": 26,
+        "newUsers": 22,
+        "screenPageViews": 89,
+        "engagementRate": 0.871,
+        "averageSessionDuration": 133.1069
+      },
+      {
+        "date": "2026-05-27",
+        "sessions": 18,
+        "totalUsers": 16,
+        "newUsers": 13,
+        "screenPageViews": 74,
+        "engagementRate": 0.9444,
+        "averageSessionDuration": 94.4817
+      },
+      {
+        "date": "2026-05-28",
+        "sessions": 22,
+        "totalUsers": 19,
+        "newUsers": 13,
+        "screenPageViews": 121,
+        "engagementRate": 0.9091,
+        "averageSessionDuration": 100.1243
+      },
+      {
+        "date": "2026-05-29",
+        "sessions": 21,
+        "totalUsers": 20,
+        "newUsers": 18,
+        "screenPageViews": 58,
+        "engagementRate": 0.9524,
+        "averageSessionDuration": 131.6139
+      },
+      {
+        "date": "2026-05-30",
+        "sessions": 9,
+        "totalUsers": 9,
+        "newUsers": 6,
+        "screenPageViews": 23,
+        "engagementRate": 0.8889,
+        "averageSessionDuration": 11.6572
+      },
+      {
+        "date": "2026-05-31",
+        "sessions": 16,
+        "totalUsers": 12,
+        "newUsers": 10,
+        "screenPageViews": 50,
+        "engagementRate": 0.9375,
+        "averageSessionDuration": 351.6365
+      },
+      {
+        "date": "2026-06-01",
+        "sessions": 22,
+        "totalUsers": 21,
+        "newUsers": 17,
+        "screenPageViews": 71,
+        "engagementRate": 1,
+        "averageSessionDuration": 203.4441
+      },
+      {
+        "date": "2026-06-02",
+        "sessions": 23,
+        "totalUsers": 19,
+        "newUsers": 15,
+        "screenPageViews": 66,
+        "engagementRate": 0.9565,
+        "averageSessionDuration": 87.6942
+      },
+      {
+        "date": "2026-06-03",
+        "sessions": 42,
+        "totalUsers": 38,
+        "newUsers": 34,
+        "screenPageViews": 230,
+        "engagementRate": 0.9762,
+        "averageSessionDuration": 247.8408
+      },
+      {
+        "date": "2026-06-04",
+        "sessions": 33,
+        "totalUsers": 28,
+        "newUsers": 25,
+        "screenPageViews": 108,
+        "engagementRate": 0.9394,
+        "averageSessionDuration": 209.086
+      },
+      {
+        "date": "2026-06-05",
+        "sessions": 29,
+        "totalUsers": 27,
+        "newUsers": 21,
+        "screenPageViews": 74,
+        "engagementRate": 0.8966,
+        "averageSessionDuration": 50.564
+      },
+      {
+        "date": "2026-06-06",
+        "sessions": 12,
+        "totalUsers": 12,
+        "newUsers": 11,
+        "screenPageViews": 45,
+        "engagementRate": 0.9167,
+        "averageSessionDuration": 224.1112
+      },
+      {
+        "date": "2026-06-07",
+        "sessions": 11,
+        "totalUsers": 11,
+        "newUsers": 9,
+        "screenPageViews": 23,
+        "engagementRate": 0.7273,
+        "averageSessionDuration": 34.633
+      },
+      {
+        "date": "2026-06-08",
+        "sessions": 17,
+        "totalUsers": 15,
+        "newUsers": 9,
+        "screenPageViews": 62,
+        "engagementRate": 0.9412,
+        "averageSessionDuration": 267.166
+      }
+    ],
+    "daily_by_channel": [
+      {
+        "date": "2026-05-14",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 40,
+        "totalUsers": 35
+      },
+      {
+        "date": "2026-05-19",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 26,
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-06-03",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 24,
+        "totalUsers": 24
+      },
+      {
+        "date": "2026-05-20",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 19,
+        "totalUsers": 17
+      },
+      {
+        "date": "2026-05-26",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 19,
+        "totalUsers": 17
+      },
+      {
+        "date": "2026-05-15",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 17,
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-06-04",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 17,
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-05-22",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 16,
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-06-05",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 16,
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-05-27",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 15,
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-06-03",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 13,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-06-04",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 13,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-05-11",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-05-18",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-05-26",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 12,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-28",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 12,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-06-02",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 12,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-06-05",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-05-11",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-05-29",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-06-01",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-05-16",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 10,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-05-19",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 10,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-05-21",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 10,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-28",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 10,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-05-29",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 10,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-06-01",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 10,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-13",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 9,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-05-14",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 9,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-05-18",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 9,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-05-21",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 8,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-05-24",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 8,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-05-25",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 8,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-05-30",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 8,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-05-31",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 8,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-05-12",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-05-13",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-05-31",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-06-02",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-06-06",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-06-08",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-05-12",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-15",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-17",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-05-17",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-05-22",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 5,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-05-23",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-06-07",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-06-08",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-06-08",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 5,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-05-11",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 4,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-16",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 4,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-05-20",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-05-23",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-06-06",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-06-07",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-05-12",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-05-18",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-20",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-05-21",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-05-22",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-24",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-05-25",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-05-27",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-06-02",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-06-03",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-06-04",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-14",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-25",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-06-03",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-13",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-13",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-15",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-16",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-17",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-19",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-20",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-30",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-05-31",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-06-01",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-06-02",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-06-05",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-06-06",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-06-07",
+        "sessionDefaultChannelGroup": "AI Assistant",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-06-07",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      }
+    ],
+    "yesterday_landing_pages": [
+      {
+        "landingPagePlusQueryString": "/",
+        "sessions": 8,
+        "totalUsers": 8,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 0
+      },
+      {
+        "landingPagePlusQueryString": "/about/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/blog/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/eating-disorder-treatment-in-san-antonio-tx/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/eating-disorder-treatment-in-san-antonio-tx/?nocache=1",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/eating-disorders/binge-eating-vs-emotional-eating-clinical-differences/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/self-improvement/mental-health/preparing-for-bariatric-surgery-a-mental-health-checklist/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/self-improvement/mental-health/why-stress-eating-happens/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      }
+    ],
+    "yesterday_sources": [
+      {
+        "sessionSourceMedium": "(direct) / (none)",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "sessionSourceMedium": "google / organic",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "sessionSourceMedium": "claude.ai / referral",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "sessionSourceMedium": "glp1solutions.com / referral",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "sessionSourceMedium": "bing / organic",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "sessionSourceMedium": "duckduckgo / organic",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "sessionSourceMedium": "education.utsa.edu / referral",
+        "sessions": 1,
+        "totalUsers": 1
+      }
+    ],
+    "yesterday_devices": [
+      {
+        "deviceCategory": "desktop",
+        "sessions": 11
+      },
+      {
+        "deviceCategory": "mobile",
+        "sessions": 6
+      }
+    ],
+    "yoy_same_day": {
+      "sessions": 14,
+      "totalUsers": 13,
+      "screenPageViews": 45
+    },
+    "_wp_recent": {
+      "pages": [
+        {
+          "id": 5279,
+          "slug": "binge-eating-disorder-treatment-san-antonio",
+          "link": "https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/",
+          "title": "Binge Eating Disorder Treatment in San Antonio",
+          "date": "2026-05-20T11:14:10",
+          "modified": "2026-06-03T12:28:19",
+          "status": "publish"
+        },
+        {
+          "id": 5177,
+          "slug": "bariatric-therapy-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
+          "title": "Bariatric Therapy in San Antonio, TX",
+          "date": "2026-05-08T12:07:03",
+          "modified": "2026-06-03T12:28:16",
+          "status": "publish"
+        },
+        {
+          "id": 5176,
+          "slug": "eating-disorder-counseling-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/eating-disorder-counseling-in-san-antonio-tx/",
+          "title": "Eating Disorder Counseling in San Antonio, TX",
+          "date": "2026-05-08T12:07:12",
+          "modified": "2026-06-03T12:28:14",
+          "status": "publish"
+        },
+        {
+          "id": 5180,
+          "slug": "ozempic-behavioral-support-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/ozempic-behavioral-support-in-san-antonio-tx/",
+          "title": "Ozempic Behavioral Support in San Antonio, TX",
+          "date": "2026-05-08T12:07:21",
+          "modified": "2026-06-03T12:28:12",
+          "status": "publish"
+        },
+        {
+          "id": 5179,
+          "slug": "virtual-emotional-eating-therapy-in-texas",
+          "link": "https://www.bariatriccounselingcenter.com/virtual-emotional-eating-therapy-in-texas/",
+          "title": "Virtual Emotional Eating Therapy in Texas",
+          "date": "2026-05-08T12:07:32",
+          "modified": "2026-06-03T12:28:09",
+          "status": "publish"
+        },
+        {
+          "id": 5178,
+          "slug": "weight-management-counseling-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/weight-management-counseling-in-san-antonio-tx/",
+          "title": "Weight Management Counseling in San Antonio, TX",
+          "date": "2026-05-08T12:07:40",
+          "modified": "2026-06-03T12:28:07",
+          "status": "publish"
+        },
+        {
+          "id": 4947,
+          "slug": "weight-management-program-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/",
+          "title": "Weight Management Program in San Antonio, TX",
+          "date": "2026-03-26T11:32:22",
+          "modified": "2026-06-03T12:28:04",
+          "status": "publish"
+        }
+      ],
+      "posts": [
+        {
+          "id": 4997,
+          "slug": "why-stress-eating-happens",
+          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/why-stress-eating-happens/",
+          "title": "Why Stress Eating Happens: Understanding Why Food Can Feel Out of Control During Stress",
+          "date": "2026-04-24T13:26:28",
+          "modified": "2026-06-04T08:28:12",
+          "status": "publish"
+        },
+        {
+          "id": 5287,
+          "slug": "day-inside-bcc-binge-eating-iop",
+          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/day-inside-bcc-binge-eating-iop/",
+          "title": "A Day Inside BCC&#8217;s Binge Eating IOP",
+          "date": "2026-06-04T08:27:29",
+          "modified": "2026-06-04T08:27:29",
+          "status": "publish"
+        },
+        {
+          "id": 5286,
+          "slug": "binge-eating-disorder-ozempic-what-nobody-tells-you",
+          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-disorder-ozempic-what-nobody-tells-you/",
+          "title": "Binge Eating Disorder and Ozempic: What Nobody Tells You",
+          "date": "2026-06-04T08:27:23",
+          "modified": "2026-06-04T08:27:23",
+          "status": "publish"
+        },
+        {
+          "id": 5285,
+          "slug": "binge-eating-vs-emotional-eating-clinical-differences",
+          "link": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-vs-emotional-eating-clinical-differences/",
+          "title": "Binge Eating vs. Emotional Eating: The Clinical Differences That Matter",
+          "date": "2026-06-04T08:27:16",
+          "modified": "2026-06-04T08:27:16",
+          "status": "publish"
+        },
+        {
+          "id": 5290,
+          "slug": "pre-bariatric-surgery-binge-eating-screening",
+          "link": "https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/",
+          "title": "Pre-Bariatric Surgery and Binge Eating Screening: Why Surgeons Want It Caught Before the OR",
+          "date": "2026-06-04T08:27:03",
+          "modified": "2026-06-04T08:27:03",
+          "status": "publish"
+        },
+        {
+          "id": 5289,
+          "slug": "binge-eating-in-men-why-40-percent-of-cases-missed",
+          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-in-men-why-40-percent-of-cases-missed/",
+          "title": "Binge Eating in Men: Why 40% of Cases Get Missed",
+          "date": "2026-06-04T08:26:57",
+          "modified": "2026-06-04T08:26:57",
+          "status": "publish"
+        }
+      ]
+    }
+  },
+  "gsc_data": {
+    "daily_totals": [
+      {
+        "date": "2026-05-11",
+        "clicks": 5,
+        "impressions": 876,
+        "ctr": 0.0057,
+        "position": 14.47
+      },
+      {
+        "date": "2026-05-12",
+        "clicks": 2,
+        "impressions": 1134,
+        "ctr": 0.0018,
+        "position": 12.86
+      },
+      {
+        "date": "2026-05-13",
+        "clicks": 4,
+        "impressions": 857,
+        "ctr": 0.0047,
+        "position": 14.62
+      },
+      {
+        "date": "2026-05-14",
+        "clicks": 3,
+        "impressions": 1022,
+        "ctr": 0.0029,
+        "position": 16.35
+      },
+      {
+        "date": "2026-05-15",
+        "clicks": 2,
+        "impressions": 948,
+        "ctr": 0.0021,
+        "position": 15.32
+      },
+      {
+        "date": "2026-05-16",
+        "clicks": 1,
+        "impressions": 840,
+        "ctr": 0.0012,
+        "position": 17.0
+      },
+      {
+        "date": "2026-05-17",
+        "clicks": 3,
+        "impressions": 938,
+        "ctr": 0.0032,
+        "position": 16.6
+      },
+      {
+        "date": "2026-05-18",
+        "clicks": 4,
+        "impressions": 879,
+        "ctr": 0.0046,
+        "position": 18.27
+      },
+      {
+        "date": "2026-05-19",
+        "clicks": 5,
+        "impressions": 821,
+        "ctr": 0.0061,
+        "position": 15.22
+      },
+      {
+        "date": "2026-05-20",
+        "clicks": 3,
+        "impressions": 1041,
+        "ctr": 0.0029,
+        "position": 15.89
+      },
+      {
+        "date": "2026-05-21",
+        "clicks": 7,
+        "impressions": 1413,
+        "ctr": 0.005,
+        "position": 13.77
+      },
+      {
+        "date": "2026-05-22",
+        "clicks": 4,
+        "impressions": 1482,
+        "ctr": 0.0027,
+        "position": 15.79
+      },
+      {
+        "date": "2026-05-23",
+        "clicks": 2,
+        "impressions": 1503,
+        "ctr": 0.0013,
+        "position": 20.17
+      },
+      {
+        "date": "2026-05-24",
+        "clicks": 5,
+        "impressions": 1461,
+        "ctr": 0.0034,
+        "position": 19.17
+      },
+      {
+        "date": "2026-05-25",
+        "clicks": 5,
+        "impressions": 1022,
+        "ctr": 0.0049,
+        "position": 15.38
+      },
+      {
+        "date": "2026-05-26",
+        "clicks": 6,
+        "impressions": 1130,
+        "ctr": 0.0053,
+        "position": 14.77
+      },
+      {
+        "date": "2026-05-27",
+        "clicks": 2,
+        "impressions": 1283,
+        "ctr": 0.0016,
+        "position": 15.99
+      },
+      {
+        "date": "2026-05-28",
+        "clicks": 6,
+        "impressions": 1550,
+        "ctr": 0.0039,
+        "position": 13.61
+      },
+      {
+        "date": "2026-05-29",
+        "clicks": 5,
+        "impressions": 1354,
+        "ctr": 0.0037,
+        "position": 11.89
+      },
+      {
+        "date": "2026-05-30",
+        "clicks": 2,
+        "impressions": 1210,
+        "ctr": 0.0017,
+        "position": 11.62
+      },
+      {
+        "date": "2026-05-31",
+        "clicks": 6,
+        "impressions": 1289,
+        "ctr": 0.0047,
+        "position": 11.79
+      },
+      {
+        "date": "2026-06-01",
+        "clicks": 6,
+        "impressions": 1456,
+        "ctr": 0.0041,
+        "position": 10.34
+      },
+      {
+        "date": "2026-06-02",
+        "clicks": 9,
+        "impressions": 1533,
+        "ctr": 0.0059,
+        "position": 9.6
+      },
+      {
+        "date": "2026-06-03",
+        "clicks": 5,
+        "impressions": 1738,
+        "ctr": 0.0029,
+        "position": 10.09
+      },
+      {
+        "date": "2026-06-04",
+        "clicks": 9,
+        "impressions": 1659,
+        "ctr": 0.0054,
+        "position": 10.63
+      },
+      {
+        "date": "2026-06-05",
+        "clicks": 4,
+        "impressions": 1271,
+        "ctr": 0.0031,
+        "position": 9.67
+      },
+      {
+        "date": "2026-06-06",
+        "clicks": 5,
+        "impressions": 915,
+        "ctr": 0.0055,
+        "position": 10.26
+      },
+      {
+        "date": "2026-06-07",
+        "clicks": 5,
+        "impressions": 1255,
+        "ctr": 0.004,
+        "position": 11.61
+      }
+    ],
+    "yesterday_queries": [],
+    "yesterday_pages": []
+  },
+  "gmb_data": null,
+  "wp_recent_changes": {
+    "pages": [
+      {
+        "id": 5279,
+        "slug": "binge-eating-disorder-treatment-san-antonio",
+        "link": "https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/",
+        "title": "Binge Eating Disorder Treatment in San Antonio",
+        "date": "2026-05-20T11:14:10",
+        "modified": "2026-06-03T12:28:19",
+        "status": "publish"
+      },
+      {
+        "id": 5177,
+        "slug": "bariatric-therapy-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
+        "title": "Bariatric Therapy in San Antonio, TX",
+        "date": "2026-05-08T12:07:03",
+        "modified": "2026-06-03T12:28:16",
+        "status": "publish"
+      },
+      {
+        "id": 5176,
+        "slug": "eating-disorder-counseling-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/eating-disorder-counseling-in-san-antonio-tx/",
+        "title": "Eating Disorder Counseling in San Antonio, TX",
+        "date": "2026-05-08T12:07:12",
+        "modified": "2026-06-03T12:28:14",
+        "status": "publish"
+      },
+      {
+        "id": 5180,
+        "slug": "ozempic-behavioral-support-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/ozempic-behavioral-support-in-san-antonio-tx/",
+        "title": "Ozempic Behavioral Support in San Antonio, TX",
+        "date": "2026-05-08T12:07:21",
+        "modified": "2026-06-03T12:28:12",
+        "status": "publish"
+      },
+      {
+        "id": 5179,
+        "slug": "virtual-emotional-eating-therapy-in-texas",
+        "link": "https://www.bariatriccounselingcenter.com/virtual-emotional-eating-therapy-in-texas/",
+        "title": "Virtual Emotional Eating Therapy in Texas",
+        "date": "2026-05-08T12:07:32",
+        "modified": "2026-06-03T12:28:09",
+        "status": "publish"
+      },
+      {
+        "id": 5178,
+        "slug": "weight-management-counseling-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/weight-management-counseling-in-san-antonio-tx/",
+        "title": "Weight Management Counseling in San Antonio, TX",
+        "date": "2026-05-08T12:07:40",
+        "modified": "2026-06-03T12:28:07",
+        "status": "publish"
+      },
+      {
+        "id": 4947,
+        "slug": "weight-management-program-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/",
+        "title": "Weight Management Program in San Antonio, TX",
+        "date": "2026-03-26T11:32:22",
+        "modified": "2026-06-03T12:28:04",
+        "status": "publish"
+      }
+    ],
+    "posts": [
+      {
+        "id": 4997,
+        "slug": "why-stress-eating-happens",
+        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/why-stress-eating-happens/",
+        "title": "Why Stress Eating Happens: Understanding Why Food Can Feel Out of Control During Stress",
+        "date": "2026-04-24T13:26:28",
+        "modified": "2026-06-04T08:28:12",
+        "status": "publish"
+      },
+      {
+        "id": 5287,
+        "slug": "day-inside-bcc-binge-eating-iop",
+        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/day-inside-bcc-binge-eating-iop/",
+        "title": "A Day Inside BCC&#8217;s Binge Eating IOP",
+        "date": "2026-06-04T08:27:29",
+        "modified": "2026-06-04T08:27:29",
+        "status": "publish"
+      },
+      {
+        "id": 5286,
+        "slug": "binge-eating-disorder-ozempic-what-nobody-tells-you",
+        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-disorder-ozempic-what-nobody-tells-you/",
+        "title": "Binge Eating Disorder and Ozempic: What Nobody Tells You",
+        "date": "2026-06-04T08:27:23",
+        "modified": "2026-06-04T08:27:23",
+        "status": "publish"
+      },
+      {
+        "id": 5285,
+        "slug": "binge-eating-vs-emotional-eating-clinical-differences",
+        "link": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-vs-emotional-eating-clinical-differences/",
+        "title": "Binge Eating vs. Emotional Eating: The Clinical Differences That Matter",
+        "date": "2026-06-04T08:27:16",
+        "modified": "2026-06-04T08:27:16",
+        "status": "publish"
+      },
+      {
+        "id": 5290,
+        "slug": "pre-bariatric-surgery-binge-eating-screening",
+        "link": "https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/",
+        "title": "Pre-Bariatric Surgery and Binge Eating Screening: Why Surgeons Want It Caught Before the OR",
+        "date": "2026-06-04T08:27:03",
+        "modified": "2026-06-04T08:27:03",
+        "status": "publish"
+      },
+      {
+        "id": 5289,
+        "slug": "binge-eating-in-men-why-40-percent-of-cases-missed",
+        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-in-men-why-40-percent-of-cases-missed/",
+        "title": "Binge Eating in Men: Why 40% of Cases Get Missed",
+        "date": "2026-06-04T08:26:57",
+        "modified": "2026-06-04T08:26:57",
+        "status": "publish"
+      }
+    ]
+  },
+  "launches_this_run": [
+    {
+      "launched_at": "2026-06-03",
+      "type": "page-modify",
+      "title": "Binge Eating Disorder Treatment in San Antonio",
+      "url": "/binge-eating-disorder-treatment-san-antonio/",
+      "wp_id": 5279,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-06-03-page-modify-5279--binge-eating-disorder-treatment-san-antonio",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "page-modify",
+      "title": "Bariatric Therapy in San Antonio, TX",
+      "url": "/bariatric-therapy-in-san-antonio-tx/",
+      "wp_id": 5177,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-06-03-page-modify-5177--bariatric-therapy-in-san-antonio-tx",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "page-modify",
+      "title": "Eating Disorder Counseling in San Antonio, TX",
+      "url": "/eating-disorder-counseling-in-san-antonio-tx/",
+      "wp_id": 5176,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-06-03-page-modify-5176--eating-disorder-counseling-in-san-antonio-tx",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "page-modify",
+      "title": "Ozempic Behavioral Support in San Antonio, TX",
+      "url": "/ozempic-behavioral-support-in-san-antonio-tx/",
+      "wp_id": 5180,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-06-03-page-modify-5180--ozempic-behavioral-support-in-san-antonio-tx",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "page-modify",
+      "title": "Virtual Emotional Eating Therapy in Texas",
+      "url": "/virtual-emotional-eating-therapy-in-texas/",
+      "wp_id": 5179,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-06-03-page-modify-5179--virtual-emotional-eating-therapy-in-texas",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "page-modify",
+      "title": "Weight Management Counseling in San Antonio, TX",
+      "url": "/weight-management-counseling-in-san-antonio-tx/",
+      "wp_id": 5178,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-06-03-page-modify-5178--weight-management-counseling-in-san-antonio-tx",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "page-modify",
+      "title": "Weight Management Program in San Antonio, TX",
+      "url": "/weight-management-program-in-san-antonio-tx/",
+      "wp_id": 4947,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-06-03-page-modify-4947--weight-management-program-in-san-antonio-tx",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "post-modify",
+      "title": "Why Stress Eating Happens: Understanding Why Food Can Feel Out of Control During Stress",
+      "url": "/self-improvement/mental-health/why-stress-eating-happens/",
+      "wp_id": 4997,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-06-04-post-modify-4997--self-improvement-mental-health-why-stress-eating-happens",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "post-publish",
+      "title": "A Day Inside BCC&#8217;s Binge Eating IOP",
+      "url": "/self-improvement/mental-health/day-inside-bcc-binge-eating-iop/",
+      "wp_id": 5287,
+      "slug": "day-inside-bcc-binge-eating-iop",
+      "target_keyword": "day inside bcc binge eating iop",
+      "source": "wp-rest",
+      "confidence": "high",
+      "id": "auto-2026-06-04-post-publish-5287--self-improvement-mental-health-day-inside-bcc-binge-eating-iop",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "post-publish",
+      "title": "Binge Eating Disorder and Ozempic: What Nobody Tells You",
+      "url": "/self-improvement/mental-health/binge-eating-disorder-ozempic-what-nobody-tells-you/",
+      "wp_id": 5286,
+      "slug": "binge-eating-disorder-ozempic-what-nobody-tells-you",
+      "target_keyword": "binge eating disorder ozempic what nobody tells you",
+      "source": "wp-rest",
+      "confidence": "high",
+      "id": "auto-2026-06-04-post-publish-5286--self-improvement-mental-health-binge-eating-disorder-ozempic-what-nobody-tells-you",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "post-publish",
+      "title": "Binge Eating vs. Emotional Eating: The Clinical Differences That Matter",
+      "url": "/eating-disorders/binge-eating-vs-emotional-eating-clinical-differences/",
+      "wp_id": 5285,
+      "slug": "binge-eating-vs-emotional-eating-clinical-differences",
+      "target_keyword": "binge eating vs emotional eating clinical differences",
+      "source": "wp-rest",
+      "confidence": "high",
+      "id": "auto-2026-06-04-post-publish-5285--eating-disorders-binge-eating-vs-emotional-eating-clinical-differences",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "post-publish",
+      "title": "Pre-Bariatric Surgery and Binge Eating Screening: Why Surgeons Want It Caught Before the OR",
+      "url": "/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/",
+      "wp_id": 5290,
+      "slug": "pre-bariatric-surgery-binge-eating-screening",
+      "target_keyword": "pre bariatric surgery binge eating screening",
+      "source": "wp-rest",
+      "confidence": "high",
+      "id": "auto-2026-06-04-post-publish-5290--self-improvement-weight-loss-journey-self-improvement-pre-bariatric-surgery-binge-eating-s",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "post-publish",
+      "title": "Binge Eating in Men: Why 40% of Cases Get Missed",
+      "url": "/self-improvement/mental-health/binge-eating-in-men-why-40-percent-of-cases-missed/",
+      "wp_id": 5289,
+      "slug": "binge-eating-in-men-why-40-percent-of-cases-missed",
+      "target_keyword": "binge eating in men why 40 percent of cases missed",
+      "source": "wp-rest",
+      "confidence": "high",
+      "id": "auto-2026-06-04-post-publish-5289--self-improvement-mental-health-binge-eating-in-men-why-40-percent-of-cases-missed",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "sitemap-touch",
+      "title": "/category/self-improvement/mental-health/",
+      "url": "/category/self-improvement/mental-health/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-06-04-sitemap-touch--category-self-improvement-mental-health",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "sitemap-touch",
+      "title": "/category/self-improvement/weight-loss-journey-self-improvement/",
+      "url": "/category/self-improvement/weight-loss-journey-self-improvement/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-06-04-sitemap-touch--category-self-improvement-weight-loss-journey-self-improvement",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "sitemap-touch",
+      "title": "/category/eating-disorders/",
+      "url": "/category/eating-disorders/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-06-04-sitemap-touch--category-eating-disorders",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "sitemap-touch",
+      "title": "/category/weight-loss-counseling/",
+      "url": "/category/weight-loss-counseling/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-06-04-sitemap-touch--category-weight-loss-counseling",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "sitemap-touch",
+      "title": "/category/stress-management/",
+      "url": "/category/stress-management/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-06-04-sitemap-touch--category-stress-management",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "sitemap-touch",
+      "title": "/category/eating-disorders/binge-eating/",
+      "url": "/category/eating-disorders/binge-eating/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-06-04-sitemap-touch--category-eating-disorders-binge-eating",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "sitemap-touch",
+      "title": "/category/emotional-eating/",
+      "url": "/category/emotional-eating/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-06-04-sitemap-touch--category-emotional-eating",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "sitemap-touch",
+      "title": "/author/alisa/",
+      "url": "/author/alisa/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-06-04-sitemap-touch--author-alisa",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "sitemap-touch",
+      "title": "/author/tmccord845/",
+      "url": "/author/tmccord845/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-06-04-sitemap-touch--author-tmccord845",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "sitemap-touch",
+      "title": "/author/austintude/",
+      "url": "/author/austintude/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-06-03-sitemap-touch--author-austintude",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-08",
+      "type": "git-commit",
+      "title": "bcc: weekly SEO snapshot 2026-06-08 (corrected lost_visibility classification)",
+      "commit_hash": "99e0408",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "medium",
+      "id": "auto-2026-06-08-git-commit-99e0408",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-08",
+      "type": "git-commit",
+      "title": "bcc: weekly SEO snapshot 2026-06-08",
+      "commit_hash": "9263172",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "medium",
+      "id": "auto-2026-06-08-git-commit-9263172",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-08",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-06-08",
+      "commit_hash": "6939df5",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-08-git-commit-6939df5",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-08",
+      "type": "git-commit",
+      "title": "bcc marketing pulse: 2026-06-08",
+      "commit_hash": "6e6a250",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-08-git-commit-6e6a250",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "git-commit",
+      "title": "BCC pulse 2026-06-04: add 28d period-over-period block",
+      "commit_hash": "7a30a51",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-04-git-commit-7a30a51",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-06-04",
+      "commit_hash": "10a2c4d",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-04-git-commit-10a2c4d",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "git-commit",
+      "title": "bcc marketing pulse: 2026-06-04",
+      "commit_hash": "4b7d000",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-04-git-commit-4b7d000",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-04",
+      "type": "git-commit",
+      "title": "bcc: weekly SEO snapshot 2026-06-04",
+      "commit_hash": "dcc24c0",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "medium",
+      "id": "auto-2026-06-04-git-commit-dcc24c0",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-06-03",
+      "commit_hash": "397d25f",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-03-git-commit-397d25f",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-06-03",
+      "commit_hash": "8f90639",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-03-git-commit-8f90639",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-06-03",
+      "commit_hash": "cb5628c",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-03-git-commit-cb5628c",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-06-03",
+      "commit_hash": "58d009d",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-03-git-commit-58d009d",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "git-commit",
+      "title": "bcc marketing pulse: 2026-06-03",
+      "commit_hash": "213df2d",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-03-git-commit-213df2d",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "git-commit",
+      "title": "bcc marketing pulse: 2026-06-03",
+      "commit_hash": "79d8cd3",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-03-git-commit-79d8cd3",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "git-commit",
+      "title": "bcc marketing pulse: 2026-06-03",
+      "commit_hash": "4461a55",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-03-git-commit-4461a55",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "git-commit",
+      "title": "bcc marketing pulse: 2026-06-03",
+      "commit_hash": "3072b1d",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-03-git-commit-3072b1d",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    },
+    {
+      "launched_at": "2026-06-03",
+      "type": "git-commit",
+      "title": "bcc daily pulse: backfill June 1-3 data",
+      "commit_hash": "998c60d",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-06-03-git-commit-998c60d",
+      "first_seen_at": "2026-06-09T08:03:42.586778Z"
+    }
+  ],
+  "launches_ledger_size": 122,
+  "paid_social_spikes": [],
+  "git_commits_recent": [
+    {
+      "date": "2026-06-08T05:22:23-05:00",
+      "hash": "99e0408",
+      "author": "Daniel Bisett",
+      "subject": "bcc: weekly SEO snapshot 2026-06-08 (corrected lost_visibility classification)"
+    },
+    {
+      "date": "2026-06-08T05:19:58-05:00",
+      "hash": "9263172",
+      "author": "Daniel Bisett",
+      "subject": "bcc: weekly SEO snapshot 2026-06-08"
+    },
+    {
+      "date": "2026-06-08T04:31:53-05:00",
+      "hash": "6939df5",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-06-08"
+    },
+    {
+      "date": "2026-06-08T04:09:42-05:00",
+      "hash": "6e6a250",
+      "author": "Daniel Bisett",
+      "subject": "bcc marketing pulse: 2026-06-08"
+    },
+    {
+      "date": "2026-06-08T03:14:16-05:00",
+      "hash": "0e4e6c5",
+      "author": "Daniel Bisett",
+      "subject": "autosync from WeRockDM @ 2026-06-08T03:14:16"
+    },
+    {
+      "date": "2026-06-07T03:14:15-05:00",
+      "hash": "68f3304",
+      "author": "Daniel Bisett",
+      "subject": "autosync from WeRockDM @ 2026-06-07T03:14:15"
+    },
+    {
+      "date": "2026-06-06T03:14:14-05:00",
+      "hash": "15e7696",
+      "author": "Daniel Bisett",
+      "subject": "autosync from WeRockDM @ 2026-06-06T03:14:14"
+    },
+    {
+      "date": "2026-06-05T03:14:13-05:00",
+      "hash": "38aef4d",
+      "author": "Daniel Bisett",
+      "subject": "autosync from WeRockDM @ 2026-06-05T03:14:13"
+    },
+    {
+      "date": "2026-06-04T11:01:43-05:00",
+      "hash": "7a30a51",
+      "author": "Daniel Bisett",
+      "subject": "BCC pulse 2026-06-04: add 28d period-over-period block"
+    },
+    {
+      "date": "2026-06-04T09:30:19-05:00",
+      "hash": "10a2c4d",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-06-04"
+    },
+    {
+      "date": "2026-06-04T09:25:37-05:00",
+      "hash": "4b7d000",
+      "author": "Daniel Bisett",
+      "subject": "bcc marketing pulse: 2026-06-04"
+    },
+    {
+      "date": "2026-06-04T09:06:27-05:00",
+      "hash": "dcc24c0",
+      "author": "Daniel Bisett",
+      "subject": "bcc: weekly SEO snapshot 2026-06-04"
+    },
+    {
+      "date": "2026-06-04T03:14:14-05:00",
+      "hash": "0940cf8",
+      "author": "Daniel Bisett",
+      "subject": "autosync from WeRockDM @ 2026-06-04T03:14:14"
+    },
+    {
+      "date": "2026-06-03T13:26:33-05:00",
+      "hash": "397d25f",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-06-03"
+    },
+    {
+      "date": "2026-06-03T13:18:59-05:00",
+      "hash": "8f90639",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-06-03"
+    },
+    {
+      "date": "2026-06-03T13:08:08-05:00",
+      "hash": "cb5628c",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-06-03"
+    },
+    {
+      "date": "2026-06-03T12:45:50-05:00",
+      "hash": "58d009d",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-06-03"
+    },
+    {
+      "date": "2026-06-03T12:20:38-05:00",
+      "hash": "213df2d",
+      "author": "Daniel Bisett",
+      "subject": "bcc marketing pulse: 2026-06-03"
+    },
+    {
+      "date": "2026-06-03T12:12:58-05:00",
+      "hash": "79d8cd3",
+      "author": "Daniel Bisett",
+      "subject": "bcc marketing pulse: 2026-06-03"
+    },
+    {
+      "date": "2026-06-03T12:10:05-05:00",
+      "hash": "4461a55",
+      "author": "Daniel Bisett",
+      "subject": "bcc marketing pulse: 2026-06-03"
+    }
+  ]
+}
