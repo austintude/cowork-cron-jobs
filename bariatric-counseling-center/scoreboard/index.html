@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>BCC Rank Scoreboard</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#f4f6f8;color:#1d2733}
+.wrap{max-width:1040px;margin:0 auto;padding:24px 18px 60px}
+h1{font-size:22px;margin:0 0 2px}
+.sub{color:#5b6b7c;font-size:13px;margin:0 0 16px}
+.legend{font-size:12px;color:#5b6b7c;margin:10px 0 20px}
+.bucket{background:#fff;border:1px solid #e3e8ee;border-radius:12px;margin:0 0 18px;overflow:hidden}
+.bucket>h2{font-size:15px;margin:0;padding:13px 16px;background:#0f2f4a;color:#fff;font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:9px 16px;border-top:1px solid #eef1f5}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:#7a8a9a;background:#fafbfc}
+td.term{font-weight:500}
+.star{color:#e6a400;font-weight:700;margin-right:5px}
+.note{display:block;font-size:11px;color:#9aa7b4;font-weight:400;margin-top:2px}
+.badge{display:inline-block;min-width:62px;text-align:center;padding:3px 8px;border-radius:6px;font-weight:600;font-size:12.5px}
+.p1{background:#d6f5e0;color:#0a7a3d}.p2{background:#eaf6d6;color:#5a7a0a}.p3{background:#fdf2cf;color:#8a6d00}
+.p4{background:#fde3cf;color:#9a4d00}.p5{background:#fdd6d6;color:#a02020}.none{background:#eef1f5;color:#8a98a6}
+.delta{font-weight:600;font-size:13px}.up{color:#0a7a3d}.down{color:#c0392b}.flat{color:#8a98a6}
+.mover{display:inline-block;background:#f0f4f8;border:1px solid #e3e8ee;border-radius:20px;padding:4px 11px;margin:3px 5px 3px 0;font-size:12.5px}
+.dot{display:inline-block;width:14px;height:14px;border-radius:50%}.yes{background:#1f9d55}.no{background:#e0e4e8;border:1px solid #cdd4db}
+footer{margin-top:26px;font-size:11.5px;color:#8a98a6;line-height:1.6}
+#err{background:#fdecea;border:1px solid #f5c6cb;color:#9a2622;padding:12px 16px;border-radius:8px;font-size:13px;display:none}
+.muted{color:#9aa7b4}
+</style></head>
+<body><div class="wrap">
+<h1>BCC Rank Scoreboard</h1>
+<p class="sub" id="sub">Loading latest data&hellip;</p>
+<div id="err"></div>
+<div id="movers" style="margin-bottom:16px"></div>
+<p class="legend">&#9733; = a term Todd test-searches &middot; <b>p# &middot; #pos</b> = page and exact position &middot;
+<span class="up">&#9650;</span> moved up / <span class="down">&#9660;</span> moved down vs last week (WoW) and ~4 weeks ago (MoM) &middot; tracked to top 50.</p>
+<div id="body"></div>
+<footer id="foot"></footer>
+</div>
+<script>
+const REPO="austintude/cowork-cron-jobs", BRANCH="main";
+const BASE="https://raw.githubusercontent.com/"+REPO+"/"+BRANCH+"/bariatric-counseling-center/scoreboard/scoreboard-data.json";
+const DATA_URL=BASE+"?t="+Date.now();
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function pageCls(p){return (p&&p<=5)?("p"+p):"p5";}
+function badge(pos,page){
+  if(pos==null) return '<span class="badge none">not&nbsp;top&nbsp;50</span>';
+  return '<span class="badge '+pageCls(page)+'">p'+page+' &middot; #'+pos+'</span>';
+}
+function darrow(d){
+  if(d==null) return '<span class="delta flat">&mdash;</span>';
+  if(d>0) return '<span class="delta up">&#9650; '+d+'</span>';
+  if(d<0) return '<span class="delta down">&#9660; '+Math.abs(d)+'</span>';
+  return '<span class="delta flat">&#8211; 0</span>';
+}
+function spark(history){
+  const pts=[]; (history||[]).forEach((h,i)=>{ if(h.pos!=null) pts.push([i,h.pos]); });
+  if(pts.length<2) return '<span class="muted">--</span>';
+  const xs=pts.map(p=>p[0]),ys=pts.map(p=>p[1]);
+  const minx=Math.min(...xs),maxx=Math.max(...xs),lo=Math.min(...ys),hi=Math.max(...ys);
+  const w=84,h=22,span=(maxx-minx)||1,rng=(hi-lo)||1;
+  const coords=pts.map(([x,y])=>(((x-minx)/span*(w-4)+2).toFixed(1))+","+(((y-lo)/rng*(h-6)+3).toFixed(1))).join(" ");
+  const color=(ys[ys.length-1]<=ys[0])?"#1f9d55":"#c0392b";
+  return '<svg width="'+w+'" height="'+h+'"><polyline fill="none" stroke="'+color+'" stroke-width="1.6" points="'+coords+'"/></svg>';
+}
+function noteFor(r){
+  if(r.note) return '<span class="note">'+esc(r.note)+'</span>';
+  if(r.current==null && r.checked) return '<span class="note">checked &mdash; not in top 50</span>';
+  if(r.current==null && !r.ever_ranked) return '<span class="note">not yet tracked</span>';
+  return '';
+}
+function render(m){
+  document.getElementById("sub").innerHTML="What we rank for in "+(esc(m.geo)||"San Antonio")+
+    ", and how it's moving. As of <b>"+esc(m.as_of)+"</b> &middot; "+m.snapshot_count+" snapshots on file.";
+  // movers
+  let mv="";
+  (m.movers||[]).slice(0,8).forEach(x=>{
+    const arrow=x.wow>0?"&#9650;":"&#9660;", cls=x.wow>0?"up":"down";
+    const cur=x.current!=null?("#"+x.current):"out";
+    mv+='<span class="mover"><span class="'+cls+'">'+arrow+' '+Math.abs(x.wow)+'</span> &nbsp;'+esc(x.term)+
+        ' <small class="muted">('+cur+')</small></span>';
+  });
+  document.getElementById("movers").innerHTML=mv;
+  // buckets
+  let b="";
+  (m.buckets||[]).forEach(bk=>{
+    b+='<div class="bucket"><h2>'+esc(bk.label)+'</h2><table>'+
+       '<tr><th>Keyword</th><th>This week</th><th>WoW</th><th>MoM</th><th>8-wk trend</th></tr>';
+    (bk.rows||[]).forEach(r=>{
+      const star=r.todd_priority?'<span class="star">&#9733;</span>':'';
+      b+='<tr><td class="term">'+star+esc(r.term)+noteFor(r)+'</td><td>'+badge(r.current,r.current_page)+
+         '</td><td>'+darrow(r.wow)+'</td><td>'+darrow(r.mom)+'</td><td>'+spark(r.history)+'</td></tr>';
+    });
+    b+='</table></div>';
+  });
+  b+=renderAI(m);
+  document.getElementById("body").innerHTML=b;
+  document.getElementById("foot").innerHTML="Source: live Google SERP snapshots + GSC. AI panel: weekly agentic sweep of Google AI Mode / ChatGPT / Claude / Perplexity / Gemini. "+
+    "Ahrefs is gated, so positions come from live checks. Data generated "+esc(m.generated_at||"")+" &middot; page fetched "+new Date().toLocaleString()+".";
+}
+function renderAI(m){
+  const ai=m.ai, labels={google_ai_mode:"Google AI Mode",chatgpt:"ChatGPT",claude:"Claude",perplexity:"Perplexity",gemini:"Gemini"};
+  let out='<div class="bucket"><h2>AI visibility &mdash; do we show up when people ask the robots?</h2>';
+  if(!ai){
+    return out+'<table><tr><td style="color:#8a98a6;padding:16px">No AI sweep on file yet. The weekly agentic sweep will populate this: for each eating-disorder query, whether BCC appears in Google AI Mode, ChatGPT, Claude, Perplexity and Gemini, and which competitors do.</td></tr></table></div>';
+  }
+  const surf=ai.surfaces||["google_ai_mode","chatgpt","claude","perplexity","gemini"];
+  out+='<table><tr><th>Query</th>'; surf.forEach(s=>out+='<th style="font-size:11px">'+(labels[s]||s)+'</th>');
+  out+='<th style="font-size:11px">Competitors named</th></tr>';
+  (ai.queries||[]).forEach(row=>{
+    out+='<tr><td class="term">'+esc(row.query||"")+'</td>';
+    surf.forEach(s=>{ out+='<td><span class="dot '+((row.bcc_present||{})[s]?"yes":"no")+'"></span></td>'; });
+    out+='<td style="color:#5b6b7c">'+esc((row.competitors_named||[]).join(", "))+'</td></tr>';
+  });
+  return out+'</table><div style="padding:8px 16px;font-size:11.5px;color:#8a98a6">As of '+esc(ai.date||"")+' &middot; green = BCC mentioned.</div></div>';
+}
+fetch(DATA_URL,{cache:"no-store"})
+  .then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+  .then(render)
+  .catch(e=>{
+    document.getElementById("sub").textContent="";
+    const el=document.getElementById("err"); el.style.display="block";
+    el.innerHTML="Couldn't load data from GitHub ("+esc(e.message)+"). The data file may not be pushed to the repo yet: <br><code>"+BASE+"</code>";
+  });
+</script>
+</body></html>

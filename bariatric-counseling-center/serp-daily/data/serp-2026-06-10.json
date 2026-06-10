@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-10",
+  "source": "Live Google SERP (Claude-in-Chrome incognito, same-origin paginated fetch to top 50)",
+  "geo": "San Antonio, TX",
+  "note": "Seed run of Todd's starred terms. Google throttled same-origin fetch after ~5 multi-page queries (returned verify interstitials = depth 0); those terms left for recheck rather than guessed. No CAPTCHA solved.",
+  "results": [
+    {"keyword": "eating disorder san antonio", "position": 16, "esperanza_position": 2, "checked": true},
+    {"keyword": "eating disorders san antonio", "position": 36, "esperanza_position": 1, "checked": true},
+    {"keyword": "overeaters anonymous san antonio", "position": null, "esperanza_position": 19, "checked": true, "note": "not in top 50"}
+  ],
+  "pending_recheck": ["binge eating san antonio", "food addiction san antonio", "food addiction therapy", "overeaters", "binge eating"]
+}
