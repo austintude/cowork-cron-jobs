@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-10",
+  "source": "Live AI Search sweep via Claude-in-Chrome",
+  "surfaces": ["perplexity", "google_ai_mode", "chatgpt", "claude", "gemini"],
+  "note": "Perplexity swept live this run. Google AI Mode + ChatGPT / Claude / Gemini are pending: Google AI Mode redirects to a non-scrapable surface in this browser, and the chatbots need a signed-in session. Those columns show a dash (not yet checked), not an absence.",
+  "queries": [
+    {
+      "query": "best eating disorder treatment center in San Antonio",
+      "bcc_present": {"perplexity": true},
+      "bcc_rank": {"perplexity": 2},
+      "competitors_named": ["Eating Recovery Center", "Esperanza", "Alamo Area Resource Center", "Sherwood Couples Counseling", "Purple Couch Therapy"]
+    },
+    {
+      "query": "binge eating disorder help in San Antonio",
+      "bcc_present": {"perplexity": false},
+      "competitors_named": ["Eating Recovery Center", "Esperanza", "Monarch Behavioral Health", "Eating Disorder Foundation of South Texas"]
+    },
+    {
+      "query": "bariatric surgery counseling & psych evaluation in San Antonio",
+      "bcc_present": {"perplexity": true},
+      "bcc_rank": {"perplexity": 1},
+      "competitors_named": ["Sage Bariatric Institute"]
+    },
+    {
+      "query": "therapist for food addiction & compulsive overeating in San Antonio",
+      "bcc_present": {"perplexity": true},
+      "bcc_rank": {"perplexity": 1},
+      "competitors_named": ["Eating Recovery Center", "Esperanza", "Vitality Life Counseling", "Pathlight Mood & Anxiety Center", "Sherwood Couples Counseling", "Purple Couch Therapy"]
+    },
+    {
+      "query": "weight loss counseling & emotional eating therapy in San Antonio",
+      "bcc_present": {"perplexity": true},
+      "bcc_rank": {"perplexity": 1},
+      "competitors_named": ["Eating Recovery Center", "Vitality Life Counseling"]
+    }
+  ]
+}

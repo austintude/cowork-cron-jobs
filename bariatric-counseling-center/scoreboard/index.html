@@ -34,7 +34,7 @@ footer{margin-top:26px;font-size:11.5px;color:#8a98a6;line-height:1.6}
 <p class="sub" id="sub">Loading latest data&hellip;</p>
 <div id="err"></div>
 <div id="movers" style="margin-bottom:16px"></div>
-<p class="legend">&#9733; = a term Todd test-searches &middot; <b>p# &middot; #pos</b> = page and exact position &middot;
+<p class="legend">&#9733; = priority keyword &middot; <b>p# &middot; #pos</b> = page and exact position &middot;
 <span class="up">&#9650;</span> moved up / <span class="down">&#9660;</span> moved down vs last week (WoW) and ~4 weeks ago (MoM) &middot; tracked to top 50.</p>
 <div id="body"></div>
 <footer id="foot"></footer>
@@ -89,7 +89,7 @@ function render(m){
     b+='<div class="bucket"><h2>'+esc(bk.label)+'</h2><table>'+
        '<tr><th>Keyword</th><th>This week</th><th>WoW</th><th>MoM</th><th>8-wk trend</th></tr>';
     (bk.rows||[]).forEach(r=>{
-      const star=r.todd_priority?'<span class="star">&#9733;</span>':'';
+      const star=r.priority?'<span class="star">&#9733;</span>':'';
       b+='<tr><td class="term">'+star+esc(r.term)+noteFor(r)+'</td><td>'+badge(r.current,r.current_page)+
          '</td><td>'+darrow(r.wow)+'</td><td>'+darrow(r.mom)+'</td><td>'+spark(r.history)+'</td></tr>';
     });
@@ -102,19 +102,28 @@ function render(m){
 }
 function renderAI(m){
   const ai=m.ai, labels={google_ai_mode:"Google AI Mode",chatgpt:"ChatGPT",claude:"Claude",perplexity:"Perplexity",gemini:"Gemini"};
-  let out='<div class="bucket"><h2>AI visibility &mdash; do we show up when people ask the robots?</h2>';
+  let out='<div class="bucket"><h2>AI visibility &mdash; appearances in AI Search answers</h2>';
   if(!ai){
-    return out+'<table><tr><td style="color:#8a98a6;padding:16px">No AI sweep on file yet. The weekly agentic sweep will populate this: for each eating-disorder query, whether BCC appears in Google AI Mode, ChatGPT, Claude, Perplexity and Gemini, and which competitors do.</td></tr></table></div>';
+    return out+'<table><tr><td style="color:#8a98a6;padding:16px">No AI sweep on file yet. This records, for each query, whether BCC appears in Google AI Mode, ChatGPT, Claude, Perplexity and Gemini, and which competitors are named.</td></tr></table></div>';
   }
   const surf=ai.surfaces||["google_ai_mode","chatgpt","claude","perplexity","gemini"];
   out+='<table><tr><th>Query</th>'; surf.forEach(s=>out+='<th style="font-size:11px">'+(labels[s]||s)+'</th>');
   out+='<th style="font-size:11px">Competitors named</th></tr>';
   (ai.queries||[]).forEach(row=>{
     out+='<tr><td class="term">'+esc(row.query||"")+'</td>';
-    surf.forEach(s=>{ out+='<td><span class="dot '+((row.bcc_present||{})[s]?"yes":"no")+'"></span></td>'; });
+    const pres=row.bcc_present||{}, rank=row.bcc_rank||{};
+    surf.forEach(s=>{
+      const v=pres[s];
+      let cell;
+      if(v===true) cell='<span class="dot yes"></span>'+(rank[s]?(' <small style="color:#0a7a3d">#'+rank[s]+'</small>'):'');
+      else if(v===false) cell='<span class="dot no"></span>';
+      else cell='<span style="color:#c3ccd5">&ndash;</span>';
+      out+='<td>'+cell+'</td>';
+    });
     out+='<td style="color:#5b6b7c">'+esc((row.competitors_named||[]).join(", "))+'</td></tr>';
   });
-  return out+'</table><div style="padding:8px 16px;font-size:11.5px;color:#8a98a6">As of '+esc(ai.date||"")+' &middot; green = BCC mentioned.</div></div>';
+  const note=ai.note?(' '+esc(ai.note)):'';
+  return out+'</table><div style="padding:8px 16px;font-size:11.5px;color:#8a98a6">As of '+esc(ai.date||"")+' &middot; <span class="dot yes"></span> BCC named &middot; <span class="dot no"></span> not named &middot; &ndash; not yet checked.'+note+'</div></div>';
 }
 fetch(DATA_URL,{cache:"no-store"})
   .then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })

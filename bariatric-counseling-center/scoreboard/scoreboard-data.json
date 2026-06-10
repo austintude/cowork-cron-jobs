@@ -3,7 +3,7 @@
   "buckets": [
     {
       "key": "bariatric",
-      "label": "Bariatric (our wheelhouse - bariatric is in our name)",
+      "label": "Bariatric & bariatric surgery",
       "priority": 1,
       "rows": [
         {
@@ -51,7 +51,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -99,7 +99,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -147,7 +147,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -195,7 +195,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -243,7 +243,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -291,7 +291,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -339,7 +339,7 @@
           ],
           "ever_ranked": false,
           "checked": false,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -387,7 +387,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -435,7 +435,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -483,14 +483,14 @@
           ],
           "ever_ranked": false,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         }
       ]
     },
     {
       "key": "eating-disorders",
-      "label": "Eating disorders (biggest pickup opportunity per Todd)",
+      "label": "Eating disorders",
       "priority": 2,
       "rows": [
         {
@@ -538,8 +538,8 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": true,
-          "note": "Todd's exact AI-mode test query (singular)"
+          "priority": true,
+          "note": null
         },
         {
           "term": "eating disorders san antonio",
@@ -586,8 +586,8 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": true,
-          "note": "Todd's emailed term (plural)"
+          "priority": true,
+          "note": null
         },
         {
           "term": "binge eating san antonio",
@@ -634,8 +634,8 @@
           ],
           "ever_ranked": false,
           "checked": false,
-          "todd_priority": true,
-          "note": "Todd's emailed term - exact phrase, not the -treatment variant"
+          "priority": true,
+          "note": null
         },
         {
           "term": "binge eating disorder treatment",
@@ -682,7 +682,7 @@
           ],
           "ever_ranked": false,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -730,7 +730,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -778,7 +778,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -826,7 +826,7 @@
           ],
           "ever_ranked": false,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -874,7 +874,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -922,7 +922,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -970,7 +970,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -1018,14 +1018,14 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         }
       ]
     },
     {
       "key": "overeaters",
-      "label": "Overeaters / food addiction (Todd's noun strategy)",
+      "label": "Overeaters & food addiction",
       "priority": 2,
       "rows": [
         {
@@ -1073,8 +1073,8 @@
           ],
           "ever_ranked": false,
           "checked": false,
-          "todd_priority": true,
-          "note": "Todd wants the bare noun tracked; only OA ranks for it now"
+          "priority": true,
+          "note": null
         },
         {
           "term": "overeaters anonymous san antonio",
@@ -1121,8 +1121,8 @@
           ],
           "ever_ranked": false,
           "checked": true,
-          "todd_priority": true,
-          "note": "Todd searched this and we were on page 5"
+          "priority": true,
+          "note": null
         },
         {
           "term": "food addiction san antonio",
@@ -1169,8 +1169,8 @@
           ],
           "ever_ranked": false,
           "checked": false,
-          "todd_priority": true,
-          "note": "Todd's emailed term - exact phrase"
+          "priority": true,
+          "note": null
         },
         {
           "term": "food addiction therapy",
@@ -1217,8 +1217,8 @@
           ],
           "ever_ranked": false,
           "checked": false,
-          "todd_priority": true,
-          "note": "Todd's usual suspect"
+          "priority": true,
+          "note": null
         },
         {
           "term": "food addiction treatment san antonio",
@@ -1265,7 +1265,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -1313,8 +1313,8 @@
           ],
           "ever_ranked": false,
           "checked": false,
-          "todd_priority": true,
-          "note": "Todd's bare usual suspect"
+          "priority": true,
+          "note": null
         },
         {
           "term": "compulsive overeating",
@@ -1361,14 +1361,14 @@
           ],
           "ever_ranked": false,
           "checked": false,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         }
       ]
     },
     {
       "key": "weight-loss",
-      "label": "Weight loss (the universe - lower priority, defensive)",
+      "label": "Weight loss & nutrition",
       "priority": 3,
       "rows": [
         {
@@ -1416,8 +1416,8 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": true,
-          "note": "Todd's emailed term"
+          "priority": true,
+          "note": null
         },
         {
           "term": "weight loss counseling",
@@ -1464,7 +1464,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -1512,7 +1512,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -1560,7 +1560,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -1608,7 +1608,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -1656,7 +1656,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -1704,7 +1704,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -1752,7 +1752,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -1800,7 +1800,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -1848,7 +1848,7 @@
           ],
           "ever_ranked": false,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         },
         {
@@ -1896,7 +1896,7 @@
           ],
           "ever_ranked": true,
           "checked": true,
-          "todd_priority": false,
+          "priority": false,
           "note": null
         }
       ]
@@ -1929,7 +1929,90 @@
       "current": 1
     }
   ],
-  "ai": null,
+  "ai": {
+    "date": "2026-06-10",
+    "source": "Live AI Search sweep via Claude-in-Chrome",
+    "surfaces": [
+      "perplexity",
+      "google_ai_mode",
+      "chatgpt",
+      "claude",
+      "gemini"
+    ],
+    "note": "Perplexity swept live this run. Google AI Mode + ChatGPT / Claude / Gemini are pending: Google AI Mode redirects to a non-scrapable surface in this browser, and the chatbots need a signed-in session. Those columns show a dash (not yet checked), not an absence.",
+    "queries": [
+      {
+        "query": "best eating disorder treatment center in San Antonio",
+        "bcc_present": {
+          "perplexity": true
+        },
+        "bcc_rank": {
+          "perplexity": 2
+        },
+        "competitors_named": [
+          "Eating Recovery Center",
+          "Esperanza",
+          "Alamo Area Resource Center",
+          "Sherwood Couples Counseling",
+          "Purple Couch Therapy"
+        ]
+      },
+      {
+        "query": "binge eating disorder help in San Antonio",
+        "bcc_present": {
+          "perplexity": false
+        },
+        "competitors_named": [
+          "Eating Recovery Center",
+          "Esperanza",
+          "Monarch Behavioral Health",
+          "Eating Disorder Foundation of South Texas"
+        ]
+      },
+      {
+        "query": "bariatric surgery counseling & psych evaluation in San Antonio",
+        "bcc_present": {
+          "perplexity": true
+        },
+        "bcc_rank": {
+          "perplexity": 1
+        },
+        "competitors_named": [
+          "Sage Bariatric Institute"
+        ]
+      },
+      {
+        "query": "therapist for food addiction & compulsive overeating in San Antonio",
+        "bcc_present": {
+          "perplexity": true
+        },
+        "bcc_rank": {
+          "perplexity": 1
+        },
+        "competitors_named": [
+          "Eating Recovery Center",
+          "Esperanza",
+          "Vitality Life Counseling",
+          "Pathlight Mood & Anxiety Center",
+          "Sherwood Couples Counseling",
+          "Purple Couch Therapy"
+        ]
+      },
+      {
+        "query": "weight loss counseling & emotional eating therapy in San Antonio",
+        "bcc_present": {
+          "perplexity": true
+        },
+        "bcc_rank": {
+          "perplexity": 1
+        },
+        "competitors_named": [
+          "Eating Recovery Center",
+          "Vitality Life Counseling"
+        ]
+      }
+    ]
+  },
   "geo": "San Antonio, TX",
   "competitor_set": [
     "esperanzaedc.com",
@@ -1938,5 +2021,5 @@
     "INOVA"
   ],
   "snapshot_count": 12,
-  "generated_at": "2026-06-10T14:42:25.522413Z"
+  "generated_at": "2026-06-10T16:08:32.233260Z"
 }
