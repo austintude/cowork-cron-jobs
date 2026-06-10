@@ -8,12 +8,13 @@
     "gemini"
   ],
   "note": "Perplexity shown from the browser-captured run; add PERPLEXITY_API_KEY to automate it. Gemini (grounded) is the closest programmatic proxy for Google's AI answers.",
-  "generated_at": "2026-06-10T16:37:56.830890Z",
+  "generated_at": "2026-06-10T16:47:49.038751Z",
   "queries": [
     {
       "query": "best eating disorder treatment center in San Antonio",
       "bcc_present": {
         "perplexity": true,
+        "chatgpt": false,
         "claude": false,
         "gemini": true
       },
@@ -33,6 +34,7 @@
       "query": "binge eating disorder help in San Antonio",
       "bcc_present": {
         "perplexity": false,
+        "chatgpt": true,
         "claude": false,
         "gemini": false
       },
@@ -42,6 +44,7 @@
         "Eating Disorder Foundation of South Texas",
         "Eating Recovery Center",
         "Esperanza",
+        "Life Balance Nutrition",
         "Monarch Behavioral Health"
       ]
     },
@@ -49,8 +52,8 @@
       "query": "bariatric surgery counseling & psych evaluation in San Antonio",
       "bcc_present": {
         "perplexity": true,
-        "claude": true,
-        "gemini": true
+        "chatgpt": true,
+        "claude": true
       },
       "bcc_rank": {
         "perplexity": 1
@@ -63,6 +66,7 @@
       "query": "therapist for food addiction & compulsive overeating in San Antonio",
       "bcc_present": {
         "perplexity": true,
+        "chatgpt": true,
         "claude": true,
         "gemini": true
       },
@@ -84,6 +88,7 @@
       "query": "weight loss counseling & emotional eating therapy in San Antonio",
       "bcc_present": {
         "perplexity": true,
+        "chatgpt": true,
         "claude": true,
         "gemini": true
       },
@@ -93,6 +98,7 @@
       "competitors_named": [
         "Eating Recovery Center",
         "Esperanza",
+        "Life Balance Nutrition",
         "Sage Bariatric Institute",
         "Vitality Life Counseling"
       ]
