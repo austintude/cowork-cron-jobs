@@ -1,37 +1,101 @@
 {
   "date": "2026-06-10",
-  "source": "Live AI Search sweep via Claude-in-Chrome",
-  "surfaces": ["perplexity", "google_ai_mode", "chatgpt", "claude", "gemini"],
-  "note": "Perplexity swept live this run. Google AI Mode + ChatGPT / Claude / Gemini are pending: Google AI Mode redirects to a non-scrapable surface in this browser, and the chatbots need a signed-in session. Those columns show a dash (not yet checked), not an absence.",
+  "source": "AI Search sweep via official APIs (web search / grounding)",
+  "surfaces": [
+    "perplexity",
+    "chatgpt",
+    "claude",
+    "gemini"
+  ],
+  "note": "Perplexity shown from the browser-captured run; add PERPLEXITY_API_KEY to automate it. Gemini (grounded) is the closest programmatic proxy for Google's AI answers.",
+  "generated_at": "2026-06-10T16:37:56.830890Z",
   "queries": [
     {
       "query": "best eating disorder treatment center in San Antonio",
-      "bcc_present": {"perplexity": true},
-      "bcc_rank": {"perplexity": 2},
-      "competitors_named": ["Eating Recovery Center", "Esperanza", "Alamo Area Resource Center", "Sherwood Couples Counseling", "Purple Couch Therapy"]
+      "bcc_present": {
+        "perplexity": true,
+        "claude": false,
+        "gemini": true
+      },
+      "bcc_rank": {
+        "perplexity": 2
+      },
+      "competitors_named": [
+        "Alamo Area Resource Center",
+        "Eating Recovery Center",
+        "Esperanza",
+        "Monarch Behavioral Health",
+        "Purple Couch Therapy",
+        "Sherwood Couples Counseling"
+      ]
     },
     {
       "query": "binge eating disorder help in San Antonio",
-      "bcc_present": {"perplexity": false},
-      "competitors_named": ["Eating Recovery Center", "Esperanza", "Monarch Behavioral Health", "Eating Disorder Foundation of South Texas"]
+      "bcc_present": {
+        "perplexity": false,
+        "claude": false,
+        "gemini": false
+      },
+      "bcc_rank": {},
+      "competitors_named": [
+        "Balanced Counseling",
+        "Eating Disorder Foundation of South Texas",
+        "Eating Recovery Center",
+        "Esperanza",
+        "Monarch Behavioral Health"
+      ]
     },
     {
       "query": "bariatric surgery counseling & psych evaluation in San Antonio",
-      "bcc_present": {"perplexity": true},
-      "bcc_rank": {"perplexity": 1},
-      "competitors_named": ["Sage Bariatric Institute"]
+      "bcc_present": {
+        "perplexity": true,
+        "claude": true,
+        "gemini": true
+      },
+      "bcc_rank": {
+        "perplexity": 1
+      },
+      "competitors_named": [
+        "Sage Bariatric Institute"
+      ]
     },
     {
       "query": "therapist for food addiction & compulsive overeating in San Antonio",
-      "bcc_present": {"perplexity": true},
-      "bcc_rank": {"perplexity": 1},
-      "competitors_named": ["Eating Recovery Center", "Esperanza", "Vitality Life Counseling", "Pathlight Mood & Anxiety Center", "Sherwood Couples Counseling", "Purple Couch Therapy"]
+      "bcc_present": {
+        "perplexity": true,
+        "claude": true,
+        "gemini": true
+      },
+      "bcc_rank": {
+        "perplexity": 1
+      },
+      "competitors_named": [
+        "Balanced Counseling",
+        "Eating Recovery Center",
+        "Esperanza",
+        "Monarch Behavioral Health",
+        "Pathlight Mood & Anxiety Center",
+        "Purple Couch Therapy",
+        "Sherwood Couples Counseling",
+        "Vitality Life Counseling"
+      ]
     },
     {
       "query": "weight loss counseling & emotional eating therapy in San Antonio",
-      "bcc_present": {"perplexity": true},
-      "bcc_rank": {"perplexity": 1},
-      "competitors_named": ["Eating Recovery Center", "Vitality Life Counseling"]
+      "bcc_present": {
+        "perplexity": true,
+        "claude": true,
+        "gemini": true
+      },
+      "bcc_rank": {
+        "perplexity": 1
+      },
+      "competitors_named": [
+        "Eating Recovery Center",
+        "Esperanza",
+        "Sage Bariatric Institute",
+        "Vitality Life Counseling"
+      ]
     }
   ]
 }
