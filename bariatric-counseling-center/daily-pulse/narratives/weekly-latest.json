@@ -1,33 +1,29 @@
 {
   "kind": "7-day rollup briefing",
   "window_days": 7,
-  "window_start": "2026-05-21",
-  "window_end": "2026-06-09",
+  "window_start": "2026-05-31",
+  "window_end": "2026-06-10",
   "for_date": "2026-06-11",
-  "generated_at": "2026-06-11T13:00:04.325423Z",
+  "generated_at": "2026-06-11T13:06:16.168702Z",
   "model": "claude-sonnet-4-6",
-  "briefing": "### The window in one sentence\n\nOver the 7-day window (May 21 -- June 9), sessions are up 60% from the first half to the second half, driven almost entirely by a June 3 traffic spike that looks like an untagged send or external referral. Outside that single day, the site is running at or slightly below baseline, and GSC data is absent -- making it impossible to assess organic search momentum right now.\n\n---\n\n### Volume + composition\n\nThe window produced 151 sessions, 132 users, and 586 pageviews across 7 tracked days, averaging 21.6 sessions and 18.9 users per day. GSC impressions and clicks are zeroed out for the entire window -- this is almost certainly a data pipeline or property connection issue rather than a real organic search collapse, and it needs to be resolved before any SEO assessment is meaningful.\n\nChannel composition came in at roughly 45% Direct (68 sessions), 40% Organic Search (60 sessions), 12% Referral (18 sessions), and a small tail of Organic Social and Unassigned. That is a notable shift from BCC's baseline of ~60% Direct / ~25% Organic Search. Organic Search running higher than expected could indicate ranking improvement, but without GSC data to confirm, it is also possible GA4 is misattributing some sessions -- particularly if referral or social traffic is arriving without UTM parameters.\n\nReferral at 18 sessions (12%) is worth watching. BCC's baseline is around 10%, so there is modest positive pressure there, likely connected to the 4 referring domains and 12 inbound links recorded in the backlinks totals. Five of those links are .edu domains, which is an above-average quality signal for a local counseling practice.\n\n---\n\n### Trend (first half vs second half)\n\nOn paper the window shows a 60% session increase from first half (58 sessions across May 21, May 31, June 1) to second half (93 sessions across June 2-3 and June 8-9). The framing is technically accurate but misleading without context: virtually all of the second-half volume is concentrated in June 3, which produced 42 sessions and 230 pageviews -- more than double any other day in the window. Session duration on June 3 was also 132% above the 28-day median, which suggests the people who arrived that day were engaged, not bouncing. The most likely explanation is an untagged email or social post that drove a burst of returning or warm-audience traffic.\n\nStrip out June 3 and the window is flat to slightly soft. June 8 and June 9 both came in below the 28-day median for sessions and new users, and June 9 specifically flagged as CRITICAL for session duration (up 142%) alongside MAJOR drops in user count and new users. That combination -- fewer people, but the ones who showed up spent more time -- is a pattern consistent with a small, high-intent audience rather than broad reach. The overall trend is not accelerating; it is being propped up by one anomalous day.\n\n---\n\n### Launches + efficacy\n\nEvery launch detected in this window shipped on June 9 or June 10, meaning none of them have had time to register in GSC or GA4 yet. The one new page publish -- `/night-eating-syndrome-treatment-in-san-antonio-tx/` -- is targeting \"night eating syndrome treatment san antonio,\" a specific, low-competition clinical keyword that fits BCC's positioning well. It is 1 day old. Standard indexing warmup is 1-2 weeks, so no ranking signal is expected yet.\n\nThe four page modifications on June 10 -- the GLP-1 regain counseling page, the ADHD and emotional eating page, the Mounjaro/Zepbound behavioral support page, and the Foundayo behavioral support page -- are all in the GLP-1 adjacency cluster that BCC has been building. These are updates rather than fresh publishes, so Google may re-crawl them faster than a new URL. Still, zero GSC data means there is currently no way to confirm whether earlier versions of these pages were gaining traction before the modifications. That confirmation will need to wait for GSC to reconnect.\n\nThe June 9 batch of modifications covered important territory: the eating disorder group therapy page (`/eating-disorder-group-therapy-san-antonio-tx/`), telehealth eating disorder treatment (`/telehealth-eating-disorder-treatment-in-texas/`), and the tirzepatide behavioral support page. These are pages with real search demand attached. The 30-day rollup shows 4 pages ranking in the top 3 and 4 in the top 10, with 223 GA4 sessions attributed to tracked launches -- but without slug-level ranking data in the current payload, it is not possible to confirm which specific pages those top-10 positions belong to. That mapping is the key open question for efficacy assessment.\n\nThe backlink profile -- 4 referring domains, 12 total links, 5 from .edu sources, 0 from competitors -- is a meaningful signal. Five .edu links is unusually strong for a local practice. No new backlinks were logged within this specific window, but the existing profile is worth maintaining and building on.\n\n---\n\n### What this means + what to do next\n\n1. **Resolve the GSC data gap first.** Zero impressions across every day in a 7-day window is not a real traffic signal -- it is a broken connection. Until GSC is pulling correctly, there is no way to assess whether the content production cadence is producing ranking momentum or not. This is the prerequisite for everything else.\n\n2. **Identify the June 3 traffic source.** 42 sessions and 230 pageviews with a 132% above-median session duration does not happen organically on a Tuesday without a trigger. Check for an email send, a social post, or a referral URL from around that date. If it was an untagged email, get UTM parameters on future sends -- that data is being lost every time.\n\n3. **Map the 4 top-10 rankings to specific pages.** The 30-day rollup confirms 4 pages ranking in the top 10, but the briefing cannot name them without slug-level GSC data. Pull that report and identify which pages are holding those positions -- those are the pages that need internal linking support, strong CTAs, and no accidental de-indexing from future modifications.\n\n4. **Give the GLP-1 and eating disorder cluster pages 2 more weeks before evaluating.** The June 9-10 modifications are too fresh to judge. Set a calendar reminder for June 24 to pull GSC impression and click data for `/glp-1-weight-regain-counseling-in-san-antonio-tx/`, `/tirzepatide-behavioral-support-in-san-antonio-tx/`, `/eating-disorder-treatment-in-san-antonio-tx/`, and the new night eating syndrome page. That is the first meaningful evaluation window.\n\n5. **Explore a link-building outreach to one of the .edu referrers.** BCC already has 5 .edu inbound links, which is an asset most local practices do not have. Identifying which institutions those links come from and whether a second link or co-mention is possible -- a resource page addition, a guest contribution, a citation in student-facing mental health content -- is a lower-effort path to domain authority than cold outreach.",
-  "word_count": 1122,
+  "briefing": "### The window in one sentence\n\nOver the 7-day window (May 31 -- June 10), sessions trended up 63% from the first half to the second half, driven almost entirely by a single high-traffic day on June 3. Outside of that spike, volume returned to baseline levels and GSC impressions remain at zero across the entire window, which is the most pressing structural issue right now.\n\n---\n\n### Volume + composition\n\nThe window produced 150 total sessions, 131 users, and 608 pageviews across 7 days, averaging 21.4 sessions and 18.7 users per day. GSC impressions and clicks are both zero for every day in the window -- this is not a data gap, it is a real signal that Google has not yet served BCC pages in search results during this period, or that GSC reporting is lagging significantly. That zero line needs to be resolved before organic search can be tracked or optimized meaningfully.\n\nChannel composition came in at roughly 46% Direct, 38% Organic Search, 12% Referral, and 3% Organic Social. That is a notable shift from BCC's expected baseline of ~60% Direct / ~25% Organic Search. Organic Search running 13 points above baseline is potentially good news -- it suggests real search-driven arrivals -- but without GSC data to confirm which queries and pages are driving it, the interpretation is incomplete. Direct running below baseline may reflect a quieter email or social push during this window, or it may be a natural fluctuation. Referral at 12% (18 sessions) is worth watching; that is above the ~10% baseline and could indicate the existing backlink profile is sending real traffic.\n\nThe anomaly count is high -- 10 critical, 8 major -- but most of them cluster around two patterns: session duration running well above the 28-day median on multiple days, and the June 3 spike inflating volume metrics. Neither pattern signals a problem on its own, but together they suggest that when people do arrive, they are spending meaningful time on the site.\n\n---\n\n### Trend (first half vs second half)\n\nOn paper, the window looks like it is accelerating: 57 sessions in the first half (May 31 -- June 2) versus 93 in the second half (June 3 -- June 10), a 63% jump. That number is accurate but misleading. June 3 alone accounted for 42 sessions -- more than the entire first half combined. The anomaly data confirms this was a real statistical outlier, with sessions up 115%, users up 117%, and pageviews up 236% versus the 28-day median for that day of the week.\n\nStrip out June 3 and the second half averages roughly 17 sessions per day, which is actually slightly below the first half's 19 per day. The honest read here is that the window is flat to slightly declining once the spike is removed. That is not a crisis at this traffic volume, but it means the June 3 event is carrying the trend story and the underlying daily pattern has not shifted. Understanding what drove June 3 -- untagged email, a social post, a referral burst, or something else -- is more strategically important than the trend percentage itself.\n\n---\n\n### Launches + efficacy\n\nThe most significant launch in this window is the new page at `/night-eating-syndrome-treatment-in-san-antonio-tx/`, published June 10 and targeting the keyword \"night eating syndrome treatment san antonio.\" At one day old, it is firmly in the indexing warmup phase -- no impressions, no sessions, no ranking -- and that is expected. The same is true for the four page modifications published June 10: the GLP-1 regain counseling page, the ADHD and emotional eating page, the Mounjaro/Zepbound behavioral support page, and the Foundayo behavioral support page. All are too new to show measurable SEO performance.\n\nThe June 9 modifications are where there is more to watch. Six pages were touched that day, including `/eating-disorder-group-therapy-san-antonio-tx/`, `/tirzepatide-behavioral-support-in-san-antonio-tx/`, `/telehealth-eating-disorder-treatment-in-texas/`, and `/bariatric-therapist-in-san-antonio-tx-v2/`. These pages are 2 days old at window close, still in warmup. However, the GLP-1 medication content cluster -- including the Wegovy/Ozempic/Zepbound/Mounjaro overview page also modified June 9 -- is the type of evergreen, high-intent content that tends to surface in search once indexed. The zero-GSC-impressions situation means there is currently no way to confirm any of this is indexing.\n\nThe 30-day efficacy rollup does show 4 pages ranking in top 3 and 4 in top 10 -- but those are attributed to older launches, not this window. There are no new backlinks reported in this window; the backlink profile sits at 4 referring domains, 12 inbound links, and 5 .edu links. The .edu count is a real asset and worth protecting. No competitor links, which is clean.\n\n---\n\n### What this means + what to do next\n\n1. **Diagnose the GSC blackout first.** Seven straight days of zero impressions is the highest-priority issue in this briefing. Verify that GSC is properly connected to the GA4 property, that the correct site is verified, and that there are no manual actions or coverage issues on the GSC Search Console property. If the connection is intact, submit the June 9 and June 10 pages for indexing inspection manually via GSC's URL Inspection tool. Nothing else in the SEO workflow can be validated until impressions are reporting.\n\n2. **Investigate June 3.** A 115% session spike with no GSC-attributed clicks and no obvious content launch on that date strongly suggests an untagged source -- likely an email send, a social post from the practice, or a referral burst. Identify the source, tag it properly going forward, and evaluate whether it can be replicated deliberately. If it was an email to a patient or referral list, that channel deserves its own UTM infrastructure.\n\n3. **Build internal links into the GLP-1 cluster now, before indexing completes.** The Mounjaro/Zepbound, Foundayo, GLP-1 regain, and Wegovy/Ozempic pages are all modified within the same 48-hour window and target related, high-intent queries. Connecting them to each other and to the existing bariatric therapist and tirzepatide pages with descriptive anchor text while Google is still crawling them gives the crawler a cleaner topical signal and improves the odds of the cluster indexing as a coherent group rather than isolated pages.\n\n4. **Audit the `/bariatric-therapist-in-san-antonio-tx-v2/` slug.** A \"-v2\" URL is a flag. If this page is meant to eventually replace the original, having both live simultaneously splits link equity and creates a potential duplicate content situation. Decide now whether to redirect the original to v2, merge content, or use a canonical tag -- before either page earns enough backlinks or rankings to make the decision more costly.\n\n5. **Pitch one .edu link-building outreach this week.** BCC already has 5 .edu links, which is above average for a single-location counseling practice and suggests an existing relationship or citation footprint in that sector. One targeted outreach to a San Antonio-area university health or counseling resource page -- UTSA, UT Health San Antonio, or Trinity -- capitalizing on the eating disorder and GLP-1 content as a resource citation is a realistic play that fits the existing pattern of what is already working.",
+  "word_count": 1173,
   "aggregate": {
     "window_days": 7,
-    "window_start": "2026-05-21",
-    "window_end": "2026-06-09",
+    "window_start": "2026-05-31",
+    "window_end": "2026-06-10",
     "totals": {
-      "sessions": 151,
-      "users": 132,
-      "pageviews": 586,
+      "sessions": 150,
+      "users": 131,
+      "pageviews": 608,
       "gsc_impressions": 0,
       "gsc_clicks": 0
     },
     "averages": {
-      "sessions_per_day": 21.6,
-      "users_per_day": 18.9
+      "sessions_per_day": 21.4,
+      "users_per_day": 18.7
     },
     "daily_sessions": [
-      {
-        "date": "2026-05-21",
-        "value": 21
-      },
       {
         "date": "2026-05-31",
         "value": 16
@@ -51,13 +47,13 @@
       {
         "date": "2026-06-09",
         "value": 14
+      },
+      {
+        "date": "2026-06-10",
+        "value": 20
       }
     ],
     "daily_pageviews": [
-      {
-        "date": "2026-05-21",
-        "value": 58
-      },
       {
         "date": "2026-05-31",
         "value": 50
@@ -81,13 +77,13 @@
       {
         "date": "2026-06-09",
         "value": 57
+      },
+      {
+        "date": "2026-06-10",
+        "value": 80
       }
     ],
     "daily_gsc_imp": [
-      {
-        "date": "2026-05-21",
-        "value": 0
-      },
       {
         "date": "2026-05-31",
         "value": 0
@@ -111,20 +107,24 @@
       {
         "date": "2026-06-09",
         "value": 0
+      },
+      {
+        "date": "2026-06-10",
+        "value": 0
       }
     ],
     "channel_totals": {
-      "Organic Search": 60,
-      "Direct": 68,
+      "Direct": 69,
+      "Organic Search": 57,
+      "Unassigned": 2,
       "Referral": 18,
-      "Unassigned": 3,
       "Organic Social": 4
     },
     "anomaly_count_by_severity": {
-      "MINOR": 7,
+      "CRITICAL": 10,
+      "MAJOR": 8,
       "INFO": 7,
-      "CRITICAL": 9,
-      "MAJOR": 8
+      "MINOR": 7
     },
     "anomalies_significant": [
       {
@@ -262,25 +262,33 @@
         "metric": "GA4 sessions",
         "pct_delta": -33.3,
         "direction": "down"
+      },
+      {
+        "date": "2026-06-10",
+        "severity": "CRITICAL",
+        "headline": "UP GA4 avg session dur: 555.152 (+327.3% vs 28d median of 130)",
+        "metric": "GA4 avg session dur",
+        "pct_delta": 327.3,
+        "direction": "up"
       }
     ],
     "halves": {
       "first_half_dates": [
-        "2026-05-21",
         "2026-05-31",
-        "2026-06-01"
+        "2026-06-01",
+        "2026-06-02"
       ],
       "second_half_dates": [
-        "2026-06-02",
         "2026-06-03",
         "2026-06-08",
-        "2026-06-09"
+        "2026-06-09",
+        "2026-06-10"
       ],
-      "sessions_first_half_total": 58,
+      "sessions_first_half_total": 57,
       "sessions_second_half_total": 93,
-      "pageviews_first_half_total": 177,
-      "pageviews_second_half_total": 409,
-      "sessions_trend_pct": 60.3
+      "pageviews_first_half_total": 179,
+      "pageviews_second_half_total": 429,
+      "sessions_trend_pct": 63.2
     }
   }
 }

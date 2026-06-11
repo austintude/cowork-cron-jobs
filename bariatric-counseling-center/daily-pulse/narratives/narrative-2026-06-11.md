@@ -1,23 +1,23 @@
-# Morning Briefing -- 2026-06-09
+# Morning Briefing -- 2026-06-10
 
-_Generated 2026-06-11T12:59:21.121429Z_
+_Generated 2026-06-11T13:05:29.707892Z_
 
 ### Headline
-- Sessions DOWN 33% vs 28-day median (14 vs 21 baseline) -- and DOWN 95% YoY (vs 281 same day last year). This is a significant sustained traffic gap, not a one-day blip.
-- Organic Search is the primary driver of the drop: fell from baseline 8 sessions to just 3.
+- Sessions holding steady at 20 for June 10 -- unremarkable volume day, but engagement is the real story.
+- Avg session duration hit 555 seconds (+327% vs 28d median of 130s) -- people who arrived stayed deep.
 
 ### What happened
-- **GA4 sessions**: 14 (down 33% vs median) -- Organic Search down 5 sessions from baseline, which accounts for most of the shortfall.
-- **Avg session duration**: 277 sec vs 114 sec median (+143%) -- the few people who did visit went deep. Likely a small, high-intent cohort, not a technical issue.
-- **GSC impressions/clicks**: both zero -- standard 1-3 day reporting lag, not a real signal on its own.
-- **5 page modifications first surfaced today**: Binge Eating Disorder, Bariatric Therapy, Eating Disorder Counseling, Ozempic Behavioral Support, and Virtual Emotional Eating Therapy -- all modified 2026-06-03, just now detected.
+- **Avg session duration**: 555s vs 130s median -- CRITICAL flag, likely a single highly engaged visit or small cohort reading long-form content; worth checking which pages drove it.
+- **New users**: 11 vs 14 median (-21%) -- minor dip, no action needed yet.
+- **GSC impressions/clicks**: showing zero -- standard 1-3 day reporting lag, not a real signal.
+- **New page launched**: `/night-eating-syndrome-treatment-in-san-antonio-tx/` published June 10, targeting "night eating syndrome treatment san antonio"; indexing warmup expected 1-2 weeks.
 
 ### Efficacy
-- **30-day launches**: 35 pages published/modified, 4 ranking top 3, 4 ranking top 10, 223 GA4 sessions attributed -- but zero GSC impressions attributed, suggesting tracking or lag gap worth investigating.
-- **Newest pages (1 day old)**: Night Eating Syndrome, GLP-1 Regain, ADHD + Emotional Eating, Mounjaro/Zepbound, and Foundayo support pages -- all in indexing warmup, no impressions yet, normal.
-- **June 3 modifications**: 5 pages flagged above have had 8 days to index -- worth checking GSC coverage for those URLs specifically.
+- **30-day window**: 35 pages launched, 4 ranking top 3, 4 ranking top 10, 248 GA4 sessions attributed -- zero GSC impressions attributed (lag issue, not a gap in rankings).
+- **Indexing warmup**: `/night-eating-syndrome-treatment-in-san-antonio-tx/` (1 day), `/glp-1-weight-regain-counseling-in-san-antonio-tx/` (4 days), `/adhd-and-emotional-eating-in-san-antonio-tx/` (5 days) -- all pre-impression, all normal.
+- **GLP-1 and ADHD pages**: both modified June 10 alongside original publish dates -- confirm edits are final before requesting indexing.
 
 ### Today (do these)
-1. **Check GSC coverage** for the 5 June-3 modified pages (/binge-eating-disorder-treatment-san-antonio/, /bariatric-therapy-in-san-antonio-tx/, /eating-disorder-counseling-in-san-antonio-tx/, /ozempic-behavioral-support-in-san-antonio-tx/, /virtual-emotional-eating-therapy-in-texas/) -- 8 days is enough time to expect crawl activity; confirm they're indexed and not flagged.
-2. **Request indexing** for the 5 brand-new June-10 pages in Google Search Console -- one day old but submitting now shortens the warmup window.
-3. **Investigate the YoY gap** before the Todd meeting -- sessions are down 95% vs this day last year (281 sessions then, 14 now). Pull the June 2025 source breakdown so you can explain what was driving volume then versus now.
+1. **Pull the session-duration drill-down** in GA4: filter by date June 10, sort sessions by duration, identify which page(s) drove the 555s average -- this is the story for Todd if it's a counseling or intake page.
+2. **Request GSC indexing** for `/night-eating-syndrome-treatment-in-san-antonio-tx/` now that it's live -- one day old is fine to submit via URL Inspection.
+3. **Confirm GLP-1 and ADHD page edits are final** before submitting those two for re-indexing -- both were modified same-day as the autosync commits, so hold one more day if copy is still in flux.
