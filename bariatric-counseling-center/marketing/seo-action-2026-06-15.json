@@ -18,10 +18,4 @@
   "priority_actions": [
     "Keyword-tracker hygiene first: repoint the 7 staging targetUrls in keywords-master.json to their correct live www URLs so GSC can match them - this likely recovers a chunk of the 49 'no-impression' keywords without any new publishing.",
     "Fix CTR by linking from the high-impression blog posts (hydration 2,688 impr; medications 1,775 impr) into the matching service pages with clear CTAs, converting informational impressions into consultation clicks.",
-    "On-page refresh for the slipped commercial terms - prioritize 'nutrition counseling' / 'nutritional counseling san antonio tx', 'san antonio bariatric center' and 'weight loss counseling' - to arrest the position decline.",
-    "Defend the four top-3 local terms (bariatric counseling / weight loss counseling / bariatric surgery counseling san antonio) - keep titles, internal links and freshness intact so these don't slip.",
-    "Add FAQ schema to core service pages for rich-result and AI-overview eligibility.",
-    "If a staging->prod publish backlog matters, confirm the real push list via a staging-vs-prod sitemap diff or Daniel's own notes - do not infer a count from the keyword/GSC data."
-  ],
-  "summary": "Core top-3 local commercial terms are holding and blog content is driving the bulk of impressions, but aggregate impressions are down ~30% since early May, CTR is near zero, and several commercial terms (notably 'nutrition counseling', -57 positions) slipped. The single highest-leverage move is tracker hygiene plus internal links from high-impression posts into service pages; competitor and AI-visibility sections remain manual."
-}
+    "On-page refresh for the slipped commercial terms - prioritize 'nutrition counseling' / 'nutritional counseling san antonio tx', 'san antonio bariatric center' and 'weight loss counseling' - to arr
