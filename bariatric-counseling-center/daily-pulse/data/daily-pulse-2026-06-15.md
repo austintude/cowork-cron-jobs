@@ -1,6 +1,6 @@
 # BCC Daily Pulse -- 2026-06-14
 
-_Generated 2026-06-15 13:58 UTC_
+_Generated 2026-06-15 17:19 UTC_
 
 
 ## Yesterday at a glance
@@ -35,21 +35,3 @@ _2026-05-18 -> 2026-06-14 vs 2026-04-20 -> 2026-05-17_
 
 -   11 sess  Direct
 -   11 sess  Organic Search
-
-## Site changes in the last 7 days
-
-- [PAGE] Bariatric Therapist in San Antonio, TX -- 2026-06-11 (https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/)
-- [PAGE] Therapy for Depression and Weight Loss -- 2026-06-11 (https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/)
-- [PAGE] Food Addiction Treatment in San Antonio, TX -- 2026-06-11 (https://www.bariatriccounselingcenter.com/food-addiction-treatment-in-san-antonio-tx/)
-- [PAGE] Eating Disorder IOP in San Antonio, TX -- 2026-06-11 (https://www.bariatriccounselingcenter.com/eating-disorder-iop-in-san-antonio-tx/)
-- [PAGE] Understanding Weight Loss Medications: Wegovy, Ozempic, Zepbound, and Mounjaro -- 2026-06-11 (https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/)
-- [PAGE] Binge Eating Disorder Treatment in San Antonio -- 2026-06-10 (https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/)
-- [PAGE] Eating Disorder Treatment in San Antonio, TX -- 2026-06-10 (https://www.bariatriccounselingcenter.com/eating-disorder-treatment-in-san-antonio-tx/)
-- [PAGE] Compulsive Overeating Counseling &amp; Food Addiction Treatment in San Antonio, TX -- 2026-06-10 (https://www.bariatriccounselingcenter.com/compulsive-overeating-counseling-san-antonio-tx/)
-- [PAGE] Emotional Eating Therapy in San Antonio, TX -- 2026-06-10 (https://www.bariatriccounselingcenter.com/emotional-eating-therapy-in-san-antonio-tx/)
-- [PAGE] Binge Eating Therapy in San Antonio, TX -- 2026-06-10 (https://www.bariatriccounselingcenter.com/binge-eating-therapy-in-san-antonio-tx/)
-- [POST] Pre-Bariatric Surgery and Binge Eating Screening: Why Surgeons Want It Caught Before the OR -- 2026-06-11 (https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/)
-- [POST] Binge Eating in Men: Why 40% of Cases Get Missed -- 2026-06-11 (https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-in-men-why-40-percent-of-cases-missed/)
-- [POST] A Day Inside BCC&#8217;s Binge Eating IOP -- 2026-06-11 (https://www.bariatriccounselingcenter.com/self-improvement/mental-health/day-inside-bcc-binge-eating-iop/)
-- [POST] Binge Eating Disorder and Ozempic: What Nobody Tells You -- 2026-06-11 (https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-disorder-ozempic-what-nobody-tells-you/)
-- [POST] Binge Eating vs. Emotional Eating: The Clinical Differences That Matter -- 2026-06-11 (https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-vs-emotional-eating-clinical-differences/)
