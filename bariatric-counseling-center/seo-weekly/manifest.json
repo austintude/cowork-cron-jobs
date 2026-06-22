@@ -1,7 +1,8 @@
 {
  "latest": "seo-data-2026-06-18.json",
- "updated": "2026-06-18T10:21:50.845906+00:00",
+ "updated": "2026-06-22T10:12:43+00:00",
  "files": [
+  "seo-data-2026-06-22.json",
   "seo-data-2026-06-18.json",
   "seo-data-2026-06-15.json",
   "seo-data-2026-06-11.json",
@@ -18,9 +19,9 @@
   "seo-data-2026-04-23.json"
  ],
  "last_run": {
-  "date": "2026-06-18",
-  "promoted": true,
-  "reason": "Autonomous weekly run: 73 live Google SERP checks (0 CAPTCHA) + GSC merge (gsc-data-2026-06-18, 7d) + WP REST (0 new/modified pages or posts) + link integrity (10 top pages, all HTTP 200, 0 broken) + Esperanza competitive (Ahrefs plan-gated; SERP-derived 8 SA eating-disorder gaps + direct Esperanza WP REST: 0 new pages this week).",
-  "data_added_for_audit": "seo-data-2026-06-18.json"
+  "date": "2026-06-22",
+  "promoted": false,
+  "reason": "Autonomous weekly run, DEGRADED: Chrome extension not connected -> 0 live SERP checks (brave.all_keywords empty -> not renderable, latest stays at 2026-06-18). GSC merge FRESH (gsc-data-2026-06-22, 7d: 8 clicks, 1687 imp, avg pos 18.48, 20 tracked kw w/ data, 40 discovery candidates). WP REST: 2 NEW prod pages (5611 food-addiction-treatment-in-texas, 5608 eating-disorder-referrals-for-providers-in-san-antonio-tx, both 2026-06-15) + 4 updated pages + 4 updated posts. Link integrity: 10 top pages HTTP-checked, all 200, 0 broken (internal-link crawl skipped, no Chrome). Esperanza: Ahrefs plan-gated; WP REST 0 new pages (latest 2026-04-22 ARFID); 8 SA ED keyword gaps carried fwd from 2026-06-18.",
+  "data_added_for_audit": "seo-data-2026-06-22.json"
  }
 }
