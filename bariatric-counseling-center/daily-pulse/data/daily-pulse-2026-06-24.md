@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-06-23
 
-_Generated 2026-06-24 08:02 UTC_
+_Generated 2026-06-24 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **18 sessions** / 16 users / 82 pageviews
+- **19 sessions** / 17 users / 94 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 72.2%
-- Avg session duration: 439s
+- Engagement rate: 73.7%
+- Avg session duration: 507s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,32 +16,29 @@ _2026-05-27 -> 2026-06-23 vs 2026-04-29 -> 2026-05-26_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 417 | 441 | -5.4% |
-| New users | 392 | 418 | -6.2% |
-| Sessions | 583 | 572 | +1.9% |
-| Views | 2,221 | 2,091 | +6.2% |
-| Avg engagement time (per active user) | 102s | 57s | +80.6% |
+| Active users | 418 | 441 | -5.2% |
+| New users | 395 | 418 | -5.5% |
+| Sessions | 584 | 572 | +2.1% |
+| Views | 2,233 | 2,091 | +6.8% |
+| Avg engagement time (per active user) | 102s | 57s | +80.2% |
 
-## 4 anomalies flagged
+## 3 anomalies flagged
 
-### [CRITICAL] UP GA4 avg session dur: 439.382 (+203.5% vs 28d median of 145)
-
-
-### [MINOR] DOWN GA4 engagement rate: 0.7222 (-22.1% vs 28d median of 1)
+### [CRITICAL] UP GA4 avg session dur: 506.648 (+249.9% vs 28d median of 145)
 
 
-### [MINOR] UP GA4 pageviews: 82 (+17.1% vs 28d median of 70) (YoY same day: +2.5%)
+### [MAJOR] UP GA4 pageviews: 94 (+34.3% vs 28d median of 70) (YoY same day: +17.5%)
 
 
-### [MINOR] DOWN GA4 sessions: 18 (-16.3% vs 28d median of 22) (YoY same day: -48.6%)
+### [MINOR] DOWN GA4 engagement rate: 0.7368 (-20.5% vs 28d median of 1)
 
 
 ## Yesterday's traffic by channel
 
--    6 sess  Organic Search
--    5 sess  Direct
+-    7 sess  Direct
+-    7 sess  Organic Search
+-    7 sess  Unassigned
 -    4 sess  Referral
--    3 sess  Unassigned
 -    1 sess  Organic Social
 
 ## Site changes in the last 7 days
