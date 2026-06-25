@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-06-24
 
-_Generated 2026-06-25 08:03 UTC_
+_Generated 2026-06-25 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **15 sessions** / 12 users / 60 pageviews
+- **18 sessions** / 15 users / 66 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 86.7%
-- Avg session duration: 343s
+- Engagement rate: 88.9%
+- Avg session duration: 301s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,54 +16,23 @@ _2026-05-28 -> 2026-06-24 vs 2026-04-30 -> 2026-05-27_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 411 | 443 | -7.2% |
-| New users | 390 | 421 | -7.4% |
-| Sessions | 581 | 571 | +1.8% |
-| Views | 2,220 | 2,113 | +5.1% |
-| Avg engagement time (per active user) | 102s | 57s | +78.2% |
+| Active users | 414 | 443 | -6.5% |
+| New users | 393 | 421 | -6.7% |
+| Sessions | 584 | 571 | +2.3% |
+| Views | 2,226 | 2,113 | +5.3% |
+| Avg engagement time (per active user) | 102s | 57s | +78.0% |
 
-## 4 anomalies flagged
+## 1 anomalies flagged
 
-### [CRITICAL] UP GA4 avg session dur: 343.154 (+96.4% vs 28d median of 175)
-
-
-### [MAJOR] DOWN GA4 new users: 8 (-36.0% vs 28d median of 12)
-
-
-### [MAJOR] DOWN GA4 sessions: 15 (-28.6% vs 28d median of 21) (YoY same day: -37.5%)
-
-**Source attribution** -- Direct fell from baseline 8 to 1 (-7).
-  - Direct: 1 yesterday vs baseline 8 (-7)
-  - Organic Search: 6 yesterday vs baseline 9 (-3)
-  - Referral: 4 yesterday vs baseline 2 (+2)
-  - Organic Social: 4 yesterday vs baseline 2 (+2)
-
-**Direct-traffic investigation** -- Direct anomaly almost always means either (a) untagged email/SMS/QR campaign, (b) a bot spike, or (c) a referrer that strips Referer headers (some mobile apps). If this was unplanned, check server logs for unusual user agents.
-
-**Top landing pages yesterday** -- Top page: / with 3 sessions.
-  - `/` -- 3 sessions, 3 users
-  - `` -- 2 sessions, 2 users
-  - `/intuitive-eating-support-in-mcallen-tx/` -- 2 sessions, 1 users
-  - `/?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPMTI0MDI0NTc0Mjg3NDE0AAGnlZjGIzPpcmGsSCn3XvtAzCi3cQO1ZyYcxTiWmc8uad_zwIzMPXtiTLwgCZI_aem_YIriGjm3mDJjeMX3nEIKHQ` -- 1 sessions, 1 users
-  - `/about/?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAEeG10eGdrIygVJ5CKV1CjciCgKkEdin10CfeB_p4apj8D-UDFkZyWiIQXBLqQ_aem_gLRH8H9Op3olkICQiCedDw` -- 1 sessions, 1 users
-
-**Recent site changes (last 7 days)** -- 61 pages/posts modified -- cross-reference with affected pages.
-  - Eating Disorder Treatment in San Antonio, TX (modified 2026-06-24)
-  - Semaglutide Behavioral Support in San Antonio, TX (modified 2026-06-24)
-  - Bariatric Surgery Psychological Evaluation in San Antonio, TX (modified 2026-06-24)
-  - Eating Disorder Therapist in San Antonio, TX (modified 2026-06-24)
-  - Online Weight Management Therapy in Texas (modified 2026-06-24)
-
-
-### [MAJOR] DOWN GA4 users: 12 (-27.3% vs 28d median of 16) (YoY same day: -42.9%)
+### [CRITICAL] UP GA4 avg session dur: 301.363 (+72.5% vs 28d median of 175)
 
 
 ## Yesterday's traffic by channel
 
--    6 sess  Organic Search
+-    7 sess  Organic Search
 -    4 sess  Organic Social
 -    4 sess  Referral
--    1 sess  Direct
+-    3 sess  Direct
 -    1 sess  Unassigned
 
 ## Site changes in the last 7 days
