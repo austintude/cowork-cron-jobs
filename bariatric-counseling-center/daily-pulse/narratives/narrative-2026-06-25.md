@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-06-23
+
+_Generated 2026-06-25T08:03:31.517806Z_
+
+### Headline
+- Sessions (19) and pageviews (94, +34% vs. 28d median) are solid for a Tuesday -- nothing alarming in GA4.
+- Avg session duration spiked to 507 seconds (+250% vs. 28d median of 145) -- likely a handful of people reading deeply, but worth a quick sanity check.
+
+### What happened
+- **Avg session duration**: 507s vs. 145s median -- a small session count (19) means one or two long visits can skew this hard; not a real anomaly until it repeats.
+- **Pageviews**: 94 vs. 70 median (+34%), and +17.5% YoY -- people who landed are browsing multiple pages.
+- **Engagement rate**: 0.74 vs. median of 1.0 (-20%) -- some sessions may be single-page or quick exits; worth watching but not urgent at this volume.
+- **GSC impressions/clicks**: both zero -- standard 1-3 day reporting lag, not a real drop.
+
+### Efficacy
+- **30-day window**: 14 pages launched, 78 modified, 1 ranking top 10 -- 40,567 GSC impressions and 278 GA4 sessions attributed.
+- **Most impressions, zero clicks**: `/weight-management-counseling-in-san-antonio-tx/` pulled 189 impressions in its first day with 0 clicks -- title or snippet likely isn't compelling enough to earn the tap.
+- **Indexing warmup**: `/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/` (26 impressions), `/bariatric-therapy-in-san-antonio-tx/` (8 impressions), and 5 other June 24 modifies still at 0 impressions -- all are 1 day old, normal.
+
+### Today (do these)
+1. **Rewrite the title tag and meta description** for `/weight-management-counseling-in-san-antonio-tx/` -- 189 impressions with 0 clicks on day one means Google is surfacing it but the snippet isn't earning the click; sharpen the value statement.
+2. **Check GA4 session recordings or landing pages** for the long-duration sessions -- confirm the 507s average is real engaged reading on content pages and not a stuck tab or tracking quirk.
+3. **Verify the June 22 edits** to `/bariatric-therapist-in-san-antonio-tx/` and `/foundayo-behavioral-support-san-antonio/` are rendering correctly in Search Console's URL Inspection tool -- medium-confidence modifications that haven't appeared in efficacy data yet.
