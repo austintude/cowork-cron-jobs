@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-06-25
+
+_Generated 2026-06-27T08:03:10.571652Z_
+
+### Headline
+- Sessions DOWN 38% vs 28-day median (13 vs baseline 21) -- also down 65.8% YoY, making June 25 a notably weak day across every traffic metric.
+- Pageviews hit hardest: 29 vs median 68 (-57.7%), and avg session duration collapsed to 64s vs median 198s (-67.8%).
+
+### What happened
+- **Sessions**: 13 total -- Direct channel fell from baseline 8 to just 3, likely the primary driver of the drop.
+- **Pageviews + duration**: Both critical-flagged; short sessions suggest visitors landing and leaving quickly, not a crawl or tracking issue.
+- **GSC impressions/clicks**: Showing zero -- standard 1-3 day reporting lag, not a real organic drop.
+- **YoY context**: This same day last year saw 38 sessions and 62 pageviews -- today's numbers are well below both medians and year-ago.
+
+### Efficacy
+- **Launched 30d**: 12 pages published, 69 modified -- 1 page ranking top 10, 0 in top 3; 52,061 impressions and 286 GA4 sessions attributed.
+- **Most movement**: Top-launch data is dominated by git-commit entries with no SERP positions yet -- /eating-disorder-therapist-in-san-antonio-tx/ (published June 15, modified June 24) is the most actionable page to watch, now 12 days out with no impression data surfaced yet.
+- **Indexing warmup**: At least 4 pages modified or published June 15-24 still likely pre-impression; GSC lag makes this hard to confirm today.
+
+### Today (do these)
+1. **Check whether anything interrupted Direct traffic** on June 25 -- a cancelled email send, a social post that didn't go out, or a broken UTM could explain the Direct drop from 8 to 3 sessions.
+2. **Verify GSC indexing** for /eating-disorder-therapist-in-san-antonio-tx/ -- it's 12 days post-publish with no impressions showing; request indexing via GSC URL Inspection if it hasn't been submitted.
+3. **Confirm the three June 24 modified pages** (/eating-disorder-treatment/, /semaglutide-behavioral-support/, /bariatric-surgery-psychological-evaluation/) are rendering correctly -- edits are recent enough that a publish error could have gone unnoticed.
