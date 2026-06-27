@@ -1,13 +1,13 @@
 # BCC Daily Pulse -- 2026-06-26
 
-_Generated 2026-06-27 08:02 UTC_
+_Generated 2026-06-27 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **12 sessions** / 10 users / 38 pageviews
+- **14 sessions** / 12 users / 44 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 91.7%
+- Engagement rate: 92.9%
 - Avg session duration: 63s
 
 ## Last 28 days vs prior 28 days
@@ -16,21 +16,21 @@ _2026-05-30 -> 2026-06-26 vs 2026-05-02 -> 2026-05-29_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 399 | 436 | -8.5% |
-| New users | 382 | 416 | -8.2% |
-| Sessions | 570 | 559 | +2.0% |
-| Views | 2,122 | 2,111 | +0.5% |
-| Avg engagement time (per active user) | 102s | 61s | +66.7% |
+| Active users | 401 | 436 | -8.0% |
+| New users | 384 | 416 | -7.7% |
+| Sessions | 572 | 559 | +2.3% |
+| Views | 2,128 | 2,111 | +0.8% |
+| Avg engagement time (per active user) | 101s | 61s | +66.3% |
 
-## 5 anomalies flagged
+## 4 anomalies flagged
 
-### [CRITICAL] DOWN GA4 avg session dur: 63.4191 (-68.0% vs 28d median of 198)
-
-
-### [MAJOR] DOWN GA4 pageviews: 38 (-43.3% vs 28d median of 67) (YoY same day: -56.8%)
+### [CRITICAL] DOWN GA4 avg session dur: 62.7168 (-68.4% vs 28d median of 198)
 
 
-### [MAJOR] DOWN GA4 sessions: 12 (-41.5% vs 28d median of 20) (YoY same day: -72.1%)
+### [MAJOR] DOWN GA4 pageviews: 44 (-34.3% vs 28d median of 67) (YoY same day: -50.0%)
+
+
+### [MAJOR] DOWN GA4 sessions: 14 (-31.7% vs 28d median of 20) (YoY same day: -67.4%)
 
 **Source attribution** -- Direct fell from baseline 8 to 4 (-4).
   - Direct: 4 yesterday vs baseline 8 (-4)
@@ -38,9 +38,9 @@ _2026-05-30 -> 2026-06-26 vs 2026-05-02 -> 2026-05-29_
 
 **Direct-traffic investigation** -- Direct anomaly almost always means either (a) untagged email/SMS/QR campaign, (b) a bot spike, or (c) a referrer that strips Referer headers (some mobile apps). If this was unplanned, check server logs for unusual user agents.
 
-**Top landing pages yesterday** -- Top page: / with 7 sessions.
-  - `/` -- 7 sessions, 7 users
-  - `/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/` -- 2 sessions, 1 users
+**Top landing pages yesterday** -- Top page: / with 8 sessions.
+  - `/` -- 8 sessions, 8 users
+  - `/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/` -- 3 sessions, 2 users
   - `` -- 1 sessions, 1 users
   - `/contact/` -- 1 sessions, 1 users
   - `/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/` -- 1 sessions, 1 users
@@ -53,17 +53,14 @@ _2026-05-30 -> 2026-06-26 vs 2026-05-02 -> 2026-05-29_
   - Online Weight Management Therapy in Texas (modified 2026-06-24)
 
 
-### [MAJOR] DOWN GA4 users: 10 (-37.5% vs 28d median of 16) (YoY same day: -72.2%)
-
-
-### [MINOR] DOWN GA4 new users: 10 (-16.7% vs 28d median of 12)
+### [MAJOR] DOWN GA4 users: 12 (-25.0% vs 28d median of 16) (YoY same day: -66.7%)
 
 
 ## Yesterday's traffic by channel
 
--    7 sess  Organic Search
+-    8 sess  Organic Search
 -    4 sess  Direct
--    1 sess  Referral
+-    2 sess  Referral
 
 ## Site changes in the last 7 days
 
