@@ -1,0 +1,3234 @@
+{
+ "timestamp": "2026-06-29T13:04:57.880420Z",
+ "date": "2026-06-29",
+ "source": "Browser SERP check (live, 21 priority kw) + GSC (7d)",
+ "run_mode": "full",
+ "run_notes": "Chrome connected - 21 live SERP checks, no CAPTCHA. Movement compared vs 2026-06-18 (last non-degraded SERP snapshot; 2026-06-22 was degraded/no-SERP).",
+ "brave": {
+  "keywords_checked": 21,
+  "keywords_in_top_1": 3,
+  "keywords_in_top_10": 8,
+  "keywords_not_in_top_10": 13,
+  "avg_position": 2.88,
+  "top_3_keywords": [
+   {
+    "keyword": "bariatric counseling san antonio",
+    "position": 1,
+    "category": "local-primary"
+   },
+   {
+    "keyword": "weight loss counseling san antonio",
+    "position": 1,
+    "category": "local-primary"
+   },
+   {
+    "keyword": "bariatric therapist",
+    "position": 3,
+    "category": "national-primary"
+   },
+   {
+    "keyword": "emotional eating therapy san antonio",
+    "position": 3,
+    "category": "local-service"
+   },
+   {
+    "keyword": "bariatric counselor",
+    "position": 3,
+    "category": "national-primary"
+   },
+   {
+    "keyword": "bariatric counseling",
+    "position": 1,
+    "category": "national-primary"
+   },
+   {
+    "keyword": "bariatric counseling near me",
+    "position": 3,
+    "category": "national-primary"
+   }
+  ],
+  "all_keywords": {
+   "bariatric counseling san antonio": {
+    "position": 1,
+    "category": "local-primary",
+    "trend": "stable",
+    "change": 0,
+    "competitor_at_1": "eatingdisorderhope.com"
+   },
+   "weight loss counseling san antonio": {
+    "position": 1,
+    "category": "local-primary",
+    "trend": "stable",
+    "change": 0,
+    "competitor_at_1": "psychologytoday.com"
+   },
+   "bariatric therapist": {
+    "position": 3,
+    "category": "national-primary",
+    "trend": "stable",
+    "change": 0,
+    "competitor_at_1": "psychologytoday.com"
+   },
+   "emotional eating therapy san antonio": {
+    "position": 3,
+    "category": "local-service",
+    "trend": "stable",
+    "change": 0,
+    "competitor_at_1": "balancedcounselingsa.com"
+   },
+   "bariatric counselor": {
+    "position": 3,
+    "category": "national-primary",
+    "trend": "rising",
+    "change": 1,
+    "competitor_at_1": "aabc-certification.org"
+   },
+   "bariatric counseling": {
+    "position": 1,
+    "category": "national-primary",
+    "trend": "stable",
+    "change": 0,
+    "competitor_at_1": "findabariatrictherapist.com"
+   },
+   "weight loss counseling or therapy": {
+    "position": 8,
+    "category": "national-primary",
+    "trend": "new_entry",
+    "change": null,
+    "competitor_at_1": "psychologytoday.com"
+   },
+   "weight loss therapy san antonio": {
+    "position": null,
+    "category": "local-service",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "mediweightloss.com"
+   },
+   "eating disorder counseling san antonio": {
+    "position": null,
+    "category": "local-service",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "balancedcounselingsa.com"
+   },
+   "nutritional counseling san antonio tx": {
+    "position": null,
+    "category": "local-service",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "uthscsa.edu"
+   },
+   "eating disorder therapist san antonio": {
+    "position": null,
+    "category": "local-service",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "balancedcounselingsa.com",
+    "note": "BCC #1 in Google local/map pack (organic absent)"
+   },
+   "food addiction treatment san antonio": {
+    "position": null,
+    "category": "local-service",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "eatingrecoverycenter.com"
+   },
+   "food addiction treatment": {
+    "position": null,
+    "category": "national-primary",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "eatingdisorderhope.com"
+   },
+   "binge eating treatment san antonio": {
+    "position": null,
+    "category": "local-service",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "esperanzaedc.com"
+   },
+   "binge eating disorder treatment": {
+    "position": null,
+    "category": "national-primary",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "eatingdisorderhope.com"
+   },
+   "bariatric therapy": {
+    "position": null,
+    "category": "national-primary",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "mayoclinic.org"
+   },
+   "weight loss therapist": {
+    "position": null,
+    "category": "national-primary",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "psychologytoday.com"
+   },
+   "emotional eating therapy": {
+    "position": null,
+    "category": "national-primary",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "eatingdisorderhope.com"
+   },
+   "bariatric counseling near me": {
+    "position": 3,
+    "category": "national-primary",
+    "trend": "rising",
+    "change": 4,
+    "competitor_at_1": "psychologytoday.com"
+   },
+   "weight loss counselor": {
+    "position": null,
+    "category": "national-primary",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "psychologytoday.com"
+   },
+   "semaglutide behavioral support": {
+    "position": null,
+    "category": "national-long-tail",
+    "trend": "stable",
+    "change": null,
+    "competitor_at_1": "pmc.ncbi.nlm.nih.gov"
+   }
+  },
+  "competitors": [
+   {
+    "domain": "psychologytoday.com",
+    "appearance_count": 8
+   },
+   {
+    "domain": "eatingdisorderhope.com",
+    "appearance_count": 6
+   },
+   {
+    "domain": "esperanzaedc.com",
+    "appearance_count": 5
+   },
+   {
+    "domain": "balancedcounselingsa.com",
+    "appearance_count": 4
+   },
+   {
+    "domain": "findabariatrictherapist.com",
+    "appearance_count": 4
+   },
+   {
+    "domain": "recovery.com",
+    "appearance_count": 3
+   },
+   {
+    "domain": "monarchbehavioral.net",
+    "appearance_count": 3
+   },
+   {
+    "domain": "eatingrecoverycenter.com",
+    "appearance_count": 2
+   }
+  ]
+ },
+ "google": {
+  "fetched_at": "2026-06-29",
+  "data_range": {
+   "start": "2026-06-22",
+   "end": "2026-06-29",
+   "days": 7
+  },
+  "property": "https://www.bariatriccounselingcenter.com/",
+  "summary": {
+   "total_queries": 499,
+   "total_pages": 68,
+   "total_clicks": 3,
+   "total_impressions": 1447,
+   "avg_position_impression_weighted": 31.49,
+   "discovery_candidates_count": 40,
+   "tracked_keywords_with_data": 21
+  },
+  "top_queries": [
+   {
+    "keyword": "bariatric counseling center",
+    "clicks": 2,
+    "impressions": 18,
+    "ctr": 0.1111,
+    "position": 4.67
+   },
+   {
+    "keyword": "bariatric nutritionist near me",
+    "clicks": 1,
+    "impressions": 3,
+    "ctr": 0.3333,
+    "position": 39.33
+   },
+   {
+    "keyword": "\"an accountant on a weight-loss program has a rash, poor sleep\" \"best next step\"",
+    "clicks": 0,
+    "impressions": 6,
+    "ctr": 0.0,
+    "position": 4.33
+   },
+   {
+    "keyword": "__________ is an unhealthy habit that can trigger impulsive nutritional choices. eating throughout the day skipping occasional meals drinking more than one liter of water avoiding dairy products",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 1.0
+   },
+   {
+    "keyword": "active ingredient in mounjaro and zepbound",
+    "clicks": 0,
+    "impressions": 2,
+    "ctr": 0.0,
+    "position": 9.5
+   },
+   {
+    "keyword": "advance bariatric counseling",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 11.0
+   },
+   {
+    "keyword": "alternative health goals to weight loss",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 48.0
+   },
+   {
+    "keyword": "anorexia recipes",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 5.0
+   },
+   {
+    "keyword": "anorexia recovery recipes",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 53.0
+   },
+   {
+    "keyword": "anxiety and depression weight loss",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 40.0
+   },
+   {
+    "keyword": "anxiety depression weight loss",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 43.0
+   },
+   {
+    "keyword": "anxiety overweight humanistic approach",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 80.0
+   },
+   {
+    "keyword": "bariatric assessment texas",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 27.0
+   },
+   {
+    "keyword": "bariatric clinic",
+    "clicks": 0,
+    "impressions": 2,
+    "ctr": 0.0,
+    "position": 16.0
+   },
+   {
+    "keyword": "bariatric clinic san antonio",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 23.0
+   },
+   {
+    "keyword": "bariatric counseling",
+    "clicks": 0,
+    "impressions": 32,
+    "ctr": 0.0,
+    "position": 11.88
+   },
+   {
+    "keyword": "bariatric counseling near me",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 13.0
+   },
+   {
+    "keyword": "bariatric counseling san antonio",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 2.0
+   },
+   {
+    "keyword": "bariatric counselor",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 7.0
+   },
+   {
+    "keyword": "bariatric counselor indiana",
+    "clicks": 0,
+    "impressions": 25,
+    "ctr": 0.0,
+    "position": 15.24
+   },
+   {
+    "keyword": "bariatric diet counseling ga",
+    "clicks": 0,
+    "impressions": 4,
+    "ctr": 0.0,
+    "position": 10.25
+   },
+   {
+    "keyword": "bariatric groups near me",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 16.0
+   },
+   {
+    "keyword": "bariatric health & wellness",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 54.0
+   },
+   {
+    "keyword": "bariatric nutrition counseling",
+    "clicks": 0,
+    "impressions": 4,
+    "ctr": 0.0,
+    "position": 64.5
+   },
+   {
+    "keyword": "bariatric nutrition counseling near me",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 83.0
+   }
+  ],
+  "top_pages": [
+   {
+    "page": "https://www.bariatriccounselingcenter.com/",
+    "clicks": 7,
+    "impressions": 365,
+    "ctr": 0.0192,
+    "position": 23.44
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+    "clicks": 6,
+    "impressions": 763,
+    "ctr": 0.0079,
+    "position": 8.68
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/about/",
+    "clicks": 3,
+    "impressions": 239,
+    "ctr": 0.0126,
+    "position": 23.01
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/",
+    "clicks": 2,
+    "impressions": 176,
+    "ctr": 0.0114,
+    "position": 21.59
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
+    "clicks": 2,
+    "impressions": 831,
+    "ctr": 0.0024,
+    "position": 11.06
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+    "clicks": 1,
+    "impressions": 1359,
+    "ctr": 0.0007,
+    "position": 14.78
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/",
+    "clicks": 1,
+    "impressions": 281,
+    "ctr": 0.0036,
+    "position": 9.8
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Roasted-Cauliflower-and-Hazelnuts.pdf",
+    "clicks": 1,
+    "impressions": 102,
+    "ctr": 0.0098,
+    "position": 29.87
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/adhd-and-emotional-eating-in-san-antonio-tx/",
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 9.71
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/author/james-gemino/",
+    "clicks": 0,
+    "impressions": 35,
+    "ctr": 0.0,
+    "position": 2.71
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/author/shamilton/",
+    "clicks": 0,
+    "impressions": 85,
+    "ctr": 0.0,
+    "position": 7.12
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/author/tmccord845/",
+    "clicks": 0,
+    "impressions": 12,
+    "ctr": 0.0,
+    "position": 5.92
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+    "clicks": 0,
+    "impressions": 44,
+    "ctr": 0.0,
+    "position": 8.59
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
+    "clicks": 0,
+    "impressions": 5,
+    "ctr": 0.0,
+    "position": 11.0
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/",
+    "clicks": 0,
+    "impressions": 49,
+    "ctr": 0.0,
+    "position": 21.69
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 21.0
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/blog/",
+    "clicks": 0,
+    "impressions": 16,
+    "ctr": 0.0,
+    "position": 3.25
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/",
+    "clicks": 0,
+    "impressions": 159,
+    "ctr": 0.0,
+    "position": 45.26
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/blog/movement-where-to-start/",
+    "clicks": 0,
+    "impressions": 3,
+    "ctr": 0.0,
+    "position": 5.67
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/blog/page/4/",
+    "clicks": 0,
+    "impressions": 5,
+    "ctr": 0.0,
+    "position": 4.2
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/blog/what-is-emotional-eating/",
+    "clicks": 0,
+    "impressions": 110,
+    "ctr": 0.0,
+    "position": 26.02
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/body-confidence-counseling-in-san-antonio-tx/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 1.0
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/category/eating-disorders/",
+    "clicks": 0,
+    "impressions": 6,
+    "ctr": 0.0,
+    "position": 7.33
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/category/emotional-eating/",
+    "clicks": 0,
+    "impressions": 2,
+    "ctr": 0.0,
+    "position": 4.0
+   },
+   {
+    "page": "https://www.bariatriccounselingcenter.com/category/self-improvement/behavioral-patterns/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 4.0
+   }
+  ],
+  "query_page_pairs": [
+   {
+    "keyword": "bariatric counseling center",
+    "page": "https://www.bariatriccounselingcenter.com/",
+    "clicks": 2,
+    "impressions": 15,
+    "ctr": 0.1333,
+    "position": 1.67
+   },
+   {
+    "keyword": "bariatric nutritionist near me",
+    "page": "https://www.bariatriccounselingcenter.com/",
+    "clicks": 1,
+    "impressions": 1,
+    "ctr": 1.0,
+    "position": 5.0
+   },
+   {
+    "keyword": "\"an accountant on a weight-loss program has a rash, poor sleep\" \"best next step\"",
+    "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+    "clicks": 0,
+    "impressions": 6,
+    "ctr": 0.0,
+    "position": 4.33
+   },
+   {
+    "keyword": "__________ is an unhealthy habit that can trigger impulsive nutritional choices. eating throughout the day skipping occasional meals drinking more than one liter of water avoiding dairy products",
+    "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 1.0
+   },
+   {
+    "keyword": "active ingredient in mounjaro and zepbound",
+    "page": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
+    "clicks": 0,
+    "impressions": 2,
+    "ctr": 0.0,
+    "position": 9.5
+   },
+   {
+    "keyword": "advance bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 11.0
+   },
+   {
+    "keyword": "alternative health goals to weight loss",
+    "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 48.0
+   },
+   {
+    "keyword": "anorexia recipes",
+    "page": "https://www.bariatriccounselingcenter.com/recipes/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 5.0
+   },
+   {
+    "keyword": "anorexia recovery recipes",
+    "page": "https://www.bariatriccounselingcenter.com/recipes/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 53.0
+   },
+   {
+    "keyword": "anxiety and depression weight loss",
+    "page": "https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 40.0
+   },
+   {
+    "keyword": "anxiety depression weight loss",
+    "page": "https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 43.0
+   },
+   {
+    "keyword": "anxiety overweight humanistic approach",
+    "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 80.0
+   },
+   {
+    "keyword": "bariatric assessment texas",
+    "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 27.0
+   },
+   {
+    "keyword": "bariatric clinic",
+    "page": "https://www.bariatriccounselingcenter.com/",
+    "clicks": 0,
+    "impressions": 2,
+    "ctr": 0.0,
+    "position": 16.0
+   },
+   {
+    "keyword": "bariatric clinic san antonio",
+    "page": "https://www.bariatriccounselingcenter.com/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 23.0
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/",
+    "clicks": 0,
+    "impressions": 16,
+    "ctr": 0.0,
+    "position": 3.19
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/about/",
+    "clicks": 0,
+    "impressions": 17,
+    "ctr": 0.0,
+    "position": 7.59
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+    "clicks": 0,
+    "impressions": 6,
+    "ctr": 0.0,
+    "position": 2.0
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/",
+    "clicks": 0,
+    "impressions": 4,
+    "ctr": 0.0,
+    "position": 2.0
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/blog/",
+    "clicks": 0,
+    "impressions": 6,
+    "ctr": 0.0,
+    "position": 4.83
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/category/staff/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 56.0
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/contact/",
+    "clicks": 0,
+    "impressions": 13,
+    "ctr": 0.0,
+    "position": 3.54
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/faq/",
+    "clicks": 0,
+    "impressions": 10,
+    "ctr": 0.0,
+    "position": 10.1
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 4.86
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/",
+    "clicks": 0,
+    "impressions": 5,
+    "ctr": 0.0,
+    "position": 1.8
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+    "clicks": 0,
+    "impressions": 6,
+    "ctr": 0.0,
+    "position": 4.83
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/testimonials/",
+    "clicks": 0,
+    "impressions": 10,
+    "ctr": 0.0,
+    "position": 3.9
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/",
+    "clicks": 0,
+    "impressions": 16,
+    "ctr": 0.0,
+    "position": 7.25
+   },
+   {
+    "keyword": "bariatric counseling",
+    "page": "https://www.bariatriccounselingcenter.com/weight-management-counseling-in-san-antonio-tx/",
+    "clicks": 0,
+    "impressions": 4,
+    "ctr": 0.0,
+    "position": 2.0
+   },
+   {
+    "keyword": "bariatric counseling center",
+    "page": "https://www.bariatriccounselingcenter.com/about/",
+    "clicks": 0,
+    "impressions": 14,
+    "ctr": 0.0,
+    "position": 2.79
+   },
+   {
+    "keyword": "bariatric counseling center",
+    "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+    "clicks": 0,
+    "impressions": 11,
+    "ctr": 0.0,
+    "position": 1.55
+   },
+   {
+    "keyword": "bariatric counseling center",
+    "page": "https://www.bariatriccounselingcenter.com/contact/",
+    "clicks": 0,
+    "impressions": 13,
+    "ctr": 0.0,
+    "position": 1.54
+   },
+   {
+    "keyword": "bariatric counseling center",
+    "page": "https://www.bariatriccounselingcenter.com/faq/",
+    "clicks": 0,
+    "impressions": 15,
+    "ctr": 0.0,
+    "position": 1.87
+   },
+   {
+    "keyword": "bariatric counseling center",
+    "page": "https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/",
+    "clicks": 0,
+    "impressions": 13,
+    "ctr": 0.0,
+    "position": 3.23
+   },
+   {
+    "keyword": "bariatric counseling center",
+    "page": "https://www.bariatriccounselingcenter.com/ourprogram/enjoy-movement/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 25.0
+   },
+   {
+    "keyword": "bariatric counseling center",
+    "page": "https://www.bariatriccounselingcenter.com/testimonials/",
+    "clicks": 0,
+    "impressions": 9,
+    "ctr": 0.0,
+    "position": 1.78
+   },
+   {
+    "keyword": "bariatric counseling center",
+    "page": "https://www.bariatriccounselingcenter.com/weight-management-counseling-in-san-antonio-tx/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 2.0
+   },
+   {
+    "keyword": "bariatric counseling near me",
+    "page": "https://www.bariatriccounselingcenter.com/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 13.0
+   },
+   {
+    "keyword": "bariatric counseling san antonio",
+    "page": "https://www.bariatriccounselingcenter.com/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 2.0
+   },
+   {
+    "keyword": "bariatric counseling san antonio",
+    "page": "https://www.bariatriccounselingcenter.com/about/",
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 2.0
+   }
+  ],
+  "per_keyword_metrics": {
+   "bariatric counseling": {
+    "clicks": 0,
+    "impressions": 32,
+    "ctr": 0.0,
+    "position": 11.88
+   },
+   "bariatric counseling near me": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 13.0
+   },
+   "bariatric counseling san antonio": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 2.0
+   },
+   "bariatric counselor": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 7.0
+   },
+   "bariatric therapist": {
+    "clicks": 0,
+    "impressions": 3,
+    "ctr": 0.0,
+    "position": 4.0
+   },
+   "bmi center san antonio": {
+    "clicks": 0,
+    "impressions": 5,
+    "ctr": 0.0,
+    "position": 11.2
+   },
+   "eating disorder counseling san antonio": {
+    "clicks": 0,
+    "impressions": 14,
+    "ctr": 0.0,
+    "position": 19.21
+   },
+   "eating disorder therapist san antonio": {
+    "clicks": 0,
+    "impressions": 11,
+    "ctr": 0.0,
+    "position": 25.36
+   },
+   "eating disorder treatment san antonio": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 39.0
+   },
+   "emotional eating therapy san antonio": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 5.0
+   },
+   "holistic approach to weight loss": {
+    "clicks": 0,
+    "impressions": 6,
+    "ctr": 0.0,
+    "position": 40.17
+   },
+   "nutrition counseling": {
+    "clicks": 0,
+    "impressions": 52,
+    "ctr": 0.0,
+    "position": 71.02
+   },
+   "nutritional counseling san antonio tx": {
+    "clicks": 0,
+    "impressions": 11,
+    "ctr": 0.0,
+    "position": 23.64
+   },
+   "registered dietitian san antonio": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 33.0
+   },
+   "san antonio bariatric center": {
+    "clicks": 0,
+    "impressions": 4,
+    "ctr": 0.0,
+    "position": 13.5
+   },
+   "weight loss counseling": {
+    "clicks": 0,
+    "impressions": 5,
+    "ctr": 0.0,
+    "position": 47.8
+   },
+   "weight loss counseling or therapy": {
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 15.71
+   },
+   "weight loss counseling san antonio": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 2.0
+   },
+   "weight loss counselor": {
+    "clicks": 0,
+    "impressions": 3,
+    "ctr": 0.0,
+    "position": 21.67
+   },
+   "weight loss programs san antonio tx": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 52.0
+   },
+   "weight loss therapy san antonio": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 17.0
+   }
+  },
+  "per_page_metrics": {
+   "https://www.bariatriccounselingcenter.com/": {
+    "clicks": 7,
+    "impressions": 365,
+    "ctr": 0.0192,
+    "position": 23.44
+   },
+   "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/": {
+    "clicks": 6,
+    "impressions": 763,
+    "ctr": 0.0079,
+    "position": 8.68
+   },
+   "https://www.bariatriccounselingcenter.com/about/": {
+    "clicks": 3,
+    "impressions": 239,
+    "ctr": 0.0126,
+    "position": 23.01
+   },
+   "https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/": {
+    "clicks": 2,
+    "impressions": 176,
+    "ctr": 0.0114,
+    "position": 21.59
+   },
+   "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/": {
+    "clicks": 2,
+    "impressions": 831,
+    "ctr": 0.0024,
+    "position": 11.06
+   },
+   "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/": {
+    "clicks": 1,
+    "impressions": 1359,
+    "ctr": 0.0007,
+    "position": 14.78
+   },
+   "https://www.bariatriccounselingcenter.com/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/": {
+    "clicks": 1,
+    "impressions": 281,
+    "ctr": 0.0036,
+    "position": 9.8
+   },
+   "https://www.bariatriccounselingcenter.com/wp-content/uploads/Roasted-Cauliflower-and-Hazelnuts.pdf": {
+    "clicks": 1,
+    "impressions": 102,
+    "ctr": 0.0098,
+    "position": 29.87
+   },
+   "https://www.bariatriccounselingcenter.com/adhd-and-emotional-eating-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 9.71
+   },
+   "https://www.bariatriccounselingcenter.com/author/james-gemino/": {
+    "clicks": 0,
+    "impressions": 35,
+    "ctr": 0.0,
+    "position": 2.71
+   },
+   "https://www.bariatriccounselingcenter.com/author/shamilton/": {
+    "clicks": 0,
+    "impressions": 85,
+    "ctr": 0.0,
+    "position": 7.12
+   },
+   "https://www.bariatriccounselingcenter.com/author/tmccord845/": {
+    "clicks": 0,
+    "impressions": 12,
+    "ctr": 0.0,
+    "position": 5.92
+   },
+   "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 44,
+    "ctr": 0.0,
+    "position": 8.59
+   },
+   "https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 5,
+    "ctr": 0.0,
+    "position": 11.0
+   },
+   "https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 49,
+    "ctr": 0.0,
+    "position": 21.69
+   },
+   "https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 21.0
+   },
+   "https://www.bariatriccounselingcenter.com/blog/": {
+    "clicks": 0,
+    "impressions": 16,
+    "ctr": 0.0,
+    "position": 3.25
+   },
+   "https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/": {
+    "clicks": 0,
+    "impressions": 159,
+    "ctr": 0.0,
+    "position": 45.26
+   },
+   "https://www.bariatriccounselingcenter.com/blog/movement-where-to-start/": {
+    "clicks": 0,
+    "impressions": 3,
+    "ctr": 0.0,
+    "position": 5.67
+   },
+   "https://www.bariatriccounselingcenter.com/blog/page/4/": {
+    "clicks": 0,
+    "impressions": 5,
+    "ctr": 0.0,
+    "position": 4.2
+   },
+   "https://www.bariatriccounselingcenter.com/blog/what-is-emotional-eating/": {
+    "clicks": 0,
+    "impressions": 110,
+    "ctr": 0.0,
+    "position": 26.02
+   },
+   "https://www.bariatriccounselingcenter.com/body-confidence-counseling-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 1.0
+   },
+   "https://www.bariatriccounselingcenter.com/category/eating-disorders/": {
+    "clicks": 0,
+    "impressions": 6,
+    "ctr": 0.0,
+    "position": 7.33
+   },
+   "https://www.bariatriccounselingcenter.com/category/emotional-eating/": {
+    "clicks": 0,
+    "impressions": 2,
+    "ctr": 0.0,
+    "position": 4.0
+   },
+   "https://www.bariatriccounselingcenter.com/category/self-improvement/behavioral-patterns/": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 4.0
+   },
+   "https://www.bariatriccounselingcenter.com/category/self-improvement/weight-loss-journey-self-improvement/": {
+    "clicks": 0,
+    "impressions": 2,
+    "ctr": 0.0,
+    "position": 7.0
+   },
+   "https://www.bariatriccounselingcenter.com/category/staff/": {
+    "clicks": 0,
+    "impressions": 2,
+    "ctr": 0.0,
+    "position": 31.0
+   },
+   "https://www.bariatriccounselingcenter.com/contact/": {
+    "clicks": 0,
+    "impressions": 78,
+    "ctr": 0.0,
+    "position": 13.36
+   },
+   "https://www.bariatriccounselingcenter.com/eating-disorder-therapist-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 11.0
+   },
+   "https://www.bariatriccounselingcenter.com/eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/": {
+    "clicks": 0,
+    "impressions": 11,
+    "ctr": 0.0,
+    "position": 8.91
+   },
+   "https://www.bariatriccounselingcenter.com/emotional-eating-therapy-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 18.0
+   },
+   "https://www.bariatriccounselingcenter.com/faq/": {
+    "clicks": 0,
+    "impressions": 147,
+    "ctr": 0.0,
+    "position": 16.89
+   },
+   "https://www.bariatriccounselingcenter.com/food-addiction-treatment-in-texas/": {
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 22.29
+   },
+   "https://www.bariatriccounselingcenter.com/glp-1-weight-regain-counseling-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 5,
+    "ctr": 0.0,
+    "position": 14.8
+   },
+   "https://www.bariatriccounselingcenter.com/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/": {
+    "clicks": 0,
+    "impressions": 345,
+    "ctr": 0.0,
+    "position": 11.04
+   },
+   "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/": {
+    "clicks": 0,
+    "impressions": 6,
+    "ctr": 0.0,
+    "position": 1.67
+   },
+   "https://www.bariatriccounselingcenter.com/healthy-living-2/why-late-night-snacking-always-wins-and-why-youre-not-weak-for-it/": {
+    "clicks": 0,
+    "impressions": 2,
+    "ctr": 0.0,
+    "position": 7.5
+   },
+   "https://www.bariatriccounselingcenter.com/holistic-weight-loss-counseling-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 34.43
+   },
+   "https://www.bariatriccounselingcenter.com/in-the-media/": {
+    "clicks": 0,
+    "impressions": 14,
+    "ctr": 0.0,
+    "position": 9.79
+   },
+   "https://www.bariatriccounselingcenter.com/interviews/": {
+    "clicks": 0,
+    "impressions": 11,
+    "ctr": 0.0,
+    "position": 26.36
+   },
+   "https://www.bariatriccounselingcenter.com/night-eating-syndrome-treatment-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 28,
+    "ctr": 0.0,
+    "position": 36.18
+   },
+   "https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 159,
+    "ctr": 0.0,
+    "position": 56.05
+   },
+   "https://www.bariatriccounselingcenter.com/ourprogram/": {
+    "clicks": 0,
+    "impressions": 19,
+    "ctr": 0.0,
+    "position": 3.11
+   },
+   "https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/": {
+    "clicks": 0,
+    "impressions": 42,
+    "ctr": 0.0,
+    "position": 3.0
+   },
+   "https://www.bariatriccounselingcenter.com/ourprogram/dine-together/": {
+    "clicks": 0,
+    "impressions": 12,
+    "ctr": 0.0,
+    "position": 7.42
+   },
+   "https://www.bariatriccounselingcenter.com/ourprogram/enjoy-movement/": {
+    "clicks": 0,
+    "impressions": 10,
+    "ctr": 0.0,
+    "position": 11.9
+   },
+   "https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/": {
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 32.71
+   },
+   "https://www.bariatriccounselingcenter.com/program-schedule/": {
+    "clicks": 0,
+    "impressions": 4,
+    "ctr": 0.0,
+    "position": 5.5
+   },
+   "https://www.bariatriccounselingcenter.com/recipes/": {
+    "clicks": 0,
+    "impressions": 61,
+    "ctr": 0.0,
+    "position": 13.85
+   },
+   "https://www.bariatriccounselingcenter.com/refer-a-patient/": {
+    "clicks": 0,
+    "impressions": 9,
+    "ctr": 0.0,
+    "position": 4.0
+   },
+   "https://www.bariatriccounselingcenter.com/registered-dietitian-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 5,
+    "ctr": 0.0,
+    "position": 9.4
+   },
+   "https://www.bariatriccounselingcenter.com/self-improvement/how-to-identify-self-sabotage-behaviors-part-2/": {
+    "clicks": 0,
+    "impressions": 69,
+    "ctr": 0.0,
+    "position": 13.58
+   },
+   "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/": {
+    "clicks": 0,
+    "impressions": 191,
+    "ctr": 0.0,
+    "position": 26.13
+   },
+   "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/why-stress-eating-happens": {
+    "clicks": 0,
+    "impressions": 6,
+    "ctr": 0.0,
+    "position": 10.33
+   },
+   "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/why-stress-eating-happens/": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 20.0
+   },
+   "https://www.bariatriccounselingcenter.com/staff-videos/": {
+    "clicks": 0,
+    "impressions": 10,
+    "ctr": 0.0,
+    "position": 25.3
+   },
+   "https://www.bariatriccounselingcenter.com/testimonials/": {
+    "clicks": 0,
+    "impressions": 53,
+    "ctr": 0.0,
+    "position": 3.06
+   },
+   "https://www.bariatriccounselingcenter.com/the-importance-of-multi-disciplinary-care-for-treating-binge-eating-disorder-why-a-team-approach-is-best/": {
+    "clicks": 0,
+    "impressions": 49,
+    "ctr": 0.0,
+    "position": 12.02
+   },
+   "https://www.bariatriccounselingcenter.com/virtual-emotional-eating-therapy-in-texas/": {
+    "clicks": 0,
+    "impressions": 2,
+    "ctr": 0.0,
+    "position": 1.0
+   },
+   "https://www.bariatriccounselingcenter.com/weight-management-counseling-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 29,
+    "ctr": 0.0,
+    "position": 30.24
+   },
+   "https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 2,
+    "ctr": 0.0,
+    "position": 9.0
+   },
+   "https://www.bariatriccounselingcenter.com/weight-management-therapist-in-san-antonio-tx/": {
+    "clicks": 0,
+    "impressions": 1,
+    "ctr": 0.0,
+    "position": 2.0
+   },
+   "https://www.bariatriccounselingcenter.com/wp-content/uploads/BCC-Recipes-PDF-1.pdf": {
+    "clicks": 0,
+    "impressions": 81,
+    "ctr": 0.0,
+    "position": 22.91
+   },
+   "https://www.bariatriccounselingcenter.com/wp-content/uploads/Back-3.pdf": {
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 18.14
+   },
+   "https://www.bariatriccounselingcenter.com/wp-content/uploads/Greek-Lamb-Meatballs-with-Butternut-Squash-Puree-Tzatziki.pdf": {
+    "clicks": 0,
+    "impressions": 109,
+    "ctr": 0.0,
+    "position": 21.52
+   },
+   "https://www.bariatriccounselingcenter.com/wp-content/uploads/Grilled-Chicken-Thighs-with-Ratatouille.pdf": {
+    "clicks": 0,
+    "impressions": 459,
+    "ctr": 0.0,
+    "position": 25.6
+   },
+   "https://www.bariatriccounselingcenter.com/wp-content/uploads/Saltimbocca-with-Sauteed-Spinach-Grape-Tomatoes.pdf": {
+    "clicks": 0,
+    "impressions": 24,
+    "ctr": 0.0,
+    "position": 26.62
+   },
+   "https://www.bariatriccounselingcenter.com/wp-content/uploads/Shrimp-Mussels-in-Saffron-White-Wine-Broth-with-Roasted-Butternut-Squash.pdf": {
+    "clicks": 0,
+    "impressions": 135,
+    "ctr": 0.0,
+    "position": 25.37
+   }
+  },
+  "discovery_candidates": [
+   {
+    "keyword": "nutritional counseling",
+    "clicks": 0,
+    "impressions": 41,
+    "ctr": 0.0,
+    "position": 63.2
+   },
+   {
+    "keyword": "holistic weight loss",
+    "clicks": 0,
+    "impressions": 39,
+    "ctr": 0.0,
+    "position": 26.72
+   },
+   {
+    "keyword": "weight loss for body confidence",
+    "clicks": 0,
+    "impressions": 30,
+    "ctr": 0.0,
+    "position": 11.63
+   },
+   {
+    "keyword": "sara hamilton",
+    "clicks": 0,
+    "impressions": 26,
+    "ctr": 0.0,
+    "position": 9.15
+   },
+   {
+    "keyword": "bariatric counselor indiana",
+    "clicks": 0,
+    "impressions": 25,
+    "ctr": 0.0,
+    "position": 15.24
+   },
+   {
+    "keyword": "holistic weight loss program",
+    "clicks": 0,
+    "impressions": 21,
+    "ctr": 0.0,
+    "position": 21.33
+   },
+   {
+    "keyword": "emotional eating meaning",
+    "clicks": 0,
+    "impressions": 19,
+    "ctr": 0.0,
+    "position": 29.79
+   },
+   {
+    "keyword": "rebuild self-esteem after dieting",
+    "clicks": 0,
+    "impressions": 19,
+    "ctr": 0.0,
+    "position": 6.11
+   },
+   {
+    "keyword": "emotional eating",
+    "clicks": 0,
+    "impressions": 15,
+    "ctr": 0.0,
+    "position": 35.33
+   },
+   {
+    "keyword": "night eating disorder treatment",
+    "clicks": 0,
+    "impressions": 15,
+    "ctr": 0.0,
+    "position": 61.0
+   },
+   {
+    "keyword": "bariatric psychologist",
+    "clicks": 0,
+    "impressions": 12,
+    "ctr": 0.0,
+    "position": 24.17
+   },
+   {
+    "keyword": "eating disorder therapy san antonio",
+    "clicks": 0,
+    "impressions": 12,
+    "ctr": 0.0,
+    "position": 25.58
+   },
+   {
+    "keyword": "weight loss version of mounjaro",
+    "clicks": 0,
+    "impressions": 12,
+    "ctr": 0.0,
+    "position": 9.5
+   },
+   {
+    "keyword": "nutritional support therapy san antonio",
+    "clicks": 0,
+    "impressions": 11,
+    "ctr": 0.0,
+    "position": 40.36
+   },
+   {
+    "keyword": "ozempic vs mounjaro vs zepbound weight loss",
+    "clicks": 0,
+    "impressions": 11,
+    "ctr": 0.0,
+    "position": 10.64
+   },
+   {
+    "keyword": "self esteem weight loss",
+    "clicks": 0,
+    "impressions": 11,
+    "ctr": 0.0,
+    "position": 8.18
+   },
+   {
+    "keyword": "wegovy ozempic or zepbound",
+    "clicks": 0,
+    "impressions": 11,
+    "ctr": 0.0,
+    "position": 11.91
+   },
+   {
+    "keyword": "zepbound vs wegovy vs ozempic vs mounjaro",
+    "clicks": 0,
+    "impressions": 11,
+    "ctr": 0.0,
+    "position": 6.82
+   },
+   {
+    "keyword": "weight management counseling",
+    "clicks": 0,
+    "impressions": 10,
+    "ctr": 0.0,
+    "position": 45.8
+   },
+   {
+    "keyword": "emotional eating counseling mcallen, tx",
+    "clicks": 0,
+    "impressions": 9,
+    "ctr": 0.0,
+    "position": 13.0
+   },
+   {
+    "keyword": "low self esteem low weight loss",
+    "clicks": 0,
+    "impressions": 9,
+    "ctr": 0.0,
+    "position": 9.0
+   },
+   {
+    "keyword": "obesity counseling",
+    "clicks": 0,
+    "impressions": 9,
+    "ctr": 0.0,
+    "position": 39.78
+   },
+   {
+    "keyword": "therapy for emotional eating mcallen, tx",
+    "clicks": 0,
+    "impressions": 9,
+    "ctr": 0.0,
+    "position": 16.11
+   },
+   {
+    "keyword": "weight loss and low self esteem",
+    "clicks": 0,
+    "impressions": 9,
+    "ctr": 0.0,
+    "position": 6.11
+   },
+   {
+    "keyword": "weight loss and self esteem",
+    "clicks": 0,
+    "impressions": 9,
+    "ctr": 0.0,
+    "position": 8.89
+   },
+   {
+    "keyword": "weight loss self esteem issues",
+    "clicks": 0,
+    "impressions": 9,
+    "ctr": 0.0,
+    "position": 5.33
+   },
+   {
+    "keyword": "difference between nutritionist and dietitian usa",
+    "clicks": 0,
+    "impressions": 8,
+    "ctr": 0.0,
+    "position": 1.0
+   },
+   {
+    "keyword": "emotional eating therapy mcallen, tx",
+    "clicks": 0,
+    "impressions": 8,
+    "ctr": 0.0,
+    "position": 14.38
+   },
+   {
+    "keyword": "overweight and feeling depressed",
+    "clicks": 0,
+    "impressions": 8,
+    "ctr": 0.0,
+    "position": 22.5
+   },
+   {
+    "keyword": "ozempic vs wegovy vs mounjaro vs zepbound",
+    "clicks": 0,
+    "impressions": 8,
+    "ctr": 0.0,
+    "position": 7.25
+   },
+   {
+    "keyword": "tirzepatide vs semaglutide",
+    "clicks": 0,
+    "impressions": 8,
+    "ctr": 0.0,
+    "position": 2.0
+   },
+   {
+    "keyword": "what are examples of self sabotaging behaviors",
+    "clicks": 0,
+    "impressions": 8,
+    "ctr": 0.0,
+    "position": 9.38
+   },
+   {
+    "keyword": "binge eating therapy mcallen, tx",
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 20.14
+   },
+   {
+    "keyword": "depression weight",
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 18.57
+   },
+   {
+    "keyword": "emotional eating therapy near me",
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 71.0
+   },
+   {
+    "keyword": "holistic lifestyle changes for weight loss",
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 48.0
+   },
+   {
+    "keyword": "how does weight loss increase self esteem",
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 10.43
+   },
+   {
+    "keyword": "nutrition counseling services",
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 46.0
+   },
+   {
+    "keyword": "post weight loss self esteem",
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 10.86
+   },
+   {
+    "keyword": "seasonal healthy recipes for recovery",
+    "clicks": 0,
+    "impressions": 7,
+    "ctr": 0.0,
+    "position": 46.29
+   }
+  ]
+ },
+ "analysis": {
+  "rising": [
+   {
+    "keyword": "bariatric counselor",
+    "position": 3,
+    "change": 1,
+    "category": "national-primary"
+   },
+   {
+    "keyword": "bariatric counseling near me",
+    "position": 3,
+    "change": 4,
+    "category": "national-primary"
+   }
+  ],
+  "declining": [],
+  "low_hanging_fruit": [
+   {
+    "keyword": "bmi center san antonio",
+    "position": 11.2,
+    "trend": "gsc_avg",
+    "category": "skip-permanent",
+    "gsc_impressions": 5,
+    "source": "GSC avg position"
+   },
+   {
+    "keyword": "san antonio bariatric center",
+    "position": 13.5,
+    "trend": "gsc_avg",
+    "category": "local-service",
+    "gsc_impressions": 4,
+    "source": "GSC avg position"
+   },
+   {
+    "keyword": "weight loss therapy san antonio",
+    "position": 17.0,
+    "trend": "gsc_avg",
+    "category": "local-service",
+    "gsc_impressions": 1,
+    "source": "GSC avg position"
+   },
+   {
+    "keyword": "eating disorder counseling san antonio",
+    "position": 19.2,
+    "trend": "gsc_avg",
+    "category": "local-service",
+    "gsc_impressions": 14,
+    "source": "GSC avg position"
+   }
+  ],
+  "new_in_top_20": [
+   {
+    "keyword": "weight loss counseling or therapy",
+    "position": 8
+   }
+  ]
+ },
+ "esperanza_competitive_status": {
+  "domain": "esperanzaedc.com",
+  "ahrefs_status": "plan-gated (Insufficient plan) - organic keyword pull unavailable",
+  "new_pages_last_7_days": 0,
+  "latest_published_page": {
+   "id": 4092,
+   "title": "Brave Adolescent ARFID IOP",
+   "date": "2026-04-22"
+  },
+  "recent_modifications": "staff pages + Patient Resources re-saved (no new content pages)",
+  "keyword_gaps_live": [
+   {
+    "keyword": "binge eating treatment san antonio",
+    "esperanza_position": 1,
+    "bcc_position": null,
+    "note": "Esperanza #1; BCC not in top 10 - BED is BCC's strategic lane"
+   },
+   {
+    "keyword": "food addiction treatment san antonio",
+    "esperanza_position": 2,
+    "bcc_position": null,
+    "note": "Esperanza #2; BCC not in top 10 - food addiction is BCC's strategic lane"
+   },
+   {
+    "keyword": "eating disorder counseling san antonio",
+    "esperanza_position": 3,
+    "bcc_position": null,
+    "note": "Esperanza #3; BCC not in top 10"
+   }
+  ],
+  "bcc_wins_vs_esperanza": [
+   {
+    "keyword": "emotional eating therapy san antonio",
+    "bcc_position": 3,
+    "esperanza_position": 6,
+    "note": "BCC outranks Esperanza"
+   },
+   {
+    "keyword": "bariatric counseling san antonio",
+    "bcc_position": 1,
+    "esperanza_position": null,
+    "note": "BCC #1; Esperanza absent (not in bariatric lane)"
+   },
+   {
+    "keyword": "bariatric counseling",
+    "bcc_position": 1,
+    "esperanza_position": null,
+    "note": "BCC #1 national; Esperanza absent"
+   }
+  ],
+  "gap_count": 3,
+  "top_gap": "binge eating treatment san antonio"
+ },
+ "link_checks": [
+  {
+   "note": "14 pages HTTP-checked (10 top GSC pages + 4 new pages), all 200, 0 broken. Internal-link click-crawl abbreviated to HTTP-status this run.",
+   "pages_checked": 14,
+   "broken_links": [],
+   "status": "ok"
+  }
+ ],
+ "published_pages_index": [
+  {
+   "id": 5655,
+   "slug": "intuitive-eating-support-in-mcallen-tx",
+   "title": "Intuitive Eating Support in McAllen, TX",
+   "link": "https://www.bariatriccounselingcenter.com/intuitive-eating-support-in-mcallen-tx/",
+   "date": "2026-06-24T10:15:23",
+   "modified": "2026-06-24T13:17:15",
+   "first_seen_run": "2026-06-29"
+  },
+  {
+   "id": 5651,
+   "slug": "weight-loss-counseling-or-therapy",
+   "title": "Weight Loss Counseling vs Therapy: What&#8217;s the Difference?",
+   "link": "https://www.bariatriccounselingcenter.com/weight-loss-counseling-or-therapy/",
+   "date": "2026-06-24T09:57:07",
+   "modified": "2026-06-24T13:17:18",
+   "first_seen_run": "2026-06-29"
+  },
+  {
+   "id": 5650,
+   "slug": "bariatric-counseling-near-me",
+   "title": "Bariatric Counseling Near Me: How to Choose the Right Care",
+   "link": "https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
+   "date": "2026-06-24T09:53:46",
+   "modified": "2026-06-24T13:17:21",
+   "first_seen_run": "2026-06-29"
+  },
+  {
+   "id": 5649,
+   "slug": "eating-disorder-therapist-near-me",
+   "title": "Eating Disorder Therapist Near Me: How to Find the Right Fit",
+   "link": "https://www.bariatriccounselingcenter.com/eating-disorder-therapist-near-me/",
+   "date": "2026-06-24T09:50:40",
+   "modified": "2026-06-24T13:17:23",
+   "first_seen_run": "2026-06-29"
+  },
+  {
+   "id": 5611,
+   "slug": "food-addiction-treatment-in-texas",
+   "title": "Food Addiction Treatment in Texas: Real Help for Overeaters, Wherever You Live",
+   "link": "https://www.bariatriccounselingcenter.com/food-addiction-treatment-in-texas/",
+   "date": "2026-06-15T10:13:27",
+   "modified": "2026-06-24T13:17:27",
+   "first_seen_run": "2026-06-22"
+  },
+  {
+   "id": 5334,
+   "slug": "what-is-a-bariatric-therapist",
+   "title": "What Is a Bariatric Therapist?",
+   "link": "https://www.bariatriccounselingcenter.com/what-is-a-bariatric-therapist/",
+   "date": "2026-06-15T10:13:18",
+   "modified": "2026-06-24T13:18:35",
+   "first_seen_run": "2026-06-11"
+  },
+  {
+   "id": 5170,
+   "slug": "eating-disorder-therapist-in-san-antonio-tx",
+   "title": "Eating Disorder Therapist in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/eating-disorder-therapist-in-san-antonio-tx/",
+   "date": "2026-06-15T10:13:08",
+   "modified": "2026-06-24T13:20:25",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5608,
+   "slug": "eating-disorder-referrals-for-providers-in-san-antonio-tx",
+   "title": "A Referral Resource for Clinicians: Adult Eating Disorder and Food Addiction Care in San Antonio",
+   "link": "https://www.bariatriccounselingcenter.com/eating-disorder-referrals-for-providers-in-san-antonio-tx/",
+   "date": "2026-06-15T10:12:59",
+   "modified": "2026-06-24T13:17:30",
+   "first_seen_run": "2026-06-22"
+  },
+  {
+   "id": 3590,
+   "slug": "understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro",
+   "title": "Understanding Weight Loss Medications: Wegovy, Ozempic, Zepbound, and Mounjaro",
+   "link": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
+   "date": "2026-06-15T10:12:44",
+   "modified": "2026-06-18T08:56:48",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3566,
+   "slug": "understanding-anxiety-and-depression-related-to-weight",
+   "title": "Understanding Anxiety and Depression Related to Weight",
+   "link": "https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/",
+   "date": "2026-06-12T10:02:28",
+   "modified": "2026-06-15T10:28:05",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5461,
+   "slug": "night-eating-syndrome-treatment-in-san-antonio-tx",
+   "title": "If the Hardest Part of Your Day Is Night, There Is Help",
+   "link": "https://www.bariatriccounselingcenter.com/night-eating-syndrome-treatment-in-san-antonio-tx/",
+   "date": "2026-06-10T12:28:47",
+   "modified": "2026-06-24T13:17:37",
+   "first_seen_run": "2026-06-11"
+  },
+  {
+   "id": 5462,
+   "slug": "glp-1-weight-regain-counseling-in-san-antonio-tx",
+   "title": "Coming Off a GLP-1, or Afraid to? Protect the Progress You Made",
+   "link": "https://www.bariatriccounselingcenter.com/glp-1-weight-regain-counseling-in-san-antonio-tx/",
+   "date": "2026-06-07T12:15:38",
+   "modified": "2026-06-24T13:17:34",
+   "first_seen_run": "2026-06-11"
+  },
+  {
+   "id": 5460,
+   "slug": "adhd-and-emotional-eating-in-san-antonio-tx",
+   "title": "When ADHD and Eating Collide, It Is Not a Lack of Willpower",
+   "link": "https://www.bariatriccounselingcenter.com/adhd-and-emotional-eating-in-san-antonio-tx/",
+   "date": "2026-06-06T12:15:35",
+   "modified": "2026-06-24T13:17:40",
+   "first_seen_run": "2026-06-11"
+  },
+  {
+   "id": 5457,
+   "slug": "mounjaro-zepbound-behavioral-support-in-san-antonio-tx",
+   "title": "On Mounjaro or Zepbound? The Behavioral Side Is What Makes It Stick",
+   "link": "https://www.bariatriccounselingcenter.com/mounjaro-zepbound-behavioral-support-in-san-antonio-tx/",
+   "date": "2026-06-05T10:49:10",
+   "modified": "2026-06-24T13:17:43",
+   "first_seen_run": "2026-06-11"
+  },
+  {
+   "id": 5411,
+   "slug": "telehealth-eating-disorder-treatment-in-texas",
+   "title": "Telehealth Eating Disorder Treatment in Texas | BCC",
+   "link": "https://www.bariatriccounselingcenter.com/telehealth-eating-disorder-treatment-in-texas/",
+   "date": "2026-06-04T10:16:08",
+   "modified": "2026-06-24T13:17:46",
+   "first_seen_run": "2026-06-11"
+  },
+  {
+   "id": 5410,
+   "slug": "tirzepatide-behavioral-support-in-san-antonio-tx",
+   "title": "Tirzepatide Behavioral Support in San Antonio, TX | BCC",
+   "link": "https://www.bariatriccounselingcenter.com/tirzepatide-behavioral-support-in-san-antonio-tx/",
+   "date": "2026-06-04T10:16:02",
+   "modified": "2026-06-24T13:17:50",
+   "first_seen_run": "2026-06-11"
+  },
+  {
+   "id": 5409,
+   "slug": "eating-disorder-group-therapy-san-antonio-tx",
+   "title": "Eating Disorder Group Therapy in San Antonio, TX | BCC",
+   "link": "https://www.bariatriccounselingcenter.com/eating-disorder-group-therapy-san-antonio-tx/",
+   "date": "2026-06-04T10:15:55",
+   "modified": "2026-06-24T13:17:52",
+   "first_seen_run": "2026-06-11"
+  },
+  {
+   "id": 5332,
+   "slug": "weight-loss-therapist",
+   "title": "Weight Loss Therapist",
+   "link": "https://www.bariatriccounselingcenter.com/weight-loss-therapist/",
+   "date": "2026-06-04T10:13:40",
+   "modified": "2026-06-24T13:18:41",
+   "first_seen_run": "2026-06-11"
+  },
+  {
+   "id": 5331,
+   "slug": "binge-eating-therapy-in-mcallen-tx",
+   "title": "Binge Eating Therapy in McAllen, TX",
+   "link": "https://www.bariatriccounselingcenter.com/binge-eating-therapy-in-mcallen-tx/",
+   "date": "2026-06-04T10:13:29",
+   "modified": "2026-06-24T13:18:45",
+   "first_seen_run": "2026-06-11"
+  },
+  {
+   "id": 5330,
+   "slug": "therapy-for-depression-and-weight-loss",
+   "title": "Therapy for Depression and Weight Loss",
+   "link": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/",
+   "date": "2026-06-04T10:13:21",
+   "modified": "2026-06-24T13:18:48",
+   "first_seen_run": "2026-06-11"
+  },
+  {
+   "id": 5333,
+   "slug": "holistic-approach-to-weight-loss",
+   "title": "A Holistic Approach to Weight Loss",
+   "link": "https://www.bariatriccounselingcenter.com/holistic-approach-to-weight-loss/",
+   "date": "2026-06-04T10:13:14",
+   "modified": "2026-06-24T13:18:38",
+   "first_seen_run": "2026-06-11"
+  },
+  {
+   "id": 5323,
+   "slug": "glp-1-behavioral-support-in-san-antonio-tx",
+   "title": "Behavioral Support for GLP-1 Medications in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/glp-1-behavioral-support-in-san-antonio-tx/",
+   "date": "2026-05-20T11:17:02",
+   "modified": "2026-06-24T13:18:51",
+   "first_seen_run": "2026-06-01"
+  },
+  {
+   "id": 5322,
+   "slug": "mind-body-approach-to-weight-loss-in-san-antonio-tx",
+   "title": "Mind-Body Approach to Weight Loss in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/mind-body-approach-to-weight-loss-in-san-antonio-tx/",
+   "date": "2026-05-20T11:16:37",
+   "modified": "2026-06-24T13:18:54",
+   "first_seen_run": "2026-06-01"
+  },
+  {
+   "id": 5321,
+   "slug": "counseling-for-anxiety-and-weight-in-san-antonio-tx",
+   "title": "Counseling for Anxiety and Weight in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/counseling-for-anxiety-and-weight-in-san-antonio-tx/",
+   "date": "2026-05-20T11:16:04",
+   "modified": "2026-06-24T13:18:57",
+   "first_seen_run": "2026-06-01"
+  },
+  {
+   "id": 5320,
+   "slug": "online-therapy-for-emotional-eating-in-mcallen-tx",
+   "title": "Online Therapy for Emotional Eating in McAllen, TX",
+   "link": "https://www.bariatriccounselingcenter.com/online-therapy-for-emotional-eating-in-mcallen-tx/",
+   "date": "2026-05-20T11:15:28",
+   "modified": "2026-06-24T13:19:01",
+   "first_seen_run": "2026-06-01"
+  },
+  {
+   "id": 5319,
+   "slug": "weight-loss-programs-in-san-antonio-tx",
+   "title": "Weight Loss Programs in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/weight-loss-programs-in-san-antonio-tx/",
+   "date": "2026-05-20T11:14:49",
+   "modified": "2026-06-24T13:19:03",
+   "first_seen_run": "2026-06-01"
+  },
+  {
+   "id": 5279,
+   "slug": "binge-eating-disorder-treatment-san-antonio",
+   "title": "Binge Eating Disorder Treatment in San Antonio",
+   "link": "https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/",
+   "date": "2026-05-20T11:14:10",
+   "modified": "2026-06-24T13:19:07",
+   "first_seen_run": "2026-06-01"
+  },
+  {
+   "id": 5270,
+   "slug": "bariatric-therapist-in-san-antonio-tx",
+   "title": "Bariatric Therapist in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/",
+   "date": "2026-05-12T13:40:20",
+   "modified": "2026-06-24T13:19:14",
+   "first_seen_run": "2026-05-18"
+  },
+  {
+   "id": 5269,
+   "slug": "body-confidence-counseling-in-san-antonio-tx",
+   "title": "Body Confidence Counseling in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/body-confidence-counseling-in-san-antonio-tx/",
+   "date": "2026-05-12T13:40:11",
+   "modified": "2026-06-24T13:19:56",
+   "first_seen_run": "2026-05-18"
+  },
+  {
+   "id": 5266,
+   "slug": "holistic-weight-loss-counseling-in-san-antonio-tx",
+   "title": "Holistic Weight Loss Counseling in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/holistic-weight-loss-counseling-in-san-antonio-tx/",
+   "date": "2026-05-12T13:40:00",
+   "modified": "2026-06-24T13:20:02",
+   "first_seen_run": "2026-05-18"
+  },
+  {
+   "id": 5267,
+   "slug": "nutritional-counseling-in-san-antonio-tx",
+   "title": "Nutritional Counseling in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/",
+   "date": "2026-05-12T13:39:49",
+   "modified": "2026-06-24T13:19:59",
+   "first_seen_run": "2026-05-18"
+  },
+  {
+   "id": 5271,
+   "slug": "therapy-for-eating-disorders-in-san-antonio-tx",
+   "title": "Therapy for Eating Disorders in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/therapy-for-eating-disorders-in-san-antonio-tx/",
+   "date": "2026-05-12T13:39:27",
+   "modified": "2026-06-24T13:19:10",
+   "first_seen_run": "2026-05-18"
+  },
+  {
+   "id": 5178,
+   "slug": "weight-management-counseling-in-san-antonio-tx",
+   "title": "Weight Management Counseling in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/weight-management-counseling-in-san-antonio-tx/",
+   "date": "2026-05-08T12:07:40",
+   "modified": "2026-06-24T13:20:11",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5179,
+   "slug": "virtual-emotional-eating-therapy-in-texas",
+   "title": "Virtual Emotional Eating Therapy in Texas",
+   "link": "https://www.bariatriccounselingcenter.com/virtual-emotional-eating-therapy-in-texas/",
+   "date": "2026-05-08T12:07:32",
+   "modified": "2026-06-24T13:20:07",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5180,
+   "slug": "ozempic-behavioral-support-in-san-antonio-tx",
+   "title": "Ozempic Behavioral Support in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/ozempic-behavioral-support-in-san-antonio-tx/",
+   "date": "2026-05-08T12:07:21",
+   "modified": "2026-06-24T13:20:05",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5176,
+   "slug": "eating-disorder-counseling-in-san-antonio-tx",
+   "title": "Eating Disorder Counseling in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/eating-disorder-counseling-in-san-antonio-tx/",
+   "date": "2026-05-08T12:07:12",
+   "modified": "2026-06-24T13:20:17",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5177,
+   "slug": "bariatric-therapy-in-san-antonio-tx",
+   "title": "Bariatric Therapy in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
+   "date": "2026-05-08T12:07:03",
+   "modified": "2026-06-24T13:20:14",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5168,
+   "slug": "bariatric-surgery-psychological-evaluation-in-san-antonio-tx",
+   "title": "Bariatric Surgery Psychological Evaluation in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
+   "date": "2026-04-27T09:00:12",
+   "modified": "2026-06-24T13:20:28",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5164,
+   "slug": "eating-disorder-treatment-in-san-antonio-tx",
+   "title": "Eating Disorder Treatment in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/eating-disorder-treatment-in-san-antonio-tx/",
+   "date": "2026-04-27T08:59:19",
+   "modified": "2026-06-24T13:20:39",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5172,
+   "slug": "online-weight-management-therapy-in-texas",
+   "title": "Online Weight Management Therapy in Texas",
+   "link": "https://www.bariatriccounselingcenter.com/online-weight-management-therapy-in-texas/",
+   "date": "2026-04-27T08:59:01",
+   "modified": "2026-06-24T13:20:22",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5166,
+   "slug": "semaglutide-behavioral-support-in-san-antonio-tx",
+   "title": "Semaglutide Behavioral Support in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/semaglutide-behavioral-support-in-san-antonio-tx/",
+   "date": "2026-04-27T08:58:36",
+   "modified": "2026-06-24T13:20:35",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5018,
+   "slug": "compulsive-overeating-counseling-san-antonio-tx",
+   "title": "Compulsive Overeating Counseling &amp; Food Addiction Treatment in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/compulsive-overeating-counseling-san-antonio-tx/",
+   "date": "2026-04-27T08:56:01",
+   "modified": "2026-06-10T14:46:20",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5142,
+   "slug": "binge-eating-treatment-in-san-antonio-tx",
+   "title": "Binge Eating Treatment in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/",
+   "date": "2026-04-23T13:12:45",
+   "modified": "2026-06-10T14:42:20",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5143,
+   "slug": "weight-loss-therapy-in-san-antonio-tx",
+   "title": "Weight Loss Therapy in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/weight-loss-therapy-in-san-antonio-tx/",
+   "date": "2026-04-23T13:12:10",
+   "modified": "2026-06-04T09:22:06",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5144,
+   "slug": "overeating-treatment-in-san-antonio-tx",
+   "title": "Treatment for Overeating in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/overeating-treatment-in-san-antonio-tx/",
+   "date": "2026-04-23T13:11:56",
+   "modified": "2026-06-10T14:42:34",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5001,
+   "slug": "overeaters-anonymous-support-san-antonio-tx",
+   "title": "Overeaters Support in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/overeaters-anonymous-support-san-antonio-tx/",
+   "date": "2026-04-06T13:13:52",
+   "modified": "2026-06-10T14:42:41",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4994,
+   "slug": "foundayo-behavioral-support-san-antonio",
+   "title": "Foundayo\u2122 (Orforglipron) \u00b7 Behavioral Health Support \u00b7 San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/foundayo-behavioral-support-san-antonio/",
+   "date": "2026-04-02T19:10:17",
+   "modified": "2026-06-24T09:34:45",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4952,
+   "slug": "bariatric-surgery-counseling-in-san-antonio-tx",
+   "title": "Bariatric Surgery Counseling in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+   "date": "2026-03-28T09:29:55",
+   "modified": "2026-06-10T14:42:53",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4954,
+   "slug": "food-addiction-treatment-in-san-antonio-tx",
+   "title": "Food Addiction Treatment in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/food-addiction-treatment-in-san-antonio-tx/",
+   "date": "2026-03-26T11:41:52",
+   "modified": "2026-06-11T10:14:56",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4950,
+   "slug": "eating-disorder-iop-in-san-antonio-tx",
+   "title": "Eating Disorder IOP in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/eating-disorder-iop-in-san-antonio-tx/",
+   "date": "2026-03-26T11:36:55",
+   "modified": "2026-06-11T10:14:22",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4948,
+   "slug": "emotional-eating-therapy-in-san-antonio-tx",
+   "title": "Emotional Eating Therapy in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/emotional-eating-therapy-in-san-antonio-tx/",
+   "date": "2026-03-26T11:34:15",
+   "modified": "2026-06-10T14:46:15",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4947,
+   "slug": "weight-management-program-in-san-antonio-tx",
+   "title": "Weight Management Program in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/",
+   "date": "2026-03-26T11:32:22",
+   "modified": "2026-06-04T11:18:20",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4945,
+   "slug": "registered-dietitian-in-san-antonio-tx",
+   "title": "Registered Dietitian in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/registered-dietitian-in-san-antonio-tx/",
+   "date": "2026-03-26T11:30:55",
+   "modified": "2026-04-21T12:48:12",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4956,
+   "slug": "weight-management-therapist-in-san-antonio-tx",
+   "title": "Weight Management Therapist in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/weight-management-therapist-in-san-antonio-tx/",
+   "date": "2026-03-26T11:29:21",
+   "modified": "2026-04-21T12:52:20",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4885,
+   "slug": "binge-eating-therapy-in-san-antonio-tx",
+   "title": "Binge Eating Therapy in San Antonio, TX",
+   "link": "https://www.bariatriccounselingcenter.com/binge-eating-therapy-in-san-antonio-tx/",
+   "date": "2026-02-23T14:58:28",
+   "modified": "2026-06-10T14:46:12",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4801,
+   "slug": "expert-weight-loss-therapy",
+   "title": "Expert Weight Loss Therapy",
+   "link": "https://www.bariatriccounselingcenter.com/expert-weight-loss-therapy/",
+   "date": "2026-01-27T13:33:25",
+   "modified": "2026-02-11T14:13:43",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2091,
+   "slug": "home-2",
+   "title": "Home &#8211; Bariatric Counseling Center",
+   "link": "https://www.bariatriccounselingcenter.com/",
+   "date": "2026-01-08T10:17:00",
+   "modified": "2026-05-13T13:57:46",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4673,
+   "slug": "professional-weight-loss-therapy-fb",
+   "title": "Professional Weight Loss Therapy &#8211; fb",
+   "link": "https://www.bariatriccounselingcenter.com/professional-weight-loss-therapy-fb/",
+   "date": "2025-11-19T11:32:55",
+   "modified": "2025-12-18T14:20:27",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4410,
+   "slug": "professional-weight-loss-therapy-2",
+   "title": "Professional Weight Loss Therapy-2",
+   "link": "https://www.bariatriccounselingcenter.com/professional-weight-loss-therapy-2/",
+   "date": "2025-10-09T12:18:34",
+   "modified": "2025-11-19T11:29:31",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4213,
+   "slug": "mindful-eating-for-better-health-a-guide",
+   "title": "Mindful Eating for Better Health: A Guide",
+   "link": "https://www.bariatriccounselingcenter.com/mindful-eating-for-better-health-a-guide/",
+   "date": "2025-09-09T19:37:16",
+   "modified": "2025-09-17T11:15:52",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4206,
+   "slug": "thank-you-contact-us",
+   "title": "Thank You &#8211; Contact Us",
+   "link": "https://www.bariatriccounselingcenter.com/thank-you-contact-us/",
+   "date": "2025-09-08T09:42:42",
+   "modified": "2025-09-26T12:48:47",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4190,
+   "slug": "mindful-eating-for-better-health-learn-intuitive-eating-with-expert-guidance",
+   "title": "Mindful Eating for Better Health: Learn Intuitive Eating with Expert Guidance",
+   "link": "https://www.bariatriccounselingcenter.com/mindful-eating-for-better-health-learn-intuitive-eating-with-expert-guidance/",
+   "date": "2025-09-03T21:03:17",
+   "modified": "2025-09-17T11:15:39",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4141,
+   "slug": "professional-weight-loss-therapy",
+   "title": "Professional Weight Loss Therapy",
+   "link": "https://www.bariatriccounselingcenter.com/professional-weight-loss-therapy/",
+   "date": "2025-08-21T12:20:28",
+   "modified": "2025-12-18T14:09:25",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4130,
+   "slug": "post-bariatric-surgery-support",
+   "title": "Maintain Your Bariatric Surgery Success",
+   "link": "https://www.bariatriccounselingcenter.com/post-bariatric-surgery-support/",
+   "date": "2025-08-21T11:20:56",
+   "modified": "2025-09-09T19:50:27",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4123,
+   "slug": "privacy-policy",
+   "title": "Privacy Policy",
+   "link": "https://www.bariatriccounselingcenter.com/privacy-policy/",
+   "date": "2025-08-15T10:42:35",
+   "modified": "2025-08-15T10:42:38",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3987,
+   "slug": "feel-more-in-control-around-food-youre-not-alone-we-offer-support-that-works",
+   "title": "Feel More in Control Around Food &#8211; You&#8217;re not alone \u2014 we offer support that works",
+   "link": "https://www.bariatriccounselingcenter.com/feel-more-in-control-around-food-youre-not-alone-we-offer-support-that-works/",
+   "date": "2025-07-24T09:47:24",
+   "modified": "2025-07-24T11:22:51",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3978,
+   "slug": "mindful-eating-starter-kit",
+   "title": "Mindful Eating Starter Kit",
+   "link": "https://www.bariatriccounselingcenter.com/mindful-eating-starter-kit/",
+   "date": "2025-07-22T22:41:06",
+   "modified": "2025-07-22T22:46:01",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3967,
+   "slug": "mindful-eeating",
+   "title": "Mindful Eeating",
+   "link": "https://www.bariatriccounselingcenter.com/mindful-eeating/",
+   "date": "2025-07-22T22:17:38",
+   "modified": "2025-07-22T22:25:42",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3959,
+   "slug": "thank-you",
+   "title": "Thank You",
+   "link": "https://www.bariatriccounselingcenter.com/thank-you/",
+   "date": "2025-07-22T17:25:46",
+   "modified": "2025-10-21T12:45:07",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3749,
+   "slug": "real-behavioral-change-starts-with-the-mind",
+   "title": "Real Behavioral Change Starts With the Mind",
+   "link": "https://www.bariatriccounselingcenter.com/real-behavioral-change-starts-with-the-mind/",
+   "date": "2025-07-10T10:40:53",
+   "modified": "2025-07-21T23:00:40",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3760,
+   "slug": "stop-the-cycle-of-binge-eating-you-dont-have-to-face-this-alone",
+   "title": "Stop the Cycle of Binge Eating &#8211; You Don&#8217;t Have to Face This Alone",
+   "link": "https://www.bariatriccounselingcenter.com/stop-the-cycle-of-binge-eating-you-dont-have-to-face-this-alone/",
+   "date": "2025-06-14T15:48:10",
+   "modified": "2025-09-10T19:14:40",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3668,
+   "slug": "undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success",
+   "title": "Undergoing (or Having Undergone) Bariatric Surgery: A Comprehensive Guide to Psychological Support and Success",
+   "link": "https://www.bariatriccounselingcenter.com/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/",
+   "date": "2025-05-21T13:04:16",
+   "modified": "2026-06-09T16:27:32",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3520,
+   "slug": "staff-videos",
+   "title": "Staff Videos",
+   "link": "https://www.bariatriccounselingcenter.com/staff-videos/",
+   "date": "2025-04-29T12:41:16",
+   "modified": "2025-12-17T10:49:20",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3410,
+   "slug": "the-importance-of-multi-disciplinary-care-for-treating-binge-eating-disorder-why-a-team-approach-is-best",
+   "title": "The Importance of Multi-Disciplinary Care for Treating Binge Eating Disorder: Why a Team Approach is Best",
+   "link": "https://www.bariatriccounselingcenter.com/the-importance-of-multi-disciplinary-care-for-treating-binge-eating-disorder-why-a-team-approach-is-best/",
+   "date": "2025-04-04T09:52:56",
+   "modified": "2025-07-21T23:03:03",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3385,
+   "slug": "in-the-media",
+   "title": "In the Media",
+   "link": "https://www.bariatriccounselingcenter.com/in-the-media/",
+   "date": "2025-04-01T11:12:09",
+   "modified": "2025-12-17T12:20:19",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3285,
+   "slug": "test-1",
+   "title": "Test 1",
+   "link": "https://www.bariatriccounselingcenter.com/test-1/",
+   "date": "2025-03-13T14:06:48",
+   "modified": "2025-03-13T14:11:07",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3107,
+   "slug": "program-schedule",
+   "title": "Program Schedule",
+   "link": "https://www.bariatriccounselingcenter.com/program-schedule/",
+   "date": "2025-02-25T18:01:55",
+   "modified": "2025-07-21T23:14:23",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3039,
+   "slug": "recipes",
+   "title": "Recipes",
+   "link": "https://www.bariatriccounselingcenter.com/recipes/",
+   "date": "2025-02-20T18:51:47",
+   "modified": "2026-01-27T11:09:35",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2095,
+   "slug": "contact",
+   "title": "Contact",
+   "link": "https://www.bariatriccounselingcenter.com/contact/",
+   "date": "2024-06-21T18:27:18",
+   "modified": "2025-07-21T22:56:26",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2093,
+   "slug": "causes",
+   "title": "Causes",
+   "link": "https://www.bariatriccounselingcenter.com/causes/",
+   "date": "2024-06-21T18:27:14",
+   "modified": "2024-06-21T18:27:14",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2092,
+   "slug": "about",
+   "title": "About",
+   "link": "https://www.bariatriccounselingcenter.com/about/",
+   "date": "2024-06-21T18:27:08",
+   "modified": "2026-03-02T12:11:34",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1914,
+   "slug": "stay-connected",
+   "title": "Stay Connected",
+   "link": "https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/",
+   "date": "2024-04-04T15:47:25",
+   "modified": "2026-01-27T11:18:19",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1844,
+   "slug": "dine-together",
+   "title": "Dine Together",
+   "link": "https://www.bariatriccounselingcenter.com/ourprogram/dine-together/",
+   "date": "2024-03-25T21:12:31",
+   "modified": "2026-01-27T11:11:46",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1841,
+   "slug": "bring-a-friend",
+   "title": "Bring a Friend",
+   "link": "https://www.bariatriccounselingcenter.com/ourprogram/bring-a-friend/",
+   "date": "2024-03-25T21:06:20",
+   "modified": "2026-01-27T11:16:32",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1831,
+   "slug": "meet-with-registered-dietitians",
+   "title": "Meet with Registered Dietitians",
+   "link": "https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dietitians/",
+   "date": "2024-03-21T22:53:41",
+   "modified": "2026-02-12T15:41:36",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1828,
+   "slug": "meet-with-licensed-therapists",
+   "title": "Meet with Licensed Therapists",
+   "link": "https://www.bariatriccounselingcenter.com/ourprogram/meet-with-licensed-therapists/",
+   "date": "2024-03-21T22:44:06",
+   "modified": "2026-03-03T13:57:29",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1825,
+   "slug": "coordinate-with-medical-providers",
+   "title": "Coordinate with Medical Providers",
+   "link": "https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/",
+   "date": "2024-03-21T21:05:33",
+   "modified": "2026-01-27T11:04:08",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1816,
+   "slug": "details",
+   "title": "Intensive Outpatient Program",
+   "link": "https://www.bariatriccounselingcenter.com/ourprogram/details/",
+   "date": "2024-03-21T13:48:23",
+   "modified": "2026-02-12T15:37:54",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1808,
+   "slug": "practice-in-the-community",
+   "title": "Practice in the Community",
+   "link": "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/",
+   "date": "2024-03-21T01:08:10",
+   "modified": "2026-01-27T11:13:47",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1805,
+   "slug": "enjoy-movement",
+   "title": "Enjoy Movement",
+   "link": "https://www.bariatriccounselingcenter.com/ourprogram/enjoy-movement/",
+   "date": "2024-03-21T00:58:33",
+   "modified": "2026-01-27T11:05:51",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1785,
+   "slug": "learn-to-cook-differently",
+   "title": "Learn to Cook Differently",
+   "link": "https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/",
+   "date": "2024-03-20T20:12:05",
+   "modified": "2026-01-27T11:07:48",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1752,
+   "slug": "ourprogram",
+   "title": "Our Program",
+   "link": "https://www.bariatriccounselingcenter.com/ourprogram/",
+   "date": "2024-03-16T21:07:00",
+   "modified": "2026-02-12T15:36:10",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1008,
+   "slug": "faq",
+   "title": "FAQ",
+   "link": "https://www.bariatriccounselingcenter.com/faq/",
+   "date": "2023-08-18T17:26:37",
+   "modified": "2026-01-27T11:25:42",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 785,
+   "slug": "blog",
+   "title": "Blog",
+   "link": "https://www.bariatriccounselingcenter.com/blog/",
+   "date": "2023-05-31T19:39:13",
+   "modified": "2024-05-13T16:26:12",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 520,
+   "slug": "refer-a-patient",
+   "title": "Refer a Patient",
+   "link": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+   "date": "2022-10-04T15:22:40",
+   "modified": "2025-01-30T04:24:44",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 228,
+   "slug": "testimonials",
+   "title": "Testimonials",
+   "link": "https://www.bariatriccounselingcenter.com/testimonials/",
+   "date": "2020-10-23T23:17:43",
+   "modified": "2025-11-10T12:36:21",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 202,
+   "slug": "interviews",
+   "title": "Interviews",
+   "link": "https://www.bariatriccounselingcenter.com/interviews/",
+   "date": "2020-10-22T21:29:16",
+   "modified": "2025-07-10T14:14:13",
+   "first_seen_run": "2026-06-04"
+  }
+ ],
+ "published_posts_index": [
+  {
+   "id": 1132,
+   "slug": "sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support",
+   "title": "Sustaining the Impact of Ozempic and Other Sema-Glutide Injectables with Behavioral Support",
+   "link": "https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/",
+   "date": "2026-06-23T09:37:31",
+   "modified": "2026-06-23T09:42:31",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3394,
+   "slug": "why-hydration-is-essential-for-weight-loss-and-management",
+   "title": "Why Hydration is Essential for Weight Loss and Weight Management\u00a0",
+   "link": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
+   "date": "2026-06-11T09:57:23",
+   "modified": "2026-06-23T10:01:36",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5287,
+   "slug": "day-inside-bcc-binge-eating-iop",
+   "title": "A Day Inside BCC&#8217;s Binge Eating IOP",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/day-inside-bcc-binge-eating-iop/",
+   "date": "2026-06-10T08:27:29",
+   "modified": "2026-06-23T09:49:24",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5286,
+   "slug": "binge-eating-disorder-ozempic-what-nobody-tells-you",
+   "title": "Binge Eating Disorder and Ozempic: What Nobody Tells You",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-disorder-ozempic-what-nobody-tells-you/",
+   "date": "2026-06-01T08:27:23",
+   "modified": "2026-06-23T09:49:36",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5290,
+   "slug": "pre-bariatric-surgery-binge-eating-screening",
+   "title": "Pre-Bariatric Surgery and Binge Eating Screening: Why Surgeons Want It Caught Before the OR",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/",
+   "date": "2026-05-15T08:27:03",
+   "modified": "2026-06-23T09:49:43",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 5289,
+   "slug": "binge-eating-in-men-why-40-percent-of-cases-missed",
+   "title": "Binge Eating in Men: Why 40% of Cases Get Missed",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-in-men-why-40-percent-of-cases-missed/",
+   "date": "2026-04-30T08:26:57",
+   "modified": "2026-06-23T09:49:56",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4997,
+   "slug": "why-stress-eating-happens",
+   "title": "Why Stress Eating Happens: Understanding Why Food Can Feel Out of Control During Stress",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/why-stress-eating-happens/",
+   "date": "2026-04-24T13:26:28",
+   "modified": "2026-06-09T09:19:31",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4999,
+   "slug": "fiesta-san-antonio-bariatric",
+   "title": "Fiesta: Culture, Celebration, and Staying on Track",
+   "link": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/healthy-living/fiesta-san-antonio-bariatric/",
+   "date": "2026-04-13T13:23:10",
+   "modified": "2026-04-13T13:23:10",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4965,
+   "slug": "i-cannot-stop-binge-eating-what-is-actually-going-on",
+   "title": "I Cannot Stop Binge Eating. What Is Actually Going On",
+   "link": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating/i-cannot-stop-binge-eating-what-is-actually-going-on/",
+   "date": "2026-03-30T13:40:29",
+   "modified": "2026-04-10T14:46:21",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4928,
+   "slug": "emotional-eating-vs-disordered-eating-how-do-you-know-the-difference",
+   "title": "Emotional Eating vs. Disordered Eating: How Do You Know the Difference?",
+   "link": "https://www.bariatriccounselingcenter.com/eating-disorders/emotional-eating-vs-disordered-eating-how-do-you-know-the-difference/",
+   "date": "2026-03-02T12:22:28",
+   "modified": "2026-06-23T10:08:28",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4920,
+   "slug": "why-late-night-snacking-always-wins-and-why-youre-not-weak-for-it",
+   "title": "Why Late-Night Snacking Always Wins (And Why You\u2019re Not Weak for It)",
+   "link": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-late-night-snacking-always-wins-and-why-youre-not-weak-for-it/",
+   "date": "2026-03-02T11:45:52",
+   "modified": "2026-04-10T14:47:54",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4832,
+   "slug": "coping-with-emotional-eating-building-an-emotional-first-aid-kit",
+   "title": "Coping With Emotional Eating: Building an Emotional First Aid Kit",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/coping-with-emotional-eating-building-an-emotional-first-aid-kit/",
+   "date": "2026-02-09T10:38:37",
+   "modified": "2026-04-10T14:52:47",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 4683,
+   "slug": "how-adhd-impacts-eating-habits-and-weight-management",
+   "title": "How ADHD Impacts Eating Habits and Weight Management",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-adhd-impacts-eating-habits-and-weight-management/",
+   "date": "2025-12-11T09:49:13",
+   "modified": "2026-04-10T14:47:37",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3942,
+   "slug": "4-practical-strategies-to-improve-body-image-after-weight-loss",
+   "title": "4 Practical Strategies to Improve Body Image After Weight Loss",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/4-practical-strategies-to-improve-body-image-after-weight-loss/",
+   "date": "2025-07-22T10:13:00",
+   "modified": "2025-07-22T10:43:36",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3648,
+   "slug": "how-family-support-impacts-weight-loss-a-guide-for-loved-ones",
+   "title": "How Family Support Impacts Weight Loss: A Guide for Loved Ones",
+   "link": "https://www.bariatriccounselingcenter.com/weight-loss-journey/how-family-support-impacts-weight-loss-a-guide-for-loved-ones/",
+   "date": "2025-05-21T11:36:56",
+   "modified": "2025-05-21T11:54:10",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3227,
+   "slug": "how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits",
+   "title": "How to Stop Stress Eating: Simple Strategies to Take Control of Your Habits",
+   "link": "https://www.bariatriccounselingcenter.com/eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/",
+   "date": "2025-04-08T12:18:24",
+   "modified": "2026-05-21T13:59:24",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3207,
+   "slug": "five-ways-to-develop-motivation-for-behaviors-you-dont-enjoy",
+   "title": "Five Ways to Develop Motivation for Behaviors You Don\u2019t Enjoy",
+   "link": "https://www.bariatriccounselingcenter.com/weight-loss-counseling/five-ways-to-develop-motivation-for-behaviors-you-dont-enjoy/",
+   "date": "2025-04-01T11:30:48",
+   "modified": "2026-05-21T14:06:52",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3199,
+   "slug": "better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings",
+   "title": "Better Sleep for Weight Loss: How Rest Impacts Your Metabolism and Cravings",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+   "date": "2025-03-25T13:11:14",
+   "modified": "2026-05-21T13:52:07",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3197,
+   "slug": "you-already-do-things-you-dont-want-to-do-why-not-the-things-that-help-you-to-lose-weight",
+   "title": "You Already Do Things You Don\u2019t Want to Do \u2013 Why Not the Things That Help You to Lose Weight?",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/you-already-do-things-you-dont-want-to-do-why-not-the-things-that-help-you-to-lose-weight/",
+   "date": "2025-03-24T16:01:22",
+   "modified": "2026-05-21T13:44:56",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 3234,
+   "slug": "preparing-for-bariatric-surgery-a-mental-health-checklist",
+   "title": "Preparing for Bariatric Surgery: A Mental Health Checklist",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/preparing-for-bariatric-surgery-a-mental-health-checklist/",
+   "date": "2025-03-09T17:36:44",
+   "modified": "2026-05-21T14:16:10",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2989,
+   "slug": "binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options",
+   "title": "Binge Eating Disorder: The Symptoms, Causes, and Effective Treatment Options",
+   "link": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/",
+   "date": "2025-02-18T17:30:02",
+   "modified": "2025-06-02T12:41:06",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2848,
+   "slug": "5-practical-tips-for-dining-out-and-socializing-while-adopting-healthier-eating-habits",
+   "title": "5 Practical Tips for Dining Out and Socializing While Adopting Healthier Eating Habits",
+   "link": "https://www.bariatriccounselingcenter.com/healthy-living-2/5-practical-tips-for-dining-out-and-socializing-while-adopting-healthier-eating-habits/",
+   "date": "2025-01-31T17:48:55",
+   "modified": "2025-06-02T12:42:34",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2795,
+   "slug": "how-to-improve-self-esteem-while-losing-weight-the-healthy-way",
+   "title": "How to Improve Self-Esteem While Losing Weight the Healthy Way",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+   "date": "2024-12-18T18:36:25",
+   "modified": "2026-06-18T08:54:12",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2737,
+   "slug": "how-do-i-manage-cravings-and-impulse-eating",
+   "title": "How Do I Manage Cravings and Impulse Eating?",
+   "link": "https://www.bariatriccounselingcenter.com/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/",
+   "date": "2024-12-11T20:02:06",
+   "modified": "2026-06-18T08:54:16",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2453,
+   "slug": "how-psychotherapy-and-mental-health-counseling-support-sustainable-weight-loss",
+   "title": "How Psychotherapy and <a href=\"/ourprogram/meet-with-licensed-therapists/\">mental health counseling</a> Support Sustainable Weight Loss",
+   "link": "https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-psychotherapy-and-mental-health-counseling-support-sustainable-weight-loss/",
+   "date": "2024-10-25T14:37:54",
+   "modified": "2026-02-12T13:46:19",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2423,
+   "slug": "how-to-maintain-motivation-on-your-weight-loss-journey",
+   "title": "How to Maintain Motivation on Your Weight Loss Journey",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/how-to-maintain-motivation-on-your-weight-loss-journey/",
+   "date": "2024-10-02T15:26:10",
+   "modified": "2024-10-02T15:26:12",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2412,
+   "slug": "holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness",
+   "title": "Holistic Weight Loss Approach: Overcoming Diet Culture with Mind and Body Wellness",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+   "date": "2024-10-02T15:08:22",
+   "modified": "2026-06-18T08:54:19",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2365,
+   "slug": "how-to-overcome-emotional-eating-a-comprehensive-guide",
+   "title": "How to Overcome Emotional Eating: A Comprehensive Guide",
+   "link": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/how-to-overcome-emotional-eating-a-comprehensive-guide/",
+   "date": "2024-07-24T16:40:48",
+   "modified": "2026-04-10T14:48:17",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2363,
+   "slug": "sustainable-eating-habits-tips-for-long-term-wellness",
+   "title": "Sustainable Eating Habits: Tips for Long-term Wellness",
+   "link": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/sustainable-eating-habits-tips-for-long-term-wellness/",
+   "date": "2024-07-24T16:34:34",
+   "modified": "2026-02-12T14:18:08",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2021,
+   "slug": "how-to-stop-self-sabotage-part-3",
+   "title": "How to Stop Self-Sabotage | Part 3",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/how-to-stop-self-sabotage-part-3/",
+   "date": "2024-06-11T19:00:31",
+   "modified": "2025-07-10T14:11:58",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1980,
+   "slug": "how-to-identify-self-sabotage-behaviors-part-2",
+   "title": "How to Identify Self-Sabotage Behaviors | Part 2",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/how-to-identify-self-sabotage-behaviors-part-2/",
+   "date": "2024-05-17T16:05:37",
+   "modified": "2026-01-26T16:40:26",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1972,
+   "slug": "probiotics-should-you-be-taking-them",
+   "title": "Probiotics: Should You Be Taking Them?",
+   "link": "https://www.bariatriccounselingcenter.com/blog/probiotics-should-you-be-taking-them/",
+   "date": "2024-05-10T14:43:33",
+   "modified": "2026-01-26T16:37:19",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1945,
+   "slug": "dietitians-or-nutritionists-breaking-down-the-differences",
+   "title": "Dietitian or Nutritionist: Breaking Down the Differences",
+   "link": "https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/",
+   "date": "2024-04-15T19:46:22",
+   "modified": "2025-06-10T09:43:10",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1851,
+   "slug": "how-identify-self-sabotage-causes",
+   "title": "How to Identify Self-Sabotage Causes | Part 1",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/how-identify-self-sabotage-causes/",
+   "date": "2024-04-02T13:53:55",
+   "modified": "2024-05-21T16:55:54",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1741,
+   "slug": "understanding-disordered-eating-is-your-eating-a-problem",
+   "title": "Understanding Eating Disorders \u2014 Is Your Eating A Problem?",
+   "link": "https://www.bariatriccounselingcenter.com/blog/understanding-disordered-eating-is-your-eating-a-problem/",
+   "date": "2024-03-14T19:28:43",
+   "modified": "2024-03-19T20:50:34",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1277,
+   "slug": "gastroparesis-aka-stomach-paralysis",
+   "title": "Gastroparesis, aka Stomach Paralysis",
+   "link": "https://www.bariatriccounselingcenter.com/blog/gastroparesis-aka-stomach-paralysis/",
+   "date": "2024-02-14T00:25:51",
+   "modified": "2024-02-14T23:03:43",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1246,
+   "slug": "goal-setting-for-weight-loss",
+   "title": "Goal-Setting for Weight Loss",
+   "link": "https://www.bariatriccounselingcenter.com/blog/goal-setting-for-weight-loss/",
+   "date": "2024-01-24T21:58:38",
+   "modified": "2024-01-26T20:35:48",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1233,
+   "slug": "how-to-change-a-habit",
+   "title": "How To Change a Habit",
+   "link": "https://www.bariatriccounselingcenter.com/blog/how-to-change-a-habit/",
+   "date": "2024-01-05T19:28:11",
+   "modified": "2024-01-11T17:59:51",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1216,
+   "slug": "understanding-types-of-motivation",
+   "title": "Understanding Intrinsic and Extrinsic Motivation: A Comprehensive Guide",
+   "link": "https://www.bariatriccounselingcenter.com/self-improvement/understanding-types-of-motivation/",
+   "date": "2023-12-27T18:37:52",
+   "modified": "2024-05-20T22:45:27",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1188,
+   "slug": "emotional-eating-and-coping-skills",
+   "title": "Emotional Eating and Coping Skills",
+   "link": "https://www.bariatriccounselingcenter.com/blog/emotional-eating-and-coping-skills/",
+   "date": "2023-12-14T11:38:56",
+   "modified": "2024-01-05T19:24:38",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1172,
+   "slug": "bcc-in-the-news",
+   "title": "BCC in the News",
+   "link": "https://www.bariatriccounselingcenter.com/blog/bcc-in-the-news/",
+   "date": "2023-12-06T16:37:07",
+   "modified": "2026-03-11T10:44:34",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1157,
+   "slug": "a-new-approach-to-holiday-eating",
+   "title": "A New Approach to Holiday Eating",
+   "link": "https://www.bariatriccounselingcenter.com/blog/a-new-approach-to-holiday-eating/",
+   "date": "2023-11-20T18:55:48",
+   "modified": "2024-10-16T15:44:52",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 1142,
+   "slug": "what-is-emotional-eating",
+   "title": "What Is Emotional Eating?",
+   "link": "https://www.bariatriccounselingcenter.com/blog/what-is-emotional-eating/",
+   "date": "2023-11-09T14:20:13",
+   "modified": "2024-10-16T15:45:01",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 961,
+   "slug": "bariatric-counseling-center-awarded-gold-seal-accreditation",
+   "title": "Bariatric Counseling Center Awarded Gold Seal Accreditation",
+   "link": "https://www.bariatriccounselingcenter.com/blog/bariatric-counseling-center-awarded-gold-seal-accreditation/",
+   "date": "2023-07-19T15:32:06",
+   "modified": "2026-03-11T10:33:08",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 921,
+   "slug": "how-do-i-choose-a-weight-loss-program",
+   "title": "How Do I Choose a Weight-Loss Program?",
+   "link": "https://www.bariatriccounselingcenter.com/blog/how-do-i-choose-a-weight-loss-program/",
+   "date": "2023-07-05T12:30:35",
+   "modified": "2024-11-01T15:24:07",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 814,
+   "slug": "movement-where-to-start",
+   "title": "Movement: Where to Start",
+   "link": "https://www.bariatriccounselingcenter.com/blog/movement-where-to-start/",
+   "date": "2023-06-01T14:28:33",
+   "modified": "2023-06-02T00:40:19",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 793,
+   "slug": "meet-dr-sara-hamilton",
+   "title": "Meet Dr. Sara Hamilton",
+   "link": "https://www.bariatriccounselingcenter.com/blog/meet-dr-sara-hamilton/",
+   "date": "2022-07-20T20:34:45",
+   "modified": "2026-03-11T10:44:06",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 790,
+   "slug": "dr-sara-hamilton-a-holistic-approach-to-weight-loss",
+   "title": "Dr. Sara Hamilton \u2013 A Holistic Approach To Weight Loss",
+   "link": "https://www.bariatriccounselingcenter.com/blog/dr-sara-hamilton-a-holistic-approach-to-weight-loss/",
+   "date": "2022-07-11T20:29:57",
+   "modified": "2026-03-11T10:43:51",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2504,
+   "slug": "emily-beissner",
+   "title": "Emily Beissner",
+   "link": "https://www.bariatriccounselingcenter.com/staff/emily-beissner/",
+   "date": "2020-10-28T16:43:50",
+   "modified": "2024-10-28T16:46:03",
+   "first_seen_run": "2026-06-04"
+  },
+  {
+   "id": 2477,
+   "slug": "nancy-albus",
+   "title": "Nancy Albus",
+   "link": "https://www.bariatriccounselingcenter.com/staff/nancy-albus/",
+   "date": "2020-10-25T15:38:59",
+   "modified": "2024-10-28T16:42:59",
+   "first_seen_run": "2026-06-04"
+  }
+ ],
+ "newly_published_this_week_pages": [
+  "5655",
+  "5651",
+  "5650",
+  "5649"
+ ],
+ "newly_published_this_week_posts": [],
+ "newly_published_prod_pages": [
+  "/intuitive-eating-support-in-mcallen-tx/",
+  "/weight-loss-counseling-or-therapy/",
+  "/bariatric-counseling-near-me/",
+  "/eating-disorder-therapist-near-me/"
+ ],
+ "newly_published_detail": {
+  "pages": [
+   [
+    5655,
+    "Intuitive Eating Support in McAllen, TX",
+    "2026-06-24T10:15:23"
+   ],
+   [
+    5651,
+    "Weight Loss Counseling vs Therapy: What&#8217;s the Difference?",
+    "2026-06-24T09:57:07"
+   ],
+   [
+    5650,
+    "Bariatric Counseling Near Me: How to Choose the Right Care",
+    "2026-06-24T09:53:46"
+   ],
+   [
+    5649,
+    "Eating Disorder Therapist Near Me: How to Find the Right Fit",
+    "2026-06-24T09:50:40"
+   ]
+  ],
+  "updated_pages_count": 36,
+  "updated_posts_count": 7
+ },
+ "renderable": true
+}
