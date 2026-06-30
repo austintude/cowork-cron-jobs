@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-06-29
 
-_Generated 2026-06-30 08:03 UTC_
+_Generated 2026-06-30 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **27 sessions** / 23 users / 325 pageviews
+- **30 sessions** / 26 users / 339 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 96.3%
-- Avg session duration: 326s
+- Engagement rate: 96.7%
+- Avg session duration: 306s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,32 +16,31 @@ _2026-06-02 -> 2026-06-29 vs 2026-05-05 -> 2026-06-01_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 399 | 440 | -9.3% |
-| New users | 382 | 418 | -8.6% |
-| Sessions | 566 | 568 | -0.4% |
-| Views | 2,351 | 2,134 | +10.2% |
+| Active users | 402 | 440 | -8.6% |
+| New users | 385 | 418 | -7.9% |
+| Sessions | 568 | 568 | +0.0% |
+| Views | 2,365 | 2,134 | +10.8% |
 | Avg engagement time (per active user) | 98s | 66s | +47.1% |
 
 ## 5 anomalies flagged
 
-### [CRITICAL] UP GA4 pageviews: 325 (+385.1% vs 28d median of 67) (YoY same day: +948.4%)
+### [CRITICAL] UP GA4 pageviews: 339 (+406.0% vs 28d median of 67) (YoY same day: +993.5%)
 
 
-### [CRITICAL] UP GA4 new users: 21 (+75.0% vs 28d median of 12)
+### [CRITICAL] UP GA4 new users: 24 (+100.0% vs 28d median of 12)
 
 
-### [CRITICAL] UP GA4 avg session dur: 325.527 (+64.2% vs 28d median of 198)
+### [CRITICAL] UP GA4 users: 26 (+62.5% vs 28d median of 16) (YoY same day: +18.2%)
 
 
-### [MAJOR] UP GA4 users: 23 (+43.8% vs 28d median of 16) (YoY same day: +4.5%)
+### [CRITICAL] UP GA4 avg session dur: 305.808 (+54.3% vs 28d median of 198)
 
 
-### [MAJOR] UP GA4 sessions: 27 (+35.0% vs 28d median of 20) (YoY same day: +12.5%)
+### [CRITICAL] UP GA4 sessions: 30 (+50.0% vs 28d median of 20) (YoY same day: +25.0%)
 
-**Source attribution** -- Direct rose from baseline 7.5 to 11 (+3.5).
+**Source attribution** -- Organic Search rose from baseline 8 to 12 (+4).
+  - Organic Search: 12 yesterday vs baseline 8 (+4)
   - Direct: 11 yesterday vs baseline 7.5 (+3.5)
-
-**Direct-traffic investigation** -- Direct anomaly almost always means either (a) untagged email/SMS/QR campaign, (b) a bot spike, or (c) a referrer that strips Referer headers (some mobile apps). If this was unplanned, check server logs for unusual user agents.
 
 **Top landing pages yesterday** -- Top page: / with 12 sessions.
   - `/` -- 12 sessions, 11 users
@@ -50,7 +49,7 @@ _2026-06-02 -> 2026-06-29 vs 2026-05-05 -> 2026-06-01_
   - `/?fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadsjTeznCmTMrRF54kPOfR2HYEvAU9SXUCmDbl2R4r57xzewiEph9JEMIUWEw_aem_2o09EbBHv_IKOKM6bPr8oA` -- 1 sessions, 1 users
   - `/about/` -- 1 sessions, 1 users
 
-**Recent site changes (last 7 days)** -- 52 pages/posts modified -- cross-reference with affected pages.
+**Recent site changes (last 7 days)** -- 51 pages/posts modified -- cross-reference with affected pages.
   - Eating Disorder Treatment in San Antonio, TX (modified 2026-06-24)
   - Semaglutide Behavioral Support in San Antonio, TX (modified 2026-06-24)
   - Bariatric Surgery Psychological Evaluation in San Antonio, TX (modified 2026-06-24)
@@ -60,8 +59,8 @@ _2026-06-02 -> 2026-06-29 vs 2026-05-05 -> 2026-06-01_
 
 ## Yesterday's traffic by channel
 
+-   12 sess  Organic Search
 -   11 sess  Direct
--    9 sess  Organic Search
 -    4 sess  Organic Social
 -    3 sess  Referral
 -    1 sess  Unassigned
