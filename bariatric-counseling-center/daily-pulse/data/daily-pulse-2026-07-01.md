@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-06-30
 
-_Generated 2026-07-01 08:02 UTC_
+_Generated 2026-07-01 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **13 sessions** / 12 users / 35 pageviews
+- **14 sessions** / 13 users / 37 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 84.6%
-- Avg session duration: 132s
+- Engagement rate: 85.7%
+- Avg session duration: 128s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,26 +16,29 @@ _2026-06-03 -> 2026-06-30 vs 2026-05-06 -> 2026-06-02_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 398 | 442 | -10.0% |
-| New users | 381 | 422 | -9.7% |
-| Sessions | 559 | 572 | -2.3% |
-| Views | 2,334 | 2,075 | +12.5% |
-| Avg engagement time (per active user) | 96s | 68s | +40.8% |
+| Active users | 399 | 442 | -9.7% |
+| New users | 382 | 422 | -9.5% |
+| Sessions | 560 | 572 | -2.1% |
+| Views | 2,336 | 2,075 | +12.6% |
+| Avg engagement time (per active user) | 96s | 68s | +40.7% |
 
 ## 4 anomalies flagged
 
-### [MAJOR] DOWN GA4 pageviews: 35 (-47.8% vs 28d median of 67) (YoY same day: -49.3%)
+### [MAJOR] DOWN GA4 pageviews: 37 (-44.8% vs 28d median of 67) (YoY same day: -46.4%)
 
 
-### [MAJOR] DOWN GA4 sessions: 13 (-35.0% vs 28d median of 20) (YoY same day: -56.7%)
+### [MAJOR] DOWN GA4 avg session dur: 128.356 (-35.7% vs 28d median of 200)
+
+
+### [MAJOR] DOWN GA4 sessions: 14 (-30.0% vs 28d median of 20) (YoY same day: -53.3%)
 
 **Source attribution** -- Organic Social fell from baseline 3.5 to 0 (-3.5).
   - Organic Social: 0 yesterday vs baseline 3.5 (-3.5)
-  - Organic Search: 5 yesterday vs baseline 8 (-3)
   - Referral: 0 yesterday vs baseline 3 (-3)
+  - Organic Search: 6 yesterday vs baseline 8 (-2)
 
-**Top landing pages yesterday** -- Top page: / with 5 sessions.
-  - `/` -- 5 sessions, 5 users
+**Top landing pages yesterday** -- Top page: / with 6 sessions.
+  - `/` -- 6 sessions, 6 users
   - `/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/` -- 2 sessions, 2 users
   - `` -- 1 sessions, 1 users
   - `/adhd-and-emotional-eating-in-san-antonio-tx/` -- 1 sessions, 1 users
@@ -49,16 +52,13 @@ _2026-06-03 -> 2026-06-30 vs 2026-05-06 -> 2026-06-02_
   - Online Weight Management Therapy in Texas (modified 2026-06-24)
 
 
-### [MAJOR] DOWN GA4 avg session dur: 132.347 (-33.7% vs 28d median of 200)
-
-
-### [MAJOR] DOWN GA4 users: 12 (-25.0% vs 28d median of 16) (YoY same day: -57.1%)
+### [MINOR] DOWN GA4 users: 13 (-18.8% vs 28d median of 16) (YoY same day: -53.6%)
 
 
 ## Yesterday's traffic by channel
 
 -    8 sess  Direct
--    5 sess  Organic Search
+-    6 sess  Organic Search
 
 ## Site changes in the last 7 days
 
