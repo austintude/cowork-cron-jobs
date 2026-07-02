@@ -1,0 +1,18 @@
+BCC Weekly SEO Runner — 2026-07-02
+==================================
+Data file + manifest were written to the cron-jobs repo:
+  bariatric-counseling-center/seo-weekly/data/seo-data-2026-07-02.json
+  bariatric-counseling-center/seo-weekly/manifest.json  (latest -> seo-data-2026-07-02.json, PROMOTED)
+
+PUBLISH STATUS: The claude-runner queue folder
+  (C:\Users\danie\Documents\Claude\claude-runner\queue)
+was NOT connected to this Cowork session, so the fast-path publish job could not be dropped.
+
+The autosync safety net on this machine (git add -A; commit; push every few minutes)
+will pick up these files and push them to austintude/cowork-cron-jobs automatically,
+updating the live dashboard at drbdig.com/seo/bcc/board within ~30 min.
+
+If you want it live immediately, run in the cron-jobs repo:
+  git add bariatric-counseling-center/seo-weekly/data/ bariatric-counseling-center/seo-weekly/manifest.json
+  git commit -m "bcc: weekly SEO snapshot 2026-07-02"
+  git push
