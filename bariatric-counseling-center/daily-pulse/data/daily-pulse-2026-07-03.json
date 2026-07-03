@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-03T08:03:17.120992Z",
+  "fetched_at": "2026-07-03T12:00:24.327807Z",
   "for_date": "2026-07-02",
   "baseline_window": {
     "start": "2026-06-04",
@@ -9,12 +9,12 @@
   "ga4_property_id": "254059736",
   "gsc_property": "https://www.bariatriccounselingcenter.com/",
   "snapshot": {
-    "sessions": 20,
+    "sessions": 21,
     "users": 20,
     "new_users": 18,
-    "pageviews": 96,
-    "engagement_rate": 0.95,
-    "avg_session_duration": 173.8089,
+    "pageviews": 98,
+    "engagement_rate": 0.9524,
+    "avg_session_duration": 165.7639,
     "gsc_impressions": 0,
     "gsc_clicks": 0,
     "gsc_position": 0.0
@@ -24,12 +24,12 @@
     "current": {
       "start": "2026-06-05",
       "end": "2026-07-02",
-      "sessions": 524,
+      "sessions": 525,
       "active_users": 374,
       "total_users": 375,
       "new_users": 353,
-      "pageviews": 2141,
-      "avg_session_duration": 186.7212,
+      "pageviews": 2143,
+      "avg_session_duration": 186.3748,
       "avg_engagement_time_per_active_user": 97.9
     },
     "prior": {
@@ -44,12 +44,12 @@
       "avg_engagement_time_per_active_user": 64.5
     },
     "pct_change": {
-      "sessions_pct": -11.9,
+      "sessions_pct": -11.8,
       "active_users_pct": -18.9,
       "total_users_pct": -18.7,
       "new_users_pct": -20.3,
-      "pageviews_pct": -0.9,
-      "avg_session_duration_pct": -7.4,
+      "pageviews_pct": -0.8,
+      "avg_session_duration_pct": -7.6,
       "avg_engagement_time_per_active_user_pct": 51.8
     }
   },
@@ -62,13 +62,13 @@
   "anomalies": [
     {
       "metric": "GA4 pageviews",
-      "actual": 96,
+      "actual": 98,
       "baseline_28d_median": 60.5,
       "yoy_same_day": 52,
-      "pct_delta": 58.7,
+      "pct_delta": 62.0,
       "severity": "CRITICAL",
       "direction": "up",
-      "headline": "UP GA4 pageviews: 96 (+58.7% vs 28d median of 60) (YoY same day: +84.6%)"
+      "headline": "UP GA4 pageviews: 98 (+62.0% vs 28d median of 60) (YoY same day: +88.5%)"
     },
     {
       "metric": "GA4 new users",
@@ -347,12 +347,12 @@
       },
       {
         "date": "2026-07-02",
-        "sessions": 20,
+        "sessions": 21,
         "totalUsers": 20,
         "newUsers": 18,
-        "screenPageViews": 96,
-        "engagementRate": 0.95,
-        "averageSessionDuration": 173.8089
+        "screenPageViews": 98,
+        "engagementRate": 0.9524,
+        "averageSessionDuration": 165.7639
       }
     ],
     "daily_by_channel": [
@@ -405,6 +405,12 @@
         "totalUsers": 10
       },
       {
+        "date": "2026-07-02",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 13,
+        "totalUsers": 12
+      },
+      {
         "date": "2026-06-05",
         "sessionDefaultChannelGroup": "Direct",
         "sessions": 12,
@@ -421,12 +427,6 @@
         "sessionDefaultChannelGroup": "Organic Search",
         "sessions": 12,
         "totalUsers": 11
-      },
-      {
-        "date": "2026-07-02",
-        "sessionDefaultChannelGroup": "Direct",
-        "sessions": 12,
-        "totalUsers": 12
       },
       {
         "date": "2026-06-10",
@@ -923,6 +923,12 @@
         "engagementRate": 1
       },
       {
+        "landingPagePlusQueryString": "/ourprogram/details/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
         "landingPagePlusQueryString": "/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
         "sessions": 1,
         "totalUsers": 1,
@@ -932,7 +938,7 @@
     "yesterday_sources": [
       {
         "sessionSourceMedium": "(direct) / (none)",
-        "sessions": 12,
+        "sessions": 13,
         "totalUsers": 12
       },
       {
@@ -958,7 +964,7 @@
       },
       {
         "deviceCategory": "mobile",
-        "sessions": 7
+        "sessions": 8
       }
     ],
     "yoy_same_day": {
@@ -1327,15 +1333,6 @@
           "date": "2026-04-02T19:10:17",
           "modified": "2026-06-24T09:34:45",
           "status": "publish"
-        },
-        {
-          "id": 3590,
-          "slug": "understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro",
-          "link": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
-          "title": "Understanding Weight Loss Medications: Wegovy, Ozempic, Zepbound, and Mounjaro",
-          "date": "2026-06-15T10:12:44",
-          "modified": "2026-06-18T08:56:48",
-          "status": "publish"
         }
       ],
       "posts": [
@@ -1400,33 +1397,6 @@
           "title": "Sustaining the Impact of Ozempic and Other Sema-Glutide Injectables with Behavioral Support",
           "date": "2026-06-23T09:37:31",
           "modified": "2026-06-23T09:42:31",
-          "status": "publish"
-        },
-        {
-          "id": 2412,
-          "slug": "holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness",
-          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
-          "title": "Holistic Weight Loss Approach: Overcoming Diet Culture with Mind and Body Wellness",
-          "date": "2024-10-02T15:08:22",
-          "modified": "2026-06-18T08:54:19",
-          "status": "publish"
-        },
-        {
-          "id": 2737,
-          "slug": "how-do-i-manage-cravings-and-impulse-eating",
-          "link": "https://www.bariatriccounselingcenter.com/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/",
-          "title": "How Do I Manage Cravings and Impulse Eating?",
-          "date": "2024-12-11T20:02:06",
-          "modified": "2026-06-18T08:54:16",
-          "status": "publish"
-        },
-        {
-          "id": 2795,
-          "slug": "how-to-improve-self-esteem-while-losing-weight-the-healthy-way",
-          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
-          "title": "How to Improve Self-Esteem While Losing Weight the Healthy Way",
-          "date": "2024-12-18T18:36:25",
-          "modified": "2026-06-18T08:54:12",
           "status": "publish"
         }
       ]
@@ -5749,15 +5719,6 @@
         "date": "2026-04-02T19:10:17",
         "modified": "2026-06-24T09:34:45",
         "status": "publish"
-      },
-      {
-        "id": 3590,
-        "slug": "understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro",
-        "link": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
-        "title": "Understanding Weight Loss Medications: Wegovy, Ozempic, Zepbound, and Mounjaro",
-        "date": "2026-06-15T10:12:44",
-        "modified": "2026-06-18T08:56:48",
-        "status": "publish"
       }
     ],
     "posts": [
@@ -5823,33 +5784,6 @@
         "date": "2026-06-23T09:37:31",
         "modified": "2026-06-23T09:42:31",
         "status": "publish"
-      },
-      {
-        "id": 2412,
-        "slug": "holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness",
-        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
-        "title": "Holistic Weight Loss Approach: Overcoming Diet Culture with Mind and Body Wellness",
-        "date": "2024-10-02T15:08:22",
-        "modified": "2026-06-18T08:54:19",
-        "status": "publish"
-      },
-      {
-        "id": 2737,
-        "slug": "how-do-i-manage-cravings-and-impulse-eating",
-        "link": "https://www.bariatriccounselingcenter.com/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/",
-        "title": "How Do I Manage Cravings and Impulse Eating?",
-        "date": "2024-12-11T20:02:06",
-        "modified": "2026-06-18T08:54:16",
-        "status": "publish"
-      },
-      {
-        "id": 2795,
-        "slug": "how-to-improve-self-esteem-while-losing-weight-the-healthy-way",
-        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
-        "title": "How to Improve Self-Esteem While Losing Weight the Healthy Way",
-        "date": "2024-12-18T18:36:25",
-        "modified": "2026-06-18T08:54:12",
-        "status": "publish"
       }
     ]
   },
@@ -5863,7 +5797,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5164--eating-disorder-treatment-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -5874,7 +5808,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5166--semaglutide-behavioral-support-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -5885,7 +5819,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5168--bariatric-surgery-psychological-evaluation-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -5896,7 +5830,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5170--eating-disorder-therapist-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -5907,7 +5841,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5172--online-weight-management-therapy-in-texas",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -5918,7 +5852,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5176--eating-disorder-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -5929,7 +5863,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5177--bariatric-therapy-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -5940,7 +5874,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5178--weight-management-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -5951,7 +5885,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5179--virtual-emotional-eating-therapy-in-texas",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -5962,7 +5896,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5180--ozempic-behavioral-support-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -5973,7 +5907,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5266--holistic-weight-loss-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -5984,7 +5918,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5267--nutritional-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -5995,7 +5929,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5269--body-confidence-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6006,7 +5940,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5270--bariatric-therapist-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6017,7 +5951,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5271--therapy-for-eating-disorders-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6028,7 +5962,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5279--binge-eating-disorder-treatment-san-antonio",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6039,7 +5973,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5319--weight-loss-programs-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6050,7 +5984,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5320--online-therapy-for-emotional-eating-in-mcallen-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6061,7 +5995,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5321--counseling-for-anxiety-and-weight-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6072,7 +6006,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5322--mind-body-approach-to-weight-loss-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6083,7 +6017,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5323--glp-1-behavioral-support-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6094,7 +6028,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5330--therapy-for-depression-and-weight-loss",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6105,7 +6039,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5331--binge-eating-therapy-in-mcallen-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6116,7 +6050,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5332--weight-loss-therapist",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6127,7 +6061,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5333--holistic-approach-to-weight-loss",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6138,7 +6072,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5334--what-is-a-bariatric-therapist",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6149,7 +6083,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5409--eating-disorder-group-therapy-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6160,7 +6094,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5410--tirzepatide-behavioral-support-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6171,7 +6105,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5411--telehealth-eating-disorder-treatment-in-texas",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6182,7 +6116,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5457--mounjaro-zepbound-behavioral-support-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6193,7 +6127,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5460--adhd-and-emotional-eating-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6204,7 +6138,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5461--night-eating-syndrome-treatment-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6215,7 +6149,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5462--glp-1-weight-regain-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6226,7 +6160,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5608--eating-disorder-referrals-for-providers-in-san-antonio-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6237,7 +6171,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-5611--food-addiction-treatment-in-texas",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6250,7 +6184,7 @@
       "source": "wp-rest",
       "confidence": "high",
       "id": "auto-2026-06-24-page-publish-5649--eating-disorder-therapist-near-me",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6263,7 +6197,7 @@
       "source": "wp-rest",
       "confidence": "high",
       "id": "auto-2026-06-24-page-publish-5650--bariatric-counseling-near-me",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6276,7 +6210,7 @@
       "source": "wp-rest",
       "confidence": "high",
       "id": "auto-2026-06-24-page-publish-5651--weight-loss-counseling-or-therapy",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6289,7 +6223,7 @@
       "source": "wp-rest",
       "confidence": "high",
       "id": "auto-2026-06-24-page-publish-5655--intuitive-eating-support-in-mcallen-tx",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-24",
@@ -6300,18 +6234,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-24-page-modify-4994--foundayo-behavioral-support-san-antonio",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
-    },
-    {
-      "launched_at": "2026-06-18",
-      "type": "page-modify",
-      "title": "Understanding Weight Loss Medications: Wegovy, Ozempic, Zepbound, and Mounjaro",
-      "url": "/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
-      "wp_id": 3590,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-18-page-modify-3590--understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-23",
@@ -6322,7 +6245,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-23-post-modify-4928--eating-disorders-emotional-eating-vs-disordered-eating-how-do-you-know-the-difference",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-23",
@@ -6333,7 +6256,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-23-post-modify-3394--healthy-living-2-why-hydration-is-essential-for-weight-loss-and-management",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-23",
@@ -6344,7 +6267,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-23-post-modify-5289--self-improvement-mental-health-binge-eating-in-men-why-40-percent-of-cases-missed",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-23",
@@ -6355,7 +6278,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-23-post-modify-5290--self-improvement-weight-loss-journey-self-improvement-pre-bariatric-surgery-binge-eating-sc",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-23",
@@ -6366,7 +6289,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-23-post-modify-5286--self-improvement-mental-health-binge-eating-disorder-ozempic-what-nobody-tells-you",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-23",
@@ -6377,7 +6300,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-06-23-post-modify-5287--self-improvement-mental-health-day-inside-bcc-binge-eating-iop",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-23",
@@ -6390,40 +6313,18 @@
       "source": "wp-rest",
       "confidence": "high",
       "id": "auto-2026-06-23-post-publish-1132--blog-sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-s",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
-      "launched_at": "2026-06-18",
-      "type": "post-modify",
-      "title": "Holistic Weight Loss Approach: Overcoming Diet Culture with Mind and Body Wellness",
-      "url": "/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
-      "wp_id": 2412,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-18-post-modify-2412--self-improvement-mental-health-holistic-weight-loss-approach-overcoming-diet-culture-with-m",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
-    },
-    {
-      "launched_at": "2026-06-18",
-      "type": "post-modify",
-      "title": "How Do I Manage Cravings and Impulse Eating?",
-      "url": "/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/",
-      "wp_id": 2737,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-18-post-modify-2737--healthy-living-2-how-do-i-manage-cravings-and-impulse-eating",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
-    },
-    {
-      "launched_at": "2026-06-18",
-      "type": "post-modify",
-      "title": "How to Improve Self-Esteem While Losing Weight the Healthy Way",
-      "url": "/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
-      "wp_id": 2795,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-18-post-modify-2795--self-improvement-mental-health-how-to-improve-self-esteem-while-losing-weight-the-healthy-w",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "launched_at": "2026-07-03",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-03",
+      "commit_hash": "e162881",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-03-git-commit-e162881",
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-07-02",
@@ -6434,7 +6335,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-02-git-commit-29976d1",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-07-02",
@@ -6445,7 +6346,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-02-git-commit-9d23561",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-07-02",
@@ -6456,7 +6357,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-02-git-commit-c548322",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-07-01",
@@ -6467,7 +6368,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-01-git-commit-0532908",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-07-01",
@@ -6478,7 +6379,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-01-git-commit-4fccb63",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-07-01",
@@ -6489,7 +6390,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-01-git-commit-62ccf6e",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-07-01",
@@ -6500,7 +6401,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-01-git-commit-1add86e",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-07-01",
@@ -6511,7 +6412,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-01-git-commit-6e19811",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-30",
@@ -6522,7 +6423,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-30-git-commit-7956d56",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-30",
@@ -6533,7 +6434,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-30-git-commit-8cd0541",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-29",
@@ -6544,7 +6445,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-29-git-commit-8240036",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-29",
@@ -6555,7 +6456,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-29-git-commit-5c2977f",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-29",
@@ -6566,7 +6467,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-29-git-commit-d4a2cbb",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-29",
@@ -6577,7 +6478,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-29-git-commit-8fdb5a2",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-29",
@@ -6588,7 +6489,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-29-git-commit-b99fc2f",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-28",
@@ -6599,7 +6500,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-28-git-commit-9fa194a",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-28",
@@ -6610,7 +6511,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-28-git-commit-e77d84d",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-27",
@@ -6621,7 +6522,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-27-git-commit-7fd020a",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-27",
@@ -6632,7 +6533,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-27-git-commit-23113e1",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-26",
@@ -6643,18 +6544,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-26-git-commit-30f5b46",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
-    },
-    {
-      "launched_at": "2026-06-26",
-      "type": "git-commit",
-      "title": "bcc daily pulse: 2026-06-26",
-      "commit_hash": "3e74222",
-      "commit_author": "Daniel Bisett",
-      "source": "git-log",
-      "confidence": "low",
-      "id": "auto-2026-06-26-git-commit-3e74222",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     },
     {
       "launched_at": "2026-06-27",
@@ -6665,12 +6555,18 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-06-27-git-commit-5049c82",
-      "first_seen_at": "2026-07-03T08:03:17.110273Z"
+      "first_seen_at": "2026-07-03T12:00:24.306533Z"
     }
   ],
-  "launches_ledger_size": 424,
+  "launches_ledger_size": 425,
   "paid_social_spikes": [],
   "git_commits_recent": [
+    {
+      "date": "2026-07-03T03:04:55-05:00",
+      "hash": "e162881",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-03"
+    },
     {
       "date": "2026-07-02T07:00:24-05:00",
       "hash": "29976d1",
@@ -6784,12 +6680,6 @@
       "hash": "e77d84d",
       "author": "Daniel Bisett",
       "subject": "bcc daily pulse: 2026-06-28"
-    },
-    {
-      "date": "2026-06-27T07:00:24-05:00",
-      "hash": "7fd020a",
-      "author": "Daniel Bisett",
-      "subject": "bcc daily pulse: 2026-06-27"
     }
   ]
 }

@@ -7,13 +7,13 @@
   },
   "property_id": "254059736",
   "summary": {
-    "sessions": 110,
+    "sessions": 111,
     "users": 96,
     "new_users": 88,
-    "pageviews": 605,
-    "engagement_rate": 0.9273,
-    "avg_session_duration_sec": 162.7788,
-    "bounce_rate": 0.0727
+    "pageviews": 607,
+    "engagement_rate": 0.9279,
+    "avg_session_duration_sec": 161.3561,
+    "bounce_rate": 0.0721
   },
   "yoy_summary": {
     "sessions": 246,
@@ -25,10 +25,10 @@
     "bounce_rate": 0.4675
   },
   "yoy_pct_change": {
-    "sessions_pct": -55.3,
+    "sessions_pct": -54.9,
     "users_pct": -49.5,
-    "pageviews_pct": 45.4,
-    "avg_session_duration_pct": 46.2
+    "pageviews_pct": 45.9,
+    "avg_session_duration_pct": 44.9
   },
   "daily_breakdown": [
     {
@@ -63,7 +63,7 @@
     },
     {
       "date": "20260702",
-      "sessions": 20,
+      "sessions": 21,
       "totalUsers": 20
     }
   ],
@@ -130,6 +130,13 @@
       "users": 2,
       "engagement_rate": 1,
       "avg_session_duration_sec": 2.5056
+    },
+    {
+      "page": "/ourprogram/details/",
+      "sessions": 2,
+      "users": 2,
+      "engagement_rate": 1,
+      "avg_session_duration_sec": 3.3391
     },
     {
       "page": "/ourprogram/meet-with-licensed-therapists/",
@@ -235,21 +242,14 @@
       "users": 1,
       "engagement_rate": 1,
       "avg_session_duration_sec": 4.7947
-    },
-    {
-      "page": "/night-eating-syndrome-treatment-in-san-antonio-tx/",
-      "sessions": 1,
-      "users": 1,
-      "engagement_rate": 1,
-      "avg_session_duration_sec": 16.5943
     }
   ],
   "top_sources": [
     {
       "source_medium": "(direct) / (none)",
-      "sessions": 49,
+      "sessions": 50,
       "users": 47,
-      "engagement_rate": 0.9184
+      "engagement_rate": 0.92
     },
     {
       "source_medium": "google / organic",
@@ -333,6 +333,11 @@
       "sessions": 1
     },
     {
+      "page": "/ourprogram/details/",
+      "pageviews": 21,
+      "sessions": 7
+    },
+    {
       "page": "/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
       "pageviews": 20,
       "sessions": 10
@@ -341,11 +346,6 @@
       "page": "/virtual-emotional-eating-therapy-in-texas/",
       "pageviews": 20,
       "sessions": 1
-    },
-    {
-      "page": "/ourprogram/details/",
-      "pageviews": 19,
-      "sessions": 6
     },
     {
       "page": "/eating-disorder-therapist-in-san-antonio-tx/",
@@ -435,16 +435,16 @@
   ],
   "channel_breakdown": [
     {
+      "channel": "Direct",
+      "sessions": 50,
+      "users": 47,
+      "engagement_rate": 0.92
+    },
+    {
       "channel": "Organic Search",
       "sessions": 50,
       "users": 41,
       "engagement_rate": 0.92
-    },
-    {
-      "channel": "Direct",
-      "sessions": 49,
-      "users": 47,
-      "engagement_rate": 0.9184
     },
     {
       "channel": "Referral",
