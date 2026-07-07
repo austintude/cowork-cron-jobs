@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-07-05
+
+_Generated 2026-07-07T08:02:53.757697Z_
+
+### Headline
+- Sessions DOWN 26% vs 28-day median (14 sessions, July 5) -- context softens this: YoY same day is +250% vs 4 sessions in 2025, and July 4th weekend likely suppressed traffic naturally.
+- Pageviews also soft at 31 (-47.5% vs median) but +520% YoY -- holiday pattern, not a site problem.
+
+### What happened
+- **Sessions**: 14 vs 19 median -- Organic Social channel dropped from baseline 4 to 0, accounting for the entire shortfall; likely no social posts went out over the July 4th holiday weekend.
+- **Avg session duration**: 58s vs 142s median (-59%) -- flagged CRITICAL, but low-volume days distort this heavily; 14 sessions is too small a sample to read as a real quality drop.
+- **GSC**: 0 impressions, 0 clicks -- standard 1-3 day reporting lag, not a real signal.
+- **5 page modifications surfaced** (June 24 updates to Eating Disorder, Semaglutide, Bariatric Psych Eval, Eating Disorder Therapist, Online Weight Management pages) -- first appeared in today's run, worth confirming indexing.
+
+### Efficacy
+- **30-day window**: 12 pages launched, 61 modified -- 2 ranking top 10, 1 ranking top 3; 116,961 GSC impressions and 397 GA4 sessions attributed.
+- **Top launches**: All `top_launches` surfaced this run are git-commit pulse files (no URL, no SERP data) -- no meaningful per-page performance to report today; the June 24 page modifications are the ones to watch.
+- **Indexing warmup**: The 5 June 24 page modifications have no GSC impression data confirmed yet -- 13 days since modification, worth a manual check.
+
+### Today (do these)
+1. **Confirm social schedule**: Check whether Camy (or whoever owns social) posted anything July 4-5 -- Organic Social going to 0 explains the session dip, and Todd will ask.
+2. **Verify indexing** on the 5 June 24 modified pages (`/eating-disorder-treatment-in-san-antonio-tx/`, `/semaglutide-behavioral-support-in-san-antonio-tx/`, `/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/`, `/eating-disorder-therapist-in-san-antonio-tx/`, `/online-weight-management-therapy-in-texas/`) -- 13 days post-modify with no GSC signal confirmed yet.
+3. **Flag avg session duration** for monitoring this week -- one more day below 90s on higher volume (20+ sessions) would make it worth auditing the top landing pages for content or UX issues.
