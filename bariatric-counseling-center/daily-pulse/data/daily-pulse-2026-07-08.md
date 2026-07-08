@@ -1,6 +1,6 @@
 # BCC Daily Pulse -- 2026-07-07
 
-_Generated 2026-07-08 08:02 UTC_
+_Generated 2026-07-08 12:00 UTC_
 
 
 ## Yesterday at a glance
@@ -47,7 +47,7 @@ _2026-06-10 -> 2026-07-07 vs 2026-05-13 -> 2026-06-09_
   - `/blog/` -- 2 sessions, 2 users
   - `/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/` -- 2 sessions, 2 users
 
-**Recent site changes (last 7 days)** -- 69 pages/posts modified -- cross-reference with affected pages.
+**Recent site changes (last 7 days)** -- 65 pages/posts modified -- cross-reference with affected pages.
   - Binge Eating Therapy in San Antonio, TX (modified 2026-07-07)
   - Emotional Eating Therapy in San Antonio, TX (modified 2026-07-07)
   - Eating Disorder IOP in San Antonio, TX (modified 2026-07-07)
