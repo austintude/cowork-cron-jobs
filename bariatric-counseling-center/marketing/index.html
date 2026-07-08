@@ -61,6 +61,12 @@
   .picker{float:right;margin-right:12px;font-size:12.5px;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
   .picker select{font-size:12.5px;padding:5px 8px;border:1px solid #b7c6d2;border-radius:8px;background:#fff;color:var(--navy)}
   .snapshot-note{clear:both;font-size:12px;color:var(--warn);margin-top:6px;display:none}
+  .winbar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:16px 0 2px;clear:both}
+  .winbar .wl{font-size:12.5px;color:var(--muted);margin-right:2px;font-weight:600}
+  .winbtn{font-size:12.5px;padding:5px 12px;border:1px solid #cdd9e4;background:#fff;color:var(--navy);border-radius:999px;cursor:pointer}
+  .winbtn.on{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:600}
+  .winbtn:hover{border-color:var(--teal)}
+  .win-note{font-size:12px;color:var(--warn);margin-left:6px}
   .banner{background:#fff7e6;border:1px solid #f0d9a8;color:#8a6d1f;border-radius:10px;padding:12px 16px;font-size:13.5px;margin:14px 0}
   .group-label{margin:30px 0 2px;font-size:13px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--teal-dk);border-top:2px solid var(--teal-lt);padding-top:16px}
   .rk{display:inline-block;padding:1px 8px;border-radius:999px;font-size:11.5px;font-weight:700}
@@ -82,6 +88,8 @@
   <div class="snapshot-note" id="snapshotNote"></div>
   <div class="status-row" id="statusRow"></div>
   <div id="banner"></div>
+
+  <div class="winbar" id="winBar"></div>
 
   <div class="cards" id="kpis"></div>
 
@@ -406,20 +414,68 @@ function drawSeoAction(sa){
      <p class="asof">SEO analysis as of ${sa.generated_at||"?"}</p>`;
 }
 
+// ---------- time-range selector (30/60/90/180d, 1yr, 3yr) ----------
+let FULLDATA=null, FULLSEO=null, CURDAYS=90;
+const WIN_OPTS=[[30,'30d'],[60,'60d'],[90,'90d'],[180,'6mo'],[365,'1yr'],[1095,'3yr']];
+function isoMinusDays(iso, n){ const d=new Date(iso+'T00:00:00Z'); d.setUTCDate(d.getUTCDate()-n); return d.toISOString().slice(0,10); }
+function sliceSeries(arr, endDate, days){ if(!arr||!arr.length||!endDate) return arr||[]; const cutoff=isoMinusDays(endDate, days-1); return arr.filter(r=> (r.date||'')>=cutoff); }
+function applyMarketingWindow(full, days){
+  const tl=(full.timeline)||[];
+  const endDate = tl.length? tl[tl.length-1].date : (full.timeline_end||null);
+  const sliced = endDate? sliceSeries(tl, endDate, days) : [];
+  const startDate = sliced.length? sliced[0].date : null;
+  const ct={}; sliced.forEach(r=>{ const ch=r.channels||{}; for(const k in ch) ct[k]=(ct[k]||0)+ch[k]; });
+  const wt=Object.keys(ct).reduce((a,k)=>a+ct[k],0);
+  const channel_mix=Object.keys(ct).map(k=>({channel:k,sessions:ct[k],pct: wt? Math.round(1000*ct[k]/wt)/10:0})).sort((a,b)=>b.sessions-a.sessions);
+  const inWin = dt => dt && startDate && endDate && dt>=startDate && dt<=endDate;
+  const nls=((full.newsletters)||[]).filter(e=> inWin(e.send_date));
+  const camps=((full.cc_campaigns)||[]).filter(c=> inWin((c.last_sent_date||'').slice(0,10)));
+  const sent=camps.filter(c=>(c.sends||0)>0);
+  const avg=(f)=> sent.length? Math.round(100*sent.reduce((a,c)=>a+(c[f]||0),0)/sent.length)/100 : null;
+  const cc_summary={ n_campaigns:camps.length, n_sent:sent.length, avg_open_rate:avg('open_rate'), avg_click_rate:avg('click_rate'),
+    total_sends:camps.reduce((a,c)=>a+(c.sends||0),0),
+    most_recent_send: camps.length? camps.map(c=>c.last_sent_date).sort()[camps.length-1] : (full.cc_summary&&full.cc_summary.most_recent_send) };
+  return Object.assign({}, full, {timeline:sliced, channel_mix, window_total_sessions:wt, newsletters:nls, cc_summary,
+    window_days:days, timeline_start:startDate, timeline_end:endDate});
+}
+function renderWinBar(){
+  const bar=document.getElementById('winBar'); if(!bar) return;
+  bar.innerHTML='<span class="wl">Range:</span>'+WIN_OPTS.map(([d,l])=>`<button class="winbtn${d===CURDAYS?' on':''}" data-d="${d}">${l}</button>`).join('')+'<span class="win-note" id="winNote"></span>';
+  bar.querySelectorAll('.winbtn').forEach(b=> b.onclick=()=>{ CURDAYS=+b.dataset.d; renderWinBar(); applyAndDraw(); });
+}
+function applyAndDraw(){
+  if(!FULLDATA) return;
+  const win=applyMarketingWindow(FULLDATA, CURDAYS);
+  setStatus(win); setKPIs(win); drawTimeline(win); drawNewsletterTable(win); drawChannelMix(win); drawGSC(FULLDATA);
+  if(FULLSEO){
+    const vt=FULLSEO.visibility_timeline||[];
+    const end=vt.length? vt[vt.length-1].date : win.timeline_end;
+    drawSeoTrend(Object.assign({}, FULLSEO, {visibility_timeline: sliceSeries(vt, end, CURDAYS)}));
+  }
+  const note=document.getElementById('winNote');
+  if(note){
+    const earliest=(FULLDATA.data_earliest&&FULLDATA.data_earliest.ga4)||null;
+    const avail=(FULLDATA.timeline||[]).length;
+    note.textContent = (avail && CURDAYS>avail)? (' · showing all '+avail+' days available'+(earliest?' (traffic data since '+earliest+')':'')) : '';
+  }
+}
+
 async function renderFrom(impactFile, narrFile, bypass, seoImpactFile, seoActionFile){
   const d = await loadJSON(impactFile, bypass);
   if(!d){
     document.getElementById("banner").innerHTML='<div class="banner"><b>No data found.</b> Run marketing-impact.py (or wait for the scheduled run) so '+impactFile+' exists.</div>';
     return;
   }
-  setStatus(d); setKPIs(d); drawTimeline(d); drawNewsletterTable(d); drawChannelMix(d); drawGSC(d);
+  FULLDATA = d;
   const narr = await loadJSON(narrFile, bypass);
   drawNarrative(narr);
-  // SEO half
+  // SEO half (rankings + distribution are point-in-time; trend is windowed in applyAndDraw)
   const si = await loadJSON(seoImpactFile||"seo-impact-latest.json", bypass);
-  drawSeoTrend(si); drawSeoRankings(si); drawSeoDist(si);
+  FULLSEO = si;
+  drawSeoRankings(si); drawSeoDist(si);
   const sa = await loadJSON(seoActionFile||"seo-action-latest.json", bypass);
   drawSeoAction(sa);
+  renderWinBar(); applyAndDraw();
   const isLatest = impactFile.indexOf("latest")>=0;
   const note=document.getElementById("snapshotNote");
   if(note){
