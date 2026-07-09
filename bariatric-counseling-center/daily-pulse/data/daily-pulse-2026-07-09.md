@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-07-08
 
-_Generated 2026-07-09 08:02 UTC_
+_Generated 2026-07-09 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **29 sessions** / 27 users / 83 pageviews
+- **31 sessions** / 28 users / 89 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 93.1%
-- Avg session duration: 113s
+- Engagement rate: 93.5%
+- Avg session duration: 139s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,21 +16,21 @@ _2026-06-11 -> 2026-07-08 vs 2026-05-14 -> 2026-06-10_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 382 | 468 | -18.4% |
-| New users | 366 | 449 | -18.5% |
-| Sessions | 525 | 617 | -14.9% |
-| Views | 2,136 | 2,142 | -0.3% |
-| Avg engagement time (per active user) | 100s | 64s | +57.0% |
+| Active users | 383 | 468 | -18.2% |
+| New users | 367 | 449 | -18.3% |
+| Sessions | 527 | 617 | -14.6% |
+| Views | 2,142 | 2,142 | +0.0% |
+| Avg engagement time (per active user) | 100s | 64s | +56.5% |
 
-## 5 anomalies flagged
+## 4 anomalies flagged
 
-### [CRITICAL] UP GA4 new users: 25 (+108.3% vs 28d median of 12)
-
-
-### [CRITICAL] UP GA4 users: 27 (+74.2% vs 28d median of 16) (YoY same day: -27.0%)
+### [CRITICAL] UP GA4 new users: 26 (+116.7% vs 28d median of 12)
 
 
-### [CRITICAL] UP GA4 sessions: 29 (+52.6% vs 28d median of 19) (YoY same day: -31.0%)
+### [CRITICAL] UP GA4 users: 28 (+80.6% vs 28d median of 16) (YoY same day: -24.3%)
+
+
+### [CRITICAL] UP GA4 sessions: 31 (+63.2% vs 28d median of 19) (YoY same day: -26.2%)
 
 **Source attribution** -- Direct rose from baseline 7 to 12 (+5).
   - Direct: 12 yesterday vs baseline 7 (+5)
@@ -43,9 +43,9 @@ _2026-06-11 -> 2026-07-08 vs 2026-05-14 -> 2026-06-10_
 **Top landing pages yesterday** -- Top page: / with 8 sessions.
   - `/` -- 8 sessions, 7 users
   - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 6 sessions, 6 users
+  - `/blog/` -- 2 sessions, 2 users
   - `/faq/` -- 2 sessions, 2 users
   - `/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/` -- 2 sessions, 2 users
-  - `` -- 1 sessions, 1 users
 
 **Recent site changes (last 7 days)** -- 65 pages/posts modified -- cross-reference with affected pages.
   - Binge Eating Therapy in San Antonio, TX (modified 2026-07-07)
@@ -55,10 +55,7 @@ _2026-06-11 -> 2026-07-08 vs 2026-05-14 -> 2026-06-10_
   - Foundayo™ (Orforglipron) · Behavioral Health Support · San Antonio, TX (modified 2026-07-07)
 
 
-### [MAJOR] UP GA4 pageviews: 83 (+40.7% vs 28d median of 59) (YoY same day: -26.5%)
-
-
-### [MINOR] DOWN GA4 avg session dur: 112.95 (-20.7% vs 28d median of 142)
+### [CRITICAL] UP GA4 pageviews: 89 (+50.8% vs 28d median of 59) (YoY same day: -21.2%)
 
 
 ## Yesterday's traffic by channel
@@ -66,7 +63,8 @@ _2026-06-11 -> 2026-07-08 vs 2026-05-14 -> 2026-06-10_
 -   12 sess  Direct
 -   11 sess  Organic Search
 -    5 sess  Referral
--    1 sess  Email
+-    2 sess  Email
+-    1 sess  AI Assistant
 
 ## Site changes in the last 7 days
 
