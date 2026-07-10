@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-07-09
 
-_Generated 2026-07-10 08:02 UTC_
+_Generated 2026-07-10 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **11 sessions** / 9 users / 34 pageviews
+- **24 sessions** / 21 users / 76 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 90.9%
-- Avg session duration: 88s
+- Engagement rate: 95.8%
+- Avg session duration: 118s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,34 +16,38 @@ _2026-06-12 -> 2026-07-09 vs 2026-05-15 -> 2026-06-11_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 378 | 438 | -13.7% |
-| New users | 362 | 420 | -13.8% |
-| Sessions | 507 | 596 | -14.9% |
-| Views | 1,998 | 2,153 | -7.2% |
-| Avg engagement time (per active user) | 98s | 67s | +46.7% |
+| Active users | 390 | 438 | -11.0% |
+| New users | 374 | 420 | -11.0% |
+| Sessions | 520 | 596 | -12.8% |
+| Views | 2,040 | 2,153 | -5.2% |
+| Avg engagement time (per active user) | 96s | 67s | +43.5% |
 
-## 5 anomalies flagged
+## 4 anomalies flagged
 
-### [MAJOR] DOWN GA4 pageviews: 34 (-42.4% vs 28d median of 59) (YoY same day: -50.0%)
+### [CRITICAL] UP GA4 new users: 19 (+58.3% vs 28d median of 12)
 
 
-### [MAJOR] DOWN GA4 sessions: 11 (-42.1% vs 28d median of 19) (YoY same day: -66.7%)
+### [MAJOR] UP GA4 users: 21 (+35.5% vs 28d median of 16) (YoY same day: -27.6%)
 
-**Source attribution** -- Direct fell from baseline 7 to 2 (-5).
-  - Direct: 2 yesterday vs baseline 7 (-5)
-  - Organic Social: 0 yesterday vs baseline 4 (-4)
-  - Organic Search: 5 yesterday vs baseline 8.5 (-3.5)
 
-**Direct-traffic investigation** -- Direct anomaly almost always means either (a) untagged email/SMS/QR campaign, (b) a bot spike, or (c) a referrer that strips Referer headers (some mobile apps). If this was unplanned, check server logs for unusual user agents.
+### [MAJOR] UP GA4 pageviews: 76 (+28.8% vs 28d median of 59) (YoY same day: +11.8%)
 
-**Top landing pages yesterday** -- Top page: / with 4 sessions.
-  - `/` -- 4 sessions, 4 users
+
+### [MAJOR] UP GA4 sessions: 24 (+26.3% vs 28d median of 19) (YoY same day: -27.3%)
+
+**Source attribution** -- Organic Search rose from baseline 8.5 to 13 (+4.5).
+  - Organic Search: 13 yesterday vs baseline 8.5 (+4.5)
+  - Direct: 3 yesterday vs baseline 7 (-4)
+  - Email: 3 yesterday vs baseline 1 (+2)
+
+**Top landing pages yesterday** -- Top page: / with 7 sessions.
+  - `/` -- 7 sessions, 7 users
+  - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 5 sessions, 5 users
+  - `/blog/` -- 3 sessions, 1 users
   - `/about/` -- 2 sessions, 2 users
-  - `/blog/` -- 2 sessions, 1 users
   - `` -- 1 sessions, 1 users
-  - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 1 sessions, 1 users
 
-**Recent site changes (last 7 days)** -- 58 pages/posts modified -- cross-reference with affected pages.
+**Recent site changes (last 7 days)** -- 57 pages/posts modified -- cross-reference with affected pages.
   - Binge Eating Therapy in San Antonio, TX (modified 2026-07-07)
   - Emotional Eating Therapy in San Antonio, TX (modified 2026-07-07)
   - Eating Disorder IOP in San Antonio, TX (modified 2026-07-07)
@@ -51,20 +55,12 @@ _2026-06-12 -> 2026-07-09 vs 2026-05-15 -> 2026-06-11_
   - Foundayo™ (Orforglipron) · Behavioral Health Support · San Antonio, TX (modified 2026-07-07)
 
 
-### [MAJOR] DOWN GA4 users: 9 (-41.9% vs 28d median of 16) (YoY same day: -69.0%)
-
-
-### [MAJOR] DOWN GA4 new users: 7 (-41.7% vs 28d median of 12)
-
-
-### [MAJOR] DOWN GA4 avg session dur: 87.64 (-34.4% vs 28d median of 134)
-
-
 ## Yesterday's traffic by channel
 
--    5 sess  Organic Search
--    2 sess  Direct
--    2 sess  Email
+-   13 sess  Organic Search
+-    3 sess  Direct
+-    3 sess  Email
+-    3 sess  Organic Social
 -    1 sess  AI Assistant
 -    1 sess  Referral
 
