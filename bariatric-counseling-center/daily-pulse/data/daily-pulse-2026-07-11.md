@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-07-10
 
-_Generated 2026-07-11 08:02 UTC_
+_Generated 2026-07-11 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **27 sessions** / 25 users / 62 pageviews
+- **32 sessions** / 30 users / 74 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 96.3%
-- Avg session duration: 25s
+- Engagement rate: 96.9%
+- Avg session duration: 34s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,36 +16,37 @@ _2026-06-13 -> 2026-07-10 vs 2026-05-16 -> 2026-06-12_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 401 | 428 | -6.3% |
-| New users | 385 | 411 | -6.3% |
-| Sessions | 532 | 587 | -9.4% |
-| Views | 2,068 | 2,114 | -2.2% |
-| Avg engagement time (per active user) | 56s | 101s | -44.6% |
+| Active users | 406 | 428 | -5.1% |
+| New users | 390 | 411 | -5.1% |
+| Sessions | 537 | 587 | -8.5% |
+| Views | 2,080 | 2,114 | -1.6% |
+| Avg engagement time (per active user) | 56s | 101s | -45.2% |
 
-## 4 anomalies flagged
+## 5 anomalies flagged
 
-### [CRITICAL] UP GA4 new users: 22 (+83.3% vs 28d median of 12)
-
-
-### [CRITICAL] DOWN GA4 avg session dur: 25.3545 (-79.4% vs 28d median of 123)
+### [CRITICAL] UP GA4 new users: 27 (+125.0% vs 28d median of 12)
 
 
-### [CRITICAL] UP GA4 users: 25 (+61.3% vs 28d median of 16) (YoY same day: -43.2%)
+### [CRITICAL] UP GA4 users: 30 (+93.5% vs 28d median of 16) (YoY same day: -31.8%)
 
 
-### [MAJOR] UP GA4 sessions: 27 (+42.1% vs 28d median of 19) (YoY same day: -48.1%)
+### [CRITICAL] DOWN GA4 avg session dur: 33.5432 (-72.8% vs 28d median of 123)
 
-**Source attribution** -- Direct rose from baseline 6.5 to 12 (+5.5).
-  - Direct: 12 yesterday vs baseline 6.5 (+5.5)
+
+### [CRITICAL] UP GA4 sessions: 32 (+68.4% vs 28d median of 19) (YoY same day: -38.5%)
+
+**Source attribution** -- Direct rose from baseline 6.5 to 14 (+7.5).
+  - Direct: 14 yesterday vs baseline 6.5 (+7.5)
+  - Organic Search: 11 yesterday vs baseline 8.5 (+2.5)
 
 **Direct-traffic investigation** -- Direct anomaly almost always means either (a) untagged email/SMS/QR campaign, (b) a bot spike, or (c) a referrer that strips Referer headers (some mobile apps). If this was unplanned, check server logs for unusual user agents.
 
 **Top landing pages yesterday** -- Top page: / with 7 sessions.
   - `/` -- 7 sessions, 6 users
   - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 5 sessions, 4 users
+  - `/blog/` -- 2 sessions, 2 users
   - `/contact/` -- 2 sessions, 2 users
   - `/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/` -- 2 sessions, 2 users
-  - `` -- 1 sessions, 1 users
 
 **Recent site changes (last 7 days)** -- 57 pages/posts modified -- cross-reference with affected pages.
   - Binge Eating Therapy in San Antonio, TX (modified 2026-07-07)
@@ -55,11 +56,14 @@ _2026-06-13 -> 2026-07-10 vs 2026-05-16 -> 2026-06-12_
   - Foundayo™ (Orforglipron) · Behavioral Health Support · San Antonio, TX (modified 2026-07-07)
 
 
+### [MAJOR] UP GA4 pageviews: 74 (+25.4% vs 28d median of 59) (YoY same day: -24.5%)
+
+
 ## Yesterday's traffic by channel
 
--   12 sess  Direct
--   10 sess  Organic Search
--    3 sess  Organic Social
+-   14 sess  Direct
+-   11 sess  Organic Search
+-    5 sess  Organic Social
 -    1 sess  Email
 -    1 sess  Referral
 
