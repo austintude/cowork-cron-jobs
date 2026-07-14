@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-07-12
+
+_Generated 2026-07-14T08:03:29.936396Z_
+
+### Headline
+- Sessions DOWN 69% vs 28-day median (6 vs baseline 20) and DOWN 60% YoY -- across-the-board soft day on a Sunday.
+- All five critical flags point the same direction; this looks like normal weekend low-traffic, not a technical problem.
+
+### What happened
+- **Sessions**: 6 total (baseline 20) -- Organic Search dropped from 8.5 baseline to 2, accounting for most of the gap.
+- **Engagement**: 100% engagement rate, 28-sec avg session duration (down from 123-sec median) -- the few people who showed up bounced fast.
+- **GSC**: 0 impressions, 0 clicks -- standard 1-3 day reporting lag for July 12 data, not a real drop.
+- **5 page edits surfaced**: Binge Eating, Emotional Eating, IOP, Bariatric Surgery Counseling, and Foundayo pages all modified July 7 -- newly detected in this run.
+
+### Efficacy
+- **30-day window**: 5 pages launched, 102 modified, 621 GA4 sessions attributed, 195K GSC impressions across tracked content.
+- **Ranking**: 2 pages in top 10, 0 in top 3 -- the top-of-funnel content is visible but nothing has broken into position 1-3 yet.
+- **July 7 edits**: All 5 modified pages are in indexing warmup -- no GSC impressions data yet, check back mid-week.
+
+### Today (do these)
+1. **Verify indexing** for the 5 July 7 page edits (/binge-eating-therapy-in-san-antonio-tx/, /emotional-eating-therapy-in-san-antonio-tx/, /eating-disorder-iop-in-san-antonio-tx/, /bariatric-surgery-counseling-in-san-antonio-tx/, /foundayo-behavioral-support-san-antonio/) in GSC's URL Inspection tool -- they're 7 days old and should be showing crawl activity.
+2. **Note for Todd's meeting**: Sunday July 12 low traffic (6 sessions) is a normal weekend floor, not a trend -- YoY and weekly context both confirm this site runs thin on Sundays.
+3. **Check whether the Foundayo page edit went live cleanly** -- it's a newer, timely page tied to a brand-name drug and worth confirming the content updated as intended before Google recrawls it.
