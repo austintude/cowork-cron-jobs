@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-14T08:03:10.494030Z",
+  "fetched_at": "2026-07-14T12:00:26.724893Z",
   "for_date": "2026-07-13",
   "baseline_window": {
     "start": "2026-06-15",
@@ -9,12 +9,12 @@
   "ga4_property_id": "254059736",
   "gsc_property": "https://www.bariatriccounselingcenter.com/",
   "snapshot": {
-    "sessions": 19,
-    "users": 18,
-    "new_users": 16,
-    "pageviews": 54,
-    "engagement_rate": 0.9474,
-    "avg_session_duration": 155.4627,
+    "sessions": 22,
+    "users": 20,
+    "new_users": 17,
+    "pageviews": 58,
+    "engagement_rate": 0.9091,
+    "avg_session_duration": 134.7043,
     "gsc_impressions": 0,
     "gsc_clicks": 0,
     "gsc_position": 0.0
@@ -24,13 +24,13 @@
     "current": {
       "start": "2026-06-16",
       "end": "2026-07-13",
-      "sessions": 526,
-      "active_users": 409,
-      "total_users": 409,
-      "new_users": 392,
-      "pageviews": 2048,
-      "avg_session_duration": 149.1336,
-      "avg_engagement_time_per_active_user": 53.6
+      "sessions": 529,
+      "active_users": 410,
+      "total_users": 410,
+      "new_users": 393,
+      "pageviews": 2052,
+      "avg_session_duration": 148.3062,
+      "avg_engagement_time_per_active_user": 53.5
     },
     "prior": {
       "start": "2026-05-19",
@@ -44,41 +44,61 @@
       "avg_engagement_time_per_active_user": 97.4
     },
     "pct_change": {
-      "sessions_pct": -11.1,
-      "active_users_pct": -5.3,
-      "total_users_pct": -5.3,
-      "new_users_pct": -4.9,
-      "pageviews_pct": -2.6,
-      "avg_session_duration_pct": -9.7,
-      "avg_engagement_time_per_active_user_pct": -45.0
+      "sessions_pct": -10.6,
+      "active_users_pct": -5.1,
+      "total_users_pct": -5.1,
+      "new_users_pct": -4.6,
+      "pageviews_pct": -2.4,
+      "avg_session_duration_pct": -10.2,
+      "avg_engagement_time_per_active_user_pct": -45.1
     }
   },
   "anomaly_summary": {
-    "total": 2,
+    "total": 4,
     "critical": 0,
     "major": 2,
-    "minor": 0
+    "minor": 2
   },
   "anomalies": [
     {
-      "metric": "GA4 avg session dur",
-      "actual": 155.4627,
-      "baseline_28d_median": 116.15,
-      "yoy_same_day": null,
-      "pct_delta": 33.8,
-      "severity": "MAJOR",
-      "direction": "up",
-      "headline": "UP GA4 avg session dur: 155.463 (+33.8% vs 28d median of 116)"
-    },
-    {
       "metric": "GA4 new users",
-      "actual": 16,
+      "actual": 17,
       "baseline_28d_median": 12.5,
       "yoy_same_day": null,
-      "pct_delta": 28.0,
+      "pct_delta": 36.0,
       "severity": "MAJOR",
       "direction": "up",
-      "headline": "UP GA4 new users: 16 (+28.0% vs 28d median of 12)"
+      "headline": "UP GA4 new users: 17 (+36.0% vs 28d median of 12)"
+    },
+    {
+      "metric": "GA4 users",
+      "actual": 20,
+      "baseline_28d_median": 16.0,
+      "yoy_same_day": 19,
+      "pct_delta": 25.0,
+      "severity": "MAJOR",
+      "direction": "up",
+      "headline": "UP GA4 users: 20 (+25.0% vs 28d median of 16) (YoY same day: +5.3%)"
+    },
+    {
+      "metric": "GA4 avg session dur",
+      "actual": 134.7043,
+      "baseline_28d_median": 116.15,
+      "yoy_same_day": null,
+      "pct_delta": 16.0,
+      "severity": "MINOR",
+      "direction": "up",
+      "headline": "UP GA4 avg session dur: 134.704 (+16.0% vs 28d median of 116)"
+    },
+    {
+      "metric": "GA4 sessions",
+      "actual": 22,
+      "baseline_28d_median": 19.0,
+      "yoy_same_day": 21,
+      "pct_delta": 15.8,
+      "severity": "MINOR",
+      "direction": "up",
+      "headline": "UP GA4 sessions: 22 (+15.8% vs 28d median of 19) (YoY same day: +4.8%)"
     }
   ],
   "ga4_data": {
@@ -337,12 +357,12 @@
       },
       {
         "date": "2026-07-13",
-        "sessions": 19,
-        "totalUsers": 18,
-        "newUsers": 16,
-        "screenPageViews": 54,
-        "engagementRate": 0.9474,
-        "averageSessionDuration": 155.4627
+        "sessions": 22,
+        "totalUsers": 20,
+        "newUsers": 17,
+        "screenPageViews": 58,
+        "engagementRate": 0.9091,
+        "averageSessionDuration": 134.7043
       }
     ],
     "daily_by_channel": [
@@ -461,6 +481,12 @@
         "totalUsers": 10
       },
       {
+        "date": "2026-07-13",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 9
+      },
+      {
         "date": "2026-06-22",
         "sessionDefaultChannelGroup": "Referral",
         "sessions": 10,
@@ -525,12 +551,6 @@
         "sessionDefaultChannelGroup": "Direct",
         "sessions": 8,
         "totalUsers": 8
-      },
-      {
-        "date": "2026-07-13",
-        "sessionDefaultChannelGroup": "Organic Search",
-        "sessions": 8,
-        "totalUsers": 7
       },
       {
         "date": "2026-06-20",
@@ -920,9 +940,15 @@
     "yesterday_landing_pages": [
       {
         "landingPagePlusQueryString": "/",
-        "sessions": 5,
-        "totalUsers": 5,
+        "sessions": 7,
+        "totalUsers": 6,
         "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "",
+        "sessions": 2,
+        "totalUsers": 2,
+        "engagementRate": 0
       },
       {
         "landingPagePlusQueryString": "/about/",
@@ -941,12 +967,6 @@
         "sessions": 2,
         "totalUsers": 2,
         "engagementRate": 1
-      },
-      {
-        "landingPagePlusQueryString": "",
-        "sessions": 1,
-        "totalUsers": 1,
-        "engagementRate": 0
       },
       {
         "landingPagePlusQueryString": "/contact/?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAEeUxrSXc145PHUMlqCusGiqmQt1BhJUumQrPeUAJBJ4NcdRRK-o_CkFnzd5aI_aem_RCXa-vqO_neqPzn5wiS_aQ",
@@ -993,14 +1013,14 @@
     ],
     "yesterday_sources": [
       {
+        "sessionSourceMedium": "google / organic",
+        "sessions": 9,
+        "totalUsers": 7
+      },
+      {
         "sessionSourceMedium": "(direct) / (none)",
         "sessions": 8,
         "totalUsers": 8
-      },
-      {
-        "sessionSourceMedium": "google / organic",
-        "sessions": 6,
-        "totalUsers": 5
       },
       {
         "sessionSourceMedium": "bing / organic",
@@ -1026,11 +1046,11 @@
     "yesterday_devices": [
       {
         "deviceCategory": "desktop",
-        "sessions": 17
+        "sessions": 18
       },
       {
         "deviceCategory": "mobile",
-        "sessions": 2
+        "sessions": 4
       }
     ],
     "yoy_same_day": {
@@ -1282,280 +1302,9 @@
           "date": "2026-06-15T10:12:44",
           "modified": "2026-07-07T16:56:50",
           "status": "publish"
-        },
-        {
-          "id": 5608,
-          "slug": "eating-disorder-referrals-for-providers-in-san-antonio-tx",
-          "link": "https://www.bariatriccounselingcenter.com/eating-disorder-referrals-for-providers-in-san-antonio-tx/",
-          "title": "A Referral Resource for Clinicians: Adult Eating Disorder and Food Addiction Care in San Antonio",
-          "date": "2026-06-15T10:12:59",
-          "modified": "2026-06-29T10:25:29",
-          "status": "publish"
-        },
-        {
-          "id": 5170,
-          "slug": "eating-disorder-therapist-in-san-antonio-tx",
-          "link": "https://www.bariatriccounselingcenter.com/eating-disorder-therapist-in-san-antonio-tx/",
-          "title": "Eating Disorder Therapist in San Antonio, TX",
-          "date": "2026-06-15T10:13:08",
-          "modified": "2026-06-29T10:25:28",
-          "status": "publish"
-        },
-        {
-          "id": 5611,
-          "slug": "food-addiction-treatment-in-texas",
-          "link": "https://www.bariatriccounselingcenter.com/food-addiction-treatment-in-texas/",
-          "title": "Food Addiction Treatment in Texas: Real Help for Overeaters, Wherever You Live",
-          "date": "2026-06-15T10:13:27",
-          "modified": "2026-06-29T10:25:23",
-          "status": "publish"
-        },
-        {
-          "id": 5650,
-          "slug": "bariatric-counseling-near-me",
-          "link": "https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
-          "title": "Bariatric Counseling Near Me: How to Choose the Right Care",
-          "date": "2026-06-24T09:53:46",
-          "modified": "2026-06-29T10:25:21",
-          "status": "publish"
-        },
-        {
-          "id": 5655,
-          "slug": "intuitive-eating-support-in-mcallen-tx",
-          "link": "https://www.bariatriccounselingcenter.com/intuitive-eating-support-in-mcallen-tx/",
-          "title": "Intuitive Eating Support in McAllen, TX",
-          "date": "2026-06-24T10:15:23",
-          "modified": "2026-06-29T10:25:18",
-          "status": "publish"
-        },
-        {
-          "id": 4947,
-          "slug": "weight-management-program-in-san-antonio-tx",
-          "link": "https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/",
-          "title": "Weight Management Program in San Antonio, TX",
-          "date": "2026-03-26T11:32:22",
-          "modified": "2026-06-29T10:17:26",
-          "status": "publish"
-        },
-        {
-          "id": 5179,
-          "slug": "virtual-emotional-eating-therapy-in-texas",
-          "link": "https://www.bariatriccounselingcenter.com/virtual-emotional-eating-therapy-in-texas/",
-          "title": "Virtual Emotional Eating Therapy in Texas",
-          "date": "2026-05-08T12:07:32",
-          "modified": "2026-06-29T10:17:22",
-          "status": "publish"
-        },
-        {
-          "id": 5178,
-          "slug": "weight-management-counseling-in-san-antonio-tx",
-          "link": "https://www.bariatriccounselingcenter.com/weight-management-counseling-in-san-antonio-tx/",
-          "title": "Weight Management Counseling in San Antonio, TX",
-          "date": "2026-05-08T12:07:40",
-          "modified": "2026-06-29T10:17:20",
-          "status": "publish"
-        },
-        {
-          "id": 5271,
-          "slug": "therapy-for-eating-disorders-in-san-antonio-tx",
-          "link": "https://www.bariatriccounselingcenter.com/therapy-for-eating-disorders-in-san-antonio-tx/",
-          "title": "Therapy for Eating Disorders in San Antonio, TX",
-          "date": "2026-05-12T13:39:27",
-          "modified": "2026-06-29T10:17:18",
-          "status": "publish"
-        },
-        {
-          "id": 5267,
-          "slug": "nutritional-counseling-in-san-antonio-tx",
-          "link": "https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/",
-          "title": "Nutritional Counseling in San Antonio, TX",
-          "date": "2026-05-12T13:39:49",
-          "modified": "2026-06-29T10:17:16",
-          "status": "publish"
-        },
-        {
-          "id": 5266,
-          "slug": "holistic-weight-loss-counseling-in-san-antonio-tx",
-          "link": "https://www.bariatriccounselingcenter.com/holistic-weight-loss-counseling-in-san-antonio-tx/",
-          "title": "Holistic Weight Loss Counseling in San Antonio, TX",
-          "date": "2026-05-12T13:40:00",
-          "modified": "2026-06-29T10:17:14",
-          "status": "publish"
-        },
-        {
-          "id": 5269,
-          "slug": "body-confidence-counseling-in-san-antonio-tx",
-          "link": "https://www.bariatriccounselingcenter.com/body-confidence-counseling-in-san-antonio-tx/",
-          "title": "Body Confidence Counseling in San Antonio, TX",
-          "date": "2026-05-12T13:40:11",
-          "modified": "2026-06-29T10:17:13",
-          "status": "publish"
-        },
-        {
-          "id": 5333,
-          "slug": "holistic-approach-to-weight-loss",
-          "link": "https://www.bariatriccounselingcenter.com/holistic-approach-to-weight-loss/",
-          "title": "A Holistic Approach to Weight Loss",
-          "date": "2026-06-04T10:13:14",
-          "modified": "2026-06-29T10:17:07",
-          "status": "publish"
-        },
-        {
-          "id": 5330,
-          "slug": "therapy-for-depression-and-weight-loss",
-          "link": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/",
-          "title": "Therapy for Depression and Weight Loss",
-          "date": "2026-06-04T10:13:21",
-          "modified": "2026-06-29T10:17:05",
-          "status": "publish"
-        },
-        {
-          "id": 5331,
-          "slug": "binge-eating-therapy-in-mcallen-tx",
-          "link": "https://www.bariatriccounselingcenter.com/binge-eating-therapy-in-mcallen-tx/",
-          "title": "Binge Eating Therapy in McAllen, TX",
-          "date": "2026-06-04T10:13:29",
-          "modified": "2026-06-29T10:17:03",
-          "status": "publish"
-        },
-        {
-          "id": 5332,
-          "slug": "weight-loss-therapist",
-          "link": "https://www.bariatriccounselingcenter.com/weight-loss-therapist/",
-          "title": "Weight Loss Therapist",
-          "date": "2026-06-04T10:13:40",
-          "modified": "2026-06-29T10:17:01",
-          "status": "publish"
-        },
-        {
-          "id": 5649,
-          "slug": "eating-disorder-therapist-near-me",
-          "link": "https://www.bariatriccounselingcenter.com/eating-disorder-therapist-near-me/",
-          "title": "Eating Disorder Therapist Near Me: How to Find the Right Fit",
-          "date": "2026-06-24T09:50:40",
-          "modified": "2026-06-29T10:16:56",
-          "status": "publish"
         }
       ],
-      "posts": [
-        {
-          "id": 1188,
-          "slug": "emotional-eating-and-coping-skills",
-          "link": "https://www.bariatriccounselingcenter.com/blog/emotional-eating-and-coping-skills/",
-          "title": "Emotional Eating and Coping Skills",
-          "date": "2023-12-14T11:38:56",
-          "modified": "2026-06-29T09:24:19",
-          "status": "publish"
-        },
-        {
-          "id": 4832,
-          "slug": "coping-with-emotional-eating-building-an-emotional-first-aid-kit",
-          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/coping-with-emotional-eating-building-an-emotional-first-aid-kit/",
-          "title": "Coping With Emotional Eating: Building an Emotional First Aid Kit",
-          "date": "2026-02-09T10:38:37",
-          "modified": "2026-06-29T09:23:11",
-          "status": "publish"
-        },
-        {
-          "id": 4928,
-          "slug": "emotional-eating-vs-disordered-eating-how-do-you-know-the-difference",
-          "link": "https://www.bariatriccounselingcenter.com/eating-disorders/emotional-eating-vs-disordered-eating-how-do-you-know-the-difference/",
-          "title": "Emotional Eating vs. Disordered Eating: How Do You Know the Difference?",
-          "date": "2026-03-02T12:22:28",
-          "modified": "2026-06-29T09:22:14",
-          "status": "publish"
-        },
-        {
-          "id": 3234,
-          "slug": "preparing-for-bariatric-surgery-a-mental-health-checklist",
-          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/preparing-for-bariatric-surgery-a-mental-health-checklist/",
-          "title": "Preparing for Bariatric Surgery: A Mental Health Checklist",
-          "date": "2025-03-09T17:36:44",
-          "modified": "2026-06-29T09:20:54",
-          "status": "publish"
-        },
-        {
-          "id": 4683,
-          "slug": "how-adhd-impacts-eating-habits-and-weight-management",
-          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-adhd-impacts-eating-habits-and-weight-management/",
-          "title": "How ADHD Impacts Eating Habits and Weight Management",
-          "date": "2025-12-11T09:49:13",
-          "modified": "2026-06-29T09:19:52",
-          "status": "publish"
-        },
-        {
-          "id": 2989,
-          "slug": "binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options",
-          "link": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/",
-          "title": "Binge Eating Disorder: The Symptoms, Causes, and Effective Treatment Options",
-          "date": "2025-02-18T17:30:02",
-          "modified": "2026-06-29T09:18:44",
-          "status": "publish"
-        },
-        {
-          "id": 1132,
-          "slug": "sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support",
-          "link": "https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/",
-          "title": "Sustaining the Impact of Ozempic and Other Sema-Glutide Injectables with Behavioral Support",
-          "date": "2026-06-23T09:37:31",
-          "modified": "2026-06-29T09:17:32",
-          "status": "publish"
-        },
-        {
-          "id": 1142,
-          "slug": "what-is-emotional-eating",
-          "link": "https://www.bariatriccounselingcenter.com/blog/what-is-emotional-eating/",
-          "title": "What Is Emotional Eating?",
-          "date": "2023-11-09T14:20:13",
-          "modified": "2026-06-29T09:16:20",
-          "status": "publish"
-        },
-        {
-          "id": 1945,
-          "slug": "dietitians-or-nutritionists-breaking-down-the-differences",
-          "link": "https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/",
-          "title": "Dietitian or Nutritionist: Breaking Down the Differences",
-          "date": "2024-04-15T19:46:22",
-          "modified": "2026-06-29T09:15:02",
-          "status": "publish"
-        },
-        {
-          "id": 2412,
-          "slug": "holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness",
-          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
-          "title": "Holistic Weight Loss Approach: Overcoming Diet Culture with Mind and Body Wellness",
-          "date": "2024-10-02T15:08:22",
-          "modified": "2026-06-29T09:13:35",
-          "status": "publish"
-        },
-        {
-          "id": 3199,
-          "slug": "better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings",
-          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
-          "title": "Better Sleep for Weight Loss: How Rest Impacts Your Metabolism and Cravings",
-          "date": "2025-03-25T13:11:14",
-          "modified": "2026-06-29T09:11:01",
-          "status": "publish"
-        },
-        {
-          "id": 3394,
-          "slug": "why-hydration-is-essential-for-weight-loss-and-management",
-          "link": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
-          "title": "Why Hydration is Essential for Weight Loss and Weight Management\u00a0",
-          "date": "2026-06-11T09:57:23",
-          "modified": "2026-06-29T09:08:31",
-          "status": "publish"
-        },
-        {
-          "id": 2795,
-          "slug": "how-to-improve-self-esteem-while-losing-weight-the-healthy-way",
-          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
-          "title": "How to Improve Self-Esteem While Losing Weight the Healthy Way",
-          "date": "2024-12-18T18:36:25",
-          "modified": "2026-06-29T08:45:26",
-          "status": "publish"
-        }
-      ]
+      "posts": []
     }
   },
   "gsc_data": {
@@ -5793,280 +5542,9 @@
         "date": "2026-06-15T10:12:44",
         "modified": "2026-07-07T16:56:50",
         "status": "publish"
-      },
-      {
-        "id": 5608,
-        "slug": "eating-disorder-referrals-for-providers-in-san-antonio-tx",
-        "link": "https://www.bariatriccounselingcenter.com/eating-disorder-referrals-for-providers-in-san-antonio-tx/",
-        "title": "A Referral Resource for Clinicians: Adult Eating Disorder and Food Addiction Care in San Antonio",
-        "date": "2026-06-15T10:12:59",
-        "modified": "2026-06-29T10:25:29",
-        "status": "publish"
-      },
-      {
-        "id": 5170,
-        "slug": "eating-disorder-therapist-in-san-antonio-tx",
-        "link": "https://www.bariatriccounselingcenter.com/eating-disorder-therapist-in-san-antonio-tx/",
-        "title": "Eating Disorder Therapist in San Antonio, TX",
-        "date": "2026-06-15T10:13:08",
-        "modified": "2026-06-29T10:25:28",
-        "status": "publish"
-      },
-      {
-        "id": 5611,
-        "slug": "food-addiction-treatment-in-texas",
-        "link": "https://www.bariatriccounselingcenter.com/food-addiction-treatment-in-texas/",
-        "title": "Food Addiction Treatment in Texas: Real Help for Overeaters, Wherever You Live",
-        "date": "2026-06-15T10:13:27",
-        "modified": "2026-06-29T10:25:23",
-        "status": "publish"
-      },
-      {
-        "id": 5650,
-        "slug": "bariatric-counseling-near-me",
-        "link": "https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
-        "title": "Bariatric Counseling Near Me: How to Choose the Right Care",
-        "date": "2026-06-24T09:53:46",
-        "modified": "2026-06-29T10:25:21",
-        "status": "publish"
-      },
-      {
-        "id": 5655,
-        "slug": "intuitive-eating-support-in-mcallen-tx",
-        "link": "https://www.bariatriccounselingcenter.com/intuitive-eating-support-in-mcallen-tx/",
-        "title": "Intuitive Eating Support in McAllen, TX",
-        "date": "2026-06-24T10:15:23",
-        "modified": "2026-06-29T10:25:18",
-        "status": "publish"
-      },
-      {
-        "id": 4947,
-        "slug": "weight-management-program-in-san-antonio-tx",
-        "link": "https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/",
-        "title": "Weight Management Program in San Antonio, TX",
-        "date": "2026-03-26T11:32:22",
-        "modified": "2026-06-29T10:17:26",
-        "status": "publish"
-      },
-      {
-        "id": 5179,
-        "slug": "virtual-emotional-eating-therapy-in-texas",
-        "link": "https://www.bariatriccounselingcenter.com/virtual-emotional-eating-therapy-in-texas/",
-        "title": "Virtual Emotional Eating Therapy in Texas",
-        "date": "2026-05-08T12:07:32",
-        "modified": "2026-06-29T10:17:22",
-        "status": "publish"
-      },
-      {
-        "id": 5178,
-        "slug": "weight-management-counseling-in-san-antonio-tx",
-        "link": "https://www.bariatriccounselingcenter.com/weight-management-counseling-in-san-antonio-tx/",
-        "title": "Weight Management Counseling in San Antonio, TX",
-        "date": "2026-05-08T12:07:40",
-        "modified": "2026-06-29T10:17:20",
-        "status": "publish"
-      },
-      {
-        "id": 5271,
-        "slug": "therapy-for-eating-disorders-in-san-antonio-tx",
-        "link": "https://www.bariatriccounselingcenter.com/therapy-for-eating-disorders-in-san-antonio-tx/",
-        "title": "Therapy for Eating Disorders in San Antonio, TX",
-        "date": "2026-05-12T13:39:27",
-        "modified": "2026-06-29T10:17:18",
-        "status": "publish"
-      },
-      {
-        "id": 5267,
-        "slug": "nutritional-counseling-in-san-antonio-tx",
-        "link": "https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/",
-        "title": "Nutritional Counseling in San Antonio, TX",
-        "date": "2026-05-12T13:39:49",
-        "modified": "2026-06-29T10:17:16",
-        "status": "publish"
-      },
-      {
-        "id": 5266,
-        "slug": "holistic-weight-loss-counseling-in-san-antonio-tx",
-        "link": "https://www.bariatriccounselingcenter.com/holistic-weight-loss-counseling-in-san-antonio-tx/",
-        "title": "Holistic Weight Loss Counseling in San Antonio, TX",
-        "date": "2026-05-12T13:40:00",
-        "modified": "2026-06-29T10:17:14",
-        "status": "publish"
-      },
-      {
-        "id": 5269,
-        "slug": "body-confidence-counseling-in-san-antonio-tx",
-        "link": "https://www.bariatriccounselingcenter.com/body-confidence-counseling-in-san-antonio-tx/",
-        "title": "Body Confidence Counseling in San Antonio, TX",
-        "date": "2026-05-12T13:40:11",
-        "modified": "2026-06-29T10:17:13",
-        "status": "publish"
-      },
-      {
-        "id": 5333,
-        "slug": "holistic-approach-to-weight-loss",
-        "link": "https://www.bariatriccounselingcenter.com/holistic-approach-to-weight-loss/",
-        "title": "A Holistic Approach to Weight Loss",
-        "date": "2026-06-04T10:13:14",
-        "modified": "2026-06-29T10:17:07",
-        "status": "publish"
-      },
-      {
-        "id": 5330,
-        "slug": "therapy-for-depression-and-weight-loss",
-        "link": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/",
-        "title": "Therapy for Depression and Weight Loss",
-        "date": "2026-06-04T10:13:21",
-        "modified": "2026-06-29T10:17:05",
-        "status": "publish"
-      },
-      {
-        "id": 5331,
-        "slug": "binge-eating-therapy-in-mcallen-tx",
-        "link": "https://www.bariatriccounselingcenter.com/binge-eating-therapy-in-mcallen-tx/",
-        "title": "Binge Eating Therapy in McAllen, TX",
-        "date": "2026-06-04T10:13:29",
-        "modified": "2026-06-29T10:17:03",
-        "status": "publish"
-      },
-      {
-        "id": 5332,
-        "slug": "weight-loss-therapist",
-        "link": "https://www.bariatriccounselingcenter.com/weight-loss-therapist/",
-        "title": "Weight Loss Therapist",
-        "date": "2026-06-04T10:13:40",
-        "modified": "2026-06-29T10:17:01",
-        "status": "publish"
-      },
-      {
-        "id": 5649,
-        "slug": "eating-disorder-therapist-near-me",
-        "link": "https://www.bariatriccounselingcenter.com/eating-disorder-therapist-near-me/",
-        "title": "Eating Disorder Therapist Near Me: How to Find the Right Fit",
-        "date": "2026-06-24T09:50:40",
-        "modified": "2026-06-29T10:16:56",
-        "status": "publish"
       }
     ],
-    "posts": [
-      {
-        "id": 1188,
-        "slug": "emotional-eating-and-coping-skills",
-        "link": "https://www.bariatriccounselingcenter.com/blog/emotional-eating-and-coping-skills/",
-        "title": "Emotional Eating and Coping Skills",
-        "date": "2023-12-14T11:38:56",
-        "modified": "2026-06-29T09:24:19",
-        "status": "publish"
-      },
-      {
-        "id": 4832,
-        "slug": "coping-with-emotional-eating-building-an-emotional-first-aid-kit",
-        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/coping-with-emotional-eating-building-an-emotional-first-aid-kit/",
-        "title": "Coping With Emotional Eating: Building an Emotional First Aid Kit",
-        "date": "2026-02-09T10:38:37",
-        "modified": "2026-06-29T09:23:11",
-        "status": "publish"
-      },
-      {
-        "id": 4928,
-        "slug": "emotional-eating-vs-disordered-eating-how-do-you-know-the-difference",
-        "link": "https://www.bariatriccounselingcenter.com/eating-disorders/emotional-eating-vs-disordered-eating-how-do-you-know-the-difference/",
-        "title": "Emotional Eating vs. Disordered Eating: How Do You Know the Difference?",
-        "date": "2026-03-02T12:22:28",
-        "modified": "2026-06-29T09:22:14",
-        "status": "publish"
-      },
-      {
-        "id": 3234,
-        "slug": "preparing-for-bariatric-surgery-a-mental-health-checklist",
-        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/preparing-for-bariatric-surgery-a-mental-health-checklist/",
-        "title": "Preparing for Bariatric Surgery: A Mental Health Checklist",
-        "date": "2025-03-09T17:36:44",
-        "modified": "2026-06-29T09:20:54",
-        "status": "publish"
-      },
-      {
-        "id": 4683,
-        "slug": "how-adhd-impacts-eating-habits-and-weight-management",
-        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-adhd-impacts-eating-habits-and-weight-management/",
-        "title": "How ADHD Impacts Eating Habits and Weight Management",
-        "date": "2025-12-11T09:49:13",
-        "modified": "2026-06-29T09:19:52",
-        "status": "publish"
-      },
-      {
-        "id": 2989,
-        "slug": "binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options",
-        "link": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/",
-        "title": "Binge Eating Disorder: The Symptoms, Causes, and Effective Treatment Options",
-        "date": "2025-02-18T17:30:02",
-        "modified": "2026-06-29T09:18:44",
-        "status": "publish"
-      },
-      {
-        "id": 1132,
-        "slug": "sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support",
-        "link": "https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/",
-        "title": "Sustaining the Impact of Ozempic and Other Sema-Glutide Injectables with Behavioral Support",
-        "date": "2026-06-23T09:37:31",
-        "modified": "2026-06-29T09:17:32",
-        "status": "publish"
-      },
-      {
-        "id": 1142,
-        "slug": "what-is-emotional-eating",
-        "link": "https://www.bariatriccounselingcenter.com/blog/what-is-emotional-eating/",
-        "title": "What Is Emotional Eating?",
-        "date": "2023-11-09T14:20:13",
-        "modified": "2026-06-29T09:16:20",
-        "status": "publish"
-      },
-      {
-        "id": 1945,
-        "slug": "dietitians-or-nutritionists-breaking-down-the-differences",
-        "link": "https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/",
-        "title": "Dietitian or Nutritionist: Breaking Down the Differences",
-        "date": "2024-04-15T19:46:22",
-        "modified": "2026-06-29T09:15:02",
-        "status": "publish"
-      },
-      {
-        "id": 2412,
-        "slug": "holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness",
-        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
-        "title": "Holistic Weight Loss Approach: Overcoming Diet Culture with Mind and Body Wellness",
-        "date": "2024-10-02T15:08:22",
-        "modified": "2026-06-29T09:13:35",
-        "status": "publish"
-      },
-      {
-        "id": 3199,
-        "slug": "better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings",
-        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
-        "title": "Better Sleep for Weight Loss: How Rest Impacts Your Metabolism and Cravings",
-        "date": "2025-03-25T13:11:14",
-        "modified": "2026-06-29T09:11:01",
-        "status": "publish"
-      },
-      {
-        "id": 3394,
-        "slug": "why-hydration-is-essential-for-weight-loss-and-management",
-        "link": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
-        "title": "Why Hydration is Essential for Weight Loss and Weight Management\u00a0",
-        "date": "2026-06-11T09:57:23",
-        "modified": "2026-06-29T09:08:31",
-        "status": "publish"
-      },
-      {
-        "id": 2795,
-        "slug": "how-to-improve-self-esteem-while-losing-weight-the-healthy-way",
-        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
-        "title": "How to Improve Self-Esteem While Losing Weight the Healthy Way",
-        "date": "2024-12-18T18:36:25",
-        "modified": "2026-06-29T08:45:26",
-        "status": "publish"
-      }
-    ]
+    "posts": []
   },
   "launches_this_run": [
     {
@@ -6078,7 +5556,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-4885--binge-eating-therapy-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6089,7 +5567,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-4948--emotional-eating-therapy-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6100,7 +5578,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-4950--eating-disorder-iop-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6111,7 +5589,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-4952--bariatric-surgery-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6122,7 +5600,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-4994--foundayo-behavioral-support-san-antonio",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6133,7 +5611,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5001--overeaters-anonymous-support-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6144,7 +5622,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5144--overeating-treatment-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6155,7 +5633,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5142--binge-eating-treatment-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6166,7 +5644,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5018--compulsive-overeating-counseling-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6177,7 +5655,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5164--eating-disorder-treatment-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6188,7 +5666,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5168--bariatric-surgery-psychological-evaluation-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6199,7 +5677,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5177--bariatric-therapy-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6210,7 +5688,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5176--eating-disorder-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6221,7 +5699,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5180--ozempic-behavioral-support-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6232,7 +5710,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5270--bariatric-therapist-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6243,7 +5721,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5279--binge-eating-disorder-treatment-san-antonio",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6254,7 +5732,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5321--counseling-for-anxiety-and-weight-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6265,7 +5743,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5323--glp-1-behavioral-support-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6276,7 +5754,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5409--eating-disorder-group-therapy-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6287,7 +5765,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5457--mounjaro-zepbound-behavioral-support-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6298,7 +5776,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5460--adhd-and-emotional-eating-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6309,7 +5787,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5462--glp-1-weight-regain-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6320,7 +5798,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5461--night-eating-syndrome-treatment-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6331,7 +5809,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-2091",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6342,7 +5820,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-3566--understanding-anxiety-and-depression-related-to-weight",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6353,7 +5831,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-5334--what-is-a-bariatric-therapist",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6364,337 +5842,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-07-07-page-modify-3590--understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "A Referral Resource for Clinicians: Adult Eating Disorder and Food Addiction Care in San Antonio",
-      "url": "/eating-disorder-referrals-for-providers-in-san-antonio-tx/",
-      "wp_id": 5608,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5608--eating-disorder-referrals-for-providers-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Eating Disorder Therapist in San Antonio, TX",
-      "url": "/eating-disorder-therapist-in-san-antonio-tx/",
-      "wp_id": 5170,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5170--eating-disorder-therapist-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Food Addiction Treatment in Texas: Real Help for Overeaters, Wherever You Live",
-      "url": "/food-addiction-treatment-in-texas/",
-      "wp_id": 5611,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5611--food-addiction-treatment-in-texas",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Bariatric Counseling Near Me: How to Choose the Right Care",
-      "url": "/bariatric-counseling-near-me/",
-      "wp_id": 5650,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5650--bariatric-counseling-near-me",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Intuitive Eating Support in McAllen, TX",
-      "url": "/intuitive-eating-support-in-mcallen-tx/",
-      "wp_id": 5655,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5655--intuitive-eating-support-in-mcallen-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Weight Management Program in San Antonio, TX",
-      "url": "/weight-management-program-in-san-antonio-tx/",
-      "wp_id": 4947,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-4947--weight-management-program-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Virtual Emotional Eating Therapy in Texas",
-      "url": "/virtual-emotional-eating-therapy-in-texas/",
-      "wp_id": 5179,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5179--virtual-emotional-eating-therapy-in-texas",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Weight Management Counseling in San Antonio, TX",
-      "url": "/weight-management-counseling-in-san-antonio-tx/",
-      "wp_id": 5178,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5178--weight-management-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Therapy for Eating Disorders in San Antonio, TX",
-      "url": "/therapy-for-eating-disorders-in-san-antonio-tx/",
-      "wp_id": 5271,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5271--therapy-for-eating-disorders-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Nutritional Counseling in San Antonio, TX",
-      "url": "/nutritional-counseling-in-san-antonio-tx/",
-      "wp_id": 5267,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5267--nutritional-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Holistic Weight Loss Counseling in San Antonio, TX",
-      "url": "/holistic-weight-loss-counseling-in-san-antonio-tx/",
-      "wp_id": 5266,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5266--holistic-weight-loss-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Body Confidence Counseling in San Antonio, TX",
-      "url": "/body-confidence-counseling-in-san-antonio-tx/",
-      "wp_id": 5269,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5269--body-confidence-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "A Holistic Approach to Weight Loss",
-      "url": "/holistic-approach-to-weight-loss/",
-      "wp_id": 5333,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5333--holistic-approach-to-weight-loss",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Therapy for Depression and Weight Loss",
-      "url": "/therapy-for-depression-and-weight-loss/",
-      "wp_id": 5330,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5330--therapy-for-depression-and-weight-loss",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Binge Eating Therapy in McAllen, TX",
-      "url": "/binge-eating-therapy-in-mcallen-tx/",
-      "wp_id": 5331,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5331--binge-eating-therapy-in-mcallen-tx",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Weight Loss Therapist",
-      "url": "/weight-loss-therapist/",
-      "wp_id": 5332,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5332--weight-loss-therapist",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "page-modify",
-      "title": "Eating Disorder Therapist Near Me: How to Find the Right Fit",
-      "url": "/eating-disorder-therapist-near-me/",
-      "wp_id": 5649,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-page-modify-5649--eating-disorder-therapist-near-me",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "Emotional Eating and Coping Skills",
-      "url": "/blog/emotional-eating-and-coping-skills/",
-      "wp_id": 1188,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-1188--blog-emotional-eating-and-coping-skills",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "Coping With Emotional Eating: Building an Emotional First Aid Kit",
-      "url": "/self-improvement/mental-health/coping-with-emotional-eating-building-an-emotional-first-aid-kit/",
-      "wp_id": 4832,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-4832--self-improvement-mental-health-coping-with-emotional-eating-building-an-emotional-first-aid",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "Emotional Eating vs. Disordered Eating: How Do You Know the Difference?",
-      "url": "/eating-disorders/emotional-eating-vs-disordered-eating-how-do-you-know-the-difference/",
-      "wp_id": 4928,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-4928--eating-disorders-emotional-eating-vs-disordered-eating-how-do-you-know-the-difference",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "Preparing for Bariatric Surgery: A Mental Health Checklist",
-      "url": "/self-improvement/mental-health/preparing-for-bariatric-surgery-a-mental-health-checklist/",
-      "wp_id": 3234,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-3234--self-improvement-mental-health-preparing-for-bariatric-surgery-a-mental-health-checklist",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "How ADHD Impacts Eating Habits and Weight Management",
-      "url": "/self-improvement/mental-health/how-adhd-impacts-eating-habits-and-weight-management/",
-      "wp_id": 4683,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-4683--self-improvement-mental-health-how-adhd-impacts-eating-habits-and-weight-management",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "Binge Eating Disorder: The Symptoms, Causes, and Effective Treatment Options",
-      "url": "/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/",
-      "wp_id": 2989,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-2989--eating-disorders-binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "Sustaining the Impact of Ozempic and Other Sema-Glutide Injectables with Behavioral Support",
-      "url": "/blog/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/",
-      "wp_id": 1132,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-1132--blog-sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-su",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "What Is Emotional Eating?",
-      "url": "/blog/what-is-emotional-eating/",
-      "wp_id": 1142,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-1142--blog-what-is-emotional-eating",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "Dietitian or Nutritionist: Breaking Down the Differences",
-      "url": "/blog/dietitians-or-nutritionists-breaking-down-the-differences/",
-      "wp_id": 1945,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-1945--blog-dietitians-or-nutritionists-breaking-down-the-differences",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "Holistic Weight Loss Approach: Overcoming Diet Culture with Mind and Body Wellness",
-      "url": "/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
-      "wp_id": 2412,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-2412--self-improvement-mental-health-holistic-weight-loss-approach-overcoming-diet-culture-with-m",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "Better Sleep for Weight Loss: How Rest Impacts Your Metabolism and Cravings",
-      "url": "/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
-      "wp_id": 3199,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-3199--self-improvement-mental-health-better-sleep-for-weight-loss-how-rest-impacts-your-metabolis",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "Why Hydration is Essential for Weight Loss and Weight Management\u00a0",
-      "url": "/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
-      "wp_id": 3394,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-3394--healthy-living-2-why-hydration-is-essential-for-weight-loss-and-management",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-06-29",
-      "type": "post-modify",
-      "title": "How to Improve Self-Esteem While Losing Weight the Healthy Way",
-      "url": "/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
-      "wp_id": 2795,
-      "source": "wp-rest-modified",
-      "confidence": "medium",
-      "id": "auto-2026-06-29-post-modify-2795--self-improvement-mental-health-how-to-improve-self-esteem-while-losing-weight-the-healthy-w",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6704,7 +5852,18 @@
       "source": "sitemap",
       "confidence": "low",
       "id": "auto-2026-07-07-sitemap-touch--author-tmccord845",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
+    },
+    {
+      "launched_at": "2026-07-14",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-14",
+      "commit_hash": "c949bc8",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-14-git-commit-c949bc8",
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-13",
@@ -6715,7 +5874,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-13-git-commit-3dd0919",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-13",
@@ -6726,7 +5885,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-13-git-commit-ee16a54",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-13",
@@ -6737,7 +5896,7 @@
       "source": "git-log",
       "confidence": "medium",
       "id": "auto-2026-07-13-git-commit-911cc40",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-13",
@@ -6748,7 +5907,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-13-git-commit-dd2f458",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-13",
@@ -6759,7 +5918,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-13-git-commit-21e6714",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-12",
@@ -6770,7 +5929,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-12-git-commit-ab00e58",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-12",
@@ -6781,7 +5940,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-12-git-commit-92acaad",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-11",
@@ -6792,7 +5951,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-11-git-commit-07fef02",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-11",
@@ -6803,7 +5962,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-11-git-commit-af10cd0",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-10",
@@ -6814,7 +5973,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-10-git-commit-5131e4c",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-10",
@@ -6825,7 +5984,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-10-git-commit-6866c79",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-09",
@@ -6836,7 +5995,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-09-git-commit-6d4ee0b",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-09",
@@ -6847,7 +6006,7 @@
       "source": "git-log",
       "confidence": "medium",
       "id": "auto-2026-07-09-git-commit-c22f7f2",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-09",
@@ -6858,7 +6017,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-09-git-commit-19fdcd0",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-09",
@@ -6869,7 +6028,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-09-git-commit-cc6f52d",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-09",
@@ -6880,7 +6039,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-09-git-commit-ddde3c7",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-08",
@@ -6891,7 +6050,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-08-git-commit-4878883",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-08",
@@ -6902,7 +6061,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-08-git-commit-8777814",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-08",
@@ -6913,7 +6072,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-08-git-commit-2ca6694",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-08",
@@ -6924,7 +6083,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-08-git-commit-edda2cb",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-08",
@@ -6935,7 +6094,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-08-git-commit-4a5e43e",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-07",
@@ -6946,29 +6105,7 @@
       "source": "git-log",
       "confidence": "medium",
       "id": "auto-2026-07-07-git-commit-4abe92e",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-07-07",
-      "type": "git-commit",
-      "title": "bcc daily pulse: 2026-07-07",
-      "commit_hash": "7ea4963",
-      "commit_author": "Daniel Bisett",
-      "source": "git-log",
-      "confidence": "low",
-      "id": "auto-2026-07-07-git-commit-7ea4963",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
-    },
-    {
-      "launched_at": "2026-07-07",
-      "type": "git-commit",
-      "title": "bcc daily pulse: 2026-07-07",
-      "commit_hash": "427adf4",
-      "commit_author": "Daniel Bisett",
-      "source": "git-log",
-      "confidence": "low",
-      "id": "auto-2026-07-07-git-commit-427adf4",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-13",
@@ -6979,7 +6116,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-13-git-commit-664e341",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     },
     {
       "launched_at": "2026-07-09",
@@ -6990,12 +6127,18 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-07-09-git-commit-c1105a9",
-      "first_seen_at": "2026-07-14T08:03:10.480250Z"
+      "first_seen_at": "2026-07-14T12:00:26.713708Z"
     }
   ],
-  "launches_ledger_size": 521,
+  "launches_ledger_size": 522,
   "paid_social_spikes": [],
   "git_commits_recent": [
+    {
+      "date": "2026-07-14T03:05:00-05:00",
+      "hash": "c949bc8",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-14"
+    },
     {
       "date": "2026-07-13T14:04:55-05:00",
       "hash": "3dd0919",
@@ -7109,12 +6252,6 @@
       "hash": "2ca6694",
       "author": "Daniel Bisett",
       "subject": "bcc seo pulse: 2026-07-08"
-    },
-    {
-      "date": "2026-07-08T04:10:39-05:00",
-      "hash": "edda2cb",
-      "author": "Daniel Bisett",
-      "subject": "bcc marketing pulse: 2026-07-08"
     }
   ]
 }
