@@ -1,0 +1,22 @@
+# Morning Briefing -- 2026-07-13
+
+_Generated 2026-07-15T08:02:54.241678Z_
+
+### Headline
+- Sessions UP 15.8% vs 28d median (22 sessions July 13) -- new users leading the lift at +36% over median, YoY +4.8%.
+- Engagement rate 91% and avg session duration 134s both above norm -- people who arrived stayed and read.
+
+### What happened
+- **New users**: 17 vs 28d median of 12 (+36%) -- strongest signal of the day, suggests new audience finding the site.
+- **GSC impressions/clicks**: both showing zero -- standard 1-3 day reporting lag, not a real drop.
+- **5 page modifications** (July 7) surfaced today: Binge Eating Therapy, Emotional Eating Therapy, Eating Disorder IOP, Bariatric Surgery Counseling, Foundayo behavioral support -- all flagged medium confidence, worth confirming they're fully indexed.
+
+### Efficacy
+- **30d window**: 5 pages launched, 102 modified, 207,947 GSC impressions attributed, 633 GA4 sessions attributed.
+- **Ranking**: 2 pages in top 10, 0 in top 3 -- the ranking ceiling is the main gap to close this month.
+- **Top launches in data**: all showing git-commit entries only; no page-level SERP or impression data surfaced yet -- likely still in indexing warmup.
+
+### Today (do these)
+1. **Confirm indexing** for the 5 July 7 page modifications -- request GSC indexing for `/binge-eating-therapy-in-san-antonio-tx/`, `/emotional-eating-therapy-in-san-antonio-tx/`, `/eating-disorder-iop-in-san-antonio-tx/`, `/bariatric-surgery-counseling-in-san-antonio-tx/`, and `/foundayo-behavioral-support-san-antonio/` before the week gets away from you.
+2. **Check what drove new users** -- 17 new users on a Sunday is above baseline; check whether the LinkedIn week-of-July-13 ideas (Todd psych-eval, Sara food noise) generated any referral traffic or if there was a social post that day.
+3. **Flag the top-10 ranking gap** for Todd's meeting -- 2 pages in top 10, zero in top 3 across 200 launch events in 30 days is the clearest story for where effort should go next.
