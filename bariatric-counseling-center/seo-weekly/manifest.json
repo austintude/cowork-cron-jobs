@@ -1,7 +1,8 @@
 {
- "latest": "seo-data-2026-07-13.json",
- "updated": "2026-07-13T10:18:09.975393+00:00",
+ "latest": "seo-data-2026-07-16.json",
+ "updated": "2026-07-16T10:18:39.958170+00:00",
  "files": [
+  "seo-data-2026-07-16.json",
   "seo-data-2026-07-13.json",
   "seo-data-2026-07-09.json",
   "seo-data-2026-07-06.json",
@@ -24,9 +25,9 @@
   "seo-data-2026-04-23.json"
  ],
  "last_run": {
-  "date": "2026-07-13",
+  "date": "2026-07-16",
   "promoted": true,
-  "reason": "Full weekly run (Mon 8am). Chrome CONNECTED: 29 SERP checks via signed-in profile, no CAPTCHA. brave: 0 top-1, 7 top-10, avg 5.3. BROAD DECLINE FLAG (needs verification -- possible personalization/Austin-geo variance): bariatric counseling SA 1->2, weight loss counseling SA 1->8, bariatric counseling 1->3, bariatric therapist 2->5, emotional eating SA 4->6, bariatric counselor 6->7, near me 3->6; nutritional counseling SA tx 9->out, overeaters support SA 9->out. GSC FRESH (gsc-data-2026-07-13, 7d: 7 clicks, 1622 imp). Links: 10 pages + 50 internal all 200 (HTTP fetch). WP: 0 new pages/posts. Esperanza: Ahrefs plan-gated 3rd run; 0 new pages; 4 gaps; emotional eating SA win LOST (Esp 4 vs BCC 6).",
-  "data_added_for_audit": "seo-data-2026-07-13.json"
+  "reason": "OFF-CYCLE run (Thu, 3 days after the 07-13 Mon run -- deltas are 3-day not 7-day). Chrome CONNECTED: 29/29 SERP checks, no CAPTCHA. brave: 0 top-1, 7 top-10, avg 5.57 (vs 7 top-10 / 5.30 last run) -- STABILISED after last week's broad-decline flag. Rising: bariatric counselor 7->6, bariatric counseling near me 6->4. Declining: bariatric therapist 5->9, weight loss counseling SA 8->9. Held: bariatric counseling SA #2, bariatric counseling #3, emotional eating SA #6. GEO CAVEAT: Austin-area domains dominate national SERPs -- browser geo is Austin, not SA; supports the personalisation-noise hypothesis for last week's decline. GSC FRESH (gsc-data-2026-07-16, 7d). DATA-QUALITY FINDING: summary.total_clicks (4) is a QUERY-dimension sum and undercounts ~7x; true page-level = 29 clicks / 5055 imp (vs 43 / 9390 on 07-13) -- impressions down ~46pct across overlapping windows, needs verification vs GSC trailing-edge lag. Links: 10/10 pages 200, 45 internal links, 0 broken (needed browser UA; WAF 403s non-browser UAs). WP: 0 new/modified pages or posts. Esperanza: Ahrefs plan-gated 4th run -> free fallback (SERP + WP REST + free DR). Esperanza DORMANT (0 new/modified since 07-09, last site change 06-17); DR 12 vs BCC 20; 5 gaps + 1 head-to-head loss (emotional eating SA: Esp 4 vs BCC 6). NEW FLAG: balancedcounselingsa.com is the bigger local threat -- #1 on 3 SA eating-disorder terms.",
+  "data_added_for_audit": "seo-data-2026-07-16.json"
  }
 }
