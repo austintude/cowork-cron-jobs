@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-07-16
 
-_Generated 2026-07-17 08:02 UTC_
+_Generated 2026-07-17 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **28 sessions** / 27 users / 108 pageviews
+- **29 sessions** / 28 users / 109 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 89.3%
-- Avg session duration: 508s
+- Engagement rate: 86.2%
+- Avg session duration: 491s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,34 +16,34 @@ _2026-06-19 -> 2026-07-16 vs 2026-05-22 -> 2026-06-18_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 416 | 417 | -0.2% |
+| Active users | 417 | 417 | +0.0% |
 | New users | 401 | 393 | +2.0% |
-| Sessions | 530 | 580 | -8.6% |
-| Views | 2,028 | 2,067 | -1.9% |
-| Avg engagement time (per active user) | 52s | 95s | -45.0% |
+| Sessions | 531 | 580 | -8.4% |
+| Views | 2,029 | 2,067 | -1.8% |
+| Avg engagement time (per active user) | 52s | 95s | -45.1% |
 
 ## 5 anomalies flagged
 
-### [CRITICAL] UP GA4 avg session dur: 508.08 (+355.2% vs 28d median of 112)
+### [CRITICAL] UP GA4 avg session dur: 490.56 (+339.5% vs 28d median of 112)
 
 
-### [CRITICAL] UP GA4 pageviews: 108 (+103.8% vs 28d median of 53) (YoY same day: +10.2%)
+### [CRITICAL] UP GA4 pageviews: 109 (+105.7% vs 28d median of 53) (YoY same day: +11.2%)
 
 
-### [CRITICAL] UP GA4 users: 27 (+68.8% vs 28d median of 16) (YoY same day: -44.9%)
+### [CRITICAL] UP GA4 users: 28 (+75.0% vs 28d median of 16) (YoY same day: -42.9%)
 
 
 ### [CRITICAL] UP GA4 new users: 20 (+60.0% vs 28d median of 12)
 
 
-### [MAJOR] UP GA4 sessions: 28 (+47.4% vs 28d median of 19) (YoY same day: -50.0%)
+### [CRITICAL] UP GA4 sessions: 29 (+52.6% vs 28d median of 19) (YoY same day: -48.2%)
 
 **Source attribution** -- Direct rose from baseline 6 to 19 (+13).
   - Direct: 19 yesterday vs baseline 6 (+13)
   - Organic Search: 3 yesterday vs baseline 8 (-5)
   - Organic Social: 0 yesterday vs baseline 4 (-4)
+  - Unassigned: 5 yesterday vs baseline 1 (+4)
   - Email: 4 yesterday vs baseline 1 (+3)
-  - Unassigned: 4 yesterday vs baseline 1 (+3)
 
 **Direct-traffic investigation** -- Direct anomaly almost always means either (a) untagged email/SMS/QR campaign, (b) a bot spike, or (c) a referrer that strips Referer headers (some mobile apps). If this was unplanned, check server logs for unusual user agents.
 
@@ -65,8 +65,8 @@ _2026-06-19 -> 2026-07-16 vs 2026-05-22 -> 2026-06-18_
 ## Yesterday's traffic by channel
 
 -   19 sess  Direct
+-    5 sess  Unassigned
 -    4 sess  Email
--    4 sess  Unassigned
 -    3 sess  Organic Search
 -    2 sess  Referral
 
