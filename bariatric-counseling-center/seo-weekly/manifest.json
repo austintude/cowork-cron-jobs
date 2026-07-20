@@ -1,7 +1,8 @@
 {
- "latest": "seo-data-2026-07-16.json",
- "updated": "2026-07-16T10:18:39.958170+00:00",
+ "latest": "seo-data-2026-07-20.json",
+ "updated": "2026-07-20T10:18:57.382570+00:00",
  "files": [
+  "seo-data-2026-07-20.json",
   "seo-data-2026-07-16.json",
   "seo-data-2026-07-13.json",
   "seo-data-2026-07-09.json",
@@ -25,9 +26,9 @@
   "seo-data-2026-04-23.json"
  ],
  "last_run": {
-  "date": "2026-07-16",
+  "date": "2026-07-20",
   "promoted": true,
-  "reason": "OFF-CYCLE run (Thu, 3 days after the 07-13 Mon run -- deltas are 3-day not 7-day). Chrome CONNECTED: 29/29 SERP checks, no CAPTCHA. brave: 0 top-1, 7 top-10, avg 5.57 (vs 7 top-10 / 5.30 last run) -- STABILISED after last week's broad-decline flag. Rising: bariatric counselor 7->6, bariatric counseling near me 6->4. Declining: bariatric therapist 5->9, weight loss counseling SA 8->9. Held: bariatric counseling SA #2, bariatric counseling #3, emotional eating SA #6. GEO CAVEAT: Austin-area domains dominate national SERPs -- browser geo is Austin, not SA; supports the personalisation-noise hypothesis for last week's decline. GSC FRESH (gsc-data-2026-07-16, 7d). DATA-QUALITY FINDING: summary.total_clicks (4) is a QUERY-dimension sum and undercounts ~7x; true page-level = 29 clicks / 5055 imp (vs 43 / 9390 on 07-13) -- impressions down ~46pct across overlapping windows, needs verification vs GSC trailing-edge lag. Links: 10/10 pages 200, 45 internal links, 0 broken (needed browser UA; WAF 403s non-browser UAs). WP: 0 new/modified pages or posts. Esperanza: Ahrefs plan-gated 4th run -> free fallback (SERP + WP REST + free DR). Esperanza DORMANT (0 new/modified since 07-09, last site change 06-17); DR 12 vs BCC 20; 5 gaps + 1 head-to-head loss (emotional eating SA: Esp 4 vs BCC 6). NEW FLAG: balancedcounselingsa.com is the bigger local threat -- #1 on 3 SA eating-disorder terms.",
-  "data_added_for_audit": "seo-data-2026-07-16.json"
+  "reason": "Weekly Mon run. Chrome CONNECTED: 29/29 SERP checks, no CAPTCHA. brave: 0 top-1, 7 top-10, avg 4.57 (vs 7 top-10 / 5.57 on 07-16) -- STRONG week: now 3 in top-3 (vs 0 last run). Rising: bariatric counselor 6->3, bariatric therapist 9->7 (recovered from last week drop), bariatric counseling 3->2, emotional eating therapy SA 6->5, weight loss counseling SA 9->8. Declining: bariatric counseling near me 4->5 (-1, Austin geo bias). Held: bariatric counseling SA #2. GSC FRESH (gsc-data-2026-07-20, 7d): page-level 14 clicks / 1007 imp (summary.total_clicks=4 is query-dim undercount). Imp down vs 07-16 (5055) -- 3-day-shorter overlap + trailing-edge GSC lag; watch next run. Links: 10/10 top pages HTTP 200, 0 broken (browser UA; WAF 403s non-browser UAs). WP: 0 new/modified pages or posts this week. Esperanza: Ahrefs plan-gated 5th run -> free fallback. Esperanza DORMANT (0 changes since 07-13, last site change 06-17); DR 12 vs BCC 20; 5 gaps + 1 head-to-head (emotional eating SA: Esp 4 vs BCC 5, narrowing). balancedcounselingsa.com remains the bigger local threat (#1 on 3 SA ED terms).",
+  "data_added_for_audit": "seo-data-2026-07-20.json"
  }
 }
