@@ -1,0 +1,3981 @@
+{
+  "fetched_at": "2026-07-20T08:02:46.173016Z",
+  "for_date": "2026-07-19",
+  "baseline_window": {
+    "start": "2026-06-21",
+    "end": "2026-07-18",
+    "days": 28
+  },
+  "ga4_property_id": "254059736",
+  "gsc_property": "https://www.bariatriccounselingcenter.com/",
+  "snapshot": {
+    "sessions": 2,
+    "users": 2,
+    "new_users": 1,
+    "pageviews": 4,
+    "engagement_rate": 0.5,
+    "avg_session_duration": 127.4225,
+    "gsc_impressions": 0,
+    "gsc_clicks": 0,
+    "gsc_position": 0.0
+  },
+  "period_over_period": {
+    "window_days": 28,
+    "current": {
+      "start": "2026-06-22",
+      "end": "2026-07-19",
+      "sessions": 531,
+      "active_users": 416,
+      "total_users": 418,
+      "new_users": 402,
+      "pageviews": 2016,
+      "avg_session_duration": 147.31,
+      "avg_engagement_time_per_active_user": 48.7
+    },
+    "prior": {
+      "start": "2026-05-25",
+      "end": "2026-06-21",
+      "sessions": 569,
+      "active_users": 411,
+      "total_users": 411,
+      "new_users": 386,
+      "pageviews": 2047,
+      "avg_session_duration": 177.1306,
+      "avg_engagement_time_per_active_user": 99.7
+    },
+    "pct_change": {
+      "sessions_pct": -6.7,
+      "active_users_pct": 1.2,
+      "total_users_pct": 1.7,
+      "new_users_pct": 4.1,
+      "pageviews_pct": -1.5,
+      "avg_session_duration_pct": -16.8,
+      "avg_engagement_time_per_active_user_pct": -51.2
+    }
+  },
+  "anomaly_summary": {
+    "total": 5,
+    "critical": 4,
+    "major": 1,
+    "minor": 0
+  },
+  "anomalies": [
+    {
+      "metric": "GA4 pageviews",
+      "actual": 4,
+      "baseline_28d_median": 53.0,
+      "yoy_same_day": 70,
+      "pct_delta": -92.5,
+      "severity": "CRITICAL",
+      "direction": "down",
+      "headline": "DOWN GA4 pageviews: 4 (-92.5% vs 28d median of 53) (YoY same day: -94.3%)"
+    },
+    {
+      "metric": "GA4 new users",
+      "actual": 1,
+      "baseline_28d_median": 13.0,
+      "yoy_same_day": null,
+      "pct_delta": -92.3,
+      "severity": "CRITICAL",
+      "direction": "down",
+      "headline": "DOWN GA4 new users: 1 (-92.3% vs 28d median of 13)"
+    },
+    {
+      "metric": "GA4 sessions",
+      "actual": 2,
+      "baseline_28d_median": 19.5,
+      "yoy_same_day": 32,
+      "pct_delta": -89.7,
+      "severity": "CRITICAL",
+      "direction": "down",
+      "headline": "DOWN GA4 sessions: 2 (-89.7% vs 28d median of 20) (YoY same day: -93.8%)",
+      "unpacked": {
+        "chain": [
+          {
+            "step": "Source attribution",
+            "finding": "Organic Search fell from baseline 7 to 0 (-7).",
+            "breakdown": [
+              {
+                "channel": "Organic Search",
+                "yesterday": 0,
+                "baseline_28d_median": 7.0,
+                "delta": -7.0
+              },
+              {
+                "channel": "Direct",
+                "yesterday": 1,
+                "baseline_28d_median": 5.0,
+                "delta": -4.0
+              },
+              {
+                "channel": "Organic Social",
+                "yesterday": 0,
+                "baseline_28d_median": 4.0,
+                "delta": -4.0
+              },
+              {
+                "channel": "Referral",
+                "yesterday": 1,
+                "baseline_28d_median": 3,
+                "delta": -2
+              }
+            ]
+          },
+          {
+            "step": "Top landing pages yesterday",
+            "finding": "Top page:  with 1 sessions.",
+            "data": [
+              {
+                "landingPagePlusQueryString": "",
+                "sessions": 1,
+                "totalUsers": 1,
+                "engagementRate": 0
+              },
+              {
+                "landingPagePlusQueryString": "/",
+                "sessions": 1,
+                "totalUsers": 1,
+                "engagementRate": 1
+              }
+            ]
+          },
+          {
+            "step": "Recent site changes (last 7 days)",
+            "finding": "36 pages/posts modified -- cross-reference with affected pages.",
+            "data": [
+              {
+                "id": 5461,
+                "title": "If the Hardest Part of Your Day Is Night, There Is Help",
+                "modified": "2026-07-16T05:10:41"
+              },
+              {
+                "id": 5460,
+                "title": "When ADHD and Eating Collide, It Is Not a Lack of Willpower",
+                "modified": "2026-07-16T05:10:40"
+              },
+              {
+                "id": 5321,
+                "title": "Counseling for Anxiety and Weight in San Antonio, TX",
+                "modified": "2026-07-16T05:10:38"
+              },
+              {
+                "id": 5462,
+                "title": "Coming Off a GLP-1, or Afraid to? Protect the Progress You Made",
+                "modified": "2026-07-16T05:10:37"
+              },
+              {
+                "id": 5457,
+                "title": "On Mounjaro or Zepbound? The Behavioral Side Is What Makes It Stick",
+                "modified": "2026-07-16T05:10:35"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "metric": "GA4 users",
+      "actual": 2,
+      "baseline_28d_median": 16.5,
+      "yoy_same_day": 30,
+      "pct_delta": -87.9,
+      "severity": "CRITICAL",
+      "direction": "down",
+      "headline": "DOWN GA4 users: 2 (-87.9% vs 28d median of 16) (YoY same day: -93.3%)"
+    },
+    {
+      "metric": "GA4 engagement rate",
+      "actual": 0.5,
+      "baseline_28d_median": 0.94,
+      "yoy_same_day": null,
+      "pct_delta": -46.6,
+      "severity": "MAJOR",
+      "direction": "down",
+      "headline": "DOWN GA4 engagement rate: 0.5 (-46.6% vs 28d median of 1)"
+    }
+  ],
+  "ga4_data": {
+    "daily_totals": [
+      {
+        "date": "2026-06-21",
+        "sessions": 5,
+        "totalUsers": 5,
+        "newUsers": 4,
+        "screenPageViews": 9,
+        "engagementRate": 0.8,
+        "averageSessionDuration": 8.7725
+      },
+      {
+        "date": "2026-06-22",
+        "sessions": 40,
+        "totalUsers": 29,
+        "newUsers": 26,
+        "screenPageViews": 223,
+        "engagementRate": 0.875,
+        "averageSessionDuration": 193.0287
+      },
+      {
+        "date": "2026-06-23",
+        "sessions": 19,
+        "totalUsers": 17,
+        "newUsers": 14,
+        "screenPageViews": 95,
+        "engagementRate": 1,
+        "averageSessionDuration": 336.0007
+      },
+      {
+        "date": "2026-06-24",
+        "sessions": 20,
+        "totalUsers": 16,
+        "newUsers": 12,
+        "screenPageViews": 68,
+        "engagementRate": 0.85,
+        "averageSessionDuration": 264.4621
+      },
+      {
+        "date": "2026-06-25",
+        "sessions": 15,
+        "totalUsers": 12,
+        "newUsers": 9,
+        "screenPageViews": 35,
+        "engagementRate": 0.8667,
+        "averageSessionDuration": 61.3798
+      },
+      {
+        "date": "2026-06-26",
+        "sessions": 14,
+        "totalUsers": 12,
+        "newUsers": 12,
+        "screenPageViews": 44,
+        "engagementRate": 0.9286,
+        "averageSessionDuration": 62.7168
+      },
+      {
+        "date": "2026-06-27",
+        "sessions": 9,
+        "totalUsers": 8,
+        "newUsers": 6,
+        "screenPageViews": 20,
+        "engagementRate": 0.8889,
+        "averageSessionDuration": 6.0446
+      },
+      {
+        "date": "2026-06-28",
+        "sessions": 4,
+        "totalUsers": 4,
+        "newUsers": 3,
+        "screenPageViews": 22,
+        "engagementRate": 1,
+        "averageSessionDuration": 258.5951
+      },
+      {
+        "date": "2026-06-29",
+        "sessions": 30,
+        "totalUsers": 26,
+        "newUsers": 24,
+        "screenPageViews": 339,
+        "engagementRate": 0.9667,
+        "averageSessionDuration": 303.5494
+      },
+      {
+        "date": "2026-06-30",
+        "sessions": 14,
+        "totalUsers": 13,
+        "newUsers": 12,
+        "screenPageViews": 37,
+        "engagementRate": 0.8571,
+        "averageSessionDuration": 128.3558
+      },
+      {
+        "date": "2026-07-01",
+        "sessions": 19,
+        "totalUsers": 18,
+        "newUsers": 13,
+        "screenPageViews": 47,
+        "engagementRate": 0.8947,
+        "averageSessionDuration": 82.0636
+      },
+      {
+        "date": "2026-07-02",
+        "sessions": 21,
+        "totalUsers": 20,
+        "newUsers": 18,
+        "screenPageViews": 98,
+        "engagementRate": 0.9524,
+        "averageSessionDuration": 165.7639
+      },
+      {
+        "date": "2026-07-03",
+        "sessions": 8,
+        "totalUsers": 8,
+        "newUsers": 6,
+        "screenPageViews": 16,
+        "engagementRate": 1,
+        "averageSessionDuration": 21.7664
+      },
+      {
+        "date": "2026-07-04",
+        "sessions": 9,
+        "totalUsers": 9,
+        "newUsers": 9,
+        "screenPageViews": 20,
+        "engagementRate": 0.8889,
+        "averageSessionDuration": 31.3088
+      },
+      {
+        "date": "2026-07-05",
+        "sessions": 14,
+        "totalUsers": 13,
+        "newUsers": 12,
+        "screenPageViews": 31,
+        "engagementRate": 0.9286,
+        "averageSessionDuration": 58.3274
+      },
+      {
+        "date": "2026-07-06",
+        "sessions": 19,
+        "totalUsers": 16,
+        "newUsers": 13,
+        "screenPageViews": 69,
+        "engagementRate": 0.8947,
+        "averageSessionDuration": 171.7507
+      },
+      {
+        "date": "2026-07-07",
+        "sessions": 32,
+        "totalUsers": 27,
+        "newUsers": 23,
+        "screenPageViews": 130,
+        "engagementRate": 0.9375,
+        "averageSessionDuration": 192.3953
+      },
+      {
+        "date": "2026-07-08",
+        "sessions": 31,
+        "totalUsers": 28,
+        "newUsers": 26,
+        "screenPageViews": 89,
+        "engagementRate": 0.9355,
+        "averageSessionDuration": 138.9102
+      },
+      {
+        "date": "2026-07-09",
+        "sessions": 25,
+        "totalUsers": 22,
+        "newUsers": 20,
+        "screenPageViews": 78,
+        "engagementRate": 0.96,
+        "averageSessionDuration": 117.9489
+      },
+      {
+        "date": "2026-07-10",
+        "sessions": 32,
+        "totalUsers": 30,
+        "newUsers": 27,
+        "screenPageViews": 74,
+        "engagementRate": 0.9688,
+        "averageSessionDuration": 33.5432
+      },
+      {
+        "date": "2026-07-11",
+        "sessions": 20,
+        "totalUsers": 20,
+        "newUsers": 17,
+        "screenPageViews": 53,
+        "engagementRate": 0.95,
+        "averageSessionDuration": 23.9896
+      },
+      {
+        "date": "2026-07-12",
+        "sessions": 6,
+        "totalUsers": 6,
+        "newUsers": 4,
+        "screenPageViews": 22,
+        "engagementRate": 1,
+        "averageSessionDuration": 28.488
+      },
+      {
+        "date": "2026-07-13",
+        "sessions": 30,
+        "totalUsers": 27,
+        "newUsers": 24,
+        "screenPageViews": 78,
+        "engagementRate": 0.9333,
+        "averageSessionDuration": 105.2755
+      },
+      {
+        "date": "2026-07-14",
+        "sessions": 20,
+        "totalUsers": 12,
+        "newUsers": 9,
+        "screenPageViews": 51,
+        "engagementRate": 0.85,
+        "averageSessionDuration": 135.4322
+      },
+      {
+        "date": "2026-07-15",
+        "sessions": 20,
+        "totalUsers": 20,
+        "newUsers": 16,
+        "screenPageViews": 53,
+        "engagementRate": 0.95,
+        "averageSessionDuration": 247.0965
+      },
+      {
+        "date": "2026-07-16",
+        "sessions": 29,
+        "totalUsers": 28,
+        "newUsers": 21,
+        "screenPageViews": 110,
+        "engagementRate": 1,
+        "averageSessionDuration": 172.3816
+      },
+      {
+        "date": "2026-07-17",
+        "sessions": 24,
+        "totalUsers": 22,
+        "newUsers": 19,
+        "screenPageViews": 82,
+        "engagementRate": 0.9583,
+        "averageSessionDuration": 150.2916
+      },
+      {
+        "date": "2026-07-18",
+        "sessions": 8,
+        "totalUsers": 7,
+        "newUsers": 6,
+        "screenPageViews": 28,
+        "engagementRate": 1,
+        "averageSessionDuration": 81.8441
+      },
+      {
+        "date": "2026-07-19",
+        "sessions": 2,
+        "totalUsers": 2,
+        "newUsers": 1,
+        "screenPageViews": 4,
+        "engagementRate": 0.5,
+        "averageSessionDuration": 127.4225
+      }
+    ],
+    "daily_by_channel": [
+      {
+        "date": "2026-07-16",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 20,
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-06-22",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 17,
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-07-07",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 17,
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-07-11",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 16,
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-07-10",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 14,
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-07-13",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 14,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-07-02",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 13,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-07-09",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 13,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-07-17",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 13,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-06-29",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 12,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-07-01",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 12,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-07-06",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 12,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-07-07",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-07-08",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-07-13",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-06-29",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-07-08",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-07-10",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-06-22",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 10,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-07-05",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 10,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-06-22",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 8,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-06-24",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 8,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-06-26",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 8,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-06-30",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 8,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-07-15",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 8,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-06-23",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-06-23",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-07-01",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-07-14",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-07-14",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-06-25",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-06-30",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-07-02",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-07-04",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-07-14",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 6,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-07-15",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-07-17",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-06-22",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-06-25",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 5,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-06-27",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 5,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-07-03",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-07-06",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-07-08",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-07-10",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-07-17",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-06-23",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 4,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-06-24",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-06-24",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-06-24",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 4,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-06-26",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-06-27",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-06-29",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-07-05",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-07-09",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-07-15",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-07-16",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 4,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-06-21",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-06-25",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-06-28",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-06-29",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-03",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-07-04",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-07-07",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-07-09",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-07-09",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 3,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-12",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-07-16",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-07-18",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-07-18",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-06-21",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-06-26",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-07-08",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-11",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-07-11",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-07-12",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-07-13",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-07-13",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-07-15",
+        "sessionDefaultChannelGroup": "AI Assistant",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-07-16",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-07-18",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-06-23",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-06-25",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-06-28",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-02",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-02",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-06",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-06",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-08",
+        "sessionDefaultChannelGroup": "AI Assistant",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-09",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-09",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-10",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-10",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-12",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-19",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-07-19",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      }
+    ],
+    "yesterday_landing_pages": [
+      {
+        "landingPagePlusQueryString": "",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 0
+      },
+      {
+        "landingPagePlusQueryString": "/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      }
+    ],
+    "yesterday_sources": [
+      {
+        "sessionSourceMedium": "(direct) / (none)",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "sessionSourceMedium": "education.utsa.edu / referral",
+        "sessions": 1,
+        "totalUsers": 1
+      }
+    ],
+    "yesterday_devices": [
+      {
+        "deviceCategory": "desktop",
+        "sessions": 1
+      },
+      {
+        "deviceCategory": "mobile",
+        "sessions": 1
+      }
+    ],
+    "yoy_same_day": {
+      "sessions": 32,
+      "totalUsers": 30,
+      "screenPageViews": 70
+    },
+    "_wp_recent": {
+      "pages": [
+        {
+          "id": 5461,
+          "slug": "night-eating-syndrome-treatment-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/night-eating-syndrome-treatment-in-san-antonio-tx/",
+          "title": "If the Hardest Part of Your Day Is Night, There Is Help",
+          "date": "2026-06-10T12:28:47",
+          "modified": "2026-07-16T05:10:41",
+          "status": "publish"
+        },
+        {
+          "id": 5460,
+          "slug": "adhd-and-emotional-eating-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/adhd-and-emotional-eating-in-san-antonio-tx/",
+          "title": "When ADHD and Eating Collide, It Is Not a Lack of Willpower",
+          "date": "2026-06-06T12:15:35",
+          "modified": "2026-07-16T05:10:40",
+          "status": "publish"
+        },
+        {
+          "id": 5321,
+          "slug": "counseling-for-anxiety-and-weight-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/counseling-for-anxiety-and-weight-in-san-antonio-tx/",
+          "title": "Counseling for Anxiety and Weight in San Antonio, TX",
+          "date": "2026-05-20T11:16:04",
+          "modified": "2026-07-16T05:10:38",
+          "status": "publish"
+        },
+        {
+          "id": 5462,
+          "slug": "glp-1-weight-regain-counseling-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/glp-1-weight-regain-counseling-in-san-antonio-tx/",
+          "title": "Coming Off a GLP-1, or Afraid to? Protect the Progress You Made",
+          "date": "2026-06-07T12:15:38",
+          "modified": "2026-07-16T05:10:37",
+          "status": "publish"
+        },
+        {
+          "id": 5457,
+          "slug": "mounjaro-zepbound-behavioral-support-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/mounjaro-zepbound-behavioral-support-in-san-antonio-tx/",
+          "title": "On Mounjaro or Zepbound? The Behavioral Side Is What Makes It Stick",
+          "date": "2026-06-05T10:49:10",
+          "modified": "2026-07-16T05:10:35",
+          "status": "publish"
+        },
+        {
+          "id": 5180,
+          "slug": "ozempic-behavioral-support-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/ozempic-behavioral-support-in-san-antonio-tx/",
+          "title": "Ozempic Behavioral Support in San Antonio, TX",
+          "date": "2026-05-08T12:07:21",
+          "modified": "2026-07-16T05:10:33",
+          "status": "publish"
+        },
+        {
+          "id": 5323,
+          "slug": "glp-1-behavioral-support-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/glp-1-behavioral-support-in-san-antonio-tx/",
+          "title": "Behavioral Support for GLP-1 Medications in San Antonio, TX",
+          "date": "2026-05-20T11:17:02",
+          "modified": "2026-07-16T05:10:32",
+          "status": "publish"
+        },
+        {
+          "id": 5168,
+          "slug": "bariatric-surgery-psychological-evaluation-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
+          "title": "Bariatric Surgery Psychological Evaluation in San Antonio, TX",
+          "date": "2026-04-27T09:00:12",
+          "modified": "2026-07-16T05:10:31",
+          "status": "publish"
+        },
+        {
+          "id": 4952,
+          "slug": "bariatric-surgery-counseling-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+          "title": "Bariatric Surgery Counseling in San Antonio, TX",
+          "date": "2026-03-28T09:29:55",
+          "modified": "2026-07-16T05:10:28",
+          "status": "publish"
+        },
+        {
+          "id": 5270,
+          "slug": "bariatric-therapist-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/",
+          "title": "Bariatric Therapist in San Antonio, TX",
+          "date": "2026-05-12T13:40:20",
+          "modified": "2026-07-16T05:10:23",
+          "status": "publish"
+        },
+        {
+          "id": 5177,
+          "slug": "bariatric-therapy-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
+          "title": "Bariatric Therapy in San Antonio, TX",
+          "date": "2026-05-08T12:07:03",
+          "modified": "2026-07-16T05:10:19",
+          "status": "publish"
+        },
+        {
+          "id": 5001,
+          "slug": "overeaters-anonymous-support-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/overeaters-anonymous-support-san-antonio-tx/",
+          "title": "Overeaters Support in San Antonio, TX",
+          "date": "2026-04-06T13:13:52",
+          "modified": "2026-07-16T05:10:17",
+          "status": "publish"
+        },
+        {
+          "id": 5144,
+          "slug": "overeating-treatment-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/overeating-treatment-in-san-antonio-tx/",
+          "title": "Treatment for Overeating in San Antonio, TX",
+          "date": "2026-04-23T13:11:56",
+          "modified": "2026-07-16T05:10:14",
+          "status": "publish"
+        },
+        {
+          "id": 5018,
+          "slug": "compulsive-overeating-counseling-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/compulsive-overeating-counseling-san-antonio-tx/",
+          "title": "Compulsive Overeating Counseling &amp; Food Addiction Treatment in San Antonio, TX",
+          "date": "2026-04-27T08:56:01",
+          "modified": "2026-07-16T05:10:11",
+          "status": "publish"
+        },
+        {
+          "id": 4948,
+          "slug": "emotional-eating-therapy-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/emotional-eating-therapy-in-san-antonio-tx/",
+          "title": "Emotional Eating Therapy in San Antonio, TX",
+          "date": "2026-03-26T11:34:15",
+          "modified": "2026-07-16T05:10:08",
+          "status": "publish"
+        },
+        {
+          "id": 5142,
+          "slug": "binge-eating-treatment-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/",
+          "title": "Binge Eating Treatment in San Antonio, TX",
+          "date": "2026-04-23T13:12:45",
+          "modified": "2026-07-16T05:10:06",
+          "status": "publish"
+        },
+        {
+          "id": 4885,
+          "slug": "binge-eating-therapy-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/binge-eating-therapy-in-san-antonio-tx/",
+          "title": "Binge Eating Therapy in San Antonio, TX",
+          "date": "2026-02-23T14:58:28",
+          "modified": "2026-07-16T05:10:03",
+          "status": "publish"
+        },
+        {
+          "id": 5409,
+          "slug": "eating-disorder-group-therapy-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/eating-disorder-group-therapy-san-antonio-tx/",
+          "title": "Eating Disorder Group Therapy in San Antonio, TX | BCC",
+          "date": "2026-06-04T10:15:55",
+          "modified": "2026-07-16T05:10:00",
+          "status": "publish"
+        },
+        {
+          "id": 4950,
+          "slug": "eating-disorder-iop-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/eating-disorder-iop-in-san-antonio-tx/",
+          "title": "Eating Disorder IOP in San Antonio, TX",
+          "date": "2026-03-26T11:36:55",
+          "modified": "2026-07-16T05:09:57",
+          "status": "publish"
+        },
+        {
+          "id": 5170,
+          "slug": "eating-disorder-therapist-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/eating-disorder-therapist-in-san-antonio-tx/",
+          "title": "Eating Disorder Therapist in San Antonio, TX",
+          "date": "2026-06-15T10:13:08",
+          "modified": "2026-07-16T05:09:55",
+          "status": "publish"
+        },
+        {
+          "id": 5176,
+          "slug": "eating-disorder-counseling-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/eating-disorder-counseling-in-san-antonio-tx/",
+          "title": "Eating Disorder Counseling in San Antonio, TX",
+          "date": "2026-05-08T12:07:12",
+          "modified": "2026-07-16T05:09:53",
+          "status": "publish"
+        },
+        {
+          "id": 5164,
+          "slug": "eating-disorder-treatment-in-san-antonio-tx",
+          "link": "https://www.bariatriccounselingcenter.com/eating-disorder-treatment-in-san-antonio-tx/",
+          "title": "Eating Disorder Treatment in San Antonio, TX",
+          "date": "2026-04-27T08:59:19",
+          "modified": "2026-07-16T05:09:50",
+          "status": "publish"
+        },
+        {
+          "id": 5279,
+          "slug": "binge-eating-disorder-treatment-san-antonio",
+          "link": "https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/",
+          "title": "Binge Eating Disorder Treatment in San Antonio",
+          "date": "2026-05-20T11:14:10",
+          "modified": "2026-07-16T05:09:47",
+          "status": "publish"
+        },
+        {
+          "id": 5650,
+          "slug": "bariatric-counseling-near-me",
+          "link": "https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
+          "title": "Bariatric Counseling Near Me: How to Choose the Right Care",
+          "date": "2026-06-24T09:53:46",
+          "modified": "2026-07-09T05:03:44",
+          "status": "publish"
+        },
+        {
+          "id": 4994,
+          "slug": "foundayo-behavioral-support-san-antonio",
+          "link": "https://www.bariatriccounselingcenter.com/foundayo-behavioral-support-san-antonio/",
+          "title": "Foundayo\u2122 (Orforglipron) \u00b7 Behavioral Health Support \u00b7 San Antonio, TX",
+          "date": "2026-04-02T19:10:17",
+          "modified": "2026-07-08T17:02:46",
+          "status": "publish"
+        },
+        {
+          "id": 2091,
+          "slug": "home-2",
+          "link": "https://www.bariatriccounselingcenter.com/",
+          "title": "Home &#8211; Bariatric Counseling Center",
+          "date": "2026-01-08T10:17:00",
+          "modified": "2026-07-07T17:02:59",
+          "status": "publish"
+        },
+        {
+          "id": 3566,
+          "slug": "understanding-anxiety-and-depression-related-to-weight",
+          "link": "https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/",
+          "title": "Understanding Anxiety and Depression Related to Weight",
+          "date": "2026-06-12T10:02:28",
+          "modified": "2026-07-07T17:01:23",
+          "status": "publish"
+        },
+        {
+          "id": 5334,
+          "slug": "what-is-a-bariatric-therapist",
+          "link": "https://www.bariatriccounselingcenter.com/what-is-a-bariatric-therapist/",
+          "title": "What Is a Bariatric Therapist?",
+          "date": "2026-06-15T10:13:18",
+          "modified": "2026-07-07T16:59:48",
+          "status": "publish"
+        },
+        {
+          "id": 3590,
+          "slug": "understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro",
+          "link": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
+          "title": "Understanding Weight Loss Medications: Wegovy, Ozempic, Zepbound, and Mounjaro",
+          "date": "2026-06-15T10:12:44",
+          "modified": "2026-07-07T16:56:50",
+          "status": "publish"
+        }
+      ],
+      "posts": [
+        {
+          "id": 3394,
+          "slug": "why-hydration-is-essential-for-weight-loss-and-management",
+          "link": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
+          "title": "Why Hydration is Essential for Weight Loss and Weight Management\u00a0",
+          "date": "2026-07-01T09:00:00",
+          "modified": "2026-07-16T05:12:09",
+          "status": "publish"
+        },
+        {
+          "id": 2989,
+          "slug": "binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options",
+          "link": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/",
+          "title": "Binge Eating Disorder: The Symptoms, Causes, and Effective Treatment Options",
+          "date": "2026-07-17T09:00:00",
+          "modified": "2026-07-16T05:11:32",
+          "status": "publish"
+        },
+        {
+          "id": 1945,
+          "slug": "dietitians-or-nutritionists-breaking-down-the-differences",
+          "link": "https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/",
+          "title": "Dietitian or Nutritionist: Breaking Down the Differences",
+          "date": "2026-07-15T09:00:00",
+          "modified": "2026-07-16T05:11:30",
+          "status": "publish"
+        },
+        {
+          "id": 1142,
+          "slug": "what-is-emotional-eating",
+          "link": "https://www.bariatriccounselingcenter.com/blog/what-is-emotional-eating/",
+          "title": "What Is Emotional Eating?",
+          "date": "2026-07-13T09:00:00",
+          "modified": "2026-07-16T05:11:27",
+          "status": "publish"
+        },
+        {
+          "id": 2412,
+          "slug": "holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness",
+          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+          "title": "Holistic Weight Loss Approach: Overcoming Diet Culture with Mind and Body Wellness",
+          "date": "2026-07-09T09:00:00",
+          "modified": "2026-07-16T05:11:26",
+          "status": "publish"
+        },
+        {
+          "id": 3199,
+          "slug": "better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings",
+          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+          "title": "Better Sleep for Weight Loss: How Rest Impacts Your Metabolism and Cravings",
+          "date": "2026-07-06T09:00:00",
+          "modified": "2026-07-16T05:11:25",
+          "status": "publish"
+        },
+        {
+          "id": 2795,
+          "slug": "how-to-improve-self-esteem-while-losing-weight-the-healthy-way",
+          "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+          "title": "How to Improve Self-Esteem While Losing Weight the Healthy Way",
+          "date": "2026-07-03T09:00:00",
+          "modified": "2026-07-16T05:11:23",
+          "status": "publish"
+        }
+      ]
+    }
+  },
+  "gsc_data": {
+    "daily_totals": [],
+    "yesterday_queries": [
+      {
+        "keyword": "bariatric counseling center",
+        "clicks": 2,
+        "impressions": 25,
+        "ctr": 0.08,
+        "position": 6.52
+      },
+      {
+        "keyword": "bariatric counseling center of san antonio",
+        "clicks": 1,
+        "impressions": 2,
+        "ctr": 0.5,
+        "position": 2.5
+      },
+      {
+        "keyword": "bariatric surgery counseling",
+        "clicks": 1,
+        "impressions": 4,
+        "ctr": 0.25,
+        "position": 6.5
+      },
+      {
+        "keyword": "9618 huebner road san antonio tx 78240",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "an example of cognitive restructuring for weight control is",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 79.0
+      },
+      {
+        "keyword": "anxiety and depression weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 43.0
+      },
+      {
+        "keyword": "anxiety depression weight loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 50.0
+      },
+      {
+        "keyword": "anxiety overweight humanistic approach",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 73.0
+      },
+      {
+        "keyword": "bariatric counseling",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 5.62
+      },
+      {
+        "keyword": "bariatric counseling near me",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      {
+        "keyword": "bariatric counseling san antonio",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "bariatric counselor",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 4.0
+      },
+      {
+        "keyword": "bariatric counselor indiana",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 15.0
+      },
+      {
+        "keyword": "bariatric procedure call center",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 70.33
+      },
+      {
+        "keyword": "bariatric psychiatrist",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 51.0
+      },
+      {
+        "keyword": "bariatric psychologist",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 26.5
+      },
+      {
+        "keyword": "bariatric psychology",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 27.0
+      },
+      {
+        "keyword": "bariatric specialist",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 17.0
+      },
+      {
+        "keyword": "bariatric surgery and mental health",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 38.0
+      },
+      {
+        "keyword": "bariatric therapist",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 7.5
+      },
+      {
+        "keyword": "bariatric therapist near me",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 13.67
+      },
+      {
+        "keyword": "bariatriccounselingcenter.com",
+        "clicks": 0,
+        "impressions": 39,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "behavior modification for weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 51.5
+      },
+      {
+        "keyword": "binge eating coaching greenwich",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 54.0
+      },
+      {
+        "keyword": "binge eating meal plan",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 82.0
+      },
+      {
+        "keyword": "binge eating therapy mcallen, tx",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 25.0
+      },
+      {
+        "keyword": "binge together",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 19.0
+      },
+      {
+        "keyword": "bmi center san antonio",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 17.0
+      },
+      {
+        "keyword": "bmi san antonio",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 56.0
+      },
+      {
+        "keyword": "can being overweight cause anxiety",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 27.0
+      },
+      {
+        "keyword": "can dehydration make you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "certified nutrition specialist vs registered dietitian",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 68.0
+      },
+      {
+        "keyword": "compulsive exercise coaching greenwich",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 76.0
+      },
+      {
+        "keyword": "compulsive exercise counseling greenwich",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 42.0
+      },
+      {
+        "keyword": "compulsive exercise therapy greenwich",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 33.0
+      },
+      {
+        "keyword": "confidence with weicht loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      {
+        "keyword": "counseling for obesity",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      {
+        "keyword": "c\u00f3mo deshidratarse para un pesaje",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "dehydration and weight gain",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "dehydration and weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "dehydration weight gain",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "depression and weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 16.0
+      },
+      {
+        "keyword": "depression anxiety and overweight",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 23.88
+      },
+      {
+        "keyword": "depression weight",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 18.86
+      },
+      {
+        "keyword": "dietetics vs nutrition",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 56.0
+      },
+      {
+        "keyword": "dietitian nutritionist difference",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 61.0
+      },
+      {
+        "keyword": "dietitian vs nutritionist for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 19.0
+      },
+      {
+        "keyword": "dietition vs nutritionist",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 59.0
+      },
+      {
+        "keyword": "difference between a dietitian and a nutritionist",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 73.0
+      },
+      {
+        "keyword": "difference between a nutritionist and a dietitian",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 69.0
+      },
+      {
+        "keyword": "difference between nutritionist and dietitian",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 72.0
+      },
+      {
+        "keyword": "do you know some?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 4.0
+      },
+      {
+        "keyword": "do you lose weight when dehydrated",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "does anxiety make you lose weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 72.5
+      },
+      {
+        "keyword": "does being overweight cause anxiety",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 28.0
+      },
+      {
+        "keyword": "does dehydration cause weight gain",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "does dehydration cause weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does depression cause weight loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 52.67
+      },
+      {
+        "keyword": "does not drinking enough water make you gain weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "does sleeping naked help lose weight",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "eating disorder counseling san antonio",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 26.25
+      },
+      {
+        "keyword": "eating disorder therapist san antonio",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 28.0
+      },
+      {
+        "keyword": "eating disorder therapy san antonio",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 30.0
+      },
+      {
+        "keyword": "emotional eating counseling mcallen, tx",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 14.83
+      },
+      {
+        "keyword": "emotional eating therapy mcallen, tx",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 15.86
+      },
+      {
+        "keyword": "emotional eating therapy near me",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 71.5
+      },
+      {
+        "keyword": "emotional eating therapy san antonio",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "keyword": "emotional support after weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 46.0
+      },
+      {
+        "keyword": "holistic approach to losing weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 46.0
+      },
+      {
+        "keyword": "holistic approach to weight loss",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 45.83
+      },
+      {
+        "keyword": "holistic approach weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 36.0
+      },
+      {
+        "keyword": "holistic diet plan for weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 52.5
+      },
+      {
+        "keyword": "holistic health weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 27.0
+      },
+      {
+        "keyword": "holistic lifestyle changes for weight loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 50.33
+      },
+      {
+        "keyword": "holistic treatment for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 66.0
+      },
+      {
+        "keyword": "holistic way to lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 72.0
+      },
+      {
+        "keyword": "holistic ways to lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 78.0
+      },
+      {
+        "keyword": "holistic weight loss",
+        "clicks": 0,
+        "impressions": 28,
+        "ctr": 0.0,
+        "position": 34.71
+      },
+      {
+        "keyword": "holistic weight loss approach",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 38.0
+      },
+      {
+        "keyword": "holistic weight loss benefits",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "keyword": "holistic weight loss options",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "keyword": "holistic weight loss plan",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 25.0
+      },
+      {
+        "keyword": "holistic weight loss program",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 25.0
+      },
+      {
+        "keyword": "holistic weight management",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 30.0
+      },
+      {
+        "keyword": "how does dehydration affect weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "impulse food",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "intuitive eating for binge eating",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 37.0
+      },
+      {
+        "keyword": "intuitive eating for binge eating disorder",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 48.0
+      },
+      {
+        "keyword": "intuitive eating mcallen, tx",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 1.75
+      },
+      {
+        "keyword": "intuitive eating overeating",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 46.0
+      },
+      {
+        "keyword": "intuitive eating recipes for healthcare workers",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 242.0
+      },
+      {
+        "keyword": "is a dietician or nutritionist better",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 46.0
+      },
+      {
+        "keyword": "is a dietitian and nutritionist the same thing",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 94.0
+      },
+      {
+        "keyword": "kathy mccord houston",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 26.0
+      },
+      {
+        "keyword": "losing weight depression anxiety",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 26.0
+      },
+      {
+        "keyword": "low self esteem after weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      {
+        "keyword": "metabolic counseling",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 93.0
+      },
+      {
+        "keyword": "nutrition coach san antonio",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 34.0
+      },
+      {
+        "keyword": "nutrition vs dietician",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 50.0
+      },
+      {
+        "keyword": "nutritionist and dietetics",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 60.5
+      },
+      {
+        "keyword": "nutritionist or dietician",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 29.0
+      },
+      {
+        "keyword": "nutritionist vs dietition",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 59.0
+      },
+      {
+        "keyword": "obesity and depression correlation",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 23.0
+      },
+      {
+        "keyword": "obesity and weight loss counseling",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 91.0
+      },
+      {
+        "keyword": "obesity counseling",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "overweight and feeling depressed",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 22.5
+      },
+      {
+        "keyword": "post weight loss self esteem",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 14.0
+      },
+      {
+        "keyword": "rebuild self-esteem after dieting",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "recipes for eating disorder recovery",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 39.0
+      },
+      {
+        "keyword": "recovery recipe",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 22.0
+      },
+      {
+        "keyword": "recovery recipes",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 21.0
+      },
+      {
+        "keyword": "registered dietician vs nutritionist",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 62.0
+      },
+      {
+        "keyword": "rest and weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 20.0
+      },
+      {
+        "keyword": "san antonio bariatric center",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 16.75
+      },
+      {
+        "keyword": "san antonio weight loss program",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 48.0
+      },
+      {
+        "keyword": "sara hamilton",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 9.06
+      },
+      {
+        "keyword": "seasonal healthy recipes for recovery",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 58.0
+      },
+      {
+        "keyword": "self sabotaging behavior in mount pleasant, wi",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "keyword": "should i see a nutritionist or dietician",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 78.0
+      },
+      {
+        "keyword": "site:www.bariatriccounselingcenter.com",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "the holistic weight loss method and why it works",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 61.0
+      },
+      {
+        "keyword": "therapy for emotional eating mcallen, tx",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 20.0
+      },
+      {
+        "keyword": "tired overweight unfit anxious and depressed",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 35.0
+      },
+      {
+        "keyword": "types of nutritionist",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 71.0
+      },
+      {
+        "keyword": "virtual gastric band hypnotherapy san antonio tx",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 24.5
+      },
+      {
+        "keyword": "weight loss counseling",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 44.5
+      },
+      {
+        "keyword": "weight loss counseling or therapy",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 11.25
+      },
+      {
+        "keyword": "weight loss counseling san antonio",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 10.5
+      },
+      {
+        "keyword": "weight loss counseling services",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 19.0
+      },
+      {
+        "keyword": "weight loss dehydration",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "weight loss depression anxiety",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 24.0
+      },
+      {
+        "keyword": "weight loss groups near me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "keyword": "weight loss holistic approach",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 39.5
+      },
+      {
+        "keyword": "weight loss programs in san antonio",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "keyword": "weight loss self esteem issues",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "weight loss surgery mental health",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 58.0
+      },
+      {
+        "keyword": "what about weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "what is a registered dietitian vs nutritionist",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 75.0
+      },
+      {
+        "keyword": "what is self-sabotaging relationships",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "what to eat after binge eating",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 42.0
+      },
+      {
+        "keyword": "yes",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 6.0
+      }
+    ],
+    "yesterday_pages": [
+      {
+        "page": "https://www.bariatriccounselingcenter.com/about/",
+        "clicks": 3,
+        "impressions": 51,
+        "ctr": 0.0588,
+        "position": 10.24
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/contact/",
+        "clicks": 3,
+        "impressions": 65,
+        "ctr": 0.0462,
+        "position": 12.31
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/author/shamilton/",
+        "clicks": 1,
+        "impressions": 52,
+        "ctr": 0.0192,
+        "position": 8.02
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
+        "clicks": 1,
+        "impressions": 2,
+        "ctr": 0.5,
+        "position": 2.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/",
+        "clicks": 1,
+        "impressions": 23,
+        "ctr": 0.0435,
+        "position": 7.35
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
+        "clicks": 1,
+        "impressions": 69,
+        "ctr": 0.0145,
+        "position": 2.14
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/",
+        "clicks": 1,
+        "impressions": 62,
+        "ctr": 0.0161,
+        "position": 6.69
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/recipes/",
+        "clicks": 1,
+        "impressions": 26,
+        "ctr": 0.0385,
+        "position": 21.54
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+        "clicks": 1,
+        "impressions": 97,
+        "ctr": 0.0103,
+        "position": 33.66
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+        "clicks": 1,
+        "impressions": 30,
+        "ctr": 0.0333,
+        "position": 6.43
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/author/james-gemino/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 26.5
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/author/tmccord845/",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0.0,
+        "position": 6.67
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 4.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/blog/bcc-in-the-news/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/",
+        "clicks": 0,
+        "impressions": 25,
+        "ctr": 0.0,
+        "position": 53.08
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/category/eating-disorders/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/category/self-improvement/behavioral-patterns/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/eating-disorder-therapist-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-vs-emotional-eating-clinical-differences/",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 7.75
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/emotional-eating-therapy-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/faq/",
+        "clicks": 0,
+        "impressions": 116,
+        "ctr": 0.0,
+        "position": 12.5
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 2.75
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-late-night-snacking-always-wins-and-why-youre-not-weak-for-it/",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 8.33
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/holistic-weight-loss-counseling-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0.0,
+        "position": 39.64
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/in-the-media/",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0.0,
+        "position": 8.4
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/interviews/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/intuitive-eating-support-in-mcallen-tx/",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 1.75
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/mindful-eating-for-better-health-a-guide/",
+        "clicks": 0,
+        "impressions": 22,
+        "ctr": 0.0,
+        "position": 29.86
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/mindful-eating-for-better-health-learn-intuitive-eating-with-expert-guidance/",
+        "clicks": 0,
+        "impressions": 23,
+        "ctr": 0.0,
+        "position": 24.74
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/ourprogram/dine-together/",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 16.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/ourprogram/enjoy-movement/",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0.0,
+        "position": 25.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/program-schedule/",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 15.33
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/real-behavioral-change-starts-with-the-mind/",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0.0,
+        "position": 30.83
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/how-to-identify-self-sabotage-behaviors-part-2/",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 5.67
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0.0,
+        "position": 10.75
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 7.5
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/staff-videos/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/testimonials/",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 15.75
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/the-importance-of-multi-disciplinary-care-for-treating-binge-eating-disorder-why-a-team-approach-is-best/",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 9.47
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/",
+        "clicks": 0,
+        "impressions": 125,
+        "ctr": 0.0,
+        "position": 11.86
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/",
+        "clicks": 0,
+        "impressions": 82,
+        "ctr": 0.0,
+        "position": 19.55
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/wp-content/uploads/BCC-Recipes-PDF-1.pdf",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Roasted-Cauliflower-and-Hazelnuts.pdf",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      }
+    ]
+  },
+  "gmb_data": null,
+  "wp_recent_changes": {
+    "pages": [
+      {
+        "id": 5461,
+        "slug": "night-eating-syndrome-treatment-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/night-eating-syndrome-treatment-in-san-antonio-tx/",
+        "title": "If the Hardest Part of Your Day Is Night, There Is Help",
+        "date": "2026-06-10T12:28:47",
+        "modified": "2026-07-16T05:10:41",
+        "status": "publish"
+      },
+      {
+        "id": 5460,
+        "slug": "adhd-and-emotional-eating-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/adhd-and-emotional-eating-in-san-antonio-tx/",
+        "title": "When ADHD and Eating Collide, It Is Not a Lack of Willpower",
+        "date": "2026-06-06T12:15:35",
+        "modified": "2026-07-16T05:10:40",
+        "status": "publish"
+      },
+      {
+        "id": 5321,
+        "slug": "counseling-for-anxiety-and-weight-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/counseling-for-anxiety-and-weight-in-san-antonio-tx/",
+        "title": "Counseling for Anxiety and Weight in San Antonio, TX",
+        "date": "2026-05-20T11:16:04",
+        "modified": "2026-07-16T05:10:38",
+        "status": "publish"
+      },
+      {
+        "id": 5462,
+        "slug": "glp-1-weight-regain-counseling-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/glp-1-weight-regain-counseling-in-san-antonio-tx/",
+        "title": "Coming Off a GLP-1, or Afraid to? Protect the Progress You Made",
+        "date": "2026-06-07T12:15:38",
+        "modified": "2026-07-16T05:10:37",
+        "status": "publish"
+      },
+      {
+        "id": 5457,
+        "slug": "mounjaro-zepbound-behavioral-support-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/mounjaro-zepbound-behavioral-support-in-san-antonio-tx/",
+        "title": "On Mounjaro or Zepbound? The Behavioral Side Is What Makes It Stick",
+        "date": "2026-06-05T10:49:10",
+        "modified": "2026-07-16T05:10:35",
+        "status": "publish"
+      },
+      {
+        "id": 5180,
+        "slug": "ozempic-behavioral-support-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/ozempic-behavioral-support-in-san-antonio-tx/",
+        "title": "Ozempic Behavioral Support in San Antonio, TX",
+        "date": "2026-05-08T12:07:21",
+        "modified": "2026-07-16T05:10:33",
+        "status": "publish"
+      },
+      {
+        "id": 5323,
+        "slug": "glp-1-behavioral-support-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/glp-1-behavioral-support-in-san-antonio-tx/",
+        "title": "Behavioral Support for GLP-1 Medications in San Antonio, TX",
+        "date": "2026-05-20T11:17:02",
+        "modified": "2026-07-16T05:10:32",
+        "status": "publish"
+      },
+      {
+        "id": 5168,
+        "slug": "bariatric-surgery-psychological-evaluation-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
+        "title": "Bariatric Surgery Psychological Evaluation in San Antonio, TX",
+        "date": "2026-04-27T09:00:12",
+        "modified": "2026-07-16T05:10:31",
+        "status": "publish"
+      },
+      {
+        "id": 4952,
+        "slug": "bariatric-surgery-counseling-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+        "title": "Bariatric Surgery Counseling in San Antonio, TX",
+        "date": "2026-03-28T09:29:55",
+        "modified": "2026-07-16T05:10:28",
+        "status": "publish"
+      },
+      {
+        "id": 5270,
+        "slug": "bariatric-therapist-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/",
+        "title": "Bariatric Therapist in San Antonio, TX",
+        "date": "2026-05-12T13:40:20",
+        "modified": "2026-07-16T05:10:23",
+        "status": "publish"
+      },
+      {
+        "id": 5177,
+        "slug": "bariatric-therapy-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
+        "title": "Bariatric Therapy in San Antonio, TX",
+        "date": "2026-05-08T12:07:03",
+        "modified": "2026-07-16T05:10:19",
+        "status": "publish"
+      },
+      {
+        "id": 5001,
+        "slug": "overeaters-anonymous-support-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/overeaters-anonymous-support-san-antonio-tx/",
+        "title": "Overeaters Support in San Antonio, TX",
+        "date": "2026-04-06T13:13:52",
+        "modified": "2026-07-16T05:10:17",
+        "status": "publish"
+      },
+      {
+        "id": 5144,
+        "slug": "overeating-treatment-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/overeating-treatment-in-san-antonio-tx/",
+        "title": "Treatment for Overeating in San Antonio, TX",
+        "date": "2026-04-23T13:11:56",
+        "modified": "2026-07-16T05:10:14",
+        "status": "publish"
+      },
+      {
+        "id": 5018,
+        "slug": "compulsive-overeating-counseling-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/compulsive-overeating-counseling-san-antonio-tx/",
+        "title": "Compulsive Overeating Counseling &amp; Food Addiction Treatment in San Antonio, TX",
+        "date": "2026-04-27T08:56:01",
+        "modified": "2026-07-16T05:10:11",
+        "status": "publish"
+      },
+      {
+        "id": 4948,
+        "slug": "emotional-eating-therapy-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/emotional-eating-therapy-in-san-antonio-tx/",
+        "title": "Emotional Eating Therapy in San Antonio, TX",
+        "date": "2026-03-26T11:34:15",
+        "modified": "2026-07-16T05:10:08",
+        "status": "publish"
+      },
+      {
+        "id": 5142,
+        "slug": "binge-eating-treatment-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/",
+        "title": "Binge Eating Treatment in San Antonio, TX",
+        "date": "2026-04-23T13:12:45",
+        "modified": "2026-07-16T05:10:06",
+        "status": "publish"
+      },
+      {
+        "id": 4885,
+        "slug": "binge-eating-therapy-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/binge-eating-therapy-in-san-antonio-tx/",
+        "title": "Binge Eating Therapy in San Antonio, TX",
+        "date": "2026-02-23T14:58:28",
+        "modified": "2026-07-16T05:10:03",
+        "status": "publish"
+      },
+      {
+        "id": 5409,
+        "slug": "eating-disorder-group-therapy-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/eating-disorder-group-therapy-san-antonio-tx/",
+        "title": "Eating Disorder Group Therapy in San Antonio, TX | BCC",
+        "date": "2026-06-04T10:15:55",
+        "modified": "2026-07-16T05:10:00",
+        "status": "publish"
+      },
+      {
+        "id": 4950,
+        "slug": "eating-disorder-iop-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/eating-disorder-iop-in-san-antonio-tx/",
+        "title": "Eating Disorder IOP in San Antonio, TX",
+        "date": "2026-03-26T11:36:55",
+        "modified": "2026-07-16T05:09:57",
+        "status": "publish"
+      },
+      {
+        "id": 5170,
+        "slug": "eating-disorder-therapist-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/eating-disorder-therapist-in-san-antonio-tx/",
+        "title": "Eating Disorder Therapist in San Antonio, TX",
+        "date": "2026-06-15T10:13:08",
+        "modified": "2026-07-16T05:09:55",
+        "status": "publish"
+      },
+      {
+        "id": 5176,
+        "slug": "eating-disorder-counseling-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/eating-disorder-counseling-in-san-antonio-tx/",
+        "title": "Eating Disorder Counseling in San Antonio, TX",
+        "date": "2026-05-08T12:07:12",
+        "modified": "2026-07-16T05:09:53",
+        "status": "publish"
+      },
+      {
+        "id": 5164,
+        "slug": "eating-disorder-treatment-in-san-antonio-tx",
+        "link": "https://www.bariatriccounselingcenter.com/eating-disorder-treatment-in-san-antonio-tx/",
+        "title": "Eating Disorder Treatment in San Antonio, TX",
+        "date": "2026-04-27T08:59:19",
+        "modified": "2026-07-16T05:09:50",
+        "status": "publish"
+      },
+      {
+        "id": 5279,
+        "slug": "binge-eating-disorder-treatment-san-antonio",
+        "link": "https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/",
+        "title": "Binge Eating Disorder Treatment in San Antonio",
+        "date": "2026-05-20T11:14:10",
+        "modified": "2026-07-16T05:09:47",
+        "status": "publish"
+      },
+      {
+        "id": 5650,
+        "slug": "bariatric-counseling-near-me",
+        "link": "https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
+        "title": "Bariatric Counseling Near Me: How to Choose the Right Care",
+        "date": "2026-06-24T09:53:46",
+        "modified": "2026-07-09T05:03:44",
+        "status": "publish"
+      },
+      {
+        "id": 4994,
+        "slug": "foundayo-behavioral-support-san-antonio",
+        "link": "https://www.bariatriccounselingcenter.com/foundayo-behavioral-support-san-antonio/",
+        "title": "Foundayo\u2122 (Orforglipron) \u00b7 Behavioral Health Support \u00b7 San Antonio, TX",
+        "date": "2026-04-02T19:10:17",
+        "modified": "2026-07-08T17:02:46",
+        "status": "publish"
+      },
+      {
+        "id": 2091,
+        "slug": "home-2",
+        "link": "https://www.bariatriccounselingcenter.com/",
+        "title": "Home &#8211; Bariatric Counseling Center",
+        "date": "2026-01-08T10:17:00",
+        "modified": "2026-07-07T17:02:59",
+        "status": "publish"
+      },
+      {
+        "id": 3566,
+        "slug": "understanding-anxiety-and-depression-related-to-weight",
+        "link": "https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/",
+        "title": "Understanding Anxiety and Depression Related to Weight",
+        "date": "2026-06-12T10:02:28",
+        "modified": "2026-07-07T17:01:23",
+        "status": "publish"
+      },
+      {
+        "id": 5334,
+        "slug": "what-is-a-bariatric-therapist",
+        "link": "https://www.bariatriccounselingcenter.com/what-is-a-bariatric-therapist/",
+        "title": "What Is a Bariatric Therapist?",
+        "date": "2026-06-15T10:13:18",
+        "modified": "2026-07-07T16:59:48",
+        "status": "publish"
+      },
+      {
+        "id": 3590,
+        "slug": "understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro",
+        "link": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
+        "title": "Understanding Weight Loss Medications: Wegovy, Ozempic, Zepbound, and Mounjaro",
+        "date": "2026-06-15T10:12:44",
+        "modified": "2026-07-07T16:56:50",
+        "status": "publish"
+      }
+    ],
+    "posts": [
+      {
+        "id": 3394,
+        "slug": "why-hydration-is-essential-for-weight-loss-and-management",
+        "link": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
+        "title": "Why Hydration is Essential for Weight Loss and Weight Management\u00a0",
+        "date": "2026-07-01T09:00:00",
+        "modified": "2026-07-16T05:12:09",
+        "status": "publish"
+      },
+      {
+        "id": 2989,
+        "slug": "binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options",
+        "link": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/",
+        "title": "Binge Eating Disorder: The Symptoms, Causes, and Effective Treatment Options",
+        "date": "2026-07-17T09:00:00",
+        "modified": "2026-07-16T05:11:32",
+        "status": "publish"
+      },
+      {
+        "id": 1945,
+        "slug": "dietitians-or-nutritionists-breaking-down-the-differences",
+        "link": "https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/",
+        "title": "Dietitian or Nutritionist: Breaking Down the Differences",
+        "date": "2026-07-15T09:00:00",
+        "modified": "2026-07-16T05:11:30",
+        "status": "publish"
+      },
+      {
+        "id": 1142,
+        "slug": "what-is-emotional-eating",
+        "link": "https://www.bariatriccounselingcenter.com/blog/what-is-emotional-eating/",
+        "title": "What Is Emotional Eating?",
+        "date": "2026-07-13T09:00:00",
+        "modified": "2026-07-16T05:11:27",
+        "status": "publish"
+      },
+      {
+        "id": 2412,
+        "slug": "holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness",
+        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+        "title": "Holistic Weight Loss Approach: Overcoming Diet Culture with Mind and Body Wellness",
+        "date": "2026-07-09T09:00:00",
+        "modified": "2026-07-16T05:11:26",
+        "status": "publish"
+      },
+      {
+        "id": 3199,
+        "slug": "better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings",
+        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+        "title": "Better Sleep for Weight Loss: How Rest Impacts Your Metabolism and Cravings",
+        "date": "2026-07-06T09:00:00",
+        "modified": "2026-07-16T05:11:25",
+        "status": "publish"
+      },
+      {
+        "id": 2795,
+        "slug": "how-to-improve-self-esteem-while-losing-weight-the-healthy-way",
+        "link": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+        "title": "How to Improve Self-Esteem While Losing Weight the Healthy Way",
+        "date": "2026-07-03T09:00:00",
+        "modified": "2026-07-16T05:11:23",
+        "status": "publish"
+      }
+    ]
+  },
+  "launches_this_run": [
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "If the Hardest Part of Your Day Is Night, There Is Help",
+      "url": "/night-eating-syndrome-treatment-in-san-antonio-tx/",
+      "wp_id": 5461,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5461--night-eating-syndrome-treatment-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "When ADHD and Eating Collide, It Is Not a Lack of Willpower",
+      "url": "/adhd-and-emotional-eating-in-san-antonio-tx/",
+      "wp_id": 5460,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5460--adhd-and-emotional-eating-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Counseling for Anxiety and Weight in San Antonio, TX",
+      "url": "/counseling-for-anxiety-and-weight-in-san-antonio-tx/",
+      "wp_id": 5321,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5321--counseling-for-anxiety-and-weight-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Coming Off a GLP-1, or Afraid to? Protect the Progress You Made",
+      "url": "/glp-1-weight-regain-counseling-in-san-antonio-tx/",
+      "wp_id": 5462,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5462--glp-1-weight-regain-counseling-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "On Mounjaro or Zepbound? The Behavioral Side Is What Makes It Stick",
+      "url": "/mounjaro-zepbound-behavioral-support-in-san-antonio-tx/",
+      "wp_id": 5457,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5457--mounjaro-zepbound-behavioral-support-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Ozempic Behavioral Support in San Antonio, TX",
+      "url": "/ozempic-behavioral-support-in-san-antonio-tx/",
+      "wp_id": 5180,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5180--ozempic-behavioral-support-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Behavioral Support for GLP-1 Medications in San Antonio, TX",
+      "url": "/glp-1-behavioral-support-in-san-antonio-tx/",
+      "wp_id": 5323,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5323--glp-1-behavioral-support-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Bariatric Surgery Psychological Evaluation in San Antonio, TX",
+      "url": "/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
+      "wp_id": 5168,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5168--bariatric-surgery-psychological-evaluation-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Bariatric Surgery Counseling in San Antonio, TX",
+      "url": "/bariatric-surgery-counseling-in-san-antonio-tx/",
+      "wp_id": 4952,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-4952--bariatric-surgery-counseling-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Bariatric Therapist in San Antonio, TX",
+      "url": "/bariatric-therapist-in-san-antonio-tx/",
+      "wp_id": 5270,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5270--bariatric-therapist-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Bariatric Therapy in San Antonio, TX",
+      "url": "/bariatric-therapy-in-san-antonio-tx/",
+      "wp_id": 5177,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5177--bariatric-therapy-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Overeaters Support in San Antonio, TX",
+      "url": "/overeaters-anonymous-support-san-antonio-tx/",
+      "wp_id": 5001,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5001--overeaters-anonymous-support-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Treatment for Overeating in San Antonio, TX",
+      "url": "/overeating-treatment-in-san-antonio-tx/",
+      "wp_id": 5144,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5144--overeating-treatment-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Compulsive Overeating Counseling &amp; Food Addiction Treatment in San Antonio, TX",
+      "url": "/compulsive-overeating-counseling-san-antonio-tx/",
+      "wp_id": 5018,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5018--compulsive-overeating-counseling-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Emotional Eating Therapy in San Antonio, TX",
+      "url": "/emotional-eating-therapy-in-san-antonio-tx/",
+      "wp_id": 4948,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-4948--emotional-eating-therapy-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Binge Eating Treatment in San Antonio, TX",
+      "url": "/binge-eating-treatment-in-san-antonio-tx/",
+      "wp_id": 5142,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5142--binge-eating-treatment-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Binge Eating Therapy in San Antonio, TX",
+      "url": "/binge-eating-therapy-in-san-antonio-tx/",
+      "wp_id": 4885,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-4885--binge-eating-therapy-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Eating Disorder Group Therapy in San Antonio, TX | BCC",
+      "url": "/eating-disorder-group-therapy-san-antonio-tx/",
+      "wp_id": 5409,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5409--eating-disorder-group-therapy-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Eating Disorder IOP in San Antonio, TX",
+      "url": "/eating-disorder-iop-in-san-antonio-tx/",
+      "wp_id": 4950,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-4950--eating-disorder-iop-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Eating Disorder Therapist in San Antonio, TX",
+      "url": "/eating-disorder-therapist-in-san-antonio-tx/",
+      "wp_id": 5170,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5170--eating-disorder-therapist-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Eating Disorder Counseling in San Antonio, TX",
+      "url": "/eating-disorder-counseling-in-san-antonio-tx/",
+      "wp_id": 5176,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5176--eating-disorder-counseling-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Eating Disorder Treatment in San Antonio, TX",
+      "url": "/eating-disorder-treatment-in-san-antonio-tx/",
+      "wp_id": 5164,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5164--eating-disorder-treatment-in-san-antonio-tx",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "page-modify",
+      "title": "Binge Eating Disorder Treatment in San Antonio",
+      "url": "/binge-eating-disorder-treatment-san-antonio/",
+      "wp_id": 5279,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-page-modify-5279--binge-eating-disorder-treatment-san-antonio",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-09",
+      "type": "page-modify",
+      "title": "Bariatric Counseling Near Me: How to Choose the Right Care",
+      "url": "/bariatric-counseling-near-me/",
+      "wp_id": 5650,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-09-page-modify-5650--bariatric-counseling-near-me",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-08",
+      "type": "page-modify",
+      "title": "Foundayo\u2122 (Orforglipron) \u00b7 Behavioral Health Support \u00b7 San Antonio, TX",
+      "url": "/foundayo-behavioral-support-san-antonio/",
+      "wp_id": 4994,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-08-page-modify-4994--foundayo-behavioral-support-san-antonio",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-07",
+      "type": "page-modify",
+      "title": "Home &#8211; Bariatric Counseling Center",
+      "url": "/",
+      "wp_id": 2091,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-07-page-modify-2091",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-07",
+      "type": "page-modify",
+      "title": "Understanding Anxiety and Depression Related to Weight",
+      "url": "/understanding-anxiety-and-depression-related-to-weight/",
+      "wp_id": 3566,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-07-page-modify-3566--understanding-anxiety-and-depression-related-to-weight",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-07",
+      "type": "page-modify",
+      "title": "What Is a Bariatric Therapist?",
+      "url": "/what-is-a-bariatric-therapist/",
+      "wp_id": 5334,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-07-page-modify-5334--what-is-a-bariatric-therapist",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-07",
+      "type": "page-modify",
+      "title": "Understanding Weight Loss Medications: Wegovy, Ozempic, Zepbound, and Mounjaro",
+      "url": "/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
+      "wp_id": 3590,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-07-page-modify-3590--understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "post-modify",
+      "title": "Why Hydration is Essential for Weight Loss and Weight Management\u00a0",
+      "url": "/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
+      "wp_id": 3394,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-post-modify-3394--healthy-living-2-why-hydration-is-essential-for-weight-loss-and-management",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-17",
+      "type": "post-publish",
+      "title": "Binge Eating Disorder: The Symptoms, Causes, and Effective Treatment Options",
+      "url": "/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/",
+      "wp_id": 2989,
+      "slug": "binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options",
+      "target_keyword": "binge eating disorder the symptoms causes and effective treatment options",
+      "source": "wp-rest",
+      "confidence": "high",
+      "id": "auto-2026-07-17-post-publish-2989--eating-disorders-binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "post-modify",
+      "title": "Binge Eating Disorder: The Symptoms, Causes, and Effective Treatment Options",
+      "url": "/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/",
+      "wp_id": 2989,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-post-modify-2989--eating-disorders-binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-15",
+      "type": "post-publish",
+      "title": "Dietitian or Nutritionist: Breaking Down the Differences",
+      "url": "/blog/dietitians-or-nutritionists-breaking-down-the-differences/",
+      "wp_id": 1945,
+      "slug": "dietitians-or-nutritionists-breaking-down-the-differences",
+      "target_keyword": "dietitians or nutritionists breaking down the differences",
+      "source": "wp-rest",
+      "confidence": "high",
+      "id": "auto-2026-07-15-post-publish-1945--blog-dietitians-or-nutritionists-breaking-down-the-differences",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "post-modify",
+      "title": "Dietitian or Nutritionist: Breaking Down the Differences",
+      "url": "/blog/dietitians-or-nutritionists-breaking-down-the-differences/",
+      "wp_id": 1945,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-post-modify-1945--blog-dietitians-or-nutritionists-breaking-down-the-differences",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-13",
+      "type": "post-publish",
+      "title": "What Is Emotional Eating?",
+      "url": "/blog/what-is-emotional-eating/",
+      "wp_id": 1142,
+      "slug": "what-is-emotional-eating",
+      "target_keyword": "what is emotional eating",
+      "source": "wp-rest",
+      "confidence": "high",
+      "id": "auto-2026-07-13-post-publish-1142--blog-what-is-emotional-eating",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "post-modify",
+      "title": "What Is Emotional Eating?",
+      "url": "/blog/what-is-emotional-eating/",
+      "wp_id": 1142,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-post-modify-1142--blog-what-is-emotional-eating",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-09",
+      "type": "post-publish",
+      "title": "Holistic Weight Loss Approach: Overcoming Diet Culture with Mind and Body Wellness",
+      "url": "/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+      "wp_id": 2412,
+      "slug": "holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness",
+      "target_keyword": "holistic weight loss approach overcoming diet culture with mind and body wellness",
+      "source": "wp-rest",
+      "confidence": "high",
+      "id": "auto-2026-07-09-post-publish-2412--self-improvement-mental-health-holistic-weight-loss-approach-overcoming-diet-culture-with-",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "post-modify",
+      "title": "Holistic Weight Loss Approach: Overcoming Diet Culture with Mind and Body Wellness",
+      "url": "/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+      "wp_id": 2412,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-post-modify-2412--self-improvement-mental-health-holistic-weight-loss-approach-overcoming-diet-culture-with-m",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-06",
+      "type": "post-publish",
+      "title": "Better Sleep for Weight Loss: How Rest Impacts Your Metabolism and Cravings",
+      "url": "/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+      "wp_id": 3199,
+      "slug": "better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings",
+      "target_keyword": "better sleep for weight loss how rest impacts your metabolism and cravings",
+      "source": "wp-rest",
+      "confidence": "high",
+      "id": "auto-2026-07-06-post-publish-3199--self-improvement-mental-health-better-sleep-for-weight-loss-how-rest-impacts-your-metaboli",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "post-modify",
+      "title": "Better Sleep for Weight Loss: How Rest Impacts Your Metabolism and Cravings",
+      "url": "/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+      "wp_id": 3199,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-post-modify-3199--self-improvement-mental-health-better-sleep-for-weight-loss-how-rest-impacts-your-metabolis",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "post-modify",
+      "title": "How to Improve Self-Esteem While Losing Weight the Healthy Way",
+      "url": "/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+      "wp_id": 2795,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-post-modify-2795--self-improvement-mental-health-how-to-improve-self-esteem-while-losing-weight-the-healthy-w",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "sitemap-touch",
+      "title": "/category/blog/",
+      "url": "/category/blog/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-07-16-sitemap-touch--category-blog",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "sitemap-touch",
+      "title": "/category/self-improvement/",
+      "url": "/category/self-improvement/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-07-16-sitemap-touch--category-self-improvement",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "sitemap-touch",
+      "title": "/category/self-improvement/mental-health/",
+      "url": "/category/self-improvement/mental-health/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-07-16-sitemap-touch--category-self-improvement-mental-health",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "sitemap-touch",
+      "title": "/category/self-improvement/behavioral-patterns/",
+      "url": "/category/self-improvement/behavioral-patterns/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-07-16-sitemap-touch--category-self-improvement-behavioral-patterns",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "sitemap-touch",
+      "title": "/category/self-improvement/weight-loss-journey-self-improvement/",
+      "url": "/category/self-improvement/weight-loss-journey-self-improvement/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-07-16-sitemap-touch--category-self-improvement-weight-loss-journey-self-improvement",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "sitemap-touch",
+      "title": "/category/eating-disorders/",
+      "url": "/category/eating-disorders/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-07-16-sitemap-touch--category-eating-disorders",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "sitemap-touch",
+      "title": "/category/weight-loss-counseling/",
+      "url": "/category/weight-loss-counseling/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-07-16-sitemap-touch--category-weight-loss-counseling",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "sitemap-touch",
+      "title": "/category/healthy-living-2/",
+      "url": "/category/healthy-living-2/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-07-16-sitemap-touch--category-healthy-living-2",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "sitemap-touch",
+      "title": "/author/austintude/",
+      "url": "/author/austintude/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-07-16-sitemap-touch--author-austintude",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "sitemap-touch",
+      "title": "/author/shamilton/",
+      "url": "/author/shamilton/",
+      "source": "sitemap",
+      "confidence": "low",
+      "id": "auto-2026-07-16-sitemap-touch--author-shamilton",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-19",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-19",
+      "commit_hash": "d45e0ac",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-19-git-commit-d45e0ac",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-19",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-19",
+      "commit_hash": "f7e3c6c",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-19-git-commit-f7e3c6c",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-18",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-18",
+      "commit_hash": "f51093b",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-18-git-commit-f51093b",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-17",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-17",
+      "commit_hash": "33f5eed",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-17-git-commit-33f5eed",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-17",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-17",
+      "commit_hash": "d2a1352",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-17-git-commit-d2a1352",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-16",
+      "commit_hash": "990ed35",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-16-git-commit-990ed35",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "git-commit",
+      "title": "bcc: weekly SEO snapshot 2026-07-16",
+      "commit_hash": "cc07077",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "medium",
+      "id": "auto-2026-07-16-git-commit-cc07077",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-07-16",
+      "commit_hash": "8a140c9",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-16-git-commit-8a140c9",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "git-commit",
+      "title": "bcc marketing pulse: 2026-07-16",
+      "commit_hash": "00a6bdb",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-16-git-commit-00a6bdb",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-16",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-16",
+      "commit_hash": "21411c2",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-16-git-commit-21411c2",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-15",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-15",
+      "commit_hash": "5759e6b",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-15-git-commit-5759e6b",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-15",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-07-15",
+      "commit_hash": "eaa11a6",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-15-git-commit-eaa11a6",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-15",
+      "type": "git-commit",
+      "title": "bcc marketing pulse: 2026-07-15",
+      "commit_hash": "a925792",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-15-git-commit-a925792",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-15",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-15",
+      "commit_hash": "d387a55",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-15-git-commit-d387a55",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-14",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-14",
+      "commit_hash": "32cfc59",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-14-git-commit-32cfc59",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-14",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-14",
+      "commit_hash": "c949bc8",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-14-git-commit-c949bc8",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-13",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-13",
+      "commit_hash": "3dd0919",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-13-git-commit-3dd0919",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-13",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-07-13",
+      "commit_hash": "ee16a54",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-13-git-commit-ee16a54",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-13",
+      "type": "git-commit",
+      "title": "bcc: weekly SEO snapshot 2026-07-13",
+      "commit_hash": "911cc40",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "medium",
+      "id": "auto-2026-07-13-git-commit-911cc40",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-13",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-07-13",
+      "commit_hash": "dd2f458",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-13-git-commit-dd2f458",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-13",
+      "type": "git-commit",
+      "title": "bcc marketing pulse: 2026-07-13",
+      "commit_hash": "21e6714",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-13-git-commit-21e6714",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    },
+    {
+      "launched_at": "2026-07-13",
+      "type": "git-commit",
+      "title": "LinkedIn weekly ideas: week of Jul 13 sent log (Todd psych-eval turnaround, Sara food noise)",
+      "commit_hash": "664e341",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-07-13-git-commit-664e341",
+      "first_seen_at": "2026-07-20T08:02:46.161640Z"
+    }
+  ],
+  "launches_ledger_size": 587,
+  "paid_social_spikes": [],
+  "git_commits_recent": [
+    {
+      "date": "2026-07-19T07:00:26-05:00",
+      "hash": "d45e0ac",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-19"
+    },
+    {
+      "date": "2026-07-19T03:04:32-05:00",
+      "hash": "f7e3c6c",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-19"
+    },
+    {
+      "date": "2026-07-18T07:00:28-05:00",
+      "hash": "f51093b",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-18"
+    },
+    {
+      "date": "2026-07-17T07:00:31-05:00",
+      "hash": "33f5eed",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-17"
+    },
+    {
+      "date": "2026-07-17T03:04:45-05:00",
+      "hash": "d2a1352",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-17"
+    },
+    {
+      "date": "2026-07-16T07:00:32-05:00",
+      "hash": "990ed35",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-16"
+    },
+    {
+      "date": "2026-07-16T05:19:16-05:00",
+      "hash": "cc07077",
+      "author": "Daniel Bisett",
+      "subject": "bcc: weekly SEO snapshot 2026-07-16"
+    },
+    {
+      "date": "2026-07-16T04:33:31-05:00",
+      "hash": "8a140c9",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-07-16"
+    },
+    {
+      "date": "2026-07-16T04:11:07-05:00",
+      "hash": "00a6bdb",
+      "author": "Daniel Bisett",
+      "subject": "bcc marketing pulse: 2026-07-16"
+    },
+    {
+      "date": "2026-07-16T03:04:36-05:00",
+      "hash": "21411c2",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-16"
+    },
+    {
+      "date": "2026-07-15T07:00:25-05:00",
+      "hash": "5759e6b",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-15"
+    },
+    {
+      "date": "2026-07-15T04:31:44-05:00",
+      "hash": "eaa11a6",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-07-15"
+    },
+    {
+      "date": "2026-07-15T04:10:45-05:00",
+      "hash": "a925792",
+      "author": "Daniel Bisett",
+      "subject": "bcc marketing pulse: 2026-07-15"
+    },
+    {
+      "date": "2026-07-15T03:04:22-05:00",
+      "hash": "d387a55",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-15"
+    },
+    {
+      "date": "2026-07-14T07:00:28-05:00",
+      "hash": "32cfc59",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-14"
+    },
+    {
+      "date": "2026-07-14T03:05:00-05:00",
+      "hash": "c949bc8",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-14"
+    },
+    {
+      "date": "2026-07-13T14:04:55-05:00",
+      "hash": "3dd0919",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-13"
+    },
+    {
+      "date": "2026-07-13T07:00:27-05:00",
+      "hash": "ee16a54",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-07-13"
+    },
+    {
+      "date": "2026-07-13T05:18:31-05:00",
+      "hash": "911cc40",
+      "author": "Daniel Bisett",
+      "subject": "bcc: weekly SEO snapshot 2026-07-13"
+    },
+    {
+      "date": "2026-07-13T04:31:50-05:00",
+      "hash": "dd2f458",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-07-13"
+    }
+  ]
+}
