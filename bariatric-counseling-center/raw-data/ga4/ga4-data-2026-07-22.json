@@ -7,13 +7,13 @@
   },
   "property_id": "254059736",
   "summary": {
-    "sessions": 113,
-    "users": 101,
-    "new_users": 88,
-    "pageviews": 378,
-    "engagement_rate": 0.9381,
-    "avg_session_duration_sec": 159.4089,
-    "bounce_rate": 0.0619
+    "sessions": 117,
+    "users": 105,
+    "new_users": 92,
+    "pageviews": 391,
+    "engagement_rate": 0.9316,
+    "avg_session_duration_sec": 154.1286,
+    "bounce_rate": 0.0684
   },
   "yoy_summary": {
     "sessions": 491,
@@ -25,10 +25,10 @@
     "bounce_rate": 0.6334
   },
   "yoy_pct_change": {
-    "sessions_pct": -77.0,
-    "users_pct": -76.1,
-    "pageviews_pct": -50.5,
-    "avg_session_duration_pct": 106.9
+    "sessions_pct": -76.2,
+    "users_pct": -75.2,
+    "pageviews_pct": -48.8,
+    "avg_session_duration_pct": 100.1
   },
   "daily_breakdown": [
     {
@@ -63,17 +63,22 @@
     },
     {
       "date": "20260721",
-      "sessions": 16,
-      "totalUsers": 15
+      "sessions": 17,
+      "totalUsers": 16
+    },
+    {
+      "date": "20260722",
+      "sessions": 3,
+      "totalUsers": 3
     }
   ],
   "top_landing_pages": [
     {
       "page": "/",
-      "sessions": 65,
-      "users": 64,
-      "engagement_rate": 0.9846,
-      "avg_session_duration_sec": 154.8322
+      "sessions": 69,
+      "users": 68,
+      "engagement_rate": 0.971,
+      "avg_session_duration_sec": 146.1439
     },
     {
       "page": "/about/",
@@ -247,9 +252,9 @@
   "top_sources": [
     {
       "source_medium": "(direct) / (none)",
-      "sessions": 54,
-      "users": 52,
-      "engagement_rate": 0.963
+      "sessions": 55,
+      "users": 53,
+      "engagement_rate": 0.9636
     },
     {
       "source_medium": "google / organic",
@@ -294,6 +299,12 @@
       "engagement_rate": 1
     },
     {
+      "source_medium": "heapr.com / referral",
+      "sessions": 2,
+      "users": 2,
+      "engagement_rate": 1
+    },
+    {
       "source_medium": "recoverycom / referral",
       "sessions": 2,
       "users": 2,
@@ -301,12 +312,6 @@
     },
     {
       "source_medium": "hakia.com / referral",
-      "sessions": 1,
-      "users": 1,
-      "engagement_rate": 1
-    },
-    {
-      "source_medium": "heapr.com / referral",
       "sessions": 1,
       "users": 1,
       "engagement_rate": 1
@@ -339,8 +344,8 @@
   "top_pages_viewed": [
     {
       "page": "/",
-      "pageviews": 162,
-      "sessions": 70
+      "pageviews": 175,
+      "sessions": 74
     },
     {
       "page": "/contact/",
@@ -466,9 +471,9 @@
   "channel_breakdown": [
     {
       "channel": "Direct",
-      "sessions": 54,
-      "users": 52,
-      "engagement_rate": 0.963
+      "sessions": 55,
+      "users": 53,
+      "engagement_rate": 0.9636
     },
     {
       "channel": "Organic Search",
@@ -478,9 +483,9 @@
     },
     {
       "channel": "Referral",
-      "sessions": 19,
-      "users": 13,
-      "engagement_rate": 0.8421
+      "sessions": 22,
+      "users": 16,
+      "engagement_rate": 0.8182
     },
     {
       "channel": "Email",
