@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-07-27
 
-_Generated 2026-07-28 08:03 UTC_
+_Generated 2026-07-28 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **24 sessions** / 22 users / 68 pageviews
+- **25 sessions** / 23 users / 70 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 91.7%
-- Avg session duration: 238s
+- Engagement rate: 92.0%
+- Avg session duration: 231s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,27 +16,27 @@ _2026-06-30 -> 2026-07-27 vs 2026-06-02 -> 2026-06-29_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 428 | 402 | +6.5% |
-| New users | 410 | 385 | +6.5% |
-| Sessions | 530 | 568 | -6.7% |
-| Views | 3,017 | 2,365 | +27.6% |
-| Avg engagement time (per active user) | 40s | 98s | -59.0% |
+| Active users | 429 | 402 | +6.7% |
+| New users | 411 | 385 | +6.8% |
+| Sessions | 531 | 568 | -6.5% |
+| Views | 3,019 | 2,365 | +27.7% |
+| Avg engagement time (per active user) | 40s | 98s | -58.9% |
 
-## 4 anomalies flagged
+## 5 anomalies flagged
 
-### [CRITICAL] UP GA4 avg session dur: 238.343 (+86.4% vs 28d median of 128)
-
-
-### [MAJOR] UP GA4 users: 22 (+33.3% vs 28d median of 16) (YoY same day: -66.2%)
+### [CRITICAL] UP GA4 avg session dur: 231.023 (+80.6% vs 28d median of 128)
 
 
-### [MAJOR] UP GA4 pageviews: 68 (+28.3% vs 28d median of 53) (YoY same day: -19.0%)
+### [MAJOR] UP GA4 users: 23 (+39.4% vs 28d median of 16) (YoY same day: -64.6%)
 
 
-### [MAJOR] UP GA4 sessions: 24 (+26.3% vs 28d median of 19) (YoY same day: -65.7%)
+### [MAJOR] UP GA4 pageviews: 70 (+32.1% vs 28d median of 53) (YoY same day: -16.7%)
 
-**Source attribution** -- Organic Search rose from baseline 7 to 13 (+6).
-  - Organic Search: 13 yesterday vs baseline 7 (+6)
+
+### [MAJOR] UP GA4 sessions: 25 (+31.6% vs 28d median of 19) (YoY same day: -64.3%)
+
+**Source attribution** -- Organic Search rose from baseline 7 to 14 (+7).
+  - Organic Search: 14 yesterday vs baseline 7 (+7)
   - Organic Social: 0 yesterday vs baseline 4 (-4)
   - Direct: 8 yesterday vs baseline 6 (+2)
   - Email: 0 yesterday vs baseline 2 (-2)
@@ -56,9 +56,12 @@ _2026-06-30 -> 2026-07-27 vs 2026-06-02 -> 2026-06-29_
   - Body Confidence Counseling in San Antonio, TX (modified 2026-07-23)
 
 
+### [MINOR] UP GA4 new users: 17 (+21.4% vs 28d median of 14)
+
+
 ## Yesterday's traffic by channel
 
--   13 sess  Organic Search
+-   14 sess  Organic Search
 -    8 sess  Direct
 -    3 sess  Referral
 
