@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-07-26
+
+_Generated 2026-07-28T08:03:28.505729Z_
+
+### Headline
+- Sessions DOWN 77.8% YoY (16 vs. 72 same day last year) -- a quiet Sunday, but engagement is unusually strong.
+- Avg session duration hit 347 sec (+171% vs. 28-day median of 128 sec) -- the people who showed up stayed and read.
+
+### What happened
+- **Sessions**: 16 for July 26 (Sunday), down 15.8% vs. 28-day median of 19 -- low but not alarming for a weekend.
+- **Engagement**: 93.75% engagement rate + nearly 6 min avg session -- suggests a small, highly interested audience, not bounce traffic.
+- **GSC impressions/clicks**: 0 -- standard 1-3 day reporting lag, not a real drop.
+- **July 23 page edits**: 5 pages modified (Home, Eating Disorders, Nutritional Counseling, Holistic Weight Loss, Body Confidence) -- first surfaced today, worth confirming changes are live and rendering correctly.
+
+### Efficacy
+- **Launched 30d**: 10 pages, 0 ranking top 10 yet, 1,063 GA4 sessions and 360,154 GSC impressions attributed across the window.
+- **Most movement**: "Preparing for Bariatric Surgery: A Mental Health Checklist" -- launched 1 day ago, already pulled 3 GA4 sessions, still pre-impression in GSC (normal).
+- **Indexing warmup**: 1 content page (the checklist post) still pre-impression; the 5 July 23 edits should be recrawled soon.
+
+### Today (do these)
+1. **Spot-check the 5 July 23 edits**: Open Home, /therapy-for-eating-disorders/, /nutritional-counseling/, /holistic-weight-loss-counseling/, and /body-confidence-counseling/ in a browser and confirm the changes look correct -- these were just flagged and haven't been verified.
+2. **Request GSC indexing** for the Bariatric Surgery checklist post -- it has 3 sessions already and zero impressions, so a manual index request could speed up crawl.
+3. **Check whether Camy or Todd posted anything Sunday**: the long session durations (6 min avg) on a slow traffic day suggest a small warm audience was sent here -- worth attributing the source before Todd's meeting.
