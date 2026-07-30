@@ -1,0 +1,22 @@
+# Morning Briefing -- 2026-07-28
+
+_Generated 2026-07-30T08:02:56.418107Z_
+
+### Headline
+- Sessions for July 28: 19 sessions, 18 users -- quiet Monday, no major red flags beyond one engagement signal worth noting.
+- GSC showing zeros -- standard 1-3 day reporting lag, not a real drop.
+
+### What happened
+- **Avg session duration**: 86.5s vs 128s median (-32.3%) -- people are landing and leaving faster than usual; worth checking whether the July 23 page edits changed content depth or layout on high-traffic pages.
+- **Traffic**: 19 sessions, 89% engaged -- small day but quality held; new users (16 of 18) suggest mostly search or referral, not repeat visitors.
+- **5 pages modified July 23** now surfaced: homepage, `/therapy-for-eating-disorders/`, `/nutritional-counseling/`, `/holistic-weight-loss-counseling/`, `/body-confidence-counseling/` -- all flagged medium confidence, likely tied to a batch content update.
+
+### Efficacy
+- **Launched 30d**: 11 pages, 0 currently tracked in top 10 -- most are still in indexing warmup (expected at this stage).
+- **Most movement**: "Emotional Eating vs. Disordered Eating" (launched July 29) -- 38 GSC impressions in day 1, 0 clicks; title or snippet likely needs a sharper hook.
+- **Early traction**: "Preparing for Bariatric Surgery: Mental Health Checklist" -- 3 GA4 sessions in 3 days with zero GSC impressions yet, suggesting direct or social referral traffic before Google fully indexes it.
+
+### Today (do these)
+1. **Review the July 23 edits** on the five modified pages -- the session duration drop (-32%) lines up with that batch going live, so check whether content was shortened or CTAs changed.
+2. **Rewrite the title/meta description** for "Emotional Eating vs. Disordered Eating" -- 38 impressions, 0 clicks on day 1 means the snippet isn't earning the tap; sharpen the hook to reflect the specific question the post answers.
+3. **Identify the traffic source** for the 3 early sessions on the bariatric surgery checklist -- if a social post or email drove those, flag it for Todd as proof of content-to-audience fit before Google even indexes it.
