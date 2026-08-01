@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-07-31
 
-_Generated 2026-08-01 08:03 UTC_
+_Generated 2026-08-01 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **25 sessions** / 24 users / 66 pageviews
+- **26 sessions** / 25 users / 68 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 96.0%
-- Avg session duration: 117s
+- Engagement rate: 96.2%
+- Avg session duration: 112s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,36 +16,36 @@ _2026-07-04 -> 2026-07-31 vs 2026-06-06 -> 2026-07-03_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 468 | 356 | +31.5% |
-| New users | 454 | 338 | +34.3% |
-| Sessions | 575 | 504 | +14.1% |
-| Views | 3,117 | 2,085 | +49.5% |
-| Avg engagement time (per active user) | 42s | 102s | -58.4% |
+| Active users | 469 | 356 | +31.7% |
+| New users | 455 | 338 | +34.6% |
+| Sessions | 576 | 504 | +14.3% |
+| Views | 3,119 | 2,085 | +49.6% |
+| Avg engagement time (per active user) | 42s | 102s | -58.5% |
 
 ## 4 anomalies flagged
 
-### [MAJOR] UP GA4 new users: 23 (+48.4% vs 28d median of 16)
+### [CRITICAL] UP GA4 new users: 24 (+54.8% vs 28d median of 16)
 
 
-### [MAJOR] UP GA4 users: 24 (+37.1% vs 28d median of 18) (YoY same day: -33.3%)
+### [MAJOR] UP GA4 users: 25 (+42.9% vs 28d median of 18) (YoY same day: -30.6%)
 
 
-### [MAJOR] UP GA4 sessions: 25 (+28.2% vs 28d median of 20) (YoY same day: -32.4%)
+### [MAJOR] UP GA4 sessions: 26 (+33.3% vs 28d median of 20) (YoY same day: -29.7%)
 
-**Source attribution** -- Organic Search rose from baseline 10 to 13 (+3).
-  - Organic Search: 13 yesterday vs baseline 10 (+3)
+**Source attribution** -- Organic Search rose from baseline 10 to 14 (+4).
+  - Organic Search: 14 yesterday vs baseline 10 (+4)
   - Direct: 9 yesterday vs baseline 6 (+3)
   - Referral: 0 yesterday vs baseline 3 (-3)
   - Email: 0 yesterday vs baseline 2 (-2)
 
 **Top landing pages yesterday** -- Top page: / with 10 sessions.
   - `/` -- 10 sessions, 10 users
-  - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 6 sessions, 6 users
+  - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 7 sessions, 7 users
   - `/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/` -- 2 sessions, 2 users
   - `` -- 1 sessions, 1 users
   - `/about/` -- 1 sessions, 1 users
 
-**Recent site changes (last 7 days)** -- 103 pages/posts modified -- cross-reference with affected pages.
+**Recent site changes (last 7 days)** -- 98 pages/posts modified -- cross-reference with affected pages.
   - Home &#8211; Bariatric Counseling Center (modified 2026-07-23)
   - Therapy for Eating Disorders in San Antonio, TX (modified 2026-07-23)
   - Nutritional Counseling in San Antonio, TX (modified 2026-07-23)
@@ -53,12 +53,12 @@ _2026-07-04 -> 2026-07-31 vs 2026-06-06 -> 2026-07-03_
   - Body Confidence Counseling in San Antonio, TX (modified 2026-07-23)
 
 
-### [MINOR] UP GA4 pageviews: 66 (+18.9% vs 28d median of 56) (YoY same day: +26.9%)
+### [MINOR] UP GA4 pageviews: 68 (+22.5% vs 28d median of 56) (YoY same day: +30.8%)
 
 
 ## Yesterday's traffic by channel
 
--   13 sess  Organic Search
+-   14 sess  Organic Search
 -    9 sess  Direct
 -    3 sess  Organic Social
 
