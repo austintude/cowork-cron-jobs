@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-08-04
 
-_Generated 2026-08-05 08:02 UTC_
+_Generated 2026-08-05 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **24 sessions** / 22 users / 104 pageviews
+- **27 sessions** / 24 users / 110 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 100.0%
-- Avg session duration: 195s
+- Engagement rate: 96.3%
+- Avg session duration: 175s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,30 +16,54 @@ _2026-07-08 -> 2026-08-04 vs 2026-06-10 -> 2026-07-07_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 466 | 371 | +25.6% |
-| New users | 446 | 353 | +26.3% |
-| Sessions | 567 | 518 | +9.5% |
-| Views | 3,082 | 2,137 | +44.2% |
+| Active users | 468 | 371 | +26.1% |
+| New users | 448 | 353 | +26.9% |
+| Sessions | 570 | 518 | +10.0% |
+| Views | 3,088 | 2,137 | +44.5% |
 | Avg engagement time (per active user) | 41s | 102s | -59.8% |
 
-## 4 anomalies flagged
+## 5 anomalies flagged
 
-### [CRITICAL] UP GA4 pageviews: 104 (+85.7% vs 28d median of 56) (YoY same day: +40.5%)
-
-
-### [CRITICAL] UP GA4 avg session dur: 194.502 (+62.1% vs 28d median of 120)
+### [CRITICAL] UP GA4 pageviews: 110 (+96.4% vs 28d median of 56) (YoY same day: +48.6%)
 
 
-### [MINOR] UP GA4 sessions: 24 (+20.0% vs 28d median of 20) (YoY same day: -45.5%)
+### [MAJOR] UP GA4 avg session dur: 175.138 (+46.0% vs 28d median of 120)
 
 
-### [MINOR] UP GA4 users: 22 (+15.8% vs 28d median of 19) (YoY same day: -45.0%)
+### [MAJOR] UP GA4 sessions: 27 (+35.0% vs 28d median of 20) (YoY same day: -38.6%)
+
+**Source attribution** -- Direct rose from baseline 6 to 11 (+5).
+  - Direct: 11 yesterday vs baseline 6 (+5)
+  - Organic Search: 13 yesterday vs baseline 10 (+3)
+  - Organic Social: 0 yesterday vs baseline 2.5 (-2.5)
+
+**Direct-traffic investigation** -- Direct anomaly almost always means either (a) untagged email/SMS/QR campaign, (b) a bot spike, or (c) a referrer that strips Referer headers (some mobile apps). If this was unplanned, check server logs for unusual user agents.
+
+**Top landing pages yesterday** -- Top page: / with 10 sessions.
+  - `/` -- 10 sessions, 9 users
+  - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 6 sessions, 6 users
+  - `/blog/` -- 2 sessions, 2 users
+  - `` -- 1 sessions, 1 users
+  - `/blog/emotional-eating-and-coping-skills/` -- 1 sessions, 1 users
+
+**Recent site changes (last 7 days)** -- 98 pages/posts modified -- cross-reference with affected pages.
+  - Home &#8211; Bariatric Counseling Center (modified 2026-07-23)
+  - Therapy for Eating Disorders in San Antonio, TX (modified 2026-07-23)
+  - Nutritional Counseling in San Antonio, TX (modified 2026-07-23)
+  - Holistic Weight Loss Counseling in San Antonio, TX (modified 2026-07-23)
+  - Body Confidence Counseling in San Antonio, TX (modified 2026-07-23)
+
+
+### [MAJOR] UP GA4 users: 24 (+26.3% vs 28d median of 19) (YoY same day: -40.0%)
+
+
+### [MINOR] UP GA4 new users: 19 (+18.8% vs 28d median of 16)
 
 
 ## Yesterday's traffic by channel
 
--   11 sess  Organic Search
--   10 sess  Direct
+-   13 sess  Organic Search
+-   11 sess  Direct
 -    2 sess  Referral
 -    1 sess  Email
 
