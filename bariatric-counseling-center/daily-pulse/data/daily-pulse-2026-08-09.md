@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-08-08
 
-_Generated 2026-08-09 08:03 UTC_
+_Generated 2026-08-09 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **14 sessions** / 11 users / 40 pageviews
+- **15 sessions** / 12 users / 42 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 78.6%
-- Avg session duration: 130s
+- Engagement rate: 80.0%
+- Avg session duration: 122s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,53 +16,30 @@ _2026-07-12 -> 2026-08-08 vs 2026-06-14 -> 2026-07-11_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 439 | 411 | +6.8% |
-| New users | 418 | 396 | +5.6% |
-| Sessions | 547 | 546 | +0.2% |
-| Views | 3,120 | 2,107 | +48.1% |
-| Avg engagement time (per active user) | 44s | 56s | -20.5% |
+| Active users | 440 | 411 | +7.1% |
+| New users | 419 | 396 | +5.8% |
+| Sessions | 548 | 546 | +0.4% |
+| Views | 3,122 | 2,107 | +48.2% |
+| Avg engagement time (per active user) | 44s | 56s | -20.7% |
 
-## 5 anomalies flagged
+## 4 anomalies flagged
 
-### [MAJOR] DOWN GA4 users: 11 (-38.9% vs 28d median of 18) (YoY same day: -74.4%)
-
-
-### [MAJOR] DOWN GA4 new users: 11 (-29.0% vs 28d median of 16)
+### [MAJOR] DOWN GA4 users: 12 (-33.3% vs 28d median of 18) (YoY same day: -72.1%)
 
 
-### [MAJOR] DOWN GA4 sessions: 14 (-28.2% vs 28d median of 20) (YoY same day: -69.6%)
-
-**Source attribution** -- Organic Search rose from baseline 8 to 11 (+3).
-  - Organic Search: 11 yesterday vs baseline 8 (+3)
-  - Direct: 3 yesterday vs baseline 6 (-3)
-  - Referral: 0 yesterday vs baseline 3 (-3)
-  - Organic Social: 0 yesterday vs baseline 2 (-2)
-
-**Top landing pages yesterday** -- Top page: / with 9 sessions.
-  - `/` -- 9 sessions, 8 users
-  - `/diet-and-nutrition/healthy-living/ozempic-vs-mounjaro-vs-zepbound-for-weight-loss/` -- 2 sessions, 1 users
-  - `` -- 1 sessions, 1 users
-  - `/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/` -- 1 sessions, 1 users
-  - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 1 sessions, 1 users
-
-**Recent site changes (last 7 days)** -- 83 pages/posts modified -- cross-reference with affected pages.
-  - Coordinate with Medical Providers (modified 2026-08-06)
-  - Understanding Weight Loss Medications: Wegovy, Ozempic, Zepbound, and Mounjaro (modified 2026-08-06)
-  - Bariatric Surgery Counseling in San Antonio, TX (modified 2026-08-06)
-  - Home &#8211; Bariatric Counseling Center (modified 2026-08-06)
-  - About (modified 2026-08-06)
+### [MINOR] DOWN GA4 sessions: 15 (-23.1% vs 28d median of 20) (YoY same day: -67.4%)
 
 
-### [MAJOR] DOWN GA4 pageviews: 40 (-26.6% vs 28d median of 54) (YoY same day: -45.9%)
+### [MINOR] DOWN GA4 pageviews: 42 (-22.9% vs 28d median of 54) (YoY same day: -43.2%)
 
 
-### [MINOR] DOWN GA4 engagement rate: 0.7857 (-16.4% vs 28d median of 1)
+### [MINOR] DOWN GA4 new users: 12 (-22.6% vs 28d median of 16)
 
 
 ## Yesterday's traffic by channel
 
 -   11 sess  Organic Search
--    3 sess  Direct
+-    4 sess  Direct
 
 ## Site changes in the last 7 days
 
