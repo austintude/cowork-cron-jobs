@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-08-10
 
-_Generated 2026-08-11 08:03 UTC_
+_Generated 2026-08-11 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **26 sessions** / 22 users / 112 pageviews
+- **29 sessions** / 25 users / 118 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 80.8%
-- Avg session duration: 240s
+- Engagement rate: 82.8%
+- Avg session duration: 215s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,24 +16,28 @@ _2026-07-14 -> 2026-08-10 vs 2026-06-16 -> 2026-07-13_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 444 | 417 | +6.5% |
-| New users | 421 | 400 | +5.2% |
-| Sessions | 549 | 536 | +2.4% |
-| Views | 3,158 | 2,072 | +52.4% |
-| Avg engagement time (per active user) | 46s | 53s | -13.3% |
+| Active users | 447 | 417 | +7.2% |
+| New users | 424 | 400 | +6.0% |
+| Sessions | 552 | 536 | +3.0% |
+| Views | 3,164 | 2,072 | +52.7% |
+| Avg engagement time (per active user) | 46s | 53s | -13.8% |
 
 ## 5 anomalies flagged
 
-### [CRITICAL] UP GA4 pageviews: 112 (+105.5% vs 28d median of 54) (YoY same day: +111.3%)
+### [CRITICAL] UP GA4 pageviews: 118 (+116.5% vs 28d median of 54) (YoY same day: +122.6%)
 
 
-### [CRITICAL] UP GA4 avg session dur: 239.849 (+92.3% vs 28d median of 125)
+### [CRITICAL] UP GA4 avg session dur: 215.237 (+72.6% vs 28d median of 125)
 
 
-### [MAJOR] UP GA4 sessions: 26 (+36.8% vs 28d median of 19) (YoY same day: -21.2%)
+### [CRITICAL] UP GA4 new users: 23 (+53.3% vs 28d median of 15)
 
-**Source attribution** -- Direct rose from baseline 6 to 12 (+6).
-  - Direct: 12 yesterday vs baseline 6 (+6)
+
+### [CRITICAL] UP GA4 sessions: 29 (+52.6% vs 28d median of 19) (YoY same day: -12.1%)
+
+**Source attribution** -- Direct rose from baseline 6 to 14 (+8).
+  - Direct: 14 yesterday vs baseline 6 (+8)
+  - Organic Search: 10 yesterday vs baseline 8 (+2)
   - Organic Social: 0 yesterday vs baseline 2 (-2)
   - Email: 0 yesterday vs baseline 2 (-2)
 
@@ -43,8 +47,8 @@ _2026-07-14 -> 2026-08-10 vs 2026-06-16 -> 2026-07-13_
   - `/` -- 9 sessions, 9 users
   - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 8 sessions, 8 users
   - `` -- 2 sessions, 2 users
+  - `/staff-videos/` -- 2 sessions, 2 users
   - `/testimonials/` -- 2 sessions, 1 users
-  - `/diet-and-nutrition/healthy-living/ozempic-vs-mounjaro-vs-zepbound-for-weight-loss/` -- 1 sessions, 1 users
 
 **Recent site changes (last 7 days)** -- 83 pages/posts modified -- cross-reference with affected pages.
   - Testimonials (modified 2026-08-10)
@@ -54,16 +58,13 @@ _2026-07-14 -> 2026-08-10 vs 2026-06-16 -> 2026-07-13_
   - Bariatric Therapy in San Antonio, TX (modified 2026-08-10)
 
 
-### [MAJOR] UP GA4 new users: 20 (+33.3% vs 28d median of 15)
-
-
-### [MAJOR] UP GA4 users: 22 (+25.7% vs 28d median of 18) (YoY same day: -26.7%)
+### [MAJOR] UP GA4 users: 25 (+42.9% vs 28d median of 18) (YoY same day: -16.7%)
 
 
 ## Yesterday's traffic by channel
 
--   12 sess  Direct
--    9 sess  Organic Search
+-   14 sess  Direct
+-   10 sess  Organic Search
 -    4 sess  Referral
 -    1 sess  Unassigned
 
