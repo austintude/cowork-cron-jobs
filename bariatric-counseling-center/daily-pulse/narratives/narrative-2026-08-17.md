@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-08-15
+
+_Generated 2026-08-17T08:02:44.655348Z_
+
+### Headline
+- Sessions UP 29.7% vs 28-day median (24 sessions, 24 users Aug 15) -- solid day relative to recent baseline, though YoY is down 27.3% vs 33 sessions last year.
+- GSC shows zeros -- standard 1-3 day reporting lag, not a real drop.
+
+### What happened
+- **GA4 sessions**: 24 (+29.7% vs median of 18) -- source of lift unclear; referral actually dropped from baseline 3.5 to 1, so organic or direct likely carried this.
+- **New users**: 18 of 24 total (75%) -- unusually high new-visitor share suggests content or a link brought in fresh traffic, not return visits.
+- **Session duration**: 95s vs 122s median (-21.6%) -- shorter visits from new users may explain this; worth watching but not alarming at one day.
+- **Pageviews**: 67 (+16.5% vs median 58) -- YoY down 45.1% vs 122, which is the number Todd is more likely to ask about.
+
+### Efficacy
+- **5 pages modified Aug 13**: `/stop-the-cycle-of-binge-eating/`, `/post-bariatric-surgery-support/`, `/professional-weight-loss-therapy/`, and two variants -- all 4 days old, zero GSC impressions yet, normal indexing warmup.
+- **Post-bariatric support page**: only modified page with any GA4 signal -- 1 session in 4 days, still very early.
+- **30-day rollup**: 452,820 GSC impressions and 1,990 clicks attributed across the window -- zero pages currently ranking top 10, which is the gap to close.
+
+### Today (do these)
+1. **Identify the Aug 15 traffic source**: pull the GA4 channel breakdown for Aug 15 -- with referral down and sessions up, something (direct, organic, or a specific page) drove this; name it before Todd asks.
+2. **Check for duplicate page issue**: `/professional-weight-loss-therapy/`, `/professional-weight-loss-therapy-2/`, and `/professional-weight-loss-therapy-fb/` were all modified the same day -- confirm only one is indexed and the variants are noindexed to avoid splitting signals.
+3. **Request GSC indexing** for the five Aug 13 modified pages via Search Console's URL Inspection tool -- four days old with zero impressions means Google likely hasn't recrawled them yet.
