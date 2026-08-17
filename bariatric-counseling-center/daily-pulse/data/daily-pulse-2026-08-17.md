@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-08-16
 
-_Generated 2026-08-17 08:02 UTC_
+_Generated 2026-08-17 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **410 sessions** / 409 users / 835 pageviews
+- **476 sessions** / 476 users / 971 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
 - Engagement rate: 99.8%
-- Avg session duration: 20s
+- Avg session duration: 22s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,33 +16,33 @@ _2026-07-20 -> 2026-08-16 vs 2026-06-22 -> 2026-07-19_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 878 | 416 | +111.1% |
-| New users | 863 | 402 | +114.7% |
-| Sessions | 988 | 531 | +86.1% |
-| Views | 4,039 | 2,016 | +100.3% |
-| Avg engagement time (per active user) | 30s | 49s | -39.4% |
+| Active users | 945 | 416 | +127.2% |
+| New users | 930 | 402 | +131.3% |
+| Sessions | 1,054 | 531 | +98.5% |
+| Views | 4,175 | 2,016 | +107.1% |
+| Avg engagement time (per active user) | 28s | 49s | -42.3% |
 
 ## 5 anomalies flagged
 
-### [CRITICAL] UP GA4 new users: 410 (+2633.3% vs 28d median of 15)
+### [CRITICAL] UP GA4 new users: 477 (+3080.0% vs 28d median of 15)
 
 
-### [CRITICAL] UP GA4 users: 409 (+2172.2% vs 28d median of 18) (YoY same day: +5742.9%)
+### [CRITICAL] UP GA4 users: 476 (+2544.4% vs 28d median of 18) (YoY same day: +6700.0%)
 
 
-### [CRITICAL] UP GA4 sessions: 410 (+2057.9% vs 28d median of 19) (YoY same day: +5025.0%)
+### [CRITICAL] UP GA4 sessions: 476 (+2405.3% vs 28d median of 19) (YoY same day: +5850.0%)
 
-**Source attribution** -- Direct rose from baseline 6.5 to 405 (+398.5).
-  - Direct: 405 yesterday vs baseline 6.5 (+398.5)
-  - Organic Search: 4 yesterday vs baseline 11 (-7)
+**Source attribution** -- Direct rose from baseline 6.5 to 470 (+463.5).
+  - Direct: 470 yesterday vs baseline 6.5 (+463.5)
+  - Organic Search: 5 yesterday vs baseline 11 (-6)
   - Referral: 0 yesterday vs baseline 3.5 (-3.5)
   - Organic Social: 0 yesterday vs baseline 2 (-2)
   - Organic Video: 0 yesterday vs baseline 2 (-2)
 
 **Direct-traffic investigation** -- Direct anomaly almost always means either (a) untagged email/SMS/QR campaign, (b) a bot spike, or (c) a referrer that strips Referer headers (some mobile apps). If this was unplanned, check server logs for unusual user agents.
 
-**Top landing pages yesterday** -- Top page: / with 9 sessions.
-  - `/` -- 9 sessions, 9 users
+**Top landing pages yesterday** -- Top page: / with 10 sessions.
+  - `/` -- 10 sessions, 10 users
   - `/emotional-eating/what-is-emotional-eating/` -- 3 sessions, 3 users
   - `/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/` -- 3 sessions, 3 users
   - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 3 sessions, 3 users
@@ -56,16 +56,16 @@ _2026-07-20 -> 2026-08-16 vs 2026-06-22 -> 2026-07-19_
   - Professional Weight Loss Therapy &#8211; fb (modified 2026-08-13)
 
 
-### [CRITICAL] UP GA4 pageviews: 835 (+1315.3% vs 28d median of 59) (YoY same day: +1841.9%)
+### [CRITICAL] UP GA4 pageviews: 971 (+1545.8% vs 28d median of 59) (YoY same day: +2158.1%)
 
 
-### [CRITICAL] DOWN GA4 avg session dur: 20.298 (-83.3% vs 28d median of 122)
+### [CRITICAL] DOWN GA4 avg session dur: 22.252 (-81.7% vs 28d median of 122)
 
 
 ## Yesterday's traffic by channel
 
--  405 sess  Direct
--    4 sess  Organic Search
+-  470 sess  Direct
+-    5 sess  Organic Search
 -    1 sess  AI Assistant
 
 ## Site changes in the last 7 days
