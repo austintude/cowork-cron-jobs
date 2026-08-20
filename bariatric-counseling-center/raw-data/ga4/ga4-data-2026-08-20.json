@@ -7,13 +7,13 @@
   },
   "property_id": "254059736",
   "summary": {
-    "sessions": 668,
-    "users": 641,
-    "new_users": 629,
-    "pageviews": 1478,
-    "engagement_rate": 0.9865,
-    "avg_session_duration_sec": 55.5977,
-    "bounce_rate": 0.0135
+    "sessions": 674,
+    "users": 647,
+    "new_users": 635,
+    "pageviews": 1490,
+    "engagement_rate": 0.9866,
+    "avg_session_duration_sec": 55.1395,
+    "bounce_rate": 0.0134
   },
   "yoy_summary": {
     "sessions": 307,
@@ -25,10 +25,10 @@
     "bounce_rate": 0.1954
   },
   "yoy_pct_change": {
-    "sessions_pct": 117.6,
-    "users_pct": 150.4,
-    "pageviews_pct": -24.0,
-    "avg_session_duration_pct": -68.2
+    "sessions_pct": 119.5,
+    "users_pct": 152.7,
+    "pageviews_pct": -23.4,
+    "avg_session_duration_pct": -68.5
   },
   "daily_breakdown": [
     {
@@ -63,8 +63,13 @@
     },
     {
       "date": "20260819",
-      "sessions": 40,
-      "totalUsers": 38
+      "sessions": 41,
+      "totalUsers": 39
+    },
+    {
+      "date": "20260820",
+      "sessions": 5,
+      "totalUsers": 5
     }
   ],
   "top_landing_pages": [
@@ -104,6 +109,13 @@
       "avg_session_duration_sec": 6.9122
     },
     {
+      "page": "/diet-and-nutrition/gut-health/gastroparesis-aka-stomach-paralysis/",
+      "sessions": 6,
+      "users": 5,
+      "engagement_rate": 1,
+      "avg_session_duration_sec": 35.8174
+    },
+    {
       "page": "(not set)",
       "sessions": 5,
       "users": 5,
@@ -111,18 +123,18 @@
       "avg_session_duration_sec": 0
     },
     {
-      "page": "/diet-and-nutrition/gut-health/gastroparesis-aka-stomach-paralysis/",
-      "sessions": 5,
-      "users": 4,
-      "engagement_rate": 1,
-      "avg_session_duration_sec": 42.2265
-    },
-    {
       "page": "/emotional-eating/what-is-emotional-eating/",
       "sessions": 5,
       "users": 5,
       "engagement_rate": 1,
       "avg_session_duration_sec": 63.6964
+    },
+    {
+      "page": "/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+      "sessions": 5,
+      "users": 5,
+      "engagement_rate": 0.8,
+      "avg_session_duration_sec": 3.5385
     },
     {
       "page": "/contact/",
@@ -216,13 +228,6 @@
       "avg_session_duration_sec": 6.4276
     },
     {
-      "page": "/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
-      "sessions": 3,
-      "users": 3,
-      "engagement_rate": 0.6667,
-      "avg_session_duration_sec": 3.3323
-    },
-    {
       "page": "/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
       "sessions": 3,
       "users": 3,
@@ -247,15 +252,15 @@
   "top_sources": [
     {
       "source_medium": "(direct) / (none)",
-      "sessions": 562,
-      "users": 555,
+      "sessions": 567,
+      "users": 560,
       "engagement_rate": 0.9947
     },
     {
       "source_medium": "google / organic",
-      "sessions": 74,
-      "users": 63,
-      "engagement_rate": 0.9189
+      "sessions": 75,
+      "users": 64,
+      "engagement_rate": 0.92
     },
     {
       "source_medium": "drbdig.com / referral",
@@ -366,6 +371,11 @@
       "sessions": 7
     },
     {
+      "page": "/diet-and-nutrition/gut-health/gastroparesis-aka-stomach-paralysis/",
+      "pageviews": 12,
+      "sessions": 6
+    },
+    {
       "page": "/ourprogram/details/",
       "pageviews": 12,
       "sessions": 6
@@ -381,11 +391,6 @@
       "sessions": 2
     },
     {
-      "page": "/diet-and-nutrition/gut-health/gastroparesis-aka-stomach-paralysis/",
-      "pageviews": 10,
-      "sessions": 5
-    },
-    {
       "page": "/emotional-eating/what-is-emotional-eating/",
       "pageviews": 10,
       "sessions": 5
@@ -399,6 +404,16 @@
       "page": "/self-improvement/mental-health/4-practical-strategies-to-improve-body-image-after-weight-loss/",
       "pageviews": 10,
       "sessions": 4
+    },
+    {
+      "page": "/the-importance-of-multi-disciplinary-care-for-treating-binge-eating-disorder-why-a-team-approach-is-best/",
+      "pageviews": 10,
+      "sessions": 4
+    },
+    {
+      "page": "/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+      "pageviews": 9,
+      "sessions": 5
     },
     {
       "page": "/author/sara-broussard/",
@@ -439,30 +454,20 @@
       "page": "/author/lartzberger/",
       "pageviews": 6,
       "sessions": 3
-    },
-    {
-      "page": "/author/shamilton/",
-      "pageviews": 6,
-      "sessions": 3
-    },
-    {
-      "page": "/diet-and-nutrition/dietitians-or-nutritionists-breaking-down-the-differences/",
-      "pageviews": 6,
-      "sessions": 3
     }
   ],
   "channel_breakdown": [
     {
       "channel": "Direct",
-      "sessions": 562,
-      "users": 555,
+      "sessions": 567,
+      "users": 560,
       "engagement_rate": 0.9947
     },
     {
       "channel": "Organic Search",
-      "sessions": 77,
-      "users": 66,
-      "engagement_rate": 0.9221
+      "sessions": 78,
+      "users": 67,
+      "engagement_rate": 0.9231
     },
     {
       "channel": "Referral",

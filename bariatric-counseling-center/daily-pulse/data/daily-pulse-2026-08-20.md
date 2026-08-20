@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-08-19
 
-_Generated 2026-08-20 08:02 UTC_
+_Generated 2026-08-20 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **40 sessions** / 38 users / 109 pageviews
+- **41 sessions** / 39 users / 111 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 97.5%
-- Avg session duration: 83s
+- Engagement rate: 97.6%
+- Avg session duration: 81s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,24 +16,24 @@ _2026-07-23 -> 2026-08-19 vs 2026-06-25 -> 2026-07-22_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 1,006 | 405 | +148.4% |
-| New users | 988 | 390 | +153.3% |
-| Sessions | 1,123 | 501 | +124.2% |
-| Views | 4,322 | 1,784 | +142.3% |
+| Active users | 1,007 | 405 | +148.6% |
+| New users | 989 | 390 | +153.6% |
+| Sessions | 1,124 | 501 | +124.4% |
+| Views | 4,324 | 1,784 | +142.4% |
 | Avg engagement time (per active user) | 27s | 44s | -37.2% |
 
 ## 5 anomalies flagged
 
-### [CRITICAL] UP GA4 new users: 35 (+100.0% vs 28d median of 18)
+### [CRITICAL] UP GA4 new users: 36 (+105.7% vs 28d median of 18)
 
 
-### [CRITICAL] UP GA4 users: 38 (+81.0% vs 28d median of 21) (YoY same day: +137.5%)
+### [CRITICAL] UP GA4 users: 39 (+85.7% vs 28d median of 21) (YoY same day: +143.8%)
 
 
-### [CRITICAL] UP GA4 sessions: 40 (+70.2% vs 28d median of 24) (YoY same day: +150.0%)
+### [CRITICAL] UP GA4 sessions: 41 (+74.5% vs 28d median of 24) (YoY same day: +156.2%)
 
-**Source attribution** -- Direct rose from baseline 7.5 to 21 (+13.5).
-  - Direct: 21 yesterday vs baseline 7.5 (+13.5)
+**Source attribution** -- Direct rose from baseline 7.5 to 22 (+14.5).
+  - Direct: 22 yesterday vs baseline 7.5 (+14.5)
   - Organic Video: 0 yesterday vs baseline 2 (-2)
 
 **Direct-traffic investigation** -- Direct anomaly almost always means either (a) untagged email/SMS/QR campaign, (b) a bot spike, or (c) a referrer that strips Referer headers (some mobile apps). If this was unplanned, check server logs for unusual user agents.
@@ -42,8 +42,8 @@ _2026-07-23 -> 2026-08-19 vs 2026-06-25 -> 2026-07-22_
   - `/` -- 12 sessions, 12 users
   - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 7 sessions, 7 users
   - `/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/` -- 4 sessions, 4 users
+  - `/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/` -- 3 sessions, 3 users
   - `/ourprogram/details/` -- 2 sessions, 1 users
-  - `/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/` -- 2 sessions, 2 users
 
 **Recent site changes (last 7 days)** -- 91 pages/posts modified -- cross-reference with affected pages.
   - Stop the Cycle of Binge Eating &#8211; You Don&#8217;t Have to Face This Alone (modified 2026-08-13)
@@ -53,15 +53,15 @@ _2026-07-23 -> 2026-08-19 vs 2026-06-25 -> 2026-07-22_
   - Professional Weight Loss Therapy &#8211; fb (modified 2026-08-13)
 
 
-### [CRITICAL] UP GA4 pageviews: 109 (+61.5% vs 28d median of 68) (YoY same day: +13.5%)
+### [CRITICAL] UP GA4 pageviews: 111 (+64.4% vs 28d median of 68) (YoY same day: +15.6%)
 
 
-### [MAJOR] DOWN GA4 avg session dur: 83.3228 (-31.6% vs 28d median of 122)
+### [MAJOR] DOWN GA4 avg session dur: 81.4679 (-33.2% vs 28d median of 122)
 
 
 ## Yesterday's traffic by channel
 
--   21 sess  Direct
+-   22 sess  Direct
 -   12 sess  Organic Search
 -    4 sess  Referral
 -    1 sess  AI Assistant
