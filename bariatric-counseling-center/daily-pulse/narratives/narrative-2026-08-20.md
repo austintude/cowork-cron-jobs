@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-08-18
+
+_Generated 2026-08-20T08:03:05.922712Z_
+
+### Headline
+- Users UP 28% vs. 28-day median (25 users, 26 sessions on Aug 18) -- solid day despite YoY being down 14%.
+- Engagement is the real story: avg session duration hit 179s, up 47% vs. median -- people arriving are actually reading.
+
+### What happened
+- **Avg session duration**: 179s vs. 122s median (+47%) -- strongest quality signal in the data today, suggests good content-to-intent match.
+- **Users**: 25 vs. 20-day median -- up meaningfully, though YoY same day (29 users in 2025) means raw volume still hasn't fully recovered.
+- **New users**: 20 of 25 total (80%) -- high new-user share; worth checking if this ties to any social or referral push.
+- **GSC**: zeros across impressions, clicks, position -- standard 1-3 day reporting lag, not a real drop.
+
+### Efficacy
+- **30-day window**: 3 pages launched, 118 pages modified, 503K GSC impressions and 1,255 GA4 sessions attributed across those touches.
+- **Top launches this run**: 5 page-modifications on Aug 13 surfaced today -- `/stop-the-cycle-of-binge-eating/`, `/post-bariatric-surgery-support/`, and three `/professional-weight-loss-therapy/` variants -- all medium confidence, no impression data yet (7 days old, likely still indexing).
+- **Ranking data**: 0 pages at top-3 or top-10 in the 30-day window -- this is the gap to raise with Todd.
+
+### Today (do these)
+1. **Audit the duplicate pages**: Three variants of `/professional-weight-loss-therapy/` were all modified Aug 13 -- confirm whether `-2` and `-fb` are intentional landing pages or accidental drafts that could cause crawl confusion, and set to noindex or redirect if they're not live ad destinations.
+2. **Check what drove the high-engagement session day**: 80% new users + 47% longer sessions is an unusual combo -- look at GA4 traffic source breakdown to see if a referral, social post, or ad click explains it before the Todd meeting.
+3. **Flag the ranking gap**: Zero top-10 rankings in 30 days with 118 page modifications is worth a direct conversation -- pull two or three of the modified URLs and spot-check their current GSC position so you have specifics ready.
