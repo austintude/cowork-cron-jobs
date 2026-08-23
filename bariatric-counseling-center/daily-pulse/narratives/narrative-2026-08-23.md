@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-08-21
+
+_Generated 2026-08-23T08:03:04.331424Z_
+
+### Headline
+- Sessions UP 18% vs 28d median (29 sessions, 25 new users) -- modest positive day, but avg session duration cratered 79% to 26 seconds vs 121-second median.
+- YoY sessions are DOWN 61% -- the week-over-week lift is real, the year-over-year hole is not closed.
+
+### What happened
+- **Avg session duration**: 26 sec vs 121-sec median (-79%) -- CRITICAL flag, suggests bounce traffic or a broken page experience; needs same-day investigation.
+- **New users**: 25 vs 18-user median (+35%) -- new eyeballs are arriving but not staying; reinforces the session-duration concern.
+- **GSC**: showing zeros for 8/21 -- normal 1-3 day reporting lag, not a real drop.
+- **Aug 13 page edits surfaced**: 5 WP pages flagged as modified (binge eating, post-bariatric support, weight loss therapy variants) -- 10 days old, likely already indexed but no GSC data yet.
+
+### Efficacy
+- **30-day window**: 3 pages launched, 107 pages modified, 553,973 GSC impressions and 2,352 clicks attributed across tracked content.
+- **Top launches**: All top_launches entries are git-commit tracking records, not rankable pages -- no SERP position data to report this cycle.
+- **DRB-1146 psych-eval BOFU pages** (6530-6532) rebuilt and published on staging 8/21 -- still pre-production, zero impressions expected.
+
+### Today (do these)
+1. **Diagnose the session duration crash**: pull GA4 landing page report for 8/21 and look for one page driving short sessions -- a broken layout, mis-redirect, or thin page is the likely cause.
+2. **Confirm Aug 13 edits are live and indexed**: spot-check `/stop-the-cycle-of-binge-eating-you-dont-have-to-face-this-alone/` and `/post-bariatric-surgery-support/` in GSC URL Inspection -- 10 days is enough time for indexing; request if not yet indexed.
+3. **Check if DRB-1146 psych-eval pages are cleared for production push**: the staging work is done; confirm with Todd whether those BOFU pages should go live this week.
