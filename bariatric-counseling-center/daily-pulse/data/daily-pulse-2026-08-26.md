@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-08-25
 
-_Generated 2026-08-26 08:02 UTC_
+_Generated 2026-08-26 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **28 sessions** / 27 users / 67 pageviews
+- **32 sessions** / 31 users / 75 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 92.9%
-- Avg session duration: 36s
+- Engagement rate: 93.8%
+- Avg session duration: 1339s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,27 +16,48 @@ _2026-07-29 -> 2026-08-25 vs 2026-07-01 -> 2026-07-28_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 1,052 | 434 | +142.4% |
-| New users | 1,034 | 415 | +149.2% |
-| Sessions | 1,159 | 535 | +116.6% |
-| Views | 3,024 | 3,036 | -0.4% |
-| Avg engagement time (per active user) | 27s | 40s | -33.4% |
+| Active users | 1,056 | 434 | +143.3% |
+| New users | 1,038 | 415 | +150.1% |
+| Sessions | 1,164 | 535 | +117.6% |
+| Views | 3,032 | 3,036 | -0.1% |
+| Avg engagement time (per active user) | 27s | 40s | -32.2% |
 
-## 3 anomalies flagged
+## 4 anomalies flagged
 
-### [CRITICAL] DOWN GA4 avg session dur: 36.3885 (-60.0% vs 28d median of 91)
-
-
-### [MINOR] UP GA4 users: 27 (+17.4% vs 28d median of 23) (YoY same day: +42.1%)
+### [CRITICAL] UP GA4 avg session dur: 1339.21 (+1370.9% vs 28d median of 91)
 
 
-### [MINOR] UP GA4 new users: 22 (+15.8% vs 28d median of 19)
+### [MAJOR] UP GA4 new users: 26 (+36.8% vs 28d median of 19)
+
+
+### [MAJOR] UP GA4 users: 31 (+34.8% vs 28d median of 23) (YoY same day: +63.2%)
+
+
+### [MAJOR] UP GA4 sessions: 32 (+28.0% vs 28d median of 25) (YoY same day: +28.0%)
+
+**Source attribution** -- Organic Search rose from baseline 11 to 24 (+13).
+  - Organic Search: 24 yesterday vs baseline 11 (+13)
+  - Organic Video: 0 yesterday vs baseline 2 (-2)
+
+**Top landing pages yesterday** -- Top page: /healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/ with 14 sessions.
+  - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 14 sessions, 13 users
+  - `/` -- 6 sessions, 6 users
+  - `/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/` -- 2 sessions, 2 users
+  - `` -- 1 sessions, 1 users
+  - `/about/` -- 1 sessions, 1 users
+
+**Recent site changes (last 7 days)** -- 25 pages/posts modified -- cross-reference with affected pages.
+  - What Actually Happens in a Bariatric Psych Eval, and What It Costs (modified 2026-08-21)
+  - How to Find a Bariatric Psychological Evaluation Near You (modified 2026-08-21)
+  - You Can Complete Your Bariatric Psych Eval From Anywhere in Texas (modified 2026-08-21)
+  - Stop the Cycle of Binge Eating &#8211; You Don&#8217;t Have to Face This Alone (modified 2026-08-13)
+  - Maintain Your Bariatric Surgery Success (modified 2026-08-13)
 
 
 ## Yesterday's traffic by channel
 
--   22 sess  Organic Search
--    5 sess  Direct
+-   24 sess  Organic Search
+-    7 sess  Direct
 -    1 sess  Referral
 
 ## Site changes in the last 7 days
