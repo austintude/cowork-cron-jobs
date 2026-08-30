@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-08-29
 
-_Generated 2026-08-30 08:02 UTC_
+_Generated 2026-08-30 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **22 sessions** / 20 users / 66 pageviews
+- **24 sessions** / 22 users / 70 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 95.5%
-- Avg session duration: 65s
+- Engagement rate: 95.8%
+- Avg session duration: 62s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,27 +16,21 @@ _2026-08-02 -> 2026-08-29 vs 2026-07-05 -> 2026-08-01_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 1,056 | 467 | +126.1% |
-| New users | 1,039 | 452 | +129.9% |
-| Sessions | 1,170 | 576 | +103.1% |
-| Views | 3,089 | 3,120 | -1.0% |
+| Active users | 1,058 | 467 | +126.6% |
+| New users | 1,041 | 452 | +130.3% |
+| Sessions | 1,172 | 576 | +103.5% |
+| Views | 3,093 | 3,120 | -0.9% |
 | Avg engagement time (per active user) | 27s | 44s | -39.0% |
 
-## 3 anomalies flagged
+## 1 anomalies flagged
 
-### [MAJOR] DOWN GA4 avg session dur: 65.3379 (-29.9% vs 28d median of 93)
-
-
-### [MINOR] DOWN GA4 sessions: 22 (-18.5% vs 28d median of 27) (YoY same day: +2100.0%)
-
-
-### [MINOR] DOWN GA4 users: 20 (-16.7% vs 28d median of 24) (YoY same day: +1900.0%)
+### [MAJOR] DOWN GA4 avg session dur: 61.5805 (-34.0% vs 28d median of 93)
 
 
 ## Yesterday's traffic by channel
 
--   12 sess  Direct
--    8 sess  Organic Search
+-   13 sess  Direct
+-    9 sess  Organic Search
 -    2 sess  Organic Social
 
 ## Site changes in the last 7 days
