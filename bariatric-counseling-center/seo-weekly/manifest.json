@@ -1,7 +1,8 @@
 {
- "latest": "seo-data-2026-08-24.json",
- "updated": "2026-08-24T10:19:36.180947+00:00",
+ "latest": "seo-data-2026-08-31.json",
+ "updated": "2026-08-31T10:18:51.815249+00:00",
  "files": [
+  "seo-data-2026-08-31.json",
   "seo-data-2026-08-24.json",
   "seo-data-2026-08-20.json",
   "seo-data-2026-08-17.json",
@@ -36,9 +37,9 @@
   "seo-data-2026-04-23.json"
  ],
  "last_run": {
-  "date": "2026-08-24",
+  "date": "2026-08-31",
   "promoted": true,
-  "reason": "Run 2026-08-24 (Monday, on schedule). 31/31 SERP rendered checks, 0 CAPTCHA. top-1: 4, top-3: 9, top-10: 16, avg 4.06 (prev 08-20: 4/9/16/4.38) -- counts flat, avg improved. NEW ENTRY: weight loss counseling or therapy #3 (was unranked). Rising: OA alternative SA 6->5. Declining: bariatric psych eval near me 8->9, overeaters support SA 3->4, eating disorder counseling SA 9->off page 1 (GSC pos 11.8, prime quick-win). GSC 7d fresh (08-24 fetch): 9 clicks / 1530 imp query-dim, 40 discovery candidates, avg pos 22.85. Links 10/10 ok, 0 broken. WP: 0 new pages, 0 new posts, 0 modified since 08-20 -- content pipeline idle ~1 month. Esperanza: 4 outranks (was 3; binge eating SA #2v6, food addiction SA #2v6, ED therapist SA #4 v off, ED counseling SA #3 v off), 2 gaps, 2 BCC wins (emotional eating SA 2v4, overeaters support SA 4v6), still no new pages since April (~19 weeks). Ahrefs 'Insufficient plan' 4th week running.",
-  "data_added_for_audit": "seo-data-2026-08-24.json"
+  "reason": "Run 2026-08-31 (Monday, on schedule). 31/31 SERP rendered checks via Claude in Chrome (built-in Browser pane's Google navigation was unavailable this run -- switched browsers mid-run, no CAPTCHA). top-1: 4, top-3: 9, top-10: 14, avg 3.14 (prev 08-24: 4/9/16/4.06) -- top-10 count down 2 but avg position improved (fewer but stronger rankings). NEW ENTRY: eating disorder counseling SA back to #9 (was off page 1). Rising: food addiction treatment SA 6->5, bariatric therapist 3->2, OA alternative SA 5->4, overeaters support SA 4->3. Declining: bariatric psych eval near me 9->off page1 (geo-bias confound -- see note), overeaters anonymous SA 8->off page1, overeaters help 10->off page1, weight loss counseling or therapy 3->4. GEO-BIAS NOTE: national 'near me' and no-geo-modifier queries (bariatric psychological evaluation near me, weight loss counselor, bariatric therapy, etc.) are resolving to Austin/Wimberley-area local-pack results from this checking location, not neutral national results -- treat 'null' positions on ungeoed keywords as a known measurement artifact, not necessarily a real ranking loss. GSC 7d fresh (08-31 fetch): summary.total_clicks undercounts (query-dim sums to 14; true page-level total is 54 clicks / 8713 impressions), 40 discovery candidates, avg pos 26.49. Links 10/10 pages load clean (200), 0 hard-broken found; full 5-link click-through was abbreviated to page-load verification this run (WAF 403s non-browser UAs, so curl fallback unavailable). CONTENT FLAG: /staff/meet-dr-sara-hamilton/ renders Nancy Albus's bio content under Sara Hamilton's title/URL -- needs manual WP check. WP: 3 NEW PAGES found (ids 6530/6531/6532, published 2026-08-21, bariatric-psych-eval-near-me/in-texas/what-happens-in cluster) that were missed by last week's WP diff -- repointed keywords-master.json targetUrl for 'bariatric psychological evaluation near me' to the new dedicated page. 5 posts re-modified 08-21/08-22 (normal weekly blog cadence). Esperanza: 4 outranks (binge eating SA #2v6, food addiction SA #2v5, ED therapist SA #5 v off, ED counseling SA #3v9), 1 clean gap (ED therapist SA), 2 BCC wins (emotional eating SA 2v4, overeaters support SA 3v6, both improved from last week), confirmed via WP REST still no new pages since April 22 (~19 weeks) and zero posts. Ahrefs 'Insufficient plan' 5th week running.",
+  "data_added_for_audit": "seo-data-2026-08-31.json"
  }
 }
