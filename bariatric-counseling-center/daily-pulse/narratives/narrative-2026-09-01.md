@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-08-30
+
+_Generated 2026-09-01T08:04:00.664760Z_
+
+### Headline
+- Sessions DOWN 22% (21 vs. 27d median) and pageviews DOWN 24% (56 vs. 74 median) for Aug 30 -- both minor, no YoY comparison available (site was likely not tracked this time last year).
+- No GSC data yet for Aug 30 -- standard 1-3 day reporting lag, not a real drop.
+
+### What happened
+- **Sessions**: 21 vs. 28d median of 27 -- soft day, but engagement rate was strong at 90% and avg session duration was 91 seconds, so the people who came, stayed.
+- **GSC impressions/clicks**: showing zero -- lag only, expect data to populate by tomorrow.
+- **New publishes (first seen today)**: 3 psych-eval pages + 1 ADHD/eating blog post published Aug 21-22, now surfacing in the system -- 10 days old, GSC data should be trickling in soon.
+- **"Preparing for Bariatric Surgery" checklist** was modified Aug 21 -- worth confirming the update is substantive enough to request re-indexing.
+
+### Efficacy
+- **Launched 30d**: 8 pages, 1 ranking top 10, 0 in top 3 -- 659K impressions and 2,810 GSC clicks attributed across all tracked content.
+- **Most movement to watch**: the 3 psych-eval pages (/what-happens-in-a-bariatric-psych-eval/, /bariatric-psychological-evaluation-near-me/, /bariatric-psych-eval-in-texas/) are 10 days old with no impression data showing yet -- indexing warmup is the likely explanation, not a crawl problem.
+- **Indexing warmup**: 4 new launches (3 pages + 1 post) still pre-impression; normal at 10 days but worth a manual GSC check today.
+
+### Today (do these)
+1. **Check GSC coverage** for the 3 Aug 21 psych-eval pages and the ADHD post -- confirm Google has indexed them; if not, submit via URL Inspection and note it for Todd.
+2. **Confirm the "Mental Health Checklist" update** at /preparing-for-bariatric-surgery-a-mental-health-checklist/ -- if the changes were substantial (new sections, updated recommendations), request re-indexing so Google picks up the revised version.
+3. **Flag the soft Aug 30 traffic day for context** -- engagement quality was high (90% rate, 91s avg), so this looks like a low-volume day rather than a quality problem; have that framing ready for Todd's meeting.
