@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-09-02
+
+_Generated 2026-09-04T08:03:11.961020Z_
+
+### Headline
+- Sessions DOWN 22% vs 28-day median (21 vs 27 baseline) -- soft day across every metric, no single crisis.
+- Sept 2 is a Tuesday post-Labor Day; holiday weekend hangover likely explains the across-the-board dip.
+
+### What happened
+- **Sessions / users / pageviews**: all 20-38% below 28-day median -- consistent pattern, not one channel failing.
+- **Avg session duration**: 52s vs 91s median (-42%) -- the sharpest drop; suggests visitors found what they needed quickly, or a higher share of bounced new users skewing the average.
+- **GSC impressions/clicks**: showing zeros -- standard 1-3 day reporting lag, not a real signal.
+- **New content surfaced**: 3 bariatric psych eval pages + 1 ADHD post (all published Aug 21-22) just appeared in the tracking system today -- indexing warmup clock starts now.
+
+### Efficacy
+- **30-day window**: 8 pages launched, 1 ranking top 10, 686K GSC impressions and 1,440 GA4 sessions attributed across the window.
+- **New pages to watch**: `/what-happens-in-a-bariatric-psych-eval/`, `/bariatric-psychological-evaluation-near-me/`, `/bariatric-psych-eval-in-texas/` -- all 14 days old with no impression data yet; next 2 weeks are critical.
+- **Staging issue flagged**: `bcc-blog-redate-drip` has been blocked 4 consecutive runs due to staging12 login failure -- not resolved as of Sept 1.
+
+### Today (do these)
+1. **Fix staging12 login**: the redate drip has failed 4 runs in a row -- log into staging12 manually, reset credentials, and confirm the next run can execute.
+2. **Request GSC indexing**: submit the 3 Aug-21 psych eval pages via Search Console's URL Inspection tool -- they're 14 days old and still dark.
+3. **Check holiday attribution**: glance at Sept 1 (Monday) numbers to confirm the dip tracks Labor Day and not a technical issue, so you have a clean answer for Todd.
