@@ -1,14 +1,14 @@
 # BCC Daily Pulse -- 2026-09-04
 
-_Generated 2026-09-05 08:02 UTC_
+_Generated 2026-09-05 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **28 sessions** / 25 users / 85 pageviews
+- **30 sessions** / 27 users / 89 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 82.1%
-- Avg session duration: 135s
+- Engagement rate: 83.3%
+- Avg session duration: 126s
 
 ## Last 28 days vs prior 28 days
 
@@ -16,20 +16,20 @@ _2026-08-08 -> 2026-09-04 vs 2026-07-11 -> 2026-08-07_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 1,153 | 446 | +158.5% |
-| New users | 1,137 | 424 | +168.2% |
-| Sessions | 1,273 | 553 | +130.2% |
-| Views | 3,251 | 3,133 | +3.8% |
+| Active users | 1,154 | 446 | +158.7% |
+| New users | 1,138 | 424 | +168.4% |
+| Sessions | 1,275 | 553 | +130.6% |
+| Views | 3,255 | 3,133 | +3.9% |
 | Avg engagement time (per active user) | 28s | 42s | -33.7% |
 
 ## 1 anomalies flagged
 
-### [MAJOR] UP GA4 avg session dur: 134.883 (+48.0% vs 28d median of 91)
+### [MAJOR] UP GA4 avg session dur: 126.183 (+38.4% vs 28d median of 91)
 
 
 ## Yesterday's traffic by channel
 
--   13 sess  Direct
+-   15 sess  Direct
 -    9 sess  Organic Search
 -    5 sess  Email
 -    1 sess  Referral
