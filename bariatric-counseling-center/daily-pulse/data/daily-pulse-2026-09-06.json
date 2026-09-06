@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-06T08:02:45.031744Z",
+  "fetched_at": "2026-09-06T12:00:30.054483Z",
   "for_date": "2026-09-05",
   "baseline_window": {
     "start": "2026-08-08",
@@ -9,12 +9,12 @@
   "ga4_property_id": "254059736",
   "gsc_property": "https://www.bariatriccounselingcenter.com/",
   "snapshot": {
-    "sessions": 15,
-    "users": 15,
-    "new_users": 11,
-    "pageviews": 29,
-    "engagement_rate": 0.9333,
-    "avg_session_duration": 11.9213,
+    "sessions": 19,
+    "users": 19,
+    "new_users": 15,
+    "pageviews": 37,
+    "engagement_rate": 0.9474,
+    "avg_session_duration": 11.3918,
     "gsc_impressions": 0,
     "gsc_clicks": 0,
     "gsc_position": 0.0
@@ -24,12 +24,12 @@
     "current": {
       "start": "2026-08-09",
       "end": "2026-09-05",
-      "sessions": 1286,
-      "active_users": 1165,
-      "total_users": 1165,
-      "new_users": 1148,
-      "pageviews": 3274,
-      "avg_session_duration": 102.6565,
+      "sessions": 1290,
+      "active_users": 1169,
+      "total_users": 1169,
+      "new_users": 1152,
+      "pageviews": 3282,
+      "avg_session_duration": 102.3673,
       "avg_engagement_time_per_active_user": 27.0
     },
     "prior": {
@@ -44,78 +44,62 @@
       "avg_engagement_time_per_active_user": 44.0
     },
     "pct_change": {
-      "sessions_pct": 134.7,
-      "active_users_pct": 164.8,
-      "total_users_pct": 164.2,
-      "new_users_pct": 174.0,
-      "pageviews_pct": 4.9,
-      "avg_session_duration_pct": -34.5,
+      "sessions_pct": 135.4,
+      "active_users_pct": 165.7,
+      "total_users_pct": 165.1,
+      "new_users_pct": 174.9,
+      "pageviews_pct": 5.1,
+      "avg_session_duration_pct": -34.7,
       "avg_engagement_time_per_active_user_pct": -38.6
     }
   },
   "anomaly_summary": {
     "total": 5,
-    "critical": 3,
-    "major": 2,
+    "critical": 2,
+    "major": 3,
     "minor": 0
   },
   "anomalies": [
     {
       "metric": "GA4 avg session dur",
-      "actual": 11.9213,
+      "actual": 11.3918,
       "baseline_28d_median": 91.16,
       "yoy_same_day": null,
-      "pct_delta": -86.9,
+      "pct_delta": -87.5,
       "severity": "CRITICAL",
       "direction": "down",
-      "headline": "DOWN GA4 avg session dur: 11.9213 (-86.9% vs 28d median of 91)"
+      "headline": "DOWN GA4 avg session dur: 11.3918 (-87.5% vs 28d median of 91)"
     },
     {
       "metric": "GA4 pageviews",
-      "actual": 29,
+      "actual": 37,
       "baseline_28d_median": 80.5,
       "yoy_same_day": 0,
-      "pct_delta": -64.0,
+      "pct_delta": -54.0,
       "severity": "CRITICAL",
       "direction": "down",
-      "headline": "DOWN GA4 pageviews: 29 (-64.0% vs 28d median of 80)"
-    },
-    {
-      "metric": "GA4 new users",
-      "actual": 11,
-      "baseline_28d_median": 22.0,
-      "yoy_same_day": null,
-      "pct_delta": -50.0,
-      "severity": "CRITICAL",
-      "direction": "down",
-      "headline": "DOWN GA4 new users: 11 (-50.0% vs 28d median of 22)"
+      "headline": "DOWN GA4 pageviews: 37 (-54.0% vs 28d median of 80)"
     },
     {
       "metric": "GA4 sessions",
-      "actual": 15,
+      "actual": 19,
       "baseline_28d_median": 29.0,
       "yoy_same_day": 0,
-      "pct_delta": -48.3,
+      "pct_delta": -34.5,
       "severity": "MAJOR",
       "direction": "down",
-      "headline": "DOWN GA4 sessions: 15 (-48.3% vs 28d median of 29)",
+      "headline": "DOWN GA4 sessions: 19 (-34.5% vs 28d median of 29)",
       "unpacked": {
         "chain": [
           {
             "step": "Source attribution",
-            "finding": "Organic Search fell from baseline 12 to 5 (-7).",
+            "finding": "Organic Search fell from baseline 12 to 7 (-5).",
             "breakdown": [
               {
                 "channel": "Organic Search",
-                "yesterday": 5,
+                "yesterday": 7,
                 "baseline_28d_median": 12.0,
-                "delta": -7.0
-              },
-              {
-                "channel": "Direct",
-                "yesterday": 9,
-                "baseline_28d_median": 12.0,
-                "delta": -3.0
+                "delta": -5.0
               },
               {
                 "channel": "Organic Video",
@@ -127,12 +111,12 @@
           },
           {
             "step": "Top landing pages yesterday",
-            "finding": "Top page: / with 5 sessions.",
+            "finding": "Top page: / with 7 sessions.",
             "data": [
               {
                 "landingPagePlusQueryString": "/",
-                "sessions": 5,
-                "totalUsers": 5,
+                "sessions": 7,
+                "totalUsers": 7,
                 "engagementRate": 1
               },
               {
@@ -165,14 +149,24 @@
       }
     },
     {
-      "metric": "GA4 users",
+      "metric": "GA4 new users",
       "actual": 15,
-      "baseline_28d_median": 26.5,
-      "yoy_same_day": 0,
-      "pct_delta": -43.4,
+      "baseline_28d_median": 22.0,
+      "yoy_same_day": null,
+      "pct_delta": -31.8,
       "severity": "MAJOR",
       "direction": "down",
-      "headline": "DOWN GA4 users: 15 (-43.4% vs 28d median of 26)"
+      "headline": "DOWN GA4 new users: 15 (-31.8% vs 28d median of 22)"
+    },
+    {
+      "metric": "GA4 users",
+      "actual": 19,
+      "baseline_28d_median": 26.5,
+      "yoy_same_day": 0,
+      "pct_delta": -28.3,
+      "severity": "MAJOR",
+      "direction": "down",
+      "headline": "DOWN GA4 users: 19 (-28.3% vs 28d median of 26)"
     }
   ],
   "ga4_data": {
@@ -431,12 +425,12 @@
       },
       {
         "date": "2026-09-05",
-        "sessions": 15,
-        "totalUsers": 15,
-        "newUsers": 11,
-        "screenPageViews": 29,
-        "engagementRate": 0.9333,
-        "averageSessionDuration": 11.9213
+        "sessions": 19,
+        "totalUsers": 19,
+        "newUsers": 15,
+        "screenPageViews": 37,
+        "engagementRate": 0.9474,
+        "averageSessionDuration": 11.3918
       }
     ],
     "daily_by_channel": [
@@ -645,6 +639,12 @@
         "totalUsers": 11
       },
       {
+        "date": "2026-09-05",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
         "date": "2026-08-10",
         "sessionDefaultChannelGroup": "Organic Search",
         "sessions": 10,
@@ -683,12 +683,6 @@
       {
         "date": "2026-08-30",
         "sessionDefaultChannelGroup": "Organic Search",
-        "sessions": 9,
-        "totalUsers": 9
-      },
-      {
-        "date": "2026-09-05",
-        "sessionDefaultChannelGroup": "Direct",
         "sessions": 9,
         "totalUsers": 9
       },
@@ -747,6 +741,12 @@
         "totalUsers": 7
       },
       {
+        "date": "2026-09-05",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
         "date": "2026-08-21",
         "sessionDefaultChannelGroup": "Organic Search",
         "sessions": 6,
@@ -781,12 +781,6 @@
         "sessionDefaultChannelGroup": "Email",
         "sessions": 5,
         "totalUsers": 3
-      },
-      {
-        "date": "2026-09-05",
-        "sessionDefaultChannelGroup": "Organic Search",
-        "sessions": 5,
-        "totalUsers": 5
       },
       {
         "date": "2026-08-08",
@@ -1080,8 +1074,8 @@
     "yesterday_landing_pages": [
       {
         "landingPagePlusQueryString": "/",
-        "sessions": 5,
-        "totalUsers": 5,
+        "sessions": 7,
+        "totalUsers": 7,
         "engagementRate": 1
       },
       {
@@ -1115,6 +1109,18 @@
         "engagementRate": 1
       },
       {
+        "landingPagePlusQueryString": "/contact/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/emotional-eating/what-is-emotional-eating/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
         "landingPagePlusQueryString": "/ourprogram/dine-together/",
         "sessions": 1,
         "totalUsers": 1,
@@ -1130,13 +1136,18 @@
     "yesterday_sources": [
       {
         "sessionSourceMedium": "(direct) / (none)",
-        "sessions": 9,
-        "totalUsers": 9
+        "sessions": 11,
+        "totalUsers": 11
       },
       {
         "sessionSourceMedium": "google / organic",
-        "sessions": 5,
-        "totalUsers": 5
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "sessionSourceMedium": "bing / organic",
+        "sessions": 1,
+        "totalUsers": 1
       },
       {
         "sessionSourceMedium": "newsletter / email",
@@ -1147,7 +1158,7 @@
     "yesterday_devices": [
       {
         "deviceCategory": "desktop",
-        "sessions": 8
+        "sessions": 12
       },
       {
         "deviceCategory": "mobile",
@@ -5273,6 +5284,17 @@
   },
   "launches_this_run": [
     {
+      "launched_at": "2026-09-06",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-06",
+      "commit_hash": "3e5b64a",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-06-git-commit-3e5b64a",
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
+    },
+    {
       "launched_at": "2026-09-05",
       "type": "git-commit",
       "title": "bcc daily pulse: 2026-09-05",
@@ -5281,7 +5303,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-05-git-commit-eda73ac",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-09-05",
@@ -5292,7 +5314,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-05-git-commit-8f49195",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-09-04",
@@ -5303,7 +5325,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-04-git-commit-646a70b",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-09-04",
@@ -5314,7 +5336,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-04-git-commit-faa9eef",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-09-03",
@@ -5325,7 +5347,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-03-git-commit-0ede68e",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-09-03",
@@ -5336,7 +5358,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-03-git-commit-f08b85a",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-09-03",
@@ -5347,7 +5369,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-03-git-commit-d067949",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-09-02",
@@ -5358,7 +5380,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-02-git-commit-40e19e5",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-09-02",
@@ -5369,7 +5391,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-02-git-commit-fc5b1b7",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-09-02",
@@ -5380,7 +5402,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-02-git-commit-8a9904d",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-09-01",
@@ -5391,7 +5413,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-01-git-commit-38704cc",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-09-01",
@@ -5402,7 +5424,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-01-git-commit-3dd3c7a",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-08-31",
@@ -5413,7 +5435,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-08-31-git-commit-0b81542",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-08-31",
@@ -5424,7 +5446,7 @@
       "source": "git-log",
       "confidence": "medium",
       "id": "auto-2026-08-31-git-commit-986548d",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-08-31",
@@ -5435,7 +5457,7 @@
       "source": "git-log",
       "confidence": "medium",
       "id": "auto-2026-08-31-git-commit-62e5517",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-08-31",
@@ -5446,7 +5468,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-08-31-git-commit-841fc34",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-08-31",
@@ -5457,18 +5479,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-08-31-git-commit-a600500",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
-    },
-    {
-      "launched_at": "2026-08-30",
-      "type": "git-commit",
-      "title": "bcc daily pulse: 2026-08-30",
-      "commit_hash": "dae586b",
-      "commit_author": "Daniel Bisett",
-      "source": "git-log",
-      "confidence": "low",
-      "id": "auto-2026-08-30-git-commit-dae586b",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     },
     {
       "launched_at": "2026-09-01",
@@ -5479,12 +5490,18 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-01-git-commit-f3170b3",
-      "first_seen_at": "2026-09-06T08:02:45.018765Z"
+      "first_seen_at": "2026-09-06T12:00:30.040041Z"
     }
   ],
-  "launches_ledger_size": 1112,
+  "launches_ledger_size": 1113,
   "paid_social_spikes": [],
   "git_commits_recent": [
+    {
+      "date": "2026-09-06T03:04:42-05:00",
+      "hash": "3e5b64a",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-06"
+    },
     {
       "date": "2026-09-05T07:00:34-05:00",
       "hash": "eda73ac",
@@ -5588,22 +5605,16 @@
       "subject": "bcc daily pulse: 2026-08-31"
     },
     {
-      "date": "2026-08-30T07:00:27-05:00",
-      "hash": "dae586b",
+      "date": "2026-09-06T03:14:26-05:00",
+      "hash": "e2ba9f9",
       "author": "Daniel Bisett",
-      "subject": "bcc daily pulse: 2026-08-30"
+      "subject": "autosync from WeRockDM @ 2026-09-06T03:14:25"
     },
     {
       "date": "2026-09-05T07:14:28-05:00",
       "hash": "44cb691",
       "author": "Daniel Bisett",
       "subject": "autosync from WeRockDM @ 2026-09-05T07:14:27"
-    },
-    {
-      "date": "2026-09-05T03:14:26-05:00",
-      "hash": "f29e90c",
-      "author": "Daniel Bisett",
-      "subject": "autosync from WeRockDM @ 2026-09-05T03:14:26"
     }
   ]
 }
