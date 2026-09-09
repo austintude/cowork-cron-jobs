@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-09-07
+
+_Generated 2026-09-09T08:02:55.201708Z_
+
+### Headline
+- Sessions DOWN 48% vs 28-day median (15 vs baseline 29) -- Sunday traffic, likely not alarming, but worth a quick check.
+- No YoY comparison available; GSC showing zeros, which is normal 1-3 day reporting lag.
+
+### What happened
+- **Organic Search**: dropped to 6 sessions vs baseline 12 -- accounts for most of the session shortfall.
+- **Engagement rate**: 93% with avg session duration 58s -- people who did land engaged well, just fewer of them.
+- **GSC impressions/clicks**: both zero -- standard reporting lag, not a real drop.
+- **Day of week**: Sep 7 was a Sunday; BCC typically sees lower weekend volume, which likely explains the bulk of the dip.
+
+### Efficacy
+- **Launched 30d**: 6 pages, 32 pages modified, 1 ranking top 10 -- 395 GA4 sessions and 318K impressions attributed.
+- **Recent commits**: all pulse/tooling commits (Sep 7-8), no new public content pages in the queue this week.
+- **Indexing warmup**: top launches are all internal git-commit entries with no URLs -- nothing to submit to GSC right now.
+
+### Today (do these)
+1. **Confirm Sunday baseline**: pull GA4 by day-of-week for the last 4 Sundays and check whether 15 sessions is actually normal for BCC Sundays, so you have a clear answer for Todd if he asks.
+2. **Identify the 1 top-10 ranking page**: locate which page holds that sole top-10 position in the 30-day rollup and note its keyword + impression count -- good positive data point to bring to the weekly meeting.
+3. **Check content calendar**: no new public pages launched in the last week -- confirm whether any drafts are queued for publish this week before the Todd meeting.
