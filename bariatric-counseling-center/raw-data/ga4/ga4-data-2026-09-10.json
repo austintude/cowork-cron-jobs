@@ -7,13 +7,13 @@
   },
   "property_id": "254059736",
   "summary": {
-    "sessions": 244,
-    "users": 214,
+    "sessions": 246,
+    "users": 215,
     "new_users": 205,
-    "pageviews": 671,
-    "engagement_rate": 0.9426,
-    "avg_session_duration_sec": 114.3998,
-    "bounce_rate": 0.0574
+    "pageviews": 674,
+    "engagement_rate": 0.939,
+    "avg_session_duration_sec": 113.5625,
+    "bounce_rate": 0.061
   },
   "yoy_summary": {
     "sessions": 1,
@@ -25,9 +25,9 @@
     "bounce_rate": 1
   },
   "yoy_pct_change": {
-    "sessions_pct": 24300.0,
-    "users_pct": 21300.0,
-    "pageviews_pct": 67000.0,
+    "sessions_pct": 24500.0,
+    "users_pct": 21400.0,
+    "pageviews_pct": 67300.0,
     "avg_session_duration_pct": null
   },
   "daily_breakdown": [
@@ -68,8 +68,8 @@
     },
     {
       "date": "20260910",
-      "sessions": 3,
-      "totalUsers": 3
+      "sessions": 5,
+      "totalUsers": 5
     }
   ],
   "top_landing_pages": [
@@ -186,6 +186,20 @@
       "avg_session_duration_sec": 5.245
     },
     {
+      "page": "/author/shamilton/",
+      "sessions": 2,
+      "users": 1,
+      "engagement_rate": 1,
+      "avg_session_duration_sec": 9.0441
+    },
+    {
+      "page": "/diet-and-nutrition/healthy-living/ozempic-vs-mounjaro-vs-zepbound-for-weight-loss/",
+      "sessions": 2,
+      "users": 2,
+      "engagement_rate": 0.5,
+      "avg_session_duration_sec": 7.2389
+    },
+    {
       "page": "/emotional-eating/what-is-emotional-eating/",
       "sessions": 2,
       "users": 2,
@@ -233,20 +247,6 @@
       "users": 2,
       "engagement_rate": 1,
       "avg_session_duration_sec": 6.7484
-    },
-    {
-      "page": "",
-      "sessions": 1,
-      "users": 1,
-      "engagement_rate": 0,
-      "avg_session_duration_sec": 0
-    },
-    {
-      "page": "/?fbclid=IwcGRvZgRleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAwyNTYyODEwNDA1NTgAAR5mzseOBlp0xx31ujaepSnnqf_hRKiIJBQM0nF6oJfUcvxlrwL6uemWtxd2PQ_aem_owwlxqaUuBUqFBhVydKeyg",
-      "sessions": 1,
-      "users": 1,
-      "engagement_rate": 1,
-      "avg_session_duration_sec": 30.9917
     }
   ],
   "top_sources": [
@@ -258,9 +258,9 @@
     },
     {
       "source_medium": "google / organic",
-      "sessions": 78,
+      "sessions": 79,
       "users": 67,
-      "engagement_rate": 0.9744
+      "engagement_rate": 0.9747
     },
     {
       "source_medium": "constantcontact / email",
@@ -285,6 +285,12 @@
       "sessions": 2,
       "users": 1,
       "engagement_rate": 1
+    },
+    {
+      "source_medium": "(not set)",
+      "sessions": 1,
+      "users": 1,
+      "engagement_rate": 0
     },
     {
       "source_medium": "behjoo.com / referral",
@@ -422,6 +428,11 @@
       "sessions": 3
     },
     {
+      "page": "/author/shamilton/",
+      "pageviews": 6,
+      "sessions": 3
+    },
+    {
       "page": "/bariatric-psychological-evaluation-near-me/",
       "pageviews": 6,
       "sessions": 3
@@ -455,11 +466,6 @@
       "page": "/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
       "pageviews": 6,
       "sessions": 2
-    },
-    {
-      "page": "/author/sara-broussard/",
-      "pageviews": 4,
-      "sessions": 2
     }
   ],
   "channel_breakdown": [
@@ -471,9 +477,9 @@
     },
     {
       "channel": "Organic Search",
-      "sessions": 89,
+      "sessions": 90,
       "users": 77,
-      "engagement_rate": 0.9775
+      "engagement_rate": 0.9778
     },
     {
       "channel": "Email",
@@ -492,6 +498,12 @@
       "sessions": 3,
       "users": 3,
       "engagement_rate": 1
+    },
+    {
+      "channel": "Unassigned",
+      "sessions": 1,
+      "users": 1,
+      "engagement_rate": 0
     }
   ]
 }
