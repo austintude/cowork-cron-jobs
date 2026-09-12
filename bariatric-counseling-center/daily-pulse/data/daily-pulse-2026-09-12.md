@@ -1,13 +1,13 @@
 # BCC Daily Pulse -- 2026-09-11
 
-_Generated 2026-09-12 08:02 UTC_
+_Generated 2026-09-12 12:00 UTC_
 
 
 ## Yesterday at a glance
 
-- **60 sessions** / 54 users / 135 pageviews
+- **64 sessions** / 58 users / 148 pageviews
 - **0 GSC impressions** / 0 clicks / avg position 0.0
-- Engagement rate: 91.7%
+- Engagement rate: 92.2%
 - Avg session duration: 154s
 
 ## Last 28 days vs prior 28 days
@@ -16,19 +16,19 @@ _2026-08-15 -> 2026-09-11 vs 2026-07-18 -> 2026-08-14_
 
 | Metric | This period | Prior | Change |
 |--------|-------------|-------|--------|
-| Active users | 1,274 | 458 | +178.2% |
-| New users | 1,248 | 442 | +182.4% |
-| Sessions | 1,408 | 564 | +149.6% |
-| Views | 3,516 | 3,169 | +10.9% |
-| Avg engagement time (per active user) | 28s | 46s | -39.2% |
+| Active users | 1,278 | 458 | +179.0% |
+| New users | 1,252 | 442 | +183.3% |
+| Sessions | 1,412 | 564 | +150.4% |
+| Views | 3,529 | 3,169 | +11.4% |
+| Avg engagement time (per active user) | 28s | 46s | -38.5% |
 
 ## 5 anomalies flagged
 
-### [CRITICAL] UP GA4 sessions: 60 (+103.4% vs 28d median of 30)
+### [CRITICAL] UP GA4 sessions: 64 (+116.9% vs 28d median of 30)
 
-**Source attribution** -- Direct rose from baseline 12 to 31 (+19).
-  - Direct: 31 yesterday vs baseline 12 (+19)
-  - Organic Search: 23 yesterday vs baseline 14 (+9)
+**Source attribution** -- Direct rose from baseline 12 to 32 (+20).
+  - Direct: 32 yesterday vs baseline 12 (+20)
+  - Organic Search: 26 yesterday vs baseline 14 (+12)
   - Email: 6 yesterday vs baseline 1 (+5)
   - Organic Video: 0 yesterday vs baseline 2 (-2)
 
@@ -37,30 +37,30 @@ _2026-08-15 -> 2026-09-11 vs 2026-07-18 -> 2026-08-14_
 **Top landing pages yesterday** -- Top page: / with 38 sessions.
   - `/` -- 38 sessions, 37 users
   - `/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/` -- 5 sessions, 4 users
+  - `/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/` -- 3 sessions, 3 users
   - `` -- 2 sessions, 2 users
   - `/about/` -- 2 sessions, 1 users
-  - `/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/` -- 2 sessions, 1 users
 
 **Recent site changes (last 7 days)** -- 1 pages/posts modified -- cross-reference with affected pages.
   - Home &#8211; Bariatric Counseling Center (modified 2026-09-11)
 
 
-### [CRITICAL] UP GA4 users: 54 (+92.9% vs 28d median of 28)
+### [CRITICAL] UP GA4 users: 58 (+107.1% vs 28d median of 28)
 
 
-### [CRITICAL] UP GA4 avg session dur: 154.054 (+89.5% vs 28d median of 81)
+### [CRITICAL] UP GA4 new users: 49 (+104.2% vs 28d median of 24)
 
 
-### [CRITICAL] UP GA4 new users: 45 (+87.5% vs 28d median of 24)
+### [CRITICAL] UP GA4 avg session dur: 153.789 (+89.2% vs 28d median of 81)
 
 
-### [CRITICAL] UP GA4 pageviews: 135 (+53.4% vs 28d median of 88)
+### [CRITICAL] UP GA4 pageviews: 148 (+68.2% vs 28d median of 88)
 
 
 ## Yesterday's traffic by channel
 
--   31 sess  Direct
--   23 sess  Organic Search
+-   32 sess  Direct
+-   26 sess  Organic Search
 -    6 sess  Email
 
 ## Site changes in the last 7 days

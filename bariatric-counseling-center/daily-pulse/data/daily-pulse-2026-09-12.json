@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-12T08:02:50.563461Z",
+  "fetched_at": "2026-09-12T12:00:31.082333Z",
   "for_date": "2026-09-11",
   "baseline_window": {
     "start": "2026-08-14",
@@ -9,12 +9,12 @@
   "ga4_property_id": "254059736",
   "gsc_property": "https://www.bariatriccounselingcenter.com/",
   "snapshot": {
-    "sessions": 60,
-    "users": 54,
-    "new_users": 45,
-    "pageviews": 135,
-    "engagement_rate": 0.9167,
-    "avg_session_duration": 154.0542,
+    "sessions": 64,
+    "users": 58,
+    "new_users": 49,
+    "pageviews": 148,
+    "engagement_rate": 0.9219,
+    "avg_session_duration": 153.7893,
     "gsc_impressions": 0,
     "gsc_clicks": 0,
     "gsc_position": 0.0
@@ -24,13 +24,13 @@
     "current": {
       "start": "2026-08-15",
       "end": "2026-09-11",
-      "sessions": 1408,
-      "active_users": 1274,
-      "total_users": 1275,
-      "new_users": 1248,
-      "pageviews": 3516,
-      "avg_session_duration": 101.6987,
-      "avg_engagement_time_per_active_user": 27.8
+      "sessions": 1412,
+      "active_users": 1278,
+      "total_users": 1279,
+      "new_users": 1252,
+      "pageviews": 3529,
+      "avg_session_duration": 101.835,
+      "avg_engagement_time_per_active_user": 28.1
     },
     "prior": {
       "start": "2026-07-18",
@@ -44,13 +44,13 @@
       "avg_engagement_time_per_active_user": 45.7
     },
     "pct_change": {
-      "sessions_pct": 149.6,
-      "active_users_pct": 178.2,
-      "total_users_pct": 177.8,
-      "new_users_pct": 182.4,
-      "pageviews_pct": 10.9,
-      "avg_session_duration_pct": -32.9,
-      "avg_engagement_time_per_active_user_pct": -39.2
+      "sessions_pct": 150.4,
+      "active_users_pct": 179.0,
+      "total_users_pct": 178.6,
+      "new_users_pct": 183.3,
+      "pageviews_pct": 11.4,
+      "avg_session_duration_pct": -32.8,
+      "avg_engagement_time_per_active_user_pct": -38.5
     }
   },
   "anomaly_summary": {
@@ -62,30 +62,30 @@
   "anomalies": [
     {
       "metric": "GA4 sessions",
-      "actual": 60,
+      "actual": 64,
       "baseline_28d_median": 29.5,
       "yoy_same_day": 0,
-      "pct_delta": 103.4,
+      "pct_delta": 116.9,
       "severity": "CRITICAL",
       "direction": "up",
-      "headline": "UP GA4 sessions: 60 (+103.4% vs 28d median of 30)",
+      "headline": "UP GA4 sessions: 64 (+116.9% vs 28d median of 30)",
       "unpacked": {
         "chain": [
           {
             "step": "Source attribution",
-            "finding": "Direct rose from baseline 12 to 31 (+19).",
+            "finding": "Direct rose from baseline 12 to 32 (+20).",
             "breakdown": [
               {
                 "channel": "Direct",
-                "yesterday": 31,
+                "yesterday": 32,
                 "baseline_28d_median": 12.0,
-                "delta": 19.0
+                "delta": 20.0
               },
               {
                 "channel": "Organic Search",
-                "yesterday": 23,
+                "yesterday": 26,
                 "baseline_28d_median": 14.0,
-                "delta": 9.0
+                "delta": 12.0
               },
               {
                 "channel": "Email",
@@ -122,6 +122,12 @@
                 "engagementRate": 1
               },
               {
+                "landingPagePlusQueryString": "/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+                "sessions": 3,
+                "totalUsers": 3,
+                "engagementRate": 1
+              },
+              {
                 "landingPagePlusQueryString": "",
                 "sessions": 2,
                 "totalUsers": 2,
@@ -129,12 +135,6 @@
               },
               {
                 "landingPagePlusQueryString": "/about/",
-                "sessions": 2,
-                "totalUsers": 1,
-                "engagementRate": 1
-              },
-              {
-                "landingPagePlusQueryString": "/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
                 "sessions": 2,
                 "totalUsers": 1,
                 "engagementRate": 1
@@ -157,43 +157,43 @@
     },
     {
       "metric": "GA4 users",
-      "actual": 54,
+      "actual": 58,
       "baseline_28d_median": 28.0,
       "yoy_same_day": 0,
-      "pct_delta": 92.9,
+      "pct_delta": 107.1,
       "severity": "CRITICAL",
       "direction": "up",
-      "headline": "UP GA4 users: 54 (+92.9% vs 28d median of 28)"
-    },
-    {
-      "metric": "GA4 avg session dur",
-      "actual": 154.0542,
-      "baseline_28d_median": 81.28,
-      "yoy_same_day": null,
-      "pct_delta": 89.5,
-      "severity": "CRITICAL",
-      "direction": "up",
-      "headline": "UP GA4 avg session dur: 154.054 (+89.5% vs 28d median of 81)"
+      "headline": "UP GA4 users: 58 (+107.1% vs 28d median of 28)"
     },
     {
       "metric": "GA4 new users",
-      "actual": 45,
+      "actual": 49,
       "baseline_28d_median": 24.0,
       "yoy_same_day": null,
-      "pct_delta": 87.5,
+      "pct_delta": 104.2,
       "severity": "CRITICAL",
       "direction": "up",
-      "headline": "UP GA4 new users: 45 (+87.5% vs 28d median of 24)"
+      "headline": "UP GA4 new users: 49 (+104.2% vs 28d median of 24)"
+    },
+    {
+      "metric": "GA4 avg session dur",
+      "actual": 153.7893,
+      "baseline_28d_median": 81.28,
+      "yoy_same_day": null,
+      "pct_delta": 89.2,
+      "severity": "CRITICAL",
+      "direction": "up",
+      "headline": "UP GA4 avg session dur: 153.789 (+89.2% vs 28d median of 81)"
     },
     {
       "metric": "GA4 pageviews",
-      "actual": 135,
+      "actual": 148,
       "baseline_28d_median": 88.0,
       "yoy_same_day": 0,
-      "pct_delta": 53.4,
+      "pct_delta": 68.2,
       "severity": "CRITICAL",
       "direction": "up",
-      "headline": "UP GA4 pageviews: 135 (+53.4% vs 28d median of 88)"
+      "headline": "UP GA4 pageviews: 148 (+68.2% vs 28d median of 88)"
     }
   ],
   "ga4_data": {
@@ -452,12 +452,12 @@
       },
       {
         "date": "2026-09-11",
-        "sessions": 60,
-        "totalUsers": 54,
-        "newUsers": 45,
-        "screenPageViews": 135,
-        "engagementRate": 0.9167,
-        "averageSessionDuration": 154.0542
+        "sessions": 64,
+        "totalUsers": 58,
+        "newUsers": 49,
+        "screenPageViews": 148,
+        "engagementRate": 0.9219,
+        "averageSessionDuration": 153.7893
       }
     ],
     "daily_by_channel": [
@@ -476,8 +476,8 @@
       {
         "date": "2026-09-11",
         "sessionDefaultChannelGroup": "Direct",
-        "sessions": 31,
-        "totalUsers": 31
+        "sessions": 32,
+        "totalUsers": 32
       },
       {
         "date": "2026-08-17",
@@ -490,6 +490,12 @@
         "sessionDefaultChannelGroup": "Email",
         "sessions": 27,
         "totalUsers": 24
+      },
+      {
+        "date": "2026-09-11",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 26,
+        "totalUsers": 22
       },
       {
         "date": "2026-08-20",
@@ -508,12 +514,6 @@
         "sessionDefaultChannelGroup": "Organic Search",
         "sessions": 24,
         "totalUsers": 23
-      },
-      {
-        "date": "2026-09-11",
-        "sessionDefaultChannelGroup": "Organic Search",
-        "sessions": 23,
-        "totalUsers": 19
       },
       {
         "date": "2026-08-19",
@@ -1124,6 +1124,12 @@
         "engagementRate": 1
       },
       {
+        "landingPagePlusQueryString": "/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+        "sessions": 3,
+        "totalUsers": 3,
+        "engagementRate": 1
+      },
+      {
         "landingPagePlusQueryString": "",
         "sessions": 2,
         "totalUsers": 2,
@@ -1136,15 +1142,15 @@
         "engagementRate": 1
       },
       {
-        "landingPagePlusQueryString": "/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+        "landingPagePlusQueryString": "/diet-and-nutrition/healthy-living/ozempic-vs-mounjaro-vs-zepbound-for-weight-loss/",
         "sessions": 2,
-        "totalUsers": 1,
+        "totalUsers": 2,
         "engagementRate": 1
       },
       {
-        "landingPagePlusQueryString": "/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+        "landingPagePlusQueryString": "/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
         "sessions": 2,
-        "totalUsers": 2,
+        "totalUsers": 1,
         "engagementRate": 1
       },
       {
@@ -1154,7 +1160,13 @@
         "engagementRate": 1
       },
       {
-        "landingPagePlusQueryString": "/diet-and-nutrition/healthy-living/ozempic-vs-mounjaro-vs-zepbound-for-weight-loss/",
+        "landingPagePlusQueryString": "/bariatric-psychological-evaluation-near-me/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/contact/",
         "sessions": 1,
         "totalUsers": 1,
         "engagementRate": 1
@@ -1205,13 +1217,13 @@
     "yesterday_sources": [
       {
         "sessionSourceMedium": "(direct) / (none)",
-        "sessions": 31,
-        "totalUsers": 31
+        "sessions": 32,
+        "totalUsers": 32
       },
       {
         "sessionSourceMedium": "google / organic",
-        "sessions": 19,
-        "totalUsers": 16
+        "sessions": 22,
+        "totalUsers": 19
       },
       {
         "sessionSourceMedium": "constantcontact / email",
@@ -1227,11 +1239,11 @@
     "yesterday_devices": [
       {
         "deviceCategory": "desktop",
-        "sessions": 39
+        "sessions": 40
       },
       {
         "deviceCategory": "mobile",
-        "sessions": 21
+        "sessions": 24
       }
     ],
     "yoy_same_day": {
@@ -5381,7 +5393,18 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-11-page-modify-2091",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
+    },
+    {
+      "launched_at": "2026-09-12",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-12",
+      "commit_hash": "fdf20c3",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-12-git-commit-fdf20c3",
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-11",
@@ -5392,7 +5415,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-11-git-commit-2318896",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-11",
@@ -5403,7 +5426,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-11-git-commit-7e70ad5",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-10",
@@ -5414,7 +5437,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-10-git-commit-73c4749",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-10",
@@ -5425,7 +5448,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-10-git-commit-897f77d",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-10",
@@ -5436,7 +5459,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-10-git-commit-9a3b63c",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-09",
@@ -5447,7 +5470,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-09-git-commit-30b09bc",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-09",
@@ -5458,7 +5481,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-09-git-commit-3917ab5",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-09",
@@ -5469,7 +5492,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-09-git-commit-67e43c6",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-09",
@@ -5480,7 +5503,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-09-git-commit-87cdddd",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-08",
@@ -5491,7 +5514,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-08-git-commit-ad3bc12",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-08",
@@ -5502,7 +5525,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-08-git-commit-8e377c0",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-07",
@@ -5513,7 +5536,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-07-git-commit-d057713",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-07",
@@ -5524,7 +5547,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-07-git-commit-56de280",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-07",
@@ -5535,7 +5558,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-07-git-commit-9d4bcc5",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-07",
@@ -5546,7 +5569,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-07-git-commit-4f81705",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-06",
@@ -5557,7 +5580,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-06-git-commit-b1d2e9a",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-06",
@@ -5568,7 +5591,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-06-git-commit-3e5b64a",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-05",
@@ -5579,18 +5602,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-05-git-commit-eda73ac",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
-    },
-    {
-      "launched_at": "2026-09-05",
-      "type": "git-commit",
-      "title": "bcc daily pulse: 2026-09-05",
-      "commit_hash": "8f49195",
-      "commit_author": "Daniel Bisett",
-      "source": "git-log",
-      "confidence": "low",
-      "id": "auto-2026-09-05-git-commit-8f49195",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-11",
@@ -5601,7 +5613,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-11-git-commit-c6654e6",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     },
     {
       "launched_at": "2026-09-10",
@@ -5612,12 +5624,18 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-10-git-commit-f135da6",
-      "first_seen_at": "2026-09-12T08:02:50.548454Z"
+      "first_seen_at": "2026-09-12T12:00:31.066077Z"
     }
   ],
-  "launches_ledger_size": 1133,
+  "launches_ledger_size": 1134,
   "paid_social_spikes": [],
   "git_commits_recent": [
+    {
+      "date": "2026-09-12T03:04:36-05:00",
+      "hash": "fdf20c3",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-12"
+    },
     {
       "date": "2026-09-11T07:00:27-05:00",
       "hash": "2318896",
@@ -5727,16 +5745,10 @@
       "subject": "bcc daily pulse: 2026-09-05"
     },
     {
-      "date": "2026-09-05T03:04:42-05:00",
-      "hash": "8f49195",
+      "date": "2026-09-12T03:14:22-05:00",
+      "hash": "69b46f0",
       "author": "Daniel Bisett",
-      "subject": "bcc daily pulse: 2026-09-05"
-    },
-    {
-      "date": "2026-09-11T17:14:25-05:00",
-      "hash": "7e62715",
-      "author": "Daniel Bisett",
-      "subject": "autosync from WeRockDM @ 2026-09-11T17:14:24"
+      "subject": "autosync from WeRockDM @ 2026-09-12T03:14:22"
     }
   ]
 }
