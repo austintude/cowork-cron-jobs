@@ -1,0 +1,5717 @@
+{
+  "fetched_at": "2026-09-13T08:03:08.261073Z",
+  "for_date": "2026-09-12",
+  "baseline_window": {
+    "start": "2026-08-15",
+    "end": "2026-09-11",
+    "days": 28
+  },
+  "ga4_property_id": "254059736",
+  "gsc_property": "https://www.bariatriccounselingcenter.com/",
+  "snapshot": {
+    "sessions": 45,
+    "users": 42,
+    "new_users": 41,
+    "pageviews": 103,
+    "engagement_rate": 0.9556,
+    "avg_session_duration": 104.6817,
+    "gsc_impressions": 0,
+    "gsc_clicks": 0,
+    "gsc_position": 0.0
+  },
+  "period_over_period": {
+    "window_days": 28,
+    "current": {
+      "start": "2026-08-16",
+      "end": "2026-09-12",
+      "sessions": 1432,
+      "active_users": 1299,
+      "total_users": 1300,
+      "new_users": 1275,
+      "pageviews": 3565,
+      "avg_session_duration": 102.1008,
+      "avg_engagement_time_per_active_user": 27.7
+    },
+    "prior": {
+      "start": "2026-07-19",
+      "end": "2026-08-15",
+      "sessions": 580,
+      "active_users": 470,
+      "total_users": 471,
+      "new_users": 454,
+      "pageviews": 3208,
+      "avg_session_duration": 150.2598,
+      "avg_engagement_time_per_active_user": 44.7
+    },
+    "pct_change": {
+      "sessions_pct": 146.9,
+      "active_users_pct": 176.4,
+      "total_users_pct": 176.0,
+      "new_users_pct": 180.8,
+      "pageviews_pct": 11.1,
+      "avg_session_duration_pct": -32.1,
+      "avg_engagement_time_per_active_user_pct": -38.0
+    }
+  },
+  "anomaly_summary": {
+    "total": 4,
+    "critical": 3,
+    "major": 0,
+    "minor": 1
+  },
+  "anomalies": [
+    {
+      "metric": "GA4 new users",
+      "actual": 41,
+      "baseline_28d_median": 24.5,
+      "yoy_same_day": null,
+      "pct_delta": 67.3,
+      "severity": "CRITICAL",
+      "direction": "up",
+      "headline": "UP GA4 new users: 41 (+67.3% vs 28d median of 24)"
+    },
+    {
+      "metric": "GA4 sessions",
+      "actual": 45,
+      "baseline_28d_median": 30.0,
+      "yoy_same_day": 0,
+      "pct_delta": 50.0,
+      "severity": "CRITICAL",
+      "direction": "up",
+      "headline": "UP GA4 sessions: 45 (+50.0% vs 28d median of 30)",
+      "unpacked": {
+        "chain": [
+          {
+            "step": "Source attribution",
+            "finding": "Direct rose from baseline 12.5 to 34 (+21.5).",
+            "breakdown": [
+              {
+                "channel": "Direct",
+                "yesterday": 34,
+                "baseline_28d_median": 12.5,
+                "delta": 21.5
+              },
+              {
+                "channel": "Organic Search",
+                "yesterday": 8,
+                "baseline_28d_median": 14.0,
+                "delta": -6.0
+              },
+              {
+                "channel": "Email",
+                "yesterday": 3,
+                "baseline_28d_median": 1,
+                "delta": 2
+              },
+              {
+                "channel": "Organic Video",
+                "yesterday": 0,
+                "baseline_28d_median": 2,
+                "delta": -2
+              }
+            ]
+          },
+          {
+            "step": "Direct-traffic investigation",
+            "finding": "Direct anomaly almost always means either (a) untagged email/SMS/QR campaign, (b) a bot spike, or (c) a referrer that strips Referer headers (some mobile apps). If this was unplanned, check server logs for unusual user agents."
+          },
+          {
+            "step": "Top landing pages yesterday",
+            "finding": "Top page: / with 15 sessions.",
+            "data": [
+              {
+                "landingPagePlusQueryString": "/",
+                "sessions": 15,
+                "totalUsers": 15,
+                "engagementRate": 1
+              },
+              {
+                "landingPagePlusQueryString": "/about/",
+                "sessions": 7,
+                "totalUsers": 7,
+                "engagementRate": 1
+              },
+              {
+                "landingPagePlusQueryString": "/stay-connected/",
+                "sessions": 6,
+                "totalUsers": 6,
+                "engagementRate": 1
+              },
+              {
+                "landingPagePlusQueryString": "/enjoy-movement/",
+                "sessions": 5,
+                "totalUsers": 5,
+                "engagementRate": 1
+              },
+              {
+                "landingPagePlusQueryString": "/recipes/",
+                "sessions": 4,
+                "totalUsers": 2,
+                "engagementRate": 0.75
+              }
+            ]
+          },
+          {
+            "step": "Recent site changes (last 7 days)",
+            "finding": "1 pages/posts modified -- cross-reference with affected pages.",
+            "data": [
+              {
+                "id": 2091,
+                "title": "Home &#8211; Bariatric Counseling Center",
+                "modified": "2026-09-11T08:34:18"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "metric": "GA4 users",
+      "actual": 42,
+      "baseline_28d_median": 28.0,
+      "yoy_same_day": 0,
+      "pct_delta": 50.0,
+      "severity": "CRITICAL",
+      "direction": "up",
+      "headline": "UP GA4 users: 42 (+50.0% vs 28d median of 28)"
+    },
+    {
+      "metric": "GA4 avg session dur",
+      "actual": 104.6817,
+      "baseline_28d_median": 85.33,
+      "yoy_same_day": null,
+      "pct_delta": 22.7,
+      "severity": "MINOR",
+      "direction": "up",
+      "headline": "UP GA4 avg session dur: 104.682 (+22.7% vs 28d median of 85)"
+    }
+  ],
+  "ga4_data": {
+    "daily_totals": [
+      {
+        "date": "2026-08-15",
+        "sessions": 24,
+        "totalUsers": 24,
+        "newUsers": 18,
+        "screenPageViews": 67,
+        "engagementRate": 1,
+        "averageSessionDuration": 95.5593
+      },
+      {
+        "date": "2026-08-16",
+        "sessions": 477,
+        "totalUsers": 476,
+        "newUsers": 477,
+        "screenPageViews": 971,
+        "engagementRate": 0.9979,
+        "averageSessionDuration": 22.2054
+      },
+      {
+        "date": "2026-08-17",
+        "sessions": 51,
+        "totalUsers": 50,
+        "newUsers": 43,
+        "screenPageViews": 124,
+        "engagementRate": 0.9804,
+        "averageSessionDuration": 211.5542
+      },
+      {
+        "date": "2026-08-18",
+        "sessions": 26,
+        "totalUsers": 25,
+        "newUsers": 20,
+        "screenPageViews": 68,
+        "engagementRate": 0.9231,
+        "averageSessionDuration": 179.021
+      },
+      {
+        "date": "2026-08-19",
+        "sessions": 41,
+        "totalUsers": 39,
+        "newUsers": 36,
+        "screenPageViews": 111,
+        "engagementRate": 0.9756,
+        "averageSessionDuration": 81.4679
+      },
+      {
+        "date": "2026-08-20",
+        "sessions": 44,
+        "totalUsers": 41,
+        "newUsers": 40,
+        "screenPageViews": 140,
+        "engagementRate": 1,
+        "averageSessionDuration": 71.7554
+      },
+      {
+        "date": "2026-08-21",
+        "sessions": 29,
+        "totalUsers": 27,
+        "newUsers": 25,
+        "screenPageViews": 67,
+        "engagementRate": 0.8966,
+        "averageSessionDuration": 25.5775
+      },
+      {
+        "date": "2026-08-22",
+        "sessions": 15,
+        "totalUsers": 15,
+        "newUsers": 14,
+        "screenPageViews": 40,
+        "engagementRate": 1,
+        "averageSessionDuration": 37.6186
+      },
+      {
+        "date": "2026-08-23",
+        "sessions": 12,
+        "totalUsers": 12,
+        "newUsers": 11,
+        "screenPageViews": 39,
+        "engagementRate": 0.9167,
+        "averageSessionDuration": 63.9492
+      },
+      {
+        "date": "2026-08-24",
+        "sessions": 29,
+        "totalUsers": 28,
+        "newUsers": 24,
+        "screenPageViews": 96,
+        "engagementRate": 0.931,
+        "averageSessionDuration": 65.033
+      },
+      {
+        "date": "2026-08-25",
+        "sessions": 32,
+        "totalUsers": 31,
+        "newUsers": 26,
+        "screenPageViews": 75,
+        "engagementRate": 0.9375,
+        "averageSessionDuration": 1339.2055
+      },
+      {
+        "date": "2026-08-26",
+        "sessions": 27,
+        "totalUsers": 25,
+        "newUsers": 22,
+        "screenPageViews": 80,
+        "engagementRate": 0.963,
+        "averageSessionDuration": 31.5871
+      },
+      {
+        "date": "2026-08-27",
+        "sessions": 29,
+        "totalUsers": 26,
+        "newUsers": 22,
+        "screenPageViews": 81,
+        "engagementRate": 0.931,
+        "averageSessionDuration": 125.8114
+      },
+      {
+        "date": "2026-08-28",
+        "sessions": 30,
+        "totalUsers": 28,
+        "newUsers": 22,
+        "screenPageViews": 95,
+        "engagementRate": 0.9333,
+        "averageSessionDuration": 90.9827
+      },
+      {
+        "date": "2026-08-29",
+        "sessions": 24,
+        "totalUsers": 22,
+        "newUsers": 20,
+        "screenPageViews": 70,
+        "engagementRate": 0.9583,
+        "averageSessionDuration": 61.5805
+      },
+      {
+        "date": "2026-08-30",
+        "sessions": 21,
+        "totalUsers": 21,
+        "newUsers": 20,
+        "screenPageViews": 56,
+        "engagementRate": 0.9048,
+        "averageSessionDuration": 91.3352
+      },
+      {
+        "date": "2026-08-31",
+        "sessions": 30,
+        "totalUsers": 28,
+        "newUsers": 21,
+        "screenPageViews": 128,
+        "engagementRate": 1,
+        "averageSessionDuration": 138.2086
+      },
+      {
+        "date": "2026-09-01",
+        "sessions": 75,
+        "totalUsers": 72,
+        "newUsers": 69,
+        "screenPageViews": 164,
+        "engagementRate": 0.9467,
+        "averageSessionDuration": 31.226
+      },
+      {
+        "date": "2026-09-02",
+        "sessions": 40,
+        "totalUsers": 35,
+        "newUsers": 33,
+        "screenPageViews": 103,
+        "engagementRate": 0.825,
+        "averageSessionDuration": 48.4305
+      },
+      {
+        "date": "2026-09-03",
+        "sessions": 31,
+        "totalUsers": 28,
+        "newUsers": 24,
+        "screenPageViews": 106,
+        "engagementRate": 0.9677,
+        "averageSessionDuration": 229.6123
+      },
+      {
+        "date": "2026-09-04",
+        "sessions": 41,
+        "totalUsers": 38,
+        "newUsers": 34,
+        "screenPageViews": 121,
+        "engagementRate": 0.8293,
+        "averageSessionDuration": 118.6974
+      },
+      {
+        "date": "2026-09-05",
+        "sessions": 19,
+        "totalUsers": 19,
+        "newUsers": 15,
+        "screenPageViews": 37,
+        "engagementRate": 0.9474,
+        "averageSessionDuration": 11.3918
+      },
+      {
+        "date": "2026-09-06",
+        "sessions": 27,
+        "totalUsers": 26,
+        "newUsers": 26,
+        "screenPageViews": 69,
+        "engagementRate": 0.963,
+        "averageSessionDuration": 89.1883
+      },
+      {
+        "date": "2026-09-07",
+        "sessions": 15,
+        "totalUsers": 14,
+        "newUsers": 13,
+        "screenPageViews": 41,
+        "engagementRate": 0.9333,
+        "averageSessionDuration": 58.2539
+      },
+      {
+        "date": "2026-09-08",
+        "sessions": 62,
+        "totalUsers": 57,
+        "newUsers": 52,
+        "screenPageViews": 173,
+        "engagementRate": 0.9677,
+        "averageSessionDuration": 140.5037
+      },
+      {
+        "date": "2026-09-09",
+        "sessions": 46,
+        "totalUsers": 44,
+        "newUsers": 39,
+        "screenPageViews": 118,
+        "engagementRate": 0.9783,
+        "averageSessionDuration": 80.3901
+      },
+      {
+        "date": "2026-09-10",
+        "sessions": 51,
+        "totalUsers": 46,
+        "newUsers": 37,
+        "screenPageViews": 141,
+        "engagementRate": 0.9412,
+        "averageSessionDuration": 105.1691
+      },
+      {
+        "date": "2026-09-11",
+        "sessions": 64,
+        "totalUsers": 58,
+        "newUsers": 49,
+        "screenPageViews": 148,
+        "engagementRate": 0.9219,
+        "averageSessionDuration": 153.7893
+      },
+      {
+        "date": "2026-09-12",
+        "sessions": 45,
+        "totalUsers": 42,
+        "newUsers": 41,
+        "screenPageViews": 103,
+        "engagementRate": 0.9556,
+        "averageSessionDuration": 104.6817
+      }
+    ],
+    "daily_by_channel": [
+      {
+        "date": "2026-08-16",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 471,
+        "totalUsers": 470
+      },
+      {
+        "date": "2026-09-01",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 59,
+        "totalUsers": 58
+      },
+      {
+        "date": "2026-09-12",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 34,
+        "totalUsers": 34
+      },
+      {
+        "date": "2026-09-11",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 32,
+        "totalUsers": 32
+      },
+      {
+        "date": "2026-08-17",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 30,
+        "totalUsers": 30
+      },
+      {
+        "date": "2026-09-08",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 27,
+        "totalUsers": 24
+      },
+      {
+        "date": "2026-09-11",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 26,
+        "totalUsers": 22
+      },
+      {
+        "date": "2026-08-20",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 25,
+        "totalUsers": 25
+      },
+      {
+        "date": "2026-09-10",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 25,
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-08-25",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 24,
+        "totalUsers": 23
+      },
+      {
+        "date": "2026-08-19",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 22,
+        "totalUsers": 22
+      },
+      {
+        "date": "2026-09-10",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 22,
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-09-02",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 21,
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-09-04",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 20,
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-09-08",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 20,
+        "totalUsers": 20
+      },
+      {
+        "date": "2026-09-09",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 19,
+        "totalUsers": 19
+      },
+      {
+        "date": "2026-08-17",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 18,
+        "totalUsers": 17
+      },
+      {
+        "date": "2026-08-21",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 18,
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-09-02",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 18,
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-09-03",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 18,
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-09-06",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 18,
+        "totalUsers": 18
+      },
+      {
+        "date": "2026-08-27",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 17,
+        "totalUsers": 16
+      },
+      {
+        "date": "2026-08-28",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 17,
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-08-20",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 16,
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-08-31",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 16,
+        "totalUsers": 15
+      },
+      {
+        "date": "2026-08-24",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 15,
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-09-04",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 15,
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-09-08",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 15,
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-09-09",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 15,
+        "totalUsers": 14
+      },
+      {
+        "date": "2026-08-29",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 13,
+        "totalUsers": 13
+      },
+      {
+        "date": "2026-09-01",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 13,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-08-18",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-08-19",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 12,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-08-26",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 12,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-08-30",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-09-03",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 12,
+        "totalUsers": 12
+      },
+      {
+        "date": "2026-08-15",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-08-26",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-08-31",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-09-05",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 11,
+        "totalUsers": 11
+      },
+      {
+        "date": "2026-08-18",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 10,
+        "totalUsers": 10
+      },
+      {
+        "date": "2026-08-27",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 10,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-08-24",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 9,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-08-29",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 9,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-08-30",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 9,
+        "totalUsers": 9
+      },
+      {
+        "date": "2026-08-22",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 8,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-08-28",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 8,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-09-06",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 8,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-09-07",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 8,
+        "totalUsers": 8
+      },
+      {
+        "date": "2026-09-09",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 8,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-09-12",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 8,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-08-15",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-08-23",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-08-25",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-09-05",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 7,
+        "totalUsers": 7
+      },
+      {
+        "date": "2026-08-21",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-08-22",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 6
+      },
+      {
+        "date": "2026-09-07",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 6,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-09-11",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 6,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-08-16",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 5,
+        "totalUsers": 5
+      },
+      {
+        "date": "2026-09-04",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 5,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-08-18",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-08-19",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-08-26",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-08-28",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 4,
+        "totalUsers": 4
+      },
+      {
+        "date": "2026-08-20",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-21",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-08-23",
+        "sessionDefaultChannelGroup": "Direct",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-09-09",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-09-10",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 3,
+        "totalUsers": 3
+      },
+      {
+        "date": "2026-09-12",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 3,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-15",
+        "sessionDefaultChannelGroup": "Organic Video",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-08-24",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-08-24",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 2
+      },
+      {
+        "date": "2026-08-29",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-31",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-09-01",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 2,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-15",
+        "sessionDefaultChannelGroup": "AI Assistant",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-15",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-15",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-15",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-16",
+        "sessionDefaultChannelGroup": "AI Assistant",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-17",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-17",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-17",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-19",
+        "sessionDefaultChannelGroup": "AI Assistant",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-19",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-19",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-21",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-21",
+        "sessionDefaultChannelGroup": "Unassigned",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-22",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-23",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-23",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-24",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-25",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-27",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-27",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-28",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-08-31",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-09-01",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-09-02",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-09-03",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-09-04",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-09-05",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-09-06",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-09-07",
+        "sessionDefaultChannelGroup": "Email",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-09-09",
+        "sessionDefaultChannelGroup": "Organic Social",
+        "sessions": 1,
+        "totalUsers": 1
+      },
+      {
+        "date": "2026-09-10",
+        "sessionDefaultChannelGroup": "Referral",
+        "sessions": 1,
+        "totalUsers": 1
+      }
+    ],
+    "yesterday_landing_pages": [
+      {
+        "landingPagePlusQueryString": "/",
+        "sessions": 15,
+        "totalUsers": 15,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/about/",
+        "sessions": 7,
+        "totalUsers": 7,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/stay-connected/",
+        "sessions": 6,
+        "totalUsers": 6,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/enjoy-movement/",
+        "sessions": 5,
+        "totalUsers": 5,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/recipes/",
+        "sessions": 4,
+        "totalUsers": 2,
+        "engagementRate": 0.75
+      },
+      {
+        "landingPagePlusQueryString": "/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
+        "sessions": 3,
+        "totalUsers": 3,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 0
+      },
+      {
+        "landingPagePlusQueryString": "/diet-and-nutrition/healthy-living/ozempic-vs-mounjaro-vs-zepbound-for-weight-loss/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/faq/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/ourprogram/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      },
+      {
+        "landingPagePlusQueryString": "/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+        "sessions": 1,
+        "totalUsers": 1,
+        "engagementRate": 1
+      }
+    ],
+    "yesterday_sources": [
+      {
+        "sessionSourceMedium": "(direct) / (none)",
+        "sessions": 34,
+        "totalUsers": 34
+      },
+      {
+        "sessionSourceMedium": "google / organic",
+        "sessions": 8,
+        "totalUsers": 7
+      },
+      {
+        "sessionSourceMedium": "constantcontact / email",
+        "sessions": 3,
+        "totalUsers": 1
+      }
+    ],
+    "yesterday_devices": [
+      {
+        "deviceCategory": "mobile",
+        "sessions": 23
+      },
+      {
+        "deviceCategory": "desktop",
+        "sessions": 22
+      }
+    ],
+    "yoy_same_day": {
+      "sessions": 0,
+      "totalUsers": 0,
+      "screenPageViews": 0
+    },
+    "_wp_recent": {
+      "pages": [
+        {
+          "id": 2091,
+          "slug": "home-2",
+          "link": "https://www.bariatriccounselingcenter.com/",
+          "title": "Home &#8211; Bariatric Counseling Center",
+          "date": "2026-01-08T10:17:00",
+          "modified": "2026-09-11T08:34:18",
+          "status": "publish"
+        }
+      ],
+      "posts": []
+    }
+  },
+  "gsc_data": {
+    "daily_totals": [],
+    "yesterday_queries": [
+      {
+        "keyword": "bariatric counseling center",
+        "clicks": 1,
+        "impressions": 18,
+        "ctr": 0.0556,
+        "position": 5.44
+      },
+      {
+        "keyword": "bariatric psychological evaluation near me",
+        "clicks": 1,
+        "impressions": 24,
+        "ctr": 0.0417,
+        "position": 23.12
+      },
+      {
+        "keyword": "bariatric therapist near me",
+        "clicks": 1,
+        "impressions": 27,
+        "ctr": 0.037,
+        "position": 8.48
+      },
+      {
+        "keyword": "can dehydration prevent weight loss",
+        "clicks": 1,
+        "impressions": 6,
+        "ctr": 0.1667,
+        "position": 2.17
+      },
+      {
+        "keyword": "can not drinking enough water stall weight loss",
+        "clicks": 1,
+        "impressions": 7,
+        "ctr": 0.1429,
+        "position": 1.0
+      },
+      {
+        "keyword": "can not drinking enough water stop weight loss",
+        "clicks": 1,
+        "impressions": 2,
+        "ctr": 0.5,
+        "position": 1.0
+      },
+      {
+        "keyword": "compare ozempic wegovy mounjaro zepbound",
+        "clicks": 1,
+        "impressions": 2,
+        "ctr": 0.5,
+        "position": 11.0
+      },
+      {
+        "keyword": "is wegovy the same as ozempic or mounjaro",
+        "clicks": 1,
+        "impressions": 1,
+        "ctr": 1.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "paralyzed stomach",
+        "clicks": 1,
+        "impressions": 7,
+        "ctr": 0.1429,
+        "position": 14.86
+      },
+      {
+        "keyword": "...",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "addiction counseling san antonio",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 41.0
+      },
+      {
+        "keyword": "advance bariatric counseling",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8.0
+      },
+      {
+        "keyword": "advanced eating disorder management",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 61.0
+      },
+      {
+        "keyword": "alimentaria la impulsiva",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8.0
+      },
+      {
+        "keyword": "all of those",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "anxiety overweight humanistic approach",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 79.0
+      },
+      {
+        "keyword": "as a therapist",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "bariatric assessment texas",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 29.5
+      },
+      {
+        "keyword": "bariatric clinic",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 13.75
+      },
+      {
+        "keyword": "bariatric counseling",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 2.43
+      },
+      {
+        "keyword": "bariatric counseling near me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "bariatric evaluations holland",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 21.0
+      },
+      {
+        "keyword": "bariatric procedure call center",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 23.5
+      },
+      {
+        "keyword": "bariatric psych eval austin",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 32.0
+      },
+      {
+        "keyword": "bariatric psych eval cost",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 55.83
+      },
+      {
+        "keyword": "bariatric psych eval dallas",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 32.0
+      },
+      {
+        "keyword": "bariatric psych eval el paso",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 39.0
+      },
+      {
+        "keyword": "bariatric psych eval fort worth",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 52.0
+      },
+      {
+        "keyword": "bariatric psych eval houston",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 46.0
+      },
+      {
+        "keyword": "bariatric psych eval insurance",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 56.0
+      },
+      {
+        "keyword": "bariatric psych eval lubbock",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 25.0
+      },
+      {
+        "keyword": "bariatric psych eval requirements",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 38.0
+      },
+      {
+        "keyword": "bariatric psych eval san antonio",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 48.38
+      },
+      {
+        "keyword": "bariatric psych eval texas",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 35.5
+      },
+      {
+        "keyword": "bariatric psych evaluation near me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "bariatric psychiatrist",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 12.0
+      },
+      {
+        "keyword": "bariatric psychologist",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 17.17
+      },
+      {
+        "keyword": "bariatric psychologist near me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8.0
+      },
+      {
+        "keyword": "bariatric store near me",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 15.75
+      },
+      {
+        "keyword": "bariatric surgery counseling",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8.0
+      },
+      {
+        "keyword": "bariatric surgery psychologist worcester ma",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 17.0
+      },
+      {
+        "keyword": "bariatric therapist",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "bariatriccounselingcenter.com",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0.0,
+        "position": 1.9
+      },
+      {
+        "keyword": "behavior reduction therapy san antonio, tx",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 73.0
+      },
+      {
+        "keyword": "behavior reduction treatment san antonio, tx",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 19.0
+      },
+      {
+        "keyword": "behavioral carecredit providers",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "keyword": "best time to sleep and wake up for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 56.0
+      },
+      {
+        "keyword": "best time to sleep for weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 43.0
+      },
+      {
+        "keyword": "best time to sleep to lose weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 49.5
+      },
+      {
+        "keyword": "binge eating disorder treatment texas",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 58.0
+      },
+      {
+        "keyword": "binge eating meal plan",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 73.0
+      },
+      {
+        "keyword": "binge eating support and coaching logan",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "keyword": "binge eating therapy mcallen, tx",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 36.0
+      },
+      {
+        "keyword": "blue cross texas",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "bmi center san antonio",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 10.67
+      },
+      {
+        "keyword": "bmi san antonio",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 39.0
+      },
+      {
+        "keyword": "bmi san antonio tx",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 48.0
+      },
+      {
+        "keyword": "breakfree therapy services",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 12.0
+      },
+      {
+        "keyword": "but does it",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "but the sodium",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "can a dehumidifier help?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "can a paralyzed stomach be fixed",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 2.6
+      },
+      {
+        "keyword": "can being dehydrated cause weight gain",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "can being dehydrated make you gain weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "can being dehydrated make you lose weight",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 2.75
+      },
+      {
+        "keyword": "can dehydration cause loss of appetite",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "can dehydration cause weight gain",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 20.75
+      },
+      {
+        "keyword": "can dehydration cause weight loss",
+        "clicks": 0,
+        "impressions": 36,
+        "ctr": 0.0,
+        "position": 2.17
+      },
+      {
+        "keyword": "can dehydration cause you to lose weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "can dehydration lead to weight loss",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 3.5
+      },
+      {
+        "keyword": "can dehydration make you gain weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "can dehydration make you lose weight",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 2.86
+      },
+      {
+        "keyword": "can dehydration make you not hungry",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "can dehydration slow weight loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 2.67
+      },
+      {
+        "keyword": "can dehydration stall weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "can dehydration stop weight loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "can drinking enough water help lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "can drinking less water cause weight gain",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "can drinking water alone help you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 50.0
+      },
+      {
+        "keyword": "can drinking water help lose weight",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 39.33
+      },
+      {
+        "keyword": "can drinking water help me lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 48.0
+      },
+      {
+        "keyword": "can drinking water help you lose weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 25.0
+      },
+      {
+        "keyword": "can drinking water help you lose weight without exercise",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 57.0
+      },
+      {
+        "keyword": "can drinking water make u lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 55.0
+      },
+      {
+        "keyword": "can drinking water make you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "can drinking water only help you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 45.0
+      },
+      {
+        "keyword": "can it cause weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      {
+        "keyword": "can just drinking water help lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 33.0
+      },
+      {
+        "keyword": "can just drinking water lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 34.0
+      },
+      {
+        "keyword": "can not drinking enough water cause weight gain",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "can not drinking enough water cause weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      {
+        "keyword": "can not drinking enough water make you gain weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "can not drinking enough water prevent weight loss",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "can not drinking enough water slow weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.5
+      },
+      {
+        "keyword": "can not drinking water cause weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "can only drinking water help lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 33.0
+      },
+      {
+        "keyword": "can only drinking water help you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 35.0
+      },
+      {
+        "keyword": "can staying hydrated help you lose weight",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 31.0
+      },
+      {
+        "keyword": "can stomach paralysis be reversed",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "can water help in weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 37.0
+      },
+      {
+        "keyword": "can water help lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 59.0
+      },
+      {
+        "keyword": "can water help me lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 48.0
+      },
+      {
+        "keyword": "can water help with weight loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 50.67
+      },
+      {
+        "keyword": "can water help you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 48.0
+      },
+      {
+        "keyword": "can water make u lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 59.0
+      },
+      {
+        "keyword": "can water make you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "can water make you skinny",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "can you die from gastroparesis",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 69.0
+      },
+      {
+        "keyword": "can you die of gastroparesis",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 79.0
+      },
+      {
+        "keyword": "can you gain weight by not drinking enough water",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "can you get gastroparesis from not eating",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 49.0
+      },
+      {
+        "keyword": "can you lose weight by drinking water",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 22.0
+      },
+      {
+        "keyword": "can you lose weight drinking water only",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 32.0
+      },
+      {
+        "keyword": "can you lose weight if you don't drink enough water",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.5
+      },
+      {
+        "keyword": "can you lose weight without drinking water",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "can your stomach be paralyzed",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "cdc sleep appetite weight management",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "cdc sleep appetite weight management adults",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "cdc sleep deprivation appetite cravings weight management",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 9.33
+      },
+      {
+        "keyword": "cdc sleep deprivation appetite weight management",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "cdc sleep hunger cravings weight management",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "cdc sleep weight management hunger adults",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "cdc sleep weight management hunger cravings",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "comparing ozempic wegovy zepbound and mounjaro for hormonal weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "coping skills for eating disorders",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 29.22
+      },
+      {
+        "keyword": "could it also be dehydration",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "could it be from dehydration",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "counseling for obesity",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 25.0
+      },
+      {
+        "keyword": "dehydration and obesity",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "dehydration and weight gain",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "dehydration and weight loss",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 3.06
+      },
+      {
+        "keyword": "dehydration cause weight loss",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 1.67
+      },
+      {
+        "keyword": "dehydration causes weight loss",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "dehydration lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "dehydration to lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 4.0
+      },
+      {
+        "keyword": "dehydration weight loss",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0.0,
+        "position": 4.64
+      },
+      {
+        "keyword": "dehydration weight loss percentage",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "keyword": "devo dimagrire",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "dieta holistica para adelgazar",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "dietician and weight loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 63.33
+      },
+      {
+        "keyword": "dietician vs nutritionist for weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 35.0
+      },
+      {
+        "keyword": "dietitian or nutritionist for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "dietitian vs nutritionist for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 63.0
+      },
+      {
+        "keyword": "difference between brands",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 17.0
+      },
+      {
+        "keyword": "difference between ozempic wegovy mounjaro and zepbound",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "difference between wegovy ozempic and zepbound",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "difference between zepbound and mounjaro and wegovy",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "difference between zepbound wegovy and ozempic",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "digestive tract paralysis",
+        "clicks": 0,
+        "impressions": 25,
+        "ctr": 0.0,
+        "position": 18.04
+      },
+      {
+        "keyword": "diseases that cause gastroparesis",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 64.0
+      },
+      {
+        "keyword": "do drinking water help you lose weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 24.5
+      },
+      {
+        "keyword": "do drinking water lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 40.0
+      },
+      {
+        "keyword": "do they all work?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      {
+        "keyword": "do you feel more thirsty when losing weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      {
+        "keyword": "do you gain weight when dehydrated",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "do you get more thirsty when losing weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 6.5
+      },
+      {
+        "keyword": "do you get thirsty when losing weight",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 7.5
+      },
+      {
+        "keyword": "do you lose weight when dehydrated",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 4.0
+      },
+      {
+        "keyword": "do you weigh less when dehydrated",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      {
+        "keyword": "do you weigh more or less when dehydrated",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "does a lot of water make you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "keyword": "does being dehydrated cause weight gain",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "does being dehydrated make you lose weight",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does being dehydrated make you not hungry",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "does being dehydrated make you weigh less",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 4.75
+      },
+      {
+        "keyword": "does being dehydrated make you weigh more",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "does being hydrated help you lose weight",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 5.4
+      },
+      {
+        "keyword": "does being well hydrated help you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does chronic dehydration cause weight gain",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8.0
+      },
+      {
+        "keyword": "does dehydration affect appetite",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "does dehydration affect metabolism",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "does dehydration affect weight loss",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "does dehydration burn fat",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      {
+        "keyword": "does dehydration cause weight gain",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 12.5
+      },
+      {
+        "keyword": "does dehydration cause weight gain or loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 4.0
+      },
+      {
+        "keyword": "does dehydration cause weight loss",
+        "clicks": 0,
+        "impressions": 41,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "does dehydration decrease appetite",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "does dehydration hinder weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does dehydration increase weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8.0
+      },
+      {
+        "keyword": "does dehydration make you gain weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "does dehydration make you lose weight",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 1.67
+      },
+      {
+        "keyword": "does dehydration make you not hungry",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 9.83
+      },
+      {
+        "keyword": "does dehydration prevent weight loss",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "does dehydration reduce appetite",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "does dehydration slow down metabolism",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      {
+        "keyword": "does dehydration slow metabolism",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 4.33
+      },
+      {
+        "keyword": "does dehydration slow weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "does dehydration stop weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 4.0
+      },
+      {
+        "keyword": "does drinking enough water help you lose weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 13.0
+      },
+      {
+        "keyword": "does drinking less water cause weight gain",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "does drinking less water cause weight loss",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 10.5
+      },
+      {
+        "keyword": "does drinking lots of water make you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 45.0
+      },
+      {
+        "keyword": "does drinking more water help with weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 49.0
+      },
+      {
+        "keyword": "does drinking more water make you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 42.0
+      },
+      {
+        "keyword": "does drinking only water help you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 29.0
+      },
+      {
+        "keyword": "does drinking water affect weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does drinking water all day help lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 51.0
+      },
+      {
+        "keyword": "does drinking water everyday help you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 57.0
+      },
+      {
+        "keyword": "does drinking water help lose fat",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 42.0
+      },
+      {
+        "keyword": "does drinking water help lose weight",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 32.0
+      },
+      {
+        "keyword": "does drinking water help me lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 49.0
+      },
+      {
+        "keyword": "does drinking water help metabolism",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 29.0
+      },
+      {
+        "keyword": "does drinking water help reduce weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 48.0
+      },
+      {
+        "keyword": "does drinking water help to lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 48.0
+      },
+      {
+        "keyword": "does drinking water help u lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 53.0
+      },
+      {
+        "keyword": "does drinking water help weight loss",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 41.75
+      },
+      {
+        "keyword": "does drinking water help with fat loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 44.0
+      },
+      {
+        "keyword": "does drinking water help with weight loss",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 43.0
+      },
+      {
+        "keyword": "does drinking water help you lose weight",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 14.29
+      },
+      {
+        "keyword": "does drinking water in the morning help you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "does drinking water make u lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 54.0
+      },
+      {
+        "keyword": "does drinking water make you eat less",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 39.0
+      },
+      {
+        "keyword": "does drinking water make you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 49.0
+      },
+      {
+        "keyword": "does drinking water reduce water weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 55.0
+      },
+      {
+        "keyword": "does hydration affect weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8.0
+      },
+      {
+        "keyword": "does hydration help lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does hydration help weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does hydration help with weight loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 9.67
+      },
+      {
+        "keyword": "does it affect your weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does it cause weight loss?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does keeping hydrated help lose weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 22.5
+      },
+      {
+        "keyword": "does losing weight make you dehydrated",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 4.33
+      },
+      {
+        "keyword": "does lots of water help lose weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 45.5
+      },
+      {
+        "keyword": "does not drinking enough water affect weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      {
+        "keyword": "does not drinking enough water cause weight gain",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 5.2
+      },
+      {
+        "keyword": "does not drinking water cause weight gain",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 12.0
+      },
+      {
+        "keyword": "does not drinking water cause weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does not drinking water help you lose weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does not drinking water make you gain weight",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 17.75
+      },
+      {
+        "keyword": "does not drinking water make you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "does not eating and drinking water make you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 37.0
+      },
+      {
+        "keyword": "does only drinking water help lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 50.0
+      },
+      {
+        "keyword": "does only drinking water make you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 51.0
+      },
+      {
+        "keyword": "does staying hydrated help lose weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "keyword": "does staying hydrated help with weight loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does staying hydrated help you lose weight",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does water actually help you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 39.0
+      },
+      {
+        "keyword": "does water affect weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "does water affect weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 43.0
+      },
+      {
+        "keyword": "does water consumption help lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 50.0
+      },
+      {
+        "keyword": "does water contribute to weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 50.0
+      },
+      {
+        "keyword": "does water help me lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 43.0
+      },
+      {
+        "keyword": "does water help weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 27.0
+      },
+      {
+        "keyword": "does water help with losing weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 37.0
+      },
+      {
+        "keyword": "does water help with weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 37.0
+      },
+      {
+        "keyword": "does water help you lose weight",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 34.8
+      },
+      {
+        "keyword": "does water help your metabolism",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 50.0
+      },
+      {
+        "keyword": "does water helps in weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 43.0
+      },
+      {
+        "keyword": "does water intake help with weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 47.5
+      },
+      {
+        "keyword": "does water make u lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 57.0
+      },
+      {
+        "keyword": "does water make u skinny",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 46.0
+      },
+      {
+        "keyword": "does water make you less hungry",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 13.0
+      },
+      {
+        "keyword": "does water make you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 41.0
+      },
+      {
+        "keyword": "does water make you skinny",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 29.0
+      },
+      {
+        "keyword": "does water reduce hunger",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "does water suppress hunger",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 12.5
+      },
+      {
+        "keyword": "drink less water to lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 42.0
+      },
+      {
+        "keyword": "drinking more water and weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 56.0
+      },
+      {
+        "keyword": "drinking water and losing weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 31.0
+      },
+      {
+        "keyword": "drinking water and weight loss",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0.0,
+        "position": 39.1
+      },
+      {
+        "keyword": "drinking water good for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 38.0
+      },
+      {
+        "keyword": "drinking water help in weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 46.0
+      },
+      {
+        "keyword": "drinking water help lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 34.0
+      },
+      {
+        "keyword": "drinking water help to lose weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 40.0
+      },
+      {
+        "keyword": "drinking water loses weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 50.0
+      },
+      {
+        "keyword": "drinking water make u lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 50.0
+      },
+      {
+        "keyword": "drinking water to lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 36.0
+      },
+      {
+        "keyword": "drinking water weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 29.0
+      },
+      {
+        "keyword": "eating disorder counseling san antonio",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0.0,
+        "position": 12.4
+      },
+      {
+        "keyword": "eating disorder recipes",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 30.0
+      },
+      {
+        "keyword": "eating disorder therapist near me",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 25.5
+      },
+      {
+        "keyword": "eating disorder therapist san antonio",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0.0,
+        "position": 14.5
+      },
+      {
+        "keyword": "eating disorder therapy san antonio",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0.0,
+        "position": 15.89
+      },
+      {
+        "keyword": "eating disorder treatment san antonio",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 20.0
+      },
+      {
+        "keyword": "eating disorders therapy san antonio",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 12.75
+      },
+      {
+        "keyword": "eating plus",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "elimina grasa?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      {
+        "keyword": "emotional eating",
+        "clicks": 0,
+        "impressions": 39,
+        "ctr": 0.0,
+        "position": 73.67
+      },
+      {
+        "keyword": "emotional eating counseling",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 37.12
+      },
+      {
+        "keyword": "emotional eating counseling mcallen, tx",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 19.83
+      },
+      {
+        "keyword": "emotional eating in women",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 77.0
+      },
+      {
+        "keyword": "emotional eating symptoms",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 65.0
+      },
+      {
+        "keyword": "emotional eating therapy mcallen, tx",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 24.83
+      },
+      {
+        "keyword": "emotional hunger",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 69.5
+      },
+      {
+        "keyword": "emotional support after weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 34.0
+      },
+      {
+        "keyword": "emotions and eating",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 78.5
+      },
+      {
+        "keyword": "failed psych eval for bariatric surgery",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      {
+        "keyword": "fitness & dieting counseling & psychology mental health dreams",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 16.0
+      },
+      {
+        "keyword": "food addiction consultation",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 28.25
+      },
+      {
+        "keyword": "food addiction counseling",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 38.0
+      },
+      {
+        "keyword": "food addiction counselor",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 49.0
+      },
+      {
+        "keyword": "food addiction program",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 58.75
+      },
+      {
+        "keyword": "food addiction rehab",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 67.5
+      },
+      {
+        "keyword": "food addiction services",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 56.33
+      },
+      {
+        "keyword": "food addiction specialist",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 38.0
+      },
+      {
+        "keyword": "food addiction specialist near me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 61.0
+      },
+      {
+        "keyword": "food addiction specialists near me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 74.0
+      },
+      {
+        "keyword": "food addiction therapists near me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 97.0
+      },
+      {
+        "keyword": "food addiction therapy",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 38.0
+      },
+      {
+        "keyword": "food addiction treatment",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 43.0
+      },
+      {
+        "keyword": "food impulse",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "food impulse control",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "food not digesting sitting in stomach",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 60.0
+      },
+      {
+        "keyword": "food paralysis meaning",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 10.33
+      },
+      {
+        "keyword": "food rehab",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 45.0
+      },
+      {
+        "keyword": "gastric bypass psych eval texas",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 27.0
+      },
+      {
+        "keyword": "gastric sleeve psych eval texas",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 28.5
+      },
+      {
+        "keyword": "gastroparalysis",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 57.5
+      },
+      {
+        "keyword": "gastroparesis and diarrhea",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 91.0
+      },
+      {
+        "keyword": "glp-1 support san antonio",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "gordhamer psych eval",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 66.0
+      },
+      {
+        "keyword": "henneth corado montenegro, 9618 huebner rd, san antonio, tx 78240",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "holistic approach to weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 16.5
+      },
+      {
+        "keyword": "holistic diet for weight loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 37.67
+      },
+      {
+        "keyword": "holistic fat loss",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 53.0
+      },
+      {
+        "keyword": "holistic health weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 34.0
+      },
+      {
+        "keyword": "holistic lifestyle changes for weight loss",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 43.5
+      },
+      {
+        "keyword": "holistic medical weight loss program",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 40.25
+      },
+      {
+        "keyword": "holistic weight loss",
+        "clicks": 0,
+        "impressions": 34,
+        "ctr": 0.0,
+        "position": 29.97
+      },
+      {
+        "keyword": "holistic weight loss approach",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 38.0
+      },
+      {
+        "keyword": "holistic weight loss benefits",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 48.4
+      },
+      {
+        "keyword": "holistic weight loss plan",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 26.0
+      },
+      {
+        "keyword": "holistic weight loss program",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 24.86
+      },
+      {
+        "keyword": "holistic weight loss solutions",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 49.0
+      },
+      {
+        "keyword": "holistic weight management",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 27.25
+      },
+      {
+        "keyword": "how are they different from each other",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      {
+        "keyword": "how can i improve sleep while working toward weight loss goals?",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      {
+        "keyword": "how can water help you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 48.0
+      },
+      {
+        "keyword": "how common is gastroparesis",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 54.0
+      },
+      {
+        "keyword": "how do hydration trackers support weight loss goals?",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 2.4
+      },
+      {
+        "keyword": "how do i choose between ozempic, wegovy, zepbound, and mounjaro for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "how do older north carolina patients describe their confidence, fears, and recovery support after bariatric surgery?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "how do you get a paralyzed stomach",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "how do you know if your stomach is paralyzed",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 23.0
+      },
+      {
+        "keyword": "how does a stomach get paralyzed",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "how does dehydration affect weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "how does drinking more water help you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "keyword": "how does drinking water affect weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 43.0
+      },
+      {
+        "keyword": "how does drinking water aid weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 52.0
+      },
+      {
+        "keyword": "how does drinking water help with weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 45.0
+      },
+      {
+        "keyword": "how does drinking water help you lose weight",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 42.5
+      },
+      {
+        "keyword": "how does hydration affect weight loss",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 7.75
+      },
+      {
+        "keyword": "how does hydration help with weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "how does increasing water intake help lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "keyword": "how does it compare to the others",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "how does ozempic compare to zepbound for weight management in non-diabetics?",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "keyword": "how does staying hydrated help you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 56.0
+      },
+      {
+        "keyword": "how does water help in weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "keyword": "how does water help to lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 30.0
+      },
+      {
+        "keyword": "how does water help with weight loss",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 34.75
+      },
+      {
+        "keyword": "how does water help you lose weight",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 47.33
+      },
+      {
+        "keyword": "how does water intake affect weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "how does water intake help with weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 46.0
+      },
+      {
+        "keyword": "how does water make u lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "keyword": "how does weight loss increase self esteem",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "how does zepbound compare to other weight loss drugs",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "how drinking water helps weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 40.0
+      },
+      {
+        "keyword": "how important is hydration for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 27.0
+      },
+      {
+        "keyword": "how important is water for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 54.0
+      },
+      {
+        "keyword": "how mich sleep do i need",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "how much does bariatric psych eval cost",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 61.0
+      },
+      {
+        "keyword": "how much water should you drink daily on glp 1",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "how much water to drink on glp 1",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "how much weight can you lose from dehydration",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 4.33
+      },
+      {
+        "keyword": "how much weight do you lose when dehydrated",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "how to get ozempic in hamilton",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 30.0
+      },
+      {
+        "keyword": "how to have self control with food",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 70.5
+      },
+      {
+        "keyword": "how to maintain your weight after weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "how to sleep for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 20.0
+      },
+      {
+        "keyword": "how water helps in weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 50.0
+      },
+      {
+        "keyword": "how water helps to lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 34.0
+      },
+      {
+        "keyword": "hydration and weight loss",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 14.25
+      },
+      {
+        "keyword": "hydration weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 20.0
+      },
+      {
+        "keyword": "i am evaluating treatment options based on clinical evidence, patient fit, dosing, tolerability, and real-world use. i need clear, credible information that helps me make confident prescribing or treatment recommendations. how effective is mounjaro in promoting weight loss compared to other medications?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "i am focused on finding a treatment option that is effective but also affordable and realistic for my insurance and budget situation. i look closely at savings programs, coverage, and total out-of-pocket cost before making a decision. can you recommend some non-insulin treatments that have the best weight loss expectations? for each treatment, give me pros and cons in the context of weight loss expectations.",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "i am focused on finding a treatment option that is effective but also affordable and realistic for my insurance and budget situation. i look closely at savings programs, coverage, and total out-of-pocket cost before making a decision. what are the average weight loss results i can expect from using mounjaro compared to other treatments?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "i am helping a loved one navigate treatment decisions and want options that are effective, manageable, and financially sustainable. i look for clear guidance on benefits, side effects, and what daily treatment use may look like. how does mounjaro compare to other weight loss treatments in terms of effectiveness for someone with my lifestyle?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "i am helping a loved one navigate treatment decisions and want options that are effective, manageable, and financially sustainable. i look for clear guidance on benefits, side effects, and what daily treatment use may look like. how does the titration schedule for mounjaro compare to other glp-1 therapies?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "i am helping a loved one navigate treatment decisions and want options that are effective, manageable, and financially sustainable. i look for clear guidance on benefits, side effects, and what daily treatment use may look like. how effective is mounjaro compared to other weight loss treatments in terms of actual weight loss outcomes?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "i am helping a loved one navigate treatment decisions and want options that are effective, manageable, and financially sustainable. i look for clear guidance on benefits, side effects, and what daily treatment use may look like. i'm looking for recommendations for injectable glp-1 therapies. list some therapies, and tell me for each why would you, or wouldn't you, recommend them.",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "i am helping a loved one navigate treatment decisions and want options that are effective, manageable, and financially sustainable. i look for clear guidance on benefits, side effects, and what daily treatment use may look like. what are the weight loss outcomes associated with mounjaro, and how do they compare to other similar treatments?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "i am in texas",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "i am looking into prescription treatments that may help with weight loss and overall metabolic health, and i often compare options before understanding the differences between them. i pay attention to results, side effects, and how people talk about these treatments online. is mounjaro the right glp-1 therapy for my specific health condition and lifestyle needs?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "i am looking into prescription treatments that may help with weight loss and overall metabolic health, and i often compare options before understanding the differences between them. i pay attention to results, side effects, and how people talk about these treatments online. what are the average weight loss results for people using mounjaro compared to other non-insulin treatments?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "if food cravings are still a problem, what other approaches can help?",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 63.0
+      },
+      {
+        "keyword": "if i drink less water will i lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8.0
+      },
+      {
+        "keyword": "if i stop drinking water will i lose weight",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 7.67
+      },
+      {
+        "keyword": "if you feel sad i can eat you meaning",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "keyword": "importance of drinking water for weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 57.0
+      },
+      {
+        "keyword": "impulsive snacks",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "keyword": "impulso",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "keyword": "intestinal paresis",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "intuitive eating mcallen, tx",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 2.5
+      },
+      {
+        "keyword": "is a collapsed stomach serious",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 51.0
+      },
+      {
+        "keyword": "is being thirsty a sign of weight loss",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "is drinking a lot of water good for losing weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 34.0
+      },
+      {
+        "keyword": "is drinking a lot of water good for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 36.0
+      },
+      {
+        "keyword": "is drinking water good for losing weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 39.0
+      },
+      {
+        "keyword": "is drinking water good for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "is drinking water helps in weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 51.0
+      },
+      {
+        "keyword": "is drinking water lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 58.0
+      },
+      {
+        "keyword": "is gastroparesis",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 77.0
+      },
+      {
+        "keyword": "is gastroparesis dangerous",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 81.0
+      },
+      {
+        "keyword": "is gastroparesis fatal",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 79.0
+      },
+      {
+        "keyword": "is hydration important for weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 19.0
+      },
+      {
+        "keyword": "is mounjaro and zepbound the same",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 28.0
+      },
+      {
+        "keyword": "is mounjaro the same as zepbound",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 44.0
+      },
+      {
+        "keyword": "is staying hydrated good for weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "is taking a daily pill easier than weekly mounjaro or zepbound shots?",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "is water good for fat loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 42.0
+      },
+      {
+        "keyword": "is water good for losing weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "is water helps in weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "keyword": "is water important for weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 48.0
+      },
+      {
+        "keyword": "is water make you lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 52.0
+      },
+      {
+        "keyword": "is water weight real weight loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "is wegovy the same as mounjaro or ozempic",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "is weight loss a sign of dehydration",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "is zepbound better than mounjaro",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 24.0
+      },
+      {
+        "keyword": "is zepbound like ozempic or mounjaro",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 10.67
+      },
+      {
+        "keyword": "is zepbound same as mounjaro",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 22.0
+      },
+      {
+        "keyword": "is zepbound the same as mounjaro",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 43.0
+      },
+      {
+        "keyword": "is zepbound the same as ozempic",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "keyword": "is zepbound the same as ozempic or mounjaro",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "lose water weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "losing weight drinking water",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 36.0
+      },
+      {
+        "keyword": "loss therapy san antonio tx",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 13.38
+      },
+      {
+        "keyword": "low self esteem after weight loss",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 8.88
+      },
+      {
+        "keyword": "low self esteem low weight loss",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "mind and body weight loss",
+        "clicks": 0,
+        "impressions": 20,
+        "ctr": 0.0,
+        "position": 12.1
+      },
+      {
+        "keyword": "moisture loss",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 39.0
+      },
+      {
+        "keyword": "motivation to lose weight",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "mounjaro vs ozempic vs wegovy vs zepbound",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "mounjaro vs ozempic vs zepbound",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "mounjaro vs wegovy vs ozempic",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "mounjaro vs wegovy vs ozempic vs zepbound",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "mounjaro vs wegovy vs zepbound",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "mounjaro vs zepbound",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 29.0
+      },
+      {
+        "keyword": "mounjaro vs zepbound for weight loss",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 17.17
+      },
+      {
+        "keyword": "mounjaro vs zepbound vs ozempic",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 10.5
+      },
+      {
+        "keyword": "mounjaro vs zepbound vs ozempic vs wegovy",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "mounjaro vs zepbound vs wegovy vs ozempic",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      {
+        "keyword": "mounjaro vs zepbound weight loss",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 17.0
+      },
+      {
+        "keyword": "mounjaro zepbound difference",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 15.0
+      },
+      {
+        "keyword": "my loved one has lost confidence after repeated diets. what kind of north carolina weight loss program could help them feel hopeful and respected?",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "nhs dehydration weight loss water not fat",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "nu",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      {
+        "keyword": "nutritional counseling san antonio tx",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 24.71
+      },
+      {
+        "keyword": "nutritionist dietitian",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "nutritionist or dietician for weight loss",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 13.75
+      },
+      {
+        "keyword": "nutritionist vs dietician for weight loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "obesity and weight loss counseling",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 46.0
+      },
+      {
+        "keyword": "obesity counseling",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 42.0
+      },
+      {
+        "keyword": "ozempic",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "ozempic mounjaro wegovy zepbound",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "ozempic or wegovy or mounjaro",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "ozempic or wegovy or munjaro",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "ozempic vs mounjaro vs wegovy",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "ozempic vs mounjaro vs wegovy vs zepbound",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "ozempic vs mounjaro vs zepbound",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "ozempic vs mounjaro vs zepbound weight loss",
+        "clicks": 0,
+        "impressions": 129,
+        "ctr": 0.0,
+        "position": 9.4
+      },
+      {
+        "keyword": "ozempic vs other weight loss drugs",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "ozempic vs wegovy vs mounjaro",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 11.06
+      },
+      {
+        "keyword": "ozempic vs wegovy vs mounjaro vs zepbound",
+        "clicks": 0,
+        "impressions": 23,
+        "ctr": 0.0,
+        "position": 6.65
+      },
+      {
+        "keyword": "ozempic vs wegovy vs mounjaro vs zepbound for weight loss",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 8.67
+      },
+      {
+        "keyword": "ozempic vs wegovy vs zepbound",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "ozempic vs zepbound",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 19.0
+      },
+      {
+        "keyword": "ozempic vs zepbound vs mounjaro",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "ozempic vs zepbound vs wegovy",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "ozempic vs zepbound vs wegovy vs mounjaro",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "ozempic wegovy mounjaro",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "ozempic wegovy mounjaro and zepbound",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 9.67
+      },
+      {
+        "keyword": "ozempic wegovy mounjaro zepbound",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 9.14
+      },
+      {
+        "keyword": "ozempic, wegovy, mounjaro, and zepbound",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 6.0
+      },
+      {
+        "keyword": "ozempic, wegovy, zepbound, foundayo",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8.0
+      },
+      {
+        "keyword": "paralysed gut",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 12.0
+      },
+      {
+        "keyword": "paralysed stomach",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 10.5
+      },
+      {
+        "keyword": "paralysed stomach symptoms",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 13.0
+      },
+      {
+        "keyword": "paralysis of stomach",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "paralysis of the gut",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "paralysis of the stomach",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 11.75
+      },
+      {
+        "keyword": "paralysis stomach",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "paralyzed gut",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "keyword": "paralyzed stomach causes",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "post weight loss self esteem",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 10.6
+      },
+      {
+        "keyword": "pre surgical psych eval san antonio",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 17.67
+      },
+      {
+        "keyword": "psych eval referral form bariatric",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 35.0
+      },
+      {
+        "keyword": "psychological evaluation near me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 9.0
+      },
+      {
+        "keyword": "psychological evaluation san antonio",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 9.5
+      },
+      {
+        "keyword": "psychologist bariatric surgery",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 15.33
+      },
+      {
+        "keyword": "rapid weight loss dehydration",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "keyword": "rebuild self-esteem after dieting",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 6.38
+      },
+      {
+        "keyword": "recipe rehab recipes pdf",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 10.17
+      },
+      {
+        "keyword": "recipes for eating disorder recovery",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 39.0
+      },
+      {
+        "keyword": "recommend strategies for managing cravings and emotional eating for long-term weight success",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "keyword": "recovery recipe",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 19.0
+      },
+      {
+        "keyword": "registered dietitian nutritionists",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "keyword": "sabotaging myself",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "keyword": "sad eating",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 74.0
+      },
+      {
+        "keyword": "same day bariatric psych eval",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 54.5
+      },
+      {
+        "keyword": "san antonio bariatric center",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 16.0
+      }
+    ],
+    "yesterday_pages": [
+      {
+        "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
+        "clicks": 23,
+        "impressions": 4048,
+        "ctr": 0.0057,
+        "position": 7.39
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/",
+        "clicks": 5,
+        "impressions": 206,
+        "ctr": 0.0243,
+        "position": 18.75
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+        "clicks": 4,
+        "impressions": 504,
+        "ctr": 0.0079,
+        "position": 7.43
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/bariatric-psychological-evaluation-near-me/",
+        "clicks": 3,
+        "impressions": 61,
+        "ctr": 0.0492,
+        "position": 21.43
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/",
+        "clicks": 3,
+        "impressions": 235,
+        "ctr": 0.0128,
+        "position": 9.82
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/",
+        "clicks": 3,
+        "impressions": 135,
+        "ctr": 0.0222,
+        "position": 9.59
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/gut-health/gastroparesis-aka-stomach-paralysis/",
+        "clicks": 2,
+        "impressions": 332,
+        "ctr": 0.006,
+        "position": 11.71
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+        "clicks": 2,
+        "impressions": 265,
+        "ctr": 0.0075,
+        "position": 10.58
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+        "clicks": 2,
+        "impressions": 153,
+        "ctr": 0.0131,
+        "position": 26.38
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
+        "clicks": 2,
+        "impressions": 681,
+        "ctr": 0.0029,
+        "position": 9.46
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/author/shamilton/",
+        "clicks": 1,
+        "impressions": 41,
+        "ctr": 0.0244,
+        "position": 10.02
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/healthy-living/ozempic-vs-mounjaro-vs-zepbound-for-weight-loss/",
+        "clicks": 1,
+        "impressions": 235,
+        "ctr": 0.0043,
+        "position": 10.36
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/food-addiction-treatment-in-san-antonio-tx/",
+        "clicks": 1,
+        "impressions": 32,
+        "ctr": 0.0312,
+        "position": 39.72
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/",
+        "clicks": 1,
+        "impressions": 6,
+        "ctr": 0.1667,
+        "position": 6.83
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/staff/meet-dr-sara-hamilton/",
+        "clicks": 1,
+        "impressions": 15,
+        "ctr": 0.0667,
+        "position": 12.27
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/about/",
+        "clicks": 0,
+        "impressions": 87,
+        "ctr": 0.0,
+        "position": 13.72
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/author/lartzberger/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 2.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/author/shamilton/page/2/",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 17.29
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/author/tmccord845/",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0.0,
+        "position": 6.93
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 71,
+        "ctr": 0.0,
+        "position": 21.18
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 43,
+        "ctr": 0.0,
+        "position": 39.05
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 27,
+        "ctr": 0.0,
+        "position": 33.22
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/bariatric-therapist-near-me/",
+        "clicks": 0,
+        "impressions": 35,
+        "ctr": 0.0,
+        "position": 12.97
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0.0,
+        "position": 28.56
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/blog/",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 2.95
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/blog/a-new-approach-to-holiday-eating/",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 30.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/blog/bcc-in-the-news/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/body-confidence-counseling-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/category/diet-and-nutrition/supplements-and-wellness/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 4.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/category/emotional-eating/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/compulsive-overeating-counseling-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/contact/",
+        "clicks": 0,
+        "impressions": 44,
+        "ctr": 0.0,
+        "position": 16.95
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/dietitians-or-nutritionists-breaking-down-the-differences/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/dietitian-vs-nutritionist-for-the-weight-loss-whats-the-difference/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/dietitian-vs-nutritionist-for-weight-loss-whats-the-difference/",
+        "clicks": 0,
+        "impressions": 45,
+        "ctr": 0.0,
+        "position": 19.11
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/eating-disorder-therapist-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 5.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 28.77
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/emotional-eating-therapy-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 7.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/emotional-eating/a-new-approach-to-holiday-eating/",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0.0,
+        "position": 26.11
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/emotional-eating/emotional-eating-and-coping-skills/",
+        "clicks": 0,
+        "impressions": 37,
+        "ctr": 0.0,
+        "position": 25.22
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/emotional-eating/what-is-emotional-eating/",
+        "clicks": 0,
+        "impressions": 108,
+        "ctr": 0.0,
+        "position": 42.56
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/faq/",
+        "clicks": 0,
+        "impressions": 64,
+        "ctr": 0.0,
+        "position": 15.34
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/food-addiction-treatment-in-texas/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/glp-1-behavioral-support-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/healthy-learning-2/why-hydration-is-essential-for-weight-loss-and-management/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-essential-for-weight-loss-and-management/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-management/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-issential-for-weight-management",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-late-night-snacking-always-wins-and-why-youre-not-weak-for-it/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 5.5
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/holistic-approach-to-weight-loss/",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 14.38
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/in-the-media/",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0.0,
+        "position": 12.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/interviews/",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 8.14
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/intuitive-eating-support-in-mcallen-tx/",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 3.33
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/mindful-eating-for-better-health-a-guide/",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 6.67
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/mindful-eating-for-better-health-learn-intuitive-eating-with-expert-guidance/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 4.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+        "clicks": 0,
+        "impressions": 20,
+        "ctr": 0.0,
+        "position": 2.25
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/",
+        "clicks": 0,
+        "impressions": 21,
+        "ctr": 0.0,
+        "position": 13.29
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/ourprogram/dine-together/",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0.0,
+        "position": 12.64
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/ourprogram/enjoy-movement/",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 13.29
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 12.29
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/real-behavioral-change-starts-with-the-mind/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 10.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/recipes/",
+        "clicks": 0,
+        "impressions": 33,
+        "ctr": 0.0,
+        "position": 15.21
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 3.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-identify-self-sabotage-causes/",
+        "clicks": 0,
+        "impressions": 28,
+        "ctr": 0.0,
+        "position": 23.54
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-to-change-a-habit/",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 20.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0.0,
+        "position": 36.6
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/how-to-maintain-motivation-on-your-weight-loss-journey/",
+        "clicks": 0,
+        "impressions": 20,
+        "ctr": 0.0,
+        "position": 22.2
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/4-practical-strategies-to-improve-body-image-after-weight-loss/",
+        "clicks": 0,
+        "impressions": 51,
+        "ctr": 0.0,
+        "position": 18.92
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/self-improvement/motivation/understanding-types-of-motivation/",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 8.2
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/staff-videos/",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 9.12
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/staff/dr-sara-hamilton-a-holistic-approach-to-weight-loss/",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 33.75
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/testimonials/",
+        "clicks": 0,
+        "impressions": 30,
+        "ctr": 0.0,
+        "position": 3.37
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/the-importance-of-multi-disciplinary-care-for-treating-binge-eating-disorder-why-a-team-approach-is-best/",
+        "clicks": 0,
+        "impressions": 41,
+        "ctr": 0.0,
+        "position": 25.59
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 9.5
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/weight-loss-counseling-or-therapy/",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0.0,
+        "position": 4.56
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-do-i-choose-a-weight-loss-program/",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 39.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/weight-loss-therapy-in-san-antonio-tx/",
+        "clicks": 0,
+        "impressions": 51,
+        "ctr": 0.0,
+        "position": 37.63
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/what-happens-in-a-bariatric-psych-eval/",
+        "clicks": 0,
+        "impressions": 31,
+        "ctr": 0.0,
+        "position": 11.81
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/what-is-a-bariatric-therapist/",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 5.25
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 15.29
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/wp-content/uploads/BCC-Recipes-PDF-1.pdf",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Back-3.pdf",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 44.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Greek-Lamb-Meatballs-with-Butternut-Squash-Puree-Tzatziki.pdf",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 50.0
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Grilled-Chicken-Thighs-with-Ratatouille.pdf",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 48.25
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Roasted-Cauliflower-and-Hazelnuts.pdf",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 29.5
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Saltimbocca-with-Sauteed-Spinach-Grape-Tomatoes.pdf",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0.0,
+        "position": 49.12
+      },
+      {
+        "page": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Shrimp-Mussels-in-Saffron-White-Wine-Broth-with-Roasted-Butternut-Squash.pdf",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0.0,
+        "position": 56.57
+      }
+    ]
+  },
+  "gmb_data": null,
+  "wp_recent_changes": {
+    "pages": [
+      {
+        "id": 2091,
+        "slug": "home-2",
+        "link": "https://www.bariatriccounselingcenter.com/",
+        "title": "Home &#8211; Bariatric Counseling Center",
+        "date": "2026-01-08T10:17:00",
+        "modified": "2026-09-11T08:34:18",
+        "status": "publish"
+      }
+    ],
+    "posts": []
+  },
+  "launches_this_run": [
+    {
+      "launched_at": "2026-09-11",
+      "type": "page-modify",
+      "title": "Home &#8211; Bariatric Counseling Center",
+      "url": "/",
+      "wp_id": 2091,
+      "source": "wp-rest-modified",
+      "confidence": "medium",
+      "id": "auto-2026-09-11-page-modify-2091",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-12",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-12",
+      "commit_hash": "1aaeedd",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-12-git-commit-1aaeedd",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-12",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-12",
+      "commit_hash": "fdf20c3",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-12-git-commit-fdf20c3",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-11",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-11",
+      "commit_hash": "2318896",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-11-git-commit-2318896",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-11",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-11",
+      "commit_hash": "7e70ad5",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-11-git-commit-7e70ad5",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-10",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-09-10",
+      "commit_hash": "73c4749",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-10-git-commit-73c4749",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-10",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-10",
+      "commit_hash": "897f77d",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-10-git-commit-897f77d",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-10",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-10",
+      "commit_hash": "9a3b63c",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-10-git-commit-9a3b63c",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-09",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-09",
+      "commit_hash": "30b09bc",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-09-git-commit-30b09bc",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-09",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-09-09",
+      "commit_hash": "3917ab5",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-09-git-commit-3917ab5",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-09",
+      "type": "git-commit",
+      "title": "bcc marketing pulse: 2026-09-09",
+      "commit_hash": "67e43c6",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-09-git-commit-67e43c6",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-09",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-09",
+      "commit_hash": "87cdddd",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-09-git-commit-87cdddd",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-08",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-08",
+      "commit_hash": "ad3bc12",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-08-git-commit-ad3bc12",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-08",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-08",
+      "commit_hash": "8e377c0",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-08-git-commit-8e377c0",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-07",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-07",
+      "commit_hash": "d057713",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-07-git-commit-d057713",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-07",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-09-07",
+      "commit_hash": "56de280",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-07-git-commit-56de280",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-07",
+      "type": "git-commit",
+      "title": "bcc marketing pulse: 2026-09-07",
+      "commit_hash": "9d4bcc5",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-07-git-commit-9d4bcc5",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-07",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-07",
+      "commit_hash": "4f81705",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-07-git-commit-4f81705",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-06",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-06",
+      "commit_hash": "b1d2e9a",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-06-git-commit-b1d2e9a",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-06",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-06",
+      "commit_hash": "3e5b64a",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-06-git-commit-3e5b64a",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-11",
+      "type": "git-commit",
+      "title": "GM mode: tag consolidation prepared for production, not shipped",
+      "commit_hash": "c6654e6",
+      "commit_author": "Claude (cowork)",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-11-git-commit-c6654e6",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    },
+    {
+      "launched_at": "2026-09-10",
+      "type": "git-commit",
+      "title": "Food Friday ship-check 2026-09-10: no reply, nothing shipped",
+      "commit_hash": "f135da6",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-10-git-commit-f135da6",
+      "first_seen_at": "2026-09-13T08:03:08.249171Z"
+    }
+  ],
+  "launches_ledger_size": 1135,
+  "paid_social_spikes": [],
+  "git_commits_recent": [
+    {
+      "date": "2026-09-12T07:00:33-05:00",
+      "hash": "1aaeedd",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-12"
+    },
+    {
+      "date": "2026-09-12T03:04:36-05:00",
+      "hash": "fdf20c3",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-12"
+    },
+    {
+      "date": "2026-09-11T07:00:27-05:00",
+      "hash": "2318896",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-11"
+    },
+    {
+      "date": "2026-09-11T03:04:43-05:00",
+      "hash": "7e70ad5",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-11"
+    },
+    {
+      "date": "2026-09-10T09:43:56-05:00",
+      "hash": "73c4749",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-09-10"
+    },
+    {
+      "date": "2026-09-10T09:33:34-05:00",
+      "hash": "897f77d",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-10"
+    },
+    {
+      "date": "2026-09-10T07:00:30-05:00",
+      "hash": "9a3b63c",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-10"
+    },
+    {
+      "date": "2026-09-09T07:01:23-05:00",
+      "hash": "30b09bc",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-09"
+    },
+    {
+      "date": "2026-09-09T04:30:30-05:00",
+      "hash": "3917ab5",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-09-09"
+    },
+    {
+      "date": "2026-09-09T04:09:22-05:00",
+      "hash": "67e43c6",
+      "author": "Daniel Bisett",
+      "subject": "bcc marketing pulse: 2026-09-09"
+    },
+    {
+      "date": "2026-09-09T03:04:24-05:00",
+      "hash": "87cdddd",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-09"
+    },
+    {
+      "date": "2026-09-08T07:00:29-05:00",
+      "hash": "ad3bc12",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-08"
+    },
+    {
+      "date": "2026-09-08T03:05:12-05:00",
+      "hash": "8e377c0",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-08"
+    },
+    {
+      "date": "2026-09-07T07:00:35-05:00",
+      "hash": "d057713",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-07"
+    },
+    {
+      "date": "2026-09-07T04:31:49-05:00",
+      "hash": "56de280",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-09-07"
+    },
+    {
+      "date": "2026-09-07T04:10:53-05:00",
+      "hash": "9d4bcc5",
+      "author": "Daniel Bisett",
+      "subject": "bcc marketing pulse: 2026-09-07"
+    },
+    {
+      "date": "2026-09-07T03:04:43-05:00",
+      "hash": "4f81705",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-07"
+    },
+    {
+      "date": "2026-09-06T07:00:32-05:00",
+      "hash": "b1d2e9a",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-06"
+    },
+    {
+      "date": "2026-09-06T03:04:42-05:00",
+      "hash": "3e5b64a",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-06"
+    },
+    {
+      "date": "2026-09-12T07:14:22-05:00",
+      "hash": "e3dbc39",
+      "author": "Daniel Bisett",
+      "subject": "autosync from WeRockDM @ 2026-09-12T07:14:22"
+    }
+  ]
+}
