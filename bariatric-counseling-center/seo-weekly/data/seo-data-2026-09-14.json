@@ -1,0 +1,230 @@
+{
+  "timestamp": "2026-09-14T13:00:00Z",
+  "date": "2026-09-14",
+  "source": "Browser SERP check (Claude in Chrome) + GSC",
+  "brave": {
+    "keywords_in_top_1": 4,
+    "keywords_in_top_10": 16,
+    "keywords_in_top_3": 10,
+    "avg_position": 3.81,
+    "top_3_keywords": [
+      { "keyword": "bariatric counseling san antonio", "position": 1, "category": "local-primary" },
+      { "keyword": "weight loss counseling san antonio", "position": 1, "category": "local-primary" },
+      { "keyword": "bariatric counseling", "position": 1, "category": "national-primary" },
+      { "keyword": "bariatric surgery psychological evaluation san antonio", "position": 1, "category": "local-service" },
+      { "keyword": "emotional eating therapy san antonio", "position": 2, "category": "local-service" },
+      { "keyword": "bariatric counseling near me", "position": 2, "category": "national-primary" },
+      { "keyword": "bariatric counselor", "position": 2, "category": "national-primary" },
+      { "keyword": "bariatric therapist", "position": 3, "category": "national-primary" },
+      { "keyword": "weight loss counseling or therapy", "position": 3, "category": "national-primary" },
+      { "keyword": "overeaters support san antonio", "position": 3, "category": "local-service" }
+    ],
+    "all_keywords": {
+      "bariatric counseling san antonio": { "position": 1, "category": "local-primary", "trend": "stable", "change": 0 },
+      "weight loss counseling san antonio": { "position": 1, "category": "local-primary", "trend": "stable", "change": 0 },
+      "emotional eating therapy san antonio": { "position": 2, "category": "local-service", "trend": "stable", "change": 0 },
+      "binge eating treatment san antonio": { "position": 8, "category": "local-service", "trend": "declining", "change": -2 },
+      "food addiction treatment san antonio": { "position": 6, "category": "local-service", "trend": "declining", "change": -1 },
+      "eating disorder therapist san antonio": { "position": 10, "category": "local-service", "trend": "new_entry", "change": null },
+      "bariatric counseling": { "position": 1, "category": "national-primary", "trend": "stable", "change": 0 },
+      "bariatric therapy": { "position": null, "category": "national-primary", "trend": "stable", "change": null },
+      "binge eating disorder treatment": { "position": null, "category": "national-primary", "trend": "stable", "change": null },
+      "food addiction treatment": { "position": null, "category": "national-primary", "trend": "stable", "change": null },
+      "weight loss counseling": { "position": null, "category": "national-primary", "trend": "stable", "change": null },
+      "bariatric surgery psychological evaluation san antonio": { "position": 1, "category": "local-service", "trend": "stable", "change": 0 },
+      "bariatric psychological evaluation near me": { "position": null, "category": "national-primary", "trend": "stable", "change": null },
+      "weight loss therapy san antonio": { "position": null, "category": "local-service", "trend": "stable", "change": null },
+      "eating disorder counseling san antonio": { "position": null, "category": "local-service", "trend": "declining", "change": null, "note": "was #9 last week (08-31); dropped off page 1 entirely this run" },
+      "nutritional counseling san antonio tx": { "position": null, "category": "local-service", "trend": "stable", "change": null },
+      "weight loss counselor": { "position": null, "category": "national-primary", "trend": "stable", "change": null },
+      "bariatric counseling near me": { "position": 2, "category": "national-primary", "trend": "stable", "change": 0 },
+      "eating disorder therapist near me": { "position": null, "category": "national-primary", "trend": "stable", "change": null },
+      "bariatric counselor": { "position": 2, "category": "national-primary", "trend": "rising", "change": 1 },
+      "weight loss therapist": { "position": 7, "category": "national-primary", "trend": "new_entry", "change": null },
+      "holistic approach to weight loss": { "position": null, "category": "national-primary", "trend": "stable", "change": null },
+      "bariatric therapist": { "position": 3, "category": "national-primary", "trend": "declining", "change": -1 },
+      "weight loss counseling or therapy": { "position": 3, "category": "national-primary", "trend": "rising", "change": 1 },
+      "overeaters anonymous san antonio": { "position": 6, "category": "local-service", "trend": "new_entry", "change": null },
+      "overeaters anonymous alternative san antonio": { "position": 5, "category": "local-service", "trend": "declining", "change": -1 },
+      "overeaters support": { "position": null, "category": "national-primary", "trend": "stable", "change": null },
+      "overeaters support san antonio": { "position": 3, "category": "local-service", "trend": "stable", "change": 0 },
+      "help for overeaters": { "position": null, "category": "national-primary", "trend": "stable", "change": null },
+      "overeaters help": { "position": null, "category": "national-primary", "trend": "stable", "change": null },
+      "compulsive overeaters": { "position": null, "category": "national-primary", "trend": "stable", "change": null }
+    },
+    "competitors": [
+      { "domain": "psychologytoday.com", "appearance_count": 6 },
+      { "domain": "eatingdisorderhope.com", "appearance_count": 5 },
+      { "domain": "balancedcounselingsa.com", "appearance_count": 2 },
+      { "domain": "eatingrecoverycenter.com", "appearance_count": 2 },
+      { "domain": "oasanantonio.com", "appearance_count": 2 },
+      { "domain": "zocdoc.com", "appearance_count": 1 },
+      { "domain": "mediweightloss.com", "appearance_count": 1 },
+      { "domain": "aabc-certification.org", "appearance_count": 1 },
+      { "domain": "nationaleatingdisorders.org", "appearance_count": 1 }
+    ],
+    "measurement_note": "Checked while signed in to BCC's own Google Business Profile (Wimberley, TX checking location) via Claude in Chrome, num=20, gl=us&hl=en. National 'near me' / no-geo-modifier queries continue to resolve to Austin/Wimberley-area local-pack bias from this location -- null on those keywords is a known measurement artifact, not necessarily a true ranking loss (same caveat as prior weeks)."
+  },
+  "google": {
+    "fetched_at": "2026-09-14",
+    "data_range": { "start": "2026-09-07", "end": "2026-09-14", "days": 7 },
+    "property": "https://www.bariatriccounselingcenter.com/",
+    "summary": {
+      "total_queries": 500,
+      "total_pages": 87,
+      "total_clicks": 10,
+      "total_impressions": 1446,
+      "avg_position_impression_weighted": 19.26,
+      "discovery_candidates_count": 40,
+      "tracked_keywords_with_data": 11,
+      "total_clicks_page_level_true_total": 60,
+      "note": "total_clicks/total_impressions above sum the QUERY dimension and undercount vs reality; page-level (top_pages) true total_clicks ~= 60 (known dashboard bug, see reference_gsc_click_undercount)"
+    },
+    "top_queries": [
+      { "keyword": "bariatric psychological evaluation near me", "clicks": 1, "impressions": 6, "ctr": 0.1667, "position": 21.83 },
+      { "keyword": "bariatric therapist near me", "clicks": 1, "impressions": 9, "ctr": 0.1111, "position": 9.11 },
+      { "keyword": "can dehydration prevent weight loss", "clicks": 1, "impressions": 6, "ctr": 0.1667, "position": 2.17 },
+      { "keyword": "paralyzed stomach", "clicks": 1, "impressions": 7, "ctr": 0.1429, "position": 12.71 },
+      { "keyword": "bariatric counseling", "clicks": 0, "impressions": 8, "ctr": 0.0, "position": 2.62 },
+      { "keyword": "can dehydration cause weight loss", "clicks": 0, "impressions": 37, "ctr": 0.0, "position": 2.46 },
+      { "keyword": "does dehydration cause weight loss", "clicks": 0, "impressions": 37, "ctr": 0.0, "position": 1.76 },
+      { "keyword": "dehydration and weight loss", "clicks": 0, "impressions": 17, "ctr": 0.0, "position": 2.82 },
+      { "keyword": "dehydration weight loss", "clicks": 0, "impressions": 16, "ctr": 0.0, "position": 4.69 },
+      { "keyword": "coping skills for eating disorders", "clicks": 0, "impressions": 16, "ctr": 0.0, "position": 29.31 },
+      { "keyword": "bariatriccounselingcenter.com", "clicks": 0, "impressions": 13, "ctr": 0.0, "position": 1.92 },
+      { "keyword": "eating disorder counseling san antonio", "clicks": 0, "impressions": 11, "ctr": 0.0, "position": 12.18 },
+      { "keyword": "eating disorder therapist san antonio", "clicks": 0, "impressions": 12, "ctr": 0.0, "position": 14.33 },
+      { "keyword": "bariatric psychologist", "clicks": 0, "impressions": 9, "ctr": 0.0, "position": 15.11 },
+      { "keyword": "bariatric therapist", "clicks": 0, "impressions": 3, "ctr": 0.0, "position": 9.0 },
+      { "keyword": "holistic approach to weight loss", "clicks": 0, "impressions": 2, "ctr": 0.0, "position": 16.5 },
+      { "keyword": "nutritional counseling san antonio tx", "clicks": 0, "impressions": 5, "ctr": 0.0, "position": 26.4 },
+      { "keyword": "food addiction treatment", "clicks": 0, "impressions": 3, "ctr": 0.0, "position": 55.67 },
+      { "keyword": "bariatric surgery psychologist worcester ma", "clicks": 0, "impressions": 3, "ctr": 0.0, "position": 17.0 },
+      { "keyword": "san antonio bariatric center", "clicks": 0, "impressions": 6, "ctr": 0.0, "position": 37.5 }
+    ],
+    "top_pages": [
+      { "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/", "clicks": 22, "impressions": 4208, "ctr": 0.0052, "position": 7.26 },
+      { "page": "https://www.bariatriccounselingcenter.com/", "clicks": 7, "impressions": 209, "ctr": 0.0335, "position": 17.33 },
+      { "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/", "clicks": 6, "impressions": 512, "ctr": 0.0117, "position": 7.35 },
+      { "page": "https://www.bariatriccounselingcenter.com/bariatric-psychological-evaluation-near-me/", "clicks": 4, "impressions": 43, "ctr": 0.093, "position": 20.65 },
+      { "page": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/healthy-living/ozempic-vs-mounjaro-vs-zepbound-for-weight-loss/", "clicks": 4, "impressions": 271, "ctr": 0.0148, "position": 9.81 },
+      { "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/", "clicks": 3, "impressions": 235, "ctr": 0.0128, "position": 8.82 },
+      { "page": "https://www.bariatriccounselingcenter.com/about/", "clicks": 2, "impressions": 93, "ctr": 0.0215, "position": 11.53 },
+      { "page": "https://www.bariatriccounselingcenter.com/author/shamilton/", "clicks": 2, "impressions": 41, "ctr": 0.0488, "position": 9.83 },
+      { "page": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/gut-health/gastroparesis-aka-stomach-paralysis/", "clicks": 2, "impressions": 378, "ctr": 0.0053, "position": 10.65 },
+      { "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/", "clicks": 2, "impressions": 279, "ctr": 0.0072, "position": 10.06 }
+    ],
+    "per_keyword_metrics": {
+      "bariatric psychological evaluation near me": { "clicks": 1, "impressions": 6, "ctr": 0.1667, "position": 21.83 },
+      "bariatric counseling": { "clicks": 0, "impressions": 8, "ctr": 0.0, "position": 2.62 },
+      "bariatric therapist": { "clicks": 0, "impressions": 3, "ctr": 0.0, "position": 9.0 },
+      "bmi center san antonio": { "clicks": 0, "impressions": 1, "ctr": 0.0, "position": 11.0 },
+      "eating disorder counseling san antonio": { "clicks": 0, "impressions": 11, "ctr": 0.0, "position": 12.18 },
+      "eating disorder therapist san antonio": { "clicks": 0, "impressions": 12, "ctr": 0.0, "position": 14.33 },
+      "eating disorder treatment san antonio": { "clicks": 0, "impressions": 3, "ctr": 0.0, "position": 17.0 },
+      "food addiction treatment": { "clicks": 0, "impressions": 3, "ctr": 0.0, "position": 55.67 },
+      "holistic approach to weight loss": { "clicks": 0, "impressions": 2, "ctr": 0.0, "position": 16.5 },
+      "nutritional counseling san antonio tx": { "clicks": 0, "impressions": 5, "ctr": 0.0, "position": 26.4 },
+      "san antonio bariatric center": { "clicks": 0, "impressions": 6, "ctr": 0.0, "position": 37.5 }
+    },
+    "discovery_candidates": [
+      { "keyword": "ozempic vs mounjaro vs zepbound weight loss", "clicks": 0, "impressions": 134, "ctr": 0.0, "position": 9.15 },
+      { "keyword": "emotional eating", "clicks": 0, "impressions": 38, "ctr": 0.0, "position": 72.92 },
+      { "keyword": "can dehydration cause weight loss", "clicks": 0, "impressions": 37, "ctr": 0.0, "position": 2.46 },
+      { "keyword": "does dehydration cause weight loss", "clicks": 0, "impressions": 37, "ctr": 0.0, "position": 1.76 },
+      { "keyword": "digestive tract paralysis", "clicks": 0, "impressions": 24, "ctr": 0.0, "position": 18.08 },
+      { "keyword": "holistic weight loss", "clicks": 0, "impressions": 24, "ctr": 0.0, "position": 30.42 },
+      { "keyword": "ozempic vs wegovy vs mounjaro vs zepbound", "clicks": 0, "impressions": 21, "ctr": 0.0, "position": 6.29 },
+      { "keyword": "mind and body weight loss", "clicks": 0, "impressions": 19, "ctr": 0.0, "position": 12.11 },
+      { "keyword": "dehydration and weight loss", "clicks": 0, "impressions": 17, "ctr": 0.0, "position": 2.82 },
+      { "keyword": "coping skills for eating disorders", "clicks": 0, "impressions": 16, "ctr": 0.0, "position": 29.31 },
+      { "keyword": "sara hamilton", "clicks": 0, "impressions": 16, "ctr": 0.0, "position": 13.31 },
+      { "keyword": "ozempic vs wegovy vs mounjaro", "clicks": 0, "impressions": 15, "ctr": 0.0, "position": 12.93 },
+      { "keyword": "bariatric therapist near me", "clicks": 1, "impressions": 9, "ctr": 0.1111, "position": 9.11 },
+      { "keyword": "bariatric psychologist", "clicks": 0, "impressions": 9, "ctr": 0.0, "position": 15.11 },
+      { "keyword": "eating disorder therapy san antonio", "clicks": 0, "impressions": 9, "ctr": 0.0, "position": 15.67 },
+      { "keyword": "emotional eating counseling", "clicks": 0, "impressions": 9, "ctr": 0.0, "position": 36.44 },
+      { "keyword": "holistic weight loss program", "clicks": 0, "impressions": 9, "ctr": 0.0, "position": 27.89 }
+    ]
+  },
+  "analysis": {
+    "rising": [
+      { "keyword": "bariatric counselor", "position": 2, "change": 1, "category": "national-primary" },
+      { "keyword": "weight loss counseling or therapy", "position": 3, "change": 1, "category": "national-primary" }
+    ],
+    "declining": [
+      { "keyword": "eating disorder counseling san antonio", "position": null, "change": null, "category": "local-service", "note": "dropped off page 1 entirely; was #9 last week -- Todd priority keyword, needs attention" },
+      { "keyword": "binge eating treatment san antonio", "position": 8, "change": -2, "category": "local-service" },
+      { "keyword": "food addiction treatment san antonio", "position": 6, "change": -1, "category": "local-service" },
+      { "keyword": "bariatric therapist", "position": 3, "change": -1, "category": "national-primary" },
+      { "keyword": "overeaters anonymous alternative san antonio", "position": 5, "change": -1, "category": "local-service" }
+    ],
+    "new_entries": [
+      { "keyword": "eating disorder therapist san antonio", "position": 10, "category": "local-service" },
+      { "keyword": "weight loss therapist", "position": 7, "category": "national-primary" },
+      { "keyword": "overeaters anonymous san antonio", "position": 6, "category": "local-service" }
+    ],
+    "low_hanging_fruit": [
+      { "keyword": "eating disorder counseling san antonio", "gsc_position": 12.18, "trend": "declining", "category": "local-service", "note": "11 GSC impressions/7d, avg pos 12.18 -- lost live top-10/top-20 spot this week, prime candidate for on-page refresh" },
+      { "keyword": "eating disorder therapist san antonio", "gsc_position": 14.33, "trend": "new_entry", "category": "local-service" },
+      { "keyword": "holistic approach to weight loss", "gsc_position": 16.5, "trend": "stable", "category": "national-primary" }
+    ]
+  },
+  "link_checks": [
+    { "url": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/", "status": "ok", "internal_links_checked": "page-load-verified", "broken_links": [] },
+    { "url": "https://www.bariatriccounselingcenter.com/", "status": "ok", "internal_links_checked": "page-load-verified", "broken_links": [] },
+    { "url": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/", "status": "ok", "internal_links_checked": "page-load-verified", "broken_links": [] },
+    { "url": "https://www.bariatriccounselingcenter.com/bariatric-psychological-evaluation-near-me/", "status": "ok", "internal_links_checked": "page-load-verified", "broken_links": [] },
+    { "url": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/healthy-living/ozempic-vs-mounjaro-vs-zepbound-for-weight-loss/", "status": "ok", "internal_links_checked": "page-load-verified", "broken_links": [] },
+    { "url": "https://www.bariatriccounselingcenter.com/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/", "status": "ok", "internal_links_checked": "page-load-verified", "broken_links": [] },
+    { "url": "https://www.bariatriccounselingcenter.com/about/", "status": "ok", "internal_links_checked": "page-load-verified", "broken_links": [], "content_flag": "Clinical team list shows Nancy Albus as 'Clinical Advisor' -- verify vs current staffing" },
+    { "url": "https://www.bariatriccounselingcenter.com/author/shamilton/", "status": "ok", "internal_links_checked": "page-load-verified", "broken_links": [] },
+    { "url": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/gut-health/gastroparesis-aka-stomach-paralysis/", "status": "ok", "internal_links_checked": "page-load-verified", "broken_links": [] },
+    { "url": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/", "status": "ok", "internal_links_checked": "page-load-verified", "broken_links": [] },
+    { "url": "https://www.bariatriccounselingcenter.com/staff/meet-dr-sara-hamilton/", "status": "ok-but-content-flag", "internal_links_checked": "page-load-verified", "broken_links": [], "content_flag": "STILL UNRESOLVED (flagged 2026-08-31, still broken 2026-09-14, 5+ weeks): page renders Nancy Albus's photo, byline and bio under Sara Hamilton's title and URL. Post ID 793, slug meet-dr-sara-hamilton, last modified 2026-08-06. Needs a manual WP content swap -- P1 for Daniel." }
+  ],
+  "esperanza_competitive_status": {
+    "ahrefs_status": "Insufficient plan -- 6th consecutive week Ahrefs Site Explorer has rejected the organic-keywords call for esperanzaedc.com. Fell back to manual SERP-diff (from the same 31-keyword live check above) plus a direct WP REST API pull against esperanzaedc.com.",
+    "wp_rest_check": {
+      "posts_count": 0,
+      "newest_page": { "title": "Brave Adolescent ARFID IOP", "date": "2026-04-22" },
+      "note": "Esperanza still has zero blog posts and no new page since 2026-04-22 -- roughly 21 weeks of no organic content investment, unchanged trend from prior weeks. Their ranking strength on shared terms is coming from domain authority/backlinks, not content freshness."
+    },
+    "keywords_esperanza_outranks_bcc": [
+      { "keyword": "binge eating treatment san antonio", "esperanza_position": 2, "bcc_position": 8, "gap": 6, "note": "gap widened from 4 last week (BCC was #6)" },
+      { "keyword": "food addiction treatment san antonio", "esperanza_position": 2, "bcc_position": 6, "gap": 4, "note": "gap widened from 3 last week (BCC was #5)" },
+      { "keyword": "eating disorder therapist san antonio", "esperanza_position": "~5 (in mixed local/organic results)", "bcc_position": 10, "gap": null },
+      { "keyword": "eating disorder counseling san antonio", "esperanza_position": 3, "bcc_position": null, "gap": null, "note": "BCC fell off page 1 entirely this week (was #9); Esperanza's gap here is now a clean loss, not just a lead" }
+    ],
+    "bcc_clean_wins_or_lanes_esperanza_doesnt_compete_in": [
+      { "keyword": "bariatric counseling san antonio", "bcc_position": 1, "note": "Esperanza does not appear -- bariatric/surgical-adjacent lane, not Esperanza's focus" },
+      { "keyword": "weight loss counseling san antonio", "bcc_position": 1 },
+      { "keyword": "bariatric surgery psychological evaluation san antonio", "bcc_position": 1 },
+      { "keyword": "emotional eating therapy san antonio", "bcc_position": 2, "note": "Balanced Counseling of SA is the #1 competitor here, not Esperanza" },
+      { "keyword": "overeaters anonymous san antonio / overeaters support san antonio", "bcc_position": "6 / 3", "note": "Esperanza does not compete in the overeaters/OA-adjacent lane at all" }
+    ],
+    "summary": "No change in strategic picture: Esperanza's 4-keyword lead is concentrated entirely in the broad 'eating disorder' SA terms, and BCC lost ground on 3 of those 4 this week (widened gaps on binge eating treatment SA and food addiction treatment SA, and a full page-1 drop on eating disorder counseling SA). BCC's clean lane -- bariatric-specific, GLP-1/medication-behavioral-support, and overeaters/OA-adjacent terms -- remains uncontested by Esperanza, who still is not publishing new content (0 posts, last page April 22)."
+  },
+  "published_pages_index_summary": {
+    "total_pages_live": 91,
+    "newest_page_id": 6532,
+    "newest_page_date": "2026-08-21",
+    "newest_page_title": "What Actually Happens in a Bariatric Psych Eval, and What It Costs",
+    "note": "Fetched fresh via WP REST API this run (wp-json/wp/v2/pages, per_page=100). Full per-page id/slug/link/date/modified list captured; cross-checked against known state from the 2026-08-31 run. No pages published since 2026-08-21 (ids 6530-6532)."
+  },
+  "published_posts_index_summary": {
+    "total_posts_live": 60,
+    "newest_post_id": 4683,
+    "newest_post_date": "2026-08-22",
+    "newest_post_title": "How ADHD Impacts Eating Habits and Weight Management",
+    "note": "Fetched fresh via WP REST API this run (wp-json/wp/v2/posts, per_page=100). No posts published since 2026-08-22 -- 3+ weeks of blog quiet, consistent with the lease/transition context (going 100% online Dec 1)."
+  },
+  "newly_published_this_week_pages": [],
+  "newly_published_this_week_posts": [],
+  "newly_published_prod_pages": [],
+  "runner_notes": {
+    "bash_sandbox_status": "mcp__workspace__bash (the Cowork Linux sandbox) failed to mount/init this entire run (Windows-update-related host issue, per Anthropic's own error message) -- every step that normally shells out (date, gsc-fetch.py, curl for WP REST) was rerouted through Desktop Commander (start_process/read_file/write_file) and Claude in Chrome (navigate + get_page_text/javascript_tool) instead. No steps were skipped as a result, but flagging in case bash comes back and future runs should prefer it again.",
+    "gsc_fetch": "Live googleapis.com fetch not attempted (known sandbox block); used the fresh gsc-data-2026-09-14.json already on disk from the 7:55 AM Windows Task Scheduler pre-warm job -- same-day data, not stale.",
+    "runner_queue_desktop_commander": "claude-runner queue is reachable via Desktop Commander per reference_bcc_weekly_runner_methods; used it for git add/commit/push per Step 9d/9e."
+  }
+}
