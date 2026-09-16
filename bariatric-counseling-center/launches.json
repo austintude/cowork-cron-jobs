@@ -2,6 +2,30 @@
   "launches": [
     {
       "launched_at": "2026-09-15",
+      "type": "page-publish",
+      "title": "Ready for Help That Actually Works",
+      "url": "/start/",
+      "wp_id": 6573,
+      "slug": "start",
+      "target_keyword": "start",
+      "source": "wp-rest",
+      "confidence": "high",
+      "id": "auto-2026-09-15-page-publish-6573--start",
+      "first_seen_at": "2026-09-16T08:03:10.266592Z"
+    },
+    {
+      "launched_at": "2026-09-15",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-15",
+      "commit_hash": "1f3413a",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-15-git-commit-1f3413a",
+      "first_seen_at": "2026-09-16T08:03:10.266592Z"
+    },
+    {
+      "launched_at": "2026-09-15",
       "type": "git-commit",
       "title": "bcc daily pulse: 2026-09-15",
       "commit_hash": "9e079bc",
@@ -12538,5 +12562,5 @@
     }
   ],
   "dismissed": [],
-  "last_updated": "2026-09-15T12:00:27.730379Z"
+  "last_updated": "2026-09-16T08:03:10.275406Z"
 }
