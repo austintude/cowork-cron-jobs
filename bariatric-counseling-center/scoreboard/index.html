@@ -85,8 +85,11 @@ function noteFor(r){
 function render(m){
   document.getElementById("sub").innerHTML="What we rank for in "+(esc(m.geo)||"San Antonio")+
     ", and how it's moving. As of <b>"+esc(m.as_of)+"</b> &middot; "+m.snapshot_count+" snapshots on file.";
+  // site alarms first
+  let al="";
+  ((m.site_health||{}).alarms||[]).forEach(a=>{ al+='<div style="background:#fdecea;border:1px solid #f5c6cb;color:#9a2622;padding:12px 16px;border-radius:8px;font-size:14px;margin-bottom:14px"><b>Site alarm ('+esc((m.site_health||{}).date||'')+'):</b> '+esc(a)+'</div>'; });
   // movers
-  let mv="";
+  let mv=al;
   (m.movers||[]).slice(0,8).forEach(x=>{
     const arrow=x.wow>0?"&#9650;":"&#9660;", cls=x.wow>0?"up":"down";
     const cur=x.current!=null?("#"+x.current):"out";
@@ -109,8 +112,11 @@ function render(m){
     });
     b+='</table></div>';
   });
+  b+=renderSiteHealth(m);
   b+=renderCompetitors(m);
   b+=renderOpportunities(m);
+  b+=renderQuestions(m);
+  b+=renderBacklinks(m);
   b+=renderAI(m);
   document.getElementById("body").innerHTML=b;
   document.getElementById("foot").innerHTML="Source: live Google SERP snapshots + GSC. AI panel: weekly agentic sweep of Google AI Mode / ChatGPT / Claude / Perplexity / Gemini. "+
@@ -120,6 +126,42 @@ function cellbadge(pos,extra){
   if(!pos) return '<td class="cell'+(extra||'')+'"><span style="color:#c3ccd5">&middot;</span></td>';
   const pg=Math.ceil(pos/10), cls=(pg&&pg<=5)?("p"+pg):"p5";
   return '<td class="cell'+(extra||'')+'"><span class="'+cls+'">'+pos+'</span></td>';
+}
+function renderSiteHealth(m){
+  const sh=m.site_health; if(!sh) return '';
+  const sm=sh.summary||{}, site=(sh.site||'').replace('https://','').replace(/\/$/,'');
+  let o='<div class="bucket sov"><h2>Site health &mdash; crawl of '+esc(site)+'</h2>';
+  o+='<div class="kv">As of <b>'+esc(sh.date||'')+'</b> &middot; '+sm.urls_crawled+' URLs crawled, '+sm.html_200+' HTML pages, avg '+sm.avg_words+' words, avg response '+sm.avg_resp_s+'s.</div>';
+  o+='<table><tr><th>Issue</th><th class="num">Pages</th><th>Examples</th></tr>';
+  Object.entries(sh.issues||{}).forEach(([t,items])=>{
+    const ex=items.slice(0,4).map(i=>esc((i.url||'').replace(sh.site||'','/'))+(i.detail?(' <span class="muted">'+esc(i.detail)+'</span>'):'')).join('<br>');
+    o+='<tr><td class="term">'+esc(t)+'</td><td class="num">'+((sh.issue_counts||{})[t]||items.length)+'</td><td style="font-size:12px;color:#3d4c5c">'+ex+'</td></tr>';
+  });
+  return o+'</table><div class="kv" style="font-size:11.5px;color:#8a98a6">Read-only crawl from the XML sitemap plus discovered internal links. Full table in site-crawl/data/crawl-'+esc(sh.date||'')+'.csv.</div></div>';
+}
+function renderQuestions(m){
+  const q=m.questions; if(!q) return '';
+  const labels={"bariatric":"Bariatric","eating-disorders":"Eating disorders","overeaters":"Overeaters & food addiction","weight-loss":"Weight loss & nutrition"};
+  let o='<div class="bucket"><h2>Questions people ask &mdash; from Google\'s own suggestions on our terms</h2>';
+  o+='<div class="kv">People Also Ask boxes and related searches captured with the '+esc(q.date||'')+' San Antonio pull. Each is a content angle Google already associates with a term BCC competes for.</div>';
+  Object.entries(q.by_bucket||{}).forEach(([b,items])=>{
+    o+='<div class="kv"><b>'+esc(labels[b]||b)+'</b><br>'+items.slice(0,24).map(i=>'<span class="chip"'+(i.related?' style="border-style:dashed"':'')+'>'+esc(i.q)+'</span>').join(' ')+'</div>';
+  });
+  return o+'<div class="kv" style="font-size:11.5px;color:#8a98a6">Solid chips = People Also Ask questions. Dashed = related searches.</div></div>';
+}
+function renderBacklinks(m){
+  const bl=m.backlinks; if(!bl) return '';
+  let o='<div class="bucket sov"><h2>Authority and links &mdash; who has the backlinks</h2>';
+  o+='<div class="kv">As of <b>'+esc(bl.date||'')+'</b>. Rank is DataForSEO\'s domain rank (0 to 1000, logarithmic). Referring domains is the number that matters: distinct sites linking in.</div>';
+  o+='<table><tr><th>Site</th><th class="num">Rank</th><th class="num">Referring domains</th><th class="num">Backlinks</th><th class="num">Broken</th></tr>';
+  (bl.rows||[]).forEach(r=>{
+    const own=r.domain===bl.own_domain;
+    o+='<tr class="'+(own?'own':'')+'"><td>'+esc(r.label||r.domain)+'<span class="note">'+esc(r.domain)+'</span></td><td class="num">'+(r.rank||'&ndash;')+'</td><td class="num">'+Number(r.referring_domains||0).toLocaleString()+'</td><td class="num">'+Number(r.backlinks||0).toLocaleString()+'</td><td class="num">'+(r.broken_backlinks||0)+'</td></tr>';
+  });
+  o+='</table>';
+  if((bl.link_gap||[]).length) o+='<div class="kv"><b>Link prospects</b> (sites linking to San Antonio competitors but not to BCC, strongest first): '+bl.link_gap.slice(0,30).map(g=>'<span class="chip">'+esc(g.domain)+' <small class="muted">'+esc((g.links_to||[]).join(', '))+'</small></span>').join(' ')+'</div>';
+  if((bl.bcc_refdomains||[]).length) o+='<div class="kv" style="font-size:12px;color:#3d4c5c"><b>BCC\'s strongest referring domains:</b> '+bl.bcc_refdomains.slice(0,20).map(r=>esc(r.domain)).join(', ')+'</div>';
+  return o+'<div class="kv" style="font-size:11.5px;color:#8a98a6">Monthly. Full lists in backlinks/data/backlinks-'+esc(bl.date||'')+'.json.</div></div>';
 }
 function renderOpportunities(m){
   const ku=m.keyword_universe; if(!ku) return '';
