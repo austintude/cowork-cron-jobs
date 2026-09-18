@@ -97,16 +97,20 @@ function render(m){
   // buckets
   let b="";
   (m.buckets||[]).forEach(bk=>{
+    const vol=(m.keyword_universe||{}).volume_by_term||{}, hasVol=Object.keys(vol).length>0;
     b+='<div class="bucket"><h2>'+esc(bk.label)+'</h2><table>'+
-       '<tr><th>Keyword</th><th>This week</th><th>WoW</th><th>MoM</th><th>8-wk trend</th></tr>';
+       '<tr><th>Keyword</th><th>This week</th><th>WoW</th><th>MoM</th><th>8-wk trend</th>'+(hasVol?'<th class="num">TX searches/mo</th><th class="num">CPC</th>':'')+'</tr>';
     (bk.rows||[]).forEach(r=>{
       const star=r.priority?'<span class="star">&#9733;</span>':'';
+      const v=vol[r.term]; let vc='';
+      if(hasVol){ vc=v?('<td class="num">'+(v.vol_tx||'<span class="muted">0</span>')+'</td><td class="num">'+(v.cpc?('$'+Number(v.cpc).toFixed(2)):'<span class="muted">&ndash;</span>')+'</td>'):'<td class="num muted">&ndash;</td><td class="num muted">&ndash;</td>'; }
       b+='<tr><td class="term">'+star+esc(r.term)+noteFor(r)+'</td><td>'+badge(r.current,r.current_page)+
-         '</td><td>'+darrow(r.wow)+'</td><td>'+darrow(r.mom)+'</td><td>'+spark(r.history)+'</td></tr>';
+         '</td><td>'+darrow(r.wow)+'</td><td>'+darrow(r.mom)+'</td><td>'+spark(r.history)+'</td>'+vc+'</tr>';
     });
     b+='</table></div>';
   });
   b+=renderCompetitors(m);
+  b+=renderOpportunities(m);
   b+=renderAI(m);
   document.getElementById("body").innerHTML=b;
   document.getElementById("foot").innerHTML="Source: live Google SERP snapshots + GSC. AI panel: weekly agentic sweep of Google AI Mode / ChatGPT / Claude / Perplexity / Gemini. "+
@@ -116,6 +120,22 @@ function cellbadge(pos,extra){
   if(!pos) return '<td class="cell'+(extra||'')+'"><span style="color:#c3ccd5">&middot;</span></td>';
   const pg=Math.ceil(pos/10), cls=(pg&&pg<=5)?("p"+pg):"p5";
   return '<td class="cell'+(extra||'')+'"><span class="'+cls+'">'+pos+'</span></td>';
+}
+function renderOpportunities(m){
+  const ku=m.keyword_universe; if(!ku) return '';
+  const c=ku.counts||{};
+  let o='<div class="bucket sov"><h2>Keyword opportunities &mdash; terms we are not tracking yet</h2>';
+  o+='<div class="kv">As of <b>'+esc(ku.date||'')+'</b> &middot; '+(c.candidates||'?')+' candidates from Search Console history, competitor rankings and Google\'s keyword ideas, priced with Google Ads volume for Texas. Ranked by demand &times; reachability &times; fit with what BCC treats. Google Ads reports 0 for many local long-tail terms; Search Console impressions are the better signal for those.</div>';
+  o+='<table><tr><th>Term</th><th>Topic</th><th class="num">TX searches/mo</th><th class="num">US</th><th class="num">CPC</th><th class="num">BCC best pos (GSC)</th><th class="num">GSC impr.</th><th>Who ranks (US)</th></tr>';
+  (ku.opportunities||[]).forEach(x=>{
+    const who=Object.entries(x.who_ranks||{}).sort((a,b)=>(a[1]||999)-(b[1]||999)).slice(0,3).map(([d,p])=>d.split('.')[0]+' #'+p).join(', ');
+    const v=(x.variants||[]).length?('<span class="note">also: '+esc(x.variants.join(', '))+'</span>'):'';
+    o+='<tr><td class="term">'+esc(x.keyword)+v+'</td><td class="grp">'+esc(x.topic||'')+'</td><td class="num">'+(x.vol_tx||'<span class="muted">0</span>')+'</td><td class="num">'+(x.vol_us||'')+'</td><td class="num">'+(x.cpc?('$'+Number(x.cpc).toFixed(2)):'&ndash;')+'</td><td class="num">'+(x.bcc_pos||'&ndash;')+'</td><td class="num">'+(x.gsc_impr||'&ndash;')+'</td><td style="color:#5b6b7c;font-size:12px">'+(esc(who)||'&ndash;')+'</td></tr>';
+  });
+  o+='</table>';
+  if((ku.topics||[]).length) o+='<div class="kv"><b>Texas demand by topic</b>: '+ku.topics.slice(0,10).map(t=>esc(t.topic)+' <b>'+Number(t.vol_tx).toLocaleString()+'</b> ('+t.terms+' terms, '+t.tracked+' tracked)').join(' &middot; ')+'</div>';
+  o+='<div class="kv" style="font-size:11.5px;color:#8a98a6">Full table in keyword-universe/data/keyword-universe-'+esc(ku.date||'')+'.csv. Last run cost $'+Number(ku.cost_usd||0).toFixed(2)+'</div></div>';
+  return o;
 }
 function renderCompetitors(m){
   const c=m.competitors;
