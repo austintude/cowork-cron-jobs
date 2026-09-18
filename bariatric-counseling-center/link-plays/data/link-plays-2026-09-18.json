@@ -1,0 +1,1082 @@
+{
+ "date": "2026-09-18",
+ "generated_at": "2026-09-18T19:08:30.339915Z",
+ "mode": "live",
+ "plays": [
+  "broken",
+  "classify",
+  "directories",
+  "mentions",
+  "partners"
+ ],
+ "inputs": {
+  "backlinks": "backlinks-2026-09-18.json",
+  "crawl": "crawl-2026-09-18.json",
+  "gsc": "gsc-data-2026-09-18.json"
+ },
+ "queue_ids": [
+  "9838bec74c",
+  "82358a5dc0",
+  "5d38b158f3",
+  "dce3479216",
+  "bbd7b1a44e",
+  "ba77ef834d",
+  "56b776c512",
+  "766483f386"
+ ],
+ "cost_usd": 0.034,
+ "classification": {
+  "spam": 64,
+  "directory": 8,
+  "other": 11,
+  "association": 4,
+  "media": 6,
+  "partner": 5,
+  "edu_gov": 2
+ },
+ "directory_checklist": {
+  "title": "Directory listings: 23 to claim",
+  "why": "23 of 23 directories that matter for a San Antonio counseling and dietitian practice have no link to BCC yet.",
+  "steps": [
+   "bing.com: claim at https://www.bingplaces.com/ (links to 2 local competitors)",
+   "psychologytoday.com: claim at https://join.psychologytoday.com/",
+   "goodtherapy.org: claim at https://www.goodtherapy.org/join.html",
+   "therapyden.com: claim at https://www.therapyden.com/join",
+   "zencare.co: claim at https://zencare.co/join",
+   "healthgrades.com: claim at https://update.healthgrades.com/",
+   "zocdoc.com: claim at https://www.zocdoc.com/join",
+   "edreferral.com: claim at https://www.edreferral.com/",
+   "eatingdisorderhope.com: claim at https://www.eatingdisorderhope.com/",
+   "alignable.com: claim at https://www.alignable.com/",
+   "sachamber.org: claim at https://www.sachamber.org/",
+   "yelp.com: claim at https://biz.yelp.com/",
+   "cap4kids.org: claim at https://cap4kids.org/ (links to 1 local competitor)",
+   "theprojectheal.org: claim at https://theprojectheal.org/ (links to 1 local competitor)",
+   "storeboard.com: claim at https://storeboard.com/ (links to 2 local competitors)"
+  ],
+  "to_claim": 23,
+  "rows": [
+   {
+    "domain": "bing.com",
+    "name": "Bing Places",
+    "url": "https://www.bingplaces.com/",
+    "core": true,
+    "rank": 0,
+    "links_to": 2,
+    "listed": false
+   },
+   {
+    "domain": "psychologytoday.com",
+    "name": "Psychology Today",
+    "url": "https://join.psychologytoday.com/",
+    "core": true,
+    "rank": 0,
+    "links_to": 0,
+    "listed": false
+   },
+   {
+    "domain": "goodtherapy.org",
+    "name": "GoodTherapy",
+    "url": "https://www.goodtherapy.org/join.html",
+    "core": true,
+    "rank": 0,
+    "links_to": 0,
+    "listed": false
+   },
+   {
+    "domain": "therapyden.com",
+    "name": "TherapyDen",
+    "url": "https://www.therapyden.com/join",
+    "core": true,
+    "rank": 0,
+    "links_to": 0,
+    "listed": false
+   },
+   {
+    "domain": "zencare.co",
+    "name": "Zencare",
+    "url": "https://zencare.co/join",
+    "core": true,
+    "rank": 0,
+    "links_to": 0,
+    "listed": false
+   },
+   {
+    "domain": "healthgrades.com",
+    "name": "Healthgrades",
+    "url": "https://update.healthgrades.com/",
+    "core": true,
+    "rank": 0,
+    "links_to": 0,
+    "listed": false
+   },
+   {
+    "domain": "zocdoc.com",
+    "name": "Zocdoc",
+    "url": "https://www.zocdoc.com/join",
+    "core": true,
+    "rank": 0,
+    "links_to": 0,
+    "listed": false
+   },
+   {
+    "domain": "edreferral.com",
+    "name": "EDReferral (NEDA provider finder successor)",
+    "url": "https://www.edreferral.com/",
+    "core": true,
+    "rank": 0,
+    "links_to": 0,
+    "listed": false
+   },
+   {
+    "domain": "eatingdisorderhope.com",
+    "name": "Eating Disorder Hope",
+    "url": "https://www.eatingdisorderhope.com/",
+    "core": true,
+    "rank": 0,
+    "links_to": 0,
+    "listed": false
+   },
+   {
+    "domain": "alignable.com",
+    "name": "Alignable",
+    "url": "https://www.alignable.com/",
+    "core": true,
+    "rank": 0,
+    "links_to": 0,
+    "listed": false
+   },
+   {
+    "domain": "sachamber.org",
+    "name": "San Antonio Chamber",
+    "url": "https://www.sachamber.org/",
+    "core": true,
+    "rank": 0,
+    "links_to": 0,
+    "listed": false
+   },
+   {
+    "domain": "yelp.com",
+    "name": "Yelp",
+    "url": "https://biz.yelp.com/",
+    "core": true,
+    "rank": 0,
+    "links_to": 0,
+    "listed": false
+   },
+   {
+    "domain": "cap4kids.org",
+    "name": "cap4kids.org",
+    "url": "https://cap4kids.org/",
+    "core": false,
+    "rank": 57,
+    "links_to": 1,
+    "listed": false
+   },
+   {
+    "domain": "theprojectheal.org",
+    "name": "theprojectheal.org",
+    "url": "https://theprojectheal.org/",
+    "core": false,
+    "rank": 57,
+    "links_to": 1,
+    "listed": false
+   },
+   {
+    "domain": "storeboard.com",
+    "name": "storeboard.com",
+    "url": "https://storeboard.com/",
+    "core": false,
+    "rank": 51,
+    "links_to": 2,
+    "listed": false
+   },
+   {
+    "domain": "centraltexashub.org",
+    "name": "centraltexashub.org",
+    "url": "https://centraltexashub.org/",
+    "core": false,
+    "rank": 27,
+    "links_to": 1,
+    "listed": false
+   },
+   {
+    "domain": "askdoctor.info",
+    "name": "askdoctor.info",
+    "url": "https://askdoctor.info/",
+    "core": false,
+    "rank": 23,
+    "links_to": 1,
+    "listed": false
+   },
+   {
+    "domain": "mycarecoordinator.com",
+    "name": "mycarecoordinator.com",
+    "url": "https://mycarecoordinator.com/",
+    "core": false,
+    "rank": 23,
+    "links_to": 1,
+    "listed": false
+   },
+   {
+    "domain": "edfstx.org",
+    "name": "edfstx.org",
+    "url": "https://edfstx.org/",
+    "core": false,
+    "rank": 7,
+    "links_to": 1,
+    "listed": false
+   },
+   {
+    "domain": "bestprosintown.com",
+    "name": "bestprosintown.com",
+    "url": "https://bestprosintown.com/",
+    "core": false,
+    "rank": 0,
+    "links_to": 2,
+    "listed": false
+   },
+   {
+    "domain": "edtreatmentreview.com",
+    "name": "edtreatmentreview.com",
+    "url": "https://edtreatmentreview.com/",
+    "core": false,
+    "rank": 0,
+    "links_to": 1,
+    "listed": false
+   },
+   {
+    "domain": "rehabhive.us",
+    "name": "rehabhive.us",
+    "url": "https://rehabhive.us/",
+    "core": false,
+    "rank": 0,
+    "links_to": 1,
+    "listed": false
+   },
+   {
+    "domain": "wellnesscultura.org",
+    "name": "wellnesscultura.org",
+    "url": "https://wellnesscultura.org/",
+    "core": false,
+    "rank": 0,
+    "links_to": 1,
+    "listed": false
+   }
+  ]
+ },
+ "partners": {
+  "counts": {
+   "linking": 2,
+   "competitors_only": 3,
+   "never": 261,
+   "partner_domains": 266
+  },
+  "linking": [
+   {
+    "domain": "bmioftexas.com",
+    "contacts": 29
+   },
+   {
+    "domain": "recovery.com",
+    "contacts": 4
+   }
+  ],
+  "competitors_only": [
+   {
+    "domain": "utsa.edu",
+    "contacts": 2
+   },
+   {
+    "domain": "texasdigestive.com",
+    "contacts": 1
+   },
+   {
+    "domain": "vitalitylifecounselingsa.com",
+    "contacts": 1
+   }
+  ],
+  "never": [
+   {
+    "domain": "uthscsa.edu",
+    "contacts": 45
+   },
+   {
+    "domain": "sagebariatric.com",
+    "contacts": 33
+   },
+   {
+    "domain": "uhtx.com",
+    "contacts": 22
+   },
+   {
+    "domain": "gastroconsa.com",
+    "contacts": 20
+   },
+   {
+    "domain": "baptisthealthsystem.com",
+    "contacts": 19
+   },
+   {
+    "domain": "tenethealth.com",
+    "contacts": 18
+   },
+   {
+    "domain": "bcms.org",
+    "contacts": 16
+   },
+   {
+    "domain": "healthtexas.org",
+    "contacts": 16
+   },
+   {
+    "domain": "dgdclinic.com",
+    "contacts": 13
+   },
+   {
+    "domain": "tddctx.com",
+    "contacts": 12
+   },
+   {
+    "domain": "christushealth.org",
+    "contacts": 11
+   },
+   {
+    "domain": "freseniusmedicalcare.com",
+    "contacts": 11
+   },
+   {
+    "domain": "rfamilymedicalgroup.com",
+    "contacts": 11
+   },
+   {
+    "domain": "hcahealthcare.com",
+    "contacts": 10
+   },
+   {
+    "domain": "hendrickhealth.org",
+    "contacts": 10
+   },
+   {
+    "domain": "wellmed.net",
+    "contacts": 10
+   },
+   {
+    "domain": "abccounselingtx.com",
+    "contacts": 9
+   },
+   {
+    "domain": "bypassdoc.com",
+    "contacts": 9
+   },
+   {
+    "domain": "diabetesandmetabolism.com",
+    "contacts": 9
+   },
+   {
+    "domain": "segermd.com",
+    "contacts": 9
+   },
+   {
+    "domain": "genvisiting.com",
+    "contacts": 8
+   },
+   {
+    "domain": "airrosti.com",
+    "contacts": 7
+   },
+   {
+    "domain": "gonzaba.com",
+    "contacts": 7
+   },
+   {
+    "domain": "kellummd.com",
+    "contacts": 7
+   },
+   {
+    "domain": "mercywellnessclinic.com",
+    "contacts": 7
+   },
+   {
+    "domain": "mhshealth.com",
+    "contacts": 7
+   },
+   {
+    "domain": "rapadocs.com",
+    "contacts": 7
+   },
+   {
+    "domain": "centromedsa.com",
+    "contacts": 6
+   },
+   {
+    "domain": "rokamd.net",
+    "contacts": 6
+   },
+   {
+    "domain": "tsaog.com",
+    "contacts": 6
+   },
+   {
+    "domain": "txliver.com",
+    "contacts": 6
+   },
+   {
+    "domain": "uth.tmc.edu",
+    "contacts": 6
+   },
+   {
+    "domain": "advancedpaindoc.com",
+    "contacts": 5
+   },
+   {
+    "domain": "directmedclinic.com",
+    "contacts": 5
+   },
+   {
+    "domain": "fmc-na.com",
+    "contacts": 5
+   },
+   {
+    "domain": "health210.com",
+    "contacts": 5
+   },
+   {
+    "domain": "ne-obgyn.com",
+    "contacts": 5
+   },
+   {
+    "domain": "safamilyphysicians.com",
+    "contacts": 5
+   },
+   {
+    "domain": "steward.org",
+    "contacts": 5
+   },
+   {
+    "domain": "bexarcountypasociety.org",
+    "contacts": 4
+   },
+   {
+    "domain": "cibolofm.com",
+    "contacts": 4
+   },
+   {
+    "domain": "hbdus.com",
+    "contacts": 4
+   },
+   {
+    "domain": "heb.com",
+    "contacts": 4
+   },
+   {
+    "domain": "pcmatx.com",
+    "contacts": 4
+   },
+   {
+    "domain": "sanantoniodbtcbt.com",
+    "contacts": 4
+   },
+   {
+    "domain": "banderafamily.com",
+    "contacts": 3
+   },
+   {
+    "domain": "betterweighcenter.com",
+    "contacts": 3
+   },
+   {
+    "domain": "canohealth.com",
+    "contacts": 3
+   },
+   {
+    "domain": "communicare.org",
+    "contacts": 3
+   },
+   {
+    "domain": "empathynutritiontherapy.com",
+    "contacts": 3
+   },
+   {
+    "domain": "health.mil",
+    "contacts": 3
+   },
+   {
+    "domain": "hillcountryps.com",
+    "contacts": 3
+   },
+   {
+    "domain": "jtawellness.com",
+    "contacts": 3
+   },
+   {
+    "domain": "macgregormed.com",
+    "contacts": 3
+   },
+   {
+    "domain": "mdvip.com",
+    "contacts": 3
+   },
+   {
+    "domain": "mhd.com",
+    "contacts": 3
+   },
+   {
+    "domain": "nsaha.com",
+    "contacts": 3
+   },
+   {
+    "domain": "pinkstonsa.com",
+    "contacts": 3
+   },
+   {
+    "domain": "sage-med.com",
+    "contacts": 3
+   },
+   {
+    "domain": "texasneuropsychinstitute.com",
+    "contacts": 3
+   },
+   {
+    "domain": "texmed.org",
+    "contacts": 3
+   },
+   {
+    "domain": "uhs-sa.com",
+    "contacts": 3
+   },
+   {
+    "domain": "urologysa.com",
+    "contacts": 3
+   },
+   {
+    "domain": "uspi.com",
+    "contacts": 3
+   },
+   {
+    "domain": "va.gov",
+    "contacts": 3
+   },
+   {
+    "domain": "villagemedical.com",
+    "contacts": 3
+   },
+   {
+    "domain": "whealthtx.com",
+    "contacts": 3
+   },
+   {
+    "domain": "acquiringhope.com",
+    "contacts": 2
+   },
+   {
+    "domain": "agelessmenshealth.com",
+    "contacts": 2
+   },
+   {
+    "domain": "alamoendo.com",
+    "contacts": 2
+   },
+   {
+    "domain": "army.mil",
+    "contacts": 2
+   },
+   {
+    "domain": "arrosti.com",
+    "contacts": 2
+   },
+   {
+    "domain": "beautywisesa.com",
+    "contacts": 2
+   },
+   {
+    "domain": "boernefamilymedicine.com",
+    "contacts": 2
+   },
+   {
+    "domain": "bowlingfamilymedicine.com",
+    "contacts": 2
+   },
+   {
+    "domain": "capitalsurgeons.com",
+    "contacts": 2
+   },
+   {
+    "domain": "convivasolutions.com",
+    "contacts": 2
+   },
+   {
+    "domain": "cpsurgeons.com",
+    "contacts": 2
+   },
+   {
+    "domain": "drrogersweightloss.com",
+    "contacts": 2
+   },
+   {
+    "domain": "familymedicalhome.com",
+    "contacts": 2
+   },
+   {
+    "domain": "fourseasonsobgyn.com",
+    "contacts": 2
+   },
+   {
+    "domain": "hillsideprimarycare.com",
+    "contacts": 2
+   },
+   {
+    "domain": "houstonmethodist.org",
+    "contacts": 2
+   },
+   {
+    "domain": "iamyou.com",
+    "contacts": 2
+   },
+   {
+    "domain": "marcosmedical.com",
+    "contacts": 2
+   },
+   {
+    "domain": "neccsa.org",
+    "contacts": 2
+   },
+   {
+    "domain": "oasanantonio.com",
+    "contacts": 2
+   },
+   {
+    "domain": "pasteurdocs.com",
+    "contacts": 2
+   },
+   {
+    "domain": "patelpain.com",
+    "contacts": 2
+   },
+   {
+    "domain": "pvasatx.com",
+    "contacts": 2
+   },
+   {
+    "domain": "sacomplete.com",
+    "contacts": 2
+   },
+   {
+    "domain": "sakidney.com",
+    "contacts": 2
+   },
+   {
+    "domain": "salveodirectcare.com",
+    "contacts": 2
+   },
+   {
+    "domain": "shavanofamilypractice.com",
+    "contacts": 2
+   },
+   {
+    "domain": "st-joseph.org",
+    "contacts": 2
+   },
+   {
+    "domain": "starzsa.com",
+    "contacts": 2
+   },
+   {
+    "domain": "stxsurgeons.com",
+    "contacts": 2
+   },
+   {
+    "domain": "tandimedicalcenter.com",
+    "contacts": 2
+   },
+   {
+    "domain": "texanfamilyclinic.com",
+    "contacts": 2
+   },
+   {
+    "domain": "texasadvancedsurgical.com",
+    "contacts": 2
+   },
+   {
+    "domain": "utsouthwestern.edu",
+    "contacts": 2
+   },
+   {
+    "domain": "weightlosssurgeon.com",
+    "contacts": 2
+   },
+   {
+    "domain": "westoverhillsobgyn.com",
+    "contacts": 2
+   },
+   {
+    "domain": "womenpartners.com",
+    "contacts": 2
+   },
+   {
+    "domain": "acedtx.com",
+    "contacts": 1
+   },
+   {
+    "domain": "aimprimarycare.com",
+    "contacts": 1
+   },
+   {
+    "domain": "alamobh.com",
+    "contacts": 1
+   },
+   {
+    "domain": "alamocityhealthykid.com",
+    "contacts": 1
+   },
+   {
+    "domain": "alamocityhealthykids.com",
+    "contacts": 1
+   },
+   {
+    "domain": "alamoheightsmedicalclinic.com",
+    "contacts": 1
+   },
+   {
+    "domain": "alamopedieyes.com",
+    "contacts": 1
+   },
+   {
+    "domain": "alamowomensobgyn.com",
+    "contacts": 1
+   },
+   {
+    "domain": "alsana.com",
+    "contacts": 1
+   },
+   {
+    "domain": "angelo.edu",
+    "contacts": 1
+   },
+   {
+    "domain": "arthritis-sa.com",
+    "contacts": 1
+   },
+   {
+    "domain": "avitabydrv.com",
+    "contacts": 1
+   },
+   {
+    "domain": "balancedcounseling.com",
+    "contacts": 1
+   },
+   {
+    "domain": "barnesbariatric.com",
+    "contacts": 1
+   },
+   {
+    "domain": "baylorhealth.edu",
+    "contacts": 1
+   },
+   {
+    "domain": "bcm.edu",
+    "contacts": 1
+   },
+   {
+    "domain": "beccaallencounseling.com",
+    "contacts": 1
+   },
+   {
+    "domain": "bettsco.com",
+    "contacts": 1
+   },
+   {
+    "domain": "bettysco.com",
+    "contacts": 1
+   },
+   {
+    "domain": "bexarcv.com",
+    "contacts": 1
+   },
+   {
+    "domain": "bfhcresearch.com",
+    "contacts": 1
+   },
+   {
+    "domain": "bioreference.com",
+    "contacts": 1
+   },
+   {
+    "domain": "bluebonnetdpc.com",
+    "contacts": 1
+   },
+   {
+    "domain": "bsbac.com",
+    "contacts": 1
+   },
+   {
+    "domain": "bswhealth.org",
+    "contacts": 1
+   },
+   {
+    "domain": "cableone.net",
+    "contacts": 1
+   },
+   {
+    "domain": "centerforinternalmedicine.com",
+    "contacts": 1
+   },
+   {
+    "domain": "centromedusa.com",
+    "contacts": 1
+   },
+   {
+    "domain": "chefcraftednutrition.com",
+    "contacts": 1
+   },
+   {
+    "domain": "colibrinutritiontherapy.com",
+    "contacts": 1
+   },
+   {
+    "domain": "communicaresa.org",
+    "contacts": 1
+   },
+   {
+    "domain": "deerwoodfamilypractice.com",
+    "contacts": 1
+   },
+   {
+    "domain": "diahealth.net",
+    "contacts": 1
+   },
+   {
+    "domain": "dimmitregional.com",
+    "contacts": 1
+   },
+   {
+    "domain": "doctormarvin.com",
+    "contacts": 1
+   },
+   {
+    "domain": "dpc.com",
+    "contacts": 1
+   },
+   {
+    "domain": "drdanieljuarez.com",
+    "contacts": 1
+   },
+   {
+    "domain": "drfmiranda.com",
+    "contacts": 1
+   },
+   {
+    "domain": "drjohnalexander.com",
+    "contacts": 1
+   },
+   {
+    "domain": "drleggett.com",
+    "contacts": 1
+   },
+   {
+    "domain": "drmalladi.com",
+    "contacts": 1
+   },
+   {
+    "domain": "drrogerscenters.com",
+    "contacts": 1
+   },
+   {
+    "domain": "equip.health",
+    "contacts": 1
+   },
+   {
+    "domain": "erinreesemd.com",
+    "contacts": 1
+   },
+   {
+    "domain": "fccsprings.com",
+    "contacts": 1
+   },
+   {
+    "domain": "fergusonfamilypractice.com",
+    "contacts": 1
+   }
+  ],
+  "never_total": 261,
+  "notes": [
+   {
+    "domain": "texasdigestive.com",
+    "group": "competitors_only",
+    "why": "1 person from texasdigestive.com on the referral list, and the site links to a local competitor but not to BCC."
+   },
+   {
+    "domain": "vitalitylifecounselingsa.com",
+    "group": "competitors_only",
+    "why": "1 person from vitalitylifecounselingsa.com on the referral list, and the site links to a local competitor but not to BCC."
+   },
+   {
+    "domain": "gastroconsa.com",
+    "group": "never",
+    "why": "20 people from gastroconsa.com on the referral list, and the site has never linked to BCC."
+   },
+   {
+    "domain": "dgdclinic.com",
+    "group": "never",
+    "why": "13 people from dgdclinic.com on the referral list, and the site has never linked to BCC."
+   },
+   {
+    "domain": "tddctx.com",
+    "group": "never",
+    "why": "12 people from tddctx.com on the referral list, and the site has never linked to BCC."
+   },
+   {
+    "domain": "rfamilymedicalgroup.com",
+    "group": "never",
+    "why": "11 people from rfamilymedicalgroup.com on the referral list, and the site has never linked to BCC."
+   }
+  ]
+ },
+ "mentions": {
+  "found": 6,
+  "per_query": {
+   "\"Bariatric Counseling Center\"": 20,
+   "\"Todd McCord\"": 20,
+   "\"bariatriccounselingcenter.com\" -site:bariatriccounselingcenter.com": 20
+  },
+  "linked": [
+   {
+    "url": "https://watchdaytime.com/fashion-beauty/long-term-weight-loss-03-22-2019",
+    "domain": "watchdaytime.com"
+   },
+   {
+    "url": "https://voyagesanantonio.com/interview/meet-dr-sara-hamilton-director-of-clinical-services-of-the-bariatric-counseling-center-of-san-antonio/",
+    "domain": "voyagesanantonio.com"
+   },
+   {
+    "url": "https://sapeopleproject.org/dr-sara-hamilton-a-holistic-approach-to-weight-loss/",
+    "domain": "sapeopleproject.org"
+   }
+  ],
+  "unlinked": [
+   {
+    "url": "https://www.waechterconsulting.com/more-than-medicine-the-bariatric-counseling-center-of-san-antonio/",
+    "domain": "waechterconsulting.com",
+    "title": "More Than Medicine: The Bariatric Counseling Center of San ..."
+   }
+  ],
+  "unverified": [
+   {
+    "url": "https://obu.edu/wp-content/blogsdir/finaid/files/2011/06/Download-Todd-McCord-Scholarship-Application.pdf",
+    "domain": "obu.edu",
+    "status": 200
+   },
+   {
+    "url": "https://www.frontiericearena.org/roster_players/42998706?subseason=848663",
+    "domain": "frontiericearena.org",
+    "status": 403
+   }
+  ],
+  "cost_usd": 0.012,
+  "skipped": []
+ },
+ "broken": {
+  "candidates": 19,
+  "checked": [
+   {
+    "url": "https://www.bariatriccounselingcenter.com/author/shamilton/page/2/",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 9 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/blog/a-new-approach-to-holiday-eating/",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 11 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/blog/bcc-in-the-news/",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 4 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/healthy-living/ozempic-vs-mounjaro-zepbound-for-weight-loss/",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 1 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/healthy-learning-2/why-hydration-is-essential-for-weight-loss-and-management/",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 1 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/healthy-lifestyle-2/why-hydration-is-essential-for-weight-loss-and-management/",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 1 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-es-essential-for-weight-loss-and-management/",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 1 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-essentials-for-weight-loss-and-management/",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 1 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-management/",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 1 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-weight/",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 1 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/undergoing-or-have-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 1 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-options-wegovy-ozempic-zepbound-and-mounjaro/",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 1 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/wp-content/uploads/BCC-Recipes-PDF-1.pdf",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 6 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Back-3.pdf",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 7 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Greek-Lamb-Meatballs-with-Butternut-Squash-Puree-Tzatziki.pdf",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 5 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Grilled-Chicken-Thighs-with-Ratatouille.pdf",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 3 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Roasted-Cauliflower-and-Hazelnuts.pdf",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 7 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Saltimbocca-with-Sauteed-Spinach-Grape-Tomatoes.pdf",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 3 impressions, not in the crawl"
+   },
+   {
+    "url": "https://www.bariatriccounselingcenter.com/wp-content/uploads/Shrimp-Mussels-in-Saffron-White-Wine-Broth-with-Roasted-Butternut-Squash.pdf",
+    "status": 202,
+    "why": "GSC page with 0 clicks and 3 impressions, not in the crawl"
+   }
+  ],
+  "redirects": [],
+  "lost_note": "DataForSEO summary for BCC reports 0 broken backlinks and 0 broken pages; the referring-domains list has no target URLs, so referring domains whose target 404s can only be listed when that count is above zero.",
+  "referring_domains_with_404_target": []
+ },
+ "runs": 6
+}

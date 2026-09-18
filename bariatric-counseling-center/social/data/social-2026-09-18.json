@@ -1,0 +1,754 @@
+{
+  "date": "2026-09-18",
+  "generated": "2026-09-18T19:04:38",
+  "mock": false,
+  "config_file": "/sessions/rcw-01dn6jcrgnizq6fhiumv4lsk/mnt/bariatric-counseling-center/seo-tools/social.json",
+  "env_keys": [
+    "META_ACCESS_TOKEN",
+    "YOUTUBE_API_KEY",
+    "LINKEDIN_ACCESS_TOKEN"
+  ],
+  "env_present": {
+    "META_ACCESS_TOKEN": false,
+    "YOUTUBE_API_KEY": false,
+    "LINKEDIN_ACCESS_TOKEN": false
+  },
+  "cost_usd": 0.0,
+  "sources": {
+    "meta_own": {
+      "ok": false,
+      "reason": "META_ACCESS_TOKEN not set"
+    },
+    "youtube_own": {
+      "ok": false,
+      "reason": "YOUTUBE_API_KEY not set"
+    },
+    "linkedin_own": {
+      "ok": false,
+      "reason": "LINKEDIN_ACCESS_TOKEN not set (optional)"
+    },
+    "discovery": {
+      "ok": true,
+      "reason": "emilyprogram.com: bot wall (HTTP 202, no page content); monarchbehavioral.net: bot wall (HTTP 202, no page content); sagebariatric.com: bot wall (HTTP 202, no page content)"
+    },
+    "youtube_competitors": {
+      "ok": false,
+      "reason": "YOUTUBE_API_KEY not set"
+    },
+    "ad_library": {
+      "ok": false,
+      "reason": "META_ACCESS_TOKEN not set"
+    }
+  },
+  "howto": {
+    "meta": [
+      "META_ACCESS_TOKEN not set. To connect Facebook and Instagram:",
+      "1. developers.facebook.com: create an app (type Business), add the Facebook Login and Instagram Graph products.",
+      "2. Graph API Explorer: pick the app, choose the BCC Page as the token owner, grant pages_read_engagement, pages_read_user_content, read_insights, instagram_basic, instagram_manage_insights, ads_read.",
+      "3. Exchange it for a long-lived Page token (Access Token Debugger, Extend), then paste it in seo-tools/.env as META_ACCESS_TOKEN=... and put the Page id and Instagram Business id in social.json under own.",
+      "4. Meta Ad Library also needs one-time identity confirmation at facebook.com/ID before the ads_archive endpoint answers."
+    ],
+    "youtube": [
+      "YOUTUBE_API_KEY not set. To connect YouTube (own channel and competitors):",
+      "1. console.cloud.google.com: any project, APIs and Services, Enable APIs, turn on YouTube Data API v3.",
+      "2. Credentials, Create credentials, API key. Restrict it to the YouTube Data API v3 only.",
+      "3. Paste it in seo-tools/.env as YOUTUBE_API_KEY=... and put the BCC channel id (UC...) or @handle in social.json under own.youtube_channel_id."
+    ],
+    "linkedin": [
+      "LINKEDIN_ACCESS_TOKEN not set. LinkedIn is the hardest one and is optional:",
+      "1. linkedin.com/developers: create an app tied to the BCC Company Page, request the Community Management API (approval takes days).",
+      "2. OAuth with r_organization_social and rw_organization_admin as a Page admin; tokens last 60 days.",
+      "3. Paste it in .env as LINKEDIN_ACCESS_TOKEN=... and the numeric organization id in social.json under own.linkedin_org_id."
+    ]
+  },
+  "own": {
+    "facebook": null,
+    "instagram": null,
+    "youtube": null,
+    "linkedin": null,
+    "tiktok_handle": ""
+  },
+  "own_howto": {
+    "meta_own": [
+      "META_ACCESS_TOKEN not set. To connect Facebook and Instagram:",
+      "1. developers.facebook.com: create an app (type Business), add the Facebook Login and Instagram Graph products.",
+      "2. Graph API Explorer: pick the app, choose the BCC Page as the token owner, grant pages_read_engagement, pages_read_user_content, read_insights, instagram_basic, instagram_manage_insights, ads_read.",
+      "3. Exchange it for a long-lived Page token (Access Token Debugger, Extend), then paste it in seo-tools/.env as META_ACCESS_TOKEN=... and put the Page id and Instagram Business id in social.json under own.",
+      "4. Meta Ad Library also needs one-time identity confirmation at facebook.com/ID before the ads_archive endpoint answers."
+    ],
+    "youtube_own": [
+      "YOUTUBE_API_KEY not set. To connect YouTube (own channel and competitors):",
+      "1. console.cloud.google.com: any project, APIs and Services, Enable APIs, turn on YouTube Data API v3.",
+      "2. Credentials, Create credentials, API key. Restrict it to the YouTube Data API v3 only.",
+      "3. Paste it in seo-tools/.env as YOUTUBE_API_KEY=... and put the BCC channel id (UC...) or @handle in social.json under own.youtube_channel_id."
+    ],
+    "linkedin_own": [
+      "LINKEDIN_ACCESS_TOKEN not set. LinkedIn is the hardest one and is optional:",
+      "1. linkedin.com/developers: create an app tied to the BCC Company Page, request the Community Management API (approval takes days).",
+      "2. OAuth with r_organization_social and rw_organization_admin as a Page admin; tokens last 60 days.",
+      "3. Paste it in .env as LINKEDIN_ACCESS_TOKEN=... and the numeric organization id in social.json under own.linkedin_org_id."
+    ]
+  },
+  "competitors_youtube": [],
+  "footprint": [
+    {
+      "label": "ERC",
+      "domain": "eatingrecoverycenter.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.eatingrecoverycenter.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/EatingRecoveryCenter",
+          "handle": "EatingRecoveryCenter",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/eatingrecovery",
+          "handle": "eatingrecovery",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/channel/UCspO95XDFYViETpZCq4bA3Q",
+          "handle": "channel/UCspO95XDFYViETpZCq4bA3Q",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/eating-recovery-center",
+          "handle": "company/eating-recovery-center",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Equip",
+      "domain": "equip.health",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://equip.health/",
+      "profiles": {},
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Within",
+      "domain": "withinhealth.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://withinhealth.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/withinhealth",
+          "handle": "withinhealth",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/within_health",
+          "handle": "within_health",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/withinhealth",
+          "handle": "company/withinhealth",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Emily Program",
+      "domain": "emilyprogram.com",
+      "group": "program_national",
+      "fetched": false,
+      "status": null,
+      "final_url": null,
+      "profiles": {},
+      "tech": null,
+      "error": "bot wall (HTTP 202, no page content)"
+    },
+    {
+      "label": "Alsana",
+      "domain": "alsana.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.alsana.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/alsanallc",
+          "handle": "alsanallc",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/alsana_recovery",
+          "handle": "alsana_recovery",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/channel/UCH4BjpYe8jtQg9XMQ3a3YyA",
+          "handle": "channel/UCH4BjpYe8jtQg9XMQ3a3YyA",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/alsana",
+          "handle": "company/alsana",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/alsanallc",
+          "handle": "alsanallc",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Monte Nido",
+      "domain": "montenido.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.montenido.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/montenido",
+          "handle": "montenido",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/monte.nido",
+          "handle": "monte.nido",
+          "source": "discovered"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@monte.nido",
+          "handle": "monte.nido",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/monte-nido",
+          "handle": "company/monte-nido",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Center for Discovery",
+      "domain": "centerfordiscovery.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://centerfordiscovery.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/CenterForDiscoveryED",
+          "handle": "CenterForDiscoveryED",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/centerfordiscovery",
+          "handle": "centerfordiscovery",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@CenterforDiscoveryED",
+          "handle": "@CenterforDiscoveryED",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/center-for-discovery",
+          "handle": "company/center-for-discovery",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": true,
+        "ga4": true,
+        "ga4_ids": [
+          "G-W6PWS2CCDM"
+        ],
+        "google_ads": true,
+        "google_ads_ids": [
+          "AW-994078400"
+        ],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Esperanza",
+      "domain": "esperanzaedc.com",
+      "group": "local",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://esperanzaedc.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/esperanzaeatingdisorderscenter",
+          "handle": "esperanzaeatingdisorderscenter",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/esperanzaedc",
+          "handle": "esperanzaedc",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/Esperanza_EDC",
+          "handle": "Esperanza_EDC",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Balanced Counseling",
+      "domain": "balancedcounselingsa.com",
+      "group": "local",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.balancedcounselingsa.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/balancedcounselingsa",
+          "handle": "balancedcounselingsa",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": true,
+        "ga4_ids": [
+          "G-DY29092W3S"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "therapynotes",
+        "booking_all": [
+          "therapynotes"
+        ]
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Monarch Behavioral",
+      "domain": "monarchbehavioral.net",
+      "group": "local",
+      "fetched": false,
+      "status": null,
+      "final_url": null,
+      "profiles": {},
+      "tech": null,
+      "error": "bot wall (HTTP 202, no page content)"
+    },
+    {
+      "label": "Sage Bariatric",
+      "domain": "sagebariatric.com",
+      "group": "local",
+      "fetched": false,
+      "status": null,
+      "final_url": null,
+      "profiles": {},
+      "tech": null,
+      "error": "bot wall (HTTP 202, no page content)"
+    },
+    {
+      "label": "OA San Antonio",
+      "domain": "oasanantonio.com",
+      "group": "twelve_step",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://oasanantonio.com/",
+      "profiles": {},
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Overeaters Anonymous",
+      "domain": "oa.org",
+      "group": "twelve_step",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://oa.org/",
+      "profiles": {},
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Noom",
+      "domain": "noom.com",
+      "group": "app",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.noom.com:443/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/noom",
+          "handle": "noom",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/noom",
+          "handle": "noom",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/c/NoomInc",
+          "handle": "c/NoomInc",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/noom-inc",
+          "handle": "company/noom-inc",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/@noom",
+          "handle": "noom",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Psychology Today",
+      "domain": "psychologytoday.com",
+      "group": "directory",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.psychologytoday.com:443/us",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/psychologytoday",
+          "handle": "psychologytoday",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/psych_today",
+          "handle": "psych_today",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/user/psychologytoday",
+          "handle": "user/psychologytoday",
+          "source": "discovered"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@psychology.today",
+          "handle": "psychology.today",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/psychology-today",
+          "handle": "company/psychology-today",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/psychtoday",
+          "handle": "psychtoday",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Eating Disorder Hope",
+      "domain": "eatingdisorderhope.com",
+      "group": "directory",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.eatingdisorderhope.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/Eating-Disorder-Hope-83317933683",
+          "handle": "Eating-Disorder-Hope-83317933683",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/eatingdisorderhope",
+          "handle": "eatingdisorderhope",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/channel/UCxZbcpVGZBPwCwyJcx64E_w",
+          "handle": "channel/UCxZbcpVGZBPwCwyJcx64E_w",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/eating-disorder-hope",
+          "handle": "company/eating-disorder-hope",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/edhopeglobal",
+          "handle": "edhopeglobal",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "Recovery.com",
+      "domain": "recovery.com",
+      "group": "directory",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://recovery.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/recoverydotcom",
+          "handle": "recoverydotcom",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/recoverydotcom",
+          "handle": "recoverydotcom",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@recoverydotcom",
+          "handle": "@recoverydotcom",
+          "source": "discovered"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@recoverydotcom",
+          "handle": "recoverydotcom",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/recoverydotcom",
+          "handle": "company/recoverydotcom",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/recoverydotcom",
+          "handle": "recoverydotcom",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    },
+    {
+      "label": "NEDA",
+      "domain": "nationaleatingdisorders.org",
+      "group": "directory",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.nationaleatingdisorders.org/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/NationalEatingDisordersAssociation",
+          "handle": "NationalEatingDisordersAssociation",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/neda",
+          "handle": "neda",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/c/nationaleatingdisordersassociation",
+          "handle": "c/nationaleatingdisordersassociation",
+          "source": "discovered"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@NEDA",
+          "handle": "NEDA",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/national-eating-disorders-association",
+          "handle": "company/national-eating-disorders-association",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-09-18"
+    }
+  ],
+  "ad_library": {
+    "manual": [
+      {
+        "term": "binge eating",
+        "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=binge%20eating"
+      },
+      {
+        "term": "eating disorder treatment Texas",
+        "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=eating%20disorder%20treatment%20Texas"
+      },
+      {
+        "term": "weight loss counseling San Antonio",
+        "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=weight%20loss%20counseling%20San%20Antonio"
+      },
+      {
+        "term": "overeaters",
+        "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=overeaters"
+      }
+    ]
+  },
+  "history_rows_added": 0
+}

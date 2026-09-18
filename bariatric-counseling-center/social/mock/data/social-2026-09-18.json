@@ -1,0 +1,3084 @@
+{
+  "date": "2026-09-18",
+  "generated": "2026-09-18T19:04:11",
+  "mock": true,
+  "config_file": "/sessions/rcw-01dn6jcrgnizq6fhiumv4lsk/mnt/bariatric-counseling-center/seo-tools/social.json",
+  "env_keys": [
+    "META_ACCESS_TOKEN",
+    "YOUTUBE_API_KEY",
+    "LINKEDIN_ACCESS_TOKEN"
+  ],
+  "env_present": {
+    "META_ACCESS_TOKEN": false,
+    "YOUTUBE_API_KEY": false,
+    "LINKEDIN_ACCESS_TOKEN": false
+  },
+  "cost_usd": 0.0,
+  "sources": {
+    "meta_own": {
+      "ok": true,
+      "reason": ""
+    },
+    "youtube_own": {
+      "ok": true,
+      "reason": ""
+    },
+    "linkedin_own": {
+      "ok": true,
+      "reason": ""
+    },
+    "youtube_competitors": {
+      "ok": true,
+      "reason": ""
+    },
+    "discovery": {
+      "ok": true,
+      "reason": ""
+    },
+    "ad_library": {
+      "ok": true,
+      "reason": ""
+    }
+  },
+  "howto": {
+    "meta": [
+      "META_ACCESS_TOKEN not set. To connect Facebook and Instagram:",
+      "1. developers.facebook.com: create an app (type Business), add the Facebook Login and Instagram Graph products.",
+      "2. Graph API Explorer: pick the app, choose the BCC Page as the token owner, grant pages_read_engagement, pages_read_user_content, read_insights, instagram_basic, instagram_manage_insights, ads_read.",
+      "3. Exchange it for a long-lived Page token (Access Token Debugger, Extend), then paste it in seo-tools/.env as META_ACCESS_TOKEN=... and put the Page id and Instagram Business id in social.json under own.",
+      "4. Meta Ad Library also needs one-time identity confirmation at facebook.com/ID before the ads_archive endpoint answers."
+    ],
+    "youtube": [
+      "YOUTUBE_API_KEY not set. To connect YouTube (own channel and competitors):",
+      "1. console.cloud.google.com: any project, APIs and Services, Enable APIs, turn on YouTube Data API v3.",
+      "2. Credentials, Create credentials, API key. Restrict it to the YouTube Data API v3 only.",
+      "3. Paste it in seo-tools/.env as YOUTUBE_API_KEY=... and put the BCC channel id (UC...) or @handle in social.json under own.youtube_channel_id."
+    ],
+    "linkedin": [
+      "LINKEDIN_ACCESS_TOKEN not set. LinkedIn is the hardest one and is optional:",
+      "1. linkedin.com/developers: create an app tied to the BCC Company Page, request the Community Management API (approval takes days).",
+      "2. OAuth with r_organization_social and rw_organization_admin as a Page admin; tokens last 60 days.",
+      "3. Paste it in .env as LINKEDIN_ACCESS_TOKEN=... and the numeric organization id in social.json under own.linkedin_org_id."
+    ]
+  },
+  "own": {
+    "facebook": {
+      "name": "Bariatric Counseling Center",
+      "fan_count": 1180,
+      "followers": 1240,
+      "link": "https://www.facebook.com/bariatriccounselingcenter",
+      "posts": [
+        {
+          "id": "p0",
+          "created": "2026-09-18T19:04:11.687402+00:00",
+          "url": "https://www.facebook.com/mock/0",
+          "text": "Mock post 0",
+          "reactions": 9,
+          "comments": 0,
+          "shares": 2
+        },
+        {
+          "id": "p1",
+          "created": "2026-09-09T19:04:11.687402+00:00",
+          "url": "https://www.facebook.com/mock/1",
+          "text": "Mock post 1",
+          "reactions": 17,
+          "comments": 1,
+          "shares": 1
+        },
+        {
+          "id": "p2",
+          "created": "2026-08-31T19:04:11.687402+00:00",
+          "url": "https://www.facebook.com/mock/2",
+          "text": "Mock post 2",
+          "reactions": 8,
+          "comments": 5,
+          "shares": 4
+        },
+        {
+          "id": "p3",
+          "created": "2026-08-22T19:04:11.687402+00:00",
+          "url": "https://www.facebook.com/mock/3",
+          "text": "Mock post 3",
+          "reactions": 7,
+          "comments": 4,
+          "shares": 3
+        },
+        {
+          "id": "p4",
+          "created": "2026-08-13T19:04:11.687402+00:00",
+          "url": "https://www.facebook.com/mock/4",
+          "text": "Mock post 4",
+          "reactions": 4,
+          "comments": 0,
+          "shares": 0
+        },
+        {
+          "id": "p5",
+          "created": "2026-08-04T19:04:11.687402+00:00",
+          "url": "https://www.facebook.com/mock/5",
+          "text": "Mock post 5",
+          "reactions": 15,
+          "comments": 1,
+          "shares": 4
+        },
+        {
+          "id": "p6",
+          "created": "2026-07-26T19:04:11.687402+00:00",
+          "url": "https://www.facebook.com/mock/6",
+          "text": "Mock post 6",
+          "reactions": 40,
+          "comments": 0,
+          "shares": 4
+        },
+        {
+          "id": "p7",
+          "created": "2026-07-17T19:04:11.687402+00:00",
+          "url": "https://www.facebook.com/mock/7",
+          "text": "Mock post 7",
+          "reactions": 14,
+          "comments": 5,
+          "shares": 4
+        },
+        {
+          "id": "p8",
+          "created": "2026-07-08T19:04:11.687402+00:00",
+          "url": "https://www.facebook.com/mock/8",
+          "text": "Mock post 8",
+          "reactions": 28,
+          "comments": 1,
+          "shares": 3
+        },
+        {
+          "id": "p9",
+          "created": "2026-06-29T19:04:11.687402+00:00",
+          "url": "https://www.facebook.com/mock/9",
+          "text": "Mock post 9",
+          "reactions": 39,
+          "comments": 2,
+          "shares": 0
+        }
+      ],
+      "impressions_28d": 5400,
+      "post_engagements_28d": 210,
+      "posts_90d": 9,
+      "engagement_last10": 225
+    },
+    "instagram": {
+      "username": "bariatriccounselingcenter",
+      "followers": 860,
+      "media_count": 312,
+      "media": [
+        {
+          "id": "m0",
+          "created": "2026-09-18T19:04:11.687402+00:00",
+          "url": "https://www.instagram.com/p/mock0/",
+          "type": "IMAGE",
+          "text": "Mock IG post 0",
+          "likes": 53,
+          "comments": 2
+        },
+        {
+          "id": "m1",
+          "created": "2026-09-11T19:04:11.687402+00:00",
+          "url": "https://www.instagram.com/p/mock1/",
+          "type": "IMAGE",
+          "text": "Mock IG post 1",
+          "likes": 49,
+          "comments": 6
+        },
+        {
+          "id": "m2",
+          "created": "2026-09-04T19:04:11.687402+00:00",
+          "url": "https://www.instagram.com/p/mock2/",
+          "type": "IMAGE",
+          "text": "Mock IG post 2",
+          "likes": 26,
+          "comments": 4
+        },
+        {
+          "id": "m3",
+          "created": "2026-08-28T19:04:11.687402+00:00",
+          "url": "https://www.instagram.com/p/mock3/",
+          "type": "IMAGE",
+          "text": "Mock IG post 3",
+          "likes": 14,
+          "comments": 3
+        },
+        {
+          "id": "m4",
+          "created": "2026-08-21T19:04:11.687402+00:00",
+          "url": "https://www.instagram.com/p/mock4/",
+          "type": "IMAGE",
+          "text": "Mock IG post 4",
+          "likes": 53,
+          "comments": 5
+        },
+        {
+          "id": "m5",
+          "created": "2026-08-14T19:04:11.687402+00:00",
+          "url": "https://www.instagram.com/p/mock5/",
+          "type": "IMAGE",
+          "text": "Mock IG post 5",
+          "likes": 11,
+          "comments": 1
+        },
+        {
+          "id": "m6",
+          "created": "2026-08-07T19:04:11.687402+00:00",
+          "url": "https://www.instagram.com/p/mock6/",
+          "type": "IMAGE",
+          "text": "Mock IG post 6",
+          "likes": 29,
+          "comments": 1
+        },
+        {
+          "id": "m7",
+          "created": "2026-07-31T19:04:11.687402+00:00",
+          "url": "https://www.instagram.com/p/mock7/",
+          "type": "IMAGE",
+          "text": "Mock IG post 7",
+          "likes": 27,
+          "comments": 5
+        },
+        {
+          "id": "m8",
+          "created": "2026-07-24T19:04:11.687402+00:00",
+          "url": "https://www.instagram.com/p/mock8/",
+          "type": "IMAGE",
+          "text": "Mock IG post 8",
+          "likes": 43,
+          "comments": 4
+        },
+        {
+          "id": "m9",
+          "created": "2026-07-17T19:04:11.687402+00:00",
+          "url": "https://www.instagram.com/p/mock9/",
+          "type": "IMAGE",
+          "text": "Mock IG post 9",
+          "likes": 56,
+          "comments": 0
+        }
+      ],
+      "posts_90d": 9,
+      "engagement_last10": 392
+    },
+    "youtube": {
+      "label": "BCC",
+      "domain": "bariatriccounselingcenter.com",
+      "handle_source": "mock",
+      "channel_id": "UCmockBCC",
+      "title": "BCC",
+      "handle": "@bcc",
+      "url": "https://www.youtube.com/@bcc",
+      "subscribers": 410,
+      "subscribers_hidden": false,
+      "video_count": 272,
+      "view_count": 24600,
+      "videos": [
+        {
+          "id": "mock00",
+          "title": "Mock video 0: what binge eating recovery looks like",
+          "published": "2026-03-13T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock00",
+          "views": 80,
+          "likes": 70,
+          "comments": 3
+        },
+        {
+          "id": "mock01",
+          "title": "Mock video 1: what binge eating recovery looks like",
+          "published": "2026-06-11T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock01",
+          "views": 20,
+          "likes": 72,
+          "comments": 9
+        },
+        {
+          "id": "mock02",
+          "title": "Mock video 2: what binge eating recovery looks like",
+          "published": "2026-04-08T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock02",
+          "views": 60,
+          "likes": 75,
+          "comments": 6
+        },
+        {
+          "id": "mock03",
+          "title": "Mock video 3: what binge eating recovery looks like",
+          "published": "2026-03-19T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock03",
+          "views": 20,
+          "likes": 7,
+          "comments": 7
+        },
+        {
+          "id": "mock04",
+          "title": "Mock video 4: what binge eating recovery looks like",
+          "published": "2026-03-02T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock04",
+          "views": 50,
+          "likes": 12,
+          "comments": 7
+        },
+        {
+          "id": "mock05",
+          "title": "Mock video 5: what binge eating recovery looks like",
+          "published": "2026-08-21T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock05",
+          "views": 70,
+          "likes": 37,
+          "comments": 14
+        },
+        {
+          "id": "mock06",
+          "title": "Mock video 6: what binge eating recovery looks like",
+          "published": "2026-04-06T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock06",
+          "views": 60,
+          "likes": 22,
+          "comments": 11
+        },
+        {
+          "id": "mock07",
+          "title": "Mock video 7: what binge eating recovery looks like",
+          "published": "2026-06-17T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock07",
+          "views": 40,
+          "likes": 87,
+          "comments": 8
+        },
+        {
+          "id": "mock08",
+          "title": "Mock video 8: what binge eating recovery looks like",
+          "published": "2026-03-20T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock08",
+          "views": 20,
+          "likes": 79,
+          "comments": 20
+        },
+        {
+          "id": "mock09",
+          "title": "Mock video 9: what binge eating recovery looks like",
+          "published": "2026-08-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock09",
+          "views": 90,
+          "likes": 33,
+          "comments": 5
+        },
+        {
+          "id": "mock10",
+          "title": "Mock video 10: what binge eating recovery looks like",
+          "published": "2026-05-20T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock10",
+          "views": 70,
+          "likes": 36,
+          "comments": 20
+        },
+        {
+          "id": "mock11",
+          "title": "Mock video 11: what binge eating recovery looks like",
+          "published": "2026-03-23T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock11",
+          "views": 90,
+          "likes": 30,
+          "comments": 10
+        },
+        {
+          "id": "mock12",
+          "title": "Mock video 12: what binge eating recovery looks like",
+          "published": "2026-03-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock12",
+          "views": 10,
+          "likes": 31,
+          "comments": 1
+        },
+        {
+          "id": "mock13",
+          "title": "Mock video 13: what binge eating recovery looks like",
+          "published": "2026-06-27T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock13",
+          "views": 70,
+          "likes": 36,
+          "comments": 2
+        },
+        {
+          "id": "mock14",
+          "title": "Mock video 14: what binge eating recovery looks like",
+          "published": "2026-07-23T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock14",
+          "views": 60,
+          "likes": 29,
+          "comments": 20
+        },
+        {
+          "id": "mock15",
+          "title": "Mock video 15: what binge eating recovery looks like",
+          "published": "2026-05-11T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock15",
+          "views": 70,
+          "likes": 84,
+          "comments": 14
+        },
+        {
+          "id": "mock16",
+          "title": "Mock video 16: what binge eating recovery looks like",
+          "published": "2026-08-10T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock16",
+          "views": 50,
+          "likes": 19,
+          "comments": 7
+        },
+        {
+          "id": "mock17",
+          "title": "Mock video 17: what binge eating recovery looks like",
+          "published": "2026-03-09T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock17",
+          "views": 90,
+          "likes": 70,
+          "comments": 8
+        },
+        {
+          "id": "mock18",
+          "title": "Mock video 18: what binge eating recovery looks like",
+          "published": "2026-03-08T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock18",
+          "views": 70,
+          "likes": 76,
+          "comments": 12
+        },
+        {
+          "id": "mock19",
+          "title": "Mock video 19: what binge eating recovery looks like",
+          "published": "2026-06-15T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock19",
+          "views": 40,
+          "likes": 19,
+          "comments": 16
+        }
+      ],
+      "uploads_90d": 5,
+      "views_90d": 340,
+      "top_videos": [
+        {
+          "id": "mock09",
+          "title": "Mock video 9: what binge eating recovery looks like",
+          "published": "2026-08-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock09",
+          "views": 90,
+          "likes": 33,
+          "comments": 5
+        },
+        {
+          "id": "mock11",
+          "title": "Mock video 11: what binge eating recovery looks like",
+          "published": "2026-03-23T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock11",
+          "views": 90,
+          "likes": 30,
+          "comments": 10
+        },
+        {
+          "id": "mock17",
+          "title": "Mock video 17: what binge eating recovery looks like",
+          "published": "2026-03-09T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock17",
+          "views": 90,
+          "likes": 70,
+          "comments": 8
+        }
+      ],
+      "engagement_recent": 1124
+    },
+    "linkedin": {
+      "org_id": "0000000",
+      "followers": 95,
+      "url": "https://www.linkedin.com/company/0000000/"
+    },
+    "tiktok_handle": ""
+  },
+  "own_howto": {},
+  "competitors_youtube": [
+    {
+      "label": "Equip",
+      "domain": "equip.health",
+      "handle_source": "mock",
+      "channel_id": "UCmockEquip",
+      "title": "Equip",
+      "handle": "@equip",
+      "url": "https://www.youtube.com/@equip",
+      "subscribers": 31000,
+      "subscribers_hidden": false,
+      "video_count": 129,
+      "view_count": 1860000,
+      "videos": [
+        {
+          "id": "mock00",
+          "title": "Mock video 0: what binge eating recovery looks like",
+          "published": "2026-06-12T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock00",
+          "views": 6200,
+          "likes": 68,
+          "comments": 14
+        },
+        {
+          "id": "mock01",
+          "title": "Mock video 1: what binge eating recovery looks like",
+          "published": "2026-08-16T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock01",
+          "views": 3100,
+          "likes": 30,
+          "comments": 2
+        },
+        {
+          "id": "mock02",
+          "title": "Mock video 2: what binge eating recovery looks like",
+          "published": "2026-06-21T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock02",
+          "views": 775,
+          "likes": 77,
+          "comments": 17
+        },
+        {
+          "id": "mock03",
+          "title": "Mock video 3: what binge eating recovery looks like",
+          "published": "2026-07-19T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock03",
+          "views": 3100,
+          "likes": 2,
+          "comments": 2
+        },
+        {
+          "id": "mock04",
+          "title": "Mock video 4: what binge eating recovery looks like",
+          "published": "2026-03-18T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock04",
+          "views": 775,
+          "likes": 31,
+          "comments": 2
+        },
+        {
+          "id": "mock05",
+          "title": "Mock video 5: what binge eating recovery looks like",
+          "published": "2026-09-07T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock05",
+          "views": 4650,
+          "likes": 11,
+          "comments": 16
+        },
+        {
+          "id": "mock06",
+          "title": "Mock video 6: what binge eating recovery looks like",
+          "published": "2026-07-17T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock06",
+          "views": 3875,
+          "likes": 87,
+          "comments": 15
+        },
+        {
+          "id": "mock07",
+          "title": "Mock video 7: what binge eating recovery looks like",
+          "published": "2026-07-23T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock07",
+          "views": 6975,
+          "likes": 18,
+          "comments": 18
+        },
+        {
+          "id": "mock08",
+          "title": "Mock video 8: what binge eating recovery looks like",
+          "published": "2026-04-21T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock08",
+          "views": 6200,
+          "likes": 33,
+          "comments": 15
+        },
+        {
+          "id": "mock09",
+          "title": "Mock video 9: what binge eating recovery looks like",
+          "published": "2026-06-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock09",
+          "views": 3100,
+          "likes": 14,
+          "comments": 3
+        },
+        {
+          "id": "mock10",
+          "title": "Mock video 10: what binge eating recovery looks like",
+          "published": "2026-03-31T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock10",
+          "views": 5425,
+          "likes": 47,
+          "comments": 13
+        },
+        {
+          "id": "mock11",
+          "title": "Mock video 11: what binge eating recovery looks like",
+          "published": "2026-06-02T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock11",
+          "views": 6200,
+          "likes": 8,
+          "comments": 20
+        },
+        {
+          "id": "mock12",
+          "title": "Mock video 12: what binge eating recovery looks like",
+          "published": "2026-04-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock12",
+          "views": 1550,
+          "likes": 9,
+          "comments": 12
+        },
+        {
+          "id": "mock13",
+          "title": "Mock video 13: what binge eating recovery looks like",
+          "published": "2026-03-13T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock13",
+          "views": 4650,
+          "likes": 15,
+          "comments": 7
+        },
+        {
+          "id": "mock14",
+          "title": "Mock video 14: what binge eating recovery looks like",
+          "published": "2026-07-28T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock14",
+          "views": 3100,
+          "likes": 70,
+          "comments": 14
+        },
+        {
+          "id": "mock15",
+          "title": "Mock video 15: what binge eating recovery looks like",
+          "published": "2026-08-11T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock15",
+          "views": 5425,
+          "likes": 25,
+          "comments": 8
+        },
+        {
+          "id": "mock16",
+          "title": "Mock video 16: what binge eating recovery looks like",
+          "published": "2026-05-20T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock16",
+          "views": 3100,
+          "likes": 11,
+          "comments": 14
+        },
+        {
+          "id": "mock17",
+          "title": "Mock video 17: what binge eating recovery looks like",
+          "published": "2026-04-28T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock17",
+          "views": 1550,
+          "likes": 8,
+          "comments": 20
+        },
+        {
+          "id": "mock18",
+          "title": "Mock video 18: what binge eating recovery looks like",
+          "published": "2026-04-30T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock18",
+          "views": 775,
+          "likes": 13,
+          "comments": 7
+        },
+        {
+          "id": "mock19",
+          "title": "Mock video 19: what binge eating recovery looks like",
+          "published": "2026-08-04T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock19",
+          "views": 5425,
+          "likes": 64,
+          "comments": 15
+        }
+      ],
+      "uploads_90d": 9,
+      "views_90d": 36425,
+      "top_videos": [
+        {
+          "id": "mock07",
+          "title": "Mock video 7: what binge eating recovery looks like",
+          "published": "2026-07-23T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock07",
+          "views": 6975,
+          "likes": 18,
+          "comments": 18
+        },
+        {
+          "id": "mock00",
+          "title": "Mock video 0: what binge eating recovery looks like",
+          "published": "2026-06-12T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock00",
+          "views": 6200,
+          "likes": 68,
+          "comments": 14
+        },
+        {
+          "id": "mock08",
+          "title": "Mock video 8: what binge eating recovery looks like",
+          "published": "2026-04-21T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock08",
+          "views": 6200,
+          "likes": 33,
+          "comments": 15
+        }
+      ],
+      "engagement_recent": 875
+    },
+    {
+      "label": "Emily Program",
+      "domain": "emilyprogram.com",
+      "handle_source": "mock",
+      "channel_id": "UCmockEmilyProgram",
+      "title": "Emily Program",
+      "handle": "@emilyprogram",
+      "url": "https://www.youtube.com/@emilyprogram",
+      "subscribers": 31000,
+      "subscribers_hidden": false,
+      "video_count": 39,
+      "view_count": 1860000,
+      "videos": [
+        {
+          "id": "mock00",
+          "title": "Mock video 0: what binge eating recovery looks like",
+          "published": "2026-05-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock00",
+          "views": 775,
+          "likes": 87,
+          "comments": 17
+        },
+        {
+          "id": "mock01",
+          "title": "Mock video 1: what binge eating recovery looks like",
+          "published": "2026-07-01T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock01",
+          "views": 1550,
+          "likes": 19,
+          "comments": 8
+        },
+        {
+          "id": "mock02",
+          "title": "Mock video 2: what binge eating recovery looks like",
+          "published": "2026-08-17T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock02",
+          "views": 1550,
+          "likes": 72,
+          "comments": 4
+        },
+        {
+          "id": "mock03",
+          "title": "Mock video 3: what binge eating recovery looks like",
+          "published": "2026-07-08T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock03",
+          "views": 3875,
+          "likes": 79,
+          "comments": 6
+        },
+        {
+          "id": "mock04",
+          "title": "Mock video 4: what binge eating recovery looks like",
+          "published": "2026-03-16T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock04",
+          "views": 4650,
+          "likes": 28,
+          "comments": 20
+        },
+        {
+          "id": "mock05",
+          "title": "Mock video 5: what binge eating recovery looks like",
+          "published": "2026-07-10T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock05",
+          "views": 6975,
+          "likes": 64,
+          "comments": 8
+        },
+        {
+          "id": "mock06",
+          "title": "Mock video 6: what binge eating recovery looks like",
+          "published": "2026-09-02T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock06",
+          "views": 1550,
+          "likes": 83,
+          "comments": 13
+        },
+        {
+          "id": "mock07",
+          "title": "Mock video 7: what binge eating recovery looks like",
+          "published": "2026-07-07T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock07",
+          "views": 775,
+          "likes": 2,
+          "comments": 10
+        },
+        {
+          "id": "mock08",
+          "title": "Mock video 8: what binge eating recovery looks like",
+          "published": "2026-03-02T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock08",
+          "views": 2325,
+          "likes": 83,
+          "comments": 8
+        },
+        {
+          "id": "mock09",
+          "title": "Mock video 9: what binge eating recovery looks like",
+          "published": "2026-08-05T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock09",
+          "views": 6200,
+          "likes": 72,
+          "comments": 13
+        },
+        {
+          "id": "mock10",
+          "title": "Mock video 10: what binge eating recovery looks like",
+          "published": "2026-04-25T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock10",
+          "views": 775,
+          "likes": 16,
+          "comments": 2
+        },
+        {
+          "id": "mock11",
+          "title": "Mock video 11: what binge eating recovery looks like",
+          "published": "2026-03-23T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock11",
+          "views": 2325,
+          "likes": 71,
+          "comments": 1
+        },
+        {
+          "id": "mock12",
+          "title": "Mock video 12: what binge eating recovery looks like",
+          "published": "2026-06-13T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock12",
+          "views": 6975,
+          "likes": 20,
+          "comments": 13
+        },
+        {
+          "id": "mock13",
+          "title": "Mock video 13: what binge eating recovery looks like",
+          "published": "2026-08-14T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock13",
+          "views": 775,
+          "likes": 41,
+          "comments": 11
+        },
+        {
+          "id": "mock14",
+          "title": "Mock video 14: what binge eating recovery looks like",
+          "published": "2026-09-05T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock14",
+          "views": 4650,
+          "likes": 28,
+          "comments": 7
+        },
+        {
+          "id": "mock15",
+          "title": "Mock video 15: what binge eating recovery looks like",
+          "published": "2026-03-29T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock15",
+          "views": 1550,
+          "likes": 47,
+          "comments": 17
+        },
+        {
+          "id": "mock16",
+          "title": "Mock video 16: what binge eating recovery looks like",
+          "published": "2026-06-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock16",
+          "views": 2325,
+          "likes": 32,
+          "comments": 5
+        },
+        {
+          "id": "mock17",
+          "title": "Mock video 17: what binge eating recovery looks like",
+          "published": "2026-08-01T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock17",
+          "views": 5425,
+          "likes": 5,
+          "comments": 5
+        },
+        {
+          "id": "mock18",
+          "title": "Mock video 18: what binge eating recovery looks like",
+          "published": "2026-03-11T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock18",
+          "views": 4650,
+          "likes": 54,
+          "comments": 7
+        },
+        {
+          "id": "mock19",
+          "title": "Mock video 19: what binge eating recovery looks like",
+          "published": "2026-07-09T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock19",
+          "views": 2325,
+          "likes": 15,
+          "comments": 12
+        }
+      ],
+      "uploads_90d": 11,
+      "views_90d": 35650,
+      "top_videos": [
+        {
+          "id": "mock05",
+          "title": "Mock video 5: what binge eating recovery looks like",
+          "published": "2026-07-10T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock05",
+          "views": 6975,
+          "likes": 64,
+          "comments": 8
+        },
+        {
+          "id": "mock12",
+          "title": "Mock video 12: what binge eating recovery looks like",
+          "published": "2026-06-13T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock12",
+          "views": 6975,
+          "likes": 20,
+          "comments": 13
+        },
+        {
+          "id": "mock09",
+          "title": "Mock video 9: what binge eating recovery looks like",
+          "published": "2026-08-05T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock09",
+          "views": 6200,
+          "likes": 72,
+          "comments": 13
+        }
+      ],
+      "engagement_recent": 1105
+    },
+    {
+      "label": "Monte Nido",
+      "domain": "montenido.com",
+      "handle_source": "mock",
+      "channel_id": "UCmockMonteNido",
+      "title": "Monte Nido",
+      "handle": "@montenido",
+      "url": "https://www.youtube.com/@montenido",
+      "subscribers": 8800,
+      "subscribers_hidden": false,
+      "video_count": 385,
+      "view_count": 528000,
+      "videos": [
+        {
+          "id": "mock00",
+          "title": "Mock video 0: what binge eating recovery looks like",
+          "published": "2026-04-01T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock00",
+          "views": 1320,
+          "likes": 61,
+          "comments": 14
+        },
+        {
+          "id": "mock01",
+          "title": "Mock video 1: what binge eating recovery looks like",
+          "published": "2026-05-25T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock01",
+          "views": 880,
+          "likes": 67,
+          "comments": 15
+        },
+        {
+          "id": "mock02",
+          "title": "Mock video 2: what binge eating recovery looks like",
+          "published": "2026-03-11T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock02",
+          "views": 660,
+          "likes": 86,
+          "comments": 2
+        },
+        {
+          "id": "mock03",
+          "title": "Mock video 3: what binge eating recovery looks like",
+          "published": "2026-07-05T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock03",
+          "views": 1980,
+          "likes": 86,
+          "comments": 20
+        },
+        {
+          "id": "mock04",
+          "title": "Mock video 4: what binge eating recovery looks like",
+          "published": "2026-04-10T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock04",
+          "views": 1320,
+          "likes": 13,
+          "comments": 7
+        },
+        {
+          "id": "mock05",
+          "title": "Mock video 5: what binge eating recovery looks like",
+          "published": "2026-03-27T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock05",
+          "views": 1100,
+          "likes": 30,
+          "comments": 6
+        },
+        {
+          "id": "mock06",
+          "title": "Mock video 6: what binge eating recovery looks like",
+          "published": "2026-08-09T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock06",
+          "views": 220,
+          "likes": 7,
+          "comments": 7
+        },
+        {
+          "id": "mock07",
+          "title": "Mock video 7: what binge eating recovery looks like",
+          "published": "2026-05-17T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock07",
+          "views": 440,
+          "likes": 60,
+          "comments": 13
+        },
+        {
+          "id": "mock08",
+          "title": "Mock video 8: what binge eating recovery looks like",
+          "published": "2026-04-07T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock08",
+          "views": 880,
+          "likes": 51,
+          "comments": 15
+        },
+        {
+          "id": "mock09",
+          "title": "Mock video 9: what binge eating recovery looks like",
+          "published": "2026-06-05T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock09",
+          "views": 880,
+          "likes": 20,
+          "comments": 20
+        },
+        {
+          "id": "mock10",
+          "title": "Mock video 10: what binge eating recovery looks like",
+          "published": "2026-03-23T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock10",
+          "views": 220,
+          "likes": 15,
+          "comments": 13
+        },
+        {
+          "id": "mock11",
+          "title": "Mock video 11: what binge eating recovery looks like",
+          "published": "2026-07-21T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock11",
+          "views": 660,
+          "likes": 68,
+          "comments": 14
+        },
+        {
+          "id": "mock12",
+          "title": "Mock video 12: what binge eating recovery looks like",
+          "published": "2026-09-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock12",
+          "views": 1980,
+          "likes": 33,
+          "comments": 3
+        },
+        {
+          "id": "mock13",
+          "title": "Mock video 13: what binge eating recovery looks like",
+          "published": "2026-05-22T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock13",
+          "views": 660,
+          "likes": 61,
+          "comments": 16
+        },
+        {
+          "id": "mock14",
+          "title": "Mock video 14: what binge eating recovery looks like",
+          "published": "2026-04-25T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock14",
+          "views": 1320,
+          "likes": 58,
+          "comments": 19
+        },
+        {
+          "id": "mock15",
+          "title": "Mock video 15: what binge eating recovery looks like",
+          "published": "2026-03-15T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock15",
+          "views": 1980,
+          "likes": 56,
+          "comments": 17
+        },
+        {
+          "id": "mock16",
+          "title": "Mock video 16: what binge eating recovery looks like",
+          "published": "2026-05-24T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock16",
+          "views": 660,
+          "likes": 62,
+          "comments": 14
+        },
+        {
+          "id": "mock17",
+          "title": "Mock video 17: what binge eating recovery looks like",
+          "published": "2026-07-11T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock17",
+          "views": 880,
+          "likes": 83,
+          "comments": 8
+        },
+        {
+          "id": "mock18",
+          "title": "Mock video 18: what binge eating recovery looks like",
+          "published": "2026-03-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock18",
+          "views": 1980,
+          "likes": 64,
+          "comments": 20
+        },
+        {
+          "id": "mock19",
+          "title": "Mock video 19: what binge eating recovery looks like",
+          "published": "2026-07-16T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock19",
+          "views": 1100,
+          "likes": 58,
+          "comments": 2
+        }
+      ],
+      "uploads_90d": 6,
+      "views_90d": 6820,
+      "top_videos": [
+        {
+          "id": "mock03",
+          "title": "Mock video 3: what binge eating recovery looks like",
+          "published": "2026-07-05T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock03",
+          "views": 1980,
+          "likes": 86,
+          "comments": 20
+        },
+        {
+          "id": "mock12",
+          "title": "Mock video 12: what binge eating recovery looks like",
+          "published": "2026-09-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock12",
+          "views": 1980,
+          "likes": 33,
+          "comments": 3
+        },
+        {
+          "id": "mock15",
+          "title": "Mock video 15: what binge eating recovery looks like",
+          "published": "2026-03-15T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock15",
+          "views": 1980,
+          "likes": 56,
+          "comments": 17
+        }
+      ],
+      "engagement_recent": 1284
+    },
+    {
+      "label": "Within",
+      "domain": "withinhealth.com",
+      "handle_source": "mock",
+      "channel_id": "UCmockWithin",
+      "title": "Within",
+      "handle": "@within",
+      "url": "https://www.youtube.com/@within",
+      "subscribers": 2400,
+      "subscribers_hidden": false,
+      "video_count": 333,
+      "view_count": 144000,
+      "videos": [
+        {
+          "id": "mock00",
+          "title": "Mock video 0: what binge eating recovery looks like",
+          "published": "2026-08-31T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock00",
+          "views": 180,
+          "likes": 50,
+          "comments": 0
+        },
+        {
+          "id": "mock01",
+          "title": "Mock video 1: what binge eating recovery looks like",
+          "published": "2026-06-08T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock01",
+          "views": 300,
+          "likes": 60,
+          "comments": 9
+        },
+        {
+          "id": "mock02",
+          "title": "Mock video 2: what binge eating recovery looks like",
+          "published": "2026-05-30T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock02",
+          "views": 540,
+          "likes": 86,
+          "comments": 15
+        },
+        {
+          "id": "mock03",
+          "title": "Mock video 3: what binge eating recovery looks like",
+          "published": "2026-08-07T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock03",
+          "views": 240,
+          "likes": 39,
+          "comments": 6
+        },
+        {
+          "id": "mock04",
+          "title": "Mock video 4: what binge eating recovery looks like",
+          "published": "2026-09-01T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock04",
+          "views": 540,
+          "likes": 9,
+          "comments": 10
+        },
+        {
+          "id": "mock05",
+          "title": "Mock video 5: what binge eating recovery looks like",
+          "published": "2026-09-01T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock05",
+          "views": 60,
+          "likes": 76,
+          "comments": 15
+        },
+        {
+          "id": "mock06",
+          "title": "Mock video 6: what binge eating recovery looks like",
+          "published": "2026-05-10T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock06",
+          "views": 540,
+          "likes": 22,
+          "comments": 1
+        },
+        {
+          "id": "mock07",
+          "title": "Mock video 7: what binge eating recovery looks like",
+          "published": "2026-05-08T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock07",
+          "views": 120,
+          "likes": 25,
+          "comments": 2
+        },
+        {
+          "id": "mock08",
+          "title": "Mock video 8: what binge eating recovery looks like",
+          "published": "2026-04-16T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock08",
+          "views": 120,
+          "likes": 88,
+          "comments": 7
+        },
+        {
+          "id": "mock09",
+          "title": "Mock video 9: what binge eating recovery looks like",
+          "published": "2026-06-04T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock09",
+          "views": 120,
+          "likes": 74,
+          "comments": 7
+        },
+        {
+          "id": "mock10",
+          "title": "Mock video 10: what binge eating recovery looks like",
+          "published": "2026-04-20T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock10",
+          "views": 60,
+          "likes": 81,
+          "comments": 2
+        },
+        {
+          "id": "mock11",
+          "title": "Mock video 11: what binge eating recovery looks like",
+          "published": "2026-05-31T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock11",
+          "views": 540,
+          "likes": 42,
+          "comments": 8
+        },
+        {
+          "id": "mock12",
+          "title": "Mock video 12: what binge eating recovery looks like",
+          "published": "2026-07-25T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock12",
+          "views": 360,
+          "likes": 32,
+          "comments": 8
+        },
+        {
+          "id": "mock13",
+          "title": "Mock video 13: what binge eating recovery looks like",
+          "published": "2026-06-06T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock13",
+          "views": 180,
+          "likes": 87,
+          "comments": 20
+        },
+        {
+          "id": "mock14",
+          "title": "Mock video 14: what binge eating recovery looks like",
+          "published": "2026-07-01T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock14",
+          "views": 480,
+          "likes": 42,
+          "comments": 2
+        },
+        {
+          "id": "mock15",
+          "title": "Mock video 15: what binge eating recovery looks like",
+          "published": "2026-09-13T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock15",
+          "views": 480,
+          "likes": 81,
+          "comments": 18
+        },
+        {
+          "id": "mock16",
+          "title": "Mock video 16: what binge eating recovery looks like",
+          "published": "2026-08-21T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock16",
+          "views": 120,
+          "likes": 70,
+          "comments": 6
+        },
+        {
+          "id": "mock17",
+          "title": "Mock video 17: what binge eating recovery looks like",
+          "published": "2026-05-09T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock17",
+          "views": 300,
+          "likes": 18,
+          "comments": 11
+        },
+        {
+          "id": "mock18",
+          "title": "Mock video 18: what binge eating recovery looks like",
+          "published": "2026-08-29T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock18",
+          "views": 240,
+          "likes": 49,
+          "comments": 9
+        },
+        {
+          "id": "mock19",
+          "title": "Mock video 19: what binge eating recovery looks like",
+          "published": "2026-08-06T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock19",
+          "views": 480,
+          "likes": 71,
+          "comments": 9
+        }
+      ],
+      "uploads_90d": 10,
+      "views_90d": 3180,
+      "top_videos": [
+        {
+          "id": "mock02",
+          "title": "Mock video 2: what binge eating recovery looks like",
+          "published": "2026-05-30T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock02",
+          "views": 540,
+          "likes": 86,
+          "comments": 15
+        },
+        {
+          "id": "mock04",
+          "title": "Mock video 4: what binge eating recovery looks like",
+          "published": "2026-09-01T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock04",
+          "views": 540,
+          "likes": 9,
+          "comments": 10
+        },
+        {
+          "id": "mock06",
+          "title": "Mock video 6: what binge eating recovery looks like",
+          "published": "2026-05-10T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock06",
+          "views": 540,
+          "likes": 22,
+          "comments": 1
+        }
+      ],
+      "engagement_recent": 1267
+    },
+    {
+      "label": "Alsana",
+      "domain": "alsana.com",
+      "handle_source": "mock",
+      "channel_id": "UCmockAlsana",
+      "title": "Alsana",
+      "handle": "@alsana",
+      "url": "https://www.youtube.com/@alsana",
+      "subscribers": 2400,
+      "subscribers_hidden": false,
+      "video_count": 316,
+      "view_count": 144000,
+      "videos": [
+        {
+          "id": "mock00",
+          "title": "Mock video 0: what binge eating recovery looks like",
+          "published": "2026-07-21T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock00",
+          "views": 240,
+          "likes": 60,
+          "comments": 11
+        },
+        {
+          "id": "mock01",
+          "title": "Mock video 1: what binge eating recovery looks like",
+          "published": "2026-06-29T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock01",
+          "views": 240,
+          "likes": 30,
+          "comments": 0
+        },
+        {
+          "id": "mock02",
+          "title": "Mock video 2: what binge eating recovery looks like",
+          "published": "2026-03-31T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock02",
+          "views": 240,
+          "likes": 53,
+          "comments": 10
+        },
+        {
+          "id": "mock03",
+          "title": "Mock video 3: what binge eating recovery looks like",
+          "published": "2026-07-06T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock03",
+          "views": 120,
+          "likes": 37,
+          "comments": 11
+        },
+        {
+          "id": "mock04",
+          "title": "Mock video 4: what binge eating recovery looks like",
+          "published": "2026-04-04T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock04",
+          "views": 540,
+          "likes": 53,
+          "comments": 17
+        },
+        {
+          "id": "mock05",
+          "title": "Mock video 5: what binge eating recovery looks like",
+          "published": "2026-06-23T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock05",
+          "views": 60,
+          "likes": 16,
+          "comments": 8
+        },
+        {
+          "id": "mock06",
+          "title": "Mock video 6: what binge eating recovery looks like",
+          "published": "2026-08-01T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock06",
+          "views": 300,
+          "likes": 6,
+          "comments": 3
+        },
+        {
+          "id": "mock07",
+          "title": "Mock video 7: what binge eating recovery looks like",
+          "published": "2026-04-16T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock07",
+          "views": 420,
+          "likes": 46,
+          "comments": 10
+        },
+        {
+          "id": "mock08",
+          "title": "Mock video 8: what binge eating recovery looks like",
+          "published": "2026-05-27T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock08",
+          "views": 540,
+          "likes": 16,
+          "comments": 12
+        },
+        {
+          "id": "mock09",
+          "title": "Mock video 9: what binge eating recovery looks like",
+          "published": "2026-04-21T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock09",
+          "views": 240,
+          "likes": 34,
+          "comments": 1
+        },
+        {
+          "id": "mock10",
+          "title": "Mock video 10: what binge eating recovery looks like",
+          "published": "2026-03-18T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock10",
+          "views": 420,
+          "likes": 2,
+          "comments": 16
+        },
+        {
+          "id": "mock11",
+          "title": "Mock video 11: what binge eating recovery looks like",
+          "published": "2026-05-01T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock11",
+          "views": 240,
+          "likes": 48,
+          "comments": 13
+        },
+        {
+          "id": "mock12",
+          "title": "Mock video 12: what binge eating recovery looks like",
+          "published": "2026-08-29T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock12",
+          "views": 360,
+          "likes": 81,
+          "comments": 10
+        },
+        {
+          "id": "mock13",
+          "title": "Mock video 13: what binge eating recovery looks like",
+          "published": "2026-03-30T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock13",
+          "views": 120,
+          "likes": 40,
+          "comments": 16
+        },
+        {
+          "id": "mock14",
+          "title": "Mock video 14: what binge eating recovery looks like",
+          "published": "2026-06-28T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock14",
+          "views": 420,
+          "likes": 43,
+          "comments": 12
+        },
+        {
+          "id": "mock15",
+          "title": "Mock video 15: what binge eating recovery looks like",
+          "published": "2026-03-21T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock15",
+          "views": 300,
+          "likes": 72,
+          "comments": 4
+        },
+        {
+          "id": "mock16",
+          "title": "Mock video 16: what binge eating recovery looks like",
+          "published": "2026-07-28T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock16",
+          "views": 420,
+          "likes": 87,
+          "comments": 12
+        },
+        {
+          "id": "mock17",
+          "title": "Mock video 17: what binge eating recovery looks like",
+          "published": "2026-03-26T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock17",
+          "views": 180,
+          "likes": 80,
+          "comments": 18
+        },
+        {
+          "id": "mock18",
+          "title": "Mock video 18: what binge eating recovery looks like",
+          "published": "2026-06-30T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock18",
+          "views": 420,
+          "likes": 72,
+          "comments": 0
+        },
+        {
+          "id": "mock19",
+          "title": "Mock video 19: what binge eating recovery looks like",
+          "published": "2026-06-30T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock19",
+          "views": 300,
+          "likes": 28,
+          "comments": 13
+        }
+      ],
+      "uploads_90d": 10,
+      "views_90d": 2880,
+      "top_videos": [
+        {
+          "id": "mock04",
+          "title": "Mock video 4: what binge eating recovery looks like",
+          "published": "2026-04-04T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock04",
+          "views": 540,
+          "likes": 53,
+          "comments": 17
+        },
+        {
+          "id": "mock08",
+          "title": "Mock video 8: what binge eating recovery looks like",
+          "published": "2026-05-27T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock08",
+          "views": 540,
+          "likes": 16,
+          "comments": 12
+        },
+        {
+          "id": "mock07",
+          "title": "Mock video 7: what binge eating recovery looks like",
+          "published": "2026-04-16T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock07",
+          "views": 420,
+          "likes": 46,
+          "comments": 10
+        }
+      ],
+      "engagement_recent": 1101
+    },
+    {
+      "label": "Center for Discovery",
+      "domain": "centerfordiscovery.com",
+      "handle_source": "mock",
+      "channel_id": "UCmockCenterforDiscovery",
+      "title": "Center for Discovery",
+      "handle": "@centerfordiscovery",
+      "url": "https://www.youtube.com/@centerfordiscovery",
+      "subscribers": 900,
+      "subscribers_hidden": false,
+      "video_count": 296,
+      "view_count": 54000,
+      "videos": [
+        {
+          "id": "mock00",
+          "title": "Mock video 0: what binge eating recovery looks like",
+          "published": "2026-07-17T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock00",
+          "views": 110,
+          "likes": 44,
+          "comments": 10
+        },
+        {
+          "id": "mock01",
+          "title": "Mock video 1: what binge eating recovery looks like",
+          "published": "2026-04-30T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock01",
+          "views": 44,
+          "likes": 19,
+          "comments": 4
+        },
+        {
+          "id": "mock02",
+          "title": "Mock video 2: what binge eating recovery looks like",
+          "published": "2026-07-18T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock02",
+          "views": 154,
+          "likes": 90,
+          "comments": 4
+        },
+        {
+          "id": "mock03",
+          "title": "Mock video 3: what binge eating recovery looks like",
+          "published": "2026-03-19T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock03",
+          "views": 88,
+          "likes": 10,
+          "comments": 13
+        },
+        {
+          "id": "mock04",
+          "title": "Mock video 4: what binge eating recovery looks like",
+          "published": "2026-06-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock04",
+          "views": 132,
+          "likes": 71,
+          "comments": 14
+        },
+        {
+          "id": "mock05",
+          "title": "Mock video 5: what binge eating recovery looks like",
+          "published": "2026-06-01T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock05",
+          "views": 22,
+          "likes": 28,
+          "comments": 13
+        },
+        {
+          "id": "mock06",
+          "title": "Mock video 6: what binge eating recovery looks like",
+          "published": "2026-06-08T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock06",
+          "views": 22,
+          "likes": 75,
+          "comments": 12
+        },
+        {
+          "id": "mock07",
+          "title": "Mock video 7: what binge eating recovery looks like",
+          "published": "2026-05-16T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock07",
+          "views": 22,
+          "likes": 47,
+          "comments": 9
+        },
+        {
+          "id": "mock08",
+          "title": "Mock video 8: what binge eating recovery looks like",
+          "published": "2026-03-07T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock08",
+          "views": 154,
+          "likes": 55,
+          "comments": 17
+        },
+        {
+          "id": "mock09",
+          "title": "Mock video 9: what binge eating recovery looks like",
+          "published": "2026-03-08T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock09",
+          "views": 198,
+          "likes": 79,
+          "comments": 7
+        },
+        {
+          "id": "mock10",
+          "title": "Mock video 10: what binge eating recovery looks like",
+          "published": "2026-05-14T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock10",
+          "views": 88,
+          "likes": 36,
+          "comments": 13
+        },
+        {
+          "id": "mock11",
+          "title": "Mock video 11: what binge eating recovery looks like",
+          "published": "2026-05-14T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock11",
+          "views": 22,
+          "likes": 51,
+          "comments": 10
+        },
+        {
+          "id": "mock12",
+          "title": "Mock video 12: what binge eating recovery looks like",
+          "published": "2026-03-28T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock12",
+          "views": 154,
+          "likes": 23,
+          "comments": 14
+        },
+        {
+          "id": "mock13",
+          "title": "Mock video 13: what binge eating recovery looks like",
+          "published": "2026-08-14T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock13",
+          "views": 198,
+          "likes": 5,
+          "comments": 12
+        },
+        {
+          "id": "mock14",
+          "title": "Mock video 14: what binge eating recovery looks like",
+          "published": "2026-04-17T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock14",
+          "views": 22,
+          "likes": 12,
+          "comments": 20
+        },
+        {
+          "id": "mock15",
+          "title": "Mock video 15: what binge eating recovery looks like",
+          "published": "2026-05-29T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock15",
+          "views": 66,
+          "likes": 61,
+          "comments": 5
+        },
+        {
+          "id": "mock16",
+          "title": "Mock video 16: what binge eating recovery looks like",
+          "published": "2026-09-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock16",
+          "views": 110,
+          "likes": 50,
+          "comments": 10
+        },
+        {
+          "id": "mock17",
+          "title": "Mock video 17: what binge eating recovery looks like",
+          "published": "2026-07-23T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock17",
+          "views": 176,
+          "likes": 43,
+          "comments": 10
+        },
+        {
+          "id": "mock18",
+          "title": "Mock video 18: what binge eating recovery looks like",
+          "published": "2026-03-05T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock18",
+          "views": 154,
+          "likes": 37,
+          "comments": 13
+        },
+        {
+          "id": "mock19",
+          "title": "Mock video 19: what binge eating recovery looks like",
+          "published": "2026-07-13T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock19",
+          "views": 44,
+          "likes": 62,
+          "comments": 0
+        }
+      ],
+      "uploads_90d": 6,
+      "views_90d": 792,
+      "top_videos": [
+        {
+          "id": "mock09",
+          "title": "Mock video 9: what binge eating recovery looks like",
+          "published": "2026-03-08T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock09",
+          "views": 198,
+          "likes": 79,
+          "comments": 7
+        },
+        {
+          "id": "mock13",
+          "title": "Mock video 13: what binge eating recovery looks like",
+          "published": "2026-08-14T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock13",
+          "views": 198,
+          "likes": 5,
+          "comments": 12
+        },
+        {
+          "id": "mock17",
+          "title": "Mock video 17: what binge eating recovery looks like",
+          "published": "2026-07-23T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock17",
+          "views": 176,
+          "likes": 43,
+          "comments": 10
+        }
+      ],
+      "engagement_recent": 1108
+    },
+    {
+      "label": "ERC",
+      "domain": "eatingrecoverycenter.com",
+      "handle_source": "mock",
+      "channel_id": "UCmockERC",
+      "title": "ERC",
+      "handle": "@erc",
+      "url": "https://www.youtube.com/@erc",
+      "subscribers": 0,
+      "subscribers_hidden": false,
+      "video_count": 363,
+      "view_count": 0,
+      "videos": [
+        {
+          "id": "mock00",
+          "title": "Mock video 0: what binge eating recovery looks like",
+          "published": "2026-03-06T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock00",
+          "views": 10,
+          "likes": 16,
+          "comments": 4
+        },
+        {
+          "id": "mock01",
+          "title": "Mock video 1: what binge eating recovery looks like",
+          "published": "2026-04-08T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock01",
+          "views": 30,
+          "likes": 89,
+          "comments": 13
+        },
+        {
+          "id": "mock02",
+          "title": "Mock video 2: what binge eating recovery looks like",
+          "published": "2026-04-16T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock02",
+          "views": 20,
+          "likes": 51,
+          "comments": 12
+        },
+        {
+          "id": "mock03",
+          "title": "Mock video 3: what binge eating recovery looks like",
+          "published": "2026-04-16T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock03",
+          "views": 80,
+          "likes": 69,
+          "comments": 8
+        },
+        {
+          "id": "mock04",
+          "title": "Mock video 4: what binge eating recovery looks like",
+          "published": "2026-04-27T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock04",
+          "views": 10,
+          "likes": 89,
+          "comments": 3
+        },
+        {
+          "id": "mock05",
+          "title": "Mock video 5: what binge eating recovery looks like",
+          "published": "2026-03-25T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock05",
+          "views": 90,
+          "likes": 36,
+          "comments": 20
+        },
+        {
+          "id": "mock06",
+          "title": "Mock video 6: what binge eating recovery looks like",
+          "published": "2026-06-20T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock06",
+          "views": 20,
+          "likes": 39,
+          "comments": 13
+        },
+        {
+          "id": "mock07",
+          "title": "Mock video 7: what binge eating recovery looks like",
+          "published": "2026-08-06T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock07",
+          "views": 80,
+          "likes": 2,
+          "comments": 8
+        },
+        {
+          "id": "mock08",
+          "title": "Mock video 8: what binge eating recovery looks like",
+          "published": "2026-05-10T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock08",
+          "views": 30,
+          "likes": 66,
+          "comments": 3
+        },
+        {
+          "id": "mock09",
+          "title": "Mock video 9: what binge eating recovery looks like",
+          "published": "2026-04-08T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock09",
+          "views": 50,
+          "likes": 83,
+          "comments": 16
+        },
+        {
+          "id": "mock10",
+          "title": "Mock video 10: what binge eating recovery looks like",
+          "published": "2026-04-13T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock10",
+          "views": 40,
+          "likes": 21,
+          "comments": 11
+        },
+        {
+          "id": "mock11",
+          "title": "Mock video 11: what binge eating recovery looks like",
+          "published": "2026-03-04T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock11",
+          "views": 30,
+          "likes": 71,
+          "comments": 16
+        },
+        {
+          "id": "mock12",
+          "title": "Mock video 12: what binge eating recovery looks like",
+          "published": "2026-09-15T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock12",
+          "views": 60,
+          "likes": 64,
+          "comments": 0
+        },
+        {
+          "id": "mock13",
+          "title": "Mock video 13: what binge eating recovery looks like",
+          "published": "2026-08-18T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock13",
+          "views": 60,
+          "likes": 41,
+          "comments": 7
+        },
+        {
+          "id": "mock14",
+          "title": "Mock video 14: what binge eating recovery looks like",
+          "published": "2026-09-01T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock14",
+          "views": 40,
+          "likes": 74,
+          "comments": 2
+        },
+        {
+          "id": "mock15",
+          "title": "Mock video 15: what binge eating recovery looks like",
+          "published": "2026-08-25T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock15",
+          "views": 80,
+          "likes": 10,
+          "comments": 17
+        },
+        {
+          "id": "mock16",
+          "title": "Mock video 16: what binge eating recovery looks like",
+          "published": "2026-03-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock16",
+          "views": 30,
+          "likes": 18,
+          "comments": 15
+        },
+        {
+          "id": "mock17",
+          "title": "Mock video 17: what binge eating recovery looks like",
+          "published": "2026-04-28T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock17",
+          "views": 30,
+          "likes": 35,
+          "comments": 16
+        },
+        {
+          "id": "mock18",
+          "title": "Mock video 18: what binge eating recovery looks like",
+          "published": "2026-04-13T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock18",
+          "views": 70,
+          "likes": 29,
+          "comments": 17
+        },
+        {
+          "id": "mock19",
+          "title": "Mock video 19: what binge eating recovery looks like",
+          "published": "2026-03-06T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock19",
+          "views": 40,
+          "likes": 41,
+          "comments": 12
+        }
+      ],
+      "uploads_90d": 6,
+      "views_90d": 340,
+      "top_videos": [
+        {
+          "id": "mock05",
+          "title": "Mock video 5: what binge eating recovery looks like",
+          "published": "2026-03-25T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock05",
+          "views": 90,
+          "likes": 36,
+          "comments": 20
+        },
+        {
+          "id": "mock03",
+          "title": "Mock video 3: what binge eating recovery looks like",
+          "published": "2026-04-16T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock03",
+          "views": 80,
+          "likes": 69,
+          "comments": 8
+        },
+        {
+          "id": "mock07",
+          "title": "Mock video 7: what binge eating recovery looks like",
+          "published": "2026-08-06T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock07",
+          "views": 80,
+          "likes": 2,
+          "comments": 8
+        }
+      ],
+      "engagement_recent": 1157
+    },
+    {
+      "label": "Esperanza",
+      "domain": "esperanzaedc.com",
+      "handle_source": "mock",
+      "channel_id": "UCmockEsperanza",
+      "title": "Esperanza",
+      "handle": "@esperanza",
+      "url": "https://www.youtube.com/@esperanza",
+      "subscribers": 0,
+      "subscribers_hidden": false,
+      "video_count": 257,
+      "view_count": 0,
+      "videos": [
+        {
+          "id": "mock00",
+          "title": "Mock video 0: what binge eating recovery looks like",
+          "published": "2026-06-18T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock00",
+          "views": 40,
+          "likes": 85,
+          "comments": 2
+        },
+        {
+          "id": "mock01",
+          "title": "Mock video 1: what binge eating recovery looks like",
+          "published": "2026-04-02T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock01",
+          "views": 10,
+          "likes": 5,
+          "comments": 7
+        },
+        {
+          "id": "mock02",
+          "title": "Mock video 2: what binge eating recovery looks like",
+          "published": "2026-07-26T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock02",
+          "views": 10,
+          "likes": 81,
+          "comments": 4
+        },
+        {
+          "id": "mock03",
+          "title": "Mock video 3: what binge eating recovery looks like",
+          "published": "2026-07-16T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock03",
+          "views": 30,
+          "likes": 62,
+          "comments": 3
+        },
+        {
+          "id": "mock04",
+          "title": "Mock video 4: what binge eating recovery looks like",
+          "published": "2026-04-24T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock04",
+          "views": 40,
+          "likes": 61,
+          "comments": 8
+        },
+        {
+          "id": "mock05",
+          "title": "Mock video 5: what binge eating recovery looks like",
+          "published": "2026-03-03T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock05",
+          "views": 60,
+          "likes": 23,
+          "comments": 19
+        },
+        {
+          "id": "mock06",
+          "title": "Mock video 6: what binge eating recovery looks like",
+          "published": "2026-04-13T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock06",
+          "views": 20,
+          "likes": 22,
+          "comments": 9
+        },
+        {
+          "id": "mock07",
+          "title": "Mock video 7: what binge eating recovery looks like",
+          "published": "2026-08-19T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock07",
+          "views": 10,
+          "likes": 41,
+          "comments": 18
+        },
+        {
+          "id": "mock08",
+          "title": "Mock video 8: what binge eating recovery looks like",
+          "published": "2026-03-26T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock08",
+          "views": 70,
+          "likes": 52,
+          "comments": 6
+        },
+        {
+          "id": "mock09",
+          "title": "Mock video 9: what binge eating recovery looks like",
+          "published": "2026-08-27T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock09",
+          "views": 40,
+          "likes": 15,
+          "comments": 9
+        },
+        {
+          "id": "mock10",
+          "title": "Mock video 10: what binge eating recovery looks like",
+          "published": "2026-03-24T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock10",
+          "views": 20,
+          "likes": 74,
+          "comments": 1
+        },
+        {
+          "id": "mock11",
+          "title": "Mock video 11: what binge eating recovery looks like",
+          "published": "2026-06-19T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock11",
+          "views": 90,
+          "likes": 56,
+          "comments": 11
+        },
+        {
+          "id": "mock12",
+          "title": "Mock video 12: what binge eating recovery looks like",
+          "published": "2026-08-29T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock12",
+          "views": 90,
+          "likes": 84,
+          "comments": 10
+        },
+        {
+          "id": "mock13",
+          "title": "Mock video 13: what binge eating recovery looks like",
+          "published": "2026-09-12T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock13",
+          "views": 70,
+          "likes": 64,
+          "comments": 3
+        },
+        {
+          "id": "mock14",
+          "title": "Mock video 14: what binge eating recovery looks like",
+          "published": "2026-05-28T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock14",
+          "views": 60,
+          "likes": 83,
+          "comments": 14
+        },
+        {
+          "id": "mock15",
+          "title": "Mock video 15: what binge eating recovery looks like",
+          "published": "2026-03-18T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock15",
+          "views": 30,
+          "likes": 57,
+          "comments": 5
+        },
+        {
+          "id": "mock16",
+          "title": "Mock video 16: what binge eating recovery looks like",
+          "published": "2026-03-12T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock16",
+          "views": 90,
+          "likes": 85,
+          "comments": 8
+        },
+        {
+          "id": "mock17",
+          "title": "Mock video 17: what binge eating recovery looks like",
+          "published": "2026-04-11T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock17",
+          "views": 90,
+          "likes": 63,
+          "comments": 14
+        },
+        {
+          "id": "mock18",
+          "title": "Mock video 18: what binge eating recovery looks like",
+          "published": "2026-05-27T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock18",
+          "views": 50,
+          "likes": 43,
+          "comments": 7
+        },
+        {
+          "id": "mock19",
+          "title": "Mock video 19: what binge eating recovery looks like",
+          "published": "2026-08-24T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock19",
+          "views": 50,
+          "likes": 59,
+          "comments": 7
+        }
+      ],
+      "uploads_90d": 7,
+      "views_90d": 300,
+      "top_videos": [
+        {
+          "id": "mock11",
+          "title": "Mock video 11: what binge eating recovery looks like",
+          "published": "2026-06-19T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock11",
+          "views": 90,
+          "likes": 56,
+          "comments": 11
+        },
+        {
+          "id": "mock12",
+          "title": "Mock video 12: what binge eating recovery looks like",
+          "published": "2026-08-29T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock12",
+          "views": 90,
+          "likes": 84,
+          "comments": 10
+        },
+        {
+          "id": "mock16",
+          "title": "Mock video 16: what binge eating recovery looks like",
+          "published": "2026-03-12T19:04:11.687402+00:00",
+          "url": "https://www.youtube.com/watch?v=mock16",
+          "views": 90,
+          "likes": 85,
+          "comments": 8
+        }
+      ],
+      "engagement_recent": 1280
+    }
+  ],
+  "footprint": [
+    {
+      "label": "ERC",
+      "domain": "eatingrecoverycenter.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.eatingrecoverycenter.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/eatingrecoverycenter",
+          "handle": "eatingrecoverycenter",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/eatingrecoverycenter",
+          "handle": "eatingrecoverycenter",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@eatingrecoverycenter",
+          "handle": "@eatingrecoverycenter",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/eatingrecoverycenter",
+          "handle": "company/eatingrecoverycenter",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": true,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0000"
+        ],
+        "google_ads": true,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": true,
+        "booking": "calendly",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Equip",
+      "domain": "equip.health",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.equip.health/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/equip",
+          "handle": "equip",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/equip",
+          "handle": "equip",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": false,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0001"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Within",
+      "domain": "withinhealth.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.withinhealth.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/withinhealth",
+          "handle": "withinhealth",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/withinhealth",
+          "handle": "withinhealth",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@withinhealth",
+          "handle": "@withinhealth",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": true,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0002"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Emily Program",
+      "domain": "emilyprogram.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.emilyprogram.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/emilyprogram",
+          "handle": "emilyprogram",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/emilyprogram",
+          "handle": "emilyprogram",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/emilyprogram",
+          "handle": "company/emilyprogram",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": false,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0003"
+        ],
+        "google_ads": true,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Alsana",
+      "domain": "alsana.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.alsana.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/alsana",
+          "handle": "alsana",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/alsana",
+          "handle": "alsana",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@alsana",
+          "handle": "@alsana",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": true,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0004"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "calendly",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Monte Nido",
+      "domain": "montenido.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.montenido.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/montenido",
+          "handle": "montenido",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/montenido",
+          "handle": "montenido",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": false,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0005"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": true,
+        "booking": "",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Center for Discovery",
+      "domain": "centerfordiscovery.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.centerfordiscovery.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/centerfordiscovery",
+          "handle": "centerfordiscovery",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/centerfordiscovery",
+          "handle": "centerfordiscovery",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@centerfordiscovery",
+          "handle": "@centerfordiscovery",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/centerfordiscovery",
+          "handle": "company/centerfordiscovery",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": true,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0006"
+        ],
+        "google_ads": true,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Esperanza",
+      "domain": "esperanzaedc.com",
+      "group": "local",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.esperanzaedc.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/esperanzaedc",
+          "handle": "esperanzaedc",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/esperanzaedc",
+          "handle": "esperanzaedc",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": false,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0007"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Balanced Counseling",
+      "domain": "balancedcounselingsa.com",
+      "group": "local",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.balancedcounselingsa.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/balancedcounselingsa",
+          "handle": "balancedcounselingsa",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/balancedcounselingsa",
+          "handle": "balancedcounselingsa",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@balancedcounselingsa",
+          "handle": "@balancedcounselingsa",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": true,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0008"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "calendly",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Monarch Behavioral",
+      "domain": "monarchbehavioral.net",
+      "group": "local",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.monarchbehavioral.net/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/monarchbehavioral",
+          "handle": "monarchbehavioral",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/monarchbehavioral",
+          "handle": "monarchbehavioral",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/monarchbehavioral",
+          "handle": "company/monarchbehavioral",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": false,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0009"
+        ],
+        "google_ads": true,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Sage Bariatric",
+      "domain": "sagebariatric.com",
+      "group": "local",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.sagebariatric.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/sagebariatric",
+          "handle": "sagebariatric",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/sagebariatric",
+          "handle": "sagebariatric",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@sagebariatric",
+          "handle": "@sagebariatric",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": true,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0010"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": true,
+        "booking": "",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "OA San Antonio",
+      "domain": "oasanantonio.com",
+      "group": "twelve_step",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.oasanantonio.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/oasanantonio",
+          "handle": "oasanantonio",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/oasanantonio",
+          "handle": "oasanantonio",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": false,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0011"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Overeaters Anonymous",
+      "domain": "oa.org",
+      "group": "twelve_step",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.oa.org/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/oa",
+          "handle": "oa",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/oa",
+          "handle": "oa",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@oa",
+          "handle": "@oa",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/oa",
+          "handle": "company/oa",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": true,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0012"
+        ],
+        "google_ads": true,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "calendly",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Noom",
+      "domain": "noom.com",
+      "group": "app",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.noom.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/noom",
+          "handle": "noom",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/noom",
+          "handle": "noom",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": false,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0013"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Psychology Today",
+      "domain": "psychologytoday.com",
+      "group": "directory",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.psychologytoday.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/psychologytoday",
+          "handle": "psychologytoday",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/psychologytoday",
+          "handle": "psychologytoday",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@psychologytoday",
+          "handle": "@psychologytoday",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": true,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0014"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Eating Disorder Hope",
+      "domain": "eatingdisorderhope.com",
+      "group": "directory",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.eatingdisorderhope.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/eatingdisorderhope",
+          "handle": "eatingdisorderhope",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/eatingdisorderhope",
+          "handle": "eatingdisorderhope",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/eatingdisorderhope",
+          "handle": "company/eatingdisorderhope",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": false,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0015"
+        ],
+        "google_ads": true,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": true,
+        "booking": "",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "Recovery.com",
+      "domain": "recovery.com",
+      "group": "directory",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.recovery.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/recovery",
+          "handle": "recovery",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/recovery",
+          "handle": "recovery",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@recovery",
+          "handle": "@recovery",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": true,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0016"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "calendly",
+        "booking_all": []
+      }
+    },
+    {
+      "label": "NEDA",
+      "domain": "nationaleatingdisorders.org",
+      "group": "directory",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.nationaleatingdisorders.org/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/nationaleatingdisorders",
+          "handle": "nationaleatingdisorders",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/nationaleatingdisorders",
+          "handle": "nationaleatingdisorders",
+          "source": "discovered"
+        }
+      },
+      "error": "",
+      "tech": {
+        "meta_pixel": false,
+        "ga4": true,
+        "ga4_ids": [
+          "G-MOCK0017"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      }
+    }
+  ],
+  "ad_library": {
+    "pages": [
+      {
+        "page_name": "Eating Recovery Center",
+        "page_id": "1",
+        "ads": 14,
+        "terms": [
+          "binge eating",
+          "eating disorder treatment Texas"
+        ],
+        "platforms": [
+          "facebook",
+          "instagram"
+        ],
+        "oldest_start": "2026-07-02",
+        "sample": "Mock ad body: You deserve support that fits your life.",
+        "competitor": "ERC"
+      },
+      {
+        "page_name": "Noom",
+        "page_id": "2",
+        "ads": 22,
+        "terms": [
+          "binge eating"
+        ],
+        "platforms": [
+          "facebook",
+          "instagram",
+          "audience_network"
+        ],
+        "oldest_start": "2026-05-11",
+        "sample": "Mock ad body: psychology-based weight loss.",
+        "competitor": "Noom"
+      },
+      {
+        "page_name": "Some Local Clinic",
+        "page_id": "3",
+        "ads": 2,
+        "terms": [
+          "weight loss counseling San Antonio"
+        ],
+        "platforms": [
+          "facebook"
+        ],
+        "oldest_start": "2026-09-01",
+        "sample": "Mock ad body: counseling in San Antonio.",
+        "competitor": null
+      }
+    ],
+    "terms": [
+      "binge eating",
+      "eating disorder treatment Texas",
+      "weight loss counseling San Antonio",
+      "overeaters"
+    ],
+    "manual": [
+      {
+        "term": "binge eating",
+        "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=binge%20eating"
+      },
+      {
+        "term": "eating disorder treatment Texas",
+        "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=eating%20disorder%20treatment%20Texas"
+      },
+      {
+        "term": "weight loss counseling San Antonio",
+        "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=weight%20loss%20counseling%20San%20Antonio"
+      },
+      {
+        "term": "overeaters",
+        "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=overeaters"
+      }
+    ],
+    "problems": []
+  },
+  "history_rows_added": 12
+}
