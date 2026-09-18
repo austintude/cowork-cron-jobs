@@ -28,6 +28,17 @@ td.term{font-weight:500}
 footer{margin-top:26px;font-size:11.5px;color:#8a98a6;line-height:1.6}
 #err{background:#fdecea;border:1px solid #f5c6cb;color:#9a2622;padding:12px 16px;border-radius:8px;font-size:13px;display:none}
 .muted{color:#9aa7b4}
+.sov td,.sov th{padding:7px 12px}.sov tr.own td{background:#eef6ff;font-weight:600}.sov td.num,.sov th.num{text-align:right;font-variant-numeric:tabular-nums}
+.grp{font-size:10.5px;color:#8a98a6;text-transform:uppercase;letter-spacing:.04em}
+.grid{overflow-x:auto}.grid table{font-size:12.5px}
+.grid th.rot{height:110px;vertical-align:bottom;padding:6px 3px;text-align:center}
+.grid th.rot>span{writing-mode:vertical-rl;transform:rotate(180deg);display:inline-block;white-space:nowrap;max-height:98px;overflow:hidden;font-size:10.5px;line-height:1}
+.grid td.cell{text-align:center;padding:5px 4px;min-width:34px;font-variant-numeric:tabular-nums}
+.grid td.cell span{display:inline-block;min-width:28px;padding:2px 4px;border-radius:5px;font-weight:600;font-size:11.5px}
+.grid td.cell.bcc{border-left:2px solid #0f2f4a;border-right:2px solid #0f2f4a}
+.grid td.cell span.dot{min-width:0;width:14px;height:14px;padding:0}
+.chip{display:inline-block;background:#f0f4f8;border:1px solid #e3e8ee;border-radius:20px;padding:3px 10px;margin:3px 5px 3px 0;font-size:12px;color:#3d4c5c}
+.kv{padding:10px 16px;font-size:13px;color:#3d4c5c;border-top:1px solid #eef1f5}
 </style></head>
 <body><div class="wrap">
 <h1>BCC Rank Scoreboard</h1>
@@ -95,10 +106,66 @@ function render(m){
     });
     b+='</table></div>';
   });
+  b+=renderCompetitors(m);
   b+=renderAI(m);
   document.getElementById("body").innerHTML=b;
   document.getElementById("foot").innerHTML="Source: live Google SERP snapshots + GSC. AI panel: weekly agentic sweep of Google AI Mode / ChatGPT / Claude / Perplexity / Gemini. "+
     "Ahrefs is gated, so positions come from live checks. Data generated "+esc(m.generated_at||"")+" &middot; page fetched "+new Date().toLocaleString()+".";
+}
+function cellbadge(pos,extra){
+  if(!pos) return '<td class="cell'+(extra||'')+'"><span style="color:#c3ccd5">&middot;</span></td>';
+  const pg=Math.ceil(pos/10), cls=(pg&&pg<=5)?("p"+pg):"p5";
+  return '<td class="cell'+(extra||'')+'"><span class="'+cls+'">'+pos+'</span></td>';
+}
+function renderCompetitors(m){
+  const c=m.competitors;
+  if(!c) return '<div class="bucket"><h2>Competitors on our terms</h2><table><tr><td style="color:#8a98a6;padding:16px">No competitor snapshot on file yet. serp-competitor-tracker.py writes one weekly: BCC and every tracked competitor, same keyword list, San Antonio and Texas geo.</td></tr></table></div>';
+  const pg=c.primary_geo, prim=c.geos[pg], groups=c.groups||{};
+  let o='<div class="bucket sov"><h2>Competitors on our terms &mdash; who holds page one</h2>';
+  o+='<div class="kv">As of <b>'+esc(c.as_of)+'</b> &middot; '+prim.n+' terms checked in '+esc(prim.label)+(c.prev_date?(' &middot; WoW vs '+esc(c.prev_date)):'')+
+     ' &middot; counts are how many of those terms each site ranks for in the top 3, top 10, and top 50.</div>';
+  o+='<table><tr><th>Site</th><th>Group</th>';
+  const secs=[];
+  Object.keys(c.geos).forEach(g=>{
+    if(g===pg) o+='<th class="num">Top 3</th><th class="num">Top 10</th><th class="num">Top 50</th><th class="num">Avg pos</th><th class="num">Top 10 WoW</th>';
+    else { secs.push(g); o+='<th class="num">Top 10 &middot; '+esc(c.geos[g].label)+'</th>'; }
+  });
+  o+='</tr>';
+  const secMap={}; secs.forEach(g=>{ secMap[g]={}; (c.geos[g].share||[]).forEach(r=>secMap[g][r.domain]=r); });
+  (prim.share||[]).forEach(r=>{
+    const own=r.domain===c.own_domain;
+    o+='<tr class="'+(own?'own':'')+'"><td>'+esc(r.label)+'<span class="note">'+esc(r.domain)+'</span></td><td class="grp">'+esc(groups[r.group]||(own?'BCC':(r.group||'')))+'</td>';
+    o+='<td class="num">'+r.top3+'</td><td class="num">'+r.top10+'</td><td class="num">'+r.ranked+'</td><td class="num">'+(r.avg!=null?r.avg:'&ndash;')+'</td><td class="num">'+darrow(r.top10_wow)+'</td>';
+    secs.forEach(g=>{ const sr=secMap[g][r.domain]; o+='<td class="num">'+(sr?sr.top10:'&ndash;')+'</td>'; });
+    o+='</tr>';
+  });
+  o+='</table>';
+  const ai=prim.ai||{}, lp=prim.local_pack||{};
+  o+='<div class="kv"><b>AI Overview</b> appeared on '+(ai.present||0)+' of '+prim.n+' terms; BCC was cited in '+(ai.bcc_cited||0)+'. ';
+  if((ai.top_cited||[]).length) o+='Most cited: '+ai.top_cited.slice(0,6).map(x=>esc(x.domain)+' ('+x.count+')').join(', ')+'. ';
+  o+='<b>Local pack</b> on '+(lp.present||0)+' terms; BCC in it on '+(lp.bcc_present||0)+'.</div>';
+  if((prim.others||[]).length) o+='<div class="kv"><b>Also on page one, not tracked:</b> '+prim.others.map(x=>'<span class="chip">'+esc(x.domain)+' <small class="muted">'+x.top10+'</small></span>').join(' ')+'</div>';
+  o+='</div>';
+  const cols=c.columns||[];
+  o+='<div class="bucket grid"><h2>Term by term &mdash; '+esc(prim.label)+'</h2>';
+  (c.grid||[]).forEach(bk=>{
+    o+='<table><tr><th>'+esc(bk.label)+'</th><th class="rot"><span>BCC</span></th>';
+    cols.forEach(col=>o+='<th class="rot"><span>'+esc(col.short||col.label)+'</span></th>');
+    o+='<th class="rot"><span>AI Overview</span></th></tr>';
+    (bk.rows||[]).forEach(row=>{
+      const star=row.priority?'<span class="star">&#9733;</span>':'';
+      o+='<tr><td class="term">'+star+esc(row.term)+'</td>'+cellbadge(row.bcc,' bcc');
+      cols.forEach(col=>o+=cellbadge((row.positions||{})[col.domain]));
+      let aicell;
+      if(row.ai_present) aicell=row.bcc_cited?'<span class="dot yes" title="BCC cited"></span>':'<span class="dot no" title="AI Overview shown, BCC not cited"></span>';
+      else if(row.checked) aicell='<span style="color:#c3ccd5">&ndash;</span>'; else aicell='<span style="color:#c3ccd5">?</span>';
+      o+='<td class="cell">'+aicell+'</td></tr>';
+    });
+    o+='</table>';
+  });
+  o+='<div class="kv" style="font-size:11.5px;color:#8a98a6">Numbers are organic positions (top 50); &middot; = not in top 50. AI Overview column: <span class="dot yes"></span> BCC cited &middot; <span class="dot no"></span> shown without BCC &middot; &ndash; no AI Overview. '+
+     esc(c.measurement_note||'')+' Source: '+esc(c.source||'')+(c.cost_usd!=null?(' &middot; run cost $'+Number(c.cost_usd).toFixed(2)):'')+'</div></div>';
+  return o;
 }
 function renderAI(m){
   const ai=m.ai, labels={google_ai_mode:"Google AI Mode",chatgpt:"ChatGPT",claude:"Claude",perplexity:"Perplexity",gemini:"Gemini"};
