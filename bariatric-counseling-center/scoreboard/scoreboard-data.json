@@ -152,8 +152,8 @@
         },
         {
           "term": "bariatric surgery counseling san antonio",
-          "current": null,
-          "current_page": null,
+          "current": 4,
+          "current_page": 1,
           "current_date": "2026-09-18",
           "wow": null,
           "wow_prev": null,
@@ -190,7 +190,7 @@
             },
             {
               "date": "2026-09-18",
-              "pos": null
+              "pos": 4
             }
           ],
           "ever_ranked": true,
@@ -2038,7 +2038,7 @@
     "prev_date": null,
     "source": "DataForSEO SERP API, Google organic, live/advanced, depth 50, desktop",
     "measurement_note": "Position = rank among organic web results only (rank_group); local pack, ads and AI Overview are recorded separately, not counted. Not signed in to any Google account, so no GBP bias. Same counting rule as the weekly Chrome check.",
-    "cost_usd": 0.818,
+    "cost_usd": 0.83,
     "own_domain": "bariatriccounselingcenter.com",
     "primary_geo": "sa",
     "groups": {
@@ -2051,26 +2051,26 @@
     "geos": {
       "sa": {
         "label": "San Antonio, TX",
-        "n": 38,
+        "n": 39,
         "share": [
           {
             "domain": "bariatriccounselingcenter.com",
             "label": "BCC",
             "group": "own",
             "top3": 11,
-            "top10": 19,
-            "ranked": 26,
-            "avg": 10.3,
+            "top10": 20,
+            "ranked": 27,
+            "avg": 10.1,
             "top10_wow": null
           },
           {
             "domain": "eatingdisorderhope.com",
             "label": "Eating Disorder Hope",
             "group": "directory",
-            "top3": 18,
-            "top10": 29,
-            "ranked": 31,
-            "avg": 4.8,
+            "top3": 19,
+            "top10": 30,
+            "ranked": 32,
+            "avg": 4.7,
             "top10_wow": null
           },
           {
@@ -2078,9 +2078,9 @@
             "label": "Psychology Today",
             "group": "directory",
             "top3": 7,
-            "top10": 16,
-            "ranked": 26,
-            "avg": 8.3,
+            "top10": 17,
+            "ranked": 27,
+            "avg": 8.1,
             "top10_wow": null
           },
           {
@@ -2088,9 +2088,9 @@
             "label": "Recovery.com",
             "group": "directory",
             "top3": 3,
-            "top10": 14,
-            "ranked": 17,
-            "avg": 7.9,
+            "top10": 15,
+            "ranked": 18,
+            "avg": 8.1,
             "top10_wow": null
           },
           {
@@ -2124,6 +2124,16 @@
             "top10_wow": null
           },
           {
+            "domain": "sagebariatric.com",
+            "label": "Sage Bariatric",
+            "group": "local",
+            "top3": 2,
+            "top10": 10,
+            "ranked": 14,
+            "avg": 11.5,
+            "top10_wow": null
+          },
+          {
             "domain": "eatingrecoverycenter.com",
             "label": "ERC",
             "group": "program_national",
@@ -2131,16 +2141,6 @@
             "top10": 9,
             "ranked": 16,
             "avg": 11.2,
-            "top10_wow": null
-          },
-          {
-            "domain": "sagebariatric.com",
-            "label": "Sage Bariatric",
-            "group": "local",
-            "top3": 1,
-            "top10": 9,
-            "ranked": 13,
-            "avg": 12.2,
             "top10_wow": null
           },
           {
@@ -2287,36 +2287,36 @@
           }
         ],
         "ai": {
-          "present": 10,
-          "bcc_cited": 8,
+          "present": 11,
+          "bcc_cited": 9,
           "top_cited": [
             {
               "domain": "bariatriccounselingcenter.com",
-              "count": 8
+              "count": 9
             },
             {
               "domain": "psychologytoday.com",
-              "count": 5
+              "count": 6
             },
             {
               "domain": "sagebariatric.com",
-              "count": 4
+              "count": 5
             },
             {
               "domain": "google.com",
               "count": 4
             },
             {
-              "domain": "texaspsychiatrygroup.com",
+              "domain": "eatingdisorderhope.com",
               "count": 3
             },
             {
-              "domain": "eatingdisorderhope.com",
-              "count": 2
+              "domain": "recovery.com",
+              "count": 3
             },
             {
-              "domain": "recovery.com",
-              "count": 2
+              "domain": "texaspsychiatrygroup.com",
+              "count": 3
             },
             {
               "domain": "findabariatrictherapist.com",
@@ -2640,16 +2640,16 @@
         "group": "directory"
       },
       {
-        "domain": "balancedcounselingsa.com",
-        "label": "Balanced Counseling",
-        "short": "Balanced",
-        "group": "local"
-      },
-      {
         "domain": "recovery.com",
         "label": "Recovery.com",
         "short": "Recovery.com",
         "group": "directory"
+      },
+      {
+        "domain": "balancedcounselingsa.com",
+        "label": "Balanced Counseling",
+        "short": "Balanced",
+        "group": "local"
       },
       {
         "domain": "eatingrecoverycenter.com",
@@ -2670,16 +2670,16 @@
         "group": "local"
       },
       {
-        "domain": "withinhealth.com",
-        "label": "Within",
-        "short": "Within",
-        "group": "program_national"
-      },
-      {
         "domain": "sagebariatric.com",
         "label": "Sage Bariatric",
         "short": "Sage",
         "group": "local"
+      },
+      {
+        "domain": "withinhealth.com",
+        "label": "Within",
+        "short": "Within",
+        "group": "program_national"
       },
       {
         "domain": "montenido.com",
@@ -2778,13 +2778,18 @@
           },
           {
             "term": "bariatric surgery counseling san antonio",
-            "checked": false,
+            "checked": true,
             "priority": false,
-            "bcc": null,
-            "positions": {},
-            "ai_present": null,
-            "bcc_cited": null,
-            "local_pack": null
+            "bcc": 4,
+            "positions": {
+              "sagebariatric.com": 2,
+              "psychologytoday.com": 5,
+              "eatingdisorderhope.com": 1,
+              "recovery.com": 10
+            },
+            "ai_present": true,
+            "bcc_cited": true,
+            "local_pack": false
           },
           {
             "term": "bariatric therapist",
@@ -11534,10 +11539,39 @@
           "q": "Weight gain after gastric sleeve what to do",
           "term": "weight management after bariatric surgery",
           "related": true
+        },
+        {
+          "q": "What is the 30-minute rule for bariatric surgery?",
+          "term": "bariatric surgery counseling san antonio"
+        },
+        {
+          "q": "Weight loss surgery san antonio cost",
+          "term": "bariatric surgery counseling san antonio",
+          "related": true
+        },
+        {
+          "q": "UT Health San Antonio bariatric surgery",
+          "term": "bariatric surgery counseling san antonio",
+          "related": true
+        },
+        {
+          "q": "University health bariatric surgery",
+          "term": "bariatric surgery counseling san antonio",
+          "related": true
+        },
+        {
+          "q": "Sage bariatric",
+          "term": "bariatric surgery counseling san antonio",
+          "related": true
+        },
+        {
+          "q": "Bariatric Advantage",
+          "term": "bariatric surgery counseling san antonio",
+          "related": true
         }
       ]
     }
   },
   "snapshot_count": 37,
-  "generated_at": "2026-09-18T18:11:17.704094Z"
+  "generated_at": "2026-09-18T18:19:21.914559Z"
 }
