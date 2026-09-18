@@ -1,6 +1,6 @@
 {
  "date": "2026-09-18",
- "generated_at": "2026-09-18T19:08:04",
+ "generated_at": "2026-09-18T19:45:02",
  "module": "briefs",
  "cost_usd": 0.0,
  "sections": [
@@ -62,7 +62,7 @@
     "82 referring domains as of 2026-09-18 (first check, no comparison yet). Domain rank 127.",
     "New referring domains in the last 7 days: 0.",
     "100 domains link to local competitors but not to BCC (the link gap list).",
-    "Link prospects on file: 105, 0 contacted."
+    "Link prospects on file: 106, 0 contacted."
    ]
   },
   {
@@ -81,10 +81,10 @@
    "key": "waiting",
    "title": "Waiting for you",
    "lines": [
-    "21 items waiting in the review queue: 8 Content block, 7 Outreach note (you send), 5 Title / description, 1 Task. To act: open the dashboard, Review queue.",
+    "21 items waiting in the review queue: 8 Content block, 7 Link ask (Todd sends), 5 Title / description, 1 Task. To act: open the dashboard, Review queue.",
+    "Task: Directory listings: 23 to claim",
     "Content block: Demand asset: Texas food addiction search trends (2026-Q3)",
     "Content block: AI Overview answer for \"bariatric surgery counseling\" on /bariatric-surgery-counseling-in-",
-    "Content block: AI Overview answer for \"bariatric counseling\" on /bariatric-counseling-near-me/",
     "Approved or applied in the last 7 days: 0.",
     "Content drafts (2026-09-18): 10 drafted, 12 sent to the review queue, $0.06 spent."
    ]
@@ -93,7 +93,7 @@
    "key": "things",
    "title": "Three things to do this week",
    "lines": [
-    "Clear the 21 items in the review queue (8 content, 5 title meta, 7 outreach, 1 task). Why: each one is a change the rig already wrote; approving takes a minute and nothing touches the live site until you say so.",
+    "Clear the 21 items in the review queue (1 task, 8 content, 5 title meta, 7 outreach). Why: each one is a change the rig already wrote; approving takes a minute and nothing touches the live site until you say so.",
     "Claim or fix the directory listings at cap4kids.org, storeboard.com, mycarecoordinator.com. Why: 8 directory-style sites link to local competitors and not to BCC; a listing is a free link and a referral path.",
     "Start a page or post for \"arfid\". Why: 14,800 Texas searches a month and BCC has no page-one result for it (night eating / arfid / other ED)."
    ]
@@ -260,11 +260,11 @@
    "link_gap": 100,
    "domain_rank": 127,
    "prospects": {
-    "total": 105,
+    "total": 106,
     "contacted": 0,
     "by_status": {
      "skip": 64,
-     "new": 35,
+     "new": 36,
      "queued": 6
     }
    }
@@ -285,17 +285,26 @@
   "waiting": {
    "pending": 21,
    "by_kind": {
+    "task": 1,
     "content": 8,
     "title_meta": 5,
-    "outreach": 7,
-    "task": 1
+    "outreach": 7
    },
    "applied_7d": 0,
    "counts": {
     "rejected": 1,
     "pending": 21
    },
+   "handoff_claude": 0,
+   "handoff_unsent": 0,
    "pending_items": [
+    {
+     "id": "9838bec74c",
+     "kind": "task",
+     "title": "Directory listings: 23 to claim",
+     "why": "23 of 23 directories that matter for a San Antonio counseling and dietitian practice have no link to BCC yet.",
+     "source": "link-plays"
+    },
     {
      "id": "f72187a483",
      "kind": "content",
@@ -358,13 +367,6 @@
      "title": "New title and description for /understanding-weight-loss-medications-wegovy-ozempic-zepbou",
      "why": "Title too long (63 chars); meta description too long (171 chars); 491 impressions, 0.0% CTR at position 9.0.",
      "source": "content-drafts"
-    },
-    {
-     "id": "8b24d6071a",
-     "kind": "title_meta",
-     "title": "New title and description for /healthy-living-2/why-hydration-is-essential-for-weight-loss",
-     "why": "Title too long (62 chars); meta description too long (171 chars); 3318 impressions, 0.6% CTR at position 5.8.",
-     "source": "content-drafts"
     }
    ],
    "content_drafts": {
@@ -408,7 +410,7 @@
   ],
   "three_things": [
    {
-    "what": "Clear the 21 items in the review queue (8 content, 5 title meta, 7 outreach, 1 task).",
+    "what": "Clear the 21 items in the review queue (1 task, 8 content, 5 title meta, 7 outreach).",
     "why": "each one is a change the rig already wrote; approving takes a minute and nothing touches the live site until you say so"
    },
    {

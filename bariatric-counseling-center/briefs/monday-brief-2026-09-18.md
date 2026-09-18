@@ -1,6 +1,6 @@
 # Monday brief: week of 2026-09-18
 
-Bariatric Counseling Center, built 2026-09-18 19:08 from the files on disk. No API calls.
+Bariatric Counseling Center, built 2026-09-18 19:45 from the files on disk. No API calls.
 
 ## Headline
 
@@ -43,7 +43,7 @@ Bariatric Counseling Center, built 2026-09-18 19:08 from the files on disk. No A
 - 82 referring domains as of 2026-09-18 (first check, no comparison yet). Domain rank 127.
 - New referring domains in the last 7 days: 0.
 - 100 domains link to local competitors but not to BCC (the link gap list).
-- Link prospects on file: 105, 0 contacted.
+- Link prospects on file: 106, 0 contacted.
 
 ## Social
 
@@ -56,15 +56,15 @@ Bariatric Counseling Center, built 2026-09-18 19:08 from the files on disk. No A
 
 ## Waiting for you
 
-- 21 items waiting in the review queue: 8 Content block, 7 Outreach note (you send), 5 Title / description, 1 Task. To act: open the dashboard, Review queue.
+- 21 items waiting in the review queue: 8 Content block, 7 Link ask (Todd sends), 5 Title / description, 1 Task. To act: open the dashboard, Review queue.
+- Task: Directory listings: 23 to claim
 - Content block: Demand asset: Texas food addiction search trends (2026-Q3)
 - Content block: AI Overview answer for "bariatric surgery counseling" on /bariatric-surgery-counseling-in-
-- Content block: AI Overview answer for "bariatric counseling" on /bariatric-counseling-near-me/
 - Approved or applied in the last 7 days: 0.
 - Content drafts (2026-09-18): 10 drafted, 12 sent to the review queue, $0.06 spent.
 
 ## Three things to do this week
 
-1. Clear the 21 items in the review queue (8 content, 5 title meta, 7 outreach, 1 task). Why: each one is a change the rig already wrote; approving takes a minute and nothing touches the live site until you say so.
+1. Clear the 21 items in the review queue (1 task, 8 content, 5 title meta, 7 outreach). Why: each one is a change the rig already wrote; approving takes a minute and nothing touches the live site until you say so.
 2. Claim or fix the directory listings at cap4kids.org, storeboard.com, mycarecoordinator.com. Why: 8 directory-style sites link to local competitors and not to BCC; a listing is a free link and a referral path.
 3. Start a page or post for "arfid". Why: 14,800 Texas searches a month and BCC has no page-one result for it (night eating / arfid / other ED).
