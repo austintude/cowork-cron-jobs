@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-09-16
+
+_Generated 2026-09-18T08:03:18.603866Z_
+
+### Headline
+- Sessions DOWN 33% vs 28d median (21 vs baseline 32) -- quiet Wednesday, likely normal mid-week dip with no clear external cause.
+- YoY comparison shows zero -- no same-day data from last year, so no baseline context available.
+
+### What happened
+- **Sessions**: 21 vs 28d median 32 (-33%) -- Direct traffic took the biggest hit, falling from baseline 12.5 to 6 sessions (-6.5).
+- **Avg session duration**: 278 sec vs median 90 sec (+209%) -- the people who did visit went deep; suggests high-intent visitors, not casual browsers.
+- **New users**: 17 vs 28d median 26 (-35%) -- fewer fresh visitors than usual, consistent with the overall volume drop.
+- **GSC impressions/clicks**: both zero -- standard 1-3 day reporting lag, not a real signal.
+
+### Efficacy
+- **30d window**: 5 pages launched, 1 ranking top 3, 1 ranking top 10 -- 663K impressions and 2,058 GA4 sessions attributed across tracked content.
+- **New page**: `/start/` ("Ready for Help That Actually Works") published Sept 15 -- too early for GSC data, indexing warmup expected.
+- **Top launches list**: currently dominated by git pulse commits with no SERP positions -- no content-page standout to report this cycle.
+
+### Today (do these)
+1. **Request GSC indexing** for `/start/` (published Sept 15, still in warmup) -- submit via Google Search Console URL Inspection to accelerate crawl.
+2. **Check for Camy's social or email activity** around Sept 15-16 -- the session drop in Direct suggests no newsletter or social push went out; confirming absence helps explain the dip to Todd.
+3. **Review the Sept 11 homepage edit** (WP ID 2091) -- confirm what changed and whether it could affect bounce behavior or internal linking, given the unusual session duration spike.
