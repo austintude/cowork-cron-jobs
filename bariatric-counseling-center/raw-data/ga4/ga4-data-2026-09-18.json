@@ -7,13 +7,13 @@
   },
   "property_id": "254059736",
   "summary": {
-    "sessions": 264,
-    "users": 226,
-    "new_users": 212,
-    "pageviews": 767,
-    "engagement_rate": 0.9432,
-    "avg_session_duration_sec": 140.9924,
-    "bounce_rate": 0.0568
+    "sessions": 267,
+    "users": 229,
+    "new_users": 215,
+    "pageviews": 773,
+    "engagement_rate": 0.9438,
+    "avg_session_duration_sec": 139.4523,
+    "bounce_rate": 0.0562
   },
   "yoy_summary": {
     "sessions": 36,
@@ -25,10 +25,10 @@
     "bounce_rate": 0.1944
   },
   "yoy_pct_change": {
-    "sessions_pct": 633.3,
-    "users_pct": 606.2,
-    "pageviews_pct": 652.0,
-    "avg_session_duration_pct": 50.0
+    "sessions_pct": 641.7,
+    "users_pct": 615.6,
+    "pageviews_pct": 657.8,
+    "avg_session_duration_pct": 48.4
   },
   "daily_breakdown": [
     {
@@ -63,8 +63,13 @@
     },
     {
       "date": "20260917",
-      "sessions": 25,
-      "totalUsers": 22
+      "sessions": 27,
+      "totalUsers": 24
+    },
+    {
+      "date": "20260918",
+      "sessions": 1,
+      "totalUsers": 1
     }
   ],
   "top_landing_pages": [
@@ -181,6 +186,13 @@
       "avg_session_duration_sec": 298.0743
     },
     {
+      "page": "/blog/page/3/",
+      "sessions": 2,
+      "users": 2,
+      "engagement_rate": 1,
+      "avg_session_duration_sec": 3.6034
+    },
+    {
       "page": "/emotional-eating/what-is-emotional-eating/",
       "sessions": 2,
       "users": 1,
@@ -235,21 +247,14 @@
       "users": 1,
       "engagement_rate": 1,
       "avg_session_duration_sec": 3.2807
-    },
-    {
-      "page": "/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/",
-      "sessions": 2,
-      "users": 2,
-      "engagement_rate": 1,
-      "avg_session_duration_sec": 4.6916
     }
   ],
   "top_sources": [
     {
       "source_medium": "(direct) / (none)",
-      "sessions": 123,
-      "users": 120,
-      "engagement_rate": 0.9512
+      "sessions": 126,
+      "users": 123,
+      "engagement_rate": 0.9524
     },
     {
       "source_medium": "google / organic",
@@ -458,7 +463,7 @@
       "sessions": 2
     },
     {
-      "page": "/diet-and-nutrition/gut-health/gastroparesis-aka-stomach-paralysis/",
+      "page": "/blog/page/3/",
       "pageviews": 4,
       "sessions": 2
     }
@@ -466,9 +471,9 @@
   "channel_breakdown": [
     {
       "channel": "Direct",
-      "sessions": 123,
-      "users": 120,
-      "engagement_rate": 0.9512
+      "sessions": 126,
+      "users": 123,
+      "engagement_rate": 0.9524
     },
     {
       "channel": "Organic Search",
