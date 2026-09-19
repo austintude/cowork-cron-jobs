@@ -11579,7 +11579,7 @@
       "title": "This week",
       "model": {
         "date": "2026-09-18",
-        "generated_at": "2026-09-18T19:34:11",
+        "generated_at": "2026-09-18T19:45:02",
         "headline": [
           "Search clicks rose: 51 this week vs 37 the week before (2026-09-11 to 2026-09-18).",
           "AI Overviews: BCC cited in 12 of 19 overviews on tracked terms.",
@@ -11592,7 +11592,7 @@
           "Start a page or post for \"arfid\". Why: 14,800 Texas searches a month and BCC has no page-one result for it (night eating / arfid / other ED)."
         ],
         "waiting": [
-          "21 items waiting in the review queue: 8 Content block, 7 Outreach note (you send), 5 Title / description, 1 Task. To act: open the dashboard, Review queue.",
+          "21 items waiting in the review queue: 8 Content block, 7 Link ask (Todd sends), 5 Title / description, 1 Task. To act: open the dashboard, Review queue.",
           "Task: Directory listings: 23 to claim",
           "Content block: Demand asset: Texas food addiction search trends (2026-Q3)",
           "Content block: AI Overview answer for \"bariatric surgery counseling\" on /bariatric-surgery-counseling-in-",
@@ -11617,7 +11617,8 @@
       "order": 5,
       "title": "Review queue",
       "model": {
-        "pending": [
+        "pending": [],
+        "recent": [
           {
             "id": "9838bec74c",
             "kind": "task",
@@ -11645,96 +11646,10 @@
               "domain": "bariatriccounselingcenter.com"
             },
             "source": "link-plays",
-            "status": "pending",
+            "status": "applied",
             "created": "2026-09-18T19:08:30",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "f72187a483",
-            "kind": "content",
-            "key": "/texas-food-addiction-search-trends/",
-            "title": "Demand asset: Texas food addiction search trends (2026-Q3)",
-            "why": "37,440 Texas searches a month across 80 terms; a citeable page that earns links from media and directories.",
-            "payload": {
-              "target": "NEW: /texas-food-addiction-search-trends/",
-              "body": "---\nslug: texas-food-addiction-search-trends\nseo title: Texas Food Addiction and Binge Eating Search Trends (2026-Q3) | BCC\nmeta description: How many Texans search each month for help with food addiction, binge eating, overeating and eating disorders. 12-month trends, top terms and the questions people ask. Source: Google Ads volume, Texas.\nfocus keyword: food addiction texas\nsupporting keywords: binge eating texas, overeating help texas, eating disorder treatment texas\ntype: resource\n---\n\n# Texas food addiction and binge eating: what people search for (2026-Q3)\n\nEvery quarter we count how many people in Texas turn to Google for help with overeating, binge eating, food addiction, eating disorders and the counseling side of bariatric surgery and weight loss. The numbers below come from Google Ads search volume for Texas, Sep 2025 to Aug 2026. Media, partners and directories are welcome to cite them with a link.\n\n## Headline numbers\n\n- 37,440 Texas searches a month across 80 terms.\n- Texas accounts for 8.3% of US searches for the same terms (453,080 a month nationally).\n- Change over the 12-month series: -17.2% (35,690 vs 43,100 searches a month, latest month against the first).\n\n| Topic | Terms | Texas / month | US / month | Texas share | 12-month change |\n|---|---:|---:|---:|---:|---:|\n| Food addiction | 1 | 10 | 70 | 14.3% | +0.0% |\n| Binge eating | 13 | 10,830 | 119,500 | 9.1% | -18.8% |\n| Overeating and emotional eating | 15 | 1,570 | 17,160 | 9.1% | -24.6% |\n| Eating disorders (anorexia, bulimia, ARFID, night eating) | 40 | 24,380 | 312,790 | 7.8% | -13.2% |\n| Bariatric counseling and psychological evaluation | 3 | 30 | 320 | 9.4% | -50.0% |\n| Weight loss counseling and therapy | 8 | 620 | 3,240 | 19.1% | -81.2% |\n\n## 12-month trend by topic\n\n### Food addiction\n\n[chart: charts/food-addiction-2026-Q3.svg]\nBiggest terms: food addiction counselor (10).\n\n### Binge eating\n\n[chart: charts/binge-eating-2026-Q3.svg]\nBiggest terms: bingeing (4,400); eating disorder with binge eating (3,600); binge eater (1,000); how to avoid binge eating (720).\n\n### Overeating and emotional eating\n\n[chart: charts/overeating-2026-Q3.svg]\nBiggest terms: overeat (390); how to stop overeating (390); emotional eating (210); overeating disorder (110).\n\n### Eating disorders (anorexia, bulimia, ARFID, night eating)\n\n[chart: charts/eating-disorder-treatment-2026-Q3.svg]\nBiggest terms: arfid (14,800); eating disorders sign and symptoms (1,000); late night eating (880); arfid in adult (720).\n\n### Bariatric counseling and psychological evaluation\n\n[chart: charts/bariatric-support-2026-Q3.svg]\nBiggest terms: bariatric psychology (10); bariatric nutrition services (10); bariatric nutritionist near me (10).\n\n### Weight loss counseling and therapy\n\n[chart: charts/weight-loss-counseling-2026-Q3.svg]\nBiggest terms: weight loss therapy (390); holistic weight loss program (110); nutrition counseling for weight loss (40); weight loss counselor (20).\n\n\nFull draft: /sessions/rcw-01dn6jcrgnizq6fhiumv4lsk/mnt/cron-jobs/bariatric-counseling-center/assets/draft-texas-food-addiction-search-2026-Q3.md",
-              "html_preview": "/sessions/rcw-01dn6jcrgnizq6fhiumv4lsk/mnt/cron-jobs/bariatric-counseling-center/assets/texas-food-addiction-search-2026-Q3.html"
-            },
-            "source": "demand-asset",
-            "status": "pending",
-            "created": "2026-09-18T19:07:51",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "045b092524",
-            "kind": "content",
-            "key": "aio:bariatric surgery counseling",
-            "title": "AI Overview answer for \"bariatric surgery counseling\" on /bariatric-surgery-counseling-in-",
-            "why": "AI Overview shows for \"bariatric surgery counseling\" (volume not on file) and cites no named source, not BCC.",
-            "payload": {
-              "target": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
-              "body": "Add as a new H2 section on https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/, high on the page, so the direct answer sits in the first sentences under the heading. Target term: \"bariatric surgery counseling\". Google shows an AI Overview for this term that cites no named source and not BCC.\n\n## What is bariatric surgery counseling?\n\nBariatric surgery counseling is behavioral health support that helps people prepare for weight loss surgery or address eating and emotional challenges after the procedure. It typically involves working with licensed therapists, psychologists, and registered dietitians to understand eating patterns, build coping skills, and develop sustainable habits around food and movement. At the Bariatric Counseling Center in San Antonio, we provide this counseling as part of our Intensive Outpatient Program, available onsite at our San Antonio facility and virtually throughout Texas. Our program includes group and individual therapy, dietary guidance from registered dietitians, cooking classes with a professional chef, and movement education. We coordinate care with medical providers and are in network with most health insurance plans, with claims processed under mental health benefits."
-            },
-            "source": "content-drafts",
-            "status": "pending",
-            "created": "2026-09-18T19:06:45",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "a26b6ab355",
-            "kind": "content",
-            "key": "aio:bariatric counseling",
-            "title": "AI Overview answer for \"bariatric counseling\" on /bariatric-counseling-near-me/",
-            "why": "AI Overview shows for \"bariatric counseling\" (volume not on file) and cites no named source, not BCC.",
-            "payload": {
-              "target": "https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
-              "body": "Add as a new H2 section on https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/, high on the page, so the direct answer sits in the first sentences under the heading. Target term: \"bariatric counseling\". Google shows an AI Overview for this term that cites no named source and not BCC.\n\n## What is bariatric counseling?\n\nBariatric counseling is behavioral therapy designed to help people struggling with obesity, binge eating, and chronic overeating understand and modify their relationship with food. It typically involves working with licensed therapists, dietitians, and other behavioral health professionals to address the psychological and emotional factors that contribute to weight struggles. At the Bariatric Counseling Center in San Antonio, we provide bariatric counseling through an Intensive Outpatient Program that includes group and individual therapy, dietary guidance from registered dietitians, cooking classes with a professional chef, and movement education. Our program is available onsite in San Antonio and virtually throughout Texas, and we accept most health insurance plans, with claims processed under mental health benefits."
-            },
-            "source": "content-drafts",
-            "status": "pending",
-            "created": "2026-09-18T19:06:40",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "c9c45d4ec5",
-            "kind": "content",
-            "key": "faq:https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
-            "title": "FAQ block for /bariatric-surgery-counseling-in-san-antonio-tx/ (3 questions)",
-            "why": "3 People Also Ask questions across 2 tracked terms (best BCC position 1).",
-            "payload": {
-              "target": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
-              "body": "Place as a Kadence accordion/FAQ block near the bottom of https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/; add FAQPage schema via Rank Math.\n\n## Frequently asked questions\n\n**What does a bariatric psychologist do?**\n\nA bariatric psychologist helps clients understand and modify their relationship with food through behavioral therapy and counseling. At the Bariatric Counseling Center, our clinical psychologist and licensed professional counselors provide group and individual therapy focused on coping skills, goal setting, mindful eating, and family engagement. We work with clients before or after bariatric surgery, or as standalone behavioral treatment for obesity.\n\n**What is the 30/30 rule for bariatric patients?**\n\nThe 30/30 rule and other post-surgery guidelines are medical decisions your bariatric surgeon will discuss with you. At the Bariatric Counseling Center, we focus on the behavioral side of obesity treatment. Our registered dietitians provide nutrition education and meal planning, and our team helps clients build sustainable habits around food, eating, and movement that support long-term success.\n\n**What can you never do again after bariatric surgery?**\n\nDietary restrictions after bariatric surgery are medical questions your surgeon is best equipped to answer. Our role at the Bariatric Counseling Center is to help clients develop coping skills, understand their relationship with food, and build mindful eating habits. We coordinate care with your medical providers and provide behavioral support that complements the medical treatment you receive from your surgical team.\n\nIf you are preparing for bariatric surgery or looking for behavioral support after surgery, we are here to help."
-            },
-            "source": "content-drafts",
-            "status": "pending",
-            "created": "2026-09-18T19:06:36",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "195eefae28",
-            "kind": "content",
-            "key": "faq:https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
-            "title": "FAQ block for /bariatric-therapy-in-san-antonio-tx/ (4 questions)",
-            "why": "4 People Also Ask questions across 3 tracked terms (best BCC position 1).",
-            "payload": {
-              "target": "https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
-              "body": "Place as a Kadence accordion/FAQ block near the bottom of https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/; add FAQPage schema via Rank Math.\n\n## Frequently asked questions\n\n**What does a bariatric psychologist do?**\n\nA bariatric psychologist helps people understand and modify their relationship with food through behavioral therapy. At the Bariatric Counseling Center, our clinical psychologist and licensed professional counselors provide group and individual therapy focused on coping skills, goal setting, mindful eating, and family engagement. We work with clients whether they are preparing for bariatric surgery, currently on weight loss medications, or seeking behavioral treatment for obesity as a standalone approach.\n\n**What therapy is best for weight loss?**\n\nWe provide behavioral therapy that addresses the emotional and psychological factors behind overeating, binge eating, and chronic weight struggles. Our approach combines group and individual counseling, dietary guidance from registered dietitians, cooking classes with a professional chef, and mindful movement education. One program, not four. We coordinate care with your medical providers and offer this comprehensive support both onsite in San Antonio and virtually throughout Texas.\n\n**What are the common causes of anxiety after bariatric surgery?**\n\nAnxiety after bariatric surgery can stem from many sources, and your surgeon or medical provider is the right person to discuss your specific situation. We provide behavioral therapy and counseling to help clients develop coping skills and work through the emotional challenges that come with significant life changes. Our program supports people before surgery, after surgery, or as standalone behavioral treatment for obesity.\n\n**How does bariatric surgery affect mental health?**\n\nBariatric surgery brings both physical and emotional changes, and the mental health impact varies for each person. We offer behavioral therapy and counseling to support clients through these changes, whether as preparation for surgery, post-surgery support, or alongside weight loss medications. Our licensed professional counselors and clinical psychologist help clients develop recovery and coping skills, practice intuitive eating, and engage family support in a compassionate, structured environment.\n\nIf you are looking for behavioral support for weight loss, binge eating, or obesity in San Antonio or anywhere in Texas, we invite you to reach out."
-            },
-            "source": "content-drafts",
-            "status": "pending",
-            "created": "2026-09-18T19:06:29",
-            "decided": null,
-            "note": null,
+            "decided": "2026-09-19T00:18:06",
+            "note": "done",
             "result": null
           },
           {
@@ -11752,11 +11667,18 @@
               "current_description": "Cravings feel urgent , but they are manageable. BCC's therapists and dietitians in San Antonio treat the behavioral roots of impulse eating, not just the urge."
             },
             "source": "content-drafts",
-            "status": "pending",
+            "status": "applied",
             "created": "2026-09-18T19:06:11",
-            "decided": null,
-            "note": null,
-            "result": null
+            "decided": "2026-09-19T00:19:41",
+            "note": "written; rendered page did not yet reflect it (cache?)",
+            "result": {
+              "staging_id": 2737,
+              "link": "https://www.staging13.bariatriccounselingcenter.com/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/",
+              "rendered": {
+                "title": "How To Manage Food Cravings And Impulse Eating",
+                "description": "Cravings feel urgent, but they are manageable. Our therapists and dietitians in San Antonio treat the behavioral roots of impulse eating."
+              }
+            }
           },
           {
             "id": "6e9ed6d3bb",
@@ -11773,11 +11695,18 @@
               "current_description": "Ozempic vs Mounjaro vs Zepbound for weight loss , trial results, side effects, and what happens when you stop. Plus the behavioral support that makes results last."
             },
             "source": "content-drafts",
-            "status": "pending",
+            "status": "applied",
             "created": "2026-09-18T19:06:09",
-            "decided": null,
-            "note": null,
-            "result": null
+            "decided": "2026-09-19T00:19:53",
+            "note": "written; rendered page did not yet reflect it (cache?)",
+            "result": {
+              "staging_id": 5945,
+              "link": "https://www.staging13.bariatriccounselingcenter.com/diet-and-nutrition/healthy-living/ozempic-vs-mounjaro-vs-zepbound-for-weight-loss/",
+              "rendered": {
+                "title": "Ozempic Vs Mounjaro Vs Zepbound: Weight Loss Comparison",
+                "description": "Ozempic, Mounjaro and Zepbound compared: trial results, side effects, what happens when you stop, and the behavioral support that helps."
+              }
+            }
           },
           {
             "id": "1fad766554",
@@ -11794,11 +11723,18 @@
               "current_description": "Gastroparesis, nicknamed \u201cstomach paralysis,\u201d is defined by having delayed stomach emptying or having an extended time of emptying stomach contents into the"
             },
             "source": "content-drafts",
-            "status": "pending",
+            "status": "applied",
             "created": "2026-09-18T19:06:07",
-            "decided": null,
-            "note": null,
-            "result": null
+            "decided": "2026-09-19T00:20:05",
+            "note": "written; rendered page did not yet reflect it (cache?)",
+            "result": {
+              "staging_id": 1277,
+              "link": "https://www.staging13.bariatriccounselingcenter.com/diet-and-nutrition/gut-health/gastroparesis-aka-stomach-paralysis/",
+              "rendered": {
+                "title": "What Is Gastroparesis? Causes, Symptoms &amp; Treatment",
+                "description": "Gastroparesis (stomach paralysis) explained: what it is, what causes delayed stomach emptying, symptoms, and how it&#039;s diagnosed and treated."
+              }
+            }
           },
           {
             "id": "6d54fe84ea",
@@ -11815,11 +11751,18 @@
               "current_description": "How the four major GLP-1 weight loss medications compare , how they work, side effects, and what makes results last. From San Antonio\u2019s behavioral weight care specialists."
             },
             "source": "content-drafts",
-            "status": "pending",
+            "status": "applied",
             "created": "2026-09-18T19:06:05",
-            "decided": null,
-            "note": null,
-            "result": null
+            "decided": "2026-09-19T00:20:16",
+            "note": "written; rendered page did not yet reflect it (cache?)",
+            "result": {
+              "staging_id": 3590,
+              "link": "https://www.staging13.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
+              "rendered": {
+                "title": "Wegovy Vs Ozempic Vs Zepbound Vs Mounjaro Compared",
+                "description": "How the four major weight loss medications compare, how they work, side effects, and what makes results last. From San Antonio&#039;s behavioral weight care."
+              }
+            }
           },
           {
             "id": "8b24d6071a",
@@ -11836,11 +11779,18 @@
               "current_description": "Dehydration causes temporary fluid loss , not fat loss. Learn how hydration affects metabolism, hunger, and weight loss progress. Bariatric Counseling Center, San Antonio."
             },
             "source": "content-drafts",
-            "status": "pending",
+            "status": "applied",
             "created": "2026-09-18T19:06:01",
-            "decided": null,
-            "note": null,
-            "result": null
+            "decided": "2026-09-19T00:20:28",
+            "note": "written; rendered page did not yet reflect it (cache?)",
+            "result": {
+              "staging_id": 3394,
+              "link": "https://www.staging13.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
+              "rendered": {
+                "title": "Does Dehydration Cause Weight Loss? What To Know",
+                "description": "Dehydration causes temporary fluid loss, not fat loss. Learn how hydration affects metabolism, hunger and sustainable weight management."
+              }
+            }
           },
           {
             "id": "766483f386",
@@ -11857,197 +11807,12 @@
               "channel": "contact-form"
             },
             "source": "link-plays",
-            "status": "pending",
+            "status": "rejected",
             "created": "2026-09-18T19:05:59",
-            "decided": null,
-            "note": null,
+            "decided": "2026-09-19T00:21:23",
+            "note": "watcher was a provider to bcc. not appropriate to ask",
             "result": null
           },
-          {
-            "id": "82358a5dc0",
-            "kind": "outreach",
-            "key": "texasdigestive.com",
-            "title": "Partner link note: texasdigestive.com",
-            "why": "1 person from texasdigestive.com on the referral list, and the site links to a local competitor but not to BCC.",
-            "payload": {
-              "to": "your contact at texasdigestive.com",
-              "from": "Todd",
-              "subject": "A small favor, and a thank you",
-              "body": "Hi [first name],\n\nThank you for the patients you refer for bariatric evaluations and the eating work that comes after surgery. It means a lot to me and the team, and we send a detailed progress summary on each one when they finish the program.\n\nIf you keep a page of trusted providers on your site, we would be grateful for a spot on it, and we will do the same for you on ours. Just reply and let me know what works, or I can send you the line to paste.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
-              "domain": "texasdigestive.com",
-              "channel": "email",
-              "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending."
-            },
-            "source": "link-plays",
-            "status": "pending",
-            "created": "2026-09-18T19:05:15",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "5d38b158f3",
-            "kind": "outreach",
-            "key": "vitalitylifecounselingsa.com",
-            "title": "Partner link note: vitalitylifecounselingsa.com",
-            "why": "1 person from vitalitylifecounselingsa.com on the referral list, and the site links to a local competitor but not to BCC.",
-            "payload": {
-              "to": "your contact at vitalitylifecounselingsa.com",
-              "from": "Todd",
-              "subject": "A small favor, and a thank you",
-              "body": "Hi [first name],\n\nThank you for the clients you send us when food and eating are the heart of the problem. It means a lot to me and the team, and we send a short progress note back so you stay in the loop.\n\nIf you keep a page of trusted providers on your site, we would be grateful for a spot on it, and we will do the same for you on ours. Just reply and let me know what works, or I can send you the line to paste.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
-              "domain": "vitalitylifecounselingsa.com",
-              "channel": "email",
-              "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending."
-            },
-            "source": "link-plays",
-            "status": "pending",
-            "created": "2026-09-18T19:05:15",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "dce3479216",
-            "kind": "outreach",
-            "key": "gastroconsa.com",
-            "title": "Partner link note: gastroconsa.com",
-            "why": "20 people from gastroconsa.com on the referral list, and the site has never linked to BCC.",
-            "payload": {
-              "to": "your contact at gastroconsa.com",
-              "from": "Todd",
-              "subject": "A small favor, and a thank you",
-              "body": "Hi [first name],\n\nA quick thank you for the patients you refer for bariatric evaluations and the eating work that comes after surgery. It matters to us, and we always send a detailed progress summary on each one when they finish the program.\n\nWould you be open to adding us to the resources or referrals page on your website? We would happily add your practice to ours as well. Just reply and let me know what works, or I can send you the line to paste.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
-              "domain": "gastroconsa.com",
-              "channel": "email",
-              "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending."
-            },
-            "source": "link-plays",
-            "status": "pending",
-            "created": "2026-09-18T19:05:15",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "bbd7b1a44e",
-            "kind": "outreach",
-            "key": "dgdclinic.com",
-            "title": "Partner link note: dgdclinic.com",
-            "why": "13 people from dgdclinic.com on the referral list, and the site has never linked to BCC.",
-            "payload": {
-              "to": "your contact at dgdclinic.com",
-              "from": "Todd",
-              "subject": "A small favor, and a thank you",
-              "body": "Hi [first name],\n\nI wanted to say thank you for the patients you refer for weight, eating and food-related concerns. We do not take it for granted, and we make a point of sending a progress summary back to you when each one finishes.\n\nIf you keep a page of trusted providers on your site, we would be grateful for a spot on it, and we will do the same for you on ours. Just reply and let me know what works, or I can send you the line to paste.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
-              "domain": "dgdclinic.com",
-              "channel": "email",
-              "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending."
-            },
-            "source": "link-plays",
-            "status": "pending",
-            "created": "2026-09-18T19:05:15",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "ba77ef834d",
-            "kind": "outreach",
-            "key": "tddctx.com",
-            "title": "Partner link note: tddctx.com",
-            "why": "12 people from tddctx.com on the referral list, and the site has never linked to BCC.",
-            "payload": {
-              "to": "your contact at tddctx.com",
-              "from": "Todd",
-              "subject": "A small favor, and a thank you",
-              "body": "Hi [first name],\n\nA quick thank you for the patients you have sent our way. It matters to us, and we always send a progress summary back to you when each one finishes the program.\n\nIf you keep a page of trusted providers on your site, we would be grateful for a spot on it, and we will do the same for you on ours. Just reply and let me know what works, or I can send you the line to paste.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
-              "domain": "tddctx.com",
-              "channel": "email",
-              "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending."
-            },
-            "source": "link-plays",
-            "status": "pending",
-            "created": "2026-09-18T19:05:15",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "56b776c512",
-            "kind": "outreach",
-            "key": "rfamilymedicalgroup.com",
-            "title": "Partner link note: rfamilymedicalgroup.com",
-            "why": "11 people from rfamilymedicalgroup.com on the referral list, and the site has never linked to BCC.",
-            "payload": {
-              "to": "your contact at rfamilymedicalgroup.com",
-              "from": "Todd",
-              "subject": "A small favor, and a thank you",
-              "body": "Hi [first name],\n\nThank you for the patients you refer for weight, eating and food-related concerns. It means a lot to me and the team, and we send a progress summary back to you when each one finishes.\n\nWould you be open to adding us to the resources or referrals page on your website? We would happily add your practice to ours as well. Just reply and let me know what works, or I can send you the line to paste.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
-              "domain": "rfamilymedicalgroup.com",
-              "channel": "email",
-              "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending."
-            },
-            "source": "link-plays",
-            "status": "pending",
-            "created": "2026-09-18T19:05:15",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "1f2b7c8adf",
-            "kind": "content",
-            "key": "brief:san antonio weight loss clinic",
-            "title": "New page brief: san antonio weight loss clinic",
-            "why": "880/mo Texas (880/mo US); sagebariatric.com ranks #10 and no BCC page targets \"weight loss clinic\".",
-            "payload": {
-              "target": "NEW: /san-antonio-weight-loss-clinic/",
-              "body": "Opportunity brief for a NEW page. Target URL: NEW: /san-antonio-weight-loss-clinic/ (working slug; adjust to taste). Term: \"san antonio weight loss clinic\" (Texas volume 880/mo, US 880/mo). sagebariatric.com ranks #10 for it in San Antonio; no BCC page targets the phrase today.\n\n# San Antonio Weight Loss Clinic: Behavioral Healthcare for Obesity\n\n**Target URL:** NEW: /san-antonio-weight-loss-clinic/\n**Search intent:** The searcher wants to find a weight loss clinic in San Antonio and is comparing local options for professional support with obesity or overeating.\n**Word count:** about 1200 words\n\n## Outline (H2s)\n\n1. What Makes a Weight Loss Clinic Effective\n2. Behavioral Healthcare: The Missing Piece in Weight Loss\n3. How the Bariatric Counseling Center Program Works\n4. Who We Serve at Our San Antonio Facility\n5. Is the Program Covered by Insurance\n6. Virtual and Onsite Options in Texas\n7. Getting Started at the Bariatric Counseling Center\n\n## Questions the page must answer\n\n- What services does a weight loss clinic in San Antonio provide?\n- How is behavioral healthcare different from medical weight loss programs?\n- Does the Bariatric Counseling Center offer surgery or weight loss medications?\n- Who is a good fit for the intensive outpatient program at BCC?\n- Is the program covered by health insurance in Texas?\n- Can I attend the program virtually or do I need to come onsite?\n- How long does the intensive outpatient program run?\n- What credentials do the staff at BCC hold?\n\n## Internal links to add\n\n- https://www.bariatriccounselingcenter.com/weight-loss-programs-in-san-antonio-tx/ (anchor: weight loss programs in San Antonio)\n- https://www.bariatriccounselingcenter.com/weight-loss-therapy-in-san-antonio-tx/ (anchor: weight loss therapy)\n- https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/ (anchor: binge eating treatment)\n- https://www.bariatriccounselingcenter.com/registered-dietitian-in-san-antonio-tx/ (anchor: registered dietitians)\n\n## Notes\n\nPosition BCC as a behavioral health facility, not a medical weight loss clinic, and clarify early that we do not provide surgery or prescribe medications. Emphasize that behavioral treatment can be standalone or complement what patients receive from their medical providers. Avoid promising weight loss outcomes or cure, and do not imply BCC replaces medical care."
-            },
-            "source": "content-drafts",
-            "status": "pending",
-            "created": "2026-09-18T19:02:51",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "50546ad909",
-            "kind": "content",
-            "key": "aio:nutrition counseling",
-            "title": "AI Overview answer for \"nutrition counseling\" on /nutritional-counseling-in-san-antonio-tx",
-            "why": "AI Overview shows for \"nutrition counseling\" (260/mo Texas) and cites ncoa.org, ucsfhealth.org, nutritioncounselingcenter.com, not BCC.",
-            "payload": {
-              "target": "https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/",
-              "body": "Add as a new H2 section on https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/, high on the page, so the direct answer sits in the first sentences under the heading. Target term: \"nutrition counseling\". Google shows an AI Overview for this term that cites ncoa.org, ucsfhealth.org, nutritioncounselingcenter.com, texashealth.org, stanfordhealthcare.org, adventhealth.com and not BCC.\n\n## What is nutrition counseling?\n\nNutrition counseling is one-on-one or group education with a registered dietitian to help people improve their eating habits and relationship with food. It involves meal planning, grocery shopping guidance, learning to navigate eating out, and developing sustainable nutrition strategies tailored to individual needs. At the Bariatric Counseling Center in San Antonio, registered dietitians provide nutrition counseling as part of a comprehensive behavioral health program for people struggling with obesity, binge eating, and chronic overeating. We offer nutritional guidance both onsite at our San Antonio facility and virtually throughout Texas. Sessions include meal planning support, grocery store tours, and practical strategies for dining out. The program is in network with most health insurance plans, and claims are processed under mental health benefits."
-            },
-            "source": "content-drafts",
-            "status": "pending",
-            "created": "2026-09-18T19:02:41",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "482a5526a7",
-            "kind": "content",
-            "key": "faq:https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
-            "title": "FAQ block for /bariatric-counseling-near-me/ (5 questions)",
-            "why": "5 People Also Ask questions across 2 tracked terms (best BCC position 1).",
-            "payload": {
-              "target": "https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
-              "body": "Place as a Kadence accordion/FAQ block near the bottom of https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/; add FAQPage schema via Rank Math.\n\n## Frequently asked questions\n\n**What is behavioral therapy for obesity?**\n\nBehavioral therapy for obesity helps you understand and modify your relationship with food through counseling, coping skills, goal setting, and mindful eating. At the Bariatric Counseling Center, we provide group and individual therapy, dietary guidance, cooking classes, and movement education in one Intensive Outpatient Program, led by an experienced and compassionate team of behavioral healthcare professionals.\n\n**What does a bariatric psychologist do?**\n\nA bariatric psychologist works with clients on the emotional and behavioral aspects of weight struggles, including binge eating, emotional eating, and chronic overeating. Our clinical psychologist and licensed professional counselors provide therapy focused on recovery and coping skills, intuitive eating, and family engagement, helping clients build sustainable habits and a healthier relationship with food.\n\n**What does a bariatric dietitian do?**\n\nA bariatric dietitian provides nutritional education, meal planning, and practical support tailored to your needs. Our registered dietitians lead grocery store tours, teach you how to navigate dining out, and work alongside our professional chef in cooking classes. We focus on sustainable dietary changes that fit your life, not rigid rules or restrictive meal plans.\n\n**What therapy is best for weight loss?**\n\nThe most effective therapy addresses the behavioral and emotional patterns behind overeating. At the Bariatric Counseling Center, we combine behavioral therapy, dietary guidance, cooking classes, and movement education in one program. This comprehensive approach, delivered by healthcare professionals in four disciplines, helps clients build lasting skills. One program, not four.\n\n**What is the mental health evaluation for bariatric surgery?**\n\nMost bariatric surgery programs require a psychological evaluation to assess readiness and identify any behavioral or emotional factors that may affect outcomes. If you are preparing for surgery or already had it, our Intensive Outpatient Program can provide the behavioral support you need. Your surgeon decides the medical requirements, and we coordinate care with your medical providers throughout treatment.\n\nIf you have questions about our program or would like to learn more, we invite you to reach out."
-            },
-            "source": "content-drafts",
-            "status": "pending",
-            "created": "2026-09-18T19:02:35",
-            "decided": null,
-            "note": null,
-            "result": null
-          }
-        ],
-        "recent": [
           {
             "id": "37c5bdb664",
             "kind": "task",
@@ -12064,13 +11829,301 @@
           }
         ],
         "counts": {
-          "rejected": 1,
-          "pending": 21
+          "rejected": 2,
+          "applied": 6,
+          "approved": 14
         },
         "handoff": {
-          "content": [],
+          "content": [
+            {
+              "id": "f72187a483",
+              "kind": "content",
+              "key": "/texas-food-addiction-search-trends/",
+              "title": "Demand asset: Texas food addiction search trends (2026-Q3)",
+              "why": "37,440 Texas searches a month across 80 terms; a citeable page that earns links from media and directories.",
+              "payload": {
+                "target": "NEW: /texas-food-addiction-search-trends/",
+                "body": "---\nslug: texas-food-addiction-search-trends\nseo title: Texas Food Addiction and Binge Eating Search Trends (2026-Q3) | BCC\nmeta description: How many Texans search each month for help with food addiction, binge eating, overeating and eating disorders. 12-month trends, top terms and the questions people ask. Source: Google Ads volume, Texas.\nfocus keyword: food addiction texas\nsupporting keywords: binge eating texas, overeating help texas, eating disorder treatment texas\ntype: resource\n---\n\n# Texas food addiction and binge eating: what people search for (2026-Q3)\n\nEvery quarter we count how many people in Texas turn to Google for help with overeating, binge eating, food addiction, eating disorders and the counseling side of bariatric surgery and weight loss. The numbers below come from Google Ads search volume for Texas, Sep 2025 to Aug 2026. Media, partners and directories are welcome to cite them with a link.\n\n## Headline numbers\n\n- 37,440 Texas searches a month across 80 terms.\n- Texas accounts for 8.3% of US searches for the same terms (453,080 a month nationally).\n- Change over the 12-month series: -17.2% (35,690 vs 43,100 searches a month, latest month against the first).\n\n| Topic | Terms | Texas / month | US / month | Texas share | 12-month change |\n|---|---:|---:|---:|---:|---:|\n| Food addiction | 1 | 10 | 70 | 14.3% | +0.0% |\n| Binge eating | 13 | 10,830 | 119,500 | 9.1% | -18.8% |\n| Overeating and emotional eating | 15 | 1,570 | 17,160 | 9.1% | -24.6% |\n| Eating disorders (anorexia, bulimia, ARFID, night eating) | 40 | 24,380 | 312,790 | 7.8% | -13.2% |\n| Bariatric counseling and psychological evaluation | 3 | 30 | 320 | 9.4% | -50.0% |\n| Weight loss counseling and therapy | 8 | 620 | 3,240 | 19.1% | -81.2% |\n\n## 12-month trend by topic\n\n### Food addiction\n\n[chart: charts/food-addiction-2026-Q3.svg]\nBiggest terms: food addiction counselor (10).\n\n### Binge eating\n\n[chart: charts/binge-eating-2026-Q3.svg]\nBiggest terms: bingeing (4,400); eating disorder with binge eating (3,600); binge eater (1,000); how to avoid binge eating (720).\n\n### Overeating and emotional eating\n\n[chart: charts/overeating-2026-Q3.svg]\nBiggest terms: overeat (390); how to stop overeating (390); emotional eating (210); overeating disorder (110).\n\n### Eating disorders (anorexia, bulimia, ARFID, night eating)\n\n[chart: charts/eating-disorder-treatment-2026-Q3.svg]\nBiggest terms: arfid (14,800); eating disorders sign and symptoms (1,000); late night eating (880); arfid in adult (720).\n\n### Bariatric counseling and psychological evaluation\n\n[chart: charts/bariatric-support-2026-Q3.svg]\nBiggest terms: bariatric psychology (10); bariatric nutrition services (10); bariatric nutritionist near me (10).\n\n### Weight loss counseling and therapy\n\n[chart: charts/weight-loss-counseling-2026-Q3.svg]\nBiggest terms: weight loss therapy (390); holistic weight loss program (110); nutrition counseling for weight loss (40); weight loss counselor (20).\n\n\nFull draft: /sessions/rcw-01dn6jcrgnizq6fhiumv4lsk/mnt/cron-jobs/bariatric-counseling-center/assets/draft-texas-food-addiction-search-2026-Q3.md",
+                "html_preview": "/sessions/rcw-01dn6jcrgnizq6fhiumv4lsk/mnt/cron-jobs/bariatric-counseling-center/assets/texas-food-addiction-search-2026-Q3.html"
+              },
+              "source": "demand-asset",
+              "status": "approved",
+              "created": "2026-09-18T19:07:51",
+              "decided": "2026-09-19T00:18:17",
+              "note": "saved; waiting for a Claude session to place it on staging13 through the block process",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\f72187a483-demand-asset-texas-food-addiction-search-trends-2026-q3.md"
+              }
+            },
+            {
+              "id": "045b092524",
+              "kind": "content",
+              "key": "aio:bariatric surgery counseling",
+              "title": "AI Overview answer for \"bariatric surgery counseling\" on /bariatric-surgery-counseling-in-",
+              "why": "AI Overview shows for \"bariatric surgery counseling\" (volume not on file) and cites no named source, not BCC.",
+              "payload": {
+                "target": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+                "body": "Add as a new H2 section on https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/, high on the page, so the direct answer sits in the first sentences under the heading. Target term: \"bariatric surgery counseling\". Google shows an AI Overview for this term that cites no named source and not BCC.\n\n## What is bariatric surgery counseling?\n\nBariatric surgery counseling is behavioral health support that helps people prepare for weight loss surgery or address eating and emotional challenges after the procedure. It typically involves working with licensed therapists, psychologists, and registered dietitians to understand eating patterns, build coping skills, and develop sustainable habits around food and movement. At the Bariatric Counseling Center in San Antonio, we provide this counseling as part of our Intensive Outpatient Program, available onsite at our San Antonio facility and virtually throughout Texas. Our program includes group and individual therapy, dietary guidance from registered dietitians, cooking classes with a professional chef, and movement education. We coordinate care with medical providers and are in network with most health insurance plans, with claims processed under mental health benefits."
+              },
+              "source": "content-drafts",
+              "status": "approved",
+              "created": "2026-09-18T19:06:45",
+              "decided": "2026-09-19T00:18:40",
+              "note": "saved; waiting for a Claude session to place it on staging13 through the block process",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\045b092524-ai-overview-answer-for-bariatric-surgery-counseling-on-baria.md"
+              }
+            },
+            {
+              "id": "a26b6ab355",
+              "kind": "content",
+              "key": "aio:bariatric counseling",
+              "title": "AI Overview answer for \"bariatric counseling\" on /bariatric-counseling-near-me/",
+              "why": "AI Overview shows for \"bariatric counseling\" (volume not on file) and cites no named source, not BCC.",
+              "payload": {
+                "target": "https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
+                "body": "Add as a new H2 section on https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/, high on the page, so the direct answer sits in the first sentences under the heading. Target term: \"bariatric counseling\". Google shows an AI Overview for this term that cites no named source and not BCC.\n\n## What is bariatric counseling?\n\nBariatric counseling is behavioral therapy designed to help people struggling with obesity, binge eating, and chronic overeating understand and modify their relationship with food. It typically involves working with licensed therapists, dietitians, and other behavioral health professionals to address the psychological and emotional factors that contribute to weight struggles. At the Bariatric Counseling Center in San Antonio, we provide bariatric counseling through an Intensive Outpatient Program that includes group and individual therapy, dietary guidance from registered dietitians, cooking classes with a professional chef, and movement education. Our program is available onsite in San Antonio and virtually throughout Texas, and we accept most health insurance plans, with claims processed under mental health benefits."
+              },
+              "source": "content-drafts",
+              "status": "approved",
+              "created": "2026-09-18T19:06:40",
+              "decided": "2026-09-19T00:18:47",
+              "note": "saved; waiting for a Claude session to place it on staging13 through the block process",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\a26b6ab355-ai-overview-answer-for-bariatric-counseling-on-bariatric-cou.md"
+              }
+            },
+            {
+              "id": "c9c45d4ec5",
+              "kind": "content",
+              "key": "faq:https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+              "title": "FAQ block for /bariatric-surgery-counseling-in-san-antonio-tx/ (3 questions)",
+              "why": "3 People Also Ask questions across 2 tracked terms (best BCC position 1).",
+              "payload": {
+                "target": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+                "body": "Place as a Kadence accordion/FAQ block near the bottom of https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/; add FAQPage schema via Rank Math.\n\n## Frequently asked questions\n\n**What does a bariatric psychologist do?**\n\nA bariatric psychologist helps clients understand and modify their relationship with food through behavioral therapy and counseling. At the Bariatric Counseling Center, our clinical psychologist and licensed professional counselors provide group and individual therapy focused on coping skills, goal setting, mindful eating, and family engagement. We work with clients before or after bariatric surgery, or as standalone behavioral treatment for obesity.\n\n**What is the 30/30 rule for bariatric patients?**\n\nThe 30/30 rule and other post-surgery guidelines are medical decisions your bariatric surgeon will discuss with you. At the Bariatric Counseling Center, we focus on the behavioral side of obesity treatment. Our registered dietitians provide nutrition education and meal planning, and our team helps clients build sustainable habits around food, eating, and movement that support long-term success.\n\n**What can you never do again after bariatric surgery?**\n\nDietary restrictions after bariatric surgery are medical questions your surgeon is best equipped to answer. Our role at the Bariatric Counseling Center is to help clients develop coping skills, understand their relationship with food, and build mindful eating habits. We coordinate care with your medical providers and provide behavioral support that complements the medical treatment you receive from your surgical team.\n\nIf you are preparing for bariatric surgery or looking for behavioral support after surgery, we are here to help."
+              },
+              "source": "content-drafts",
+              "status": "approved",
+              "created": "2026-09-18T19:06:36",
+              "decided": "2026-09-19T00:18:57",
+              "note": "saved; waiting for a Claude session to place it on staging13 through the block process",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\c9c45d4ec5-faq-block-for-bariatric-surgery-counseling-in-san-antonio-tx.md"
+              }
+            },
+            {
+              "id": "195eefae28",
+              "kind": "content",
+              "key": "faq:https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
+              "title": "FAQ block for /bariatric-therapy-in-san-antonio-tx/ (4 questions)",
+              "why": "4 People Also Ask questions across 3 tracked terms (best BCC position 1).",
+              "payload": {
+                "target": "https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
+                "body": "Place as a Kadence accordion/FAQ block near the bottom of https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/; add FAQPage schema via Rank Math.\n\n## Frequently asked questions\n\n**What does a bariatric psychologist do?**\n\nA bariatric psychologist helps people understand and modify their relationship with food through behavioral therapy. At the Bariatric Counseling Center, our clinical psychologist and licensed professional counselors provide group and individual therapy focused on coping skills, goal setting, mindful eating, and family engagement. We work with clients whether they are preparing for bariatric surgery, currently on weight loss medications, or seeking behavioral treatment for obesity as a standalone approach.\n\n**What therapy is best for weight loss?**\n\nWe provide behavioral therapy that addresses the emotional and psychological factors behind overeating, binge eating, and chronic weight struggles. Our approach combines group and individual counseling, dietary guidance from registered dietitians, cooking classes with a professional chef, and mindful movement education. One program, not four. We coordinate care with your medical providers and offer this comprehensive support both onsite in San Antonio and virtually throughout Texas.\n\n**What are the common causes of anxiety after bariatric surgery?**\n\nAnxiety after bariatric surgery can stem from many sources, and your surgeon or medical provider is the right person to discuss your specific situation. We provide behavioral therapy and counseling to help clients develop coping skills and work through the emotional challenges that come with significant life changes. Our program supports people before surgery, after surgery, or as standalone behavioral treatment for obesity.\n\n**How does bariatric surgery affect mental health?**\n\nBariatric surgery brings both physical and emotional changes, and the mental health impact varies for each person. We offer behavioral therapy and counseling to support clients through these changes, whether as preparation for surgery, post-surgery support, or alongside weight loss medications. Our licensed professional counselors and clinical psychologist help clients develop recovery and coping skills, practice intuitive eating, and engage family support in a compassionate, structured environment.\n\nIf you are looking for behavioral support for weight loss, binge eating, or obesity in San Antonio or anywhere in Texas, we invite you to reach out."
+              },
+              "source": "content-drafts",
+              "status": "approved",
+              "created": "2026-09-18T19:06:29",
+              "decided": "2026-09-19T00:19:13",
+              "note": "saved; waiting for a Claude session to place it on staging13 through the block process",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\195eefae28-faq-block-for-bariatric-therapy-in-san-antonio-tx-4-question.md"
+              }
+            },
+            {
+              "id": "1f2b7c8adf",
+              "kind": "content",
+              "key": "brief:san antonio weight loss clinic",
+              "title": "New page brief: san antonio weight loss clinic",
+              "why": "880/mo Texas (880/mo US); sagebariatric.com ranks #10 and no BCC page targets \"weight loss clinic\".",
+              "payload": {
+                "target": "NEW: /san-antonio-weight-loss-clinic/",
+                "body": "Opportunity brief for a NEW page. Target URL: NEW: /san-antonio-weight-loss-clinic/ (working slug; adjust to taste). Term: \"san antonio weight loss clinic\" (Texas volume 880/mo, US 880/mo). sagebariatric.com ranks #10 for it in San Antonio; no BCC page targets the phrase today.\n\n# San Antonio Weight Loss Clinic: Behavioral Healthcare for Obesity\n\n**Target URL:** NEW: /san-antonio-weight-loss-clinic/\n**Search intent:** The searcher wants to find a weight loss clinic in San Antonio and is comparing local options for professional support with obesity or overeating.\n**Word count:** about 1200 words\n\n## Outline (H2s)\n\n1. What Makes a Weight Loss Clinic Effective\n2. Behavioral Healthcare: The Missing Piece in Weight Loss\n3. How the Bariatric Counseling Center Program Works\n4. Who We Serve at Our San Antonio Facility\n5. Is the Program Covered by Insurance\n6. Virtual and Onsite Options in Texas\n7. Getting Started at the Bariatric Counseling Center\n\n## Questions the page must answer\n\n- What services does a weight loss clinic in San Antonio provide?\n- How is behavioral healthcare different from medical weight loss programs?\n- Does the Bariatric Counseling Center offer surgery or weight loss medications?\n- Who is a good fit for the intensive outpatient program at BCC?\n- Is the program covered by health insurance in Texas?\n- Can I attend the program virtually or do I need to come onsite?\n- How long does the intensive outpatient program run?\n- What credentials do the staff at BCC hold?\n\n## Internal links to add\n\n- https://www.bariatriccounselingcenter.com/weight-loss-programs-in-san-antonio-tx/ (anchor: weight loss programs in San Antonio)\n- https://www.bariatriccounselingcenter.com/weight-loss-therapy-in-san-antonio-tx/ (anchor: weight loss therapy)\n- https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/ (anchor: binge eating treatment)\n- https://www.bariatriccounselingcenter.com/registered-dietitian-in-san-antonio-tx/ (anchor: registered dietitians)\n\n## Notes\n\nPosition BCC as a behavioral health facility, not a medical weight loss clinic, and clarify early that we do not provide surgery or prescribe medications. Emphasize that behavioral treatment can be standalone or complement what patients receive from their medical providers. Avoid promising weight loss outcomes or cure, and do not imply BCC replaces medical care."
+              },
+              "source": "content-drafts",
+              "status": "approved",
+              "created": "2026-09-18T19:02:51",
+              "decided": "2026-09-19T00:23:12",
+              "note": "saved; waiting for a Claude session to place it on staging13 through the block process",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\1f2b7c8adf-new-page-brief-san-antonio-weight-loss-clinic.md"
+              }
+            },
+            {
+              "id": "50546ad909",
+              "kind": "content",
+              "key": "aio:nutrition counseling",
+              "title": "AI Overview answer for \"nutrition counseling\" on /nutritional-counseling-in-san-antonio-tx",
+              "why": "AI Overview shows for \"nutrition counseling\" (260/mo Texas) and cites ncoa.org, ucsfhealth.org, nutritioncounselingcenter.com, not BCC.",
+              "payload": {
+                "target": "https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/",
+                "body": "Add as a new H2 section on https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/, high on the page, so the direct answer sits in the first sentences under the heading. Target term: \"nutrition counseling\". Google shows an AI Overview for this term that cites ncoa.org, ucsfhealth.org, nutritioncounselingcenter.com, texashealth.org, stanfordhealthcare.org, adventhealth.com and not BCC.\n\n## What is nutrition counseling?\n\nNutrition counseling is one-on-one or group education with a registered dietitian to help people improve their eating habits and relationship with food. It involves meal planning, grocery shopping guidance, learning to navigate eating out, and developing sustainable nutrition strategies tailored to individual needs. At the Bariatric Counseling Center in San Antonio, registered dietitians provide nutrition counseling as part of a comprehensive behavioral health program for people struggling with obesity, binge eating, and chronic overeating. We offer nutritional guidance both onsite at our San Antonio facility and virtually throughout Texas. Sessions include meal planning support, grocery store tours, and practical strategies for dining out. The program is in network with most health insurance plans, and claims are processed under mental health benefits."
+              },
+              "source": "content-drafts",
+              "status": "approved",
+              "created": "2026-09-18T19:02:41",
+              "decided": "2026-09-19T00:23:19",
+              "note": "saved; waiting for a Claude session to place it on staging13 through the block process",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\50546ad909-ai-overview-answer-for-nutrition-counseling-on-nutritional-c.md"
+              }
+            },
+            {
+              "id": "482a5526a7",
+              "kind": "content",
+              "key": "faq:https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
+              "title": "FAQ block for /bariatric-counseling-near-me/ (5 questions)",
+              "why": "5 People Also Ask questions across 2 tracked terms (best BCC position 1).",
+              "payload": {
+                "target": "https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
+                "body": "Place as a Kadence accordion/FAQ block near the bottom of https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/; add FAQPage schema via Rank Math.\n\n## Frequently asked questions\n\n**What is behavioral therapy for obesity?**\n\nBehavioral therapy for obesity helps you understand and modify your relationship with food through counseling, coping skills, goal setting, and mindful eating. At the Bariatric Counseling Center, we provide group and individual therapy, dietary guidance, cooking classes, and movement education in one Intensive Outpatient Program, led by an experienced and compassionate team of behavioral healthcare professionals.\n\n**What does a bariatric psychologist do?**\n\nA bariatric psychologist works with clients on the emotional and behavioral aspects of weight struggles, including binge eating, emotional eating, and chronic overeating. Our clinical psychologist and licensed professional counselors provide therapy focused on recovery and coping skills, intuitive eating, and family engagement, helping clients build sustainable habits and a healthier relationship with food.\n\n**What does a bariatric dietitian do?**\n\nA bariatric dietitian provides nutritional education, meal planning, and practical support tailored to your needs. Our registered dietitians lead grocery store tours, teach you how to navigate dining out, and work alongside our professional chef in cooking classes. We focus on sustainable dietary changes that fit your life, not rigid rules or restrictive meal plans.\n\n**What therapy is best for weight loss?**\n\nThe most effective therapy addresses the behavioral and emotional patterns behind overeating. At the Bariatric Counseling Center, we combine behavioral therapy, dietary guidance, cooking classes, and movement education in one program. This comprehensive approach, delivered by healthcare professionals in four disciplines, helps clients build lasting skills. One program, not four.\n\n**What is the mental health evaluation for bariatric surgery?**\n\nMost bariatric surgery programs require a psychological evaluation to assess readiness and identify any behavioral or emotional factors that may affect outcomes. If you are preparing for surgery or already had it, our Intensive Outpatient Program can provide the behavioral support you need. Your surgeon decides the medical requirements, and we coordinate care with your medical providers throughout treatment.\n\nIf you have questions about our program or would like to learn more, we invite you to reach out."
+              },
+              "source": "content-drafts",
+              "status": "approved",
+              "created": "2026-09-18T19:02:35",
+              "decided": "2026-09-19T00:23:23",
+              "note": "saved; waiting for a Claude session to place it on staging13 through the block process",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\482a5526a7-faq-block-for-bariatric-counseling-near-me-5-questions.md"
+              }
+            }
+          ],
           "redirect": [],
-          "outreach": [],
+          "outreach": [
+            {
+              "id": "82358a5dc0",
+              "kind": "outreach",
+              "key": "texasdigestive.com",
+              "title": "Partner link note: texasdigestive.com",
+              "why": "1 person from texasdigestive.com on the referral list, and the site links to a local competitor but not to BCC.",
+              "payload": {
+                "to": "your contact at texasdigestive.com",
+                "from": "Todd",
+                "subject": "A small favor, and a thank you",
+                "body": "Hi [first name],\n\nThank you for the patients you refer for bariatric evaluations and the eating work that comes after surgery. It means a lot to me and the team, and we send a detailed progress summary on each one when they finish the program.\n\nIf you keep a page of trusted providers on your site, we would be grateful for a spot on it, and we will do the same for you on ours. Just reply and let me know what works, or I can send you the line to paste.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
+                "domain": "texasdigestive.com",
+                "channel": "email",
+                "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending."
+              },
+              "source": "link-plays",
+              "status": "approved",
+              "created": "2026-09-18T19:05:15",
+              "decided": "2026-09-19T00:22:36",
+              "note": "worth pursuing; waiting for a Claude session to research the site and write the real email for Todd",
+              "result": null
+            },
+            {
+              "id": "5d38b158f3",
+              "kind": "outreach",
+              "key": "vitalitylifecounselingsa.com",
+              "title": "Partner link note: vitalitylifecounselingsa.com",
+              "why": "1 person from vitalitylifecounselingsa.com on the referral list, and the site links to a local competitor but not to BCC.",
+              "payload": {
+                "to": "your contact at vitalitylifecounselingsa.com",
+                "from": "Todd",
+                "subject": "A small favor, and a thank you",
+                "body": "Hi [first name],\n\nThank you for the clients you send us when food and eating are the heart of the problem. It means a lot to me and the team, and we send a short progress note back so you stay in the loop.\n\nIf you keep a page of trusted providers on your site, we would be grateful for a spot on it, and we will do the same for you on ours. Just reply and let me know what works, or I can send you the line to paste.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
+                "domain": "vitalitylifecounselingsa.com",
+                "channel": "email",
+                "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending."
+              },
+              "source": "link-plays",
+              "status": "approved",
+              "created": "2026-09-18T19:05:15",
+              "decided": "2026-09-19T00:22:43",
+              "note": "worth pursuing; waiting for a Claude session to research the site and write the real email for Todd",
+              "result": null
+            },
+            {
+              "id": "dce3479216",
+              "kind": "outreach",
+              "key": "gastroconsa.com",
+              "title": "Partner link note: gastroconsa.com",
+              "why": "20 people from gastroconsa.com on the referral list, and the site has never linked to BCC.",
+              "payload": {
+                "to": "your contact at gastroconsa.com",
+                "from": "Todd",
+                "subject": "A small favor, and a thank you",
+                "body": "Hi [first name],\n\nA quick thank you for the patients you refer for bariatric evaluations and the eating work that comes after surgery. It matters to us, and we always send a detailed progress summary on each one when they finish the program.\n\nWould you be open to adding us to the resources or referrals page on your website? We would happily add your practice to ours as well. Just reply and let me know what works, or I can send you the line to paste.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
+                "domain": "gastroconsa.com",
+                "channel": "email",
+                "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending."
+              },
+              "source": "link-plays",
+              "status": "approved",
+              "created": "2026-09-18T19:05:15",
+              "decided": "2026-09-19T00:22:48",
+              "note": "worth pursuing; waiting for a Claude session to research the site and write the real email for Todd",
+              "result": null
+            },
+            {
+              "id": "bbd7b1a44e",
+              "kind": "outreach",
+              "key": "dgdclinic.com",
+              "title": "Partner link note: dgdclinic.com",
+              "why": "13 people from dgdclinic.com on the referral list, and the site has never linked to BCC.",
+              "payload": {
+                "to": "your contact at dgdclinic.com",
+                "from": "Todd",
+                "subject": "A small favor, and a thank you",
+                "body": "Hi [first name],\n\nI wanted to say thank you for the patients you refer for weight, eating and food-related concerns. We do not take it for granted, and we make a point of sending a progress summary back to you when each one finishes.\n\nIf you keep a page of trusted providers on your site, we would be grateful for a spot on it, and we will do the same for you on ours. Just reply and let me know what works, or I can send you the line to paste.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
+                "domain": "dgdclinic.com",
+                "channel": "email",
+                "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending."
+              },
+              "source": "link-plays",
+              "status": "approved",
+              "created": "2026-09-18T19:05:15",
+              "decided": "2026-09-19T00:22:53",
+              "note": "worth pursuing; waiting for a Claude session to research the site and write the real email for Todd",
+              "result": null
+            },
+            {
+              "id": "ba77ef834d",
+              "kind": "outreach",
+              "key": "tddctx.com",
+              "title": "Partner link note: tddctx.com",
+              "why": "12 people from tddctx.com on the referral list, and the site has never linked to BCC.",
+              "payload": {
+                "to": "your contact at tddctx.com",
+                "from": "Todd",
+                "subject": "A small favor, and a thank you",
+                "body": "Hi [first name],\n\nA quick thank you for the patients you have sent our way. It matters to us, and we always send a progress summary back to you when each one finishes the program.\n\nIf you keep a page of trusted providers on your site, we would be grateful for a spot on it, and we will do the same for you on ours. Just reply and let me know what works, or I can send you the line to paste.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
+                "domain": "tddctx.com",
+                "channel": "email",
+                "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending."
+              },
+              "source": "link-plays",
+              "status": "approved",
+              "created": "2026-09-18T19:05:15",
+              "decided": "2026-09-19T00:22:58",
+              "note": "worth pursuing; waiting for a Claude session to research the site and write the real email for Todd",
+              "result": null
+            },
+            {
+              "id": "56b776c512",
+              "kind": "outreach",
+              "key": "rfamilymedicalgroup.com",
+              "title": "Partner link note: rfamilymedicalgroup.com",
+              "why": "11 people from rfamilymedicalgroup.com on the referral list, and the site has never linked to BCC.",
+              "payload": {
+                "to": "your contact at rfamilymedicalgroup.com",
+                "from": "Todd",
+                "subject": "A small favor, and a thank you",
+                "body": "Hi [first name],\n\nThank you for the patients you refer for weight, eating and food-related concerns. It means a lot to me and the team, and we send a progress summary back to you when each one finishes.\n\nWould you be open to adding us to the resources or referrals page on your website? We would happily add your practice to ours as well. Just reply and let me know what works, or I can send you the line to paste.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
+                "domain": "rfamilymedicalgroup.com",
+                "channel": "email",
+                "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending."
+              },
+              "source": "link-plays",
+              "status": "approved",
+              "created": "2026-09-18T19:05:15",
+              "decided": "2026-09-19T00:23:03",
+              "note": "worth pursuing; waiting for a Claude session to research the site and write the real email for Todd",
+              "result": null
+            }
+          ],
           "packet": []
         },
         "prompt": "Read C:/Users/danie/Documents/Claude/Projects/cron-jobs/bariatric-counseling-center/review-queue/HANDOFF.md and do exactly what it says: place every approved content block and redirect on staging13 (never production), research and write every approved link ask as a real email and put the packet in a Gmail draft to Todd, mark each item with queue_apply.py --placed or --packet, then rebuild the scoreboard."
@@ -12084,26 +12137,13 @@
       "model": {
         "file": "content-drafts-2026-09-18.json",
         "in_queue": {
-          "pending": 12,
-          "approved": 0,
-          "applied": 0,
+          "pending": 0,
+          "approved": 7,
+          "applied": 5,
           "rejected": 0,
           "other": 0
         },
-        "pending_keys": [
-          "aio:bariatric counseling",
-          "aio:bariatric surgery counseling",
-          "aio:nutrition counseling",
-          "brief:san antonio weight loss clinic",
-          "faq:https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
-          "faq:https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
-          "faq:https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
-          "https://www.bariatriccounselingcenter.com/diet-and-nutrition/gut-health/gastroparesis-aka-stomach-paralysis/",
-          "https://www.bariatriccounselingcenter.com/diet-and-nutrition/healthy-living/ozempic-vs-mounjaro-vs-zepbound-for-weight-loss/",
-          "https://www.bariatriccounselingcenter.com/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/",
-          "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
-          "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/"
-        ],
+        "pending_keys": [],
         "counts": {
           "date": "2026-09-18",
           "mode": "real",
@@ -16330,5 +16370,5 @@
     }
   ],
   "snapshot_count": 37,
-  "generated_at": "2026-09-18T19:45:02.235901Z"
+  "generated_at": "2026-09-19T05:30:40.527625Z"
 }
