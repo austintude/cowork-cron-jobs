@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-19 00:23 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-19 06:42 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -47,23 +47,10 @@ Generated 2026-09-19 00:23 by queue_apply.py. Daniel approved these on the dashb
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\482a5526a7-faq-block-for-bariatric-counseling-near-me-5-questions.md`
   - approved: 2026-09-19. Why: 5 People Also Ask questions across 2 tracked terms (best BCC position 1).
 
-## Link asks to research and write (6)
-
-- id `82358a5dc0`: **Partner link note: texasdigestive.com** (domain texasdigestive.com, channel guess email)
-  - why it was queued: 1 person from texasdigestive.com on the referral list, and the site links to a local competitor but not to BCC.
-  - starting angle (rewrite it, do not send as is): Hi [first name],  Thank you for the patients you refer for bariatric evaluations and the eating work that comes after surgery. It means a lot to me and the team, and we send a detailed progress summary on each one when they finish the program.  If you keep a page of trusted providers on your site, w
-- id `5d38b158f3`: **Partner link note: vitalitylifecounselingsa.com** (domain vitalitylifecounselingsa.com, channel guess email)
-  - why it was queued: 1 person from vitalitylifecounselingsa.com on the referral list, and the site links to a local competitor but not to BCC.
-  - starting angle (rewrite it, do not send as is): Hi [first name],  Thank you for the clients you send us when food and eating are the heart of the problem. It means a lot to me and the team, and we send a short progress note back so you stay in the loop.  If you keep a page of trusted providers on your site, we would be grateful for a spot on it, 
-- id `dce3479216`: **Partner link note: gastroconsa.com** (domain gastroconsa.com, channel guess email)
-  - why it was queued: 20 people from gastroconsa.com on the referral list, and the site has never linked to BCC.
-  - starting angle (rewrite it, do not send as is): Hi [first name],  A quick thank you for the patients you refer for bariatric evaluations and the eating work that comes after surgery. It matters to us, and we always send a detailed progress summary on each one when they finish the program.  Would you be open to adding us to the resources or referr
-- id `bbd7b1a44e`: **Partner link note: dgdclinic.com** (domain dgdclinic.com, channel guess email)
-  - why it was queued: 13 people from dgdclinic.com on the referral list, and the site has never linked to BCC.
-  - starting angle (rewrite it, do not send as is): Hi [first name],  I wanted to say thank you for the patients you refer for weight, eating and food-related concerns. We do not take it for granted, and we make a point of sending a progress summary back to you when each one finishes.  If you keep a page of trusted providers on your site, we would be
-- id `ba77ef834d`: **Partner link note: tddctx.com** (domain tddctx.com, channel guess email)
-  - why it was queued: 12 people from tddctx.com on the referral list, and the site has never linked to BCC.
-  - starting angle (rewrite it, do not send as is): Hi [first name],  A quick thank you for the patients you have sent our way. It matters to us, and we always send a progress summary back to you when each one finishes the program.  If you keep a page of trusted providers on your site, we would be grateful for a spot on it, and we will do the same fo
-- id `56b776c512`: **Partner link note: rfamilymedicalgroup.com** (domain rfamilymedicalgroup.com, channel guess email)
-  - why it was queued: 11 people from rfamilymedicalgroup.com on the referral list, and the site has never linked to BCC.
-  - starting angle (rewrite it, do not send as is): Hi [first name],  Thank you for the patients you refer for weight, eating and food-related concerns. It means a lot to me and the team, and we send a progress summary back to you when each one finishes.  Would you be open to adding us to the resources or referrals page on your website? We would happ
+## Packets already drafted to Todd, waiting to be sent (6): not for Claude; Daniel presses Mark sent when Todd confirms.
+- Partner link note: texasdigestive.com (email written and drafted to Todd 2026-09-19: Gmail draft: Link notes to send this week: 6 (2026-09-19))
+- Partner link note: vitalitylifecounselingsa.com (email written and drafted to Todd 2026-09-19: Gmail draft: Link notes to send this week: 6 (2026-09-19))
+- Partner link note: gastroconsa.com (email written and drafted to Todd 2026-09-19: Gmail draft: Link notes to send this week: 6 (2026-09-19))
+- Partner link note: dgdclinic.com (email written and drafted to Todd 2026-09-19: Gmail draft: Link notes to send this week: 6 (2026-09-19))
+- Partner link note: tddctx.com (email written and drafted to Todd 2026-09-19: Gmail draft: Link notes to send this week: 6 (2026-09-19))
+- Partner link note: rfamilymedicalgroup.com (email written and drafted to Todd 2026-09-19: Gmail draft: Link notes to send this week: 6 (2026-09-19))
