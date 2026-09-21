@@ -1,6 +1,6 @@
 # BCC Daily Pulse -- 2026-09-20
 
-_Generated 2026-09-21 08:02 UTC_
+_Generated 2026-09-21 12:00 UTC_
 
 
 ## Yesterday at a glance
@@ -45,16 +45,3 @@ _2026-08-24 -> 2026-09-20 vs 2026-07-27 -> 2026-08-23_
 -    6 sess  Organic Search
 -    2 sess  Email
 -    1 sess  Unassigned
-
-## Site changes in the last 7 days
-
-- [PAGE] Video lightbox test -- 2026-09-18 (https://www.bariatriccounselingcenter.com/video-lightbox-test/)
-- [PAGE] Home &#8211; Bariatric Counseling Center -- 2026-09-18 (https://www.bariatriccounselingcenter.com/)
-- [PAGE] Ready for Help That Actually Works -- 2026-09-18 (https://www.bariatriccounselingcenter.com/start/)
-- [PAGE] Eating Disorder Therapist Near Me: How to Find the Right Fit -- 2026-09-18 (https://www.bariatriccounselingcenter.com/eating-disorder-therapist-near-me/)
-- [PAGE] A Referral Resource for Clinicians: Adult Eating Disorder and Food Addiction Care in San Antonio -- 2026-09-18 (https://www.bariatriccounselingcenter.com/eating-disorder-referrals-for-providers-in-san-antonio-tx/)
-- [PAGE] When ADHD and Eating Collide, It Is Not a Lack of Willpower -- 2026-09-18 (https://www.bariatriccounselingcenter.com/adhd-and-emotional-eating-in-san-antonio-tx/)
-- [PAGE] Telehealth Eating Disorder Treatment in Texas | BCC -- 2026-09-18 (https://www.bariatriccounselingcenter.com/telehealth-eating-disorder-treatment-in-texas/)
-- [PAGE] Eating Disorder Group Therapy in San Antonio, TX | BCC -- 2026-09-18 (https://www.bariatriccounselingcenter.com/eating-disorder-group-therapy-san-antonio-tx/)
-- [PAGE] Counseling for Anxiety and Weight in San Antonio, TX -- 2026-09-18 (https://www.bariatriccounselingcenter.com/counseling-for-anxiety-and-weight-in-san-antonio-tx/)
-- [PAGE] Therapy for Eating Disorders in San Antonio, TX -- 2026-09-18 (https://www.bariatriccounselingcenter.com/therapy-for-eating-disorders-in-san-antonio-tx/)
