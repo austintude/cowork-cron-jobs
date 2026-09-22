@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-22 19:14 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-22 15:41 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -101,12 +101,38 @@ Generated 2026-09-22 19:14 by queue_apply.py. Daniel approved these on the dashb
   - https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging13.
   - pages (1): https://www.bariatriccounselingcenter.com/contact/
 
-## Social posts to build and write to the sheet (1); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (7); the draft to Todd is a separate weekly step
 
 - id `9d817ad9c0`: **Mon 9/28: What a craving is trying to say** on 2026-09-28 (FB, IG) at FB 10:30 AM, IG 12:15 PM, carousel. Approved 2026-09-22. Why: nothing is planned on Mon 9/28 for FB, IG
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\9d817ad9c0-mon-9-28-what-a-craving-is-trying-to-say.json`
   - asset: carousel
   - sheet tab: September Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/
+- id `e956edbb9a`: **Tue 9/29: alumni clip, Carmen M. (belonging)** on 2026-09-29 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-09-22. Why: Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\e956edbb9a-tue-9-29-alumni-clip-carmen-m-belonging.json`
+  - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip-9x16_belonging_COVERED.mp4
+  - sheet tab: September Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
+- id `a7414c697a`: **Fri 10/2: Food Friday reel from Leila's clips (Steak and chicken fajitas, Pesto Salmon, Sp** on 2026-10-02 (FB, IG, YT) at FB 12:00 PM, IG 6:00 PM, YT 6:00 PM, reel. Approved 2026-09-22. Why: row 10 plans a dish still for this Friday; the reel replaces it on FB and IG and adds YouTube Shorts
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json`
+  - asset: reel https://drive.google.com/drive/folders/1tQlvgAhNUJMkpS2m_njCqlH-1TQNjNak
+  - replaces row 10 in October Content Calendar
+  - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/
+- id `0a3ef56bfd`: **Tue 10/6: alumni clip, Gerry M. (two years later)** on 2026-10-06 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-09-22. Why: held clip slot on the sheet (row 12) with no clip assigned
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\0a3ef56bfd-tue-10-6-alumni-clip-gerry-m-two-years-later.json`
+  - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip-9x16_two-years-later_COVERED.mp4
+  - replaces row 12 in October Content Calendar
+  - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
+- id `1a73a68284`: **Mon 11/2: Eating out without the spiral** on 2026-11-02 (FB, IG) at FB 10:30 AM, IG 12:15 PM, carousel. Approved 2026-09-22. Why: November is not planned yet; this keeps the FB/IG cadence going
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\1a73a68284-mon-11-2-eating-out-without-the-spiral.json`
+  - asset: carousel
+  - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/
+- id `b6f23635f3`: **Tue 11/3: Referring providers: what comes back to you** on 2026-11-03 (LI, GBP) at LI 11:00 AM, GBP 9:00 AM, document. Approved 2026-09-22. Why: November is not planned yet; this keeps the GBP/LI cadence going
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\b6f23635f3-tue-11-3-referring-providers-what-comes-back-to-you.json`
+  - asset: linkedin-document
+  - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/refer-a-patient/
+- id `45a78a0c09`: **Wed 11/4: Stress and the evening plate** on 2026-11-04 (FB, IG) at FB 10:30 AM, IG 12:15 PM, carousel. Approved 2026-09-22. Why: National Stress Awareness Day falls in this week; mentioned once, not the whole post
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\45a78a0c09-wed-11-4-stress-and-the-evening-plate.json`
+  - asset: carousel
+  - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/
 
 ## Draft day: Wednesday. Today is Tuesday, not draft day: build only, no email to Todd.
 

@@ -1,0 +1,50 @@
+{
+ "id": "b6f23635f3",
+ "title": "Tue 11/3: Referring providers: what comes back to you",
+ "why": "November is not planned yet; this keeps the GBP/LI cadence going",
+ "approved": "2026-09-22",
+ "payload": {
+  "date": "2026-11-03",
+  "weekday": "Tue",
+  "times": "LI 11:00 AM, GBP 9:00 AM",
+  "platforms": [
+   "LI",
+   "GBP"
+  ],
+  "type": "Referring Providers: Document Post",
+  "pillar": "Referring providers",
+  "format": "document",
+  "title": "Tue 11/3: Referring providers: what comes back to you",
+  "purpose": "Coordination with the referring provider and the discharge summary of behavioral progress (assessment scores: nutrition quality of life, disordered eating, anxiety, depression). LinkedIn document post, Todd's sentences verbatim.",
+  "observance": null,
+  "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+  "captions": {
+   "LI": "When you refer a patient to the Bariatric Counseling Center, you receive consistent coordination throughout their care and a detailed discharge summary at program completion.\n\nOur team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics.\n\nThe staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four.\n\nThe program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We accept most health insurances.\n\nSan Antonio and virtual across Texas.\n\n#BehavioralHealth",
+   "GBP": "Referring providers: when you refer a patient to the Bariatric Counseling Center, you receive consistent coordination throughout their care and a detailed discharge summary at program completion. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Progress notes as requested, typically within two business days. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.",
+   "YT": {
+    "title": "",
+    "description": ""
+   }
+  },
+  "on_image": [
+   "What comes back to you",
+   "Coordination throughout patient care",
+   "Detailed discharge summary",
+   "Assessment scores and behavioral progress",
+   "Call to action: bariatriccounselingcenter.com"
+  ],
+  "alt_text": "Document post explaining coordination and discharge summaries that referring providers receive from the Bariatric Counseling Center.",
+  "why_now": "Educates referring providers on the documentation and care coordination they can expect when they refer patients.",
+  "asset": {
+   "format": "document",
+   "kind": "linkedin-document",
+   "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+  },
+  "sheet_tab": "November Content Calendar",
+  "replaces_row": null,
+  "replaces_tab": null,
+  "date_platforms": "Tue 11/3: LI, GBP",
+  "postiz_mode": "schedule",
+  "needs_rewrite": []
+ }
+}
