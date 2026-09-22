@@ -12667,6 +12667,9 @@
           "outreach": [],
           "social": [],
           "social_built": [],
+          "social_undrafted": [],
+          "social_with_todd": [],
+          "draft_day": false,
           "social_go": [],
           "todd": {
             "enabled": true,
@@ -12677,7 +12680,12 @@
             "header_row": 8,
             "highlight_color": "fff2cc",
             "draft_subject": "Social posts to approve: week of {week}",
-            "_comment": "Nothing is booked until Todd approves: he ticks the Todd OK box on the sheet row, or replies to the draft. todd-check.py reads the boxes daily; the hand-off session reads his replies. Set enabled false to book straight after Daniel's approval."
+            "_comment": "Nothing is booked until BCC approves or stays silent. Built posts go to Todd ONCE A WEEK on digest_day in one Gmail draft (Daniel sends; cc is for Sara or anyone else Todd wants on it); he or anyone at reviewer_domain ticks the Todd OK box on the row or replies. Silence counts as a green light (Todd's rule, 2026-09-22): a post that was drafted with at least min_notice_days of notice and has had no tick and no notes by auto_go_days before its date moves to go on its own and is booked. A post drafted with less notice never goes on silence; Daniel presses Todd OK. Proposals are made min_lead_days out so the weekly draft never feels last minute. Set enabled false to book straight after Daniel's approval.",
+            "digest_day": "Wednesday",
+            "min_notice_days": 7,
+            "auto_go_days": 3,
+            "reviewer_domain": "bccsanantonio.com",
+            "cc": []
           },
           "written": [
             {
@@ -18881,5 +18889,5 @@
     }
   ],
   "snapshot_count": 38,
-  "generated_at": "2026-09-22T15:21:00.255579Z"
+  "generated_at": "2026-09-22T17:13:37.779144Z"
 }
