@@ -1,0 +1,622 @@
+{
+ "date": "2026-09-22",
+ "generated_at": "2026-09-22T14:56:45",
+ "counts": {
+  "gaps": 6,
+  "clip_slots": 13,
+  "reels": 1,
+  "observances": 2,
+  "future": 22,
+  "unused_clips": 14,
+  "unused_kitchen_weeks": 1
+ },
+ "items": [
+  {
+   "key": "social:2026-09-28:FB+IG",
+   "queue_id": null,
+   "kind": "post",
+   "why": "nothing is planned on Mon 9/28 for FB, IG",
+   "payload": {
+    "date": "2026-09-28",
+    "weekday": "Mon",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Mon 9/28: What a craving is trying to say",
+    "purpose": "A craving as information, not a failure. Mindful Eating and Coping Skills from the Behavioral Therapy & Counseling pillar, in plain words.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "Mock Facebook caption for the Bariatric Counseling Center. Link in the first comment.",
+     "IG": "bariatric counseling san antonio\nMock Instagram caption for the Bariatric Counseling Center.\n#BariatricCounseling #SanAntonio"
+    },
+    "on_image": [
+     "Mock line one",
+     "Mock line two"
+    ],
+    "alt_text": "Mock alt text",
+    "why_now": "mock",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "September Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Mon 9/28: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   }
+  },
+  {
+   "key": "social:2026-09-29:LI+GBP",
+   "queue_id": null,
+   "kind": "post",
+   "why": "nothing is planned on Tue 9/29 for GBP, LI",
+   "payload": {
+    "date": "2026-09-29",
+    "weekday": "Tue",
+    "times": "LI 11:00 AM, GBP 9:00 AM",
+    "platforms": [
+     "LI",
+     "GBP"
+    ],
+    "type": "Referring Providers: Document Post",
+    "pillar": "Referring providers",
+    "format": "document",
+    "title": "Tue 9/29: Referring providers: what comes back to you",
+    "purpose": "Coordination with the referring provider and the discharge summary of behavioral progress (assessment scores: nutrition quality of life, disordered eating, anxiety, depression). LinkedIn document post, Todd's sentences verbatim.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+    "captions": {
+     "LI": "Mock LinkedIn caption for the Bariatric Counseling Center.",
+     "GBP": "Mock GBP caption for the Bariatric Counseling Center."
+    },
+    "on_image": [
+     "Mock line one",
+     "Mock line two"
+    ],
+    "alt_text": "Mock alt text",
+    "why_now": "mock",
+    "asset": {
+     "format": "document",
+     "kind": "linkedin-document",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "September Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Tue 9/29: LI, GBP",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   }
+  },
+  {
+   "key": "social:2026-09-30:FB+IG",
+   "queue_id": null,
+   "kind": "post",
+   "why": "nothing is planned on Wed 9/30 for FB, IG",
+   "payload": {
+    "date": "2026-09-30",
+    "weekday": "Wed",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Alumni Words: Written Testimonial",
+    "pillar": "Proof",
+    "format": "carousel",
+    "title": "Wed 9/30: Alumni words: never made to feel judged",
+    "purpose": "Samantha F., BCC Alumna: 'The staff never made me feel judged.' Quote card plus two lines of context.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
+    "captions": {
+     "FB": "Mock Facebook caption for the Bariatric Counseling Center. Link in the first comment.",
+     "IG": "bariatric counseling san antonio\nMock Instagram caption for the Bariatric Counseling Center.\n#BariatricCounseling #SanAntonio"
+    },
+    "on_image": [
+     "Mock line one",
+     "Mock line two"
+    ],
+    "alt_text": "Mock alt text",
+    "why_now": "mock",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "September Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Wed 9/30: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   }
+  },
+  {
+   "key": "social:2026-10-02:FB+IG+YT",
+   "queue_id": null,
+   "kind": "reel",
+   "why": "no Food Friday planned and 1 unused weeks of kitchen footage sit in Drive",
+   "payload": {
+    "date": "2026-10-02",
+    "weekday": "Fri",
+    "times": "FB 12:00 PM, IG 6:00 PM, YT 6:00 PM",
+    "platforms": [
+     "FB",
+     "IG",
+     "YT"
+    ],
+    "type": "Food Friday",
+    "pillar": "Food Friday",
+    "format": "reel",
+    "title": "Fri 10/2: Food Friday reel from Leila's clips (Mock salmon, Mock salad)",
+    "purpose": "Stitch the 2 clips from Drive folder 'Mock week' (2026-09-21, about 32 seconds of footage) into one 9:16 reel: audio stripped, each dish named in a short text overlay, the BCC end card last, calm background music. Dishes: Mock salmon (20s); Mock salad (12s).",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/",
+    "captions": {
+     "FB": "Mock Facebook caption for the Bariatric Counseling Center. Link in the first comment.",
+     "IG": "bariatric counseling san antonio\nMock Instagram caption for the Bariatric Counseling Center.\n#BariatricCounseling #SanAntonio",
+     "YT": {
+      "title": "Mock title, Bariatric Counseling Center",
+      "description": "Mock description for the Bariatric Counseling Center."
+     }
+    },
+    "on_image": [
+     "Mock line one",
+     "Mock line two"
+    ],
+    "alt_text": "Mock alt text",
+    "why_now": "mock",
+    "asset": {
+     "format": "reel",
+     "kind": "reel",
+     "drive_folder": "https://drive.google.com/drive/folders/mockfolder",
+     "drive_folder_id": "mockfolder",
+     "drive_folder_name": "Mock week",
+     "clips": [
+      {
+       "name": "Mock salmon",
+       "drive_id": "m1",
+       "seconds": 20,
+       "mb": null
+      },
+      {
+       "name": "Mock salad",
+       "drive_id": "m2",
+       "seconds": 12,
+       "mb": null
+      }
+     ],
+     "endcard_9x16": "social/video/cover-scan/endcard/end-9x16.png",
+     "music": "ElevenLabs music generation (the ElevenLabs Player MCP on this PC, generate_music): calm, warm, acoustic, no vocals, about 40 seconds; mixed under the picture at low level",
+     "target_seconds": "30 to 60"
+    },
+    "sheet_tab": "October Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Fri 10/2: FB, IG, YT",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   }
+  },
+  {
+   "key": "social:2026-10-06:FB+IG+YT",
+   "queue_id": null,
+   "kind": "clip",
+   "why": "Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there",
+   "payload": {
+    "date": "2026-10-06",
+    "weekday": "Tue",
+    "times": "7:00 PM",
+    "platforms": [
+     "FB",
+     "IG",
+     "YT"
+    ],
+    "type": "Alumni Story Clip",
+    "pillar": "Alumni clip",
+    "format": "clip",
+    "title": "Tue 10/6: alumni clip, Carmen M. (belonging)",
+    "purpose": "Finished 9:16 clip testimonial-carmen-clip-nomusic-9x16_belonging_FINAL.mp4 (Carmen M., BCC Alumna). 16:9 twin for LinkedIn the next morning. Two-frame cover card and the BCC end card are already on the file; no further editing.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
+    "captions": {
+     "FB": "Mock Facebook caption for the Bariatric Counseling Center. Link in the first comment.",
+     "IG": "bariatric counseling san antonio\nMock Instagram caption for the Bariatric Counseling Center.\n#BariatricCounseling #SanAntonio",
+     "YT": {
+      "title": "Mock title, Bariatric Counseling Center",
+      "description": "Mock description for the Bariatric Counseling Center."
+     }
+    },
+    "on_image": [
+     "Mock line one",
+     "Mock line two"
+    ],
+    "alt_text": "Mock alt text",
+    "why_now": "mock",
+    "asset": {
+     "format": "clip",
+     "kind": "clip",
+     "file_9x16": "Videos/Ford/social-clips-FINAL-2026-09-15/testimonial-carmen-clip-nomusic-9x16_belonging_FINAL.mp4",
+     "file_16x9": "Videos/Ford/social-clips-FINAL-2026-09-15/testimonial-carmen-clip-nomusic-16x9_belonging_FINAL.mp4",
+     "alumnus": "Carmen M.",
+     "honorific": "BCC Alumna",
+     "topic": "belonging",
+     "ran_on_sheet_before": false
+    },
+    "sheet_tab": "October Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Tue 10/6: FB, IG, YT",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   }
+  },
+  {
+   "key": "social:2026-10-07:FB+IG",
+   "queue_id": null,
+   "kind": "post",
+   "why": "October is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-10-07",
+    "weekday": "Wed",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Did You Know?",
+    "pillar": "Program facts",
+    "format": "carousel",
+    "title": "Wed 10/7: Did You Know? The four pillars",
+    "purpose": "Behavioral Therapy & Counseling. Dietary Guidance & Support. Culinary Classes. Mindful Movement. One program, not four. Carousel, one pillar per slide.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/details/",
+    "captions": {
+     "FB": "Mock Facebook caption for the Bariatric Counseling Center. Link in the first comment.",
+     "IG": "bariatric counseling san antonio\nMock Instagram caption for the Bariatric Counseling Center.\n#BariatricCounseling #SanAntonio"
+    },
+    "on_image": [
+     "Mock line one",
+     "Mock line two"
+    ],
+    "alt_text": "Mock alt text",
+    "why_now": "mock",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "October Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Wed 10/7: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   }
+  },
+  {
+   "key": "social:2026-10-08:FB+IG+YT",
+   "queue_id": null,
+   "kind": "clip",
+   "why": "Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there",
+   "payload": {
+    "date": "2026-10-08",
+    "weekday": "Thu",
+    "times": "7:00 PM",
+    "platforms": [
+     "FB",
+     "IG",
+     "YT"
+    ],
+    "type": "Alumni Story Clip",
+    "pillar": "Alumni clip",
+    "format": "clip",
+    "title": "Thu 10/8: alumni clip, Gerry M. (two years later)",
+    "purpose": "Finished 9:16 clip testimonial-gerry-clip-nomusic-9x16_two-years-later_FINAL.mp4 (Gerry M., BCC Alumnus). 16:9 twin for LinkedIn the next morning. Two-frame cover card and the BCC end card are already on the file; no further editing.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
+    "captions": {
+     "FB": "Mock Facebook caption for the Bariatric Counseling Center. Link in the first comment.",
+     "IG": "bariatric counseling san antonio\nMock Instagram caption for the Bariatric Counseling Center.\n#BariatricCounseling #SanAntonio",
+     "YT": {
+      "title": "Mock title, Bariatric Counseling Center",
+      "description": "Mock description for the Bariatric Counseling Center."
+     }
+    },
+    "on_image": [
+     "Mock line one",
+     "Mock line two"
+    ],
+    "alt_text": "Mock alt text",
+    "why_now": "mock",
+    "asset": {
+     "format": "clip",
+     "kind": "clip",
+     "file_9x16": "Videos/Ford/social-clips-FINAL-2026-09-15/testimonial-gerry-clip-nomusic-9x16_two-years-later_FINAL.mp4",
+     "file_16x9": "Videos/Ford/social-clips-FINAL-2026-09-15/testimonial-gerry-clip-nomusic-16x9_two-years-later_FINAL.mp4",
+     "alumnus": "Gerry M.",
+     "honorific": "BCC Alumnus",
+     "topic": "two years later",
+     "ran_on_sheet_before": false
+    },
+    "sheet_tab": "October Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Thu 10/8: FB, IG, YT",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   }
+  },
+  {
+   "key": "social:2026-10-08:LI",
+   "queue_id": null,
+   "kind": "post",
+   "why": "October is not planned yet; this keeps the LI cadence going",
+   "payload": {
+    "date": "2026-10-08",
+    "weekday": "Thu",
+    "times": "9:30 AM",
+    "platforms": [
+     "LI"
+    ],
+    "type": "Professionals",
+    "pillar": "Working professionals",
+    "format": "image",
+    "title": "Thu 10/8: Lunch at the desk, again",
+    "purpose": "The workday eating pattern, without shame, and what dietary guidance in the program does with it.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/program-schedule/",
+    "captions": {
+     "LI": "Mock LinkedIn caption for the Bariatric Counseling Center."
+    },
+    "on_image": [
+     "Mock line one",
+     "Mock line two"
+    ],
+    "alt_text": "Mock alt text",
+    "why_now": "mock",
+    "asset": {
+     "format": "image",
+     "kind": "image",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "October Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Thu 10/8: LI",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   }
+  },
+  {
+   "key": "social:2026-10-12:FB+IG",
+   "queue_id": null,
+   "kind": "post",
+   "why": "October is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-10-12",
+    "weekday": "Mon",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Mon 10/12: What a grocery store tour is for",
+    "purpose": "Grocery Store Tours: what the dietitians look at with clients in the aisles and why it changes the week.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "Mock Facebook caption for the Bariatric Counseling Center. Link in the first comment.",
+     "IG": "bariatric counseling san antonio\nMock Instagram caption for the Bariatric Counseling Center.\n#BariatricCounseling #SanAntonio"
+    },
+    "on_image": [
+     "Mock line one",
+     "Mock line two"
+    ],
+    "alt_text": "Mock alt text",
+    "why_now": "mock",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "October Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Mon 10/12: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   }
+  },
+  {
+   "key": "social:2026-10-13:LI+GBP",
+   "queue_id": null,
+   "kind": "post",
+   "why": "October is not planned yet; this keeps the GBP/LI cadence going",
+   "payload": {
+    "date": "2026-10-13",
+    "weekday": "Tue",
+    "times": "LI 11:00 AM, GBP 9:00 AM",
+    "platforms": [
+     "LI",
+     "GBP"
+    ],
+    "type": "Referring Providers: Document Post",
+    "pillar": "Referring providers",
+    "format": "document",
+    "title": "Tue 10/13: Referring providers: weight loss medications and the behavioral half",
+    "purpose": "Patients on weight loss medications (never the drug class abbreviation): the habits that keep the result. Document post.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+    "captions": {
+     "LI": "Mock LinkedIn caption for the Bariatric Counseling Center.",
+     "GBP": "Mock GBP caption for the Bariatric Counseling Center."
+    },
+    "on_image": [
+     "Mock line one",
+     "Mock line two"
+    ],
+    "alt_text": "Mock alt text",
+    "why_now": "mock",
+    "asset": {
+     "format": "document",
+     "kind": "linkedin-document",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "October Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Tue 10/13: LI, GBP",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   }
+  },
+  {
+   "key": "social:2026-11-04:FB+IG",
+   "queue_id": null,
+   "kind": "post",
+   "why": "National Stress Awareness Day falls in this week; mentioned once, not the whole post",
+   "payload": {
+    "date": "2026-11-04",
+    "weekday": "Wed",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Wed 11/4: Stress and the evening plate",
+    "purpose": "Stress eating as a pattern, not a character flaw; coping skills the program teaches. Mention the day once.",
+    "observance": "National Stress Awareness Day",
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "Mock Facebook caption for the Bariatric Counseling Center. Link in the first comment.",
+     "IG": "bariatric counseling san antonio\nMock Instagram caption for the Bariatric Counseling Center.\n#BariatricCounseling #SanAntonio"
+    },
+    "on_image": [
+     "Mock line one",
+     "Mock line two"
+    ],
+    "alt_text": "Mock alt text",
+    "why_now": "mock",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Wed 11/4: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   }
+  },
+  {
+   "key": "social:2026-11-17:LI+GBP",
+   "queue_id": null,
+   "kind": "post",
+   "why": "World Diabetes Day (Nov 14, posted the following Tuesday) falls in this week; mentioned once, not the whole post",
+   "payload": {
+    "date": "2026-11-17",
+    "weekday": "Tue",
+    "times": "LI 11:00 AM, GBP 9:00 AM",
+    "platforms": [
+     "LI",
+     "GBP"
+    ],
+    "type": "Referring Providers: Document Post",
+    "pillar": "Referring providers",
+    "format": "document",
+    "title": "Tue 11/17: Referring providers: behavioral care alongside medical care",
+    "purpose": "For endocrinology and primary care: the behavioral half of obesity treatment, coordinated with the medical provider. LinkedIn document post.",
+    "observance": "World Diabetes Day (Nov 14, posted the following Tuesday)",
+    "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+    "captions": {
+     "LI": "Mock LinkedIn caption for the Bariatric Counseling Center.",
+     "GBP": "Mock GBP caption for the Bariatric Counseling Center."
+    },
+    "on_image": [
+     "Mock line one",
+     "Mock line two"
+    ],
+    "alt_text": "Mock alt text",
+    "why_now": "mock",
+    "asset": {
+     "format": "document",
+     "kind": "linkedin-document",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Tue 11/17: LI, GBP",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   }
+  }
+ ],
+ "queued": 0,
+ "clips_unused": [
+  "testimonial-carmen-clip-nomusic-9x16_belonging_FINAL.mp4",
+  "testimonial-gerry-clip-nomusic-9x16_two-years-later_FINAL.mp4",
+  "testimonial-jessica-clip-nomusic-9x16_not-alone_FINAL.mp4",
+  "testimonial-kim-clip-nomusic-9x16_control-over-my-life_FINAL.mp4",
+  "testimonial-samantha-clip-nomusic-9x16_passed-down-to-daughter_FINAL.mp4",
+  "testimonial-valentin-clip-nomusic-9x16_boundaries_FINAL.mp4",
+  "testimonial-carmen-clip2-nomusic-9x16_reluctant-at-first_FINAL.mp4",
+  "testimonial-gerry-clip2-nomusic-9x16_binge-eating-awareness_FINAL.mp4",
+  "testimonial-jessica-clip2-nomusic-9x16_struggled-my-whole-life_FINAL.mp4",
+  "testimonial-kim-clip2-nomusic-9x16_worth-the-effort_FINAL.mp4",
+  "testimonial-samantha-clip2-nomusic-9x16_mindful-communication_FINAL.mp4",
+  "testimonial-valentin-clip2-nomusic-9x16_mindful-eating-checkin_FINAL.mp4",
+  "testimonial-carmen-clip3-nomusic-9x16_sacred-confidentiality_FINAL.mp4",
+  "testimonial-gerry-clip3-nomusic-9x16_emotional-graduation_FINAL.mp4"
+ ],
+ "kitchen_weeks_unused": [
+  "Mock week"
+ ],
+ "calendar_summary": {
+  "rows": 10,
+  "week_ahead": 8,
+  "unscheduled_week": 11,
+  "unscheduled_total": 13,
+  "missing_image": [
+   9,
+   12,
+   15,
+   18
+  ],
+  "weekday_gaps_14": [
+   "2026-10-02",
+   "2026-10-05"
+  ],
+  "postiz_ok": true,
+  "postiz_reason": null,
+  "postiz_posts": 1,
+  "postiz_unplanned": 0,
+  "postiz_channels": [
+   {
+    "name": "BCC",
+    "provider": "facebook"
+   }
+  ]
+ },
+ "cost_usd": 0.0,
+ "claude_calls": 0,
+ "budget_skipped": 0
+}

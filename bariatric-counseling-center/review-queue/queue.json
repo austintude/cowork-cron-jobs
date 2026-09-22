@@ -205,13 +205,22 @@
     "their_page": "https://www.texasdigestive.com/useful-links/",
     "our_page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
     "draft_stage": "written",
-    "form_url": "https://www.texasdigestive.com/contact-gastroenterologist-mcallen-brownsville-harlingen-texas/"
+    "form_url": "https://www.texasdigestive.com/contact-gastroenterologist-mcallen-brownsville-harlingen-texas/",
+    "review_notes": [
+     {
+      "date": "2026-09-22 10:00",
+      "note": "this is just a test note to check that the texasdigestive link isn't pushed until I have verified that this 'notes' step works",
+      "about_subject": "A link for your Useful Links page",
+      "replaces_earlier": false,
+      "withdrawn": "2026-09-22 10:12"
+     }
+    ]
    },
    "source": "link-plays",
    "status": "written",
    "created": "2026-09-18T19:05:15",
-   "decided": "2026-09-19T06:42:36",
-   "note": "held 2026-09-22: Gmail draft to Todd deleted; Todd has not agreed the program yet. Read it here once he has. Known issues in this text: promises a referral partners page that does not exist; offers a co-branded handout Todd has not approved.",
+   "decided": "2026-09-22T10:12:51",
+   "note": "back in review 2026-09-22 (send-back withdrawn by Daniel); waiting for Daniel to read it",
    "result": null
   },
   {
@@ -513,6 +522,759 @@
    "result": {
     "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\f72187a483-demand-asset-texas-food-addiction-search-trends-2026-q3.md"
    }
+  },
+  {
+   "id": "9d817ad9c0",
+   "kind": "social",
+   "key": "social:2026-09-28:FB+IG",
+   "title": "Mon 9/28: What a craving is trying to say",
+   "why": "nothing is planned on Mon 9/28 for FB, IG",
+   "payload": {
+    "date": "2026-09-28",
+    "weekday": "Mon",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Mon 9/28: What a craving is trying to say",
+    "purpose": "A craving as information, not a failure. Mindful Eating and Coping Skills from the Behavioral Therapy & Counseling pillar, in plain words.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "A craving isn't a failure. It's information.\n\nWhen you feel a strong urge to eat, your body or mind is trying to tell you something. Maybe you're truly hungry. Maybe you're stressed, tired, or lonely. Maybe a certain food is tied to a memory or a feeling of comfort.\n\nAt the Bariatric Counseling Center, we teach clients to pause and ask: What is this craving really about?\n\nThat question is at the heart of Mindful Eating and Coping Skills, part of our Behavioral Therapy & Counseling pillar. We help people understand and modify their relationship with food, not through rules or restriction, but through awareness and compassion.\n\nOur program includes group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four.\n\nServing clients in San Antonio and virtual across Texas.\n\nLink in the first comment.",
+     "IG": "What is this craving really about?\n\nA craving isn't a failure. It's information. Your body or mind is trying to tell you something. Maybe you're truly hungry. Maybe you're stressed, tired, or lonely. Maybe a certain food is tied to a memory or a feeling of comfort.\n\nAt the Bariatric Counseling Center, we teach clients to pause and ask that question. That awareness is at the heart of Mindful Eating and Coping Skills, part of our Behavioral Therapy & Counseling pillar.\n\nWe help people understand and modify their relationship with food through compassion, not restriction. Group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four.\n\nSan Antonio and virtual across Texas.\n\n#BariatricCounseling #MindfulRecovery #SanAntonio",
+     "YT": {
+      "title": "What a Craving Is Trying to Tell You | Mindful Eating",
+      "description": "A craving isn't a failure. It's information. At the Bariatric Counseling Center in San Antonio, we teach clients to pause and ask: What is this craving really about? This awareness is at the heart of Mindful Eating and Coping Skills, part of our Behavioral Therapy & Counseling pillar. We help people understand and modify their relationship with food through compassion, not restriction. Serving clients in San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "A craving isn't a failure.",
+     "It's information.",
+     "What is this really about?",
+     "Mindful Eating and Coping Skills",
+     "One program, not four.",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Carousel post about understanding cravings as information rather than failure, explaining Mindful Eating and Coping Skills at the Bariatric Counseling Center.",
+    "why_now": "Monday education post on reframing cravings, introducing clients to the compassionate approach used in the Behavioral Therapy & Counseling pillar.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "September Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Mon 9/28: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-22T09:57:17",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "e956edbb9a",
+   "kind": "social",
+   "key": "social:2026-09-29:FB+IG+YT",
+   "title": "Tue 9/29: alumni clip, Carmen M. (belonging)",
+   "why": "Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there",
+   "payload": {
+    "date": "2026-09-29",
+    "weekday": "Tue",
+    "times": "7:00 PM",
+    "platforms": [
+     "FB",
+     "IG",
+     "YT"
+    ],
+    "type": "Alumni Story Clip",
+    "pillar": "Alumni clip",
+    "format": "clip",
+    "title": "Tue 9/29: alumni clip, Carmen M. (belonging)",
+    "purpose": "Finished 9:16 clip testimonial-carmen-clip-nomusic-9x16_belonging_FINAL.mp4 (Carmen M., BCC Alumna). 16:9 twin for LinkedIn the next morning. Two-frame cover card and the BCC end card are already on the file; no further editing.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
+    "captions": {
+     "FB": "Finding a place where you truly belong can change everything. Carmen M., BCC Alumna, shares what it meant to find community and support during her time in our program. The Bariatric Counseling Center provides group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas. Watch Carmen in her own words. Link in the first comment.",
+     "IG": "Finding community and support in weight loss treatment\n\nFinding a place where you truly belong can change everything. Carmen M., BCC Alumna, shares what it meant to find community and support during her time at the Bariatric Counseling Center. We provide group and individual therapy, dietary guidance, cooking classes and movement education. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+     "YT": {
+      "title": "Carmen M. on Finding Community at Bariatric Counseling Center",
+      "description": "Carmen M., BCC Alumna, shares her experience finding community and belonging during treatment at the Bariatric Counseling Center. Our program provides group and individual therapy, dietary guidance, cooking classes and movement education in a unique, all-inclusive format. We serve clients in San Antonio and virtual across Texas. Learn more at bariatriccounselingcenter.com/testimonials"
+     }
+    },
+    "on_image": [
+     "Carmen M., BCC Alumna",
+     "Finding community and support",
+     "Group and individual therapy",
+     "San Antonio and virtual",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Video testimonial of Carmen M., BCC Alumna, discussing her experience with community and belonging at the Bariatric Counseling Center.",
+    "why_now": "Alumni testimonial clips build trust and demonstrate the program's supportive community environment during a routine posting week.",
+    "asset": {
+     "format": "clip",
+     "kind": "clip",
+     "file_9x16": "Videos/Ford/social-clips-FINAL-2026-09-15/testimonial-carmen-clip-nomusic-9x16_belonging_FINAL.mp4",
+     "file_16x9": "Videos/Ford/social-clips-FINAL-2026-09-15/testimonial-carmen-clip-nomusic-16x9_belonging_FINAL.mp4",
+     "alumnus": "Carmen M.",
+     "honorific": "BCC Alumna",
+     "topic": "belonging",
+     "ran_on_sheet_before": false
+    },
+    "sheet_tab": "September Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Tue 9/29: FB, IG, YT",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-22T09:57:25",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "a7414c697a",
+   "kind": "social",
+   "key": "social:2026-10-02:FB+IG+YT",
+   "title": "Fri 10/2: Food Friday reel from Leila's clips (Steak and chicken fajitas, Pesto Salmon, Sp",
+   "why": "row 10 plans a dish still for this Friday; the reel replaces it on FB and IG and adds YouTube Shorts",
+   "payload": {
+    "date": "2026-10-02",
+    "weekday": "Fri",
+    "times": "FB 12:00 PM, IG 6:00 PM, YT 6:00 PM",
+    "platforms": [
+     "FB",
+     "IG",
+     "YT"
+    ],
+    "type": "Food Friday",
+    "pillar": "Food Friday",
+    "format": "reel",
+    "title": "Fri 10/2: Food Friday reel from Leila's clips (Steak and chicken fajitas, Pesto Salmon, Spinach Artichoke Stuffed Chi)",
+    "purpose": "Stitch the 3 clips from Drive folder 'September 14-18' (2026-09-21, about 48 seconds of footage) into one 9:16 reel: audio stripped, each dish named in a short text overlay, the BCC end card last, calm background music. Dishes: Steak and chicken fajitas (17s); Pesto Salmon (23s); Spinach Artichoke Stuffed Chicken Breast (8s).",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/",
+    "captions": {
+     "FB": "Our professional chef teaches clients to prepare real, flavorful meals that support their goals. These are a few of the dishes from this week's culinary classes at the Bariatric Counseling Center. San Antonio and virtual across Texas. Link in the first comment.",
+     "IG": "Chef-prepared meals in culinary classes\n\nOur professional chef teaches clients to prepare real, flavorful meals that support their goals. These are a few of the dishes from this week's culinary classes. The Bariatric Counseling Center offers group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas.\n\n#BariatricCounseling #SanAntonio #MindfulRecovery",
+     "YT": {
+      "title": "Chef-Prepared Meals: Culinary Classes at Bariatric Counseling Center",
+      "description": "Our professional chef teaches clients to prepare real, flavorful meals that support their goals. These are a few of the dishes from this week's culinary classes at the Bariatric Counseling Center. We offer group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Steak and Chicken Fajitas",
+     "Pesto Salmon",
+     "Spinach Artichoke Stuffed Chicken",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Three chef-prepared dishes from culinary classes: fajitas, pesto salmon, and stuffed chicken breast.",
+    "why_now": "Food Friday reel showcasing this week's culinary class dishes with available footage from Chef Leila.",
+    "asset": {
+     "format": "reel",
+     "kind": "reel",
+     "drive_folder": "https://drive.google.com/drive/folders/1tQlvgAhNUJMkpS2m_njCqlH-1TQNjNak",
+     "drive_folder_id": "1tQlvgAhNUJMkpS2m_njCqlH-1TQNjNak",
+     "drive_folder_name": "September 14-18",
+     "clips": [
+      {
+       "name": "Steak and chicken fajitas",
+       "drive_id": "1iLeYoDrr5z8MVndyB50gfh-KqsWQbbgp",
+       "seconds": 17,
+       "mb": 28.8
+      },
+      {
+       "name": "Pesto Salmon",
+       "drive_id": "1VYOHEM3jpf0T5UBp-TSlI4qlP3Pgm88L",
+       "seconds": 23,
+       "mb": 38.9
+      },
+      {
+       "name": "Spinach Artichoke Stuffed Chicken Breast",
+       "drive_id": "18NBZBjC5mcWySr0e98z8HfD7ayUyMeLe",
+       "seconds": 8,
+       "mb": 13.9
+      }
+     ],
+     "endcard_9x16": "social/video/cover-scan/endcard/end-9x16.png",
+     "music": "ElevenLabs music generation (the ElevenLabs Player MCP on this PC, generate_music): calm, warm, acoustic, no vocals, about 40 seconds; mixed under the picture at low level",
+     "target_seconds": "30 to 60"
+    },
+    "sheet_tab": "October Content Calendar",
+    "replaces_row": 10,
+    "replaces_tab": "October Content Calendar",
+    "date_platforms": "Fri 10/2: FB, IG, YT",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-22T09:57:33",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "0a3ef56bfd",
+   "kind": "social",
+   "key": "social:2026-10-06:FB+IG+YT",
+   "title": "Tue 10/6: alumni clip, Gerry M. (two years later)",
+   "why": "held clip slot on the sheet (row 12) with no clip assigned",
+   "payload": {
+    "date": "2026-10-06",
+    "weekday": "Tue",
+    "times": "7:00 PM",
+    "platforms": [
+     "FB",
+     "IG",
+     "YT"
+    ],
+    "type": "Alumni Story Clip",
+    "pillar": "Alumni clip",
+    "format": "clip",
+    "title": "Tue 10/6: alumni clip, Gerry M. (two years later)",
+    "purpose": "Finished 9:16 clip testimonial-gerry-clip-nomusic-9x16_two-years-later_FINAL.mp4 (Gerry M., BCC Alumnus). 16:9 twin for LinkedIn the next morning. Two-frame cover card and the BCC end card are already on the file; no further editing.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
+    "captions": {
+     "FB": "Two years later. Gerry M., BCC Alumnus, reflects on lasting change in this short clip. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas. Link in the first comment.",
+     "IG": "Two years later\n\nGerry M., BCC Alumnus, reflects on lasting change in this short clip. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #SanAntonio",
+     "YT": {
+      "title": "Two Years Later: Gerry M. | Bariatric Counseling Center",
+      "description": "Gerry M., BCC Alumnus, reflects on lasting change two years after completing the program. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Two years later",
+     "Watch Gerry in his own words",
+     "Comprehensive behavioral healthcare",
+     "San Antonio and virtual across Texas",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Video testimonial from Gerry M., BCC Alumnus, reflecting on lasting change two years after completing the program.",
+    "why_now": "Alumni testimonials demonstrate sustained outcomes and reinforce program credibility during October enrollment period.",
+    "asset": {
+     "format": "clip",
+     "kind": "clip",
+     "file_9x16": "Videos/Ford/social-clips-FINAL-2026-09-15/testimonial-gerry-clip-nomusic-9x16_two-years-later_FINAL.mp4",
+     "file_16x9": "Videos/Ford/social-clips-FINAL-2026-09-15/testimonial-gerry-clip-nomusic-16x9_two-years-later_FINAL.mp4",
+     "alumnus": "Gerry M.",
+     "honorific": "BCC Alumnus",
+     "topic": "two years later",
+     "ran_on_sheet_before": false
+    },
+    "sheet_tab": "October Content Calendar",
+    "replaces_row": 12,
+    "replaces_tab": "October Content Calendar",
+    "date_platforms": "Tue 10/6: FB, IG, YT",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-22T09:57:39",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "1a73a68284",
+   "kind": "social",
+   "key": "social:2026-11-02:FB+IG",
+   "title": "Mon 11/2: Eating out without the spiral",
+   "why": "November is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-11-02",
+    "weekday": "Mon",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Mon 11/2: Eating out without the spiral",
+    "purpose": "Navigating Dining Out from the Dietary Guidance & Support pillar: how the program teaches it, one practical idea, no rules or numbers.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "Going out to eat doesn't have to feel stressful or lead to a spiral. At the Bariatric Counseling Center, Navigating Dining Out is part of our Dietary Guidance & Support pillar. Our registered dietitians work with clients to build skills that make restaurants feel normal again, not triggering. One simple approach: before you go, decide what kind of experience you want. Not what you'll order, but how you want to feel when you leave. Satisfied? Connected to the people you're with? That intention becomes your guide, not a set of food rules. We provide group and individual therapy, dietary guidance, cooking classes and movement education in one program. San Antonio and virtual across Texas. Link in the first comment.",
+     "IG": "Eating out without the spiral\n\nGoing out to eat doesn't have to feel stressful or lead to a spiral. At the Bariatric Counseling Center, Navigating Dining Out is part of our Dietary Guidance & Support pillar. Our registered dietitians work with clients to build skills that make restaurants feel normal again, not triggering. One simple approach: before you go, decide what kind of experience you want. Not what you'll order, but how you want to feel when you leave. Satisfied? Connected to the people you're with? That intention becomes your guide, not a set of food rules. We provide group and individual therapy, dietary guidance, cooking classes and movement education. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #SanAntonio",
+     "YT": {
+      "title": "How to Navigate Eating Out Without Stress | Bariatric Counseling",
+      "description": "Going out to eat doesn't have to lead to a spiral. At the Bariatric Counseling Center, Navigating Dining Out is part of our Dietary Guidance & Support pillar. Our registered dietitians help clients build skills that make restaurants feel normal again. One simple approach: before you go, decide what kind of experience you want, not what you'll order. That intention becomes your guide, not a set of food rules. Bariatric Counseling Center offers group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Restaurants don't have to feel triggering",
+     "Decide how you want to feel",
+     "Not what you'll order",
+     "Your intention becomes your guide",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Carousel post explaining how the Bariatric Counseling Center teaches clients to navigate dining out without stress or rigid food rules.",
+    "why_now": "Early November is a good time to address restaurant navigation before the holiday season increases dining out frequency.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Mon 11/2: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-22T09:57:51",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "b6f23635f3",
+   "kind": "social",
+   "key": "social:2026-11-03:LI+GBP",
+   "title": "Tue 11/3: Referring providers: what comes back to you",
+   "why": "November is not planned yet; this keeps the GBP/LI cadence going",
+   "payload": {
+    "date": "2026-11-03",
+    "weekday": "Tue",
+    "times": "LI 11:00 AM, GBP 9:00 AM",
+    "platforms": [
+     "LI",
+     "GBP"
+    ],
+    "type": "Referring Providers: Document Post",
+    "pillar": "Referring providers",
+    "format": "document",
+    "title": "Tue 11/3: Referring providers: what comes back to you",
+    "purpose": "Coordination with the referring provider and the discharge summary of behavioral progress (assessment scores: nutrition quality of life, disordered eating, anxiety, depression). LinkedIn document post, Todd's sentences verbatim.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+    "captions": {
+     "LI": "When you refer a patient to the Bariatric Counseling Center, you receive consistent coordination throughout their care and a detailed discharge summary at program completion.\n\nOur team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics.\n\nThe staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four.\n\nThe program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We accept most health insurances.\n\nSan Antonio and virtual across Texas.\n\n#BehavioralHealth",
+     "GBP": "Referring providers: when you refer a patient to the Bariatric Counseling Center, you receive consistent coordination throughout their care and a detailed discharge summary at program completion. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Progress notes as requested, typically within two business days. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.",
+     "YT": {
+      "title": "",
+      "description": ""
+     }
+    },
+    "on_image": [
+     "What comes back to you",
+     "Coordination throughout patient care",
+     "Detailed discharge summary",
+     "Assessment scores and behavioral progress",
+     "Call to action: bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Document post explaining coordination and discharge summaries that referring providers receive from the Bariatric Counseling Center.",
+    "why_now": "Educates referring providers on the documentation and care coordination they can expect when they refer patients.",
+    "asset": {
+     "format": "document",
+     "kind": "linkedin-document",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Tue 11/3: LI, GBP",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-22T09:57:59",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "45a78a0c09",
+   "kind": "social",
+   "key": "social:2026-11-04:FB+IG",
+   "title": "Wed 11/4: Stress and the evening plate",
+   "why": "National Stress Awareness Day falls in this week; mentioned once, not the whole post",
+   "payload": {
+    "date": "2026-11-04",
+    "weekday": "Wed",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Wed 11/4: Stress and the evening plate",
+    "purpose": "Stress eating as a pattern, not a character flaw; coping skills the program teaches. Mention the day once.",
+    "observance": "National Stress Awareness Day",
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "A long day doesn't make stress eating inevitable. When evening becomes the only quiet moment, reaching for food makes sense, but there are other ways to find that same comfort.\n\nAt the Bariatric Counseling Center, we teach coping skills that work when the day has worn you down. Our clients learn to recognize patterns, not judge them. They build a toolkit of responses that don't involve the kitchen.\n\nBehavioral therapy. Dietary guidance. Culinary classes. Mindful movement. One program, not four.\n\nServing clients in San Antonio and virtual across Texas.\n\nLink in the first comment.",
+     "IG": "Stress eating at night\n\nA long day doesn't make stress eating inevitable. When evening becomes the only quiet moment, reaching for food makes sense, but there are other ways to find that same comfort.\n\nToday is National Stress Awareness Day, and stress patterns are exactly what we address. At the Bariatric Counseling Center, we teach coping skills that work when the day has worn you down. Our clients learn to recognize patterns, not judge them. They build a toolkit of responses that don't involve the kitchen.\n\nBehavioral therapy. Dietary guidance. Culinary classes. Mindful movement. One program, not four.\n\nServing clients in San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #MindfulRecovery",
+     "YT": {
+      "title": "Stress Eating Patterns: Coping Skills That Work",
+      "description": "A long day doesn't make stress eating inevitable. When evening becomes the only quiet moment, reaching for food makes sense, but there are other ways to find that same comfort. The Bariatric Counseling Center teaches coping skills that work when the day has worn you down. Clients learn to recognize patterns, not judge them, and build a toolkit of responses. Behavioral therapy, dietary guidance, culinary classes and mindful movement in one program. Serving clients in San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Stress eating is a pattern",
+     "Not a character flaw",
+     "We teach coping skills that work",
+     "When the day wears you down",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Carousel post about recognizing stress eating patterns and learning alternative coping skills through behavioral therapy.",
+    "why_now": "National Stress Awareness Day ties to evening stress eating patterns that clients work on in the program.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Wed 11/4: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-22T09:58:10",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "4a2d70a708",
+   "kind": "social",
+   "key": "social:2026-11-05:LI",
+   "title": "Thu 11/5: The evening track fits a workday",
+   "why": "November is not planned yet; this keeps the LI cadence going",
+   "payload": {
+    "date": "2026-11-05",
+    "weekday": "Thu",
+    "times": "9:30 AM",
+    "platforms": [
+     "LI"
+    ],
+    "type": "Professionals",
+    "pillar": "Working professionals",
+    "format": "image",
+    "title": "Thu 11/5: The evening track fits a workday",
+    "purpose": "Evening 5:30 to 8:30, Monday to Thursday, Zoom or onsite. For people who cannot take the middle of the day.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/program-schedule/",
+    "captions": {
+     "LI": "Evening sessions at the Bariatric Counseling Center run Monday through Thursday, 5:30 to 8:30 p.m., both onsite and virtually. This track is designed for people who work during the day and need care that fits around their schedule. The program provides group and individual therapy, dietary guidance, cooking classes and movement education in one integrated format. It is led by a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four. Patients typically attend for little to no cost. San Antonio and virtual across Texas. Learn more at bariatriccounselingcenter.com.\n\n#BehavioralHealth",
+     "YT": {
+      "title": "Evening Sessions for Working Professionals | Bariatric Counseling",
+      "description": "The Bariatric Counseling Center offers evening sessions Monday through Thursday, 5:30 to 8:30 p.m., both onsite in San Antonio and virtually across Texas. This track is designed for working professionals who need behavioral healthcare that fits their schedule. The program provides group and individual therapy, dietary guidance, cooking classes and movement education, led by licensed professional counselors, registered dietitians, movement therapists, and a professional chef. Learn more at bariatriccounselingcenter.com."
+     }
+    },
+    "on_image": [
+     "Evening track: 5:30 to 8:30 p.m.",
+     "Monday through Thursday",
+     "Zoom or onsite",
+     "Designed for working professionals",
+     "Covered by most insurances",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Evening programming schedule for the Bariatric Counseling Center's intensive outpatient program in San Antonio, Texas.",
+    "why_now": "Thursday evening post targets working professionals researching programs after business hours.",
+    "asset": {
+     "format": "image",
+     "kind": "image",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Thu 11/5: LI",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-22T09:58:18",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "55ec40f611",
+   "kind": "social",
+   "key": "social:2026-11-06:FB+IG+YT",
+   "title": "Fri 11/6: Food Friday reel from Leila's clips (Salmon with sesame orange glaze, Eggroll in",
+   "why": "no Food Friday planned and 3 unused weeks of kitchen footage sit in Drive",
+   "payload": {
+    "date": "2026-11-06",
+    "weekday": "Fri",
+    "times": "FB 12:00 PM, IG 6:00 PM, YT 6:00 PM",
+    "platforms": [
+     "FB",
+     "IG",
+     "YT"
+    ],
+    "type": "Food Friday",
+    "pillar": "Food Friday",
+    "format": "reel",
+    "title": "Fri 11/6: Food Friday reel from Leila's clips (Salmon with sesame orange glaze, Eggroll in a bowl, Arugula and Goat c)",
+    "purpose": "Stitch the 4 clips from Drive folder 'September 7-11' (2026-09-14, about 71 seconds of footage) into one 9:16 reel: audio stripped, each dish named in a short text overlay, the BCC end card last, calm background music. Dishes: Salmon with sesame orange glaze (27s); Salmon with sesame orange glaze (22s); Eggroll in a bowl (6s); Arugula and Goat cheese salad with grilled chicken breast (16s).",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/",
+    "captions": {
+     "FB": "Learning to cook differently is one of the four pillars at the Bariatric Counseling Center. Our head chef, Leila Bebley, teaches culinary classes in our state-of-the-art teaching kitchen, where clients practice recipe education and instruction alongside behavioral therapy, dietary guidance and mindful movement. One program, not four. Serving clients both onsite in San Antonio and virtual across Texas. Link in the first comment.",
+     "IG": "Learning to cook differently\n\nAt the Bariatric Counseling Center, culinary classes are one of the four pillars of our innovative program designed to help people who struggle with weight loss, obesity, binge eating and chronic overeating. Our head chef, Leila Bebley, teaches recipe education and instruction in our state-of-the-art teaching kitchen. We provide group and individual therapy, dietary guidance, cooking classes and mindful eating education in a unique, all-inclusive format. One program, not four. San Antonio and virtual across Texas.\n\n#BariatricCounseling #SanAntonio #MindfulRecovery",
+     "YT": {
+      "title": "Culinary Classes at Bariatric Counseling Center",
+      "description": "Our head chef, Leila Bebley, teaches culinary classes as one of the four pillars at the Bariatric Counseling Center. We provide behavioral therapy, dietary guidance, cooking classes and mindful movement in a unique, all-inclusive format for people who struggle with weight loss, obesity, binge eating and chronic overeating. One program, not four. Serving clients in San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Sesame orange glazed salmon",
+     "Eggroll in a bowl",
+     "Arugula and goat cheese salad",
+     "Learning to cook differently",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Chef Leila Bebley prepares salmon with sesame orange glaze, eggroll in a bowl, and arugula and goat cheese salad with grilled chicken in the Bariatric Counseling Center teaching kitchen.",
+    "why_now": "Food Friday showcases the culinary classes pillar with footage from the teaching kitchen that highlights practical meal preparation skills clients learn in the program.",
+    "asset": {
+     "format": "reel",
+     "kind": "reel",
+     "drive_folder": "https://drive.google.com/drive/folders/1Oxs1OVu05rvOABXKa392DZ6wSSeEZPA3",
+     "drive_folder_id": "1Oxs1OVu05rvOABXKa392DZ6wSSeEZPA3",
+     "drive_folder_name": "September 7-11",
+     "clips": [
+      {
+       "name": "Salmon with sesame orange glaze",
+       "drive_id": "1_qt-QpByrsvPAHYiXefGO0_kW1ICHt1q",
+       "seconds": 27,
+       "mb": 44.5
+      },
+      {
+       "name": "Salmon with sesame orange glaze",
+       "drive_id": "11rC1YSjmJkT8CtgW5wRsXMEsUiz4D0XS",
+       "seconds": 22,
+       "mb": 38.1
+      },
+      {
+       "name": "Eggroll in a bowl",
+       "drive_id": "19rkwB_hgiWiabhoFADoH40AROarTlzgF",
+       "seconds": 6,
+       "mb": 9.9
+      },
+      {
+       "name": "Arugula and Goat cheese salad with grilled chicken breast",
+       "drive_id": "1N49NgU322RvIDHIK2k9QAZsgodEmbsKj",
+       "seconds": 16,
+       "mb": 26.5
+      }
+     ],
+     "endcard_9x16": "social/video/cover-scan/endcard/end-9x16.png",
+     "music": "ElevenLabs music generation (the ElevenLabs Player MCP on this PC, generate_music): calm, warm, acoustic, no vocals, about 40 seconds; mixed under the picture at low level",
+     "target_seconds": "30 to 60"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Fri 11/6: FB, IG, YT",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-22T09:58:27",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "67ff8aa4bd",
+   "kind": "social",
+   "key": "social:2026-11-09:FB+IG",
+   "title": "Mon 11/9: What a grocery store tour is for",
+   "why": "November is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-11-09",
+    "weekday": "Mon",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Mon 11/9: What a grocery store tour is for",
+    "purpose": "Grocery Store Tours: what the dietitians look at with clients in the aisles and why it changes the week.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "Grocery Store Tours at the Bariatric Counseling Center aren't just about finding healthier foods. Our registered dietitians walk the aisles with clients, practicing real-world skills that make the rest of the week easier. You learn how to read labels, compare options, and plan meals without feeling overwhelmed. It's one session that changes how you approach every shopping trip after. We provide group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas. One program, not four. Link in the first comment.",
+     "IG": "Grocery store tours with registered dietitians\n\nAt the Bariatric Counseling Center, Grocery Store Tours are hands-on sessions where our registered dietitians walk the aisles with clients. You practice reading labels, comparing options, and planning meals in the moment. It's not about memorizing rules. It's about building confidence for every trip after that one. Our program includes group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport #MindfulRecovery #SanAntonio",
+     "YT": {
+      "title": "What Happens During a Grocery Store Tour at BCC",
+      "description": "Grocery Store Tours at the Bariatric Counseling Center are hands-on sessions where registered dietitians walk the aisles with clients. You practice reading labels, comparing options, and planning meals in real time. One session changes how you approach every shopping trip after. We provide group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas. One program, not four."
+     }
+    },
+    "on_image": [
+     "Grocery Store Tours",
+     "Real aisles with registered dietitians",
+     "Labels, choices, meal planning",
+     "One session that changes the week",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Carousel post explaining how grocery store tours with registered dietitians help clients practice meal planning and label reading in real time.",
+    "why_now": "Monday education post introducing a specific pillar service in plain language that demystifies what happens during the tour.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Mon 11/9: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-22T09:58:38",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "566382672f",
+   "kind": "social",
+   "key": "social:2026-11-10:LI+GBP",
+   "title": "Tue 11/10: Referring providers: who is the right referral",
+   "why": "November is not planned yet; this keeps the GBP/LI cadence going",
+   "payload": {
+    "date": "2026-11-10",
+    "weekday": "Tue",
+    "times": "LI 11:00 AM, GBP 9:00 AM",
+    "platforms": [
+     "LI",
+     "GBP"
+    ],
+    "type": "Referring Providers: Document Post",
+    "pillar": "Referring providers",
+    "format": "document",
+    "title": "Tue 11/10: Referring providers: who is the right referral",
+    "purpose": "Standalone behavioral treatment for obesity, or alongside bariatric surgery or weight loss medication. Pre and post bariatric patients in one bullet.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+    "captions": {
+     "LI": "The Bariatric Counseling Center serves patients seeking standalone behavioral treatment for obesity, as well as those receiving bariatric surgery or weight loss medications from their medical providers.\n\nOur intensive outpatient program supports pre-surgical and post-surgical bariatric patients. We coordinate care with referring providers and deliver detailed discharge summaries of behavioral progress, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression.\n\nThe staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four.\n\nWe accept most health insurances. Claims are processed under patients' mental health benefits. Patients typically attend for little to no cost.\n\nServing patients in San Antonio and virtual across Texas.\n\n#BehavioralHealth",
+     "GBP": "The Bariatric Counseling Center provides intensive outpatient treatment for patients seeking standalone behavioral healthcare for obesity, or as a complement to bariatric surgery or weight loss medications they receive from their medical providers. Our program supports pre-surgical and post-surgical bariatric patients with comprehensive behavioral treatment.\n\nWe coordinate care with referring providers throughout treatment. At discharge, we deliver detailed summaries of patient behavioral progress, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression. Progress notes as requested, typically within two business days.\n\nThe staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four. Serving patients in San Antonio and virtual across Texas.",
+     "YT": {
+      "title": "Who Should Be Referred to Bariatric Counseling Center",
+      "description": "The Bariatric Counseling Center in San Antonio provides intensive outpatient behavioral treatment for obesity. Our program serves patients seeking standalone behavioral healthcare, as well as those receiving bariatric surgery or weight loss medications from their medical providers. We support pre-surgical and post-surgical bariatric patients. Our staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. We coordinate care with referring providers and deliver detailed discharge summaries. Serving patients in San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Comprehensive behavioral treatment for obesity",
+     "Standalone or alongside surgery",
+     "Pre and post bariatric patients",
+     "Coordinated care with providers",
+     "Visit bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Text slide describing referral criteria for the Bariatric Counseling Center's intensive outpatient program for obesity treatment.",
+    "why_now": "November is a key time for providers to establish referral pathways before year-end and new patient planning cycles.",
+    "asset": {
+     "format": "document",
+     "kind": "linkedin-document",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Tue 11/10: LI, GBP",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-22T09:58:50",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "7a78357dd4",
+   "kind": "social",
+   "key": "social:2026-11-17:LI+GBP",
+   "title": "Tue 11/17: Referring providers: behavioral care alongside medical care",
+   "why": "World Diabetes Day (Nov 14, posted the following Tuesday) falls in this week; mentioned once, not the whole post",
+   "payload": {
+    "date": "2026-11-17",
+    "weekday": "Tue",
+    "times": "LI 11:00 AM, GBP 9:00 AM",
+    "platforms": [
+     "LI",
+     "GBP"
+    ],
+    "type": "Referring Providers: Document Post",
+    "pillar": "Referring providers",
+    "format": "document",
+    "title": "Tue 11/17: Referring providers: behavioral care alongside medical care",
+    "purpose": "For endocrinology and primary care: the behavioral half of obesity treatment, coordinated with the medical provider. LinkedIn document post.",
+    "observance": "World Diabetes Day (Nov 14, posted the following Tuesday)",
+    "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+    "captions": {
+     "LI": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Progress notes as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth",
+     "GBP": "Behavioral treatment for obesity San Antonio. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. Our team includes a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, a registered nurse, and a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We coordinate care with referring medical providers and provide a detailed discharge summary of the patient's behavioral progress, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression. We accept most health insurances. San Antonio and virtual across Texas.",
+     "YT": {
+      "title": "Behavioral Treatment for Obesity | Provider Referrals",
+      "description": "The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. Our team coordinates care with referring medical providers and provides detailed discharge summaries of patient progress. The program can be standalone behavioral treatment or in addition to bariatric surgery or weight loss medication. San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Behavioral treatment for obesity",
+     "Coordinated with your medical provider",
+     "One program, not four",
+     "San Antonio and virtual across Texas",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Document outlining behavioral healthcare services for obesity treatment at Bariatric Counseling Center for referring medical providers.",
+    "why_now": "Posted the Tuesday following World Diabetes Day to reach providers considering comprehensive obesity care for their patients.",
+    "asset": {
+     "format": "document",
+     "kind": "linkedin-document",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Tue 11/17: LI, GBP",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-22T09:58:59",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
