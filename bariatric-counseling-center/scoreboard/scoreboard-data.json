@@ -12658,14 +12658,28 @@
           "rejected": 2,
           "applied": 6,
           "placed": 8,
-          "approved": 1,
-          "written": 5,
+          "written": 6,
           "pending": 12
         },
         "handoff": {
           "content": [],
           "redirect": [],
-          "outreach": [
+          "outreach": [],
+          "social": [],
+          "social_built": [],
+          "social_go": [],
+          "todd": {
+            "enabled": true,
+            "email": "tmccord@bccsanantonio.com",
+            "from": "daniel@drbdig.com",
+            "ok_column": "P",
+            "notes_column": "Q",
+            "header_row": 8,
+            "highlight_color": "fff2cc",
+            "draft_subject": "Social posts to approve: week of {week}",
+            "_comment": "Nothing is booked until Todd approves: he ticks the Todd OK box on the sheet row, or replies to the draft. todd-check.py reads the boxes daily; the hand-off session reads his replies. Set enabled false to book straight after Daniel's approval."
+          },
+          "written": [
             {
               "id": "82358a5dc0",
               "kind": "outreach",
@@ -12682,19 +12696,25 @@
                 "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending.",
                 "their_page": "https://www.texasdigestive.com/useful-links/",
                 "our_page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
-                "draft_stage": "rewrite",
-                "form_url": "https://www.texasdigestive.com/contact-gastroenterologist-mcallen-brownsville-harlingen-texas/"
+                "draft_stage": "written",
+                "form_url": "https://www.texasdigestive.com/contact-gastroenterologist-mcallen-brownsville-harlingen-texas/",
+                "review_notes": [
+                  {
+                    "date": "2026-09-22 10:00",
+                    "note": "this is just a test note to check that the texasdigestive link isn't pushed until I have verified that this 'notes' step works",
+                    "about_subject": "A link for your Useful Links page",
+                    "replaces_earlier": false,
+                    "withdrawn": "2026-09-22 10:12"
+                  }
+                ]
               },
               "source": "link-plays",
-              "status": "approved",
+              "status": "written",
               "created": "2026-09-18T19:05:15",
-              "decided": "2026-09-22T10:00:20",
-              "note": "rewrite: this is just a test note to check that the texasdigestive link isn't pushed until I have verified that this 'notes' step works (2026-09-22)",
+              "decided": "2026-09-22T10:12:51",
+              "note": "back in review 2026-09-22 (send-back withdrawn by Daniel); waiting for Daniel to read it",
               "result": null
-            }
-          ],
-          "social": [],
-          "written": [
+            },
             {
               "id": "5d38b158f3",
               "kind": "outreach",
@@ -12833,7 +12853,7 @@
             "agreed_offers": []
           }
         },
-        "prompt": "Read C:/Users/danie/Documents/Claude/Projects/cron-jobs/bariatric-counseling-center/review-queue/HANDOFF.md and do exactly what it says: place every approved content block and redirect on staging13 (never production); research and write every approved link ask as a real note and save it with queue_apply.py --written for Daniel to review (do not send it); for notes Daniel has already OK'd, submit the form ones in Chrome (--submitted) and put the email ones in one Gmail draft to Todd (--packet); build and schedule every approved social post (asset, sheet row, Postiz or Publer) and mark it with --placed; mark each item, then rebuild the scoreboard."
+        "prompt": "Read C:/Users/danie/Documents/Claude/Projects/cron-jobs/bariatric-counseling-center/review-queue/HANDOFF.md and do exactly what it says: place every approved content block and redirect on staging13 (never production); research and write every approved link ask as a real note and save it with queue_apply.py --written for Daniel to review (do not send it); for notes Daniel has already OK'd, submit the form ones in Chrome (--submitted) and put the email ones in one Gmail draft to Todd (--packet); for social posts: run todd-check.py, read Todd's replies in Gmail and apply them (--todd-ok or --back), build every approved post (asset, highlighted sheet row with the Todd OK box) into ONE Gmail draft to Todd and mark it --built, then book the posts Todd has OK'd (Postiz or Publer) and mark them --placed; mark each item, then rebuild the scoreboard."
       },
       "error": null
     },
@@ -18861,5 +18881,5 @@
     }
   ],
   "snapshot_count": 38,
-  "generated_at": "2026-09-22T15:02:49.814304Z"
+  "generated_at": "2026-09-22T15:21:00.255579Z"
 }
