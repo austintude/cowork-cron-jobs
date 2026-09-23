@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-22 15:41 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-22 20:46 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -101,12 +101,8 @@ Generated 2026-09-22 15:41 by queue_apply.py. Daniel approved these on the dashb
   - https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging13.
   - pages (1): https://www.bariatriccounselingcenter.com/contact/
 
-## Social posts to build and write to the sheet (7); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (6); the draft to Todd is a separate weekly step
 
-- id `9d817ad9c0`: **Mon 9/28: What a craving is trying to say** on 2026-09-28 (FB, IG) at FB 10:30 AM, IG 12:15 PM, carousel. Approved 2026-09-22. Why: nothing is planned on Mon 9/28 for FB, IG
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\9d817ad9c0-mon-9-28-what-a-craving-is-trying-to-say.json`
-  - asset: carousel
-  - sheet tab: September Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/
 - id `e956edbb9a`: **Tue 9/29: alumni clip, Carmen M. (belonging)** on 2026-09-29 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-09-22. Why: Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\e956edbb9a-tue-9-29-alumni-clip-carmen-m-belonging.json`
   - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip-9x16_belonging_COVERED.mp4
@@ -135,6 +131,10 @@ Generated 2026-09-22 15:41 by queue_apply.py. Daniel approved these on the dashb
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/
 
 ## Draft day: Wednesday. Today is Tuesday, not draft day: build only, no email to Todd.
+
+## Social posts built, not yet in a draft to Todd (1): wait for draft day
+
+- id `9d817ad9c0`: **Mon 9/28: What a craving is trying to say** on 2026-09-28 (FB, IG) at FB 10:30 AM, IG 12:15 PM; sheet September Content Calendar!26; asset social/plan/cards/render/png/sep28-craving-01-feed.png (SHORT NOTICE: 5 days out; say so in the draft)
 
 ## Link asks to research and write (2)
 
