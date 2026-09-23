@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-22 20:46 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-23 07:13 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -101,12 +101,8 @@ Generated 2026-09-22 20:46 by queue_apply.py. Daniel approved these on the dashb
   - https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging13.
   - pages (1): https://www.bariatriccounselingcenter.com/contact/
 
-## Social posts to build and write to the sheet (6); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (5); the draft to Todd is a separate weekly step
 
-- id `e956edbb9a`: **Tue 9/29: alumni clip, Carmen M. (belonging)** on 2026-09-29 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-09-22. Why: Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\e956edbb9a-tue-9-29-alumni-clip-carmen-m-belonging.json`
-  - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip-9x16_belonging_COVERED.mp4
-  - sheet tab: September Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
 - id `a7414c697a`: **Fri 10/2: Food Friday reel from Leila's clips (Steak and chicken fajitas, Pesto Salmon, Sp** on 2026-10-02 (FB, IG, YT) at FB 12:00 PM, IG 6:00 PM, YT 6:00 PM, reel. Approved 2026-09-22. Why: row 10 plans a dish still for this Friday; the reel replaces it on FB and IG and adds YouTube Shorts
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json`
   - asset: reel https://drive.google.com/drive/folders/1tQlvgAhNUJMkpS2m_njCqlH-1TQNjNak
@@ -130,13 +126,14 @@ Generated 2026-09-22 20:46 by queue_apply.py. Daniel approved these on the dashb
   - asset: carousel
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/
 
-## Draft day: Wednesday. Today is Tuesday, not draft day: build only, no email to Todd.
+## Draft day: Wednesday. Today is Wednesday: DRAFT DAY, put every built post below into one Gmail draft to Todd (stage 1, step 5).
 
-## Social posts built, not yet in a draft to Todd (1): wait for draft day
+## Social posts built, not yet in a draft to Todd (2): draft them today
 
-- id `9d817ad9c0`: **Mon 9/28: What a craving is trying to say** on 2026-09-28 (FB, IG) at FB 10:30 AM, IG 12:15 PM; sheet September Content Calendar!26; asset social/plan/cards/render/png/sep28-craving-01-feed.png (SHORT NOTICE: 5 days out; say so in the draft)
+- id `9d817ad9c0`: **Mon 9/28: What a craving is trying to say** on 2026-09-28 (FB, IG) at FB 10:30 AM, IG 12:15 PM; sheet September Content Calendar!26; asset social/plan/cards/render/png/sep28-craving-01-feed.png (SHORT NOTICE: 4 days out; say so in the draft)
+- id `e956edbb9a`: **Tue 9/29: alumni clip, Carmen M. (belonging)** on 2026-09-29 (FB, IG, YT) at 7:00 PM; sheet September Content Calendar!27; asset Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip-9x16_belonging_COVERED.mp4 (SHORT NOTICE: 5 days out; say so in the draft)
 
-## Link asks to research and write (2)
+## Link asks to research and write (1)
 
 - id `5d38b158f3`: **Partner link note: vitalitylifecounselingsa.com** (domain vitalitylifecounselingsa.com, channel guess email)
   - why it was queued: 1 person from vitalitylifecounselingsa.com on the referral list, and the site links to a local competitor but not to BCC.
@@ -144,17 +141,10 @@ Generated 2026-09-22 20:46 by queue_apply.py. Daniel approved these on the dashb
   - DANIEL SENT THIS BACK. His instructions, oldest first; the last one is the current one and wins where they differ:
     - 2026-09-22 14:02: Do not send this to todd yet. It is close, but we d o not yet have a way to add a link on our website... how best should we build this without it looking... off brand or weird especially considering it may look very empty until/unless we get some ppoepl to bite. let's explore this process/offer further then reconsider
   - previous text (rewrite it): to Mayra Cano, Clinical Director <info@vitalitylifecounselingsa.com> | subject Adding us to your Mental Health Links page | Hi Mayra,  Thank you for being on our referral newsletter list. I noticed your Mental Health Links page has an Eating Disorders section with national resources, and your Disordered Eating page describes the binging and the shame around food that many of our clients also carry.  We run an intensive outpatient program in San Antonio for binge eating, chronic over-eating and food addiction: group and individual therapy, dietary guidance, cooking classes and movement education, in one program. It is in network with most health insurance plans, and clients attend onsite or by Zoom.  Would you add u
-- id `bbd7b1a44e`: **Partner link note: dgdclinic.com** (domain dgdclinic.com, channel guess none)
-  - why it was queued: 13 people from dgdclinic.com on the referral list, and the site has never linked to BCC.
-  - starting angle (rewrite it, do not send as is): Hi there,  Several of your providers receive our referral newsletter, so DGD Clinic already knows our program. I read your Wegovy and Zepbound insurance page. Patients on weight loss medications are a growing part of our program, and we help them build the eating and movement habits that keep the re
-  - DANIEL SENT THIS BACK. His instructions, oldest first; the last one is the current one and wins where they differ:
-    - 2026-09-22 14:04: Your site does not have a resources or links page, so the natural spot would be that page, https://www.dgdclinic.com/wegovy-zepbound. 
 
-You never even told them what 'being that page' meant. presumably you mean that this would be the best page to provide a backlink to bcc from, but it is infered and only if you are used to reading these typers of emails. do better. try again
-  - previous text (rewrite it): to Practice Administrator, main office (210) 614-8612 (no contact form or email published) | subject A link from your Wegovy and Zepbound page | Hi there,  Several of your providers receive our referral newsletter, so DGD Clinic already knows our program. I read your Wegovy and Zepbound insurance page. Patients on weight loss medications are a growing part of our program, and we help them build the eating and movement habits that keep the results after the prescription.  Your site does not have a resources or links page, so the natural spot would be that page, https://www.dgdclinic.com/wegovy-zepbound. The page we suggest is https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/, with the link text "Bariatric Counselin
-
-## Notes written, waiting for Daniel to read on the dashboard (4): not for Claude.
+## Notes written, waiting for Daniel to read on the dashboard (5): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
 - Partner link note: gastroconsa.com (channel form)
+- Partner link note: dgdclinic.com (channel none)
 - Partner link note: tddctx.com (channel email)
 - Partner link note: rfamilymedicalgroup.com (channel form)
