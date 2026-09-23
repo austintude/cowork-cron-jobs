@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-23T08:06:47.675778Z",
+  "fetched_at": "2026-09-23T12:00:31.973286Z",
   "for_date": "2026-09-22",
   "baseline_window": {
     "start": "2026-08-25",
@@ -9,12 +9,12 @@
   "ga4_property_id": "254059736",
   "gsc_property": "https://www.bariatriccounselingcenter.com/",
   "snapshot": {
-    "sessions": 43,
-    "users": 40,
-    "new_users": 36,
-    "pageviews": 148,
-    "engagement_rate": 0.9767,
-    "avg_session_duration": 82.6271,
+    "sessions": 44,
+    "users": 41,
+    "new_users": 37,
+    "pageviews": 150,
+    "engagement_rate": 0.9773,
+    "avg_session_duration": 85.5663,
     "gsc_impressions": 0,
     "gsc_clicks": 0,
     "gsc_position": 0.0
@@ -24,13 +24,13 @@
     "current": {
       "start": "2026-08-26",
       "end": "2026-09-22",
-      "sessions": 982,
-      "active_users": 816,
-      "total_users": 818,
-      "new_users": 794,
-      "pageviews": 2795,
-      "avg_session_duration": 110.0379,
-      "avg_engagement_time_per_active_user": 39.8
+      "sessions": 983,
+      "active_users": 817,
+      "total_users": 819,
+      "new_users": 795,
+      "pageviews": 2797,
+      "avg_session_duration": 110.1416,
+      "avg_engagement_time_per_active_user": 39.9
     },
     "prior": {
       "start": "2026-07-29",
@@ -44,13 +44,13 @@
       "avg_engagement_time_per_active_user": 27.2
     },
     "pct_change": {
-      "sessions_pct": -15.5,
-      "active_users_pct": -22.7,
-      "total_users_pct": -22.5,
-      "new_users_pct": -23.5,
+      "sessions_pct": -15.4,
+      "active_users_pct": -22.6,
+      "total_users_pct": -22.4,
+      "new_users_pct": -23.4,
       "pageviews_pct": -7.8,
-      "avg_session_duration_pct": -4.7,
-      "avg_engagement_time_per_active_user_pct": 46.3
+      "avg_session_duration_pct": -4.6,
+      "avg_engagement_time_per_active_user_pct": 46.7
     }
   },
   "anomaly_summary": {
@@ -62,33 +62,33 @@
   "anomalies": [
     {
       "metric": "GA4 new users",
-      "actual": 36,
+      "actual": 37,
       "baseline_28d_median": 23.0,
       "yoy_same_day": null,
-      "pct_delta": 56.5,
+      "pct_delta": 60.9,
       "severity": "CRITICAL",
       "direction": "up",
-      "headline": "UP GA4 new users: 36 (+56.5% vs 28d median of 23)"
+      "headline": "UP GA4 new users: 37 (+60.9% vs 28d median of 23)"
     },
     {
       "metric": "GA4 pageviews",
-      "actual": 148,
+      "actual": 150,
       "baseline_28d_median": 98.0,
       "yoy_same_day": 268,
-      "pct_delta": 51.0,
+      "pct_delta": 53.1,
       "severity": "CRITICAL",
       "direction": "up",
-      "headline": "UP GA4 pageviews: 148 (+51.0% vs 28d median of 98) (YoY same day: -44.8%)"
+      "headline": "UP GA4 pageviews: 150 (+53.1% vs 28d median of 98) (YoY same day: -44.0%)"
     },
     {
       "metric": "GA4 sessions",
-      "actual": 43,
+      "actual": 44,
       "baseline_28d_median": 30.0,
       "yoy_same_day": 80,
-      "pct_delta": 43.3,
+      "pct_delta": 46.7,
       "severity": "MAJOR",
       "direction": "up",
-      "headline": "UP GA4 sessions: 43 (+43.3% vs 28d median of 30) (YoY same day: -46.2%)",
+      "headline": "UP GA4 sessions: 44 (+46.7% vs 28d median of 30) (YoY same day: -45.0%)",
       "unpacked": {
         "chain": [
           {
@@ -103,9 +103,9 @@
               },
               {
                 "channel": "Organic Search",
-                "yesterday": 15,
+                "yesterday": 16,
                 "baseline_28d_median": 13.0,
-                "delta": 2.0
+                "delta": 3.0
               }
             ]
           },
@@ -125,8 +125,8 @@
               },
               {
                 "landingPagePlusQueryString": "/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
-                "sessions": 5,
-                "totalUsers": 5,
+                "sessions": 6,
+                "totalUsers": 6,
                 "engagementRate": 1
               },
               {
@@ -185,23 +185,23 @@
     },
     {
       "metric": "GA4 users",
-      "actual": 40,
+      "actual": 41,
       "baseline_28d_median": 28.0,
       "yoy_same_day": 75,
-      "pct_delta": 42.9,
+      "pct_delta": 46.4,
       "severity": "MAJOR",
       "direction": "up",
-      "headline": "UP GA4 users: 40 (+42.9% vs 28d median of 28) (YoY same day: -46.7%)"
+      "headline": "UP GA4 users: 41 (+46.4% vs 28d median of 28) (YoY same day: -45.3%)"
     },
     {
       "metric": "GA4 avg session dur",
-      "actual": 82.6271,
+      "actual": 85.5663,
       "baseline_28d_median": 104.5,
       "yoy_same_day": null,
-      "pct_delta": -20.9,
+      "pct_delta": -18.1,
       "severity": "MINOR",
       "direction": "down",
-      "headline": "DOWN GA4 avg session dur: 82.6271 (-20.9% vs 28d median of 104)"
+      "headline": "DOWN GA4 avg session dur: 85.5663 (-18.1% vs 28d median of 104)"
     }
   ],
   "ga4_data": {
@@ -460,12 +460,12 @@
       },
       {
         "date": "2026-09-22",
-        "sessions": 43,
-        "totalUsers": 40,
-        "newUsers": 36,
-        "screenPageViews": 148,
-        "engagementRate": 0.9767,
-        "averageSessionDuration": 82.6271
+        "sessions": 44,
+        "totalUsers": 41,
+        "newUsers": 37,
+        "screenPageViews": 150,
+        "engagementRate": 0.9773,
+        "averageSessionDuration": 85.5663
       }
     ],
     "daily_by_channel": [
@@ -614,6 +614,12 @@
         "totalUsers": 16
       },
       {
+        "date": "2026-09-22",
+        "sessionDefaultChannelGroup": "Organic Search",
+        "sessions": 16,
+        "totalUsers": 15
+      },
+      {
         "date": "2026-09-04",
         "sessionDefaultChannelGroup": "Organic Search",
         "sessions": 15,
@@ -628,12 +634,6 @@
       {
         "date": "2026-09-09",
         "sessionDefaultChannelGroup": "Direct",
-        "sessions": 15,
-        "totalUsers": 14
-      },
-      {
-        "date": "2026-09-22",
-        "sessionDefaultChannelGroup": "Organic Search",
         "sessions": 15,
         "totalUsers": 14
       },
@@ -1103,8 +1103,8 @@
       },
       {
         "landingPagePlusQueryString": "/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
-        "sessions": 5,
-        "totalUsers": 5,
+        "sessions": 6,
+        "totalUsers": 6,
         "engagementRate": 1
       },
       {
@@ -1194,8 +1194,8 @@
       },
       {
         "sessionSourceMedium": "google / organic",
-        "sessions": 13,
-        "totalUsers": 12
+        "sessions": 14,
+        "totalUsers": 13
       },
       {
         "sessionSourceMedium": "constantcontact / email",
@@ -1225,7 +1225,7 @@
       },
       {
         "deviceCategory": "mobile",
-        "sessions": 13
+        "sessions": 14
       }
     ],
     "yoy_same_day": {
@@ -4674,7 +4674,7 @@
       "source": "wp-rest",
       "confidence": "high",
       "id": "auto-2026-09-22-page-publish-6613--san-antonio-weight-loss-clinic",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-22",
@@ -4687,7 +4687,7 @@
       "source": "wp-rest",
       "confidence": "high",
       "id": "auto-2026-09-22-page-publish-6612--texas-food-addiction-search-trends",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-19",
@@ -4698,7 +4698,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-19-page-modify-5267--nutritional-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-19",
@@ -4709,7 +4709,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-19-page-modify-5177--bariatric-therapy-in-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-19",
@@ -4720,7 +4720,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-19-page-modify-4952--bariatric-surgery-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-19",
@@ -4731,7 +4731,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-19-page-modify-5650--bariatric-counseling-near-me",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4742,7 +4742,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-2091",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-15",
@@ -4755,7 +4755,7 @@
       "source": "wp-rest",
       "confidence": "high",
       "id": "auto-2026-09-15-page-publish-6573--start",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4766,7 +4766,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-6573--start",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4777,7 +4777,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-5649--eating-disorder-therapist-near-me",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4788,7 +4788,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-5608--eating-disorder-referrals-for-providers-in-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4799,7 +4799,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-5460--adhd-and-emotional-eating-in-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4810,7 +4810,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-5411--telehealth-eating-disorder-treatment-in-texas",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4821,7 +4821,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-5409--eating-disorder-group-therapy-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4832,7 +4832,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-5321--counseling-for-anxiety-and-weight-in-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4843,7 +4843,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-5271--therapy-for-eating-disorders-in-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4854,7 +4854,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-5176--eating-disorder-counseling-in-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4865,7 +4865,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-5170--eating-disorder-therapist-in-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4876,7 +4876,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-5164--eating-disorder-treatment-in-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4887,7 +4887,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-5001--overeaters-anonymous-support-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4898,7 +4898,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-4994--foundayo-behavioral-support-san-antonio",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4909,7 +4909,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-4950--eating-disorder-iop-in-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4920,7 +4920,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-4948--emotional-eating-therapy-in-san-antonio-tx",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -4931,7 +4931,7 @@
       "source": "wp-rest-modified",
       "confidence": "medium",
       "id": "auto-2026-09-18-page-modify-228--testimonials",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-22",
@@ -4941,7 +4941,7 @@
       "source": "sitemap",
       "confidence": "low",
       "id": "auto-2026-09-22-sitemap-touch--author-tmccord845",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-22",
@@ -4951,7 +4951,40 @@
       "source": "sitemap",
       "confidence": "low",
       "id": "auto-2026-09-22-sitemap-touch--author-austintude",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
+    },
+    {
+      "launched_at": "2026-09-23",
+      "type": "git-commit",
+      "title": "bcc marketing pulse: 2026-09-23",
+      "commit_hash": "9f7b078",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-23-git-commit-9f7b078",
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
+    },
+    {
+      "launched_at": "2026-09-23",
+      "type": "git-commit",
+      "title": "bcc seo pulse: 2026-09-23",
+      "commit_hash": "e20b51d",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-23-git-commit-e20b51d",
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
+    },
+    {
+      "launched_at": "2026-09-23",
+      "type": "git-commit",
+      "title": "bcc daily pulse: 2026-09-23",
+      "commit_hash": "7744a32",
+      "commit_author": "Daniel Bisett",
+      "source": "git-log",
+      "confidence": "low",
+      "id": "auto-2026-09-23-git-commit-7744a32",
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-22",
@@ -4962,7 +4995,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-22-git-commit-34a6bbe",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-22",
@@ -4973,7 +5006,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-22-git-commit-2a1e1f5",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-21",
@@ -4984,7 +5017,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-21-git-commit-b2f9a52",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-21",
@@ -4995,7 +5028,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-21-git-commit-07a8e97",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-21",
@@ -5006,7 +5039,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-21-git-commit-eff7648",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-20",
@@ -5017,7 +5050,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-20-git-commit-de65632",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-20",
@@ -5028,7 +5061,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-20-git-commit-7951e42",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-19",
@@ -5039,7 +5072,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-19-git-commit-ef36133",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-19",
@@ -5050,7 +5083,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-19-git-commit-bb680ed",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -5061,7 +5094,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-18-git-commit-ccff364",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -5072,7 +5105,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-18-git-commit-f23a0d7",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-17",
@@ -5083,7 +5116,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-17-git-commit-eaafe13",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-17",
@@ -5094,7 +5127,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-17-git-commit-0b68e1f",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-17",
@@ -5105,7 +5138,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-17-git-commit-c6b281c",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-17",
@@ -5116,40 +5149,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-17-git-commit-e0853ad",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
-    },
-    {
-      "launched_at": "2026-09-16",
-      "type": "git-commit",
-      "title": "bcc daily pulse: 2026-09-16",
-      "commit_hash": "9bf3c5e",
-      "commit_author": "Daniel Bisett",
-      "source": "git-log",
-      "confidence": "low",
-      "id": "auto-2026-09-16-git-commit-9bf3c5e",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
-    },
-    {
-      "launched_at": "2026-09-16",
-      "type": "git-commit",
-      "title": "bcc marketing pulse: 2026-09-16",
-      "commit_hash": "5689fec",
-      "commit_author": "Daniel Bisett",
-      "source": "git-log",
-      "confidence": "low",
-      "id": "auto-2026-09-16-git-commit-5689fec",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
-    },
-    {
-      "launched_at": "2026-09-16",
-      "type": "git-commit",
-      "title": "bcc seo pulse: 2026-09-16",
-      "commit_hash": "09da19d",
-      "commit_author": "Daniel Bisett",
-      "source": "git-log",
-      "confidence": "low",
-      "id": "auto-2026-09-16-git-commit-09da19d",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-22",
@@ -5160,7 +5160,7 @@
       "source": "git-log",
       "confidence": "medium",
       "id": "auto-2026-09-22-git-commit-cbae3b2",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-22",
@@ -5171,7 +5171,7 @@
       "source": "git-log",
       "confidence": "medium",
       "id": "auto-2026-09-22-git-commit-b8a5e1b",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-18",
@@ -5182,7 +5182,7 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-18-git-commit-4ef5b5d",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     },
     {
       "launched_at": "2026-09-17",
@@ -5193,12 +5193,36 @@
       "source": "git-log",
       "confidence": "low",
       "id": "auto-2026-09-17-git-commit-09460a3",
-      "first_seen_at": "2026-09-23T08:06:47.663685Z"
+      "first_seen_at": "2026-09-23T12:00:31.944507Z"
     }
   ],
-  "launches_ledger_size": 1194,
+  "launches_ledger_size": 1197,
   "paid_social_spikes": [],
   "git_commits_recent": [
+    {
+      "date": "2026-09-23T04:23:30-05:00",
+      "hash": "9f7b078",
+      "author": "Daniel Bisett",
+      "subject": "bcc marketing pulse: 2026-09-23"
+    },
+    {
+      "date": "2026-09-23T04:22:25-05:00",
+      "hash": "e20b51d",
+      "author": "Daniel Bisett",
+      "subject": "bcc seo pulse: 2026-09-23"
+    },
+    {
+      "date": "2026-09-23T03:15:06-05:00",
+      "hash": "302850b",
+      "author": "Daniel Bisett",
+      "subject": "autosync from WeRockDM @ 2026-09-23T03:15:06"
+    },
+    {
+      "date": "2026-09-23T03:08:37-05:00",
+      "hash": "7744a32",
+      "author": "Daniel Bisett",
+      "subject": "bcc daily pulse: 2026-09-23"
+    },
     {
       "date": "2026-09-22T21:15:07-05:00",
       "hash": "b589ecc",
@@ -5294,30 +5318,6 @@
       "hash": "38f1a64",
       "author": "Daniel Bisett",
       "subject": "autosync from WeRockDM @ 2026-09-21T05:45:12"
-    },
-    {
-      "date": "2026-09-21T04:31:16-05:00",
-      "hash": "07a8e97",
-      "author": "Daniel Bisett",
-      "subject": "bcc seo pulse: 2026-09-21"
-    },
-    {
-      "date": "2026-09-21T03:04:51-05:00",
-      "hash": "eff7648",
-      "author": "Daniel Bisett",
-      "subject": "bcc daily pulse: 2026-09-21"
-    },
-    {
-      "date": "2026-09-20T07:00:26-05:00",
-      "hash": "de65632",
-      "author": "Daniel Bisett",
-      "subject": "bcc daily pulse: 2026-09-20"
-    },
-    {
-      "date": "2026-09-20T03:04:34-05:00",
-      "hash": "7951e42",
-      "author": "Daniel Bisett",
-      "subject": "bcc daily pulse: 2026-09-20"
     }
   ]
 }
