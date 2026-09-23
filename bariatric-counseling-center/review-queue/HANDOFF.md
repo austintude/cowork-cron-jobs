@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-23 07:13 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-23 07:41 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -20,88 +20,7 @@ Generated 2026-09-23 07:13 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Site fixes on staging13 (17)
-
-- id `4f68b209d1`: **Dead video on 1 page: youtube LPviMNg7raE** (dead video embed). Target: youtube:LPviMNg7raE (youtube: private). Approved 2026-09-22.
-  - The youtube video LPviMNg7raE is private. On each page below, open the editor on staging13, find the embed or lightbox link carrying that id, and replace it with the current video id (check the BCC YouTube channel and the Videos catalog) or remove the block.
-  - pages (1): https://www.bariatriccounselingcenter.com/testimonials/
-- id `6f79385bab`: **Dead link on 1 page: /2024/04/self-sabotage/** (dead internal link). Target: https://www.bariatriccounselingcenter.com/2024/04/self-sabotage/ (HTTP 404). Approved 2026-09-22.
-  - https://www.bariatriccounselingcenter.com/2024/04/self-sabotage/ answers HTTP 404.
-  - Point the link at https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-identify-self-sabotage-causes/ (closest live page by slug) or remove it.
-  - If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13.
-  - suggested replacement: https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-identify-self-sabotage-causes/
-  - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-to-identify-self-sabotage-behaviors-part-2/
-- id `15ed6254a0`: **Dead link on 1 page: /binge-eating-disorder-treatment-in-san-antonio-tx/** (dead internal link). Target: https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-in-san-antonio-tx/ (HTTP 404). Approved 2026-09-22.
-  - https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-in-san-antonio-tx/ answers HTTP 404.
-  - Point the link at https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/ (closest live page by slug) or remove it.
-  - If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13.
-  - suggested replacement: https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/
-  - pages (1): https://www.bariatriccounselingcenter.com/compulsive-overeating-counseling-san-antonio-tx/
-- id `9cd2b41f07`: **Dead link on 1 page: /blog/sustaining-the-impact-of-ozempic-and-other-semaglutide** (dead internal link). Target: https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/ (HTTP 404). Approved 2026-09-22.
-  - https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/ answers HTTP 404.
-  - Point the link at https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/ (closest live page by slug) or remove it.
-  - If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13.
-  - suggested replacement: https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/
-  - pages (1): https://www.bariatriccounselingcenter.com/weight-loss-therapy-in-san-antonio-tx/
-- id `3871298fb1`: **Dead link on 1 page: /blog/binge-eating-disorder-symptoms-causes-effective-treatm** (dead internal link). Target: https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/ (HTTP 404). Approved 2026-09-22.
-  - https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/ answers HTTP 404.
-  - Point the link at https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/ (closest live page by slug) or remove it.
-  - If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13.
-  - suggested replacement: https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/
-  - pages (1): https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/
-- id `74e8f54658`: **Dead link on 1 page: /therapy-for-depression-and-weight-in-san-antonio-tx/** (dead internal link). Target: https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/ (HTTP 404). Approved 2026-09-22.
-  - https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/ answers HTTP 404.
-  - Point the link at https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/ (closest live page by slug) or remove it.
-  - If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13.
-  - suggested replacement: https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/
-  - pages (1): https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/
-- id `f5dc16689d`: **Dead link on 1 page: /ourprogram/practice-in-the-community-2/** (dead internal link). Target: https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/ (HTTP 404). Approved 2026-09-22.
-  - https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/ answers HTTP 404.
-  - Point the link at https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/ (closest live page by slug) or remove it.
-  - If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13.
-  - suggested replacement: https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/
-  - pages (1): https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/
-- id `4f5029deb2`: **Dead outside link on 1 page: www.ozempic.com** (dead external link). Target: https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds (HTTP 404). Approved 2026-09-22.
-  - https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds answers HTTP 404.
-  - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
-  - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/
-- id `10c35c0add`: **Dead outside link on 1 page: doi.org** (dead external link). Target: https://doi.org/10.3389/fnut.2022.948 (HTTP 404). Approved 2026-09-22.
-  - https://doi.org/10.3389/fnut.2022.948 answers HTTP 404.
-  - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
-  - pages (1): https://www.bariatriccounselingcenter.com/healthy-living-2/why-late-night-snacking-always-wins-and-why-youre-not-weak-for-it/
-- id `253da880e5`: **Dead outside link on 1 page: www.nationaleatingdisorders.org** (dead external link). Target: https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/ (HTTP 404). Approved 2026-09-22.
-  - https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/ answers HTTP 404.
-  - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
-  - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-in-men-why-40-percent-of-cases-missed/
-- id `d579845b37`: **Update 176 links that redirect: /about** (internal link redirects). Target: https://bariatriccounselingcenter.com/about (-> https://www.bariatriccounselingcenter.com/about/). Approved 2026-09-22.
-  - On each page below, change the link https://bariatriccounselingcenter.com/about to its final address https://www.bariatriccounselingcenter.com/about/ so visitors and crawlers skip the redirect.
-  - suggested replacement: https://www.bariatriccounselingcenter.com/about/
-  - pages (176): https://www.bariatriccounselingcenter.com/; https://www.bariatriccounselingcenter.com/?kadence_element=ahrefs; https://www.bariatriccounselingcenter.com/?kadence_element=author-bios; https://www.bariatriccounselingcenter.com/?kadence_element=clickrank; https://www.bariatriccounselingcenter.com/?kadence_element=landing-page; https://www.bariatriccounselingcenter.com/?kadence_element=search-atlas-2-2; https://www.bariatriccounselingcenter.com/about/; https://www.bariatriccounselingcenter.com/adhd-and-emotional-eating-in-san-antonio-tx/; https://www.bariatriccounselingcenter.com/author/aaron/; https://www.bariatriccounselingcenter.com/author/alisa/; https://www.bariatriccounselingcenter.com/author/austintude/; https://www.bariatriccounselingcenter.com/author/bccteam/; https://www.bariatriccounselingcenter.com/author/chasley-fortunw-pttman/; https://www.bariatriccounselingcenter.com/author/dietitian/; https://www.bariatriccounselingcenter.com/author/emilyb/; https://www.bariatriccounselingcenter.com/author/lapplegate/; https://www.bariatriccounselingcenter.com/author/lartzberger/; https://www.bariatriccounselingcenter.com/author/nalbus481/; https://www.bariatriccounselingcenter.com/author/sam-martinez/; https://www.bariatriccounselingcenter.com/author/shamilton/; https://www.bariatriccounselingcenter.com/author/tmccord845/; https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/; https://www.bariatriccounselingcenter.com/bariatric-psych-eval-in-texas/; https://www
-- id `0facd00caf`: **Update 176 links that redirect: /testimonials** (internal link redirects). Target: https://bariatriccounselingcenter.com/testimonials (-> https://www.bariatriccounselingcenter.com/testimonials/). Approved 2026-09-22.
-  - On each page below, change the link https://bariatriccounselingcenter.com/testimonials to its final address https://www.bariatriccounselingcenter.com/testimonials/ so visitors and crawlers skip the redirect.
-  - suggested replacement: https://www.bariatriccounselingcenter.com/testimonials/
-  - pages (176): https://www.bariatriccounselingcenter.com/; https://www.bariatriccounselingcenter.com/?kadence_element=ahrefs; https://www.bariatriccounselingcenter.com/?kadence_element=author-bios; https://www.bariatriccounselingcenter.com/?kadence_element=clickrank; https://www.bariatriccounselingcenter.com/?kadence_element=landing-page; https://www.bariatriccounselingcenter.com/?kadence_element=search-atlas-2-2; https://www.bariatriccounselingcenter.com/about/; https://www.bariatriccounselingcenter.com/adhd-and-emotional-eating-in-san-antonio-tx/; https://www.bariatriccounselingcenter.com/author/aaron/; https://www.bariatriccounselingcenter.com/author/alisa/; https://www.bariatriccounselingcenter.com/author/austintude/; https://www.bariatriccounselingcenter.com/author/bccteam/; https://www.bariatriccounselingcenter.com/author/chasley-fortunw-pttman/; https://www.bariatriccounselingcenter.com/author/dietitian/; https://www.bariatriccounselingcenter.com/author/emilyb/; https://www.bariatriccounselingcenter.com/author/lapplegate/; https://www.bariatriccounselingcenter.com/author/lartzberger/; https://www.bariatriccounselingcenter.com/author/nalbus481/; https://www.bariatriccounselingcenter.com/author/sam-martinez/; https://www.bariatriccounselingcenter.com/author/shamilton/; https://www.bariatriccounselingcenter.com/author/tmccord845/; https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/; https://www.bariatriccounselingcenter.com/bariatric-psych-eval-in-texas/; https://www
-- id `b3e9ad69e5`: **Update 176 links that redirect: /interviews** (internal link redirects). Target: https://bariatriccounselingcenter.com/interviews (-> https://www.bariatriccounselingcenter.com/interviews/). Approved 2026-09-22.
-  - On each page below, change the link https://bariatriccounselingcenter.com/interviews to its final address https://www.bariatriccounselingcenter.com/interviews/ so visitors and crawlers skip the redirect.
-  - suggested replacement: https://www.bariatriccounselingcenter.com/interviews/
-  - pages (176): https://www.bariatriccounselingcenter.com/; https://www.bariatriccounselingcenter.com/?kadence_element=ahrefs; https://www.bariatriccounselingcenter.com/?kadence_element=author-bios; https://www.bariatriccounselingcenter.com/?kadence_element=clickrank; https://www.bariatriccounselingcenter.com/?kadence_element=landing-page; https://www.bariatriccounselingcenter.com/?kadence_element=search-atlas-2-2; https://www.bariatriccounselingcenter.com/about/; https://www.bariatriccounselingcenter.com/adhd-and-emotional-eating-in-san-antonio-tx/; https://www.bariatriccounselingcenter.com/author/aaron/; https://www.bariatriccounselingcenter.com/author/alisa/; https://www.bariatriccounselingcenter.com/author/austintude/; https://www.bariatriccounselingcenter.com/author/bccteam/; https://www.bariatriccounselingcenter.com/author/chasley-fortunw-pttman/; https://www.bariatriccounselingcenter.com/author/dietitian/; https://www.bariatriccounselingcenter.com/author/emilyb/; https://www.bariatriccounselingcenter.com/author/lapplegate/; https://www.bariatriccounselingcenter.com/author/lartzberger/; https://www.bariatriccounselingcenter.com/author/nalbus481/; https://www.bariatriccounselingcenter.com/author/sam-martinez/; https://www.bariatriccounselingcenter.com/author/shamilton/; https://www.bariatriccounselingcenter.com/author/tmccord845/; https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/; https://www.bariatriccounselingcenter.com/bariatric-psych-eval-in-texas/; https://www
-- id `d9ff78ea50`: **Update 9 links that redirect: /blog/what-is-emotional-eating/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/blog/what-is-emotional-eating/ (-> https://www.bariatriccounselingcenter.com/emotional-eating/what-is-emotional-eating/). Approved 2026-09-22.
-  - On each page below, change the link https://www.bariatriccounselingcenter.com/blog/what-is-emotional-eating/ to its final address https://www.bariatriccounselingcenter.com/emotional-eating/what-is-emotional-eating/ so visitors and crawlers skip the redirect.
-  - suggested replacement: https://www.bariatriccounselingcenter.com/emotional-eating/what-is-emotional-eating/
-  - pages (9): https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/; https://www.bariatriccounselingcenter.com/eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/; https://www.bariatriccounselingcenter.com/emotional-eating-therapy-in-san-antonio-tx/; https://www.bariatriccounselingcenter.com/healthy-living-2/how-do-i-manage-cravings-and-impulse-eating/; https://www.bariatriccounselingcenter.com/overeating-treatment-in-san-antonio-tx/; https://www.bariatriccounselingcenter.com/sara-hamilton-psyd/; https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/you-already-do-things-you-dont-want-to-do-why-not-the-things-that-help-you-to-lose-weight/; https://www.bariatriccounselingcenter.com/self-improvement/mental-health/coping-with-emotional-eating-building-an-emotional-first-aid-kit/; https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-adhd-impacts-eating-habits-and-weight-management/
-- id `7ddc96990f`: **Update 9 links that redirect: /resources/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/resources/ (-> https://www.bariatriccounselingcenter.com/blog/). Approved 2026-09-22.
-  - On each page below, change the link https://www.bariatriccounselingcenter.com/resources/ to its final address https://www.bariatriccounselingcenter.com/blog/ so visitors and crawlers skip the redirect.
-  - suggested replacement: https://www.bariatriccounselingcenter.com/blog/
-  - pages (9): https://www.bariatriccounselingcenter.com/ourprogram/bring-a-friend/; https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/; https://www.bariatriccounselingcenter.com/ourprogram/details/; https://www.bariatriccounselingcenter.com/ourprogram/dine-together/; https://www.bariatriccounselingcenter.com/ourprogram/enjoy-movement/; https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/; https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dietitians/; https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/; https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/
-- id `50d4fa5226`: **Dead outside link on 2 pages: bcms.org** (dead external link). Target: http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html (HTTP 404). Approved 2026-09-22.
-  - http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html answers HTTP 404.
-  - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
-  - pages (2): https://www.bariatriccounselingcenter.com/author/chasley-fortunw-pttman/; https://www.bariatriccounselingcenter.com/author/shamilton/
-- id `802239d78c`: **Broken embed or media file on 1 page: /maps/embed/v1/place** (broken embed or media file). Target: https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax (HTTP 404). Approved 2026-09-22.
-  - https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging13.
-  - pages (1): https://www.bariatriccounselingcenter.com/contact/
-
-## Social posts to build and write to the sheet (5); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (2); the draft to Todd is a separate weekly step
 
 - id `a7414c697a`: **Fri 10/2: Food Friday reel from Leila's clips (Steak and chicken fajitas, Pesto Salmon, Sp** on 2026-10-02 (FB, IG, YT) at FB 12:00 PM, IG 6:00 PM, YT 6:00 PM, reel. Approved 2026-09-22. Why: row 10 plans a dish still for this Friday; the reel replaces it on FB and IG and adds YouTube Shorts
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json`
@@ -113,25 +32,16 @@ Generated 2026-09-23 07:13 by queue_apply.py. Daniel approved these on the dashb
   - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip-9x16_two-years-later_COVERED.mp4
   - replaces row 12 in October Content Calendar
   - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
-- id `1a73a68284`: **Mon 11/2: Eating out without the spiral** on 2026-11-02 (FB, IG) at FB 10:30 AM, IG 12:15 PM, carousel. Approved 2026-09-22. Why: November is not planned yet; this keeps the FB/IG cadence going
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\1a73a68284-mon-11-2-eating-out-without-the-spiral.json`
-  - asset: carousel
-  - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/
-- id `b6f23635f3`: **Tue 11/3: Referring providers: what comes back to you** on 2026-11-03 (LI, GBP) at LI 11:00 AM, GBP 9:00 AM, document. Approved 2026-09-22. Why: November is not planned yet; this keeps the GBP/LI cadence going
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\b6f23635f3-tue-11-3-referring-providers-what-comes-back-to-you.json`
-  - asset: linkedin-document
-  - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/refer-a-patient/
-- id `45a78a0c09`: **Wed 11/4: Stress and the evening plate** on 2026-11-04 (FB, IG) at FB 10:30 AM, IG 12:15 PM, carousel. Approved 2026-09-22. Why: National Stress Awareness Day falls in this week; mentioned once, not the whole post
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\45a78a0c09-wed-11-4-stress-and-the-evening-plate.json`
-  - asset: carousel
-  - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/
 
 ## Draft day: Wednesday. Today is Wednesday: DRAFT DAY, put every built post below into one Gmail draft to Todd (stage 1, step 5).
 
-## Social posts built, not yet in a draft to Todd (2): draft them today
+## Social posts with Todd (5): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
-- id `9d817ad9c0`: **Mon 9/28: What a craving is trying to say** on 2026-09-28 (FB, IG) at FB 10:30 AM, IG 12:15 PM; sheet September Content Calendar!26; asset social/plan/cards/render/png/sep28-craving-01-feed.png (SHORT NOTICE: 4 days out; say so in the draft)
-- id `e956edbb9a`: **Tue 9/29: alumni clip, Carmen M. (belonging)** on 2026-09-29 (FB, IG, YT) at 7:00 PM; sheet September Content Calendar!27; asset Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip-9x16_belonging_COVERED.mp4 (SHORT NOTICE: 5 days out; say so in the draft)
+- id `9d817ad9c0`: **Mon 9/28: What a craving is trying to say** on 2026-09-28 (FB, IG); sheet September Content Calendar!26; draft Social posts to approve: week of September 28 (2026-09-23)
+- id `e956edbb9a`: **Tue 9/29: alumni clip, Carmen M. (belonging)** on 2026-09-29 (FB, IG, YT); sheet September Content Calendar!27; draft Social posts to approve: week of September 28 (2026-09-23)
+- id `1a73a68284`: **Mon 11/2: Eating out without the spiral** on 2026-11-02 (FB, IG); sheet November Content Calendar!9; draft Social posts to approve: week of September 28 (2026-09-23)
+- id `b6f23635f3`: **Tue 11/3: Referring providers: what comes back to you** on 2026-11-03 (LI, GBP); sheet November Content Calendar!10; draft Social posts to approve: week of September 28 (2026-09-23)
+- id `45a78a0c09`: **Wed 11/4: Stress and the evening plate** on 2026-11-04 (FB, IG); sheet November Content Calendar!11; draft Social posts to approve: week of September 28 (2026-09-23)
 
 ## Link asks to research and write (1)
 
