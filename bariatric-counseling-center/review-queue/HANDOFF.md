@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-23 07:41 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-24 07:10 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -33,7 +33,7 @@ Generated 2026-09-23 07:41 by queue_apply.py. Daniel approved these on the dashb
   - replaces row 12 in October Content Calendar
   - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
 
-## Draft day: Wednesday. Today is Wednesday: DRAFT DAY, put every built post below into one Gmail draft to Todd (stage 1, step 5).
+## Draft day: Wednesday. Today is Thursday, not draft day: build only, no email to Todd.
 
 ## Social posts with Todd (5): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
