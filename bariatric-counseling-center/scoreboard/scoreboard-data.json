@@ -14853,8 +14853,8 @@
           "applied": 6,
           "placed": 25,
           "written": 5,
-          "approved": 3,
-          "built": 5,
+          "approved": 2,
+          "built": 6,
           "pending": 41
         },
         "handoff": {
@@ -14979,72 +14979,6 @@
               "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT)",
               "result": {
                 "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json"
-              }
-            },
-            {
-              "id": "0a3ef56bfd",
-              "kind": "social",
-              "key": "social:2026-10-06:FB+IG+YT",
-              "title": "Tue 10/6: alumni clip, Gerry M. (two years later)",
-              "why": "held clip slot on the sheet (row 12) with no clip assigned",
-              "payload": {
-                "date": "2026-10-06",
-                "weekday": "Tue",
-                "times": "7:00 PM",
-                "platforms": [
-                  "FB",
-                  "IG",
-                  "YT"
-                ],
-                "type": "Alumni Story Clip",
-                "pillar": "Alumni clip",
-                "format": "clip",
-                "title": "Tue 10/6: alumni clip, Gerry M. (two years later)",
-                "purpose": "Finished 9:16 clip testimonial-gerry-clip-nomusic-9x16_two-years-later_FINAL.mp4 (Gerry M., BCC Alumnus). LinkedIn takes the same 9:16 file the next morning. Cover card and the BCC end card are already on the file; no further editing.",
-                "observance": null,
-                "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
-                "captions": {
-                  "FB": "Two years later. Gerry M., BCC Alumnus, reflects on lasting change in this short clip. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas. Link in the first comment.",
-                  "IG": "Two years later\n\nGerry M., BCC Alumnus, reflects on lasting change in this short clip. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #SanAntonio",
-                  "YT": {
-                    "title": "Two Years Later: Gerry M. | Bariatric Counseling Center",
-                    "description": "Gerry M., BCC Alumnus, reflects on lasting change two years after completing the program. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas."
-                  }
-                },
-                "on_image": [
-                  "Two years later",
-                  "Watch Gerry in his own words",
-                  "Comprehensive behavioral healthcare",
-                  "San Antonio and virtual across Texas",
-                  "bariatriccounselingcenter.com"
-                ],
-                "alt_text": "Video testimonial from Gerry M., BCC Alumnus, reflecting on lasting change two years after completing the program.",
-                "why_now": "Alumni testimonials demonstrate sustained outcomes and reinforce program credibility during October enrollment period.",
-                "asset": {
-                  "format": "clip",
-                  "kind": "clip",
-                  "file_9x16": "Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip-9x16_two-years-later_COVERED.mp4",
-                  "file_16x9": null,
-                  "alumnus": "Gerry M.",
-                  "honorific": "BCC Alumnus",
-                  "topic": "two years later",
-                  "ran_on_sheet_before": false,
-                  "folder_rule": "only files in Videos/Ford/CURRENT-portrait-clips-9x16 are finished; never substitute a clip from another folder"
-                },
-                "sheet_tab": "October Content Calendar",
-                "replaces_row": 12,
-                "replaces_tab": "October Content Calendar",
-                "date_platforms": "Tue 10/6: FB, IG, YT",
-                "postiz_mode": "schedule",
-                "needs_rewrite": []
-              },
-              "source": "social-plan",
-              "status": "approved",
-              "created": "2026-09-22T09:57:39",
-              "decided": "2026-09-22T15:40:35",
-              "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT)",
-              "result": {
-                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\0a3ef56bfd-tue-10-6-alumni-clip-gerry-m-two-years-later.json"
               }
             }
           ],
@@ -15183,6 +15117,76 @@
                 "asset": "Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip-9x16_belonging_COVERED.mp4",
                 "built": "2026-09-23",
                 "drafted": "2026-09-23"
+              }
+            },
+            {
+              "id": "0a3ef56bfd",
+              "kind": "social",
+              "key": "social:2026-10-06:FB+IG+YT",
+              "title": "Tue 10/6: alumni clip, Gerry M. (two years later)",
+              "why": "held clip slot on the sheet (row 12) with no clip assigned",
+              "payload": {
+                "date": "2026-10-06",
+                "weekday": "Tue",
+                "times": "7:00 PM",
+                "platforms": [
+                  "FB",
+                  "IG",
+                  "YT"
+                ],
+                "type": "Alumni Story Clip",
+                "pillar": "Alumni clip",
+                "format": "clip",
+                "title": "Tue 10/6: alumni clip, Gerry M. (two years later)",
+                "purpose": "Finished 9:16 clip testimonial-gerry-clip-nomusic-9x16_two-years-later_FINAL.mp4 (Gerry M., BCC Alumnus). LinkedIn takes the same 9:16 file the next morning. Cover card and the BCC end card are already on the file; no further editing.",
+                "observance": null,
+                "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
+                "captions": {
+                  "FB": "Two years later. Gerry M., BCC Alumnus, reflects on lasting change in this short clip. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas. Link in the first comment.",
+                  "IG": "Two years later\n\nGerry M., BCC Alumnus, reflects on lasting change in this short clip. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #SanAntonio",
+                  "YT": {
+                    "title": "Two Years Later: Gerry M. | Bariatric Counseling Center",
+                    "description": "Gerry M., BCC Alumnus, reflects on lasting change two years after completing the program. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas."
+                  }
+                },
+                "on_image": [
+                  "Two years later",
+                  "Watch Gerry in his own words",
+                  "Comprehensive behavioral healthcare",
+                  "San Antonio and virtual across Texas",
+                  "bariatriccounselingcenter.com"
+                ],
+                "alt_text": "Video testimonial from Gerry M., BCC Alumnus, reflecting on lasting change two years after completing the program.",
+                "why_now": "Alumni testimonials demonstrate sustained outcomes and reinforce program credibility during October enrollment period.",
+                "asset": {
+                  "format": "clip",
+                  "kind": "clip",
+                  "file_9x16": "Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip-9x16_two-years-later_COVERED.mp4",
+                  "file_16x9": null,
+                  "alumnus": "Gerry M.",
+                  "honorific": "BCC Alumnus",
+                  "topic": "two years later",
+                  "ran_on_sheet_before": false,
+                  "folder_rule": "only files in Videos/Ford/CURRENT-portrait-clips-9x16 are finished; never substitute a clip from another folder"
+                },
+                "sheet_tab": "October Content Calendar",
+                "replaces_row": 12,
+                "replaces_tab": "October Content Calendar",
+                "date_platforms": "Tue 10/6: FB, IG, YT",
+                "postiz_mode": "schedule",
+                "needs_rewrite": []
+              },
+              "source": "social-plan",
+              "status": "built",
+              "created": "2026-09-22T09:57:39",
+              "decided": "2026-09-24T07:15:52",
+              "note": "built 2026-09-24, on the sheet; goes to Todd in the Wednesday draft: finished clip verified (23 s, cover tile, captions, end card), poster from frame 0, both in Drive (BCC social plan assets), October row 12 written with Todd OK box and highlight",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\0a3ef56bfd-tue-10-6-alumni-clip-gerry-m-two-years-later.json",
+                "sheet": "October Content Calendar!12",
+                "draft": null,
+                "asset": "Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip-9x16_two-years-later_COVERED.mp4",
+                "built": "2026-09-24"
               }
             },
             {
@@ -15378,7 +15382,78 @@
               }
             }
           ],
-          "social_undrafted": [],
+          "social_undrafted": [
+            {
+              "id": "0a3ef56bfd",
+              "kind": "social",
+              "key": "social:2026-10-06:FB+IG+YT",
+              "title": "Tue 10/6: alumni clip, Gerry M. (two years later)",
+              "why": "held clip slot on the sheet (row 12) with no clip assigned",
+              "payload": {
+                "date": "2026-10-06",
+                "weekday": "Tue",
+                "times": "7:00 PM",
+                "platforms": [
+                  "FB",
+                  "IG",
+                  "YT"
+                ],
+                "type": "Alumni Story Clip",
+                "pillar": "Alumni clip",
+                "format": "clip",
+                "title": "Tue 10/6: alumni clip, Gerry M. (two years later)",
+                "purpose": "Finished 9:16 clip testimonial-gerry-clip-nomusic-9x16_two-years-later_FINAL.mp4 (Gerry M., BCC Alumnus). LinkedIn takes the same 9:16 file the next morning. Cover card and the BCC end card are already on the file; no further editing.",
+                "observance": null,
+                "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
+                "captions": {
+                  "FB": "Two years later. Gerry M., BCC Alumnus, reflects on lasting change in this short clip. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas. Link in the first comment.",
+                  "IG": "Two years later\n\nGerry M., BCC Alumnus, reflects on lasting change in this short clip. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #SanAntonio",
+                  "YT": {
+                    "title": "Two Years Later: Gerry M. | Bariatric Counseling Center",
+                    "description": "Gerry M., BCC Alumnus, reflects on lasting change two years after completing the program. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas."
+                  }
+                },
+                "on_image": [
+                  "Two years later",
+                  "Watch Gerry in his own words",
+                  "Comprehensive behavioral healthcare",
+                  "San Antonio and virtual across Texas",
+                  "bariatriccounselingcenter.com"
+                ],
+                "alt_text": "Video testimonial from Gerry M., BCC Alumnus, reflecting on lasting change two years after completing the program.",
+                "why_now": "Alumni testimonials demonstrate sustained outcomes and reinforce program credibility during October enrollment period.",
+                "asset": {
+                  "format": "clip",
+                  "kind": "clip",
+                  "file_9x16": "Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip-9x16_two-years-later_COVERED.mp4",
+                  "file_16x9": null,
+                  "alumnus": "Gerry M.",
+                  "honorific": "BCC Alumnus",
+                  "topic": "two years later",
+                  "ran_on_sheet_before": false,
+                  "folder_rule": "only files in Videos/Ford/CURRENT-portrait-clips-9x16 are finished; never substitute a clip from another folder"
+                },
+                "sheet_tab": "October Content Calendar",
+                "replaces_row": 12,
+                "replaces_tab": "October Content Calendar",
+                "date_platforms": "Tue 10/6: FB, IG, YT",
+                "postiz_mode": "schedule",
+                "needs_rewrite": []
+              },
+              "source": "social-plan",
+              "status": "built",
+              "created": "2026-09-22T09:57:39",
+              "decided": "2026-09-24T07:15:52",
+              "note": "built 2026-09-24, on the sheet; goes to Todd in the Wednesday draft: finished clip verified (23 s, cover tile, captions, end card), poster from frame 0, both in Drive (BCC social plan assets), October row 12 written with Todd OK box and highlight",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\0a3ef56bfd-tue-10-6-alumni-clip-gerry-m-two-years-later.json",
+                "sheet": "October Content Calendar!12",
+                "draft": null,
+                "asset": "Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip-9x16_two-years-later_COVERED.mp4",
+                "built": "2026-09-24"
+              }
+            }
+          ],
           "social_with_todd": [
             {
               "id": "9d817ad9c0",
@@ -23669,72 +23744,6 @@
               "result": {
                 "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json"
               }
-            },
-            {
-              "id": "0a3ef56bfd",
-              "kind": "social",
-              "key": "social:2026-10-06:FB+IG+YT",
-              "title": "Tue 10/6: alumni clip, Gerry M. (two years later)",
-              "why": "held clip slot on the sheet (row 12) with no clip assigned",
-              "payload": {
-                "date": "2026-10-06",
-                "weekday": "Tue",
-                "times": "7:00 PM",
-                "platforms": [
-                  "FB",
-                  "IG",
-                  "YT"
-                ],
-                "type": "Alumni Story Clip",
-                "pillar": "Alumni clip",
-                "format": "clip",
-                "title": "Tue 10/6: alumni clip, Gerry M. (two years later)",
-                "purpose": "Finished 9:16 clip testimonial-gerry-clip-nomusic-9x16_two-years-later_FINAL.mp4 (Gerry M., BCC Alumnus). LinkedIn takes the same 9:16 file the next morning. Cover card and the BCC end card are already on the file; no further editing.",
-                "observance": null,
-                "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
-                "captions": {
-                  "FB": "Two years later. Gerry M., BCC Alumnus, reflects on lasting change in this short clip. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas. Link in the first comment.",
-                  "IG": "Two years later\n\nGerry M., BCC Alumnus, reflects on lasting change in this short clip. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #SanAntonio",
-                  "YT": {
-                    "title": "Two Years Later: Gerry M. | Bariatric Counseling Center",
-                    "description": "Gerry M., BCC Alumnus, reflects on lasting change two years after completing the program. The Bariatric Counseling Center offers comprehensive behavioral healthcare for people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas."
-                  }
-                },
-                "on_image": [
-                  "Two years later",
-                  "Watch Gerry in his own words",
-                  "Comprehensive behavioral healthcare",
-                  "San Antonio and virtual across Texas",
-                  "bariatriccounselingcenter.com"
-                ],
-                "alt_text": "Video testimonial from Gerry M., BCC Alumnus, reflecting on lasting change two years after completing the program.",
-                "why_now": "Alumni testimonials demonstrate sustained outcomes and reinforce program credibility during October enrollment period.",
-                "asset": {
-                  "format": "clip",
-                  "kind": "clip",
-                  "file_9x16": "Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip-9x16_two-years-later_COVERED.mp4",
-                  "file_16x9": null,
-                  "alumnus": "Gerry M.",
-                  "honorific": "BCC Alumnus",
-                  "topic": "two years later",
-                  "ran_on_sheet_before": false,
-                  "folder_rule": "only files in Videos/Ford/CURRENT-portrait-clips-9x16 are finished; never substitute a clip from another folder"
-                },
-                "sheet_tab": "October Content Calendar",
-                "replaces_row": 12,
-                "replaces_tab": "October Content Calendar",
-                "date_platforms": "Tue 10/6: FB, IG, YT",
-                "postiz_mode": "schedule",
-                "needs_rewrite": []
-              },
-              "source": "social-plan",
-              "status": "approved",
-              "created": "2026-09-22T09:57:39",
-              "decided": "2026-09-22T15:40:35",
-              "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT)",
-              "result": {
-                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\0a3ef56bfd-tue-10-6-alumni-clip-gerry-m-two-years-later.json"
-              }
             }
           ],
           "placed_30d": 0,
@@ -24616,5 +24625,5 @@
     }
   ],
   "snapshot_count": 41,
-  "generated_at": "2026-09-24T10:36:10.871513Z"
+  "generated_at": "2026-09-24T12:16:22.296610Z"
 }

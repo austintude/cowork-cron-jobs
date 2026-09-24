@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-24 07:10 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-24 07:16 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -20,20 +20,19 @@ Generated 2026-09-24 07:10 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Social posts to build and write to the sheet (2); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (1); the draft to Todd is a separate weekly step
 
 - id `a7414c697a`: **Fri 10/2: Food Friday reel from Leila's clips (Steak and chicken fajitas, Pesto Salmon, Sp** on 2026-10-02 (FB, IG, YT) at FB 12:00 PM, IG 6:00 PM, YT 6:00 PM, reel. Approved 2026-09-22. Why: row 10 plans a dish still for this Friday; the reel replaces it on FB and IG and adds YouTube Shorts
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json`
   - asset: reel https://drive.google.com/drive/folders/1tQlvgAhNUJMkpS2m_njCqlH-1TQNjNak
   - replaces row 10 in October Content Calendar
   - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/
-- id `0a3ef56bfd`: **Tue 10/6: alumni clip, Gerry M. (two years later)** on 2026-10-06 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-09-22. Why: held clip slot on the sheet (row 12) with no clip assigned
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\0a3ef56bfd-tue-10-6-alumni-clip-gerry-m-two-years-later.json`
-  - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip-9x16_two-years-later_COVERED.mp4
-  - replaces row 12 in October Content Calendar
-  - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
 
 ## Draft day: Wednesday. Today is Thursday, not draft day: build only, no email to Todd.
+
+## Social posts built, not yet in a draft to Todd (1): wait for draft day
+
+- id `0a3ef56bfd`: **Tue 10/6: alumni clip, Gerry M. (two years later)** on 2026-10-06 (FB, IG, YT) at 7:00 PM; sheet October Content Calendar!12; asset Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip-9x16_two-years-later_COVERED.mp4
 
 ## Social posts with Todd (5): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
