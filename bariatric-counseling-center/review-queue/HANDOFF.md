@@ -1,9 +1,10 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-24 12:28 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-24 12:31 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
+- The queue is shared between PCs through the cron-jobs git repo. Start every session with `python queue_apply.py --sync` (pulls what other PCs and the dashboard changed, rebuilds this file); every queue_apply.py call after that pulls and pushes on its own. If it warns that the repo is mid-rebase or mid-merge, stop and say so; do not work from a stale queue.
 - staging13 only. Production is read-only. Never push; the push is its own day with its own runbook (wp-production-push skill).
 - Content goes in THROUGH THE BLOCK EDITOR, in Chrome, logged in to staging13 wp-admin (Claude in Chrome javascript_tool on the page edit screen post.php?post=ID&action=edit): wp.blocks.createBlock for new blocks, dispatch('core/block-editor').insertBlocks(blocks, index, parentClientId) to add them, updateBlockAttributes(faqClientId, {questions}) to extend an existing rank-math/faq-block, then await dispatch('core/editor').savePost(). This is what worked on 2026-09-19. Do NOT use scripted REST writes: SiteGround anti-bot answers wp_staging.py and any python client from this IP with a captcha page, and a raw REST POST from browser JS was refused by the safety layer. New pages: create the draft with wp.apiFetch, then build it in its editor tab with the section() pattern from build_from_spec.js (title band, 800px body, grey FAQ band) and resetBlocks + savePost; leave status draft.
 - Existing pages already carry a rank-math/faq-block and an H2 Frequently Asked Questions: append questions to that block (skip duplicates by title), never add a second FAQ block. An AI Overview answer goes in as a core/heading (same style attributes as the page's other H2s) plus a core/paragraph at index 0 of the first body section.
