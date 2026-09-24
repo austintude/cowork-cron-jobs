@@ -2367,6 +2367,1139 @@
    "decided": "2026-09-23T07:37:31",
    "note": "placed on staging13 2026-09-23: fixed on staging13: binge-eating-in-men post; NEDA link now points at https://www.nationaleatingdisorders.org/statistics/ (their current statistics page)",
    "result": null
+  },
+  {
+   "id": "d3e4b728a8",
+   "kind": "fix",
+   "key": "fix:dead video embed:youtube:LPviMNg7raE",
+   "title": "Dead video on 2 pages: youtube LPviMNg7raE",
+   "why": "dead video embed on production, carried by 2 pages (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "youtube:LPviMNg7raE",
+    "fix_type": "dead video embed",
+    "detail": "youtube: private",
+    "pages": [
+     "https://bariatriccounselingcenter.com/testimonials",
+     "https://www.bariatriccounselingcenter.com/testimonials/"
+    ],
+    "suggest": null,
+    "steps": [
+     "The youtube video LPviMNg7raE is private. On each page below, open the editor on staging13, find the embed or lightbox link carrying that id, and replace it with the current video id (check the BCC YouTube channel and the Videos catalog) or remove the block."
+    ],
+    "first_seen": "2026-09-22",
+    "video": "LPviMNg7raE",
+    "service": "youtube"
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "1d6145a369",
+   "kind": "fix",
+   "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/2024/04/self-sabotage/",
+   "title": "Dead link on 1 page: /2024/04/self-sabotage/",
+   "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/2024/04/self-sabotage/",
+    "fix_type": "dead internal link",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-to-identify-self-sabotage-behaviors-part-2/"
+    ],
+    "suggest": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-to-identify-self-sabotage-behaviors-part-2/",
+    "steps": [
+     "https://www.bariatriccounselingcenter.com/2024/04/self-sabotage/ answers HTTP 404.",
+     "Point the link at https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-to-identify-self-sabotage-behaviors-part-2/ (closest live page by slug) or remove it.",
+     "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+    ],
+    "first_seen": "2026-09-22",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "7584df23dd",
+   "kind": "fix",
+   "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-in-san-antonio-tx/",
+   "title": "Dead link on 1 page: /binge-eating-disorder-treatment-in-san-antonio-tx/",
+   "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-in-san-antonio-tx/",
+    "fix_type": "dead internal link",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/compulsive-overeating-counseling-san-antonio-tx/"
+    ],
+    "suggest": "https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/",
+    "steps": [
+     "https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-in-san-antonio-tx/ answers HTTP 404.",
+     "Point the link at https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/ (closest live page by slug) or remove it.",
+     "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+    ],
+    "first_seen": "2026-09-22",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "53fdf61def",
+   "kind": "fix",
+   "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/",
+   "title": "Dead link on 1 page: /blog/sustaining-the-impact-of-ozempic-and-other-semaglutide",
+   "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/",
+    "fix_type": "dead internal link",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/weight-loss-therapy-in-san-antonio-tx/"
+    ],
+    "suggest": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/",
+    "steps": [
+     "https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/ answers HTTP 404.",
+     "Point the link at https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/ (closest live page by slug) or remove it.",
+     "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+    ],
+    "first_seen": "2026-09-22",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "6ebb11b319",
+   "kind": "fix",
+   "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/",
+   "title": "Dead link on 1 page: /blog/binge-eating-disorder-symptoms-causes-effective-treatm",
+   "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/",
+    "fix_type": "dead internal link",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/"
+    ],
+    "suggest": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/",
+    "steps": [
+     "https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/ answers HTTP 404.",
+     "Point the link at https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/ (closest live page by slug) or remove it.",
+     "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+    ],
+    "first_seen": "2026-09-22",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "935d555d22",
+   "kind": "fix",
+   "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/",
+   "title": "Dead link on 1 page: /therapy-for-depression-and-weight-in-san-antonio-tx/",
+   "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/",
+    "fix_type": "dead internal link",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/"
+    ],
+    "suggest": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/",
+    "steps": [
+     "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/ answers HTTP 404.",
+     "Point the link at https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/ (closest live page by slug) or remove it.",
+     "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+    ],
+    "first_seen": "2026-09-22",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "4c86891bdd",
+   "kind": "fix",
+   "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/",
+   "title": "Dead link on 1 page: /ourprogram/practice-in-the-community-2/",
+   "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/",
+    "fix_type": "dead internal link",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/"
+    ],
+    "suggest": "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/",
+    "steps": [
+     "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/ answers HTTP 404.",
+     "Point the link at https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/ (closest live page by slug) or remove it.",
+     "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+    ],
+    "first_seen": "2026-09-22",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "41860e26b9",
+   "kind": "fix",
+   "key": "fix:broken embed or media file:https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
+   "title": "Broken embed or media file on 1 page: /maps/embed/v1/place",
+   "why": "broken embed or media file on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
+    "fix_type": "broken embed or media file",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/contact/"
+    ],
+    "suggest": null,
+    "steps": [
+     "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging13."
+    ],
+    "first_seen": "2026-09-22",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "0ea4a9e9e6",
+   "kind": "fix",
+   "key": "fix:dead external link:http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html",
+   "title": "Dead outside link on 2 pages: bcms.org",
+   "why": "dead external link on production, carried by 2 pages (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html",
+    "fix_type": "dead external link",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/author/chasley-fortunw-pttman/",
+     "https://www.bariatriccounselingcenter.com/author/shamilton/"
+    ],
+    "suggest": null,
+    "steps": [
+     "http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html answers HTTP 404.",
+     "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+    ],
+    "first_seen": "2026-09-22",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "c388710016",
+   "kind": "fix",
+   "key": "fix:dead external link:https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds",
+   "title": "Dead outside link on 1 page: www.ozempic.com",
+   "why": "dead external link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds",
+    "fix_type": "dead external link",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/"
+    ],
+    "suggest": null,
+    "steps": [
+     "https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds answers HTTP 404.",
+     "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+    ],
+    "first_seen": "2026-09-22",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "1595cf9ca9",
+   "kind": "fix",
+   "key": "fix:dead external link:https://doi.org/10.3389/fnut.2022.948",
+   "title": "Dead outside link on 1 page: doi.org",
+   "why": "dead external link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://doi.org/10.3389/fnut.2022.948",
+    "fix_type": "dead external link",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/healthy-living-2/why-late-night-snacking-always-wins-and-why-youre-not-weak-for-it/"
+    ],
+    "suggest": null,
+    "steps": [
+     "https://doi.org/10.3389/fnut.2022.948 answers HTTP 404.",
+     "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+    ],
+    "first_seen": "2026-09-22",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "2509abfd18",
+   "kind": "fix",
+   "key": "fix:dead external link:https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/",
+   "title": "Dead outside link on 1 page: www.nationaleatingdisorders.org",
+   "why": "dead external link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/",
+    "fix_type": "dead external link",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-in-men-why-40-percent-of-cases-missed/"
+    ],
+    "suggest": null,
+    "steps": [
+     "https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/ answers HTTP 404.",
+     "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+    ],
+    "first_seen": "2026-09-22",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "ad6ac9438a",
+   "kind": "fix",
+   "key": "fix:internal link redirects:https://www.bariatriccounselingcenter.com/resources/",
+   "title": "Update 10 links that redirect: /resources/",
+   "why": "internal link redirects on production, carried by 10 pages (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/resources/",
+    "fix_type": "internal link redirects",
+    "detail": "-> https://www.bariatriccounselingcenter.com/blog/",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/ourprogram/bring-a-friend/",
+     "https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/",
+     "https://www.bariatriccounselingcenter.com/ourprogram/details/",
+     "https://www.bariatriccounselingcenter.com/ourprogram/dine-together/",
+     "https://www.bariatriccounselingcenter.com/ourprogram/enjoy-movement/",
+     "https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/",
+     "https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dieticians/",
+     "https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dietitians/",
+     "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/",
+     "https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/"
+    ],
+    "suggest": "https://www.bariatriccounselingcenter.com/blog/",
+    "steps": [
+     "On each page below, change the link https://www.bariatriccounselingcenter.com/resources/ to its final address https://www.bariatriccounselingcenter.com/blog/ so visitors and crawlers skip the redirect."
+    ],
+    "first_seen": "2026-09-22",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-09-24T05:32:09",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "c2d8dc5561",
+   "kind": "social",
+   "key": "social:2026-10-06:FB+IG+YT",
+   "title": "Tue 10/6: alumni clip, Kim K. (worth the effort)",
+   "why": "held clip slot on the sheet (row 12) with no clip assigned",
+   "payload": {
+    "date": "2026-10-06",
+    "weekday": "Tue",
+    "times": "7:00 PM",
+    "platforms": [
+     "FB",
+     "IG",
+     "YT"
+    ],
+    "type": "Alumni Story Clip",
+    "pillar": "Alumni clip",
+    "format": "clip",
+    "title": "Tue 10/6: alumni clip, Kim K. (worth the effort)",
+    "purpose": "Finished 9:16 clip kim-clip2-9x16_worth-the-effort_COVERED.mp4 (Kim K., BCC Alumna) from the CURRENT folder. Cover card and the BCC end card are already on the file; no further editing. LinkedIn takes the same 9:16 file the next morning.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
+    "captions": {
+     "FB": "Recovery takes time, and it takes work. But it's work that changes your life. Kim K., BCC Alumna, shares why the effort is worth it. At the Bariatric Counseling Center, clients find the support they need to build new relationships with food and movement through behavioral therapy, dietary guidance, culinary classes and mindful movement. One program, not four. San Antonio and virtual across Texas. Link in the first comment.",
+     "IG": "Support for lasting change in your relationship with food\n\nKim K., BCC Alumna, talks about the work of recovery and why it's worth the effort. Watch her share her experience in her own words.\n\nThe Bariatric Counseling Center offers group and individual therapy, dietary guidance, cooking classes and movement education in a unique, all-inclusive format. One program, not four.\n\nSan Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+     "YT": {
+      "title": "Recovery Is Worth the Effort | Kim K., BCC Alumna",
+      "description": "Kim K., BCC Alumna, shares her perspective on the work of recovery and why the effort leads to lasting change. The Bariatric Counseling Center provides behavioral therapy, dietary guidance, culinary classes and mindful movement for people struggling with weight loss, binge eating and chronic overeating. One program, not four. San Antonio and virtual across Texas. Learn more at bariatriccounselingcenter.com/testimonials"
+     }
+    },
+    "on_image": [
+     "Recovery takes work",
+     "But it changes your life",
+     "Hear from Kim K., BCC Alumna",
+     "One program, not four",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Kim K., BCC Alumna, discusses why the effort of recovery is worth it.",
+    "why_now": "Alumni testimonial highlighting the value of sustained effort in behavioral treatment for obesity.",
+    "asset": {
+     "format": "clip",
+     "kind": "clip",
+     "file_9x16": "Videos/Ford/CURRENT-portrait-clips-9x16/kim-clip2-9x16_worth-the-effort_COVERED.mp4",
+     "file_16x9": null,
+     "folder_rule": "only files in Videos/Ford/CURRENT-portrait-clips-9x16 are finished; never substitute a clip from another folder",
+     "alumnus": "Kim K.",
+     "honorific": "BCC Alumna",
+     "topic": "worth the effort",
+     "ran_on_sheet_before": false
+    },
+    "sheet_tab": "October Content Calendar",
+    "replaces_row": 12,
+    "replaces_tab": "October Content Calendar",
+    "date_platforms": "Tue 10/6: FB, IG, YT",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-24T05:32:36",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "cd67a665c9",
+   "kind": "social",
+   "key": "social:2026-10-08:FB+IG+YT",
+   "title": "Thu 10/8: alumni clip, Kim K. (more than willpower)",
+   "why": "Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there",
+   "payload": {
+    "date": "2026-10-08",
+    "weekday": "Thu",
+    "times": "7:00 PM",
+    "platforms": [
+     "FB",
+     "IG",
+     "YT"
+    ],
+    "type": "Alumni Story Clip",
+    "pillar": "Alumni clip",
+    "format": "clip",
+    "title": "Thu 10/8: alumni clip, Kim K. (more than willpower)",
+    "purpose": "Finished 9:16 clip kim-clip3-9x16_more-than-willpower_COVERED.mp4 (Kim K., BCC Alumna) from the CURRENT folder. Cover card and the BCC end card are already on the file; no further editing. LinkedIn takes the same 9:16 file the next morning.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
+    "captions": {
+     "FB": "It takes more than willpower. Kim K., BCC Alumna, shares what really made the difference in her recovery. Watch her story in her own words. San Antonio and virtual across Texas. Link in the first comment.",
+     "IG": "More than willpower bariatric counseling support\n\nIt takes more than willpower. Kim K., BCC Alumna, shares what really made the difference in her recovery at the Bariatric Counseling Center. Watch her story in her own words. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+     "YT": {
+      "title": "More Than Willpower: Kim's Story | Bariatric Counseling Center",
+      "description": "Kim K., BCC Alumna, shares what really made the difference in her recovery. The Bariatric Counseling Center offers comprehensive behavioral healthcare for obesity through group and individual therapy, dietary guidance, cooking classes, and movement education. Serving clients in San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "It takes more than willpower",
+     "Kim K., BCC Alumna",
+     "Watch her story",
+     "San Antonio and virtual across Texas",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Kim K., BCC Alumna, shares her recovery story about what made the difference beyond willpower.",
+    "why_now": "Alumni testimonial clips build trust and show real recovery experiences to prospective clients searching for bariatric support.",
+    "asset": {
+     "format": "clip",
+     "kind": "clip",
+     "file_9x16": "Videos/Ford/CURRENT-portrait-clips-9x16/kim-clip3-9x16_more-than-willpower_COVERED.mp4",
+     "file_16x9": null,
+     "folder_rule": "only files in Videos/Ford/CURRENT-portrait-clips-9x16 are finished; never substitute a clip from another folder",
+     "alumnus": "Kim K.",
+     "honorific": "BCC Alumna",
+     "topic": "more than willpower",
+     "ran_on_sheet_before": false
+    },
+    "sheet_tab": "October Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Thu 10/8: FB, IG, YT",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-24T05:32:43",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "112e44e57d",
+   "kind": "social",
+   "key": "social:2026-10-09:FB+IG+YT",
+   "title": "Fri 10/9: Food Friday reel from Leila's clips (Citrus grilled shrimp, Chicken Tikka Masala",
+   "why": "row 16 plans a dish still for this Friday; the reel replaces it on FB and IG and adds YouTube Shorts",
+   "payload": {
+    "date": "2026-10-09",
+    "weekday": "Fri",
+    "times": "FB 12:00 PM, IG 6:00 PM, YT 6:00 PM",
+    "platforms": [
+     "FB",
+     "IG",
+     "YT"
+    ],
+    "type": "Food Friday",
+    "pillar": "Food Friday",
+    "format": "reel",
+    "title": "Fri 10/9: Food Friday reel from Leila's clips (Citrus grilled shrimp, Chicken Tikka Masala, Monterey Chicken)",
+    "purpose": "Stitch the 3 clips from Drive folder 'August 31-September 4' (2026-09-07, about 33 seconds of footage) into one 9:16 reel: audio stripped, each dish named in a short text overlay, the BCC end card last, calm background music. Dishes: Citrus grilled shrimp (4s); Chicken Tikka Masala (26s); Monterey Chicken (3s).",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/",
+    "captions": {
+     "FB": "Learning to cook differently is one of the four pillars at the Bariatric Counseling Center. Our professional chef, Leila Bebley, leads culinary classes in our state-of-the-art teaching kitchen, where clients learn recipe education and instruction, meal planning, and how to prepare dishes that support their recovery. Behavioral therapy. Dietary guidance. Culinary classes. Mindful movement. One program, not four. San Antonio and virtual across Texas. Link in the first comment.",
+     "IG": "culinary classes bariatric counseling\n\nOur professional chef, Leila Bebley, leads culinary classes in our state-of-the-art teaching kitchen. Clients learn recipe education and instruction, meal planning, and how to prepare dishes that support their recovery. Behavioral Therapy & Counseling. Dietary Guidance & Support. Culinary Classes. Mindful Movement. One program, not four. The Bariatric Counseling Center serves clients in San Antonio and virtual across Texas.\n\n#BariatricCounseling #SanAntonio #MindfulRecovery",
+     "YT": {
+      "title": "Culinary Classes at Bariatric Counseling Center San Antonio",
+      "description": "Our professional chef, Leila Bebley, leads culinary classes in our state-of-the-art teaching kitchen at the Bariatric Counseling Center. Clients learn recipe education and instruction, meal planning, and how to prepare dishes that support their recovery. One of four pillars in our innovative program for people who struggle with weight loss, obesity, binge eating, and chronic overeating. San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Citrus Grilled Shrimp",
+     "Chicken Tikka Masala",
+     "Monterey Chicken",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Three dishes prepared by Chef Leila Bebley in the Bariatric Counseling Center teaching kitchen.",
+    "why_now": "Food Friday post showcasing the culinary classes pillar with recent kitchen footage from Chef Leila.",
+    "asset": {
+     "format": "reel",
+     "kind": "reel",
+     "drive_folder": "https://drive.google.com/drive/folders/1lmS4iu1NXuEMGNZkv_6BdVwJDERGSVOy",
+     "drive_folder_id": "1lmS4iu1NXuEMGNZkv_6BdVwJDERGSVOy",
+     "drive_folder_name": "August 31-September 4",
+     "clips": [
+      {
+       "name": "Citrus grilled shrimp",
+       "drive_id": "1TmYNLHAWWHeSpDWMBtQu8qpoyt5j2GjD",
+       "seconds": 4,
+       "mb": 7.6
+      },
+      {
+       "name": "Chicken Tikka Masala",
+       "drive_id": "1aJ8MCD752SUg1JZoQbKPC4PQJvEUDlgA",
+       "seconds": 26,
+       "mb": 43.4
+      },
+      {
+       "name": "Monterey Chicken",
+       "drive_id": "1VoGggZ4Tn9TuZQ0gulpKx3-kv8nrXwMd",
+       "seconds": 3,
+       "mb": 6.1
+      }
+     ],
+     "endcard_9x16": "social/video/cover-scan/endcard/end-9x16.png",
+     "music": "ElevenLabs music generation (the ElevenLabs Player MCP on this PC, generate_music): calm, warm, acoustic, no vocals, about 40 seconds; mixed under the picture at low level",
+     "target_seconds": "30 to 60"
+    },
+    "sheet_tab": "October Content Calendar",
+    "replaces_row": 16,
+    "replaces_tab": "October Content Calendar",
+    "date_platforms": "Fri 10/9: FB, IG, YT",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-24T05:32:51",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "a07785591a",
+   "kind": "social",
+   "key": "social:2026-11-11:FB+IG",
+   "title": "Wed 11/11: Staff Spotlight: Dr Sara Hamilton",
+   "why": "November is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-11-11",
+    "weekday": "Wed",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Staff Spotlight",
+    "pillar": "People",
+    "format": "carousel",
+    "title": "Wed 11/11: Staff Spotlight: Dr Sara Hamilton",
+    "purpose": "Dr Sara Hamilton, Psychologist, Clinical Director. What she wants every new client to know in week one. Needs her one sentence in her own words.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/about/",
+    "captions": {
+     "FB": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nDr Hamilton is part of our experienced and compassionate team of behavioral healthcare professionals serving clients in San Antonio and virtual across Texas.\n\nLink in the first comment.",
+     "IG": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nOur team serves clients in San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+     "YT": {
+      "title": "Meet Dr Sara Hamilton, Clinical Director",
+      "description": "Dr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center in San Antonio, Texas. As a clinical psychologist, she leads behavioral therapy programming for people struggling with weight-loss, obesity, binge eating, and chronic over-eating. Our experienced team provides group and individual therapy, dietary guidance, cooking classes, and movement education in one comprehensive program, serving clients in San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Dr Sara Hamilton",
+     "Clinical Psychologist, Clinical Director",
+     "Leading behavioral therapy programming",
+     "San Antonio and virtual across Texas",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Dr Sara Hamilton, Clinical Psychologist and Clinical Director at Bariatric Counseling Center in San Antonio, Texas.",
+    "why_now": "Veterans Day week is an appropriate time to spotlight clinical leadership without competing messaging.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Wed 11/11: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-24T05:33:46",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "3ac415f444",
+   "kind": "social",
+   "key": "social:2026-11-12:LI",
+   "title": "Thu 11/12: Q4 workload and the holiday calendar",
+   "why": "November is not planned yet; this keeps the LI cadence going",
+   "payload": {
+    "date": "2026-11-12",
+    "weekday": "Thu",
+    "times": "9:30 AM",
+    "platforms": [
+     "LI"
+    ],
+    "type": "Professionals",
+    "pillar": "Working professionals",
+    "format": "image",
+    "title": "Thu 11/12: Q4 workload and the holiday calendar",
+    "purpose": "The season when 'I will deal with it in January' sets in. Written for a LinkedIn reader.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/program-schedule/",
+    "captions": {
+     "LI": "Year-end deadlines. Holiday planning. The phrase \"I'll deal with it in January\" starts to feel reasonable.\n\nIf you're a working professional carrying the weight of Q4 and already postponing what matters, you're not alone. The Bariatric Counseling Center offers an Intensive Outpatient Program designed for people struggling with binge eating, chronic overeating, and weight loss, with session times that work around a full schedule.\n\nMorning, evening, and weekend tracks. Virtual and onsite options. Behavioral therapy, dietary guidance, culinary classes, and mindful movement. One program, not four.\n\nCovered by most health insurance plans and available across Texas. San Antonio and virtual across Texas.\n\nLink in the first comment.",
+     "YT": {
+      "title": "",
+      "description": ""
+     }
+    },
+    "on_image": [
+     "Year-end deadlines are piling up",
+     "\"I'll deal with it in January\"",
+     "Support that fits your schedule",
+     "Morning, evening, weekend tracks",
+     "Virtual and onsite across Texas",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Text overlay addressing working professionals postponing health goals during Q4 workload season, promoting flexible therapy scheduling.",
+    "why_now": "Posted mid-November when Q4 pressure peaks and professionals begin deferring personal health decisions to the new year.",
+    "asset": {
+     "format": "image",
+     "kind": "image",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Thu 11/12: LI",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-24T05:33:54",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "337fc6aea8",
+   "kind": "social",
+   "key": "social:2026-11-16:FB+IG",
+   "title": "Mon 11/16: Eating at one table again",
+   "why": "November is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-11-16",
+    "weekday": "Mon",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Mon 11/16: Eating at one table again",
+    "purpose": "Family Engagement: how the program brings the people around a client into the work, gently.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "Family engagement in behavioral healthcare for obesity\n\nAt the Bariatric Counseling Center, family engagement is part of the work. Not every session, not mandatory, but available when it helps.\n\nA spouse learning how to support without monitoring. A parent understanding the difference between care and control. Adult children finding new ways to talk about food at gatherings.\n\nFamily sessions happen when a client asks, or when a counselor suggests it might help move something forward. The people around you don't need to be experts. They just need to understand what you're working on.\n\nWe provide group and individual therapy, dietary guidance, cooking classes and movement education in a unique, all-inclusive format. One program, not four. Serving clients in San Antonio and virtual across Texas.\n\nLink in the first comment.",
+     "IG": "family support for weight loss and behavioral health\n\nFamily engagement is part of the program at the Bariatric Counseling Center. Not every session, not mandatory, but there when it matters.\n\nA spouse learning to support without hovering. A parent shifting from control to care. Adult children finding better ways to navigate holiday meals together.\n\nThese sessions happen when a client requests them, or when a counselor sees an opening. The goal is simple. Help the people around you understand the work you're doing, so home becomes easier, not harder.\n\nWe offer group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #SanAntonio",
+     "YT": {
+      "title": "Family Engagement in Behavioral Treatment for Obesity",
+      "description": "Family engagement is part of the comprehensive behavioral healthcare at Bariatric Counseling Center. Sessions help spouses, parents and adult children understand the behavioral work their loved one is doing. Not mandatory, but available when it supports progress. The program includes group and individual therapy, dietary guidance, cooking classes and movement education in one intensive outpatient format. Serving clients in San Antonio and virtual across Texas. Learn more at bariatriccounselingcenter.com."
+     }
+    },
+    "on_image": [
+     "Family engagement is part of the work",
+     "Not mandatory, but there when it helps",
+     "Support without monitoring",
+     "Care instead of control",
+     "San Antonio and virtual across Texas",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Carousel post about family engagement services at Bariatric Counseling Center in San Antonio, Texas.",
+    "why_now": "Week before Thanksgiving, families gathering, timing for family dynamics content.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Mon 11/16: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-24T05:34:08",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "8c10f61a84",
+   "kind": "social",
+   "key": "social:2026-11-18:FB+IG",
+   "title": "Wed 11/18: Alumni words: never made to feel judged",
+   "why": "November is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-11-18",
+    "weekday": "Wed",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Alumni Words: Written Testimonial",
+    "pillar": "Proof",
+    "format": "carousel",
+    "title": "Wed 11/18: Alumni words: never made to feel judged",
+    "purpose": "Samantha F., BCC Alumna: 'The staff never made me feel judged.' Quote card plus two lines of context.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
+    "captions": {
+     "FB": "Samantha F., BCC Alumna, shares what made her experience different: 'The staff never made me feel judged.'\n\nAt the Bariatric Counseling Center, we provide group and individual therapy, dietary guidance, cooking classes and movement education in a unique, all-inclusive format, led by an experienced and compassionate team of behavioral healthcare professionals.\n\nSan Antonio and virtual across Texas.\n\nLink in the first comment.",
+     "IG": "Bariatric counseling San Antonio testimonials\n\n'The staff never made me feel judged.'\n\nSamantha F., BCC Alumna, describes her experience at the Bariatric Counseling Center. We offer an innovative program designed to help people who struggle with weight loss, obesity, binge eating and chronic overeating.\n\nOur team provides behavioral therapy, dietary guidance, culinary classes and mindful movement. One program, not four.\n\nSan Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+     "YT": {
+      "title": "BCC Alumni: Never Made to Feel Judged | Samantha F. Testimonial",
+      "description": "Samantha F., BCC Alumna, shares her experience with the compassionate team at Bariatric Counseling Center. We provide behavioral therapy, dietary guidance, culinary classes and mindful movement for people who struggle with weight loss, obesity, binge eating and chronic overeating. San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "The staff never made me feel judged",
+     "Samantha F., BCC Alumna",
+     "Compassionate behavioral healthcare for obesity",
+     "San Antonio and virtual across Texas",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Testimonial quote card from Samantha F., BCC Alumna, about her experience with compassionate staff at Bariatric Counseling Center.",
+    "why_now": "Mid-week testimonial reinforces the compassionate care differentiator and builds trust with prospects researching treatment options.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Wed 11/18: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-09-24T05:34:28",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "a8a28d82a7",
+   "kind": "title_meta",
+   "key": "https://bariatriccounselingcenter.com/about",
+   "title": "New title and description for /about",
+   "why": "Duplicate title; 148 impressions, 2.7% CTR at position 13.9.",
+   "payload": {
+    "url": "https://bariatriccounselingcenter.com/about",
+    "title": "About Us | Bariatric Counseling Center",
+    "description": "Meet the licensed therapists, psychologist, dietitians and chef providing behavioral treatment for obesity in San Antonio and across Texas.",
+    "focus_keyword": "bariatric counseling",
+    "current_title": "About The Bariatric Counseling Center | San Antonio TX",
+    "current_description": "Meet our team of licensed mental health professionals and registered dietitians offering compassionate support for binge and emotional eating in Texas."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:34:46",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "e5f7478884",
+   "kind": "title_meta",
+   "key": "https://www.bariatriccounselingcenter.com/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/",
+   "title": "New title and description for /undergoing-or-having-undergone-bariatric-surgery-a-comprehe",
+   "why": "103 impressions, 0.0% CTR at position 7.4.",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/undergoing-or-having-undergone-bariatric-surgery-a-comprehensive-guide-to-psychological-support-and-success/",
+    "title": "Bariatric Surgery Counseling in San Antonio, Texas",
+    "description": "Behavioral therapy, dietary guidance and psychological support for people preparing for or recovering from bariatric surgery in San Antonio.",
+    "focus_keyword": "bariatric surgery counseling",
+    "current_title": "Bariatric Surgery Mental Health Support In San Antonio",
+    "current_description": "Bariatric surgery succeeds when behavioral health travels with it. A San Antonio guide to psychological preparation and post-op support from BCC."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:34:48",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "e019d979ee",
+   "kind": "title_meta",
+   "key": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+   "title": "New title and description for /self-improvement/mental-health/better-sleep-for-weight-loss",
+   "why": "92 impressions, 0.0% CTR at position 6.9.",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/better-sleep-for-weight-loss-how-rest-impacts-your-metabolism-and-cravings/",
+    "title": "How Sleep Affects Weight Loss, Metabolism and Cravings",
+    "description": "Poor sleep disrupts hunger hormones and slows metabolism. Learn how rest supports weight loss, and find behavioral support in San Antonio and across Texas.",
+    "focus_keyword": "does getting good sleep help with weight loss",
+    "current_title": "Does Poor Sleep Increase Appetite? Sleep, Cravings & Weight",
+    "current_description": "Poor sleep spikes hunger hormones and cravings, stalling weight loss. Learn how rest supports metabolism, plus behavioral support from BCC in San Antonio."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:34:50",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "be05179602",
+   "kind": "title_meta",
+   "key": "https://www.bariatriccounselingcenter.com/emotional-eating/what-is-emotional-eating/",
+   "title": "New title and description for /emotional-eating/what-is-emotional-eating/",
+   "why": "Duplicate title; 81 impressions, 0.0% CTR at position 30.2.",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/emotional-eating/what-is-emotional-eating/",
+    "title": "What Is Emotional Eating? Signs, Causes & Help",
+    "description": "Emotional eating means using food to cope with feelings, not hunger. Learn the signs, causes, and how therapists help you break the cycle.",
+    "focus_keyword": "emotional eating",
+    "current_title": "What Is Emotional Eating? Signs, Causes & Help | BCC",
+    "current_description": "Emotional eating means using food to cope with feelings, not hunger. Learn the signs, causes, and how BCC’s San Antonio therapists help you break the cycle."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:34:52",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "a24b6c6485",
+   "kind": "title_meta",
+   "key": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+   "title": "New title and description for /self-improvement/mental-health/holistic-weight-loss-approac",
+   "why": "Title too long (66 chars); meta description too long (161 chars); 79 impressions, 0.0% CTR at position 14.5.",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/",
+    "title": "Holistic Weight Loss: Mind and Body Beyond Diet Culture",
+    "description": "How therapy, nutrition, and self-compassion work together for lasting change. A mind-body wellness approach to weight, not another diet.",
+    "focus_keyword": "holistic weight loss",
+    "current_title": "Holistic Weight Loss: A Mind-and-Body Approach Beyond Diet Culture",
+    "current_description": "What holistic weight loss really means: mind-body wellness instead of diet culture. How therapy, nutrition, and self-compassion work together for lasting change."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:34:57",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "4be3b37121",
+   "kind": "title_meta",
+   "key": "https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
+   "title": "New title and description for /bariatric-surgery-psychological-evaluation-in-san-antonio-t",
+   "why": "Title too long (64 chars); 76 impressions, 0.0% CTR at position 17.8.",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/",
+    "title": "Bariatric Surgery Psychological Evaluation",
+    "description": "Bariatric surgery psychological evaluations in San Antonio or by telehealth across Texas. Joint Commission accredited, accepts most insurance.",
+    "focus_keyword": "bariatric therapist",
+    "current_title": "Bariatric Psychological Evaluation | San Antonio + TX Telehealth",
+    "current_description": "Bariatric surgery psychological evaluations in San Antonio or by telehealth across Texas. Joint Commission accredited BCC accepts most insurance."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:34:59",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "a4e15c04f3",
+   "kind": "title_meta",
+   "key": "https://www.bariatriccounselingcenter.com/contact/",
+   "title": "New title and description for /contact/",
+   "why": "Missing h1; 63 impressions, 0.0% CTR at position 8.2.",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/contact/",
+    "title": "Contact Us | Bariatric Counseling Center",
+    "description": "Call or message us to learn more about our intensive outpatient program for obesity, binge eating and emotional eating in San Antonio and across Texas.",
+    "focus_keyword": "bariatric counseling",
+    "current_title": "Contact The Bariatric Counseling Center | San Antonio Texas",
+    "current_description": "Call or message BCC to start your recovery journey. We offer virtual and in-person support for emotional and binge eating across Texas."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:35:01",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "8dd1907c41",
+   "kind": "title_meta",
+   "key": "https://www.bariatriccounselingcenter.com/food-addiction-treatment-in-san-antonio-tx/",
+   "title": "New title and description for /food-addiction-treatment-in-san-antonio-tx/",
+   "why": "Title too long (63 chars); meta description too long (185 chars); 56 impressions, 0.0% CTR at position 26.9.",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/food-addiction-treatment-in-san-antonio-tx/",
+    "title": "Food Addiction Treatment in San Antonio, TX",
+    "description": "Intensive outpatient program for compulsive overeating and food addiction. Therapy, dietitians, cooking classes and movement education.",
+    "focus_keyword": "food addiction therapy",
+    "current_title": "Food Addiction Treatment San Antonio | Real Help For Overeaters",
+    "current_description": "Food addiction treatment in San Antonio from the only accredited program of its kind in Texas. Therapists + dietitians treat the roots of compulsive overeating. Most insurance accepted."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:35:03",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "d295f3f583",
+   "kind": "content",
+   "key": "faq:https://www.bariatriccounselingcenter.com/binge-eating-therapy-in-san-antonio-tx/",
+   "title": "FAQ block for /binge-eating-therapy-in-san-antonio-tx/ (4 questions)",
+   "why": "4 People Also Ask questions across 4 tracked terms (best BCC position 3).",
+   "payload": {
+    "target": "https://www.bariatriccounselingcenter.com/binge-eating-therapy-in-san-antonio-tx/",
+    "body": "Place as a Kadence accordion/FAQ block near the bottom of https://www.bariatriccounselingcenter.com/binge-eating-therapy-in-san-antonio-tx/; add FAQPage schema via Rank Math.\n\n## Frequently asked questions\n\n**How can I train my brain to stop overeating?**\n\nWe help clients understand and modify their relationship with food through behavioral therapy, mindful eating education, and dietary guidance from registered dietitians. Our Intensive Outpatient Program teaches recovery and coping skills you can use long after treatment ends. A licensed therapist can work with you on the specific thoughts and behaviors driving overeating.\n\n**How do I stop my cravings and overeating?**\n\nStopping cravings and overeating takes more than willpower. We provide group and individual therapy, dietary guidance, cooking classes, and mindful eating education in one program. Our team helps clients build coping skills, set realistic goals, and create a sustainable plan. You work with a clinical psychologist, licensed professional counselors, and registered dietitians who understand the behavioral side of food.\n\n**Why do people binge?**\n\nBinge eating has many causes, including emotional triggers, stress, past dieting, and the way our brains respond to certain foods. At the Bariatric Counseling Center, we focus on understanding those patterns and learning new ways to cope. Our behavioral therapy and counseling help clients address the underlying reasons they turn to food, not just the eating itself.\n\n**Where does binge eating start?**\n\nBinge eating often starts with a combination of emotional, environmental, and biological factors. It can develop after years of dieting, during stressful life events, or as a way to manage difficult feelings. We help clients trace those patterns and build healthier responses. A licensed therapist or psychologist is the right person to explore your individual history and triggers.\n\nIf you are struggling with binge eating or chronic overeating, we are here to help. Reach out to learn more about our program."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:35:14",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "9f3d366ed7",
+   "kind": "content",
+   "key": "faq:https://www.bariatriccounselingcenter.com/eating-disorder-therapist-near-me/",
+   "title": "FAQ block for /eating-disorder-therapist-near-me/ (3 questions)",
+   "why": "3 People Also Ask questions across 4 tracked terms (best BCC position 9).",
+   "payload": {
+    "target": "https://www.bariatriccounselingcenter.com/eating-disorder-therapist-near-me/",
+    "body": "Place as a Kadence accordion/FAQ block near the bottom of https://www.bariatriccounselingcenter.com/eating-disorder-therapist-near-me/; add FAQPage schema via Rank Math.\n\n## Frequently asked questions\n\n**How do I cope with an eating disorder?**\n\nCoping with an eating disorder takes professional support. At the Bariatric Counseling Center, we provide group and individual therapy, dietary guidance from registered dietitians, cooking classes and movement education in one comprehensive program. Our licensed therapists and clinical psychologist help clients develop recovery and coping skills, practice intuitive eating, and understand their relationship with food. We work with people struggling with binge eating, compulsive overeating and chronic overeating, both onsite in San Antonio and virtually across Texas.\n\n**What eating disorder is most common among men and boys?**\n\nBinge eating disorder is the most common eating disorder among men and boys, though it affects people of all genders. At the Bariatric Counseling Center, we treat binge eating disorder and compulsive overeating through behavioral therapy, dietary guidance, culinary classes and mindful movement. Our experienced team of licensed professional counselors, a clinical psychologist and registered dietitians provides compassionate, evidence-based care in a supportive environment designed specifically for people who struggle with overeating.\n\n**What are the diagnostic criteria for eating disorders in the DSM-5?**\n\nThe DSM-5 lists specific criteria for diagnosing eating disorders, including binge eating disorder, anorexia nervosa and bulimia nervosa. A licensed therapist or psychologist is the right person to provide a formal diagnosis. At the Bariatric Counseling Center, our clinical team includes a licensed psychologist and licensed professional counselors who work with clients struggling with binge eating, emotional eating and chronic overeating. We focus on behavioral treatment and helping clients develop a healthier relationship with food.\n\nIf you are struggling with an eating disorder or disordered eating, we are here to help. Reach out to learn more about our program."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:35:23",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "bedcf97883",
+   "kind": "content",
+   "key": "faq:https://www.bariatriccounselingcenter.com/overeaters-anonymous-support-san-antonio-tx/",
+   "title": "FAQ block for /overeaters-anonymous-support-san-antonio-tx/ (4 questions)",
+   "why": "4 People Also Ask questions across 4 tracked terms (best BCC position not top 50).",
+   "payload": {
+    "target": "https://www.bariatriccounselingcenter.com/overeaters-anonymous-support-san-antonio-tx/",
+    "body": "Place as a Kadence accordion/FAQ block near the bottom of https://www.bariatriccounselingcenter.com/overeaters-anonymous-support-san-antonio-tx/; add FAQPage schema via Rank Math.\n\n## Frequently asked questions\n\n**Is Overeaters Anonymous worth it?**\n\nOA meetings offer peer support and community, which many people find valuable. At the Bariatric Counseling Center, we complement that approach with professional clinical care: licensed therapists, registered dietitians, cooking classes and movement education in one program. We work with people who attend OA, people who have tried it, and people exploring other paths.\n\n**What is overeating a symptom of?**\n\nOvereating can be tied to stress, anxiety, depression, binge eating disorder, or learned patterns around food. A licensed therapist or psychologist is the right person to explore what is driving it in your specific situation. We help clients understand and modify their relationship with food through behavioral therapy, dietary guidance and coping skills.\n\n**What is the easiest way to stop overeating?**\n\nThere is no single easy fix, but understanding the emotional and behavioral patterns behind overeating is a strong foundation. We teach coping skills, mindful eating, nutritional planning and goal setting in group and individual therapy. Recovery takes time, and we provide structured support over roughly three months and 30 sessions in our Intensive Outpatient Program.\n\n**What are the controversies surrounding Overeaters Anonymous?**\n\nSome people appreciate OA's spiritual foundation and 12-step structure. Others prefer a clinical, evidence-based approach with licensed professionals. At BCC, we respect all pathways and do not replace OA. We offer comprehensive behavioral healthcare that can stand alone or work alongside peer support groups, depending on what fits your needs.\n\nIf you are looking for professional support for overeating, we are here to help. Reach out to learn more about our program."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:35:34",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "8ecf819701",
+   "kind": "content",
+   "key": "faq:https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/",
+   "title": "FAQ block for /what-is-a-weight-loss-counselor/ (3 questions)",
+   "why": "3 People Also Ask questions across 4 tracked terms (best BCC position 1).",
+   "payload": {
+    "target": "https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/",
+    "body": "Place as a Kadence accordion/FAQ block near the bottom of https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/; add FAQPage schema via Rank Math.\n\n## Frequently asked questions\n\n**What is the best therapy for weight loss?**\n\nThe best therapy addresses the behaviors and emotions behind overeating. At the Bariatric Counseling Center, we combine group and individual therapy, dietary guidance from registered dietitians, cooking classes and movement education in one comprehensive program. We help clients understand and modify their relationship with food. A licensed therapist can help you determine which approach fits your needs.\n\n**How do I get over the mental block of weight loss?**\n\nMental blocks around weight often stem from emotional eating, past struggles, or anxiety about change. Our therapists work with clients to build coping skills, set realistic goals and practice mindful eating. We address the emotional side of food in both group and individual sessions. Progress takes time, but you do not have to work through it alone.\n\n**How do I talk to someone about losing weight?**\n\nIf you are the one struggling, reaching out to a licensed therapist or counselor is a strong first step. Our team listens without judgment and helps you explore what is driving your relationship with food. If you are supporting someone else, focus on care and concern, not criticism. Let them lead the conversation and offer to help them find resources.\n\nIf you are ready to explore how counseling can support your goals, reach out to us. We are here to help."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:35:42",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "7154fa435d",
+   "kind": "content",
+   "key": "aio:weight loss counseling",
+   "title": "AI Overview answer for \"weight loss counseling\" on /what-is-a-weight-loss-counselor/",
+   "why": "AI Overview shows for \"weight loss counseling\" (20/mo Texas) and cites no named source, not BCC.",
+   "payload": {
+    "target": "https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/",
+    "body": "Add as a new H2 section on https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/, high on the page, so the direct answer sits in the first sentences under the heading. Target term: \"weight loss counseling\". Google shows an AI Overview for this term that cites no named source and not BCC.\n\n## What does weight loss counseling involve?\n\nWeight loss counseling is behavioral therapy that helps people understand and modify their relationship with food. It involves working with licensed therapists to address binge eating, emotional eating, and chronic overeating through individual and group sessions. Counseling typically includes coping skills, goal setting, and mindful eating practices. At the Bariatric Counseling Center in San Antonio, weight loss counseling is part of an Intensive Outpatient Program that combines behavioral therapy with dietary guidance from registered dietitians, cooking classes with a professional chef, and movement education. The program runs about three months, meeting two to three times per week, and is available onsite in San Antonio and virtually throughout Texas, in network with most health insurance plans."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:35:48",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "1b9fd2fab9",
+   "kind": "content",
+   "key": "aio:nutritional counseling san antonio tx",
+   "title": "AI Overview answer for \"nutritional counseling san antonio tx\" on /nutritional-counseling-",
+   "why": "AI Overview shows for \"nutritional counseling san antonio tx\" (volume not on file) and cites no named source, not BCC.",
+   "payload": {
+    "target": "https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/",
+    "body": "Add as a new H2 section on https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/, high on the page, so the direct answer sits in the first sentences under the heading. Target term: \"nutritional counseling san antonio tx\". Google shows an AI Overview for this term that cites no named source and not BCC.\n\n## What is nutritional counseling for weight management?\n\nNutritional counseling for weight management is one-on-one or group education with a registered dietitian who helps you plan meals, understand portion sizes, and build sustainable eating habits. It typically includes meal planning, grocery shopping guidance, and support for navigating restaurants and social eating situations. At the Bariatric Counseling Center in San Antonio, registered dietitians provide nutritional counseling as part of an Intensive Outpatient Program that also includes behavioral therapy, cooking classes with a professional chef, and movement education. The program serves clients onsite in San Antonio and virtually throughout Texas, and is in network with most health insurance plans, with claims processed under mental health benefits."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:35:52",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "b5acad4dbf",
+   "kind": "content",
+   "key": "aio:bariatric therapy",
+   "title": "AI Overview answer for \"bariatric therapy\" on /bariatric-therapy-in-san-antonio-tx/",
+   "why": "AI Overview shows for \"bariatric therapy\" (volume not on file) and cites nejm.org, pubmed.ncbi.nlm.nih.gov, maimo.org, not BCC.",
+   "payload": {
+    "target": "https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
+    "body": "Add as a new H2 section on https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/, high on the page, so the direct answer sits in the first sentences under the heading. Target term: \"bariatric therapy\". Google shows an AI Overview for this term that cites nejm.org, pubmed.ncbi.nlm.nih.gov, maimo.org, cms.gov and not BCC.\n\n## What is bariatric therapy?\n\nBariatric therapy is behavioral treatment for obesity that addresses the psychological, nutritional and lifestyle factors affecting weight. It involves individual and group counseling, dietary guidance from registered dietitians, education about food preparation and mindful eating, and movement planning. At the Bariatric Counseling Center in San Antonio, we provide bariatric therapy through an Intensive Outpatient Program that runs about three months and roughly 30 sessions, meeting two to three times per week. Our staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program is available onsite at our San Antonio facility and virtually throughout Texas, in network with most health insurance plans."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:35:57",
+   "decided": null,
+   "note": null,
+   "result": null
+  },
+  {
+   "id": "d6101acd55",
+   "kind": "content",
+   "key": "brief:gastric pouch",
+   "title": "New page brief: gastric pouch",
+   "why": "30/mo Texas (260/mo US); sagebariatric.com ranks #9 and no BCC page targets \"gastric pouch\".",
+   "payload": {
+    "target": "NEW: /gastric-pouch-support-san-antonio-tx/",
+    "body": "Opportunity brief for a NEW page. Target URL: NEW: /gastric-pouch-support-san-antonio-tx/ (working slug; adjust to taste). Term: \"gastric pouch\" (Texas volume 30/mo, US 260/mo). sagebariatric.com ranks #9 for it in San Antonio; no BCC page targets the phrase today.\n\n# Gastric Pouch Support and Behavioral Care in San Antonio, TX\n\n**Target URL:** NEW: /gastric-pouch-support-san-antonio-tx/\n**Search intent:** The searcher is looking for information about the gastric pouch after bariatric surgery, likely researching how to care for it, what can go wrong, or how to manage eating behaviors with a smaller stomach.\n**Word count:** about 1200 words\n\n## Outline (H2s)\n\n1. What is a gastric pouch?\n2. How behavioral therapy supports gastric pouch health\n3. Common eating challenges after gastric sleeve or bypass\n4. Why registered dietitians matter for gastric pouch care\n5. Mindful eating skills for your smaller stomach\n6. When to seek support after bariatric surgery\n7. Behavioral healthcare for post-surgical weight management in San Antonio\n\n## Questions the page must answer\n\n- What is a gastric pouch and how does it work after bariatric surgery?\n- What eating behaviors help protect the gastric pouch long-term?\n- How can behavioral therapy help someone adjust to eating with a gastric pouch?\n- What role does a registered dietitian play in gastric pouch care?\n- What are common emotional or behavioral challenges after bariatric surgery?\n- Can someone stretch their gastric pouch, and how does behavior affect that?\n- When should someone seek behavioral support after gastric sleeve or bypass surgery?\n- Does insurance cover behavioral therapy for post-bariatric surgery patients in Texas?\n\n## Internal links to add\n\n- https://www.bariatriccounselingcenter.com/registered-dietitian-in-san-antonio-tx/ (anchor: registered dietitians in San Antonio)\n- https://www.bariatriccounselingcenter.com/weight-loss-therapy-in-san-antonio-tx/ (anchor: weight loss therapy)\n- https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/ (anchor: binge eating treatment)\n\n## Notes\n\nThis page positions BCC as behavioral support for people who have had or are considering gastric sleeve or bypass surgery, focusing on the eating behaviors, coping skills, and dietary guidance that help someone adapt to life with a smaller stomach. Do not give medical advice about the pouch itself, surgical recovery, or complications. Do not promise weight loss or claim BCC treats surgical complications. The angle is that the program coordinates with the patient's bariatric surgeon and helps with the behavioral side of post-surgical success."
+   },
+   "source": "content-drafts",
+   "status": "pending",
+   "created": "2026-09-24T05:36:10",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
