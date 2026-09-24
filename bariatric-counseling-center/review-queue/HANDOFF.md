@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-24 12:06 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-24 12:28 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -53,7 +53,7 @@ Generated 2026-09-24 12:06 by queue_apply.py. Daniel approved these on the dashb
 
 ## Social posts to build and write to the sheet (1); the draft to Todd is a separate weekly step
 
-- id `a7414c697a`: **Fri 10/2: Food Friday reel from Leila's clips (Steak and chicken fajitas, Pesto Salmon, Sp** on 2026-10-02 (FB, IG, YT) at FB 12:00 PM, IG 6:00 PM, YT 6:00 PM, reel. Approved 2026-09-22. Why: row 10 plans a dish still for this Friday; the reel replaces it on FB and IG and adds YouTube Shorts
+- id `a7414c697a`: **Fri 10/2: Food Friday reel from Leila's clips (Steak and chicken fajitas, Pesto Salmon, Sp** on 2026-10-02 (FB, IG, YT) at FB 12:00 PM, IG 6:00 PM, YT 6:00 PM, reel. Approved 2026-09-24. Why: row 10 plans a dish still for this Friday; the reel replaces it on FB and IG and adds YouTube Shorts
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json`
   - asset: reel https://drive.google.com/drive/folders/1tQlvgAhNUJMkpS2m_njCqlH-1TQNjNak
   - replaces row 10 in October Content Calendar
@@ -76,17 +76,9 @@ Generated 2026-09-24 12:06 by queue_apply.py. Daniel approved these on the dashb
 - id `45a78a0c09`: **Wed 11/4: Stress and the evening plate** on 2026-11-04 (FB, IG) at FB 10:30 AM, IG 12:15 PM; postiz mode schedule; sheet November Content Calendar!11; asset social/plan/cards/render/png/nov04-stress-01-feed.png; Todd: Todd OK (Daniel on the dashboard) 2026-09-24
   - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\45a78a0c09-wed-11-4-stress-and-the-evening-plate.json`
 
-## Link asks to research and write (1)
-
-- id `5d38b158f3`: **Partner link note: vitalitylifecounselingsa.com** (domain vitalitylifecounselingsa.com, channel guess email)
-  - why it was queued: 1 person from vitalitylifecounselingsa.com on the referral list, and the site links to a local competitor but not to BCC.
-  - starting angle (rewrite it, do not send as is): Hi Mayra,  Thank you for being on our referral newsletter list. I noticed your Mental Health Links page has an Eating Disorders section with national resources, and your Disordered Eating page describes the binging and the shame around food that many of our clients also carry.  We run an intensive o
-  - DANIEL SENT THIS BACK. His instructions, oldest first; the last one is the current one and wins where they differ:
-    - 2026-09-22 14:02: Do not send this to todd yet. It is close, but we d o not yet have a way to add a link on our website... how best should we build this without it looking... off brand or weird especially considering it may look very empty until/unless we get some ppoepl to bite. let's explore this process/offer further then reconsider
-  - previous text (rewrite it): to Mayra Cano, Clinical Director <info@vitalitylifecounselingsa.com> | subject Adding us to your Mental Health Links page | Hi Mayra,  Thank you for being on our referral newsletter list. I noticed your Mental Health Links page has an Eating Disorders section with national resources, and your Disordered Eating page describes the binging and the shame around food that many of our clients also carry.  We run an intensive outpatient program in San Antonio for binge eating, chronic over-eating and food addiction: group and individual therapy, dietary guidance, cooking classes and movement education, in one program. It is in network with most health insurance plans, and clients attend onsite or by Zoom.  Would you add u
-
-## Notes written, waiting for Daniel to read on the dashboard (5): not for Claude.
+## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
+- Partner link note: vitalitylifecounselingsa.com (channel email)
 - Partner link note: gastroconsa.com (channel form)
 - Partner link note: dgdclinic.com (channel none)
 - Partner link note: tddctx.com (channel email)
