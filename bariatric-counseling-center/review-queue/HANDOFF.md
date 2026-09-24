@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-24 11:34 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-24 12:06 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -61,17 +61,20 @@ Generated 2026-09-24 11:34 by queue_apply.py. Daniel approved these on the dashb
 
 ## Draft day: Wednesday. Today is Thursday, not draft day: build only, no email to Todd.
 
-## Social posts built, not yet in a draft to Todd (1): wait for draft day
+## Social posts Todd has OK'd: book each one now, then --placed (6)
 
-- id `0a3ef56bfd`: **Tue 10/6: alumni clip, Gerry M. (two years later)** on 2026-10-06 (FB, IG, YT) at 7:00 PM; sheet October Content Calendar!12; asset Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip-9x16_two-years-later_COVERED.mp4
-
-## Social posts with Todd (5): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
-
-- id `9d817ad9c0`: **Mon 9/28: What a craving is trying to say** on 2026-09-28 (FB, IG); sheet September Content Calendar!26; draft Social posts to approve: week of September 28 (2026-09-23)
-- id `e956edbb9a`: **Tue 9/29: alumni clip, Carmen M. (belonging)** on 2026-09-29 (FB, IG, YT); sheet September Content Calendar!27; draft Social posts to approve: week of September 28 (2026-09-23)
-- id `1a73a68284`: **Mon 11/2: Eating out without the spiral** on 2026-11-02 (FB, IG); sheet November Content Calendar!9; draft Social posts to approve: week of September 28 (2026-09-23)
-- id `b6f23635f3`: **Tue 11/3: Referring providers: what comes back to you** on 2026-11-03 (LI, GBP); sheet November Content Calendar!10; draft Social posts to approve: week of September 28 (2026-09-23)
-- id `45a78a0c09`: **Wed 11/4: Stress and the evening plate** on 2026-11-04 (FB, IG); sheet November Content Calendar!11; draft Social posts to approve: week of September 28 (2026-09-23)
+- id `9d817ad9c0`: **Mon 9/28: What a craving is trying to say** on 2026-09-28 (FB, IG) at FB 10:30 AM, IG 12:15 PM; postiz mode schedule; sheet September Content Calendar!26; asset social/plan/cards/render/png/sep28-craving-01-feed.png; Todd: Todd OK (Daniel on the dashboard) 2026-09-24
+  - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\9d817ad9c0-mon-9-28-what-a-craving-is-trying-to-say.json`
+- id `e956edbb9a`: **Tue 9/29: alumni clip, Carmen M. (belonging)** on 2026-09-29 (FB, IG, YT) at 7:00 PM; postiz mode schedule; sheet September Content Calendar!27; asset Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip-9x16_belonging_COVERED.mp4; Todd: Todd OK (Daniel on the dashboard) 2026-09-24
+  - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\e956edbb9a-tue-9-29-alumni-clip-carmen-m-belonging.json`
+- id `0a3ef56bfd`: **Tue 10/6: alumni clip, Gerry M. (two years later)** on 2026-10-06 (FB, IG, YT) at 7:00 PM; postiz mode schedule; sheet October Content Calendar!12; asset Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip-9x16_two-years-later_COVERED.mp4; Todd: Todd OK (Daniel on the dashboard) 2026-09-24
+  - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\0a3ef56bfd-tue-10-6-alumni-clip-gerry-m-two-years-later.json`
+- id `1a73a68284`: **Mon 11/2: Eating out without the spiral** on 2026-11-02 (FB, IG) at FB 10:30 AM, IG 12:15 PM; postiz mode schedule; sheet November Content Calendar!9; asset social/plan/cards/render/png/nov02-dining-out-01-feed.png; Todd: Todd OK (Daniel on the dashboard) 2026-09-24
+  - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\1a73a68284-mon-11-2-eating-out-without-the-spiral.json`
+- id `b6f23635f3`: **Tue 11/3: Referring providers: what comes back to you** on 2026-11-03 (LI, GBP) at LI 11:00 AM, GBP 9:00 AM; postiz mode schedule; sheet November Content Calendar!10; asset social/plan/cards/render/pdf/nov03-providers-linkedin-document.pdf; Todd: Todd OK (Daniel on the dashboard) 2026-09-24
+  - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\b6f23635f3-tue-11-3-referring-providers-what-comes-back-to-you.json`
+- id `45a78a0c09`: **Wed 11/4: Stress and the evening plate** on 2026-11-04 (FB, IG) at FB 10:30 AM, IG 12:15 PM; postiz mode schedule; sheet November Content Calendar!11; asset social/plan/cards/render/png/nov04-stress-01-feed.png; Todd: Todd OK (Daniel on the dashboard) 2026-09-24
+  - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\45a78a0c09-wed-11-4-stress-and-the-evening-plate.json`
 
 ## Link asks to research and write (1)
 
