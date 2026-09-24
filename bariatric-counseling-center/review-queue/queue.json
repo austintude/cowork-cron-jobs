@@ -2395,10 +2395,10 @@
     "service": "youtube"
    },
    "source": "link-check",
-   "status": "pending",
+   "status": "approved",
    "created": "2026-09-24T05:32:09",
-   "decided": null,
-   "note": null,
+   "decided": "2026-09-24T11:34:36",
+   "note": "approved; waiting for a Claude session to fix 2 pages on staging13",
    "result": null
   },
   {
@@ -2455,10 +2455,10 @@
     "service": null
    },
    "source": "link-check",
-   "status": "pending",
+   "status": "approved",
    "created": "2026-09-24T05:32:09",
-   "decided": null,
-   "note": null,
+   "decided": "2026-09-24T11:34:42",
+   "note": "approved; waiting for a Claude session to fix 1 page on staging13",
    "result": null
   },
   {
@@ -3431,11 +3431,13 @@
     "body": "Place as a Kadence accordion/FAQ block near the bottom of https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/; add FAQPage schema via Rank Math.\n\n## Frequently asked questions\n\n**What is the best therapy for weight loss?**\n\nThe best therapy addresses the behaviors and emotions behind overeating. At the Bariatric Counseling Center, we combine group and individual therapy, dietary guidance from registered dietitians, cooking classes and movement education in one comprehensive program. We help clients understand and modify their relationship with food. A licensed therapist can help you determine which approach fits your needs.\n\n**How do I get over the mental block of weight loss?**\n\nMental blocks around weight often stem from emotional eating, past struggles, or anxiety about change. Our therapists work with clients to build coping skills, set realistic goals and practice mindful eating. We address the emotional side of food in both group and individual sessions. Progress takes time, but you do not have to work through it alone.\n\n**How do I talk to someone about losing weight?**\n\nIf you are the one struggling, reaching out to a licensed therapist or counselor is a strong first step. Our team listens without judgment and helps you explore what is driving your relationship with food. If you are supporting someone else, focus on care and concern, not criticism. Let them lead the conversation and offer to help them find resources.\n\nIf you are ready to explore how counseling can support your goals, reach out to us. We are here to help."
    },
    "source": "content-drafts",
-   "status": "pending",
+   "status": "approved",
    "created": "2026-09-24T05:35:42",
-   "decided": null,
-   "note": null,
-   "result": null
+   "decided": "2026-09-24T11:34:15",
+   "note": "saved; waiting for a Claude session to place it on staging13 through the block process",
+   "result": {
+    "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\8ecf819701-faq-block-for-what-is-a-weight-loss-counselor-3-questions.md"
+   }
   },
   {
    "id": "7154fa435d",
@@ -3448,11 +3450,13 @@
     "body": "Add as a new H2 section on https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/, high on the page, so the direct answer sits in the first sentences under the heading. Target term: \"weight loss counseling\". Google shows an AI Overview for this term that cites no named source and not BCC.\n\n## What does weight loss counseling involve?\n\nWeight loss counseling is behavioral therapy that helps people understand and modify their relationship with food. It involves working with licensed therapists to address binge eating, emotional eating, and chronic overeating through individual and group sessions. Counseling typically includes coping skills, goal setting, and mindful eating practices. At the Bariatric Counseling Center in San Antonio, weight loss counseling is part of an Intensive Outpatient Program that combines behavioral therapy with dietary guidance from registered dietitians, cooking classes with a professional chef, and movement education. The program runs about three months, meeting two to three times per week, and is available onsite in San Antonio and virtually throughout Texas, in network with most health insurance plans."
    },
    "source": "content-drafts",
-   "status": "pending",
+   "status": "approved",
    "created": "2026-09-24T05:35:48",
-   "decided": null,
-   "note": null,
-   "result": null
+   "decided": "2026-09-24T11:34:11",
+   "note": "saved; waiting for a Claude session to place it on staging13 through the block process",
+   "result": {
+    "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\7154fa435d-ai-overview-answer-for-weight-loss-counseling-on-what-is-a-w.md"
+   }
   },
   {
    "id": "1b9fd2fab9",
@@ -3465,11 +3469,13 @@
     "body": "Add as a new H2 section on https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/, high on the page, so the direct answer sits in the first sentences under the heading. Target term: \"nutritional counseling san antonio tx\". Google shows an AI Overview for this term that cites no named source and not BCC.\n\n## What is nutritional counseling for weight management?\n\nNutritional counseling for weight management is one-on-one or group education with a registered dietitian who helps you plan meals, understand portion sizes, and build sustainable eating habits. It typically includes meal planning, grocery shopping guidance, and support for navigating restaurants and social eating situations. At the Bariatric Counseling Center in San Antonio, registered dietitians provide nutritional counseling as part of an Intensive Outpatient Program that also includes behavioral therapy, cooking classes with a professional chef, and movement education. The program serves clients onsite in San Antonio and virtually throughout Texas, and is in network with most health insurance plans, with claims processed under mental health benefits."
    },
    "source": "content-drafts",
-   "status": "pending",
+   "status": "approved",
    "created": "2026-09-24T05:35:52",
-   "decided": null,
-   "note": null,
-   "result": null
+   "decided": "2026-09-24T11:34:07",
+   "note": "saved; waiting for a Claude session to place it on staging13 through the block process",
+   "result": {
+    "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\1b9fd2fab9-ai-overview-answer-for-nutritional-counseling-san-antonio-tx.md"
+   }
   },
   {
    "id": "b5acad4dbf",
@@ -3482,11 +3488,13 @@
     "body": "Add as a new H2 section on https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/, high on the page, so the direct answer sits in the first sentences under the heading. Target term: \"bariatric therapy\". Google shows an AI Overview for this term that cites nejm.org, pubmed.ncbi.nlm.nih.gov, maimo.org, cms.gov and not BCC.\n\n## What is bariatric therapy?\n\nBariatric therapy is behavioral treatment for obesity that addresses the psychological, nutritional and lifestyle factors affecting weight. It involves individual and group counseling, dietary guidance from registered dietitians, education about food preparation and mindful eating, and movement planning. At the Bariatric Counseling Center in San Antonio, we provide bariatric therapy through an Intensive Outpatient Program that runs about three months and roughly 30 sessions, meeting two to three times per week. Our staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program is available onsite at our San Antonio facility and virtually throughout Texas, in network with most health insurance plans."
    },
    "source": "content-drafts",
-   "status": "pending",
+   "status": "approved",
    "created": "2026-09-24T05:35:57",
-   "decided": null,
-   "note": null,
-   "result": null
+   "decided": "2026-09-24T11:34:00",
+   "note": "saved; waiting for a Claude session to place it on staging13 through the block process",
+   "result": {
+    "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-content\\b5acad4dbf-ai-overview-answer-for-bariatric-therapy-on-bariatric-therap.md"
+   }
   },
   {
    "id": "d6101acd55",

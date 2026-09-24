@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-24 07:16 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-24 11:34 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -19,6 +19,37 @@ Generated 2026-09-24 07:16 by queue_apply.py. Daniel approved these on the dashb
 - Social posts, stage 2 (status built -> go -> placed): `python todd-check.py` reads column P (Todd OK) and Q (Todd notes) for every built row and marks `go` or sends back on its own, and applies Todd's silence rule (a post drafted with at least 7 days of notice and no answer by 3 days before its date goes ahead as planned); ALSO search Gmail for replies from Todd or Sara (anyone at bccsanantonio.com) on a `Social posts to approve` thread and apply what they wrote: `approved`, `ok`, `go ahead` for a post or for all of them -> `python queue_apply.py --todd-ok <id> '<his words>'`; a change or a question about a post -> `python queue_apply.py --back <id> 'todd: <his words>'` (the item returns to approved with his note and is rebuilt on the next run; reply-worthy questions go to Daniel, not to Todd). Then BOOK every item in status `go`: `postiz_mode` schedule: create the post in Postiz for each of FB, IG and YouTube on the BCC channels at the date and time in `times` (public API `POST /api/public/v1/posts` with the media uploaded first, or the Postiz UI in Chrome at the launches page); `postiz_mode` draft: create it as a Postiz draft and say so. LinkedIn and GBP still go through Publer: schedule them there in Chrome (LinkedIn document posts upload the PDF; GBP uses the Learn more button to `cta_page`), then tick the row's Scheduled box (column A). Facebook link goes in the first comment. (6) `python queue_apply.py --placed <id> 'scheduled: <platforms and times>; sheet row <n>; <asset file>'`. Never post to a channel that is not listed on the item, never book a post that is not in status go (Todd's OK, or his silence rule applied by todd-check.py), and never move a date without a note from Daniel.
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
+
+## Content blocks (4)
+
+- id `b5acad4dbf`: **AI Overview answer for "bariatric therapy" on /bariatric-therapy-in-san-antonio-tx/**
+  - target: https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/
+  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\b5acad4dbf-ai-overview-answer-for-bariatric-therapy-on-bariatric-therap.md`
+  - approved: 2026-09-24. Why: AI Overview shows for "bariatric therapy" (volume not on file) and cites nejm.org, pubmed.ncbi.nlm.nih.gov, maimo.org, not BCC.
+- id `1b9fd2fab9`: **AI Overview answer for "nutritional counseling san antonio tx" on /nutritional-counseling-**
+  - target: https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/
+  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\1b9fd2fab9-ai-overview-answer-for-nutritional-counseling-san-antonio-tx.md`
+  - approved: 2026-09-24. Why: AI Overview shows for "nutritional counseling san antonio tx" (volume not on file) and cites no named source, not BCC.
+- id `7154fa435d`: **AI Overview answer for "weight loss counseling" on /what-is-a-weight-loss-counselor/**
+  - target: https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/
+  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\7154fa435d-ai-overview-answer-for-weight-loss-counseling-on-what-is-a-w.md`
+  - approved: 2026-09-24. Why: AI Overview shows for "weight loss counseling" (20/mo Texas) and cites no named source, not BCC.
+- id `8ecf819701`: **FAQ block for /what-is-a-weight-loss-counselor/ (3 questions)**
+  - target: https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/
+  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\8ecf819701-faq-block-for-what-is-a-weight-loss-counselor-3-questions.md`
+  - approved: 2026-09-24. Why: 3 People Also Ask questions across 4 tracked terms (best BCC position 1).
+
+## Site fixes on staging13 (2)
+
+- id `d3e4b728a8`: **Dead video on 2 pages: youtube LPviMNg7raE** (dead video embed). Target: youtube:LPviMNg7raE (youtube: private). Approved 2026-09-24.
+  - The youtube video LPviMNg7raE is private. On each page below, open the editor on staging13, find the embed or lightbox link carrying that id, and replace it with the current video id (check the BCC YouTube channel and the Videos catalog) or remove the block.
+  - pages (2): https://bariatriccounselingcenter.com/testimonials; https://www.bariatriccounselingcenter.com/testimonials/
+- id `7584df23dd`: **Dead link on 1 page: /binge-eating-disorder-treatment-in-san-antonio-tx/** (dead internal link). Target: https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-in-san-antonio-tx/ (HTTP 404). Approved 2026-09-24.
+  - https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-in-san-antonio-tx/ answers HTTP 404.
+  - Point the link at https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/ (closest live page by slug) or remove it.
+  - If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13.
+  - suggested replacement: https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/
+  - pages (1): https://www.bariatriccounselingcenter.com/compulsive-overeating-counseling-san-antonio-tx/
 
 ## Social posts to build and write to the sheet (1); the draft to Todd is a separate weekly step
 
