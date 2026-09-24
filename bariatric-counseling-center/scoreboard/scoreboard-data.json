@@ -14852,49 +14852,15 @@
           "rejected": 2,
           "applied": 6,
           "placed": 25,
-          "written": 5,
-          "approved": 2,
+          "written": 6,
           "built": 6,
+          "approved": 1,
           "pending": 41
         },
         "handoff": {
           "content": [],
           "redirect": [],
-          "outreach": [
-            {
-              "id": "5d38b158f3",
-              "kind": "outreach",
-              "key": "vitalitylifecounselingsa.com",
-              "title": "Partner link note: vitalitylifecounselingsa.com",
-              "why": "1 person from vitalitylifecounselingsa.com on the referral list, and the site links to a local competitor but not to BCC.",
-              "payload": {
-                "to": "Mayra Cano, Clinical Director <info@vitalitylifecounselingsa.com>",
-                "from": "Todd",
-                "subject": "Adding us to your Mental Health Links page",
-                "body": "Hi Mayra,\n\nThank you for being on our referral newsletter list. I noticed your Mental Health Links page has an Eating Disorders section with national resources, and your Disordered Eating page describes the binging and the shame around food that many of our clients also carry.\n\nWe run an intensive outpatient program in San Antonio for binge eating, chronic over-eating and food addiction: group and individual therapy, dietary guidance, cooking classes and movement education, in one program. It is in network with most health insurance plans, and clients attend onsite or by Zoom.\n\nWould you add us to the Eating Disorders section at https://vitalitylifecounselingsa.com/mental-health-links? Our homepage is https://www.bariatriccounselingcenter.com/ and the link text could be \"Bariatric Counseling Center of San Antonio (binge eating and overeating program)\".\n\nIn return we will list Vitality Life Counseling as a referral partner on our website, and we are glad to refer clients who need individual therapy outside our program.\n\nTodd McCord\nBariatric Counseling Center, San Antonio\nwww.bariatriccounselingcenter.com",
-                "domain": "vitalitylifecounselingsa.com",
-                "channel": "email",
-                "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending.",
-                "their_page": "https://vitalitylifecounselingsa.com/mental-health-links",
-                "our_page": "https://www.bariatriccounselingcenter.com/",
-                "draft_stage": "rewrite",
-                "review_notes": [
-                  {
-                    "date": "2026-09-22 14:02",
-                    "note": "Do not send this to todd yet. It is close, but we d o not yet have a way to add a link on our website... how best should we build this without it looking... off brand or weird especially considering it may look very empty until/unless we get some ppoepl to bite. let's explore this process/offer further then reconsider",
-                    "about_subject": "Adding us to your Mental Health Links page",
-                    "replaces_earlier": false
-                  }
-                ]
-              },
-              "source": "link-plays",
-              "status": "approved",
-              "created": "2026-09-18T19:05:15",
-              "decided": "2026-09-22T14:02:07",
-              "note": "rewrite: Do not send this to todd yet. It is close, but we d o not yet have a way to add a link on our website... how best should we build this without it looking... off brand or weird especially considering it may look very empty until/unless we get some ppoepl to bite. let's explore this process/offer further then reconsider (2026-09-22)",
-              "result": null
-            }
-          ],
+          "outreach": [],
           "fix": [],
           "social": [
             {
@@ -14975,8 +14941,8 @@
               "source": "social-plan",
               "status": "approved",
               "created": "2026-09-22T09:57:33",
-              "decided": "2026-09-22T15:40:29",
-              "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT)",
+              "decided": "2026-09-24T16:44:29",
+              "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT) | HELD 2026-09-24 (Daniel): not built. Collides with Postiz-queued Food Friday montages per social/video/food-friday-state.json: 10/2 montage (shrimp, tikka, Monterey, sesame salmon, eggroll) and 10/9 montage with these same three dishes. Daniel to decide on the dashboard.",
               "result": {
                 "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json"
               }
@@ -15836,6 +15802,39 @@
               "created": "2026-09-18T19:05:15",
               "decided": "2026-09-22T10:12:51",
               "note": "back in review 2026-09-22 (send-back withdrawn by Daniel); waiting for Daniel to read it",
+              "result": null
+            },
+            {
+              "id": "5d38b158f3",
+              "kind": "outreach",
+              "key": "vitalitylifecounselingsa.com",
+              "title": "Partner link note: vitalitylifecounselingsa.com",
+              "why": "1 person from vitalitylifecounselingsa.com on the referral list, and the site links to a local competitor but not to BCC.",
+              "payload": {
+                "to": "Mayra Cano, Clinical Director <info@vitalitylifecounselingsa.com>",
+                "from": "Todd",
+                "subject": "A San Antonio option for your Eating Disorders links",
+                "body": "Hi Mayra,\n\nThank you for being on our referral newsletter list. Your Mental Health Links page has an Eating Disorders section, and disordered eating is one of the specialties your team lists.\n\nAt the Bariatric Counseling Center, we offer an Intensive Outpatient Program for people who struggle with binge eating and chronic over-eating. We provide group and individual therapy, dietary guidance, cooking classes and movement education in one program. Clients attend onsite in San Antonio or by Zoom, and we accept most health insurances.\n\nWould you consider adding us to the Eating Disorders section at https://vitalitylifecounselingsa.com/mental-health-links? The link could go to https://www.bariatriccounselingcenter.com/ourprogram/ with the text \"Bariatric Counseling Center (binge eating and over-eating program)\".\n\nThank you,\nTodd McCord\nBariatric Counseling Center of San Antonio\n210.634.2200",
+                "domain": "vitalitylifecounselingsa.com",
+                "channel": "email",
+                "personalize": "Replace [first name]; add one line about a specific patient or recent conversation before sending.",
+                "their_page": "https://vitalitylifecounselingsa.com/mental-health-links",
+                "our_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+                "draft_stage": "written",
+                "review_notes": [
+                  {
+                    "date": "2026-09-22 14:02",
+                    "note": "Do not send this to todd yet. It is close, but we d o not yet have a way to add a link on our website... how best should we build this without it looking... off brand or weird especially considering it may look very empty until/unless we get some ppoepl to bite. let's explore this process/offer further then reconsider",
+                    "about_subject": "Adding us to your Mental Health Links page",
+                    "replaces_earlier": false
+                  }
+                ]
+              },
+              "source": "link-plays",
+              "status": "written",
+              "created": "2026-09-18T19:05:15",
+              "decided": "2026-09-24T16:42:36",
+              "note": "note written 2026-09-24, waiting for Daniel to read it: rewritten per Daniel's 9/22 note: reciprocal-listing offer removed, nothing promised; email to published info@ address; links /ourprogram/",
               "result": null
             },
             {
@@ -23739,8 +23738,8 @@
               "source": "social-plan",
               "status": "approved",
               "created": "2026-09-22T09:57:33",
-              "decided": "2026-09-22T15:40:29",
-              "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT)",
+              "decided": "2026-09-24T16:44:29",
+              "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT) | HELD 2026-09-24 (Daniel): not built. Collides with Postiz-queued Food Friday montages per social/video/food-friday-state.json: 10/2 montage (shrimp, tikka, Monterey, sesame salmon, eggroll) and 10/9 montage with these same three dishes. Daniel to decide on the dashboard.",
               "result": {
                 "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json"
               }
@@ -24625,5 +24624,5 @@
     }
   ],
   "snapshot_count": 41,
-  "generated_at": "2026-09-24T12:16:22.296610Z"
+  "generated_at": "2026-09-24T16:44:37.219151Z"
 }
