@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-25 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-25 17:44 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -21,41 +21,45 @@ Generated 2026-09-25 07:00 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Content blocks (4)
+## Action items from the Action Items sheet (19): work each, then --done or --needs-you
 
-- id `b5acad4dbf`: **AI Overview answer for "bariatric therapy" on /bariatric-therapy-in-san-antonio-tx/**
-  - target: https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/
-  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\b5acad4dbf-ai-overview-answer-for-bariatric-therapy-on-bariatric-therap.md`
-  - approved: 2026-09-24. Why: AI Overview shows for "bariatric therapy" (volume not on file) and cites nejm.org, pubmed.ncbi.nlm.nih.gov, maimo.org, not BCC.
-- id `1b9fd2fab9`: **AI Overview answer for "nutritional counseling san antonio tx" on /nutritional-counseling-**
-  - target: https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/
-  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\1b9fd2fab9-ai-overview-answer-for-nutritional-counseling-san-antonio-tx.md`
-  - approved: 2026-09-24. Why: AI Overview shows for "nutritional counseling san antonio tx" (volume not on file) and cites no named source, not BCC.
-- id `7154fa435d`: **AI Overview answer for "weight loss counseling" on /what-is-a-weight-loss-counselor/**
-  - target: https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/
-  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\7154fa435d-ai-overview-answer-for-weight-loss-counseling-on-what-is-a-w.md`
-  - approved: 2026-09-24. Why: AI Overview shows for "weight loss counseling" (20/mo Texas) and cites no named source, not BCC.
-- id `8ecf819701`: **FAQ block for /what-is-a-weight-loss-counselor/ (3 questions)**
-  - target: https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/
-  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\8ecf819701-faq-block-for-what-is-a-weight-loss-counselor-3-questions.md`
-  - approved: 2026-09-24. Why: 3 People Also Ask questions across 4 tracked terms (best BCC position 1).
-
-## Site fixes on staging13 (2)
-
-- id `d3e4b728a8`: **Dead video on 2 pages: youtube LPviMNg7raE** (dead video embed). Target: youtube:LPviMNg7raE (youtube: private). Approved 2026-09-24.
-  - The youtube video LPviMNg7raE is private. On each page below, open the editor on staging13, find the embed or lightbox link carrying that id, and replace it with the current video id (check the BCC YouTube channel and the Videos catalog) or remove the block.
-  - pages (2): https://bariatriccounselingcenter.com/testimonials; https://www.bariatriccounselingcenter.com/testimonials/
-- id `7584df23dd`: **Dead link on 1 page: /binge-eating-disorder-treatment-in-san-antonio-tx/** (dead internal link). Target: https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-in-san-antonio-tx/ (HTTP 404). Approved 2026-09-24.
-  - https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-in-san-antonio-tx/ answers HTTP 404.
-  - Point the link at https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/ (closest live page by slug) or remove it.
-  - If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13.
-  - suggested replacement: https://www.bariatriccounselingcenter.com/binge-eating-disorder-treatment-san-antonio/
-  - pages (1): https://www.bariatriccounselingcenter.com/compulsive-overeating-counseling-san-antonio-tx/
-
-## Action items from the Action Items sheet (1): work each, then --done or --needs-you
-
+- id `c7d4d9431e`: **Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation)** (9/24 call list, sheet row 5). Approved 2026-09-25.
 - id `b43efd08a0`: **ARFID landing page and blog** (9/24 call list, sheet row 7). Approved 2026-09-24.
   - Daniel's notes: Page goes to Sara and Todd for QC before it goes live. Then 2 to 4 blog posts over the next couple of months. BCC has no presence on this search term yet.
+- id `e1fa4514fd`: **Daniel send draft social video clips to Sara and Todd for review** (9/24 call list, sheet row 8). Approved 2026-09-25.
+  - Daniel's notes: Send now. A handful of good examples across the range, not all 50. All are cut from the approved final videos.
+- id `61ccfcbfe7`: **Daniel send October social media calendar for review and QC (wait 2 to 3 days)** (9/24 call list, sheet row 9). Approved 2026-09-25.
+  - Daniel's notes: Todd: clips first, calendar a day or two after.
+- id `cdf82aa322`: **Update CTA in video clips and on landing page (bcctx.link/start)** (9/24 call list, sheet row 10). Approved 2026-09-25.
+  - Daniel's notes: End card: "Ready for comprehensive support" and "One program, four providers." Take "that actually works" out of the /start page title.
+- id `0b1b2e7c4a`: **Daniel feedback on updated BCC marketing emails** (9/24 call list, sheet row 11). Approved 2026-09-25.
+  - Daniel's notes: The two emails Todd sent 9/24: Leloni's follow-up outreach and the clinicians' email after a pre-surgical evaluation.
+- id `3c08d7a36f`: **Update video thumbnails: short testimonial medley and Jessica's own testimonial (YouTube)** (9/24 call list, sheet row 12). Approved 2026-09-25.
+  - Daniel's notes: Instagram: if the thumbnail can't be changed, delete and repost. Website: one testimonial thumbnail has its text behind the person; move it in front so it reads.
+- id `ea33e0a6c1`: **Daniel build website and search (SEO and AEO) analytics and metrics dashboard, sent as a daily email** (9/24 call list, sheet row 13). Approved 2026-09-25.
+  - Daniel's notes: Todd wants it in the daily workflow: what's working, how we're doing.
+- id `6d29cbea90`: **Texas-wide geographic strategy** (9/24 call list, sheet row 14). Approved 2026-09-25.
+  - Daniel's notes: Todd asked: any traction on overeating / overeaters, and what we're doing now to expand statewide.
+- id `2f18c7b786`: **Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts** (9/24 call list, sheet row 15). Approved 2026-09-25.
+  - Daniel's notes: Restarts the staff-contribution workflow from the spring. Sara replies with comments and direction. Last on the list for now.
+- id `36208e0b05`: **Use Ford's finished staff profile videos (Vimeo)** (9/24 call list, sheet row 17). Approved 2026-09-25.
+  - Daniel's notes: Polished; a good fit for LinkedIn.
+- id `0ab75ba2f9`: **Send draft October client and referring partner newsletters for review** (9/24 call list, sheet row 18). Approved 2026-09-25.
+  - Daniel's notes: Due Fri 9/25. They send mid-October.
+- id `aed8090d11`: **Calendar staff anniversary posts** (9/24 call list, sheet row 19). Approved 2026-09-25.
+  - Daniel's notes: Laura and Aaron in October; Leloni's 5-year is overdue. Todd writes them, Daniel schedules and reminds him.
+- id `8d5f7cd727`: **Mix formats, stop the video-only run: cards, quotes, testimonial-style posts** (8/27 meeting list, sheet row 51). Approved 2026-09-25.
+  - Daniel's notes: Todd: people get burned out on video, video, video
+- id `a8094dd424`: **Get the content calendar to Todd 7 days before month end, ideally 10+** (8/27 meeting list, sheet row 52). Approved 2026-09-25.
+  - Daniel's notes: Camy's standing cadence, Todd wants it kept
+- id `eb596edc83`: **Decide newsletter send day and time, back it with data** (8/27 meeting list, sheet row 55). Approved 2026-09-25.
+  - Daniel's notes: Not Monday. Friday gets lost. Weekend untried
+- id `081016b3bc`: **Rank how people actually search (top 10), find a platform big in Texas that competitors ignore** (8/27 meeting list, sheet row 61). Approved 2026-09-25.
+  - Daniel's notes: Todd asked for this directly
+- id `d8d67dff97`: **Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1** (8/27 meeting list, sheet row 62). Approved 2026-09-25.
+  - Daniel's notes: The gap ERC, Alsana and Monte Nido cannot use
+- id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 63). Approved 2026-09-25.
+  - Daniel's notes: Todd: "it can't hurt"
 
 ## Social posts to build and write to the sheet (1); the draft to Todd is a separate weekly step
 
@@ -82,17 +86,9 @@ Generated 2026-09-25 07:00 by queue_apply.py. Daniel approved these on the dashb
 - id `45a78a0c09`: **Wed 11/4: Stress and the evening plate** on 2026-11-04 (FB, IG) at FB 10:30 AM, IG 12:15 PM; postiz mode schedule; sheet November Content Calendar!11; asset social/plan/cards/render/png/nov04-stress-01-feed.png; Todd: Todd OK (Daniel on the dashboard) 2026-09-24
   - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\45a78a0c09-wed-11-4-stress-and-the-evening-plate.json`
 
-## Link asks to research and write (1)
-
-- id `5d38b158f3`: **Partner link note: vitalitylifecounselingsa.com** (domain vitalitylifecounselingsa.com, channel guess email)
-  - why it was queued: 1 person from vitalitylifecounselingsa.com on the referral list, and the site links to a local competitor but not to BCC.
-  - starting angle (rewrite it, do not send as is): Hi Mayra,  Thank you for being on our referral newsletter list. I noticed your Mental Health Links page has an Eating Disorders section with national resources, and your Disordered Eating page describes the binging and the shame around food that many of our clients also carry.  We run an intensive o
-  - DANIEL SENT THIS BACK. His instructions, oldest first; the last one is the current one and wins where they differ:
-    - 2026-09-22 14:02: Do not send this to todd yet. It is close, but we d o not yet have a way to add a link on our website... how best should we build this without it looking... off brand or weird especially considering it may look very empty until/unless we get some ppoepl to bite. let's explore this process/offer further then reconsider
-  - previous text (rewrite it): to Mayra Cano, Clinical Director <info@vitalitylifecounselingsa.com> | subject Adding us to your Mental Health Links page | Hi Mayra,  Thank you for being on our referral newsletter list. I noticed your Mental Health Links page has an Eating Disorders section with national resources, and your Disordered Eating page describes the binging and the shame around food that many of our clients also carry.  We run an intensive outpatient program in San Antonio for binge eating, chronic over-eating and food addiction: group and individual therapy, dietary guidance, cooking classes and movement education, in one program. It is in network with most health insurance plans, and clients attend onsite or by Zoom.  Would you add u
-
-## Notes written, waiting for Daniel to read on the dashboard (5): not for Claude.
+## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
+- Partner link note: vitalitylifecounselingsa.com (channel email)
 - Partner link note: gastroconsa.com (channel form)
 - Partner link note: dgdclinic.com (channel none)
 - Partner link note: tddctx.com (channel email)
