@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-25 18:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-25 18:34 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -21,45 +21,25 @@ Generated 2026-09-25 18:00 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (19): work each, then --done or --needs-you
-
-- id `c7d4d9431e`: **Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation)** (9/24 call list, sheet row 5). Approved 2026-09-25.
-- id `b43efd08a0`: **ARFID landing page and blog** (9/24 call list, sheet row 7). Approved 2026-09-24.
-  - Daniel's notes: Page goes to Sara and Todd for QC before it goes live. Then 2 to 4 blog posts over the next couple of months. BCC has no presence on this search term yet.
-- id `e1fa4514fd`: **Daniel send draft social video clips to Sara and Todd for review** (9/24 call list, sheet row 8). Approved 2026-09-25.
-  - Daniel's notes: Send now. A handful of good examples across the range, not all 50. All are cut from the approved final videos.
-- id `61ccfcbfe7`: **Daniel send October social media calendar for review and QC (wait 2 to 3 days)** (9/24 call list, sheet row 9). Approved 2026-09-25.
-  - Daniel's notes: Todd: clips first, calendar a day or two after.
-- id `cdf82aa322`: **Update CTA in video clips and on landing page (bcctx.link/start)** (9/24 call list, sheet row 10). Approved 2026-09-25.
-  - Daniel's notes: End card: "Ready for comprehensive support" and "One program, four providers." Take "that actually works" out of the /start page title.
-- id `0b1b2e7c4a`: **Daniel feedback on updated BCC marketing emails** (9/24 call list, sheet row 11). Approved 2026-09-25.
-  - Daniel's notes: The two emails Todd sent 9/24: Leloni's follow-up outreach and the clinicians' email after a pre-surgical evaluation.
-- id `3c08d7a36f`: **Update video thumbnails: short testimonial medley and Jessica's own testimonial (YouTube)** (9/24 call list, sheet row 12). Approved 2026-09-25.
-  - Daniel's notes: Instagram: if the thumbnail can't be changed, delete and repost. Website: one testimonial thumbnail has its text behind the person; move it in front so it reads.
-- id `ea33e0a6c1`: **Daniel build website and search (SEO and AEO) analytics and metrics dashboard, sent as a daily email** (9/24 call list, sheet row 13). Approved 2026-09-25.
-  - Daniel's notes: Todd wants it in the daily workflow: what's working, how we're doing.
-- id `6d29cbea90`: **Texas-wide geographic strategy** (9/24 call list, sheet row 14). Approved 2026-09-25.
-  - Daniel's notes: Todd asked: any traction on overeating / overeaters, and what we're doing now to expand statewide.
-- id `2f18c7b786`: **Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts** (9/24 call list, sheet row 15). Approved 2026-09-25.
-  - Daniel's notes: Restarts the staff-contribution workflow from the spring. Sara replies with comments and direction. Last on the list for now.
-- id `36208e0b05`: **Use Ford's finished staff profile videos (Vimeo)** (9/24 call list, sheet row 17). Approved 2026-09-25.
-  - Daniel's notes: Polished; a good fit for LinkedIn.
-- id `0ab75ba2f9`: **Send draft October client and referring partner newsletters for review** (9/24 call list, sheet row 18). Approved 2026-09-25.
-  - Daniel's notes: Due Fri 9/25. They send mid-October.
-- id `aed8090d11`: **Calendar staff anniversary posts** (9/24 call list, sheet row 19). Approved 2026-09-25.
-  - Daniel's notes: Laura and Aaron in October; Leloni's 5-year is overdue. Todd writes them, Daniel schedules and reminds him.
-- id `8d5f7cd727`: **Mix formats, stop the video-only run: cards, quotes, testimonial-style posts** (8/27 meeting list, sheet row 51). Approved 2026-09-25.
-  - Daniel's notes: Todd: people get burned out on video, video, video
-- id `a8094dd424`: **Get the content calendar to Todd 7 days before month end, ideally 10+** (8/27 meeting list, sheet row 52). Approved 2026-09-25.
-  - Daniel's notes: Camy's standing cadence, Todd wants it kept
-- id `eb596edc83`: **Decide newsletter send day and time, back it with data** (8/27 meeting list, sheet row 55). Approved 2026-09-25.
-  - Daniel's notes: Not Monday. Friday gets lost. Weekend untried
-- id `081016b3bc`: **Rank how people actually search (top 10), find a platform big in Texas that competitors ignore** (8/27 meeting list, sheet row 61). Approved 2026-09-25.
-  - Daniel's notes: Todd asked for this directly
-- id `d8d67dff97`: **Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1** (8/27 meeting list, sheet row 62). Approved 2026-09-25.
-  - Daniel's notes: The gap ERC, Alsana and Monte Nido cannot use
-- id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 63). Approved 2026-09-25.
-  - Daniel's notes: Todd: "it can't hurt"
+## Action items waiting on Daniel (18): not for Claude; he finishes them and presses Done.
+- Send draft October client and referring partner newsletters for review: Gmail draft ready: 'October eNews for review (sends Tuesday, October 13)' to Todd and Sara, clean links (the 9/18 draft had Google redirect links; delete it). The eNews Calendar and eNews KPIs tabs were missing from the content calendar sheet, so I recreated them from newsletters\enews-calendar-2026-10_2027-03.csv. Left for you: run the Constant Contact test sends of both October drafts to Todd and Sara, then send the Gmail draft.
+- Calendar staff anniversary posts: Gmail draft ready: 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd asking for dates, a few lines each and photos by Thu Oct 1. Left for you: send it. Leloni already has a staff spotlight on 10/7; her anniversary could ride on that post.
+- Get the content calendar to Todd 7 days before month end, ideally 10+: Per post, the rule is already enforced: social-plan.json min_lead_days is 10, so nothing reaches Todd with less than 10 days. For the whole month: November's calendar is due to Todd by Tue Oct 20 (10 days before month end; Oct 21 is a teaching day). Left for you: say yes and a session will add a monthly reminder on the dashboard for the Tuesday about 12 days before each month ends.
+- Decide newsletter send day and time, back it with data: Decision written up with BCC's own data: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\newsletters\SEND-TIME-DECISION-2026-09-25.md (107 sends: 8 to 10 AM is best; weekday is noise; Tuesday 8:30 AM for both lists; test Saturday 9 AM on half the client list for Nov to Jan; do not test the RP list, too small). Left for you: confirm with Todd.
+- Rank how people actually search (top 10), find a platform big in Texas that competitors ignore: Brief ready: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\todd-top10-searches-and-platform-2026-09-25.md (top 10 Texas searches with volumes; platform pick is YouTube, which the local competitors do not use). Left for you: read and send to Todd; the platform evidence is thin and the brief says so.
+- Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Brief and article ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\binge-eating-telehealth-brief-and-article.md (target 'virtual binge eating disorder treatment Texas', bariatric, weight regain and weight loss medication angles ERC does not use). Left for you: Sara to check the one statistic and the clinical descriptions; then it goes through the block process on staging13.
+- Continue the Bing and Copilot build-out: Status and next steps: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\BING-COPILOT-STATUS-2026-09-25.md. Done today: IndexNow key and a dry-run ping script (C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\indexnow-ping.py), Copilot column added to the AI sweep. Left for you: sign in at bing.com/webmasters and import from Search Console (about 5 minutes); upload the IndexNow key file to staging13 so it goes live with the next push.
+- Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation): Draft ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\bofu-psych-eval.md (rewrite of /bariatric-surgery-psychological-evaluation-in-san-antonio-tx/ with the pre-surgical and insurance-required angle, not a new URL). Left for you: send it to Sara and Todd for the confirmations listed at the top of the file (video or phone, report contents, turnaround, evaluator names). Also flagged in it: the live eval pages still carry Joint Commission, 'only program', '$0' and the wrong phone (210) 934-3420.
+- ARFID landing page and blog: Draft ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\arfid-landing-and-blog-plan.md (adults only, target 'arfid in adults', 4 blog titles for Oct/Nov). Every BCC service claim is marked [SARA TO CONFIRM]. Left for you: ask Sara first whether BCC treats adult ARFID at all; if no, do not publish and ARFID should come off the two pages that list it.
+- Daniel send draft social video clips to Sara and Todd for review: Gmail draft ready: 'Social clips for review' to Todd and Sara (six clips, one per alumnus, plus a line that the end card is being switched). Left for you: send it. There is also an older draft with the same subject whose body is just 'test'; delete that one.
+- Daniel send October social media calendar for review and QC (wait 2 to 3 days): Gmail draft ready: 'October social calendar for your review' to Sara and Todd, direct link to the October tab, replies by Thu Oct 1. Left for you: send it a day or two after the clips email (Todd's order). The 9/22 draft with the 9/23 deadline is stale; delete it.
+- Update CTA in video clips and on landing page (bcctx.link/start): Done: /start page title on staging13 is now 'Ready for Comprehensive Support' (live after your next push). All 39 finished clips rebuilt with the v4 end card ('Ready for comprehensive support? One program. Four providers.') in C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Videos\Ford\CTA-v4-2026-09-25 (frame-accurate swap, audio untouched, checked visually). Left for you: watch a few, then move them into CURRENT-portrait-clips-9x16 to replace the old ones. Carmen (Tue 9/29) and Gerry (Tue 10/6) are booked in Postiz with the old card; once the new files are in CURRENT a session can swap the media. The Food Friday montages still close on the old v2 card.
+- Daniel feedback on updated BCC marketing emails: Gmail draft ready: 'Feedback on Leloni's two emails' to Todd (5 changes to the outreach email, 5 to the clinicians' email: 'ONLY program' claim, dead second video line, 'covered by your insurance' promise, mismatched medley links, 'Licensed Movement Specialists'). Left for you: read and send.
+- Update video thumbnails: short testimonial medley and Jessica's own testimonial (YouTube): Two new Medley B thumbnails with a smiling Jessica frame (2:10 of her testimonial): C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\jessica-thumbnail-candidates-2026-09-25\medley-B-thumbnail-v3-jessica-A.jpg and -B.jpg (side by side with the current one in _compare-old-vs-A-vs-B.jpg). Left for you: pick A or B (and Todd's OK), then a session uploads it to EGLOzVHH6wQ and builds the 9:16 and Jessica's own tile the same way; tell me which website testimonial thumbnail has its text behind the person; and decide delete-and-repost on Instagram.
+- Daniel build website and search (SEO and AEO) analytics and metrics dashboard, sent as a daily email: First version built: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\todd-daily-email.py writes C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\output\todd-daily-2026-09-25.html (5 plain bullets, a small table, optional appendix); spec in C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\TODD-DAILY-EMAIL.md. Left for you: go or no-go on the sample, OK to add it as the last step of the daily pulse as a weekday Gmail draft you send (two-week trial), and OK to re-run the paid AI sweep so that line is not stale. Calls and form leads show 'not tracked yet' until DRB-1214.
+- Texas-wide geographic strategy: Brief ready: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\todd-texas-strategy-2026-09-25.md (overeating: 22 impressions, 0 clicks in 20 weeks; food addiction is the term that grew; statewide work in flight). Left for you: read and send to Todd. It refers to the one-page launch plan (BCC-Launch-Plan-for-Todd-2026-09-22.md, not yet sent), so send that first or reword the line. GA4 has no Texas city data yet.
+- Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts: Gmail reply draft ready on Todd's 'Social Media Posts' thread, to Sara with Todd cc'd: three of your October drafts (10/5, 10/19, 10/28) and three questions for her direction. Left for you: send it when you are ready (Todd said this is last on the list).
+- Use Ford's finished staff profile videos (Vimeo): Plan ready: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\social\plan\staff-profile-videos-linkedin-plan-2026-09-25.md (one staff profile a week on LinkedIn from Oct 14: Leila, Sara, Leloni). Left for you: the Vimeo links or downloads for Ford's finished staff profiles, and OK on the slots; then the social plan proposes them.
 
 ## Social posts to build and write to the sheet (1); the draft to Todd is a separate weekly step
 
