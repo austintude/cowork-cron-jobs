@@ -3826,12 +3826,12 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A7"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "needs",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-29T15:58:48",
-   "note": "rewrite: daniel: Sara confirmed BCC treats adult ARFID. Finish the ARFID landing page from content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md and send the service claims marked [SARA TO CONFIRM] to Sara as one short Gmail draft.",
+   "decided": "2026-09-29T16:39:06",
+   "note": "Send the ARFID details to Sara (Gmail draft ready)",
    "result": {
-    "needs_you": "Draft ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\arfid-landing-and-blog-plan.md (adults only, target 'arfid in adults', 4 blog titles for Oct/Nov). Every BCC service claim is marked [SARA TO CONFIRM]. Left for you: ask Sara first whether BCC treats adult ARFID at all; if no, do not publish and ARFID should come off the two pages that list it.",
+    "needs_you": "Send the ARFID details to Sara (Gmail draft ready)",
     "needs_since": "2026-09-25",
     "followup": {
      "trail": [
@@ -3844,40 +3844,67 @@
        "at": "2026-09-29 15:58",
        "by": "daniel",
        "text": "Chose 'Sara said yes'. Told Claude: Sara confirmed BCC treats adult ARFID. Finish the ARFID landing page from content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md and send the service claims marked [SARA TO CONFIRM] to Sara as one short Gmail draft."
+      },
+      {
+       "at": "2026-09-29 16:39",
+       "by": "claude",
+       "text": "Finished the landing page for QC: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\arfid-landing-page-ready-for-qc-2026-09-29.md (gate cleared; 14 detail markers left inside the page)."
+      },
+      {
+       "at": "2026-09-29 16:39",
+       "by": "claude",
+       "text": "Gmail draft from daniel@drbdig.com to Sara: 'ARFID page: a few details to confirm' (9 short questions)."
+      },
+      {
+       "at": "2026-09-29 16:39",
+       "by": "claude",
+       "text": "Still open for Todd, not in Sara's email: ARFID billed under mental health benefits like other services."
       }
      ],
      "steps": [
       {
        "owner": "daniel",
-       "do": "Ask Sara first: does BCC treat adult ARFID at all? (If no, do not publish, and ARFID comes off the two pages that list it)",
+       "do": "Read and send the Gmail draft 'ARFID page: a few details to confirm'.",
        "links": [
         {
-         "label": "Open the ARFID plan",
-         "path": "../cron-jobs/bariatric-counseling-center/content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md"
+         "label": "Open drafts",
+         "url": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#drafts"
+        }
+       ],
+       "check": {
+        "type": "gmail_sent",
+        "subject": "ARFID page: a few details to confirm"
+       },
+       "due": "2026-10-01",
+       "id": "s1",
+       "status": "open"
+      },
+      {
+       "owner": "sara",
+       "do": "Sara replies to 'ARFID page: a few details to confirm'.",
+       "check": {
+        "type": "gmail_reply",
+        "subject": "ARFID page",
+        "from": "bccsanantonio.com"
+       },
+       "due": "2026-10-06",
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "claude",
+       "do": "Put Sara's answers into the page (replace each marker or cut the line) and create it on staging13 as a DRAFT page through the block process for Sara and Todd to QC. Then start blog post 1 from the plan.",
+       "links": [
+        {
+         "label": "Open the page",
+         "path": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\arfid-landing-page-ready-for-qc-2026-09-29.md"
         }
        ],
        "check": {
         "type": "manual"
        },
-       "options": [
-        {
-         "label": "Draft the question to Sara for me",
-         "tell": "Draft a two-line Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick question: do we treat adult ARFID?', then hand it back with a gmail_sent check and a gmail_reply step for Sara."
-        },
-        {
-         "label": "Sara said yes",
-         "tell": "Sara confirmed BCC treats adult ARFID. Finish the ARFID landing page from content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md and send the service claims marked [SARA TO CONFIRM] to Sara as one short Gmail draft."
-        },
-        {
-         "label": "Sara said no",
-         "tell": "Sara said BCC does not treat ARFID. Do not publish the ARFID page. Propose removing ARFID from the two pages that list it (as site fix items for staging13)."
-        }
-       ],
-       "id": "s1",
-       "status": "done",
-       "done_at": "2026-09-29 15:58",
-       "via": "Daniel on the dashboard",
-       "evidence": "chose: Sara said yes"
+       "id": "s3",
+       "status": "open"
       }
      ],
      "state": "with_claude",
