@@ -22,15 +22,6 @@ Generated 2026-09-29 16:39 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (1): work each, then --done or --needs-you
-
-- id `a8094dd424`: **Get the content calendar to Todd 7 days before month end, ideally 10+** (8/27 meeting list, sheet row 52). Approved 2026-09-29.
-  - Daniel's notes: Camy's standing cadence, Todd wants it kept
-  - HISTORY (continue from here; do not redo what is done):
-    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Per post, the rule is already enforced: social-plan.json min_lead_days is 10, so nothing reaches Todd with less than 10 days. For the whole month: November's calendar is due to Todd by Tue Oct 20 (10 days before month end; Oct 21 is a teaching day). Left for you: say yes and a session will add a monthly reminder on the dashboard for the Tuesday about 12 days before each month ends.
-    - 2026-09-29 13:50 daniel: Chose 'Yes, add the reminder'. Told Claude: Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November.
-  - NOW: daniel: Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November.
-
 ## Items waiting on Daniel or on Todd/Sara (14): not for Claude, except the Gmail confirmations below.
 - Send draft October client and referring partner newsletters for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with edits (asked for by Tue Oct 6)
 - Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25
