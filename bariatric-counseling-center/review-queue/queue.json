@@ -5334,8 +5334,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T16:39:21",
-   "note": "Send the clinical check to Sara (Gmail draft ready)",
+   "decided": "2026-09-29T16:39:24",
+   "note": "Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.",
    "result": {
     "needs_you": "Send the clinical check to Sara (Gmail draft ready)",
     "needs_since": "2026-09-25",
@@ -5373,7 +5373,8 @@
        },
        "due": "2026-10-01",
        "id": "s1",
-       "status": "open"
+       "status": "open",
+       "evidence": "still in your Gmail Drafts, not sent"
       },
       {
        "owner": "sara",
@@ -5385,7 +5386,8 @@
        },
        "due": "2026-10-06",
        "id": "s2",
-       "status": "open"
+       "status": "open",
+       "evidence": "no reply yet"
       },
       {
        "owner": "claude",
@@ -5403,9 +5405,9 @@
        "status": "open"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process.",
-     "checked_at": "2026-09-29 14:50"
+     "state": "your_move",
+     "state_text": "Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.",
+     "checked_at": "2026-09-29 16:39"
     }
    }
   },
