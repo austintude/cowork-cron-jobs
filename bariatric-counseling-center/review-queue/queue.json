@@ -4119,8 +4119,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-25T18:34:08",
-   "note": "Gmail draft ready: 'Feedback on Leloni's two emails' to Todd (5 changes to the outreach email, 5 to the clinicians' email: 'ONLY program' claim, dead second video line, 'covered by your insurance' promise, mismatched medley links, 'Licensed Movement Specialists'). Left for you: read and send.",
+   "decided": "2026-09-29T13:41:03",
+   "note": "Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts as of Sep 29 (deleted?)",
    "result": {
     "needs_you": "Gmail draft ready: 'Feedback on Leloni's two emails' to Todd (5 changes to the outreach email, 5 to the clinicians' email: 'ONLY program' claim, dead second video line, 'covered by your insurance' promise, mismatched medley links, 'Licensed Movement Specialists'). Left for you: read and send.",
     "needs_since": "2026-09-25",
@@ -4157,9 +4157,13 @@
          "tell": "DONE_NO_ACTION"
         }
        ],
-       "id": "s1"
+       "id": "s1",
+       "check_note": "no longer in your Drafts (sent or deleted; the morning Claude run confirms which)"
       }
-     ]
+     ],
+     "state": "problem",
+     "state_text": "Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts as of Sep 29 (deleted?)",
+     "checked_at": "2026-09-29 13:41"
     }
    }
   },
