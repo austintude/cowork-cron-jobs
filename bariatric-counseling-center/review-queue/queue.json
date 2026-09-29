@@ -4960,10 +4960,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A52"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "applied",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T13:50:37",
-   "note": "rewrite: daniel: Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November.",
+   "decided": "2026-09-29T16:39:35",
+   "note": "Monthly reminder added: seo-tools/reminders.json + reminders.py, shown in the This week panel (Dates to hit) and the Monday brief. Rule: the Tuesday nearest 12 days before month end. Next: Tue Oct 20 (November), Nov 17, Dec 22, Jan 19. Shows as Coming up from the week before. No restart needed.",
    "result": {
     "needs_you": "Per post, the rule is already enforced: social-plan.json min_lead_days is 10, so nothing reaches Todd with less than 10 days. For the whole month: November's calendar is due to Todd by Tue Oct 20 (10 days before month end; Oct 21 is a teaching day). Left for you: say yes and a session will add a monthly reminder on the dashboard for the Tuesday about 12 days before each month ends.",
     "needs_since": "2026-09-25",
@@ -4978,6 +4978,11 @@
        "at": "2026-09-29 13:50",
        "by": "daniel",
        "text": "Chose 'Yes, add the reminder'. Told Claude: Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November."
+      },
+      {
+       "at": "2026-09-29 16:39",
+       "by": "claude",
+       "text": "Done: Monthly reminder added: seo-tools/reminders.json + reminders.py, shown in the This week panel (Dates to hit) and the Monday brief. Rule: the Tuesday nearest 12 days before month end. Next: Tue Oct 20 (November), Nov 17, Dec 22, Jan 19. Shows as Coming up from the week before. No restart needed.. ticked on the sheet (row 52)"
       }
      ],
      "steps": [
@@ -5004,10 +5009,13 @@
        "evidence": "chose: Yes, add the reminder"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November.",
+     "state": "done",
+     "state_text": "Done",
      "checked_at": "2026-09-29 13:40"
-    }
+    },
+    "done": "2026-09-29",
+    "done_by": "a Claude session",
+    "sheet_tick": "ticked on the sheet (row 52)"
    }
   },
   {
