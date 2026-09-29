@@ -5022,8 +5022,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T16:39:11",
-   "note": "Send the newsletter timing email to Todd (Gmail draft ready)",
+   "decided": "2026-09-29T16:39:15",
+   "note": "Read and send the Gmail draft 'Newsletter send time: Tuesdays 8:30 AM'.",
    "result": {
     "needs_you": "Send the newsletter timing email to Todd (Gmail draft ready)",
     "needs_since": "2026-09-25",
@@ -5061,7 +5061,8 @@
        },
        "due": "2026-10-01",
        "id": "s1",
-       "status": "open"
+       "status": "open",
+       "evidence": "still in your Gmail Drafts, not sent"
       },
       {
        "owner": "todd",
@@ -5073,7 +5074,8 @@
        },
        "due": "2026-10-08",
        "id": "s2",
-       "status": "open"
+       "status": "open",
+       "evidence": "no reply yet"
       },
       {
        "owner": "claude",
@@ -5091,9 +5093,9 @@
        "status": "open"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: Draft a short Gmail reply-style email from daniel@drbdig.com to Todd (subject 'Newsletter send time: Tuesdays 8:30 AM') confirming Tuesday 8:30 AM for both lists and proposing the Saturday 9 AM test on half the client list for Nov to Jan, from newsletters/SEND-TIME-DECISION-2026-09-25.md. Short and transactional. Then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.",
-     "checked_at": "2026-09-29 14:50"
+     "state": "your_move",
+     "state_text": "Read and send the Gmail draft 'Newsletter send time: Tuesdays 8:30 AM'.",
+     "checked_at": "2026-09-29 16:39"
     }
    }
   },
