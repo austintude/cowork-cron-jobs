@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-29 15:20 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-29 15:21 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -22,7 +22,7 @@ Generated 2026-09-29 15:20 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (3): work each, then --done or --needs-you
+## Action items from the Action Items sheet (4): work each, then --done or --needs-you
 
 - id `cdf82aa322`: **Update CTA in video clips and on landing page (bcctx.link/start)** (9/24 call list, sheet row 10). Approved 2026-09-29.
   - Daniel's notes: End card: "Ready for comprehensive support" and "One program, four providers." Take "that actually works" out of the /start page title.
@@ -42,11 +42,16 @@ Generated 2026-09-29 15:20 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-25 07:30 claude: Worked by the morning Claude run: Decision written up with BCC's own data: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\newsletters\SEND-TIME-DECISION-2026-09-25.md (107 sends: 8 to 10 AM is best; weekday is noise; Tuesday 8:30 AM for both lists; test Saturday 9 AM on half the client list for Nov to Jan; do not test the RP list, too small). Left for you: confirm with Todd.
     - 2026-09-29 15:20 daniel: Chose 'Draft the email to Todd for me'. Told Claude: Draft a short Gmail reply-style email from daniel@drbdig.com to Todd (subject 'Newsletter send time: Tuesdays 8:30 AM') confirming Tuesday 8:30 AM for both lists and proposing the Saturday 9 AM test on half the client list for Nov to Jan, from newsletters/SEND-TIME-DECISION-2026-09-25.md. Short and transactional. Then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.
   - NOW: daniel: Draft a short Gmail reply-style email from daniel@drbdig.com to Todd (subject 'Newsletter send time: Tuesdays 8:30 AM') confirming Tuesday 8:30 AM for both lists and proposing the Saturday 9 AM test on half the client list for Nov to Jan, from newsletters/SEND-TIME-DECISION-2026-09-25.md. Short and transactional. Then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.
+- id `081016b3bc`: **Rank how people actually search (top 10), find a platform big in Texas that competitors ignore** (8/27 meeting list, sheet row 61). Approved 2026-09-29.
+  - Daniel's notes: Todd asked for this directly
+  - HISTORY (continue from here; do not redo what is done):
+    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Brief ready: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\todd-top10-searches-and-platform-2026-09-25.md (top 10 Texas searches with volumes; platform pick is YouTube, which the local competitors do not use). Left for you: read and send to Todd; the platform evidence is thin and the brief says so.
+    - 2026-09-29 15:21 daniel: Chose 'Draft the email to Todd for me'. Told Claude: Turn Claude outputs/todd-top10-searches-and-platform-2026-09-25.md into a short Gmail draft from daniel@drbdig.com to Todd, subject 'How people search for help in Texas: the top 10' (htmlBody, clean links, no process narration), then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.
+  - NOW: daniel: Turn Claude outputs/todd-top10-searches-and-platform-2026-09-25.md into a short Gmail draft from daniel@drbdig.com to Todd, subject 'How people search for help in Texas: the top 10' (htmlBody, clean links, no process narration), then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.
 
-## Items waiting on Daniel or on Todd/Sara (14): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (13): not for Claude, except the Gmail confirmations below.
 - Send draft October client and referring partner newsletters for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with edits (asked for by Tue Oct 6)
 - Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25
-- Rank how people actually search (top 10), find a platform big in Texas that competitors ignore: Read the top 10 searches brief and send it to Todd (platform pick: YouTube; the brief says the platform evidence is thin)
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Ask Sara to check the one statistic and the clinical descriptions in the binge eating telehealth article
 - Continue the Bing and Copilot build-out: Sign in at bing.com/webmasters and import the site from Search Console (about 5 minutes)
 - Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation): Send the psych evaluation page rewrite to Sara and Todd for the confirmations listed at the top (video or phone, report contents, turnaround, evaluator names)
