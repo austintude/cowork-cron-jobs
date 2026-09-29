@@ -5341,7 +5341,7 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T13:41:00",
+   "decided": "2026-09-29T16:01:28",
    "note": "Sign in at bing.com/webmasters and import the site from Search Console (about 5 minutes)",
    "result": {
     "needs_you": "Status and next steps: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\BING-COPILOT-STATUS-2026-09-25.md. Done today: IndexNow key and a dry-run ping script (C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\indexnow-ping.py), Copilot column added to the AI sweep. Left for you: sign in at bing.com/webmasters and import from Search Console (about 5 minutes); upload the IndexNow key file to staging13 so it goes live with the next push.",
@@ -5352,6 +5352,11 @@
        "at": "2026-09-25 07:30",
        "by": "claude",
        "text": "Worked by the morning Claude run: Status and next steps: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\BING-COPILOT-STATUS-2026-09-25.md. Done today: IndexNow key and a dry-run ping script (C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\indexnow-ping.py), Copilot column added to the AI sweep. Left for you: sign in at bing.com/webmasters and import from Search Console (about 5 minutes); upload the IndexNow key file to staging13 so it goes live with the next push."
+      },
+      {
+       "at": "2026-09-29 16:01",
+       "by": "daniel",
+       "text": "Sign in at bing.com/webmasters and import the site from Search Console (about 5 minutes)"
       }
      ],
      "steps": [
@@ -5372,7 +5377,10 @@
         "type": "manual"
        },
        "id": "s1",
-       "status": "open"
+       "status": "done",
+       "done_at": "2026-09-29 16:01",
+       "via": "Daniel on the dashboard",
+       "evidence": "confirmed by Daniel on the dashboard"
       },
       {
        "owner": "daniel",
