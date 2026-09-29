@@ -5159,10 +5159,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A61"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "approved",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T13:40:59",
-   "note": "Read the top 10 searches brief and send it to Todd (platform pick: YouTube; the brief says the platform evidence is thin)",
+   "decided": "2026-09-29T15:21:27",
+   "note": "rewrite: daniel: Turn Claude outputs/todd-top10-searches-and-platform-2026-09-25.md into a short Gmail draft from daniel@drbdig.com to Todd, subject 'How people search for help in Texas: the top 10' (htmlBody, clean links, no process narration), then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.",
    "result": {
     "needs_you": "Brief ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\todd-top10-searches-and-platform-2026-09-25.md (top 10 Texas searches with volumes; platform pick is YouTube, which the local competitors do not use). Left for you: read and send to Todd; the platform evidence is thin and the brief says so.",
     "needs_since": "2026-09-25",
@@ -5172,6 +5172,11 @@
        "at": "2026-09-25 07:30",
        "by": "claude",
        "text": "Worked by the morning Claude run: Brief ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\todd-top10-searches-and-platform-2026-09-25.md (top 10 Texas searches with volumes; platform pick is YouTube, which the local competitors do not use). Left for you: read and send to Todd; the platform evidence is thin and the brief says so."
+      },
+      {
+       "at": "2026-09-29 15:21",
+       "by": "daniel",
+       "text": "Chose 'Draft the email to Todd for me'. Told Claude: Turn Claude outputs/todd-top10-searches-and-platform-2026-09-25.md into a short Gmail draft from daniel@drbdig.com to Todd, subject 'How people search for help in Texas: the top 10' (htmlBody, clean links, no process narration), then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd."
       }
      ],
      "steps": [
@@ -5194,11 +5199,14 @@
         }
        ],
        "id": "s1",
-       "status": "open"
+       "status": "done",
+       "done_at": "2026-09-29 15:21",
+       "via": "Daniel on the dashboard",
+       "evidence": "chose: Draft the email to Todd for me"
       }
      ],
-     "state": "your_move",
-     "state_text": "Read the top 10 searches brief and send it to Todd (platform pick: YouTube; the brief says the platform evidence is thin)",
+     "state": "with_claude",
+     "state_text": "With Claude: Turn Claude outputs/todd-top10-searches-and-platform-2026-09-25.md into a short Gmail draft from daniel@drbdig.com to Todd, subject 'How people search for help in Texas: the top 10' (htmlBody, clean links, no process narration), then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.",
      "checked_at": "2026-09-29 14:50"
     }
    }
