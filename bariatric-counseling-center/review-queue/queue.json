@@ -3960,8 +3960,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-25T18:34:07",
-   "note": "Gmail draft ready: 'October social calendar for your review' to Sara and Todd, direct link to the October tab, replies by Thu Oct 1. Left for you: send it a day or two after the clips email (Todd's order). The 9/22 draft with the 9/23 deadline is stale; delete it.",
+   "decided": "2026-09-29T13:41:01",
+   "note": "Waiting on Todd since 2026-09-25: Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too",
    "result": {
     "needs_you": "Gmail draft ready: 'October social calendar for your review' to Sara and Todd, direct link to the October tab, replies by Thu Oct 1. Left for you: send it a day or two after the clips email (Todd's order). The 9/22 draft with the 9/23 deadline is stale; delete it.",
     "needs_since": "2026-09-25",
@@ -4005,7 +4005,8 @@
        "due": "2026-10-01",
        "evidence": "no reply as of Sep 29",
        "id": "s2",
-       "status": "open"
+       "status": "open",
+       "check_note": "replies are checked by the morning Claude run"
       },
       {
        "owner": "daniel",
@@ -4016,7 +4017,10 @@
        "id": "s3",
        "status": "open"
       }
-     ]
+     ],
+     "state": "waiting",
+     "state_text": "Waiting on Todd since 2026-09-25: Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too",
+     "checked_at": "2026-09-29 13:41"
     }
    }
   },
