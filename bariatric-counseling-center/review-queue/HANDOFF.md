@@ -51,12 +51,12 @@ Generated 2026-09-29 13:48 by queue_apply.py. Daniel approved these on the dashb
 
 ## Gmail confirmations for the follow-up tracker (6): search Gmail (Gmail connector) and record only what you can see
 For each: gmail_sent -> search `in:sent subject:"<subject>"`; if found, `python queue_apply.py --evidence <id> <step> "sent <date> to <who>"`. gmail_reply -> search the subject from that domain after the previous step; if a reply is there, `--evidence <id> <step> "<name> replied <date>: <first line>"`. Nothing found: leave it; never guess.
-- id `0ab75ba2f9` step `s3` (gmail_reply): Todd or Sara reply with edits (asked for by Tue Oct 6), subject "October eNews" from bccsanantonio.com
-- id `aed8090d11` step `s2` (gmail_reply): Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25, subject "Staff anniversary posts" from bccsanantonio.com
-- id `e1fa4514fd` step `s2` (gmail_reply): Todd or Sara reply with thoughts on the clips, subject "Social clips for review" from bccsanantonio.com
-- id `61ccfcbfe7` step `s2` (gmail_reply): Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too, subject "October social calendar" from bccsanantonio.com
+- id `0ab75ba2f9` step `s3` (gmail_reply): Todd or Sara reply with edits (asked for by Tue Oct 6), subject "October eNews" from bccsanantonio.com, only mail after 2026-09-25 14:10 counts
+- id `aed8090d11` step `s2` (gmail_reply): Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25, subject "Staff anniversary posts" from bccsanantonio.com, only mail after 2026-09-25 14:12 counts
+- id `e1fa4514fd` step `s2` (gmail_reply): Todd or Sara reply with thoughts on the clips, subject "Social clips for review" from bccsanantonio.com, only mail after 2026-09-25 14:18 counts
+- id `61ccfcbfe7` step `s2` (gmail_reply): Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too, subject "October social calendar" from bccsanantonio.com, only mail after 2026-09-25 14:19 counts
 - id `0b1b2e7c4a` step `s1` (gmail_sent): Send the Gmail draft 'Feedback on Leloni's two emails' to Todd, subject "Feedback on Leloni"
-- id `2f18c7b786` step `s2` (gmail_reply): Sara replies with comments and direction, subject "Social Media Posts" from bccsanantonio.com
+- id `2f18c7b786` step `s2` (gmail_reply): Sara replies with comments and direction, subject "Social Media Posts" from bccsanantonio.com, only mail after 2026-09-25 14:10 counts
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
