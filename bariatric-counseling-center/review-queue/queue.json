@@ -5332,12 +5332,12 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A62"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T15:48:43",
-   "note": "rewrite: daniel: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process.",
+   "decided": "2026-09-29T16:39:21",
+   "note": "Send the clinical check to Sara (Gmail draft ready)",
    "result": {
-    "needs_you": "Brief and article ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\binge-eating-telehealth-brief-and-article.md (target 'virtual binge eating disorder treatment Texas', bariatric, weight regain and weight loss medication angles ERC does not use). Left for you: Sara to check the one statistic and the clinical descriptions; then it goes through the block process on staging13.",
+    "needs_you": "Send the clinical check to Sara (Gmail draft ready)",
     "needs_since": "2026-09-25",
     "followup": {
      "trail": [
@@ -5350,45 +5350,52 @@
        "at": "2026-09-29 15:48",
        "by": "daniel",
        "text": "Chose 'Draft the note to Sara for me'. Told Claude: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process."
+      },
+      {
+       "at": "2026-09-29 16:39",
+       "by": "claude",
+       "text": "Gmail draft from daniel@drbdig.com to Sara, cc Todd: 'Quick clinical check: binge eating telehealth article' (the STEP 1 statistic and four clinical passages quoted inline)."
       }
      ],
      "steps": [
       {
        "owner": "daniel",
-       "do": "Ask Sara to check the one statistic and the clinical descriptions in the binge eating telehealth article",
+       "do": "Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.",
        "links": [
         {
-         "label": "Open the brief and article",
-         "path": "../cron-jobs/bariatric-counseling-center/content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md"
+         "label": "Open drafts",
+         "url": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#drafts"
         }
        ],
        "check": {
-        "type": "manual"
+        "type": "gmail_sent",
+        "subject": "Quick clinical check: binge eating telehealth article"
        },
-       "options": [
-        {
-         "label": "Draft the note to Sara for me",
-         "tell": "Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process."
-        }
-       ],
+       "due": "2026-10-01",
        "id": "s1",
-       "status": "done",
-       "done_at": "2026-09-29 15:48",
-       "via": "Daniel on the dashboard",
-       "evidence": "chose: Draft the note to Sara for me"
+       "status": "open"
       },
       {
        "owner": "sara",
-       "do": "Sara confirms or corrects",
+       "do": "Sara replies to 'Quick clinical check: binge eating telehealth article'.",
        "check": {
-        "type": "manual"
+        "type": "gmail_reply",
+        "subject": "binge eating telehealth",
+        "from": "bccsanantonio.com"
        },
+       "due": "2026-10-06",
        "id": "s2",
        "status": "open"
       },
       {
        "owner": "claude",
-       "do": "Place the article on staging13 through the block process with Sara's corrections",
+       "do": "Apply Sara's edits and place the article on staging13 through the block process.",
+       "links": [
+        {
+         "label": "Open the article",
+         "path": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\binge-eating-telehealth-brief-and-article.md"
+        }
+       ],
        "check": {
         "type": "manual"
        },
