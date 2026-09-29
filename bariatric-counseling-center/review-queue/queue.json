@@ -5020,12 +5020,12 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A55"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T15:20:42",
-   "note": "rewrite: daniel: Draft a short Gmail reply-style email from daniel@drbdig.com to Todd (subject 'Newsletter send time: Tuesdays 8:30 AM') confirming Tuesday 8:30 AM for both lists and proposing the Saturday 9 AM test on half the client list for Nov to Jan, from newsletters/SEND-TIME-DECISION-2026-09-25.md. Short and transactional. Then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.",
+   "decided": "2026-09-29T16:39:11",
+   "note": "Send the newsletter timing email to Todd (Gmail draft ready)",
    "result": {
-    "needs_you": "Decision written up with BCC's own data: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\newsletters\\SEND-TIME-DECISION-2026-09-25.md (107 sends: 8 to 10 AM is best; weekday is noise; Tuesday 8:30 AM for both lists; test Saturday 9 AM on half the client list for Nov to Jan; do not test the RP list, too small). Left for you: confirm with Todd.",
+    "needs_you": "Send the newsletter timing email to Todd (Gmail draft ready)",
     "needs_since": "2026-09-25",
     "followup": {
      "trail": [
@@ -5038,40 +5038,56 @@
        "at": "2026-09-29 15:20",
        "by": "daniel",
        "text": "Chose 'Draft the email to Todd for me'. Told Claude: Draft a short Gmail reply-style email from daniel@drbdig.com to Todd (subject 'Newsletter send time: Tuesdays 8:30 AM') confirming Tuesday 8:30 AM for both lists and proposing the Saturday 9 AM test on half the client list for Nov to Jan, from newsletters/SEND-TIME-DECISION-2026-09-25.md. Short and transactional. Then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd."
+      },
+      {
+       "at": "2026-09-29 16:39",
+       "by": "claude",
+       "text": "Gmail draft from daniel@drbdig.com to Todd: 'Newsletter send time: Tuesdays 8:30 AM' (Tuesday 8:30 AM both lists; Saturday 9 AM test on half the client list Nov to Jan; asks for his OK)."
       }
      ],
      "steps": [
       {
        "owner": "daniel",
-       "do": "Confirm the newsletter send time with Todd: Tuesday 8:30 AM for both lists, and a Saturday 9 AM test on half the client list Nov to Jan",
+       "do": "Read and send the Gmail draft 'Newsletter send time: Tuesdays 8:30 AM'.",
        "links": [
         {
-         "label": "Open the decision write-up",
+         "label": "Open drafts",
+         "url": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#drafts"
+        }
+       ],
+       "check": {
+        "type": "gmail_sent",
+        "subject": "Newsletter send time: Tuesdays 8:30 AM"
+       },
+       "due": "2026-10-01",
+       "id": "s1",
+       "status": "open"
+      },
+      {
+       "owner": "todd",
+       "do": "Todd replies to 'Newsletter send time: Tuesdays 8:30 AM'.",
+       "check": {
+        "type": "gmail_reply",
+        "subject": "Newsletter send time",
+        "from": "bccsanantonio.com"
+       },
+       "due": "2026-10-08",
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "claude",
+       "do": "If Todd OKs the test: set the November client issue up as a 50/50 split (Tuesday 8:30 AM vs Saturday 9:00 AM) in the newsletter rig.",
+       "links": [
+        {
+         "label": "Open the decision note",
          "path": "newsletters/SEND-TIME-DECISION-2026-09-25.md"
         }
        ],
        "check": {
         "type": "manual"
        },
-       "options": [
-        {
-         "label": "Draft the email to Todd for me",
-         "tell": "Draft a short Gmail reply-style email from daniel@drbdig.com to Todd (subject 'Newsletter send time: Tuesdays 8:30 AM') confirming Tuesday 8:30 AM for both lists and proposing the Saturday 9 AM test on half the client list for Nov to Jan, from newsletters/SEND-TIME-DECISION-2026-09-25.md. Short and transactional. Then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd."
-        }
-       ],
-       "id": "s1",
-       "status": "done",
-       "done_at": "2026-09-29 15:20",
-       "via": "Daniel on the dashboard",
-       "evidence": "chose: Draft the email to Todd for me"
-      },
-      {
-       "owner": "todd",
-       "do": "Todd agrees (or picks another time)",
-       "check": {
-        "type": "manual"
-       },
-       "id": "s2",
+       "id": "s3",
        "status": "open"
       }
      ],
