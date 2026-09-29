@@ -4133,10 +4133,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A11"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "rejected",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-29T14:50:43",
-   "note": "Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts (deleted?)",
+   "decided": "2026-09-29T16:02:05",
+   "note": "dropped by Daniel",
    "result": {
     "needs_you": "Gmail draft ready: 'Feedback on Leloni's two emails' to Todd (5 changes to the outreach email, 5 to the clinicians' email: 'ONLY program' claim, dead second video line, 'covered by your insurance' promise, mismatched medley links, 'Licensed Movement Specialists'). Left for you: read and send.",
     "needs_since": "2026-09-25",
@@ -4151,6 +4151,11 @@
        "at": "2026-09-29 12:00",
        "by": "check",
        "text": "Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts as of Sep 29 (deleted?)"
+      },
+      {
+       "at": "2026-09-29 16:02",
+       "by": "daniel",
+       "text": "Dropped"
       }
      ],
      "steps": [
@@ -4177,8 +4182,8 @@
        "check_note": "no longer in your Drafts (sent or deleted; the morning Claude run confirms which)"
       }
      ],
-     "state": "problem",
-     "state_text": "Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts (deleted?)",
+     "state": "dropped",
+     "state_text": "Dropped",
      "checked_at": "2026-09-29 14:50"
     }
    }
