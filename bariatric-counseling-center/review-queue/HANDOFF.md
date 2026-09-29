@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-29 16:22 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-29 16:39 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -22,13 +22,8 @@ Generated 2026-09-29 16:22 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (10): work each, then --done or --needs-you
+## Action items from the Action Items sheet (9): work each, then --done or --needs-you
 
-- id `c7d4d9431e`: **Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation)** (9/24 call list, sheet row 5). Approved 2026-09-29.
-  - HISTORY (continue from here; do not redo what is done):
-    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Draft ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\bofu-psych-eval.md (rewrite of /bariatric-surgery-psychological-evaluation-in-san-antonio-tx/ with the pre-surgical and insurance-required angle, not a new URL). Left for you: send it to Sara and Todd for the confirmations listed at the top of the file (video or phone, report contents, turnaround, evaluator names). Also flagged in it: the live eval pages still carry Joint Commission, 'only program', '$0' and the wrong phone (210) 934-3420.
-    - 2026-09-29 15:57 daniel: Chose 'Draft the email for me'. Told Claude: Draft a Gmail from daniel@drbdig.com to Sara and Todd, subject 'Psych evaluation page: four things to confirm', listing the confirmations at the top of content-drafts/action-items-2026-09-25/bofu-psych-eval.md as short questions, plus one line that the live evaluation pages still carry Joint Commission, 'only program', '$0' and the old phone number. Then hand it back with a gmail_sent check and a gmail_reply step, followed by a Claude step to place the page on staging13.
-  - NOW: daniel: Draft a Gmail from daniel@drbdig.com to Sara and Todd, subject 'Psych evaluation page: four things to confirm', listing the confirmations at the top of content-drafts/action-items-2026-09-25/bofu-psych-eval.md as short questions, plus one line that the live evaluation pages still carry Joint Commission, 'only program', '$0' and the old phone number. Then hand it back with a gmail_sent check and a gmail_reply step, followed by a Claude step to place the page on staging13.
 - id `b43efd08a0`: **ARFID landing page and blog** (9/24 call list, sheet row 7). Approved 2026-09-29.
   - Daniel's notes: Page goes to Sara and Todd for QC before it goes live. Then 2 to 4 blog posts over the next couple of months. BCC has no presence on this search term yet.
   - HISTORY (continue from here; do not redo what is done):
@@ -85,9 +80,10 @@ Generated 2026-09-29 16:22 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-29 16:01 check: Put the IndexNow key file on the site (upload seo-tools/indexnow/8b22ca13ddef13fdc45a57195c2d59e6.txt to the web root; it goes live on production with your next push): live: https://www.bariatriccounselingcenter.com/8b22ca13ddef13fdc45a57195c2d59e6.txt
   - NOW: next step for Claude: Run indexnow-ping.py for real and confirm Bing shows the site
 
-## Items waiting on Daniel or on Todd/Sara (6): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (7): not for Claude, except the Gmail confirmations below.
 - Send draft October client and referring partner newsletters for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with edits (asked for by Tue Oct 6)
 - Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25
+- Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation): Read and send the Gmail draft 'Psych evaluation page: four things to confirm'.
 - Daniel send draft social video clips to Sara and Todd for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with thoughts on the clips
 - Daniel send October social media calendar for review and QC (wait 2 to 3 days): Waiting on Todd since 2026-09-25: Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too
 - Texas-wide geographic strategy: Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief
