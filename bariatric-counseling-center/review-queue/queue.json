@@ -3734,7 +3734,57 @@
    "note": "Draft ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\bofu-psych-eval.md (rewrite of /bariatric-surgery-psychological-evaluation-in-san-antonio-tx/ with the pre-surgical and insurance-required angle, not a new URL). Left for you: send it to Sara and Todd for the confirmations listed at the top of the file (video or phone, report contents, turnaround, evaluator names). Also flagged in it: the live eval pages still carry Joint Commission, 'only program', '$0' and the wrong phone (210) 934-3420.",
    "result": {
     "needs_you": "Draft ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\bofu-psych-eval.md (rewrite of /bariatric-surgery-psychological-evaluation-in-san-antonio-tx/ with the pre-surgical and insurance-required angle, not a new URL). Left for you: send it to Sara and Todd for the confirmations listed at the top of the file (video or phone, report contents, turnaround, evaluator names). Also flagged in it: the live eval pages still carry Joint Commission, 'only program', '$0' and the wrong phone (210) 934-3420.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Draft ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\bofu-psych-eval.md (rewrite of /bariatric-surgery-psychological-evaluation-in-san-antonio-tx/ with the pre-surgical and insurance-required angle, not a new URL). Left for you: send it to Sara and Todd for the confirmations listed at the top of the file (video or phone, report contents, turnaround, evaluator names). Also flagged in it: the live eval pages still carry Joint Commission, 'only program', '$0' and the wrong phone (210) 934-3420."
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Send the psych evaluation page rewrite to Sara and Todd for the confirmations listed at the top (video or phone, report contents, turnaround, evaluator names)",
+       "links": [
+        {
+         "label": "Open the draft",
+         "path": "../cron-jobs/bariatric-counseling-center/content-drafts/action-items-2026-09-25/bofu-psych-eval.md"
+        }
+       ],
+       "check": {
+        "type": "manual"
+       },
+       "options": [
+        {
+         "label": "Draft the email for me",
+         "tell": "Draft a Gmail from daniel@drbdig.com to Sara and Todd, subject 'Psych evaluation page: four things to confirm', listing the confirmations at the top of content-drafts/action-items-2026-09-25/bofu-psych-eval.md as short questions, plus one line that the live evaluation pages still carry Joint Commission, 'only program', '$0' and the old phone number. Then hand it back with a gmail_sent check and a gmail_reply step, followed by a Claude step to place the page on staging13."
+        }
+       ],
+       "id": "s1",
+       "status": "open"
+      },
+      {
+       "owner": "sara",
+       "do": "Sara and Todd answer the confirmations",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "claude",
+       "do": "Place the rewrite on staging13 through the block process",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s3",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -3760,7 +3810,47 @@
    "note": "Draft ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\arfid-landing-and-blog-plan.md (adults only, target 'arfid in adults', 4 blog titles for Oct/Nov). Every BCC service claim is marked [SARA TO CONFIRM]. Left for you: ask Sara first whether BCC treats adult ARFID at all; if no, do not publish and ARFID should come off the two pages that list it.",
    "result": {
     "needs_you": "Draft ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\arfid-landing-and-blog-plan.md (adults only, target 'arfid in adults', 4 blog titles for Oct/Nov). Every BCC service claim is marked [SARA TO CONFIRM]. Left for you: ask Sara first whether BCC treats adult ARFID at all; if no, do not publish and ARFID should come off the two pages that list it.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Draft ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\arfid-landing-and-blog-plan.md (adults only, target 'arfid in adults', 4 blog titles for Oct/Nov). Every BCC service claim is marked [SARA TO CONFIRM]. Left for you: ask Sara first whether BCC treats adult ARFID at all; if no, do not publish and ARFID should come off the two pages that list it."
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Ask Sara first: does BCC treat adult ARFID at all? (If no, do not publish, and ARFID comes off the two pages that list it)",
+       "links": [
+        {
+         "label": "Open the ARFID plan",
+         "path": "../cron-jobs/bariatric-counseling-center/content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md"
+        }
+       ],
+       "check": {
+        "type": "manual"
+       },
+       "options": [
+        {
+         "label": "Draft the question to Sara for me",
+         "tell": "Draft a two-line Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick question: do we treat adult ARFID?', then hand it back with a gmail_sent check and a gmail_reply step for Sara."
+        },
+        {
+         "label": "Sara said yes",
+         "tell": "Sara confirmed BCC treats adult ARFID. Finish the ARFID landing page from content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md and send the service claims marked [SARA TO CONFIRM] to Sara as one short Gmail draft."
+        },
+        {
+         "label": "Sara said no",
+         "tell": "Sara said BCC does not treat ARFID. Do not publish the ARFID page. Propose removing ARFID from the two pages that list it (as site fix items for staging13)."
+        }
+       ],
+       "id": "s1",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -3786,7 +3876,59 @@
    "note": "Gmail draft ready: 'Social clips for review' to Todd and Sara (six clips, one per alumnus, plus a line that the end card is being switched). Left for you: send it. There is also an older draft with the same subject whose body is just 'test'; delete that one.",
    "result": {
     "needs_you": "Gmail draft ready: 'Social clips for review' to Todd and Sara (six clips, one per alumnus, plus a line that the end card is being switched). Left for you: send it. There is also an older draft with the same subject whose body is just 'test'; delete that one.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Gmail draft ready: 'Social clips for review' to Todd and Sara (six clips, one per alumnus, plus a line that the end card is being switched). Left for you: send it. There is also an older draft with the same subject whose body is just 'test'; delete that one."
+      },
+      {
+       "at": "2026-09-25 14:11",
+       "by": "check",
+       "text": "Send the Gmail draft 'Social clips for review' to Todd and Sara: sent Sep 25 2:11 PM to Todd and Sara, and re-sent with working previews at 2:18 PM"
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Send the Gmail draft 'Social clips for review' to Todd and Sara",
+       "check": {
+        "type": "gmail_sent",
+        "subject": "Social clips for review"
+       },
+       "status": "done",
+       "done_at": "2026-09-25 14:11",
+       "evidence": "sent Sep 25 2:11 PM to Todd and Sara, and re-sent with working previews at 2:18 PM",
+       "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0d9fa57c6d944d",
+       "id": "s1",
+       "via": "checked in Gmail on 2026-09-29"
+      },
+      {
+       "owner": "todd",
+       "do": "Todd or Sara reply with thoughts on the clips",
+       "check": {
+        "type": "gmail_reply",
+        "subject": "Social clips for review",
+        "from": "bccsanantonio.com",
+        "after": "2026-09-25T14:18"
+       },
+       "evidence": "no reply as of Sep 29",
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "daniel",
+       "do": "Read their reply; tell Claude what to change, or press All finished",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s3",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -3812,7 +3954,60 @@
    "note": "Gmail draft ready: 'October social calendar for your review' to Sara and Todd, direct link to the October tab, replies by Thu Oct 1. Left for you: send it a day or two after the clips email (Todd's order). The 9/22 draft with the 9/23 deadline is stale; delete it.",
    "result": {
     "needs_you": "Gmail draft ready: 'October social calendar for your review' to Sara and Todd, direct link to the October tab, replies by Thu Oct 1. Left for you: send it a day or two after the clips email (Todd's order). The 9/22 draft with the 9/23 deadline is stale; delete it.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Gmail draft ready: 'October social calendar for your review' to Sara and Todd, direct link to the October tab, replies by Thu Oct 1. Left for you: send it a day or two after the clips email (Todd's order). The 9/22 draft with the 9/23 deadline is stale; delete it."
+      },
+      {
+       "at": "2026-09-25 14:19",
+       "by": "check",
+       "text": "Send the Gmail draft 'October social calendar for your review' to Sara and Todd: sent Sep 25 2:19 PM to Sara and Todd"
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Send the Gmail draft 'October social calendar for your review' to Sara and Todd",
+       "check": {
+        "type": "gmail_sent",
+        "subject": "October social calendar for your review"
+       },
+       "status": "done",
+       "done_at": "2026-09-25 14:19",
+       "evidence": "sent Sep 25 2:19 PM to Sara and Todd",
+       "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0d9c17a06c945c",
+       "id": "s1",
+       "via": "checked in Gmail on 2026-09-29"
+      },
+      {
+       "owner": "todd",
+       "do": "Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too",
+       "check": {
+        "type": "gmail_reply",
+        "subject": "October social calendar",
+        "from": "bccsanantonio.com",
+        "after": "2026-09-25T14:19"
+       },
+       "due": "2026-10-01",
+       "evidence": "no reply as of Sep 29",
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "daniel",
+       "do": "Read their reply; tell Claude what to change, or press All finished",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s3",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -3838,7 +4033,54 @@
    "note": "Done: /start page title on staging13 is now 'Ready for Comprehensive Support' (live after your next push). All 39 finished clips rebuilt with the v4 end card ('Ready for comprehensive support? One program. Four providers.') in C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Videos\\Ford\\CTA-v4-2026-09-25 (frame-accurate swap, audio untouched, checked visually). Left for you: watch a few, then move them into CURRENT-portrait-clips-9x16 to replace the old ones. Carmen (Tue 9/29) and Gerry (Tue 10/6) are booked in Postiz with the old card; once the new files are in CURRENT a session can swap the media. The Food Friday montages still close on the old v2 card.",
    "result": {
     "needs_you": "Done: /start page title on staging13 is now 'Ready for Comprehensive Support' (live after your next push). All 39 finished clips rebuilt with the v4 end card ('Ready for comprehensive support? One program. Four providers.') in C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Videos\\Ford\\CTA-v4-2026-09-25 (frame-accurate swap, audio untouched, checked visually). Left for you: watch a few, then move them into CURRENT-portrait-clips-9x16 to replace the old ones. Carmen (Tue 9/29) and Gerry (Tue 10/6) are booked in Postiz with the old card; once the new files are in CURRENT a session can swap the media. The Food Friday montages still close on the old v2 card.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Done: /start page title on staging13 is now 'Ready for Comprehensive Support' (live after your next push). All 39 finished clips rebuilt with the v4 end card ('Ready for comprehensive support? One program. Four providers.') in C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Videos\\Ford\\CTA-v4-2026-09-25 (frame-accurate swap, audio untouched, checked visually). Left for you: watch a few, then move them into CURRENT-portrait-clips-9x16 to replace the old ones. Carmen (Tue 9/29) and Gerry (Tue 10/6) are booked in Postiz with the old card; once the new files are in CURRENT a session can swap the media. The Food Friday montages still close on the old v2 card."
+      },
+      {
+       "at": "2026-09-29 13:40",
+       "by": "check",
+       "text": "Watch a few rebuilt clips, then move them into CURRENT-portrait-clips-9x16: done Sep 29: all 39 clips with the new end card are in CURRENT; the old ones are in Videos/Ford/_archive/CURRENT-pre-cta-v4-2026-09-29"
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Watch a few rebuilt clips, then move them into CURRENT-portrait-clips-9x16",
+       "check": {
+        "type": "path_exists",
+        "path": "Videos/Ford/_archive/CURRENT-pre-cta-v4-2026-09-29"
+       },
+       "status": "done",
+       "done_at": "2026-09-29 13:40",
+       "evidence": "done Sep 29: all 39 clips with the new end card are in CURRENT; the old ones are in Videos/Ford/_archive/CURRENT-pre-cta-v4-2026-09-29",
+       "id": "s1",
+       "via": "checked in Gmail on 2026-09-29"
+      },
+      {
+       "owner": "claude",
+       "do": "Swap the media on booked Postiz posts that still carry the old end card (Gerry, Tue 10/6; Carmen ran Tue 9/29), and list the Food Friday montages that still close on the old v2 card",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "daniel",
+       "do": "Push staging13 to production when you next do a push (the /start page title change goes live then)",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s3",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -3864,7 +4106,44 @@
    "note": "Gmail draft ready: 'Feedback on Leloni's two emails' to Todd (5 changes to the outreach email, 5 to the clinicians' email: 'ONLY program' claim, dead second video line, 'covered by your insurance' promise, mismatched medley links, 'Licensed Movement Specialists'). Left for you: read and send.",
    "result": {
     "needs_you": "Gmail draft ready: 'Feedback on Leloni's two emails' to Todd (5 changes to the outreach email, 5 to the clinicians' email: 'ONLY program' claim, dead second video line, 'covered by your insurance' promise, mismatched medley links, 'Licensed Movement Specialists'). Left for you: read and send.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Gmail draft ready: 'Feedback on Leloni's two emails' to Todd (5 changes to the outreach email, 5 to the clinicians' email: 'ONLY program' claim, dead second video line, 'covered by your insurance' promise, mismatched medley links, 'Licensed Movement Specialists'). Left for you: read and send."
+      },
+      {
+       "at": "2026-09-29 12:00",
+       "by": "check",
+       "text": "Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts as of Sep 29 (deleted?)"
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Send the Gmail draft 'Feedback on Leloni's two emails' to Todd",
+       "check": {
+        "type": "gmail_sent",
+        "subject": "Feedback on Leloni"
+       },
+       "status": "gone",
+       "evidence": "not sent, and no longer in your Drafts as of Sep 29 (deleted?)",
+       "options": [
+        {
+         "label": "Recreate the draft",
+         "tell": "The Gmail draft 'Feedback on Leloni's two emails' is gone and was never sent. Recreate it from the review of Leloni's two emails (5 changes to the outreach email, 5 to the clinicians' email: 'ONLY program' claim, dead second video line, 'covered by your insurance' promise, mismatched medley links, 'Licensed Movement Specialists'), as a Gmail draft from daniel@drbdig.com to Todd, then hand it back with a gmail_sent check."
+        },
+        {
+         "label": "I gave Todd the feedback another way",
+         "tell": "DONE_NO_ACTION"
+        }
+       ],
+       "id": "s1"
+      }
+     ]
+    }
    }
   },
   {
@@ -3890,7 +4169,61 @@
    "note": "Two new Medley B thumbnails with a smiling Jessica frame (2:10 of her testimonial): C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\jessica-thumbnail-candidates-2026-09-25\\medley-B-thumbnail-v3-jessica-A.jpg and -B.jpg (side by side with the current one in _compare-old-vs-A-vs-B.jpg). Left for you: pick A or B (and Todd's OK), then a session uploads it to EGLOzVHH6wQ and builds the 9:16 and Jessica's own tile the same way; tell me which website testimonial thumbnail has its text behind the person; and decide delete-and-repost on Instagram.",
    "result": {
     "needs_you": "Two new Medley B thumbnails with a smiling Jessica frame (2:10 of her testimonial): C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\jessica-thumbnail-candidates-2026-09-25\\medley-B-thumbnail-v3-jessica-A.jpg and -B.jpg (side by side with the current one in _compare-old-vs-A-vs-B.jpg). Left for you: pick A or B (and Todd's OK), then a session uploads it to EGLOzVHH6wQ and builds the 9:16 and Jessica's own tile the same way; tell me which website testimonial thumbnail has its text behind the person; and decide delete-and-repost on Instagram.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Two new Medley B thumbnails with a smiling Jessica frame (2:10 of her testimonial): C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\jessica-thumbnail-candidates-2026-09-25\\medley-B-thumbnail-v3-jessica-A.jpg and -B.jpg (side by side with the current one in _compare-old-vs-A-vs-B.jpg). Left for you: pick A or B (and Todd's OK), then a session uploads it to EGLOzVHH6wQ and builds the 9:16 and Jessica's own tile the same way; tell me which website testimonial thumbnail has its text behind the person; and decide delete-and-repost on Instagram."
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Pick the new Medley B thumbnail: A or B (Todd's OK too)",
+       "links": [
+        {
+         "label": "Compare old vs A vs B",
+         "path": "Claude outputs/jessica-thumbnail-candidates-2026-09-25/_compare-old-vs-A-vs-B.jpg"
+        }
+       ],
+       "check": {
+        "type": "manual"
+       },
+       "options": [
+        {
+         "label": "Use A",
+         "tell": "Daniel picked thumbnail A (medley-B-thumbnail-v3-jessica-A.jpg). Upload it to YouTube video EGLOzVHH6wQ, build the 9:16 and Jessica's own testimonial tile the same way."
+        },
+        {
+         "label": "Use B",
+         "tell": "Daniel picked thumbnail B (medley-B-thumbnail-v3-jessica-B.jpg). Upload it to YouTube video EGLOzVHH6wQ, build the 9:16 and Jessica's own testimonial tile the same way."
+        }
+       ],
+       "id": "s1",
+       "status": "open"
+      },
+      {
+       "owner": "daniel",
+       "do": "Say which website testimonial thumbnail has its text behind the person, and whether to delete and repost on Instagram (use Tell Claude)",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "claude",
+       "do": "Upload the chosen thumbnail and fix the website tile",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s3",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -3945,7 +4278,39 @@
    "note": "Brief ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\todd-texas-strategy-2026-09-25.md (overeating: 22 impressions, 0 clicks in 20 weeks; food addiction is the term that grew; statewide work in flight). Left for you: read and send to Todd. It refers to the one-page launch plan (BCC-Launch-Plan-for-Todd-2026-09-22.md, not yet sent), so send that first or reword the line. GA4 has no Texas city data yet.",
    "result": {
     "needs_you": "Brief ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\todd-texas-strategy-2026-09-25.md (overeating: 22 impressions, 0 clicks in 20 weeks; food addiction is the term that grew; statewide work in flight). Left for you: read and send to Todd. It refers to the one-page launch plan (BCC-Launch-Plan-for-Todd-2026-09-22.md, not yet sent), so send that first or reword the line. GA4 has no Texas city data yet.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Brief ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\todd-texas-strategy-2026-09-25.md (overeating: 22 impressions, 0 clicks in 20 weeks; food addiction is the term that grew; statewide work in flight). Left for you: read and send to Todd. It refers to the one-page launch plan (BCC-Launch-Plan-for-Todd-2026-09-22.md, not yet sent), so send that first or reword the line. GA4 has no Texas city data yet."
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief",
+       "links": [
+        {
+         "label": "Open the Texas brief",
+         "path": "Claude outputs/todd-texas-strategy-2026-09-25.md"
+        }
+       ],
+       "check": {
+        "type": "manual"
+       },
+       "options": [
+        {
+         "label": "Draft both emails for me",
+         "tell": "Draft two Gmail drafts from daniel@drbdig.com to Todd: (1) the one-page launch plan from BCC-Launch-Plan-for-Todd-2026-09-22.md, subject 'BCC launch plan: one page'; (2) the Texas strategy brief from Claude outputs/todd-texas-strategy-2026-09-25.md, subject 'Overeating, food addiction and going statewide'. Short, transactional, clean links. Hand it back with a gmail_sent check for each and a gmail_reply step for Todd."
+        }
+       ],
+       "id": "s1",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -3971,7 +4336,60 @@
    "note": "Gmail reply draft ready on Todd's 'Social Media Posts' thread, to Sara with Todd cc'd: three of your October drafts (10/5, 10/19, 10/28) and three questions for her direction. Left for you: send it when you are ready (Todd said this is last on the list).",
    "result": {
     "needs_you": "Gmail reply draft ready on Todd's 'Social Media Posts' thread, to Sara with Todd cc'd: three of your October drafts (10/5, 10/19, 10/28) and three questions for her direction. Left for you: send it when you are ready (Todd said this is last on the list).",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Gmail reply draft ready on Todd's 'Social Media Posts' thread, to Sara with Todd cc'd: three of your October drafts (10/5, 10/19, 10/28) and three questions for her direction. Left for you: send it when you are ready (Todd said this is last on the list)."
+      },
+      {
+       "at": "2026-09-25 14:09",
+       "by": "check",
+       "text": "Send the reply on Todd's 'Social Media Posts' thread to Sara (Todd cc'd) with three October drafts: sent Sep 25 2:09 PM to Sara, Todd cc'd"
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Send the reply on Todd's 'Social Media Posts' thread to Sara (Todd cc'd) with three October drafts",
+       "check": {
+        "type": "gmail_sent",
+        "subject": "Social Media Posts",
+        "after": "2026-09-25"
+       },
+       "status": "done",
+       "done_at": "2026-09-25 14:09",
+       "evidence": "sent Sep 25 2:09 PM to Sara, Todd cc'd",
+       "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0d3d742b507ec3",
+       "id": "s1",
+       "via": "checked in Gmail on 2026-09-29"
+      },
+      {
+       "owner": "sara",
+       "do": "Sara replies with comments and direction",
+       "check": {
+        "type": "gmail_reply",
+        "subject": "Social Media Posts",
+        "from": "bccsanantonio.com",
+        "after": "2026-09-25T14:10"
+       },
+       "evidence": "no reply as of Sep 29",
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "daniel",
+       "do": "Read Sara's direction; tell Claude to apply it to the plan, or press All finished",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s3",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -4020,7 +4438,42 @@
    "note": "Plan ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\staff-profile-videos-linkedin-plan-2026-09-25.md (one staff profile a week on LinkedIn from Oct 14: Leila, Sara, Leloni). Left for you: the Vimeo links or downloads for Ford's finished staff profiles, and OK on the slots; then the social plan proposes them.",
    "result": {
     "needs_you": "Plan ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\staff-profile-videos-linkedin-plan-2026-09-25.md (one staff profile a week on LinkedIn from Oct 14: Leila, Sara, Leloni). Left for you: the Vimeo links or downloads for Ford's finished staff profiles, and OK on the slots; then the social plan proposes them.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Plan ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\staff-profile-videos-linkedin-plan-2026-09-25.md (one staff profile a week on LinkedIn from Oct 14: Leila, Sara, Leloni). Left for you: the Vimeo links or downloads for Ford's finished staff profiles, and OK on the slots; then the social plan proposes them."
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Give Claude the Vimeo links (or downloads) for Ford's finished staff profile videos, and OK the LinkedIn slots (one a week from Oct 14: Leila, Sara, Leloni)",
+       "links": [
+        {
+         "label": "Open the plan",
+         "path": "social/plan/staff-profile-videos-linkedin-plan-2026-09-25.md"
+        }
+       ],
+       "check": {
+        "type": "manual"
+       },
+       "id": "s1",
+       "status": "open"
+      },
+      {
+       "owner": "claude",
+       "do": "Propose the staff profile posts in the social plan",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s2",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -4046,7 +4499,84 @@
    "note": "Gmail draft ready: 'October eNews for review (sends Tuesday, October 13)' to Todd and Sara, clean links (the 9/18 draft had Google redirect links; delete it). The eNews Calendar and eNews KPIs tabs were missing from the content calendar sheet, so I recreated them from newsletters\\enews-calendar-2026-10_2027-03.csv. Left for you: run the Constant Contact test sends of both October drafts to Todd and Sara, then send the Gmail draft.",
    "result": {
     "needs_you": "Gmail draft ready: 'October eNews for review (sends Tuesday, October 13)' to Todd and Sara, clean links (the 9/18 draft had Google redirect links; delete it). The eNews Calendar and eNews KPIs tabs were missing from the content calendar sheet, so I recreated them from newsletters\\enews-calendar-2026-10_2027-03.csv. Left for you: run the Constant Contact test sends of both October drafts to Todd and Sara, then send the Gmail draft.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Gmail draft ready: 'October eNews for review (sends Tuesday, October 13)' to Todd and Sara, clean links (the 9/18 draft had Google redirect links; delete it). The eNews Calendar and eNews KPIs tabs were missing from the content calendar sheet, so I recreated them from newsletters\\enews-calendar-2026-10_2027-03.csv. Left for you: run the Constant Contact test sends of both October drafts to Todd and Sara, then send the Gmail draft."
+      },
+      {
+       "at": "2026-09-25 14:10",
+       "by": "check",
+       "text": "Run the Constant Contact test sends of both October drafts to Todd and Sara: your Sep 25 email to them says the test copies are on their way (not checked in Constant Contact)"
+      },
+      {
+       "at": "2026-09-25 14:10",
+       "by": "check",
+       "text": "Send the Gmail draft 'October eNews for review (sends Tuesday, October 13)': sent Sep 25 2:10 PM to Todd and Sara"
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Run the Constant Contact test sends of both October drafts to Todd and Sara",
+       "check": {
+        "type": "manual"
+       },
+       "status": "done",
+       "done_at": "2026-09-25 14:10",
+       "evidence": "your Sep 25 email to them says the test copies are on their way (not checked in Constant Contact)",
+       "id": "s1",
+       "via": "checked in Gmail on 2026-09-29"
+      },
+      {
+       "owner": "daniel",
+       "do": "Send the Gmail draft 'October eNews for review (sends Tuesday, October 13)'",
+       "check": {
+        "type": "gmail_sent",
+        "subject": "October eNews for review"
+       },
+       "status": "done",
+       "done_at": "2026-09-25 14:10",
+       "evidence": "sent Sep 25 2:10 PM to Todd and Sara",
+       "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0d9c2bb271793e",
+       "id": "s2",
+       "via": "checked in Gmail on 2026-09-29"
+      },
+      {
+       "owner": "todd",
+       "do": "Todd or Sara reply with edits (asked for by Tue Oct 6)",
+       "check": {
+        "type": "gmail_reply",
+        "subject": "October eNews",
+        "from": "bccsanantonio.com",
+        "after": "2026-09-25T14:10"
+       },
+       "due": "2026-10-06",
+       "evidence": "no reply as of Sep 29",
+       "id": "s3",
+       "status": "open"
+      },
+      {
+       "owner": "daniel",
+       "do": "Make any edits, then schedule both October sends in Constant Contact for Tue Oct 13, 8:30 AM",
+       "check": {
+        "type": "manual"
+       },
+       "due": "2026-10-08",
+       "options": [
+        {
+         "label": "Schedule them for me",
+         "tell": "Apply any edits Todd or Sara sent on the 'October eNews for review' thread to both October Constant Contact drafts, then schedule both for Tue Oct 13 8:30 AM Central through the newsletter rig, and record the campaign ids."
+        }
+       ],
+       "id": "s4",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -4072,7 +4602,60 @@
    "note": "Gmail draft ready: 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd asking for dates, a few lines each and photos by Thu Oct 1. Left for you: send it. Leloni already has a staff spotlight on 10/7; her anniversary could ride on that post.",
    "result": {
     "needs_you": "Gmail draft ready: 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd asking for dates, a few lines each and photos by Thu Oct 1. Left for you: send it. Leloni already has a staff spotlight on 10/7; her anniversary could ride on that post.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Gmail draft ready: 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd asking for dates, a few lines each and photos by Thu Oct 1. Left for you: send it. Leloni already has a staff spotlight on 10/7; her anniversary could ride on that post."
+      },
+      {
+       "at": "2026-09-25 14:09",
+       "by": "check",
+       "text": "Send the Gmail draft 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd: sent Sep 25 2:09 PM to Todd"
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Send the Gmail draft 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd",
+       "check": {
+        "type": "gmail_sent",
+        "subject": "Staff anniversary posts"
+       },
+       "status": "done",
+       "done_at": "2026-09-25 14:09",
+       "evidence": "sent Sep 25 2:09 PM to Todd",
+       "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0d9d7746da1d27",
+       "id": "s1",
+       "via": "checked in Gmail on 2026-09-29"
+      },
+      {
+       "owner": "todd",
+       "do": "Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25",
+       "check": {
+        "type": "gmail_reply",
+        "subject": "Staff anniversary posts",
+        "from": "bccsanantonio.com",
+        "after": "2026-09-25T14:12"
+       },
+       "due": "2026-10-01",
+       "evidence": "only 'Will do' so far (Sep 25 2:11 PM)",
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "claude",
+       "do": "Build the three anniversary posts from what Todd sent and propose them in the social plan (Leloni's can ride on her 10/7 staff spotlight)",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s3",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -4206,7 +4789,37 @@
    "note": "Per post, the rule is already enforced: social-plan.json min_lead_days is 10, so nothing reaches Todd with less than 10 days. For the whole month: November's calendar is due to Todd by Tue Oct 20 (10 days before month end; Oct 21 is a teaching day). Left for you: say yes and a session will add a monthly reminder on the dashboard for the Tuesday about 12 days before each month ends.",
    "result": {
     "needs_you": "Per post, the rule is already enforced: social-plan.json min_lead_days is 10, so nothing reaches Todd with less than 10 days. For the whole month: November's calendar is due to Todd by Tue Oct 20 (10 days before month end; Oct 21 is a teaching day). Left for you: say yes and a session will add a monthly reminder on the dashboard for the Tuesday about 12 days before each month ends.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Per post, the rule is already enforced: social-plan.json min_lead_days is 10, so nothing reaches Todd with less than 10 days. For the whole month: November's calendar is due to Todd by Tue Oct 20 (10 days before month end; Oct 21 is a teaching day). Left for you: say yes and a session will add a monthly reminder on the dashboard for the Tuesday about 12 days before each month ends."
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Decide: add a monthly dashboard reminder to get the next month's calendar to Todd about 12 days before month end? (per post, the 10-day lead is already enforced; November's is due Tue Oct 20)",
+       "check": {
+        "type": "manual"
+       },
+       "options": [
+        {
+         "label": "Yes, add the reminder",
+         "tell": "Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November."
+        },
+        {
+         "label": "No, the per-post rule is enough",
+         "tell": "DONE_NO_ACTION"
+        }
+       ],
+       "id": "s1",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -4286,7 +4899,48 @@
    "note": "Decision written up with BCC's own data: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\newsletters\\SEND-TIME-DECISION-2026-09-25.md (107 sends: 8 to 10 AM is best; weekday is noise; Tuesday 8:30 AM for both lists; test Saturday 9 AM on half the client list for Nov to Jan; do not test the RP list, too small). Left for you: confirm with Todd.",
    "result": {
     "needs_you": "Decision written up with BCC's own data: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\newsletters\\SEND-TIME-DECISION-2026-09-25.md (107 sends: 8 to 10 AM is best; weekday is noise; Tuesday 8:30 AM for both lists; test Saturday 9 AM on half the client list for Nov to Jan; do not test the RP list, too small). Left for you: confirm with Todd.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Decision written up with BCC's own data: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\newsletters\\SEND-TIME-DECISION-2026-09-25.md (107 sends: 8 to 10 AM is best; weekday is noise; Tuesday 8:30 AM for both lists; test Saturday 9 AM on half the client list for Nov to Jan; do not test the RP list, too small). Left for you: confirm with Todd."
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Confirm the newsletter send time with Todd: Tuesday 8:30 AM for both lists, and a Saturday 9 AM test on half the client list Nov to Jan",
+       "links": [
+        {
+         "label": "Open the decision write-up",
+         "path": "newsletters/SEND-TIME-DECISION-2026-09-25.md"
+        }
+       ],
+       "check": {
+        "type": "manual"
+       },
+       "options": [
+        {
+         "label": "Draft the email to Todd for me",
+         "tell": "Draft a short Gmail reply-style email from daniel@drbdig.com to Todd (subject 'Newsletter send time: Tuesdays 8:30 AM') confirming Tuesday 8:30 AM for both lists and proposing the Saturday 9 AM test on half the client list for Nov to Jan, from newsletters/SEND-TIME-DECISION-2026-09-25.md. Short and transactional. Then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd."
+        }
+       ],
+       "id": "s1",
+       "status": "open"
+      },
+      {
+       "owner": "todd",
+       "do": "Todd agrees (or picks another time)",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s2",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -4447,7 +5101,39 @@
    "note": "Brief ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\todd-top10-searches-and-platform-2026-09-25.md (top 10 Texas searches with volumes; platform pick is YouTube, which the local competitors do not use). Left for you: read and send to Todd; the platform evidence is thin and the brief says so.",
    "result": {
     "needs_you": "Brief ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\todd-top10-searches-and-platform-2026-09-25.md (top 10 Texas searches with volumes; platform pick is YouTube, which the local competitors do not use). Left for you: read and send to Todd; the platform evidence is thin and the brief says so.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Brief ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\todd-top10-searches-and-platform-2026-09-25.md (top 10 Texas searches with volumes; platform pick is YouTube, which the local competitors do not use). Left for you: read and send to Todd; the platform evidence is thin and the brief says so."
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Read the top 10 searches brief and send it to Todd (platform pick: YouTube; the brief says the platform evidence is thin)",
+       "links": [
+        {
+         "label": "Open the brief",
+         "path": "Claude outputs/todd-top10-searches-and-platform-2026-09-25.md"
+        }
+       ],
+       "check": {
+        "type": "manual"
+       },
+       "options": [
+        {
+         "label": "Draft the email to Todd for me",
+         "tell": "Turn Claude outputs/todd-top10-searches-and-platform-2026-09-25.md into a short Gmail draft from daniel@drbdig.com to Todd, subject 'How people search for help in Texas: the top 10' (htmlBody, clean links, no process narration), then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd."
+        }
+       ],
+       "id": "s1",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -4473,7 +5159,57 @@
    "note": "Brief and article ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\binge-eating-telehealth-brief-and-article.md (target 'virtual binge eating disorder treatment Texas', bariatric, weight regain and weight loss medication angles ERC does not use). Left for you: Sara to check the one statistic and the clinical descriptions; then it goes through the block process on staging13.",
    "result": {
     "needs_you": "Brief and article ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\binge-eating-telehealth-brief-and-article.md (target 'virtual binge eating disorder treatment Texas', bariatric, weight regain and weight loss medication angles ERC does not use). Left for you: Sara to check the one statistic and the clinical descriptions; then it goes through the block process on staging13.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Brief and article ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\binge-eating-telehealth-brief-and-article.md (target 'virtual binge eating disorder treatment Texas', bariatric, weight regain and weight loss medication angles ERC does not use). Left for you: Sara to check the one statistic and the clinical descriptions; then it goes through the block process on staging13."
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Ask Sara to check the one statistic and the clinical descriptions in the binge eating telehealth article",
+       "links": [
+        {
+         "label": "Open the brief and article",
+         "path": "../cron-jobs/bariatric-counseling-center/content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md"
+        }
+       ],
+       "check": {
+        "type": "manual"
+       },
+       "options": [
+        {
+         "label": "Draft the note to Sara for me",
+         "tell": "Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process."
+        }
+       ],
+       "id": "s1",
+       "status": "open"
+      },
+      {
+       "owner": "sara",
+       "do": "Sara confirms or corrects",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "claude",
+       "do": "Place the article on staging13 through the block process with Sara's corrections",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s3",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
@@ -4499,7 +5235,57 @@
    "note": "Status and next steps: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\BING-COPILOT-STATUS-2026-09-25.md. Done today: IndexNow key and a dry-run ping script (C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\indexnow-ping.py), Copilot column added to the AI sweep. Left for you: sign in at bing.com/webmasters and import from Search Console (about 5 minutes); upload the IndexNow key file to staging13 so it goes live with the next push.",
    "result": {
     "needs_you": "Status and next steps: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\BING-COPILOT-STATUS-2026-09-25.md. Done today: IndexNow key and a dry-run ping script (C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\indexnow-ping.py), Copilot column added to the AI sweep. Left for you: sign in at bing.com/webmasters and import from Search Console (about 5 minutes); upload the IndexNow key file to staging13 so it goes live with the next push.",
-    "needs_since": "2026-09-25"
+    "needs_since": "2026-09-25",
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-09-25 07:30",
+       "by": "claude",
+       "text": "Worked by the morning Claude run: Status and next steps: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\BING-COPILOT-STATUS-2026-09-25.md. Done today: IndexNow key and a dry-run ping script (C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\indexnow-ping.py), Copilot column added to the AI sweep. Left for you: sign in at bing.com/webmasters and import from Search Console (about 5 minutes); upload the IndexNow key file to staging13 so it goes live with the next push."
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Sign in at bing.com/webmasters and import the site from Search Console (about 5 minutes)",
+       "links": [
+        {
+         "label": "Bing Webmaster Tools",
+         "url": "https://www.bing.com/webmasters"
+        },
+        {
+         "label": "Open the status note",
+         "path": "seo-tools/BING-COPILOT-STATUS-2026-09-25.md"
+        }
+       ],
+       "check": {
+        "type": "manual"
+       },
+       "id": "s1",
+       "status": "open"
+      },
+      {
+       "owner": "daniel",
+       "do": "Put the IndexNow key file on the site (upload seo-tools/indexnow/8b22ca13ddef13fdc45a57195c2d59e6.txt to the web root; it goes live on production with your next push)",
+       "check": {
+        "type": "url_contains",
+        "url": "https://www.bariatriccounselingcenter.com/8b22ca13ddef13fdc45a57195c2d59e6.txt",
+        "text": "8b22ca13ddef13fdc45a57195c2d59e6"
+       },
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "claude",
+       "do": "Run indexnow-ping.py for real and confirm Bing shows the site",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s3",
+       "status": "open"
+      }
+     ]
+    }
    }
   },
   {
