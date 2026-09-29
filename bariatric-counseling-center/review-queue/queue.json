@@ -4825,10 +4825,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A52"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "approved",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T13:40:59",
-   "note": "Decide: add a monthly dashboard reminder to get the next month's calendar to Todd about 12 days before month end? (per post, the 10-day lead is already enforced; November's is due Tue Oct 20)",
+   "decided": "2026-09-29T13:50:37",
+   "note": "rewrite: daniel: Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November.",
    "result": {
     "needs_you": "Per post, the rule is already enforced: social-plan.json min_lead_days is 10, so nothing reaches Todd with less than 10 days. For the whole month: November's calendar is due to Todd by Tue Oct 20 (10 days before month end; Oct 21 is a teaching day). Left for you: say yes and a session will add a monthly reminder on the dashboard for the Tuesday about 12 days before each month ends.",
     "needs_since": "2026-09-25",
@@ -4838,6 +4838,11 @@
        "at": "2026-09-25 07:30",
        "by": "claude",
        "text": "Worked by the morning Claude run: Per post, the rule is already enforced: social-plan.json min_lead_days is 10, so nothing reaches Todd with less than 10 days. For the whole month: November's calendar is due to Todd by Tue Oct 20 (10 days before month end; Oct 21 is a teaching day). Left for you: say yes and a session will add a monthly reminder on the dashboard for the Tuesday about 12 days before each month ends."
+      },
+      {
+       "at": "2026-09-29 13:50",
+       "by": "daniel",
+       "text": "Chose 'Yes, add the reminder'. Told Claude: Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November."
       }
      ],
      "steps": [
@@ -4858,11 +4863,14 @@
         }
        ],
        "id": "s1",
-       "status": "open"
+       "status": "done",
+       "done_at": "2026-09-29 13:50",
+       "via": "Daniel on the dashboard",
+       "evidence": "chose: Yes, add the reminder"
       }
      ],
-     "state": "your_move",
-     "state_text": "Decide: add a monthly dashboard reminder to get the next month's calendar to Todd about 12 days before month end? (per post, the 10-day lead is already enforced; November's is due Tue Oct 20)",
+     "state": "with_claude",
+     "state_text": "With Claude: Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November.",
      "checked_at": "2026-09-29 13:40"
     }
    }
