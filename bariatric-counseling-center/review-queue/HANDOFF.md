@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-29 15:58 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-29 15:59 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -22,7 +22,7 @@ Generated 2026-09-29 15:58 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (7): work each, then --done or --needs-you
+## Action items from the Action Items sheet (8): work each, then --done or --needs-you
 
 - id `c7d4d9431e`: **Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation)** (9/24 call list, sheet row 5). Approved 2026-09-29.
   - HISTORY (continue from here; do not redo what is done):
@@ -41,6 +41,12 @@ Generated 2026-09-29 15:58 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-25 07:30 claude: Worked by the morning Claude run: Done: /start page title on staging13 is now 'Ready for Comprehensive Support' (live after your next push). All 39 finished clips rebuilt with the v4 end card ('Ready for comprehensive support? One program. Four providers.') in C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Videos\Ford\CTA-v4-2026-09-25 (frame-accurate swap, audio untouched, checked visually). Left for you: watch a few, then move them into CURRENT-portrait-clips-9x16 to replace the old ones. Carmen (Tue 9/29) and Gerry (Tue 10/6) are booked in Postiz with the old card; once the new files are in CURRENT a session can swap the media. The Food Friday montages still close on the old v2 card.
     - 2026-09-29 13:40 check: Watch a few rebuilt clips, then move them into CURRENT-portrait-clips-9x16: done Sep 29: all 39 clips with the new end card are in CURRENT; the old ones are in Videos/Ford/_archive/CURRENT-pre-cta-v4-2026-09-29
   - NOW: next step for Claude: Swap the media on booked Postiz posts that still carry the old end card (Gerry, Tue 10/6; Carmen ran Tue 9/29), and list the Food Friday montages that still close on the old v2 card
+- id `3c08d7a36f`: **Update video thumbnails: short testimonial medley and Jessica's own testimonial (YouTube)** (9/24 call list, sheet row 12). Approved 2026-09-29.
+  - Daniel's notes: Instagram: if the thumbnail can't be changed, delete and repost. Website: one testimonial thumbnail has its text behind the person; move it in front so it reads.
+  - HISTORY (continue from here; do not redo what is done):
+    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Two new Medley B thumbnails with a smiling Jessica frame (2:10 of her testimonial): C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\jessica-thumbnail-candidates-2026-09-25\medley-B-thumbnail-v3-jessica-A.jpg and -B.jpg (side by side with the current one in _compare-old-vs-A-vs-B.jpg). Left for you: pick A or B (and Todd's OK), then a session uploads it to EGLOzVHH6wQ and builds the 9:16 and Jessica's own tile the same way; tell me which website testimonial thumbnail has its text behind the person; and decide delete-and-repost on Instagram.
+    - 2026-09-29 15:59 daniel: Chose 'Use B'. Told Claude: Daniel picked thumbnail B (medley-B-thumbnail-v3-jessica-B.jpg). Upload it to YouTube video EGLOzVHH6wQ, build the 9:16 and Jessica's own testimonial tile the same way.
+  - NOW: daniel: Daniel picked thumbnail B (medley-B-thumbnail-v3-jessica-B.jpg). Upload it to YouTube video EGLOzVHH6wQ, build the 9:16 and Jessica's own testimonial tile the same way.
 - id `a8094dd424`: **Get the content calendar to Todd 7 days before month end, ideally 10+** (8/27 meeting list, sheet row 52). Approved 2026-09-29.
   - Daniel's notes: Camy's standing cadence, Todd wants it kept
   - HISTORY (continue from here; do not redo what is done):
@@ -66,14 +72,13 @@ Generated 2026-09-29 15:58 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-29 15:48 daniel: Chose 'Draft the note to Sara for me'. Told Claude: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process.
   - NOW: daniel: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process.
 
-## Items waiting on Daniel or on Todd/Sara (10): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (9): not for Claude, except the Gmail confirmations below.
 - Send draft October client and referring partner newsletters for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with edits (asked for by Tue Oct 6)
 - Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25
 - Continue the Bing and Copilot build-out: Sign in at bing.com/webmasters and import the site from Search Console (about 5 minutes)
 - Daniel send draft social video clips to Sara and Todd for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with thoughts on the clips
 - Daniel send October social media calendar for review and QC (wait 2 to 3 days): Waiting on Todd since 2026-09-25: Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too
 - Daniel feedback on updated BCC marketing emails: Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts (deleted?)
-- Update video thumbnails: short testimonial medley and Jessica's own testimonial (YouTube): Pick the new Medley B thumbnail: A or B (Todd's OK too)
 - Texas-wide geographic strategy: Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief
 - Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts: Waiting on Sara since 2026-09-25: Sara replies with comments and direction
 - Use Ford's finished staff profile videos (Vimeo): Give Claude the Vimeo links (or downloads) for Ford's finished staff profile videos, and OK the LinkedIn slots (one a week from Oct 14: Leila, Sara, Leloni)
