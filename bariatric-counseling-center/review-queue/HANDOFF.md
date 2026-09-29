@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-29 15:57 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-29 15:58 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -22,13 +22,19 @@ Generated 2026-09-29 15:57 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (6): work each, then --done or --needs-you
+## Action items from the Action Items sheet (7): work each, then --done or --needs-you
 
 - id `c7d4d9431e`: **Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation)** (9/24 call list, sheet row 5). Approved 2026-09-29.
   - HISTORY (continue from here; do not redo what is done):
     - 2026-09-25 07:30 claude: Worked by the morning Claude run: Draft ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\bofu-psych-eval.md (rewrite of /bariatric-surgery-psychological-evaluation-in-san-antonio-tx/ with the pre-surgical and insurance-required angle, not a new URL). Left for you: send it to Sara and Todd for the confirmations listed at the top of the file (video or phone, report contents, turnaround, evaluator names). Also flagged in it: the live eval pages still carry Joint Commission, 'only program', '$0' and the wrong phone (210) 934-3420.
     - 2026-09-29 15:57 daniel: Chose 'Draft the email for me'. Told Claude: Draft a Gmail from daniel@drbdig.com to Sara and Todd, subject 'Psych evaluation page: four things to confirm', listing the confirmations at the top of content-drafts/action-items-2026-09-25/bofu-psych-eval.md as short questions, plus one line that the live evaluation pages still carry Joint Commission, 'only program', '$0' and the old phone number. Then hand it back with a gmail_sent check and a gmail_reply step, followed by a Claude step to place the page on staging13.
   - NOW: daniel: Draft a Gmail from daniel@drbdig.com to Sara and Todd, subject 'Psych evaluation page: four things to confirm', listing the confirmations at the top of content-drafts/action-items-2026-09-25/bofu-psych-eval.md as short questions, plus one line that the live evaluation pages still carry Joint Commission, 'only program', '$0' and the old phone number. Then hand it back with a gmail_sent check and a gmail_reply step, followed by a Claude step to place the page on staging13.
+- id `b43efd08a0`: **ARFID landing page and blog** (9/24 call list, sheet row 7). Approved 2026-09-29.
+  - Daniel's notes: Page goes to Sara and Todd for QC before it goes live. Then 2 to 4 blog posts over the next couple of months. BCC has no presence on this search term yet.
+  - HISTORY (continue from here; do not redo what is done):
+    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Draft ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\arfid-landing-and-blog-plan.md (adults only, target 'arfid in adults', 4 blog titles for Oct/Nov). Every BCC service claim is marked [SARA TO CONFIRM]. Left for you: ask Sara first whether BCC treats adult ARFID at all; if no, do not publish and ARFID should come off the two pages that list it.
+    - 2026-09-29 15:58 daniel: Chose 'Sara said yes'. Told Claude: Sara confirmed BCC treats adult ARFID. Finish the ARFID landing page from content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md and send the service claims marked [SARA TO CONFIRM] to Sara as one short Gmail draft.
+  - NOW: daniel: Sara confirmed BCC treats adult ARFID. Finish the ARFID landing page from content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md and send the service claims marked [SARA TO CONFIRM] to Sara as one short Gmail draft.
 - id `cdf82aa322`: **Update CTA in video clips and on landing page (bcctx.link/start)** (9/24 call list, sheet row 10). Approved 2026-09-29.
   - Daniel's notes: End card: "Ready for comprehensive support" and "One program, four providers." Take "that actually works" out of the /start page title.
   - HISTORY (continue from here; do not redo what is done):
@@ -60,11 +66,10 @@ Generated 2026-09-29 15:57 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-29 15:48 daniel: Chose 'Draft the note to Sara for me'. Told Claude: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process.
   - NOW: daniel: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process.
 
-## Items waiting on Daniel or on Todd/Sara (11): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (10): not for Claude, except the Gmail confirmations below.
 - Send draft October client and referring partner newsletters for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with edits (asked for by Tue Oct 6)
 - Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25
 - Continue the Bing and Copilot build-out: Sign in at bing.com/webmasters and import the site from Search Console (about 5 minutes)
-- ARFID landing page and blog: Ask Sara first: does BCC treat adult ARFID at all? (If no, do not publish, and ARFID comes off the two pages that list it)
 - Daniel send draft social video clips to Sara and Todd for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with thoughts on the clips
 - Daniel send October social media calendar for review and QC (wait 2 to 3 days): Waiting on Todd since 2026-09-25: Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too
 - Daniel feedback on updated BCC marketing emails: Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts (deleted?)
