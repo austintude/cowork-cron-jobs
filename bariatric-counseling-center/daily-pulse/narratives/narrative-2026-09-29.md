@@ -1,0 +1,23 @@
+# Morning Briefing -- 2026-09-27
+
+_Generated 2026-09-29T08:10:05.765875Z_
+
+### Headline
+- Sessions DOWN 47% vs. 28d median (17 vs. baseline 32) and DOWN 43% YoY -- across-the-board soft day on Sept 27.
+- Pageviews and users both down ~50% vs. median AND vs. last year, so this isn't noise.
+
+### What happened
+- **Sessions**: 17 vs. 28d median of 32 -- organic search drove the biggest piece of the drop, falling from baseline 14 to 6 (-8 sessions).
+- **Avg session duration**: 23.8 sec vs. 28d median of 105 sec (-77%) -- people who did land left fast; worth watching whether this holds Tuesday.
+- **GSC**: zeros across impressions, clicks, and position -- standard 1-3 day reporting lag, not a real signal.
+- **Sept 25 page edits**: three service pages modified (/bariatric-therapy-in-san-antonio-tx/, /nutritional-counseling-in-san-antonio-tx/, /what-is-a-weight-loss-counselor/) -- timing overlaps the dip; could be coincidental or crawl-related flux.
+
+### Efficacy
+- **Launched 30d**: 4 pages, 0 ranking top 10 yet; 1,509,572 GSC impressions and 7,638 clicks attributed across modified pages in the window.
+- **Most movement**: /what-is-a-weight-loss-counselor/ -- 1,100 impressions and 18 clicks (1.6% CTR) just 4 days post-edit; 7 GA4 sessions already.
+- **Needs attention**: /bariatric-therapy-in-san-antonio-tx/ -- only 8 impressions and 0 clicks 4 days out; title or snippet likely not pulling.
+
+### Today (do these)
+1. **Check the Sept 25 edits**: Pull the diff on /bariatric-therapy-in-san-antonio-tx/ and /nutritional-counseling-in-san-antonio-tx/ -- confirm no accidental noindex tag, canonical change, or thin-content swap that could explain the organic drop and the zero-click result on bariatric therapy.
+2. **Rewrite the title/meta for /bariatric-therapy-in-san-antonio-tx/**: 8 impressions, 0 clicks at day 4 suggests the snippet isn't earning the click -- test a more direct, benefit-forward title aimed at people in San Antonio actively looking for support.
+3. **Log the session-duration anomaly**: Note today's 23.8-sec average somewhere you can compare it Tuesday -- one data point isn't a trend, but two in a row would be worth raising with Todd.
