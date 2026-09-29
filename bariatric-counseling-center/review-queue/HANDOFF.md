@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-29 16:01 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-29 16:02 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -79,12 +79,11 @@ Generated 2026-09-29 16:01 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-29 16:01 check: Put the IndexNow key file on the site (upload seo-tools/indexnow/8b22ca13ddef13fdc45a57195c2d59e6.txt to the web root; it goes live on production with your next push): live: https://www.bariatriccounselingcenter.com/8b22ca13ddef13fdc45a57195c2d59e6.txt
   - NOW: next step for Claude: Run indexnow-ping.py for real and confirm Bing shows the site
 
-## Items waiting on Daniel or on Todd/Sara (8): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (7): not for Claude, except the Gmail confirmations below.
 - Send draft October client and referring partner newsletters for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with edits (asked for by Tue Oct 6)
 - Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25
 - Daniel send draft social video clips to Sara and Todd for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with thoughts on the clips
 - Daniel send October social media calendar for review and QC (wait 2 to 3 days): Waiting on Todd since 2026-09-25: Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too
-- Daniel feedback on updated BCC marketing emails: Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts (deleted?)
 - Texas-wide geographic strategy: Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief
 - Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts: Waiting on Sara since 2026-09-25: Sara replies with comments and direction
 - Use Ford's finished staff profile videos (Vimeo): Give Claude the Vimeo links (or downloads) for Ford's finished staff profile videos, and OK the LinkedIn slots (one a week from Oct 14: Leila, Sara, Leloni)
