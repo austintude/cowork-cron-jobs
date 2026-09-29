@@ -22,14 +22,8 @@ Generated 2026-09-29 16:39 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (2): work each, then --done or --needs-you
+## Action items from the Action Items sheet (1): work each, then --done or --needs-you
 
-- id `cdf82aa322`: **Update CTA in video clips and on landing page (bcctx.link/start)** (9/24 call list, sheet row 10). Approved 2026-09-29.
-  - Daniel's notes: End card: "Ready for comprehensive support" and "One program, four providers." Take "that actually works" out of the /start page title.
-  - HISTORY (continue from here; do not redo what is done):
-    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Done: /start page title on staging13 is now 'Ready for Comprehensive Support' (live after your next push). All 39 finished clips rebuilt with the v4 end card ('Ready for comprehensive support? One program. Four providers.') in C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Videos\Ford\CTA-v4-2026-09-25 (frame-accurate swap, audio untouched, checked visually). Left for you: watch a few, then move them into CURRENT-portrait-clips-9x16 to replace the old ones. Carmen (Tue 9/29) and Gerry (Tue 10/6) are booked in Postiz with the old card; once the new files are in CURRENT a session can swap the media. The Food Friday montages still close on the old v2 card.
-    - 2026-09-29 13:40 check: Watch a few rebuilt clips, then move them into CURRENT-portrait-clips-9x16: done Sep 29: all 39 clips with the new end card are in CURRENT; the old ones are in Videos/Ford/_archive/CURRENT-pre-cta-v4-2026-09-29
-  - NOW: next step for Claude: Swap the media on booked Postiz posts that still carry the old end card (Gerry, Tue 10/6; Carmen ran Tue 9/29), and list the Food Friday montages that still close on the old v2 card
 - id `a8094dd424`: **Get the content calendar to Todd 7 days before month end, ideally 10+** (8/27 meeting list, sheet row 52). Approved 2026-09-29.
   - Daniel's notes: Camy's standing cadence, Todd wants it kept
   - HISTORY (continue from here; do not redo what is done):
