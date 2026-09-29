@@ -3730,12 +3730,12 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A5"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "needs",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-29T15:57:30",
-   "note": "rewrite: daniel: Draft a Gmail from daniel@drbdig.com to Sara and Todd, subject 'Psych evaluation page: four things to confirm', listing the confirmations at the top of content-drafts/action-items-2026-09-25/bofu-psych-eval.md as short questions, plus one line that the live evaluation pages still carry Joint Commission, 'only program', '$0' and the old phone number. Then hand it back with a gmail_sent check and a gmail_reply step, followed by a Claude step to place the page on staging13.",
+   "decided": "2026-09-29T16:39:00",
+   "note": "Send the psych evaluation questions to Sara and Todd (Gmail draft ready)",
    "result": {
-    "needs_you": "Draft ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\bofu-psych-eval.md (rewrite of /bariatric-surgery-psychological-evaluation-in-san-antonio-tx/ with the pre-surgical and insurance-required angle, not a new URL). Left for you: send it to Sara and Todd for the confirmations listed at the top of the file (video or phone, report contents, turnaround, evaluator names). Also flagged in it: the live eval pages still carry Joint Commission, 'only program', '$0' and the wrong phone (210) 934-3420.",
+    "needs_you": "Send the psych evaluation questions to Sara and Todd (Gmail draft ready)",
     "needs_since": "2026-09-25",
     "followup": {
      "trail": [
@@ -3748,45 +3748,52 @@
        "at": "2026-09-29 15:57",
        "by": "daniel",
        "text": "Chose 'Draft the email for me'. Told Claude: Draft a Gmail from daniel@drbdig.com to Sara and Todd, subject 'Psych evaluation page: four things to confirm', listing the confirmations at the top of content-drafts/action-items-2026-09-25/bofu-psych-eval.md as short questions, plus one line that the live evaluation pages still carry Joint Commission, 'only program', '$0' and the old phone number. Then hand it back with a gmail_sent check and a gmail_reply step, followed by a Claude step to place the page on staging13."
+      },
+      {
+       "at": "2026-09-29 16:39",
+       "by": "claude",
+       "text": "Gmail draft from daniel@drbdig.com to Sara and Todd: 'Psych evaluation page: four things to confirm' (video or phone, report contents, turnaround, evaluator names; plus the Joint Commission, 'only program', '$0' and old phone line)."
       }
      ],
      "steps": [
       {
        "owner": "daniel",
-       "do": "Send the psych evaluation page rewrite to Sara and Todd for the confirmations listed at the top (video or phone, report contents, turnaround, evaluator names)",
+       "do": "Read and send the Gmail draft 'Psych evaluation page: four things to confirm'.",
        "links": [
         {
-         "label": "Open the draft",
-         "path": "../cron-jobs/bariatric-counseling-center/content-drafts/action-items-2026-09-25/bofu-psych-eval.md"
+         "label": "Open drafts",
+         "url": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#drafts"
         }
        ],
        "check": {
-        "type": "manual"
+        "type": "gmail_sent",
+        "subject": "Psych evaluation page: four things to confirm"
        },
-       "options": [
-        {
-         "label": "Draft the email for me",
-         "tell": "Draft a Gmail from daniel@drbdig.com to Sara and Todd, subject 'Psych evaluation page: four things to confirm', listing the confirmations at the top of content-drafts/action-items-2026-09-25/bofu-psych-eval.md as short questions, plus one line that the live evaluation pages still carry Joint Commission, 'only program', '$0' and the old phone number. Then hand it back with a gmail_sent check and a gmail_reply step, followed by a Claude step to place the page on staging13."
-        }
-       ],
+       "due": "2026-10-01",
        "id": "s1",
-       "status": "done",
-       "done_at": "2026-09-29 15:57",
-       "via": "Daniel on the dashboard",
-       "evidence": "chose: Draft the email for me"
+       "status": "open"
       },
       {
        "owner": "sara",
-       "do": "Sara and Todd answer the confirmations",
+       "do": "Sara replies to 'Psych evaluation page: four things to confirm'.",
        "check": {
-        "type": "manual"
+        "type": "gmail_reply",
+        "subject": "Psych evaluation page",
+        "from": "bccsanantonio.com"
        },
+       "due": "2026-10-06",
        "id": "s2",
        "status": "open"
       },
       {
        "owner": "claude",
-       "do": "Place the rewrite on staging13 through the block process",
+       "do": "Put Sara's answers into the page draft (replace each [SARA TO CONFIRM] marker) and place the rewrite of /bariatric-surgery-psychological-evaluation-in-san-antonio-tx/ on staging13 through the block process.",
+       "links": [
+        {
+         "label": "Open the page draft",
+         "path": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\bofu-psych-eval.md"
+        }
+       ],
        "check": {
         "type": "manual"
        },
