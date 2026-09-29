@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-29 13:50 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-29 15:20 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -22,7 +22,7 @@ Generated 2026-09-29 13:50 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (2): work each, then --done or --needs-you
+## Action items from the Action Items sheet (3): work each, then --done or --needs-you
 
 - id `cdf82aa322`: **Update CTA in video clips and on landing page (bcctx.link/start)** (9/24 call list, sheet row 10). Approved 2026-09-29.
   - Daniel's notes: End card: "Ready for comprehensive support" and "One program, four providers." Take "that actually works" out of the /start page title.
@@ -36,11 +36,16 @@ Generated 2026-09-29 13:50 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-25 07:30 claude: Worked by the morning Claude run: Per post, the rule is already enforced: social-plan.json min_lead_days is 10, so nothing reaches Todd with less than 10 days. For the whole month: November's calendar is due to Todd by Tue Oct 20 (10 days before month end; Oct 21 is a teaching day). Left for you: say yes and a session will add a monthly reminder on the dashboard for the Tuesday about 12 days before each month ends.
     - 2026-09-29 13:50 daniel: Chose 'Yes, add the reminder'. Told Claude: Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November.
   - NOW: daniel: Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November.
+- id `eb596edc83`: **Decide newsletter send day and time, back it with data** (8/27 meeting list, sheet row 55). Approved 2026-09-29.
+  - Daniel's notes: Not Monday. Friday gets lost. Weekend untried
+  - HISTORY (continue from here; do not redo what is done):
+    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Decision written up with BCC's own data: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\newsletters\SEND-TIME-DECISION-2026-09-25.md (107 sends: 8 to 10 AM is best; weekday is noise; Tuesday 8:30 AM for both lists; test Saturday 9 AM on half the client list for Nov to Jan; do not test the RP list, too small). Left for you: confirm with Todd.
+    - 2026-09-29 15:20 daniel: Chose 'Draft the email to Todd for me'. Told Claude: Draft a short Gmail reply-style email from daniel@drbdig.com to Todd (subject 'Newsletter send time: Tuesdays 8:30 AM') confirming Tuesday 8:30 AM for both lists and proposing the Saturday 9 AM test on half the client list for Nov to Jan, from newsletters/SEND-TIME-DECISION-2026-09-25.md. Short and transactional. Then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.
+  - NOW: daniel: Draft a short Gmail reply-style email from daniel@drbdig.com to Todd (subject 'Newsletter send time: Tuesdays 8:30 AM') confirming Tuesday 8:30 AM for both lists and proposing the Saturday 9 AM test on half the client list for Nov to Jan, from newsletters/SEND-TIME-DECISION-2026-09-25.md. Short and transactional. Then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.
 
-## Items waiting on Daniel or on Todd/Sara (15): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (14): not for Claude, except the Gmail confirmations below.
 - Send draft October client and referring partner newsletters for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with edits (asked for by Tue Oct 6)
 - Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25
-- Decide newsletter send day and time, back it with data: Confirm the newsletter send time with Todd: Tuesday 8:30 AM for both lists, and a Saturday 9 AM test on half the client list Nov to Jan
 - Rank how people actually search (top 10), find a platform big in Texas that competitors ignore: Read the top 10 searches brief and send it to Todd (platform pick: YouTube; the brief says the platform evidence is thin)
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Ask Sara to check the one statistic and the clinical descriptions in the binge eating telehealth article
 - Continue the Bing and Copilot build-out: Sign in at bing.com/webmasters and import the site from Search Console (about 5 minutes)
@@ -48,20 +53,11 @@ Generated 2026-09-29 13:50 by queue_apply.py. Daniel approved these on the dashb
 - ARFID landing page and blog: Ask Sara first: does BCC treat adult ARFID at all? (If no, do not publish, and ARFID comes off the two pages that list it)
 - Daniel send draft social video clips to Sara and Todd for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with thoughts on the clips
 - Daniel send October social media calendar for review and QC (wait 2 to 3 days): Waiting on Todd since 2026-09-25: Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too
-- Daniel feedback on updated BCC marketing emails: Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts as of Sep 29 (deleted?)
+- Daniel feedback on updated BCC marketing emails: Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts (deleted?)
 - Update video thumbnails: short testimonial medley and Jessica's own testimonial (YouTube): Pick the new Medley B thumbnail: A or B (Todd's OK too)
 - Texas-wide geographic strategy: Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief
 - Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts: Waiting on Sara since 2026-09-25: Sara replies with comments and direction
 - Use Ford's finished staff profile videos (Vimeo): Give Claude the Vimeo links (or downloads) for Ford's finished staff profile videos, and OK the LinkedIn slots (one a week from Oct 14: Leila, Sara, Leloni)
-
-## Gmail confirmations for the follow-up tracker (6): search Gmail (Gmail connector) and record only what you can see
-For each: gmail_sent -> search `in:sent subject:"<subject>"`; if found, `python queue_apply.py --evidence <id> <step> "sent <date> to <who>"`. gmail_reply -> search the subject from that domain after the previous step; if a reply is there, `--evidence <id> <step> "<name> replied <date>: <first line>"`. Nothing found: leave it; never guess.
-- id `0ab75ba2f9` step `s3` (gmail_reply): Todd or Sara reply with edits (asked for by Tue Oct 6), subject "October eNews" from bccsanantonio.com
-- id `aed8090d11` step `s2` (gmail_reply): Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25, subject "Staff anniversary posts" from bccsanantonio.com
-- id `e1fa4514fd` step `s2` (gmail_reply): Todd or Sara reply with thoughts on the clips, subject "Social clips for review" from bccsanantonio.com
-- id `61ccfcbfe7` step `s2` (gmail_reply): Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too, subject "October social calendar" from bccsanantonio.com
-- id `0b1b2e7c4a` step `s1` (gmail_sent): Send the Gmail draft 'Feedback on Leloni's two emails' to Todd, subject "Feedback on Leloni"
-- id `2f18c7b786` step `s2` (gmail_reply): Sara replies with comments and direction, subject "Social Media Posts" from bccsanantonio.com
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
