@@ -4793,8 +4793,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-25T18:34:11",
-   "note": "Per post, the rule is already enforced: social-plan.json min_lead_days is 10, so nothing reaches Todd with less than 10 days. For the whole month: November's calendar is due to Todd by Tue Oct 20 (10 days before month end; Oct 21 is a teaching day). Left for you: say yes and a session will add a monthly reminder on the dashboard for the Tuesday about 12 days before each month ends.",
+   "decided": "2026-09-29T13:40:59",
+   "note": "Decide: add a monthly dashboard reminder to get the next month's calendar to Todd about 12 days before month end? (per post, the 10-day lead is already enforced; November's is due Tue Oct 20)",
    "result": {
     "needs_you": "Per post, the rule is already enforced: social-plan.json min_lead_days is 10, so nothing reaches Todd with less than 10 days. For the whole month: November's calendar is due to Todd by Tue Oct 20 (10 days before month end; Oct 21 is a teaching day). Left for you: say yes and a session will add a monthly reminder on the dashboard for the Tuesday about 12 days before each month ends.",
     "needs_since": "2026-09-25",
@@ -4826,7 +4826,10 @@
        "id": "s1",
        "status": "open"
       }
-     ]
+     ],
+     "state": "your_move",
+     "state_text": "Decide: add a monthly dashboard reminder to get the next month's calendar to Todd about 12 days before month end? (per post, the 10-day lead is already enforced; November's is due Tue Oct 20)",
+     "checked_at": "2026-09-29 13:40"
     }
    }
   },
