@@ -10287,7 +10287,6 @@
       }
     },
     "alarms": [
-      "199 of 398 pages carry a noindex tag. If this is production, Google will drop them; check Settings > Reading and Rank Math.",
       "1 broken internal links."
     ],
     "issues": {
@@ -10545,7 +10544,7 @@
           "linked_from": null
         }
       ],
-      "noindex": [
+      "noindex (expected: tag archives, staff stubs)": [
         {
           "url": "https://www.bariatriccounselingcenter.com/tag/adhd/",
           "detail": "follow, noindex",
@@ -11186,17 +11185,19 @@
     "issue_counts": {
       "title too long": 320,
       "missing meta description": 235,
-      "noindex": 199,
-      "duplicate title": 28,
       "meta description too long": 22,
-      "redirect": 14,
-      "images without alt": 13,
-      "duplicate meta description": 12,
-      "orphan (in sitemap, no internal link)": 5,
       "missing H1": 4,
+      "images without alt": 13,
+      "redirect": 14,
+      "orphan (in sitemap, no internal link)": 5,
       "canonical points elsewhere": 2,
-      "broken link (4xx)": 1
-    }
+      "noindex (expected: tag archives, staff stubs)": 199,
+      "broken link (4xx)": 1,
+      "duplicate title": 28,
+      "duplicate meta description": 12
+    },
+    "noindex_unexpected": 0,
+    "noindex_expected": 199
   },
   "backlinks": {
     "date": "2026-09-18",
@@ -23831,5 +23832,5 @@
     }
   ],
   "snapshot_count": 41,
-  "generated_at": "2026-09-29T12:12:13.865180Z"
+  "generated_at": "2026-09-29T13:12:37.505875Z"
 }
