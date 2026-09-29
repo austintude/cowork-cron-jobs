@@ -3728,10 +3728,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A5"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "approved",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-29T13:41:00",
-   "note": "Send the psych evaluation page rewrite to Sara and Todd for the confirmations listed at the top (video or phone, report contents, turnaround, evaluator names)",
+   "decided": "2026-09-29T15:57:30",
+   "note": "rewrite: daniel: Draft a Gmail from daniel@drbdig.com to Sara and Todd, subject 'Psych evaluation page: four things to confirm', listing the confirmations at the top of content-drafts/action-items-2026-09-25/bofu-psych-eval.md as short questions, plus one line that the live evaluation pages still carry Joint Commission, 'only program', '$0' and the old phone number. Then hand it back with a gmail_sent check and a gmail_reply step, followed by a Claude step to place the page on staging13.",
    "result": {
     "needs_you": "Draft ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\bofu-psych-eval.md (rewrite of /bariatric-surgery-psychological-evaluation-in-san-antonio-tx/ with the pre-surgical and insurance-required angle, not a new URL). Left for you: send it to Sara and Todd for the confirmations listed at the top of the file (video or phone, report contents, turnaround, evaluator names). Also flagged in it: the live eval pages still carry Joint Commission, 'only program', '$0' and the wrong phone (210) 934-3420.",
     "needs_since": "2026-09-25",
@@ -3741,6 +3741,11 @@
        "at": "2026-09-25 07:30",
        "by": "claude",
        "text": "Worked by the morning Claude run: Draft ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\bofu-psych-eval.md (rewrite of /bariatric-surgery-psychological-evaluation-in-san-antonio-tx/ with the pre-surgical and insurance-required angle, not a new URL). Left for you: send it to Sara and Todd for the confirmations listed at the top of the file (video or phone, report contents, turnaround, evaluator names). Also flagged in it: the live eval pages still carry Joint Commission, 'only program', '$0' and the wrong phone (210) 934-3420."
+      },
+      {
+       "at": "2026-09-29 15:57",
+       "by": "daniel",
+       "text": "Chose 'Draft the email for me'. Told Claude: Draft a Gmail from daniel@drbdig.com to Sara and Todd, subject 'Psych evaluation page: four things to confirm', listing the confirmations at the top of content-drafts/action-items-2026-09-25/bofu-psych-eval.md as short questions, plus one line that the live evaluation pages still carry Joint Commission, 'only program', '$0' and the old phone number. Then hand it back with a gmail_sent check and a gmail_reply step, followed by a Claude step to place the page on staging13."
       }
      ],
      "steps": [
@@ -3763,7 +3768,10 @@
         }
        ],
        "id": "s1",
-       "status": "open"
+       "status": "done",
+       "done_at": "2026-09-29 15:57",
+       "via": "Daniel on the dashboard",
+       "evidence": "chose: Draft the email for me"
       },
       {
        "owner": "sara",
@@ -3784,8 +3792,8 @@
        "status": "open"
       }
      ],
-     "state": "your_move",
-     "state_text": "Send the psych evaluation page rewrite to Sara and Todd for the confirmations listed at the top (video or phone, report contents, turnaround, evaluator names)",
+     "state": "with_claude",
+     "state_text": "With Claude: Draft a Gmail from daniel@drbdig.com to Sara and Todd, subject 'Psych evaluation page: four things to confirm', listing the confirmations at the top of content-drafts/action-items-2026-09-25/bofu-psych-eval.md as short questions, plus one line that the live evaluation pages still carry Joint Commission, 'only program', '$0' and the old phone number. Then hand it back with a gmail_sent check and a gmail_reply step, followed by a Claude step to place the page on staging13.",
      "checked_at": "2026-09-29 14:50"
     }
    }
