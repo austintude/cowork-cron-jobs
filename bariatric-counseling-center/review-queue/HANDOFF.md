@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-29 16:02 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-29 16:03 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -87,6 +87,16 @@ Generated 2026-09-29 16:02 by queue_apply.py. Daniel approved these on the dashb
 - Texas-wide geographic strategy: Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief
 - Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts: Waiting on Sara since 2026-09-25: Sara replies with comments and direction
 - Use Ford's finished staff profile videos (Vimeo): Give Claude the Vimeo links (or downloads) for Ford's finished staff profile videos, and OK the LinkedIn slots (one a week from Oct 14: Leila, Sara, Leloni)
+
+## Social posts to build and write to the sheet (1); the draft to Todd is a separate weekly step
+
+- id `c2d8dc5561`: **Tue 10/6: alumni clip, Kim K. (worth the effort)** on 2026-10-06 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-09-29. Why: held clip slot on the sheet (row 12) with no clip assigned
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\c2d8dc5561-tue-10-6-alumni-clip-kim-k-worth-the-effort.json`
+  - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/kim-clip2-9x16_worth-the-effort_COVERED.mp4
+  - replaces row 12 in October Content Calendar
+  - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
+
+## Draft day: Wednesday. Today is Tuesday, not draft day: build only, no email to Todd.
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
