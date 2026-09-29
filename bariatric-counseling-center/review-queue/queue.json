@@ -3815,10 +3815,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A7"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "approved",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-29T13:41:01",
-   "note": "Ask Sara first: does BCC treat adult ARFID at all? (If no, do not publish, and ARFID comes off the two pages that list it)",
+   "decided": "2026-09-29T15:58:48",
+   "note": "rewrite: daniel: Sara confirmed BCC treats adult ARFID. Finish the ARFID landing page from content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md and send the service claims marked [SARA TO CONFIRM] to Sara as one short Gmail draft.",
    "result": {
     "needs_you": "Draft ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\arfid-landing-and-blog-plan.md (adults only, target 'arfid in adults', 4 blog titles for Oct/Nov). Every BCC service claim is marked [SARA TO CONFIRM]. Left for you: ask Sara first whether BCC treats adult ARFID at all; if no, do not publish and ARFID should come off the two pages that list it.",
     "needs_since": "2026-09-25",
@@ -3828,6 +3828,11 @@
        "at": "2026-09-25 07:30",
        "by": "claude",
        "text": "Worked by the morning Claude run: Draft ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\arfid-landing-and-blog-plan.md (adults only, target 'arfid in adults', 4 blog titles for Oct/Nov). Every BCC service claim is marked [SARA TO CONFIRM]. Left for you: ask Sara first whether BCC treats adult ARFID at all; if no, do not publish and ARFID should come off the two pages that list it."
+      },
+      {
+       "at": "2026-09-29 15:58",
+       "by": "daniel",
+       "text": "Chose 'Sara said yes'. Told Claude: Sara confirmed BCC treats adult ARFID. Finish the ARFID landing page from content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md and send the service claims marked [SARA TO CONFIRM] to Sara as one short Gmail draft."
       }
      ],
      "steps": [
@@ -3858,11 +3863,14 @@
         }
        ],
        "id": "s1",
-       "status": "open"
+       "status": "done",
+       "done_at": "2026-09-29 15:58",
+       "via": "Daniel on the dashboard",
+       "evidence": "chose: Sara said yes"
       }
      ],
-     "state": "your_move",
-     "state_text": "Ask Sara first: does BCC treat adult ARFID at all? (If no, do not publish, and ARFID comes off the two pages that list it)",
+     "state": "with_claude",
+     "state_text": "With Claude: Sara confirmed BCC treats adult ARFID. Finish the ARFID landing page from content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md and send the service claims marked [SARA TO CONFIRM] to Sara as one short Gmail draft.",
      "checked_at": "2026-09-29 14:50"
     }
    }
