@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-29 13:41 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-29 13:48 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -43,11 +43,11 @@ Generated 2026-09-29 13:41 by queue_apply.py. Daniel approved these on the dashb
 - ARFID landing page and blog: Ask Sara first: does BCC treat adult ARFID at all? (If no, do not publish, and ARFID comes off the two pages that list it)
 - Daniel send draft social video clips to Sara and Todd for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with thoughts on the clips
 - Daniel send October social media calendar for review and QC (wait 2 to 3 days): Waiting on Todd since 2026-09-25: Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too
-- Daniel feedback on updated BCC marketing emails: Gmail draft ready: 'Feedback on Leloni's two emails' to Todd (5 changes to the outreach email, 5 to the clinicians' email: 'ONLY program' claim, dead second video line, 'covered by your insurance' promise, mismatched medley links, 'Licensed Movement Specialists'). Left for you: read and send.
-- Update video thumbnails: short testimonial medley and Jessica's own testimonial (YouTube): Two new Medley B thumbnails with a smiling Jessica frame (2:10 of her testimonial): C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\jessica-thumbnail-candidates-2026-09-25\medley-B-thumbnail-v3-jessica-A.jpg and -B.jpg (side by side with the current one in _compare-old-vs-A-vs-B.jpg). Left for you: pick A or B (and Todd's OK), then a session uploads it to EGLOzVHH6wQ and builds the 9:16 and Jessica's own tile the same way; tell me which website testimonial thumbnail has its text behind the person; and decide delete-and-repost on Instagram.
-- Texas-wide geographic strategy: Brief ready: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\todd-texas-strategy-2026-09-25.md (overeating: 22 impressions, 0 clicks in 20 weeks; food addiction is the term that grew; statewide work in flight). Left for you: read and send to Todd. It refers to the one-page launch plan (BCC-Launch-Plan-for-Todd-2026-09-22.md, not yet sent), so send that first or reword the line. GA4 has no Texas city data yet.
-- Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts: Gmail reply draft ready on Todd's 'Social Media Posts' thread, to Sara with Todd cc'd: three of your October drafts (10/5, 10/19, 10/28) and three questions for her direction. Left for you: send it when you are ready (Todd said this is last on the list).
-- Use Ford's finished staff profile videos (Vimeo): Plan ready: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\social\plan\staff-profile-videos-linkedin-plan-2026-09-25.md (one staff profile a week on LinkedIn from Oct 14: Leila, Sara, Leloni). Left for you: the Vimeo links or downloads for Ford's finished staff profiles, and OK on the slots; then the social plan proposes them.
+- Daniel feedback on updated BCC marketing emails: Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts as of Sep 29 (deleted?)
+- Update video thumbnails: short testimonial medley and Jessica's own testimonial (YouTube): Pick the new Medley B thumbnail: A or B (Todd's OK too)
+- Texas-wide geographic strategy: Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief
+- Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts: Waiting on Sara since 2026-09-25: Sara replies with comments and direction
+- Use Ford's finished staff profile videos (Vimeo): Give Claude the Vimeo links (or downloads) for Ford's finished staff profile videos, and OK the LinkedIn slots (one a week from Oct 14: Leila, Sara, Leloni)
 
 ## Gmail confirmations for the follow-up tracker (6): search Gmail (Gmail connector) and record only what you can see
 For each: gmail_sent -> search `in:sent subject:"<subject>"`; if found, `python queue_apply.py --evidence <id> <step> "sent <date> to <who>"`. gmail_reply -> search the subject from that domain after the previous step; if a reply is there, `--evidence <id> <step> "<name> replied <date>: <first line>"`. Nothing found: leave it; never guess.
@@ -57,16 +57,6 @@ For each: gmail_sent -> search `in:sent subject:"<subject>"`; if found, `python 
 - id `61ccfcbfe7` step `s2` (gmail_reply): Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too, subject "October social calendar" from bccsanantonio.com
 - id `0b1b2e7c4a` step `s1` (gmail_sent): Send the Gmail draft 'Feedback on Leloni's two emails' to Todd, subject "Feedback on Leloni"
 - id `2f18c7b786` step `s2` (gmail_reply): Sara replies with comments and direction, subject "Social Media Posts" from bccsanantonio.com
-
-## Social posts to build and write to the sheet (1); the draft to Todd is a separate weekly step
-
-- id `a7414c697a`: **Fri 10/2: Food Friday reel from Leila's clips (Steak and chicken fajitas, Pesto Salmon, Sp** on 2026-10-02 (FB, IG, YT) at FB 12:00 PM, IG 6:00 PM, YT 6:00 PM, reel. Approved 2026-09-24. Why: row 10 plans a dish still for this Friday; the reel replaces it on FB and IG and adds YouTube Shorts
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json`
-  - asset: reel https://drive.google.com/drive/folders/1tQlvgAhNUJMkpS2m_njCqlH-1TQNjNak
-  - replaces row 10 in October Content Calendar
-  - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/
-
-## Draft day: Wednesday. Today is Tuesday, not draft day: build only, no email to Todd.
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
