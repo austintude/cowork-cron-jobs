@@ -4200,10 +4200,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A12"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "approved",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-29T13:41:03",
-   "note": "Pick the new Medley B thumbnail: A or B (Todd's OK too)",
+   "decided": "2026-09-29T15:59:23",
+   "note": "rewrite: daniel: Daniel picked thumbnail B (medley-B-thumbnail-v3-jessica-B.jpg). Upload it to YouTube video EGLOzVHH6wQ, build the 9:16 and Jessica's own testimonial tile the same way.",
    "result": {
     "needs_you": "Two new Medley B thumbnails with a smiling Jessica frame (2:10 of her testimonial): C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\jessica-thumbnail-candidates-2026-09-25\\medley-B-thumbnail-v3-jessica-A.jpg and -B.jpg (side by side with the current one in _compare-old-vs-A-vs-B.jpg). Left for you: pick A or B (and Todd's OK), then a session uploads it to EGLOzVHH6wQ and builds the 9:16 and Jessica's own tile the same way; tell me which website testimonial thumbnail has its text behind the person; and decide delete-and-repost on Instagram.",
     "needs_since": "2026-09-25",
@@ -4213,6 +4213,11 @@
        "at": "2026-09-25 07:30",
        "by": "claude",
        "text": "Worked by the morning Claude run: Two new Medley B thumbnails with a smiling Jessica frame (2:10 of her testimonial): C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\jessica-thumbnail-candidates-2026-09-25\\medley-B-thumbnail-v3-jessica-A.jpg and -B.jpg (side by side with the current one in _compare-old-vs-A-vs-B.jpg). Left for you: pick A or B (and Todd's OK), then a session uploads it to EGLOzVHH6wQ and builds the 9:16 and Jessica's own tile the same way; tell me which website testimonial thumbnail has its text behind the person; and decide delete-and-repost on Instagram."
+      },
+      {
+       "at": "2026-09-29 15:59",
+       "by": "daniel",
+       "text": "Chose 'Use B'. Told Claude: Daniel picked thumbnail B (medley-B-thumbnail-v3-jessica-B.jpg). Upload it to YouTube video EGLOzVHH6wQ, build the 9:16 and Jessica's own testimonial tile the same way."
       }
      ],
      "steps": [
@@ -4239,7 +4244,10 @@
         }
        ],
        "id": "s1",
-       "status": "open"
+       "status": "done",
+       "done_at": "2026-09-29 15:59",
+       "via": "Daniel on the dashboard",
+       "evidence": "chose: Use B"
       },
       {
        "owner": "daniel",
@@ -4260,8 +4268,8 @@
        "status": "open"
       }
      ],
-     "state": "your_move",
-     "state_text": "Pick the new Medley B thumbnail: A or B (Todd's OK too)",
+     "state": "with_claude",
+     "state_text": "With Claude: Daniel picked thumbnail B (medley-B-thumbnail-v3-jessica-B.jpg). Upload it to YouTube video EGLOzVHH6wQ, build the 9:16 and Jessica's own testimonial tile the same way.",
      "checked_at": "2026-09-29 14:50"
     }
    }
