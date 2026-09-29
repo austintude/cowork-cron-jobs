@@ -4097,10 +4097,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A10"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "applied",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-29T13:41:01",
-   "note": "rewrite: next step for Claude: Swap the media on booked Postiz posts that still carry the old end card (Gerry, Tue 10/6; Carmen ran Tue 9/29), and list the Food Friday montages that still close on the old v2 card",
+   "decided": "2026-09-29T16:39:33",
+   "note": "Nothing left to swap. Every booked Postiz video post already carries the v4 end card (checked by file hash and last frame): Carmen 9/29, Gerry clip7 9/30, Gerry 10/6, Food Friday 10/2 and 10/9. Old card only on the 9/25 Food Friday (already ran on FB and IG; its YouTube post errored and never went out) and the unbooked -web copies in social/video/out. Publer (LinkedIn, GBP) not checked.",
    "result": {
     "needs_you": "Done: /start page title on staging13 is now 'Ready for Comprehensive Support' (live after your next push). All 39 finished clips rebuilt with the v4 end card ('Ready for comprehensive support? One program. Four providers.') in C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Videos\\Ford\\CTA-v4-2026-09-25 (frame-accurate swap, audio untouched, checked visually). Left for you: watch a few, then move them into CURRENT-portrait-clips-9x16 to replace the old ones. Carmen (Tue 9/29) and Gerry (Tue 10/6) are booked in Postiz with the old card; once the new files are in CURRENT a session can swap the media. The Food Friday montages still close on the old v2 card.",
     "needs_since": "2026-09-25",
@@ -4115,6 +4115,11 @@
        "at": "2026-09-29 13:40",
        "by": "check",
        "text": "Watch a few rebuilt clips, then move them into CURRENT-portrait-clips-9x16: done Sep 29: all 39 clips with the new end card are in CURRENT; the old ones are in Videos/Ford/_archive/CURRENT-pre-cta-v4-2026-09-29"
+      },
+      {
+       "at": "2026-09-29 16:39",
+       "by": "claude",
+       "text": "Done: Nothing left to swap. Every booked Postiz video post already carries the v4 end card (checked by file hash and last frame): Carmen 9/29, Gerry clip7 9/30, Gerry 10/6, Food Friday 10/2 and 10/9. Old card only on the 9/25 Food Friday (already ran on FB and IG; its YouTube post errored and never went out) and the unbooked -web copies in social/video/out. Publer (LinkedIn, GBP) not checked.. ticked on the sheet (row 10)"
       }
      ],
      "steps": [
@@ -4150,10 +4155,13 @@
        "status": "open"
       }
      ],
-     "state": "with_claude",
-     "state_text": "Swap the media on booked Postiz posts that still carry the old end card (Gerry, Tue 10/6; Carmen ran Tue 9/29), and list the Food Friday montages that still close on the old v2 card",
+     "state": "done",
+     "state_text": "Done",
      "checked_at": "2026-09-29 13:41"
-    }
+    },
+    "done": "2026-09-29",
+    "done_by": "a Claude session",
+    "sheet_tick": "ticked on the sheet (row 10)"
    }
   },
   {
