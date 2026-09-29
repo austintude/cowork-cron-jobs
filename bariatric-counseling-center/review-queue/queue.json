@@ -5253,8 +5253,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T16:39:16",
-   "note": "Send the top 10 searches email to Todd (Gmail draft ready)",
+   "decided": "2026-09-29T16:39:19",
+   "note": "Read and send the Gmail draft 'How people search for help in Texas: the top 10'.",
    "result": {
     "needs_you": "Send the top 10 searches email to Todd (Gmail draft ready)",
     "needs_since": "2026-09-25",
@@ -5292,7 +5292,8 @@
        },
        "due": "2026-10-01",
        "id": "s1",
-       "status": "open"
+       "status": "open",
+       "evidence": "still in your Gmail Drafts, not sent"
       },
       {
        "owner": "todd",
@@ -5304,12 +5305,13 @@
        },
        "due": "2026-10-08",
        "id": "s2",
-       "status": "open"
+       "status": "open",
+       "evidence": "no reply yet"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: Turn Claude outputs/todd-top10-searches-and-platform-2026-09-25.md into a short Gmail draft from daniel@drbdig.com to Todd, subject 'How people search for help in Texas: the top 10' (htmlBody, clean links, no process narration), then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.",
-     "checked_at": "2026-09-29 14:50"
+     "state": "your_move",
+     "state_text": "Read and send the Gmail draft 'How people search for help in Texas: the top 10'.",
+     "checked_at": "2026-09-29 16:39"
     }
    }
   },
