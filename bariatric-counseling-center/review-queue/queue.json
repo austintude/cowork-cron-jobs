@@ -2901,11 +2901,13 @@
     "needs_rewrite": []
    },
    "source": "social-plan",
-   "status": "pending",
+   "status": "approved",
    "created": "2026-09-24T05:32:36",
-   "decided": null,
-   "note": null,
-   "result": null,
+   "decided": "2026-09-29T16:03:22",
+   "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT)",
+   "result": {
+    "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\c2d8dc5561-tue-10-6-alumni-clip-kim-k-worth-the-effort.json"
+   },
    "check": {
     "at": "2026-09-29T15:20:02",
     "level": "warn",
