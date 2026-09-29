@@ -4245,12 +4245,12 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A12"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "needs",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-29T15:59:23",
-   "note": "rewrite: daniel: Daniel picked thumbnail B (medley-B-thumbnail-v3-jessica-B.jpg). Upload it to YouTube video EGLOzVHH6wQ, build the 9:16 and Jessica's own testimonial tile the same way.",
+   "decided": "2026-09-29T16:39:25",
+   "note": "Upload thumbnail B to EGLOzVHH6wQ in YouTube Studio (no YouTube API token on the PC)",
    "result": {
-    "needs_you": "Two new Medley B thumbnails with a smiling Jessica frame (2:10 of her testimonial): C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\jessica-thumbnail-candidates-2026-09-25\\medley-B-thumbnail-v3-jessica-A.jpg and -B.jpg (side by side with the current one in _compare-old-vs-A-vs-B.jpg). Left for you: pick A or B (and Todd's OK), then a session uploads it to EGLOzVHH6wQ and builds the 9:16 and Jessica's own tile the same way; tell me which website testimonial thumbnail has its text behind the person; and decide delete-and-repost on Instagram.",
+    "needs_you": "Upload thumbnail B to EGLOzVHH6wQ in YouTube Studio (no YouTube API token on the PC)",
     "needs_since": "2026-09-25",
     "followup": {
      "trail": [
@@ -4263,16 +4263,35 @@
        "at": "2026-09-29 15:59",
        "by": "daniel",
        "text": "Chose 'Use B'. Told Claude: Daniel picked thumbnail B (medley-B-thumbnail-v3-jessica-B.jpg). Upload it to YouTube video EGLOzVHH6wQ, build the 9:16 and Jessica's own testimonial tile the same way."
+      },
+      {
+       "at": "2026-09-29 16:39",
+       "by": "claude",
+       "text": "No token on the PC has a YouTube scope, and the YouTube Studio path in Chrome was stopped by the permission check, so nothing on YouTube changed. The live EGLOzVHH6wQ thumbnail is still the eyes-closed Jessica frame."
+      },
+      {
+       "at": "2026-09-29 16:39",
+       "by": "claude",
+       "text": "Built from the same smiling frame (about 2:08): C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\jessica-thumbnail-candidates-2026-09-25\\medley-B-thumbnail-v3-jessica-B-9x16.jpg, C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\jessica-thumbnail-candidates-2026-09-25\\jessica-testimonial-thumbnail-v2-16x9-1280.jpg (YouTube size), C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\jessica-thumbnail-candidates-2026-09-25\\jessica-testimonial-thumbnail-v2-9x16.jpg; side by side in C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\jessica-thumbnail-candidates-2026-09-25\\_compare-2026-09-29-old-vs-new-all.jpg."
+      },
+      {
+       "at": "2026-09-29 16:39",
+       "by": "claude",
+       "text": "Jessica's own testimonial is tfZ_Tn2-grM (phone version eUshNz_v-WI). The October client eNews pulls tfZ_Tn2-grM's thumbnail directly, so a new tile shows there too. The only 9:16 slot found is the Medley B Short 7a-EP46KPK4."
       }
      ],
      "steps": [
       {
        "owner": "daniel",
-       "do": "Pick the new Medley B thumbnail: A or B (Todd's OK too)",
+       "do": "In YouTube Studio, set medley-B-thumbnail-v3-jessica-B.jpg as the thumbnail of EGLOzVHH6wQ.",
        "links": [
         {
-         "label": "Compare old vs A vs B",
-         "path": "Claude outputs/jessica-thumbnail-candidates-2026-09-25/_compare-old-vs-A-vs-B.jpg"
+         "label": "Open in Studio",
+         "url": "https://studio.youtube.com/video/EGLOzVHH6wQ/edit"
+        },
+        {
+         "label": "Open the thumbnail",
+         "path": "C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\jessica-thumbnail-candidates-2026-09-25\\medley-B-thumbnail-v3-jessica-B.jpg"
         }
        ],
        "check": {
@@ -4280,32 +4299,36 @@
        },
        "options": [
         {
-         "label": "Use A",
-         "tell": "Daniel picked thumbnail A (medley-B-thumbnail-v3-jessica-A.jpg). Upload it to YouTube video EGLOzVHH6wQ, build the 9:16 and Jessica's own testimonial tile the same way."
-        },
-        {
-         "label": "Use B",
-         "tell": "Daniel picked thumbnail B (medley-B-thumbnail-v3-jessica-B.jpg). Upload it to YouTube video EGLOzVHH6wQ, build the 9:16 and Jessica's own testimonial tile the same way."
+         "label": "Claude does it in Studio",
+         "tell": "Daniel OKs Claude using YouTube Studio in Chrome (Claude in Chrome) to set thumbnails: medley-B-thumbnail-v3-jessica-B.jpg on EGLOzVHH6wQ. Verify by reloading."
         }
        ],
+       "due": "2026-10-02",
        "id": "s1",
-       "status": "done",
-       "done_at": "2026-09-29 15:59",
-       "via": "Daniel on the dashboard",
-       "evidence": "chose: Use B"
+       "status": "open"
       },
       {
        "owner": "daniel",
-       "do": "Say which website testimonial thumbnail has its text behind the person, and whether to delete and repost on Instagram (use Tell Claude)",
+       "do": "Decide where the new tiles go: Jessica's new 16:9 on tfZ_Tn2-grM (and eUshNz_v-WI?), the Medley B 9:16 on the Short 7a-EP46KPK4.",
        "check": {
         "type": "manual"
        },
+       "options": [
+        {
+         "label": "All three",
+         "tell": "Daniel OKs Claude using YouTube Studio in Chrome to set jessica-testimonial-thumbnail-v2-16x9-1280.jpg on tfZ_Tn2-grM and eUshNz_v-WI, and medley-B-thumbnail-v3-jessica-B-9x16.jpg on 7a-EP46KPK4. Verify each."
+        },
+        {
+         "label": "Leave them",
+         "tell": "DONE_NO_ACTION"
+        }
+       ],
        "id": "s2",
        "status": "open"
       },
       {
-       "owner": "claude",
-       "do": "Upload the chosen thumbnail and fix the website tile",
+       "owner": "daniel",
+       "do": "Still open from the 9/25 run: which website testimonial thumbnail has its text behind the person, and whether to delete and repost the Instagram post.",
        "check": {
         "type": "manual"
        },
