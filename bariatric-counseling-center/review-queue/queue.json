@@ -3828,8 +3828,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-29T16:39:06",
-   "note": "Send the ARFID details to Sara (Gmail draft ready)",
+   "decided": "2026-09-29T16:39:09",
+   "note": "Read and send the Gmail draft 'ARFID page: a few details to confirm'.",
    "result": {
     "needs_you": "Send the ARFID details to Sara (Gmail draft ready)",
     "needs_since": "2026-09-25",
@@ -3877,7 +3877,8 @@
        },
        "due": "2026-10-01",
        "id": "s1",
-       "status": "open"
+       "status": "open",
+       "evidence": "still in your Gmail Drafts, not sent"
       },
       {
        "owner": "sara",
@@ -3889,7 +3890,8 @@
        },
        "due": "2026-10-06",
        "id": "s2",
-       "status": "open"
+       "status": "open",
+       "evidence": "no reply yet"
       },
       {
        "owner": "claude",
@@ -3907,9 +3909,9 @@
        "status": "open"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: Sara confirmed BCC treats adult ARFID. Finish the ARFID landing page from content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md and send the service claims marked [SARA TO CONFIRM] to Sara as one short Gmail draft.",
-     "checked_at": "2026-09-29 14:50"
+     "state": "your_move",
+     "state_text": "Read and send the Gmail draft 'ARFID page: a few details to confirm'.",
+     "checked_at": "2026-09-29 16:39"
     }
    }
   },
