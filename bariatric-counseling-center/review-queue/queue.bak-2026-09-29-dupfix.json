@@ -758,11 +758,6 @@
    "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT)",
    "result": {
     "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json"
-   },
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "warn",
-    "text": "Approved but not built yet, and it posts in 3 days."
    }
   },
   {
@@ -1081,12 +1076,7 @@
    "created": "2026-09-22T09:58:18",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Slot is free; 37 days of notice."
-   }
+   "result": null
   },
   {
    "id": "55ec40f611",
@@ -1175,12 +1165,7 @@
    "created": "2026-09-22T09:58:27",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Slot is free; 38 days of notice."
-   }
+   "result": null
   },
   {
    "id": "67ff8aa4bd",
@@ -1237,12 +1222,7 @@
    "created": "2026-09-22T09:58:38",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Slot is free; 41 days of notice."
-   }
+   "result": null
   },
   {
    "id": "566382672f",
@@ -1299,12 +1279,7 @@
    "created": "2026-09-22T09:58:50",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Slot is free; 42 days of notice."
-   }
+   "result": null
   },
   {
    "id": "7a78357dd4",
@@ -1361,12 +1336,7 @@
    "created": "2026-09-22T09:58:59",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Slot is free; 49 days of notice."
-   }
+   "result": null
   },
   {
    "id": "d579845b37",
@@ -2455,10 +2425,10 @@
     "service": null
    },
    "source": "link-check",
-   "status": "placed",
+   "status": "pending",
    "created": "2026-09-24T05:32:09",
-   "decided": "2026-09-29T13:16:24",
-   "note": "duplicate of 6f79385bab: already fixed on staging13 2026-09-23 (link now points at /self-improvement/behavioral-patterns/how-identify-self-sabotage-causes/, re-verified 2026-09-29). Its suggestion here was the page itself; link-check no longer does that.",
+   "decided": null,
+   "note": null,
    "result": null
   },
   {
@@ -2515,16 +2485,11 @@
     "service": null
    },
    "source": "link-check",
-   "status": "resolved",
+   "status": "pending",
    "created": "2026-09-24T05:32:09",
-   "decided": "2026-09-29T08:19:53",
-   "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:19:53",
-    "level": "done",
-    "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
-   }
+   "decided": null,
+   "note": null,
+   "result": null
   },
   {
    "id": "6ebb11b319",
@@ -2550,16 +2515,11 @@
     "service": null
    },
    "source": "link-check",
-   "status": "resolved",
+   "status": "pending",
    "created": "2026-09-24T05:32:09",
-   "decided": "2026-09-29T08:19:53",
-   "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:19:53",
-    "level": "done",
-    "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
-   }
+   "decided": null,
+   "note": null,
+   "result": null
   },
   {
    "id": "935d555d22",
@@ -2585,16 +2545,11 @@
     "service": null
    },
    "source": "link-check",
-   "status": "resolved",
+   "status": "pending",
    "created": "2026-09-24T05:32:09",
-   "decided": "2026-09-29T08:19:53",
-   "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:19:53",
-    "level": "done",
-    "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
-   }
+   "decided": null,
+   "note": null,
+   "result": null
   },
   {
    "id": "4c86891bdd",
@@ -2620,16 +2575,11 @@
     "service": null
    },
    "source": "link-check",
-   "status": "resolved",
+   "status": "pending",
    "created": "2026-09-24T05:32:09",
-   "decided": "2026-09-29T08:19:53",
-   "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:19:53",
-    "level": "done",
-    "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
-   }
+   "decided": null,
+   "note": null,
+   "result": null
   },
   {
    "id": "41860e26b9",
@@ -2653,16 +2603,11 @@
     "service": null
    },
    "source": "link-check",
-   "status": "resolved",
+   "status": "pending",
    "created": "2026-09-24T05:32:09",
-   "decided": "2026-09-29T08:19:53",
-   "note": "recheck 2026-09-29: False positive: the Google Maps Embed API only answers inside an iframe, so a direct check always gets 404. The map on the page works.",
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:19:53",
-    "level": "done",
-    "text": "False positive: the Google Maps Embed API only answers inside an iframe, so a direct check always gets 404. The map on the page works."
-   }
+   "decided": null,
+   "note": null,
+   "result": null
   },
   {
    "id": "0ea4a9e9e6",
@@ -2688,16 +2633,11 @@
     "service": null
    },
    "source": "link-check",
-   "status": "resolved",
+   "status": "pending",
    "created": "2026-09-24T05:32:09",
-   "decided": "2026-09-29T08:19:53",
-   "note": "recheck 2026-09-29: Already fixed on production: gone from all 2 pages (checked 09/29 08:19).",
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:19:53",
-    "level": "done",
-    "text": "Already fixed on production: gone from all 2 pages (checked 09/29 08:19)."
-   }
+   "decided": null,
+   "note": null,
+   "result": null
   },
   {
    "id": "c388710016",
@@ -2722,16 +2662,11 @@
     "service": null
    },
    "source": "link-check",
-   "status": "resolved",
+   "status": "pending",
    "created": "2026-09-24T05:32:09",
-   "decided": "2026-09-29T08:19:53",
-   "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:19:53",
-    "level": "done",
-    "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
-   }
+   "decided": null,
+   "note": null,
+   "result": null
   },
   {
    "id": "1595cf9ca9",
@@ -2756,16 +2691,11 @@
     "service": null
    },
    "source": "link-check",
-   "status": "resolved",
+   "status": "pending",
    "created": "2026-09-24T05:32:09",
-   "decided": "2026-09-29T08:19:53",
-   "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:19:53",
-    "level": "done",
-    "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
-   }
+   "decided": null,
+   "note": null,
+   "result": null
   },
   {
    "id": "2509abfd18",
@@ -2790,16 +2720,11 @@
     "service": null
    },
    "source": "link-check",
-   "status": "resolved",
+   "status": "pending",
    "created": "2026-09-24T05:32:09",
-   "decided": "2026-09-29T08:19:53",
-   "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:19:53",
-    "level": "done",
-    "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
-   }
+   "decided": null,
+   "note": null,
+   "result": null
   },
   {
    "id": "ad6ac9438a",
@@ -2832,16 +2757,11 @@
     "service": null
    },
    "source": "link-check",
-   "status": "resolved",
+   "status": "pending",
    "created": "2026-09-24T05:32:09",
-   "decided": "2026-09-29T08:19:53",
-   "note": "recheck 2026-09-29: Already fixed on production: gone from all 10 pages (checked 09/29 08:19).",
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:19:53",
-    "level": "done",
-    "text": "Already fixed on production: gone from all 10 pages (checked 09/29 08:19)."
-   }
+   "decided": null,
+   "note": null,
+   "result": null
   },
   {
    "id": "c2d8dc5561",
@@ -2905,12 +2825,7 @@
    "created": "2026-09-24T05:32:36",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "warn",
-    "text": "2026-10-06 is already taken on FB+IG+YT by \"Tue 10/6: alumni clip, Gerry M. (two years later)\" (placed). Short notice: it would reach Todd in the Wednesday draft (09/30), 6 days before it posts, so his silence rule will not apply and it needs his explicit OK."
-   }
+   "result": null
   },
   {
    "id": "cd67a665c9",
@@ -2974,12 +2889,7 @@
    "created": "2026-09-24T05:32:43",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Slot is free; 9 days of notice."
-   }
+   "result": null
   },
   {
    "id": "112e44e57d",
@@ -3061,12 +2971,7 @@
    "created": "2026-09-24T05:32:51",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Slot is free; 10 days of notice."
-   }
+   "result": null
   },
   {
    "id": "a07785591a",
@@ -3123,12 +3028,7 @@
    "created": "2026-09-24T05:33:46",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Slot is free; 43 days of notice."
-   }
+   "result": null
   },
   {
    "id": "3ac415f444",
@@ -3184,12 +3084,7 @@
    "created": "2026-09-24T05:33:54",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Slot is free; 44 days of notice."
-   }
+   "result": null
   },
   {
    "id": "337fc6aea8",
@@ -3247,12 +3142,7 @@
    "created": "2026-09-24T05:34:08",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Slot is free; 48 days of notice."
-   }
+   "result": null
   },
   {
    "id": "8c10f61a84",
@@ -3309,12 +3199,7 @@
    "created": "2026-09-24T05:34:28",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Slot is free; 50 days of notice."
-   }
+   "result": null
   },
   {
    "id": "a8a28d82a7",
@@ -3335,12 +3220,7 @@
    "created": "2026-09-24T05:34:46",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Not live yet. The live title is still the one this was drafted against."
-   }
+   "result": null
   },
   {
    "id": "e5f7478884",
@@ -3361,12 +3241,7 @@
    "created": "2026-09-24T05:34:48",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Not live yet. The live title is still the one this was drafted against."
-   }
+   "result": null
   },
   {
    "id": "e019d979ee",
@@ -3387,12 +3262,7 @@
    "created": "2026-09-24T05:34:50",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Not live yet. The live title is still the one this was drafted against."
-   }
+   "result": null
   },
   {
    "id": "be05179602",
@@ -3413,12 +3283,7 @@
    "created": "2026-09-24T05:34:52",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Not live yet. The live title is still the one this was drafted against."
-   }
+   "result": null
   },
   {
    "id": "a24b6c6485",
@@ -3439,12 +3304,7 @@
    "created": "2026-09-24T05:34:57",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Not live yet. The live title is still the one this was drafted against."
-   }
+   "result": null
   },
   {
    "id": "4be3b37121",
@@ -3465,12 +3325,7 @@
    "created": "2026-09-24T05:34:59",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Not live yet. The live title is still the one this was drafted against."
-   }
+   "result": null
   },
   {
    "id": "a4e15c04f3",
@@ -3491,12 +3346,7 @@
    "created": "2026-09-24T05:35:01",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Not live yet. The live title is still the one this was drafted against."
-   }
+   "result": null
   },
   {
    "id": "8dd1907c41",
@@ -3517,12 +3367,7 @@
    "created": "2026-09-24T05:35:03",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "Not live yet. The live title is still the one this was drafted against."
-   }
+   "result": null
   },
   {
    "id": "d295f3f583",
@@ -3539,12 +3384,7 @@
    "created": "2026-09-24T05:35:14",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "info",
-    "text": "The page already has an FAQ with 4 questions: Is binge eating disorder a real eating disorder? / Do I need to have a certain weight to qualify for treatment? / How long does binge eating treatment take? / Will I have to follow a restrictive diet?. Approving adds these 4 to it."
-   }
+   "result": null
   },
   {
    "id": "9f3d366ed7",
@@ -3561,12 +3401,7 @@
    "created": "2026-09-24T05:35:23",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "info",
-    "text": "The page already has an FAQ with 4 questions: How do I know if I need an eating disorder therapist? / Does insurance cover eating disorder therapy? / Should I see a therapist or a dietitian first? / Can I do this by telehealth?. Approving adds these 3 to it."
-   }
+   "result": null
   },
   {
    "id": "bedcf97883",
@@ -3583,12 +3418,7 @@
    "created": "2026-09-24T05:35:34",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "info",
-    "text": "The page already has an FAQ with 12 questions: Is Overeaters Anonymous the same as therapy? / Can I attend OA and also work with BCC at the same time? / Does insurance cover BCC's services? / Is BCC available outside San Antonio? / What eating-related conditions does BCC treat? / How is BCC different from a telehealth app or self-guided program? .... Approving adds these 4 to it."
-   }
+   "result": null
   },
   {
    "id": "8ecf819701",
@@ -3681,12 +3511,7 @@
    "created": "2026-09-24T05:36:10",
    "decided": null,
    "note": null,
-   "result": null,
-   "check": {
-    "at": "2026-09-29T08:22:40",
-    "level": "ok",
-    "text": "No page at that address on production yet."
-   }
+   "result": null
   },
   {
    "id": "cc10435e7d",

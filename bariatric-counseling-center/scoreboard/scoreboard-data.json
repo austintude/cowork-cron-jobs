@@ -12656,36 +12656,60 @@
       "order": 1,
       "title": "This week",
       "model": {
-        "date": "2026-09-24",
-        "generated_at": "2026-09-24T05:36:10",
+        "date": "2026-09-29",
+        "generated_at": "2026-09-29T08:21:20",
         "headline": [
-          "199 pages are set to noindex. That is the first thing to fix this week.",
+          "Search clicks rose: 44 this week vs 30 the week before (2026-09-22 to 2026-09-29).",
           "AI Overviews: BCC cited in 9 of 17 overviews on tracked terms.",
-          "41 items waiting for a human in the review queue.",
-          "Data on file: SERP 2026-09-24, Search Console 2026-09-24, crawl 2026-09-24, backlinks 2026-09-18."
+          "27 items waiting for a human in the review queue.",
+          "Data on file: SERP 2026-09-24, Search Console 2026-09-29, crawl 2026-09-24, backlinks 2026-09-18."
         ],
         "things": [
-          "Hand 3 approved items to Claude (copy the prompt from the hand-off box in the Review queue). Why: you approved them but nothing has happened yet; a session places the blocks, builds and books the social posts, and writes the real link emails for Todd.",
-          "Clear the 41 items in the review queue (8 content, 8 title meta, 12 social, 13 fix). Why: each one is a change the rig already wrote; approving takes a minute and nothing touches the live site until you say so.",
+          "Hand 1 approved item to Claude (copy the prompt from the hand-off box in the Review queue). Why: you approved them but nothing has happened yet; a session places the blocks, builds and books the social posts, and writes the real link emails for Todd.",
+          "Clear the 27 items in the review queue (3 action, 4 content, 8 title meta, 12 social). Why: each one is a change the rig already wrote; approving takes a minute and nothing touches the live site until you say so.",
           "Claim or fix the directory listings at cap4kids.org, storeboard.com, mycarecoordinator.com. Why: 8 directory-style sites link to local competitors and not to BCC; a listing is a free link and a referral path."
         ],
         "waiting": [
-          "41 items waiting in the review queue: 13 Site fix, 12 Social post, 8 Content block, 8 Title / description. To act: open the dashboard, Review queue.",
-          "Content block: New page brief: gastric pouch",
-          "Content block: AI Overview answer for \"bariatric therapy\" on /bariatric-therapy-in-san-antonio-tx/",
-          "Content block: AI Overview answer for \"nutritional counseling san antonio tx\" on /nutritional-counseling-",
-          "Approved or applied in the last 7 days: 9.",
-          "5 social posts built and on the sheet: 5 already with Todd (tick or reply), 0 waiting for this week's draft to him. Send the draft when it appears in Gmail; nothing is booked until he OKs."
+          "27 items waiting in the review queue: 12 Social post, 8 Title / description, 4 Content block, 3 Action item. To act: open the dashboard, Review queue.",
+          "Action item: Review Todd's email from Tom to discuss",
+          "Action item: Build content calendar around Ford's video content (next 6 weeks)",
+          "Action item: Mine Ford's raw interview footage for unused clips",
+          "Approved or applied in the last 7 days: 14.",
+          "1 approved item waiting for a Claude session (content to place on staging13, redirects to import, link asks to research and write, 1 social post to build and book): copy the prompt from the hand-off box in the Review queue into a Claude conversation."
         ],
-        "link": "../briefs/monday-brief-2026-09-24.html",
-        "md": "../briefs/monday-brief-2026-09-24.md",
-        "pending": 41,
+        "link": "../briefs/monday-brief-2026-09-29.html",
+        "md": "../briefs/monday-brief-2026-09-29.md",
+        "pending": 27,
         "asset": {
           "date": "2026-09-18",
           "terms": 80,
           "quarter": "2026-Q3",
           "file": "texas-food-addiction-search-2026-Q3.html",
           "link": "../assets/texas-food-addiction-search-2026-Q3.html"
+        },
+        "live": {
+          "pending": 27,
+          "by_kind": {
+            "action": 3,
+            "content": 4,
+            "title_meta": 8,
+            "social": 12
+          },
+          "kinds": {
+            "title_meta": "Title / description",
+            "content": "Content block",
+            "redirect": "Redirect (301)",
+            "outreach": "Link ask",
+            "task": "Task",
+            "social": "Social post",
+            "fix": "Site fix",
+            "action": "Action item"
+          },
+          "handoff": 1,
+          "top": [
+            "Content block: New page brief: gastric pouch",
+            "Content block: FAQ block for /overeaters-anonymous-support-san-antonio-tx/ (4 questions)"
+          ]
         }
       },
       "error": null
@@ -12711,7 +12735,12 @@
             "created": "2026-09-24T05:36:10",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "No page at that address on production yet."
+            }
           },
           {
             "id": "bedcf97883",
@@ -12728,7 +12757,12 @@
             "created": "2026-09-24T05:35:34",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "info",
+              "text": "The page already has an FAQ with 12 questions: Is Overeaters Anonymous the same as therapy? / Can I attend OA and also work with BCC at the same time? / Does insurance cover BCC's services? / Is BCC available outside San Antonio? / What eating-related conditions does BCC treat? / How is BCC different from a telehealth app or self-guided program? .... Approving adds these 4 to it."
+            }
           },
           {
             "id": "9f3d366ed7",
@@ -12745,7 +12779,12 @@
             "created": "2026-09-24T05:35:23",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "info",
+              "text": "The page already has an FAQ with 4 questions: How do I know if I need an eating disorder therapist? / Does insurance cover eating disorder therapy? / Should I see a therapist or a dietitian first? / Can I do this by telehealth?. Approving adds these 3 to it."
+            }
           },
           {
             "id": "d295f3f583",
@@ -12762,7 +12801,12 @@
             "created": "2026-09-24T05:35:14",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "info",
+              "text": "The page already has an FAQ with 4 questions: Is binge eating disorder a real eating disorder? / Do I need to have a certain weight to qualify for treatment? / How long does binge eating treatment take? / Will I have to follow a restrictive diet?. Approving adds these 4 to it."
+            }
           },
           {
             "id": "8dd1907c41",
@@ -12783,7 +12827,12 @@
             "created": "2026-09-24T05:35:03",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Not live yet. The live title is still the one this was drafted against."
+            }
           },
           {
             "id": "a4e15c04f3",
@@ -12804,7 +12853,12 @@
             "created": "2026-09-24T05:35:01",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Not live yet. The live title is still the one this was drafted against."
+            }
           },
           {
             "id": "4be3b37121",
@@ -12825,7 +12879,12 @@
             "created": "2026-09-24T05:34:59",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Not live yet. The live title is still the one this was drafted against."
+            }
           },
           {
             "id": "a24b6c6485",
@@ -12846,7 +12905,12 @@
             "created": "2026-09-24T05:34:57",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Not live yet. The live title is still the one this was drafted against."
+            }
           },
           {
             "id": "be05179602",
@@ -12867,7 +12931,12 @@
             "created": "2026-09-24T05:34:52",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Not live yet. The live title is still the one this was drafted against."
+            }
           },
           {
             "id": "e019d979ee",
@@ -12888,7 +12957,12 @@
             "created": "2026-09-24T05:34:50",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Not live yet. The live title is still the one this was drafted against."
+            }
           },
           {
             "id": "e5f7478884",
@@ -12909,7 +12983,12 @@
             "created": "2026-09-24T05:34:48",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Not live yet. The live title is still the one this was drafted against."
+            }
           },
           {
             "id": "a8a28d82a7",
@@ -12930,339 +13009,12 @@
             "created": "2026-09-24T05:34:46",
             "decided": null,
             "note": null,
-            "result": null
-          },
-          {
-            "id": "1d6145a369",
-            "kind": "fix",
-            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/2024/04/self-sabotage/",
-            "title": "Dead link on 1 page: /2024/04/self-sabotage/",
-            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
-            "payload": {
-              "url": "https://www.bariatriccounselingcenter.com/2024/04/self-sabotage/",
-              "fix_type": "dead internal link",
-              "detail": "HTTP 404",
-              "pages": [
-                "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-to-identify-self-sabotage-behaviors-part-2/"
-              ],
-              "suggest": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-to-identify-self-sabotage-behaviors-part-2/",
-              "steps": [
-                "https://www.bariatriccounselingcenter.com/2024/04/self-sabotage/ answers HTTP 404.",
-                "Point the link at https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-to-identify-self-sabotage-behaviors-part-2/ (closest live page by slug) or remove it.",
-                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
-              ],
-              "first_seen": "2026-09-22",
-              "video": null,
-              "service": null
-            },
-            "source": "link-check",
-            "status": "pending",
-            "created": "2026-09-24T05:32:09",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "53fdf61def",
-            "kind": "fix",
-            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/",
-            "title": "Dead link on 1 page: /blog/sustaining-the-impact-of-ozempic-and-other-semaglutide",
-            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
-            "payload": {
-              "url": "https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/",
-              "fix_type": "dead internal link",
-              "detail": "HTTP 404",
-              "pages": [
-                "https://www.bariatriccounselingcenter.com/weight-loss-therapy-in-san-antonio-tx/"
-              ],
-              "suggest": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/",
-              "steps": [
-                "https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/ answers HTTP 404.",
-                "Point the link at https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/ (closest live page by slug) or remove it.",
-                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
-              ],
-              "first_seen": "2026-09-22",
-              "video": null,
-              "service": null
-            },
-            "source": "link-check",
-            "status": "pending",
-            "created": "2026-09-24T05:32:09",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "6ebb11b319",
-            "kind": "fix",
-            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/",
-            "title": "Dead link on 1 page: /blog/binge-eating-disorder-symptoms-causes-effective-treatm",
-            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
-            "payload": {
-              "url": "https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/",
-              "fix_type": "dead internal link",
-              "detail": "HTTP 404",
-              "pages": [
-                "https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/"
-              ],
-              "suggest": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/",
-              "steps": [
-                "https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/ answers HTTP 404.",
-                "Point the link at https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/ (closest live page by slug) or remove it.",
-                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
-              ],
-              "first_seen": "2026-09-22",
-              "video": null,
-              "service": null
-            },
-            "source": "link-check",
-            "status": "pending",
-            "created": "2026-09-24T05:32:09",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "935d555d22",
-            "kind": "fix",
-            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/",
-            "title": "Dead link on 1 page: /therapy-for-depression-and-weight-in-san-antonio-tx/",
-            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
-            "payload": {
-              "url": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/",
-              "fix_type": "dead internal link",
-              "detail": "HTTP 404",
-              "pages": [
-                "https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/"
-              ],
-              "suggest": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/",
-              "steps": [
-                "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/ answers HTTP 404.",
-                "Point the link at https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/ (closest live page by slug) or remove it.",
-                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
-              ],
-              "first_seen": "2026-09-22",
-              "video": null,
-              "service": null
-            },
-            "source": "link-check",
-            "status": "pending",
-            "created": "2026-09-24T05:32:09",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "4c86891bdd",
-            "kind": "fix",
-            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/",
-            "title": "Dead link on 1 page: /ourprogram/practice-in-the-community-2/",
-            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
-            "payload": {
-              "url": "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/",
-              "fix_type": "dead internal link",
-              "detail": "HTTP 404",
-              "pages": [
-                "https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/"
-              ],
-              "suggest": "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/",
-              "steps": [
-                "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/ answers HTTP 404.",
-                "Point the link at https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/ (closest live page by slug) or remove it.",
-                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
-              ],
-              "first_seen": "2026-09-22",
-              "video": null,
-              "service": null
-            },
-            "source": "link-check",
-            "status": "pending",
-            "created": "2026-09-24T05:32:09",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "41860e26b9",
-            "kind": "fix",
-            "key": "fix:broken embed or media file:https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
-            "title": "Broken embed or media file on 1 page: /maps/embed/v1/place",
-            "why": "broken embed or media file on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
-            "payload": {
-              "url": "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
-              "fix_type": "broken embed or media file",
-              "detail": "HTTP 404",
-              "pages": [
-                "https://www.bariatriccounselingcenter.com/contact/"
-              ],
-              "suggest": null,
-              "steps": [
-                "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging13."
-              ],
-              "first_seen": "2026-09-22",
-              "video": null,
-              "service": null
-            },
-            "source": "link-check",
-            "status": "pending",
-            "created": "2026-09-24T05:32:09",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "0ea4a9e9e6",
-            "kind": "fix",
-            "key": "fix:dead external link:http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html",
-            "title": "Dead outside link on 2 pages: bcms.org",
-            "why": "dead external link on production, carried by 2 pages (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
-            "payload": {
-              "url": "http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html",
-              "fix_type": "dead external link",
-              "detail": "HTTP 404",
-              "pages": [
-                "https://www.bariatriccounselingcenter.com/author/chasley-fortunw-pttman/",
-                "https://www.bariatriccounselingcenter.com/author/shamilton/"
-              ],
-              "suggest": null,
-              "steps": [
-                "http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html answers HTTP 404.",
-                "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
-              ],
-              "first_seen": "2026-09-22",
-              "video": null,
-              "service": null
-            },
-            "source": "link-check",
-            "status": "pending",
-            "created": "2026-09-24T05:32:09",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "c388710016",
-            "kind": "fix",
-            "key": "fix:dead external link:https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds",
-            "title": "Dead outside link on 1 page: www.ozempic.com",
-            "why": "dead external link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
-            "payload": {
-              "url": "https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds",
-              "fix_type": "dead external link",
-              "detail": "HTTP 404",
-              "pages": [
-                "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/"
-              ],
-              "suggest": null,
-              "steps": [
-                "https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds answers HTTP 404.",
-                "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
-              ],
-              "first_seen": "2026-09-22",
-              "video": null,
-              "service": null
-            },
-            "source": "link-check",
-            "status": "pending",
-            "created": "2026-09-24T05:32:09",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "1595cf9ca9",
-            "kind": "fix",
-            "key": "fix:dead external link:https://doi.org/10.3389/fnut.2022.948",
-            "title": "Dead outside link on 1 page: doi.org",
-            "why": "dead external link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
-            "payload": {
-              "url": "https://doi.org/10.3389/fnut.2022.948",
-              "fix_type": "dead external link",
-              "detail": "HTTP 404",
-              "pages": [
-                "https://www.bariatriccounselingcenter.com/healthy-living-2/why-late-night-snacking-always-wins-and-why-youre-not-weak-for-it/"
-              ],
-              "suggest": null,
-              "steps": [
-                "https://doi.org/10.3389/fnut.2022.948 answers HTTP 404.",
-                "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
-              ],
-              "first_seen": "2026-09-22",
-              "video": null,
-              "service": null
-            },
-            "source": "link-check",
-            "status": "pending",
-            "created": "2026-09-24T05:32:09",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "2509abfd18",
-            "kind": "fix",
-            "key": "fix:dead external link:https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/",
-            "title": "Dead outside link on 1 page: www.nationaleatingdisorders.org",
-            "why": "dead external link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
-            "payload": {
-              "url": "https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/",
-              "fix_type": "dead external link",
-              "detail": "HTTP 404",
-              "pages": [
-                "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-in-men-why-40-percent-of-cases-missed/"
-              ],
-              "suggest": null,
-              "steps": [
-                "https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/ answers HTTP 404.",
-                "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
-              ],
-              "first_seen": "2026-09-22",
-              "video": null,
-              "service": null
-            },
-            "source": "link-check",
-            "status": "pending",
-            "created": "2026-09-24T05:32:09",
-            "decided": null,
-            "note": null,
-            "result": null
-          },
-          {
-            "id": "ad6ac9438a",
-            "kind": "fix",
-            "key": "fix:internal link redirects:https://www.bariatriccounselingcenter.com/resources/",
-            "title": "Update 10 links that redirect: /resources/",
-            "why": "internal link redirects on production, carried by 10 pages (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
-            "payload": {
-              "url": "https://www.bariatriccounselingcenter.com/resources/",
-              "fix_type": "internal link redirects",
-              "detail": "-> https://www.bariatriccounselingcenter.com/blog/",
-              "pages": [
-                "https://www.bariatriccounselingcenter.com/ourprogram/bring-a-friend/",
-                "https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/",
-                "https://www.bariatriccounselingcenter.com/ourprogram/details/",
-                "https://www.bariatriccounselingcenter.com/ourprogram/dine-together/",
-                "https://www.bariatriccounselingcenter.com/ourprogram/enjoy-movement/",
-                "https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/",
-                "https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dieticians/",
-                "https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dietitians/",
-                "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/",
-                "https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/"
-              ],
-              "suggest": "https://www.bariatriccounselingcenter.com/blog/",
-              "steps": [
-                "On each page below, change the link https://www.bariatriccounselingcenter.com/resources/ to its final address https://www.bariatriccounselingcenter.com/blog/ so visitors and crawlers skip the redirect."
-              ],
-              "first_seen": "2026-09-22",
-              "video": null,
-              "service": null
-            },
-            "source": "link-check",
-            "status": "pending",
-            "created": "2026-09-24T05:32:09",
-            "decided": null,
-            "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Not live yet. The live title is still the one this was drafted against."
+            }
           },
           {
             "id": "c2d8dc5561",
@@ -13326,7 +13078,12 @@
             "created": "2026-09-24T05:32:36",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "warn",
+              "text": "2026-10-06 is already taken on FB+IG+YT by \"Tue 10/6: alumni clip, Gerry M. (two years later)\" (placed). Short notice: it would reach Todd in the Wednesday draft (09/30), 6 days before it posts, so his silence rule will not apply and it needs his explicit OK."
+            }
           },
           {
             "id": "cd67a665c9",
@@ -13390,7 +13147,12 @@
             "created": "2026-09-24T05:32:43",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Slot is free; 9 days of notice."
+            }
           },
           {
             "id": "112e44e57d",
@@ -13472,7 +13234,12 @@
             "created": "2026-09-24T05:32:51",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Slot is free; 10 days of notice."
+            }
           },
           {
             "id": "4a2d70a708",
@@ -13528,7 +13295,12 @@
             "created": "2026-09-22T09:58:18",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Slot is free; 37 days of notice."
+            }
           },
           {
             "id": "55ec40f611",
@@ -13617,7 +13389,12 @@
             "created": "2026-09-22T09:58:27",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Slot is free; 38 days of notice."
+            }
           },
           {
             "id": "67ff8aa4bd",
@@ -13674,7 +13451,12 @@
             "created": "2026-09-22T09:58:38",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Slot is free; 41 days of notice."
+            }
           },
           {
             "id": "566382672f",
@@ -13731,7 +13513,12 @@
             "created": "2026-09-22T09:58:50",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Slot is free; 42 days of notice."
+            }
           },
           {
             "id": "a07785591a",
@@ -13788,7 +13575,12 @@
             "created": "2026-09-24T05:33:46",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Slot is free; 43 days of notice."
+            }
           },
           {
             "id": "3ac415f444",
@@ -13844,7 +13636,12 @@
             "created": "2026-09-24T05:33:54",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Slot is free; 44 days of notice."
+            }
           },
           {
             "id": "337fc6aea8",
@@ -13902,7 +13699,12 @@
             "created": "2026-09-24T05:34:08",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Slot is free; 48 days of notice."
+            }
           },
           {
             "id": "7a78357dd4",
@@ -13959,7 +13761,12 @@
             "created": "2026-09-22T09:58:59",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Slot is free; 49 days of notice."
+            }
           },
           {
             "id": "8c10f61a84",
@@ -14016,7 +13823,12 @@
             "created": "2026-09-24T05:34:28",
             "decided": null,
             "note": null,
-            "result": null
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:22:40",
+              "level": "ok",
+              "text": "Slot is free; 50 days of notice."
+            }
           },
           {
             "id": "cc10435e7d",
@@ -14090,337 +13902,425 @@
         ],
         "recent": [
           {
-            "id": "df97683d80",
-            "kind": "action",
-            "key": "ai:594e706fad37",
-            "title": "Rebuild the September social calendar on the content calendar sheet (biggest item)",
-            "why": "Action Items sheet, 8/27 meeting list, row 48",
+            "id": "1d6145a369",
+            "kind": "fix",
+            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/2024/04/self-sabotage/",
+            "title": "Dead link on 1 page: /2024/04/self-sabotage/",
+            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
             "payload": {
-              "text": "Rebuild the September social calendar on the content calendar sheet (biggest item)",
-              "notes": "Started one, \"cracked it open and some of the stuff fell out\"",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 48,
-              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-              "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A48"
+              "url": "https://www.bariatriccounselingcenter.com/2024/04/self-sabotage/",
+              "fix_type": "dead internal link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-to-identify-self-sabotage-behaviors-part-2/"
+              ],
+              "suggest": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-to-identify-self-sabotage-behaviors-part-2/",
+              "steps": [
+                "https://www.bariatriccounselingcenter.com/2024/04/self-sabotage/ answers HTTP 404.",
+                "Point the link at https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-to-identify-self-sabotage-behaviors-part-2/ (closest live page by slug) or remove it.",
+                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
             },
-            "source": "action-items",
-            "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-09-25T12:34:41",
-            "note": "done",
-            "result": {
-              "done": "2026-09-25",
-              "done_by": "Daniel on the dashboard",
-              "sheet_tick": "ticked on the sheet (row 48)"
+            "source": "link-check",
+            "status": "placed",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T13:16:24",
+            "note": "duplicate of 6f79385bab: already fixed on staging13 2026-09-23 (link now points at /self-improvement/behavioral-patterns/how-identify-self-sabotage-causes/, re-verified 2026-09-29). Its suggestion here was the page itself; link-check no longer does that.",
+            "result": null
+          },
+          {
+            "id": "53fdf61def",
+            "kind": "fix",
+            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/",
+            "title": "Dead link on 1 page: /blog/sustaining-the-impact-of-ozempic-and-other-semaglutide",
+            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/",
+              "fix_type": "dead internal link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/weight-loss-therapy-in-san-antonio-tx/"
+              ],
+              "suggest": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/",
+              "steps": [
+                "https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/ answers HTTP 404.",
+                "Point the link at https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/ (closest live page by slug) or remove it.",
+                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
             }
           },
           {
-            "id": "50eb39f87d",
-            "kind": "action",
-            "key": "ai:b0e43e0ba309",
-            "title": "Raise posting frequency above 2 posts per week",
-            "why": "Action Items sheet, 8/27 meeting list, row 49",
+            "id": "6ebb11b319",
+            "kind": "fix",
+            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/",
+            "title": "Dead link on 1 page: /blog/binge-eating-disorder-symptoms-causes-effective-treatm",
+            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
             "payload": {
-              "text": "Raise posting frequency above 2 posts per week",
-              "notes": "",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 49,
-              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-              "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A49"
+              "url": "https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/",
+              "fix_type": "dead internal link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/"
+              ],
+              "suggest": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/",
+              "steps": [
+                "https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/ answers HTTP 404.",
+                "Point the link at https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/ (closest live page by slug) or remove it.",
+                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
             },
-            "source": "action-items",
-            "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-09-25T12:34:51",
-            "note": "done",
-            "result": {
-              "done": "2026-09-25",
-              "done_by": "Daniel on the dashboard",
-              "sheet_tick": "ticked on the sheet (row 49)"
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
             }
           },
           {
-            "id": "f8187b89dd",
-            "kind": "action",
-            "key": "ai:8483e88b7b3c",
-            "title": "Write platform-specific copy per post (FB, IG, LI separately, not one caption reused)",
-            "why": "Action Items sheet, 8/27 meeting list, row 50",
+            "id": "935d555d22",
+            "kind": "fix",
+            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/",
+            "title": "Dead link on 1 page: /therapy-for-depression-and-weight-in-san-antonio-tx/",
+            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
             "payload": {
-              "text": "Write platform-specific copy per post (FB, IG, LI separately, not one caption reused)",
-              "notes": "Daniel: \"not a lot of massaging effort went into that\"",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 50,
-              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-              "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A50"
+              "url": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/",
+              "fix_type": "dead internal link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/"
+              ],
+              "suggest": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/",
+              "steps": [
+                "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/ answers HTTP 404.",
+                "Point the link at https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/ (closest live page by slug) or remove it.",
+                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
             },
-            "source": "action-items",
-            "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-09-25T12:35:04",
-            "note": "done",
-            "result": {
-              "done": "2026-09-25",
-              "done_by": "Daniel on the dashboard",
-              "sheet_tick": "ticked on the sheet (row 50)"
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
             }
           },
           {
-            "id": "8d5f7cd727",
-            "kind": "action",
-            "key": "ai:4423572ce051",
-            "title": "Mix formats, stop the video-only run: cards, quotes, testimonial-style posts",
-            "why": "Action Items sheet, 8/27 meeting list, row 51",
+            "id": "4c86891bdd",
+            "kind": "fix",
+            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/",
+            "title": "Dead link on 1 page: /ourprogram/practice-in-the-community-2/",
+            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
             "payload": {
-              "text": "Mix formats, stop the video-only run: cards, quotes, testimonial-style posts",
-              "notes": "Todd: people get burned out on video, video, video",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 51,
+              "url": "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/",
+              "fix_type": "dead internal link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/"
+              ],
+              "suggest": "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/",
+              "steps": [
+                "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/ answers HTTP 404.",
+                "Point the link at https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/ (closest live page by slug) or remove it.",
+                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "41860e26b9",
+            "kind": "fix",
+            "key": "fix:broken embed or media file:https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
+            "title": "Broken embed or media file on 1 page: /maps/embed/v1/place",
+            "why": "broken embed or media file on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
+              "fix_type": "broken embed or media file",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/contact/"
+              ],
+              "suggest": null,
+              "steps": [
+                "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging13."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: False positive: the Google Maps Embed API only answers inside an iframe, so a direct check always gets 404. The map on the page works.",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "False positive: the Google Maps Embed API only answers inside an iframe, so a direct check always gets 404. The map on the page works."
+            }
+          },
+          {
+            "id": "0ea4a9e9e6",
+            "kind": "fix",
+            "key": "fix:dead external link:http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html",
+            "title": "Dead outside link on 2 pages: bcms.org",
+            "why": "dead external link on production, carried by 2 pages (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html",
+              "fix_type": "dead external link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/author/chasley-fortunw-pttman/",
+                "https://www.bariatriccounselingcenter.com/author/shamilton/"
+              ],
+              "suggest": null,
+              "steps": [
+                "http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html answers HTTP 404.",
+                "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 2 pages (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 2 pages (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "c388710016",
+            "kind": "fix",
+            "key": "fix:dead external link:https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds",
+            "title": "Dead outside link on 1 page: www.ozempic.com",
+            "why": "dead external link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds",
+              "fix_type": "dead external link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/"
+              ],
+              "suggest": null,
+              "steps": [
+                "https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds answers HTTP 404.",
+                "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "1595cf9ca9",
+            "kind": "fix",
+            "key": "fix:dead external link:https://doi.org/10.3389/fnut.2022.948",
+            "title": "Dead outside link on 1 page: doi.org",
+            "why": "dead external link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://doi.org/10.3389/fnut.2022.948",
+              "fix_type": "dead external link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/healthy-living-2/why-late-night-snacking-always-wins-and-why-youre-not-weak-for-it/"
+              ],
+              "suggest": null,
+              "steps": [
+                "https://doi.org/10.3389/fnut.2022.948 answers HTTP 404.",
+                "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "2509abfd18",
+            "kind": "fix",
+            "key": "fix:dead external link:https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/",
+            "title": "Dead outside link on 1 page: www.nationaleatingdisorders.org",
+            "why": "dead external link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/",
+              "fix_type": "dead external link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-in-men-why-40-percent-of-cases-missed/"
+              ],
+              "suggest": null,
+              "steps": [
+                "https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/ answers HTTP 404.",
+                "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "ad6ac9438a",
+            "kind": "fix",
+            "key": "fix:internal link redirects:https://www.bariatriccounselingcenter.com/resources/",
+            "title": "Update 10 links that redirect: /resources/",
+            "why": "internal link redirects on production, carried by 10 pages (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.bariatriccounselingcenter.com/resources/",
+              "fix_type": "internal link redirects",
+              "detail": "-> https://www.bariatriccounselingcenter.com/blog/",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/ourprogram/bring-a-friend/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/details/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/dine-together/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/enjoy-movement/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dieticians/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dietitians/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/"
+              ],
+              "suggest": "https://www.bariatriccounselingcenter.com/blog/",
+              "steps": [
+                "On each page below, change the link https://www.bariatriccounselingcenter.com/resources/ to its final address https://www.bariatriccounselingcenter.com/blog/ so visitors and crawlers skip the redirect."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 10 pages (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 10 pages (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "ea33e0a6c1",
+            "kind": "action",
+            "key": "ai:66db0c0e8021",
+            "title": "Daniel build website and search (SEO and AEO) analytics and metrics dashboard, sent as a daily email",
+            "why": "Action Items sheet, 9/24 call list, row 13",
+            "payload": {
+              "text": "Daniel build website and search (SEO and AEO) analytics and metrics dashboard, sent as a daily email",
+              "notes": "Todd wants it in the daily workflow: what's working, how we're doing.",
+              "section": "Daniel",
+              "label": "9/24 call",
+              "row": 13,
               "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
               "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A51"
+              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A13"
             },
             "source": "action-items",
             "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-09-25T18:34:06",
-            "note": "Already in place: the October Content Calendar mixes stills, carousels, LinkedIn document posts, written alumni testimonials, staff spotlights, observance posts and Food Friday, with video only in the held Tue/Thu clip slots. November follows the same mix (11/2 and 11/4 carousels, 11/3 document post).",
+            "created": "2026-09-24T12:23:35",
+            "decided": "2026-09-25T19:50:22",
+            "note": "Live: weekday BCC daily pulse email to Todd (positive tl;dr + dashboard hub link), auto-sent by todd-daily-send.py as Step 5 of the 7am pulse. Previews to Daniel through Mon 9/28; Todd from Tue 9/29.",
             "result": {
+              "needs_you": "First version built: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\todd-daily-email.py writes C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\output\\todd-daily-2026-09-25.html (5 plain bullets, a small table, optional appendix); spec in C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\TODD-DAILY-EMAIL.md. Left for you: go or no-go on the sample, OK to add it as the last step of the daily pulse as a weekday Gmail draft you send (two-week trial), and OK to re-run the paid AI sweep so that line is not stale. Calls and form leads show 'not tracked yet' until DRB-1214.",
+              "needs_since": "2026-09-25",
               "done": "2026-09-25",
               "done_by": "a Claude session",
-              "sheet_tick": "ticked on the sheet (row 51)"
-            }
-          },
-          {
-            "id": "33ba4de239",
-            "kind": "action",
-            "key": "ai:6c2aaa51f497",
-            "title": "Split the newsletter into Referring Partners + Staff-Client versions, send Todd both",
-            "why": "Action Items sheet, 8/27 meeting list, row 53",
-            "payload": {
-              "text": "Split the newsletter into Referring Partners + Staff-Client versions, send Todd both",
-              "notes": "Rules doc already written: bcc-referring-partner-split-rules.md",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 53,
-              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-              "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A53"
-            },
-            "source": "action-items",
-            "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-09-25T12:35:32",
-            "note": "done",
-            "result": {
-              "done": "2026-09-25",
-              "done_by": "Daniel on the dashboard",
-              "sheet_tick": "ticked on the sheet (row 53)"
-            }
-          },
-          {
-            "id": "bf3d93a640",
-            "kind": "action",
-            "key": "ai:48687aaf9e31",
-            "title": "New newsletter subject line, \"This is BCC\" is out",
-            "why": "Action Items sheet, 8/27 meeting list, row 54",
-            "payload": {
-              "text": "New newsletter subject line, \"This is BCC\" is out",
-              "notes": "Todd likes it as the H1, not the subject. He asked for input here",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 54,
-              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-              "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A54"
-            },
-            "source": "action-items",
-            "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-09-25T12:35:43",
-            "note": "done",
-            "result": {
-              "done": "2026-09-25",
-              "done_by": "Daniel on the dashboard",
-              "sheet_tick": "ticked on the sheet (row 54)"
-            }
-          },
-          {
-            "id": "ff9570fd01",
-            "kind": "action",
-            "key": "ai:d2d5c30cbe63",
-            "title": "Ask Ford to put ALL B-roll into Vimeo",
-            "why": "Action Items sheet, 8/27 meeting list, row 56",
-            "payload": {
-              "text": "Ask Ford to put ALL B-roll into Vimeo",
-              "notes": "Not in the finals folder. Blocks in-house clipping",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 56,
-              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-              "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A56"
-            },
-            "source": "action-items",
-            "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-09-25T12:35:54",
-            "note": "done",
-            "result": {
-              "done": "2026-09-25",
-              "done_by": "Daniel on the dashboard",
-              "sheet_tick": "ticked on the sheet (row 56)"
-            }
-          },
-          {
-            "id": "30248af6ee",
-            "kind": "action",
-            "key": "ai:820bd7ed632f",
-            "title": "Shorten Jessica's clip in the short cut, check the medium too",
-            "why": "Action Items sheet, 8/27 meeting list, row 57",
-            "payload": {
-              "text": "Shorten Jessica's clip in the short cut, check the medium too",
-              "notes": "Only remaining video complaint. Long form is fine",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 57,
-              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-              "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A57"
-            },
-            "source": "action-items",
-            "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-09-25T12:35:57",
-            "note": "done",
-            "result": {
-              "done": "2026-09-25",
-              "done_by": "Daniel on the dashboard",
-              "sheet_tick": "ticked on the sheet (row 57)"
-            }
-          },
-          {
-            "id": "31cbe2fe55",
-            "kind": "action",
-            "key": "ai:3ae9a996701b",
-            "title": "Cut 15 to 30 second social clips from finals + B-roll",
-            "why": "Action Items sheet, 8/27 meeting list, row 58",
-            "payload": {
-              "text": "Cut 15 to 30 second social clips from finals + B-roll",
-              "notes": "Daniel builds these in-house now",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 58,
-              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-              "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A58"
-            },
-            "source": "action-items",
-            "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-09-25T12:36:13",
-            "note": "done",
-            "result": {
-              "done": "2026-09-25",
-              "done_by": "Daniel on the dashboard",
-              "sheet_tick": "ticked on the sheet (row 58)"
-            }
-          },
-          {
-            "id": "1ff4cb3007",
-            "kind": "action",
-            "key": "ai:6fb80f8df336",
-            "title": "Go through Constant Contact and report back to Todd",
-            "why": "Action Items sheet, 8/27 meeting list, row 59",
-            "payload": {
-              "text": "Go through Constant Contact and report back to Todd",
-              "notes": "",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 59,
-              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-              "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A59"
-            },
-            "source": "action-items",
-            "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-09-25T12:36:23",
-            "note": "done",
-            "result": {
-              "done": "2026-09-25",
-              "done_by": "Daniel on the dashboard",
-              "sheet_tick": "ticked on the sheet (row 59)"
-            }
-          },
-          {
-            "id": "8a44e73e30",
-            "kind": "action",
-            "key": "ai:b74d7dd866d0",
-            "title": "Send Todd the refreshed Referring Partners list to MERGE, not replace",
-            "why": "Action Items sheet, 8/27 meeting list, row 60",
-            "payload": {
-              "text": "Send Todd the refreshed Referring Partners list to MERGE, not replace",
-              "notes": "Merge so previously removed contacts stay removed",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 60,
-              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-              "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A60"
-            },
-            "source": "action-items",
-            "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-09-25T12:36:27",
-            "note": "done",
-            "result": {
-              "done": "2026-09-25",
-              "done_by": "Daniel on the dashboard",
-              "sheet_tick": "ticked on the sheet (row 60)"
-            }
-          },
-          {
-            "id": "55b22f3336",
-            "kind": "action",
-            "key": "ai:879e7df29454",
-            "title": "Put the long-form overview on the front page, track watch-through vs drop-off",
-            "why": "Action Items sheet, 8/27 meeting list, row 64",
-            "payload": {
-              "text": "Put the long-form overview on the front page, track watch-through vs drop-off",
-              "notes": "Swap to the 2 minute cut if drop-off is bad",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 64,
-              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-              "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A64"
-            },
-            "source": "action-items",
-            "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-09-25T12:36:51",
-            "note": "done",
-            "result": {
-              "done": "2026-09-25",
-              "done_by": "Daniel on the dashboard",
-              "sheet_tick": "ticked on the sheet (row 64)"
+              "sheet_tick": "ticked on the sheet (row 13)"
             }
           }
         ],
         "counts": {
           "rejected": 2,
           "applied": 19,
-          "placed": 37,
+          "placed": 38,
           "written": 6,
           "approved": 1,
-          "pending": 38,
+          "pending": 27,
+          "resolved": 10,
           "needs": 17
         },
         "handoff": {
@@ -14956,6 +14856,11 @@
               "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT)",
               "result": {
                 "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json"
+              },
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "warn",
+                "text": "Approved but not built yet, and it posts in 3 days."
               }
             }
           ],
@@ -15171,7 +15076,376 @@
             "agreed_offers": []
           }
         },
-        "prompt": "Read C:/Users/danie/Documents/Claude/Projects/cron-jobs/bariatric-counseling-center/review-queue/HANDOFF.md and do exactly what it says: place every approved content block and redirect on staging13 (never production); fix every approved site fix (dead links, dead video embeds, broken images, redirecting links) on the pages listed, on staging13, and mark it --placed; research and write every approved link ask as a real note and save it with queue_apply.py --written for Daniel to review (do not send it); for notes Daniel has already OK'd, submit the form ones in Chrome (--submitted) and put the email ones in one Gmail draft to Todd (--packet); for social posts: run todd-check.py, read Todd's replies in Gmail and apply them (--todd-ok or --back), build every approved post (asset, highlighted sheet row with the Todd OK box) into ONE Gmail draft to Todd and mark it --built, then book the posts Todd has OK'd (Postiz or Publer) and mark them --placed; work every approved action item from the Action Items sheet and mark it --done (ticks the sheet) or --needs-you with what is left for Daniel; mark each item, then rebuild the scoreboard."
+        "prompt": "Read C:/Users/danie/Documents/Claude/Projects/cron-jobs/bariatric-counseling-center/review-queue/HANDOFF.md and do exactly what it says: place every approved content block and redirect on staging13 (never production); fix every approved site fix (dead links, dead video embeds, broken images, redirecting links) on the pages listed, on staging13, and mark it --placed; research and write every approved link ask as a real note and save it with queue_apply.py --written for Daniel to review (do not send it); for notes Daniel has already OK'd, submit the form ones in Chrome (--submitted) and put the email ones in one Gmail draft to Todd (--packet); for social posts: run todd-check.py, read Todd's replies in Gmail and apply them (--todd-ok or --back), build every approved post (asset, highlighted sheet row with the Todd OK box) into ONE Gmail draft to Todd and mark it --built, then book the posts Todd has OK'd (Postiz or Publer) and mark them --placed; work every approved action item from the Action Items sheet and mark it --done (ticks the sheet) or --needs-you with what is left for Daniel; mark each item, then rebuild the scoreboard.",
+        "verify": {
+          "at": "2026-09-29T08:22:40",
+          "checked": 25,
+          "pages_fetched": 12,
+          "resolved": [],
+          "expired": [],
+          "flagged": [
+            "Social post Fri 10/2: Food Friday reel from Leila's clips (Steak and chicken fajit: Approved but not built yet, and it posts in 3 days.",
+            "Social post Tue 10/6: alumni clip, Kim K. (worth the effort): 2026-10-06 is already taken on FB+IG+YT by \"Tue 10/6: alumni clip, Gerry M. (two years later)\" (placed). Short notice: it would reach Todd in the Wednesday draft (09/30), 6 days before it posts, so his silence rule will not apply and it needs his explicit OK.",
+            "Content block FAQ block for /binge-eating-therapy-in-san-antonio-tx/ (4 questions): The page already has an FAQ with 4 questions: Is binge eating disorder a real eating disorder? / Do I need to have a certain weight to qualify for treatment? / How long does binge eating treatment take? / Will I have to follow a restrictive diet?. Approving adds these 4 to it.",
+            "Content block FAQ block for /eating-disorder-therapist-near-me/ (3 questions): The page already has an FAQ with 4 questions: How do I know if I need an eating disorder therapist? / Does insurance cover eating disorder therapy? / Should I see a therapist or a dietitian first? / Can I do this by telehealth?. Approving adds these 3 to it.",
+            "Content block FAQ block for /overeaters-anonymous-support-san-antonio-tx/ (4 questio: The page already has an FAQ with 12 questions: Is Overeaters Anonymous the same as therapy? / Can I attend OA and also work with BCC at the same time? / Does insurance cover BCC's services? / Is BCC available outside San Antonio? / What eating-related conditions does BCC treat? / How is BCC different from a telehealth app or self-guided program? .... Approving adds these 4 to it."
+          ],
+          "pending_after": 27
+        },
+        "closed": [
+          {
+            "id": "53fdf61def",
+            "kind": "fix",
+            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/",
+            "title": "Dead link on 1 page: /blog/sustaining-the-impact-of-ozempic-and-other-semaglutide",
+            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/",
+              "fix_type": "dead internal link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/weight-loss-therapy-in-san-antonio-tx/"
+              ],
+              "suggest": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/",
+              "steps": [
+                "https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-semaglutide-injectables-with-behavioral-support/ answers HTTP 404.",
+                "Point the link at https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/ (closest live page by slug) or remove it.",
+                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "6ebb11b319",
+            "kind": "fix",
+            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/",
+            "title": "Dead link on 1 page: /blog/binge-eating-disorder-symptoms-causes-effective-treatm",
+            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/",
+              "fix_type": "dead internal link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/binge-eating-treatment-in-san-antonio-tx/"
+              ],
+              "suggest": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/",
+              "steps": [
+                "https://www.bariatriccounselingcenter.com/blog/binge-eating-disorder-symptoms-causes-effective-treatment/ answers HTTP 404.",
+                "Point the link at https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-disorder-the-symptoms-causes-and-effective-treatment-options/ (closest live page by slug) or remove it.",
+                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "935d555d22",
+            "kind": "fix",
+            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/",
+            "title": "Dead link on 1 page: /therapy-for-depression-and-weight-in-san-antonio-tx/",
+            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/",
+              "fix_type": "dead internal link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/understanding-anxiety-and-depression-related-to-weight/"
+              ],
+              "suggest": "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/",
+              "steps": [
+                "https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-in-san-antonio-tx/ answers HTTP 404.",
+                "Point the link at https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/ (closest live page by slug) or remove it.",
+                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "4c86891bdd",
+            "kind": "fix",
+            "key": "fix:dead internal link:https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/",
+            "title": "Dead link on 1 page: /ourprogram/practice-in-the-community-2/",
+            "why": "dead internal link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/",
+              "fix_type": "dead internal link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/"
+              ],
+              "suggest": "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/",
+              "steps": [
+                "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community-2/ answers HTTP 404.",
+                "Point the link at https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/ (closest live page by slug) or remove it.",
+                "If outside sites may also link to the dead address, add a 301 in Rank Math > Redirections on staging13."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "41860e26b9",
+            "kind": "fix",
+            "key": "fix:broken embed or media file:https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
+            "title": "Broken embed or media file on 1 page: /maps/embed/v1/place",
+            "why": "broken embed or media file on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
+              "fix_type": "broken embed or media file",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/contact/"
+              ],
+              "suggest": null,
+              "steps": [
+                "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging13."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: False positive: the Google Maps Embed API only answers inside an iframe, so a direct check always gets 404. The map on the page works.",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "False positive: the Google Maps Embed API only answers inside an iframe, so a direct check always gets 404. The map on the page works."
+            }
+          },
+          {
+            "id": "0ea4a9e9e6",
+            "kind": "fix",
+            "key": "fix:dead external link:http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html",
+            "title": "Dead outside link on 2 pages: bcms.org",
+            "why": "dead external link on production, carried by 2 pages (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html",
+              "fix_type": "dead external link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/author/chasley-fortunw-pttman/",
+                "https://www.bariatriccounselingcenter.com/author/shamilton/"
+              ],
+              "suggest": null,
+              "steps": [
+                "http://bcms.org/SAM/2025/SAMFEb2025/mobile/index.html answers HTTP 404.",
+                "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 2 pages (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 2 pages (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "c388710016",
+            "kind": "fix",
+            "key": "fix:dead external link:https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds",
+            "title": "Dead outside link on 1 page: www.ozempic.com",
+            "why": "dead external link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds",
+              "fix_type": "dead external link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/"
+              ],
+              "suggest": null,
+              "steps": [
+                "https://www.ozempic.com/why-ozempic/what-is-ozempic.html?showisi=true&&utm_source=google&utm_medium=cpc&utm_term=ozempic&utm_campaign=1_All_Shared_BR_Branded_Specifics&mkwid=s-dc_pcrid_605526776129_pkw_ozempic_pmt_e_slid__product_&pgrid=141675575207&ptaid=kwd-392229870365&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-e9mucrpL4YWwsuVoS0Bnci4NPKr_eimI_0wJmvcL-wuYXjqUbmkR8aAuZIEALw_wcB&gclsrc=aw.ds answers HTTP 404.",
+                "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "1595cf9ca9",
+            "kind": "fix",
+            "key": "fix:dead external link:https://doi.org/10.3389/fnut.2022.948",
+            "title": "Dead outside link on 1 page: doi.org",
+            "why": "dead external link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://doi.org/10.3389/fnut.2022.948",
+              "fix_type": "dead external link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/healthy-living-2/why-late-night-snacking-always-wins-and-why-youre-not-weak-for-it/"
+              ],
+              "suggest": null,
+              "steps": [
+                "https://doi.org/10.3389/fnut.2022.948 answers HTTP 404.",
+                "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "2509abfd18",
+            "kind": "fix",
+            "key": "fix:dead external link:https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/",
+            "title": "Dead outside link on 1 page: www.nationaleatingdisorders.org",
+            "why": "dead external link on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/",
+              "fix_type": "dead external link",
+              "detail": "HTTP 404",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/binge-eating-in-men-why-40-percent-of-cases-missed/"
+              ],
+              "suggest": null,
+              "steps": [
+                "https://www.nationaleatingdisorders.org/statistics-research-on-eating-disorders/ answers HTTP 404.",
+                "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 1 page (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 1 page (checked 09/29 08:19)."
+            }
+          },
+          {
+            "id": "ad6ac9438a",
+            "kind": "fix",
+            "key": "fix:internal link redirects:https://www.bariatriccounselingcenter.com/resources/",
+            "title": "Update 10 links that redirect: /resources/",
+            "why": "internal link redirects on production, carried by 10 pages (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
+            "payload": {
+              "url": "https://www.bariatriccounselingcenter.com/resources/",
+              "fix_type": "internal link redirects",
+              "detail": "-> https://www.bariatriccounselingcenter.com/blog/",
+              "pages": [
+                "https://www.bariatriccounselingcenter.com/ourprogram/bring-a-friend/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/details/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/dine-together/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/enjoy-movement/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dieticians/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dietitians/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/",
+                "https://www.bariatriccounselingcenter.com/ourprogram/stay-connected/"
+              ],
+              "suggest": "https://www.bariatriccounselingcenter.com/blog/",
+              "steps": [
+                "On each page below, change the link https://www.bariatriccounselingcenter.com/resources/ to its final address https://www.bariatriccounselingcenter.com/blog/ so visitors and crawlers skip the redirect."
+              ],
+              "first_seen": "2026-09-22",
+              "video": null,
+              "service": null
+            },
+            "source": "link-check",
+            "status": "resolved",
+            "created": "2026-09-24T05:32:09",
+            "decided": "2026-09-29T08:19:53",
+            "note": "recheck 2026-09-29: Already fixed on production: gone from all 10 pages (checked 09/29 08:19).",
+            "result": null,
+            "check": {
+              "at": "2026-09-29T08:19:53",
+              "level": "done",
+              "text": "Already fixed on production: gone from all 10 pages (checked 09/29 08:19)."
+            }
+          }
+        ]
       },
       "error": null
     },
@@ -20712,9 +20986,9 @@
         ],
         "cost_usd": 0.0,
         "_queue": {
-          "pending": 11,
+          "pending": 0,
           "approved": 0,
-          "placed": 19
+          "placed": 20
         }
       },
       "error": null
@@ -22174,7 +22448,12 @@
               "created": "2026-09-24T05:32:36",
               "decided": null,
               "note": null,
-              "result": null
+              "result": null,
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "warn",
+                "text": "2026-10-06 is already taken on FB+IG+YT by \"Tue 10/6: alumni clip, Gerry M. (two years later)\" (placed). Short notice: it would reach Todd in the Wednesday draft (09/30), 6 days before it posts, so his silence rule will not apply and it needs his explicit OK."
+              }
             },
             {
               "id": "cd67a665c9",
@@ -22238,7 +22517,12 @@
               "created": "2026-09-24T05:32:43",
               "decided": null,
               "note": null,
-              "result": null
+              "result": null,
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "ok",
+                "text": "Slot is free; 9 days of notice."
+              }
             },
             {
               "id": "112e44e57d",
@@ -22320,7 +22604,12 @@
               "created": "2026-09-24T05:32:51",
               "decided": null,
               "note": null,
-              "result": null
+              "result": null,
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "ok",
+                "text": "Slot is free; 10 days of notice."
+              }
             },
             {
               "id": "4a2d70a708",
@@ -22376,7 +22665,12 @@
               "created": "2026-09-22T09:58:18",
               "decided": null,
               "note": null,
-              "result": null
+              "result": null,
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "ok",
+                "text": "Slot is free; 37 days of notice."
+              }
             },
             {
               "id": "55ec40f611",
@@ -22465,7 +22759,12 @@
               "created": "2026-09-22T09:58:27",
               "decided": null,
               "note": null,
-              "result": null
+              "result": null,
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "ok",
+                "text": "Slot is free; 38 days of notice."
+              }
             },
             {
               "id": "67ff8aa4bd",
@@ -22522,7 +22821,12 @@
               "created": "2026-09-22T09:58:38",
               "decided": null,
               "note": null,
-              "result": null
+              "result": null,
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "ok",
+                "text": "Slot is free; 41 days of notice."
+              }
             },
             {
               "id": "566382672f",
@@ -22579,7 +22883,12 @@
               "created": "2026-09-22T09:58:50",
               "decided": null,
               "note": null,
-              "result": null
+              "result": null,
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "ok",
+                "text": "Slot is free; 42 days of notice."
+              }
             },
             {
               "id": "a07785591a",
@@ -22636,7 +22945,12 @@
               "created": "2026-09-24T05:33:46",
               "decided": null,
               "note": null,
-              "result": null
+              "result": null,
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "ok",
+                "text": "Slot is free; 43 days of notice."
+              }
             },
             {
               "id": "3ac415f444",
@@ -22692,7 +23006,12 @@
               "created": "2026-09-24T05:33:54",
               "decided": null,
               "note": null,
-              "result": null
+              "result": null,
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "ok",
+                "text": "Slot is free; 44 days of notice."
+              }
             },
             {
               "id": "337fc6aea8",
@@ -22750,7 +23069,12 @@
               "created": "2026-09-24T05:34:08",
               "decided": null,
               "note": null,
-              "result": null
+              "result": null,
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "ok",
+                "text": "Slot is free; 48 days of notice."
+              }
             },
             {
               "id": "7a78357dd4",
@@ -22807,7 +23131,12 @@
               "created": "2026-09-22T09:58:59",
               "decided": null,
               "note": null,
-              "result": null
+              "result": null,
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "ok",
+                "text": "Slot is free; 49 days of notice."
+              }
             },
             {
               "id": "8c10f61a84",
@@ -22864,7 +23193,12 @@
               "created": "2026-09-24T05:34:28",
               "decided": null,
               "note": null,
-              "result": null
+              "result": null,
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "ok",
+                "text": "Slot is free; 50 days of notice."
+              }
             }
           ],
           "approved": [
@@ -22950,6 +23284,11 @@
               "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT)",
               "result": {
                 "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\a7414c697a-fri-10-2-food-friday-reel-from-leila-s-clips-steak-and-chick.json"
+              },
+              "check": {
+                "at": "2026-09-29T08:22:40",
+                "level": "warn",
+                "text": "Approved but not built yet, and it posts in 3 days."
               }
             }
           ],
@@ -23832,5 +24171,5 @@
     }
   ],
   "snapshot_count": 41,
-  "generated_at": "2026-09-29T13:12:37.505875Z"
+  "generated_at": "2026-09-29T13:22:44.613910Z"
 }
