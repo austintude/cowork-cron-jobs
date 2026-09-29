@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-09-29 15:59 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-09-29 16:01 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -22,7 +22,7 @@ Generated 2026-09-29 15:59 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (8): work each, then --done or --needs-you
+## Action items from the Action Items sheet (9): work each, then --done or --needs-you
 
 - id `c7d4d9431e`: **Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation)** (9/24 call list, sheet row 5). Approved 2026-09-29.
   - HISTORY (continue from here; do not redo what is done):
@@ -71,11 +71,17 @@ Generated 2026-09-29 15:59 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-25 07:30 claude: Worked by the morning Claude run: Brief and article ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\binge-eating-telehealth-brief-and-article.md (target 'virtual binge eating disorder treatment Texas', bariatric, weight regain and weight loss medication angles ERC does not use). Left for you: Sara to check the one statistic and the clinical descriptions; then it goes through the block process on staging13.
     - 2026-09-29 15:48 daniel: Chose 'Draft the note to Sara for me'. Told Claude: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process.
   - NOW: daniel: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process.
+- id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 63). Approved 2026-09-29.
+  - Daniel's notes: Todd: "it can't hurt"
+  - HISTORY (continue from here; do not redo what is done):
+    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Status and next steps: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\BING-COPILOT-STATUS-2026-09-25.md. Done today: IndexNow key and a dry-run ping script (C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\indexnow-ping.py), Copilot column added to the AI sweep. Left for you: sign in at bing.com/webmasters and import from Search Console (about 5 minutes); upload the IndexNow key file to staging13 so it goes live with the next push.
+    - 2026-09-29 16:01 daniel: Sign in at bing.com/webmasters and import the site from Search Console (about 5 minutes)
+    - 2026-09-29 16:01 check: Put the IndexNow key file on the site (upload seo-tools/indexnow/8b22ca13ddef13fdc45a57195c2d59e6.txt to the web root; it goes live on production with your next push): live: https://www.bariatriccounselingcenter.com/8b22ca13ddef13fdc45a57195c2d59e6.txt
+  - NOW: next step for Claude: Run indexnow-ping.py for real and confirm Bing shows the site
 
-## Items waiting on Daniel or on Todd/Sara (9): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (8): not for Claude, except the Gmail confirmations below.
 - Send draft October client and referring partner newsletters for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with edits (asked for by Tue Oct 6)
 - Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25
-- Continue the Bing and Copilot build-out: Sign in at bing.com/webmasters and import the site from Search Console (about 5 minutes)
 - Daniel send draft social video clips to Sara and Todd for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with thoughts on the clips
 - Daniel send October social media calendar for review and QC (wait 2 to 3 days): Waiting on Todd since 2026-09-25: Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too
 - Daniel feedback on updated BCC marketing emails: Send the Gmail draft 'Feedback on Leloni's two emails' to Todd: not sent, and no longer in your Drafts (deleted?)
