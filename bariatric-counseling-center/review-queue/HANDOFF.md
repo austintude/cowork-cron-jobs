@@ -22,7 +22,7 @@ Generated 2026-09-29 16:39 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (8): work each, then --done or --needs-you
+## Action items from the Action Items sheet (7): work each, then --done or --needs-you
 
 - id `cdf82aa322`: **Update CTA in video clips and on landing page (bcctx.link/start)** (9/24 call list, sheet row 10). Approved 2026-09-29.
   - Daniel's notes: End card: "Ready for comprehensive support" and "One program, four providers." Take "that actually works" out of the /start page title.
@@ -48,12 +48,6 @@ Generated 2026-09-29 16:39 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-25 07:30 claude: Worked by the morning Claude run: Per post, the rule is already enforced: social-plan.json min_lead_days is 10, so nothing reaches Todd with less than 10 days. For the whole month: November's calendar is due to Todd by Tue Oct 20 (10 days before month end; Oct 21 is a teaching day). Left for you: say yes and a session will add a monthly reminder on the dashboard for the Tuesday about 12 days before each month ends.
     - 2026-09-29 13:50 daniel: Chose 'Yes, add the reminder'. Told Claude: Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November.
   - NOW: daniel: Daniel said yes: add a monthly reminder to the dashboard (This week panel and the Monday brief) on the Tuesday about 12 days before each month ends: get next month's full calendar to Todd. First one: Tue Oct 20 for November.
-- id `eb596edc83`: **Decide newsletter send day and time, back it with data** (8/27 meeting list, sheet row 55). Approved 2026-09-29.
-  - Daniel's notes: Not Monday. Friday gets lost. Weekend untried
-  - HISTORY (continue from here; do not redo what is done):
-    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Decision written up with BCC's own data: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\newsletters\SEND-TIME-DECISION-2026-09-25.md (107 sends: 8 to 10 AM is best; weekday is noise; Tuesday 8:30 AM for both lists; test Saturday 9 AM on half the client list for Nov to Jan; do not test the RP list, too small). Left for you: confirm with Todd.
-    - 2026-09-29 15:20 daniel: Chose 'Draft the email to Todd for me'. Told Claude: Draft a short Gmail reply-style email from daniel@drbdig.com to Todd (subject 'Newsletter send time: Tuesdays 8:30 AM') confirming Tuesday 8:30 AM for both lists and proposing the Saturday 9 AM test on half the client list for Nov to Jan, from newsletters/SEND-TIME-DECISION-2026-09-25.md. Short and transactional. Then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.
-  - NOW: daniel: Draft a short Gmail reply-style email from daniel@drbdig.com to Todd (subject 'Newsletter send time: Tuesdays 8:30 AM') confirming Tuesday 8:30 AM for both lists and proposing the Saturday 9 AM test on half the client list for Nov to Jan, from newsletters/SEND-TIME-DECISION-2026-09-25.md. Short and transactional. Then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.
 - id `081016b3bc`: **Rank how people actually search (top 10), find a platform big in Texas that competitors ignore** (8/27 meeting list, sheet row 61). Approved 2026-09-29.
   - Daniel's notes: Todd asked for this directly
   - HISTORY (continue from here; do not redo what is done):
@@ -74,9 +68,10 @@ Generated 2026-09-29 16:39 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-29 16:01 check: Put the IndexNow key file on the site (upload seo-tools/indexnow/8b22ca13ddef13fdc45a57195c2d59e6.txt to the web root; it goes live on production with your next push): live: https://www.bariatriccounselingcenter.com/8b22ca13ddef13fdc45a57195c2d59e6.txt
   - NOW: next step for Claude: Run indexnow-ping.py for real and confirm Bing shows the site
 
-## Items waiting on Daniel or on Todd/Sara (8): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (9): not for Claude, except the Gmail confirmations below.
 - Send draft October client and referring partner newsletters for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with edits (asked for by Tue Oct 6)
 - Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25
+- Decide newsletter send day and time, back it with data: Read and send the Gmail draft 'Newsletter send time: Tuesdays 8:30 AM'.
 - Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation): Read and send the Gmail draft 'Psych evaluation page: four things to confirm'.
 - ARFID landing page and blog: Read and send the Gmail draft 'ARFID page: a few details to confirm'.
 - Daniel send draft social video clips to Sara and Todd for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with thoughts on the clips
