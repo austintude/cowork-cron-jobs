@@ -6382,6 +6382,62 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "34653b31d2",
+   "kind": "social",
+   "key": "social-rebook:cmuo1zyvr001qoy8f74wkja7k",
+   "title": "Re-book: IG Thu 10/01, How poor sleep increases appetite and craving (failed in Postiz)",
+   "why": "Postiz shows this IG post as failed (state ERROR), so it never went out. Same asset, new slot. Postiz does not give the error text through its API; check the post in Postiz if the reason matters. A session re-books it only after you approve and Todd OKs it.",
+   "payload": {
+    "date": "2026-10-20",
+    "weekday": "Tuesday",
+    "times": [
+     "7:00 PM"
+    ],
+    "platforms": [
+     "IG"
+    ],
+    "type": "Re-book",
+    "pillar": "Re-book of a failed post",
+    "format": "rebook",
+    "title": "Re-book: IG Thu 10/01, How poor sleep increases appetite and craving (failed in Postiz)",
+    "purpose": "Re-book the same asset that failed in Postiz on 2026-10-01 12:15 PM.",
+    "captions": {
+     "IG": "How poor sleep increases appetite and cravings.    Short sleep disrupts ghrelin and leptin, the two hormones that signal hunger and fullness"
+    },
+    "on_image": [],
+    "alt_text": null,
+    "why_now": "It was scheduled for 2026-10-01 and never published.",
+    "asset": {
+     "kind": "rebook",
+     "same_asset_as_postiz_post_id": "cmuo1zyvr001qoy8f74wkja7k",
+     "failed_date": "2026-10-01",
+     "failed_time": "12:15 PM",
+     "channel": "Bariatric Counseling Center",
+     "note": "Re-use the same video or image the failed post used. Do not substitute a different clip."
+    },
+    "date_platforms": "Tue Oct 20: IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": [],
+    "suggested_slot": {
+     "date": "2026-10-20",
+     "weekday": "Tuesday",
+     "time": "7:00 PM"
+    },
+    "rebook_of": {
+     "postiz_post_id": "cmuo1zyvr001qoy8f74wkja7k",
+     "date": "2026-10-01",
+     "time": "12:15 PM",
+     "provider": "instagram"
+    }
+   },
+   "source": "postiz-failed",
+   "status": "pending",
+   "created": "2026-10-01T14:22:50",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
