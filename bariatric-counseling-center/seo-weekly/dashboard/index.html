@@ -542,8 +542,8 @@
     </div>
 
     <div class="section">
-      <h2>Pages Still in Staging (Drafts)</h2>
-      <div class="meta-line">Drafts on staging12 that have not yet been published. Listed by priority.</div>
+      <h2>Staging13 and the Review Queue</h2>
+      <div class="meta-line" id="staging-meta">Drafts on staging13 and items waiting in the review queue that have not yet been published.</div>
       <ul id="staging-list" class="pages-list"></ul>
     </div>
 
@@ -869,11 +869,43 @@ function renderQuickWins(data) {
   }
 }
 
+// Action items from the same data the local dashboard shows ("Action items that need you"). Titles, whose move it is
+// and the next step only; the public feed never carries email bodies, draft text or partner notes.
+function renderActionsFeed(ul) {
+  const a = state.feed && state.feed.action_items;
+  if (!a || !a.items || !a.items.length) return 0;
+  const c = a.counts || {};
+  const bits = [];
+  if (c.your_move) bits.push(c.your_move + " your move");
+  if (c.waiting_todd) bits.push(c.waiting_todd + " waiting on Todd");
+  if (c.waiting_sara) bits.push(c.waiting_sara + " waiting on Sara");
+  if (c.waiting_other) bits.push(c.waiting_other + " waiting on someone else");
+  if (c.problem) bits.push(c.problem + " with a problem");
+  if (c.with_claude) bits.push(c.with_claude + " with Claude");
+  const sum = el("li", { className: "info" });
+  sum.appendChild(el("span", { className: "level" }, "OPEN:"));
+  sum.appendChild(document.createTextNode(a.total + " items. " + bits.join(", ") + "."));
+  ul.appendChild(sum);
+  for (const it of a.items) {
+    const cls = it.state === "problem" ? "urgent" : (it.state === "your_move" ? "high" : "medium");
+    const level = it.state === "problem" ? "PROBLEM" : (it.state === "your_move" ? "YOUR MOVE" : (it.state === "with_claude" ? "WITH CLAUDE" : "WAITING ON " + String(it.owner || "").toUpperCase()));
+    const li = el("li", { className: cls });
+    li.appendChild(el("span", { className: "level" }, level + ":"));
+    let txt = it.title || "";
+    if (it.next) txt += " - next: " + it.next;
+    if (it.due) txt += " (due " + it.due + ")";
+    li.appendChild(document.createTextNode(txt));
+    ul.appendChild(li);
+  }
+  return a.items.length;
+}
+
 function renderActions(data) {
   const ul = document.getElementById("actions-list");
   ul.innerHTML = "";
+  const fed = renderActionsFeed(ul);
   const items = data.action_items || [];
-  if (!items.length) { ul.appendChild(el("li", {}, "No action items.")); return; }
+  if (!items.length) { if (!fed) ul.appendChild(el("li", {}, "No action items.")); return; }
   for (const item of items) {
     // Support both legacy (string) and new (object) shapes.
     let txt, cls = "medium", level = "MEDIUM";
@@ -1041,9 +1073,35 @@ function renderNewPages(data) {
   }
 }
 
+// Staging13 and the review queue (titles only), from the daily feed.
+function renderStagingFeed(ul) {
+  const st = state.feed && state.feed.staging;
+  const meta = document.getElementById("staging-meta");
+  if (!st || !st.items) return 0;
+  const c = st.counts || {};
+  if (meta) meta.textContent = (c.placed || 0) + " on staging13 ready to review and publish, " + (c.approved || 0) + " approved and waiting to be placed, " + (c.pending || 0) + " waiting for approval in the review queue. Titles only.";
+  const order = ["placed", "approved", "pending"];
+  const labels = st.labels || {};
+  for (const key of order) {
+    const rows = st.items.filter(i => i.status === key);
+    if (!rows.length) continue;
+    const head = el("li", { className: "note", style: "list-style:none; font-weight:700; margin-top:10px;" }, (labels[key] || key) + ": " + (c[key] != null ? c[key] : rows.length));
+    ul.appendChild(head);
+    for (const r of rows) {
+      const li = el("li", {});
+      li.appendChild(el("span", { className: "cat-pill", style: "margin-right:8px;" }, r.kind));
+      li.appendChild(document.createTextNode(r.title));
+      ul.appendChild(li);
+    }
+  }
+  if (st.total > st.items.length) ul.appendChild(el("li", { className: "note" }, "+ " + (st.total - st.items.length) + " more in the review queue."));
+  return st.items.length;
+}
+
 function renderStaging(data) {
   const ul = document.getElementById("staging-list");
   ul.innerHTML = "";
+  if (renderStagingFeed(ul)) return;
   const items = data.still_in_staging_draft || [];
   if (!items.length) { ul.appendChild(el("li", {}, "No staging drafts tracked.")); return; }
   for (const it of items) {
