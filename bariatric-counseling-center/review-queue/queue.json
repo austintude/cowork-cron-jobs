@@ -5830,6 +5830,64 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "018f9727b9",
+   "kind": "social",
+   "key": "social:2026-11-23:FB+IG",
+   "title": "Mon 11/23: A diet ends. A plan does not.",
+   "why": "November is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-11-23",
+    "weekday": "Mon",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Mon 11/23: A diet ends. A plan does not.",
+    "purpose": "The difference between diet culture and behavioral treatment: skills that hold up on a bad week.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "A diet ends the moment you have a hard week. A behavioral plan does not.\n\nAt the Bariatric Counseling Center, we teach coping skills that hold up when life gets difficult. Recovery and goal setting. Mindful eating. Family engagement. Behavioral therapy and counseling. Dietary guidance and support. Culinary classes. Mindful movement. One program, not four.\n\nWe serve people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas.\n\nLink in the first comment.",
+     "IG": "Difference between a diet and behavioral treatment\n\nA diet ends the moment you have a hard week. A behavioral plan does not.\n\nWe teach coping skills that hold up when life gets difficult. Recovery and goal setting. Mindful eating. Family engagement.\n\nBehavioral therapy and counseling. Dietary guidance and support. Culinary classes. Mindful movement. One program, not four.\n\nThe Bariatric Counseling Center serves people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport #MindfulRecovery #SanAntonio",
+     "YT": {
+      "title": "A Diet Ends. A Behavioral Plan Does Not.",
+      "description": "A diet ends the moment you have a hard week. A behavioral plan does not. At the Bariatric Counseling Center, we teach coping skills that hold up when life gets difficult. Recovery and goal setting. Mindful eating. Family engagement. We provide behavioral therapy and counseling, dietary guidance and support, culinary classes and mindful movement. One program, not four. Serving people who struggle with weight loss, binge eating and chronic overeating in San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "A diet ends on a hard week.",
+     "A behavioral plan does not.",
+     "Coping skills that hold up.",
+     "Recovery. Goal setting. Mindful eating.",
+     "Learn more",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Carousel explaining the difference between diet culture and behavioral treatment for weight loss and binge eating.",
+    "why_now": "Monday post offers foundational education on skills-based treatment versus restrictive dieting, a core message for new audiences discovering the program.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Mon 11/23: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-10-01T06:00:05",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
