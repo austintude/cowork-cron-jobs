@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BCC Weekly SEO Dashboard</title>
+<meta name="robots" content="noindex,nofollow" />
+<style>
+  :root {
+    --teal: #4ECDC4;
+    --teal-soft: #e7f9f7;
+    --teal-line: #b5e8e3;
+    --navy: #2c3e50;
+    --navy-soft: #f4f6f8;
+    --text: #1f2d3a;
+    --muted: #5b6b78;
+    --bg: #f8fafb;
+    --card: #ffffff;
+    --line: #e3e9ee;
+    --green: #1e8a4f;
+    --green-soft: #e6f5ec;
+    --red: #b3261e;
+    --red-soft: #fbeae9;
+    --amber: #8a5a00;
+    --amber-soft: #fdf3dc;
+    --shadow: 0 1px 3px rgba(44,62,80,0.06), 0 4px 14px rgba(44,62,80,0.05);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1240px; margin: 0 auto; padding: 32px 24px 80px; }
+  header.top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
+  header.top h1 { font-size: 22px; font-weight: 700; margin: 0; color: var(--navy); }
+  header.top h1 .accent { color: var(--navy); border-left: 3px solid var(--teal); padding-left: 10px; }
+  header.top .meta { font-size: 13px; color: var(--muted); }
+  .controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+  .controls label { font-size: 13px; color: var(--muted); }
+  .controls select, .controls button {
+    font-size: 13px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 6px;
+    background: var(--card); color: var(--text); cursor: pointer; font-family: inherit;
+  }
+  .controls button.primary { background: var(--navy); color: white; border-color: var(--navy); }
+  .controls button.primary:hover { background: #1f2d3a; }
+  .controls .source { font-size: 12px; color: var(--muted); }
+
+  .alert { margin: 14px 0; padding: 12px 16px; border-radius: 8px; border-left: 4px solid var(--amber); background: var(--amber-soft); font-size: 14px; }
+  .alert.error { border-left-color: var(--red); background: var(--red-soft); color: #6b160e; }
+  .alert.info { border-left-color: var(--teal); background: var(--teal-soft); }
+
+  .grid-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 20px 0 6px; }
+  @media (max-width: 800px) { .grid-stats { grid-template-columns: repeat(2, 1fr); } }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 18px 16px; box-shadow: var(--shadow); }
+  .stat .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); font-weight: 600; }
+  .stat .value { font-size: 32px; font-weight: 700; color: var(--navy); margin-top: 4px; line-height: 1.1; }
+  .stat .delta { font-size: 12px; margin-top: 4px; color: var(--muted); }
+  .stat .delta.up { color: var(--green); font-weight: 600; }
+  .stat .delta.down { color: var(--red); font-weight: 600; }
+  .stat .accent-bar { height: 3px; background: var(--teal); border-radius: 2px; margin-top: 12px; width: 28px; }
+
+  .section { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 22px; margin-top: 20px; box-shadow: var(--shadow); }
+  .section h2 { font-size: 16px; font-weight: 700; color: var(--navy); margin: 0 0 14px; padding-left: 10px; border-left: 3px solid var(--teal); }
+  .section h3 { font-size: 14px; font-weight: 700; color: var(--navy); margin: 18px 0 8px; }
+  .section .meta-line { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+
+  .movers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .movers { grid-template-columns: 1fr; } }
+  .mover-card { border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: var(--bg); }
+  .mover-card.rising { border-left: 4px solid var(--green); }
+  .mover-card.new { border-left: 4px solid var(--teal); }
+  .mover-card.declining { border-left: 4px solid var(--red); }
+  .mover-card h4 { margin: 0 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); font-weight: 700; }
+  .mover-card ul { margin: 0; padding-left: 18px; font-size: 14px; }
+  .mover-card li { margin-bottom: 8px; }
+  .mover-card .kw { font-weight: 600; color: var(--navy); }
+  .mover-card .pos { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: 600; margin-left: 6px; }
+  .pos-1 { background: var(--green-soft); color: var(--green); }
+  .pos-top10 { background: var(--teal-soft); color: var(--navy); }
+  .pos-low { background: var(--amber-soft); color: var(--amber); }
+  .pos-out { background: var(--red-soft); color: var(--red); }
+  .mover-card .note { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+
+  table.kw-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  table.kw-table thead th { text-align: left; padding: 10px 8px; border-bottom: 2px solid var(--line); font-weight: 700; color: var(--navy); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; cursor: pointer; user-select: none; }
+  table.kw-table thead th.sortable:hover { color: var(--teal); }
+  table.kw-table thead th .sort-arrow { font-size: 10px; margin-left: 4px; opacity: 0.5; }
+  table.kw-table tbody td { padding: 9px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.kw-table tbody tr:hover { background: var(--navy-soft); }
+  table.kw-table .kw-name { font-weight: 600; color: var(--navy); }
+  table.kw-table .cat-pill { display: inline-block; padding: 1px 7px; border-radius: 10px; font-size: 11px; font-weight: 500; background: var(--navy-soft); color: var(--muted); border: 1px solid var(--line); }
+
+  .filters { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .filters button { font-size: 12px; padding: 5px 12px; border: 1px solid var(--line); background: var(--card); border-radius: 14px; cursor: pointer; color: var(--muted); font-family: inherit; }
+  .filters button.active { background: var(--navy); color: white; border-color: var(--navy); }
+  .filters input { font-size: 13px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; flex: 1; max-width: 280px; font-family: inherit; }
+
+  .competitor-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .competitor-card { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; background: var(--bg); }
+  .competitor-card .domain { font-weight: 600; color: var(--navy); font-size: 14px; }
+  .competitor-card .count { color: var(--teal); font-weight: 700; font-size: 13px; margin-left: 6px; }
+  .competitor-card .keywords { font-size: 12px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+
+  .actions-list { list-style: none; padding: 0; margin: 0; }
+  .actions-list li { padding: 10px 14px; border-left: 3px solid var(--teal); background: var(--bg); border-radius: 0 6px 6px 0; margin-bottom: 8px; font-size: 14px; }
+  .actions-list li.urgent { border-left-color: var(--red); background: var(--red-soft); }
+  .actions-list li.high { border-left-color: var(--amber); background: var(--amber-soft); }
+  .actions-list li .level { font-weight: 700; font-size: 12px; text-transform: uppercase; margin-right: 8px; }
+  .actions-list li.urgent .level { color: var(--red); }
+  .actions-list li.high .level { color: var(--amber); }
+  .actions-list li.medium .level, .actions-list li.info .level { color: var(--muted); }
+
+  .pages-list { list-style: none; padding: 0; margin: 0; }
+  .pages-list li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+  .pages-list li:last-child { border-bottom: none; }
+  .pages-list li code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 12px; background: var(--navy-soft); padding: 2px 6px; border-radius: 3px; color: var(--navy); }
+
+  .footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+  .footer code { font-family: ui-monospace, monospace; font-size: 11px; }
+
+  .skeleton { display: flex; align-items: center; justify-content: center; min-height: 200px; color: var(--muted); font-size: 14px; }
+  .spinner { width: 16px; height: 16px; border: 2px solid var(--teal-line); border-top-color: var(--teal); border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 10px; display: inline-block; vertical-align: middle; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .hidden { display: none !important; }
+
+  .trend-chart-card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px 22px; box-shadow: var(--shadow); }
+  .trend-chart-wrap { position: relative; height: 220px; }
+  table.kw-table tbody tr.kw-row { cursor: pointer; }
+  table.kw-table tbody tr.kw-detail-row > td { padding: 0; border-bottom: 1px solid var(--line); background: var(--navy-soft); }
+  table.kw-table tbody tr.kw-detail-row.hidden { display: none; }
+  table.kw-table .kw-name-wrap { display: flex; align-items: center; gap: 6px; }
+  table.kw-table .serp-link { color: var(--muted); text-decoration: none; font-size: 11px; padding: 2px 6px; border: 1px solid var(--line); border-radius: 4px; line-height: 1; flex-shrink: 0; opacity: 0.6; }
+  table.kw-table .serp-link:hover { color: var(--teal); border-color: var(--teal-line); opacity: 1; background: var(--teal-soft); }
+  table.kw-table .expand-caret { display: inline-block; transition: transform 0.15s; color: var(--muted); font-size: 9px; flex-shrink: 0; }
+  table.kw-table tr.kw-row.expanded .expand-caret { transform: rotate(90deg); color: var(--teal); }
+  table.kw-table .stagnant-badge { display: inline-block; padding: 1px 6px; border-radius: 8px; font-size: 10px; font-weight: 600; background: var(--amber-soft); color: var(--amber); border: 1px solid #f4d796; margin-left: 4px; }
+  .kw-history-panel { padding: 14px 18px; }
+  .kw-history-panel .panel-title { font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 10px; }
+  .kw-history-panel .panel-empty { font-size: 12px; color: var(--muted); padding: 4px 0; }
+  .kw-history-grid { display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end; }
+  .kw-history-cell { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .kw-history-cell .pos-bubble { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: var(--navy); border: 2px solid var(--line); background: var(--card); }
+  .kw-history-cell .pos-bubble.top1 { background: var(--green-soft); color: var(--green); border-color: var(--green); }
+  .kw-history-cell .pos-bubble.top10 { background: var(--teal-soft); color: var(--navy); border-color: var(--teal-line); }
+  .kw-history-cell .pos-bubble.low { background: var(--amber-soft); color: var(--amber); border-color: #f4d796; }
+  .kw-history-cell .pos-bubble.out { background: #f6f9fa; color: var(--muted); border-style: dashed; }
+  .kw-history-cell .pos-date { font-size: 10px; color: var(--muted); }
+
+  /* v3 -- service areas, tracked pages, heatmap, coverage gaps, velocity */
+  .areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .areas-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .areas-grid { grid-template-columns: 1fr; } }
+  .area-card { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; position: relative; overflow: hidden; }
+  .area-card::before { content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 3px; background: var(--teal); }
+  .area-card:hover { border-color: var(--teal-line); box-shadow: var(--shadow); }
+  .area-card.expanded { border-color: var(--teal); }
+  .area-card-head { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+  .area-card-name { font-size: 13px; font-weight: 700; color: var(--navy); flex: 1; line-height: 1.3; }
+  .area-card-num { font-size: 24px; font-weight: 700; color: var(--navy); line-height: 1; letter-spacing: -0.02em; }
+  .area-card-num small { display: block; font-size: 10px; color: var(--muted); font-weight: 500; margin-top: 2px; }
+  .area-card-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; font-size: 11px; }
+  .area-card-meta .pip { padding: 2px 7px; border-radius: 9px; background: var(--teal-soft); border: 1px solid var(--teal-line); color: var(--navy); font-weight: 600; }
+  .area-card-meta .pip.stagnant { background: var(--amber-soft); border-color: #f4d796; color: var(--amber); }
+  .area-card-spark { margin-top: 10px; height: 22px; }
+  .area-card-spark svg { width: 100%; height: 100%; }
+  .area-card-detail { display: none; margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line); }
+  .area-card.expanded .area-card-detail { display: block; }
+  .area-card-detail .kw-line { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 5px 0; font-size: 12px; border-bottom: 1px solid var(--line); }
+  .area-card-detail .kw-line:last-child { border-bottom: none; }
+  .area-card-detail .kw-line-name { color: var(--text); flex: 1; }
+  .area-card-detail .kw-line-pos { padding: 1px 7px; border-radius: 9px; font-size: 11px; font-weight: 700; }
+  .area-card-detail .kw-line-pos.t1 { background: var(--green-soft); color: var(--green); border: 1px solid var(--green); }
+  .area-card-detail .kw-line-pos.t10 { background: var(--teal-soft); color: var(--navy); border: 1px solid var(--teal-line); }
+  .area-card-detail .kw-line-pos.t20 { background: var(--amber-soft); color: var(--amber); border: 1px solid #f4d796; }
+  .area-card-detail .kw-line-pos.out { background: #f6f9fa; color: var(--muted); border: 1px dashed var(--line); }
+
+  /* tracked pages by cluster */
+  .cluster-block { margin-bottom: 22px; }
+  .cluster-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .cluster-head-name { font-size: 12px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.05em; }
+  .cluster-head-count { font-size: 11px; color: var(--muted); padding: 2px 8px; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; }
+  .cluster-head-line { flex: 1; height: 1px; background: var(--line); }
+  .pages-grid-internal { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+  .ipage-card { background: var(--bg); border: 1px solid var(--line); border-left: 3px solid var(--teal); border-radius: 7px; padding: 13px 16px; font-size: 13px; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; }
+  .ipage-card:hover { border-color: var(--teal-line); box-shadow: var(--shadow); }
+  .ipage-card.expanded { border-left-color: var(--navy); border-left-width: 4px; }
+  .ipage-title { font-weight: 700; color: var(--navy); font-size: 13px; line-height: 1.3; }
+  .ipage-meta { font-size: 11px; color: var(--muted); margin-top: 4px; }
+  .ipage-meta strong { color: var(--text); font-weight: 600; }
+  .ipage-stats { display: flex; gap: 14px; margin-top: 9px; padding-top: 8px; border-top: 1px dashed var(--line); }
+  .ipage-stat-num { font-size: 18px; font-weight: 700; color: var(--navy); line-height: 1; }
+  .ipage-stat-num.building { font-size: 12px; color: var(--muted); font-weight: 600; }
+  .ipage-stat-label { font-size: 10px; color: var(--muted); margin-top: 3px; }
+  .ipage-spark { margin-top: 8px; height: 22px; }
+  .ipage-spark svg { width: 100%; height: 100%; }
+  .ipage-detail { display: none; margin-top: 11px; padding-top: 10px; border-top: 1px dashed var(--line); font-size: 12px; }
+  .ipage-card.expanded .ipage-detail { display: block; }
+  .ipage-detail .ipage-url { font-family: ui-monospace, monospace; font-size: 11px; color: var(--muted); word-break: break-all; padding: 4px 8px; background: var(--navy-soft); border-radius: 4px; margin-bottom: 10px; display: inline-block; }
+  .ipage-detail .ipage-url a { color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--line); }
+  .ipage-detail .ipage-url a:hover { border-bottom-color: var(--teal); }
+  .ipage-detail .kw-line { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-bottom: 1px solid var(--line); }
+  .ipage-detail .kw-line:last-child { border-bottom: none; }
+  .ipage-detail .kw-line-name { flex: 1; color: var(--text); }
+  .ipage-detail .kw-line-change { font-size: 11px; color: var(--muted); margin-right: 6px; }
+  .ipage-detail .kw-line-change.up { color: var(--green); font-weight: 600; }
+  .ipage-detail .kw-line-change.down { color: var(--red); font-weight: 600; }
+  .ipage-detail .kw-line-pos { padding: 1px 7px; border-radius: 9px; font-size: 11px; font-weight: 700; }
+  .ipage-detail .kw-line-pos.t1 { background: var(--green-soft); color: var(--green); border: 1px solid var(--green); }
+  .ipage-detail .kw-line-pos.t10 { background: var(--teal-soft); color: var(--navy); border: 1px solid var(--teal-line); }
+  .ipage-detail .kw-line-pos.t20 { background: var(--amber-soft); color: var(--amber); border: 1px solid #f4d796; }
+  .ipage-detail .ipage-empty-line { color: var(--muted); font-style: italic; font-size: 11px; padding: 4px 0; }
+
+  /* internal heatmap (reuse client styles concept) */
+  .iheatmap-wrap { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px 20px; overflow-x: auto; }
+  .iheatmap { display: grid; gap: 4px; min-width: 480px; }
+  .iheatmap-row { display: grid; gap: 4px; align-items: center; }
+  .iheatmap-label { font-size: 11px; color: var(--muted); text-align: right; padding-right: 10px; font-weight: 500; }
+  .iheatmap-label.head { font-weight: 700; color: var(--navy); }
+  .iheatmap-cell { height: 26px; border-radius: 4px; background: #f6f9fa; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; color: var(--navy); border: 1px solid transparent; }
+  .iheatmap-cell.h0 { background: #f6f9fa; color: #aab4be; border-color: var(--line); }
+  .iheatmap-cell.h1 { background: #e7f9f7; }
+  .iheatmap-cell.h2 { background: #c1ecea; }
+  .iheatmap-cell.h3 { background: #8ddad5; }
+  .iheatmap-cell.h4 { background: #4ECDC4; }
+  .iheatmap-cell.h5 { background: #2eb1a8; color: white; }
+  .iheatmap-cell.head { background: transparent; color: var(--muted); font-size: 10px; font-weight: 600; height: 20px; }
+
+  /* coverage gaps */
+  .gaps-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  @media (max-width: 800px) { .gaps-grid { grid-template-columns: 1fr; } }
+  .gap-card { background: var(--bg); border: 1px solid var(--line); border-left: 3px solid var(--amber); border-radius: 7px; padding: 14px 16px; }
+  .gap-card.high { border-left-color: var(--red); }
+  .gap-card-title { font-size: 12px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
+  .gap-card-desc { font-size: 12px; color: var(--muted); margin-bottom: 10px; line-height: 1.5; }
+  .gap-card-list { list-style: none; padding: 0; margin: 0; max-height: 220px; overflow-y: auto; }
+  .gap-card-list li { padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .gap-card-list li:last-child { border-bottom: none; }
+  .gap-card-list .gap-pos { font-size: 10px; padding: 1px 6px; border-radius: 8px; background: var(--bg-soft); color: var(--muted); border: 1px solid var(--line); white-space: nowrap; }
+  .gap-card-list .gap-pos.urgent { background: var(--red-soft); color: var(--red); border-color: var(--red); }
+  .gap-card-empty { color: var(--muted); font-style: italic; font-size: 12px; }
+
+  /* velocity metrics row */
+  .velocity-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  @media (max-width: 800px) { .velocity-row { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .velocity-row { grid-template-columns: 1fr; } }
+  .velocity-card { background: var(--bg); border: 1px solid var(--line); border-radius: 7px; padding: 12px 14px; }
+  .velocity-card .v-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); font-weight: 700; }
+  .velocity-card .v-value { font-size: 22px; font-weight: 700; color: var(--navy); margin-top: 4px; line-height: 1.1; }
+  .velocity-card .v-context { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+
+  /* v3 -- GSC top queries + discovery candidates */
+  .gsc-stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+  @media (max-width: 800px) { .gsc-stat-row { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .gsc-stat-row { grid-template-columns: 1fr; } }
+  .gsc-stat { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+  .gsc-stat .label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); font-weight: 700; }
+  .gsc-stat .value { font-size: 26px; font-weight: 700; color: var(--navy); margin-top: 4px; line-height: 1; }
+  .gsc-stat .ctx { font-size: 11px; color: var(--muted); margin-top: 4px; }
+  .gsc-table-wrap { overflow-x: auto; }
+  table.gsc-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  table.gsc-table thead th { text-align: left; padding: 8px 6px; border-bottom: 2px solid var(--line); font-weight: 700; color: var(--navy); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; cursor: pointer; user-select: none; white-space: nowrap; }
+  table.gsc-table thead th:hover { color: var(--teal); }
+  table.gsc-table tbody td { padding: 7px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.gsc-table tbody tr:hover { background: var(--navy-soft); }
+  table.gsc-table .num-cell { text-align: right; font-variant-numeric: tabular-nums; }
+  table.gsc-table .pos-good { color: var(--green); font-weight: 600; }
+  table.gsc-table .pos-mid { color: var(--amber); font-weight: 600; }
+  table.gsc-table .pos-poor { color: var(--muted); }
+  table.gsc-table .ctr-good { color: var(--green); font-weight: 600; }
+  table.gsc-table .ctr-poor { color: var(--red); }
+  .gsc-tracked-badge { display: inline-block; padding: 1px 6px; font-size: 10px; font-weight: 600; background: var(--teal-soft); color: var(--navy); border: 1px solid var(--teal-line); border-radius: 8px; margin-left: 4px; }
+  .gsc-filter { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .gsc-filter button { font-size: 12px; padding: 5px 12px; border: 1px solid var(--line); background: var(--card); border-radius: 14px; cursor: pointer; color: var(--muted); font-family: inherit; }
+  .gsc-filter button.active { background: var(--navy); color: white; border-color: var(--navy); }
+  .gsc-filter input { font-size: 13px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; flex: 1; max-width: 280px; font-family: inherit; }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="top">
+    <h1><span class="accent">BCC Weekly SEO Dashboard</span></h1>
+    <div class="meta" id="last-updated">Loading...</div>
+  </header>
+  <div class="controls">
+    <label for="date-select">Report date:</label>
+    <select id="date-select"><option>Loading...</option></select>
+    <button id="reload-btn" class="primary" title="Force refresh from GitHub">Reload</button>
+    <span class="source" id="source-line"></span>
+  </div>
+
+  <div id="alerts-container"></div>
+
+  <div class="section" id="narrative-section" style="border-left: 3px solid var(--teal); display:none;">
+    <h2>What I'm focused on this week</h2>
+    <div class="meta-line">Daniel's read of the data &mdash; the conclusion, not the numbers.</div>
+    <div id="narrative-body" style="font-size:14px; line-height:1.6; color:var(--ink);"></div>
+  </div>
+
+  <div id="loading" class="section skeleton"><span class="spinner"></span> Fetching latest SEO data from GitHub...</div>
+
+  <div id="content" class="hidden">
+    <div class="grid-stats" id="stats"></div>
+
+    <div class="section">
+      <h2>BCC Reach Trend</h2>
+      <div class="meta-line">Total tracked keywords ranking on page one of Google, week over week.</div>
+      <div class="trend-chart-card">
+        <div class="trend-chart-wrap"><canvas id="trend-chart"></canvas></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Velocity</h2>
+      <div class="meta-line">How fast BCC is publishing pages and how fast they reach page one.</div>
+      <div class="velocity-row" id="velocity-row"></div>
+    </div>
+
+    <div class="section">
+      <h2>Service Areas</h2>
+      <div class="meta-line">Click any area to drill into the keywords inside it.</div>
+      <div class="areas-grid" id="areas-grid"></div>
+    </div>
+
+    <div class="section">
+      <h2>Movement vs Last Week</h2>
+      <div class="meta-line" id="movement-meta"></div>
+      <div class="movers">
+        <div class="mover-card rising">
+          <h4>Rising</h4>
+          <ul id="rising-list"></ul>
+        </div>
+        <div class="mover-card new">
+          <h4>New Entries</h4>
+          <ul id="new-list"></ul>
+        </div>
+        <div class="mover-card declining">
+          <h4>Declining</h4>
+          <ul id="declining-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Quick Wins (Positions 11-20 + Top 5 Stable)</h2>
+      <div class="meta-line">Pages a small push could move into the top 10 or up to #1.</div>
+      <div class="movers" style="grid-template-columns: 1fr;">
+        <ul id="quickwins-list" class="pages-list"></ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>This Week's Action Items</h2>
+      <ul class="actions-list" id="actions-list"></ul>
+    </div>
+
+    <div class="section">
+      <h2>All Tracked Keywords</h2>
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="top10">Top 10</button>
+        <button data-filter="11-20">Pos 11-20</button>
+        <button data-filter="out">Not in Top 20</button>
+        <button data-filter="rising">Rising</button>
+        <button data-filter="declining">Declining</button>
+        <button data-filter="stagnant">Stagnant 4+ wk</button>
+        <input type="text" id="kw-search" placeholder="Filter by keyword..." />
+      </div>
+      <div style="overflow-x: auto;">
+        <table class="kw-table">
+          <thead>
+            <tr>
+              <th class="sortable" data-sort="keyword">Keyword <span class="sort-arrow"></span></th>
+              <th class="sortable" data-sort="position">Pos <span class="sort-arrow"></span></th>
+              <th class="sortable" data-sort="change">Change <span class="sort-arrow"></span></th>
+              <th>Category</th>
+              <th>Trend</th>
+              <th>Competitor at #1</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody id="kw-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Tracked Strategic Pages</h2>
+      <div class="meta-line">Each card shows ranking strength + days live. Click to see all keywords pointing at the page and their position history.</div>
+      <div id="ipages-wrap"></div>
+      <details style="margin-top: 18px;">
+        <summary style="cursor:pointer; font-size:12px; color:var(--muted); font-weight:600;">Show legacy &quot;Newly Published Pages&quot; list</summary>
+        <ul id="new-pages-list" class="pages-list" style="margin-top:10px;"></ul>
+      </details>
+    </div>
+
+    <div class="section">
+      <h2>All Pages Published Since April 1</h2>
+      <div class="meta-line" id="since-april-summary">Every page in this push, with last-7-day GSC performance and status. Sort by clicking a column.</div>
+      <div class="gsc-table-wrap">
+        <table class="gsc-table" id="since-april-table">
+          <thead><tr>
+            <th data-sa-sort="date">Published</th>
+            <th data-sa-sort="title">Page</th>
+            <th data-sa-sort="impressions" class="num-cell">Impr.</th>
+            <th data-sa-sort="clicks" class="num-cell">Clicks</th>
+            <th data-sa-sort="ctr" class="num-cell">CTR</th>
+            <th data-sa-sort="position" class="num-cell">Avg Pos</th>
+            <th data-sa-sort="status">Status</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Reach Across Recent Weeks</h2>
+      <div class="meta-line">Service areas down the side, weekly checks across the top. Cell shading shows page-one ranking density that week.</div>
+      <div class="iheatmap-wrap"><div class="iheatmap" id="iheatmap"></div></div>
+    </div>
+
+    <div class="section">
+      <h2>Google Search Console -- This Week</h2>
+      <div class="meta-line" id="gsc-data-range">Loading GSC data...</div>
+      <div class="gsc-stat-row" id="gsc-stats"></div>
+    </div>
+
+    <div class="section">
+      <h2>Top Queries People Used to Find BCC</h2>
+      <div class="meta-line">Real Google search queries. Click headers to sort. Tracked = in keywords-master.json. Discovery = candidates to add.</div>
+      <div class="gsc-filter">
+        <button data-gsc-filter="all" class="active">All</button>
+        <button data-gsc-filter="tracked">Tracked</button>
+        <button data-gsc-filter="discovery">Discovery</button>
+        <button data-gsc-filter="clicks">Got clicks</button>
+        <input type="text" id="gsc-search" placeholder="Filter by query..." />
+      </div>
+      <div class="gsc-table-wrap">
+        <table class="gsc-table" id="gsc-queries-table">
+          <thead><tr>
+            <th data-gsc-sort="keyword">Query</th>
+            <th data-gsc-sort="impressions" class="num-cell">Impressions</th>
+            <th data-gsc-sort="clicks" class="num-cell">Clicks</th>
+            <th data-gsc-sort="ctr" class="num-cell">CTR</th>
+            <th data-gsc-sort="position" class="num-cell">Avg Pos</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Discovery Candidates -- Searches Worth Tracking</h2>
+      <div class="meta-line">Top queries with impressions but NOT in keywords-master.json. Triage to expand the master list or spin up dedicated pages.</div>
+      <div class="gsc-table-wrap">
+        <table class="gsc-table" id="gsc-discovery-table">
+          <thead><tr>
+            <th>Query</th>
+            <th class="num-cell">Impressions</th>
+            <th class="num-cell">Clicks</th>
+            <th class="num-cell">CTR</th>
+            <th class="num-cell">Avg Pos</th>
+            <th>Suggestion</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Hidden Wins &mdash; queries we rank for but aren't capturing</h2>
+      <div class="meta-line" id="hidden-wins-summary">High-impression queries where BCC is on page 1-3 but CTR is &lt; 2%. These are the "popping that we haven't done anything with" opportunities.</div>
+      <div class="gsc-table-wrap">
+        <table class="gsc-table" id="hidden-wins-table">
+          <thead><tr>
+            <th>Query</th>
+            <th class="num-cell">Impr.</th>
+            <th class="num-cell">Clicks</th>
+            <th class="num-cell">CTR</th>
+            <th class="num-cell">Avg Pos</th>
+            <th>Lost clicks/mo<sup>*</sup></th>
+            <th>Suggested move</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div style="font-size:11px; color:var(--muted); margin-top:8px;">
+        <sup>*</sup>Estimated monthly clicks lost = impressions &times; (expected CTR at position &minus; actual CTR), where expected CTR is a position-based heuristic.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Stuck Pages &mdash; high impressions, low clicks</h2>
+      <div class="meta-line">Pages with &ge;1,000 impressions but CTR &lt; 1%. Title/meta description fix is usually the biggest unlock.</div>
+      <div class="gsc-table-wrap">
+        <table class="gsc-table" id="stuck-pages-table">
+          <thead><tr>
+            <th>Page</th>
+            <th class="num-cell">Impr.</th>
+            <th class="num-cell">Clicks</th>
+            <th class="num-cell">CTR</th>
+            <th class="num-cell">Avg Pos</th>
+            <th>Diagnosis</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Top BCC Pages by Search Visibility</h2>
+      <div class="meta-line">Pages getting the most impressions. High-impression / low-click pages = title/meta optimization opportunities.</div>
+      <div class="gsc-table-wrap">
+        <table class="gsc-table" id="gsc-pages-table">
+          <thead><tr>
+            <th>Page</th>
+            <th class="num-cell">Impressions</th>
+            <th class="num-cell">Clicks</th>
+            <th class="num-cell">CTR</th>
+            <th class="num-cell">Avg Pos</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Coverage Gaps &amp; Opportunities</h2>
+      <div class="meta-line">Where the strategy is not yet matching the data -- prioritized for action.</div>
+      <div class="gaps-grid" id="gaps-grid"></div>
+    </div>
+
+    <div class="section">
+      <h2>Pages Still in Staging (Drafts)</h2>
+      <div class="meta-line">Drafts on staging12 that have not yet been published. Listed by priority.</div>
+      <ul id="staging-list" class="pages-list"></ul>
+    </div>
+
+    <div class="section">
+      <h2>Competitors Outranking BCC at #1</h2>
+      <div id="competitors-grid" class="competitor-grid"></div>
+    </div>
+
+    <div class="section">
+      <h2>Link Integrity Checks</h2>
+      <div class="meta-line">Pages crawled this run -- status code, broken link count.</div>
+      <ul id="link-list" class="pages-list"></ul>
+    </div>
+
+    <div class="footer">
+      Data source: <code id="footer-source">cowork-cron-jobs / GitHub</code><br/>
+      Dashboard auto-fetches on each page load. No SiteGround cron required.
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+"use strict";
+
+// ---- CONFIG -----------------------------------------------------------------
+const REPO_OWNER = "austintude";
+const REPO_NAME  = "cowork-cron-jobs";
+const SUBPATH    = "bariatric-counseling-center/seo-weekly";
+
+// jsdelivr is CDN-cached and faster than raw.githubusercontent.com
+// Fallback to raw.githubusercontent if jsdelivr 404s (new file not propagated yet)
+const JSDELIVR  = (path) => `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@main/${SUBPATH}/${path}`;
+const RAW_GH    = (path) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${SUBPATH}/${path}`;
+
+
+// ===== TAXONOMIES (mirror the client board) =====
+const SERVICE_AREAS = [
+  { id: "bariatric", name: "Bariatric Counseling & Surgery Support", keywords: [
+    "bariatric counseling san antonio","bariatric counseling","bariatric surgery counseling san antonio","bariatric surgery counseling",
+    "bariatric surgery psychological evaluation san antonio","bariatric surgery psychological evaluation",
+    "bariatric therapy san antonio","bariatric therapy","online bariatric counseling texas","consejeria bariatrica san antonio"
+  ]},
+  { id: "weight-mgmt", name: "Weight Management", keywords: [
+    "weight loss counseling san antonio","weight loss counseling","obesity counseling san antonio",
+    "weight management therapist san antonio","weight management program san antonio","weight management counseling san antonio",
+    "weight loss therapy san antonio","weight loss therapy","weight management therapy","weight management after bariatric surgery"
+  ]},
+  { id: "eating-concerns", name: "Eating Concerns", keywords: [
+    "emotional eating therapy san antonio","emotional eating therapy","therapy for emotional eating","how to stop emotional eating","how to overcome emotional eating",
+    "binge eating treatment san antonio","binge eating disorder treatment","binge eating disorder therapy",
+    "food addiction treatment san antonio","food addiction treatment","overeating treatment san antonio","overeating treatment","compulsive overeating san antonio",
+    "eating disorder iop san antonio","eating disorder iop","eating disorder therapist san antonio","eating disorder treatment san antonio","eating disorder counseling san antonio"
+  ]},
+  { id: "med-adjunct", name: "Behavioral Support with Medications", keywords: [
+    "semaglutide behavioral support san antonio","semaglutide behavioral support","ozempic counseling","ozempic behavioral support san antonio","behavioral support for weight loss medications"
+  ]},
+  { id: "nutrition", name: "Nutrition Care", keywords: [
+    "registered dietitian san antonio","nutrition counseling san antonio","nutrition counseling","registered dietitian weight loss","dietista registrada san antonio"
+  ]},
+  { id: "telehealth", name: "Telehealth & Online Care", keywords: [
+    "telehealth weight management texas","online weight management therapy texas","virtual emotional eating therapy texas"
+  ]}
+];
+
+const TRACKED_PAGES = [
+  { cluster: "Eating disorder support", pages: [
+    { path: "/eating-disorder-treatment-in-san-antonio-tx/",  name: "Eating Disorder Treatment in SA" },
+    { path: "/eating-disorder-counseling-in-san-antonio-tx/", name: "Eating Disorder Counseling in SA" },
+    { path: "/eating-disorder-therapist-in-san-antonio-tx/",  name: "Eating Disorder Therapist in SA" }
+  ]},
+  { cluster: "Bariatric surgery support", pages: [
+    { path: "/bariatric-therapy-in-san-antonio-tx/",                          name: "Bariatric Therapy in SA" },
+    { path: "/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/", name: "Pre-Surgery Psychological Eval" },
+    { path: "/bariatric-surgery-counseling-in-san-antonio-tx/",               name: "Bariatric Surgery Counseling" }
+  ]},
+  { cluster: "Weight management counseling", pages: [
+    { path: "/weight-management-counseling-in-san-antonio-tx/",  name: "Weight Management Counseling" },
+    { path: "/weight-management-program-in-san-antonio-tx/",     name: "Weight Management Program" },
+    { path: "/weight-loss-therapy-in-san-antonio-tx/",           name: "Weight Loss Therapy" },
+    { path: "/online-weight-management-therapy-in-texas/",       name: "Online Weight Mgmt (TX)" }
+  ]},
+  { cluster: "GLP-1 behavioral support", pages: [
+    { path: "/ozempic-behavioral-support-in-san-antonio-tx/",     name: "Ozempic Behavioral Support" },
+    { path: "/semaglutide-behavioral-support-in-san-antonio-tx/", name: "Semaglutide Behavioral Support" }
+  ]},
+  { cluster: "Emotional & compulsive overeating", pages: [
+    { path: "/binge-eating-treatment-in-san-antonio-tx/",       name: "Binge Eating Treatment" },
+    { path: "/virtual-emotional-eating-therapy-in-texas/",      name: "Virtual Emotional Eating (TX)" },
+    { path: "/compulsive-overeating-counseling-san-antonio-tx/",name: "Compulsive Overeating Counseling" }
+  ]}
+];
+
+function areaForKeyword(rawKey) {
+  for (const a of SERVICE_AREAS) if (a.keywords.includes(rawKey)) return a;
+  return null;
+}
+
+// ---- STATE ------------------------------------------------------------------
+let state = {
+  manifest: null,
+  data: null,
+  selectedDate: null,
+  filter: "all",
+  search: "",
+  sort: { key: "position", dir: "asc" },
+  source: "jsdelivr",
+  history: [],
+  keywordHistory: {},
+  trendChart: null
+};
+
+const STAGNATION_WEEKS = 4;
+
+// ---- FETCH HELPERS ----------------------------------------------------------
+async function fetchJSON(path, { bypassCache = false } = {}) {
+  const cacheBuster = bypassCache ? `?t=${Date.now()}` : "";
+  const errors = [];
+  for (const fetcher of [JSDELIVR, RAW_GH]) {
+    const url = fetcher(path) + cacheBuster;
+    try {
+      const res = await fetch(url, { cache: bypassCache ? "no-store" : "default" });
+      if (!res.ok) { errors.push(`${url} -> ${res.status}`); continue; }
+      state.source = fetcher === JSDELIVR ? "jsdelivr" : "raw.githubusercontent.com";
+      return await res.json();
+    } catch (e) {
+      errors.push(`${url} -> ${e.message}`);
+    }
+  }
+  throw new Error("All fetch attempts failed: " + errors.join(" | "));
+}
+
+async function loadManifest({ bypassCache = false } = {}) {
+  const m = await fetchJSON("manifest.json", { bypassCache });
+  // Normalize between old (availableDates/latestDate) and new (latest/files) shapes
+  const files = m.files || (m.availableDates ? m.availableDates.map(d => `seo-data-${d}.json`) : []);
+  const latest = m.latest || (m.latestDate ? `seo-data-${m.latestDate}.json` : files[0]);
+  const updated = m.updated || m.updatedAt || null;
+  return { latest, updated, files };
+}
+
+async function loadData(filename, { bypassCache = false } = {}) {
+  // Latest file may receive retroactive edits (e.g., GSC merged after the run finishes).
+  // Always cache-bust when loading the manifest's latest file. Historical files are stable.
+  const isLatest = state.manifest && state.manifest.latest === filename;
+  const force = bypassCache || isLatest;
+  return await fetchJSON(`data/${filename}`, { bypassCache: force });
+}
+
+// ---- RENDERERS --------------------------------------------------------------
+function el(tag, attrs = {}, ...children) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "className") e.className = v;
+    else if (k === "html") e.innerHTML = v;
+    else if (k.startsWith("on")) e.addEventListener(k.slice(2).toLowerCase(), v);
+    else e.setAttribute(k, v);
+  }
+  for (const c of children) {
+    if (c == null) continue;
+    e.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+  }
+  return e;
+}
+
+function posClass(pos) {
+  if (pos == null) return "pos-out";
+  if (pos === 1) return "pos-1";
+  if (pos <= 10) return "pos-top10";
+  if (pos <= 20) return "pos-low";
+  return "pos-out";
+}
+
+function posLabel(pos) {
+  return pos == null ? "Not in top 20" : `#${pos}`;
+}
+
+function renderHeader(data) {
+  document.getElementById("last-updated").textContent =
+    `Report date: ${data.date} | Source: ${data.source || "Browser SERP + GSC"}`;
+  document.getElementById("source-line").textContent = `via ${state.source}`;
+  document.getElementById("footer-source").textContent =
+    `${REPO_OWNER}/${REPO_NAME}/${SUBPATH}/data/seo-data-${data.date}.json (via ${state.source})`;
+}
+
+function renderStats(data) {
+  const b = data.brave || {};
+  const stats = [
+    { label: "Keywords Checked", value: b.keywords_checked ?? "--", delta: "" },
+    { label: "In Top 1", value: b.keywords_in_top_1 ?? "--", delta: "" },
+    { label: "In Top 10", value: b.keywords_in_top_10 ?? "--", delta: "" },
+    { label: "Avg Position (Top 10)", value: b.avg_position_top10_only != null ? b.avg_position_top10_only.toFixed(2) : "--", delta: "" }
+  ];
+  const c = document.getElementById("stats");
+  c.innerHTML = "";
+  for (const s of stats) {
+    c.appendChild(
+      el("div", { className: "stat" },
+        el("div", { className: "label" }, s.label),
+        el("div", { className: "value" }, String(s.value)),
+        el("div", { className: "accent-bar" })
+      )
+    );
+  }
+}
+
+function renderMovers(data) {
+  const a = data.analysis || {};
+  fillMoverList("rising-list",     a.rising     || [], "rising");
+  fillMoverList("new-list",        a.new_entries || [], "new");
+  fillMoverList("declining-list",  a.declining  || [], "declining");
+}
+
+function fillMoverList(elementId, items, kind) {
+  const ul = document.getElementById(elementId);
+  ul.innerHTML = "";
+  if (!items.length) {
+    ul.appendChild(el("li", { className: "note" }, "No keywords in this category this week."));
+    return;
+  }
+  for (const it of items) {
+    const li = el("li", {});
+    const kw = el("span", { className: "kw" }, it.keyword);
+    const pos = el("span", { className: "pos " + posClass(it.position) }, posLabel(it.position));
+    li.appendChild(kw);
+    li.appendChild(pos);
+    if (kind === "rising" || kind === "declining") {
+      const prev = it.prev_position != null ? `was #${it.prev_position}` : "";
+      if (prev) li.appendChild(el("span", { className: "note" }, prev));
+    }
+    if (it.note) li.appendChild(el("span", { className: "note" }, it.note));
+    ul.appendChild(li);
+  }
+}
+
+function renderQuickWins(data) {
+  const items = (data.analysis && data.analysis.low_hanging_fruit) || [];
+  const ul = document.getElementById("quickwins-list");
+  ul.innerHTML = "";
+  if (!items.length) {
+    ul.appendChild(el("li", {}, "No quick-win keywords flagged this week."));
+    return;
+  }
+  for (const it of items) {
+    const li = el("li", {});
+    li.appendChild(el("span", { className: "kw-name" }, it.keyword + " "));
+    li.appendChild(el("span", { className: "pos " + posClass(it.position) }, posLabel(it.position)));
+    if (it.trend) li.appendChild(el("span", { className: "cat-pill", style: "margin-left: 6px;" }, it.trend));
+    if (it.note) li.appendChild(el("div", { className: "note", style: "color: var(--muted); font-size:12px; margin-top:4px;" }, it.note));
+    ul.appendChild(li);
+  }
+}
+
+function renderActions(data) {
+  const ul = document.getElementById("actions-list");
+  ul.innerHTML = "";
+  const items = data.action_items || [];
+  if (!items.length) { ul.appendChild(el("li", {}, "No action items.")); return; }
+  for (const item of items) {
+    // Support both legacy (string) and new (object) shapes.
+    let txt, cls = "medium", level = "MEDIUM";
+    if (typeof item === "string") {
+      txt = item;
+      if (/^URGENT/i.test(txt)) { cls = "urgent"; level = "URGENT"; }
+      else if (/^HIGH/i.test(txt)) { cls = "high"; level = "HIGH"; }
+      else if (/^INFO/i.test(txt)) { cls = "info"; level = "INFO"; }
+      else if (/^MEDIUM/i.test(txt)) { cls = "medium"; level = "MEDIUM"; }
+      txt = txt.replace(/^(URGENT|HIGH|MEDIUM|INFO)\s*\([A-Z0-9]+\)?\s*--?\s*/i, "")
+               .replace(/^(URGENT|HIGH|MEDIUM|INFO)\s*--?\s*/i, "");
+    } else if (item && typeof item === "object") {
+      // New shape: { priority, type, title, details, keywords }
+      const p = (item.priority || "").toLowerCase();
+      if (p === "urgent" || p === "critical") { cls = "urgent"; level = "URGENT"; }
+      else if (p === "high")   { cls = "high"; level = "HIGH"; }
+      else if (p === "info")   { cls = "info"; level = "INFO"; }
+      else                     { cls = "medium"; level = (item.priority || "MEDIUM").toUpperCase(); }
+      txt = item.title || item.details || JSON.stringify(item);
+      if (item.details && item.title) txt += " — " + item.details;
+    } else {
+      continue;
+    }
+    const li = el("li", { className: cls });
+    li.appendChild(el("span", { className: "level" }, level + ":"));
+    li.appendChild(document.createTextNode(txt));
+    ul.appendChild(li);
+  }
+}
+
+function isStagnant(keyword) {
+  const hist = state.keywordHistory[keyword] || [];
+  if (hist.length < STAGNATION_WEEKS) return false;
+  const recent = hist.slice(-STAGNATION_WEEKS).map(h => h.position);
+  if (recent.some(p => p == null)) return false;
+  return recent.every(p => p === recent[0]);
+}
+
+function buildKeywordHistoryPanel(keyword) {
+  const wrap = el("div", { className: "kw-history-panel" });
+  wrap.appendChild(el("div", { className: "panel-title" }, "Position history -- " + keyword));
+  const hist = state.keywordHistory[keyword] || [];
+  if (!hist.length) {
+    wrap.appendChild(el("div", { className: "panel-empty" }, "Loading history..."));
+    return wrap;
+  }
+  const grid = el("div", { className: "kw-history-grid" });
+  for (const h of hist) {
+    const cell = el("div", { className: "kw-history-cell" });
+    let bubbleCls = "out", label = "--";
+    if (h.position != null) {
+      label = "#" + h.position;
+      if (h.position === 1) bubbleCls = "top1";
+      else if (h.position <= 10) bubbleCls = "top10";
+      else if (h.position <= 20) bubbleCls = "low";
+      else bubbleCls = "out";
+    }
+    cell.appendChild(el("div", { className: "pos-bubble " + bubbleCls }, label));
+    cell.appendChild(el("div", { className: "pos-date" }, h.date));
+    grid.appendChild(cell);
+  }
+  wrap.appendChild(grid);
+  return wrap;
+}
+
+function renderTable(data) {
+  const all = data.brave && data.brave.all_keywords ? data.brave.all_keywords : {};
+  const rows = Object.entries(all).map(([keyword, v]) => ({ keyword, ...v }));
+
+  // Filter
+  const f = state.filter;
+  const search = state.search.toLowerCase();
+  let filtered = rows.filter(r => {
+    if (search && !r.keyword.toLowerCase().includes(search)) return false;
+    if (f === "top10") return r.position != null && r.position <= 10;
+    if (f === "11-20") return r.position != null && r.position > 10 && r.position <= 20;
+    if (f === "out") return r.position == null;
+    if (f === "rising") return r.trend === "rising" || r.trend === "new_entry";
+    if (f === "declining") return r.trend === "declining";
+    if (f === "stagnant") return isStagnant(r.keyword);
+    return true;
+  });
+
+  // Sort
+  const { key, dir } = state.sort;
+  const m = dir === "asc" ? 1 : -1;
+  filtered.sort((a, b) => {
+    let av = a[key], bv = b[key];
+    if (key === "position") { av = av == null ? 999 : av; bv = bv == null ? 999 : bv; }
+    if (key === "change")   { av = av == null ? 0 : av;   bv = bv == null ? 0 : bv; }
+    if (key === "keyword")  { return m * String(av).localeCompare(String(bv)); }
+    return m * (av - bv);
+  });
+
+  const tbody = document.getElementById("kw-tbody");
+  tbody.innerHTML = "";
+  for (const r of filtered) {
+    const tr = el("tr", { className: "kw-row", "data-keyword": r.keyword });
+
+    // Keyword cell with caret + name + (stagnant badge) + serp link
+    const kwCell = el("td", { className: "kw-name" });
+    const wrap = el("span", { className: "kw-name-wrap" });
+    wrap.appendChild(el("span", { className: "expand-caret" }, "▶"));
+    const nameSpan = el("span", {});
+    nameSpan.appendChild(document.createTextNode(r.keyword));
+    if (isStagnant(r.keyword)) nameSpan.appendChild(el("span", { className: "stagnant-badge", title: "Same position for " + STAGNATION_WEEKS + "+ weeks" }, "stagnant"));
+    wrap.appendChild(nameSpan);
+    const serpUrl = "https://www.google.com/search?q=" + encodeURIComponent(r.keyword) + "&gl=us&hl=en";
+    const serpLink = el("a", { className: "serp-link", href: serpUrl, target: "_blank", rel: "noopener", title: "Open live Google results" }, "SERP ↗");
+    serpLink.addEventListener("click", function(ev) { ev.stopPropagation(); });
+    wrap.appendChild(serpLink);
+    kwCell.appendChild(wrap);
+    tr.appendChild(kwCell);
+
+    tr.appendChild(el("td", {}, el("span", { className: "pos " + posClass(r.position) }, posLabel(r.position))));
+    let chTxt = r.change == null ? "--" : (r.change > 0 ? "+" + r.change : String(r.change));
+    let chCls = r.change > 0 ? "delta up" : (r.change < 0 ? "delta down" : "delta");
+    tr.appendChild(el("td", { className: chCls }, chTxt));
+    tr.appendChild(el("td", {}, el("span", { className: "cat-pill" }, r.category || "--")));
+    tr.appendChild(el("td", {}, r.trend || "stable"));
+    tr.appendChild(el("td", {}, r.competitor_at_1 || "--"));
+    tr.appendChild(el("td", { style: "color: var(--muted); font-size: 12px;" }, r.note || ""));
+    tbody.appendChild(tr);
+
+    const detailTr = el("tr", { className: "kw-detail-row hidden", "data-keyword-detail": r.keyword });
+    const detailTd = el("td", { colspan: "7" });
+    detailTd.appendChild(buildKeywordHistoryPanel(r.keyword));
+    detailTr.appendChild(detailTd);
+    tbody.appendChild(detailTr);
+  }
+
+  // Row click -> toggle history panel
+  tbody.querySelectorAll("tr.kw-row").forEach(function(tr) {
+    tr.addEventListener("click", function() {
+      const kw = tr.getAttribute("data-keyword");
+      const detail = tbody.querySelector('tr[data-keyword-detail="' + CSS.escape(kw) + '"]');
+      if (!detail) return;
+      const isOpen = !detail.classList.contains("hidden");
+      tbody.querySelectorAll("tr.kw-detail-row").forEach(function(d) { d.classList.add("hidden"); });
+      tbody.querySelectorAll("tr.kw-row").forEach(function(r) { r.classList.remove("expanded"); });
+      if (!isOpen) { detail.classList.remove("hidden"); tr.classList.add("expanded"); }
+    });
+  });
+
+  // Sort arrows
+  document.querySelectorAll("th.sortable").forEach(function(th) {
+    const arrow = th.querySelector(".sort-arrow");
+    if (th.dataset.sort === key) arrow.textContent = dir === "asc" ? "↑" : "↓";
+    else arrow.textContent = "";
+  });
+}
+
+function renderNewPages(data) {
+  const ul = document.getElementById("new-pages-list");
+  ul.innerHTML = "";
+  const pages = data.newly_published_prod_pages || [];
+  if (!pages.length) {
+    ul.appendChild(el("li", {}, "No new pages published this week."));
+    return;
+  }
+  for (const p of pages) {
+    const li = el("li", {});
+    li.appendChild(el("code", {}, p));
+    ul.appendChild(li);
+  }
+}
+
+function renderStaging(data) {
+  const ul = document.getElementById("staging-list");
+  ul.innerHTML = "";
+  const items = data.still_in_staging_draft || [];
+  if (!items.length) { ul.appendChild(el("li", {}, "No staging drafts tracked.")); return; }
+  for (const it of items) {
+    const li = el("li", {});
+    li.appendChild(el("span", { className: "kw-name" }, it.keyword));
+    if (it.priority) {
+      const cls = it.priority === "URGENT" ? "pos-out" : (it.priority === "HIGH" ? "pos-low" : "pos-top10");
+      li.appendChild(el("span", { className: "pos " + cls, style: "margin-left:8px;" }, it.priority));
+    }
+    if (it.stagingId) li.appendChild(el("span", { style: "color: var(--muted); font-size:12px; margin-left:8px;" }, `staging ID ${it.stagingId}`));
+    ul.appendChild(li);
+  }
+}
+
+function renderCompetitors(data) {
+  const grid = document.getElementById("competitors-grid");
+  grid.innerHTML = "";
+  const comps = (data.brave && data.brave.competitors) || [];
+  if (!comps.length) { grid.appendChild(el("div", {}, "No competitor data.")); return; }
+  for (const c of comps) {
+    const card = el("div", { className: "competitor-card" });
+    const head = el("div", {});
+    head.appendChild(el("span", { className: "domain" }, c.domain));
+    head.appendChild(el("span", { className: "count" }, `(${c.appearance_count_at_1 || c.appearance_count || 0})`));
+    card.appendChild(head);
+    if (c.keywords && c.keywords.length) {
+      card.appendChild(el("div", { className: "keywords" }, c.keywords.join(", ")));
+    }
+    grid.appendChild(card);
+  }
+}
+
+function renderLinkChecks(data) {
+  const ul = document.getElementById("link-list");
+  ul.innerHTML = "";
+  const checks = data.link_checks || [];
+  if (!checks.length) { ul.appendChild(el("li", {}, "No link checks recorded.")); return; }
+  for (const c of checks) {
+    const li = el("li", {});
+    const status = c.status === "ok" ? `<span style="color:var(--green);font-weight:600;">${c.status}</span>` : `<span style="color:var(--red);font-weight:600;">${c.status}</span>`;
+    li.innerHTML = `<code>${c.url}</code> -- ${status}` + (c.note ? ` <span style="color:var(--muted);font-size:12px;"> | ${escapeHTML(c.note)}</span>` : "");
+    ul.appendChild(li);
+  }
+}
+
+function escapeHTML(s) {
+  return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+}
+
+function renderAlerts(data) {
+  const c = document.getElementById("alerts-container");
+  c.innerHTML = "";
+  if (data.notes) {
+    c.appendChild(el("div", { className: "alert info" }, "Run notes: " + data.notes));
+  }
+  if (data.google && data.google.error) {
+    c.appendChild(el("div", { className: "alert" }, "GSC: " + data.google.error));
+  }
+}
+
+// ---- POPULATE DATE PICKER ---------------------------------------------------
+function fillDatePicker(manifest) {
+  const sel = document.getElementById("date-select");
+  sel.innerHTML = "";
+  const files = manifest.files || [];
+  for (const f of files) {
+    const m = f.match(/seo-data-(\d{4}-\d{2}-\d{2})\.json/);
+    if (!m) continue;
+    const date = m[1];
+    const opt = el("option", { value: f }, date + (f === manifest.latest ? " (latest)" : ""));
+    sel.appendChild(opt);
+  }
+  if (manifest.latest) sel.value = manifest.latest;
+}
+
+// ---- HISTORY + TREND CHART --------------------------------------------------
+async function loadAllHistory() {
+  const files = (state.manifest.files || []).slice(0, 12).reverse();
+  const results = await Promise.all(files.map(function(f) { return loadData(f).catch(function(){ return null; }); }));
+  const valid = results.filter(function(d) { return d && d.brave; });
+  state.allData = valid;
+  state.history = valid.map(function(d) {
+    const all = Object.entries(d.brave.all_keywords || {});
+    // Compute per-area top10 counts for heatmap and area sparklines
+    const perAreaTop10 = {};
+    for (const a of SERVICE_AREAS) perAreaTop10[a.id] = 0;
+    for (const [kw, v] of all) {
+      if (v.position == null || v.position > 10) continue;
+      const a = areaForKeyword(kw);
+      if (a) perAreaTop10[a.id]++;
+    }
+    return {
+      date: d.date,
+      top1:  all.filter(function(e) { return e[1].position === 1; }).length,
+      top10: all.filter(function(e) { return e[1].position != null && e[1].position <= 10; }).length,
+      top20: all.filter(function(e) { return e[1].position != null && e[1].position <= 20; }).length,
+      total: all.length,
+      perAreaTop10: perAreaTop10
+    };
+  });
+  const byKw = {};
+  for (const d of valid) {
+    for (const e of Object.entries(d.brave.all_keywords || {})) {
+      const k = e[0], v = e[1];
+      if (!byKw[k]) byKw[k] = [];
+      byKw[k].push({ date: d.date, position: v.position == null ? null : v.position });
+    }
+  }
+  state.keywordHistory = byKw;
+}
+
+function renderTrendChart() {
+  if (!state.history || !state.history.length) return;
+  const canvas = document.getElementById("trend-chart");
+  if (!canvas || typeof Chart === "undefined") return;
+  const ctx = canvas.getContext("2d");
+  if (state.trendChart) state.trendChart.destroy();
+  state.trendChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: state.history.map(function(h) { return h.date; }),
+      datasets: [
+        { label: "On page one (top 10)", data: state.history.map(function(h) { return h.top10; }), backgroundColor: "rgba(78,205,196,0.7)", borderColor: "rgba(78,205,196,1)", borderWidth: 1.5, borderRadius: 5, barPercentage: 0.7, categoryPercentage: 0.7 },
+        { label: "At #1 (subset)", data: state.history.map(function(h) { return h.top1; }), type: "line", tension: 0.3, pointRadius: 4, pointBackgroundColor: "#2c3e50", borderColor: "rgba(44,62,80,0.85)", borderWidth: 2, fill: false }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: true, position: "bottom", labels: { font: { size: 11 }, color: "#5b6b78" } },
+        tooltip: { backgroundColor: "#2c3e50", titleColor: "#ffffff", bodyColor: "#ffffff", padding: 10, cornerRadius: 6 }
+      },
+      scales: {
+        x: { grid: { display: false }, ticks: { color: "#5b6b78", font: { size: 11 } } },
+        y: {
+          beginAtZero: true,
+          grid: { color: "#e3e9ee", drawBorder: false },
+          ticks: { color: "#5b6b78", font: { size: 11 }, stepSize: 5 },
+          title: { display: true, text: "Keywords ranking", color: "#5b6b78", font: { size: 11 } }
+        }
+      }
+    }
+  });
+}
+
+
+// ---- v3: SPARKLINES + SERVICE AREAS ------------------------------------------
+function sparklineSVG(values, { width = 160, height = 22 } = {}) {
+  if (!values.length) return "";
+  const max = Math.max(...values, 1);
+  const stepX = width / Math.max(values.length - 1, 1);
+  const points = values.map((v, i) => {
+    const x = i * stepX;
+    const y = height - ((v / max) * (height - 4)) - 2;
+    return x.toFixed(1) + "," + y.toFixed(1);
+  });
+  const linePts = points.join(" ");
+  const areaPts = "0," + height + " " + linePts + " " + width + "," + height;
+  const lastVal = values[values.length - 1];
+  const lastX = (values.length - 1) * stepX;
+  const lastY = height - ((lastVal / max) * (height - 4)) - 2;
+  return '<svg viewBox="0 0 ' + width + ' ' + height + '" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">' +
+    '<polygon points="' + areaPts + '" fill="rgba(78,205,196,0.18)"/>' +
+    '<polyline points="' + linePts + '" fill="none" stroke="#2eb1a8" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>' +
+    '<circle cx="' + lastX.toFixed(1) + '" cy="' + lastY.toFixed(1) + '" r="2.2" fill="#2c3e50"/></svg>';
+}
+
+function rankClass(p) {
+  if (p == null) return "out";
+  if (p === 1) return "t1";
+  if (p <= 10) return "t10";
+  if (p <= 20) return "t20";
+  return "out";
+}
+
+function renderServiceAreas(latestData) {
+  const grid = document.getElementById("areas-grid");
+  if (!grid) return;
+  grid.innerHTML = "";
+  const allKw = (latestData && latestData.brave && latestData.brave.all_keywords) || {};
+
+  for (const a of SERVICE_AREAS) {
+    let top10 = 0, top1 = 0, stagnantCount = 0;
+    const kwInArea = [];
+    for (const kw of a.keywords) {
+      const v = allKw[kw];
+      if (!v) continue;
+      kwInArea.push({ keyword: kw, position: v.position, change: v.change });
+      if (v.position === 1) top1++;
+      if (v.position != null && v.position <= 10) top10++;
+      if (typeof isStagnant === "function" && isStagnant(kw)) stagnantCount++;
+    }
+    // Sort by position (best first, nulls last)
+    kwInArea.sort((x, y) => {
+      const xp = x.position == null ? 999 : x.position;
+      const yp = y.position == null ? 999 : y.position;
+      return xp - yp;
+    });
+
+    // Sparkline of historical top10 count for this area
+    const trend = (state.history || []).map(h => {
+      let count = 0;
+      if (h.perAreaTop10) count = h.perAreaTop10[a.id] || 0;
+      return count;
+    });
+
+    const card = el("div", { className: "area-card", "data-area-id": a.id });
+    const head = el("div", { className: "area-card-head" });
+    head.appendChild(el("div", { className: "area-card-name" }, a.name));
+    const numEl = el("div", { className: "area-card-num" });
+    numEl.appendChild(document.createTextNode(String(top10)));
+    numEl.appendChild(el("small", {}, "on page one"));
+    head.appendChild(numEl);
+    card.appendChild(head);
+
+    const meta = el("div", { className: "area-card-meta" });
+    if (top1 > 0) meta.appendChild(el("span", { className: "pip" }, top1 + " at #1"));
+    meta.appendChild(el("span", { className: "pip", style: "background:var(--bg-soft); color:var(--muted); border-color:var(--line);" }, a.keywords.length + " keywords"));
+    if (stagnantCount > 0) meta.appendChild(el("span", { className: "pip stagnant" }, stagnantCount + " stagnant"));
+    card.appendChild(meta);
+
+    if (trend.length > 1) {
+      const sparkDiv = el("div", { className: "area-card-spark", html: sparklineSVG(trend) });
+      card.appendChild(sparkDiv);
+    }
+
+    // Detail (initially hidden)
+    const detail = el("div", { className: "area-card-detail" });
+    if (!kwInArea.length) {
+      detail.appendChild(el("div", { className: "ipage-empty-line", style: "color:var(--muted);font-style:italic;" }, "No keywords tracked in this area yet."));
+    } else {
+      for (const k of kwInArea) {
+        const line = el("div", { className: "kw-line" });
+        line.appendChild(el("div", { className: "kw-line-name" }, k.keyword));
+        const cls = rankClass(k.position);
+        const label = k.position == null ? "not in top 20" : "#" + k.position;
+        line.appendChild(el("div", { className: "kw-line-pos " + cls }, label));
+        detail.appendChild(line);
+      }
+    }
+    card.appendChild(detail);
+
+    card.addEventListener("click", () => card.classList.toggle("expanded"));
+    grid.appendChild(card);
+  }
+}
+
+// ---- v3: TRACKED PAGES PERFORMANCE -------------------------------------------
+function buildPageMetrics(path) {
+  // For the given page path, walk all loaded historical data files (state has full data per date)
+  // and compute trajectory
+  const dataFiles = state.allData || [];
+  let firstSeen = null;
+  for (const d of dataFiles) {
+    const newPages = d.newly_published_prod_pages || [];
+    if (newPages.includes(path) && !firstSeen) firstSeen = d.date;
+  }
+  if (!firstSeen) {
+    for (const d of dataFiles) {
+      const all = (d.brave && d.brave.all_keywords) || {};
+      for (const v of Object.values(all)) {
+        if (v.ranking_url && v.ranking_url.includes(path)) { firstSeen = d.date; break; }
+      }
+      if (firstSeen) break;
+    }
+  }
+  const today = (dataFiles[dataFiles.length - 1] || {}).date;
+  const trajectory = [];
+  let bestPosLatest = null, kwsLatest = [];
+  for (const d of dataFiles) {
+    if (firstSeen && d.date < firstSeen) continue;
+    let bestPos = null;
+    const matchedKws = [];
+    const all = (d.brave && d.brave.all_keywords) || {};
+    for (const [kw, v] of Object.entries(all)) {
+      const url = v.ranking_url || "";
+      if (!url.includes(path)) continue;
+      matchedKws.push({ keyword: kw, position: v.position, change: v.change });
+      if (v.position != null && (bestPos == null || v.position < bestPos)) bestPos = v.position;
+    }
+    trajectory.push({ date: d.date, position: bestPos });
+    if (d.date === today) { bestPosLatest = bestPos; kwsLatest = matchedKws; }
+  }
+  return { firstSeen, daysLive: firstSeen && today ? Math.max(0, Math.round((new Date(today + "T12:00:00") - new Date(firstSeen + "T12:00:00")) / 86400000)) : null, trajectory, bestPosLatest, keywords: kwsLatest };
+}
+
+function renderTrackedPages(latestData) {
+  const wrap = document.getElementById("ipages-wrap");
+  if (!wrap) return;
+  wrap.innerHTML = "";
+  for (const cluster of TRACKED_PAGES) {
+    const block = el("div", { className: "cluster-block" });
+    const head = el("div", { className: "cluster-head" });
+    head.appendChild(el("div", { className: "cluster-head-name" }, cluster.cluster));
+    head.appendChild(el("div", { className: "cluster-head-count" }, cluster.pages.length + " pages"));
+    head.appendChild(el("div", { className: "cluster-head-line" }));
+    block.appendChild(head);
+
+    const grid = el("div", { className: "pages-grid-internal" });
+    for (const pageDef of cluster.pages) {
+      const m = buildPageMetrics(pageDef.path);
+      const card = el("div", { className: "ipage-card", "data-page-path": pageDef.path });
+      card.appendChild(el("div", { className: "ipage-title" }, pageDef.name));
+
+      const meta = el("div", { className: "ipage-meta" });
+      if (m.firstSeen) {
+        meta.innerHTML = "Live since <strong>" + new Date(m.firstSeen + "T12:00:00").toLocaleDateString("en-US", {month:"short",day:"numeric"}) + "</strong> &middot; <strong>" + m.daysLive + "</strong> day" + (m.daysLive === 1 ? "" : "s") + " live";
+      } else {
+        meta.innerHTML = '<em style="color:var(--muted);">Not yet detected on prod</em>';
+      }
+      card.appendChild(meta);
+
+      const stats = el("div", { className: "ipage-stats" });
+      const s1 = el("div", {});
+      const s1n = el("div", { className: "ipage-stat-num" + (m.bestPosLatest == null ? " building" : "") });
+      s1n.textContent = m.bestPosLatest != null ? "#" + m.bestPosLatest : "Building";
+      s1.appendChild(s1n);
+      s1.appendChild(el("div", { className: "ipage-stat-label" }, "Best position"));
+      stats.appendChild(s1);
+
+      const s2 = el("div", {});
+      s2.appendChild(el("div", { className: "ipage-stat-num" }, String(m.keywords.length)));
+      s2.appendChild(el("div", { className: "ipage-stat-label" }, "Keywords ranking"));
+      stats.appendChild(s2);
+      card.appendChild(stats);
+
+      if (m.trajectory.length > 1) {
+        const sparkValues = m.trajectory.map(t => t.position == null ? 0 : Math.max(0, 30 - t.position));
+        const sparkDiv = el("div", { className: "ipage-spark", html: sparklineSVG(sparkValues, {width: 200, height: 22}) });
+        card.appendChild(sparkDiv);
+      }
+
+      // Click-to-expand detail
+      const detail = el("div", { className: "ipage-detail" });
+      const fullUrl = "https://www.bariatriccounselingcenter.com" + pageDef.path;
+      const urlBox = el("div", { className: "ipage-url" });
+      const urlLink = el("a", { href: fullUrl, target: "_blank", rel: "noopener" }, fullUrl);
+      urlBox.appendChild(urlLink);
+      detail.appendChild(urlBox);
+
+      if (m.keywords.length) {
+        for (const k of m.keywords) {
+          const line = el("div", { className: "kw-line" });
+          line.appendChild(el("div", { className: "kw-line-name" }, k.keyword));
+          let chTxt = "";
+          let chCls = "";
+          if (k.change != null && k.change !== 0) {
+            chTxt = (k.change > 0 ? "+" : "") + k.change;
+            chCls = k.change > 0 ? "up" : "down";
+          }
+          if (chTxt) line.appendChild(el("div", { className: "kw-line-change " + chCls }, chTxt));
+          line.appendChild(el("div", { className: "kw-line-pos " + rankClass(k.position) }, k.position == null ? "out" : "#" + k.position));
+          detail.appendChild(line);
+        }
+      } else {
+        detail.appendChild(el("div", { className: "ipage-empty-line" }, "No keywords currently ranking on this page."));
+      }
+      card.appendChild(detail);
+
+      card.addEventListener("click", (ev) => {
+        if (ev.target.tagName === "A") return; // don't toggle if clicking the URL link
+        card.classList.toggle("expanded");
+      });
+      grid.appendChild(card);
+    }
+    block.appendChild(grid);
+    wrap.appendChild(block);
+  }
+}
+
+// ---- v3: HEATMAP -------------------------------------------------------------
+function renderInternalHeatmap() {
+  const wrap = document.getElementById("iheatmap");
+  if (!wrap) return;
+  wrap.innerHTML = "";
+  const history = state.history || [];
+  if (!history.length) {
+    wrap.appendChild(el("div", { className: "ipage-empty-line" }, "No history yet -- the heatmap will populate as more weeks accumulate."));
+    return;
+  }
+  const labelW = 220;
+  const colTpl = labelW + "px repeat(" + history.length + ", minmax(40px, 1fr))";
+  // Header
+  const headRow = el("div", { className: "iheatmap-row", style: "grid-template-columns: " + colTpl + ";" });
+  headRow.appendChild(el("div", { className: "iheatmap-label head" }, "Service area"));
+  for (const h of history) headRow.appendChild(el("div", { className: "iheatmap-cell head" }, new Date(h.date + "T12:00:00").toLocaleDateString("en-US", {month:"short",day:"numeric"})));
+  wrap.appendChild(headRow);
+  // Compute max for scaling
+  let max = 0;
+  for (const h of history) {
+    if (!h.perAreaTop10) continue;
+    for (const a of SERVICE_AREAS) {
+      const v = h.perAreaTop10[a.id] || 0;
+      if (v > max) max = v;
+    }
+  }
+  if (max === 0) max = 1;
+  function bin(v) {
+    if (v === 0) return "h0";
+    const r = v / max;
+    if (r < 0.2) return "h1";
+    if (r < 0.4) return "h2";
+    if (r < 0.6) return "h3";
+    if (r < 0.85) return "h4";
+    return "h5";
+  }
+  for (const a of SERVICE_AREAS) {
+    const row = el("div", { className: "iheatmap-row", style: "grid-template-columns: " + colTpl + ";" });
+    row.appendChild(el("div", { className: "iheatmap-label" }, a.name));
+    for (const h of history) {
+      const v = (h.perAreaTop10 && h.perAreaTop10[a.id]) || 0;
+      row.appendChild(el("div", { className: "iheatmap-cell " + bin(v), title: a.name + " -- " + h.date + ": " + v }, v > 0 ? String(v) : ""));
+    }
+    wrap.appendChild(row);
+  }
+}
+
+// ---- v3: COVERAGE GAPS -------------------------------------------------------
+function renderCoverageGaps(latestData) {
+  const grid = document.getElementById("gaps-grid");
+  if (!grid) return;
+  grid.innerHTML = "";
+  const allKw = (latestData && latestData.brave && latestData.brave.all_keywords) || {};
+
+  // Gap 1: Keywords with NO ranking_url at all (no ranking)
+  const orphaned = [];
+  for (const [kw, v] of Object.entries(allKw)) {
+    if (v.position == null && !v.ranking_url) orphaned.push({ keyword: kw, category: v.category });
+  }
+
+  // Gap 2: Keywords ranking via the homepage that should rank on a dedicated page
+  // Look for keywords whose ranking_url is exactly bariatriccounselingcenter.com/ (homepage)
+  const homepageCannibal = [];
+  for (const [kw, v] of Object.entries(allKw)) {
+    if (!v.ranking_url) continue;
+    const url = v.ranking_url.replace(/\/$/, "").replace(/^https?:\/\/(www\.)?/, "");
+    if (url === "bariatriccounselingcenter.com" && v.position != null && v.position <= 20) {
+      homepageCannibal.push({ keyword: kw, position: v.position });
+    }
+  }
+  homepageCannibal.sort((a, b) => a.position - b.position);
+
+  // Gap 3: Tracked pages with 0 keywords matching them
+  const emptyPages = [];
+  for (const cluster of TRACKED_PAGES) {
+    for (const pageDef of cluster.pages) {
+      const m = buildPageMetrics(pageDef.path);
+      if (m.firstSeen && m.keywords.length === 0) emptyPages.push({ name: pageDef.name, path: pageDef.path });
+    }
+  }
+
+  // Gap 4: Keywords stuck in 11-20 (nearly there)
+  const onTheBubble = [];
+  for (const [kw, v] of Object.entries(allKw)) {
+    if (v.position != null && v.position > 10 && v.position <= 20) onTheBubble.push({ keyword: kw, position: v.position });
+  }
+  onTheBubble.sort((a, b) => a.position - b.position);
+
+  function renderGapCard(title, desc, cls, items, renderItem, emptyMsg) {
+    const card = el("div", { className: "gap-card" + (cls ? " " + cls : "") });
+    card.appendChild(el("div", { className: "gap-card-title" }, title));
+    card.appendChild(el("div", { className: "gap-card-desc" }, desc));
+    if (!items.length) {
+      card.appendChild(el("div", { className: "gap-card-empty" }, emptyMsg || "Nothing here this week."));
+    } else {
+      const ul = el("ul", { className: "gap-card-list" });
+      for (const it of items) ul.appendChild(renderItem(it));
+      card.appendChild(ul);
+    }
+    return card;
+  }
+
+  grid.appendChild(renderGapCard(
+    "Pages with no rankings yet",
+    "Tracked pages live on prod but no keywords are matching them. Likely needs internal links + content tightening.",
+    "high",
+    emptyPages,
+    (it) => { const li = el("li"); li.appendChild(el("span", {}, it.name)); li.appendChild(el("span", { className: "gap-pos urgent" }, "0 ranking")); return li; },
+    "All tracked pages have at least one keyword ranking. Nice."
+  ));
+
+  grid.appendChild(renderGapCard(
+    "On the bubble (positions 11-20)",
+    "One small push could move these into the top 10.",
+    "",
+    onTheBubble,
+    (it) => { const li = el("li"); li.appendChild(el("span", {}, it.keyword)); li.appendChild(el("span", { className: "gap-pos" }, "#" + it.position)); return li; },
+    "No keywords sitting in the 11-20 range right now."
+  ));
+
+  grid.appendChild(renderGapCard(
+    "Homepage carrying keywords that need their own page",
+    "These keywords currently rank via the homepage. A dedicated landing page should consolidate the ranking.",
+    "",
+    homepageCannibal,
+    (it) => { const li = el("li"); li.appendChild(el("span", {}, it.keyword)); li.appendChild(el("span", { className: "gap-pos" }, "#" + it.position)); return li; },
+    "No homepage cannibalization detected."
+  ));
+
+  grid.appendChild(renderGapCard(
+    "Keywords with no detected ranking URL",
+    "These appear in the keyword list but no page is ranking for them. New page candidates.",
+    "",
+    orphaned,
+    (it) => { const li = el("li"); li.appendChild(el("span", {}, it.keyword)); if (it.category) li.appendChild(el("span", { className: "gap-pos" }, it.category)); return li; },
+    "Every tracked keyword has a known ranking URL or has dropped out entirely."
+  ));
+}
+
+// ---- v3: VELOCITY ------------------------------------------------------------
+function renderVelocity(latestData) {
+  const wrap = document.getElementById("velocity-row");
+  if (!wrap) return;
+  wrap.innerHTML = "";
+  const dataFiles = state.allData || [];
+  // Pages launched per week (median, total)
+  let pagesThisWeek = (latestData.newly_published_prod_pages || []).length;
+  let totalPages = 0;
+  for (const d of dataFiles) totalPages += (d.newly_published_prod_pages || []).length;
+
+  // Average days from publish to first top-10
+  // For each tracked page that has a firstSeen + a top-10 in its trajectory:
+  let publishToTop10Days = [];
+  for (const cluster of TRACKED_PAGES) {
+    for (const pageDef of cluster.pages) {
+      const m = buildPageMetrics(pageDef.path);
+      if (!m.firstSeen) continue;
+      for (const t of m.trajectory) {
+        if (t.position != null && t.position <= 10) {
+          const days = Math.max(0, Math.round((new Date(t.date + "T12:00:00") - new Date(m.firstSeen + "T12:00:00")) / 86400000));
+          publishToTop10Days.push(days);
+          break;
+        }
+      }
+    }
+  }
+  const avgDaysToTop10 = publishToTop10Days.length ? Math.round(publishToTop10Days.reduce((a,b)=>a+b,0) / publishToTop10Days.length) : null;
+
+  // Net top-10 change vs previous week
+  const history = state.history || [];
+  let netChange = null;
+  if (history.length >= 2) {
+    netChange = history[history.length-1].top10 - history[history.length-2].top10;
+  }
+
+  // Stagnant count
+  let stagnantCount = 0;
+  if (typeof isStagnant === "function") {
+    const all = latestData.brave && latestData.brave.all_keywords ? latestData.brave.all_keywords : {};
+    for (const kw of Object.keys(all)) if (isStagnant(kw)) stagnantCount++;
+  }
+
+  function vCard(label, value, ctx) {
+    const c = el("div", { className: "velocity-card" });
+    c.appendChild(el("div", { className: "v-label" }, label));
+    c.appendChild(el("div", { className: "v-value" }, String(value)));
+    if (ctx) c.appendChild(el("div", { className: "v-context" }, ctx));
+    return c;
+  }
+  wrap.appendChild(vCard("Pages shipped this run", pagesThisWeek, totalPages + " across all tracked weeks"));
+  wrap.appendChild(vCard("Avg days to first top-10", avgDaysToTop10 == null ? "n/a" : avgDaysToTop10, publishToTop10Days.length + " tracked pages have hit top 10"));
+  wrap.appendChild(vCard("Net top-10 change vs last week", netChange == null ? "n/a" : (netChange > 0 ? "+" + netChange : String(netChange)), netChange == null ? "Need 2+ weeks of data" : "Across all tracked keywords"));
+  wrap.appendChild(vCard("Stagnant keywords", stagnantCount, "Same position " + STAGNATION_WEEKS + "+ weeks running"));
+}
+
+
+// ---- v3: GSC RENDERING --------------------------------------------------------
+let gscState = { filter: "all", search: "", sort: { key: "impressions", dir: "desc" } };
+
+function fmtPct(n) { return (n * 100).toFixed(2) + "%"; }
+function fmtPos(p) { return p == null ? "--" : p.toFixed(1); }
+function posCellClass(p) {
+  if (p == null) return "pos-poor";
+  if (p <= 10) return "pos-good";
+  if (p <= 20) return "pos-mid";
+  return "pos-poor";
+}
+function ctrCellClass(ctr, hasImps) {
+  if (!hasImps) return "";
+  if (ctr >= 0.03) return "ctr-good";
+  if (ctr <= 0.005) return "ctr-poor";
+  return "";
+}
+
+function renderGscStats(google) {
+  const el2 = document.getElementById("gsc-stats");
+  const range = document.getElementById("gsc-data-range");
+  if (!el2 || !google || google.error) {
+    if (range) range.textContent = google && google.error ? ("GSC: " + google.error) : "No GSC data this run.";
+    if (el2) el2.innerHTML = "";
+    return;
+  }
+  const s = google.summary || {};
+  const dr = google.data_range || {};
+  if (range) range.textContent = (dr.start || "") + " -> " + (dr.end || "") + " (" + (dr.days || 7) + " days)";
+  const stats = [
+    { label: "Total impressions", value: (s.total_impressions || 0).toLocaleString(), ctx: "across " + (s.total_queries || 0) + " queries" },
+    { label: "Total clicks", value: (s.total_clicks || 0).toLocaleString(), ctx: s.total_impressions ? "CTR " + ((s.total_clicks/s.total_impressions)*100).toFixed(2) + "%" : "" },
+    { label: "Avg position (impression-weighted)", value: s.avg_position_impression_weighted != null ? s.avg_position_impression_weighted.toFixed(2) : "--", ctx: "lower is better" },
+    { label: "Discovery candidates", value: String(s.discovery_candidates_count || 0), ctx: "untracked queries with 5+ impressions" }
+  ];
+  el2.innerHTML = "";
+  for (const st of stats) {
+    const card = el("div", { className: "gsc-stat" });
+    card.appendChild(el("div", { className: "label" }, st.label));
+    card.appendChild(el("div", { className: "value" }, st.value));
+    if (st.ctx) card.appendChild(el("div", { className: "ctx" }, st.ctx));
+    el2.appendChild(card);
+  }
+}
+
+function renderGscQueries(google) {
+  const tbody = document.querySelector("#gsc-queries-table tbody");
+  if (!tbody || !google || !google.top_queries) return;
+  const trackedSet = new Set(Object.keys(google.per_keyword_metrics || {}).map(k => k.toLowerCase()));
+  let rows = google.top_queries.map(q => Object.assign({}, q, { _tracked: trackedSet.has(q.keyword.toLowerCase()) }));
+
+  const f = gscState.filter;
+  const search = gscState.search.toLowerCase();
+  rows = rows.filter(r => {
+    if (search && !r.keyword.toLowerCase().includes(search)) return false;
+    if (f === "tracked") return r._tracked;
+    if (f === "discovery") return !r._tracked;
+    if (f === "clicks") return r.clicks > 0;
+    return true;
+  });
+
+  const { key, dir } = gscState.sort;
+  const m = dir === "asc" ? 1 : -1;
+  rows.sort((a, b) => {
+    if (key === "keyword") return m * String(a[key]).localeCompare(String(b[key]));
+    return m * ((a[key] || 0) - (b[key] || 0));
+  });
+
+  tbody.innerHTML = "";
+  for (const r of rows.slice(0, 200)) {
+    const tr = el("tr", {});
+    const kwCell = el("td", {});
+    kwCell.appendChild(document.createTextNode(r.keyword));
+    if (r._tracked) kwCell.appendChild(el("span", { className: "gsc-tracked-badge" }, "tracked"));
+    tr.appendChild(kwCell);
+    tr.appendChild(el("td", { className: "num-cell" }, (r.impressions || 0).toLocaleString()));
+    tr.appendChild(el("td", { className: "num-cell" }, String(r.clicks || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + ctrCellClass(r.ctr, r.impressions > 0) }, fmtPct(r.ctr || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + posCellClass(r.position) }, fmtPos(r.position)));
+    tbody.appendChild(tr);
+  }
+}
+
+function renderGscDiscovery(google) {
+  const tbody = document.querySelector("#gsc-discovery-table tbody");
+  if (!tbody || !google) return;
+  const items = google.discovery_candidates || [];
+  tbody.innerHTML = "";
+  if (!items.length) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", { colspan: "6", style: "color:var(--muted); font-style:italic; padding:14px;" }, "No discovery candidates this week."));
+    tbody.appendChild(tr);
+    return;
+  }
+  for (const r of items) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", {}, r.keyword));
+    tr.appendChild(el("td", { className: "num-cell" }, (r.impressions || 0).toLocaleString()));
+    tr.appendChild(el("td", { className: "num-cell" }, String(r.clicks || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + ctrCellClass(r.ctr, r.impressions > 0) }, fmtPct(r.ctr || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + posCellClass(r.position) }, fmtPos(r.position)));
+    let suggestion = "Track + monitor";
+    if (r.impressions >= 100 && r.position <= 20) suggestion = "Spin up dedicated page";
+    else if (r.impressions >= 30 && r.position <= 15) suggestion = "Add to master list";
+    else if (r.position <= 10) suggestion = "Already ranking -- amplify";
+    tr.appendChild(el("td", { style: "color:var(--muted); font-size:11px;" }, suggestion));
+    tbody.appendChild(tr);
+  }
+}
+
+function renderGscPages(google) {
+  const tbody = document.querySelector("#gsc-pages-table tbody");
+  if (!tbody || !google) return;
+  const items = (google.top_pages || []).slice().sort((a, b) => (b.impressions || 0) - (a.impressions || 0)).slice(0, 30);
+  tbody.innerHTML = "";
+  for (const r of items) {
+    const tr = el("tr", {});
+    const pageCell = el("td", {});
+    const url = r.page || "";
+    const shortUrl = url.replace(/^https?:\/\/(www\.)?bariatriccounselingcenter\.com/, "") || url;
+    const link = el("a", { href: url, target: "_blank", rel: "noopener", style: "color:var(--navy); text-decoration:none; border-bottom: 1px dashed var(--line);" }, shortUrl);
+    pageCell.appendChild(link);
+    tr.appendChild(pageCell);
+    tr.appendChild(el("td", { className: "num-cell" }, (r.impressions || 0).toLocaleString()));
+    tr.appendChild(el("td", { className: "num-cell" }, String(r.clicks || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + ctrCellClass(r.ctr, r.impressions > 0) }, fmtPct(r.ctr || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + posCellClass(r.position) }, fmtPos(r.position)));
+    tbody.appendChild(tr);
+  }
+}
+
+// ---- NEW SECTIONS (added 2026-05-22 from Todd call) ------------------------
+
+const SINCE_APRIL_CUTOFF = "2026-04-01";
+
+let sinceAprilState = { sort: { key: "date", dir: "desc" } };
+
+function buildPageUrl(slug) {
+  if (!slug) return "";
+  return `https://www.bariatriccounselingcenter.com/${slug.replace(/^\//, "")}/`;
+}
+
+function shortUrl(url) {
+  return (url || "").replace(/^https?:\/\/(www\.)?bariatriccounselingcenter\.com/, "") || url || "";
+}
+
+function daysSince(dateStr) {
+  if (!dateStr) return null;
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return null;
+  return Math.round((Date.now() - d.getTime()) / 86400000);
+}
+
+function getPageMetrics(google, slug) {
+  if (!google || !google.per_page_metrics) return null;
+  const candidates = [
+    buildPageUrl(slug),
+    buildPageUrl(slug).replace(/\/$/, ""),
+    `https://www.bariatriccounselingcenter.com/${slug}/`,
+    `https://www.bariatriccounselingcenter.com/${slug}`
+  ];
+  for (const c of candidates) {
+    if (google.per_page_metrics[c]) return google.per_page_metrics[c];
+  }
+  return null;
+}
+
+function pageStatus(metrics, daysLive) {
+  if (!metrics || (metrics.impressions || 0) < 5) {
+    if (daysLive != null && daysLive >= 14) return { label: "Hidden", className: "pos-out" };
+    return { label: "New", className: "pos-low" };
+  }
+  const pos = metrics.position;
+  if (pos != null && pos <= 10) return { label: "Climbing", className: "pos-top10" };
+  if (pos != null && pos <= 20) return { label: "Flat", className: "pos-low" };
+  return { label: "Hidden", className: "pos-out" };
+}
+
+function renderSinceApril(data) {
+  const tbody = document.querySelector("#since-april-table tbody");
+  const summary = document.getElementById("since-april-summary");
+  if (!tbody) return;
+  const allPages = data.published_pages_index || [];
+  const recent = allPages.filter(p => (p.date || "") >= SINCE_APRIL_CUTOFF);
+  const google = data.google || {};
+
+  // Hydrate each with metrics
+  const rows = recent.map(p => {
+    const m = getPageMetrics(google, p.slug) || {};
+    const daysLive = daysSince(p.date);
+    return {
+      date: p.date,
+      slug: p.slug,
+      title: p.title || p.slug,
+      url: p.link || buildPageUrl(p.slug),
+      impressions: m.impressions || 0,
+      clicks: m.clicks || 0,
+      ctr: m.ctr || 0,
+      position: m.position == null ? 999 : m.position,
+      positionDisplay: m.position,
+      daysLive: daysLive,
+      status: pageStatus(m, daysLive)
+    };
+  });
+
+  // Sort
+  const { key, dir } = sinceAprilState.sort;
+  rows.sort((a, b) => {
+    let va = a[key], vb = b[key];
+    if (key === "status") { va = a.status.label; vb = b.status.label; }
+    if (va == null) va = "";
+    if (vb == null) vb = "";
+    if (va < vb) return dir === "asc" ? -1 : 1;
+    if (va > vb) return dir === "asc" ? 1 : -1;
+    return 0;
+  });
+
+  if (summary) {
+    const counts = rows.reduce((acc, r) => { acc[r.status.label] = (acc[r.status.label] || 0) + 1; return acc; }, {});
+    const breakdown = Object.entries(counts).map(([k, v]) => `${v} ${k}`).join(" · ");
+    summary.textContent = `${rows.length} pages live since ${SINCE_APRIL_CUTOFF}. ${breakdown}. Click a column to sort.`;
+  }
+
+  tbody.innerHTML = "";
+  if (!rows.length) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", { colspan: "7", style: "color:var(--muted); font-style:italic; padding:14px;" }, `No pages published since ${SINCE_APRIL_CUTOFF}.`));
+    tbody.appendChild(tr);
+    return;
+  }
+  for (const r of rows) {
+    const tr = el("tr", {});
+    const dateCell = el("td", { style: "white-space:nowrap; color:var(--muted); font-size:11px;" }, (r.date || "").slice(0, 10));
+    tr.appendChild(dateCell);
+    const titleCell = el("td", {});
+    const link = el("a", { href: r.url, target: "_blank", rel: "noopener", style: "color:var(--navy); text-decoration:none; border-bottom:1px dashed var(--line); font-size:12px;" }, shortUrl(r.url));
+    titleCell.appendChild(link);
+    if (r.daysLive != null) titleCell.appendChild(el("div", { style: "font-size:10px; color:var(--muted); margin-top:2px;" }, `${r.daysLive} days live`));
+    tr.appendChild(titleCell);
+    tr.appendChild(el("td", { className: "num-cell" }, (r.impressions || 0).toLocaleString()));
+    tr.appendChild(el("td", { className: "num-cell" }, String(r.clicks || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + ctrCellClass(r.ctr, r.impressions > 0) }, fmtPct(r.ctr || 0)));
+    const posCell = el("td", { className: "num-cell " + posCellClass(r.positionDisplay) }, r.positionDisplay == null ? "--" : `#${r.positionDisplay.toFixed(1)}`);
+    tr.appendChild(posCell);
+    const statusCell = el("td", {});
+    const badge = el("span", { className: "pos " + r.status.className, style: "padding:3px 9px; border-radius:11px; font-size:11px; font-weight:600;" }, r.status.label);
+    statusCell.appendChild(badge);
+    tr.appendChild(statusCell);
+    tbody.appendChild(tr);
+  }
+}
+
+// Position-CTR benchmarks (from public Advanced Web Ranking data, rounded conservatively)
+const CTR_BENCHMARKS = {
+  1: 0.275, 2: 0.155, 3: 0.110, 4: 0.080, 5: 0.060,
+  6: 0.045, 7: 0.035, 8: 0.030, 9: 0.025, 10: 0.022,
+  11: 0.015, 12: 0.012, 13: 0.010, 14: 0.009, 15: 0.008,
+  16: 0.007, 17: 0.006, 18: 0.006, 19: 0.005, 20: 0.005
+};
+function expectedCtr(pos) {
+  if (pos == null) return 0;
+  const rounded = Math.round(pos);
+  if (rounded < 1) return CTR_BENCHMARKS[1];
+  if (rounded > 20) return 0.003;
+  return CTR_BENCHMARKS[rounded] || 0.005;
+}
+
+function suggestedMove(row) {
+  const pos = row.position || 999;
+  if (pos <= 10 && row.impressions >= 200) return "Title/meta rewrite + FAQ block";
+  if (pos <= 10) return "Strengthen on-page (TL;DR, headers)";
+  if (pos <= 15 && row.impressions >= 100) return "Expand existing page + interlink";
+  if (pos <= 20) return "Build cluster content + interlink";
+  if (row.impressions >= 50) return "New dedicated page";
+  return "Track and monitor";
+}
+
+function renderHiddenWins(data) {
+  const tbody = document.querySelector("#hidden-wins-table tbody");
+  const summary = document.getElementById("hidden-wins-summary");
+  if (!tbody) return;
+  const google = data.google || {};
+  const candidates = google.discovery_candidates || [];
+  // Hidden wins criteria: impressions >= 30, position 5-30, CTR < 2%
+  const rows = candidates
+    .filter(c => (c.impressions || 0) >= 30 && c.position != null && c.position >= 5 && c.position <= 30 && (c.ctr || 0) < 0.02)
+    .map(c => {
+      const expCtr = expectedCtr(c.position);
+      const lostClicksWeekly = Math.max(0, c.impressions * (expCtr - (c.ctr || 0)));
+      const lostMonthly = Math.round(lostClicksWeekly * 4.3);
+      return { ...c, lost: lostMonthly };
+    })
+    .sort((a, b) => b.lost - a.lost)
+    .slice(0, 15);
+
+  if (summary) {
+    const totalLost = rows.reduce((s, r) => s + r.lost, 0);
+    summary.textContent = `${rows.length} unclaimed opportunities. Estimated ${totalLost.toLocaleString()} clicks/month being left on the table.`;
+  }
+
+  tbody.innerHTML = "";
+  if (!rows.length) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", { colspan: "7", style: "color:var(--muted); font-style:italic; padding:14px;" }, "No hidden wins this week (need >=30 impressions, position 5-30, CTR <2%)."));
+    tbody.appendChild(tr);
+    return;
+  }
+  for (const r of rows) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", { style: "font-weight:600;" }, r.keyword));
+    tr.appendChild(el("td", { className: "num-cell" }, (r.impressions || 0).toLocaleString()));
+    tr.appendChild(el("td", { className: "num-cell" }, String(r.clicks || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + ctrCellClass(r.ctr, r.impressions > 0) }, fmtPct(r.ctr || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + posCellClass(r.position) }, fmtPos(r.position)));
+    tr.appendChild(el("td", { className: "num-cell", style: "font-weight:700; color:var(--teal);" }, `+${r.lost.toLocaleString()}`));
+    tr.appendChild(el("td", { style: "font-size:11px; color:var(--muted);" }, suggestedMove(r)));
+    tbody.appendChild(tr);
+  }
+}
+
+function renderStuckPages(data) {
+  const tbody = document.querySelector("#stuck-pages-table tbody");
+  if (!tbody) return;
+  const google = data.google || {};
+  const pages = google.top_pages || [];
+  const rows = pages
+    .filter(p => (p.impressions || 0) >= 1000 && (p.ctr || 0) < 0.01)
+    .sort((a, b) => (b.impressions || 0) - (a.impressions || 0))
+    .slice(0, 15);
+
+  tbody.innerHTML = "";
+  if (!rows.length) {
+    const tr = el("tr", {});
+    tr.appendChild(el("td", { colspan: "6", style: "color:var(--muted); font-style:italic; padding:14px;" }, "No stuck pages this week (need >=1,000 impressions and CTR <1%)."));
+    tbody.appendChild(tr);
+    return;
+  }
+  for (const r of rows) {
+    const tr = el("tr", {});
+    const url = r.page || "";
+    const cell = el("td", {});
+    const link = el("a", { href: url, target: "_blank", rel: "noopener", style: "color:var(--navy); text-decoration:none; border-bottom:1px dashed var(--line); font-size:12px;" }, shortUrl(url));
+    cell.appendChild(link);
+    tr.appendChild(cell);
+    tr.appendChild(el("td", { className: "num-cell" }, (r.impressions || 0).toLocaleString()));
+    tr.appendChild(el("td", { className: "num-cell" }, String(r.clicks || 0)));
+    tr.appendChild(el("td", { className: "num-cell ctr-poor" }, fmtPct(r.ctr || 0)));
+    tr.appendChild(el("td", { className: "num-cell " + posCellClass(r.position) }, fmtPos(r.position)));
+    let diag = "Title/meta rewrite";
+    if (r.position > 20) diag = "Position too low to convert - on-page work";
+    else if (r.position > 10) diag = "Push to top 10 + improve snippet";
+    else diag = "Snippet rewrite (title + meta + schema)";
+    tr.appendChild(el("td", { style: "font-size:11px; color:var(--muted);" }, diag));
+    tbody.appendChild(tr);
+  }
+}
+
+function renderNarrative(data) {
+  const sec = document.getElementById("narrative-section");
+  const body = document.getElementById("narrative-body");
+  if (!sec || !body) return;
+  const note = data.weekly_narrative || (data.action_items && data.action_items[0] && data.action_items[0].narrative) || null;
+  if (!note) { sec.style.display = "none"; return; }
+  sec.style.display = "block";
+  // Render light markdown: ** -> bold, line break -> <br>, - -> bullet
+  let html = String(note)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/^- (.+)$/gm, "<li>$1</li>");
+  if (html.indexOf("<li>") >= 0) html = "<ul>" + html.replace(/(<li>.+?<\/li>)/gs, "$1") + "</ul>";
+  html = html.replace(/\n/g, "<br>");
+  body.innerHTML = html;
+}
+
+function attachSinceAprilInteractions() {
+  document.querySelectorAll("#since-april-table thead th[data-sa-sort]").forEach(th => {
+    th.addEventListener("click", () => {
+      const k = th.dataset.saSort;
+      if (sinceAprilState.sort.key === k) sinceAprilState.sort.dir = sinceAprilState.sort.dir === "asc" ? "desc" : "asc";
+      else { sinceAprilState.sort.key = k; sinceAprilState.sort.dir = (k === "date") ? "desc" : "desc"; }
+      renderSinceApril(state.data);
+    });
+  });
+}
+
+function attachGscInteractions() {
+  document.querySelectorAll(".gsc-filter [data-gsc-filter]").forEach(b => {
+    b.addEventListener("click", () => {
+      document.querySelectorAll(".gsc-filter [data-gsc-filter]").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      gscState.filter = b.dataset.gscFilter;
+      renderGscQueries(state.data && state.data.google);
+    });
+  });
+  const search = document.getElementById("gsc-search");
+  if (search) search.addEventListener("input", e => {
+    gscState.search = e.target.value;
+    renderGscQueries(state.data && state.data.google);
+  });
+  document.querySelectorAll("#gsc-queries-table thead th[data-gsc-sort]").forEach(th => {
+    th.addEventListener("click", () => {
+      const k = th.dataset.gscSort;
+      if (gscState.sort.key === k) gscState.sort.dir = gscState.sort.dir === "asc" ? "desc" : "asc";
+      else { gscState.sort.key = k; gscState.sort.dir = (k === "keyword") ? "asc" : "desc"; }
+      renderGscQueries(state.data && state.data.google);
+    });
+  });
+}
+
+
+// ---- BOOT -------------------------------------------------------------------
+async function boot({ bypassCache = false } = {}) {
+  const loading = document.getElementById("loading");
+  const content = document.getElementById("content");
+  loading.classList.remove("hidden");
+  content.classList.add("hidden");
+
+  try {
+    state.manifest = await loadManifest({ bypassCache });
+    fillDatePicker(state.manifest);
+    state.selectedDate = state.manifest.latest;
+    state.data = await loadData(state.selectedDate, { bypassCache });
+
+    state.history = [];
+    state.keywordHistory = {};
+
+    renderAll();
+    loading.classList.add("hidden");
+    content.classList.remove("hidden");
+
+    // Background: load history for chart + per-keyword history.
+    loadAllHistory().then(function() {
+      renderTrendChart();
+      renderServiceAreas(state.data);
+      renderTrackedPages(state.data);
+      renderInternalHeatmap();
+      renderCoverageGaps(state.data);
+      renderVelocity(state.data);
+      renderTable(state.data); // re-render so stagnant badges + history panels show
+    }).catch(function(err) { console.warn("History load failed:", err); });
+  } catch (e) {
+    loading.innerHTML = `<div class="alert error" style="margin:0;width:100%;">Could not load SEO data from GitHub.<br/><br/><strong>Error:</strong> ${escapeHTML(e.message)}<br/><br/>Try clicking Reload, or check that <code>${REPO_OWNER}/${REPO_NAME}</code> has a <code>${SUBPATH}/manifest.json</code> file with at least one data file in <code>data/</code>.</div>`;
+  }
+}
+
+function renderAll() {
+  renderAlerts(state.data);
+  renderNarrative(state.data);
+  renderHeader(state.data);
+  renderStats(state.data);
+  renderMovers(state.data);
+  renderQuickWins(state.data);
+  renderActions(state.data);
+  renderServiceAreas(state.data);  // first paint -- sparklines empty until history loads
+  renderTrackedPages(state.data);  // first paint -- trajectories empty until history loads
+  renderSinceApril(state.data);
+  renderCoverageGaps(state.data);
+  renderVelocity(state.data);
+  renderTable(state.data);
+  renderNewPages(state.data);
+  renderStaging(state.data);
+  renderCompetitors(state.data);
+  renderLinkChecks(state.data);
+  renderGscStats(state.data && state.data.google);
+  renderGscQueries(state.data && state.data.google);
+  renderGscDiscovery(state.data && state.data.google);
+  renderHiddenWins(state.data);
+  renderStuckPages(state.data);
+  renderGscPages(state.data && state.data.google);
+}
+
+// ---- INTERACTIONS -----------------------------------------------------------
+document.getElementById("date-select").addEventListener("change", async (e) => {
+  state.selectedDate = e.target.value;
+  state.data = await loadData(state.selectedDate, { bypassCache: true });
+  renderAll();
+});
+
+document.getElementById("reload-btn").addEventListener("click", () => boot({ bypassCache: true }));
+
+document.querySelectorAll(".filters [data-filter]").forEach(b => {
+  b.addEventListener("click", () => {
+    document.querySelectorAll(".filters [data-filter]").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    state.filter = b.dataset.filter;
+    renderTable(state.data);
+  });
+});
+
+document.getElementById("kw-search").addEventListener("input", (e) => {
+  state.search = e.target.value;
+  renderTable(state.data);
+});
+
+document.querySelectorAll("th.sortable").forEach(th => {
+  th.addEventListener("click", () => {
+    const key = th.dataset.sort;
+    if (state.sort.key === key) state.sort.dir = state.sort.dir === "asc" ? "desc" : "asc";
+    else { state.sort.key = key; state.sort.dir = "asc"; }
+    renderTable(state.data);
+  });
+});
+
+attachSinceAprilInteractions();
+attachGscInteractions();
+
+boot();
+</script>
+</body>
