@@ -731,6 +731,22 @@ function weeklyAge() {
   return { date: m[1], age: age, stale: age > STALE_AFTER_DAYS };
 }
 
+// The Search Console panel reads the same latest pull, over the same window, and counts the same way as the Monday
+// brief (page rows added up; query rows hide anonymised queries and read far lower).
+function applyLatestGsc(data) {
+  const g = state.gscLatest;
+  if (!g || !data || !state.manifest || state.selectedDate !== state.manifest.latest) return;
+  const cur = (data.google && data.google.data_range && data.google.data_range.end) || "";
+  const nw = (g.data_range && g.data_range.end) || "";
+  if (nw > cur) data.google = g;
+}
+
+function pageTotals(google) {
+  const pg = (google && google.top_pages) || [];
+  if (!pg.length) return null;
+  return { clicks: pg.reduce((a, r) => a + (r.clicks || 0), 0), impressions: pg.reduce((a, r) => a + (r.impressions || 0), 0) };
+}
+
 function renderFreshness() {
   const box = document.getElementById("freshness-banner");
   const w = weeklyAge();
@@ -1588,7 +1604,8 @@ function renderVelocity(latestData) {
     if (ctx) c.appendChild(el("div", { className: "v-context" }, ctx));
     return c;
   }
-  wrap.appendChild(vCard("Pages shipped this run", pagesThisWeek, totalPages + " across all tracked weeks"));
+  const fedCount = state.feed && state.feed.pages_index && state.feed.pages_index.pages && state.feed.pages_index.pages.length;
+  wrap.appendChild(vCard("Pages shipped this run", pagesThisWeek, fedCount ? fedCount + " live since " + SINCE_APRIL_CUTOFF + " (from the site)" : totalPages + " across all tracked weeks"));
   wrap.appendChild(vCard("Avg days to first top-10", avgDaysToTop10 == null ? "n/a" : avgDaysToTop10, publishToTop10Days.length + " tracked pages have hit top 10"));
   wrap.appendChild(vCard("Net top-10 change vs last week", netChange == null ? "n/a" : (netChange > 0 ? "+" + netChange : String(netChange)), netChange == null ? "Need 2+ weeks of data" : "Across all tracked keywords"));
   wrap.appendChild(vCard("Stagnant keywords", stagnantCount, "Same position " + STAGNATION_WEEKS + "+ weeks running"));
@@ -1623,10 +1640,17 @@ function renderGscStats(google) {
   }
   const s = google.summary || {};
   const dr = google.data_range || {};
-  if (range) range.textContent = (dr.start || "") + " -> " + (dr.end || "") + " (" + (dr.days || 7) + " days)";
+  const pt = pageTotals(google);
+  const clicksTotal = pt ? pt.clicks : (s.total_clicks || 0);
+  const imprTotal = pt ? pt.impressions : (s.total_impressions || 0);
+  const nice = (iso) => iso ? new Date(iso + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" }) : "";
+  if (range) range.textContent = nice(dr.start) + " to " + nice(dr.end) + " (" + (dr.days || 7) + " days). Same window and same counting as the Monday brief.";
+  const pw = state.feed && state.feed.gsc && state.feed.gsc.prior_week;
+  const sameWindow = state.feed && state.feed.gsc && state.feed.gsc.data_range && state.feed.gsc.data_range.end === dr.end;
+  const priorTxt = (pw && sameWindow && pw.clicks != null) ? " | " + pw.clicks + " the week before" : "";
   const stats = [
-    { label: "Total impressions", value: (s.total_impressions || 0).toLocaleString(), ctx: "across " + (s.total_queries || 0) + " queries" },
-    { label: "Total clicks", value: (s.total_clicks || 0).toLocaleString(), ctx: s.total_impressions ? "CTR " + ((s.total_clicks/s.total_impressions)*100).toFixed(2) + "%" : "" },
+    { label: "Total impressions", value: imprTotal.toLocaleString(), ctx: "across " + (s.total_pages || (google.top_pages || []).length) + " pages" },
+    { label: "Total clicks", value: clicksTotal.toLocaleString(), ctx: (imprTotal ? "CTR " + ((clicksTotal / imprTotal) * 100).toFixed(2) + "%" : "") + priorTxt },
     { label: "Avg position (impression-weighted)", value: s.avg_position_impression_weighted != null ? s.avg_position_impression_weighted.toFixed(2) : "--", ctx: "lower is better" },
     { label: "Discovery candidates", value: String(s.discovery_candidates_count || 0), ctx: "untracked queries with 5+ impressions" }
   ];
@@ -1777,7 +1801,10 @@ function renderSinceApril(data) {
   const tbody = document.querySelector("#since-april-table tbody");
   const summary = document.getElementById("since-april-summary");
   if (!tbody) return;
-  const allPages = data.published_pages_index || [];
+  // The weekly SERP run stopped writing the full page index after 2026-08-31, which left this table empty.
+  // The daily feed lists every page published on production since April 1 (public WordPress API, read only).
+  const fedPages = state.feed && state.feed.pages_index && state.feed.pages_index.pages;
+  const allPages = (fedPages && fedPages.length) ? fedPages : (data.published_pages_index || []);
   const recent = allPages.filter(p => (p.date || "") >= SINCE_APRIL_CUTOFF);
   const google = data.google || {};
 
@@ -1815,7 +1842,8 @@ function renderSinceApril(data) {
   if (summary) {
     const counts = rows.reduce((acc, r) => { acc[r.status.label] = (acc[r.status.label] || 0) + 1; return acc; }, {});
     const breakdown = Object.entries(counts).map(([k, v]) => `${v} ${k}`).join(" · ");
-    summary.textContent = `${rows.length} pages live since ${SINCE_APRIL_CUTOFF}. ${breakdown}. Click a column to sort.`;
+    const fedNote = (fedPages && fedPages.length && state.feed.pages_index.fetched) ? ` List refreshed ${state.feed.pages_index.fetched}.` : "";
+    summary.textContent = `${rows.length} pages live since ${SINCE_APRIL_CUTOFF}. ${breakdown}. Click a column to sort.${fedNote}`;
   }
 
   tbody.innerHTML = "";
@@ -2018,6 +2046,8 @@ async function boot({ bypassCache = false } = {}) {
     state.selectedDate = state.manifest.latest;
     state.data = await loadData(state.selectedDate, { bypassCache });
     state.feed = await fetchParentJSON("seo-weekly/public-feed.json", true);
+    state.gscLatest = await loadLatestGsc();
+    applyLatestGsc(state.data);
 
     state.history = [];
     state.keywordHistory = {};
@@ -2072,6 +2102,7 @@ function renderAll() {
 document.getElementById("date-select").addEventListener("change", async (e) => {
   state.selectedDate = e.target.value;
   state.data = await loadData(state.selectedDate, { bypassCache: true });
+  applyLatestGsc(state.data);
   renderAll();
 });
 
