@@ -253,7 +253,12 @@
   .velocity-card .v-context { font-size: 11px; color: var(--muted); margin-top: 4px; }
 
 
-  /* v3 -- GSC top queries + discovery candidates */
+  /* freshness flag (2026-10-01) */
+.fresh-banner { margin: 0 0 14px; padding: 10px 14px; border-radius: 8px; font-size: 13px; border: 1px solid #d9e0e6; background: #f4f7f9; color: #5b6b78; }
+.fresh-banner.stale { background: #fdecea; border-color: #e5a29b; color: #a52a1f; font-weight: 700; }
+.fresh-banner.hidden { display: none; }
+
+/* v3 -- GSC top queries + discovery candidates */
   .gsc-stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
   @media (max-width: 800px) { .gsc-stat-row { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 480px) { .gsc-stat-row { grid-template-columns: 1fr; } }
@@ -294,6 +299,7 @@
     <span class="source" id="source-line"></span>
   </div>
 
+  <div id="freshness-banner" class="fresh-banner hidden"></div>
   <div id="alerts-container"></div>
 
   <div class="section" id="narrative-section" style="border-left: 3px solid var(--teal); display:none;">
@@ -638,6 +644,8 @@ function areaForKeyword(rawKey) {
 
 // ---- STATE ------------------------------------------------------------------
 let state = {
+  feed: null,
+  gscLatest: null,
   manifest: null,
   data: null,
   selectedDate: null,
@@ -685,6 +693,60 @@ async function loadData(filename, { bypassCache = false } = {}) {
   const isLatest = state.manifest && state.manifest.latest === filename;
   const force = bypassCache || isLatest;
   return await fetchJSON(`data/${filename}`, { bypassCache: force });
+}
+
+// ---- PUBLIC FEED + FRESHNESS (added 2026-10-01) -----------------------------
+// public-feed.json is written by the daily pulse (seo-tools/public-board-feed.py). It carries what the weekly SERP
+// run does not: action items, staging13 and the review queue, pages published since April 1, and the Search
+// Console window. The weekly SERP file can be a week or more old, so the page says how old it is and flags it red.
+const STALE_AFTER_DAYS = 8;
+const PARENT_PATH = "bariatric-counseling-center";
+const RAW_PARENT = (p) => `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/main/${PARENT_PATH}/${p}`;
+const JSD_PARENT = (p) => `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@main/${PARENT_PATH}/${p}`;
+
+async function fetchParentJSON(rel, bypass) {
+  const bust = bypass ? `?t=${Date.now()}` : "";
+  for (const f of [RAW_PARENT, JSD_PARENT]) {
+    try {
+      const res = await fetch(f(rel) + bust, { cache: bypass ? "no-store" : "default" });
+      if (res.ok) return await res.json();
+    } catch (e) { /* try the next source */ }
+  }
+  return null;
+}
+
+async function loadLatestGsc() {
+  const man = await fetchParentJSON("raw-data/manifest.json", true);
+  const rel = man && man.sources && man.sources.gsc;
+  if (!rel) return null;
+  return await fetchParentJSON(rel, false);
+}
+
+function weeklyAge() {
+  const latest = state.manifest && state.manifest.latest;
+  const m = latest && latest.match(/seo-data-(\d{4}-\d{2}-\d{2})\.json/);
+  if (!m) return null;
+  const d = new Date(m[1] + "T12:00:00");
+  const age = Math.floor((Date.now() - d.getTime()) / 86400000);
+  return { date: m[1], age: age, stale: age > STALE_AFTER_DAYS };
+}
+
+function renderFreshness() {
+  const box = document.getElementById("freshness-banner");
+  const w = weeklyAge();
+  if (!box || !w) return;
+  const nice = (iso) => new Date(iso + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  const ago = w.age <= 0 ? "today" : (w.age === 1 ? "1 day ago" : w.age + " days ago");
+  const hdr = document.getElementById("last-updated");
+  if (hdr) hdr.textContent += " | Last updated: " + nice(w.date) + " (" + ago + ")" + (w.stale ? " - OUT OF DATE" : "");
+  let txt = w.stale
+    ? "Out of date: the last weekly SEO run was " + nice(w.date) + " (" + ago + "). Rankings, movers and quick wins below are from that run."
+    : "Weekly SEO run last updated " + nice(w.date) + " (" + ago + ").";
+  if (state.feed && state.feed.generated_at) {
+    txt += " Search Console, action items and staging refreshed " + nice(String(state.feed.generated_at).slice(0, 10)) + ".";
+  }
+  box.className = "fresh-banner " + (w.stale ? "stale" : "ok");
+  box.textContent = txt;
 }
 
 // ---- RENDERERS --------------------------------------------------------------
@@ -1955,6 +2017,7 @@ async function boot({ bypassCache = false } = {}) {
     fillDatePicker(state.manifest);
     state.selectedDate = state.manifest.latest;
     state.data = await loadData(state.selectedDate, { bypassCache });
+    state.feed = await fetchParentJSON("seo-weekly/public-feed.json", true);
 
     state.history = [];
     state.keywordHistory = {};
@@ -1982,6 +2045,7 @@ function renderAll() {
   renderAlerts(state.data);
   renderNarrative(state.data);
   renderHeader(state.data);
+  renderFreshness();
   renderStats(state.data);
   renderMovers(state.data);
   renderQuickWins(state.data);
