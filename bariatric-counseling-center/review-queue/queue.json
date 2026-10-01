@@ -5775,6 +5775,61 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "3f9fded114",
+   "kind": "social",
+   "key": "social:2026-11-19:LI",
+   "title": "Thu 11/19: Virtual across Texas, on your calendar",
+   "why": "November is not planned yet; this keeps the LI cadence going",
+   "payload": {
+    "date": "2026-11-19",
+    "weekday": "Thu",
+    "times": "9:30 AM",
+    "platforms": [
+     "LI"
+    ],
+    "type": "Professionals",
+    "pillar": "Working professionals",
+    "format": "image",
+    "title": "Thu 11/19: Virtual across Texas, on your calendar",
+    "purpose": "The virtual option for someone who travels for work or lives outside San Antonio.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/program-schedule/",
+    "captions": {
+     "LI": "Your patients who travel for work or live outside San Antonio can attend the Bariatric Counseling Center virtually across Texas. The same intensive outpatient program, behavioral therapy, dietary guidance, cooking classes, and mindful movement, delivered through Zoom sessions scheduled around work commitments. Patients typically attend for little to no cost under their mental health benefits. Our Director of Admissions is Leloni Gonzales (lgonzales@bccsanantonio.com and 210-634-2200). #BehavioralHealth",
+     "YT": {
+      "title": "Virtual Bariatric Counseling Across Texas | BCC",
+      "description": "The Bariatric Counseling Center offers virtual intensive outpatient programming across Texas for patients who travel for work or live outside San Antonio. The same comprehensive behavioral healthcare for obesity, therapy, dietary guidance, cooking classes, and movement education, delivered through Zoom and scheduled around your commitments. Covered by most health insurances under mental health benefits. Contact Leloni Gonzales at lgonzales@bccsanantonio.com or 210-634-2200."
+     }
+    },
+    "on_image": [
+     "Virtual across Texas",
+     "Same comprehensive program",
+     "Scheduled around work",
+     "Covered by most insurances",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Text graphic promoting virtual attendance option for the Bariatric Counseling Center's intensive outpatient program across Texas.",
+    "why_now": "This week highlights accessibility for traveling professionals and patients outside the San Antonio area who need behavioral obesity treatment.",
+    "asset": {
+     "format": "image",
+     "kind": "image",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Thu 11/19: LI",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-10-01T05:59:54",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
