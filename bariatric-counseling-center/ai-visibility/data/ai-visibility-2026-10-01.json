@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-01",
+  "source": "AI Search sweep via official APIs (web search / grounding)",
+  "surfaces": [
+    "perplexity",
+    "chatgpt",
+    "claude",
+    "gemini",
+    "copilot"
+  ],
+  "note": "Perplexity shown from the browser-captured run; add PERPLEXITY_API_KEY to automate it. Copilot has no API; record it by hand (see MANUAL_SURFACES in ai-visibility-sweep.py). Gemini (grounded) is the closest programmatic proxy for Google's AI answers.",
+  "generated_at": "2026-10-01T19:16:11.793326Z",
+  "calls": {
+    "chatgpt": 5,
+    "claude": 5,
+    "gemini": 5
+  },
+  "cost_usd_est": 0.5,
+  "queries": [
+    {
+      "query": "best eating disorder treatment center in San Antonio",
+      "bcc_present": {
+        "chatgpt": false,
+        "claude": true,
+        "gemini": true
+      },
+      "bcc_rank": {},
+      "competitors_named": [
+        "Balanced Counseling",
+        "Eating Recovery Center",
+        "Esperanza",
+        "Monarch Behavioral Health"
+      ]
+    },
+    {
+      "query": "binge eating disorder help in San Antonio",
+      "bcc_present": {
+        "chatgpt": true,
+        "claude": true,
+        "gemini": true
+      },
+      "bcc_rank": {},
+      "competitors_named": [
+        "Eating Recovery Center",
+        "Esperanza",
+        "Monarch Behavioral Health"
+      ]
+    },
+    {
+      "query": "bariatric surgery counseling & psych evaluation in San Antonio",
+      "bcc_present": {
+        "chatgpt": true,
+        "claude": true,
+        "gemini": true
+      },
+      "bcc_rank": {},
+      "competitors_named": [
+        "Sage Bariatric Institute"
+      ]
+    },
+    {
+      "query": "therapist for food addiction & compulsive overeating in San Antonio",
+      "bcc_present": {
+        "chatgpt": true,
+        "claude": true,
+        "gemini": true
+      },
+      "bcc_rank": {},
+      "competitors_named": [
+        "Balanced Counseling",
+        "Eating Recovery Center",
+        "Esperanza",
+        "Monarch Behavioral Health",
+        "Vitality Life Counseling"
+      ]
+    },
+    {
+      "query": "weight loss counseling & emotional eating therapy in San Antonio",
+      "bcc_present": {
+        "chatgpt": true,
+        "claude": true,
+        "gemini": true
+      },
+      "bcc_rank": {},
+      "competitors_named": [
+        "Monarch Behavioral Health",
+        "Vitality Life Counseling"
+      ]
+    }
+  ]
+}
