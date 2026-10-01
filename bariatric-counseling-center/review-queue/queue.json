@@ -6614,6 +6614,46 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "475354a60a",
+   "kind": "fix",
+   "key": "fix:redirecting links on page:https://www.bariatriccounselingcenter.com/emotional-eating-therapy-in-san-antonio-tx/",
+   "title": "Update 2 redirecting links on /emotional-eating-therapy-in-san-antonio-tx/",
+   "why": "2 internal links on this page point at old addresses that 301 to the new URLs; visitors and crawlers take an extra hop each time",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/emotional-eating-therapy-in-san-antonio-tx/",
+    "fix_type": "internal link redirects",
+    "detail": "2 old links on this page",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/emotional-eating-therapy-in-san-antonio-tx/"
+    ],
+    "links": [
+     {
+      "old": "https://www.bariatriccounselingcenter.com/blog/how-to-overcome-emotional-eating-a-comprehensive-guide/",
+      "new": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/how-to-overcome-emotional-eating-a-comprehensive-guide/",
+      "first_seen": "2026-09-22"
+     },
+     {
+      "old": "https://www.bariatriccounselingcenter.com/blog/emotional-eating-and-coping-skills/",
+      "new": "https://www.bariatriccounselingcenter.com/emotional-eating/emotional-eating-and-coping-skills/",
+      "first_seen": "2026-09-22"
+     }
+    ],
+    "suggest": null,
+    "steps": [
+     "On staging13, open this page in the block editor and change each old link below to its final address, keeping the wording.",
+     "https://www.bariatriccounselingcenter.com/blog/how-to-overcome-emotional-eating-a-comprehensive-guide/ -> https://www.bariatriccounselingcenter.com/diet-and-nutrition/how-to-overcome-emotional-eating-a-comprehensive-guide/",
+     "https://www.bariatriccounselingcenter.com/blog/emotional-eating-and-coping-skills/ -> https://www.bariatriccounselingcenter.com/emotional-eating/emotional-eating-and-coping-skills/"
+    ],
+    "first_seen": "2026-09-22"
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-10-01T14:25:36",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
