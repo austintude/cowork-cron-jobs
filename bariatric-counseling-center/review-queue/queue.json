@@ -6534,6 +6534,46 @@
     "level": "ok",
     "text": "Slot is free; 19 days of notice."
    }
+  },
+  {
+   "id": "a37e6ca9b1",
+   "kind": "fix",
+   "key": "fix:redirecting links on page:https://www.bariatriccounselingcenter.com/sara-hamilton-psyd/",
+   "title": "Update 2 redirecting links on /sara-hamilton-psyd/",
+   "why": "2 internal links on this page point at old addresses that 301 to the new URLs; visitors and crawlers take an extra hop each time",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/sara-hamilton-psyd/",
+    "fix_type": "internal link redirects",
+    "detail": "2 old links on this page",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/sara-hamilton-psyd/"
+    ],
+    "links": [
+     {
+      "old": "https://www.bariatriccounselingcenter.com/blog/a-new-approach-to-holiday-eating/",
+      "new": "https://www.bariatriccounselingcenter.com/emotional-eating/a-new-approach-to-holiday-eating/",
+      "first_seen": "2026-09-22"
+     },
+     {
+      "old": "https://www.bariatriccounselingcenter.com/blog/how-do-i-choose-a-weight-loss-program/",
+      "new": "https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-do-i-choose-a-weight-loss-program/",
+      "first_seen": "2026-09-22"
+     }
+    ],
+    "suggest": null,
+    "steps": [
+     "On staging13, open this page in the block editor and change each old link below to its final address, keeping the wording.",
+     "https://www.bariatriccounselingcenter.com/blog/a-new-approach-to-holiday-eating/ -> https://www.bariatriccounselingcenter.com/emotional-eating/a-new-approach-to-holiday-eating/",
+     "https://www.bariatriccounselingcenter.com/blog/how-do-i-choose-a-weight-loss-program/ -> https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-do-i-choose-a-weight-loss-program/"
+    ],
+    "first_seen": "2026-09-22"
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-10-01T14:25:35",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
