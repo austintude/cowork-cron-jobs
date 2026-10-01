@@ -6934,6 +6934,40 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "3320f2c4b1",
+   "kind": "fix",
+   "key": "fix:redirecting links on page:https://www.bariatriccounselingcenter.com/eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/",
+   "title": "Update 1 redirecting link on /eating-disorders/how-to-stop-stress-eating-simple",
+   "why": "1 internal link on this page point at old addresses that 301 to the new URLs; visitors and crawlers take an extra hop each time",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/",
+    "fix_type": "internal link redirects",
+    "detail": "1 old link on this page",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/"
+    ],
+    "links": [
+     {
+      "old": "https://www.bariatriccounselingcenter.com/blog/understanding-disordered-eating-is-your-eating-a-problem/",
+      "new": "https://www.bariatriccounselingcenter.com/eating-disorders/understanding-disordered-eating-is-your-eating-a-problem/",
+      "first_seen": "2026-09-22"
+     }
+    ],
+    "suggest": null,
+    "steps": [
+     "On staging13, open this page in the block editor and change each old link below to its final address, keeping the wording.",
+     "https://www.bariatriccounselingcenter.com/blog/understanding-disordered-eating-is-your-eating-a-problem/ -> https://www.bariatriccounselingcenter.com/eating-disorders/understanding-disordered-eating-is-your-eating-a-problem/"
+    ],
+    "first_seen": "2026-09-22"
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-10-01T14:25:39",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
