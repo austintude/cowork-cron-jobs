@@ -1589,9 +1589,9 @@ function renderMarkdownBriefing(md) {
 function renderBriefing(narrative) {
   const wrap = document.getElementById("briefing-slot");
   if (!wrap) return;
-  if (!narrative || !narrative.briefing) {
+  if (!narrative || !narrative.briefing || (narrative.status && narrative.status !== "ok")) {
     wrap.innerHTML = "";
-    return;  // No briefing yet -- gracefully hide the section
+    return;  // No current briefing (or generation failed) -- hide the section
   }
   wrap.innerHTML = "";
   const card = el("div", { className: "briefing" });
@@ -1619,8 +1619,8 @@ function renderRollup(efficacy) {
     { num: r.pages_modified,                label: "Pages modified" },
     { num: r.git_commits,                   label: "Strategic commits" },
     { num: r.ranking_at_top_10,             label: "Now ranking top 10" },
-    { num: fmt(r.gsc_impressions_attributed), label: "GSC impressions attributed" },
-    { num: fmt(r.ga4_sessions_attributed),  label: "GA4 sessions attributed" },
+    { num: r.gsc_impressions_attributed == null ? "withheld" : fmt(r.gsc_impressions_attributed), label: "GSC impressions attributed" },
+    { num: r.ga4_sessions_attributed == null ? "withheld" : fmt(r.ga4_sessions_attributed),  label: "GA4 sessions attributed" },
   ];
   const grid = el("div", { className: "rollup-grid" });
   for (const s of stats) {
@@ -1641,7 +1641,9 @@ function renderRollup(efficacy) {
   if (r.ranking_at_top_10 > 0) {
     pieces.push(`<strong>${r.ranking_at_top_10}</strong> of those launches now rank in the top 10 on Google.`);
   }
-  if (r.gsc_impressions_attributed > 0) {
+  if (r.gsc_impressions_attributed == null) {
+    pieces.push(`Attributed impressions are withheld: they failed the check that they cannot exceed total site impressions for the window.`);
+  } else if (r.gsc_impressions_attributed > 0) {
     pieces.push(`Combined, they've driven <strong>${fmt(r.gsc_impressions_attributed)}</strong> GSC impressions and <strong>${fmt(r.gsc_clicks_attributed)}</strong> clicks.`);
   } else {
     pieces.push(`GSC impressions for the new pages haven't accumulated yet (typical 1-2 week indexing-warmup window).`);
@@ -1669,11 +1671,17 @@ function renderLaunches(efficacy) {
     return;
   }
   // Show only the most recent 20 launches with meaningful data; filter out git-commits with low confidence
+  // Real launches only: page and post publishes, real content changes and campaign signals.
+  // Automated commits (review queue, data syncs) never count.
+  const REAL_TYPES = ["page-publish", "post-publish", "page-modify", "post-modify", "ad-campaign-inferred", "social-campaign-inferred"];
+  const AUTOMATED = /review queue|queue-verify|werockdm|auto-?(commit|sync)|daily pulse|scoreboard|data sync|\bbackup\b|^merge\b/i;
   const launches = efficacy.launches
     .filter(l => l.launch && l.launch.launched_at)
+    .filter(l => REAL_TYPES.indexOf(l.launch.type) !== -1)
+    .filter(l => !AUTOMATED.test(String(l.launch.title || "")))
     .slice(0, 20);
 
-  countEl.textContent = `${launches.length} of ${efficacy.launches.length} total`;
+  countEl.textContent = `${launches.length} real launches`;
   wrap.innerHTML = "";
 
   for (const e of launches) {
@@ -1886,10 +1894,23 @@ async function fetchBriefingForDate(d) {
     RAW_GH("narratives/latest.json"),
   ];
   for (const u of tries) {
-    try { return await fetchJSON(u, { bypass: true }); }
-    catch (e) { continue; }
+    try {
+      const n = await fetchJSON(u, { bypass: true });
+      if (briefingUsable(n, d)) return n;
+    } catch (e) { continue; }
   }
-  return null;
+  return null;  // nothing current: the briefing is hidden rather than showing an old one
+}
+
+// A briefing is shown only if generation succeeded and it was written for the day on screen.
+// latest.json is accepted for a date only when its pulse_file names that date; an older file with no
+// pulse_file must have been generated in the last 36 hours.
+function briefingUsable(n, d) {
+  if (!n || !n.briefing) return false;
+  if (n.status && n.status !== "ok") return false;
+  if (n.pulse_file) return String(n.pulse_file).indexOf(d) !== -1;
+  if (n.generated_at) return (Date.now() - new Date(n.generated_at).getTime()) < 36 * 3600 * 1000;
+  return false;
 }
 
 function renderDateStrip() {
@@ -2177,9 +2198,11 @@ async function boot() {
       fetchJSON(RAW_GH("narratives/biweekly-latest.json"),{ bypass: true }).catch(() => null),
       fetchGSCRaw().catch(() => null),
     ]);
-    state.briefings.daily    = dailyB;
-    state.briefings.weekly   = weeklyB;
-    state.briefings.biweekly = biweeklyB;
+    // Daily briefing: shown only if it was generated for the day on screen; otherwise hidden.
+    // Weekly and biweekly: hidden when their generation failed.
+    state.briefings.daily    = briefingUsable(dailyB, state.activeDate) ? dailyB : null;
+    state.briefings.weekly   = (weeklyB && (!weeklyB.status || weeklyB.status === "ok")) ? weeklyB : null;
+    state.briefings.biweekly = (biweeklyB && (!biweeklyB.status || biweeklyB.status === "ok")) ? biweeklyB : null;
     state.gscRaw             = gscRaw;
 
     if (!latestPulse) throw new Error("No pulse data could be loaded.");
