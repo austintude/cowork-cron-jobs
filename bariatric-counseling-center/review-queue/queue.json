@@ -7138,6 +7138,40 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "c7e1a58fdd",
+   "kind": "fix",
+   "key": "fix:redirecting links on page:https://www.bariatriccounselingcenter.com/real-behavioral-change-starts-with-the-mind/",
+   "title": "Update 1 redirecting link on /real-behavioral-change-starts-with-the-mind/",
+   "why": "1 internal link on this page point at old addresses that 301 to the new URLs; visitors and crawlers take an extra hop each time",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/real-behavioral-change-starts-with-the-mind/",
+    "fix_type": "internal link redirects",
+    "detail": "1 old link on this page",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/real-behavioral-change-starts-with-the-mind/"
+    ],
+    "links": [
+     {
+      "old": "https://www.bariatriccounselingcenter.com/blog/goal-setting-for-weight-loss/",
+      "new": "https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/goal-setting-for-weight-loss/",
+      "first_seen": "2026-09-22"
+     }
+    ],
+    "suggest": null,
+    "steps": [
+     "On staging13, open this page in the block editor and change each old link below to its final address, keeping the wording.",
+     "https://www.bariatriccounselingcenter.com/blog/goal-setting-for-weight-loss/ -> https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/goal-setting-for-weight-loss/"
+    ],
+    "first_seen": "2026-09-22"
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-10-01T14:25:42",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
