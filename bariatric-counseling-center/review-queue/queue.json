@@ -6326,6 +6326,62 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "e70e9e89b7",
+   "kind": "social",
+   "key": "social-rebook:cmuh9aw8t0006oy8epv05tpzg",
+   "title": "Re-book: YT Tue 09/29, Carmen M., BCC Alumna, shares her experience (failed in Postiz)",
+   "why": "Postiz shows this YT post as failed (state ERROR), so it never went out. Same asset, new slot. Postiz does not give the error text through its API; check the post in Postiz if the reason matters. A session re-books it only after you approve and Todd OKs it.",
+   "payload": {
+    "date": "2026-10-22",
+    "weekday": "Thursday",
+    "times": [
+     "7:00 PM"
+    ],
+    "platforms": [
+     "YT"
+    ],
+    "type": "Re-book",
+    "pillar": "Re-book of a failed post",
+    "format": "rebook",
+    "title": "Re-book: YT Tue 09/29, Carmen M., BCC Alumna, shares her experience (failed in Postiz)",
+    "purpose": "Re-book the same asset that failed in Postiz on 2026-09-29 7:00 PM.",
+    "captions": {
+     "YT": "Carmen M., BCC Alumna, shares her experience finding community and belonging during treatment at the Bariatric Counseling Center. Our progra"
+    },
+    "on_image": [],
+    "alt_text": null,
+    "why_now": "It was scheduled for 2026-09-29 and never published.",
+    "asset": {
+     "kind": "rebook",
+     "same_asset_as_postiz_post_id": "cmuh9aw8t0006oy8epv05tpzg",
+     "failed_date": "2026-09-29",
+     "failed_time": "7:00 PM",
+     "channel": "Bariatric Counseling Center",
+     "note": "Re-use the same video or image the failed post used. Do not substitute a different clip."
+    },
+    "date_platforms": "Thu Oct 22: YT",
+    "postiz_mode": "schedule",
+    "needs_rewrite": [],
+    "suggested_slot": {
+     "date": "2026-10-22",
+     "weekday": "Thursday",
+     "time": "7:00 PM"
+    },
+    "rebook_of": {
+     "postiz_post_id": "cmuh9aw8t0006oy8epv05tpzg",
+     "date": "2026-09-29",
+     "time": "7:00 PM",
+     "provider": "youtube"
+    }
+   },
+   "source": "postiz-failed",
+   "status": "pending",
+   "created": "2026-10-01T14:22:50",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
