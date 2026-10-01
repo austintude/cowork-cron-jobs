@@ -6894,6 +6894,46 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "5bd3e79fe8",
+   "kind": "fix",
+   "key": "fix:redirecting links on page:https://www.bariatriccounselingcenter.com/weight-management-therapist-in-san-antonio-tx/",
+   "title": "Update 2 redirecting links on /weight-management-therapist-in-san-antonio-tx/",
+   "why": "2 internal links on this page point at old addresses that 301 to the new URLs; visitors and crawlers take an extra hop each time",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/weight-management-therapist-in-san-antonio-tx/",
+    "fix_type": "internal link redirects",
+    "detail": "2 old links on this page",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/weight-management-therapist-in-san-antonio-tx/"
+    ],
+    "links": [
+     {
+      "old": "https://www.bariatriccounselingcenter.com/blog/how-psychotherapy-and-mental-health-counseling-support-sustainable-weight-loss/",
+      "new": "https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-psychotherapy-and-mental-health-counseling-support-sustainable-weight-loss/",
+      "first_seen": "2026-09-22"
+     },
+     {
+      "old": "https://www.bariatriccounselingcenter.com/blog/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+      "new": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/",
+      "first_seen": "2026-09-22"
+     }
+    ],
+    "suggest": null,
+    "steps": [
+     "On staging13, open this page in the block editor and change each old link below to its final address, keeping the wording.",
+     "https://www.bariatriccounselingcenter.com/blog/how-psychotherapy-and-mental-health-counseling-support-sustainable-weight-loss/ -> https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-psychotherapy-and-mental-health-counseling-support-sustainable-weight-loss/",
+     "https://www.bariatriccounselingcenter.com/blog/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/ -> https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/"
+    ],
+    "first_seen": "2026-09-22"
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-10-01T14:25:39",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
