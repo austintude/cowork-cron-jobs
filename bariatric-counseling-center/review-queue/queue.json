@@ -7002,6 +7002,40 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "8804e7720b",
+   "kind": "fix",
+   "key": "fix:redirecting links on page:https://www.bariatriccounselingcenter.com/stop-the-cycle-of-binge-eating-you-dont-have-to-face-this-alone/",
+   "title": "Update 1 redirecting link on /stop-the-cycle-of-binge-eating-you-dont-have-to-f",
+   "why": "1 internal link on this page point at old addresses that 301 to the new URLs; visitors and crawlers take an extra hop each time",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/stop-the-cycle-of-binge-eating-you-dont-have-to-face-this-alone/",
+    "fix_type": "internal link redirects",
+    "detail": "1 old link on this page",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/stop-the-cycle-of-binge-eating-you-dont-have-to-face-this-alone/"
+    ],
+    "links": [
+     {
+      "old": "https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/",
+      "new": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/dietitians-or-nutritionists-breaking-down-the-differences/",
+      "first_seen": "2026-09-22"
+     }
+    ],
+    "suggest": null,
+    "steps": [
+     "On staging13, open this page in the block editor and change each old link below to its final address, keeping the wording.",
+     "https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/ -> https://www.bariatriccounselingcenter.com/diet-and-nutrition/dietitians-or-nutritionists-breaking-down-the-differences/"
+    ],
+    "first_seen": "2026-09-22"
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-10-01T14:25:40",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
