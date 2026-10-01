@@ -5614,6 +5614,35 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "b604ba0b24",
+   "kind": "fix",
+   "key": "fix:dead external link:https://www.ozempic.com/why-ozempic/what-is-ozempic.html",
+   "title": "Dead outside link on 1 page: www.ozempic.com",
+   "why": "dead external link on production, carried by 1 page (first seen 2026-10-01); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.ozempic.com/why-ozempic/what-is-ozempic.html",
+    "fix_type": "dead external link",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/"
+    ],
+    "suggest": null,
+    "steps": [
+     "https://www.ozempic.com/why-ozempic/what-is-ozempic.html answers HTTP 404.",
+     "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+    ],
+    "first_seen": "2026-10-01",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-10-01T05:57:47",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
