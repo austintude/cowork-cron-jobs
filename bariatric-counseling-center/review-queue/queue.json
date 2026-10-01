@@ -1083,7 +1083,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Slot is free; 35 days of notice."
    }
@@ -1177,7 +1177,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Slot is free; 36 days of notice."
    }
@@ -1239,7 +1239,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Slot is free; 39 days of notice."
    }
@@ -1301,7 +1301,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Slot is free; 40 days of notice."
    }
@@ -1363,7 +1363,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Slot is free; 47 days of notice."
    }
@@ -2898,20 +2898,40 @@
     "replaces_tab": "October Content Calendar",
     "date_platforms": "Tue 10/6: FB, IG, YT",
     "postiz_mode": "schedule",
-    "needs_rewrite": []
+    "needs_rewrite": [],
+    "clash": {
+     "with": "Tue 10/6: alumni clip, Gerry M. (two years later)",
+     "with_status": "placed",
+     "date": "2026-10-06",
+     "platforms": [
+      "FB",
+      "IG",
+      "YT"
+     ],
+     "suggested_slot": {
+      "date": "2026-10-27",
+      "weekday": "Tuesday",
+      "time": "7:00 PM"
+     }
+    },
+    "suggested_slot": {
+     "date": "2026-10-27",
+     "weekday": "Tuesday",
+     "time": "7:00 PM"
+    }
    },
    "source": "social-plan",
-   "status": "approved",
+   "status": "pending",
    "created": "2026-09-24T05:32:36",
-   "decided": "2026-09-29T16:03:22",
-   "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT)",
+   "decided": null,
+   "note": "recheck 2026-10-01: 2026-10-06 is already taken on FB+IG+YT by \"Tue 10/6: alumni clip, Gerry M. (two years later)\" (placed). Moved back to the review queue. Suggested free slot: Tuesday 10/27, 7:00 PM.",
    "result": {
     "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\c2d8dc5561-tue-10-6-alumni-clip-kim-k-worth-the-effort.json"
    },
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "warn",
-    "text": "2026-10-06 is already taken on FB+IG+YT by \"Tue 10/6: alumni clip, Gerry M. (two years later)\" (placed)."
+    "text": "2026-10-06 is already taken on FB+IG+YT by \"Tue 10/6: alumni clip, Gerry M. (two years later)\" (placed). Moved back to the review queue. Suggested free slot: Tuesday 10/27, 7:00 PM."
    }
   },
   {
@@ -2978,7 +2998,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "warn",
     "text": "Short notice: it would reach Todd in the Wednesday draft (10/07), 1 days before it posts, so his silence rule will not apply and it needs his explicit OK."
    }
@@ -3065,7 +3085,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "warn",
     "text": "Short notice: it would reach Todd in the Wednesday draft (10/07), 2 days before it posts, so his silence rule will not apply and it needs his explicit OK."
    }
@@ -3127,7 +3147,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Slot is free; 41 days of notice."
    }
@@ -3188,7 +3208,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Slot is free; 42 days of notice."
    }
@@ -3251,7 +3271,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Slot is free; 46 days of notice."
    }
@@ -3313,7 +3333,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Slot is free; 48 days of notice."
    }
@@ -3339,7 +3359,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -3365,7 +3385,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -3391,7 +3411,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -3417,7 +3437,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -3443,7 +3463,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -3469,7 +3489,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -3495,7 +3515,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -3521,7 +3541,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -3543,7 +3563,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "info",
     "text": "The page already has an FAQ with 4 questions: Is binge eating disorder a real eating disorder? / Do I need to have a certain weight to qualify for treatment? / How long does binge eating treatment take? / Will I have to follow a restrictive diet?. Approving adds these 4 to it."
    }
@@ -3565,7 +3585,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "info",
     "text": "The page already has an FAQ with 4 questions: How do I know if I need an eating disorder therapist? / Does insurance cover eating disorder therapy? / Should I see a therapist or a dietitian first? / Can I do this by telehealth?. Approving adds these 3 to it."
    }
@@ -3587,7 +3607,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "info",
     "text": "The page already has an FAQ with 12 questions: Is Overeaters Anonymous the same as therapy? / Can I attend OA and also work with BCC at the same time? / Does insurance cover BCC's services? / Is BCC available outside San Antonio? / What eating-related conditions does BCC treat? / How is BCC different from a telehealth app or self-guided program? .... Approving adds these 4 to it."
    }
@@ -3685,7 +3705,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "No page at that address on production yet."
    }
@@ -5644,7 +5664,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Still on production: 1 of 1 pages (/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/)."
    }
@@ -5713,7 +5733,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "warn",
     "text": "Short notice: it would reach Todd in the Wednesday draft (10/07), 6 days before it posts, so his silence rule will not apply and it needs his explicit OK."
    }
@@ -5781,7 +5801,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Slot is free; 14 days of notice."
    }
@@ -5841,7 +5861,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Slot is free; 49 days of notice."
    }
@@ -5904,7 +5924,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Slot is free; 53 days of notice."
    }
@@ -5930,7 +5950,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -5956,7 +5976,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -5982,7 +6002,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -6008,7 +6028,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -6034,7 +6054,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -6060,7 +6080,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -6086,7 +6106,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -6112,7 +6132,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet. The live title is still the one this was drafted against."
    }
@@ -6134,7 +6154,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "info",
     "text": "The page already has an FAQ with 5 questions: What is the most effective treatment for binge eating disorder? / How do I know if I have binge eating disorder or just overeat sometimes? / Does binge eating disorder treatment require weight loss dieting? / Does insurance cover binge eating disorder treatment in San Antonio? / What does BCC’s binge eating program look like?. Approving adds these 4 to it."
    }
@@ -6156,7 +6176,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet; the page has no FAQ block."
    }
@@ -6178,7 +6198,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "info",
     "text": "The page already has an FAQ with 4 questions: How is weight loss therapy different from a diet program? / Is weight loss therapy at BCC covered by insurance? / Do you work with people taking GLP-1 medications? / Is BCC's program accredited?. Approving adds these 3 to it."
    }
@@ -6200,7 +6220,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "info",
     "text": "The page already has an FAQ with 4 questions: What is the difference between a nutritionist and a registered dietitian? / Do you accept insurance for nutritional counseling? / Do I need a referral to see a dietitian? / Will you put me on a diet?. Approving adds these 4 to it."
    }
@@ -6222,7 +6242,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet."
    }
@@ -6244,7 +6264,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet."
    }
@@ -6266,7 +6286,7 @@
    "note": null,
    "result": null,
    "check": {
-    "at": "2026-10-01T11:03:36",
+    "at": "2026-10-01T14:22:49",
     "level": "ok",
     "text": "Not live yet."
    }
@@ -6325,7 +6345,12 @@
    "created": "2026-10-01T14:22:50",
    "decided": null,
    "note": null,
-   "result": null
+   "result": null,
+   "check": {
+    "at": "2026-10-01T14:22:49",
+    "level": "ok",
+    "text": "Slot is free; 19 days of notice."
+   }
   },
   {
    "id": "e70e9e89b7",
@@ -6381,7 +6406,12 @@
    "created": "2026-10-01T14:22:50",
    "decided": null,
    "note": null,
-   "result": null
+   "result": null,
+   "check": {
+    "at": "2026-10-01T14:22:49",
+    "level": "ok",
+    "text": "Slot is free; 21 days of notice."
+   }
   },
   {
    "id": "34653b31d2",
@@ -6437,7 +6467,12 @@
    "created": "2026-10-01T14:22:50",
    "decided": null,
    "note": null,
-   "result": null
+   "result": null,
+   "check": {
+    "at": "2026-10-01T14:22:49",
+    "level": "ok",
+    "text": "Slot is free; 19 days of notice."
+   }
   },
   {
    "id": "8d46d30c87",
@@ -6493,7 +6528,12 @@
    "created": "2026-10-01T14:22:51",
    "decided": null,
    "note": null,
-   "result": null
+   "result": null,
+   "check": {
+    "at": "2026-10-01T14:22:49",
+    "level": "ok",
+    "text": "Slot is free; 19 days of notice."
+   }
   }
  ]
 }
