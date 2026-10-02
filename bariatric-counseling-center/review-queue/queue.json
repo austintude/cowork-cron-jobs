@@ -5111,8 +5111,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T16:39:15",
-   "note": "Read and send the Gmail draft 'Newsletter send time: Tuesdays 8:30 AM'.",
+   "decided": "2026-10-02T07:00:33",
+   "note": "Read and send the Gmail draft 'Newsletter send time: Tuesdays 8:30 AM'.: not sent, and no longer in your Drafts (deleted?)",
    "result": {
     "needs_you": "Send the newsletter timing email to Todd (Gmail draft ready)",
     "needs_since": "2026-09-25",
@@ -5132,6 +5132,11 @@
        "at": "2026-09-29 16:39",
        "by": "claude",
        "text": "Gmail draft from daniel@drbdig.com to Todd: 'Newsletter send time: Tuesdays 8:30 AM' (Tuesday 8:30 AM both lists; Saturday 9 AM test on half the client list Nov to Jan; asks for his OK)."
+      },
+      {
+       "at": "2026-10-02 07:00",
+       "by": "check",
+       "text": "Read and send the Gmail draft 'Newsletter send time: Tuesdays 8:30 AM'.: not sent, and no longer in your Drafts (deleted?)"
       }
      ],
      "steps": [
@@ -5150,8 +5155,8 @@
        },
        "due": "2026-10-01",
        "id": "s1",
-       "status": "open",
-       "evidence": "still in your Gmail Drafts, not sent"
+       "status": "gone",
+       "evidence": "not sent, and no longer in your Drafts (deleted?)"
       },
       {
        "owner": "todd",
@@ -5182,9 +5187,9 @@
        "status": "open"
       }
      ],
-     "state": "your_move",
-     "state_text": "Read and send the Gmail draft 'Newsletter send time: Tuesdays 8:30 AM'.",
-     "checked_at": "2026-10-01 07:00"
+     "state": "problem",
+     "state_text": "Read and send the Gmail draft 'Newsletter send time: Tuesdays 8:30 AM'.: not sent, and no longer in your Drafts (deleted?)",
+     "checked_at": "2026-10-02 07:00"
     }
    }
   },
