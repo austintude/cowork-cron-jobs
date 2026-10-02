@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-10-01 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-02 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -22,8 +22,8 @@ Generated 2026-10-01 07:00 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Items waiting on Daniel or on Todd/Sara (14): not for Claude, except the Gmail confirmations below.
-- Send draft October client and referring partner newsletters for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with edits (asked for by Tue Oct 6)
+## Nothing outstanding for a Claude session right now.
+## Items waiting on Daniel or on Todd/Sara (10): not for Claude, except the Gmail confirmations below.
 - Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25
 - Decide newsletter send day and time, back it with data: Read and send the Gmail draft 'Newsletter send time: Tuesdays 8:30 AM'.
 - Rank how people actually search (top 10), find a platform big in Texas that competitors ignore: Read and send the Gmail draft 'How people search for help in Texas: the top 10'.
@@ -31,22 +31,9 @@ Generated 2026-10-01 07:00 by queue_apply.py. Daniel approved these on the dashb
 - Continue the Bing and Copilot build-out: OK the IndexNow submission of the 41 changed production URLs.
 - Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation): Read and send the Gmail draft 'Psych evaluation page: four things to confirm'.
 - ARFID landing page and blog: Read and send the Gmail draft 'ARFID page: a few details to confirm'.
-- Daniel send draft social video clips to Sara and Todd for review: Waiting on Todd since 2026-09-25: Todd or Sara reply with thoughts on the clips
-- Daniel send October social media calendar for review and QC (wait 2 to 3 days): Waiting on Todd since 2026-09-25: Todd or Sara reply (asked for by Thu Oct 1); their Todd OK boxes on the sheet count too
-- Update video thumbnails: short testimonial medley and Jessica's own testimonial (YouTube): In YouTube Studio, set medley-B-thumbnail-v3-jessica-B.jpg as the thumbnail of EGLOzVHH6wQ.
 - Texas-wide geographic strategy: Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief
 - Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts: Waiting on Sara since 2026-09-25: Sara replies with comments and direction
 - Use Ford's finished staff profile videos (Vimeo): Restart the Gerry, Jessica and Samantha raw downloads if they stopped. When they land in Downloads, a session moves and transcribes them.
-
-## Social posts to build and write to the sheet (1); the draft to Todd is a separate weekly step
-
-- id `c2d8dc5561`: **Tue 10/6: alumni clip, Kim K. (worth the effort)** on 2026-10-06 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-09-29. Why: held clip slot on the sheet (row 12) with no clip assigned
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\c2d8dc5561-tue-10-6-alumni-clip-kim-k-worth-the-effort.json`
-  - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/kim-clip2-9x16_worth-the-effort_COVERED.mp4
-  - replaces row 12 in October Content Calendar
-  - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
-
-## Draft day: Wednesday. Today is Thursday, not draft day: build only, no email to Todd.
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
