@@ -3848,8 +3848,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-29T16:39:09",
-   "note": "Read and send the Gmail draft 'ARFID page: a few details to confirm'.",
+   "decided": "2026-10-07T07:00:45",
+   "note": "Waiting on Sara since 2026-10-07: Sara replies to 'ARFID page: a few details to confirm'. (was due 2026-10-06)",
    "result": {
     "needs_you": "Send the ARFID details to Sara (Gmail draft ready)",
     "needs_since": "2026-09-25",
@@ -3879,6 +3879,11 @@
        "at": "2026-09-29 16:39",
        "by": "claude",
        "text": "Still open for Todd, not in Sara's email: ARFID billed under mental health benefits like other services."
+      },
+      {
+       "at": "2026-10-07 07:00",
+       "by": "check",
+       "text": "Read and send the Gmail draft 'ARFID page: a few details to confirm'.: sent 2026-10-06 14:30 to Sara Hamilton <shamilton@bccsanantonio.com>"
       }
      ],
      "steps": [
@@ -3897,8 +3902,11 @@
        },
        "due": "2026-10-01",
        "id": "s1",
-       "status": "open",
-       "evidence": "still in your Gmail Drafts, not sent"
+       "status": "done",
+       "evidence": "sent 2026-10-06 14:30 to Sara Hamilton <shamilton@bccsanantonio.com>",
+       "done_at": "2026-10-07 07:00",
+       "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0ef19e77c2acd6",
+       "via": "checked automatically"
       },
       {
        "owner": "sara",
@@ -3929,9 +3937,9 @@
        "status": "open"
       }
      ],
-     "state": "your_move",
-     "state_text": "Read and send the Gmail draft 'ARFID page: a few details to confirm'.",
-     "checked_at": "2026-10-06 07:00"
+     "state": "waiting",
+     "state_text": "Waiting on Sara since 2026-10-07: Sara replies to 'ARFID page: a few details to confirm'. (was due 2026-10-06)",
+     "checked_at": "2026-10-07 07:00"
     }
    }
   },
