@@ -1,0 +1,2783 @@
+{
+  "date": "2026-10-08",
+  "generated": "2026-10-08T05:58:57",
+  "mock": false,
+  "config_file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\seo-tools\\social.json",
+  "env_keys": [
+    "META_ACCESS_TOKEN",
+    "YOUTUBE_API_KEY",
+    "LINKEDIN_ACCESS_TOKEN"
+  ],
+  "env_present": {
+    "META_ACCESS_TOKEN": true,
+    "YOUTUBE_API_KEY": true,
+    "LINKEDIN_ACCESS_TOKEN": false
+  },
+  "cost_usd": 0.0,
+  "sources": {
+    "meta_own": {
+      "ok": true,
+      "reason": ""
+    },
+    "youtube_own": {
+      "ok": true,
+      "reason": ""
+    },
+    "linkedin_own": {
+      "ok": false,
+      "reason": "LINKEDIN_ACCESS_TOKEN not set (optional)"
+    },
+    "discovery": {
+      "ok": true,
+      "reason": ""
+    },
+    "youtube_competitors": {
+      "ok": true,
+      "reason": "Sage Bariatric: channel not found for https://www.youtube.com/user/SageBariatric; Psychology Today: channel not found for https://www.youtube.com/user/psychologytoday; NEDA: channel not found for https://www.youtube.com/c/nationaleatingdisordersassociation"
+    },
+    "ad_library": {
+      "ok": false,
+      "reason": "binge eating: HTTP 400: Application does not have permission for this action; eating disorder treatment Texas: HTTP 400: Application does not have permission for this action; weight loss counseling San Antonio: HTTP 400: Application does not have permission for this action; overeaters: HTTP 400: Application does not have permission for this action"
+    }
+  },
+  "howto": {
+    "meta": [
+      "META_ACCESS_TOKEN not set. To connect Facebook and Instagram:",
+      "1. developers.facebook.com: create an app (type Business), add the Facebook Login and Instagram Graph products.",
+      "2. Graph API Explorer: pick the app, choose the BCC Page as the token owner, grant pages_read_engagement, pages_read_user_content, read_insights, instagram_basic, instagram_manage_insights, ads_read.",
+      "3. Exchange it for a long-lived Page token (Access Token Debugger, Extend), then paste it in seo-tools/.env as META_ACCESS_TOKEN=... and put the Page id and Instagram Business id in social.json under own.",
+      "4. Meta Ad Library also needs one-time identity confirmation at facebook.com/ID before the ads_archive endpoint answers."
+    ],
+    "youtube": [
+      "YOUTUBE_API_KEY not set. To connect YouTube (own channel and competitors):",
+      "1. console.cloud.google.com: any project, APIs and Services, Enable APIs, turn on YouTube Data API v3.",
+      "2. Credentials, Create credentials, API key. Restrict it to the YouTube Data API v3 only.",
+      "3. Paste it in seo-tools/.env as YOUTUBE_API_KEY=... and put the BCC channel id (UC...) or @handle in social.json under own.youtube_channel_id."
+    ],
+    "linkedin": [
+      "LINKEDIN_ACCESS_TOKEN not set. LinkedIn is the hardest one and is optional:",
+      "1. linkedin.com/developers: create an app tied to the BCC Company Page, request the Community Management API (approval takes days).",
+      "2. OAuth with r_organization_social and rw_organization_admin as a Page admin; tokens last 60 days.",
+      "3. Paste it in .env as LINKEDIN_ACCESS_TOKEN=... and the numeric organization id in social.json under own.linkedin_org_id."
+    ]
+  },
+  "own": {
+    "facebook": {
+      "name": "Bariatric Counseling Center",
+      "fan_count": 1116,
+      "followers": 1116,
+      "link": "https://www.facebook.com/1787937478137699",
+      "posts": [
+        {
+          "id": "1787937478137699_1683350413793476",
+          "created": "2026-10-07T00:00:25+0000",
+          "url": "https://www.facebook.com/reel/3710108742471116/",
+          "text": "Two years later. Gerry M., BCC Alumnus, reflects on lasting change in this short clip. The Bariatric Counseling Center offers comprehensive ",
+          "reactions": 0,
+          "comments": 1,
+          "shares": 0
+        },
+        {
+          "id": "1787937478137699_1678934650901719",
+          "created": "2026-10-02T18:11:53+0000",
+          "url": "https://www.facebook.com/reel/1408739331351584/",
+          "text": "Food Friday from our teaching kitchen.\n\n5 dishes Chef Leila Bebley cooked this month, and the one technique behind each:\n\nCitrus Grilled Shr",
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0
+        },
+        {
+          "id": "1787937478137699_1678932354235282",
+          "created": "2026-10-02T18:09:19+0000",
+          "url": "https://www.facebook.com/1670010905127427/posts/1678932354235282",
+          "text": "Why does food feel harder to manage after a bad night's sleep?\n\nShort sleep disrupts ghrelin and leptin, the hormones that signal hunger and",
+          "reactions": 0,
+          "comments": 1,
+          "shares": 0
+        },
+        {
+          "id": "1787937478137699_1676856857776165",
+          "created": "2026-10-01T00:00:38+0000",
+          "url": "https://www.facebook.com/reel/1449241787304163/",
+          "text": "\"There's so many different stories that you learn something from really everyone that you meet.\"\n\nThat's Gerry M., BCC Alumnus, on what the ",
+          "reactions": 0,
+          "comments": 1,
+          "shares": 0
+        },
+        {
+          "id": "1787937478137699_1675755461219638",
+          "created": "2026-09-30T00:00:35+0000",
+          "url": "https://www.facebook.com/reel/1105424435334558/",
+          "text": "Finding a place where you truly belong can change everything. Carmen M., BCC Alumna, shares what it meant to find community and support duri",
+          "reactions": 0,
+          "comments": 1,
+          "shares": 0
+        },
+        {
+          "id": "1787937478137699_1674299911365193",
+          "created": "2026-09-28T15:30:03+0000",
+          "url": "https://www.facebook.com/1670010905127427/posts/1674299911365193",
+          "text": "A craving isn't a failure. It's information.\n\nWhen you feel a strong urge to eat, your body or mind is trying to tell you something. Maybe y",
+          "reactions": 0,
+          "comments": 1,
+          "shares": 0
+        },
+        {
+          "id": "1787937478137699_1671140015014516",
+          "created": "2026-09-25T17:01:07+0000",
+          "url": "https://www.facebook.com/reel/2006807674039640/",
+          "text": "Food Friday from our teaching kitchen.\n\nFive dishes Chef Leila Bebley cooked this month, and the one technique that makes each of them work:",
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0
+        },
+        {
+          "id": "1787937478137699_1670010881794096",
+          "created": "2026-09-24T17:00:03+0000",
+          "url": "https://www.facebook.com/1670010905127427/posts/1670010881794096",
+          "text": "Behind the scenes in the teaching kitchen.\n\nMost nutrition advice stops at the recipe. Ours doesn't. Our Registered Dietitian cooks alongsid",
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0
+        },
+        {
+          "id": "1787937478137699_1666929062102278",
+          "created": "2026-09-21T17:01:22+0000",
+          "url": "https://www.facebook.com/1670010905127427/posts/1666929062102278",
+          "text": "Behind the scenes in the teaching kitchen.\n\nMost nutrition advice stops at the recipe. Ours doesn't. Our Registered Dietitians cook alongsid",
+          "reactions": 2,
+          "comments": 0,
+          "shares": 0
+        },
+        {
+          "id": "1787937478137699_1663048195823698",
+          "created": "2026-09-17T15:00:58+0000",
+          "url": "https://www.facebook.com/1670010905127427/posts/1663048195823698",
+          "text": "Did you know an Intensive Outpatient Program doesn't mean putting your life on hold?\n\nBCC's IOP runs two to three sessions a week, around 30",
+          "reactions": 0,
+          "comments": 0,
+          "shares": 0
+        }
+      ],
+      "posts_90d": 10,
+      "engagement_last10": 7,
+      "impressions_28d": 1329,
+      "post_engagements_28d": 58
+    },
+    "instagram": {
+      "username": "bariatriccounselingcenter",
+      "followers": 800,
+      "media_count": 863,
+      "media": [
+        {
+          "id": "18075522578717562",
+          "created": "2026-10-07T00:01:09+0000",
+          "url": "https://www.instagram.com/reel/DeLBa4rkUq0/",
+          "type": "VIDEO",
+          "text": "Two years later\n\nGerry M., BCC Alumnus, reflects on lasting change in this short clip. The Bariatric Counseling Center offers comprehensive ",
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "18113544527029203",
+          "created": "2026-10-02T18:23:06+0000",
+          "url": "https://www.instagram.com/reel/DeAHjMhDFwp/",
+          "type": "VIDEO",
+          "text": "5 dishes, 5 techniques, one teaching kitchen.\n\nHigh heat, two minutes a side and no longer. Toast the spices before the tomato goes in. Melt",
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "18007737434991433",
+          "created": "2026-10-01T19:35:54+0000",
+          "url": "https://www.instagram.com/p/Dd9rHBLoFqW/",
+          "type": "CAROUSEL_ALBUM",
+          "text": "How poor sleep increases appetite and cravings.\n\nShort sleep disrupts ghrelin and leptin, the two hormones that signal hunger and fullness. ",
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "18115575752092635",
+          "created": "2026-10-01T00:00:46+0000",
+          "url": "https://www.instagram.com/reel/Dd7knusEmk-/",
+          "type": "VIDEO",
+          "text": "\"You learn something from really everyone that you meet.\" Gerry M., BCC Alumnus\n\nYou belong in this room.\n\n#BariatricCounseling #VirtualTher",
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "18114912844816382",
+          "created": "2026-09-30T00:00:49+0000",
+          "url": "https://www.instagram.com/reel/Dd4_0fRjUTs/",
+          "type": "VIDEO",
+          "text": "Finding community and support in weight loss treatment\n\nFinding a place where you truly belong can change everything. Carmen M., BCC Alumna,",
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "18116773664002656",
+          "created": "2026-09-28T17:15:54+0000",
+          "url": "https://www.instagram.com/p/Dd1stDOIE_v/",
+          "type": "CAROUSEL_ALBUM",
+          "text": "What is this craving really about?\n\nA craving isn't a failure. It's information. Your body or mind is trying to tell you something. Maybe yo",
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "18015096527936760",
+          "created": "2026-09-25T17:01:29+0000",
+          "url": "https://www.instagram.com/reel/Ddt8ojNFYZq/",
+          "type": "VIDEO",
+          "text": "Five dishes, five techniques, one teaching kitchen.\n\nSear then sauce. Glaze late. Bloom the paste. Rest the meat. Roast, then fold.\n\nChef Le",
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "17912181552465962",
+          "created": "2026-09-24T17:00:49+0000",
+          "url": "https://www.instagram.com/p/DdrXwUyIKWz/",
+          "type": "IMAGE",
+          "text": "Behind the scenes in the teaching kitchen.\n\nKnowing what to eat and knowing how to cook it at the end of a hard day are two different skills",
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "18136978963712554",
+          "created": "2026-09-21T17:00:34+0000",
+          "url": "https://www.instagram.com/p/Ddjpa9DCciU/",
+          "type": "IMAGE",
+          "text": "Behind the scenes in the teaching kitchen.\n\nKnowing what to eat and knowing how to cook it at the end of a hard day are two different skills",
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "18415953484158196",
+          "created": "2026-09-17T15:01:23+0000",
+          "url": "https://www.instagram.com/p/DdZImdJgGVD/",
+          "type": "IMAGE",
+          "text": "Did you know an IOP doesn't mean putting your life on hold?\n\nTwo to three sessions a week. Morning, evening and Saturday tracks.\n\n#Bariatric",
+          "likes": 1,
+          "comments": 0
+        }
+      ],
+      "posts_90d": 10,
+      "engagement_last10": 11
+    },
+    "youtube": {
+      "channel_id": "UCQdeXYVCRJfhM4kkdhR1ZLQ",
+      "title": "Bariatric Counseling Center",
+      "handle": "@bariatriccounselingcenter",
+      "url": "https://www.youtube.com/channel/UCQdeXYVCRJfhM4kkdhR1ZLQ",
+      "subscribers": 91,
+      "subscribers_hidden": false,
+      "video_count": 145,
+      "view_count": 30819,
+      "videos": [
+        {
+          "id": "oIiPCeZviyo",
+          "title": "Two Years Later: Gerry M. | Bariatric Counseling Center",
+          "published": "2026-10-07T00:00:24Z",
+          "url": "https://www.youtube.com/watch?v=oIiPCeZviyo",
+          "views": 13,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "5LQwthUYgnU",
+          "title": "Food Friday: 5 Dishes, 5 Techniques",
+          "published": "2026-10-02T18:25:47Z",
+          "url": "https://www.youtube.com/watch?v=5LQwthUYgnU",
+          "views": 65,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "WtD8R2K0Scc",
+          "title": "The Diversity of Stories | Gerry M., BCC Alumnus",
+          "published": "2026-10-01T18:47:33Z",
+          "url": "https://www.youtube.com/watch?v=WtD8R2K0Scc",
+          "views": 35,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "eUshNz_v-WI",
+          "title": "Why We Never Talked About Weight | Jessica's Story | The Bariatric Counseling Center",
+          "published": "2026-09-17T19:27:20Z",
+          "url": "https://www.youtube.com/watch?v=eUshNz_v-WI",
+          "views": 6,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "xNEir3Y9Dzg",
+          "title": "How The Bariatric Counseling Center Program Works | Overeating & Binge Eating Treatment in Texas",
+          "published": "2026-09-17T17:06:50Z",
+          "url": "https://www.youtube.com/watch?v=xNEir3Y9Dzg",
+          "views": 20,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "Y79TeMbNu0U",
+          "title": "One Program, Not Four Referrals | The Bariatric Counseling Center",
+          "published": "2026-09-17T16:49:34Z",
+          "url": "https://www.youtube.com/watch?v=Y79TeMbNu0U",
+          "views": 16,
+          "likes": 1,
+          "comments": 1
+        },
+        {
+          "id": "Ri2Pdqnh13M",
+          "title": "\"I Finally Felt Like I Belonged\" | The Bariatric Counseling Center",
+          "published": "2026-09-16T14:42:26Z",
+          "url": "https://www.youtube.com/watch?v=Ri2Pdqnh13M",
+          "views": 8,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "N3zqmXkUiu0",
+          "title": "\"What I Passed Down to My Daughter\" | The Bariatric Counseling Center #Shorts",
+          "published": "2026-09-15T18:33:26Z",
+          "url": "https://www.youtube.com/watch?v=N3zqmXkUiu0",
+          "views": 9,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "0FpvXV1NbMw",
+          "title": "How The Bariatric Counseling Center Program Works | Overeating & Binge Eating Treatment in Texas",
+          "published": "2026-09-15T18:02:20Z",
+          "url": "https://www.youtube.com/watch?v=0FpvXV1NbMw",
+          "views": 190,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "gT5Enm1y8mw",
+          "title": "Meet The Team Behind The Bariatric Counseling Center | Overeating & Binge Eating Program in Texas",
+          "published": "2026-09-15T18:00:17Z",
+          "url": "https://www.youtube.com/watch?v=gT5Enm1y8mw",
+          "views": 6,
+          "likes": 0,
+          "comments": 0
+        }
+      ],
+      "uploads_90d": 10,
+      "views_90d": 368,
+      "top_videos": [
+        {
+          "id": "0FpvXV1NbMw",
+          "title": "How The Bariatric Counseling Center Program Works | Overeating & Binge Eating Treatment in Texas",
+          "published": "2026-09-15T18:02:20Z",
+          "url": "https://www.youtube.com/watch?v=0FpvXV1NbMw",
+          "views": 190,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "5LQwthUYgnU",
+          "title": "Food Friday: 5 Dishes, 5 Techniques",
+          "published": "2026-10-02T18:25:47Z",
+          "url": "https://www.youtube.com/watch?v=5LQwthUYgnU",
+          "views": 65,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "WtD8R2K0Scc",
+          "title": "The Diversity of Stories | Gerry M., BCC Alumnus",
+          "published": "2026-10-01T18:47:33Z",
+          "url": "https://www.youtube.com/watch?v=WtD8R2K0Scc",
+          "views": 35,
+          "likes": 1,
+          "comments": 0
+        }
+      ],
+      "engagement_recent": 4
+    },
+    "linkedin": null,
+    "tiktok_handle": ""
+  },
+  "own_howto": {
+    "linkedin_own": [
+      "LINKEDIN_ACCESS_TOKEN not set. LinkedIn is the hardest one and is optional:",
+      "1. linkedin.com/developers: create an app tied to the BCC Company Page, request the Community Management API (approval takes days).",
+      "2. OAuth with r_organization_social and rw_organization_admin as a Page admin; tokens last 60 days.",
+      "3. Paste it in .env as LINKEDIN_ACCESS_TOKEN=... and the numeric organization id in social.json under own.linkedin_org_id."
+    ]
+  },
+  "competitors_youtube": [
+    {
+      "channel_id": "UCXwV4vaTOZu6YRa5xxKKtnw",
+      "title": "Noom",
+      "handle": "@noominc",
+      "url": "https://www.youtube.com/channel/UCXwV4vaTOZu6YRa5xxKKtnw",
+      "subscribers": 34400,
+      "subscribers_hidden": false,
+      "video_count": 557,
+      "view_count": 109211772,
+      "videos": [
+        {
+          "id": "rq5NnHVrCqU",
+          "title": "The scariest part of stopping a GLP-1? \ud83d\udc40",
+          "published": "2026-10-07T20:47:24Z",
+          "url": "https://www.youtube.com/watch?v=rq5NnHVrCqU",
+          "views": 180,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "PeOsewHnZdw",
+          "title": "something's lurking around the corner \ud83d\udc40",
+          "published": "2026-10-06T23:07:53Z",
+          "url": "https://www.youtube.com/watch?v=PeOsewHnZdw",
+          "views": 305,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "24JsQAhZVGI",
+          "title": "Noom PSA - Weight Regain Doesn't Care",
+          "published": "2026-10-06T17:08:26Z",
+          "url": "https://www.youtube.com/watch?v=24JsQAhZVGI",
+          "views": 27473,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "rlXBULRrzbU",
+          "title": "Is The Medication Doing All the Work? This Dad Says No | 40 lbs down",
+          "published": "2026-10-06T17:00:05Z",
+          "url": "https://www.youtube.com/watch?v=rlXBULRrzbU",
+          "views": 88,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "dmxr8jlGc5c",
+          "title": "what I wish more men knew about their health | 40 lbs down",
+          "published": "2026-10-02T18:26:16Z",
+          "url": "https://www.youtube.com/watch?v=dmxr8jlGc5c",
+          "views": 367,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "SYniXF-IPk4",
+          "title": "what is a keystone habit? | Ask Noom",
+          "published": "2026-10-01T16:10:31Z",
+          "url": "https://www.youtube.com/watch?v=SYniXF-IPk4",
+          "views": 79,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "IDT4hvjBpo4",
+          "title": "Pumpkin Hummus Recipe | Easy Fall Snack",
+          "published": "2026-10-01T00:14:13Z",
+          "url": "https://www.youtube.com/watch?v=IDT4hvjBpo4",
+          "views": 1132,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "j4X7zGpYXQQ",
+          "title": "High Protein Lunch Box Restock  \ud83c\udf71 #asmr #mealprep",
+          "published": "2026-09-29T23:13:38Z",
+          "url": "https://www.youtube.com/watch?v=j4X7zGpYXQQ",
+          "views": 25544,
+          "likes": 0,
+          "comments": 4
+        },
+        {
+          "id": "Bmf4dLkF3eE",
+          "title": "She Lost 40 Lbs \u2014 Now She Can Finally Keep Up With Her Son",
+          "published": "2026-09-29T17:00:01Z",
+          "url": "https://www.youtube.com/watch?v=Bmf4dLkF3eE",
+          "views": 471,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "uJEu9p1Uatk",
+          "title": "40 lb mom weight loss - she can finally keep up with her son",
+          "published": "2026-09-25T18:05:19Z",
+          "url": "https://www.youtube.com/watch?v=uJEu9p1Uatk",
+          "views": 177,
+          "likes": 0,
+          "comments": 2
+        },
+        {
+          "id": "mrrz1fuY0tU",
+          "title": "Preparing for my GLP-1 documentary \ud83c\udfac",
+          "published": "2026-09-24T22:30:06Z",
+          "url": "https://www.youtube.com/watch?v=mrrz1fuY0tU",
+          "views": 307,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "45Hypxs0Bgw",
+          "title": "the ultimate savory snack: air fryer olive bites \ud83e\uded2 #savorysnack",
+          "published": "2026-09-23T23:11:19Z",
+          "url": "https://www.youtube.com/watch?v=45Hypxs0Bgw",
+          "views": 1090,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "eZ4GxWSGkMU",
+          "title": "40 lb weight loss transformation - she ended up on TV \ud83e\udd79",
+          "published": "2026-09-22T17:34:49Z",
+          "url": "https://www.youtube.com/watch?v=eZ4GxWSGkMU",
+          "views": 954,
+          "likes": 0,
+          "comments": 3
+        },
+        {
+          "id": "vOPUf4R1FvA",
+          "title": "Fruit Snack Box Restock \ud83c\udf53\u2728#asmrrestock #snackbox #asmr",
+          "published": "2026-09-18T21:38:21Z",
+          "url": "https://www.youtube.com/watch?v=vOPUf4R1FvA",
+          "views": 10612,
+          "likes": 0,
+          "comments": 2
+        },
+        {
+          "id": "Y8hwc0PEhG0",
+          "title": "the 3 ingredient dessert i make every week \ud83c\udf6b\ud83c\udf4a #healthydessert",
+          "published": "2026-09-10T23:38:46Z",
+          "url": "https://www.youtube.com/watch?v=Y8hwc0PEhG0",
+          "views": 36696,
+          "likes": 0,
+          "comments": 4
+        },
+        {
+          "id": "HoR8R1a5Xhg",
+          "title": "4 Incredibly Satisfying Recipes That Are (Somehow) Good for You",
+          "published": "2026-09-09T22:00:12Z",
+          "url": "https://www.youtube.com/watch?v=HoR8R1a5Xhg",
+          "views": 348,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "FFhyGcsf_Gw",
+          "title": "you NEED to air fry your pasta #highprotein #crispy",
+          "published": "2026-09-04T20:00:27Z",
+          "url": "https://www.youtube.com/watch?v=FFhyGcsf_Gw",
+          "views": 2000,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "SW5AIbZU-sA",
+          "title": "The REAL reason you can't wind down at night #sleep #habits",
+          "published": "2026-09-03T00:18:20Z",
+          "url": "https://www.youtube.com/watch?v=SW5AIbZU-sA",
+          "views": 729,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "0rP0N767otM",
+          "title": "POV: you discovered whipped edamame toast #highfiber #avocadotoast",
+          "published": "2026-08-28T21:00:25Z",
+          "url": "https://www.youtube.com/watch?v=0rP0N767otM",
+          "views": 4094,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "gnM_ONbHQhY",
+          "title": "45% of what you do is NOT a decision #habits #wellness",
+          "published": "2026-08-12T02:50:22Z",
+          "url": "https://www.youtube.com/watch?v=gnM_ONbHQhY",
+          "views": 1028,
+          "likes": 0,
+          "comments": 0
+        }
+      ],
+      "uploads_90d": 19,
+      "views_90d": 113494,
+      "top_videos": [
+        {
+          "id": "Y8hwc0PEhG0",
+          "title": "the 3 ingredient dessert i make every week \ud83c\udf6b\ud83c\udf4a #healthydessert",
+          "published": "2026-09-10T23:38:46Z",
+          "url": "https://www.youtube.com/watch?v=Y8hwc0PEhG0",
+          "views": 36696,
+          "likes": 0,
+          "comments": 4
+        },
+        {
+          "id": "24JsQAhZVGI",
+          "title": "Noom PSA - Weight Regain Doesn't Care",
+          "published": "2026-10-06T17:08:26Z",
+          "url": "https://www.youtube.com/watch?v=24JsQAhZVGI",
+          "views": 27473,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "j4X7zGpYXQQ",
+          "title": "High Protein Lunch Box Restock  \ud83c\udf71 #asmr #mealprep",
+          "published": "2026-09-29T23:13:38Z",
+          "url": "https://www.youtube.com/watch?v=j4X7zGpYXQQ",
+          "views": 25544,
+          "likes": 0,
+          "comments": 4
+        }
+      ],
+      "engagement_recent": 15,
+      "label": "Noom",
+      "domain": "noom.com",
+      "handle_source": "discovered"
+    },
+    {
+      "channel_id": "UCGwacJUhmcrUVyjVTps1nZw",
+      "title": "Recovery.com",
+      "handle": "@recoverydotcom",
+      "url": "https://www.youtube.com/channel/UCGwacJUhmcrUVyjVTps1nZw",
+      "subscribers": 18300,
+      "subscribers_hidden": false,
+      "video_count": 634,
+      "view_count": 3156152,
+      "videos": [
+        {
+          "id": "QThscBaHWbM",
+          "title": "Recovery Story: How I Got Sober After Coming Out and Hitting Rock Bottom",
+          "published": "2026-09-02T19:38:12Z",
+          "url": "https://www.youtube.com/watch?v=QThscBaHWbM",
+          "views": 263,
+          "likes": 5,
+          "comments": 0
+        },
+        {
+          "id": "2zzCR_3-GLQ",
+          "title": "September 1st marks Day 1 of National Recovery Month \ud83d\udc9c",
+          "published": "2026-09-01T20:51:17Z",
+          "url": "https://www.youtube.com/watch?v=2zzCR_3-GLQ",
+          "views": 657,
+          "likes": 19,
+          "comments": 1
+        },
+        {
+          "id": "abzxA5a0Tes",
+          "title": "Grief doesn\u2019t shrink. Life just grows around it. \ud83d\udc99",
+          "published": "2026-08-30T17:00:47Z",
+          "url": "https://www.youtube.com/watch?v=abzxA5a0Tes",
+          "views": 384,
+          "likes": 15,
+          "comments": 1
+        },
+        {
+          "id": "QSLQs4xbZTQ",
+          "title": "You can\u2019t judge an eating disorder by someone\u2019s body size.",
+          "published": "2026-08-27T01:44:28Z",
+          "url": "https://www.youtube.com/watch?v=QSLQs4xbZTQ",
+          "views": 591,
+          "likes": 4,
+          "comments": 0
+        },
+        {
+          "id": "5-5n5fCROm0",
+          "title": "Does ARFID only affect kids?",
+          "published": "2026-08-25T00:40:27Z",
+          "url": "https://www.youtube.com/watch?v=5-5n5fCROm0",
+          "views": 352,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "6hEdKvqwgJc",
+          "title": "The hidden emotional toll of ARFID.",
+          "published": "2026-08-22T01:32:34Z",
+          "url": "https://www.youtube.com/watch?v=6hEdKvqwgJc",
+          "views": 271,
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "sxJYRXfHXiU",
+          "title": "Is it severe picky eating... or ARFID?",
+          "published": "2026-08-21T00:35:50Z",
+          "url": "https://www.youtube.com/watch?v=sxJYRXfHXiU",
+          "views": 119,
+          "likes": 3,
+          "comments": 2
+        },
+        {
+          "id": "vJvF5ni45M0",
+          "title": "When is it time to seek treatment for CPTSD?",
+          "published": "2026-08-20T01:32:32Z",
+          "url": "https://www.youtube.com/watch?v=vJvF5ni45M0",
+          "views": 203,
+          "likes": 6,
+          "comments": 0
+        },
+        {
+          "id": "eXlkA-c9jhg",
+          "title": "Could you be living with cPTSD?",
+          "published": "2026-08-18T19:30:37Z",
+          "url": "https://www.youtube.com/watch?v=eXlkA-c9jhg",
+          "views": 741,
+          "likes": 5,
+          "comments": 0
+        },
+        {
+          "id": "Xc7jWNMaDRI",
+          "title": "What does dissociation actually look like with CPTSD?",
+          "published": "2026-08-17T22:44:37Z",
+          "url": "https://www.youtube.com/watch?v=Xc7jWNMaDRI",
+          "views": 219,
+          "likes": 9,
+          "comments": 0
+        },
+        {
+          "id": "nQGkPlIqSUc",
+          "title": "How does trauma bonding factor into CPTSD?",
+          "published": "2026-08-15T00:35:30Z",
+          "url": "https://www.youtube.com/watch?v=nQGkPlIqSUc",
+          "views": 759,
+          "likes": 14,
+          "comments": 0
+        },
+        {
+          "id": "uSjGf6gr12I",
+          "title": "What does dissociation actually look like with CPTSD?",
+          "published": "2026-08-13T22:19:36Z",
+          "url": "https://www.youtube.com/watch?v=uSjGf6gr12I",
+          "views": 741,
+          "likes": 23,
+          "comments": 0
+        },
+        {
+          "id": "dvKvPF3dqvc",
+          "title": "What goes through the mind of someone with CPTSD when they enter a room?",
+          "published": "2026-08-13T01:45:57Z",
+          "url": "https://www.youtube.com/watch?v=dvKvPF3dqvc",
+          "views": 390,
+          "likes": 14,
+          "comments": 0
+        },
+        {
+          "id": "etIhWWInKCw",
+          "title": "Is it depression, or is it CPTSD?",
+          "published": "2026-08-10T22:45:31Z",
+          "url": "https://www.youtube.com/watch?v=etIhWWInKCw",
+          "views": 883,
+          "likes": 7,
+          "comments": 2
+        },
+        {
+          "id": "vcSOLOzbaac",
+          "title": "Why Are Boundaries So Important?",
+          "published": "2026-08-07T22:32:34Z",
+          "url": "https://www.youtube.com/watch?v=vcSOLOzbaac",
+          "views": 984,
+          "likes": 19,
+          "comments": 0
+        },
+        {
+          "id": "Q4Z1-gxMKpQ",
+          "title": "How do we define trauma?",
+          "published": "2026-08-06T22:45:25Z",
+          "url": "https://www.youtube.com/watch?v=Q4Z1-gxMKpQ",
+          "views": 185,
+          "likes": 3,
+          "comments": 0
+        },
+        {
+          "id": "5qdgoAw53Hg",
+          "title": "Why do so many people spend years in therapy without feeling any real change?",
+          "published": "2026-08-05T01:55:28Z",
+          "url": "https://www.youtube.com/watch?v=5qdgoAw53Hg",
+          "views": 131,
+          "likes": 9,
+          "comments": 1
+        },
+        {
+          "id": "aEBR9a2eH5Q",
+          "title": "Beyond the Hype of Psychedelics",
+          "published": "2026-08-03T23:39:43Z",
+          "url": "https://www.youtube.com/watch?v=aEBR9a2eH5Q",
+          "views": 521,
+          "likes": 9,
+          "comments": 1
+        },
+        {
+          "id": "tvJPVp7BPOA",
+          "title": "Can magic mushrooms actually rewire your brain?",
+          "published": "2026-08-01T02:00:38Z",
+          "url": "https://www.youtube.com/watch?v=tvJPVp7BPOA",
+          "views": 1008,
+          "likes": 36,
+          "comments": 0
+        },
+        {
+          "id": "ACd-n7ybngc",
+          "title": "Can magic mushrooms actually rewire your brain?",
+          "published": "2026-07-30T23:54:19Z",
+          "url": "https://www.youtube.com/watch?v=ACd-n7ybngc",
+          "views": 997,
+          "likes": 14,
+          "comments": 1
+        }
+      ],
+      "uploads_90d": 20,
+      "views_90d": 10399,
+      "top_videos": [
+        {
+          "id": "tvJPVp7BPOA",
+          "title": "Can magic mushrooms actually rewire your brain?",
+          "published": "2026-08-01T02:00:38Z",
+          "url": "https://www.youtube.com/watch?v=tvJPVp7BPOA",
+          "views": 1008,
+          "likes": 36,
+          "comments": 0
+        },
+        {
+          "id": "ACd-n7ybngc",
+          "title": "Can magic mushrooms actually rewire your brain?",
+          "published": "2026-07-30T23:54:19Z",
+          "url": "https://www.youtube.com/watch?v=ACd-n7ybngc",
+          "views": 997,
+          "likes": 14,
+          "comments": 1
+        },
+        {
+          "id": "vcSOLOzbaac",
+          "title": "Why Are Boundaries So Important?",
+          "published": "2026-08-07T22:32:34Z",
+          "url": "https://www.youtube.com/watch?v=vcSOLOzbaac",
+          "views": 984,
+          "likes": 19,
+          "comments": 0
+        }
+      ],
+      "engagement_recent": 226,
+      "label": "Recovery.com",
+      "domain": "recovery.com",
+      "handle_source": "discovered"
+    },
+    {
+      "channel_id": "UCspO95XDFYViETpZCq4bA3Q",
+      "title": "Eating Recovery Center",
+      "handle": "@eatingrecoverycenter",
+      "url": "https://www.youtube.com/channel/UCspO95XDFYViETpZCq4bA3Q",
+      "subscribers": 12300,
+      "subscribers_hidden": false,
+      "video_count": 268,
+      "view_count": 2598351,
+      "videos": [
+        {
+          "id": "ALNHL85tmBg",
+          "title": "The Hidden Signs of Anxiety and Depression with Dr. Matt Pierson",
+          "published": "2026-10-01T09:10:05Z",
+          "url": "https://www.youtube.com/watch?v=ALNHL85tmBg",
+          "views": 110,
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "xotNsWjITeQ",
+          "title": "Feelings That Can Happen During Recovery",
+          "published": "2026-09-04T15:03:37Z",
+          "url": "https://www.youtube.com/watch?v=xotNsWjITeQ",
+          "views": 158,
+          "likes": 5,
+          "comments": 1
+        },
+        {
+          "id": "CxG9RXZxnIE",
+          "title": "Choosing Recovery",
+          "published": "2026-08-24T15:00:49Z",
+          "url": "https://www.youtube.com/watch?v=CxG9RXZxnIE",
+          "views": 2021,
+          "likes": 27,
+          "comments": 0
+        },
+        {
+          "id": "8ODu_wvG_Pg",
+          "title": "The Language of Eating Disorders: Metaphor, Meaning & Recovery with Dr. Anita Johnston",
+          "published": "2026-08-20T09:11:30Z",
+          "url": "https://www.youtube.com/watch?v=8ODu_wvG_Pg",
+          "views": 164,
+          "likes": 3,
+          "comments": 0
+        },
+        {
+          "id": "Fmo7AnqTM90",
+          "title": "Recovery Wins: Breakfast",
+          "published": "2026-08-05T15:00:59Z",
+          "url": "https://www.youtube.com/watch?v=Fmo7AnqTM90",
+          "views": 1895,
+          "likes": 11,
+          "comments": 1
+        },
+        {
+          "id": "RzPjizvFP_4",
+          "title": "Eating Recovery & ADHD",
+          "published": "2026-07-24T15:00:44Z",
+          "url": "https://www.youtube.com/watch?v=RzPjizvFP_4",
+          "views": 1663,
+          "likes": 32,
+          "comments": 1
+        },
+        {
+          "id": "CUPrZ_-V8fk",
+          "title": "FED is Best",
+          "published": "2026-07-10T15:00:44Z",
+          "url": "https://www.youtube.com/watch?v=CUPrZ_-V8fk",
+          "views": 1423,
+          "likes": 14,
+          "comments": 0
+        },
+        {
+          "id": "2hITMigolU0",
+          "title": "The Diagnosis That Finally Made Everything Make Sense: ADHD, Anxiety, and an Eating Disorder...",
+          "published": "2026-07-08T09:09:45Z",
+          "url": "https://www.youtube.com/watch?v=2hITMigolU0",
+          "views": 156,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "q80OXBO0DtM",
+          "title": "What Recovery Gave Me",
+          "published": "2026-06-15T15:00:45Z",
+          "url": "https://www.youtube.com/watch?v=q80OXBO0DtM",
+          "views": 1112,
+          "likes": 33,
+          "comments": 0
+        },
+        {
+          "id": "j181_i0Sbjo",
+          "title": "Things I Get to Do Because I Chose Recovery",
+          "published": "2026-06-12T15:00:50Z",
+          "url": "https://www.youtube.com/watch?v=j181_i0Sbjo",
+          "views": 387,
+          "likes": 8,
+          "comments": 0
+        },
+        {
+          "id": "LZtEk9Ytves",
+          "title": "Long Term Recovery When life Gets Hard: A Conversation with Juju Parzyck of Fit Fat and All That",
+          "published": "2026-06-08T09:06:18Z",
+          "url": "https://www.youtube.com/watch?v=LZtEk9Ytves",
+          "views": 91,
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "GFj6Za5dUxw",
+          "title": "Things I Do to Help Me Not Fall Back Into Ed Behaviors Part 4.",
+          "published": "2026-05-20T15:00:52Z",
+          "url": "https://www.youtube.com/watch?v=GFj6Za5dUxw",
+          "views": 445,
+          "likes": 10,
+          "comments": 1
+        },
+        {
+          "id": "CuSE9VGhRhU",
+          "title": "Things I Do to Help Me Not Fall Back Into Ed Behaviors Part 3.",
+          "published": "2026-05-13T15:00:58Z",
+          "url": "https://www.youtube.com/watch?v=CuSE9VGhRhU",
+          "views": 1639,
+          "likes": 45,
+          "comments": 1
+        },
+        {
+          "id": "MOinj0c-ZvE",
+          "title": "Things I Do to Help Me Not Fall Back Into ED Behaviors Part 2.",
+          "published": "2026-05-06T15:01:31Z",
+          "url": "https://www.youtube.com/watch?v=MOinj0c-ZvE",
+          "views": 1088,
+          "likes": 45,
+          "comments": 3
+        },
+        {
+          "id": "Sna00FdLrlU",
+          "title": "Supporting a Partner with an Eating Disorder (Without Losing Yourself) Featuring Dr. Dana Harron",
+          "published": "2026-05-06T09:13:04Z",
+          "url": "https://www.youtube.com/watch?v=Sna00FdLrlU",
+          "views": 155,
+          "likes": 6,
+          "comments": 0
+        },
+        {
+          "id": "R_k0IOlrd-0",
+          "title": "Things I Do to Help Me Not Fall Back Into Ed Behaviors Part 1.",
+          "published": "2026-04-30T15:01:16Z",
+          "url": "https://www.youtube.com/watch?v=R_k0IOlrd-0",
+          "views": 417,
+          "likes": 10,
+          "comments": 0
+        },
+        {
+          "id": "5t7VJ6fyzzY",
+          "title": "Building a Life Beyond Treatment: Eating Disorder Recovery and Finding Purpose with Harper Reed",
+          "published": "2026-04-15T09:11:00Z",
+          "url": "https://www.youtube.com/watch?v=5t7VJ6fyzzY",
+          "views": 133,
+          "likes": 4,
+          "comments": 0
+        },
+        {
+          "id": "lcxYNp0_ars",
+          "title": "Body Confidence Reminders",
+          "published": "2026-04-09T15:01:16Z",
+          "url": "https://www.youtube.com/watch?v=lcxYNp0_ars",
+          "views": 1492,
+          "likes": 32,
+          "comments": 0
+        },
+        {
+          "id": "kqN_tYRdgKg",
+          "title": "You Don\u2019t Need 10,000 Steps: The Truth About Exercise and Mental Health with Adee Levinstein",
+          "published": "2026-03-30T09:09:27Z",
+          "url": "https://www.youtube.com/watch?v=kqN_tYRdgKg",
+          "views": 85,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "j6I22Ar2RNY",
+          "title": "Life Because of ED Recovery",
+          "published": "2026-03-23T15:01:10Z",
+          "url": "https://www.youtube.com/watch?v=j6I22Ar2RNY",
+          "views": 1709,
+          "likes": 27,
+          "comments": 2
+        }
+      ],
+      "uploads_90d": 7,
+      "views_90d": 7434,
+      "top_videos": [
+        {
+          "id": "CxG9RXZxnIE",
+          "title": "Choosing Recovery",
+          "published": "2026-08-24T15:00:49Z",
+          "url": "https://www.youtube.com/watch?v=CxG9RXZxnIE",
+          "views": 2021,
+          "likes": 27,
+          "comments": 0
+        },
+        {
+          "id": "Fmo7AnqTM90",
+          "title": "Recovery Wins: Breakfast",
+          "published": "2026-08-05T15:00:59Z",
+          "url": "https://www.youtube.com/watch?v=Fmo7AnqTM90",
+          "views": 1895,
+          "likes": 11,
+          "comments": 1
+        },
+        {
+          "id": "j6I22Ar2RNY",
+          "title": "Life Because of ED Recovery",
+          "published": "2026-03-23T15:01:10Z",
+          "url": "https://www.youtube.com/watch?v=j6I22Ar2RNY",
+          "views": 1709,
+          "likes": 27,
+          "comments": 2
+        }
+      ],
+      "engagement_recent": 328,
+      "label": "ERC",
+      "domain": "eatingrecoverycenter.com",
+      "handle_source": "discovered"
+    },
+    {
+      "channel_id": "UCxZbcpVGZBPwCwyJcx64E_w",
+      "title": "Eating Disorder Hope",
+      "handle": "@eatingdisorderhope",
+      "url": "https://www.youtube.com/channel/UCxZbcpVGZBPwCwyJcx64E_w",
+      "subscribers": 1560,
+      "subscribers_hidden": false,
+      "video_count": 308,
+      "view_count": 269687,
+      "videos": [
+        {
+          "id": "ntfq-NIbw-Y",
+          "title": "Eating Disorder Hope Interview @ Lisa Arroyas, RD, CEDRD-S: Reasons Eating Disorder Treatment Center",
+          "published": "2022-10-21T21:49:13Z",
+          "url": "https://www.youtube.com/watch?v=ntfq-NIbw-Y",
+          "views": 355,
+          "likes": 3,
+          "comments": 1
+        },
+        {
+          "id": "ynVHcKTm9CE",
+          "title": "EDH 6th Annual Virtual Conference - Dr. Jeff DeSarbo, DO",
+          "published": "2022-03-09T21:34:38Z",
+          "url": "https://www.youtube.com/watch?v=ynVHcKTm9CE",
+          "views": 329,
+          "likes": 7,
+          "comments": 0
+        },
+        {
+          "id": "p4fpr-N_qy0",
+          "title": "EDH 6th Annual Virtual Conference - Rev. Dr. Liz Hulford, FMIN, BCC",
+          "published": "2022-03-09T19:27:05Z",
+          "url": "https://www.youtube.com/watch?v=p4fpr-N_qy0",
+          "views": 90,
+          "likes": 3,
+          "comments": 0
+        },
+        {
+          "id": "M2pAd8Wrnzs",
+          "title": "EDH 6th Annual Virtual Conference - Wendy Oliver-Pyatt, M.D. Co-Founder and CEO, Within Health",
+          "published": "2022-03-09T17:56:32Z",
+          "url": "https://www.youtube.com/watch?v=M2pAd8Wrnzs",
+          "views": 265,
+          "likes": 6,
+          "comments": 0
+        },
+        {
+          "id": "cd_yQDc_c1s",
+          "title": "Seasonal Affect Disorder, Depression & Anxiety Discussion @ Jacquelyn Ekern, MS, LPC",
+          "published": "2021-11-04T00:41:21Z",
+          "url": "https://www.youtube.com/watch?v=cd_yQDc_c1s",
+          "views": 121,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "zSbX74ljK_0",
+          "title": "Honest Talk: Body Acceptance & Redefining Self-Worth",
+          "published": "2021-03-17T03:44:43Z",
+          "url": "https://www.youtube.com/watch?v=zSbX74ljK_0",
+          "views": 351,
+          "likes": 10,
+          "comments": 0
+        },
+        {
+          "id": "2YI2LU14BXc",
+          "title": "Focus Treatment Centers  2021",
+          "published": "2021-02-22T22:08:52Z",
+          "url": "https://www.youtube.com/watch?v=2YI2LU14BXc",
+          "views": 235,
+          "likes": 2,
+          "comments": 1
+        },
+        {
+          "id": "Cl7BxWa6dXw",
+          "title": "National Eating Disorder Awareness Week 2021:The Importance of Nutrition in Eating Disorder Recovery",
+          "published": "2021-01-27T21:23:44Z",
+          "url": "https://www.youtube.com/watch?v=Cl7BxWa6dXw",
+          "views": 309,
+          "likes": 5,
+          "comments": 0
+        },
+        {
+          "id": "xHB5YrvAsOY",
+          "title": "National Eating Disorder Awareness Week 2021: Applying Health at Every Size to Eating Disorders",
+          "published": "2021-01-27T21:23:17Z",
+          "url": "https://www.youtube.com/watch?v=xHB5YrvAsOY",
+          "views": 545,
+          "likes": 9,
+          "comments": 0
+        },
+        {
+          "id": "se6-1zE7OCw",
+          "title": "Evolve Healing Interview: What is Evolve All About & Who Are the Leaders?",
+          "published": "2021-01-22T18:32:43Z",
+          "url": "https://www.youtube.com/watch?v=se6-1zE7OCw",
+          "views": 155,
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "M6uSmYYpMrg",
+          "title": "Andrew Walen, LCSW-C, LICSW, CEDS Discusses Male Eating Disorders and Body Image.  Fascinating!",
+          "published": "2021-01-14T23:08:27Z",
+          "url": "https://www.youtube.com/watch?v=M6uSmYYpMrg",
+          "views": 257,
+          "likes": 5,
+          "comments": 2
+        },
+        {
+          "id": "W2WsBSBD6ec",
+          "title": "Eating Disorder Hope Interview with Robert Yagoda of Turning Tides",
+          "published": "2020-12-18T22:02:07Z",
+          "url": "https://www.youtube.com/watch?v=W2WsBSBD6ec",
+          "views": 177,
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "LOc1RTvYYLs",
+          "title": "Tee Kaa Talks Eating Disorder Recovery & Health at Every Size",
+          "published": "2020-12-08T18:57:01Z",
+          "url": "https://www.youtube.com/watch?v=LOc1RTvYYLs",
+          "views": 616,
+          "likes": 6,
+          "comments": 1
+        },
+        {
+          "id": "rbfN1M-dqak",
+          "title": "Eating Disorder Hope Interviews Princeton Eating Disorder Nurses:  Instilling Hope in ED Treatment",
+          "published": "2020-11-03T01:50:00Z",
+          "url": "https://www.youtube.com/watch?v=rbfN1M-dqak",
+          "views": 1042,
+          "likes": 7,
+          "comments": 2
+        },
+        {
+          "id": "J7XeydddmYc",
+          "title": "Eating Disorders Coalition President Chase Bannister Interview with Eating Disorder Hope",
+          "published": "2020-10-29T03:40:33Z",
+          "url": "https://www.youtube.com/watch?v=J7XeydddmYc",
+          "views": 144,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "OxSVrNkF6-Q",
+          "title": "Eating Disorder Hope offers Free Monthly Support Group for Anorexia, Bulimia & Binge Eating Disorder",
+          "published": "2020-10-28T23:43:59Z",
+          "url": "https://www.youtube.com/watch?v=OxSVrNkF6-Q",
+          "views": 414,
+          "likes": 7,
+          "comments": 4
+        },
+        {
+          "id": "QJi2gtFy7r8",
+          "title": "Internal Family Systems Interview with EDH & Brittany Williams of Fairhaven Treatment Program",
+          "published": "2020-10-18T23:53:35Z",
+          "url": "https://www.youtube.com/watch?v=QJi2gtFy7r8",
+          "views": 3278,
+          "likes": 37,
+          "comments": 0
+        },
+        {
+          "id": "CScNdlfypqE",
+          "title": "EDH Interview with Elyse Resch on Intuitive Eating Book",
+          "published": "2020-08-18T21:36:33Z",
+          "url": "https://www.youtube.com/watch?v=CScNdlfypqE",
+          "views": 1313,
+          "likes": 29,
+          "comments": 0
+        },
+        {
+          "id": "F88_Psl3lJ8",
+          "title": "EDH Interview with Dr Crystal Bowlby - Embracing Emotional Metamorphosis",
+          "published": "2020-08-10T20:31:15Z",
+          "url": "https://www.youtube.com/watch?v=F88_Psl3lJ8",
+          "views": 437,
+          "likes": 13,
+          "comments": 2
+        },
+        {
+          "id": "XOFTWQ41mGM",
+          "title": "EDH Interview with Sara Somers",
+          "published": "2020-07-14T22:09:52Z",
+          "url": "https://www.youtube.com/watch?v=XOFTWQ41mGM",
+          "views": 165,
+          "likes": 1,
+          "comments": 0
+        }
+      ],
+      "uploads_90d": 0,
+      "views_90d": 0,
+      "top_videos": [
+        {
+          "id": "QJi2gtFy7r8",
+          "title": "Internal Family Systems Interview with EDH & Brittany Williams of Fairhaven Treatment Program",
+          "published": "2020-10-18T23:53:35Z",
+          "url": "https://www.youtube.com/watch?v=QJi2gtFy7r8",
+          "views": 3278,
+          "likes": 37,
+          "comments": 0
+        },
+        {
+          "id": "CScNdlfypqE",
+          "title": "EDH Interview with Elyse Resch on Intuitive Eating Book",
+          "published": "2020-08-18T21:36:33Z",
+          "url": "https://www.youtube.com/watch?v=CScNdlfypqE",
+          "views": 1313,
+          "likes": 29,
+          "comments": 0
+        },
+        {
+          "id": "rbfN1M-dqak",
+          "title": "Eating Disorder Hope Interviews Princeton Eating Disorder Nurses:  Instilling Hope in ED Treatment",
+          "published": "2020-11-03T01:50:00Z",
+          "url": "https://www.youtube.com/watch?v=rbfN1M-dqak",
+          "views": 1042,
+          "likes": 7,
+          "comments": 2
+        }
+      ],
+      "engagement_recent": 169,
+      "label": "Eating Disorder Hope",
+      "domain": "eatingdisorderhope.com",
+      "handle_source": "discovered"
+    },
+    {
+      "channel_id": "UCB4rm7McHBHIz0czQtP1jJw",
+      "title": "EmilyProgram",
+      "handle": "@emilyprogram",
+      "url": "https://www.youtube.com/channel/UCB4rm7McHBHIz0czQtP1jJw",
+      "subscribers": 1230,
+      "subscribers_hidden": false,
+      "video_count": 252,
+      "view_count": 159194,
+      "videos": [
+        {
+          "id": "0li1sQg8Opw",
+          "title": "The Legal Fight for Safer Social Media with Joel Wright | Peace Meal",
+          "published": "2026-09-25T16:00:03Z",
+          "url": "https://www.youtube.com/watch?v=0li1sQg8Opw",
+          "views": 18,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "hRIuWK0Fz6M",
+          "title": "Ep 109: The Legal Fight for Safer Social Media with Joel Wright",
+          "published": "2026-09-25T14:18:46Z",
+          "url": "https://www.youtube.com/watch?v=hRIuWK0Fz6M",
+          "views": 10,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "h7Eb6P2nDRA",
+          "title": "How to Talk to Your Child About Body Image & Dieting | Ask Emily",
+          "published": "2026-09-21T16:00:32Z",
+          "url": "https://www.youtube.com/watch?v=h7Eb6P2nDRA",
+          "views": 24,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "YVvEEUL9DzI",
+          "title": "Weight Stigma and Eating Disorders | Between Bites",
+          "published": "2026-09-11T16:15:17Z",
+          "url": "https://www.youtube.com/watch?v=YVvEEUL9DzI",
+          "views": 45,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "tJRFV581uZ4",
+          "title": "Between Bites with Jillian Lampert: Weight Stigma and Eating Disorders",
+          "published": "2026-09-11T16:00:39Z",
+          "url": "https://www.youtube.com/watch?v=tJRFV581uZ4",
+          "views": 84,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "uynQ9UYNCE4",
+          "title": "Between Bites with Jillian Lampert: Weight Stigma and Eating Disorders",
+          "published": "2026-09-11T14:10:45Z",
+          "url": "https://www.youtube.com/watch?v=uynQ9UYNCE4",
+          "views": 22,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "19nltfosQjQ",
+          "title": "Choosing Recovery One Day at a Time with Katelyn Olmsted | Peace Meal",
+          "published": "2026-08-28T16:00:02Z",
+          "url": "https://www.youtube.com/watch?v=19nltfosQjQ",
+          "views": 86,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "qng8hP7EpbY",
+          "title": "Ep 108: Choosing Recovery One Day at a Time with Katelyn Olmsted",
+          "published": "2026-08-28T12:13:40Z",
+          "url": "https://www.youtube.com/watch?v=qng8hP7EpbY",
+          "views": 17,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "5AQPDZI5PL0",
+          "title": "Is It Ever Okay to Talk About Bodies? | Between Bites with Dr. Jillian Lampert",
+          "published": "2026-08-14T19:04:07Z",
+          "url": "https://www.youtube.com/watch?v=5AQPDZI5PL0",
+          "views": 23,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "18fh5gqTP1s",
+          "title": "Between Bites with Jillian Lampert: Is It Ever Okay to Talk About Bodies?",
+          "published": "2026-08-14T18:56:55Z",
+          "url": "https://www.youtube.com/watch?v=18fh5gqTP1s",
+          "views": 42,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "NNrMbeDFj6A",
+          "title": "Between Bites with Jillian Lampert: Is It Ever Okay to Talk About Bodies?",
+          "published": "2026-08-14T17:55:36Z",
+          "url": "https://www.youtube.com/watch?v=NNrMbeDFj6A",
+          "views": 10,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "pmeyOTq3M5Q",
+          "title": "The Emily Program \u2014 Atlanta, GA Eating Disorder Treatment Center",
+          "published": "2026-08-10T19:31:39Z",
+          "url": "https://www.youtube.com/watch?v=pmeyOTq3M5Q",
+          "views": 113,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "zfS4h_0CyJE",
+          "title": "The Emily Program \u2014 RTP - Durham, NC Eating Disorder Treatment Center",
+          "published": "2026-08-10T19:31:30Z",
+          "url": "https://www.youtube.com/watch?v=zfS4h_0CyJE",
+          "views": 73,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "JuHqUeDQJkE",
+          "title": "Recovery as a Trans and Nonbinary Person with Danny Wakefield | Peace Meal",
+          "published": "2026-07-31T20:44:56Z",
+          "url": "https://www.youtube.com/watch?v=JuHqUeDQJkE",
+          "views": 246,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "tQg9PheTBYI",
+          "title": "Ep 107: Recovery as a Trans and Nonbinary Person with Danny Wakefield",
+          "published": "2026-07-31T15:16:51Z",
+          "url": "https://www.youtube.com/watch?v=tQg9PheTBYI",
+          "views": 27,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "TV__AW_5uXM",
+          "title": "Between Bites with Jillian Lampert: Eating Disorders in People with Disabilities",
+          "published": "2026-07-17T16:00:32Z",
+          "url": "https://www.youtube.com/watch?v=TV__AW_5uXM",
+          "views": 45,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "HvX1KZhMu5c",
+          "title": "Between Bites with Jillian Lampert: Eating Disorders in People with Disabilities",
+          "published": "2026-07-17T11:11:30Z",
+          "url": "https://www.youtube.com/watch?v=HvX1KZhMu5c",
+          "views": 18,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "wUnhPADw6E8",
+          "title": "The Messy Middle of Recovery with Rawnaq Albathigi | Peace Meal",
+          "published": "2026-06-26T17:03:34Z",
+          "url": "https://www.youtube.com/watch?v=wUnhPADw6E8",
+          "views": 68,
+          "likes": 0,
+          "comments": 1
+        },
+        {
+          "id": "9dROMHPfQ4s",
+          "title": "Ep 106: The Messy Middle of Recovery with Rawnaq Albathigi",
+          "published": "2026-06-26T15:59:16Z",
+          "url": "https://www.youtube.com/watch?v=9dROMHPfQ4s",
+          "views": 24,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "98heMJJM4tY",
+          "title": "Supporting a Trans Loved One in Eating Disorder Recovery | Ask Emily",
+          "published": "2026-06-24T16:00:04Z",
+          "url": "https://www.youtube.com/watch?v=98heMJJM4tY",
+          "views": 23,
+          "likes": 0,
+          "comments": 0
+        }
+      ],
+      "uploads_90d": 17,
+      "views_90d": 903,
+      "top_videos": [
+        {
+          "id": "JuHqUeDQJkE",
+          "title": "Recovery as a Trans and Nonbinary Person with Danny Wakefield | Peace Meal",
+          "published": "2026-07-31T20:44:56Z",
+          "url": "https://www.youtube.com/watch?v=JuHqUeDQJkE",
+          "views": 246,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "pmeyOTq3M5Q",
+          "title": "The Emily Program \u2014 Atlanta, GA Eating Disorder Treatment Center",
+          "published": "2026-08-10T19:31:39Z",
+          "url": "https://www.youtube.com/watch?v=pmeyOTq3M5Q",
+          "views": 113,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "19nltfosQjQ",
+          "title": "Choosing Recovery One Day at a Time with Katelyn Olmsted | Peace Meal",
+          "published": "2026-08-28T16:00:02Z",
+          "url": "https://www.youtube.com/watch?v=19nltfosQjQ",
+          "views": 86,
+          "likes": 0,
+          "comments": 0
+        }
+      ],
+      "engagement_recent": 1,
+      "label": "Emily Program",
+      "domain": "emilyprogram.com",
+      "handle_source": "discovered"
+    },
+    {
+      "channel_id": "UCRlugRXYt7__V7D76PLxJLQ",
+      "title": "Center For Discovery",
+      "handle": "@centerfordiscoveryed",
+      "url": "https://www.youtube.com/channel/UCRlugRXYt7__V7D76PLxJLQ",
+      "subscribers": 984,
+      "subscribers_hidden": false,
+      "video_count": 191,
+      "view_count": 477237,
+      "videos": [
+        {
+          "id": "6AxcJbc5_Cw",
+          "title": "Center For Discovery Intro",
+          "published": "2025-10-22T16:57:16Z",
+          "url": "https://www.youtube.com/watch?v=6AxcJbc5_Cw",
+          "views": 331,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "bhlhhRI8jwI",
+          "title": "Celebrating Recovery Month | Message from Deandra Christianson",
+          "published": "2025-09-24T20:04:39Z",
+          "url": "https://www.youtube.com/watch?v=bhlhhRI8jwI",
+          "views": 30,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "LGBGq1GUt0o",
+          "title": "Adult Residential Eating Disorder Treatment in Milwaukee, WI - Center For Discovery",
+          "published": "2022-05-18T19:46:55Z",
+          "url": "https://www.youtube.com/watch?v=LGBGq1GUt0o",
+          "views": 1425,
+          "likes": 3,
+          "comments": 0
+        },
+        {
+          "id": "m47GcNZLe-8",
+          "title": "Residential Eating Disorder Treatment in Mesa, AZ - Center For Discovery",
+          "published": "2021-10-01T18:23:34Z",
+          "url": "https://www.youtube.com/watch?v=m47GcNZLe-8",
+          "views": 1993,
+          "likes": 10,
+          "comments": 0
+        },
+        {
+          "id": "UmXjbq2BYMc",
+          "title": "What I Learned in Binge Eating Disorder Treatment",
+          "published": "2020-02-26T20:22:29Z",
+          "url": "https://www.youtube.com/watch?v=UmXjbq2BYMc",
+          "views": 1232,
+          "likes": 12,
+          "comments": 0
+        },
+        {
+          "id": "YfzkVsx-S_E",
+          "title": "Who Benefits From Binge Eating Disorder Treatment",
+          "published": "2020-02-26T20:01:01Z",
+          "url": "https://www.youtube.com/watch?v=YfzkVsx-S_E",
+          "views": 171,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "Hy9KQ2CG4Ww",
+          "title": "What Does Binge Eating Disorder Feel Like?",
+          "published": "2020-02-26T19:56:49Z",
+          "url": "https://www.youtube.com/watch?v=Hy9KQ2CG4Ww",
+          "views": 1150,
+          "likes": 9,
+          "comments": 0
+        },
+        {
+          "id": "-m2U5Y5Xxyw",
+          "title": "The Path to Peace Experience at Center for Discovery",
+          "published": "2020-02-26T19:54:30Z",
+          "url": "https://www.youtube.com/watch?v=-m2U5Y5Xxyw",
+          "views": 385,
+          "likes": 4,
+          "comments": 0
+        },
+        {
+          "id": "fLEn-GLpxxM",
+          "title": "The Diet Culture - A Binge Eating Disorder Patient's Perspective",
+          "published": "2020-02-26T19:50:25Z",
+          "url": "https://www.youtube.com/watch?v=fLEn-GLpxxM",
+          "views": 296,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "bNSvkC5lGl0",
+          "title": "Is Recovery from Binge Eating Disorder Possible?",
+          "published": "2020-02-26T17:55:20Z",
+          "url": "https://www.youtube.com/watch?v=bNSvkC5lGl0",
+          "views": 2150,
+          "likes": 13,
+          "comments": 0
+        },
+        {
+          "id": "oLZPeAsFqiQ",
+          "title": "A Typical Day in Intensive Outpatient Treatment for Binge Eating Disorder",
+          "published": "2020-02-26T17:40:03Z",
+          "url": "https://www.youtube.com/watch?v=oLZPeAsFqiQ",
+          "views": 2422,
+          "likes": 9,
+          "comments": 0
+        },
+        {
+          "id": "zGNGAD17RfY",
+          "title": "Donna's Story - Path to Peace for Binge Eating Disorder",
+          "published": "2020-02-26T17:31:54Z",
+          "url": "https://www.youtube.com/watch?v=zGNGAD17RfY",
+          "views": 3609,
+          "likes": 45,
+          "comments": 0
+        },
+        {
+          "id": "ZTV5_zcB750",
+          "title": "Residential Eating Disorder Treatment Program Overview | Lakewood, CA",
+          "published": "2019-12-26T18:14:45Z",
+          "url": "https://www.youtube.com/watch?v=ZTV5_zcB750",
+          "views": 3742,
+          "likes": 9,
+          "comments": 0
+        },
+        {
+          "id": "I24hjfgY2Hg",
+          "title": "Discovery Mood and Anxiety Program on Dr Phil Show",
+          "published": "2019-11-22T17:55:41Z",
+          "url": "https://www.youtube.com/watch?v=I24hjfgY2Hg",
+          "views": 6744,
+          "likes": 31,
+          "comments": 0
+        },
+        {
+          "id": "oTPVax2GyNs",
+          "title": "Mental Illness Awareness Week Message from George Livengood",
+          "published": "2019-10-08T16:45:43Z",
+          "url": "https://www.youtube.com/watch?v=oTPVax2GyNs",
+          "views": 664,
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "H6RnyAauVcA",
+          "title": "Discovery Mood & Anxiety Program | Chicago, IL Outpatient",
+          "published": "2019-08-07T20:33:09Z",
+          "url": "https://www.youtube.com/watch?v=H6RnyAauVcA",
+          "views": 670,
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "JikgAVjmFYs",
+          "title": "Eating Disorder Outpatient | Chicago, IL",
+          "published": "2019-08-06T21:41:47Z",
+          "url": "https://www.youtube.com/watch?v=JikgAVjmFYs",
+          "views": 1377,
+          "likes": 4,
+          "comments": 0
+        },
+        {
+          "id": "EeaRTnHM3as",
+          "title": "Discovery Mood & Anxiety Program | Fairfield, CT | 1-888-977-6598",
+          "published": "2019-01-03T16:26:42Z",
+          "url": "https://www.youtube.com/watch?v=EeaRTnHM3as",
+          "views": 8717,
+          "likes": 22,
+          "comments": 0
+        },
+        {
+          "id": "iMEWMvLh_2A",
+          "title": "Discovery Mood & Anxiety Program East Bay Co-ED Tour",
+          "published": "2018-11-09T18:12:10Z",
+          "url": "https://www.youtube.com/watch?v=iMEWMvLh_2A",
+          "views": 5334,
+          "likes": 16,
+          "comments": 0
+        },
+        {
+          "id": "cXrv9O8mJ6o",
+          "title": "Adolescent Residential Eating Disorder Treatment in Danville, CA - Center For Discovery",
+          "published": "2018-10-22T16:26:12Z",
+          "url": "https://www.youtube.com/watch?v=cXrv9O8mJ6o",
+          "views": 4707,
+          "likes": 11,
+          "comments": 0
+        }
+      ],
+      "uploads_90d": 0,
+      "views_90d": 0,
+      "top_videos": [
+        {
+          "id": "EeaRTnHM3as",
+          "title": "Discovery Mood & Anxiety Program | Fairfield, CT | 1-888-977-6598",
+          "published": "2019-01-03T16:26:42Z",
+          "url": "https://www.youtube.com/watch?v=EeaRTnHM3as",
+          "views": 8717,
+          "likes": 22,
+          "comments": 0
+        },
+        {
+          "id": "I24hjfgY2Hg",
+          "title": "Discovery Mood and Anxiety Program on Dr Phil Show",
+          "published": "2019-11-22T17:55:41Z",
+          "url": "https://www.youtube.com/watch?v=I24hjfgY2Hg",
+          "views": 6744,
+          "likes": 31,
+          "comments": 0
+        },
+        {
+          "id": "iMEWMvLh_2A",
+          "title": "Discovery Mood & Anxiety Program East Bay Co-ED Tour",
+          "published": "2018-11-09T18:12:10Z",
+          "url": "https://www.youtube.com/watch?v=iMEWMvLh_2A",
+          "views": 5334,
+          "likes": 16,
+          "comments": 0
+        }
+      ],
+      "engagement_recent": 204,
+      "label": "Center for Discovery",
+      "domain": "centerfordiscovery.com",
+      "handle_source": "discovered"
+    },
+    {
+      "channel_id": "UCH4BjpYe8jtQg9XMQ3a3YyA",
+      "title": "Alsana: Soul Hearted Eating Disorder Treatment",
+      "handle": "@alsana_recovery",
+      "url": "https://www.youtube.com/channel/UCH4BjpYe8jtQg9XMQ3a3YyA",
+      "subscribers": 69,
+      "subscribers_hidden": false,
+      "video_count": 43,
+      "view_count": 1394546,
+      "videos": [
+        {
+          "id": "v--rLrLh3X8",
+          "title": "Healing at Home: Virtual Eating Disorder Treatment with Alsana",
+          "published": "2026-05-19T17:39:42Z",
+          "url": "https://www.youtube.com/watch?v=v--rLrLh3X8",
+          "views": 45,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "uFZG1KNZ6Jw",
+          "title": "Expanding Access to Eating Disorder Care Across Nearly 50 States",
+          "published": "2026-05-19T17:34:25Z",
+          "url": "https://www.youtube.com/watch?v=uFZG1KNZ6Jw",
+          "views": 12,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "WDvrOq198wM",
+          "title": "The Three Truths in Clinical Care | Keesha Amezcua on Engagement, Respect, and Being Rooted",
+          "published": "2026-03-06T17:49:15Z",
+          "url": "https://www.youtube.com/watch?v=WDvrOq198wM",
+          "views": 184,
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "El78lzNnvRE",
+          "title": "The Three Truths at Alsana | Engagement, Respect, and Being Rooted",
+          "published": "2026-03-06T17:31:34Z",
+          "url": "https://www.youtube.com/watch?v=El78lzNnvRE",
+          "views": 165,
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "HmgZ5ORmFRQ",
+          "title": "A Source of Hope & Healing | Alsana\u2019s Mission Explained",
+          "published": "2026-02-27T18:57:15Z",
+          "url": "https://www.youtube.com/watch?v=HmgZ5ORmFRQ",
+          "views": 149,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "yrjgHymJKoo",
+          "title": "Operational Excellence & Human-Centered Care | Michelle McCorkel on Alsana\u2019s Approach",
+          "published": "2026-02-24T22:14:26Z",
+          "url": "https://www.youtube.com/watch?v=yrjgHymJKoo",
+          "views": 29,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "X_bIZTGYLbw",
+          "title": "Alsana\u2019s Value System | Clinical Integrity, Wholeheartedness & Rooted Reliability",
+          "published": "2026-02-24T20:12:29Z",
+          "url": "https://www.youtube.com/watch?v=X_bIZTGYLbw",
+          "views": 243,
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "jNJlDcJXHyQ",
+          "title": "A Message from our CCO Keesha Amezcua",
+          "published": "2026-02-24T16:35:40Z",
+          "url": "https://www.youtube.com/watch?v=jNJlDcJXHyQ",
+          "views": 120,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "wQuPm_Pr1rE",
+          "title": "A message from our CEO Jordan Watson",
+          "published": "2026-02-24T16:28:04Z",
+          "url": "https://www.youtube.com/watch?v=wQuPm_Pr1rE",
+          "views": 150,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "A2pdR4_VevU",
+          "title": "You Deserve Flowers",
+          "published": "2026-02-02T21:35:50Z",
+          "url": "https://www.youtube.com/watch?v=A2pdR4_VevU",
+          "views": 1388439,
+          "likes": 8,
+          "comments": 0
+        },
+        {
+          "id": "auk3AKe5Nws",
+          "title": "Alsana Virtual Program",
+          "published": "2025-11-25T21:58:34Z",
+          "url": "https://www.youtube.com/watch?v=auk3AKe5Nws",
+          "views": 53,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "0pa9rSU40K4",
+          "title": "Alsana - Adolescent Program",
+          "published": "2025-11-12T22:00:21Z",
+          "url": "https://www.youtube.com/watch?v=0pa9rSU40K4",
+          "views": 77,
+          "likes": 2,
+          "comments": 0
+        },
+        {
+          "id": "kZxjd6cg0bI",
+          "title": "Alsana Provider Partnership: Collaborating With Eating Disorder Clients' Outpatient Teams",
+          "published": "2025-05-15T20:44:25Z",
+          "url": "https://www.youtube.com/watch?v=kZxjd6cg0bI",
+          "views": 116,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "w39rRfWbQNg",
+          "title": "Julia Cassidy's On-Air Interview with ABC7 Los Angeles' Tony Cabrera",
+          "published": "2023-09-19T14:23:49Z",
+          "url": "https://www.youtube.com/watch?v=w39rRfWbQNg",
+          "views": 130,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "id": "b6KZ8pmski4",
+          "title": "Compassion-Focused Therapy for Eating Disorder Recovery - Alsana",
+          "published": "2023-08-15T17:33:15Z",
+          "url": "https://www.youtube.com/watch?v=b6KZ8pmski4",
+          "views": 394,
+          "likes": 6,
+          "comments": 0
+        },
+        {
+          "id": "MpRcrMIIYCk",
+          "title": "Virtual Eating Disorder Treatment Success - Post Pandemic.",
+          "published": "2022-10-15T05:53:17Z",
+          "url": "https://www.youtube.com/watch?v=MpRcrMIIYCk",
+          "views": 54,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "UlqcNWk_oss",
+          "title": "What's it Like Inside an Eating Disorder Treatment Center? Podcast with Margherita Mascolo.",
+          "published": "2022-10-08T01:23:43Z",
+          "url": "https://www.youtube.com/watch?v=UlqcNWk_oss",
+          "views": 517,
+          "likes": 3,
+          "comments": 0
+        },
+        {
+          "id": "KqGI5vObwrk",
+          "title": "Challenges Faced by the LGBTQ+ Community in Eating Disorder Treatment with Margherita Mascolo",
+          "published": "2022-10-07T17:06:09Z",
+          "url": "https://www.youtube.com/watch?v=KqGI5vObwrk",
+          "views": 50,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "NF4Cb2EO1tw",
+          "title": "Summer Diet Culture | KNX 97.1 FM News Interview with Alsana\u2019s VP of Clinical Nutrition Services",
+          "published": "2022-07-29T18:57:52Z",
+          "url": "https://www.youtube.com/watch?v=NF4Cb2EO1tw",
+          "views": 43,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "id": "LZ8mzkSljv8",
+          "title": "Alsana Santa Barbara PHP/IOP",
+          "published": "2022-05-20T14:50:37Z",
+          "url": "https://www.youtube.com/watch?v=LZ8mzkSljv8",
+          "views": 93,
+          "likes": 1,
+          "comments": 0
+        }
+      ],
+      "uploads_90d": 0,
+      "views_90d": 0,
+      "top_videos": [
+        {
+          "id": "A2pdR4_VevU",
+          "title": "You Deserve Flowers",
+          "published": "2026-02-02T21:35:50Z",
+          "url": "https://www.youtube.com/watch?v=A2pdR4_VevU",
+          "views": 1388439,
+          "likes": 8,
+          "comments": 0
+        },
+        {
+          "id": "UlqcNWk_oss",
+          "title": "What's it Like Inside an Eating Disorder Treatment Center? Podcast with Margherita Mascolo.",
+          "published": "2022-10-08T01:23:43Z",
+          "url": "https://www.youtube.com/watch?v=UlqcNWk_oss",
+          "views": 517,
+          "likes": 3,
+          "comments": 0
+        },
+        {
+          "id": "b6KZ8pmski4",
+          "title": "Compassion-Focused Therapy for Eating Disorder Recovery - Alsana",
+          "published": "2023-08-15T17:33:15Z",
+          "url": "https://www.youtube.com/watch?v=b6KZ8pmski4",
+          "views": 394,
+          "likes": 6,
+          "comments": 0
+        }
+      ],
+      "engagement_recent": 30,
+      "label": "Alsana",
+      "domain": "alsana.com",
+      "handle_source": "discovered"
+    }
+  ],
+  "footprint": [
+    {
+      "label": "ERC",
+      "domain": "eatingrecoverycenter.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.eatingrecoverycenter.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/EatingRecoveryCenter",
+          "handle": "EatingRecoveryCenter",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/eatingrecovery",
+          "handle": "eatingrecovery",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/channel/UCspO95XDFYViETpZCq4bA3Q",
+          "handle": "channel/UCspO95XDFYViETpZCq4bA3Q",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/eating-recovery-center",
+          "handle": "company/eating-recovery-center",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Equip",
+      "domain": "equip.health",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://equip.health/",
+      "profiles": {},
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Within",
+      "domain": "withinhealth.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://withinhealth.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/withinhealth",
+          "handle": "withinhealth",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/within_health",
+          "handle": "within_health",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/withinhealth",
+          "handle": "company/withinhealth",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Emily Program",
+      "domain": "emilyprogram.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://emilyprogram.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/TheEmilyProgram",
+          "handle": "TheEmilyProgram",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/emilyprogram",
+          "handle": "emilyprogram",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/user/EmilyProgram",
+          "handle": "user/EmilyProgram",
+          "source": "discovered"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@emilyprogram",
+          "handle": "emilyprogram",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/the-emily-program",
+          "handle": "company/the-emily-program",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/EmilyProgram",
+          "handle": "EmilyProgram",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Alsana",
+      "domain": "alsana.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.alsana.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/alsanallc",
+          "handle": "alsanallc",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/alsana_recovery",
+          "handle": "alsana_recovery",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/channel/UCH4BjpYe8jtQg9XMQ3a3YyA",
+          "handle": "channel/UCH4BjpYe8jtQg9XMQ3a3YyA",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/alsana",
+          "handle": "company/alsana",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/alsanallc",
+          "handle": "alsanallc",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Monte Nido",
+      "domain": "montenido.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.montenido.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/montenido",
+          "handle": "montenido",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/monte.nido",
+          "handle": "monte.nido",
+          "source": "discovered"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@monte.nido",
+          "handle": "monte.nido",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/monte-nido",
+          "handle": "company/monte-nido",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Center for Discovery",
+      "domain": "centerfordiscovery.com",
+      "group": "program_national",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://centerfordiscovery.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/CenterForDiscoveryED",
+          "handle": "CenterForDiscoveryED",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/centerfordiscovery",
+          "handle": "centerfordiscovery",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@CenterforDiscoveryED",
+          "handle": "@CenterforDiscoveryED",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/center-for-discovery",
+          "handle": "company/center-for-discovery",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": true,
+        "ga4": true,
+        "ga4_ids": [
+          "G-W6PWS2CCDM"
+        ],
+        "google_ads": true,
+        "google_ads_ids": [
+          "AW-994078400"
+        ],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Esperanza",
+      "domain": "esperanzaedc.com",
+      "group": "local",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://esperanzaedc.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/esperanzaeatingdisorderscenter",
+          "handle": "esperanzaeatingdisorderscenter",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/esperanzaedc",
+          "handle": "esperanzaedc",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/Esperanza_EDC",
+          "handle": "Esperanza_EDC",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Balanced Counseling",
+      "domain": "balancedcounselingsa.com",
+      "group": "local",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.balancedcounselingsa.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/balancedcounselingsa",
+          "handle": "balancedcounselingsa",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": true,
+        "ga4_ids": [
+          "G-DY29092W3S"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "therapynotes",
+        "booking_all": [
+          "therapynotes"
+        ]
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Monarch Behavioral",
+      "domain": "monarchbehavioral.net",
+      "group": "local",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://monarchbehavioral.net/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/monarchbehavioralhealth.tx",
+          "handle": "monarchbehavioralhealth.tx",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/monarch-behavioral-health-pllc",
+          "handle": "company/monarch-behavioral-health-pllc",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": true,
+        "ga4_ids": [
+          "G-JLQHKGM8FJ"
+        ],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Sage Bariatric",
+      "domain": "sagebariatric.com",
+      "group": "local",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.sagebariatric.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/SageBariatric",
+          "handle": "SageBariatric",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/sage_bariatric",
+          "handle": "sage_bariatric",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/user/SageBariatric",
+          "handle": "user/SageBariatric",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/sage-bariatric-institute",
+          "handle": "company/sage-bariatric-institute",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/sagebariatric",
+          "handle": "sagebariatric",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": true,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": true,
+        "google_ads_ids": [
+          "AW-1005325560"
+        ],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "kareo",
+        "booking_all": [
+          "kareo"
+        ]
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "OA San Antonio",
+      "domain": "oasanantonio.com",
+      "group": "twelve_step",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://oasanantonio.com/",
+      "profiles": {},
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Overeaters Anonymous",
+      "domain": "oa.org",
+      "group": "twelve_step",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://oa.org/",
+      "profiles": {},
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Noom",
+      "domain": "noom.com",
+      "group": "app",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.noom.com:443/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/noom",
+          "handle": "noom",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/noom",
+          "handle": "noom",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/c/NoomInc",
+          "handle": "c/NoomInc",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/noom-inc",
+          "handle": "company/noom-inc",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/@noom",
+          "handle": "noom",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Psychology Today",
+      "domain": "psychologytoday.com",
+      "group": "directory",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.psychologytoday.com:443/us",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/psychologytoday",
+          "handle": "psychologytoday",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/psych_today",
+          "handle": "psych_today",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/user/psychologytoday",
+          "handle": "user/psychologytoday",
+          "source": "discovered"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@psychology.today",
+          "handle": "psychology.today",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/psychology-today",
+          "handle": "company/psychology-today",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/psychtoday",
+          "handle": "psychtoday",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Eating Disorder Hope",
+      "domain": "eatingdisorderhope.com",
+      "group": "directory",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.eatingdisorderhope.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/Eating-Disorder-Hope-83317933683",
+          "handle": "Eating-Disorder-Hope-83317933683",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/eatingdisorderhope",
+          "handle": "eatingdisorderhope",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/channel/UCxZbcpVGZBPwCwyJcx64E_w",
+          "handle": "channel/UCxZbcpVGZBPwCwyJcx64E_w",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/eating-disorder-hope",
+          "handle": "company/eating-disorder-hope",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/edhopeglobal",
+          "handle": "edhopeglobal",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "Recovery.com",
+      "domain": "recovery.com",
+      "group": "directory",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://recovery.com/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/recoverydotcom",
+          "handle": "recoverydotcom",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/recoverydotcom",
+          "handle": "recoverydotcom",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/@recoverydotcom",
+          "handle": "@recoverydotcom",
+          "source": "discovered"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@recoverydotcom",
+          "handle": "recoverydotcom",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/recoverydotcom",
+          "handle": "company/recoverydotcom",
+          "source": "discovered"
+        },
+        "x": {
+          "url": "https://www.x.com/recoverydotcom",
+          "handle": "recoverydotcom",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": false,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    },
+    {
+      "label": "NEDA",
+      "domain": "nationaleatingdisorders.org",
+      "group": "directory",
+      "fetched": true,
+      "status": 200,
+      "final_url": "https://www.nationaleatingdisorders.org/",
+      "profiles": {
+        "facebook": {
+          "url": "https://www.facebook.com/NationalEatingDisordersAssociation",
+          "handle": "NationalEatingDisordersAssociation",
+          "source": "discovered"
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/neda",
+          "handle": "neda",
+          "source": "discovered"
+        },
+        "youtube": {
+          "url": "https://www.youtube.com/c/nationaleatingdisordersassociation",
+          "handle": "c/nationaleatingdisordersassociation",
+          "source": "discovered"
+        },
+        "tiktok": {
+          "url": "https://www.tiktok.com/@NEDA",
+          "handle": "NEDA",
+          "source": "discovered"
+        },
+        "linkedin": {
+          "url": "https://www.linkedin.com/company/national-eating-disorders-association",
+          "handle": "company/national-eating-disorders-association",
+          "source": "discovered"
+        }
+      },
+      "tech": {
+        "meta_pixel": false,
+        "ga4": false,
+        "ga4_ids": [],
+        "google_ads": false,
+        "google_ads_ids": [],
+        "gtm": true,
+        "tiktok_pixel": false,
+        "booking": "",
+        "booking_all": []
+      },
+      "error": "",
+      "fetched_on": "2026-10-08"
+    }
+  ],
+  "ad_library": {
+    "pages": [],
+    "terms": [
+      "binge eating",
+      "eating disorder treatment Texas",
+      "weight loss counseling San Antonio",
+      "overeaters"
+    ],
+    "manual": [
+      {
+        "term": "binge eating",
+        "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=binge%20eating"
+      },
+      {
+        "term": "eating disorder treatment Texas",
+        "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=eating%20disorder%20treatment%20Texas"
+      },
+      {
+        "term": "weight loss counseling San Antonio",
+        "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=weight%20loss%20counseling%20San%20Antonio"
+      },
+      {
+        "term": "overeaters",
+        "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=overeaters"
+      }
+    ],
+    "problems": [
+      "binge eating: HTTP 400: Application does not have permission for this action",
+      "eating disorder treatment Texas: HTTP 400: Application does not have permission for this action",
+      "weight loss counseling San Antonio: HTTP 400: Application does not have permission for this action",
+      "overeaters: HTTP 400: Application does not have permission for this action"
+    ]
+  },
+  "history_rows_added": 10
+}
