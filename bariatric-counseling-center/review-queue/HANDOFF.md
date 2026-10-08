@@ -56,7 +56,7 @@ Generated 2026-10-08 10:40 by queue_apply.py. Daniel approved these on the dashb
 - Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts: Read Sara's direction; tell Claude to apply it to the plan, or press All finished
 - Use Ford's finished staff profile videos (Vimeo): Restart the Gerry, Jessica and Samantha raw downloads if they stopped. When they land in Downloads, a session moves and transcribes them.
 
-## Social posts to build and write to the sheet (2); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (3); the draft to Todd is a separate weekly step
 
 - id `cd67a665c9`: **Thu 10/8: alumni clip, Kim K. (more than willpower)** on 2026-10-08 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-10-08. Why: Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\cd67a665c9-thu-10-8-alumni-clip-kim-k-more-than-willpower.json`
@@ -67,6 +67,10 @@ Generated 2026-10-08 10:40 by queue_apply.py. Daniel approved these on the dashb
   - asset: reel https://drive.google.com/drive/folders/1lmS4iu1NXuEMGNZkv_6BdVwJDERGSVOy
   - replaces row 16 in October Content Calendar
   - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/
+- id `d0c8ca48a5`: **Thu 10/15: alumni clip, Gerry M. (emotional graduation)** on 2026-10-15 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-10-08. Why: Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\d0c8ca48a5-thu-10-15-alumni-clip-gerry-m-emotional-graduation.json`
+  - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip3-9x16_emotional-graduation_COVERED.mp4
+  - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
 
 ## Draft day: Wednesday. Today is Thursday, not draft day: build only, no email to Todd.
 
