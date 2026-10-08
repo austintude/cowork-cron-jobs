@@ -5566,10 +5566,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A63"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "approved",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T16:39:29",
-   "note": "OK the IndexNow submission of the 41 changed production URLs.",
+   "decided": "2026-10-08T10:32:12",
+   "note": "rewrite: daniel: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.",
    "result": {
     "needs_you": "Say yes to the IndexNow submission (it is a production submission, so it needs your OK)",
     "needs_since": "2026-09-25",
@@ -5594,6 +5594,11 @@
        "at": "2026-09-29 16:39",
        "by": "claude",
        "text": "Dry run 2026-09-29: key file https://www.bariatriccounselingcenter.com/8b22ca13ddef13fdc45a57195c2d59e6.txt is LIVE and matches; 41 of 193 sitemap URLs changed in the last 14 days are ready to submit. Nothing submitted."
+      },
+      {
+       "at": "2026-10-08 10:32",
+       "by": "daniel",
+       "text": "Chose 'Send it'. Told Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response."
       }
      ],
      "steps": [
@@ -5610,7 +5615,10 @@
         }
        ],
        "id": "s1",
-       "status": "open"
+       "status": "done",
+       "done_at": "2026-10-08 10:32",
+       "via": "Daniel on the dashboard",
+       "evidence": "chose: Send it"
       },
       {
        "owner": "daniel",
@@ -5628,8 +5636,8 @@
        "status": "open"
       }
      ],
-     "state": "your_move",
-     "state_text": "OK the IndexNow submission of the 41 changed production URLs.",
+     "state": "with_claude",
+     "state_text": "With Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.",
      "checked_at": "2026-10-08 07:00"
     }
    }
