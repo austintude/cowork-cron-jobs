@@ -3081,11 +3081,13 @@
     "needs_rewrite": []
    },
    "source": "social-plan",
-   "status": "pending",
+   "status": "approved",
    "created": "2026-09-24T05:32:51",
-   "decided": null,
-   "note": null,
-   "result": null,
+   "decided": "2026-10-08T10:40:30",
+   "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (FB, IG, YT)",
+   "result": {
+    "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\112e44e57d-fri-10-9-food-friday-reel-from-leila-s-clips-citrus-grilled-.json"
+   },
    "check": {
     "at": "2026-10-08T06:03:31",
     "level": "warn",
