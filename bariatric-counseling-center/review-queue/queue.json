@@ -7299,6 +7299,35 @@
     "level": "ok",
     "text": "Still on production: 1 of 1 pages (/real-behavioral-change-starts-with-the-mind/)."
    }
+  },
+  {
+   "id": "c13e0e105d",
+   "kind": "fix",
+   "key": "fix:dead external link:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4420157/",
+   "title": "Dead outside link on 1 page: www.ncbi.nlm.nih.gov",
+   "why": "dead external link on production, carried by 1 page (first seen 2026-10-08); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4420157/",
+    "fix_type": "dead external link",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/"
+    ],
+    "suggest": null,
+    "steps": [
+     "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4420157/ answers HTTP 404.",
+     "Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence."
+    ],
+    "first_seen": "2026-10-08",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-10-08T05:56:10",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
