@@ -3750,10 +3750,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A5"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "approved",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-29T16:39:04",
-   "note": "Read and send the Gmail draft 'Psych evaluation page: four things to confirm'.",
+   "decided": "2026-10-08T10:32:40",
+   "note": "rewrite: daniel: do these but on staging14. 13 is being sunsetted",
    "result": {
     "needs_you": "Send the psych evaluation questions to Sara and Todd (Gmail draft ready)",
     "needs_since": "2026-09-25",
@@ -3773,6 +3773,11 @@
        "at": "2026-09-29 16:39",
        "by": "claude",
        "text": "Gmail draft from daniel@drbdig.com to Sara and Todd: 'Psych evaluation page: four things to confirm' (video or phone, report contents, turnaround, evaluator names; plus the Joint Commission, 'only program', '$0' and old phone line)."
+      },
+      {
+       "at": "2026-10-08 10:32",
+       "by": "daniel",
+       "text": "Told Claude: do these but on staging14. 13 is being sunsetted"
       }
      ],
      "steps": [
@@ -3823,8 +3828,8 @@
        "status": "open"
       }
      ],
-     "state": "your_move",
-     "state_text": "Read and send the Gmail draft 'Psych evaluation page: four things to confirm'.",
+     "state": "with_claude",
+     "state_text": "With Claude: do these but on staging14. 13 is being sunsetted",
      "checked_at": "2026-10-08 07:00"
     }
    }
