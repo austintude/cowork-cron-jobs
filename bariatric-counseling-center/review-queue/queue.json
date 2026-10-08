@@ -4429,10 +4429,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A14"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "approved",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-09-29T13:41:04",
-   "note": "Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief",
+   "decided": "2026-10-08T10:34:13",
+   "note": "rewrite: daniel: Draft two Gmail drafts from daniel@drbdig.com to Todd: (1) the one-page launch plan from BCC-Launch-Plan-for-Todd-2026-09-22.md, subject 'BCC launch plan: one page'; (2) the Texas strategy brief from Claude outputs/todd-texas-strategy-2026-09-25.md, subject 'Overeating, food addiction and going statewide'. Short, transactional, clean links. Hand it back with a gmail_sent check for each and a gmail_reply step for Todd.",
    "result": {
     "needs_you": "Brief ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\todd-texas-strategy-2026-09-25.md (overeating: 22 impressions, 0 clicks in 20 weeks; food addiction is the term that grew; statewide work in flight). Left for you: read and send to Todd. It refers to the one-page launch plan (BCC-Launch-Plan-for-Todd-2026-09-22.md, not yet sent), so send that first or reword the line. GA4 has no Texas city data yet.",
     "needs_since": "2026-09-25",
@@ -4442,6 +4442,11 @@
        "at": "2026-09-25 07:30",
        "by": "claude",
        "text": "Worked by the morning Claude run: Brief ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\todd-texas-strategy-2026-09-25.md (overeating: 22 impressions, 0 clicks in 20 weeks; food addiction is the term that grew; statewide work in flight). Left for you: read and send to Todd. It refers to the one-page launch plan (BCC-Launch-Plan-for-Todd-2026-09-22.md, not yet sent), so send that first or reword the line. GA4 has no Texas city data yet."
+      },
+      {
+       "at": "2026-10-08 10:34",
+       "by": "daniel",
+       "text": "Chose 'Draft both emails for me'. Told Claude: Draft two Gmail drafts from daniel@drbdig.com to Todd: (1) the one-page launch plan from BCC-Launch-Plan-for-Todd-2026-09-22.md, subject 'BCC launch plan: one page'; (2) the Texas strategy brief from Claude outputs/todd-texas-strategy-2026-09-25.md, subject 'Overeating, food addiction and going statewide'. Short, transactional, clean links. Hand it back with a gmail_sent check for each and a gmail_reply step for Todd."
       }
      ],
      "steps": [
@@ -4464,11 +4469,14 @@
         }
        ],
        "id": "s1",
-       "status": "open"
+       "status": "done",
+       "done_at": "2026-10-08 10:34",
+       "via": "Daniel on the dashboard",
+       "evidence": "chose: Draft both emails for me"
       }
      ],
-     "state": "your_move",
-     "state_text": "Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief",
+     "state": "with_claude",
+     "state_text": "With Claude: Draft two Gmail drafts from daniel@drbdig.com to Todd: (1) the one-page launch plan from BCC-Launch-Plan-for-Todd-2026-09-22.md, subject 'BCC launch plan: one page'; (2) the Texas strategy brief from Claude outputs/todd-texas-strategy-2026-09-25.md, subject 'Overeating, food addiction and going statewide'. Short, transactional, clean links. Hand it back with a gmail_sent check for each and a gmail_reply step for Todd.",
      "checked_at": "2026-10-08 07:00"
     }
    }
