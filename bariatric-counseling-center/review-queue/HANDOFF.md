@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-10-08 10:32 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-08 10:34 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -22,7 +22,7 @@ Generated 2026-10-08 10:32 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (2): work each, then --done or --needs-you
+## Action items from the Action Items sheet (3): work each, then --done or --needs-you
 
 - id `c7d4d9431e`: **Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation)** (9/24 call list, sheet row 5). Approved 2026-10-08.
   - HISTORY (continue from here; do not redo what is done):
@@ -31,6 +31,12 @@ Generated 2026-10-08 10:32 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-29 16:39 claude: Gmail draft from daniel@drbdig.com to Sara and Todd: 'Psych evaluation page: four things to confirm' (video or phone, report contents, turnaround, evaluator names; plus the Joint Commission, 'only program', '$0' and old phone line).
     - 2026-10-08 10:32 daniel: Told Claude: do these but on staging14. 13 is being sunsetted
   - NOW: daniel: do these but on staging14. 13 is being sunsetted
+- id `6d29cbea90`: **Texas-wide geographic strategy** (9/24 call list, sheet row 14). Approved 2026-10-08.
+  - Daniel's notes: Todd asked: any traction on overeating / overeaters, and what we're doing now to expand statewide.
+  - HISTORY (continue from here; do not redo what is done):
+    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Brief ready: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\todd-texas-strategy-2026-09-25.md (overeating: 22 impressions, 0 clicks in 20 weeks; food addiction is the term that grew; statewide work in flight). Left for you: read and send to Todd. It refers to the one-page launch plan (BCC-Launch-Plan-for-Todd-2026-09-22.md, not yet sent), so send that first or reword the line. GA4 has no Texas city data yet.
+    - 2026-10-08 10:34 daniel: Chose 'Draft both emails for me'. Told Claude: Draft two Gmail drafts from daniel@drbdig.com to Todd: (1) the one-page launch plan from BCC-Launch-Plan-for-Todd-2026-09-22.md, subject 'BCC launch plan: one page'; (2) the Texas strategy brief from Claude outputs/todd-texas-strategy-2026-09-25.md, subject 'Overeating, food addiction and going statewide'. Short, transactional, clean links. Hand it back with a gmail_sent check for each and a gmail_reply step for Todd.
+  - NOW: daniel: Draft two Gmail drafts from daniel@drbdig.com to Todd: (1) the one-page launch plan from BCC-Launch-Plan-for-Todd-2026-09-22.md, subject 'BCC launch plan: one page'; (2) the Texas strategy brief from Claude outputs/todd-texas-strategy-2026-09-25.md, subject 'Overeating, food addiction and going statewide'. Short, transactional, clean links. Hand it back with a gmail_sent check for each and a gmail_reply step for Todd.
 - id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 63). Approved 2026-10-08.
   - Daniel's notes: Todd: "it can't hurt"
   - HISTORY (continue from here; do not redo what is done):
@@ -41,13 +47,12 @@ Generated 2026-10-08 10:32 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-08 10:32 daniel: Chose 'Send it'. Told Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
   - NOW: daniel: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
 
-## Items waiting on Daniel or on Todd/Sara (8): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (7): not for Claude, except the Gmail confirmations below.
 - Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25 (was due 2026-10-01)
 - Decide newsletter send day and time, back it with data: Waiting on Todd since 2026-10-06: Todd replies to 'Newsletter send time: Tuesdays 8:30 AM'.
 - Rank how people actually search (top 10), find a platform big in Texas that competitors ignore: Waiting on Todd since 2026-10-08: Todd replies to 'How people search for help in Texas: the top 10'.
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Waiting on Sara since 2026-10-06: Sara replies to 'Quick clinical check: binge eating telehealth article'. (was due 2026-10-06)
 - ARFID landing page and blog: Waiting on Sara since 2026-10-07: Sara replies to 'ARFID page: a few details to confirm'. (was due 2026-10-06)
-- Texas-wide geographic strategy: Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief
 - Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts: Read Sara's direction; tell Claude to apply it to the plan, or press All finished
 - Use Ford's finished staff profile videos (Vimeo): Restart the Gerry, Jessica and Samantha raw downloads if they stopped. When they land in Downloads, a session moves and transcribes them.
 
