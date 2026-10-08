@@ -5371,7 +5371,7 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T16:39:19",
+   "decided": "2026-10-08T10:31:28",
    "note": "Read and send the Gmail draft 'How people search for help in Texas: the top 10'.",
    "result": {
     "needs_you": "Send the top 10 searches email to Todd (Gmail draft ready)",
@@ -5392,6 +5392,11 @@
        "at": "2026-09-29 16:39",
        "by": "claude",
        "text": "Gmail draft from daniel@drbdig.com to Todd: 'How people search for help in Texas: the top 10' (top 10, YouTube as the platform, asks now or January)."
+      },
+      {
+       "at": "2026-10-08 10:31",
+       "by": "daniel",
+       "text": "Read and send the Gmail draft 'How people search for help in Texas: the top 10'."
       }
      ],
      "steps": [
@@ -5410,8 +5415,10 @@
        },
        "due": "2026-10-01",
        "id": "s1",
-       "status": "open",
-       "evidence": "still in your Gmail Drafts, not sent"
+       "status": "done",
+       "evidence": "still in your Gmail Drafts, not sent",
+       "done_at": "2026-10-08 10:31",
+       "via": "Daniel on the dashboard"
       },
       {
        "owner": "todd",
