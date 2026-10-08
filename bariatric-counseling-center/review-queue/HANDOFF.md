@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-10-07 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-08 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -27,10 +27,10 @@ Generated 2026-10-07 07:00 by queue_apply.py. Daniel approved these on the dashb
 - Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25 (was due 2026-10-01)
 - Decide newsletter send day and time, back it with data: Waiting on Todd since 2026-10-06: Todd replies to 'Newsletter send time: Tuesdays 8:30 AM'.
 - Rank how people actually search (top 10), find a platform big in Texas that competitors ignore: Read and send the Gmail draft 'How people search for help in Texas: the top 10'.
-- Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Waiting on Sara since 2026-10-06: Sara replies to 'Quick clinical check: binge eating telehealth article'.
+- Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Waiting on Sara since 2026-10-06: Sara replies to 'Quick clinical check: binge eating telehealth article'. (was due 2026-10-06)
 - Continue the Bing and Copilot build-out: OK the IndexNow submission of the 41 changed production URLs.
 - Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation): Read and send the Gmail draft 'Psych evaluation page: four things to confirm'.
-- ARFID landing page and blog: Read and send the Gmail draft 'ARFID page: a few details to confirm'.
+- ARFID landing page and blog: Waiting on Sara since 2026-10-07: Sara replies to 'ARFID page: a few details to confirm'. (was due 2026-10-06)
 - Texas-wide geographic strategy: Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief
 - Reply to Todd's social media workflow email (Sara cc'd) with Daniel's own content drafts: Read Sara's direction; tell Claude to apply it to the plan, or press All finished
 - Use Ford's finished staff profile videos (Vimeo): Restart the Gerry, Jessica and Samantha raw downloads if they stopped. When they land in Downloads, a session moves and transcribes them.
