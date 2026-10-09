@@ -23,7 +23,7 @@ Generated 2026-10-09 15:16 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (6): work each, then --done or --needs-you
+## Action items from the Action Items sheet (7): work each, then --done or --needs-you
 
 - id `c7d4d9431e`: **Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation)** (9/24 call list, sheet row 5). Approved 2026-10-08.
   - HISTORY (continue from here; do not redo what is done):
@@ -56,6 +56,15 @@ Generated 2026-10-09 15:16 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-25 14:09 check: Send the Gmail draft 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd: sent Sep 25 2:09 PM to Todd
     - 2026-10-09 15:14 daniel: Told Claude: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.
   - NOW: daniel: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.
+- id `081016b3bc`: **Rank how people actually search (top 10), find a platform big in Texas that competitors ignore** (8/27 meeting list, sheet row 61). Approved 2026-10-09.
+  - Daniel's notes: Todd asked for this directly
+  - HISTORY (continue from here; do not redo what is done):
+    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Brief ready: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\todd-top10-searches-and-platform-2026-09-25.md (top 10 Texas searches with volumes; platform pick is YouTube, which the local competitors do not use). Left for you: read and send to Todd; the platform evidence is thin and the brief says so.
+    - 2026-09-29 15:21 daniel: Chose 'Draft the email to Todd for me'. Told Claude: Turn Claude outputs/todd-top10-searches-and-platform-2026-09-25.md into a short Gmail draft from daniel@drbdig.com to Todd, subject 'How people search for help in Texas: the top 10' (htmlBody, clean links, no process narration), then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.
+    - 2026-09-29 16:39 claude: Gmail draft from daniel@drbdig.com to Todd: 'How people search for help in Texas: the top 10' (top 10, YouTube as the platform, asks now or January).
+    - 2026-10-08 10:31 daniel: Read and send the Gmail draft 'How people search for help in Texas: the top 10'.
+    - 2026-10-09 15:16 daniel: Told Claude: check krisp transcript he replied online in the meeting not via email. we have his information.
+  - NOW: daniel: check krisp transcript he replied online in the meeting not via email. we have his information.
 - id `d8d67dff97`: **Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1** (8/27 meeting list, sheet row 62). Approved 2026-10-09.
   - Daniel's notes: The gap ERC, Alsana and Monte Nido cannot use
   - HISTORY (continue from here; do not redo what is done):
@@ -76,8 +85,7 @@ Generated 2026-10-09 15:16 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-08 10:32 daniel: Chose 'Send it'. Told Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
   - NOW: daniel: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
 
-## Items waiting on Daniel or on Todd/Sara (2): not for Claude, except the Gmail confirmations below.
-- Rank how people actually search (top 10), find a platform big in Texas that competitors ignore: Waiting on Todd since 2026-10-08: Todd replies to 'How people search for help in Texas: the top 10'.
+## Items waiting on Daniel or on Todd/Sara (1): not for Claude, except the Gmail confirmations below.
 - Use Ford's finished staff profile videos (Vimeo): Restart the Gerry, Jessica and Samantha raw downloads if they stopped. When they land in Downloads, a session moves and transcribes them.
 
 ## Social posts to build and write to the sheet (3); the draft to Todd is a separate weekly step
