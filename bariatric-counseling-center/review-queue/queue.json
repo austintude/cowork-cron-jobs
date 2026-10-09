@@ -5412,10 +5412,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A61"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "approved",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-10-08T10:31:30",
-   "note": "Waiting on Todd since 2026-10-08: Todd replies to 'How people search for help in Texas: the top 10'.",
+   "decided": "2026-10-09T15:16:51",
+   "note": "rewrite: daniel: check krisp transcript he replied online in the meeting not via email. we have his information.",
    "result": {
     "needs_you": "Send the top 10 searches email to Todd (Gmail draft ready)",
     "needs_since": "2026-09-25",
@@ -5440,6 +5440,11 @@
        "at": "2026-10-08 10:31",
        "by": "daniel",
        "text": "Read and send the Gmail draft 'How people search for help in Texas: the top 10'."
+      },
+      {
+       "at": "2026-10-09 15:16",
+       "by": "daniel",
+       "text": "Told Claude: check krisp transcript he replied online in the meeting not via email. we have his information."
       }
      ],
      "steps": [
@@ -5477,8 +5482,8 @@
        "evidence": "no reply yet"
       }
      ],
-     "state": "waiting",
-     "state_text": "Waiting on Todd since 2026-10-08: Todd replies to 'How people search for help in Texas: the top 10'.",
+     "state": "with_claude",
+     "state_text": "With Claude: check krisp transcript he replied online in the meeting not via email. we have his information.",
      "checked_at": "2026-10-08 10:31"
     }
    }
