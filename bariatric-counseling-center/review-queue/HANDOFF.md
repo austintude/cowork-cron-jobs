@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-10-09 14:54 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-09 15:12 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -55,6 +55,12 @@ Generated 2026-10-09 14:54 by queue_apply.py. Daniel approved these on the dashb
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Waiting on Sara since 2026-10-06: Sara replies to 'Quick clinical check: binge eating telehealth article'. (was due 2026-10-06)
 - ARFID landing page and blog: Waiting on Sara since 2026-10-07: Sara replies to 'ARFID page: a few details to confirm'. (was due 2026-10-06)
 - Use Ford's finished staff profile videos (Vimeo): Restart the Gerry, Jessica and Samantha raw downloads if they stopped. When they land in Downloads, a session moves and transcribes them.
+
+## Asset revisions (1): posts held until the revised media is everywhere and the change is approved
+
+- id `41260957b2`: **Revise media: Fri 10/30 Food Friday: Month in the Kitchen** (October tab, row 34, change `oct-r34-20261009151247`, platforms FB, IG)
+  - asked for: PIPELINE TEST by Claude for Daniel, please ignore: swap the photo on slide 1. Clears itself in 2 minutes.
+  - current files: oct30-kitchen-month-01-feed.png, oct30-kitchen-month-02-feed.png, oct30-kitchen-month-03-feed.png, oct30-kitchen-month-04-feed.png, oct30-kitchen-month-05-feed.png, oct30-kitchen-month-06-feed.png, oct30-kitchen-month-07-feed.png
 
 ## Social posts to build and write to the sheet (3); the draft to Todd is a separate weekly step
 
