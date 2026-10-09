@@ -42,12 +42,16 @@ Generated 2026-10-09 15:19 by queue_apply.py. Daniel approved these on the dashb
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\d8b058b0c3-faq-block-for-therapy-for-eating-disorders-in-san-antonio-tx.md`
   - approved: 2026-10-09. Why: 3 People Also Ask questions across 2 tracked terms (best BCC position 13).
 
-## Site fixes on staging13 (1)
+## Site fixes on staging13 (2)
 
 - id `9c5050378f`: **Dead outside link on 1 page: www.ncbi.nlm.nih.gov** (dead external link). Target: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5433529/ (HTTP 404). Approved 2026-10-09.
   - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5433529/ answers HTTP 404.
   - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
   - pages (1): https://www.bariatriccounselingcenter.com/diet-and-nutrition/supplements-and-wellness/probiotics-should-you-be-taking-them/
+- id `c13e0e105d`: **Dead outside link on 1 page: www.ncbi.nlm.nih.gov** (dead external link). Target: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4420157/ (HTTP 404). Approved 2026-10-09.
+  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4420157/ answers HTTP 404.
+  - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
+  - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/
 
 ## Action items from the Action Items sheet (7): work each, then --done or --needs-you
 
