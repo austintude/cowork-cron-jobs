@@ -4830,10 +4830,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A19"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "approved",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-09-29T14:50:39",
-   "note": "Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25",
+   "decided": "2026-10-09T15:14:44",
+   "note": "rewrite: daniel: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.",
    "result": {
     "needs_you": "Gmail draft ready: 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd asking for dates, a few lines each and photos by Thu Oct 1. Left for you: send it. Leloni already has a staff spotlight on 10/7; her anniversary could ride on that post.",
     "needs_since": "2026-09-25",
@@ -4848,6 +4848,11 @@
        "at": "2026-09-25 14:09",
        "by": "check",
        "text": "Send the Gmail draft 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd: sent Sep 25 2:09 PM to Todd"
+      },
+      {
+       "at": "2026-10-09 15:14",
+       "by": "daniel",
+       "text": "Told Claude: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send."
       }
      ],
      "steps": [
@@ -4890,8 +4895,8 @@
        "status": "open"
       }
      ],
-     "state": "waiting",
-     "state_text": "Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25 (was due 2026-10-01)",
+     "state": "with_claude",
+     "state_text": "With Claude: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.",
      "checked_at": "2026-10-08 07:00"
     }
    }
