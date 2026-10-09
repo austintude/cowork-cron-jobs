@@ -5160,10 +5160,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A55"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "applied",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-10-06T07:00:26",
-   "note": "Waiting on Todd since 2026-10-06: Todd replies to 'Newsletter send time: Tuesdays 8:30 AM'.",
+   "decided": "2026-10-09T15:16:18",
+   "note": "done",
    "result": {
     "needs_you": "Send the newsletter timing email to Todd (Gmail draft ready)",
     "needs_since": "2026-09-25",
@@ -5193,6 +5193,11 @@
        "at": "2026-10-06 07:00",
        "by": "check",
        "text": "Read and send the Gmail draft 'Newsletter send time: Tuesdays 8:30 AM'.: sent 2026-10-05 23:17 to Todd McCord <tmccord@bccsanantonio.com>"
+      },
+      {
+       "at": "2026-10-09 15:16",
+       "by": "daniel",
+       "text": "Done. ticked on the sheet (row 62)"
       }
      ],
      "steps": [
@@ -5246,10 +5251,13 @@
        "status": "open"
       }
      ],
-     "state": "waiting",
-     "state_text": "Waiting on Todd since 2026-10-06: Todd replies to 'Newsletter send time: Tuesdays 8:30 AM'.",
+     "state": "done",
+     "state_text": "Done",
      "checked_at": "2026-10-08 07:00"
-    }
+    },
+    "done": "2026-10-09",
+    "done_by": "Daniel on the dashboard",
+    "sheet_tick": "ticked on the sheet (row 62)"
    }
   },
   {
