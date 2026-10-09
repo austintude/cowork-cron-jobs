@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-10-09 15:14 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-09 15:15 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -23,7 +23,7 @@ Generated 2026-10-09 15:14 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (4): work each, then --done or --needs-you
+## Action items from the Action Items sheet (5): work each, then --done or --needs-you
 
 - id `c7d4d9431e`: **Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation)** (9/24 call list, sheet row 5). Approved 2026-10-08.
   - HISTORY (continue from here; do not redo what is done):
@@ -45,6 +45,16 @@ Generated 2026-10-09 15:14 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-25 14:09 check: Send the Gmail draft 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd: sent Sep 25 2:09 PM to Todd
     - 2026-10-09 15:14 daniel: Told Claude: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.
   - NOW: daniel: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.
+- id `d8d67dff97`: **Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1** (8/27 meeting list, sheet row 62). Approved 2026-10-09.
+  - Daniel's notes: The gap ERC, Alsana and Monte Nido cannot use
+  - HISTORY (continue from here; do not redo what is done):
+    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Brief and article ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\binge-eating-telehealth-brief-and-article.md (target 'virtual binge eating disorder treatment Texas', bariatric, weight regain and weight loss medication angles ERC does not use). Left for you: Sara to check the one statistic and the clinical descriptions; then it goes through the block process on staging13.
+    - 2026-09-29 15:48 daniel: Chose 'Draft the note to Sara for me'. Told Claude: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process.
+    - 2026-09-29 16:39 claude: Gmail draft from daniel@drbdig.com to Sara, cc Todd: 'Quick clinical check: binge eating telehealth article' (the STEP 1 statistic and four clinical passages quoted inline).
+    - 2026-10-02 07:00 check: Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.: not sent, and no longer in your Drafts (deleted?)
+    - 2026-10-06 07:00 check: Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.: sent 2026-10-05 08:00 to Sara Hamilton <shamilton@bccsanantonio.com>
+    - 2026-10-09 15:15 daniel: Told Claude: check email replies from sara I believe she has replied to this and is ok but am uncertain. maybe i misremember. if she has greenlit this. move it directly into staging
+  - NOW: daniel: check email replies from sara I believe she has replied to this and is ok but am uncertain. maybe i misremember. if she has greenlit this. move it directly into staging
 - id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 63). Approved 2026-10-08.
   - Daniel's notes: Todd: "it can't hurt"
   - HISTORY (continue from here; do not redo what is done):
@@ -55,10 +65,9 @@ Generated 2026-10-09 15:14 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-08 10:32 daniel: Chose 'Send it'. Told Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
   - NOW: daniel: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
 
-## Items waiting on Daniel or on Todd/Sara (5): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (4): not for Claude, except the Gmail confirmations below.
 - Decide newsletter send day and time, back it with data: Waiting on Todd since 2026-10-06: Todd replies to 'Newsletter send time: Tuesdays 8:30 AM'.
 - Rank how people actually search (top 10), find a platform big in Texas that competitors ignore: Waiting on Todd since 2026-10-08: Todd replies to 'How people search for help in Texas: the top 10'.
-- Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Waiting on Sara since 2026-10-06: Sara replies to 'Quick clinical check: binge eating telehealth article'. (was due 2026-10-06)
 - ARFID landing page and blog: Waiting on Sara since 2026-10-07: Sara replies to 'ARFID page: a few details to confirm'. (was due 2026-10-06)
 - Use Ford's finished staff profile videos (Vimeo): Restart the Gerry, Jessica and Samantha raw downloads if they stopped. When they land in Downloads, a session moves and transcribes them.
 
