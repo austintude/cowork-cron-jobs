@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-10-09 15:16 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-09 15:17 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -22,6 +22,13 @@ Generated 2026-10-09 15:16 by queue_apply.py. Daniel approved these on the dashb
 - Social posts, stage 2 (status built -> go -> placed): `python todd-check.py` reads column P (Todd OK) and Q (Todd notes) for every built row and marks `go` or sends back on its own, and applies Todd's silence rule (a post drafted with at least 7 days of notice and no answer by 3 days before its date goes ahead as planned); ALSO search Gmail for replies from Todd or Sara (anyone at bccsanantonio.com) on a `Social posts to approve` thread and apply what they wrote: `approved`, `ok`, `go ahead` for a post or for all of them -> `python queue_apply.py --todd-ok <id> '<his words>'`; a change or a question about a post -> `python queue_apply.py --back <id> 'todd: <his words>'` (the item returns to approved with his note and is rebuilt on the next run; reply-worthy questions go to Daniel, not to Todd). Then BOOK every item in status `go`: `postiz_mode` schedule: create the post in Postiz for each of FB, IG and YouTube on the BCC channels at the date and time in `times` (public API `POST /api/public/v1/posts` with the media uploaded first, or the Postiz UI in Chrome at the launches page); `postiz_mode` draft: create it as a Postiz draft and say so. LinkedIn and GBP still go through Publer: schedule them there in Chrome (LinkedIn document posts upload the PDF; GBP uses the Learn more button to `cta_page`), then tick the row's Scheduled box (column A). Facebook link goes in the first comment. (6) `python queue_apply.py --placed <id> 'scheduled: <platforms and times>; sheet row <n>; <asset file>'`. Never post to a channel that is not listed on the item, never book a post that is not in status go (Todd's OK, or his silence rule applied by todd-check.py), and never move a date without a note from Daniel.
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
+
+## Content blocks (1)
+
+- id `4f36bd92f2`: **AI Overview answer for "weight management after bariatric surgery" on /post-bariatric-surg**
+  - target: https://www.bariatriccounselingcenter.com/post-bariatric-surgery-support/
+  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\4f36bd92f2-ai-overview-answer-for-weight-management-after-bariatric-sur.md`
+  - approved: 2026-10-09. Why: AI Overview shows for "weight management after bariatric surgery" (volume not on file) and cites ucsfhealth.org, conehealth.com, journeylite.com, not BCC.
 
 ## Action items from the Action Items sheet (7): work each, then --done or --needs-you
 
