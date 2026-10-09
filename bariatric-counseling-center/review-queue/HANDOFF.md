@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-10-09 15:15 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-09 15:16 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -23,7 +23,7 @@ Generated 2026-10-09 15:15 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (5): work each, then --done or --needs-you
+## Action items from the Action Items sheet (6): work each, then --done or --needs-you
 
 - id `c7d4d9431e`: **Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation)** (9/24 call list, sheet row 5). Approved 2026-10-08.
   - HISTORY (continue from here; do not redo what is done):
@@ -32,6 +32,17 @@ Generated 2026-10-09 15:15 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-29 16:39 claude: Gmail draft from daniel@drbdig.com to Sara and Todd: 'Psych evaluation page: four things to confirm' (video or phone, report contents, turnaround, evaluator names; plus the Joint Commission, 'only program', '$0' and old phone line).
     - 2026-10-08 10:32 daniel: Told Claude: do these but on staging14. 13 is being sunsetted
   - NOW: daniel: do these but on staging14. 13 is being sunsetted
+- id `b43efd08a0`: **ARFID landing page and blog** (9/24 call list, sheet row 7). Approved 2026-10-09.
+  - Daniel's notes: Page goes to Sara and Todd for QC before it goes live. Then 2 to 4 blog posts over the next couple of months. BCC has no presence on this search term yet.
+  - HISTORY (continue from here; do not redo what is done):
+    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Draft ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\arfid-landing-and-blog-plan.md (adults only, target 'arfid in adults', 4 blog titles for Oct/Nov). Every BCC service claim is marked [SARA TO CONFIRM]. Left for you: ask Sara first whether BCC treats adult ARFID at all; if no, do not publish and ARFID should come off the two pages that list it.
+    - 2026-09-29 15:58 daniel: Chose 'Sara said yes'. Told Claude: Sara confirmed BCC treats adult ARFID. Finish the ARFID landing page from content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md and send the service claims marked [SARA TO CONFIRM] to Sara as one short Gmail draft.
+    - 2026-09-29 16:39 claude: Finished the landing page for QC: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\arfid-landing-page-ready-for-qc-2026-09-29.md (gate cleared; 14 detail markers left inside the page).
+    - 2026-09-29 16:39 claude: Gmail draft from daniel@drbdig.com to Sara: 'ARFID page: a few details to confirm' (9 short questions).
+    - 2026-09-29 16:39 claude: Still open for Todd, not in Sara's email: ARFID billed under mental health benefits like other services.
+    - 2026-10-07 07:00 check: Read and send the Gmail draft 'ARFID page: a few details to confirm'.: sent 2026-10-06 14:30 to Sara Hamilton <shamilton@bccsanantonio.com>
+    - 2026-10-09 15:16 daniel: Told Claude: i believe we have had email replies from todd and sara. check. if so, move this onto staging and build the page according to their input
+  - NOW: daniel: i believe we have had email replies from todd and sara. check. if so, move this onto staging and build the page according to their input
 - id `6d29cbea90`: **Texas-wide geographic strategy** (9/24 call list, sheet row 14). Approved 2026-10-08.
   - Daniel's notes: Todd asked: any traction on overeating / overeaters, and what we're doing now to expand statewide.
   - HISTORY (continue from here; do not redo what is done):
@@ -65,10 +76,9 @@ Generated 2026-10-09 15:15 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-08 10:32 daniel: Chose 'Send it'. Told Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
   - NOW: daniel: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
 
-## Items waiting on Daniel or on Todd/Sara (4): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (3): not for Claude, except the Gmail confirmations below.
 - Decide newsletter send day and time, back it with data: Waiting on Todd since 2026-10-06: Todd replies to 'Newsletter send time: Tuesdays 8:30 AM'.
 - Rank how people actually search (top 10), find a platform big in Texas that competitors ignore: Waiting on Todd since 2026-10-08: Todd replies to 'How people search for help in Texas: the top 10'.
-- ARFID landing page and blog: Waiting on Sara since 2026-10-07: Sara replies to 'ARFID page: a few details to confirm'. (was due 2026-10-06)
 - Use Ford's finished staff profile videos (Vimeo): Restart the Gerry, Jessica and Samantha raw downloads if they stopped. When they land in Downloads, a session moves and transcribes them.
 
 ## Social posts to build and write to the sheet (3); the draft to Todd is a separate weekly step
