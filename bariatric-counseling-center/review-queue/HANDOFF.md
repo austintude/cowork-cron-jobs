@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging13
 
-Generated 2026-10-09 15:12 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-09 15:14 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -23,7 +23,7 @@ Generated 2026-10-09 15:12 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Action items from the Action Items sheet (3): work each, then --done or --needs-you
+## Action items from the Action Items sheet (4): work each, then --done or --needs-you
 
 - id `c7d4d9431e`: **Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation)** (9/24 call list, sheet row 5). Approved 2026-10-08.
   - HISTORY (continue from here; do not redo what is done):
@@ -38,6 +38,13 @@ Generated 2026-10-09 15:12 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-25 07:30 claude: Worked by the morning Claude run: Brief ready: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\todd-texas-strategy-2026-09-25.md (overeating: 22 impressions, 0 clicks in 20 weeks; food addiction is the term that grew; statewide work in flight). Left for you: read and send to Todd. It refers to the one-page launch plan (BCC-Launch-Plan-for-Todd-2026-09-22.md, not yet sent), so send that first or reword the line. GA4 has no Texas city data yet.
     - 2026-10-08 10:34 daniel: Chose 'Draft both emails for me'. Told Claude: Draft two Gmail drafts from daniel@drbdig.com to Todd: (1) the one-page launch plan from BCC-Launch-Plan-for-Todd-2026-09-22.md, subject 'BCC launch plan: one page'; (2) the Texas strategy brief from Claude outputs/todd-texas-strategy-2026-09-25.md, subject 'Overeating, food addiction and going statewide'. Short, transactional, clean links. Hand it back with a gmail_sent check for each and a gmail_reply step for Todd.
   - NOW: daniel: Draft two Gmail drafts from daniel@drbdig.com to Todd: (1) the one-page launch plan from BCC-Launch-Plan-for-Todd-2026-09-22.md, subject 'BCC launch plan: one page'; (2) the Texas strategy brief from Claude outputs/todd-texas-strategy-2026-09-25.md, subject 'Overeating, food addiction and going statewide'. Short, transactional, clean links. Hand it back with a gmail_sent check for each and a gmail_reply step for Todd.
+- id `aed8090d11`: **Calendar staff anniversary posts** (9/24 call list, sheet row 19). Approved 2026-10-09.
+  - Daniel's notes: Laura and Aaron in October; Leloni's 5-year is overdue. Todd writes them, Daniel schedules and reminds him.
+  - HISTORY (continue from here; do not redo what is done):
+    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Gmail draft ready: 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd asking for dates, a few lines each and photos by Thu Oct 1. Left for you: send it. Leloni already has a staff spotlight on 10/7; her anniversary could ride on that post.
+    - 2026-09-25 14:09 check: Send the Gmail draft 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd: sent Sep 25 2:09 PM to Todd
+    - 2026-10-09 15:14 daniel: Told Claude: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.
+  - NOW: daniel: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.
 - id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 63). Approved 2026-10-08.
   - Daniel's notes: Todd: "it can't hurt"
   - HISTORY (continue from here; do not redo what is done):
@@ -48,19 +55,12 @@ Generated 2026-10-09 15:12 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-08 10:32 daniel: Chose 'Send it'. Told Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
   - NOW: daniel: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
 
-## Items waiting on Daniel or on Todd/Sara (6): not for Claude, except the Gmail confirmations below.
-- Calendar staff anniversary posts: Waiting on Todd since 2026-09-25: Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25 (was due 2026-10-01)
+## Items waiting on Daniel or on Todd/Sara (5): not for Claude, except the Gmail confirmations below.
 - Decide newsletter send day and time, back it with data: Waiting on Todd since 2026-10-06: Todd replies to 'Newsletter send time: Tuesdays 8:30 AM'.
 - Rank how people actually search (top 10), find a platform big in Texas that competitors ignore: Waiting on Todd since 2026-10-08: Todd replies to 'How people search for help in Texas: the top 10'.
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Waiting on Sara since 2026-10-06: Sara replies to 'Quick clinical check: binge eating telehealth article'. (was due 2026-10-06)
 - ARFID landing page and blog: Waiting on Sara since 2026-10-07: Sara replies to 'ARFID page: a few details to confirm'. (was due 2026-10-06)
 - Use Ford's finished staff profile videos (Vimeo): Restart the Gerry, Jessica and Samantha raw downloads if they stopped. When they land in Downloads, a session moves and transcribes them.
-
-## Asset revisions (1): posts held until the revised media is everywhere and the change is approved
-
-- id `41260957b2`: **Revise media: Fri 10/30 Food Friday: Month in the Kitchen** (October tab, row 34, change `oct-r34-20261009151247`, platforms FB, IG)
-  - asked for: PIPELINE TEST by Claude for Daniel, please ignore: swap the photo on slide 1. Clears itself in 2 minutes.
-  - current files: oct30-kitchen-month-01-feed.png, oct30-kitchen-month-02-feed.png, oct30-kitchen-month-03-feed.png, oct30-kitchen-month-04-feed.png, oct30-kitchen-month-05-feed.png, oct30-kitchen-month-06-feed.png, oct30-kitchen-month-07-feed.png
 
 ## Social posts to build and write to the sheet (3); the draft to Todd is a separate weekly step
 
