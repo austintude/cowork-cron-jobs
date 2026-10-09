@@ -76,8 +76,7 @@ Generated 2026-10-09 15:16 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-08 10:32 daniel: Chose 'Send it'. Told Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
   - NOW: daniel: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
 
-## Items waiting on Daniel or on Todd/Sara (3): not for Claude, except the Gmail confirmations below.
-- Decide newsletter send day and time, back it with data: Waiting on Todd since 2026-10-06: Todd replies to 'Newsletter send time: Tuesdays 8:30 AM'.
+## Items waiting on Daniel or on Todd/Sara (2): not for Claude, except the Gmail confirmations below.
 - Rank how people actually search (top 10), find a platform big in Texas that competitors ignore: Waiting on Todd since 2026-10-08: Todd replies to 'How people search for help in Texas: the top 10'.
 - Use Ford's finished staff profile videos (Vimeo): Restart the Gerry, Jessica and Samantha raw downloads if they stopped. When they land in Downloads, a session moves and transcribes them.
 
