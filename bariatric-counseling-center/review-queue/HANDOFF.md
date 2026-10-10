@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-09 15:31 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-10 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -86,7 +86,7 @@ Generated 2026-10-09 15:31 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-25 14:09 check: Send the Gmail draft 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd: sent Sep 25 2:09 PM to Todd
     - 2026-10-09 15:14 daniel: Told Claude: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.
   - NOW: daniel: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.
-- id `081016b3bc`: **Rank how people actually search (top 10), find a platform big in Texas that competitors ignore** (8/27 meeting list, sheet row 61). Approved 2026-10-09.
+- id `081016b3bc`: **Rank how people actually search (top 10), find a platform big in Texas that competitors ignore** (8/27 meeting list, sheet row 68). Approved 2026-10-09.
   - Daniel's notes: Todd asked for this directly
   - HISTORY (continue from here; do not redo what is done):
     - 2026-09-25 07:30 claude: Worked by the morning Claude run: Brief ready: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\todd-top10-searches-and-platform-2026-09-25.md (top 10 Texas searches with volumes; platform pick is YouTube, which the local competitors do not use). Left for you: read and send to Todd; the platform evidence is thin and the brief says so.
@@ -95,7 +95,7 @@ Generated 2026-10-09 15:31 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-08 10:31 daniel: Read and send the Gmail draft 'How people search for help in Texas: the top 10'.
     - 2026-10-09 15:16 daniel: Told Claude: check krisp transcript he replied online in the meeting not via email. we have his information.
   - NOW: daniel: check krisp transcript he replied online in the meeting not via email. we have his information.
-- id `d8d67dff97`: **Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1** (8/27 meeting list, sheet row 62). Approved 2026-10-09.
+- id `d8d67dff97`: **Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1** (8/27 meeting list, sheet row 69). Approved 2026-10-09.
   - Daniel's notes: The gap ERC, Alsana and Monte Nido cannot use
   - HISTORY (continue from here; do not redo what is done):
     - 2026-09-25 07:30 claude: Worked by the morning Claude run: Brief and article ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\binge-eating-telehealth-brief-and-article.md (target 'virtual binge eating disorder treatment Texas', bariatric, weight regain and weight loss medication angles ERC does not use). Left for you: Sara to check the one statistic and the clinical descriptions; then it goes through the block process on staging14.
@@ -105,7 +105,7 @@ Generated 2026-10-09 15:31 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-06 07:00 check: Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.: sent 2026-10-05 08:00 to Sara Hamilton <shamilton@bccsanantonio.com>
     - 2026-10-09 15:15 daniel: Told Claude: check email replies from sara I believe she has replied to this and is ok but am uncertain. maybe i misremember. if she has greenlit this. move it directly into staging
   - NOW: daniel: check email replies from sara I believe she has replied to this and is ok but am uncertain. maybe i misremember. if she has greenlit this. move it directly into staging
-- id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 63). Approved 2026-10-08.
+- id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 70). Approved 2026-10-08.
   - Daniel's notes: Todd: "it can't hurt"
   - HISTORY (continue from here; do not redo what is done):
     - 2026-09-25 07:30 claude: Worked by the morning Claude run: Status and next steps: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\BING-COPILOT-STATUS-2026-09-25.md. Done today: IndexNow key and a dry-run ping script (C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\indexnow-ping.py), Copilot column added to the AI sweep. Left for you: sign in at bing.com/webmasters and import from Search Console (about 5 minutes); upload the IndexNow key file to staging14 so it goes live with the next push.
@@ -134,7 +134,7 @@ Generated 2026-10-09 15:31 by queue_apply.py. Daniel approved these on the dashb
   - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip3-9x16_emotional-graduation_COVERED.mp4
   - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
 
-## Draft day: Wednesday. Today is Friday, not draft day: build only, no email to Todd.
+## Draft day: Wednesday. Today is Saturday, not draft day: build only, no email to Todd.
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
