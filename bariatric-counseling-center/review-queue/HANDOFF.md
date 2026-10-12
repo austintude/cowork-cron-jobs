@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-11 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-12 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -134,7 +134,7 @@ Generated 2026-10-11 07:00 by queue_apply.py. Daniel approved these on the dashb
   - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip3-9x16_emotional-graduation_COVERED.mp4
   - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
 
-## Draft day: Wednesday. Today is Sunday, not draft day: build only, no email to Todd.
+## Draft day: Wednesday. Today is Monday, not draft day: build only, no email to Todd.
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
