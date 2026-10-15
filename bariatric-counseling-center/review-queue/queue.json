@@ -5560,8 +5560,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-10-15T10:06:37",
-   "note": "Already on staging14. Sara replied: Oct 5 OK except point 3 (reword as binge eating returning when food noise comes back after stopping the medication); Oct 14 she asked for the article in an editable format. Send her an editable copy.",
+   "decided": "2026-10-15T10:06:38",
+   "note": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
    "result": {
     "needs_you": "Already on staging14. Sara replied: Oct 5 OK except point 3 (reword as binge eating returning when food noise comes back after stopping the medication); Oct 14 she asked for the article in an editable format. Send her an editable copy.",
     "needs_since": "2026-09-25",
@@ -5645,7 +5645,8 @@
         "after": "2026-10-15"
        },
        "id": "s2",
-       "status": "open"
+       "status": "open",
+       "evidence": "no reply yet"
       },
       {
        "owner": "claude",
@@ -5657,9 +5658,9 @@
        "status": "open"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: check email replies from sara I believe she has replied to this and is ok but am uncertain. maybe i misremember. if she has greenlit this. move it directly into staging",
-     "checked_at": "2026-10-08 07:00"
+     "state": "your_move",
+     "state_text": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
+     "checked_at": "2026-10-15 10:06"
     }
    }
   },
