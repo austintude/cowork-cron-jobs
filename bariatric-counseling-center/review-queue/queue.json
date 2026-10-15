@@ -4886,12 +4886,12 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A19"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-10-09T15:14:44",
-   "note": "rewrite: daniel: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.",
+   "decided": "2026-10-15T10:06:30",
+   "note": "Send the reminder draft to Todd (reply on 'Staff anniversary posts: Laura, Aaron and Leloni'). Leloni's post stays parked until Todd's info arrives.",
    "result": {
-    "needs_you": "Gmail draft ready: 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd asking for dates, a few lines each and photos by Thu Oct 1. Left for you: send it. Leloni already has a staff spotlight on 10/7; her anniversary could ride on that post.",
+    "needs_you": "Send the reminder draft to Todd (reply on 'Staff anniversary posts: Laura, Aaron and Leloni'). Leloni's post stays parked until Todd's info arrives.",
     "needs_since": "2026-09-25",
     "followup": {
      "trail": [
@@ -4909,41 +4909,41 @@
        "at": "2026-10-09 15:14",
        "by": "daniel",
        "text": "Told Claude: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send."
+      },
+      {
+       "at": "2026-10-15 10:06",
+       "by": "claude",
+       "text": "2026-10-15: no reply from Todd with dates, lines or photos since his 'Will do' on Sep 25. Reminder built as a Gmail draft reply in the same thread, subject 'Re: Staff anniversary posts: Laura, Aaron and Leloni'."
       }
      ],
      "steps": [
       {
        "owner": "daniel",
-       "do": "Send the Gmail draft 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd",
+       "do": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.",
        "check": {
         "type": "gmail_sent",
-        "subject": "Staff anniversary posts"
+        "subject": "Re: Staff anniversary posts: Laura, Aaron and Leloni",
+        "after": "2026-10-15"
        },
-       "status": "done",
-       "done_at": "2026-09-25 14:09",
-       "evidence": "sent Sep 25 2:09 PM to Todd",
-       "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0d9d7746da1d27",
+       "due": "2026-10-16",
        "id": "s1",
-       "via": "checked in Gmail on 2026-09-29"
+       "status": "open"
       },
       {
        "owner": "todd",
-       "do": "Todd sends the dates, a few lines each and photos (asked for by Thu Oct 1). He replied 'Will do' on Sep 25",
+       "do": "Todd sends dates, a few lines and a photo for Laura, Aaron and Leloni.",
        "check": {
         "type": "gmail_reply",
         "subject": "Staff anniversary posts",
         "from": "bccsanantonio.com",
-        "after": "2026-09-25T14:12"
+        "after": "2026-10-15"
        },
-       "due": "2026-10-01",
-       "evidence": "no reply yet",
        "id": "s2",
-       "status": "open",
-       "check_note": "replies are checked by the morning Claude run"
+       "status": "open"
       },
       {
        "owner": "claude",
-       "do": "Build the three anniversary posts from what Todd sent and propose them in the social plan (Leloni's can ride on her 10/7 staff spotlight)",
+       "do": "Build the anniversary posts through the social pipeline once Todd's info is in.",
        "check": {
         "type": "manual"
        },
