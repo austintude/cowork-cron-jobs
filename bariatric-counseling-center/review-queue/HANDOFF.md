@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-15 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-15 09:22 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -114,9 +114,6 @@ Generated 2026-10-15 07:00 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-29 16:39 claude: Dry run 2026-09-29: key file https://www.bariatriccounselingcenter.com/8b22ca13ddef13fdc45a57195c2d59e6.txt is LIVE and matches; 41 of 193 sitemap URLs changed in the last 14 days are ready to submit. Nothing submitted.
     - 2026-10-08 10:32 daniel: Chose 'Send it'. Told Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
   - NOW: daniel: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
-
-## Items waiting on Daniel or on Todd/Sara (1): not for Claude, except the Gmail confirmations below.
-- Use Ford's finished staff profile videos (Vimeo): Restart the Gerry, Jessica and Samantha raw downloads if they stopped. When they land in Downloads, a session moves and transcribes them.
 
 ## Social posts to build and write to the sheet (3); the draft to Todd is a separate weekly step
 
