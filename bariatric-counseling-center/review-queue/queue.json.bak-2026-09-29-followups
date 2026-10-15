@@ -2082,11 +2082,11 @@
   {
    "id": "802239d78c",
    "kind": "fix",
-   "key": "fix:broken embed or media file:https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
+   "key": "fix:broken embed or media file:https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
    "title": "Broken embed or media file on 1 page: /maps/embed/v1/place",
    "why": "broken embed or media file on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
    "payload": {
-    "url": "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
+    "url": "https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
     "fix_type": "broken embed or media file",
     "detail": "HTTP 404",
     "pages": [
@@ -2094,7 +2094,7 @@
     ],
     "suggest": null,
     "steps": [
-     "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging13."
+     "https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging13."
     ],
     "first_seen": "2026-09-22",
     "video": null,
@@ -2634,11 +2634,11 @@
   {
    "id": "41860e26b9",
    "kind": "fix",
-   "key": "fix:broken embed or media file:https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
+   "key": "fix:broken embed or media file:https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
    "title": "Broken embed or media file on 1 page: /maps/embed/v1/place",
    "why": "broken embed or media file on production, carried by 1 page (first seen 2026-09-22); dead links and media hurt visitors, crawl budget and AI answers alike",
    "payload": {
-    "url": "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
+    "url": "https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax",
     "fix_type": "broken embed or media file",
     "detail": "HTTP 404",
     "pages": [
@@ -2646,7 +2646,7 @@
     ],
     "suggest": null,
     "steps": [
-     "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging13."
+     "https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&zoom=11&maptype=roadmap&q=9618+Huebner+Road%2C+Suite+320+San+Antonio%2C+TX+78240++%28210%29+634-2200+phone++%28210%29+634-2201+fax answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging13."
     ],
     "first_seen": "2026-09-22",
     "video": null,
