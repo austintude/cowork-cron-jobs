@@ -23,7 +23,7 @@ Generated 2026-10-15 10:13 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Content blocks (3)
+## Content blocks (2)
 
 - id `72e1fe3d1d`: **AI Overview answer for "bariatric therapist san antonio" on /bariatric-therapy-in-san-anto**
   - target: https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/
@@ -33,10 +33,6 @@ Generated 2026-10-15 10:13 by queue_apply.py. Daniel approved these on the dashb
   - target: https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\de6a14c346-ai-overview-answer-for-bariatric-surgery-counseling-san-anto.md`
   - approved: 2026-10-09. Why: AI Overview shows for "bariatric surgery counseling san antonio" (volume not on file) and cites pmc.ncbi.nlm.nih.gov, mayoclinic.org, psychologytoday.com, not BCC.
-- id `d8b058b0c3`: **FAQ block for /therapy-for-eating-disorders-in-san-antonio-tx/ (3 questions)**
-  - target: https://www.bariatriccounselingcenter.com/therapy-for-eating-disorders-in-san-antonio-tx/
-  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\d8b058b0c3-faq-block-for-therapy-for-eating-disorders-in-san-antonio-tx.md`
-  - approved: 2026-10-09. Why: 3 People Also Ask questions across 2 tracked terms (best BCC position 13).
 
 ## Site fixes on staging14 (2)
 
