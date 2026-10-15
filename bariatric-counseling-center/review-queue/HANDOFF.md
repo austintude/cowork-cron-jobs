@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-15 10:06 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-15 10:13 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -23,12 +23,8 @@ Generated 2026-10-15 10:06 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Content blocks (4)
+## Content blocks (3)
 
-- id `4f36bd92f2`: **AI Overview answer for "weight management after bariatric surgery" on /post-bariatric-surg**
-  - target: https://www.bariatriccounselingcenter.com/post-bariatric-surgery-support/
-  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\4f36bd92f2-ai-overview-answer-for-weight-management-after-bariatric-sur.md`
-  - approved: 2026-10-09. Why: AI Overview shows for "weight management after bariatric surgery" (volume not on file) and cites ucsfhealth.org, conehealth.com, journeylite.com, not BCC.
 - id `72e1fe3d1d`: **AI Overview answer for "bariatric therapist san antonio" on /bariatric-therapy-in-san-anto**
   - target: https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\72e1fe3d1d-ai-overview-answer-for-bariatric-therapist-san-antonio-on-ba.md`
