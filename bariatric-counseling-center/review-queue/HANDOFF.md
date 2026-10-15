@@ -99,24 +99,6 @@ Generated 2026-10-15 10:03 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-15 09:25 daniel: Told Claude: is this done?
   - NOW: daniel: is this done?
 
-## Social posts to build and write to the sheet (3); the draft to Todd is a separate weekly step
-
-- id `cd67a665c9`: **Thu 10/8: alumni clip, Kim K. (more than willpower)** on 2026-10-08 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-10-08. Why: Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\cd67a665c9-thu-10-8-alumni-clip-kim-k-more-than-willpower.json`
-  - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/kim-clip3-9x16_more-than-willpower_COVERED.mp4
-  - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
-- id `112e44e57d`: **Fri 10/9: Food Friday reel from Leila's clips (Citrus grilled shrimp, Chicken Tikka Masala** on 2026-10-09 (FB, IG, YT) at FB 12:00 PM, IG 6:00 PM, YT 6:00 PM, reel. Approved 2026-10-08. Why: row 16 plans a dish still for this Friday; the reel replaces it on FB and IG and adds YouTube Shorts
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\112e44e57d-fri-10-9-food-friday-reel-from-leila-s-clips-citrus-grilled-.json`
-  - asset: reel https://drive.google.com/drive/folders/1lmS4iu1NXuEMGNZkv_6BdVwJDERGSVOy
-  - replaces row 16 in October Content Calendar
-  - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/
-- id `d0c8ca48a5`: **Thu 10/15: alumni clip, Gerry M. (emotional graduation)** on 2026-10-15 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-10-08. Why: Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\d0c8ca48a5-thu-10-15-alumni-clip-gerry-m-emotional-graduation.json`
-  - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/gerry-clip3-9x16_emotional-graduation_COVERED.mp4
-  - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
-
-## Draft day: Wednesday. Today is Thursday, not draft day: build only, no email to Todd.
-
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
 - Partner link note: vitalitylifecounselingsa.com (channel email)
