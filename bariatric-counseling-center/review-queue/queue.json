@@ -4888,8 +4888,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-10-15T10:06:30",
-   "note": "Send the reminder draft to Todd (reply on 'Staff anniversary posts: Laura, Aaron and Leloni'). Leloni's post stays parked until Todd's info arrives.",
+   "decided": "2026-10-15T10:06:35",
+   "note": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.",
    "result": {
     "needs_you": "Send the reminder draft to Todd (reply on 'Staff anniversary posts: Laura, Aaron and Leloni'). Leloni's post stays parked until Todd's info arrives.",
     "needs_since": "2026-09-25",
@@ -4927,7 +4927,8 @@
        },
        "due": "2026-10-16",
        "id": "s1",
-       "status": "open"
+       "status": "open",
+       "evidence": "still in your Gmail Drafts, not sent"
       },
       {
        "owner": "todd",
@@ -4939,7 +4940,8 @@
         "after": "2026-10-15"
        },
        "id": "s2",
-       "status": "open"
+       "status": "open",
+       "evidence": "no reply yet"
       },
       {
        "owner": "claude",
@@ -4951,9 +4953,9 @@
        "status": "open"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.",
-     "checked_at": "2026-10-08 07:00"
+     "state": "your_move",
+     "state_text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.",
+     "checked_at": "2026-10-15 10:06"
     }
    }
   },
