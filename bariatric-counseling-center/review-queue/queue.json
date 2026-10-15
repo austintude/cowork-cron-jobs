@@ -4456,8 +4456,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-10-15T10:06:24",
-   "note": "Read and send the two Gmail drafts to Todd: 'BCC launch plan: one page' first, then 'Overeating, food addiction and going statewide'. Check the dates before sending (Oct 15 Joint Commission line, Oct 16 deadlines).",
+   "decided": "2026-10-15T10:06:29",
+   "note": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).",
    "result": {
     "needs_you": "Read and send the two Gmail drafts to Todd: 'BCC launch plan: one page' first, then 'Overeating, food addiction and going statewide'. Check the dates before sending (Oct 15 Joint Commission line, Oct 16 deadlines).",
     "needs_since": "2026-09-25",
@@ -4499,7 +4499,8 @@
        },
        "due": "2026-10-16",
        "id": "s1",
-       "status": "open"
+       "status": "open",
+       "evidence": "still in your Gmail Drafts, not sent"
       },
       {
        "owner": "daniel",
@@ -4510,7 +4511,8 @@
        },
        "due": "2026-10-16",
        "id": "s2",
-       "status": "open"
+       "status": "open",
+       "evidence": "still in your Gmail Drafts, not sent"
       },
       {
        "owner": "todd",
@@ -4521,12 +4523,13 @@
         "from": "bccsanantonio.com"
        },
        "id": "s3",
-       "status": "open"
+       "status": "open",
+       "evidence": "no reply yet"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: build the drafts now",
-     "checked_at": "2026-10-08 07:00"
+     "state": "your_move",
+     "state_text": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).",
+     "checked_at": "2026-10-15 10:06"
     }
    }
   },
