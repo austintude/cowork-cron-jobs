@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-15 09:24 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-15 09:25 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -88,7 +88,7 @@ Generated 2026-10-15 09:24 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-06 07:00 check: Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.: sent 2026-10-05 08:00 to Sara Hamilton <shamilton@bccsanantonio.com>
     - 2026-10-09 15:15 daniel: Told Claude: check email replies from sara I believe she has replied to this and is ok but am uncertain. maybe i misremember. if she has greenlit this. move it directly into staging
   - NOW: daniel: check email replies from sara I believe she has replied to this and is ok but am uncertain. maybe i misremember. if she has greenlit this. move it directly into staging
-- id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 70). Approved 2026-10-08.
+- id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 70). Approved 2026-10-15.
   - Daniel's notes: Todd: "it can't hurt"
   - HISTORY (continue from here; do not redo what is done):
     - 2026-09-25 07:30 claude: Worked by the morning Claude run: Status and next steps: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\BING-COPILOT-STATUS-2026-09-25.md. Done today: IndexNow key and a dry-run ping script (C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\indexnow-ping.py), Copilot column added to the AI sweep. Left for you: sign in at bing.com/webmasters and import from Search Console (about 5 minutes); upload the IndexNow key file to staging14 so it goes live with the next push.
@@ -96,7 +96,8 @@ Generated 2026-10-15 09:24 by queue_apply.py. Daniel approved these on the dashb
     - 2026-09-29 16:01 check: Put the IndexNow key file on the site (upload seo-tools/indexnow/8b22ca13ddef13fdc45a57195c2d59e6.txt to the web root; it goes live on production with your next push): live: https://www.bariatriccounselingcenter.com/8b22ca13ddef13fdc45a57195c2d59e6.txt
     - 2026-09-29 16:39 claude: Dry run 2026-09-29: key file https://www.bariatriccounselingcenter.com/8b22ca13ddef13fdc45a57195c2d59e6.txt is LIVE and matches; 41 of 193 sitemap URLs changed in the last 14 days are ready to submit. Nothing submitted.
     - 2026-10-08 10:32 daniel: Chose 'Send it'. Told Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
-  - NOW: daniel: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
+    - 2026-10-15 09:25 daniel: Told Claude: is this done?
+  - NOW: daniel: is this done?
 
 ## Social posts to build and write to the sheet (3); the draft to Todd is a separate weekly step
 
