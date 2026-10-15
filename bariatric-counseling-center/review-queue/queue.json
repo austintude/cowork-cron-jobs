@@ -3754,10 +3754,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A5"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "applied",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-10-08T10:32:40",
-   "note": "rewrite: daniel: do these but on staging14. 13 is being sunsetted",
+   "decided": "2026-10-15T09:23:28",
+   "note": "these are now live on the staging site - confirm before clearing off the list\n",
    "result": {
     "needs_you": "Send the psych evaluation questions to Sara and Todd (Gmail draft ready)",
     "needs_since": "2026-09-25",
@@ -3782,6 +3782,11 @@
        "at": "2026-10-08 10:32",
        "by": "daniel",
        "text": "Told Claude: do these but on staging14. 13 is being sunsetted"
+      },
+      {
+       "at": "2026-10-15 09:23",
+       "by": "daniel",
+       "text": "Done: these are now live on the staging site - confirm before clearing off the list\n. ticked on the sheet (row 5)"
       }
      ],
      "steps": [
@@ -3832,10 +3837,13 @@
        "status": "open"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: do these but on staging14. 13 is being sunsetted",
+     "state": "done",
+     "state_text": "Done",
      "checked_at": "2026-10-08 07:00"
-    }
+    },
+    "done": "2026-10-15",
+    "done_by": "Daniel on the dashboard",
+    "sheet_tick": "ticked on the sheet (row 5)"
    }
   },
   {
