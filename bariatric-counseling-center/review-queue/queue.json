@@ -5465,10 +5465,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A68"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "applied",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-10-09T15:16:51",
-   "note": "rewrite: daniel: check krisp transcript he replied online in the meeting not via email. we have his information.",
+   "decided": "2026-10-15T10:06:42",
+   "note": "Todd answered in the Oct 8 call (Krisp, 'Daniel Bisett <> Todd McCord'): reviewed the top 10 Texas searches; Overeaters Anonymous and stress eating flagged as the open opportunities, angle 'licensed virtual group support covered by health insurance'; YouTube agreed as the competitive gap (Esperanza, Monarch, Balanced Counseling not on it) and a priority once the clips are organized. No email reply needed.",
    "result": {
     "needs_you": "Send the top 10 searches email to Todd (Gmail draft ready)",
     "needs_since": "2026-09-25",
@@ -5498,6 +5498,11 @@
        "at": "2026-10-09 15:16",
        "by": "daniel",
        "text": "Told Claude: check krisp transcript he replied online in the meeting not via email. we have his information."
+      },
+      {
+       "at": "2026-10-15 10:06",
+       "by": "claude",
+       "text": "Done: Todd answered in the Oct 8 call (Krisp, 'Daniel Bisett <> Todd McCord'): reviewed the top 10 Texas searches; Overeaters Anonymous and stress eating flagged as the open opportunities, angle 'licensed virtual group support covered by health insurance'; YouTube agreed as the competitive gap (Esperanza, Monarch, Balanced Counseling not on it) and a priority once the clips are organized. No email reply needed.. ticked on the sheet (row 68)"
       }
      ],
      "steps": [
@@ -5535,10 +5540,13 @@
        "evidence": "no reply yet"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: check krisp transcript he replied online in the meeting not via email. we have his information.",
+     "state": "done",
+     "state_text": "Done",
      "checked_at": "2026-10-08 10:31"
-    }
+    },
+    "done": "2026-10-15",
+    "done_by": "a Claude session",
+    "sheet_tick": "ticked on the sheet (row 68)"
    }
   },
   {
