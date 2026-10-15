@@ -53,19 +53,6 @@ Generated 2026-10-15 10:06 by queue_apply.py. Daniel approved these on the dashb
   - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
   - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/
 
-## Action items from the Action Items sheet (1): work each, then --done or --needs-you
-
-- id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 70). Approved 2026-10-15.
-  - Daniel's notes: Todd: "it can't hurt"
-  - HISTORY (continue from here; do not redo what is done):
-    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Status and next steps: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\BING-COPILOT-STATUS-2026-09-25.md. Done today: IndexNow key and a dry-run ping script (C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\seo-tools\indexnow-ping.py), Copilot column added to the AI sweep. Left for you: sign in at bing.com/webmasters and import from Search Console (about 5 minutes); upload the IndexNow key file to staging14 so it goes live with the next push.
-    - 2026-09-29 16:01 daniel: Sign in at bing.com/webmasters and import the site from Search Console (about 5 minutes)
-    - 2026-09-29 16:01 check: Put the IndexNow key file on the site (upload seo-tools/indexnow/8b22ca13ddef13fdc45a57195c2d59e6.txt to the web root; it goes live on production with your next push): live: https://www.bariatriccounselingcenter.com/8b22ca13ddef13fdc45a57195c2d59e6.txt
-    - 2026-09-29 16:39 claude: Dry run 2026-09-29: key file https://www.bariatriccounselingcenter.com/8b22ca13ddef13fdc45a57195c2d59e6.txt is LIVE and matches; 41 of 193 sitemap URLs changed in the last 14 days are ready to submit. Nothing submitted.
-    - 2026-10-08 10:32 daniel: Chose 'Send it'. Told Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
-    - 2026-10-15 09:25 daniel: Told Claude: is this done?
-  - NOW: daniel: is this done?
-
 ## Items waiting on Daniel or on Todd/Sara (3): not for Claude, except the Gmail confirmations below.
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
