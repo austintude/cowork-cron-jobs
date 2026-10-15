@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-15 10:03 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-15 10:06 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -53,15 +53,8 @@ Generated 2026-10-15 10:03 by queue_apply.py. Daniel approved these on the dashb
   - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
   - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/
 
-## Action items from the Action Items sheet (5): work each, then --done or --needs-you
+## Action items from the Action Items sheet (4): work each, then --done or --needs-you
 
-- id `6d29cbea90`: **Texas-wide geographic strategy** (9/24 call list, sheet row 14). Approved 2026-10-15.
-  - Daniel's notes: Todd asked: any traction on overeating / overeaters, and what we're doing now to expand statewide.
-  - HISTORY (continue from here; do not redo what is done):
-    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Brief ready: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\todd-texas-strategy-2026-09-25.md (overeating: 22 impressions, 0 clicks in 20 weeks; food addiction is the term that grew; statewide work in flight). Left for you: read and send to Todd. It refers to the one-page launch plan (BCC-Launch-Plan-for-Todd-2026-09-22.md, not yet sent), so send that first or reword the line. GA4 has no Texas city data yet.
-    - 2026-10-08 10:34 daniel: Chose 'Draft both emails for me'. Told Claude: Draft two Gmail drafts from daniel@drbdig.com to Todd: (1) the one-page launch plan from BCC-Launch-Plan-for-Todd-2026-09-22.md, subject 'BCC launch plan: one page'; (2) the Texas strategy brief from Claude outputs/todd-texas-strategy-2026-09-25.md, subject 'Overeating, food addiction and going statewide'. Short, transactional, clean links. Hand it back with a gmail_sent check for each and a gmail_reply step for Todd.
-    - 2026-10-15 09:24 daniel: Told Claude: build the drafts now
-  - NOW: daniel: build the drafts now
 - id `aed8090d11`: **Calendar staff anniversary posts** (9/24 call list, sheet row 19). Approved 2026-10-09.
   - Daniel's notes: Laura and Aaron in October; Leloni's 5-year is overdue. Todd writes them, Daniel schedules and reminds him.
   - HISTORY (continue from here; do not redo what is done):
@@ -98,6 +91,9 @@ Generated 2026-10-15 10:03 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-08 10:32 daniel: Chose 'Send it'. Told Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.
     - 2026-10-15 09:25 daniel: Told Claude: is this done?
   - NOW: daniel: is this done?
+
+## Items waiting on Daniel or on Todd/Sara (1): not for Claude, except the Gmail confirmations below.
+- Texas-wide geographic strategy: Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
