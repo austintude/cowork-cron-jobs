@@ -53,17 +53,8 @@ Generated 2026-10-15 10:06 by queue_apply.py. Daniel approved these on the dashb
   - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
   - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/
 
-## Action items from the Action Items sheet (2): work each, then --done or --needs-you
+## Action items from the Action Items sheet (1): work each, then --done or --needs-you
 
-- id `081016b3bc`: **Rank how people actually search (top 10), find a platform big in Texas that competitors ignore** (8/27 meeting list, sheet row 68). Approved 2026-10-09.
-  - Daniel's notes: Todd asked for this directly
-  - HISTORY (continue from here; do not redo what is done):
-    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Brief ready: C:\Users\danie\Documents\Claude\Projects\bariatric-counseling-center\Claude outputs\todd-top10-searches-and-platform-2026-09-25.md (top 10 Texas searches with volumes; platform pick is YouTube, which the local competitors do not use). Left for you: read and send to Todd; the platform evidence is thin and the brief says so.
-    - 2026-09-29 15:21 daniel: Chose 'Draft the email to Todd for me'. Told Claude: Turn Claude outputs/todd-top10-searches-and-platform-2026-09-25.md into a short Gmail draft from daniel@drbdig.com to Todd, subject 'How people search for help in Texas: the top 10' (htmlBody, clean links, no process narration), then hand it back with a gmail_sent check on that subject and a gmail_reply step for Todd.
-    - 2026-09-29 16:39 claude: Gmail draft from daniel@drbdig.com to Todd: 'How people search for help in Texas: the top 10' (top 10, YouTube as the platform, asks now or January).
-    - 2026-10-08 10:31 daniel: Read and send the Gmail draft 'How people search for help in Texas: the top 10'.
-    - 2026-10-09 15:16 daniel: Told Claude: check krisp transcript he replied online in the meeting not via email. we have his information.
-  - NOW: daniel: check krisp transcript he replied online in the meeting not via email. we have his information.
 - id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 70). Approved 2026-10-15.
   - Daniel's notes: Todd: "it can't hurt"
   - HISTORY (continue from here; do not redo what is done):
