@@ -4454,12 +4454,12 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A14"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "needs",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-10-15T09:24:32",
-   "note": "rewrite: daniel: build the drafts now",
+   "decided": "2026-10-15T10:06:24",
+   "note": "Read and send the two Gmail drafts to Todd: 'BCC launch plan: one page' first, then 'Overeating, food addiction and going statewide'. Check the dates before sending (Oct 15 Joint Commission line, Oct 16 deadlines).",
    "result": {
-    "needs_you": "Brief ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\Claude outputs\\todd-texas-strategy-2026-09-25.md (overeating: 22 impressions, 0 clicks in 20 weeks; food addiction is the term that grew; statewide work in flight). Left for you: read and send to Todd. It refers to the one-page launch plan (BCC-Launch-Plan-for-Todd-2026-09-22.md, not yet sent), so send that first or reword the line. GA4 has no Texas city data yet.",
+    "needs_you": "Read and send the two Gmail drafts to Todd: 'BCC launch plan: one page' first, then 'Overeating, food addiction and going statewide'. Check the dates before sending (Oct 15 Joint Commission line, Oct 16 deadlines).",
     "needs_since": "2026-09-25",
     "followup": {
      "trail": [
@@ -4477,32 +4477,51 @@
        "at": "2026-10-15 09:24",
        "by": "daniel",
        "text": "Told Claude: build the drafts now"
+      },
+      {
+       "at": "2026-10-15 10:06",
+       "by": "claude",
+       "text": "Two Gmail drafts from daniel@drbdig.com to Todd built 2026-10-15: 'BCC launch plan: one page' (from digital-transition/BCC-Launch-Plan-for-Todd-2026-09-22.md, as written) and 'Overeating, food addiction and going statewide' (short answer from Claude outputs/todd-texas-strategy-2026-09-25.md, appendix left out, the three decisions point back to the launch plan)."
+      },
+      {
+       "at": "2026-10-15 10:06",
+       "by": "claude",
+       "text": "Dates in the launch plan are as written on 9/22: Joint Commission take-down 'by Oct 15' is today, two decisions are 'by Oct 16' (tomorrow), announcement Nov 16 or Dec 1, while the 10/8 call set the virtual-only site go-live around Nov 20. Adjust in the draft before sending if needed."
       }
      ],
      "steps": [
       {
        "owner": "daniel",
-       "do": "Send Todd the one-page launch plan first (BCC-Launch-Plan-for-Todd-2026-09-22.md, not sent yet), then the Texas strategy brief",
-       "links": [
-        {
-         "label": "Open the Texas brief",
-         "path": "Claude outputs/todd-texas-strategy-2026-09-25.md"
-        }
-       ],
+       "do": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).",
        "check": {
-        "type": "manual"
+        "type": "gmail_sent",
+        "subject": "BCC launch plan: one page"
        },
-       "options": [
-        {
-         "label": "Draft both emails for me",
-         "tell": "Draft two Gmail drafts from daniel@drbdig.com to Todd: (1) the one-page launch plan from BCC-Launch-Plan-for-Todd-2026-09-22.md, subject 'BCC launch plan: one page'; (2) the Texas strategy brief from Claude outputs/todd-texas-strategy-2026-09-25.md, subject 'Overeating, food addiction and going statewide'. Short, transactional, clean links. Hand it back with a gmail_sent check for each and a gmail_reply step for Todd."
-        }
-       ],
+       "due": "2026-10-16",
        "id": "s1",
-       "status": "done",
-       "done_at": "2026-10-08 10:34",
-       "via": "Daniel on the dashboard",
-       "evidence": "chose: Draft both emails for me"
+       "status": "open"
+      },
+      {
+       "owner": "daniel",
+       "do": "Read and send the Gmail draft 'Overeating, food addiction and going statewide'.",
+       "check": {
+        "type": "gmail_sent",
+        "subject": "Overeating, food addiction and going statewide"
+       },
+       "due": "2026-10-16",
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "todd",
+       "do": "Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.",
+       "check": {
+        "type": "gmail_reply",
+        "subject": "BCC launch plan",
+        "from": "bccsanantonio.com"
+       },
+       "id": "s3",
+       "status": "open"
       }
      ],
      "state": "with_claude",
