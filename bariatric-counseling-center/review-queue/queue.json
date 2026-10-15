@@ -5650,8 +5650,8 @@
    "source": "action-items",
    "status": "approved",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-10-08T10:32:12",
-   "note": "rewrite: daniel: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.",
+   "decided": "2026-10-15T09:25:42",
+   "note": "rewrite: daniel: is this done?",
    "result": {
     "needs_you": "Say yes to the IndexNow submission (it is a production submission, so it needs your OK)",
     "needs_since": "2026-09-25",
@@ -5681,6 +5681,11 @@
        "at": "2026-10-08 10:32",
        "by": "daniel",
        "text": "Chose 'Send it'. Told Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response."
+      },
+      {
+       "at": "2026-10-15 09:25",
+       "by": "daniel",
+       "text": "Told Claude: is this done?"
       }
      ],
      "steps": [
@@ -5719,7 +5724,7 @@
       }
      ],
      "state": "with_claude",
-     "state_text": "With Claude: Daniel OKs the IndexNow submission: run python seo-tools/indexnow-ping.py --days 14 --send --confirm-production and record the response.",
+     "state_text": "With Claude: is this done?",
      "checked_at": "2026-10-08 07:00"
     }
    }
