@@ -23,17 +23,7 @@ Generated 2026-10-15 10:13 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Content blocks (2)
-
-- id `72e1fe3d1d`: **AI Overview answer for "bariatric therapist san antonio" on /bariatric-therapy-in-san-anto**
-  - target: https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/
-  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\72e1fe3d1d-ai-overview-answer-for-bariatric-therapist-san-antonio-on-ba.md`
-  - approved: 2026-10-09. Why: AI Overview shows for "bariatric therapist san antonio" (volume not on file) and cites youtube.com, not BCC.
-- id `de6a14c346`: **AI Overview answer for "bariatric surgery counseling san antonio" on /bariatric-surgery-co**
-  - target: https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/
-  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\de6a14c346-ai-overview-answer-for-bariatric-surgery-counseling-san-anto.md`
-  - approved: 2026-10-09. Why: AI Overview shows for "bariatric surgery counseling san antonio" (volume not on file) and cites pmc.ncbi.nlm.nih.gov, mayoclinic.org, psychologytoday.com, not BCC.
-
+## Nothing outstanding for a Claude session right now.
 ## Items waiting on Daniel or on Todd/Sara (3): not for Claude, except the Gmail confirmations below.
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
