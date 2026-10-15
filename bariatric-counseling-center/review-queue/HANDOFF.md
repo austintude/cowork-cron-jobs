@@ -53,15 +53,8 @@ Generated 2026-10-15 10:06 by queue_apply.py. Daniel approved these on the dashb
   - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
   - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/
 
-## Action items from the Action Items sheet (4): work each, then --done or --needs-you
+## Action items from the Action Items sheet (3): work each, then --done or --needs-you
 
-- id `aed8090d11`: **Calendar staff anniversary posts** (9/24 call list, sheet row 19). Approved 2026-10-09.
-  - Daniel's notes: Laura and Aaron in October; Leloni's 5-year is overdue. Todd writes them, Daniel schedules and reminds him.
-  - HISTORY (continue from here; do not redo what is done):
-    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Gmail draft ready: 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd asking for dates, a few lines each and photos by Thu Oct 1. Left for you: send it. Leloni already has a staff spotlight on 10/7; her anniversary could ride on that post.
-    - 2026-09-25 14:09 check: Send the Gmail draft 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd: sent Sep 25 2:09 PM to Todd
-    - 2026-10-09 15:14 daniel: Told Claude: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.
-  - NOW: daniel: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.
 - id `081016b3bc`: **Rank how people actually search (top 10), find a platform big in Texas that competitors ignore** (8/27 meeting list, sheet row 68). Approved 2026-10-09.
   - Daniel's notes: Todd asked for this directly
   - HISTORY (continue from here; do not redo what is done):
@@ -92,7 +85,8 @@ Generated 2026-10-15 10:06 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-15 09:25 daniel: Told Claude: is this done?
   - NOW: daniel: is this done?
 
-## Items waiting on Daniel or on Todd/Sara (1): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (2): not for Claude, except the Gmail confirmations below.
+- Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.
 - Texas-wide geographic strategy: Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
