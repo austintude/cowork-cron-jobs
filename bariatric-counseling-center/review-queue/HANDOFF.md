@@ -53,19 +53,8 @@ Generated 2026-10-15 09:23 by queue_apply.py. Daniel approved these on the dashb
   - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
   - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/
 
-## Action items from the Action Items sheet (6): work each, then --done or --needs-you
+## Action items from the Action Items sheet (5): work each, then --done or --needs-you
 
-- id `b43efd08a0`: **ARFID landing page and blog** (9/24 call list, sheet row 7). Approved 2026-10-09.
-  - Daniel's notes: Page goes to Sara and Todd for QC before it goes live. Then 2 to 4 blog posts over the next couple of months. BCC has no presence on this search term yet.
-  - HISTORY (continue from here; do not redo what is done):
-    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Draft ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\arfid-landing-and-blog-plan.md (adults only, target 'arfid in adults', 4 blog titles for Oct/Nov). Every BCC service claim is marked [SARA TO CONFIRM]. Left for you: ask Sara first whether BCC treats adult ARFID at all; if no, do not publish and ARFID should come off the two pages that list it.
-    - 2026-09-29 15:58 daniel: Chose 'Sara said yes'. Told Claude: Sara confirmed BCC treats adult ARFID. Finish the ARFID landing page from content-drafts/action-items-2026-09-25/arfid-landing-and-blog-plan.md and send the service claims marked [SARA TO CONFIRM] to Sara as one short Gmail draft.
-    - 2026-09-29 16:39 claude: Finished the landing page for QC: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\arfid-landing-page-ready-for-qc-2026-09-29.md (gate cleared; 14 detail markers left inside the page).
-    - 2026-09-29 16:39 claude: Gmail draft from daniel@drbdig.com to Sara: 'ARFID page: a few details to confirm' (9 short questions).
-    - 2026-09-29 16:39 claude: Still open for Todd, not in Sara's email: ARFID billed under mental health benefits like other services.
-    - 2026-10-07 07:00 check: Read and send the Gmail draft 'ARFID page: a few details to confirm'.: sent 2026-10-06 14:30 to Sara Hamilton <shamilton@bccsanantonio.com>
-    - 2026-10-09 15:16 daniel: Told Claude: i believe we have had email replies from todd and sara. check. if so, move this onto staging and build the page according to their input
-  - NOW: daniel: i believe we have had email replies from todd and sara. check. if so, move this onto staging and build the page according to their input
 - id `6d29cbea90`: **Texas-wide geographic strategy** (9/24 call list, sheet row 14). Approved 2026-10-08.
   - Daniel's notes: Todd asked: any traction on overeating / overeaters, and what we're doing now to expand statewide.
   - HISTORY (continue from here; do not redo what is done):
