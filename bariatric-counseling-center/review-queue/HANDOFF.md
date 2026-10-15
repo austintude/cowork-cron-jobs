@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-15 09:22 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-15 09:23 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -53,15 +53,8 @@ Generated 2026-10-15 09:22 by queue_apply.py. Daniel approved these on the dashb
   - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
   - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/
 
-## Action items from the Action Items sheet (7): work each, then --done or --needs-you
+## Action items from the Action Items sheet (6): work each, then --done or --needs-you
 
-- id `c7d4d9431e`: **Build bottom-of-funnel pages (pre-surgical psych evaluation / insurance-required bariatric evaluation)** (9/24 call list, sheet row 5). Approved 2026-10-08.
-  - HISTORY (continue from here; do not redo what is done):
-    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Draft ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\bofu-psych-eval.md (rewrite of /bariatric-surgery-psychological-evaluation-in-san-antonio-tx/ with the pre-surgical and insurance-required angle, not a new URL). Left for you: send it to Sara and Todd for the confirmations listed at the top of the file (video or phone, report contents, turnaround, evaluator names). Also flagged in it: the live eval pages still carry Joint Commission, 'only program', '$0' and the wrong phone (210) 934-3420.
-    - 2026-09-29 15:57 daniel: Chose 'Draft the email for me'. Told Claude: Draft a Gmail from daniel@drbdig.com to Sara and Todd, subject 'Psych evaluation page: four things to confirm', listing the confirmations at the top of content-drafts/action-items-2026-09-25/bofu-psych-eval.md as short questions, plus one line that the live evaluation pages still carry Joint Commission, 'only program', '$0' and the old phone number. Then hand it back with a gmail_sent check and a gmail_reply step, followed by a Claude step to place the page on staging14.
-    - 2026-09-29 16:39 claude: Gmail draft from daniel@drbdig.com to Sara and Todd: 'Psych evaluation page: four things to confirm' (video or phone, report contents, turnaround, evaluator names; plus the Joint Commission, 'only program', '$0' and old phone line).
-    - 2026-10-08 10:32 daniel: Told Claude: do these but on staging14. 13 is being sunsetted
-  - NOW: daniel: do these but on staging14. 13 is being sunsetted
 - id `b43efd08a0`: **ARFID landing page and blog** (9/24 call list, sheet row 7). Approved 2026-10-09.
   - Daniel's notes: Page goes to Sara and Todd for QC before it goes live. Then 2 to 4 blog posts over the next couple of months. BCC has no presence on this search term yet.
   - HISTORY (continue from here; do not redo what is done):
