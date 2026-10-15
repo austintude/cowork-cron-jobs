@@ -34,13 +34,6 @@ Generated 2026-10-15 10:13 by queue_apply.py. Daniel approved these on the dashb
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\de6a14c346-ai-overview-answer-for-bariatric-surgery-counseling-san-anto.md`
   - approved: 2026-10-09. Why: AI Overview shows for "bariatric surgery counseling san antonio" (volume not on file) and cites pmc.ncbi.nlm.nih.gov, mayoclinic.org, psychologytoday.com, not BCC.
 
-## Site fixes on staging14 (1)
-
-- id `c13e0e105d`: **Dead outside link on 1 page: www.ncbi.nlm.nih.gov** (dead external link). Target: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4420157/ (HTTP 404). Approved 2026-10-09.
-  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4420157/ answers HTTP 404.
-  - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
-  - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/
-
 ## Items waiting on Daniel or on Todd/Sara (3): not for Claude, except the Gmail confirmations below.
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
