@@ -3863,10 +3863,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A7"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "applied",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-10-09T15:16:03",
-   "note": "rewrite: daniel: i believe we have had email replies from todd and sara. check. if so, move this onto staging and build the page according to their input",
+   "decided": "2026-10-15T09:23:49",
+   "note": "these are complete - confirm before removing from the list",
    "result": {
     "needs_you": "Send the ARFID details to Sara (Gmail draft ready)",
     "needs_since": "2026-09-25",
@@ -3906,6 +3906,11 @@
        "at": "2026-10-09 15:16",
        "by": "daniel",
        "text": "Told Claude: i believe we have had email replies from todd and sara. check. if so, move this onto staging and build the page according to their input"
+      },
+      {
+       "at": "2026-10-15 09:23",
+       "by": "daniel",
+       "text": "Done: these are complete - confirm before removing from the list. ticked on the sheet (row 7)"
       }
      ],
      "steps": [
@@ -3959,10 +3964,13 @@
        "status": "open"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: i believe we have had email replies from todd and sara. check. if so, move this onto staging and build the page according to their input",
+     "state": "done",
+     "state_text": "Done",
      "checked_at": "2026-10-08 07:00"
-    }
+    },
+    "done": "2026-10-15",
+    "done_by": "Daniel on the dashboard",
+    "sheet_tick": "ticked on the sheet (row 7)"
    }
   },
   {
