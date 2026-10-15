@@ -5689,10 +5689,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A70"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "applied",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-10-15T09:25:42",
-   "note": "rewrite: daniel: is this done?",
+   "decided": "2026-10-15T10:06:45",
+   "note": "Done. IndexNow submission sent 2026-09-29 20:58 UTC: 178 URLs, HTTP 202 accepted (seo-tools/output/indexnow-log.jsonl); key file live on production; Bing Webmaster import marked done by Daniel 9/29; Copilot column in the AI sweep.",
    "result": {
     "needs_you": "Say yes to the IndexNow submission (it is a production submission, so it needs your OK)",
     "needs_since": "2026-09-25",
@@ -5727,6 +5727,11 @@
        "at": "2026-10-15 09:25",
        "by": "daniel",
        "text": "Told Claude: is this done?"
+      },
+      {
+       "at": "2026-10-15 10:06",
+       "by": "claude",
+       "text": "Done: Done. IndexNow submission sent 2026-09-29 20:58 UTC: 178 URLs, HTTP 202 accepted (seo-tools/output/indexnow-log.jsonl); key file live on production; Bing Webmaster import marked done by Daniel 9/29; Copilot column in the AI sweep.. ticked on the sheet (row 70)"
       }
      ],
      "steps": [
@@ -5764,10 +5769,13 @@
        "status": "open"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: is this done?",
+     "state": "done",
+     "state_text": "Done",
      "checked_at": "2026-10-08 07:00"
-    }
+    },
+    "done": "2026-10-15",
+    "done_by": "a Claude session",
+    "sheet_tick": "ticked on the sheet (row 70)"
    }
   },
   {
