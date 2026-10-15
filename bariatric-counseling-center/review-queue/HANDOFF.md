@@ -53,7 +53,7 @@ Generated 2026-10-15 10:06 by queue_apply.py. Daniel approved these on the dashb
   - Find the page's new address on that site (or an archive.org copy to confirm what it was) and update the link, or remove the link and keep the sentence.
   - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/pre-bariatric-surgery-binge-eating-screening/
 
-## Action items from the Action Items sheet (3): work each, then --done or --needs-you
+## Action items from the Action Items sheet (2): work each, then --done or --needs-you
 
 - id `081016b3bc`: **Rank how people actually search (top 10), find a platform big in Texas that competitors ignore** (8/27 meeting list, sheet row 68). Approved 2026-10-09.
   - Daniel's notes: Todd asked for this directly
@@ -64,16 +64,6 @@ Generated 2026-10-15 10:06 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-08 10:31 daniel: Read and send the Gmail draft 'How people search for help in Texas: the top 10'.
     - 2026-10-09 15:16 daniel: Told Claude: check krisp transcript he replied online in the meeting not via email. we have his information.
   - NOW: daniel: check krisp transcript he replied online in the meeting not via email. we have his information.
-- id `d8d67dff97`: **Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1** (8/27 meeting list, sheet row 69). Approved 2026-10-09.
-  - Daniel's notes: The gap ERC, Alsana and Monte Nido cannot use
-  - HISTORY (continue from here; do not redo what is done):
-    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Brief and article ready: C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\content-drafts\action-items-2026-09-25\binge-eating-telehealth-brief-and-article.md (target 'virtual binge eating disorder treatment Texas', bariatric, weight regain and weight loss medication angles ERC does not use). Left for you: Sara to check the one statistic and the clinical descriptions; then it goes through the block process on staging14.
-    - 2026-09-29 15:48 daniel: Chose 'Draft the note to Sara for me'. Told Claude: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging14 through the block process.
-    - 2026-09-29 16:39 claude: Gmail draft from daniel@drbdig.com to Sara, cc Todd: 'Quick clinical check: binge eating telehealth article' (the STEP 1 statistic and four clinical passages quoted inline).
-    - 2026-10-02 07:00 check: Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.: not sent, and no longer in your Drafts (deleted?)
-    - 2026-10-06 07:00 check: Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.: sent 2026-10-05 08:00 to Sara Hamilton <shamilton@bccsanantonio.com>
-    - 2026-10-09 15:15 daniel: Told Claude: check email replies from sara I believe she has replied to this and is ok but am uncertain. maybe i misremember. if she has greenlit this. move it directly into staging
-  - NOW: daniel: check email replies from sara I believe she has replied to this and is ok but am uncertain. maybe i misremember. if she has greenlit this. move it directly into staging
 - id `c6b8f244e7`: **Continue the Bing and Copilot build-out** (8/27 meeting list, sheet row 70). Approved 2026-10-15.
   - Daniel's notes: Todd: "it can't hurt"
   - HISTORY (continue from here; do not redo what is done):
@@ -85,8 +75,9 @@ Generated 2026-10-15 10:06 by queue_apply.py. Daniel approved these on the dashb
     - 2026-10-15 09:25 daniel: Told Claude: is this done?
   - NOW: daniel: is this done?
 
-## Items waiting on Daniel or on Todd/Sara (2): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (3): not for Claude, except the Gmail confirmations below.
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.
+- Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
 - Texas-wide geographic strategy: Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
