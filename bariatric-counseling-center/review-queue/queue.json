@@ -4888,8 +4888,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-10-15T10:06:35",
-   "note": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.",
+   "decided": "2026-10-17T07:00:40",
+   "note": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)",
    "result": {
     "needs_you": "Send the reminder draft to Todd (reply on 'Staff anniversary posts: Laura, Aaron and Leloni'). Leloni's post stays parked until Todd's info arrives.",
     "needs_since": "2026-09-25",
@@ -4914,6 +4914,11 @@
        "at": "2026-10-15 10:06",
        "by": "claude",
        "text": "2026-10-15: no reply from Todd with dates, lines or photos since his 'Will do' on Sep 25. Reminder built as a Gmail draft reply in the same thread, subject 'Re: Staff anniversary posts: Laura, Aaron and Leloni'."
+      },
+      {
+       "at": "2026-10-17 07:00",
+       "by": "check",
+       "text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)"
       }
      ],
      "steps": [
@@ -4927,8 +4932,8 @@
        },
        "due": "2026-10-16",
        "id": "s1",
-       "status": "open",
-       "evidence": "still in your Gmail Drafts, not sent"
+       "status": "gone",
+       "evidence": "not sent, and no longer in your Drafts (deleted?)"
       },
       {
        "owner": "todd",
@@ -4953,9 +4958,9 @@
        "status": "open"
       }
      ],
-     "state": "your_move",
-     "state_text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.",
-     "checked_at": "2026-10-15 10:06"
+     "state": "problem",
+     "state_text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)",
+     "checked_at": "2026-10-17 07:00"
     }
    }
   },
