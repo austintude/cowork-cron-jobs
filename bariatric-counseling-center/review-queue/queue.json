@@ -4456,8 +4456,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-10-15T10:06:29",
-   "note": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).",
+   "decided": "2026-10-17T07:00:41",
+   "note": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)",
    "result": {
     "needs_you": "Read and send the two Gmail drafts to Todd: 'BCC launch plan: one page' first, then 'Overeating, food addiction and going statewide'. Check the dates before sending (Oct 15 Joint Commission line, Oct 16 deadlines).",
     "needs_since": "2026-09-25",
@@ -4487,6 +4487,16 @@
        "at": "2026-10-15 10:06",
        "by": "claude",
        "text": "Dates in the launch plan are as written on 9/22: Joint Commission take-down 'by Oct 15' is today, two decisions are 'by Oct 16' (tomorrow), announcement Nov 16 or Dec 1, while the 10/8 call set the virtual-only site go-live around Nov 20. Adjust in the draft before sending if needed."
+      },
+      {
+       "at": "2026-10-17 07:00",
+       "by": "check",
+       "text": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)"
+      },
+      {
+       "at": "2026-10-17 07:00",
+       "by": "check",
+       "text": "Read and send the Gmail draft 'Overeating, food addiction and going statewide'.: not sent, and no longer in your Drafts (deleted?)"
       }
      ],
      "steps": [
@@ -4499,8 +4509,8 @@
        },
        "due": "2026-10-16",
        "id": "s1",
-       "status": "open",
-       "evidence": "still in your Gmail Drafts, not sent"
+       "status": "gone",
+       "evidence": "not sent, and no longer in your Drafts (deleted?)"
       },
       {
        "owner": "daniel",
@@ -4511,8 +4521,8 @@
        },
        "due": "2026-10-16",
        "id": "s2",
-       "status": "open",
-       "evidence": "still in your Gmail Drafts, not sent"
+       "status": "gone",
+       "evidence": "not sent, and no longer in your Drafts (deleted?)"
       },
       {
        "owner": "todd",
@@ -4527,9 +4537,9 @@
        "evidence": "no reply yet"
       }
      ],
-     "state": "your_move",
-     "state_text": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).",
-     "checked_at": "2026-10-15 10:06"
+     "state": "problem",
+     "state_text": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)",
+     "checked_at": "2026-10-17 07:00"
     }
    }
   },
