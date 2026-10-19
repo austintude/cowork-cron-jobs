@@ -1,26 +1,25 @@
 {
-  "generated_at": "2026-10-14",
+  "generated_at": "2026-10-19",
   "working": [
-    "Organic Search is the growth engine: 11,089 sessions (33.2% of 33,397) and up 116 sessions vs the 9/23 run (10,973).",
-    "Alumni eNews open rates stay far above the ~25-35% benchmark: 46.9% for October 2026 (1,027 sends) and 49.5% for September 2026; CC average open rate is 49.7% across 100 campaigns.",
-    "Alumni eNews - Reminder: August 2026 produced +686% lift (184.7 vs 23.5 baseline daily sessions) and the August Day Of send lifted +52% with the best recent click rate (1.84%, CTOR 4.03%).",
-    "Email-attributed sessions are growing from a tiny base: 136 vs 107 last run (+29), so UTM tagging on at least some sends is starting to register.",
-    "Staff-Client eNews - August 2026 (This is BCC, 8,941 sends) lifted +79.7% on 9/8 with 38 Email-attributed sessions, the strongest properly tagged send recently."
+    "Organic Search remains the growth engine: 11,107 sessions (33.2% of 33,443), up 18 vs the 10/14 run (11,089).",
+    "Alumni eNews open rates stay far above the ~25-35% benchmark: 43.7% for the 10/16 October Reminder, 48.0% for October 2026 and 49.6% for September; the Constant Contact average is 49.56% across 100 campaigns (328,085 total sends).",
+    "Alumni eNews - Reminder: August 2026 (8/16) is the standout recent send at +686% lift (513 direct_sessions_3d); Staff-Client eNews August (9/8, 8,941 sends) lifted +79.7% with 38 Email-attributed sessions, the best properly tagged send.",
+    "Highest click rates among larger sends: Client eNews - August (2024) at 3.63% and 2024 Alumni Events November at 4.8% (+64.7% lift), showing event and client-story content earns clicks.",
+    "Referral grew from 1,123 to 1,132 sessions (+9) and GSC clicks rose from 6 to 11 since the last run."
   ],
   "not_working": [
-    "Newsletter UTM leakage persists: Alumni eNews October 2026 (10/11) shows 0 email_sessions_3d vs 48 direct_sessions_3d; the August Reminder showed 1 Email vs 513 Direct sessions, so GA4 credits newsletter traffic to Direct (51.2% of sessions).",
-    "Click rates are weak despite strong opens: Alumni eNews Day Of September 0.48% (CTOR 1.04%) and October 1.27% (CTOR 2.7%); CC average click rate is only 1.74%.",
-    "Most recent Alumni sends show negative lift: Sept 15 -28.4%, Sept 20 -9.4%, Oct 11 -16.3% (35.5 baseline vs 29.7 spike daily sessions).",
-    "Organic Social is flat and small: 1,713 sessions (5.1%) vs 1,717 last run, essentially no growth. Referral is also minor at 1,123 (3.4%).",
-    "Resend and recovery sends underperform: Staff-Client non-opener resend 11.15% open / -10.4% lift; Referring Partners July -27.3% lift; Bounce Recovery open rate 7.88%. Bounce rate on Alumni sends is about 3.9-4.3%.",
-    "GSC (10/6-10/13) shows 6 clicks on 2,332 impressions at weighted position 11.49, so visibility sits at the bottom of page 1 / top of page 2 with minimal CTR."
+    "UTM leakage persists: Alumni eNews October 2026 (10/11) shows 0 email_sessions_3d vs 48 direct_sessions_3d, and the 10/16 Reminder shows 0 vs 36. Email is only 0.4% of sessions (136) while Direct is 51.1% (17,106).",
+    "The two newest sends have the worst lift on record: Oct 11 at -20.3% (35.5 baseline vs 28.3 spike daily sessions) and Oct 16 Reminder at -33.2% (31.0 vs 20.7). Sept 15 was -28.4%.",
+    "Click rates lag strong opens: October 2026 click rate 1.27% (CTOR 2.64%), Reminder 0.97% (CTOR 2.23%); the overall average click rate is 1.69%, down from 1.74% last run.",
+    "GSC visibility slipped vs 10/14: impression-weighted avg position moved from 11.49 to 15.24, impressions fell 2,332 to 1,928, and indexed pages with data dropped from 85 to 67.",
+    "Organic Social is flat at 1,713 sessions (5.1%), unchanged since last run; Paid Search (925) and Paid Social (827) also did not move."
   ],
   "do_next": [
-    "Add utm_source=constantcontact&utm_medium=email&utm_campaign=<send-name> to every link in the Alumni, Staff-Client and Referring Partners templates (especially the Custom Code Email template used 10/11, which shows 0 Email sessions).",
-    "Rethink the Alumni cadence and CTAs: opens are ~47% but clicks are ~1%, so put one prominent button/link above the fold and test a single clear call to action per send.",
-    "Repromote themes from past top-lift sends (Client eNews - August 2024 at +1263%, January 2025 at +445%, Client eNews December 2023 at 10.17% click rate) in the next Staff-Client eNews, since the Staff-Client list (8,941) drives the most real Email sessions.",
-    "Favor the Reminder-style send timing that worked in August 2026 (Sunday 8/16, +686%) over Day Of sends, and drop low-yield resend/bounce-recovery sends unless the list is cleaned first.",
-    "SEO: target the 40 GSC discovery candidates with position 8-20 (weighted avg 11.49) with title/meta and internal-link updates to convert 2,332 weekly impressions into clicks; revisit Organic Social, which is flat at 5.1%."
+    "Add utm_source=constantcontact&utm_medium=email&utm_campaign=<send-name> to every link in the Alumni and Staff-Client templates; the last two Alumni sends credited 0 Email sessions against 84 Direct sessions combined.",
+    "Investigate the GSC position drop (11.49 to 15.24) and the page count drop (85 to 67): check Search Console coverage for deindexed or redirected pages and refresh the top declining queries.",
+    "Reuse the content patterns behind the best clickers (Client eNews August 3.63% click rate, Alumni Events November 4.8%): lead with one clear event or client-story CTA instead of a multi-link layout to lift CTOR from about 2.3%.",
+    "Skip the same-week Reminder resend for Alumni eNews unless it adds a new hook; the Oct 16 Reminder had -33.2% lift and 0.97% click rate vs 1.27% on the original send.",
+    "The strongest lifts came on mid-week and Sunday/Monday sends with a distinct topic (8/16 +686%, 9/8 +79.7%); test a Tuesday morning send for the November Alumni eNews and compare lift."
   ],
-  "summary": "Window sessions rose to 33,397 (+400 vs last run) led by Direct (51.2%) and Organic Search (33.2%), with Email only 0.4% because newsletter links are still untagged. The October Alumni eNews had a strong 46.9% open but 1.27% click, -16.3% lift and 0 Email-attributed sessions."
+  "summary": "Window sessions are 33,443 with Direct (51.1%) and Organic Search (33.2%) leading; Constant Contact is connected (avg open 49.56%, click 1.69%). The two most recent Alumni sends show negative lift and zero UTM-tagged Email sessions, and GSC average position slipped to 15.24 from 11.49."
 }
