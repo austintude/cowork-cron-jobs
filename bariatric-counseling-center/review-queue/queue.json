@@ -7835,11 +7835,18 @@
     "current_description": "Searching for Overeaters Anonymous in San Antonio? BCC offers insurance-covered clinical counseling for compulsive overeating, binge eating & food addiction. (210) 634-2200."
    },
    "source": "content-drafts",
-   "status": "pending",
+   "status": "applied",
    "created": "2026-10-08T06:02:16",
-   "decided": null,
-   "note": null,
-   "result": null,
+   "decided": "2026-10-20T10:32:40",
+   "note": "verified on staging14",
+   "result": {
+    "staging_id": 5018,
+    "link": "https://www.staging14.bariatriccounselingcenter.com/compulsive-overeating-counseling-san-antonio-tx/",
+    "rendered": {
+     "title": "Compulsive Overeating Counseling San Antonio, TX",
+     "description": "Counseling for compulsive overeating, binge eating and food addiction in San Antonio and across Texas. In network with most health insurances."
+    }
+   },
    "check": {
     "at": "2026-10-20T09:16:50",
     "level": "ok",
