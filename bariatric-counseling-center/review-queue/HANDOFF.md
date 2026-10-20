@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-20 10:36 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -28,7 +28,7 @@ Generated 2026-10-20 10:36 by queue_apply.py. Daniel approved these on the dashb
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
 - Texas-wide geographic strategy: Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)
 
-## Social posts to build and write to the sheet (3); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (4); the draft to Todd is a separate weekly step
 
 - id `4a2d70a708`: **Thu 11/5: The evening track fits a workday** on 2026-11-05 (LI) at 9:30 AM, image. Approved 2026-10-20. Why: November is not planned yet; this keeps the LI cadence going
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\4a2d70a708-thu-11-5-the-evening-track-fits-a-workday.json`
@@ -42,6 +42,10 @@ Generated 2026-10-20 10:36 by queue_apply.py. Daniel approved these on the dashb
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\67ff8aa4bd-mon-11-9-what-a-grocery-store-tour-is-for.json`
   - asset: carousel
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/
+- id `566382672f`: **Tue 11/10: Referring providers: who is the right referral** on 2026-11-10 (LI, GBP) at LI 11:00 AM, GBP 9:00 AM, document. Approved 2026-10-20. Why: November is not planned yet; this keeps the GBP/LI cadence going
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\566382672f-tue-11-10-referring-providers-who-is-the-right-referral.json`
+  - asset: linkedin-document
+  - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/refer-a-patient/
 
 ## Draft day: Wednesday. Today is Tuesday, not draft day: build only, no email to Todd.
 
