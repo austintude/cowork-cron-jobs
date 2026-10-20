@@ -1077,11 +1077,13 @@
     "needs_rewrite": []
    },
    "source": "social-plan",
-   "status": "pending",
+   "status": "approved",
    "created": "2026-09-22T09:58:18",
-   "decided": null,
-   "note": null,
-   "result": null,
+   "decided": "2026-10-20T10:36:55",
+   "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (LI)",
+   "result": {
+    "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\4a2d70a708-thu-11-5-the-evening-track-fits-a-workday.json"
+   },
    "check": {
     "at": "2026-10-20T09:16:50",
     "level": "ok",
