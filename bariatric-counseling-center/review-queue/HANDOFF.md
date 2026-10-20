@@ -23,8 +23,12 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Content blocks (8)
+## Content blocks (9)
 
+- id `9be8cd49ad`: **AI Overview answer for "bariatric therapist near me" on /bariatric-therapy-in-san-antonio-**
+  - target: https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/
+  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\9be8cd49ad-ai-overview-answer-for-bariatric-therapist-near-me-on-bariat.md`
+  - approved: 2026-10-20. Why: AI Overview shows for "bariatric therapist near me" (volume not on file) and cites google.com, not BCC.
 - id `b19b7b32b1`: **FAQ block for /nutritional-counseling-in-san-antonio-tx/ (4 questions)**
   - target: https://www.bariatriccounselingcenter.com/nutritional-counseling-in-san-antonio-tx/
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\b19b7b32b1-faq-block-for-nutritional-counseling-in-san-antonio-tx-4-que.md`
