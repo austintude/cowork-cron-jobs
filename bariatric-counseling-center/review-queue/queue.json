@@ -3218,11 +3218,13 @@
     "needs_rewrite": []
    },
    "source": "social-plan",
-   "status": "pending",
+   "status": "approved",
    "created": "2026-09-24T05:33:54",
-   "decided": null,
-   "note": null,
-   "result": null,
+   "decided": "2026-10-20T10:37:04",
+   "note": "approved; waiting for a Claude session to build the asset, write the sheet row and book it (LI)",
+   "result": {
+    "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\3ac415f444-thu-11-12-q4-workload-and-the-holiday-calendar.json"
+   },
    "check": {
     "at": "2026-10-20T09:16:50",
     "level": "ok",
