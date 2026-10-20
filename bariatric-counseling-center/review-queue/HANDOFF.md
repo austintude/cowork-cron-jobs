@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-20 10:38 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -70,8 +70,12 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\d295f3f583-faq-block-for-binge-eating-therapy-in-san-antonio-tx-4-quest.md`
   - approved: 2026-10-20. Why: 4 People Also Ask questions across 4 tracked terms (best BCC position 3).
 
-## Site fixes on staging14 (17)
+## Site fixes on staging14 (18)
 
+- id `c7e1a58fdd`: **Update 1 redirecting link on /real-behavioral-change-starts-with-the-mind/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/real-behavioral-change-starts-with-the-mind/ (1 old link on this page). Approved 2026-10-20.
+  - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
+  - https://www.bariatriccounselingcenter.com/blog/goal-setting-for-weight-loss/ -> https://www.bariatriccounselingcenter.com/self-improvement/weight-loss-journey-self-improvement/goal-setting-for-weight-loss/
+  - pages (1): https://www.bariatriccounselingcenter.com/real-behavioral-change-starts-with-the-mind/
 - id `b73766d148`: **Update 1 redirecting link on /ourprogram/coordinate-with-medical-providers/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/ (1 old link on this page). Approved 2026-10-20.
   - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
   - https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/ -> https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/
