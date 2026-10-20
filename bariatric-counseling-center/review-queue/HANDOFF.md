@@ -42,6 +42,13 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\d295f3f583-faq-block-for-binge-eating-therapy-in-san-antonio-tx-4-quest.md`
   - approved: 2026-10-20. Why: 4 People Also Ask questions across 4 tracked terms (best BCC position 3).
 
+## Site fixes on staging14 (1)
+
+- id `b604ba0b24`: **Dead outside link on 1 page: www.ozempic.com** (dead external link). Target: https://www.ozempic.com/why-ozempic/what-is-ozempic.html (HTTP 404). Approved 2026-10-20.
+  - https://www.ozempic.com/why-ozempic/what-is-ozempic.html answers HTTP 404.
+  - Remove the link from the image and keep the image (decided by Daniel 2026-10-20). Do not replace it with another link.
+  - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/
+
 ## Items waiting on Daniel or on Todd/Sara (3): not for Claude, except the Gmail confirmations below.
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
