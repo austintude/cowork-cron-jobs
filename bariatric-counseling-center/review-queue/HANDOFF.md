@@ -70,8 +70,13 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\d295f3f583-faq-block-for-binge-eating-therapy-in-san-antonio-tx-4-quest.md`
   - approved: 2026-10-20. Why: 4 People Also Ask questions across 4 tracked terms (best BCC position 3).
 
-## Site fixes on staging14 (1)
+## Site fixes on staging14 (2)
 
+- id `a37e6ca9b1`: **Update 2 redirecting links on /sara-hamilton-psyd/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/sara-hamilton-psyd/ (2 old links on this page). Approved 2026-10-20.
+  - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
+  - https://www.bariatriccounselingcenter.com/blog/a-new-approach-to-holiday-eating/ -> https://www.bariatriccounselingcenter.com/emotional-eating/a-new-approach-to-holiday-eating/
+  - https://www.bariatriccounselingcenter.com/blog/how-do-i-choose-a-weight-loss-program/ -> https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-do-i-choose-a-weight-loss-program/
+  - pages (1): https://www.bariatriccounselingcenter.com/sara-hamilton-psyd/
 - id `b604ba0b24`: **Dead outside link on 1 page: www.ozempic.com** (dead external link). Target: https://www.ozempic.com/why-ozempic/what-is-ozempic.html (HTTP 404). Approved 2026-10-20.
   - https://www.ozempic.com/why-ozempic/what-is-ozempic.html answers HTTP 404.
   - Remove the link from the image and keep the image (decided by Daniel 2026-10-20). Do not replace it with another link.
