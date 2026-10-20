@@ -70,7 +70,7 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\d295f3f583-faq-block-for-binge-eating-therapy-in-san-antonio-tx-4-quest.md`
   - approved: 2026-10-20. Why: 4 People Also Ask questions across 4 tracked terms (best BCC position 3).
 
-## Site fixes on staging14 (7)
+## Site fixes on staging14 (8)
 
 - id `22f45fe592`: **Update 2 redirecting links on /food-addiction-treatment-in-san-antonio-tx/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/food-addiction-treatment-in-san-antonio-tx/ (2 old links on this page). Approved 2026-10-20.
   - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
@@ -82,6 +82,11 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
   - https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/ -> https://www.bariatriccounselingcenter.com/diet-and-nutrition/dietitians-or-nutritionists-breaking-down-the-differences/
   - https://www.bariatriccounselingcenter.com/blog/probiotics-should-you-be-taking-them/ -> https://www.bariatriccounselingcenter.com/diet-and-nutrition/supplements-and-wellness/probiotics-should-you-be-taking-them/
   - pages (1): https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dieticians/
+- id `de92e89bea`: **Update 2 redirecting links on /ourprogram/meet-with-registered-dietitians/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dietitians/ (2 old links on this page). Approved 2026-10-20.
+  - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
+  - https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/ -> https://www.bariatriccounselingcenter.com/diet-and-nutrition/dietitians-or-nutritionists-breaking-down-the-differences/
+  - https://www.bariatriccounselingcenter.com/blog/probiotics-should-you-be-taking-them/ -> https://www.bariatriccounselingcenter.com/diet-and-nutrition/supplements-and-wellness/probiotics-should-you-be-taking-them/
+  - pages (1): https://www.bariatriccounselingcenter.com/ourprogram/meet-with-registered-dietitians/
 - id `f4a6c50a84`: **Update 2 redirecting links on /weight-management-program-in-san-antonio-tx/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/ (2 old links on this page). Approved 2026-10-20.
   - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
   - https://www.bariatriccounselingcenter.com/blog/how-do-i-choose-a-weight-loss-program/ -> https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-do-i-choose-a-weight-loss-program/
