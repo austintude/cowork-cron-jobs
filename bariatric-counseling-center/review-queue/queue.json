@@ -3555,11 +3555,18 @@
     "current_description": "Call or message BCC to start your recovery journey. We offer virtual and in-person support for emotional and binge eating across Texas."
    },
    "source": "content-drafts",
-   "status": "pending",
+   "status": "applied",
    "created": "2026-09-24T05:35:01",
-   "decided": null,
-   "note": null,
-   "result": null,
+   "decided": "2026-10-20T10:31:51",
+   "note": "verified on staging14",
+   "result": {
+    "staging_id": 2095,
+    "link": "https://www.staging14.bariatriccounselingcenter.com/contact/",
+    "rendered": {
+     "title": "Contact Us | Bariatric Counseling Center",
+     "description": "Call or message us to learn more about our intensive outpatient program for obesity, binge eating and emotional eating in San Antonio and across Texas."
+    }
+   },
    "check": {
     "at": "2026-10-20T09:16:50",
     "level": "ok",
