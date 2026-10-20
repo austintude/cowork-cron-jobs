@@ -6309,11 +6309,18 @@
     "current_description": "Looking for a bariatric therapist near you? BCC offers specialized bariatric therapy in San Antonio and telehealth across Texas, Joint Commission accredited, most insurance accepted."
    },
    "source": "content-drafts",
-   "status": "pending",
+   "status": "applied",
    "created": "2026-10-01T06:00:34",
-   "decided": null,
-   "note": null,
-   "result": null,
+   "decided": "2026-10-20T10:32:14",
+   "note": "verified on staging14",
+   "result": {
+    "staging_id": 5946,
+    "link": "https://www.staging14.bariatriccounselingcenter.com/bariatric-therapist-near-me/",
+    "rendered": {
+     "title": "Bariatric Therapist Near Me | Bariatric Counseling Center",
+     "description": "Find a bariatric therapist in San Antonio or across Texas. BCC offers specialized behavioral therapy for obesity, in network with most health insurance plans."
+    }
+   },
    "check": {
     "at": "2026-10-20T09:16:50",
     "level": "ok",
