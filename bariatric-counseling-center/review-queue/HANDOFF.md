@@ -28,7 +28,7 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
 - Texas-wide geographic strategy: Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)
 
-## Social posts to build and write to the sheet (7); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (8); the draft to Todd is a separate weekly step
 
 - id `4a2d70a708`: **Thu 11/5: The evening track fits a workday** on 2026-11-05 (LI) at 9:30 AM, image. Approved 2026-10-20. Why: November is not planned yet; this keeps the LI cadence going
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\4a2d70a708-thu-11-5-the-evening-track-fits-a-workday.json`
@@ -54,6 +54,10 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\3ac415f444-thu-11-12-q4-workload-and-the-holiday-calendar.json`
   - asset: image
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/program-schedule/
+- id `337fc6aea8`: **Mon 11/16: Eating at one table again** on 2026-11-16 (FB, IG) at FB 10:30 AM, IG 12:15 PM, carousel. Approved 2026-10-20. Why: November is not planned yet; this keeps the FB/IG cadence going
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\337fc6aea8-mon-11-16-eating-at-one-table-again.json`
+  - asset: carousel
+  - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/
 - id `7a78357dd4`: **Tue 11/17: Referring providers: behavioral care alongside medical care** on 2026-11-17 (LI, GBP) at LI 11:00 AM, GBP 9:00 AM, document. Approved 2026-10-20. Why: World Diabetes Day (Nov 14, posted the following Tuesday) falls in this week; mentioned once, not the whole post
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\7a78357dd4-tue-11-17-referring-providers-behavioral-care-alongside-medi.json`
   - asset: linkedin-document
