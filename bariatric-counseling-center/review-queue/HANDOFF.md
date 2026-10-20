@@ -23,8 +23,12 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Content blocks (6)
+## Content blocks (7)
 
+- id `0014c6f411`: **FAQ block for /weight-loss-therapy-in-san-antonio-tx/ (3 questions)**
+  - target: https://www.bariatriccounselingcenter.com/weight-loss-therapy-in-san-antonio-tx/
+  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\0014c6f411-faq-block-for-weight-loss-therapy-in-san-antonio-tx-3-questi.md`
+  - approved: 2026-10-20. Why: 3 People Also Ask questions across 3 tracked terms (best BCC position 5).
 - id `22874c7823`: **FAQ block for /compulsive-overeating-counseling-san-antonio-tx/ (4 questions)**
   - target: https://www.bariatriccounselingcenter.com/compulsive-overeating-counseling-san-antonio-tx/
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\22874c7823-faq-block-for-compulsive-overeating-counseling-san-antonio-t.md`
