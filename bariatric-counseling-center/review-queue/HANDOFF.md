@@ -70,8 +70,13 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\d295f3f583-faq-block-for-binge-eating-therapy-in-san-antonio-tx-4-quest.md`
   - approved: 2026-10-20. Why: 4 People Also Ask questions across 4 tracked terms (best BCC position 3).
 
-## Site fixes on staging14 (2)
+## Site fixes on staging14 (3)
 
+- id `f4a6c50a84`: **Update 2 redirecting links on /weight-management-program-in-san-antonio-tx/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/ (2 old links on this page). Approved 2026-10-20.
+  - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
+  - https://www.bariatriccounselingcenter.com/blog/how-do-i-choose-a-weight-loss-program/ -> https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-do-i-choose-a-weight-loss-program/
+  - https://www.bariatriccounselingcenter.com/blog/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/ -> https://www.bariatriccounselingcenter.com/self-improvement/mental-health/holistic-weight-loss-approach-overcoming-diet-culture-with-mind-and-body-wellness/
+  - pages (1): https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/
 - id `a37e6ca9b1`: **Update 2 redirecting links on /sara-hamilton-psyd/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/sara-hamilton-psyd/ (2 old links on this page). Approved 2026-10-20.
   - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
   - https://www.bariatriccounselingcenter.com/blog/a-new-approach-to-holiday-eating/ -> https://www.bariatriccounselingcenter.com/emotional-eating/a-new-approach-to-holiday-eating/
