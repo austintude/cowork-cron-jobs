@@ -160,8 +160,12 @@ Generated 2026-10-20 10:38 by queue_apply.py. Daniel approved these on the dashb
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
 - Texas-wide geographic strategy: Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)
 
-## Social posts to build and write to the sheet (11); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (12); the draft to Todd is a separate weekly step
 
+- id `1b94c31012`: **Thu 10/22: alumni clip, Jessica B. (struggled my whole life)** on 2026-10-22 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-10-20. Why: Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\1b94c31012-thu-10-22-alumni-clip-jessica-b-struggled-my-whole-life.json`
+  - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/jessica-clip2-9x16_struggled-my-whole-life_COVERED.mp4
+  - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
 - id `4a2d70a708`: **Thu 11/5: The evening track fits a workday** on 2026-11-05 (LI) at 9:30 AM, image. Approved 2026-10-20. Why: November is not planned yet; this keeps the LI cadence going
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\4a2d70a708-thu-11-5-the-evening-track-fits-a-workday.json`
   - asset: image
