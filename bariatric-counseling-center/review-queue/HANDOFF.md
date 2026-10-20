@@ -23,8 +23,12 @@ Generated 2026-10-20 10:38 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Content blocks (20)
+## Content blocks (21)
 
+- id `d2b4669f04`: **AI Overview answer for "therapy for depression and weight san antonio" on /therapy-for-dep**
+  - target: https://www.bariatriccounselingcenter.com/therapy-for-depression-and-weight-loss/
+  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\d2b4669f04-ai-overview-answer-for-therapy-for-depression-and-weight-san.md`
+  - approved: 2026-10-20. Why: AI Overview shows for "therapy for depression and weight san antonio" (volume not on file) and cites psychologytoday.com, google.com, m.yelp.com, not BCC.
 - id `dfbc7c94b1`: **AI Overview answer for "semaglutide behavioral support san antonio" on /semaglutide-behavi**
   - target: https://www.bariatriccounselingcenter.com/semaglutide-behavioral-support-in-san-antonio-tx/
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\dfbc7c94b1-ai-overview-answer-for-semaglutide-behavioral-support-san-an.md`
