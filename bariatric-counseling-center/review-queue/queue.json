@@ -6342,11 +6342,18 @@
     "current_description": "A bariatric therapist is a licensed mental health professional who specializes in the psychological side of weight management and bariatric care. The work"
    },
    "source": "content-drafts",
-   "status": "pending",
+   "status": "applied",
    "created": "2026-10-01T06:00:38",
-   "decided": null,
-   "note": null,
-   "result": null,
+   "decided": "2026-10-20T10:32:17",
+   "note": "verified on staging14",
+   "result": {
+    "staging_id": 5270,
+    "link": "https://www.staging14.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/",
+    "rendered": {
+     "title": "Bariatric Therapist in San Antonio, TX",
+     "description": "Licensed therapists who specialize in the behavioral side of weight management, binge eating and obesity. Group and individual therapy, onsite and virtual."
+    }
+   },
    "check": {
     "at": "2026-10-20T09:16:50",
     "level": "ok",
