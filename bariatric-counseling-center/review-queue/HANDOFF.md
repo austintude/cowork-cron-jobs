@@ -28,12 +28,16 @@ Generated 2026-10-20 10:36 by queue_apply.py. Daniel approved these on the dashb
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
 - Texas-wide geographic strategy: Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)
 
-## Social posts to build and write to the sheet (1); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (2); the draft to Todd is a separate weekly step
 
 - id `4a2d70a708`: **Thu 11/5: The evening track fits a workday** on 2026-11-05 (LI) at 9:30 AM, image. Approved 2026-10-20. Why: November is not planned yet; this keeps the LI cadence going
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\4a2d70a708-thu-11-5-the-evening-track-fits-a-workday.json`
   - asset: image
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/program-schedule/
+- id `55ec40f611`: **Fri 11/6: Food Friday reel from Leila's clips (Salmon with sesame orange glaze, Eggroll in** on 2026-11-06 (FB, IG, YT) at FB 12:00 PM, IG 6:00 PM, YT 6:00 PM, reel. Approved 2026-10-20. Why: no Food Friday planned and 3 unused weeks of kitchen footage sit in Drive
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\55ec40f611-fri-11-6-food-friday-reel-from-leila-s-clips-salmon-with-ses.json`
+  - asset: reel https://drive.google.com/drive/folders/1Oxs1OVu05rvOABXKa392DZ6wSSeEZPA3
+  - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/
 
 ## Draft day: Wednesday. Today is Tuesday, not draft day: build only, no email to Todd.
 
