@@ -23,8 +23,12 @@ Generated 2026-10-20 10:38 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Content blocks (18)
+## Content blocks (19)
 
+- id `750d75e0bf`: **AI Overview answer for "overeaters" on /overeaters-anonymous-support-san-antonio-tx/**
+  - target: https://www.bariatriccounselingcenter.com/overeaters-anonymous-support-san-antonio-tx/
+  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\750d75e0bf-ai-overview-answer-for-overeaters-on-overeaters-anonymous-su.md`
+  - approved: 2026-10-20. Why: AI Overview shows for "overeaters" (390/mo Texas) and cites no named source, not BCC.
 - id `c57af2acf0`: **FAQ block for /weight-management-therapist-in-san-antonio-tx/ (3 questions)**
   - target: https://www.bariatriccounselingcenter.com/weight-management-therapist-in-san-antonio-tx/
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\c57af2acf0-faq-block-for-weight-management-therapist-in-san-antonio-tx-.md`
