@@ -70,7 +70,7 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\d295f3f583-faq-block-for-binge-eating-therapy-in-san-antonio-tx-4-quest.md`
   - approved: 2026-10-20. Why: 4 People Also Ask questions across 4 tracked terms (best BCC position 3).
 
-## Site fixes on staging14 (14)
+## Site fixes on staging14 (15)
 
 - id `6dd189c627`: **Update 1 redirecting link on /ourprogram/practice-in-the-community/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/ (1 old link on this page). Approved 2026-10-20.
   - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
@@ -80,6 +80,10 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
   - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
   - https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/ -> https://www.bariatriccounselingcenter.com/diet-and-nutrition/dietitians-or-nutritionists-breaking-down-the-differences/
   - pages (1): https://www.bariatriccounselingcenter.com/stop-the-cycle-of-binge-eating-you-dont-have-to-face-this-alone/
+- id `c9113c5c5a`: **Update 1 redirecting link on /ourprogram/enjoy-movement/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/ourprogram/enjoy-movement/ (1 old link on this page). Approved 2026-10-20.
+  - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
+  - https://www.bariatriccounselingcenter.com/blog/movement-where-to-start/ -> https://www.bariatriccounselingcenter.com/diet-and-nutrition/healthy-living/movement-where-to-start/
+  - pages (1): https://www.bariatriccounselingcenter.com/ourprogram/enjoy-movement/
 - id `5bd3e79fe8`: **Update 2 redirecting links on /weight-management-therapist-in-san-antonio-tx/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/weight-management-therapist-in-san-antonio-tx/ (2 old links on this page). Approved 2026-10-20.
   - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
   - https://www.bariatriccounselingcenter.com/blog/how-psychotherapy-and-mental-health-counseling-support-sustainable-weight-loss/ -> https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-psychotherapy-and-mental-health-counseling-support-sustainable-weight-loss/
