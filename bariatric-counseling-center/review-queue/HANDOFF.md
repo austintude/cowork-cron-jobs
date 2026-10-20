@@ -23,8 +23,12 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Content blocks (10)
+## Content blocks (11)
 
+- id `8674966482`: **AI Overview answer for "bariatric surgery psychological evaluation san antonio" on /bariat**
+  - target: https://www.bariatriccounselingcenter.com/bariatric-surgery-psychological-evaluation-in-san-antonio-tx/
+  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\8674966482-ai-overview-answer-for-bariatric-surgery-psychological-evalu.md`
+  - approved: 2026-10-20. Why: AI Overview shows for "bariatric surgery psychological evaluation san antonio" (volume not on file) and cites pmc.ncbi.nlm.nih.gov, lsom.uthscsa.edu, google.com, not BCC.
 - id `559c118533`: **AI Overview answer for "bariatric therapist" on /bariatric-therapy-in-san-antonio-tx/**
   - target: https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\559c118533-ai-overview-answer-for-bariatric-therapist-on-bariatric-ther.md`
