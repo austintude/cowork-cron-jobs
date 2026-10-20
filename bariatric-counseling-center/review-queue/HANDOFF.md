@@ -70,8 +70,12 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\d295f3f583-faq-block-for-binge-eating-therapy-in-san-antonio-tx-4-quest.md`
   - approved: 2026-10-20. Why: 4 People Also Ask questions across 4 tracked terms (best BCC position 3).
 
-## Site fixes on staging14 (15)
+## Site fixes on staging14 (16)
 
+- id `b73766d148`: **Update 1 redirecting link on /ourprogram/coordinate-with-medical-providers/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/ (1 old link on this page). Approved 2026-10-20.
+  - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
+  - https://www.bariatriccounselingcenter.com/blog/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/ -> https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/
+  - pages (1): https://www.bariatriccounselingcenter.com/ourprogram/coordinate-with-medical-providers/
 - id `6dd189c627`: **Update 1 redirecting link on /ourprogram/practice-in-the-community/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/ourprogram/practice-in-the-community/ (1 old link on this page). Approved 2026-10-20.
   - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
   - https://www.bariatriccounselingcenter.com/blog/a-new-approach-to-holiday-eating/ -> https://www.bariatriccounselingcenter.com/emotional-eating/a-new-approach-to-holiday-eating/
