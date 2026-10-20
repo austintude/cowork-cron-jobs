@@ -70,13 +70,17 @@ Generated 2026-10-20 10:37 by queue_apply.py. Daniel approved these on the dashb
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\d295f3f583-faq-block-for-binge-eating-therapy-in-san-antonio-tx-4-quest.md`
   - approved: 2026-10-20. Why: 4 People Also Ask questions across 4 tracked terms (best BCC position 3).
 
-## Site fixes on staging14 (11)
+## Site fixes on staging14 (12)
 
 - id `5bd3e79fe8`: **Update 2 redirecting links on /weight-management-therapist-in-san-antonio-tx/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/weight-management-therapist-in-san-antonio-tx/ (2 old links on this page). Approved 2026-10-20.
   - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
   - https://www.bariatriccounselingcenter.com/blog/how-psychotherapy-and-mental-health-counseling-support-sustainable-weight-loss/ -> https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-psychotherapy-and-mental-health-counseling-support-sustainable-weight-loss/
   - https://www.bariatriccounselingcenter.com/blog/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/ -> https://www.bariatriccounselingcenter.com/self-improvement/mental-health/how-to-improve-self-esteem-while-losing-weight-the-healthy-way/
   - pages (1): https://www.bariatriccounselingcenter.com/weight-management-therapist-in-san-antonio-tx/
+- id `3320f2c4b1`: **Update 1 redirecting link on /eating-disorders/how-to-stop-stress-eating-simple** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ (1 old link on this page). Approved 2026-10-20.
+  - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
+  - https://www.bariatriccounselingcenter.com/blog/understanding-disordered-eating-is-your-eating-a-problem/ -> https://www.bariatriccounselingcenter.com/eating-disorders/understanding-disordered-eating-is-your-eating-a-problem/
+  - pages (1): https://www.bariatriccounselingcenter.com/eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/
 - id `9adb97e7b2`: **Update 2 redirecting links on /registered-dietitian-in-san-antonio-tx/** (internal link redirects). Target: https://www.bariatriccounselingcenter.com/registered-dietitian-in-san-antonio-tx/ (2 old links on this page). Approved 2026-10-20.
   - On staging14, open this page in the block editor and change each old link below to its final address, keeping the wording.
   - https://www.bariatriccounselingcenter.com/blog/dietitians-or-nutritionists-breaking-down-the-differences/ -> https://www.bariatriccounselingcenter.com/diet-and-nutrition/dietitians-or-nutritionists-breaking-down-the-differences/
