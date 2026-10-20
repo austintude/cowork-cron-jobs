@@ -23,8 +23,12 @@ Generated 2026-10-20 10:38 by queue_apply.py. Daniel approved these on the dashb
 
 ## Outreach gate: CLOSED (Daniel has not discussed the partner-link program with Todd yet (2026-09-22)). Sessions may research and write notes; nothing is submitted or packeted to Todd until Daniel opens it on the dashboard.
 
-## Content blocks (16)
+## Content blocks (17)
 
+- id `047c1dd575`: **FAQ block for /glp-1-behavioral-support-in-san-antonio-tx/ (4 questions)**
+  - target: https://www.bariatriccounselingcenter.com/glp-1-behavioral-support-in-san-antonio-tx/
+  - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\047c1dd575-faq-block-for-glp-1-behavioral-support-in-san-antonio-tx-4-q.md`
+  - approved: 2026-10-20. Why: 4 People Also Ask questions across 2 tracked terms (best BCC position 1).
 - id `004c407e4c`: **FAQ block for /food-addiction-treatment-in-san-antonio-tx/ (4 questions)**
   - target: https://www.bariatriccounselingcenter.com/food-addiction-treatment-in-san-antonio-tx/
   - draft file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-content\004c407e4c-faq-block-for-food-addiction-treatment-in-san-antonio-tx-4-q.md`
