@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-20 10:38 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-21 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -198,10 +198,8 @@ Generated 2026-10-20 10:38 by queue_apply.py. Daniel approved these on the dashb
 ## Action items from the Action Items sheet (3): work each, then --done or --needs-you
 
 - id `b15fcfc82c`: **ARFID - What it is and how it presents** (9/24 call list, sheet row 23). Approved 2026-10-20.
-  - Daniel's notes: Education only: what ARFID is and how it presents. Do NOT claim BCC treats ARFID until Sara Hamilton confirms. Author Sara Hamilton, PsyD (WP user 19). Build as a DRAFT on the active staging site, one H1 from the theme, no repeated featured image, about 10th grade reading level. (Daniel 2026-10-20)
 - id `246e095047`: **Stress Eating keyword** (9/24 call list, sheet row 24). Approved 2026-10-20.
 - id `4b6c3e5294`: **For Overeaters, position us as Professional / Licensed virtual group support covered by health insurance** (9/24 call list, sheet row 25). Approved 2026-10-20.
-  - Daniel's notes: Use 'in network with most health insurances' wording, not 'covered by health insurance'. (Daniel 2026-10-20)
 
 ## Items waiting on Daniel or on Todd/Sara (3): not for Claude, except the Gmail confirmations below.
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)
@@ -268,7 +266,7 @@ Generated 2026-10-20 10:38 by queue_apply.py. Daniel approved these on the dashb
   - asset: carousel
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/
 
-## Draft day: Wednesday. Today is Tuesday, not draft day: build only, no email to Todd.
+## Draft day: Wednesday. Today is Wednesday: DRAFT DAY, put every built post below into one Gmail draft to Todd (stage 1, step 5).
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
