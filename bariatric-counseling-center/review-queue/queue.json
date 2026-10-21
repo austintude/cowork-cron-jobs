@@ -8436,11 +8436,105 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A23"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "needs",
    "created": "2026-10-10T07:00:24",
-   "decided": "2026-10-20T10:38:08",
-   "note": "approved; waiting for a Claude session to work it (done ticks the Action Items sheet, or it comes back as needs you)",
-   "result": null
+   "decided": "2026-10-21T07:49:42",
+   "note": "Send Sara the ARFID article for her edits: Gmail draft 'ARFID article for your edits: what it is and how it presents' (article in content-drafts/action-items-2026-10-21)",
+   "result": {
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-10-21 07:49",
+       "by": "claude",
+       "text": "Wrote the article 'What Is ARFID? How It Presents in Adults' (blog post 1 of the September ARFID plan, retitled to this action item): content-drafts/action-items-2026-10-21/arfid-what-it-is-and-how-it-presents-draft.md, with a Word copy beside it (ARFID article draft for Sara 2026-10-21.docx). Byline Sara Hamilton, PsyD."
+      },
+      {
+       "at": "2026-10-21 07:49",
+       "by": "claude",
+       "text": "Every BCC claim follows Sara's October 6 answers on 'RE: ARFID page: a few details to confirm': ARFID only alongside an obesity component, inside the IOP; no clinician described as ARFID trained (Sara: none of us); adults 18 and older; telehealth across Texas with no in-person part; referral for low weight, high rigidity or heavy accommodations, with no provider named."
+      },
+      {
+       "at": "2026-10-21 07:49",
+       "by": "claude",
+       "text": "Gmail draft from daniel@drbdig.com to Sara, cc Todd: 'ARFID article for your edits: what it is and how it presents' (article inline so she can edit in red; offers a Word copy). It also asks Todd whether to hold the article until staff ARFID training, which Sara raised on October 6."
+      },
+      {
+       "at": "2026-10-21 07:49",
+       "by": "claude",
+       "text": "Nothing placed on staging14 or anywhere else."
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.",
+       "links": [
+        {
+         "label": "Open drafts",
+         "url": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#drafts"
+        },
+        {
+         "label": "Open the article",
+         "path": "content-drafts/action-items-2026-10-21/arfid-what-it-is-and-how-it-presents-draft.md"
+        }
+       ],
+       "check": {
+        "type": "gmail_sent",
+        "subject": "ARFID article for your edits: what it is and how it presents"
+       },
+       "due": "2026-10-23",
+       "id": "s1",
+       "status": "open"
+      },
+      {
+       "owner": "sara",
+       "do": "Sara returns her edits (or Todd says to hold the article until staff ARFID training).",
+       "check": {
+        "type": "gmail_reply",
+        "subject": "ARFID article for your edits",
+        "from": "bccsanantonio.com"
+       },
+       "due": "2026-10-30",
+       "id": "s2",
+       "status": "open"
+      },
+      {
+       "owner": "daniel",
+       "do": "Decide what happens with Sara's edits.",
+       "check": {
+        "type": "manual"
+       },
+       "options": [
+        {
+         "label": "Place it on staging14",
+         "tell": "Put Sara's edits from her reply to 'ARFID article for your edits' into content-drafts/action-items-2026-10-21/arfid-what-it-is-and-how-it-presents-draft.md and create it on staging14 as a DRAFT blog post through the block process, author Sara Hamilton (WP user 19), slug /eating-disorders/what-is-arfid-in-adults/."
+        },
+        {
+         "label": "Hold until training",
+         "tell": "Todd or Sara asked to hold the ARFID article until staff training. Leave the draft as is and close this item with a note."
+        },
+        {
+         "label": "Drop it",
+         "tell": "DONE_NO_ACTION"
+        }
+       ],
+       "id": "s3",
+       "status": "open"
+      },
+      {
+       "owner": "claude",
+       "do": "Build the approved article on staging14 as a draft blog post (author Sara Hamilton), check it renders, and report the staging URL.",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s4",
+       "status": "open"
+      }
+     ]
+    },
+    "needs_you": "Send Sara the ARFID article for her edits: Gmail draft 'ARFID article for your edits: what it is and how it presents' (article in content-drafts/action-items-2026-10-21)",
+    "needs_since": "2026-10-21"
+   }
   },
   {
    "id": "246e095047",
