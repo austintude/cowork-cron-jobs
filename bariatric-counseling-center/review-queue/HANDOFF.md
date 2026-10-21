@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-21 07:34 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-21 07:39 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -215,21 +215,21 @@ Generated 2026-10-21 07:34 by queue_apply.py. Daniel approved these on the dashb
 
 ## Draft day: Wednesday. Today is Wednesday: DRAFT DAY, put every built post below into one Gmail draft to Todd (stage 1, step 5).
 
-## Social posts built, not yet in a draft to Todd (13): draft them today
+## Social posts with Todd (13): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
-- id `1b94c31012`: **Thu 10/22: alumni clip, Jessica B. (struggled my whole life)** on 2026-10-22 (FB, IG, YT) at 7:00 PM; sheet October Content Calendar!35; asset Videos/Ford/CURRENT-portrait-clips-9x16/jessica-clip2-9x16_struggled-my-whole-life_COVERED.mp4 (SHORT NOTICE: 0 days out; say so in the draft)
-- id `b93e81977d`: **Tue 10/27: alumni clip, Carmen M. (head and heart)** on 2026-10-27 (FB, IG, YT) at 7:00 PM; sheet October Content Calendar!30; asset Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip4-9x16_head-and-heart_COVERED.mp4 (SHORT NOTICE: 5 days out; say so in the draft)
-- id `d3bf157620`: **Thu 10/29: alumni clip, Kim K. (couldnt articulate)** on 2026-10-29 (FB, IG, YT) at 7:00 PM; sheet October Content Calendar!36; asset Videos/Ford/CURRENT-portrait-clips-9x16/kim-clip4-9x16_couldnt-articulate_COVERED.mp4
-- id `4a2d70a708`: **Thu 11/5: The evening track fits a workday** on 2026-11-05 (LI) at 9:30 AM; sheet November Content Calendar!12; asset social/plan/cards/render/png/nov05-evening-li-01-linkedin.png
-- id `67ff8aa4bd`: **Mon 11/9: What a grocery store tour is for** on 2026-11-09 (FB, IG) at FB 10:30 AM, IG 12:15 PM; sheet November Content Calendar!13; asset social/plan/cards/render/png/nov09-grocery-01-feed.png
-- id `566382672f`: **Tue 11/10: Referring providers: who is the right referral** on 2026-11-10 (LI, GBP) at LI 11:00 AM, GBP 9:00 AM; sheet November Content Calendar!14; asset social/plan/cards/render/pdf/nov10-providers-linkedin-document.pdf
-- id `a07785591a`: **Wed 11/11: Staff Spotlight: Dr Sara Hamilton** on 2026-11-11 (FB, IG) at FB 10:30 AM, IG 12:15 PM; sheet November Content Calendar!15; asset social/plan/cards/render/png/nov11-sara-01-feed.png
-- id `3ac415f444`: **Thu 11/12: Q4 workload and the holiday calendar** on 2026-11-12 (LI) at 9:30 AM; sheet November Content Calendar!16; asset social/plan/cards/render/png/nov12-q4-li-01-linkedin.png
-- id `337fc6aea8`: **Mon 11/16: Eating at one table again** on 2026-11-16 (FB, IG) at FB 10:30 AM, IG 12:15 PM; sheet November Content Calendar!17; asset social/plan/cards/render/png/nov16-table-01-feed.png
-- id `7a78357dd4`: **Tue 11/17: Referring providers: behavioral care alongside medical care** on 2026-11-17 (LI, GBP) at LI 11:00 AM, GBP 9:00 AM; sheet November Content Calendar!18; asset social/plan/cards/render/pdf/nov17-providers-linkedin-document.pdf
-- id `8c10f61a84`: **Wed 11/18: Alumni words: never made to feel judged** on 2026-11-18 (FB, IG) at FB 10:30 AM, IG 12:15 PM; sheet November Content Calendar!19; asset social/plan/cards/render/png/nov18-samantha-01-feed.png
-- id `3f9fded114`: **Thu 11/19: Virtual across Texas, on your calendar** on 2026-11-19 (LI) at 9:30 AM; sheet November Content Calendar!20; asset social/plan/cards/render/png/nov19-virtual-li-01-linkedin.png
-- id `018f9727b9`: **Mon 11/23: A diet ends. A plan does not.** on 2026-11-23 (FB, IG) at FB 10:30 AM, IG 12:15 PM; sheet November Content Calendar!21; asset social/plan/cards/render/png/nov23-diet-01-feed.png
+- id `1b94c31012`: **Thu 10/22: alumni clip, Jessica B. (struggled my whole life)** on 2026-10-22 (FB, IG, YT); sheet October Content Calendar!35; draft  Social posts to approve: week of October 26 (2026-10-21)
+- id `b93e81977d`: **Tue 10/27: alumni clip, Carmen M. (head and heart)** on 2026-10-27 (FB, IG, YT); sheet October Content Calendar!30; draft  Social posts to approve: week of October 26 (2026-10-21)
+- id `d3bf157620`: **Thu 10/29: alumni clip, Kim K. (couldnt articulate)** on 2026-10-29 (FB, IG, YT); sheet October Content Calendar!36; draft  Social posts to approve: week of October 26 (2026-10-21)
+- id `4a2d70a708`: **Thu 11/5: The evening track fits a workday** on 2026-11-05 (LI); sheet November Content Calendar!12; draft  Social posts to approve: week of October 26 (2026-10-21)
+- id `67ff8aa4bd`: **Mon 11/9: What a grocery store tour is for** on 2026-11-09 (FB, IG); sheet November Content Calendar!13; draft  Social posts to approve: week of October 26 (2026-10-21)
+- id `566382672f`: **Tue 11/10: Referring providers: who is the right referral** on 2026-11-10 (LI, GBP); sheet November Content Calendar!14; draft  Social posts to approve: week of October 26 (2026-10-21)
+- id `a07785591a`: **Wed 11/11: Staff Spotlight: Dr Sara Hamilton** on 2026-11-11 (FB, IG); sheet November Content Calendar!15; draft  Social posts to approve: week of October 26 (2026-10-21)
+- id `3ac415f444`: **Thu 11/12: Q4 workload and the holiday calendar** on 2026-11-12 (LI); sheet November Content Calendar!16; draft  Social posts to approve: week of October 26 (2026-10-21)
+- id `337fc6aea8`: **Mon 11/16: Eating at one table again** on 2026-11-16 (FB, IG); sheet November Content Calendar!17; draft  Social posts to approve: week of October 26 (2026-10-21)
+- id `7a78357dd4`: **Tue 11/17: Referring providers: behavioral care alongside medical care** on 2026-11-17 (LI, GBP); sheet November Content Calendar!18; draft  Social posts to approve: week of October 26 (2026-10-21)
+- id `8c10f61a84`: **Wed 11/18: Alumni words: never made to feel judged** on 2026-11-18 (FB, IG); sheet November Content Calendar!19; draft  Social posts to approve: week of October 26 (2026-10-21)
+- id `3f9fded114`: **Thu 11/19: Virtual across Texas, on your calendar** on 2026-11-19 (LI); sheet November Content Calendar!20; draft  Social posts to approve: week of October 26 (2026-10-21)
+- id `018f9727b9`: **Mon 11/23: A diet ends. A plan does not.** on 2026-11-23 (FB, IG); sheet November Content Calendar!21; draft  Social posts to approve: week of October 26 (2026-10-21)
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
