@@ -4,8 +4,8 @@ Draft for Sara Hamilton, PsyD to review and edit before it is posted (Action Ite
 
 Target search: "arfid in adults" (720/mo Texas, 9,900/mo US) and "arfid meaning" (2,400/mo Texas). Suggested slug: /eating-disorders/what-is-arfid-in-adults/
 
-Meta title (52): What Is ARFID? How It Presents in Adults | BCC
-Meta description (148): ARFID is more than picky eating. Learn how avoidant restrictive food intake disorder shows up in adults, how it differs from anorexia, and when to ask for help.
+Meta title (46): What Is ARFID? How It Presents in Adults | BCC
+Meta description (156): ARFID is more than picky eating. Learn how avoidant restrictive food intake disorder shows up in adults, how it differs from anorexia, and when to get help.
 
 Every statement about what BCC offers comes from Sara's answers of October 6, 2026. General facts about ARFID follow the DSM-5-TR (American Psychiatric Association).
 
