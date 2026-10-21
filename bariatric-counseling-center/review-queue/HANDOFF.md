@@ -206,16 +206,12 @@ Generated 2026-10-21 07:34 by queue_apply.py. Daniel approved these on the dashb
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
 - Texas-wide geographic strategy: Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)
 
-## Social posts to build and write to the sheet (10); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (9); the draft to Todd is a separate weekly step
 
 - id `55ec40f611`: **Fri 11/6: Food Friday reel from Leila's clips (Salmon with sesame orange glaze, Eggroll in** on 2026-11-06 (FB, IG, YT) at FB 12:00 PM, IG 6:00 PM, YT 6:00 PM, reel. Approved 2026-10-20. Why: no Food Friday planned and 3 unused weeks of kitchen footage sit in Drive
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\55ec40f611-fri-11-6-food-friday-reel-from-leila-s-clips-salmon-with-ses.json`
   - asset: reel https://drive.google.com/drive/folders/1Oxs1OVu05rvOABXKa392DZ6wSSeEZPA3
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/
-- id `67ff8aa4bd`: **Mon 11/9: What a grocery store tour is for** on 2026-11-09 (FB, IG) at FB 10:30 AM, IG 12:15 PM, carousel. Approved 2026-10-20. Why: November is not planned yet; this keeps the FB/IG cadence going
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\67ff8aa4bd-mon-11-9-what-a-grocery-store-tour-is-for.json`
-  - asset: carousel
-  - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/
 - id `566382672f`: **Tue 11/10: Referring providers: who is the right referral** on 2026-11-10 (LI, GBP) at LI 11:00 AM, GBP 9:00 AM, document. Approved 2026-10-20. Why: November is not planned yet; this keeps the GBP/LI cadence going
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\566382672f-tue-11-10-referring-providers-who-is-the-right-referral.json`
   - asset: linkedin-document
@@ -251,12 +247,13 @@ Generated 2026-10-21 07:34 by queue_apply.py. Daniel approved these on the dashb
 
 ## Draft day: Wednesday. Today is Wednesday: DRAFT DAY, put every built post below into one Gmail draft to Todd (stage 1, step 5).
 
-## Social posts built, not yet in a draft to Todd (4): draft them today
+## Social posts built, not yet in a draft to Todd (5): draft them today
 
 - id `1b94c31012`: **Thu 10/22: alumni clip, Jessica B. (struggled my whole life)** on 2026-10-22 (FB, IG, YT) at 7:00 PM; sheet October Content Calendar!35; asset Videos/Ford/CURRENT-portrait-clips-9x16/jessica-clip2-9x16_struggled-my-whole-life_COVERED.mp4 (SHORT NOTICE: 0 days out; say so in the draft)
 - id `b93e81977d`: **Tue 10/27: alumni clip, Carmen M. (head and heart)** on 2026-10-27 (FB, IG, YT) at 7:00 PM; sheet October Content Calendar!30; asset Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip4-9x16_head-and-heart_COVERED.mp4 (SHORT NOTICE: 5 days out; say so in the draft)
 - id `d3bf157620`: **Thu 10/29: alumni clip, Kim K. (couldnt articulate)** on 2026-10-29 (FB, IG, YT) at 7:00 PM; sheet October Content Calendar!36; asset Videos/Ford/CURRENT-portrait-clips-9x16/kim-clip4-9x16_couldnt-articulate_COVERED.mp4
 - id `4a2d70a708`: **Thu 11/5: The evening track fits a workday** on 2026-11-05 (LI) at 9:30 AM; sheet November Content Calendar!12; asset social/plan/cards/render/png/nov05-evening-li-01-linkedin.png
+- id `67ff8aa4bd`: **Mon 11/9: What a grocery store tour is for** on 2026-11-09 (FB, IG) at FB 10:30 AM, IG 12:15 PM; sheet November Content Calendar!13; asset social/plan/cards/render/png/nov09-grocery-01-feed.png
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
