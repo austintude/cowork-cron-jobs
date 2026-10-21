@@ -206,16 +206,12 @@ Generated 2026-10-21 07:34 by queue_apply.py. Daniel approved these on the dashb
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
 - Texas-wide geographic strategy: Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)
 
-## Social posts to build and write to the sheet (5); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (4); the draft to Todd is a separate weekly step
 
 - id `55ec40f611`: **Fri 11/6: Food Friday reel from Leila's clips (Salmon with sesame orange glaze, Eggroll in** on 2026-11-06 (FB, IG, YT) at FB 12:00 PM, IG 6:00 PM, YT 6:00 PM, reel. Approved 2026-10-20. Why: no Food Friday planned and 3 unused weeks of kitchen footage sit in Drive
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\55ec40f611-fri-11-6-food-friday-reel-from-leila-s-clips-salmon-with-ses.json`
   - asset: reel https://drive.google.com/drive/folders/1Oxs1OVu05rvOABXKa392DZ6wSSeEZPA3
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/
-- id `7a78357dd4`: **Tue 11/17: Referring providers: behavioral care alongside medical care** on 2026-11-17 (LI, GBP) at LI 11:00 AM, GBP 9:00 AM, document. Approved 2026-10-20. Why: World Diabetes Day (Nov 14, posted the following Tuesday) falls in this week; mentioned once, not the whole post
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\7a78357dd4-tue-11-17-referring-providers-behavioral-care-alongside-medi.json`
-  - asset: linkedin-document
-  - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/refer-a-patient/
 - id `8c10f61a84`: **Wed 11/18: Alumni words: never made to feel judged** on 2026-11-18 (FB, IG) at FB 10:30 AM, IG 12:15 PM, carousel. Approved 2026-10-20. Why: November is not planned yet; this keeps the FB/IG cadence going
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\8c10f61a84-wed-11-18-alumni-words-never-made-to-feel-judged.json`
   - asset: carousel
@@ -231,7 +227,7 @@ Generated 2026-10-21 07:34 by queue_apply.py. Daniel approved these on the dashb
 
 ## Draft day: Wednesday. Today is Wednesday: DRAFT DAY, put every built post below into one Gmail draft to Todd (stage 1, step 5).
 
-## Social posts built, not yet in a draft to Todd (9): draft them today
+## Social posts built, not yet in a draft to Todd (10): draft them today
 
 - id `1b94c31012`: **Thu 10/22: alumni clip, Jessica B. (struggled my whole life)** on 2026-10-22 (FB, IG, YT) at 7:00 PM; sheet October Content Calendar!35; asset Videos/Ford/CURRENT-portrait-clips-9x16/jessica-clip2-9x16_struggled-my-whole-life_COVERED.mp4 (SHORT NOTICE: 0 days out; say so in the draft)
 - id `b93e81977d`: **Tue 10/27: alumni clip, Carmen M. (head and heart)** on 2026-10-27 (FB, IG, YT) at 7:00 PM; sheet October Content Calendar!30; asset Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip4-9x16_head-and-heart_COVERED.mp4 (SHORT NOTICE: 5 days out; say so in the draft)
@@ -242,6 +238,7 @@ Generated 2026-10-21 07:34 by queue_apply.py. Daniel approved these on the dashb
 - id `a07785591a`: **Wed 11/11: Staff Spotlight: Dr Sara Hamilton** on 2026-11-11 (FB, IG) at FB 10:30 AM, IG 12:15 PM; sheet November Content Calendar!15; asset social/plan/cards/render/png/nov11-sara-01-feed.png
 - id `3ac415f444`: **Thu 11/12: Q4 workload and the holiday calendar** on 2026-11-12 (LI) at 9:30 AM; sheet November Content Calendar!16; asset social/plan/cards/render/png/nov12-q4-li-01-linkedin.png
 - id `337fc6aea8`: **Mon 11/16: Eating at one table again** on 2026-11-16 (FB, IG) at FB 10:30 AM, IG 12:15 PM; sheet November Content Calendar!17; asset social/plan/cards/render/png/nov16-table-01-feed.png
+- id `7a78357dd4`: **Tue 11/17: Referring providers: behavioral care alongside medical care** on 2026-11-17 (LI, GBP) at LI 11:00 AM, GBP 9:00 AM; sheet November Content Calendar!18; asset social/plan/cards/render/pdf/nov17-providers-linkedin-document.pdf
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
