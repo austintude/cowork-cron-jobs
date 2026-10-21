@@ -8558,11 +8558,70 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A24"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "needs",
    "created": "2026-10-10T07:00:24",
-   "decided": "2026-10-20T10:38:10",
-   "note": "approved; waiting for a Claude session to work it (done ticks the Action Items sheet, or it comes back as needs you)",
-   "result": null
+   "decided": "2026-10-21T07:49:48",
+   "note": "Stress eating is now tracked; read the brief (content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md) and say whether to place the new copy on staging14",
+   "result": {
+    "followup": {
+     "trail": [
+      {
+       "at": "2026-10-21 07:49",
+       "by": "claude",
+       "text": "Added 'stress eating' (national-primary, priority 2) and 'how to stop stress eating' (national-long-tail, priority 2) to seo-tools/keywords-master.json, both pointed at /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/. Neither was tracked; 'stress eating' is about 4,400 searches a month in the US."
+      },
+      {
+       "at": "2026-10-21 07:49",
+       "by": "claude",
+       "text": "Wrote the brief and the page copy: content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md (a 'What is stress eating?' answer for the top of the post, a 3-question FAQ with schema, two internal links)."
+      },
+      {
+       "at": "2026-10-21 07:49",
+       "by": "claude",
+       "text": "Found: the post's new title and description were made on staging13 (queue item 843c7ca564); production still shows the old 110-character title."
+      }
+     ],
+     "steps": [
+      {
+       "owner": "daniel",
+       "do": "Read the stress eating brief and choose.",
+       "links": [
+        {
+         "label": "Open the brief",
+         "path": "content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md"
+        }
+       ],
+       "check": {
+        "type": "manual"
+       },
+       "options": [
+        {
+         "label": "Place it on staging14",
+         "tell": "Add the 'What is stress eating?' H2 and paragraph, the 3-question Rank Math FAQ block and the two internal links from content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md to /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ on staging14 through the block process, and confirm the staged title 'How To Stop Stress Eating: Behavioral Strategies' and its description are on staging14 too."
+        },
+        {
+         "label": "Tracking is enough",
+         "tell": "DONE_NO_ACTION"
+        }
+       ],
+       "due": "2026-10-28",
+       "id": "s1",
+       "status": "open"
+      },
+      {
+       "owner": "claude",
+       "do": "Place the approved copy on staging14, verify the H2 and the FAQPage schema on the staging page, and report the URL. It reaches production with the next push.",
+       "check": {
+        "type": "manual"
+       },
+       "id": "s2",
+       "status": "open"
+      }
+     ]
+    },
+    "needs_you": "Stress eating is now tracked; read the brief (content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md) and say whether to place the new copy on staging14",
+    "needs_since": "2026-10-21"
+   }
   },
   {
    "id": "4b6c3e5294",
