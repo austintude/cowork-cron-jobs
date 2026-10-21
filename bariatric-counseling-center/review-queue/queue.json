@@ -8438,8 +8438,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-10-10T07:00:24",
-   "decided": "2026-10-21T07:49:42",
-   "note": "Send Sara the ARFID article for her edits: Gmail draft 'ARFID article for your edits: what it is and how it presents' (article in content-drafts/action-items-2026-10-21)",
+   "decided": "2026-10-21T07:49:46",
+   "note": "Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.",
    "result": {
     "followup": {
      "trail": [
@@ -8484,7 +8484,8 @@
        },
        "due": "2026-10-23",
        "id": "s1",
-       "status": "open"
+       "status": "open",
+       "evidence": "still in your Gmail Drafts, not sent"
       },
       {
        "owner": "sara",
@@ -8496,7 +8497,8 @@
        },
        "due": "2026-10-30",
        "id": "s2",
-       "status": "open"
+       "status": "open",
+       "evidence": "no reply yet"
       },
       {
        "owner": "daniel",
@@ -8530,7 +8532,10 @@
        "id": "s4",
        "status": "open"
       }
-     ]
+     ],
+     "state": "your_move",
+     "state_text": "Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.",
+     "checked_at": "2026-10-21 07:49"
     },
     "needs_you": "Send Sara the ARFID article for her edits: Gmail draft 'ARFID article for your edits: what it is and how it presents' (article in content-drafts/action-items-2026-10-21)",
     "needs_since": "2026-10-21"
