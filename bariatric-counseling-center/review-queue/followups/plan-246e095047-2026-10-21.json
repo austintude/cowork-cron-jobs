@@ -1,0 +1,19 @@
+{
+ "trail": [
+  {"text": "Added 'stress eating' (national-primary, priority 2) and 'how to stop stress eating' (national-long-tail, priority 2) to seo-tools/keywords-master.json, both pointed at /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/. Neither was tracked; 'stress eating' is about 4,400 searches a month in the US."},
+  {"text": "Wrote the brief and the page copy: content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md (a 'What is stress eating?' answer for the top of the post, a 3-question FAQ with schema, two internal links)."},
+  {"text": "Found: the post's new title and description were made on staging13 (queue item 843c7ca564); production still shows the old 110-character title."}
+ ],
+ "steps": [
+  {"owner": "daniel", "do": "Read the stress eating brief and choose.",
+   "links": [{"label": "Open the brief", "path": "content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md"}],
+   "check": {"type": "manual"},
+   "options": [
+    {"label": "Place it on staging14", "tell": "Add the 'What is stress eating?' H2 and paragraph, the 3-question Rank Math FAQ block and the two internal links from content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md to /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ on staging14 through the block process, and confirm the staged title 'How To Stop Stress Eating: Behavioral Strategies' and its description are on staging14 too."},
+    {"label": "Tracking is enough", "tell": "DONE_NO_ACTION"}
+   ],
+   "due": "2026-10-28"},
+  {"owner": "claude", "do": "Place the approved copy on staging14, verify the H2 and the FAQPage schema on the staging page, and report the URL. It reaches production with the next push.",
+   "check": {"type": "manual"}}
+ ]
+}

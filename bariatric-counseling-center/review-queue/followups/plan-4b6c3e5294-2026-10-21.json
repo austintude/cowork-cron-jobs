@@ -1,0 +1,27 @@
+{
+ "trail": [
+  {"text": "Read the live page /overeaters-anonymous-support-san-antonio-tx/ (read-only). The licensed team, insurance and telehealth are there but only from the third section down; 'virtual' and 'group' are not in the title, description, H1 or first screen."},
+  {"text": "Wrote the positioning copy: content-drafts/action-items-2026-10-21/overeaters-positioning-licensed-virtual-group.md (new title, description, H1, opening paragraph and an H2 'Licensed virtual group support, covered by most health insurance'). Written to sit with the two approved items for this page still waiting on staging14 (750d75e0bf AI Overview answer, bedcf97883 FAQ)."},
+  {"text": "Found on the live page: an intake block with (210) 934-3420 and 9907 Broadway St, not BCC's 210.634.2200 and 9618 Huebner Road; a 'Joint Commission accredited' claim in the meta description and 'accredited' in the closing block. Fixes are in the same file."},
+  {"text": "Gmail draft from daniel@drbdig.com to Todd: 'Quick check: phone and address on the overeaters page'."}
+ ],
+ "steps": [
+  {"owner": "daniel", "do": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.",
+   "links": [{"label": "Open drafts", "url": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#drafts"}],
+   "check": {"type": "gmail_sent", "subject": "Quick check: phone and address on the overeaters page"},
+   "due": "2026-10-22"},
+  {"owner": "todd", "do": "Todd says whether (210) 934-3420 and 9907 Broadway St are BCC's.",
+   "check": {"type": "gmail_reply", "subject": "phone and address on the overeaters page", "from": "bccsanantonio.com"},
+   "due": "2026-10-27"},
+  {"owner": "daniel", "do": "Read the positioning copy and choose.",
+   "links": [{"label": "Open the copy", "path": "content-drafts/action-items-2026-10-21/overeaters-positioning-licensed-virtual-group.md"}],
+   "check": {"type": "manual"},
+   "options": [
+    {"label": "Place it on staging14", "tell": "On staging14, apply content-drafts/action-items-2026-10-21/overeaters-positioning-licensed-virtual-group.md to /overeaters-anonymous-support-san-antonio-tx/ through the block process: new H1, opening paragraph, the new H2 section, the closing-block wording and the corrected contact block (use Todd's answer on the phone and address), plus the new title and description in Rank Math. Place approved items 750d75e0bf and bedcf97883 in the same pass."},
+    {"label": "Only fix the errors", "tell": "On staging14, fix only the contact block (per Todd's answer) and remove the accreditation wording on /overeaters-anonymous-support-san-antonio-tx/; leave the positioning as it is."}
+   ],
+   "due": "2026-10-28"},
+  {"owner": "claude", "do": "Make the approved changes on staging14, verify on the staging page that the new H1 and contact block are there and no 'accredited' wording remains, and report the URL. Production follows with the next push.",
+   "check": {"type": "manual"}}
+ ]
+}
