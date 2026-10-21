@@ -206,13 +206,8 @@ Generated 2026-10-21 07:22 by queue_apply.py. Daniel approved these on the dashb
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
 - Texas-wide geographic strategy: Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)
 
-## Social posts to build and write to the sheet (13); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (12); the draft to Todd is a separate weekly step
 
-- id `b93e81977d`: **Tue 10/27: alumni clip, Carmen M. (head and heart)** on 2026-10-27 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-10-20. Why: held clip slot on the sheet (row 30) with no clip assigned
-  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\b93e81977d-tue-10-27-alumni-clip-carmen-m-head-and-heart.json`
-  - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip4-9x16_head-and-heart_COVERED.mp4
-  - replaces row 30 in October Content Calendar
-  - sheet tab: October Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/testimonials/
 - id `d3bf157620`: **Thu 10/29: alumni clip, Kim K. (couldnt articulate)** on 2026-10-29 (FB, IG, YT) at 7:00 PM, clip. Approved 2026-10-20. Why: Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\d3bf157620-thu-10-29-alumni-clip-kim-k-couldnt-articulate.json`
   - asset: clip Videos/Ford/CURRENT-portrait-clips-9x16/kim-clip4-9x16_couldnt-articulate_COVERED.mp4
@@ -264,9 +259,10 @@ Generated 2026-10-21 07:22 by queue_apply.py. Daniel approved these on the dashb
 
 ## Draft day: Wednesday. Today is Wednesday: DRAFT DAY, put every built post below into one Gmail draft to Todd (stage 1, step 5).
 
-## Social posts built, not yet in a draft to Todd (1): draft them today
+## Social posts built, not yet in a draft to Todd (2): draft them today
 
 - id `1b94c31012`: **Thu 10/22: alumni clip, Jessica B. (struggled my whole life)** on 2026-10-22 (FB, IG, YT) at 7:00 PM; sheet October Content Calendar!35; asset Videos/Ford/CURRENT-portrait-clips-9x16/jessica-clip2-9x16_struggled-my-whole-life_COVERED.mp4 (SHORT NOTICE: 0 days out; say so in the draft)
+- id `b93e81977d`: **Tue 10/27: alumni clip, Carmen M. (head and heart)** on 2026-10-27 (FB, IG, YT) at 7:00 PM; sheet October Content Calendar!30; asset Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip4-9x16_head-and-heart_COVERED.mp4 (SHORT NOTICE: 5 days out; say so in the draft)
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
