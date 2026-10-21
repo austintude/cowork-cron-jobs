@@ -195,11 +195,8 @@ Generated 2026-10-21 07:49 by queue_apply.py. Daniel approved these on the dashb
   - Remove the link from the image and keep the image (decided by Daniel 2026-10-20). Do not replace it with another link.
   - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/
 
-## Action items from the Action Items sheet (1): work each, then --done or --needs-you
-
-- id `4b6c3e5294`: **For Overeaters, position us as Professional / Licensed virtual group support covered by health insurance** (9/24 call list, sheet row 25). Approved 2026-10-20.
-
-## Items waiting on Daniel or on Todd/Sara (5): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (6): not for Claude, except the Gmail confirmations below.
+- For Overeaters, position us as Professional / Licensed virtual group support covered by health insurance: Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.
 - ARFID - What it is and how it presents: Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.
 - Stress Eating keyword: Read the stress eating brief and choose.
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)
