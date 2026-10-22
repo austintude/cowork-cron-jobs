@@ -15939,8 +15939,8 @@
               "source": "action-items",
               "status": "needs",
               "created": "2026-10-10T07:00:25",
-              "decided": "2026-10-21T07:49:55",
-              "note": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.",
+              "decided": "2026-10-22T07:00:45",
+              "note": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)",
               "result": {
                 "followup": {
                   "trail": [
@@ -15963,6 +15963,11 @@
                       "at": "2026-10-21 07:49",
                       "by": "claude",
                       "text": "Gmail draft from daniel@drbdig.com to Todd: 'Quick check: phone and address on the overeaters page'."
+                    },
+                    {
+                      "at": "2026-10-22 07:00",
+                      "by": "check",
+                      "text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)"
                     }
                   ],
                   "steps": [
@@ -15981,8 +15986,8 @@
                       },
                       "due": "2026-10-22",
                       "id": "s1",
-                      "status": "open",
-                      "evidence": "still in your Gmail Drafts, not sent"
+                      "status": "gone",
+                      "evidence": "not sent, and no longer in your Drafts (deleted?)"
                     },
                     {
                       "owner": "todd",
@@ -16033,9 +16038,9 @@
                       "status": "open"
                     }
                   ],
-                  "state": "your_move",
-                  "state_text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.",
-                  "checked_at": "2026-10-21 07:49"
+                  "state": "problem",
+                  "state_text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)",
+                  "checked_at": "2026-10-22 07:26"
                 },
                 "needs_you": "Send Todd the Gmail draft 'Quick check: phone and address on the overeaters page' (live page shows (210) 934-3420), then approve the positioning copy in content-drafts/action-items-2026-10-21",
                 "needs_since": "2026-10-21"
@@ -16060,8 +16065,8 @@
               "source": "action-items",
               "status": "needs",
               "created": "2026-10-10T07:00:24",
-              "decided": "2026-10-21T07:49:46",
-              "note": "Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.",
+              "decided": "2026-10-22T07:00:47",
+              "note": "Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.: not sent, and no longer in your Drafts (deleted?)",
               "result": {
                 "followup": {
                   "trail": [
@@ -16084,6 +16089,11 @@
                       "at": "2026-10-21 07:49",
                       "by": "claude",
                       "text": "Nothing placed on staging14 or anywhere else."
+                    },
+                    {
+                      "at": "2026-10-22 07:00",
+                      "by": "check",
+                      "text": "Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.: not sent, and no longer in your Drafts (deleted?)"
                     }
                   ],
                   "steps": [
@@ -16106,8 +16116,8 @@
                       },
                       "due": "2026-10-23",
                       "id": "s1",
-                      "status": "open",
-                      "evidence": "still in your Gmail Drafts, not sent"
+                      "status": "gone",
+                      "evidence": "not sent, and no longer in your Drafts (deleted?)"
                     },
                     {
                       "owner": "sara",
@@ -16155,9 +16165,9 @@
                       "status": "open"
                     }
                   ],
-                  "state": "your_move",
-                  "state_text": "Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.",
-                  "checked_at": "2026-10-21 07:49"
+                  "state": "problem",
+                  "state_text": "Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.: not sent, and no longer in your Drafts (deleted?)",
+                  "checked_at": "2026-10-22 07:26"
                 },
                 "needs_you": "Send Sara the ARFID article for her edits: Gmail draft 'ARFID article for your edits: what it is and how it presents' (article in content-drafts/action-items-2026-10-21)",
                 "needs_since": "2026-10-21"
@@ -16242,7 +16252,7 @@
                   ],
                   "state": "your_move",
                   "state_text": "Read the stress eating brief and choose.",
-                  "checked_at": "2026-10-21 07:49"
+                  "checked_at": "2026-10-22 07:26"
                 },
                 "needs_you": "Stress eating is now tracked; read the brief (content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md) and say whether to place the new copy on staging14",
                 "needs_since": "2026-10-21"
@@ -16339,7 +16349,7 @@
                   ],
                   "state": "problem",
                   "state_text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-10-21 07:39"
+                  "checked_at": "2026-10-22 07:26"
                 }
               }
             },
@@ -16470,7 +16480,7 @@
                   ],
                   "state": "your_move",
                   "state_text": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
-                  "checked_at": "2026-10-21 07:39"
+                  "checked_at": "2026-10-22 07:26"
                 }
               }
             },
@@ -16493,7 +16503,7 @@
               "source": "action-items",
               "status": "needs",
               "created": "2026-09-24T12:23:35",
-              "decided": "2026-10-17T07:00:41",
+              "decided": "2026-10-22T07:00:48",
               "note": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)",
               "result": {
                 "needs_you": "Read and send the two Gmail drafts to Todd: 'BCC launch plan: one page' first, then 'Overeating, food addiction and going statewide'. Check the dates before sending (Oct 15 Joint Commission line, Oct 16 deadlines).",
@@ -16534,6 +16544,11 @@
                       "at": "2026-10-17 07:00",
                       "by": "check",
                       "text": "Read and send the Gmail draft 'Overeating, food addiction and going statewide'.: not sent, and no longer in your Drafts (deleted?)"
+                    },
+                    {
+                      "at": "2026-10-22 07:00",
+                      "by": "check",
+                      "text": "Read and send the Gmail draft 'Overeating, food addiction and going statewide'.: sent 2026-10-21 10:22 to Todd McCord <tmccord@bccsanantonio.com>"
                     }
                   ],
                   "steps": [
@@ -16558,8 +16573,11 @@
                       },
                       "due": "2026-10-16",
                       "id": "s2",
-                      "status": "gone",
-                      "evidence": "not sent, and no longer in your Drafts (deleted?)"
+                      "status": "done",
+                      "evidence": "sent 2026-10-21 10:22 to Todd McCord <tmccord@bccsanantonio.com>",
+                      "done_at": "2026-10-22 07:00",
+                      "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a140190ed49d4b5",
+                      "via": "checked automatically"
                     },
                     {
                       "owner": "todd",
@@ -16576,7 +16594,7 @@
                   ],
                   "state": "problem",
                   "state_text": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-10-21 07:39"
+                  "checked_at": "2026-10-22 07:26"
                 }
               }
             }
@@ -24311,153 +24329,23 @@
       "model": {
         "connected": true,
         "data": {
-          "fetched": "2026-10-21",
+          "fetched": "2026-10-22",
           "site": "https://www.bariatriccounselingcenter.com/",
           "window_days": 28,
           "errors": [
+            "GetRankAndTrafficStats: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
             "GetQueryStats: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
             "GetPageStats: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
             "GetCrawlStats: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
           ],
           "summary": {
-            "clicks": 8,
-            "impressions": 688,
+            "clicks": 0,
+            "impressions": 0,
             "avg_position": null
           },
           "top_queries": [],
           "top_pages": [],
-          "daily": [
-            {
-              "date": "2026-09-23",
-              "clicks": 2,
-              "impressions": 42
-            },
-            {
-              "date": "2026-09-24",
-              "clicks": 0,
-              "impressions": 39
-            },
-            {
-              "date": "2026-09-25",
-              "clicks": 0,
-              "impressions": 28
-            },
-            {
-              "date": "2026-09-26",
-              "clicks": 0,
-              "impressions": 30
-            },
-            {
-              "date": "2026-09-27",
-              "clicks": 0,
-              "impressions": 16
-            },
-            {
-              "date": "2026-09-28",
-              "clicks": 0,
-              "impressions": 61
-            },
-            {
-              "date": "2026-09-29",
-              "clicks": 0,
-              "impressions": 19
-            },
-            {
-              "date": "2026-09-30",
-              "clicks": 0,
-              "impressions": 23
-            },
-            {
-              "date": "2026-10-01",
-              "clicks": 0,
-              "impressions": 23
-            },
-            {
-              "date": "2026-10-02",
-              "clicks": 1,
-              "impressions": 14
-            },
-            {
-              "date": "2026-10-03",
-              "clicks": 0,
-              "impressions": 8
-            },
-            {
-              "date": "2026-10-04",
-              "clicks": 0,
-              "impressions": 17
-            },
-            {
-              "date": "2026-10-05",
-              "clicks": 0,
-              "impressions": 32
-            },
-            {
-              "date": "2026-10-06",
-              "clicks": 0,
-              "impressions": 26
-            },
-            {
-              "date": "2026-10-07",
-              "clicks": 1,
-              "impressions": 36
-            },
-            {
-              "date": "2026-10-08",
-              "clicks": 0,
-              "impressions": 42
-            },
-            {
-              "date": "2026-10-09",
-              "clicks": 2,
-              "impressions": 33
-            },
-            {
-              "date": "2026-10-10",
-              "clicks": 0,
-              "impressions": 7
-            },
-            {
-              "date": "2026-10-11",
-              "clicks": 0,
-              "impressions": 7
-            },
-            {
-              "date": "2026-10-12",
-              "clicks": 0,
-              "impressions": 27
-            },
-            {
-              "date": "2026-10-13",
-              "clicks": 1,
-              "impressions": 51
-            },
-            {
-              "date": "2026-10-14",
-              "clicks": 1,
-              "impressions": 33
-            },
-            {
-              "date": "2026-10-15",
-              "clicks": 0,
-              "impressions": 23
-            },
-            {
-              "date": "2026-10-16",
-              "clicks": 0,
-              "impressions": 20
-            },
-            {
-              "date": "2026-10-17",
-              "clicks": 0,
-              "impressions": 18
-            },
-            {
-              "date": "2026-10-18",
-              "clicks": 0,
-              "impressions": 13
-            }
-          ],
+          "daily": [],
           "crawl": {
             "as_of": null,
             "crawl_errors": null,
@@ -24731,6 +24619,97 @@
       "model": {
         "pending": [],
         "closed": [
+          {
+            "id": "oct-r25-20261022070025",
+            "month": "October",
+            "row": 25,
+            "title": "Referring Providers: Document Post",
+            "when": "Tue 10/20",
+            "platforms": [
+              "LI",
+              "GBP"
+            ],
+            "affected": [
+              "LI"
+            ],
+            "status": "done",
+            "kinds": [
+              "edit"
+            ],
+            "detected": "2026-10-22T07:00:25",
+            "updated": "2026-10-22T07:00:27",
+            "initial": {
+              "C": "Tue 10/20: LI, GBP",
+              "D": "GBP 9:00 AM\nLI 11:00 AM",
+              "F": "The claim BCC can make and the large eating disorder chains cannot: behavioral treatment alongside weight loss medication. 'Weight loss medications' only, never the drug class abbreviation.",
+              "G": "not applicable",
+              "H": "not applicable",
+              "I": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: \"food noise,\" drops  and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when  the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan.",
+              "J": "Behavioral support for people taking weight loss medications, in San Antonio and virtually throughout Texas. Medication can quiet hunger. It does not teach the skills for managing stress, habits, and emotions around food, and those skills are what remain when a prescription changes or stops. The Bariatric Counseling Center of San Antonio does not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We accept most health insurances.",
+              "K": "not applicable",
+              "L": "not applicable",
+              "M": "LI: document post, so no preview card is possible. Put the URL in the body text. URL: bariatriccounselingcenter.com/refer-a-patient/\nGBP: Learn more button to bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/\nCard: last page of the PDF carries the referral contact.",
+              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1hjgdio1uvd0jy8M6ctt7jX45O3hOl-06\",1)",
+              "O": "ASSETS (built 2026-09-18). The image above is oct20-providers-01-doc.png.\n  LinkedIn document, 5 pages: oct20-providers-linkedin-document.pdf\n    pages as PNG if you need them: oct20-providers-01-doc.png to oct20-providers-05-doc.png\n  Google Business Profile 1200x900: oct20-gbp-01-gbp.png\nAll October files: https://drive.google.com/drive/folders/1XujWCAggxk0h6BYvncHp7Sa2Y0JGn87k\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\oct\\cards\\render\\png\n\nThe line 'We do not prescribe' and the separate benefits point were verified against BCC's weight loss medications page on 9/14. Sara to confirm the clinical framing.\nAlt text (GBP): Graphic reading 'The behavioral half of the plan' with the Bariatric Counseling Center logo.",
+              "P": "",
+              "Q": "",
+              "A": "FALSE"
+            },
+            "todd": {
+              "cells": {
+                "I": {
+                  "before": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: \"food noise,\" drops  and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when  the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan.",
+                  "after": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: the \"food noise\" drops, and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan."
+                }
+              },
+              "ok": null,
+              "notes": ""
+            },
+            "final": {
+              "ready": true,
+              "by": "cell edit",
+              "channels": {
+                "LI": {
+                  "text": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: the \"food noise\" drops, and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan."
+                }
+              },
+              "media": null,
+              "link": null
+            },
+            "scheduler": {},
+            "history": [
+              {
+                "at": "2026-10-22T07:00:25",
+                "who": "sheet",
+                "what": "changed LinkedIn caption (I)"
+              },
+              {
+                "at": "2026-10-22T07:00:27",
+                "who": "system",
+                "what": "minor edit: LI: already out (or about to be); too late to change in Publer"
+              }
+            ],
+            "notified": true,
+            "seen": {
+              "C": "6339bf0b6c0e",
+              "D": "05f8789f606b",
+              "F": "1e2ffd1da85b",
+              "G": "b4d1e1bdf71f",
+              "H": "b4d1e1bdf71f",
+              "I": "2bdafba084c4",
+              "J": "5701e01513e7",
+              "K": "b4d1e1bdf71f",
+              "L": "b4d1e1bdf71f",
+              "M": "2e1b286d1396",
+              "N": "404dd6606cb7",
+              "O": "ea25d0e1b3e8",
+              "P": "da39a3ee5e6b",
+              "Q": "da39a3ee5e6b"
+            },
+            "minor": [
+              "LI: already out (or about to be); too late to change in Publer"
+            ]
+          },
           {
             "id": "oct-r25-20261021070022",
             "month": "October",
@@ -25161,97 +25140,6 @@
               },
               {
                 "at": "2026-10-20T17:16:37",
-                "who": "system",
-                "what": "minor edit: LI: already out (or about to be); too late to change in Publer"
-              }
-            ],
-            "notified": true,
-            "seen": {
-              "C": "6339bf0b6c0e",
-              "D": "05f8789f606b",
-              "F": "1e2ffd1da85b",
-              "G": "b4d1e1bdf71f",
-              "H": "b4d1e1bdf71f",
-              "I": "2bdafba084c4",
-              "J": "5701e01513e7",
-              "K": "b4d1e1bdf71f",
-              "L": "b4d1e1bdf71f",
-              "M": "2e1b286d1396",
-              "N": "404dd6606cb7",
-              "O": "ea25d0e1b3e8",
-              "P": "da39a3ee5e6b",
-              "Q": "da39a3ee5e6b"
-            },
-            "minor": [
-              "LI: already out (or about to be); too late to change in Publer"
-            ]
-          },
-          {
-            "id": "oct-r25-20261020171534",
-            "month": "October",
-            "row": 25,
-            "title": "Referring Providers: Document Post",
-            "when": "Tue 10/20",
-            "platforms": [
-              "LI",
-              "GBP"
-            ],
-            "affected": [
-              "LI"
-            ],
-            "status": "done",
-            "kinds": [
-              "edit"
-            ],
-            "detected": "2026-10-20T17:15:34",
-            "updated": "2026-10-20T17:15:37",
-            "initial": {
-              "C": "Tue 10/20: LI, GBP",
-              "D": "GBP 9:00 AM\nLI 11:00 AM",
-              "F": "The claim BCC can make and the large eating disorder chains cannot: behavioral treatment alongside weight loss medication. 'Weight loss medications' only, never the drug class abbreviation.",
-              "G": "not applicable",
-              "H": "not applicable",
-              "I": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: \"food noise,\" drops  and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when  the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan.",
-              "J": "Behavioral support for people taking weight loss medications, in San Antonio and virtually throughout Texas. Medication can quiet hunger. It does not teach the skills for managing stress, habits, and emotions around food, and those skills are what remain when a prescription changes or stops. The Bariatric Counseling Center of San Antonio does not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We accept most health insurances.",
-              "K": "not applicable",
-              "L": "not applicable",
-              "M": "LI: document post, so no preview card is possible. Put the URL in the body text. URL: bariatriccounselingcenter.com/refer-a-patient/\nGBP: Learn more button to bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/\nCard: last page of the PDF carries the referral contact.",
-              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1hjgdio1uvd0jy8M6ctt7jX45O3hOl-06\",1)",
-              "O": "ASSETS (built 2026-09-18). The image above is oct20-providers-01-doc.png.\n  LinkedIn document, 5 pages: oct20-providers-linkedin-document.pdf\n    pages as PNG if you need them: oct20-providers-01-doc.png to oct20-providers-05-doc.png\n  Google Business Profile 1200x900: oct20-gbp-01-gbp.png\nAll October files: https://drive.google.com/drive/folders/1XujWCAggxk0h6BYvncHp7Sa2Y0JGn87k\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\oct\\cards\\render\\png\n\nThe line 'We do not prescribe' and the separate benefits point were verified against BCC's weight loss medications page on 9/14. Sara to confirm the clinical framing.\nAlt text (GBP): Graphic reading 'The behavioral half of the plan' with the Bariatric Counseling Center logo.",
-              "P": "",
-              "Q": "",
-              "A": "FALSE"
-            },
-            "todd": {
-              "cells": {
-                "I": {
-                  "before": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: \"food noise,\" drops  and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when  the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan.",
-                  "after": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: the \"food noise\" drops, and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan."
-                }
-              },
-              "ok": null,
-              "notes": ""
-            },
-            "final": {
-              "ready": true,
-              "by": "cell edit",
-              "channels": {
-                "LI": {
-                  "text": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: the \"food noise\" drops, and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan."
-                }
-              },
-              "media": null,
-              "link": null
-            },
-            "scheduler": {},
-            "history": [
-              {
-                "at": "2026-10-20T17:15:34",
-                "who": "sheet",
-                "what": "changed LinkedIn caption (I)"
-              },
-              {
-                "at": "2026-10-20T17:15:37",
                 "who": "system",
                 "what": "minor edit: LI: already out (or about to be); too late to change in Publer"
               }
@@ -29968,5 +29856,5 @@
     }
   ],
   "snapshot_count": 46,
-  "generated_at": "2026-10-22T10:33:19.848710Z"
+  "generated_at": "2026-10-22T12:26:46.517013Z"
 }
