@@ -10162,6 +10162,63 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "9cb827c31e",
+   "kind": "social",
+   "key": "social:2026-12-09:FB+IG",
+   "title": "Wed 12/9: Staff Spotlight: Chasley, Registered Dietitian",
+   "why": "December is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-12-09",
+    "weekday": "Wed",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Staff Spotlight",
+    "pillar": "People",
+    "format": "carousel",
+    "title": "Wed 12/9: Staff Spotlight: Chasley, Registered Dietitian",
+    "purpose": "Chasley, Registered Dietitian, Dietary Director. Surname must be checked before publishing (Fortune vs Pittman). Anti-diet framing in her words.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/about/",
+    "captions": {
+     "FB": "Meet Chasley, Registered Dietitian and Dietary Director at the Bariatric Counseling Center. Chasley brings a compassionate, anti-diet approach to nutrition that helps clients build a healthy relationship with food. Her guidance focuses on understanding eating patterns, not counting or restricting. Our team includes registered dietitians, licensed professional counselors, a clinical psychologist, movement therapists, a registered nurse, and a professional chef. One program, not four. Serving clients in San Antonio and virtual across Texas. Link in the first comment.",
+     "IG": "Registered dietitian San Antonio\n\nMeet Chasley, Registered Dietitian and Dietary Director at the Bariatric Counseling Center. Chasley brings a compassionate, anti-diet approach to nutrition that helps clients build a healthy relationship with food. Her guidance focuses on understanding eating patterns, not counting or restricting. Our team includes registered dietitians, licensed professional counselors, a clinical psychologist, movement therapists, a registered nurse, and a professional chef. One program, not four. Serving clients in San Antonio and virtual across Texas.\n\n#BariatricCounseling #SanAntonio #MindfulRecovery",
+     "YT": {
+      "title": "Meet Chasley: Registered Dietitian at Bariatric Counseling Center",
+      "description": "Chasley, Registered Dietitian and Dietary Director at the Bariatric Counseling Center, brings a compassionate, anti-diet approach to nutrition. Her guidance helps clients understand their relationship with food without counting or restricting. The Bariatric Counseling Center serves clients in San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Meet Chasley, Registered Dietitian",
+     "Dietary Director",
+     "Compassionate, anti-diet approach",
+     "Understanding food, not counting",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Chasley, Registered Dietitian and Dietary Director at Bariatric Counseling Center.",
+    "why_now": "Mid-December staff spotlight maintains engagement during the holiday season when nutrition conversations are particularly relevant.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "December Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Wed 12/9: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-10-22T05:29:21",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
