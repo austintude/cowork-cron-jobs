@@ -10046,6 +10046,63 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "d3ca9f2781",
+   "kind": "social",
+   "key": "social:2026-12-07:FB+IG",
+   "title": "Mon 12/7: Movement you actually enjoy counts",
+   "why": "December is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-12-07",
+    "weekday": "Mon",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Mon 12/7: Movement you actually enjoy counts",
+    "purpose": "Mindful Movement: Enjoyable Exercise and Movement Options & Planning, against the all-or-nothing gym idea.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "Movement doesn't have to mean the gym. At the Bariatric Counseling Center, our Mindful Movement pillar focuses on finding exercise you actually enjoy and planning movement options that fit your life. We help clients discover what feels good and build sustainable habits, not rigid rules. Our team includes a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four. San Antonio and virtual across Texas. Link in the first comment.",
+     "IG": "Movement you actually enjoy counts\n\nMovement doesn't have to mean the gym. At the Bariatric Counseling Center, our Mindful Movement pillar focuses on finding exercise you actually enjoy and planning movement options that fit your life.\n\nWe help clients discover what feels good and build sustainable habits, not rigid rules. Our program provides group and individual therapy, dietary guidance, cooking classes and movement education in a unique, all-inclusive format.\n\nSan Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+     "YT": {
+      "title": "Movement You Actually Enjoy Counts | Bariatric Counseling Center",
+      "description": "Movement doesn't have to mean the gym. At the Bariatric Counseling Center, our Mindful Movement pillar focuses on finding exercise you actually enjoy and planning movement options that fit your life. We help clients discover what feels good and build sustainable habits, not rigid rules. San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Movement doesn't have to mean the gym",
+     "Find exercise you actually enjoy",
+     "Movement Options & Planning",
+     "Sustainable habits, not rigid rules",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Carousel post about Mindful Movement pillar at Bariatric Counseling Center, emphasizing enjoyable exercise and movement planning.",
+    "why_now": "Monday education post highlighting the Mindful Movement pillar to counter all-or-nothing thinking about exercise during the busy holiday season.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "December Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Mon 12/7: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-10-22T05:28:58",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
