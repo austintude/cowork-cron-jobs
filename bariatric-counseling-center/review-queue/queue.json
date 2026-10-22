@@ -4578,7 +4578,7 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:35",
-   "decided": "2026-10-17T07:00:41",
+   "decided": "2026-10-22T07:00:48",
    "note": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)",
    "result": {
     "needs_you": "Read and send the two Gmail drafts to Todd: 'BCC launch plan: one page' first, then 'Overeating, food addiction and going statewide'. Check the dates before sending (Oct 15 Joint Commission line, Oct 16 deadlines).",
@@ -4619,6 +4619,11 @@
        "at": "2026-10-17 07:00",
        "by": "check",
        "text": "Read and send the Gmail draft 'Overeating, food addiction and going statewide'.: not sent, and no longer in your Drafts (deleted?)"
+      },
+      {
+       "at": "2026-10-22 07:00",
+       "by": "check",
+       "text": "Read and send the Gmail draft 'Overeating, food addiction and going statewide'.: sent 2026-10-21 10:22 to Todd McCord <tmccord@bccsanantonio.com>"
       }
      ],
      "steps": [
@@ -4643,8 +4648,11 @@
        },
        "due": "2026-10-16",
        "id": "s2",
-       "status": "gone",
-       "evidence": "not sent, and no longer in your Drafts (deleted?)"
+       "status": "done",
+       "evidence": "sent 2026-10-21 10:22 to Todd McCord <tmccord@bccsanantonio.com>",
+       "done_at": "2026-10-22 07:00",
+       "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a140190ed49d4b5",
+       "via": "checked automatically"
       },
       {
        "owner": "todd",
@@ -4661,7 +4669,7 @@
      ],
      "state": "problem",
      "state_text": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)",
-     "checked_at": "2026-10-21 07:39"
+     "checked_at": "2026-10-22 07:00"
     }
    }
   },
