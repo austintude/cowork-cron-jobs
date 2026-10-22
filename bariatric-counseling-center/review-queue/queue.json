@@ -8645,8 +8645,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-10-10T07:00:25",
-   "decided": "2026-10-21T07:49:55",
-   "note": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.",
+   "decided": "2026-10-22T07:00:45",
+   "note": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)",
    "result": {
     "followup": {
      "trail": [
@@ -8669,6 +8669,11 @@
        "at": "2026-10-21 07:49",
        "by": "claude",
        "text": "Gmail draft from daniel@drbdig.com to Todd: 'Quick check: phone and address on the overeaters page'."
+      },
+      {
+       "at": "2026-10-22 07:00",
+       "by": "check",
+       "text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)"
       }
      ],
      "steps": [
@@ -8687,8 +8692,8 @@
        },
        "due": "2026-10-22",
        "id": "s1",
-       "status": "open",
-       "evidence": "still in your Gmail Drafts, not sent"
+       "status": "gone",
+       "evidence": "not sent, and no longer in your Drafts (deleted?)"
       },
       {
        "owner": "todd",
@@ -8739,9 +8744,9 @@
        "status": "open"
       }
      ],
-     "state": "your_move",
-     "state_text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.",
-     "checked_at": "2026-10-21 07:49"
+     "state": "problem",
+     "state_text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)",
+     "checked_at": "2026-10-22 07:00"
     },
     "needs_you": "Send Todd the Gmail draft 'Quick check: phone and address on the overeaters page' (live page shows (210) 934-3420), then approve the positioning copy in content-drafts/action-items-2026-10-21",
     "needs_since": "2026-10-21"
