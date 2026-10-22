@@ -9991,6 +9991,61 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "25de5b0078",
+   "kind": "social",
+   "key": "social:2026-12-03:LI",
+   "title": "Thu 12/3: Covered under mental health benefits",
+   "why": "December is not planned yet; this keeps the LI cadence going",
+   "payload": {
+    "date": "2026-12-03",
+    "weekday": "Thu",
+    "times": "9:30 AM",
+    "platforms": [
+     "LI"
+    ],
+    "type": "Professionals",
+    "pillar": "Working professionals",
+    "format": "image",
+    "title": "Thu 12/3: Covered under mental health benefits",
+    "purpose": "Patients typically attend for little to no cost (Todd to confirm this line on LinkedIn). Coverage framing.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/program-schedule/",
+    "captions": {
+     "LI": "Most patients attend the Bariatric Counseling Center for little to no cost.\n\nOur intensive outpatient program is processed under mental health benefits and is in-network with most major health insurance plans. Patients on weight loss medications, pre and post bariatric surgery patients, and those seeking standalone behavioral treatment for obesity typically find coverage through their existing plans.\n\nThe program runs about three months and roughly 30 sessions, meeting 2 to 3 times per week. We serve patients in San Antonio and virtual across Texas.\n\nOur Director of Admissions is Leloni Gonzales (lgonzales@bccsanantonio.com and 210-634-2200). She can verify benefits and answer coverage questions.\n\n#BehavioralHealth",
+     "YT": {
+      "title": "",
+      "description": ""
+     }
+    },
+    "on_image": [
+     "Processed under mental health benefits",
+     "In-network with most major plans",
+     "Patients typically attend little to no cost",
+     "San Antonio and virtual across Texas",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Text graphic explaining that the Bariatric Counseling Center accepts most health insurance plans and processes claims under mental health benefits.",
+    "why_now": "December is benefits enrollment season when professionals review their health insurance options for the coming year.",
+    "asset": {
+     "format": "image",
+     "kind": "image",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "December Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Thu 12/3: LI",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-10-22T05:28:50",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
