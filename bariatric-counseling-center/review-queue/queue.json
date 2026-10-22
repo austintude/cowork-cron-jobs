@@ -9816,6 +9816,64 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "e40d19d8a7",
+   "kind": "social",
+   "key": "social:2026-11-30:FB+IG",
+   "title": "Mon 11/30: Why the program cooks",
+   "why": "November is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-11-30",
+    "weekday": "Mon",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Mon 11/30: Why the program cooks",
+    "purpose": "Culinary Classes: the teaching kitchen as instruction, not entertainment. Recipes people can afford and repeat.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "Our teaching kitchen isn't about cooking shows or fancy plating. It's about recipes you can make at home with ingredients you can afford. Our professional chef teaches meal planning and prep that fits into real life, not just special occasions. Culinary Classes is one of four pillars at the Bariatric Counseling Center. Behavioral therapy. Dietary guidance. Culinary classes. Mindful movement. One program, not four. San Antonio and virtual across Texas. Link in the first comment.",
+     "IG": "teaching kitchen san antonio bariatric\n\nOur teaching kitchen isn't about cooking shows or fancy plating. It's about recipes you can make at home with ingredients you can afford.\n\nOur professional chef teaches meal planning and prep that fits into real life, not just special occasions.\n\nCulinary Classes is one of four pillars at the Bariatric Counseling Center. Behavioral therapy. Dietary guidance. Culinary classes. Mindful movement. One program, not four.\n\nSan Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+     "YT": {
+      "title": "Teaching Kitchen: Practical Recipes You Can Afford and Repeat",
+      "description": "Our teaching kitchen isn't about cooking shows or fancy plating. It's about recipes you can make at home with ingredients you can afford. Our professional chef teaches meal planning and prep that fits into real life. Culinary Classes is one of four pillars at the Bariatric Counseling Center in San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Recipes you can make at home",
+     "Ingredients you can afford",
+     "Meal planning for real life",
+     "Our professional chef teaches",
+     "One of four pillars",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Carousel about the teaching kitchen at Bariatric Counseling Center focusing on practical, affordable recipes.",
+    "why_now": "Monday education post explaining the practical purpose of the culinary pillar.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Mon 11/30: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-10-22T05:28:22",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
