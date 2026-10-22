@@ -9760,6 +9760,62 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "0fd33e07e8",
+   "kind": "social",
+   "key": "social:2026-11-26:LI",
+   "title": "Thu 11/26: Lunch at the desk, again",
+   "why": "November is not planned yet; this keeps the LI cadence going",
+   "payload": {
+    "date": "2026-11-26",
+    "weekday": "Thu",
+    "times": "9:30 AM",
+    "platforms": [
+     "LI"
+    ],
+    "type": "Professionals",
+    "pillar": "Working professionals",
+    "format": "image",
+    "title": "Thu 11/26: Lunch at the desk, again",
+    "purpose": "The workday eating pattern, without shame, and what dietary guidance in the program does with it.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/program-schedule/",
+    "captions": {
+     "LI": "You're eating lunch at your desk again.\n\nNot because you planned to. Not because it's the healthier choice. Because that's what the workday asked of you today.\n\nAt the Bariatric Counseling Center, our dietary guidance starts exactly there. Not with a meal plan that pretends your calendar is empty. With the calendar you actually have.\n\nOur registered dietitians work with the rhythm of your real day. The meetings that run long. The commute. The desk lunch. We build nutritional strategies that fit the life you're living, not the one a textbook imagines.\n\nThat's part of what makes this program different. Dietary guidance that meets you where you are. Behavioral therapy that helps you understand your relationship with food. Cooking classes that make planning easier. Mindful movement that fits your schedule. One program, not four.\n\nServing clients in San Antonio and virtual across Texas, the Bariatric Counseling Center offers an Intensive Outpatient Program designed for people who struggle with weight loss, binge eating, and chronic overeating. We're in network with most health insurance plans.\n\nLearn more at bariatriccounselingcenter.com/program-schedule.",
+     "YT": {
+      "title": "",
+      "description": ""
+     }
+    },
+    "on_image": [
+     "Lunch at the desk, again",
+     "Dietary guidance for your real day",
+     "Not a textbook schedule",
+     "Registered dietitians who understand",
+     "San Antonio and virtual across Texas",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "A desk lunch scene with the text 'Dietary guidance for your real day' overlaid.",
+    "why_now": "Posted on Thanksgiving week when many working professionals face disrupted eating schedules and feel guilt about desk meals during a holiday-shortened workweek.",
+    "asset": {
+     "format": "image",
+     "kind": "image",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Thu 11/26: LI",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-10-22T05:28:12",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
