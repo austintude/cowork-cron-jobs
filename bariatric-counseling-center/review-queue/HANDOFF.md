@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-22 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-22 07:23 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -196,8 +196,8 @@ Generated 2026-10-22 07:00 by queue_apply.py. Daniel approved these on the dashb
   - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/
 
 ## Items waiting on Daniel or on Todd/Sara (6): not for Claude, except the Gmail confirmations below.
-- For Overeaters, position us as Professional / Licensed virtual group support covered by health insurance: Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.
-- ARFID - What it is and how it presents: Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.
+- For Overeaters, position us as Professional / Licensed virtual group support covered by health insurance: Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)
+- ARFID - What it is and how it presents: Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.: not sent, and no longer in your Drafts (deleted?)
 - Stress Eating keyword: Read the stress eating brief and choose.
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)
 - Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1: Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.
