@@ -9874,6 +9874,64 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "1efc312364",
+   "kind": "social",
+   "key": "social:2026-12-01:LI+GBP",
+   "title": "Tue 12/1: Referring providers: the coverage question",
+   "why": "December is not planned yet; this keeps the GBP/LI cadence going",
+   "payload": {
+    "date": "2026-12-01",
+    "weekday": "Tue",
+    "times": "LI 11:00 AM, GBP 9:00 AM",
+    "platforms": [
+     "LI",
+     "GBP"
+    ],
+    "type": "Referring Providers: Document Post",
+    "pillar": "Referring providers",
+    "format": "document",
+    "title": "Tue 12/1: Referring providers: the coverage question",
+    "purpose": "We accept most health insurances; claims processed under patients' mental health benefits. The referral objection that is not clinical.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+    "captions": {
+     "LI": "One question comes up in every referring-provider conversation: Will my patient's insurance cover this?\n\nThe Bariatric Counseling Center accepts most health insurances. Claims are processed under patients' mental health benefits.\n\nThe program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nOur team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program.\n\nThe staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef.\n\nBehavioral Therapy & Counseling. Dietary Guidance & Support. Culinary Classes. Mindful Movement. One program, not four.\n\nSan Antonio and virtual across Texas.\n\n#BehavioralHealth",
+     "GBP": "One question comes up in every referring-provider conversation: Will my patient's insurance cover this? The Bariatric Counseling Center accepts most health insurances. Claims are processed under patients' mental health benefits. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four. San Antonio and virtual across Texas.",
+     "YT": {
+      "title": "Insurance Coverage for Behavioral Treatment of Obesity",
+      "description": "One question comes up in every referring-provider conversation: Will my patient's insurance cover this? The Bariatric Counseling Center accepts most health insurances. Claims are processed under patients' mental health benefits. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Will my patient's insurance cover this?",
+     "We accept most health insurances",
+     "Claims processed under mental health benefits",
+     "Standalone or with surgery or medications",
+     "Refer a patient today",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Document explaining that the Bariatric Counseling Center accepts most health insurances with claims processed under mental health benefits.",
+    "why_now": "December is when providers finalize next year's referral networks and patients evaluate new insurance coverage.",
+    "asset": {
+     "format": "document",
+     "kind": "linkedin-document",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "December Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Tue 12/1: LI, GBP",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-10-22T05:28:34",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
