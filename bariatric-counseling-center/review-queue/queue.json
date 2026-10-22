@@ -9645,6 +9645,64 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "06a535439a",
+   "kind": "social",
+   "key": "social:2026-11-24:LI+GBP",
+   "title": "Tue 11/24: Referring providers: weight loss medications and the behavioral half",
+   "why": "November is not planned yet; this keeps the GBP/LI cadence going",
+   "payload": {
+    "date": "2026-11-24",
+    "weekday": "Tue",
+    "times": "LI 11:00 AM, GBP 9:00 AM",
+    "platforms": [
+     "LI",
+     "GBP"
+    ],
+    "type": "Referring Providers: Document Post",
+    "pillar": "Referring providers",
+    "format": "document",
+    "title": "Tue 11/24: Referring providers: weight loss medications and the behavioral half",
+    "purpose": "Patients on weight loss medications (never the drug class abbreviation): the habits that keep the result. Document post.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+    "captions": {
+     "LI": "Patients on weight loss medications often see dramatic physical results, but lasting change requires the behavioral half: the habits, coping skills, and relationship with food that keep the result after treatment.\n\nThe Bariatric Counseling Center provides group and individual therapy, dietary guidance, cooking classes, and movement education in one program. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four.\n\nThe program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Progress notes as requested. Call it two business days.\n\nWe accept most health insurances. Uniquely, the program is in-network with most health insurance plans, and patients typically attend for little to no cost.\n\nOur Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas.\n\n#BehavioralHealth",
+     "GBP": "Patients on weight loss medications often see dramatic physical results, but lasting change requires the behavioral half: the habits, coping skills, and relationship with food that keep the result after treatment. The Bariatric Counseling Center provides behavioral healthcare for obesity in one program. We offer group and individual therapy, dietary guidance, cooking classes, chef-prepared meals, and movement education, led by a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We coordinate care with referring providers and provide discharge summaries. We accept most health insurances. San Antonio and virtual across Texas.",
+     "YT": {
+      "title": "Weight Loss Medications: The Behavioral Half That Lasts",
+      "description": "Patients on weight loss medications often see dramatic physical results, but lasting change requires the behavioral half: the habits, coping skills, and relationship with food that keep the result after treatment. The Bariatric Counseling Center provides group and individual therapy, dietary guidance, cooking classes, and movement education in one program, led by a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Weight loss medications: the behavioral half",
+     "The habits that keep the result",
+     "Therapy, nutrition, cooking, movement",
+     "One program, not four",
+     "Refer a patient today",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Document post explaining that patients on weight loss medications benefit from behavioral support to maintain lasting results.",
+    "why_now": "Posted before Thanksgiving week to give referring providers a resource for patients seeking behavioral support alongside medical weight loss treatment.",
+    "asset": {
+     "format": "document",
+     "kind": "linkedin-document",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Tue 11/24: LI, GBP",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-10-22T05:27:50",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
