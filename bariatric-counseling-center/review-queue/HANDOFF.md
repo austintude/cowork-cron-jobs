@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-21 07:50 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-22 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -210,7 +210,7 @@ Generated 2026-10-21 07:50 by queue_apply.py. Daniel approved these on the dashb
   - asset: reel https://drive.google.com/drive/folders/1Oxs1OVu05rvOABXKa392DZ6wSSeEZPA3
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/
 
-## Draft day: Wednesday. Today is Wednesday: DRAFT DAY, put every built post below into one Gmail draft to Todd (stage 1, step 5).
+## Draft day: Wednesday. Today is Thursday, not draft day: build only, no email to Todd.
 
 ## Social posts with Todd (13): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
