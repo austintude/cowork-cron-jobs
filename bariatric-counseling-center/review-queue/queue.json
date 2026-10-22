@@ -9932,6 +9932,65 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "dd62516312",
+   "kind": "social",
+   "key": "social:2026-12-02:FB+IG",
+   "title": "Wed 12/2: Did You Know? The four pillars",
+   "why": "December is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-12-02",
+    "weekday": "Wed",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Did You Know?",
+    "pillar": "Program facts",
+    "format": "carousel",
+    "title": "Wed 12/2: Did You Know? The four pillars",
+    "purpose": "Behavioral Therapy & Counseling. Dietary Guidance & Support. Culinary Classes. Mindful Movement. One program, not four. Carousel, one pillar per slide.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/details/",
+    "captions": {
+     "FB": "Many people don't realize that comprehensive behavioral healthcare for obesity brings together four essential pillars under one roof. At the Bariatric Counseling Center, we provide Behavioral Therapy & Counseling, Dietary Guidance & Support, Culinary Classes, and Mindful Movement in a unique, all-inclusive format. One program, not four. Our experienced and compassionate team of behavioral healthcare professionals works with clients both onsite in San Antonio and virtually across Texas. This integrated approach means you get the support you need without juggling multiple appointments or referrals. Link in the first comment.",
+     "IG": "Comprehensive behavioral healthcare for obesity\n\nAt the Bariatric Counseling Center, we bring together four essential pillars: Behavioral Therapy & Counseling, Dietary Guidance & Support, Culinary Classes, and Mindful Movement. One program, not four. Our team of behavioral healthcare professionals provides group and individual therapy, dietary guidance, cooking classes, chef-prepared meals, mindful eating and movement education in a unique, all-inclusive format. Serving clients in San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+     "YT": {
+      "title": "Four Pillars of Behavioral Healthcare for Obesity",
+      "description": "The Bariatric Counseling Center provides comprehensive behavioral healthcare through four integrated pillars: Behavioral Therapy & Counseling, Dietary Guidance & Support, Culinary Classes, and Mindful Movement. One program, not four. Our experienced team of behavioral healthcare professionals serves clients in San Antonio and virtually across Texas. Learn more at bariatriccounselingcenter.com."
+     }
+    },
+    "on_image": [
+     "Four essential pillars",
+     "Behavioral Therapy & Counseling",
+     "Dietary Guidance & Support",
+     "Culinary Classes",
+     "Mindful Movement",
+     "One program, not four",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Carousel showing the four pillars of comprehensive behavioral healthcare for obesity at the Bariatric Counseling Center.",
+    "why_now": "Educational post explaining the integrated four-pillar approach that differentiates the program from fragmented referrals.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "December Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Wed 12/2: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-10-22T05:28:43",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
