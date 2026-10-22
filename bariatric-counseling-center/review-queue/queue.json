@@ -9703,6 +9703,63 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "cfb175cde7",
+   "kind": "social",
+   "key": "social:2026-11-25:FB+IG",
+   "title": "Wed 11/25: Alumni words: every story matters here",
+   "why": "November is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-11-25",
+    "weekday": "Wed",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Alumni Words: Written Testimonial",
+    "pillar": "Proof",
+    "format": "carousel",
+    "title": "Wed 11/25: Alumni words: every story matters here",
+    "purpose": "Gerry M., BCC Alumnus, on the community. Quote card.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
+    "captions": {
+     "FB": "\"I've never been in a group where everyone's story mattered so much. We really listened to each other.\" That's Gerry M., BCC Alumnus, talking about the community that forms when people commit to showing up for themselves and each other.\n\nAt the Bariatric Counseling Center, group therapy is more than scheduled sessions. It's a space where people who understand the struggle create something together: trust, accountability, and the kind of support that lasts beyond the program.\n\nEvery story matters here. San Antonio and virtual across Texas.\n\nLink in the first comment.",
+     "IG": "bariatric counseling community support\n\n\"I've never been in a group where everyone's story mattered so much. We really listened to each other.\" Gerry M., BCC Alumnus.\n\nAt the Bariatric Counseling Center, group therapy is more than scheduled sessions. It's a space where people who understand the struggle create something together: trust, accountability, and the kind of support that lasts beyond the program.\n\nEvery story matters here. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+     "YT": {
+      "title": "",
+      "description": ""
+     }
+    },
+    "on_image": [
+     "\"Everyone's story mattered so much.\"",
+     "We really listened to each other.",
+     ", Gerry M., BCC Alumnus",
+     "Every story matters here.",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Testimonial quote card from Gerry M., BCC Alumnus, about the supportive group therapy community at Bariatric Counseling Center.",
+    "why_now": "Pre-Thanksgiving post highlighting community and belonging as people gather with family during the holiday week.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "November Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Wed 11/25: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-10-22T05:27:59",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
