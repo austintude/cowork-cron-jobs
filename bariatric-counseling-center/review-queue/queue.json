@@ -5719,13 +5719,11 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A69"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "applied",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-10-21T07:00:45",
-   "note": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
+   "decided": "2026-10-23T11:45:22",
+   "note": "done",
    "result": {
-    "needs_you": "Already on staging14. Sara replied: Oct 5 OK except point 3 (reword as binge eating returning when food noise comes back after stopping the medication); Oct 14 she asked for the article in an editable format. Send her an editable copy.",
-    "needs_since": "2026-09-25",
     "followup": {
      "trail": [
       {
@@ -5777,6 +5775,11 @@
        "at": "2026-10-21 07:00",
        "by": "check",
        "text": "Sara returns her edits.: Todd McCord replied 2026-10-20 14:53: \"Daniel, re number of sessions, doesn&#39;t have to be the exact same. Edit below reads well, and what it currently says on the website is fine. It is not an abs\""
+      },
+      {
+       "at": "2026-10-23 11:45",
+       "by": "daniel",
+       "text": "Resolved as complete: the article is live and indexable on production (post 6664). Queue status set to applied to match."
       }
      ],
      "steps": [
@@ -5830,7 +5833,21 @@
      "state": "your_move",
      "state_text": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
      "checked_at": "2026-10-23 07:01"
+    },
+    "done": "2026-10-23",
+    "done_by": "Daniel: resolved as complete 2026-10-23 (article live and indexable on production, post 6664 /eating-disorders/binge-eating-treatment-by-telehealth/; Sara Oct 5 point-3 reword applied; Todd Oct 20 OK on sessions wording)",
+    "production": {
+     "post_id": 6664,
+     "url": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-treatment-by-telehealth/",
+     "robots": "index, follow",
+     "live_since": "2026-10-08",
+     "wording_refresh": "2026-10-23"
     }
+   },
+   "check": {
+    "at": "2026-10-23T11:45:22",
+    "level": "done",
+    "text": "Daniel: resolved as complete 2026-10-23 (article live and indexable on production, post 6664 /eating-disorders/binge-eating-treatment-by-telehealth/; Sara Oct 5 point-3 reword applied; Todd Oct 20 OK on sessions wording)"
    }
   },
   {
