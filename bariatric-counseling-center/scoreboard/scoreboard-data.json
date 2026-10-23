@@ -16040,7 +16040,7 @@
                   ],
                   "state": "problem",
                   "state_text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-10-22 07:26"
+                  "checked_at": "2026-10-23 07:01"
                 },
                 "needs_you": "Send Todd the Gmail draft 'Quick check: phone and address on the overeaters page' (live page shows (210) 934-3420), then approve the positioning copy in content-drafts/action-items-2026-10-21",
                 "needs_since": "2026-10-21"
@@ -16167,7 +16167,7 @@
                   ],
                   "state": "problem",
                   "state_text": "Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-10-22 07:26"
+                  "checked_at": "2026-10-23 07:01"
                 },
                 "needs_you": "Send Sara the ARFID article for her edits: Gmail draft 'ARFID article for your edits: what it is and how it presents' (article in content-drafts/action-items-2026-10-21)",
                 "needs_since": "2026-10-21"
@@ -16252,7 +16252,7 @@
                   ],
                   "state": "your_move",
                   "state_text": "Read the stress eating brief and choose.",
-                  "checked_at": "2026-10-22 07:26"
+                  "checked_at": "2026-10-23 07:01"
                 },
                 "needs_you": "Stress eating is now tracked; read the brief (content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md) and say whether to place the new copy on staging14",
                 "needs_since": "2026-10-21"
@@ -16349,7 +16349,7 @@
                   ],
                   "state": "problem",
                   "state_text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-10-22 07:26"
+                  "checked_at": "2026-10-23 07:01"
                 }
               }
             },
@@ -16480,7 +16480,7 @@
                   ],
                   "state": "your_move",
                   "state_text": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
-                  "checked_at": "2026-10-22 07:26"
+                  "checked_at": "2026-10-23 07:01"
                 }
               }
             },
@@ -16503,8 +16503,8 @@
               "source": "action-items",
               "status": "needs",
               "created": "2026-09-24T12:23:35",
-              "decided": "2026-10-22T07:00:48",
-              "note": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)",
+              "decided": "2026-10-23T07:01:10",
+              "note": "Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.",
               "result": {
                 "needs_you": "Read and send the two Gmail drafts to Todd: 'BCC launch plan: one page' first, then 'Overeating, food addiction and going statewide'. Check the dates before sending (Oct 15 Joint Commission line, Oct 16 deadlines).",
                 "needs_since": "2026-09-25",
@@ -16549,6 +16549,11 @@
                       "at": "2026-10-22 07:00",
                       "by": "check",
                       "text": "Read and send the Gmail draft 'Overeating, food addiction and going statewide'.: sent 2026-10-21 10:22 to Todd McCord <tmccord@bccsanantonio.com>"
+                    },
+                    {
+                      "at": "2026-10-23 07:01",
+                      "by": "check",
+                      "text": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: sent 2026-10-22 09:09 to Todd McCord <tmccord@bccsanantonio.com>"
                     }
                   ],
                   "steps": [
@@ -16561,8 +16566,11 @@
                       },
                       "due": "2026-10-16",
                       "id": "s1",
-                      "status": "gone",
-                      "evidence": "not sent, and no longer in your Drafts (deleted?)"
+                      "status": "done",
+                      "evidence": "sent 2026-10-22 09:09 to Todd McCord <tmccord@bccsanantonio.com>",
+                      "done_at": "2026-10-23 07:01",
+                      "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a14018e6b78cf87",
+                      "via": "checked automatically"
                     },
                     {
                       "owner": "daniel",
@@ -16592,9 +16600,9 @@
                       "evidence": "no reply yet"
                     }
                   ],
-                  "state": "problem",
-                  "state_text": "Read and send the Gmail draft 'BCC launch plan: one page' (check the Oct 15 and Oct 16 dates first).: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-10-22 07:26"
+                  "state": "waiting",
+                  "state_text": "Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.",
+                  "checked_at": "2026-10-23 07:01"
                 }
               }
             }
@@ -24051,22 +24059,187 @@
       "model": {
         "connected": true,
         "data": {
-          "fetched": "2026-10-22",
+          "fetched": "2026-10-23",
           "site": "https://www.bariatriccounselingcenter.com/",
           "window_days": 28,
           "errors": [
             "GetRankAndTrafficStats: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
-            "GetQueryStats: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
-            "GetPageStats: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
             "GetCrawlStats: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
           ],
           "summary": {
             "clicks": 0,
             "impressions": 0,
-            "avg_position": null
+            "avg_position": 4.6
           },
-          "top_queries": [],
-          "top_pages": [],
+          "top_queries": [
+            {
+              "query": "518493746 bariatric counseling sara hamilton 9618 huebner rd ste 320 san antonio tx 2106342200",
+              "clicks": 2,
+              "impressions": 2,
+              "position": 3.0
+            },
+            {
+              "query": "the bariatric counseling center intensive out patient program",
+              "clicks": 2,
+              "impressions": 1,
+              "position": 1.0
+            },
+            {
+              "query": "518493746 bariatric counseling 9618 huebner rd ste 320 san antonio tx 2106342200 email id",
+              "clicks": 1,
+              "impressions": 2,
+              "position": 2.0
+            },
+            {
+              "query": "weight loss iop san antonio locations",
+              "clicks": 1,
+              "impressions": 2,
+              "position": 9.0
+            },
+            {
+              "query": "518493746 bariatric counseling 9618 huebner rd ste 320 san antonio tx 2106342200 fax number",
+              "clicks": 1,
+              "impressions": 1,
+              "position": 1.0
+            },
+            {
+              "query": "staying hydrated while cutting weight",
+              "clicks": 1,
+              "impressions": 1,
+              "position": 3.0
+            },
+            {
+              "query": "weight loss surgery mental health preparation",
+              "clicks": 1,
+              "impressions": 1,
+              "position": 1.0
+            },
+            {
+              "query": "emotionally preparing for bariatric surgery",
+              "clicks": 1,
+              "impressions": 1,
+              "position": 1.0
+            },
+            {
+              "query": "am i mentally ready for gastric bypass surgery",
+              "clicks": 1,
+              "impressions": 1,
+              "position": 1.0
+            },
+            {
+              "query": "bariatric counseling center of san antonio",
+              "clicks": 0,
+              "impressions": 26,
+              "position": 2.0
+            },
+            {
+              "query": "bcc",
+              "clicks": 0,
+              "impressions": 17,
+              "position": 3.6
+            },
+            {
+              "query": "dehydrating yourself is a good way to loss weight? true false",
+              "clicks": 0,
+              "impressions": 6,
+              "position": 8.0
+            },
+            {
+              "query": "bcc san antonio",
+              "clicks": 0,
+              "impressions": 4,
+              "position": 3.5
+            },
+            {
+              "query": "weight loss clinic blog topics family support",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 6.0
+            },
+            {
+              "query": "bcc counseling",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 2.0
+            }
+          ],
+          "top_pages": [
+            {
+              "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/preparing-for-bariatric-surgery-a-mental-health-checklist/",
+              "clicks": 3,
+              "impressions": 6
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/",
+              "clicks": 2,
+              "impressions": 31
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
+              "clicks": 2,
+              "impressions": 9
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
+              "clicks": 1,
+              "impressions": 75
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/",
+              "clicks": 1,
+              "impressions": 6
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/eating-disorder-treatment-in-san-antonio-tx/",
+              "clicks": 1,
+              "impressions": 3
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/staff/dr-sara-hamilton-a-holistic-approach-to-weight-loss/",
+              "clicks": 1,
+              "impressions": 1
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/about/",
+              "clicks": 0,
+              "impressions": 11
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/weight-loss-journey/how-family-support-impacts-weight-loss-a-guide-for-loved-ones/",
+              "clicks": 0,
+              "impressions": 7
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/",
+              "clicks": 0,
+              "impressions": 6
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
+              "clicks": 0,
+              "impressions": 4
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
+              "clicks": 0,
+              "impressions": 3
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/why-stress-eating-happens/",
+              "clicks": 0,
+              "impressions": 3
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/dietitian-vs-nutritionist-for-weight-loss-whats-the-difference/",
+              "clicks": 0,
+              "impressions": 3
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/registered-dietitian-in-san-antonio-tx/",
+              "clicks": 0,
+              "impressions": 2
+            }
+          ],
           "daily": [],
           "crawl": {
             "as_of": null,
@@ -24341,53 +24514,149 @@
       "model": {
         "pending": [
           {
-            "id": "oct-r28-20261022105041",
+            "id": "oct-r33-20261022113723",
             "month": "October",
-            "row": 28,
-            "title": "Food Friday: Dish of the Week",
-            "when": "Fri 10/23",
+            "row": 33,
+            "title": "Professionals: Halloween Week",
+            "when": "Thu 10/29",
             "platforms": [
-              "FB",
-              "IG",
-              "YT"
+              "LI"
             ],
             "affected": [
-              "FB",
-              "IG",
-              "YT"
+              "LI"
             ],
             "status": "ready",
             "kinds": [
               "edit"
             ],
-            "detected": "2026-10-22T10:50:41",
-            "updated": "2026-10-22T10:50:55",
+            "detected": "2026-10-22T11:37:23",
+            "updated": "2026-10-22T11:37:26",
             "initial": {
-              "C": "Fri 10/23: FB, IG",
-              "D": "FB 12:00 PM\nIG 6:00 PM",
-              "F": "Dish of the week. Comfort food done properly, the week before Halloween, with a technique that makes the plate taste like more than it is.",
-              "G": "Food Friday with Chef Leila. This week: Salisbury Steak with Mushroom Gravy.\n\nBuild the gravy in the pan you cooked in. The browned bits left behind are the flavor, and once you lift them off the pan you need far less of everything else to make the plate taste amazing.\n\nSmall skill, large difference.",
-              "H": "Salisbury Steak with Mushroom Gravy, from the teaching kitchen.\n\nThe technique worth keeping: build the gravy in the pan you cooked in. Those browned bits are the flavor.\n\nFood Friday with Chef Leila at the Bariatric Counseling Center.\n\n#FoodFriday #CookingSkills #TeachingKitchen #BariatricCounseling",
-              "I": "not applicable",
+              "C": "Thu 10/29: LI",
+              "D": "LI 9:30 AM",
+              "F": "Same subject for a workplace audience: the office candy bowl.",
+              "G": "not applicable",
+              "H": "not applicable",
+              "I": "The office candy bowl is not a character test.\n\nEvery October it fills up, and for a few weeks a lot of capable people run a private tally at their desks: \"Walked past it twice: good. Took three on a deadline: bad\". By Friday the tally has turned into a self-shaming verdict: \"Guilty\".\n\nThe candy is not the interesting part. The interesting part is what the afternoon was like when the hand went into the bowl. Tired, behind, under pressure, unfed since 7 a.m. That is information, and it is far more useful than a verdict.\n\nMost of what we teach at the Bariatric Counseling Center starts there: noticing what the urge is responding to, and answering that instead.",
               "J": "not applicable",
               "K": "not applicable",
               "L": "not applicable",
-              "M": "FB: post the image, put the link in the FIRST COMMENT. Comment links are exempt from Meta's 2-link-a-month test for Pages, so this keeps the quota free. Link: bariatriccounselingcenter.com/recipes/\nIG: link in bio (bcctx.link/start). Caption links are not tappable.\nCard: slide 3 carries bariatriccounselingcenter.com/recipes.",
-              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1y_Y0H9w4xLQeRmd4vF1FHE76ln2ipGVJ\",1)",
-              "O": "ASSETS (built 2026-09-18). The image above is oct23-foodfriday-01-feed.png.\n  Instagram + Facebook carousel, 3 slides 1080x1350: oct23-foodfriday-01-feed.png to oct23-foodfriday-03-feed.png\nAll October files: https://drive.google.com/drive/folders/1XujWCAggxk0h6BYvncHp7Sa2Y0JGn87k\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\oct\\cards\\render\\png\n\nDish photo is a frame from BCC's own teaching kitchen footage (social\\video\\raw\\Salisbury Steak with Mushroom Gravy.mov).\nAlt text: Salisbury steak with mushroom gravy plated in the teaching kitchen at the Bariatric Counseling Center.",
+              "M": "LI: paste bcctx.link/start so the preview card loads, then delete the URL out of the body. Company-page link posts test well (Metricool 2026).",
+              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1FMwSMmlUj95LIdeGS_XV1Yzbw6kOUdw4\",1)",
+              "O": "ASSETS (built 2026-09-18). The image above is oct29-candy-li-01-linkedin.png.\n  LinkedIn 1200x627: oct29-candy-li-01-linkedin.png\nAll October files: https://drive.google.com/drive/folders/1XujWCAggxk0h6BYvncHp7Sa2Y0JGn87k\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\oct\\cards\\render\\png\n\nBuilds on the August 'the urge is information' card.\nAlt text: Text graphic reading 'The office candy bowl is not a character test' from the Bariatric Counseling Center.",
               "P": "",
               "Q": "",
               "A": "FALSE"
             },
             "todd": {
               "cells": {
-                "C": {
-                  "before": "Fri 10/23: FB, IG",
-                  "after": "Fri 10/23: FB, IG, YT"
-                },
-                "D": {
-                  "before": "FB 12:00 PM\nIG 6:00 PM",
-                  "after": "FB 12:00 PM (carousel)\nIG 6:00 PM (carousel)\nFB 3:00 PM (reel)\nIG 3:00 PM (reel)\nYT 3:00 PM (reel)"
+                "I": {
+                  "before": "The office candy bowl is not a character test.\n\nEvery October it fills up, and for a few weeks a lot of capable people run a private tally at their desks: \"Walked past it twice: good. Took three on a deadline: bad\". By Friday the tally has turned into a self-shaming verdict: \"Guilty\".\n\nThe candy is not the interesting part. The interesting part is what the afternoon was like when the hand went into the bowl. Tired, behind, under pressure, unfed since 7 a.m. That is information, and it is far more useful than a verdict.\n\nMost of what we teach at the Bariatric Counseling Center starts there: noticing what the urge is responding to, and answering that instead.",
+                  "after": "The office candy bowl is not a character test.\n\nEvery October it fills up, and for a few weeks a lot of capable people run a private tally at their desks: \"Walked past it twice: good. Took three on a deadline: bad\". By Friday the tally has turned into a self-shaming verdict: \"Guilty\".\n\nThe candy is not the interesting part. The interesting part is what the afternoon was like when the hand went into the bowl. Tired, behind, under pressure, unfed since 7 a.m. That is information, and it is far more useful than a verdict.\n\nMost of what we teach at the Bariatric Counseling Center starts there: noticing what the urge is responding to, and answering that instead.\n\nOur program is in network with most health insurances."
+                }
+              },
+              "ok": null,
+              "notes": ""
+            },
+            "final": {
+              "ready": true,
+              "by": "cell edit",
+              "channels": {
+                "LI": {
+                  "text": "The office candy bowl is not a character test.\n\nEvery October it fills up, and for a few weeks a lot of capable people run a private tally at their desks: \"Walked past it twice: good. Took three on a deadline: bad\". By Friday the tally has turned into a self-shaming verdict: \"Guilty\".\n\nThe candy is not the interesting part. The interesting part is what the afternoon was like when the hand went into the bowl. Tired, behind, under pressure, unfed since 7 a.m. That is information, and it is far more useful than a verdict.\n\nMost of what we teach at the Bariatric Counseling Center starts there: noticing what the urge is responding to, and answering that instead.\n\nOur program is in network with most health insurances."
+                }
+              },
+              "media": null,
+              "link": null
+            },
+            "scheduler": {
+              "LI": {
+                "tool": "publer",
+                "state": "manual_hold",
+                "detail": "could not hold it in Publer (DELETE /posts/6ac7f6a2382e667d884bca4d -> HTTP 404\n{\"status\":404,\"error\":\"Not Found\"}). Move it to Draft in Publer by hand."
+              }
+            },
+            "history": [
+              {
+                "at": "2026-10-22T11:37:23",
+                "who": "sheet",
+                "what": "changed LinkedIn caption (I)"
+              },
+              {
+                "at": "2026-10-22T11:37:25",
+                "who": "system",
+                "what": "minor edit: LI: Publer update failed (DELETE /posts/6ac7f6a2382e667d884bca4d -> HTTP 404\n{\"status\":404,\"error\":\"Not Found\"})"
+              },
+              {
+                "at": "2026-10-22T11:37:26",
+                "who": "system",
+                "what": "hold: LI manual_hold"
+              }
+            ],
+            "notified": true,
+            "seen": {
+              "C": "1835ccbd4e82",
+              "D": "765b516f942c",
+              "F": "9e949557f44c",
+              "G": "b4d1e1bdf71f",
+              "H": "b4d1e1bdf71f",
+              "I": "8e1d2acd5e89",
+              "J": "b4d1e1bdf71f",
+              "K": "b4d1e1bdf71f",
+              "L": "b4d1e1bdf71f",
+              "M": "99320b9bb872",
+              "N": "c4faea231174",
+              "O": "9dc6328ab79f",
+              "P": "da39a3ee5e6b",
+              "Q": "da39a3ee5e6b"
+            },
+            "minor": [
+              "LI: Publer update failed (DELETE /posts/6ac7f6a2382e667d884bca4d -> HTTP 404\n{\"status\":404,\"error\":\"Not Found\"})"
+            ]
+          }
+        ],
+        "closed": [
+          {
+            "id": "nov-r13-20261022165048",
+            "month": "November",
+            "row": 13,
+            "title": "Education",
+            "when": "Mon 11/9",
+            "platforms": [
+              "FB",
+              "IG"
+            ],
+            "affected": [
+              "FB"
+            ],
+            "status": "done",
+            "kinds": [
+              "edit"
+            ],
+            "detected": "2026-10-22T16:50:48",
+            "updated": "2026-10-22T16:50:50",
+            "initial": {
+              "C": "Mon 11/9: FB, IG",
+              "D": "FB 10:30 AM\nIG 12:15 PM",
+              "F": "Grocery Store Tours: what the dietitians look at with clients in the aisles and why it changes the week.",
+              "G": "Grocery Store Tours at the Bariatric Counseling Center aren't just about finding healthier foods. Our registered dietitians walk the aisles with clients, practicing real-world skills that make the rest of the week easier. You learn how to read labels, compare options, and plan meals without feeling overwhelmed. It's one session that changes how you approach every shopping trip after. We provide group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas. One program, not four. Link in the first comment.",
+              "H": "Grocery store tours with registered dietitians\n\nAt the Bariatric Counseling Center, Grocery Store Tours are hands-on sessions where our registered dietitians walk the aisles with clients. You practice reading labels, comparing options, and planning meals in the moment. It's not about memorizing rules. It's about building confidence for every trip after that one. Our program includes group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport #MindfulRecovery #SanAntonio",
+              "I": "not applicable",
+              "J": "not applicable",
+              "K": "not applicable",
+              "L": "not applicable",
+              "M": "FB: post the carousel, put the link in the FIRST COMMENT. Comment links are exempt from Meta's 2-link-a-month test for Pages, so this keeps the quota free. Link: bariatriccounselingcenter.com/ourprogram/\nIG: link in bio (bcctx.link/start). Caption links are not tappable.\nCard: the last slide carries bariatriccounselingcenter.com/ourprogram.",
+              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1h85HRWbxw73k03QT0as7QPc_Od2UtYZh\")",
+              "O": "ASSETS (built 2026-10-21). The image above is nov09-grocery-01-feed.png.\n  Instagram + Facebook carousel, 5 slides 1080x1350: nov09-grocery-01-feed.png, nov09-grocery-02-feed.png, nov09-grocery-03-feed.png, nov09-grocery-04-feed.png, nov09-grocery-05-feed.png\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Carousel post explaining how grocery store tours with registered dietitians help clients practice meal planning and label reading in real time.",
+              "P": "FALSE",
+              "Q": "",
+              "A": "FALSE"
+            },
+            "todd": {
+              "cells": {
+                "G": {
+                  "before": "Grocery Store Tours at the Bariatric Counseling Center aren't just about finding healthier foods. Our registered dietitians walk the aisles with clients, practicing real-world skills that make the rest of the week easier. You learn how to read labels, compare options, and plan meals without feeling overwhelmed. It's one session that changes how you approach every shopping trip after. We provide group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas. One program, not four. Link in the first comment.",
+                  "after": "Grocery Store Tours at the Bariatric Counseling Center aren't just about finding healthier foods. Our registered dietitians walk the aisles with clients, practicing real-world skills that make the rest of the week easier. You learn how to read labels, compare options, and plan meals without feeling overwhelmed. It's one session that changes how you approach every shopping trip after. We provide group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtually across Texas. One program, not four. Link in the first comment."
                 }
               },
               "ok": null,
@@ -24398,73 +24667,52 @@
               "by": "cell edit",
               "channels": {
                 "FB": {
-                  "text": "Food Friday with Chef Leila. This week: Salisbury Steak with Mushroom Gravy.\n\nBuild the gravy in the pan you cooked in. The browned bits left behind are the flavor, and once you lift them off the pan you need far less of everything else to make the plate taste amazing.\n\nSmall skill, large difference."
-                },
-                "IG": {
-                  "text": "Salisbury Steak with Mushroom Gravy, from the teaching kitchen.\n\nThe technique worth keeping: build the gravy in the pan you cooked in. Those browned bits are the flavor.\n\nFood Friday with Chef Leila at the Bariatric Counseling Center.\n\n#FoodFriday #CookingSkills #TeachingKitchen #BariatricCounseling"
-                },
-                "YT": {
-                  "text": "not applicable"
+                  "text": "Grocery Store Tours at the Bariatric Counseling Center aren't just about finding healthier foods. Our registered dietitians walk the aisles with clients, practicing real-world skills that make the rest of the week easier. You learn how to read labels, compare options, and plan meals without feeling overwhelmed. It's one session that changes how you approach every shopping trip after. We provide group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtually across Texas. One program, not four. Link in the first comment."
                 }
               },
               "media": null,
               "link": null
             },
-            "scheduler": {
-              "FB": {
-                "tool": "postiz",
-                "state": "held",
-                "detail": "scheduled post cmvgmtak90006ny815vybs390 -> draft cmvjpx14h000eny81hdyupuj3"
-              },
-              "IG": {
-                "tool": "postiz",
-                "state": "held",
-                "detail": "scheduled post cmvgmtds10008ny810635geia -> draft cmvjpx4d1000gny8186s37wtw"
-              },
-              "YT": {
-                "tool": "postiz",
-                "state": "manual_hold",
-                "detail": "Not in the Postiz state file (booked another way). Move it to draft in Postiz by hand."
-              }
-            },
+            "scheduler": {},
             "history": [
               {
-                "at": "2026-10-22T10:50:41",
-                "who": "laustintransl8n@gmail.com",
-                "what": "changed Date and platforms (C), Time (D)"
+                "at": "2026-10-22T16:50:48",
+                "who": "sheet",
+                "what": "changed FB caption (G)"
               },
               {
-                "at": "2026-10-22T10:50:55",
+                "at": "2026-10-22T16:50:50",
                 "who": "system",
-                "what": "hold: FB held, IG held, YT manual_hold"
+                "what": "minor edit: FB: not booked by the sheet tool; TO DO, update it in Postiz by hand"
               }
             ],
-            "notified": false,
+            "notified": true,
             "seen": {
-              "C": "3f85c0cd97b2",
-              "D": "38520a3336b6",
-              "F": "ce3695850989",
-              "G": "9eb3d4c9f210",
-              "H": "62e3891f4866",
+              "C": "8aabc8685944",
+              "D": "53998f6f5050",
+              "F": "9799e3d66ac9",
+              "G": "bdbd20afc51d",
+              "H": "a0ec369ef7ca",
               "I": "b4d1e1bdf71f",
               "J": "b4d1e1bdf71f",
               "K": "b4d1e1bdf71f",
               "L": "b4d1e1bdf71f",
-              "M": "ef0df284133c",
-              "N": "f7ce6168baf2",
-              "O": "2a1b096a44c9",
-              "P": "da39a3ee5e6b",
+              "M": "0977ae4fff4a",
+              "N": "a358a601a47c",
+              "O": "0429693d1c08",
+              "P": "0ed2d7b5cdb7",
               "Q": "da39a3ee5e6b"
-            }
-          }
-        ],
-        "closed": [
+            },
+            "minor": [
+              "FB: not booked by the sheet tool; TO DO, update it in Postiz by hand"
+            ]
+          },
           {
-            "id": "oct-r27-20261022105139",
-            "month": "October",
-            "row": 27,
-            "title": "Professionals: Holiday Season",
-            "when": "Thu 10/22",
+            "id": "nov-r12-20261022165021",
+            "month": "November",
+            "row": 12,
+            "title": "Professionals",
+            "when": "Thu 11/5",
             "platforms": [
               "LI"
             ],
@@ -24475,30 +24723,30 @@
             "kinds": [
               "edit"
             ],
-            "detected": "2026-10-22T10:51:39",
-            "updated": "2026-10-22T10:51:42",
+            "detected": "2026-10-22T16:50:21",
+            "updated": "2026-10-22T16:50:23",
             "initial": {
-              "C": "Thu 10/22: LI",
+              "C": "Thu 11/5: LI",
               "D": "LI 9:30 AM",
-              "F": "Holiday theme for working professionals: Q4 workload plus the holiday calendar is when 'I'll deal with it in January' takes hold.",
+              "F": "Evening 5:30 to 8:30, Monday to Thursday, Zoom or onsite. For people who cannot take the middle of the day.",
               "G": "not applicable",
               "H": "not applicable",
-              "I": "The fourth quarter is when busy people decide to deal with their health in January.\n\nIt makes sense on paper. Year end deadlines, travel, school events and a holiday calendar that starts in October leave no room for anything new. So the plan becomes: push through, start over on the 1st.\n\nThe trouble is what ten weeks of pushing through costs. Stress eating, skipped meals that turn into large evenings, and a January that starts further back than October did.\n\nStarting smaller works better than starting later. One fixed meal a day. One boundary around the office food. One conversation with someone qualified to help.\n\nOur program is available virtually throughout Texas, with morning, evening and Saturday tracks built for people who work.",
+              "I": "Evening sessions at the Bariatric Counseling Center run Monday through Thursday, 5:30 to 8:30 p.m., both onsite and virtually. This track is designed for people who work during the day and need care that fits around their schedule. The program provides group and individual therapy, dietary guidance, cooking classes and movement education in one integrated format. It is led by a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four. Patients typically attend for little to no cost. San Antonio and virtual across Texas. Learn more at bariatriccounselingcenter.com.\n\n#BehavioralHealth",
               "J": "not applicable",
               "K": "not applicable",
               "L": "not applicable",
-              "M": "LI: paste bariatriccounselingcenter.com/ourprogram/details/ so the preview card loads, then delete the URL out of the body. Company-page link posts test well (Metricool 2026).",
-              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1l1bhbYAWpGigfLFEbO9Vl_I-iZ_4YJxR\",1)",
-              "O": "ASSETS (built 2026-09-18). The image above is oct22-holiday-li-01-linkedin.png.\n  LinkedIn 1200x627: oct22-holiday-li-01-linkedin.png\nAll October files: https://drive.google.com/drive/folders/1XujWCAggxk0h6BYvncHp7Sa2Y0JGn87k\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\oct\\cards\\render\\png\n\nTrack times are from the program schedule page.\nAlt text: Text graphic reading 'Starting smaller works better than starting later' from the Bariatric Counseling Center.",
-              "P": "",
+              "M": "LI: post the 1200x627 card and put the link in the first comment: bariatriccounselingcenter.com/program-schedule/\nCard: footer carries bariatriccounselingcenter.com.",
+              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1JxnDkH7q3sJJ46cSaMyO5hBbe_5DzaEs\")",
+              "O": "ASSETS (built 2026-10-21). The image above is nov05-evening-li-01-linkedin.png.\n  LinkedIn card 1200x627: nov05-evening-li-01-linkedin.png, Drive: https://drive.google.com/file/d/1JxnDkH7q3sJJ46cSaMyO5hBbe_5DzaEs/view\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Evening programming schedule for the Bariatric Counseling Center's intensive outpatient program in San Antonio, Texas.",
+              "P": "FALSE",
               "Q": "",
               "A": "FALSE"
             },
             "todd": {
               "cells": {
                 "I": {
-                  "before": "The fourth quarter is when busy people decide to deal with their health in January.\n\nIt makes sense on paper. Year end deadlines, travel, school events and a holiday calendar that starts in October leave no room for anything new. So the plan becomes: push through, start over on the 1st.\n\nThe trouble is what ten weeks of pushing through costs. Stress eating, skipped meals that turn into large evenings, and a January that starts further back than October did.\n\nStarting smaller works better than starting later. One fixed meal a day. One boundary around the office food. One conversation with someone qualified to help.\n\nOur program is available virtually throughout Texas, with morning, evening and Saturday tracks built for people who work.",
-                  "after": "The fourth quarter is when busy people decide to deal with their health in January.\n\nIt makes sense on paper. Year end deadlines, travel, school events and a holiday calendar that starts in October leave no room for anything new. So the plan becomes: push through, start over on the 1st.\n\nThe trouble is what ten weeks of pushing through costs. Stress eating, skipped meals that turn into large evenings, and a January that starts further back than October did.\n\nStarting smaller works better than starting later. One fixed meal a day. One boundary around the office food. One conversation with someone qualified to help.\n\nOur program is in network with most health insurances and available virtually throughout Texas, with morning, evening and Saturday tracks built for people who work."
+                  "before": "Evening sessions at the Bariatric Counseling Center run Monday through Thursday, 5:30 to 8:30 p.m., both onsite and virtually. This track is designed for people who work during the day and need care that fits around their schedule. The program provides group and individual therapy, dietary guidance, cooking classes and movement education in one integrated format. It is led by a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four. Patients typically attend for little to no cost. San Antonio and virtual across Texas. Learn more at bariatriccounselingcenter.com.\n\n#BehavioralHealth",
+                  "after": "Evening sessions at the Bariatric Counseling Center run Monday through Thursday, 5:30 to 8:30 p.m., both onsite and virtually. These sessions are designed for people who work during the day and need care that fits around their schedule. The program provides group and individual therapy, dietary guidance, cooking classes and movement education in one integrated format. It is led by a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four. Patients typically attend for little to no cost. San Antonio and virtual across Texas. Learn more at bariatriccounselingcenter.com.\n\n#BehavioralHealth"
                 }
               },
               "ok": null,
@@ -24509,7 +24757,7 @@
               "by": "cell edit",
               "channels": {
                 "LI": {
-                  "text": "The fourth quarter is when busy people decide to deal with their health in January.\n\nIt makes sense on paper. Year end deadlines, travel, school events and a holiday calendar that starts in October leave no room for anything new. So the plan becomes: push through, start over on the 1st.\n\nThe trouble is what ten weeks of pushing through costs. Stress eating, skipped meals that turn into large evenings, and a January that starts further back than October did.\n\nStarting smaller works better than starting later. One fixed meal a day. One boundary around the office food. One conversation with someone qualified to help.\n\nOur program is in network with most health insurances and available virtually throughout Texas, with morning, evening and Saturday tracks built for people who work."
+                  "text": "Evening sessions at the Bariatric Counseling Center run Monday through Thursday, 5:30 to 8:30 p.m., both onsite and virtually. These sessions are designed for people who work during the day and need care that fits around their schedule. The program provides group and individual therapy, dietary guidance, cooking classes and movement education in one integrated format. It is led by a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four. Patients typically attend for little to no cost. San Antonio and virtual across Texas. Learn more at bariatriccounselingcenter.com.\n\n#BehavioralHealth"
                 }
               },
               "media": null,
@@ -24518,43 +24766,325 @@
             "scheduler": {},
             "history": [
               {
-                "at": "2026-10-22T10:51:39",
-                "who": "laustintransl8n@gmail.com",
+                "at": "2026-10-22T16:50:21",
+                "who": "sheet",
                 "what": "changed LinkedIn caption (I)"
               },
               {
-                "at": "2026-10-22T10:51:42",
+                "at": "2026-10-22T16:50:23",
                 "who": "system",
-                "what": "minor edit: LI: already out (or about to be); too late to change in Publer"
+                "what": "minor edit: LI: not booked yet; it will be booked from the sheet as it is now"
               }
             ],
             "notified": true,
             "seen": {
-              "C": "642cd05d81bb",
+              "C": "3a52c23f6627",
               "D": "765b516f942c",
-              "F": "a3eecf088ad9",
+              "F": "cea96b4ad201",
               "G": "b4d1e1bdf71f",
               "H": "b4d1e1bdf71f",
-              "I": "78e9820e7d2e",
+              "I": "471c540ec324",
               "J": "b4d1e1bdf71f",
               "K": "b4d1e1bdf71f",
               "L": "b4d1e1bdf71f",
-              "M": "0b4cdb35db93",
-              "N": "b9163d925b32",
-              "O": "958289804601",
-              "P": "da39a3ee5e6b",
+              "M": "d1d7a97efa02",
+              "N": "c9415ba9f395",
+              "O": "f121a95975fb",
+              "P": "0ed2d7b5cdb7",
               "Q": "da39a3ee5e6b"
             },
             "minor": [
-              "LI: already out (or about to be); too late to change in Publer"
+              "LI: not booked yet; it will be booked from the sheet as it is now"
             ]
           },
           {
-            "id": "oct-r25-20261022105137",
-            "month": "October",
-            "row": 25,
+            "id": "nov-r15-20261022164806",
+            "month": "November",
+            "row": 15,
+            "title": "Staff Spotlight",
+            "when": "Wed 11/11",
+            "platforms": [
+              "FB",
+              "IG"
+            ],
+            "affected": [
+              "FB",
+              "IG"
+            ],
+            "status": "done",
+            "kinds": [
+              "edit"
+            ],
+            "detected": "2026-10-22T16:48:06",
+            "updated": "2026-10-22T16:48:08",
+            "initial": {
+              "C": "Wed 11/11: FB, IG",
+              "D": "FB 10:30 AM\nIG 12:15 PM",
+              "F": "Dr Sara Hamilton, Psychologist, Clinical Director. What she wants every new client to know in week one. Needs her one sentence in her own words.",
+              "G": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been crucial to healing.\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment.",
+              "H": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nOur team serves clients on-site in San Antonio and virtually across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+              "I": "not applicable",
+              "J": "not applicable",
+              "K": "not applicable",
+              "L": "not applicable",
+              "M": "FB: post the carousel, put the link in the FIRST COMMENT. Comment links are exempt from Meta's 2-link-a-month test for Pages, so this keeps the quota free. Link: bariatriccounselingcenter.com/about/\nIG: link in bio (bcctx.link/start). Caption links are not tappable.\nCard: the last slide carries bariatriccounselingcenter.com/about.",
+              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1sLFe0zGH1Rs4pfuOG9bfyx4VYT2xMbsg\")",
+              "O": "ASSETS (built 2026-10-21). The image above is nov11-sara-01-feed.png.\n  Instagram + Facebook carousel, 5 slides 1080x1350: nov11-sara-01-feed.png, nov11-sara-02-feed.png, nov11-sara-03-feed.png, nov11-sara-04-feed.png, nov11-sara-05-feed.png\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Dr Sara Hamilton, Clinical Psychologist and Clinical Director at Bariatric Counseling Center in San Antonio, Texas.\nCHECK BEFORE BOOKING: the quote in the FB and IG captions (\"You're not broken...\") must be Dr Hamilton's own words; the plan asked for her sentence. It is not on the cards. No portrait of her is on file, so the cover is text only; add her photo if Todd or Sara send one.",
+              "P": "FALSE",
+              "Q": "",
+              "A": "FALSE"
+            },
+            "todd": {
+              "cells": {
+                "G": {
+                  "before": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been crucial to healing.\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment.",
+                  "after": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part  of their healing. \"\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment."
+                },
+                "H": {
+                  "before": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nOur team serves clients on-site in San Antonio and virtually across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+                  "after": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one:\"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part of their healing.\"\n\nOur team serves clients on-site in San Antonio and virtually across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport"
+                }
+              },
+              "ok": null,
+              "notes": ""
+            },
+            "final": {
+              "ready": true,
+              "by": "cell edit",
+              "channels": {
+                "FB": {
+                  "text": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part  of their healing. \"\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment."
+                },
+                "IG": {
+                  "text": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one:\"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part of their healing.\"\n\nOur team serves clients on-site in San Antonio and virtually across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport"
+                }
+              },
+              "media": null,
+              "link": null
+            },
+            "scheduler": {},
+            "history": [
+              {
+                "at": "2026-10-22T16:48:06",
+                "who": "sheet",
+                "what": "changed FB caption (G), IG caption (H)"
+              },
+              {
+                "at": "2026-10-22T16:48:08",
+                "who": "system",
+                "what": "minor edit: FB: not booked by the sheet tool; TO DO, update it in Postiz by hand; IG: not booked by the sheet tool; TO DO, update it in Postiz by hand"
+              }
+            ],
+            "notified": true,
+            "seen": {
+              "C": "bb9dc2753558",
+              "D": "53998f6f5050",
+              "F": "29e1607a4dd5",
+              "G": "cf650816a1ae",
+              "H": "3062921557b8",
+              "I": "b4d1e1bdf71f",
+              "J": "b4d1e1bdf71f",
+              "K": "b4d1e1bdf71f",
+              "L": "b4d1e1bdf71f",
+              "M": "0f75e8b79401",
+              "N": "85ea1a627ad6",
+              "O": "b396e2b05087",
+              "P": "0ed2d7b5cdb7",
+              "Q": "da39a3ee5e6b"
+            },
+            "minor": [
+              "FB: not booked by the sheet tool; TO DO, update it in Postiz by hand",
+              "IG: not booked by the sheet tool; TO DO, update it in Postiz by hand"
+            ]
+          },
+          {
+            "id": "nov-r15-20261022164737",
+            "month": "November",
+            "row": 15,
+            "title": "Staff Spotlight",
+            "when": "Wed 11/11",
+            "platforms": [
+              "FB",
+              "IG"
+            ],
+            "affected": [
+              "FB"
+            ],
+            "status": "done",
+            "kinds": [
+              "edit"
+            ],
+            "detected": "2026-10-22T16:47:37",
+            "updated": "2026-10-22T16:47:39",
+            "initial": {
+              "C": "Wed 11/11: FB, IG",
+              "D": "FB 10:30 AM\nIG 12:15 PM",
+              "F": "Dr Sara Hamilton, Psychologist, Clinical Director. What she wants every new client to know in week one. Needs her one sentence in her own words.",
+              "G": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food.  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been the best part.\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment.",
+              "H": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nOur team serves clients on-site in San Antonio and virtually across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+              "I": "not applicable",
+              "J": "not applicable",
+              "K": "not applicable",
+              "L": "not applicable",
+              "M": "FB: post the carousel, put the link in the FIRST COMMENT. Comment links are exempt from Meta's 2-link-a-month test for Pages, so this keeps the quota free. Link: bariatriccounselingcenter.com/about/\nIG: link in bio (bcctx.link/start). Caption links are not tappable.\nCard: the last slide carries bariatriccounselingcenter.com/about.",
+              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1sLFe0zGH1Rs4pfuOG9bfyx4VYT2xMbsg\")",
+              "O": "ASSETS (built 2026-10-21). The image above is nov11-sara-01-feed.png.\n  Instagram + Facebook carousel, 5 slides 1080x1350: nov11-sara-01-feed.png, nov11-sara-02-feed.png, nov11-sara-03-feed.png, nov11-sara-04-feed.png, nov11-sara-05-feed.png\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Dr Sara Hamilton, Clinical Psychologist and Clinical Director at Bariatric Counseling Center in San Antonio, Texas.\nCHECK BEFORE BOOKING: the quote in the FB and IG captions (\"You're not broken...\") must be Dr Hamilton's own words; the plan asked for her sentence. It is not on the cards. No portrait of her is on file, so the cover is text only; add her photo if Todd or Sara send one.",
+              "P": "FALSE",
+              "Q": "",
+              "A": "FALSE"
+            },
+            "todd": {
+              "cells": {
+                "G": {
+                  "before": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food.  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been the best part.\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment.",
+                  "after": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been crucial to healing.\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment."
+                }
+              },
+              "ok": null,
+              "notes": ""
+            },
+            "final": {
+              "ready": true,
+              "by": "cell edit",
+              "channels": {
+                "FB": {
+                  "text": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been crucial to healing.\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment."
+                }
+              },
+              "media": null,
+              "link": null
+            },
+            "scheduler": {},
+            "history": [
+              {
+                "at": "2026-10-22T16:47:37",
+                "who": "sheet",
+                "what": "changed FB caption (G)"
+              },
+              {
+                "at": "2026-10-22T16:47:39",
+                "who": "system",
+                "what": "minor edit: FB: not booked by the sheet tool; TO DO, update it in Postiz by hand"
+              }
+            ],
+            "notified": true,
+            "seen": {
+              "C": "bb9dc2753558",
+              "D": "53998f6f5050",
+              "F": "29e1607a4dd5",
+              "G": "3c51280f462f",
+              "H": "482fe504734c",
+              "I": "b4d1e1bdf71f",
+              "J": "b4d1e1bdf71f",
+              "K": "b4d1e1bdf71f",
+              "L": "b4d1e1bdf71f",
+              "M": "0f75e8b79401",
+              "N": "85ea1a627ad6",
+              "O": "b396e2b05087",
+              "P": "0ed2d7b5cdb7",
+              "Q": "da39a3ee5e6b"
+            },
+            "minor": [
+              "FB: not booked by the sheet tool; TO DO, update it in Postiz by hand"
+            ]
+          },
+          {
+            "id": "nov-r15-20261022164608",
+            "month": "November",
+            "row": 15,
+            "title": "Staff Spotlight",
+            "when": "Wed 11/11",
+            "platforms": [
+              "FB",
+              "IG"
+            ],
+            "affected": [
+              "FB"
+            ],
+            "status": "done",
+            "kinds": [
+              "edit"
+            ],
+            "detected": "2026-10-22T16:46:08",
+            "updated": "2026-10-22T16:46:11",
+            "initial": {
+              "C": "Wed 11/11: FB, IG",
+              "D": "FB 10:30 AM\nIG 12:15 PM",
+              "F": "Dr Sara Hamilton, Psychologist, Clinical Director. What she wants every new client to know in week one. Needs her one sentence in her own words.",
+              "G": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nDr Hamilton is part of our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment.",
+              "H": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nOur team serves clients on-site in San Antonio and virtually across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+              "I": "not applicable",
+              "J": "not applicable",
+              "K": "not applicable",
+              "L": "not applicable",
+              "M": "FB: post the carousel, put the link in the FIRST COMMENT. Comment links are exempt from Meta's 2-link-a-month test for Pages, so this keeps the quota free. Link: bariatriccounselingcenter.com/about/\nIG: link in bio (bcctx.link/start). Caption links are not tappable.\nCard: the last slide carries bariatriccounselingcenter.com/about.",
+              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1sLFe0zGH1Rs4pfuOG9bfyx4VYT2xMbsg\")",
+              "O": "ASSETS (built 2026-10-21). The image above is nov11-sara-01-feed.png.\n  Instagram + Facebook carousel, 5 slides 1080x1350: nov11-sara-01-feed.png, nov11-sara-02-feed.png, nov11-sara-03-feed.png, nov11-sara-04-feed.png, nov11-sara-05-feed.png\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Dr Sara Hamilton, Clinical Psychologist and Clinical Director at Bariatric Counseling Center in San Antonio, Texas.\nCHECK BEFORE BOOKING: the quote in the FB and IG captions (\"You're not broken...\") must be Dr Hamilton's own words; the plan asked for her sentence. It is not on the cards. No portrait of her is on file, so the cover is text only; add her photo if Todd or Sara send one.",
+              "P": "FALSE",
+              "Q": "",
+              "A": "FALSE"
+            },
+            "todd": {
+              "cells": {
+                "G": {
+                  "before": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nDr Hamilton is part of our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment.",
+                  "after": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food.  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been the best part.\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment."
+                }
+              },
+              "ok": null,
+              "notes": ""
+            },
+            "final": {
+              "ready": true,
+              "by": "cell edit",
+              "channels": {
+                "FB": {
+                  "text": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food.  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been the best part.\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment."
+                }
+              },
+              "media": null,
+              "link": null
+            },
+            "scheduler": {},
+            "history": [
+              {
+                "at": "2026-10-22T16:46:08",
+                "who": "sheet",
+                "what": "changed FB caption (G)"
+              },
+              {
+                "at": "2026-10-22T16:46:11",
+                "who": "system",
+                "what": "minor edit: FB: not booked by the sheet tool; TO DO, update it in Postiz by hand"
+              }
+            ],
+            "notified": true,
+            "seen": {
+              "C": "bb9dc2753558",
+              "D": "53998f6f5050",
+              "F": "29e1607a4dd5",
+              "G": "825e4e12159e",
+              "H": "482fe504734c",
+              "I": "b4d1e1bdf71f",
+              "J": "b4d1e1bdf71f",
+              "K": "b4d1e1bdf71f",
+              "L": "b4d1e1bdf71f",
+              "M": "0f75e8b79401",
+              "N": "85ea1a627ad6",
+              "O": "b396e2b05087",
+              "P": "0ed2d7b5cdb7",
+              "Q": "da39a3ee5e6b"
+            },
+            "minor": [
+              "FB: not booked by the sheet tool; TO DO, update it in Postiz by hand"
+            ]
+          },
+          {
+            "id": "nov-r18-20261022113743",
+            "month": "November",
+            "row": 18,
             "title": "Referring Providers: Document Post",
-            "when": "Tue 10/20",
+            "when": "Tue 11/17",
             "platforms": [
               "LI",
               "GBP"
@@ -24566,30 +25096,30 @@
             "kinds": [
               "edit"
             ],
-            "detected": "2026-10-22T10:51:37",
-            "updated": "2026-10-22T10:51:39",
+            "detected": "2026-10-22T11:37:43",
+            "updated": "2026-10-22T11:37:46",
             "initial": {
-              "C": "Tue 10/20: LI, GBP",
-              "D": "GBP 9:00 AM\nLI 11:00 AM",
-              "F": "The claim BCC can make and the large eating disorder chains cannot: behavioral treatment alongside weight loss medication. 'Weight loss medications' only, never the drug class abbreviation.",
+              "C": "Tue 11/17: LI, GBP",
+              "D": "LI 11:00 AM\nGBP 9:00 AM",
+              "F": "For endocrinology and primary care: the behavioral half of obesity treatment, coordinated with the medical provider. LinkedIn document post.",
               "G": "not applicable",
               "H": "not applicable",
-              "I": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: \"food noise,\" drops  and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when  the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan.",
-              "J": "Behavioral support for people taking weight loss medications, in San Antonio and virtually throughout Texas. Medication can quiet hunger. It does not teach the skills for managing stress, habits, and emotions around food, and those skills are what remain when a prescription changes or stops. The Bariatric Counseling Center of San Antonio does not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We accept most health insurances.",
+              "I": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Progress notes as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth",
+              "J": "Behavioral treatment for obesity San Antonio. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. Our team includes a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, a registered nurse, and a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We coordinate care with referring medical providers and provide a detailed discharge summary of the patient's behavioral progress, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression. We accept most health insurances. San Antonio and virtual across Texas.",
               "K": "not applicable",
               "L": "not applicable",
-              "M": "LI: document post, so no preview card is possible. Put the URL in the body text. URL: bariatriccounselingcenter.com/refer-a-patient/\nGBP: Learn more button to bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/\nCard: last page of the PDF carries the referral contact.",
-              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1hjgdio1uvd0jy8M6ctt7jX45O3hOl-06\",1)",
-              "O": "ASSETS (built 2026-09-18). The image above is oct20-providers-01-doc.png.\n  LinkedIn document, 5 pages: oct20-providers-linkedin-document.pdf\n    pages as PNG if you need them: oct20-providers-01-doc.png to oct20-providers-05-doc.png\n  Google Business Profile 1200x900: oct20-gbp-01-gbp.png\nAll October files: https://drive.google.com/drive/folders/1XujWCAggxk0h6BYvncHp7Sa2Y0JGn87k\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\oct\\cards\\render\\png\n\nThe line 'We do not prescribe' and the separate benefits point were verified against BCC's weight loss medications page on 9/14. Sara to confirm the clinical framing.\nAlt text (GBP): Graphic reading 'The behavioral half of the plan' with the Bariatric Counseling Center logo.",
-              "P": "",
+              "M": "LI: document post (upload the PDF), so no preview card is possible. Put the URL in the first comment: bariatriccounselingcenter.com/refer-a-patient/\nGBP: post the 1200x900 card with the Learn more button to bariatriccounselingcenter.com/refer-a-patient/\nCard: page 5 carries bariatriccounselingcenter.com/refer-a-patient",
+              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1Vbi0wLygwrQy-s-zU0Oss0quLDE39_bE\")",
+              "O": "ASSETS (built 2026-10-21). The image above is nov17-providers-01-doc.png.\n  LinkedIn document (PDF, 5 pages): nov17-providers-linkedin-document.pdf, Drive: https://drive.google.com/file/d/1OKsb5sw9zMBysM9D_g-YEtXWSJTib19j/view\n  Document pages 1080x1350: nov17-providers-01-doc.png, nov17-providers-02-doc.png, nov17-providers-03-doc.png, nov17-providers-04-doc.png, nov17-providers-05-doc.png\n  GBP card 1200x900: nov17-providers-gbp-01-gbp.png, Drive: https://drive.google.com/file/d/163dm61ymeELbtIjAc8PO4HptmmgWY9BO/view\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Document outlining behavioral healthcare services for obesity treatment at Bariatric Counseling Center for referring medical providers.",
+              "P": "FALSE",
               "Q": "",
               "A": "FALSE"
             },
             "todd": {
               "cells": {
                 "I": {
-                  "before": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: \"food noise,\" drops  and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when  the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan.",
-                  "after": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: the \"food noise\" drops, and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan."
+                  "before": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Progress notes as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth",
+                  "after": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Treatment updates as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth"
                 }
               },
               "ok": null,
@@ -24600,7 +25130,7 @@
               "by": "cell edit",
               "channels": {
                 "LI": {
-                  "text": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: the \"food noise\" drops, and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan."
+                  "text": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Treatment updates as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth"
                 }
               },
               "media": null,
@@ -24609,409 +25139,47 @@
             "scheduler": {},
             "history": [
               {
-                "at": "2026-10-22T10:51:37",
-                "who": "laustintransl8n@gmail.com",
+                "at": "2026-10-22T11:37:43",
+                "who": "sheet",
                 "what": "changed LinkedIn caption (I)"
               },
               {
-                "at": "2026-10-22T10:51:39",
+                "at": "2026-10-22T11:37:46",
                 "who": "system",
-                "what": "minor edit: LI: already out (or about to be); too late to change in Publer"
+                "what": "minor edit: LI: not booked yet; it will be booked from the sheet as it is now"
               }
             ],
             "notified": true,
             "seen": {
-              "C": "6339bf0b6c0e",
-              "D": "05f8789f606b",
-              "F": "1e2ffd1da85b",
+              "C": "1dc2429af745",
+              "D": "eadc16e77ccc",
+              "F": "55c0d34d3f73",
               "G": "b4d1e1bdf71f",
               "H": "b4d1e1bdf71f",
-              "I": "2bdafba084c4",
-              "J": "5701e01513e7",
+              "I": "a58888824e57",
+              "J": "2b6bf439a656",
               "K": "b4d1e1bdf71f",
               "L": "b4d1e1bdf71f",
-              "M": "2e1b286d1396",
-              "N": "404dd6606cb7",
-              "O": "ea25d0e1b3e8",
-              "P": "da39a3ee5e6b",
+              "M": "ee7dc1d4b101",
+              "N": "dfb7b13ba2bd",
+              "O": "bf536748f8e5",
+              "P": "0ed2d7b5cdb7",
               "Q": "da39a3ee5e6b"
             },
             "minor": [
-              "LI: already out (or about to be); too late to change in Publer"
-            ]
-          },
-          {
-            "id": "oct-r27-20261022105117",
-            "month": "October",
-            "row": 27,
-            "title": "Professionals: Holiday Season",
-            "when": "Thu 10/22",
-            "platforms": [
-              "LI"
-            ],
-            "affected": [
-              "LI"
-            ],
-            "status": "done",
-            "kinds": [
-              "edit"
-            ],
-            "detected": "2026-10-22T10:51:17",
-            "updated": "2026-10-22T10:51:19",
-            "initial": {
-              "C": "Thu 10/22: LI",
-              "D": "LI 9:30 AM",
-              "F": "Holiday theme for working professionals: Q4 workload plus the holiday calendar is when 'I'll deal with it in January' takes hold.",
-              "G": "not applicable",
-              "H": "not applicable",
-              "I": "The fourth quarter is when busy people decide to deal with their health in January.\n\nIt makes sense on paper. Year end deadlines, travel, school events and a holiday calendar that starts in October leave no room for anything new. So the plan becomes: push through, start over on the 1st.\n\nThe trouble is what ten weeks of pushing through costs. Stress eating, skipped meals that turn into large evenings, and a January that starts further back than October did.\n\nStarting smaller works better than starting later. One fixed meal a day. One boundary around the office food. One conversation with someone qualified to help.\n\nOur program is available virtually throughout Texas, with morning, evening and Saturday tracks built for people who work.",
-              "J": "not applicable",
-              "K": "not applicable",
-              "L": "not applicable",
-              "M": "LI: paste bariatriccounselingcenter.com/ourprogram/details/ so the preview card loads, then delete the URL out of the body. Company-page link posts test well (Metricool 2026).",
-              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1l1bhbYAWpGigfLFEbO9Vl_I-iZ_4YJxR\",1)",
-              "O": "ASSETS (built 2026-09-18). The image above is oct22-holiday-li-01-linkedin.png.\n  LinkedIn 1200x627: oct22-holiday-li-01-linkedin.png\nAll October files: https://drive.google.com/drive/folders/1XujWCAggxk0h6BYvncHp7Sa2Y0JGn87k\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\oct\\cards\\render\\png\n\nTrack times are from the program schedule page.\nAlt text: Text graphic reading 'Starting smaller works better than starting later' from the Bariatric Counseling Center.",
-              "P": "",
-              "Q": "",
-              "A": "FALSE"
-            },
-            "todd": {
-              "cells": {
-                "I": {
-                  "before": "The fourth quarter is when busy people decide to deal with their health in January.\n\nIt makes sense on paper. Year end deadlines, travel, school events and a holiday calendar that starts in October leave no room for anything new. So the plan becomes: push through, start over on the 1st.\n\nThe trouble is what ten weeks of pushing through costs. Stress eating, skipped meals that turn into large evenings, and a January that starts further back than October did.\n\nStarting smaller works better than starting later. One fixed meal a day. One boundary around the office food. One conversation with someone qualified to help.\n\nOur program is available virtually throughout Texas, with morning, evening and Saturday tracks built for people who work.",
-                  "after": "The fourth quarter is when busy people decide to deal with their health in January.\n\nIt makes sense on paper. Year end deadlines, travel, school events and a holiday calendar that starts in October leave no room for anything new. So the plan becomes: push through, start over on the 1st.\n\nThe trouble is what ten weeks of pushing through costs. Stress eating, skipped meals that turn into large evenings, and a January that starts further back than October did.\n\nStarting smaller works better than starting later. One fixed meal a day. One boundary around the office food. One conversation with someone qualified to help.\n\nOur program is in network with most health insurances and available virtually throughout Texas, with morning, evening and Saturday tracks built for people who work."
-                }
-              },
-              "ok": null,
-              "notes": ""
-            },
-            "final": {
-              "ready": true,
-              "by": "cell edit",
-              "channels": {
-                "LI": {
-                  "text": "The fourth quarter is when busy people decide to deal with their health in January.\n\nIt makes sense on paper. Year end deadlines, travel, school events and a holiday calendar that starts in October leave no room for anything new. So the plan becomes: push through, start over on the 1st.\n\nThe trouble is what ten weeks of pushing through costs. Stress eating, skipped meals that turn into large evenings, and a January that starts further back than October did.\n\nStarting smaller works better than starting later. One fixed meal a day. One boundary around the office food. One conversation with someone qualified to help.\n\nOur program is in network with most health insurances and available virtually throughout Texas, with morning, evening and Saturday tracks built for people who work."
-                }
-              },
-              "media": null,
-              "link": null
-            },
-            "scheduler": {},
-            "history": [
-              {
-                "at": "2026-10-22T10:51:17",
-                "who": "laustintransl8n@gmail.com",
-                "what": "changed LinkedIn caption (I)"
-              },
-              {
-                "at": "2026-10-22T10:51:19",
-                "who": "system",
-                "what": "minor edit: LI: already out (or about to be); too late to change in Publer"
-              }
-            ],
-            "notified": true,
-            "seen": {
-              "C": "642cd05d81bb",
-              "D": "765b516f942c",
-              "F": "a3eecf088ad9",
-              "G": "b4d1e1bdf71f",
-              "H": "b4d1e1bdf71f",
-              "I": "78e9820e7d2e",
-              "J": "b4d1e1bdf71f",
-              "K": "b4d1e1bdf71f",
-              "L": "b4d1e1bdf71f",
-              "M": "0b4cdb35db93",
-              "N": "b9163d925b32",
-              "O": "958289804601",
-              "P": "da39a3ee5e6b",
-              "Q": "da39a3ee5e6b"
-            },
-            "minor": [
-              "LI: already out (or about to be); too late to change in Publer"
-            ]
-          },
-          {
-            "id": "oct-r25-20261022105114",
-            "month": "October",
-            "row": 25,
-            "title": "Referring Providers: Document Post",
-            "when": "Tue 10/20",
-            "platforms": [
-              "LI",
-              "GBP"
-            ],
-            "affected": [
-              "LI"
-            ],
-            "status": "done",
-            "kinds": [
-              "edit"
-            ],
-            "detected": "2026-10-22T10:51:14",
-            "updated": "2026-10-22T10:51:16",
-            "initial": {
-              "C": "Tue 10/20: LI, GBP",
-              "D": "GBP 9:00 AM\nLI 11:00 AM",
-              "F": "The claim BCC can make and the large eating disorder chains cannot: behavioral treatment alongside weight loss medication. 'Weight loss medications' only, never the drug class abbreviation.",
-              "G": "not applicable",
-              "H": "not applicable",
-              "I": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: \"food noise,\" drops  and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when  the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan.",
-              "J": "Behavioral support for people taking weight loss medications, in San Antonio and virtually throughout Texas. Medication can quiet hunger. It does not teach the skills for managing stress, habits, and emotions around food, and those skills are what remain when a prescription changes or stops. The Bariatric Counseling Center of San Antonio does not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We accept most health insurances.",
-              "K": "not applicable",
-              "L": "not applicable",
-              "M": "LI: document post, so no preview card is possible. Put the URL in the body text. URL: bariatriccounselingcenter.com/refer-a-patient/\nGBP: Learn more button to bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/\nCard: last page of the PDF carries the referral contact.",
-              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1hjgdio1uvd0jy8M6ctt7jX45O3hOl-06\",1)",
-              "O": "ASSETS (built 2026-09-18). The image above is oct20-providers-01-doc.png.\n  LinkedIn document, 5 pages: oct20-providers-linkedin-document.pdf\n    pages as PNG if you need them: oct20-providers-01-doc.png to oct20-providers-05-doc.png\n  Google Business Profile 1200x900: oct20-gbp-01-gbp.png\nAll October files: https://drive.google.com/drive/folders/1XujWCAggxk0h6BYvncHp7Sa2Y0JGn87k\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\oct\\cards\\render\\png\n\nThe line 'We do not prescribe' and the separate benefits point were verified against BCC's weight loss medications page on 9/14. Sara to confirm the clinical framing.\nAlt text (GBP): Graphic reading 'The behavioral half of the plan' with the Bariatric Counseling Center logo.",
-              "P": "",
-              "Q": "",
-              "A": "FALSE"
-            },
-            "todd": {
-              "cells": {
-                "I": {
-                  "before": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: \"food noise,\" drops  and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when  the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan.",
-                  "after": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: the \"food noise\" drops, and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan."
-                }
-              },
-              "ok": null,
-              "notes": ""
-            },
-            "final": {
-              "ready": true,
-              "by": "cell edit",
-              "channels": {
-                "LI": {
-                  "text": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: the \"food noise\" drops, and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan."
-                }
-              },
-              "media": null,
-              "link": null
-            },
-            "scheduler": {},
-            "history": [
-              {
-                "at": "2026-10-22T10:51:14",
-                "who": "laustintransl8n@gmail.com",
-                "what": "changed LinkedIn caption (I)"
-              },
-              {
-                "at": "2026-10-22T10:51:16",
-                "who": "system",
-                "what": "minor edit: LI: already out (or about to be); too late to change in Publer"
-              }
-            ],
-            "notified": true,
-            "seen": {
-              "C": "6339bf0b6c0e",
-              "D": "05f8789f606b",
-              "F": "1e2ffd1da85b",
-              "G": "b4d1e1bdf71f",
-              "H": "b4d1e1bdf71f",
-              "I": "2bdafba084c4",
-              "J": "5701e01513e7",
-              "K": "b4d1e1bdf71f",
-              "L": "b4d1e1bdf71f",
-              "M": "2e1b286d1396",
-              "N": "404dd6606cb7",
-              "O": "ea25d0e1b3e8",
-              "P": "da39a3ee5e6b",
-              "Q": "da39a3ee5e6b"
-            },
-            "minor": [
-              "LI: already out (or about to be); too late to change in Publer"
-            ]
-          },
-          {
-            "id": "oct-r27-20261022105039",
-            "month": "October",
-            "row": 27,
-            "title": "Professionals: Holiday Season",
-            "when": "Thu 10/22",
-            "platforms": [
-              "LI"
-            ],
-            "affected": [
-              "LI"
-            ],
-            "status": "done",
-            "kinds": [
-              "edit"
-            ],
-            "detected": "2026-10-22T10:50:39",
-            "updated": "2026-10-22T10:50:41",
-            "initial": {
-              "C": "Thu 10/22: LI",
-              "D": "LI 9:30 AM",
-              "F": "Holiday theme for working professionals: Q4 workload plus the holiday calendar is when 'I'll deal with it in January' takes hold.",
-              "G": "not applicable",
-              "H": "not applicable",
-              "I": "The fourth quarter is when busy people decide to deal with their health in January.\n\nIt makes sense on paper. Year end deadlines, travel, school events and a holiday calendar that starts in October leave no room for anything new. So the plan becomes: push through, start over on the 1st.\n\nThe trouble is what ten weeks of pushing through costs. Stress eating, skipped meals that turn into large evenings, and a January that starts further back than October did.\n\nStarting smaller works better than starting later. One fixed meal a day. One boundary around the office food. One conversation with someone qualified to help.\n\nOur program is available virtually throughout Texas, with morning, evening and Saturday tracks built for people who work.",
-              "J": "not applicable",
-              "K": "not applicable",
-              "L": "not applicable",
-              "M": "LI: paste bariatriccounselingcenter.com/ourprogram/details/ so the preview card loads, then delete the URL out of the body. Company-page link posts test well (Metricool 2026).",
-              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1l1bhbYAWpGigfLFEbO9Vl_I-iZ_4YJxR\",1)",
-              "O": "ASSETS (built 2026-09-18). The image above is oct22-holiday-li-01-linkedin.png.\n  LinkedIn 1200x627: oct22-holiday-li-01-linkedin.png\nAll October files: https://drive.google.com/drive/folders/1XujWCAggxk0h6BYvncHp7Sa2Y0JGn87k\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\oct\\cards\\render\\png\n\nTrack times are from the program schedule page.\nAlt text: Text graphic reading 'Starting smaller works better than starting later' from the Bariatric Counseling Center.",
-              "P": "",
-              "Q": "",
-              "A": "FALSE"
-            },
-            "todd": {
-              "cells": {
-                "I": {
-                  "before": "The fourth quarter is when busy people decide to deal with their health in January.\n\nIt makes sense on paper. Year end deadlines, travel, school events and a holiday calendar that starts in October leave no room for anything new. So the plan becomes: push through, start over on the 1st.\n\nThe trouble is what ten weeks of pushing through costs. Stress eating, skipped meals that turn into large evenings, and a January that starts further back than October did.\n\nStarting smaller works better than starting later. One fixed meal a day. One boundary around the office food. One conversation with someone qualified to help.\n\nOur program is available virtually throughout Texas, with morning, evening and Saturday tracks built for people who work.",
-                  "after": "The fourth quarter is when busy people decide to deal with their health in January.\n\nIt makes sense on paper. Year end deadlines, travel, school events and a holiday calendar that starts in October leave no room for anything new. So the plan becomes: push through, start over on the 1st.\n\nThe trouble is what ten weeks of pushing through costs. Stress eating, skipped meals that turn into large evenings, and a January that starts further back than October did.\n\nStarting smaller works better than starting later. One fixed meal a day. One boundary around the office food. One conversation with someone qualified to help.\n\nOur program is in network with most health insurances and available virtually throughout Texas, with morning, evening and Saturday tracks built for people who work."
-                }
-              },
-              "ok": null,
-              "notes": ""
-            },
-            "final": {
-              "ready": true,
-              "by": "cell edit",
-              "channels": {
-                "LI": {
-                  "text": "The fourth quarter is when busy people decide to deal with their health in January.\n\nIt makes sense on paper. Year end deadlines, travel, school events and a holiday calendar that starts in October leave no room for anything new. So the plan becomes: push through, start over on the 1st.\n\nThe trouble is what ten weeks of pushing through costs. Stress eating, skipped meals that turn into large evenings, and a January that starts further back than October did.\n\nStarting smaller works better than starting later. One fixed meal a day. One boundary around the office food. One conversation with someone qualified to help.\n\nOur program is in network with most health insurances and available virtually throughout Texas, with morning, evening and Saturday tracks built for people who work."
-                }
-              },
-              "media": null,
-              "link": null
-            },
-            "scheduler": {},
-            "history": [
-              {
-                "at": "2026-10-22T10:50:39",
-                "who": "laustintransl8n@gmail.com",
-                "what": "changed LinkedIn caption (I)"
-              },
-              {
-                "at": "2026-10-22T10:50:41",
-                "who": "system",
-                "what": "minor edit: LI: already out (or about to be); too late to change in Publer"
-              }
-            ],
-            "notified": true,
-            "seen": {
-              "C": "642cd05d81bb",
-              "D": "765b516f942c",
-              "F": "a3eecf088ad9",
-              "G": "b4d1e1bdf71f",
-              "H": "b4d1e1bdf71f",
-              "I": "78e9820e7d2e",
-              "J": "b4d1e1bdf71f",
-              "K": "b4d1e1bdf71f",
-              "L": "b4d1e1bdf71f",
-              "M": "0b4cdb35db93",
-              "N": "b9163d925b32",
-              "O": "958289804601",
-              "P": "da39a3ee5e6b",
-              "Q": "da39a3ee5e6b"
-            },
-            "minor": [
-              "LI: already out (or about to be); too late to change in Publer"
-            ]
-          },
-          {
-            "id": "oct-r25-20261022105036",
-            "month": "October",
-            "row": 25,
-            "title": "Referring Providers: Document Post",
-            "when": "Tue 10/20",
-            "platforms": [
-              "LI",
-              "GBP"
-            ],
-            "affected": [
-              "LI"
-            ],
-            "status": "done",
-            "kinds": [
-              "edit"
-            ],
-            "detected": "2026-10-22T10:50:36",
-            "updated": "2026-10-22T10:50:38",
-            "initial": {
-              "C": "Tue 10/20: LI, GBP",
-              "D": "GBP 9:00 AM\nLI 11:00 AM",
-              "F": "The claim BCC can make and the large eating disorder chains cannot: behavioral treatment alongside weight loss medication. 'Weight loss medications' only, never the drug class abbreviation.",
-              "G": "not applicable",
-              "H": "not applicable",
-              "I": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: \"food noise,\" drops  and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when  the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan.",
-              "J": "Behavioral support for people taking weight loss medications, in San Antonio and virtually throughout Texas. Medication can quiet hunger. It does not teach the skills for managing stress, habits, and emotions around food, and those skills are what remain when a prescription changes or stops. The Bariatric Counseling Center of San Antonio does not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We accept most health insurances.",
-              "K": "not applicable",
-              "L": "not applicable",
-              "M": "LI: document post, so no preview card is possible. Put the URL in the body text. URL: bariatriccounselingcenter.com/refer-a-patient/\nGBP: Learn more button to bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/\nCard: last page of the PDF carries the referral contact.",
-              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1hjgdio1uvd0jy8M6ctt7jX45O3hOl-06\",1)",
-              "O": "ASSETS (built 2026-09-18). The image above is oct20-providers-01-doc.png.\n  LinkedIn document, 5 pages: oct20-providers-linkedin-document.pdf\n    pages as PNG if you need them: oct20-providers-01-doc.png to oct20-providers-05-doc.png\n  Google Business Profile 1200x900: oct20-gbp-01-gbp.png\nAll October files: https://drive.google.com/drive/folders/1XujWCAggxk0h6BYvncHp7Sa2Y0JGn87k\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\oct\\cards\\render\\png\n\nThe line 'We do not prescribe' and the separate benefits point were verified against BCC's weight loss medications page on 9/14. Sara to confirm the clinical framing.\nAlt text (GBP): Graphic reading 'The behavioral half of the plan' with the Bariatric Counseling Center logo.",
-              "P": "",
-              "Q": "",
-              "A": "FALSE"
-            },
-            "todd": {
-              "cells": {
-                "I": {
-                  "before": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: \"food noise,\" drops  and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when  the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan.",
-                  "after": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: the \"food noise\" drops, and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan."
-                }
-              },
-              "ok": null,
-              "notes": ""
-            },
-            "final": {
-              "ready": true,
-              "by": "cell edit",
-              "channels": {
-                "LI": {
-                  "text": "Weight loss medications quiet the hunger signal. They do not teach the skill.\n\nPatients on these medications often describe the same thing: the \"food noise\" drops, and for the first time there is room to work, to think, to breathe. What we do with that room determines what happens when the coverage changes or the prescription stops.\n\nThat work is behavioral: coping skills for stress and emotion, structure around meals, cooking, movement that is enjoyable enough to keep.\n\nWe do not prescribe. Our program can be standalone behavioral care for people with obesity, or can be in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.\n\nIf you prescribe these medications, we would like to be the behavioral half of the plan."
-                }
-              },
-              "media": null,
-              "link": null
-            },
-            "scheduler": {},
-            "history": [
-              {
-                "at": "2026-10-22T10:50:36",
-                "who": "laustintransl8n@gmail.com",
-                "what": "changed LinkedIn caption (I)"
-              },
-              {
-                "at": "2026-10-22T10:50:38",
-                "who": "system",
-                "what": "minor edit: LI: already out (or about to be); too late to change in Publer"
-              }
-            ],
-            "notified": true,
-            "seen": {
-              "C": "6339bf0b6c0e",
-              "D": "05f8789f606b",
-              "F": "1e2ffd1da85b",
-              "G": "b4d1e1bdf71f",
-              "H": "b4d1e1bdf71f",
-              "I": "2bdafba084c4",
-              "J": "5701e01513e7",
-              "K": "b4d1e1bdf71f",
-              "L": "b4d1e1bdf71f",
-              "M": "2e1b286d1396",
-              "N": "404dd6606cb7",
-              "O": "ea25d0e1b3e8",
-              "P": "da39a3ee5e6b",
-              "Q": "da39a3ee5e6b"
-            },
-            "minor": [
-              "LI: already out (or about to be); too late to change in Publer"
+              "LI: not booked yet; it will be booked from the sheet as it is now"
             ]
           }
         ],
         "log": [
-          "2026-10-20T17:17:03  hook: edit on November Content Calendar row 9 col 8 by unknown",
-          "2026-10-20T17:20:08  hook: edit on November Content Calendar row 9 col 15 by unknown",
-          "2026-10-20T17:22:32  hook: edit on November Content Calendar row 10 col 10 by unknown",
-          "2026-10-22T10:50:14  hook: edit on October Content Calendar row 37 col 1 by laustintransl8n@gmail.com",
-          "2026-10-22T10:50:41  hook: edit on October Content Calendar row 37 col 2 by laustintransl8n@gmail.com",
-          "2026-10-22T10:50:53  hook: edit on October Content Calendar row 37 col 2 by laustintransl8n@gmail.com",
-          "2026-10-22T10:51:16  hook: edit on October Content Calendar row 37 col 2 by laustintransl8n@gmail.com",
-          "2026-10-22T10:59:46  hook listener on 127.0.0.1:8788"
+          "2026-10-22T11:37:28  new row 37 Community: Bexar County Medical Society 40th Anniversary Auto Show on October",
+          "2026-10-22T11:37:46  oct-r33-20261022113723 | LinkedIn caption: Professionals: Halloween Week",
+          "2026-10-22T16:45:46  hook: edit on November Content Calendar row 15 col 7 by unknown",
+          "2026-10-22T16:47:15  hook: edit on November Content Calendar row 15 col 7 by unknown",
+          "2026-10-22T16:47:44  hook: edit on November Content Calendar row 15 col 7 by unknown",
+          "2026-10-22T16:48:06  hook: edit on November Content Calendar row 15 col 8 by unknown",
+          "2026-10-22T16:49:59  hook: edit on November Content Calendar row 12 col 9 by unknown",
+          "2026-10-22T16:50:26  hook: edit on November Content Calendar row 13 col 7 by unknown"
         ],
         "baselines": [
           "baseline-november.json",
@@ -29693,5 +29861,5 @@
     }
   ],
   "snapshot_count": 46,
-  "generated_at": "2026-10-22T16:00:26.609645Z"
+  "generated_at": "2026-10-23T12:17:15.558647Z"
 }
