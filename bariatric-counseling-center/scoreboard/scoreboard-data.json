@@ -14121,6 +14121,154 @@
         ],
         "recent": [
           {
+            "id": "d8d67dff97",
+            "kind": "action",
+            "key": "ai:ac6cd069a024",
+            "title": "Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1",
+            "why": "Action Items sheet, 8/27 meeting list, row 62",
+            "payload": {
+              "text": "Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1",
+              "notes": "The gap ERC, Alsana and Monte Nido cannot use",
+              "section": "Daniel - from 8/27 meeting",
+              "label": "8/27 meeting",
+              "row": 69,
+              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
+              "tab": "Sheet1",
+              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A69"
+            },
+            "source": "action-items",
+            "status": "applied",
+            "created": "2026-09-24T12:23:36",
+            "decided": "2026-10-23T11:45:22",
+            "note": "done",
+            "result": {
+              "followup": {
+                "trail": [
+                  {
+                    "at": "2026-09-25 07:30",
+                    "by": "claude",
+                    "text": "Worked by the morning Claude run: Brief and article ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\binge-eating-telehealth-brief-and-article.md (target 'virtual binge eating disorder treatment Texas', bariatric, weight regain and weight loss medication angles ERC does not use). Left for you: Sara to check the one statistic and the clinical descriptions; then it goes through the block process on staging13."
+                  },
+                  {
+                    "at": "2026-09-29 15:48",
+                    "by": "daniel",
+                    "text": "Chose 'Draft the note to Sara for me'. Told Claude: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process."
+                  },
+                  {
+                    "at": "2026-09-29 16:39",
+                    "by": "claude",
+                    "text": "Gmail draft from daniel@drbdig.com to Sara, cc Todd: 'Quick clinical check: binge eating telehealth article' (the STEP 1 statistic and four clinical passages quoted inline)."
+                  },
+                  {
+                    "at": "2026-10-02 07:00",
+                    "by": "check",
+                    "text": "Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.: not sent, and no longer in your Drafts (deleted?)"
+                  },
+                  {
+                    "at": "2026-10-06 07:00",
+                    "by": "check",
+                    "text": "Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.: sent 2026-10-05 08:00 to Sara Hamilton <shamilton@bccsanantonio.com>"
+                  },
+                  {
+                    "at": "2026-10-09 15:15",
+                    "by": "daniel",
+                    "text": "Told Claude: check email replies from sara I believe she has replied to this and is ok but am uncertain. maybe i misremember. if she has greenlit this. move it directly into staging"
+                  },
+                  {
+                    "at": "2026-10-15 10:06",
+                    "by": "claude",
+                    "text": "Sara replied Oct 5 on 'Quick clinical check: binge eating telehealth article': point 3 inaccurate, remove it and reword as binge eating behaviors coming back when food noise returns after stopping the medication; otherwise looks good."
+                  },
+                  {
+                    "at": "2026-10-15 10:06",
+                    "by": "claude",
+                    "text": "The article is already staged on staging14: https://www.staging14.bariatriccounselingcenter.com/eating-disorders/binge-eating-treatment-by-telehealth/ (listed in Daniel's Oct 14 email 'Four BCC pages staged: yes/no questions for Sara')."
+                  },
+                  {
+                    "at": "2026-10-15 10:06",
+                    "by": "claude",
+                    "text": "Oct 14 reply from Sara on that thread: 'Please send me this article in another format so I can edit.' Same request for the ARFID page."
+                  },
+                  {
+                    "at": "2026-10-21 07:00",
+                    "by": "check",
+                    "text": "Sara returns her edits.: Todd McCord replied 2026-10-20 14:53: \"Daniel, re number of sessions, doesn&#39;t have to be the exact same. Edit below reads well, and what it currently says on the website is fine. It is not an abs\""
+                  },
+                  {
+                    "at": "2026-10-23 11:45",
+                    "by": "daniel",
+                    "text": "Resolved as complete: the article is live and indexable on production (post 6664). Queue status set to applied to match."
+                  }
+                ],
+                "steps": [
+                  {
+                    "owner": "daniel",
+                    "do": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
+                    "links": [
+                      {
+                        "label": "Staging page",
+                        "url": "https://www.staging14.bariatriccounselingcenter.com/eating-disorders/binge-eating-treatment-by-telehealth/"
+                      }
+                    ],
+                    "options": [
+                      {
+                        "label": "Make the Google Docs for me",
+                        "tell": "Export the staged binge eating telehealth article and the ARFID page from staging14 into two Google Docs in the BCC Drive (Sara can edit), confirm Sara's Oct 5 point 3 change is in the binge article, and draft a short Gmail to Sara with both links."
+                      }
+                    ],
+                    "check": {
+                      "type": "manual"
+                    },
+                    "id": "s1",
+                    "status": "open"
+                  },
+                  {
+                    "owner": "sara",
+                    "do": "Sara returns her edits.",
+                    "check": {
+                      "type": "gmail_reply",
+                      "subject": "binge eating",
+                      "from": "bccsanantonio.com",
+                      "after": "2026-10-15"
+                    },
+                    "id": "s2",
+                    "status": "done",
+                    "evidence": "Todd McCord replied 2026-10-20 14:53: \"Daniel, re number of sessions, doesn&#39;t have to be the exact same. Edit below reads well, and what it currently says on the website is fine. It is not an abs\"",
+                    "done_at": "2026-10-21 07:00",
+                    "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0da0976c938f72",
+                    "via": "checked automatically"
+                  },
+                  {
+                    "owner": "claude",
+                    "do": "Apply Sara's edits on staging14 through the block editor (author Sara Hamilton).",
+                    "check": {
+                      "type": "manual"
+                    },
+                    "id": "s3",
+                    "status": "open"
+                  }
+                ],
+                "state": "your_move",
+                "state_text": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
+                "checked_at": "2026-10-23 07:01"
+              },
+              "done": "2026-10-23",
+              "done_by": "Daniel: resolved as complete 2026-10-23 (article live and indexable on production, post 6664 /eating-disorders/binge-eating-treatment-by-telehealth/; Sara Oct 5 point-3 reword applied; Todd Oct 20 OK on sessions wording)",
+              "production": {
+                "post_id": 6664,
+                "url": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-treatment-by-telehealth/",
+                "robots": "index, follow",
+                "live_since": "2026-10-08",
+                "wording_refresh": "2026-10-23"
+              }
+            },
+            "check": {
+              "at": "2026-10-23T11:45:22",
+              "level": "done",
+              "text": "Daniel: resolved as complete 2026-10-23 (article live and indexable on production, post 6664 /eating-disorders/binge-eating-treatment-by-telehealth/; Sara Oct 5 point-3 reword applied; Todd Oct 20 OK on sessions wording)"
+            }
+          },
+          {
             "id": "41375b50b4",
             "kind": "social",
             "key": "social:2026-10-20:FB+IG+YT",
@@ -14602,44 +14750,11 @@
               "level": "ok",
               "text": "Not live yet. The live title is still the one this was drafted against."
             }
-          },
-          {
-            "id": "663f79d50f",
-            "kind": "title_meta",
-            "key": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-identify-self-sabotage-causes/",
-            "title": "New title and description for /self-improvement/behavioral-patterns/how-identify-self-sabo",
-            "why": "Duplicate title; 71 impressions, 0.0% CTR at position 9.9.",
-            "payload": {
-              "url": "https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-identify-self-sabotage-causes/",
-              "title": "How to Identify Self-Sabotage Causes and Patterns",
-              "description": "Self-sabotage often stems from self-doubt and fear of failure. Learn how to recognize the patterns that keep you from reaching your goals.",
-              "focus_keyword": "how to identify self sabotaging behaviors",
-              "current_title": "How To Identify Self-Sabotage Causes | Part 1",
-              "current_description": "Usually stemming from self-doubt and insecurities, self-sabotage relieves us from the fear of failing."
-            },
-            "source": "content-drafts",
-            "status": "applied",
-            "created": "2026-10-15T05:35:08",
-            "decided": "2026-10-20T10:33:01",
-            "note": "verified on staging14",
-            "result": {
-              "staging_id": 1851,
-              "link": "https://www.staging14.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/how-identify-self-sabotage-causes/",
-              "rendered": {
-                "title": "How to Identify Self-Sabotage Causes and Patterns",
-                "description": "Self-sabotage often stems from self-doubt and fear of failure. Learn how to recognize the patterns that keep you from reaching your goals."
-              }
-            },
-            "check": {
-              "at": "2026-10-20T09:16:50",
-              "level": "ok",
-              "text": "Not live yet. The live title is still the one this was drafted against."
-            }
           }
         ],
         "counts": {
           "rejected": 4,
-          "applied": 65,
+          "applied": 66,
           "placed": 42,
           "written": 6,
           "built": 13,
@@ -14647,7 +14762,7 @@
           "resolved": 12,
           "expired": 9,
           "pending": 35,
-          "needs": 6
+          "needs": 5
         },
         "handoff": {
           "content": [
@@ -16040,7 +16155,7 @@
                   ],
                   "state": "problem",
                   "state_text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-10-23 07:01"
+                  "checked_at": "2026-10-24 07:00"
                 },
                 "needs_you": "Send Todd the Gmail draft 'Quick check: phone and address on the overeaters page' (live page shows (210) 934-3420), then approve the positioning copy in content-drafts/action-items-2026-10-21",
                 "needs_since": "2026-10-21"
@@ -16167,7 +16282,7 @@
                   ],
                   "state": "problem",
                   "state_text": "Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-10-23 07:01"
+                  "checked_at": "2026-10-24 07:00"
                 },
                 "needs_you": "Send Sara the ARFID article for her edits: Gmail draft 'ARFID article for your edits: what it is and how it presents' (article in content-drafts/action-items-2026-10-21)",
                 "needs_since": "2026-10-21"
@@ -16252,7 +16367,7 @@
                   ],
                   "state": "your_move",
                   "state_text": "Read the stress eating brief and choose.",
-                  "checked_at": "2026-10-23 07:01"
+                  "checked_at": "2026-10-24 07:00"
                 },
                 "needs_you": "Stress eating is now tracked; read the brief (content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md) and say whether to place the new copy on staging14",
                 "needs_since": "2026-10-21"
@@ -16349,138 +16464,7 @@
                   ],
                   "state": "problem",
                   "state_text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-10-23 07:01"
-                }
-              }
-            },
-            {
-              "id": "d8d67dff97",
-              "kind": "action",
-              "key": "ai:ac6cd069a024",
-              "title": "Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1",
-              "why": "Action Items sheet, 8/27 meeting list, row 62",
-              "payload": {
-                "text": "Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1",
-                "notes": "The gap ERC, Alsana and Monte Nido cannot use",
-                "section": "Daniel - from 8/27 meeting",
-                "label": "8/27 meeting",
-                "row": 69,
-                "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-                "tab": "Sheet1",
-                "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A69"
-              },
-              "source": "action-items",
-              "status": "needs",
-              "created": "2026-09-24T12:23:36",
-              "decided": "2026-10-21T07:00:45",
-              "note": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
-              "result": {
-                "needs_you": "Already on staging14. Sara replied: Oct 5 OK except point 3 (reword as binge eating returning when food noise comes back after stopping the medication); Oct 14 she asked for the article in an editable format. Send her an editable copy.",
-                "needs_since": "2026-09-25",
-                "followup": {
-                  "trail": [
-                    {
-                      "at": "2026-09-25 07:30",
-                      "by": "claude",
-                      "text": "Worked by the morning Claude run: Brief and article ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\binge-eating-telehealth-brief-and-article.md (target 'virtual binge eating disorder treatment Texas', bariatric, weight regain and weight loss medication angles ERC does not use). Left for you: Sara to check the one statistic and the clinical descriptions; then it goes through the block process on staging13."
-                    },
-                    {
-                      "at": "2026-09-29 15:48",
-                      "by": "daniel",
-                      "text": "Chose 'Draft the note to Sara for me'. Told Claude: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process."
-                    },
-                    {
-                      "at": "2026-09-29 16:39",
-                      "by": "claude",
-                      "text": "Gmail draft from daniel@drbdig.com to Sara, cc Todd: 'Quick clinical check: binge eating telehealth article' (the STEP 1 statistic and four clinical passages quoted inline)."
-                    },
-                    {
-                      "at": "2026-10-02 07:00",
-                      "by": "check",
-                      "text": "Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.: not sent, and no longer in your Drafts (deleted?)"
-                    },
-                    {
-                      "at": "2026-10-06 07:00",
-                      "by": "check",
-                      "text": "Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.: sent 2026-10-05 08:00 to Sara Hamilton <shamilton@bccsanantonio.com>"
-                    },
-                    {
-                      "at": "2026-10-09 15:15",
-                      "by": "daniel",
-                      "text": "Told Claude: check email replies from sara I believe she has replied to this and is ok but am uncertain. maybe i misremember. if she has greenlit this. move it directly into staging"
-                    },
-                    {
-                      "at": "2026-10-15 10:06",
-                      "by": "claude",
-                      "text": "Sara replied Oct 5 on 'Quick clinical check: binge eating telehealth article': point 3 inaccurate, remove it and reword as binge eating behaviors coming back when food noise returns after stopping the medication; otherwise looks good."
-                    },
-                    {
-                      "at": "2026-10-15 10:06",
-                      "by": "claude",
-                      "text": "The article is already staged on staging14: https://www.staging14.bariatriccounselingcenter.com/eating-disorders/binge-eating-treatment-by-telehealth/ (listed in Daniel's Oct 14 email 'Four BCC pages staged: yes/no questions for Sara')."
-                    },
-                    {
-                      "at": "2026-10-15 10:06",
-                      "by": "claude",
-                      "text": "Oct 14 reply from Sara on that thread: 'Please send me this article in another format so I can edit.' Same request for the ARFID page."
-                    },
-                    {
-                      "at": "2026-10-21 07:00",
-                      "by": "check",
-                      "text": "Sara returns her edits.: Todd McCord replied 2026-10-20 14:53: \"Daniel, re number of sessions, doesn&#39;t have to be the exact same. Edit below reads well, and what it currently says on the website is fine. It is not an abs\""
-                    }
-                  ],
-                  "steps": [
-                    {
-                      "owner": "daniel",
-                      "do": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
-                      "links": [
-                        {
-                          "label": "Staging page",
-                          "url": "https://www.staging14.bariatriccounselingcenter.com/eating-disorders/binge-eating-treatment-by-telehealth/"
-                        }
-                      ],
-                      "options": [
-                        {
-                          "label": "Make the Google Docs for me",
-                          "tell": "Export the staged binge eating telehealth article and the ARFID page from staging14 into two Google Docs in the BCC Drive (Sara can edit), confirm Sara's Oct 5 point 3 change is in the binge article, and draft a short Gmail to Sara with both links."
-                        }
-                      ],
-                      "check": {
-                        "type": "manual"
-                      },
-                      "id": "s1",
-                      "status": "open"
-                    },
-                    {
-                      "owner": "sara",
-                      "do": "Sara returns her edits.",
-                      "check": {
-                        "type": "gmail_reply",
-                        "subject": "binge eating",
-                        "from": "bccsanantonio.com",
-                        "after": "2026-10-15"
-                      },
-                      "id": "s2",
-                      "status": "done",
-                      "evidence": "Todd McCord replied 2026-10-20 14:53: \"Daniel, re number of sessions, doesn&#39;t have to be the exact same. Edit below reads well, and what it currently says on the website is fine. It is not an abs\"",
-                      "done_at": "2026-10-21 07:00",
-                      "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0da0976c938f72",
-                      "via": "checked automatically"
-                    },
-                    {
-                      "owner": "claude",
-                      "do": "Apply Sara's edits on staging14 through the block editor (author Sara Hamilton).",
-                      "check": {
-                        "type": "manual"
-                      },
-                      "id": "s3",
-                      "status": "open"
-                    }
-                  ],
-                  "state": "your_move",
-                  "state_text": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
-                  "checked_at": "2026-10-23 07:01"
+                  "checked_at": "2026-10-24 07:00"
                 }
               }
             },
@@ -16602,7 +16586,7 @@
                   ],
                   "state": "waiting",
                   "state_text": "Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.",
-                  "checked_at": "2026-10-23 07:01"
+                  "checked_at": "2026-10-24 07:00"
                 }
               }
             }
@@ -24059,25 +24043,20 @@
       "model": {
         "connected": true,
         "data": {
-          "fetched": "2026-10-23",
+          "fetched": "2026-10-24",
           "site": "https://www.bariatriccounselingcenter.com/",
           "window_days": 28,
           "errors": [
             "GetRankAndTrafficStats: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+            "GetPageStats: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
             "GetCrawlStats: <urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
           ],
           "summary": {
             "clicks": 0,
             "impressions": 0,
-            "avg_position": 4.6
+            "avg_position": 4.7
           },
           "top_queries": [
-            {
-              "query": "518493746 bariatric counseling sara hamilton 9618 huebner rd ste 320 san antonio tx 2106342200",
-              "clicks": 2,
-              "impressions": 2,
-              "position": 3.0
-            },
             {
               "query": "the bariatric counseling center intensive out patient program",
               "clicks": 2,
@@ -24085,19 +24064,7 @@
               "position": 1.0
             },
             {
-              "query": "518493746 bariatric counseling 9618 huebner rd ste 320 san antonio tx 2106342200 email id",
-              "clicks": 1,
-              "impressions": 2,
-              "position": 2.0
-            },
-            {
-              "query": "weight loss iop san antonio locations",
-              "clicks": 1,
-              "impressions": 2,
-              "position": 9.0
-            },
-            {
-              "query": "518493746 bariatric counseling 9618 huebner rd ste 320 san antonio tx 2106342200 fax number",
+              "query": "weight loss surgery mental health preparation",
               "clicks": 1,
               "impressions": 1,
               "position": 1.0
@@ -24107,12 +24074,6 @@
               "clicks": 1,
               "impressions": 1,
               "position": 3.0
-            },
-            {
-              "query": "weight loss surgery mental health preparation",
-              "clicks": 1,
-              "impressions": 1,
-              "position": 1.0
             },
             {
               "query": "emotionally preparing for bariatric surgery",
@@ -24129,14 +24090,14 @@
             {
               "query": "bariatric counseling center of san antonio",
               "clicks": 0,
-              "impressions": 26,
+              "impressions": 20,
               "position": 2.0
             },
             {
               "query": "bcc",
               "clicks": 0,
-              "impressions": 17,
-              "position": 3.6
+              "impressions": 13,
+              "position": 3.5
             },
             {
               "query": "dehydrating yourself is a good way to loss weight? true false",
@@ -24145,101 +24106,49 @@
               "position": 8.0
             },
             {
-              "query": "bcc san antonio",
-              "clicks": 0,
-              "impressions": 4,
-              "position": 3.5
-            },
-            {
-              "query": "weight loss clinic blog topics family support",
+              "query": "will staying hydrated help me control my weight",
               "clicks": 0,
               "impressions": 3,
-              "position": 6.0
+              "position": 4.0
             },
             {
               "query": "bcc counseling",
               "clicks": 0,
               "impressions": 3,
               "position": 2.0
+            },
+            {
+              "query": "bcc san antonio",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 3.0
+            },
+            {
+              "query": "bariatric christian counseling sa tx",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 2.0
+            },
+            {
+              "query": "does being well hydrated affect weight loss",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 6.0
+            },
+            {
+              "query": "why is hydration important for weight loss",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 6.0
+            },
+            {
+              "query": "losing weight and dehydration",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 8.0
             }
           ],
-          "top_pages": [
-            {
-              "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/preparing-for-bariatric-surgery-a-mental-health-checklist/",
-              "clicks": 3,
-              "impressions": 6
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/",
-              "clicks": 2,
-              "impressions": 31
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
-              "clicks": 2,
-              "impressions": 9
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
-              "clicks": 1,
-              "impressions": 75
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/bariatric-therapist-in-san-antonio-tx/",
-              "clicks": 1,
-              "impressions": 6
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/eating-disorder-treatment-in-san-antonio-tx/",
-              "clicks": 1,
-              "impressions": 3
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/staff/dr-sara-hamilton-a-holistic-approach-to-weight-loss/",
-              "clicks": 1,
-              "impressions": 1
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/about/",
-              "clicks": 0,
-              "impressions": 11
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/weight-loss-journey/how-family-support-impacts-weight-loss-a-guide-for-loved-ones/",
-              "clicks": 0,
-              "impressions": 7
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/",
-              "clicks": 0,
-              "impressions": 6
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
-              "clicks": 0,
-              "impressions": 4
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
-              "clicks": 0,
-              "impressions": 3
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/why-stress-eating-happens/",
-              "clicks": 0,
-              "impressions": 3
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/dietitian-vs-nutritionist-for-weight-loss-whats-the-difference/",
-              "clicks": 0,
-              "impressions": 3
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/registered-dietitian-in-san-antonio-tx/",
-              "clicks": 0,
-              "impressions": 2
-            }
-          ],
+          "top_pages": [],
           "daily": [],
           "crawl": {
             "as_of": null,
@@ -24616,6 +24525,99 @@
           }
         ],
         "closed": [
+          {
+            "id": "oct-r37-20261023115325",
+            "month": "October",
+            "row": 37,
+            "title": "Community: Bexar County Medical Society 40th Anniversary Auto Show",
+            "when": "Fri 10/23",
+            "platforms": [
+              "FB",
+              "IG",
+              "LI",
+              "GBP"
+            ],
+            "affected": [
+              "IG"
+            ],
+            "status": "done",
+            "kinds": [
+              "edit"
+            ],
+            "detected": "2026-10-23T11:53:25",
+            "updated": "2026-10-23T11:53:27",
+            "initial": {
+              "C": "Fri 10/23: FB, IG, LI, GBP",
+              "D": "GBP 9:00 AM\nLI 11:00 AM\nFB 3:00 PM\nIG 3:15 PM",
+              "F": "BCC at the Bexar County Medical Society 40th Anniversary Auto Show. Thanks BCMS and showcase Chef Leila's dish. Todd supplied the wording.",
+              "G": "We were proud to participate in and support the Bexar County Medical Society at their 40th Anniversary Auto Show.\n\nWe featured delicious healthy recipes from our kitchen, crafted with love by our fabulous Chef Leila: Mongolian Chicken with Cauliflower Rice and Sesame Gochujang Slaw.\n\nThank you to BCMS President Melody Newsom and the Bexar County Medical Society. Event info in the first comment.",
+              "H": "Proud to support the Bexar County Medical Society at their 40th Anniversary Auto Show.\n\nOur table featured healthy recipes from our teaching kitchen, crafted with love by Chef Leila: Mongolian Chicken with Cauliflower Rice and Sesame Gochujang Slaw.\n\nThank you to BCMS President Melody Newsom. San Antonio and virtual across Texas.\n\n#BariatricCounseling #SanAntonio #BexarCountyMedicalSociety #BariatricSupport",
+              "I": "The Bariatric Counseling Center was proud to participate in and support the Bexar County Medical Society at their 40th Anniversary Auto Show.\n\nOur table featured healthy recipes from our kitchen, crafted with love by Chef Leila: Mongolian Chicken with Cauliflower Rice and Sesame Gochujang Slaw. Thank you to BCMS President Melody Newsom and the Bexar County Medical Society for a great event.\n\nEvent info in the first comment.",
+              "J": "We were proud to participate in and support the Bexar County Medical Society at their 40th Anniversary Auto Show. Our table featured delicious healthy recipes from our kitchen, crafted with love by our fabulous Chef Leila: Mongolian Chicken with Cauliflower Rice and Sesame Gochujang Slaw. Thank you to BCMS President Melody Newsom and the Bexar County Medical Society. The Bariatric Counseling Center offers behavioral therapy, dietary guidance, culinary classes and mindful movement education in San Antonio and virtual across Texas.",
+              "K": "not applicable",
+              "L": "not applicable",
+              "M": "FB: post the photo, put the event link in the FIRST COMMENT. Link: https://events.blackbirdrsvp.com/40th-annual-auto-show\nIG: no link in the caption (not tappable). Reel for the video, or the photo of Sara and Melody Newsom as a feed post.\nLI: photo post, event link in the FIRST COMMENT.\nGBP: Update post, 'Learn more' button to the event link.",
+              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1eShvo7g13IVgCngfALHo-jb6rZfgUlUF\",1)",
+              "O": "ASSETS (built 2026-10-22). The image above is oct23-autoshow-01-feed.png.\n  Instagram + Facebook carousel, 3 slides 1080x1350: oct23-autoshow-01-feed.png to oct23-autoshow-03-feed.png\nAll October files: https://drive.google.com/drive/folders/1XujWCAggxk0h6BYvncHp7Sa2Y0JGn87k\nVertical reel (optional, 9:16, 11 s, no end card): oct23-autoshow-reel-9x16.mp4 https://drive.google.com/file/d/1CJECRn9T7EzU7GH7K1O4RY4hiF31Y6FG/view\nSOURCE: Todd McCord email 'Bexar County Auto Show Posts' (Oct 16, resent Oct 22). Caption wording is his. Slide 1 shows Sara with Melody Newsom, Bexar County Medical Society President. Event link: https://events.blackbirdrsvp.com/40th-annual-auto-show\nAlt text: Sara and Melody Newsom, President of the Bexar County Medical Society, behind the Bariatric Counseling Center table at the BCMS 40th Anniversary Auto Show.\nDate and times are a placeholder for 'soon'; move to whatever slot is open.",
+              "P": "TRUE",
+              "Q": "",
+              "A": "FALSE"
+            },
+            "todd": {
+              "cells": {
+                "H": {
+                  "before": "Proud to support the Bexar County Medical Society at their 40th Anniversary Auto Show.\n\nOur table featured healthy recipes from our teaching kitchen, crafted with love by Chef Leila: Mongolian Chicken with Cauliflower Rice and Sesame Gochujang Slaw.\n\nThank you to BCMS President Melody Newsom. San Antonio and virtual across Texas.\n\n#BariatricCounseling #SanAntonio #BexarCountyMedicalSociety #BariatricSupport",
+                  "after": "Proud to support the Bexar County Medical Society at their 40th Anniversary Auto Show.\n\nOur table featured healthy recipes from our kitchen, crafted with love by Chef Leila: Mongolian Chicken with Cauliflower Rice and Sesame Gochujang Slaw.\n\nThank you to BCMS President Melody Newsom. San Antonio and virtual across Texas.\n\n#BariatricCounseling #SanAntonio #BexarCountyMedicalSociety #BariatricSupport"
+                }
+              },
+              "ok": null,
+              "notes": ""
+            },
+            "final": {
+              "ready": true,
+              "by": "cell edit",
+              "channels": {
+                "IG": {
+                  "text": "Proud to support the Bexar County Medical Society at their 40th Anniversary Auto Show.\n\nOur table featured healthy recipes from our kitchen, crafted with love by Chef Leila: Mongolian Chicken with Cauliflower Rice and Sesame Gochujang Slaw.\n\nThank you to BCMS President Melody Newsom. San Antonio and virtual across Texas.\n\n#BariatricCounseling #SanAntonio #BexarCountyMedicalSociety #BariatricSupport"
+                }
+              },
+              "media": null,
+              "link": null
+            },
+            "scheduler": {},
+            "history": [
+              {
+                "at": "2026-10-23T11:53:25",
+                "who": "laustintransl8n@gmail.com",
+                "what": "changed IG caption (H)"
+              },
+              {
+                "at": "2026-10-23T11:53:27",
+                "who": "system",
+                "what": "minor edit: IG: not booked by the sheet tool; TO DO, update it in Postiz by hand"
+              }
+            ],
+            "notified": true,
+            "seen": {
+              "C": "d364c2ddf1d8",
+              "D": "c3f126cc391a",
+              "F": "cc33b3a9a946",
+              "G": "19fe82940d06",
+              "H": "c818bc834865",
+              "I": "441e28e97714",
+              "J": "020bb56a0ea7",
+              "K": "b4d1e1bdf71f",
+              "L": "b4d1e1bdf71f",
+              "M": "05cf1b3da4ae",
+              "N": "f10cf8471a67",
+              "O": "8477db0cd532",
+              "P": "fddf1df7c30c",
+              "Q": "da39a3ee5e6b"
+            },
+            "minor": [
+              "IG: not booked by the sheet tool; TO DO, update it in Postiz by hand"
+            ]
+          },
           {
             "id": "nov-r13-20261022165048",
             "month": "November",
@@ -25078,108 +25080,17 @@
             "minor": [
               "FB: not booked by the sheet tool; TO DO, update it in Postiz by hand"
             ]
-          },
-          {
-            "id": "nov-r18-20261022113743",
-            "month": "November",
-            "row": 18,
-            "title": "Referring Providers: Document Post",
-            "when": "Tue 11/17",
-            "platforms": [
-              "LI",
-              "GBP"
-            ],
-            "affected": [
-              "LI"
-            ],
-            "status": "done",
-            "kinds": [
-              "edit"
-            ],
-            "detected": "2026-10-22T11:37:43",
-            "updated": "2026-10-22T11:37:46",
-            "initial": {
-              "C": "Tue 11/17: LI, GBP",
-              "D": "LI 11:00 AM\nGBP 9:00 AM",
-              "F": "For endocrinology and primary care: the behavioral half of obesity treatment, coordinated with the medical provider. LinkedIn document post.",
-              "G": "not applicable",
-              "H": "not applicable",
-              "I": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Progress notes as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth",
-              "J": "Behavioral treatment for obesity San Antonio. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. Our team includes a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, a registered nurse, and a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We coordinate care with referring medical providers and provide a detailed discharge summary of the patient's behavioral progress, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression. We accept most health insurances. San Antonio and virtual across Texas.",
-              "K": "not applicable",
-              "L": "not applicable",
-              "M": "LI: document post (upload the PDF), so no preview card is possible. Put the URL in the first comment: bariatriccounselingcenter.com/refer-a-patient/\nGBP: post the 1200x900 card with the Learn more button to bariatriccounselingcenter.com/refer-a-patient/\nCard: page 5 carries bariatriccounselingcenter.com/refer-a-patient",
-              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1Vbi0wLygwrQy-s-zU0Oss0quLDE39_bE\")",
-              "O": "ASSETS (built 2026-10-21). The image above is nov17-providers-01-doc.png.\n  LinkedIn document (PDF, 5 pages): nov17-providers-linkedin-document.pdf, Drive: https://drive.google.com/file/d/1OKsb5sw9zMBysM9D_g-YEtXWSJTib19j/view\n  Document pages 1080x1350: nov17-providers-01-doc.png, nov17-providers-02-doc.png, nov17-providers-03-doc.png, nov17-providers-04-doc.png, nov17-providers-05-doc.png\n  GBP card 1200x900: nov17-providers-gbp-01-gbp.png, Drive: https://drive.google.com/file/d/163dm61ymeELbtIjAc8PO4HptmmgWY9BO/view\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Document outlining behavioral healthcare services for obesity treatment at Bariatric Counseling Center for referring medical providers.",
-              "P": "FALSE",
-              "Q": "",
-              "A": "FALSE"
-            },
-            "todd": {
-              "cells": {
-                "I": {
-                  "before": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Progress notes as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth",
-                  "after": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Treatment updates as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth"
-                }
-              },
-              "ok": null,
-              "notes": ""
-            },
-            "final": {
-              "ready": true,
-              "by": "cell edit",
-              "channels": {
-                "LI": {
-                  "text": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Treatment updates as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth"
-                }
-              },
-              "media": null,
-              "link": null
-            },
-            "scheduler": {},
-            "history": [
-              {
-                "at": "2026-10-22T11:37:43",
-                "who": "sheet",
-                "what": "changed LinkedIn caption (I)"
-              },
-              {
-                "at": "2026-10-22T11:37:46",
-                "who": "system",
-                "what": "minor edit: LI: not booked yet; it will be booked from the sheet as it is now"
-              }
-            ],
-            "notified": true,
-            "seen": {
-              "C": "1dc2429af745",
-              "D": "eadc16e77ccc",
-              "F": "55c0d34d3f73",
-              "G": "b4d1e1bdf71f",
-              "H": "b4d1e1bdf71f",
-              "I": "a58888824e57",
-              "J": "2b6bf439a656",
-              "K": "b4d1e1bdf71f",
-              "L": "b4d1e1bdf71f",
-              "M": "ee7dc1d4b101",
-              "N": "dfb7b13ba2bd",
-              "O": "bf536748f8e5",
-              "P": "0ed2d7b5cdb7",
-              "Q": "da39a3ee5e6b"
-            },
-            "minor": [
-              "LI: not booked yet; it will be booked from the sheet as it is now"
-            ]
           }
         ],
         "log": [
-          "2026-10-22T11:37:28  new row 37 Community: Bexar County Medical Society 40th Anniversary Auto Show on October",
-          "2026-10-22T11:37:46  oct-r33-20261022113723 | LinkedIn caption: Professionals: Halloween Week",
-          "2026-10-22T16:45:46  hook: edit on November Content Calendar row 15 col 7 by unknown",
           "2026-10-22T16:47:15  hook: edit on November Content Calendar row 15 col 7 by unknown",
           "2026-10-22T16:47:44  hook: edit on November Content Calendar row 15 col 7 by unknown",
           "2026-10-22T16:48:06  hook: edit on November Content Calendar row 15 col 8 by unknown",
           "2026-10-22T16:49:59  hook: edit on November Content Calendar row 12 col 9 by unknown",
-          "2026-10-22T16:50:26  hook: edit on November Content Calendar row 13 col 7 by unknown"
+          "2026-10-22T16:50:26  hook: edit on November Content Calendar row 13 col 7 by unknown",
+          "2026-10-23T11:53:03  hook: edit on October Content Calendar row 37 col 8 by laustintransl8n@gmail.com",
+          "2026-10-23T12:05:26  hook listener on 127.0.0.1:8788",
+          "2026-10-23T12:07:26  hook listener on 127.0.0.1:8788"
         ],
         "baselines": [
           "baseline-november.json",
@@ -29861,5 +29772,5 @@
     }
   ],
   "snapshot_count": 46,
-  "generated_at": "2026-10-23T12:17:15.558647Z"
+  "generated_at": "2026-10-24T12:09:37.397997Z"
 }
