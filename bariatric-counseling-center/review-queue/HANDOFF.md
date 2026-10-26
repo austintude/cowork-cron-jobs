@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-25 07:06 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-26 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -209,13 +209,12 @@ Generated 2026-10-25 07:06 by queue_apply.py. Daniel approved these on the dashb
   - asset: reel https://drive.google.com/drive/folders/1Oxs1OVu05rvOABXKa392DZ6wSSeEZPA3
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/
 
-## Draft day: Wednesday. Today is Sunday, not draft day: build only, no email to Todd.
+## Draft day: Wednesday. Today is Monday, not draft day: build only, no email to Todd.
 
-## Social posts with Todd (13): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
+## Social posts with Todd (12): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
 - id `1b94c31012`: **Thu 10/22: alumni clip, Jessica B. (struggled my whole life)** on 2026-10-22 (FB, IG, YT); sheet October Content Calendar!35; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `b93e81977d`: **Tue 10/27: alumni clip, Carmen M. (head and heart)** on 2026-10-27 (FB, IG, YT); sheet October Content Calendar!30; draft  Social posts to approve: week of October 26 (2026-10-21)
-- id `d3bf157620`: **Thu 10/29: alumni clip, Kim K. (couldnt articulate)** on 2026-10-29 (FB, IG, YT); sheet October Content Calendar!36; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `4a2d70a708`: **Thu 11/5: The evening track fits a workday** on 2026-11-05 (LI); sheet November Content Calendar!12; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `67ff8aa4bd`: **Mon 11/9: What a grocery store tour is for** on 2026-11-09 (FB, IG); sheet November Content Calendar!13; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `566382672f`: **Tue 11/10: Referring providers: who is the right referral** on 2026-11-10 (LI, GBP); sheet November Content Calendar!14; draft  Social posts to approve: week of October 26 (2026-10-21)
@@ -226,6 +225,11 @@ Generated 2026-10-25 07:06 by queue_apply.py. Daniel approved these on the dashb
 - id `8c10f61a84`: **Wed 11/18: Alumni words: never made to feel judged** on 2026-11-18 (FB, IG); sheet November Content Calendar!19; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `3f9fded114`: **Thu 11/19: Virtual across Texas, on your calendar** on 2026-11-19 (LI); sheet November Content Calendar!20; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `018f9727b9`: **Mon 11/23: A diet ends. A plan does not.** on 2026-11-23 (FB, IG); sheet November Content Calendar!21; draft  Social posts to approve: week of October 26 (2026-10-21)
+
+## Social posts Todd has OK'd: book each one now, then --placed (1)
+
+- id `d3bf157620`: **Thu 10/29: alumni clip, Kim K. (couldnt articulate)** on 2026-10-29 (FB, IG, YT) at 7:00 PM; postiz mode schedule; sheet October Content Calendar!36; asset Videos/Ford/CURRENT-portrait-clips-9x16/kim-clip4-9x16_couldnt-articulate_COVERED.mp4; Todd: Todd OK (silence) 2026-10-26: no reply by 3 days before; drafted 2026-10-21 (8 days notice); Todd's rule: silence is a go
+  - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\d3bf157620-thu-10-29-alumni-clip-kim-k-couldnt-articulate.json`
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
