@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-26 07:18 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-26 07:26 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -225,11 +225,6 @@ Generated 2026-10-26 07:18 by queue_apply.py. Daniel approved these on the dashb
 - id `8c10f61a84`: **Wed 11/18: Alumni words: never made to feel judged** on 2026-11-18 (FB, IG); sheet November Content Calendar!19; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `3f9fded114`: **Thu 11/19: Virtual across Texas, on your calendar** on 2026-11-19 (LI); sheet November Content Calendar!20; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `018f9727b9`: **Mon 11/23: A diet ends. A plan does not.** on 2026-11-23 (FB, IG); sheet November Content Calendar!21; draft  Social posts to approve: week of October 26 (2026-10-21)
-
-## Social posts Todd has OK'd: book each one now, then --placed (1)
-
-- id `d3bf157620`: **Thu 10/29: alumni clip, Kim K. (couldnt articulate)** on 2026-10-29 (FB, IG, YT) at 7:00 PM; postiz mode schedule; sheet October Content Calendar!36; asset Videos/Ford/CURRENT-portrait-clips-9x16/kim-clip4-9x16_couldnt-articulate_COVERED.mp4; Todd: Todd OK (silence) 2026-10-26: no reply by 3 days before; drafted 2026-10-21 (8 days notice); Todd's rule: silence is a go
-  - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\d3bf157620-thu-10-29-alumni-clip-kim-k-couldnt-articulate.json`
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
