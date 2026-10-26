@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-19T04:21:06",
+  "generated_at": "2026-10-26T04:15:19",
   "window_days": 1100,
-  "timeline_start": "2023-10-15",
-  "timeline_end": "2026-10-18",
+  "timeline_start": "2023-10-22",
+  "timeline_end": "2026-10-26",
   "channels": [
     "AI Assistant",
     "Cross-network",
@@ -21,66 +21,6 @@
     "Unassigned"
   ],
   "timeline": [
-    {
-      "date": "2023-10-15",
-      "total": 9,
-      "channels": {
-        "Organic Search": 8,
-        "Direct": 1
-      }
-    },
-    {
-      "date": "2023-10-16",
-      "total": 21,
-      "channels": {
-        "Direct": 12,
-        "Organic Search": 8,
-        "Referral": 1
-      }
-    },
-    {
-      "date": "2023-10-17",
-      "total": 18,
-      "channels": {
-        "Direct": 11,
-        "Organic Search": 7
-      }
-    },
-    {
-      "date": "2023-10-18",
-      "total": 28,
-      "channels": {
-        "Organic Search": 15,
-        "Direct": 10,
-        "Organic Social": 2,
-        "Referral": 1
-      }
-    },
-    {
-      "date": "2023-10-19",
-      "total": 15,
-      "channels": {
-        "Direct": 12,
-        "Organic Search": 3
-      }
-    },
-    {
-      "date": "2023-10-20",
-      "total": 26,
-      "channels": {
-        "Organic Search": 14,
-        "Direct": 10,
-        "Organic Social": 2
-      }
-    },
-    {
-      "date": "2023-10-21",
-      "total": 6,
-      "channels": {
-        "Organic Search": 5,
-        "Direct": 1
-      }
-    },
     {
       "date": "2023-10-22",
       "total": 12,
@@ -9836,32 +9776,109 @@
     },
     {
       "date": "2026-10-18",
-      "total": 13,
+      "total": 17,
       "channels": {
-        "Direct": 8,
-        "Organic Search": 5
+        "Direct": 9,
+        "Organic Search": 8
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "total": 27,
+      "channels": {
+        "Organic Search": 15,
+        "Direct": 11,
+        "Referral": 1
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "total": 41,
+      "channels": {
+        "Direct": 21,
+        "Organic Search": 16,
+        "Email": 3,
+        "Referral": 1
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "total": 42,
+      "channels": {
+        "Direct": 20,
+        "Organic Search": 17,
+        "Referral": 3,
+        "Email": 1,
+        "Unassigned": 1
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "total": 78,
+      "channels": {
+        "Email": 28,
+        "Organic Search": 27,
+        "Direct": 22,
+        "Organic Social": 1
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "total": 34,
+      "channels": {
+        "Direct": 11,
+        "Email": 10,
+        "Organic Search": 8,
+        "Organic Social": 4,
+        "Unassigned": 1
+      }
+    },
+    {
+      "date": "2026-10-24",
+      "total": 10,
+      "channels": {
+        "Direct": 4,
+        "Email": 3,
+        "Organic Search": 3
+      }
+    },
+    {
+      "date": "2026-10-25",
+      "total": 16,
+      "channels": {
+        "Organic Search": 6,
+        "Email": 5,
+        "Direct": 4,
+        "Unassigned": 1
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "total": 1,
+      "channels": {
+        "Direct": 1
       }
     }
   ],
   "channel_mix": [
     {
       "channel": "Direct",
-      "sessions": 17106,
+      "sessions": 17144,
       "pct": 51.1
     },
     {
       "channel": "Organic Search",
-      "sessions": 11107,
+      "sessions": 11142,
       "pct": 33.2
     },
     {
       "channel": "Organic Social",
-      "sessions": 1713,
+      "sessions": 1714,
       "pct": 5.1
     },
     {
       "channel": "Referral",
-      "sessions": 1132,
+      "sessions": 1135,
       "pct": 3.4
     },
     {
@@ -9876,13 +9893,13 @@
     },
     {
       "channel": "Unassigned",
-      "sessions": 259,
+      "sessions": 262,
       "pct": 0.8
     },
     {
       "channel": "Email",
-      "sessions": 136,
-      "pct": 0.4
+      "sessions": 186,
+      "pct": 0.6
     },
     {
       "channel": "Display",
@@ -9920,21 +9937,77 @@
       "pct": 0.0
     }
   ],
-  "window_total_sessions": 33443,
+  "window_total_sessions": 33573,
   "newsletters": [
+    {
+      "campaign_id": "2e54e4b3-fb67-4012-9211-4e8fd0282558",
+      "name": "Staff-Client eNews - October 2026",
+      "send_date": "2026-10-25",
+      "open_rate": 37.88,
+      "click_rate": 0.6,
+      "click_to_open_rate": 1.59,
+      "sends": 4490,
+      "baseline_daily_sessions": 34.5,
+      "spike_mean_daily_sessions": 8.5,
+      "lift_pct": -75.4,
+      "email_sessions_3d": 5,
+      "direct_sessions_3d": 5
+    },
+    {
+      "campaign_id": "90110938-5bc8-4ce3-9c98-6221301f3ffe",
+      "name": "Staff-Client eNews - October 2026 (arm B, 3:30 PM)",
+      "send_date": "2026-10-25",
+      "open_rate": 38.28,
+      "click_rate": 0.54,
+      "click_to_open_rate": 1.4,
+      "sends": 4475,
+      "baseline_daily_sessions": 34.5,
+      "spike_mean_daily_sessions": 8.5,
+      "lift_pct": -75.4,
+      "email_sessions_3d": 5,
+      "direct_sessions_3d": 5
+    },
+    {
+      "campaign_id": "218a61d9-c79e-4bd8-83f5-2af288f0b5b6",
+      "name": "Referring Partners eNews - October 2026",
+      "send_date": "2026-10-22",
+      "open_rate": 20.25,
+      "click_rate": 1.54,
+      "click_to_open_rate": 7.61,
+      "sends": 973,
+      "baseline_daily_sessions": 31.0,
+      "spike_mean_daily_sessions": 40.7,
+      "lift_pct": 31.3,
+      "email_sessions_3d": 41,
+      "direct_sessions_3d": 37
+    },
+    {
+      "campaign_id": "a1baf82e-fd30-4373-8e77-a075407042fc",
+      "name": "Alumni eNews - Day Of: October 2026",
+      "send_date": "2026-10-21",
+      "open_rate": 44.98,
+      "click_rate": 1.66,
+      "click_to_open_rate": 3.69,
+      "sends": 1025,
+      "baseline_daily_sessions": 27.0,
+      "spike_mean_daily_sessions": 51.3,
+      "lift_pct": 90.0,
+      "email_sessions_3d": 39,
+      "direct_sessions_3d": 53
+    },
     {
       "campaign_id": "074c7389-a033-4b95-abfd-4c3e1fef2bdd",
       "name": "Alumni eNews - Reminder: October 2026",
       "send_date": "2026-10-16",
-      "open_rate": 43.66,
-      "click_rate": 0.97,
-      "click_to_open_rate": 2.23,
+      "open_rate": 44.93,
+      "click_rate": 1.27,
+      "click_to_open_rate": 2.82,
       "sends": 1026,
       "baseline_daily_sessions": 31.0,
-      "spike_mean_daily_sessions": 20.7,
-      "lift_pct": -33.2,
+      "spike_mean_daily_sessions": 22.0,
+      "lift_pct": -29.0,
       "email_sessions_3d": 0,
-      "direct_sessions_3d": 36
+      "direct_sessions_3d": 37
     },
     {
       "campaign_id": "8e429cf2-6f96-4791-b9c4-54bca76f17e7",
@@ -9954,9 +10027,9 @@
       "campaign_id": "c012f430-4491-446b-948c-e11955c4e75c",
       "name": "Alumni eNews - Day Of: September 2026",
       "send_date": "2026-09-24",
-      "open_rate": 46.38,
+      "open_rate": 47.06,
       "click_rate": 0.48,
-      "click_to_open_rate": 1.04,
+      "click_to_open_rate": 1.02,
       "sends": 1037,
       "baseline_daily_sessions": 34.5,
       "spike_mean_daily_sessions": 33.7,
@@ -9968,9 +10041,9 @@
       "campaign_id": "c2929520-148d-4291-9753-f440b4121824",
       "name": "Alumni eNews - Reminder: September 2026",
       "send_date": "2026-09-20",
-      "open_rate": 48.07,
+      "open_rate": 48.46,
       "click_rate": 0.67,
-      "click_to_open_rate": 1.4,
+      "click_to_open_rate": 1.39,
       "sends": 1038,
       "baseline_daily_sessions": 35.0,
       "spike_mean_daily_sessions": 31.7,
@@ -11269,19 +11342,79 @@
   ],
   "cc_campaigns": [
     {
+      "campaign_id": "2e54e4b3-fb67-4012-9211-4e8fd0282558",
+      "name": "Staff-Client eNews - October 2026",
+      "type": "Custom Code Email",
+      "last_sent_date": "2026-10-25T20:30:49.000Z",
+      "sends": 4490,
+      "opens": 1701,
+      "clicks": 27,
+      "bounces": 331,
+      "optouts": 9,
+      "open_rate": 37.88,
+      "click_rate": 0.6,
+      "click_to_open_rate": 1.59,
+      "bounce_rate": 7.37
+    },
+    {
+      "campaign_id": "90110938-5bc8-4ce3-9c98-6221301f3ffe",
+      "name": "Staff-Client eNews - October 2026 (arm B, 3:30 PM)",
+      "type": "Custom Code Email",
+      "last_sent_date": "2026-10-25T20:30:35.000Z",
+      "sends": 4475,
+      "opens": 1713,
+      "clicks": 24,
+      "bounces": 276,
+      "optouts": 14,
+      "open_rate": 38.28,
+      "click_rate": 0.54,
+      "click_to_open_rate": 1.4,
+      "bounce_rate": 6.17
+    },
+    {
+      "campaign_id": "218a61d9-c79e-4bd8-83f5-2af288f0b5b6",
+      "name": "Referring Partners eNews - October 2026",
+      "type": "Custom Code Email",
+      "last_sent_date": "2026-10-22T13:31:35.000Z",
+      "sends": 973,
+      "opens": 197,
+      "clicks": 15,
+      "bounces": 247,
+      "optouts": 1,
+      "open_rate": 20.25,
+      "click_rate": 1.54,
+      "click_to_open_rate": 7.61,
+      "bounce_rate": 25.39
+    },
+    {
+      "campaign_id": "a1baf82e-fd30-4373-8e77-a075407042fc",
+      "name": "Alumni eNews - Day Of: October 2026",
+      "type": "Custom Code Email",
+      "last_sent_date": "2026-10-21T14:04:20.000Z",
+      "sends": 1025,
+      "opens": 461,
+      "clicks": 17,
+      "bounces": 38,
+      "optouts": 0,
+      "open_rate": 44.98,
+      "click_rate": 1.66,
+      "click_to_open_rate": 3.69,
+      "bounce_rate": 3.71
+    },
+    {
       "campaign_id": "074c7389-a033-4b95-abfd-4c3e1fef2bdd",
       "name": "Alumni eNews - Reminder: October 2026",
       "type": "Custom Code Email",
       "last_sent_date": "2026-10-16T16:02:21.000Z",
       "sends": 1026,
-      "opens": 448,
-      "clicks": 10,
-      "bounces": 39,
+      "opens": 461,
+      "clicks": 13,
+      "bounces": 42,
       "optouts": 0,
-      "open_rate": 43.66,
-      "click_rate": 0.97,
-      "click_to_open_rate": 2.23,
-      "bounce_rate": 3.8
+      "open_rate": 44.93,
+      "click_rate": 1.27,
+      "click_to_open_rate": 2.82,
+      "bounce_rate": 4.09
     },
     {
       "campaign_id": "8e429cf2-6f96-4791-b9c4-54bca76f17e7",
@@ -11304,13 +11437,13 @@
       "type": "Newsletter",
       "last_sent_date": "2026-09-24T14:02:08.000Z",
       "sends": 1037,
-      "opens": 481,
+      "opens": 488,
       "clicks": 5,
       "bounces": 45,
       "optouts": 0,
-      "open_rate": 46.38,
+      "open_rate": 47.06,
       "click_rate": 0.48,
-      "click_to_open_rate": 1.04,
+      "click_to_open_rate": 1.02,
       "bounce_rate": 4.34
     },
     {
@@ -11319,13 +11452,13 @@
       "type": "Newsletter",
       "last_sent_date": "2026-09-20T16:01:08.000Z",
       "sends": 1038,
-      "opens": 499,
+      "opens": 503,
       "clicks": 7,
       "bounces": 45,
       "optouts": 0,
-      "open_rate": 48.07,
+      "open_rate": 48.46,
       "click_rate": 0.67,
-      "click_to_open_rate": 1.4,
+      "click_to_open_rate": 1.39,
       "bounce_rate": 4.34
     },
     {
@@ -12707,93 +12840,33 @@
       "click_rate": 1.37,
       "click_to_open_rate": 2.7,
       "bounce_rate": 1.74
-    },
-    {
-      "campaign_id": "33e4c4f0-58c9-4905-a295-7aaf521aac7a",
-      "name": "October Alumni Event",
-      "type": "Newsletter",
-      "last_sent_date": "2023-10-13T15:31:46.000Z",
-      "sends": 796,
-      "opens": 427,
-      "clicks": 19,
-      "bounces": 13,
-      "optouts": 2,
-      "open_rate": 53.64,
-      "click_rate": 2.39,
-      "click_to_open_rate": 4.45,
-      "bounce_rate": 1.63
-    },
-    {
-      "campaign_id": "a78fc9ee-dbff-41d5-b4d2-53ad0a2a1c3f",
-      "name": "Client eNews2",
-      "type": "Newsletter",
-      "last_sent_date": "2023-09-05T14:08:11.000Z",
-      "sends": 6759,
-      "opens": 3711,
-      "clicks": 72,
-      "bounces": 278,
-      "optouts": 28,
-      "open_rate": 54.9,
-      "click_rate": 1.07,
-      "click_to_open_rate": 1.94,
-      "bounce_rate": 4.11
-    },
-    {
-      "campaign_id": "a7cd3195-e540-4f4f-980a-25a460dba866",
-      "name": "Client eNews2 - Staff",
-      "type": "Newsletter",
-      "last_sent_date": "2023-09-05T14:07:35.000Z",
-      "sends": 26,
-      "opens": 8,
-      "clicks": 0,
-      "bounces": 0,
-      "optouts": 0,
-      "open_rate": 30.77,
-      "click_rate": 0.0,
-      "click_to_open_rate": 0.0,
-      "bounce_rate": 0.0
-    },
-    {
-      "campaign_id": "4aa69e80-5c43-420c-9b1c-bf732ba658d7",
-      "name": "September Alumni Event",
-      "type": "Newsletter",
-      "last_sent_date": "2023-08-31T00:22:39.000Z",
-      "sends": 785,
-      "opens": 437,
-      "clicks": 28,
-      "bounces": 11,
-      "optouts": 2,
-      "open_rate": 55.67,
-      "click_rate": 3.57,
-      "click_to_open_rate": 6.41,
-      "bounce_rate": 1.4
     }
   ],
   "data_earliest": {
-    "ga4": "2023-10-15",
-    "cc": "2023-08-31",
-    "gsc": "2026-10-11"
+    "ga4": "2023-10-22",
+    "cc": "2023-11-13",
+    "gsc": "2026-10-18"
   },
   "cc_summary": {
     "n_campaigns": 100,
     "n_sent": 100,
-    "avg_open_rate": 49.56,
-    "avg_click_rate": 1.69,
-    "total_sends": 328085,
-    "most_recent_send": "2026-10-16T16:02:21.000Z"
+    "avg_open_rate": 49.05,
+    "avg_click_rate": 1.67,
+    "total_sends": 330682,
+    "most_recent_send": "2026-10-25T20:30:49.000Z"
   },
   "gsc_summary": {
     "total_queries": 500,
-    "total_pages": 67,
-    "total_clicks": 11,
-    "total_impressions": 1928,
-    "avg_position_impression_weighted": 15.24,
+    "total_pages": 81,
+    "total_clicks": 9,
+    "total_impressions": 2095,
+    "avg_position_impression_weighted": 15.49,
     "discovery_candidates_count": 40,
-    "tracked_keywords_with_data": 18
+    "tracked_keywords_with_data": 19
   },
   "gsc_window": {
-    "start": "2026-10-11",
-    "end": "2026-10-18",
+    "start": "2026-10-18",
+    "end": "2026-10-25",
     "days": 7
   },
   "data_sources": {
