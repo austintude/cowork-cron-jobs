@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-28T11:02:30",
+  "generated_at": "2026-10-29T04:12:31",
   "window_days": 1100,
-  "timeline_start": "2023-10-24",
-  "timeline_end": "2026-10-28",
+  "timeline_start": "2023-10-25",
+  "timeline_end": "2026-10-29",
   "channels": [
     "AI Assistant",
     "Cross-network",
@@ -21,15 +21,6 @@
     "Unassigned"
   ],
   "timeline": [
-    {
-      "date": "2023-10-24",
-      "total": 17,
-      "channels": {
-        "Organic Search": 14,
-        "Direct": 2,
-        "Organic Social": 1
-      }
-    },
     {
       "date": "2023-10-25",
       "total": 22,
@@ -9855,31 +9846,42 @@
     },
     {
       "date": "2026-10-28",
-      "total": 2,
+      "total": 32,
       "channels": {
-        "Direct": 2
+        "Direct": 13,
+        "Organic Search": 12,
+        "Unassigned": 4,
+        "Referral": 2,
+        "Email": 1
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "total": 1,
+      "channels": {
+        "Organic Search": 1
       }
     }
   ],
   "channel_mix": [
     {
       "channel": "Direct",
-      "sessions": 17155,
+      "sessions": 17164,
       "pct": 51.1
     },
     {
       "channel": "Organic Search",
-      "sessions": 11149,
+      "sessions": 11148,
       "pct": 33.2
     },
     {
       "channel": "Organic Social",
-      "sessions": 1713,
+      "sessions": 1712,
       "pct": 5.1
     },
     {
       "channel": "Referral",
-      "sessions": 1136,
+      "sessions": 1138,
       "pct": 3.4
     },
     {
@@ -9894,12 +9896,12 @@
     },
     {
       "channel": "Unassigned",
-      "sessions": 261,
+      "sessions": 265,
       "pct": 0.8
     },
     {
       "channel": "Email",
-      "sessions": 192,
+      "sessions": 193,
       "pct": 0.6
     },
     {
@@ -9938,21 +9940,21 @@
       "pct": 0.0
     }
   ],
-  "window_total_sessions": 33596,
+  "window_total_sessions": 33610,
   "newsletters": [
     {
       "campaign_id": "218a61d9-c79e-4bd8-83f5-2af288f0b5b6",
       "name": "Referring Partners eNews - October 2026",
       "send_date": "2026-10-27",
-      "open_rate": 24.46,
+      "open_rate": 24.56,
       "click_rate": 1.54,
-      "click_to_open_rate": 6.3,
+      "click_to_open_rate": 6.28,
       "sends": 973,
       "baseline_daily_sessions": 34.5,
-      "spike_mean_daily_sessions": 14.0,
-      "lift_pct": -59.4,
-      "email_sessions_3d": 2,
-      "direct_sessions_3d": 14
+      "spike_mean_daily_sessions": 19.7,
+      "lift_pct": -42.9,
+      "email_sessions_3d": 3,
+      "direct_sessions_3d": 25
     },
     {
       "campaign_id": "2e54e4b3-fb67-4012-9211-4e8fd0282558",
@@ -11348,13 +11350,13 @@
       "type": "Custom Code Email",
       "last_sent_date": "2026-10-27T13:32:29.000Z",
       "sends": 973,
-      "opens": 238,
+      "opens": 239,
       "clicks": 15,
       "bounces": 260,
       "optouts": 1,
-      "open_rate": 24.46,
+      "open_rate": 24.56,
       "click_rate": 1.54,
-      "click_to_open_rate": 6.3,
+      "click_to_open_rate": 6.28,
       "bounce_rate": 26.72
     },
     {
@@ -12844,7 +12846,7 @@
     }
   ],
   "data_earliest": {
-    "ga4": "2023-10-24",
+    "ga4": "2023-10-25",
     "cc": "2023-11-13",
     "gsc": "2026-10-20"
   },
