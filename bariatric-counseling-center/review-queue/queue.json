@@ -10599,6 +10599,61 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "faf02d463e",
+   "kind": "social",
+   "key": "social:2026-12-10:LI",
+   "title": "Thu 12/10: Q4 workload and the holiday calendar",
+   "why": "December is not planned yet; this keeps the LI cadence going",
+   "payload": {
+    "date": "2026-12-10",
+    "weekday": "Thu",
+    "times": "9:30 AM",
+    "platforms": [
+     "LI"
+    ],
+    "type": "Professionals",
+    "pillar": "Working professionals",
+    "format": "image",
+    "title": "Thu 12/10: Q4 workload and the holiday calendar",
+    "purpose": "The season when 'I will deal with it in January' sets in. Written for a LinkedIn reader.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/program-schedule/",
+    "captions": {
+     "LI": "The holidays bring two competing truths: the time you need to make change and the time your calendar says you have.\n\nQ4 workload, travel, family obligations, it's real. And so is the cost of waiting.\n\nThe Bariatric Counseling Center runs an Intensive Outpatient Program serving clients both onsite in San Antonio and virtually throughout Texas. Morning, evening, and weekend tracks. Group and individual therapy, dietary guidance, cooking classes, and movement education. One program, not four.\n\nWe accept most health insurances. Progress continues here, even when the year-end push says otherwise.\n\nLink in comments. #BehavioralHealth",
+     "YT": {
+      "title": "Q4 Workload and Holiday Scheduling, When to Start",
+      "description": "The Bariatric Counseling Center offers an Intensive Outpatient Program with morning, evening, and weekend tracks serving clients onsite in San Antonio and virtually throughout Texas. We provide group and individual therapy, dietary guidance, cooking classes, and movement education in a unique, all-inclusive format. Most health insurances accepted. Visit bariatriccounselingcenter.com for schedule and enrollment details."
+     }
+    },
+    "on_image": [
+     "The holidays and Q4 workload",
+     "Real schedule, real obstacles",
+     "Morning, evening, weekend tracks",
+     "Virtual across Texas",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Text slide about managing Q4 workload and holiday obligations while addressing behavioral health needs.",
+    "why_now": "Mid-December timing addresses the common professional deferral pattern and positions IOP track flexibility as the practical answer.",
+    "asset": {
+     "format": "image",
+     "kind": "image",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "December Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Thu 12/10: LI",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-10-29T05:30:17",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
