@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-29 16:09 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-30 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -195,9 +195,8 @@ Generated 2026-10-29 16:09 by queue_apply.py. Daniel approved these on the dashb
   - Remove the link from the image and keep the image (decided by Daniel 2026-10-20). Do not replace it with another link.
   - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/
 
-## Items waiting on Daniel or on Todd/Sara (5): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (4): not for Claude, except the Gmail confirmations below.
 - For Overeaters, position us as Professional / Licensed virtual group support covered by health insurance: Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)
-- ARFID - What it is and how it presents: Read and send the Gmail draft 'ARFID article for your edits: what it is and how it presents'. If Sara would rather edit in Word, attach the .docx beside the draft.: not sent, and no longer in your Drafts (deleted?)
 - Stress Eating keyword: Read the stress eating brief and choose.
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)
 - Texas-wide geographic strategy: Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.
@@ -209,7 +208,7 @@ Generated 2026-10-29 16:09 by queue_apply.py. Daniel approved these on the dashb
   - asset: reel https://drive.google.com/drive/folders/1Oxs1OVu05rvOABXKa392DZ6wSSeEZPA3
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/
 
-## Draft day: Wednesday. Today is Thursday, not draft day: build only, no email to Todd.
+## Draft day: Wednesday. Today is Friday, not draft day: build only, no email to Todd.
 
 ## Social posts with Todd (9): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
