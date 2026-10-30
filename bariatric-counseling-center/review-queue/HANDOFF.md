@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-10-30 07:10 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-10-30 10:37 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -210,9 +210,8 @@ Generated 2026-10-30 07:10 by queue_apply.py. Daniel approved these on the dashb
 
 ## Draft day: Wednesday. Today is Friday, not draft day: build only, no email to Todd.
 
-## Social posts with Todd (9): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
+## Social posts with Todd (8): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
-- id `4a2d70a708`: **Thu 11/5: The evening track fits a workday** on 2026-11-05 (LI); sheet November Content Calendar!12; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `67ff8aa4bd`: **Mon 11/9: What a grocery store tour is for** on 2026-11-09 (FB, IG); sheet November Content Calendar!13; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `a07785591a`: **Wed 11/11: Staff Spotlight: Dr Sara Hamilton** on 2026-11-11 (FB, IG); sheet November Content Calendar!15; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `3ac415f444`: **Thu 11/12: Q4 workload and the holiday calendar** on 2026-11-12 (LI); sheet November Content Calendar!16; draft  Social posts to approve: week of October 26 (2026-10-21)
@@ -222,12 +221,14 @@ Generated 2026-10-30 07:10 by queue_apply.py. Daniel approved these on the dashb
 - id `3f9fded114`: **Thu 11/19: Virtual across Texas, on your calendar** on 2026-11-19 (LI); sheet November Content Calendar!20; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `018f9727b9`: **Mon 11/23: A diet ends. A plan does not.** on 2026-11-23 (FB, IG); sheet November Content Calendar!21; draft  Social posts to approve: week of October 26 (2026-10-21)
 
-## Social posts Todd has OK'd: book each one now, then --placed (3)
+## Social posts Todd has OK'd: book each one now, then --placed (4)
 
 - id `1b94c31012`: **Thu 10/22: alumni clip, Jessica B. (struggled my whole life)** on 2026-10-22 (FB, IG, YT) at 7:00 PM; postiz mode schedule; sheet October Content Calendar!35; asset Videos/Ford/CURRENT-portrait-clips-9x16/jessica-clip2-9x16_struggled-my-whole-life_COVERED.mp4; Todd: Todd OK (Daniel on the dashboard) 2026-10-29
   - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\1b94c31012-thu-10-22-alumni-clip-jessica-b-struggled-my-whole-life.json`
 - id `b93e81977d`: **Tue 10/27: alumni clip, Carmen M. (head and heart)** on 2026-10-27 (FB, IG, YT) at 7:00 PM; postiz mode schedule; sheet October Content Calendar!30; asset Videos/Ford/CURRENT-portrait-clips-9x16/carmen-clip4-9x16_head-and-heart_COVERED.mp4; Todd: Todd OK (Daniel on the dashboard) 2026-10-29
   - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\b93e81977d-tue-10-27-alumni-clip-carmen-m-head-and-heart.json`
+- id `4a2d70a708`: **Thu 11/5: The evening track fits a workday** on 2026-11-05 (LI) at 9:30 AM; postiz mode schedule; sheet November Content Calendar!12; asset social/plan/cards/render/png/nov05-evening-li-01-linkedin.png; Todd: Todd OK (Daniel on the dashboard) 2026-10-30
+  - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\4a2d70a708-thu-11-5-the-evening-track-fits-a-workday.json`
 - id `566382672f`: **Tue 11/10: Referring providers: who is the right referral** on 2026-11-10 (LI, GBP) at LI 11:00 AM, GBP 9:00 AM; postiz mode schedule; sheet November Content Calendar!14; asset social/plan/cards/render/pdf/nov10-providers-linkedin-document.pdf; Todd: Todd OK (Daniel on the dashboard) 2026-10-29
   - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\566382672f-tue-11-10-referring-providers-who-is-the-right-referral.json`
 
