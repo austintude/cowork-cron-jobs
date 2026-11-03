@@ -16558,7 +16558,7 @@
                   ],
                   "state": "problem",
                   "state_text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-11-02 07:00"
+                  "checked_at": "2026-11-03 07:01"
                 },
                 "needs_you": "Send Todd the Gmail draft 'Quick check: phone and address on the overeaters page' (live page shows (210) 934-3420), then approve the positioning copy in content-drafts/action-items-2026-10-21",
                 "needs_since": "2026-10-21"
@@ -16643,7 +16643,7 @@
                   ],
                   "state": "your_move",
                   "state_text": "Read the stress eating brief and choose.",
-                  "checked_at": "2026-11-02 07:00"
+                  "checked_at": "2026-11-03 07:01"
                 },
                 "needs_you": "Stress eating is now tracked; read the brief (content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md) and say whether to place the new copy on staging14",
                 "needs_since": "2026-10-21"
@@ -16740,7 +16740,7 @@
                   ],
                   "state": "problem",
                   "state_text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-11-02 07:00"
+                  "checked_at": "2026-11-03 07:01"
                 }
               }
             },
@@ -16862,7 +16862,7 @@
                   ],
                   "state": "waiting",
                   "state_text": "Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.",
-                  "checked_at": "2026-11-02 07:00"
+                  "checked_at": "2026-11-03 07:01"
                 }
               }
             }
@@ -18650,67 +18650,6 @@
               "at": "2026-10-29T05:34:05",
               "level": "done",
               "text": "Already live on production."
-            }
-          },
-          {
-            "id": "e70e9e89b7",
-            "kind": "social",
-            "key": "social-rebook:cmuh9aw8t0006oy8epv05tpzg",
-            "title": "Re-book: YT Tue 09/29, Carmen M., BCC Alumna, shares her experience (failed in Postiz)",
-            "why": "Postiz shows this YT post as failed (state ERROR), so it never went out. Same asset, new slot. Postiz does not give the error text through its API; check the post in Postiz if the reason matters. A session re-books it only after you approve and Todd OKs it.",
-            "payload": {
-              "date": "2026-10-22",
-              "weekday": "Thursday",
-              "times": [
-                "7:00 PM"
-              ],
-              "platforms": [
-                "YT"
-              ],
-              "type": "Re-book",
-              "pillar": "Re-book of a failed post",
-              "format": "rebook",
-              "title": "Re-book: YT Tue 09/29, Carmen M., BCC Alumna, shares her experience (failed in Postiz)",
-              "purpose": "Re-book the same asset that failed in Postiz on 2026-09-29 7:00 PM.",
-              "captions": {
-                "YT": "Carmen M., BCC Alumna, shares her experience finding community and belonging during treatment at the Bariatric Counseling Center. Our progra"
-              },
-              "on_image": [],
-              "alt_text": null,
-              "why_now": "It was scheduled for 2026-09-29 and never published.",
-              "asset": {
-                "kind": "rebook",
-                "same_asset_as_postiz_post_id": "cmuh9aw8t0006oy8epv05tpzg",
-                "failed_date": "2026-09-29",
-                "failed_time": "7:00 PM",
-                "channel": "Bariatric Counseling Center",
-                "note": "Re-use the same video or image the failed post used. Do not substitute a different clip."
-              },
-              "date_platforms": "Thu Oct 22: YT",
-              "postiz_mode": "schedule",
-              "needs_rewrite": [],
-              "suggested_slot": {
-                "date": "2026-10-22",
-                "weekday": "Thursday",
-                "time": "7:00 PM"
-              },
-              "rebook_of": {
-                "postiz_post_id": "cmuh9aw8t0006oy8epv05tpzg",
-                "date": "2026-09-29",
-                "time": "7:00 PM",
-                "provider": "youtube"
-              }
-            },
-            "source": "postiz-failed",
-            "status": "expired",
-            "created": "2026-10-01T14:22:50",
-            "decided": "2026-10-26T10:07:42",
-            "note": "recheck 2026-10-26: Its date (2026-10-22) has passed.",
-            "result": null,
-            "check": {
-              "at": "2026-10-26T10:07:42",
-              "level": "done",
-              "text": "Its date (2026-10-22) has passed."
             }
           }
         ]
@@ -23461,13 +23400,13 @@
       "model": {
         "connected": true,
         "data": {
-          "fetched": "2026-11-02",
+          "fetched": "2026-11-03",
           "site": "https://www.bariatriccounselingcenter.com/",
           "window_days": 28,
           "errors": [],
           "summary": {
             "clicks": 6,
-            "impressions": 752,
+            "impressions": 738,
             "avg_position": 4.7
           },
           "top_queries": [
@@ -23619,6 +23558,11 @@
               "impressions": 2
             },
             {
+              "page": "https://www.bariatriccounselingcenter.com/glp-1-behavioral-support-in-san-antonio-tx/",
+              "clicks": 0,
+              "impressions": 1
+            },
+            {
               "page": "https://www.bariatriccounselingcenter.com/overeaters-anonymous-support-san-antonio-tx/",
               "clicks": 0,
               "impressions": 1
@@ -23629,22 +23573,12 @@
               "impressions": 1
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/glp-1-behavioral-support-in-san-antonio-tx/",
-              "clicks": 0,
-              "impressions": 1
-            },
-            {
               "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
               "clicks": 0,
               "impressions": 1
             }
           ],
           "daily": [
-            {
-              "date": "2026-10-05",
-              "clicks": 0,
-              "impressions": 32
-            },
             {
               "date": "2026-10-06",
               "clicks": 0,
@@ -23774,13 +23708,18 @@
               "date": "2026-10-31",
               "clicks": 0,
               "impressions": 16
+            },
+            {
+              "date": "2026-11-01",
+              "clicks": 0,
+              "impressions": 18
             }
           ],
           "crawl": {
-            "as_of": "2026-10-30",
-            "crawl_errors": 2,
+            "as_of": "2026-10-31",
+            "crawl_errors": 4,
             "indexed_pages": 258,
-            "crawled_pages": 66
+            "crawled_pages": 63
           }
         }
       },
@@ -30774,5 +30713,5 @@
     }
   ],
   "snapshot_count": 47,
-  "generated_at": "2026-11-02T13:11:20.424940Z"
+  "generated_at": "2026-11-03T13:08:02.313397Z"
 }
