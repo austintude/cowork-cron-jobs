@@ -201,7 +201,7 @@ Generated 2026-11-04 07:00 by queue_apply.py. Daniel approved these on the dashb
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)
 - Texas-wide geographic strategy: Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.
 
-## Asset revisions (9): posts held until the revised media is everywhere and the change is approved
+## Asset revisions (10): posts held until the revised media is everywhere and the change is approved
 
 - id `a43f6e0907`: **Revise media: Mon 11/23 Referring Providers: Document Post** (November tab, row 21, change `nov-r21-20261029091737`, platforms LI, GBP)
   - asked for: a new image in column N
@@ -212,6 +212,9 @@ Generated 2026-11-04 07:00 by queue_apply.py. Daniel approved these on the dashb
 - id `0074cfa095`: **Revise media: Thu 11/12 Referring Providers: Document Post** (November tab, row 16, change `nov-r16-20261029091633`, platforms LI, GBP)
   - asked for: a new image in column N
   - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/1KlctW32X-Gg3kTeM-8rMsf-yTrMFpQVA?v=e97425e3",1)
+- id `ff73d4cd74`: **Revise media: Thu 11/19 Professionals** (November tab, row 24, change `nov-r24-20261104070054`, platforms LI)
+  - asked for: a new image in column N
+  - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/1VQXUBO9l0NIjwUE1YaQ4z1DKmxbAPkw4?v=5c44b0b8",1)
 - id `99f55786a4`: **Revise media: Thu 11/19 Education** (November tab, row 20, change `nov-r20-20261029091731`, platforms FB, IG)
   - asked for: a new image in column N
   - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/1DZSzxfmXk3S6ZBIcaEK0IY6BnWp_RDwC?v=781a6186",1)
