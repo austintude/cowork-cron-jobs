@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-29T04:12:31",
+  "generated_at": "2026-11-04T04:11:13",
   "window_days": 1100,
-  "timeline_start": "2023-10-25",
-  "timeline_end": "2026-10-29",
+  "timeline_start": "2023-10-31",
+  "timeline_end": "2026-11-04",
   "channels": [
     "AI Assistant",
     "Cross-network",
@@ -21,56 +21,6 @@
     "Unassigned"
   ],
   "timeline": [
-    {
-      "date": "2023-10-25",
-      "total": 22,
-      "channels": {
-        "Direct": 11,
-        "Organic Search": 11
-      }
-    },
-    {
-      "date": "2023-10-26",
-      "total": 10,
-      "channels": {
-        "Direct": 6,
-        "Organic Search": 4
-      }
-    },
-    {
-      "date": "2023-10-27",
-      "total": 20,
-      "channels": {
-        "Direct": 13,
-        "Organic Search": 7
-      }
-    },
-    {
-      "date": "2023-10-28",
-      "total": 7,
-      "channels": {
-        "Direct": 4,
-        "Organic Search": 3
-      }
-    },
-    {
-      "date": "2023-10-29",
-      "total": 7,
-      "channels": {
-        "Direct": 4,
-        "Organic Search": 3
-      }
-    },
-    {
-      "date": "2023-10-30",
-      "total": 16,
-      "channels": {
-        "Direct": 8,
-        "Organic Search": 5,
-        "Referral": 2,
-        "Organic Social": 1
-      }
-    },
     {
       "date": "2023-10-31",
       "total": 18,
@@ -9846,32 +9796,89 @@
     },
     {
       "date": "2026-10-28",
-      "total": 32,
+      "total": 29,
       "channels": {
         "Direct": 13,
         "Organic Search": 12,
-        "Unassigned": 4,
+        "Referral": 2,
+        "Email": 1,
+        "Unassigned": 1
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "total": 38,
+      "channels": {
+        "Organic Search": 20,
+        "Direct": 16,
+        "Organic Social": 1,
+        "Unassigned": 1
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "total": 25,
+      "channels": {
+        "Organic Search": 13,
+        "Direct": 10,
+        "Email": 1,
+        "Referral": 1
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "total": 11,
+      "channels": {
+        "Direct": 6,
+        "Organic Search": 4,
+        "Unassigned": 1
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "total": 19,
+      "channels": {
+        "Direct": 11,
+        "Organic Search": 8
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "total": 32,
+      "channels": {
+        "Direct": 17,
+        "Organic Search": 12,
         "Referral": 2,
         "Email": 1
       }
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-11-03",
+      "total": 24,
+      "channels": {
+        "Direct": 11,
+        "Organic Search": 8,
+        "Email": 4,
+        "Referral": 1
+      }
+    },
+    {
+      "date": "2026-11-04",
       "total": 1,
       "channels": {
-        "Organic Search": 1
+        "Direct": 1
       }
     }
   ],
   "channel_mix": [
     {
       "channel": "Direct",
-      "sessions": 17164,
-      "pct": 51.1
+      "sessions": 17190,
+      "pct": 51.0
     },
     {
       "channel": "Organic Search",
-      "sessions": 11148,
+      "sessions": 11179,
       "pct": 33.2
     },
     {
@@ -9881,13 +9888,13 @@
     },
     {
       "channel": "Referral",
-      "sessions": 1138,
+      "sessions": 1140,
       "pct": 3.4
     },
     {
       "channel": "Paid Search",
       "sessions": 925,
-      "pct": 2.8
+      "pct": 2.7
     },
     {
       "channel": "Paid Social",
@@ -9896,12 +9903,12 @@
     },
     {
       "channel": "Unassigned",
-      "sessions": 265,
+      "sessions": 264,
       "pct": 0.8
     },
     {
       "channel": "Email",
-      "sessions": 193,
+      "sessions": 199,
       "pct": 0.6
     },
     {
@@ -9940,29 +9947,29 @@
       "pct": 0.0
     }
   ],
-  "window_total_sessions": 33610,
+  "window_total_sessions": 33674,
   "newsletters": [
     {
       "campaign_id": "218a61d9-c79e-4bd8-83f5-2af288f0b5b6",
       "name": "Referring Partners eNews - October 2026",
       "send_date": "2026-10-27",
-      "open_rate": 24.56,
-      "click_rate": 1.54,
-      "click_to_open_rate": 6.28,
+      "open_rate": 25.28,
+      "click_rate": 1.64,
+      "click_to_open_rate": 6.5,
       "sends": 973,
       "baseline_daily_sessions": 34.5,
-      "spike_mean_daily_sessions": 19.7,
-      "lift_pct": -42.9,
+      "spike_mean_daily_sessions": 31.0,
+      "lift_pct": -10.1,
       "email_sessions_3d": 3,
-      "direct_sessions_3d": 25
+      "direct_sessions_3d": 41
     },
     {
       "campaign_id": "2e54e4b3-fb67-4012-9211-4e8fd0282558",
       "name": "Staff-Client eNews - October 2026",
       "send_date": "2026-10-25",
-      "open_rate": 40.11,
-      "click_rate": 0.65,
-      "click_to_open_rate": 1.61,
+      "open_rate": 40.87,
+      "click_rate": 0.69,
+      "click_to_open_rate": 1.69,
       "sends": 4490,
       "baseline_daily_sessions": 34.5,
       "spike_mean_daily_sessions": 22.3,
@@ -9974,9 +9981,9 @@
       "campaign_id": "90110938-5bc8-4ce3-9c98-6221301f3ffe",
       "name": "Staff-Client eNews - October 2026 (arm B, 3:30 PM)",
       "send_date": "2026-10-25",
-      "open_rate": 40.04,
-      "click_rate": 0.56,
-      "click_to_open_rate": 1.4,
+      "open_rate": 40.76,
+      "click_rate": 0.58,
+      "click_to_open_rate": 1.43,
       "sends": 4475,
       "baseline_daily_sessions": 34.5,
       "spike_mean_daily_sessions": 22.3,
@@ -10002,9 +10009,9 @@
       "campaign_id": "074c7389-a033-4b95-abfd-4c3e1fef2bdd",
       "name": "Alumni eNews - Reminder: October 2026",
       "send_date": "2026-10-16",
-      "open_rate": 44.93,
+      "open_rate": 45.13,
       "click_rate": 1.27,
-      "click_to_open_rate": 2.82,
+      "click_to_open_rate": 2.81,
       "sends": 1026,
       "baseline_daily_sessions": 31.0,
       "spike_mean_daily_sessions": 22.0,
@@ -10016,9 +10023,9 @@
       "campaign_id": "8e429cf2-6f96-4791-b9c4-54bca76f17e7",
       "name": "Alumni eNews - October 2026",
       "send_date": "2026-10-11",
-      "open_rate": 48.59,
+      "open_rate": 48.69,
       "click_rate": 1.27,
-      "click_to_open_rate": 2.61,
+      "click_to_open_rate": 2.6,
       "sends": 1027,
       "baseline_daily_sessions": 35.5,
       "spike_mean_daily_sessions": 28.3,
@@ -11336,9 +11343,9 @@
       "click_rate": 1.37,
       "click_to_open_rate": 2.7,
       "sends": 805,
-      "baseline_daily_sessions": 14.5,
+      "baseline_daily_sessions": 14,
       "spike_mean_daily_sessions": 22.3,
-      "lift_pct": 53.8,
+      "lift_pct": 59.3,
       "email_sessions_3d": 0,
       "direct_sessions_3d": 37
     }
@@ -11350,14 +11357,14 @@
       "type": "Custom Code Email",
       "last_sent_date": "2026-10-27T13:32:29.000Z",
       "sends": 973,
-      "opens": 239,
-      "clicks": 15,
-      "bounces": 260,
-      "optouts": 1,
-      "open_rate": 24.56,
-      "click_rate": 1.54,
-      "click_to_open_rate": 6.28,
-      "bounce_rate": 26.72
+      "opens": 246,
+      "clicks": 16,
+      "bounces": 264,
+      "optouts": 2,
+      "open_rate": 25.28,
+      "click_rate": 1.64,
+      "click_to_open_rate": 6.5,
+      "bounce_rate": 27.13
     },
     {
       "campaign_id": "2e54e4b3-fb67-4012-9211-4e8fd0282558",
@@ -11365,14 +11372,14 @@
       "type": "Custom Code Email",
       "last_sent_date": "2026-10-25T20:30:49.000Z",
       "sends": 4490,
-      "opens": 1801,
-      "clicks": 29,
-      "bounces": 331,
-      "optouts": 11,
-      "open_rate": 40.11,
-      "click_rate": 0.65,
-      "click_to_open_rate": 1.61,
-      "bounce_rate": 7.37
+      "opens": 1835,
+      "clicks": 31,
+      "bounces": 332,
+      "optouts": 12,
+      "open_rate": 40.87,
+      "click_rate": 0.69,
+      "click_to_open_rate": 1.69,
+      "bounce_rate": 7.39
     },
     {
       "campaign_id": "90110938-5bc8-4ce3-9c98-6221301f3ffe",
@@ -11380,13 +11387,13 @@
       "type": "Custom Code Email",
       "last_sent_date": "2026-10-25T20:30:35.000Z",
       "sends": 4475,
-      "opens": 1792,
-      "clicks": 25,
+      "opens": 1824,
+      "clicks": 26,
       "bounces": 276,
       "optouts": 16,
-      "open_rate": 40.04,
-      "click_rate": 0.56,
-      "click_to_open_rate": 1.4,
+      "open_rate": 40.76,
+      "click_rate": 0.58,
+      "click_to_open_rate": 1.43,
       "bounce_rate": 6.17
     },
     {
@@ -11410,13 +11417,13 @@
       "type": "Custom Code Email",
       "last_sent_date": "2026-10-16T16:02:21.000Z",
       "sends": 1026,
-      "opens": 461,
+      "opens": 463,
       "clicks": 13,
       "bounces": 42,
       "optouts": 0,
-      "open_rate": 44.93,
+      "open_rate": 45.13,
       "click_rate": 1.27,
-      "click_to_open_rate": 2.82,
+      "click_to_open_rate": 2.81,
       "bounce_rate": 4.09
     },
     {
@@ -11425,13 +11432,13 @@
       "type": "Custom Code Email",
       "last_sent_date": "2026-10-11T17:30:31.000Z",
       "sends": 1027,
-      "opens": 499,
+      "opens": 500,
       "clicks": 13,
       "bounces": 47,
       "optouts": 0,
-      "open_rate": 48.59,
+      "open_rate": 48.69,
       "click_rate": 1.27,
-      "click_to_open_rate": 2.61,
+      "click_to_open_rate": 2.6,
       "bounce_rate": 4.58
     },
     {
@@ -12846,30 +12853,30 @@
     }
   ],
   "data_earliest": {
-    "ga4": "2023-10-25",
+    "ga4": "2023-10-31",
     "cc": "2023-11-13",
-    "gsc": "2026-10-20"
+    "gsc": "2026-10-27"
   },
   "cc_summary": {
     "n_campaigns": 100,
     "n_sent": 100,
-    "avg_open_rate": 49.15,
+    "avg_open_rate": 49.18,
     "avg_click_rate": 1.67,
     "total_sends": 330682,
     "most_recent_send": "2026-10-27T13:32:29.000Z"
   },
   "gsc_summary": {
     "total_queries": 500,
-    "total_pages": 78,
-    "total_clicks": 9,
-    "total_impressions": 2177,
-    "avg_position_impression_weighted": 15.5,
+    "total_pages": 76,
+    "total_clicks": 22,
+    "total_impressions": 4288,
+    "avg_position_impression_weighted": 11.62,
     "discovery_candidates_count": 40,
-    "tracked_keywords_with_data": 19
+    "tracked_keywords_with_data": 21
   },
   "gsc_window": {
-    "start": "2026-10-20",
-    "end": "2026-10-27",
+    "start": "2026-10-27",
+    "end": "2026-11-03",
     "days": 7
   },
   "data_sources": {
