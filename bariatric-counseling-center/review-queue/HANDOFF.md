@@ -201,7 +201,7 @@ Generated 2026-11-04 07:00 by queue_apply.py. Daniel approved these on the dashb
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)
 - Texas-wide geographic strategy: Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.
 
-## Asset revisions (4): posts held until the revised media is everywhere and the change is approved
+## Asset revisions (5): posts held until the revised media is everywhere and the change is approved
 
 - id `8d0d44b492`: **Revise media: Mon 11/9 Professionals** (November tab, row 13, change `nov-r13-20261029091555`, platforms LI)
   - asked for: a new image in column N
@@ -213,6 +213,10 @@ Generated 2026-11-04 07:00 by queue_apply.py. Daniel approved these on the dashb
   - asked for: a new image in column N
   - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/18VDxkfZW1I_NBgfgcXGqndG5co8z1AJY?v=b1b98763",1)
   - current files: nov04-stress-01-feed.png, nov04-stress-02-feed.png, nov04-stress-03-feed.png, nov04-stress-04-feed.png, nov04-stress-05-feed.png
+- id `096b7e906a`: **Revise media: Tue 11/17 Staff Spotlight** (November tab, row 18, change `nov-r18-20261029091643`, platforms FB, IG)
+  - asked for: a new image in column N
+  - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/1sLFe0zGH1Rs4pfuOG9bfyx4VYT2xMbsg?v=8b5f6143",1)
+  - current files: nov11-sara-01-feed.png, nov11-sara-02-feed.png, nov11-sara-03-feed.png, nov11-sara-04-feed.png, nov11-sara-05-feed.png
 - id `2af2fb1229`: **Revise media: Wed 11/11 Education** (November tab, row 15, change `nov-r15-20261029091631`, platforms FB, IG)
   - asked for: a new image in column N
   - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/1h85HRWbxw73k03QT0as7QPc_Od2UtYZh?v=60d4d57f",1)
