@@ -11399,6 +11399,35 @@
    "decided": "2026-11-04T07:00:55",
    "note": "auto: post held, media change requested on the sheet",
    "result": null
+  },
+  {
+   "id": "642ba7fe7c",
+   "kind": "asset",
+   "key": "nov-r9-20261029091507",
+   "title": "Revise media: Mon 11/2 Referring Providers: Document Post",
+   "why": "Todd/Sara: new image in column N",
+   "payload": {
+    "change": "nov-r9-20261029091507",
+    "month": "November",
+    "row": 9,
+    "date": "Mon 11/2",
+    "type": "Referring Providers: Document Post",
+    "platforms": [
+     "LI",
+     "GBP"
+    ],
+    "note": "",
+    "image_cell_changed": true,
+    "image_cell": "=IMAGE(\"https://lh3.googleusercontent.com/d/19oHh2cB_RAfOzuf2W11h8kKzV1LRwkvO?v=c3b771d3\",1)",
+    "assets": [],
+    "notes_col": "ASSETS (built 2026-09-23). The image above is nov03-providers-01-doc.png.\n  LinkedIn document (PDF, 5 pages): nov03-providers-linkedin-document.pdf, Drive: https://drive.google.com/file/d/1q7dx2XbmDWe66LIiO75MCvEvmsw3WVWg/view\n  Document pages 1080x1350: nov03-providers-01-doc.png, nov03-providers-02-doc.png, nov03-providers-03-doc.png, nov03-providers-04-doc.png, nov03-providers-05-doc.png\n  GBP card 1200x900: nov03-providers-gbp-01-gbp.png, Drive: https://drive.google.com/file/d/1dg-739GM1iePZsHzC3WYQnWJRkAxwe53/view\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\nAlt text: Document post explaining coordination and discharge summaries that referring providers receive from the Bariatric Counseling Center."
+   },
+   "source": "social_changes",
+   "status": "pending",
+   "created": "2026-11-04T14:54:38",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
