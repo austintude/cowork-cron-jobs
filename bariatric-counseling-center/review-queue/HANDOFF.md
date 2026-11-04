@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-11-04 07:09 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-11-04 14:54 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -201,8 +201,11 @@ Generated 2026-11-04 07:09 by queue_apply.py. Daniel approved these on the dashb
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)
 - Texas-wide geographic strategy: Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.
 
-## Asset revisions (10): posts held until the revised media is everywhere and the change is approved
+## Asset revisions (11): posts held until the revised media is everywhere and the change is approved
 
+- id `642ba7fe7c`: **Revise media: Mon 11/2 Referring Providers: Document Post** (November tab, row 9, change `nov-r9-20261029091507`, platforms LI, GBP)
+  - asked for: a new image in column N
+  - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/19oHh2cB_RAfOzuf2W11h8kKzV1LRwkvO?v=c3b771d3",1)
 - id `a43f6e0907`: **Revise media: Mon 11/23 Referring Providers: Document Post** (November tab, row 21, change `nov-r21-20261029091737`, platforms LI, GBP)
   - asked for: a new image in column N
   - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/1Vbi0wLygwrQy-s-zU0Oss0quLDE39_bE?v=c74d96df",1)
