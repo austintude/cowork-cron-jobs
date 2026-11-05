@@ -12501,7 +12501,7 @@
             "action": "Action item",
             "asset": "Asset revision"
           },
-          "handoff": 55,
+          "handoff": 56,
           "top": [
             "Social post: Re-book: IG Wed 11/04, Stress eating at night\n\nA long day doesn't ma (failed in Postiz)",
             "Content block: AI Overview answer for \"eating disorder therapist san antonio\" on /eating-disorder-therapi"
@@ -15454,8 +15454,8 @@
           "placed": 43,
           "written": 6,
           "go": 4,
-          "approved": 51,
-          "built": 8,
+          "approved": 52,
+          "built": 7,
           "resolved": 15,
           "expired": 11,
           "needs": 4,
@@ -17200,7 +17200,7 @@
                   ],
                   "state": "problem",
                   "state_text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-11-04 07:01"
+                  "checked_at": "2026-11-05 07:00"
                 },
                 "needs_you": "Send Todd the Gmail draft 'Quick check: phone and address on the overeaters page' (live page shows (210) 934-3420), then approve the positioning copy in content-drafts/action-items-2026-10-21",
                 "needs_since": "2026-10-21"
@@ -17285,7 +17285,7 @@
                   ],
                   "state": "your_move",
                   "state_text": "Read the stress eating brief and choose.",
-                  "checked_at": "2026-11-04 07:01"
+                  "checked_at": "2026-11-05 07:00"
                 },
                 "needs_you": "Stress eating is now tracked; read the brief (content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md) and say whether to place the new copy on staging14",
                 "needs_since": "2026-10-21"
@@ -17382,7 +17382,7 @@
                   ],
                   "state": "problem",
                   "state_text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-11-04 07:01"
+                  "checked_at": "2026-11-05 07:00"
                 }
               }
             },
@@ -17504,7 +17504,7 @@
                   ],
                   "state": "waiting",
                   "state_text": "Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.",
-                  "checked_at": "2026-11-04 07:01"
+                  "checked_at": "2026-11-05 07:00"
                 }
               }
             }
@@ -17605,6 +17605,83 @@
                 "level": "warn",
                 "text": "Approved but not built yet, and it posts in 1 day."
               }
+            },
+            {
+              "id": "a07785591a",
+              "kind": "social",
+              "key": "social:2026-11-11:FB+IG",
+              "title": "Wed 11/11: Staff Spotlight: Dr Sara Hamilton",
+              "why": "November is not planned yet; this keeps the FB/IG cadence going",
+              "payload": {
+                "date": "2026-11-11",
+                "weekday": "Wed",
+                "times": "FB 10:30 AM, IG 12:15 PM",
+                "platforms": [
+                  "FB",
+                  "IG"
+                ],
+                "type": "Staff Spotlight",
+                "pillar": "People",
+                "format": "carousel",
+                "title": "Wed 11/11: Staff Spotlight: Dr Sara Hamilton",
+                "purpose": "Dr Sara Hamilton, Psychologist, Clinical Director. What she wants every new client to know in week one. Needs her one sentence in her own words.",
+                "observance": null,
+                "cta_page": "https://www.bariatriccounselingcenter.com/about/",
+                "captions": {
+                  "FB": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nDr Hamilton is part of our experienced and compassionate team of behavioral healthcare professionals serving clients in San Antonio and virtual across Texas.\n\nLink in the first comment.",
+                  "IG": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nOur team serves clients in San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+                  "YT": {
+                    "title": "Meet Dr Sara Hamilton, Clinical Director",
+                    "description": "Dr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center in San Antonio, Texas. As a clinical psychologist, she leads behavioral therapy programming for people struggling with weight-loss, obesity, binge eating, and chronic over-eating. Our experienced team provides group and individual therapy, dietary guidance, cooking classes, and movement education in one comprehensive program, serving clients in San Antonio and virtual across Texas."
+                  }
+                },
+                "on_image": [
+                  "Dr Sara Hamilton",
+                  "Clinical Psychologist, Clinical Director",
+                  "Leading behavioral therapy programming",
+                  "San Antonio and virtual across Texas",
+                  "bariatriccounselingcenter.com"
+                ],
+                "alt_text": "Dr Sara Hamilton, Clinical Psychologist and Clinical Director at Bariatric Counseling Center in San Antonio, Texas.",
+                "why_now": "Veterans Day week is an appropriate time to spotlight clinical leadership without competing messaging.",
+                "asset": {
+                  "format": "carousel",
+                  "kind": "carousel",
+                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+                },
+                "sheet_tab": "November Content Calendar",
+                "replaces_row": null,
+                "replaces_tab": null,
+                "date_platforms": "Wed 11/11: FB, IG",
+                "postiz_mode": "schedule",
+                "needs_rewrite": [],
+                "review_notes": [
+                  {
+                    "date": "2026-11-05 07:07",
+                    "note": "sara: 11/11 is Veterans Day, rather have a post recognizing mental health needs of veterans that day and push back my post. I edited the text content directly on your email. I'm working on getting the quote from the alumna.",
+                    "about": "Wed 11/11: Staff Spotlight: Dr Sara Hamilton"
+                  }
+                ],
+                "draft_stage": "rewrite"
+              },
+              "source": "social-plan",
+              "status": "approved",
+              "created": "2026-09-24T05:33:46",
+              "decided": "2026-11-05T07:07:45",
+              "note": "rewrite: sara: 11/11 is Veterans Day, rather have a post recognizing mental health needs of veterans that day and push back my post. I edited the text content directly on your email. I'm working on getting the quote from the alumna. (2026-11-05)",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\a07785591a-wed-11-11-staff-spotlight-dr-sara-hamilton.json",
+                "sheet": "November Content Calendar!15",
+                "draft": " Social posts to approve: week of October 26",
+                "asset": "social/plan/cards/render/png/nov11-sara-01-feed.png",
+                "built": "2026-10-21",
+                "drafted": "2026-10-21"
+              },
+              "check": {
+                "at": "2026-10-20T09:16:50",
+                "level": "ok",
+                "text": "Slot is free; 22 days of notice."
+              }
             }
           ],
           "social_built": [
@@ -17675,75 +17752,6 @@
                 "at": "2026-10-20T09:16:50",
                 "level": "ok",
                 "text": "Slot is free; 20 days of notice."
-              }
-            },
-            {
-              "id": "a07785591a",
-              "kind": "social",
-              "key": "social:2026-11-11:FB+IG",
-              "title": "Wed 11/11: Staff Spotlight: Dr Sara Hamilton",
-              "why": "November is not planned yet; this keeps the FB/IG cadence going",
-              "payload": {
-                "date": "2026-11-11",
-                "weekday": "Wed",
-                "times": "FB 10:30 AM, IG 12:15 PM",
-                "platforms": [
-                  "FB",
-                  "IG"
-                ],
-                "type": "Staff Spotlight",
-                "pillar": "People",
-                "format": "carousel",
-                "title": "Wed 11/11: Staff Spotlight: Dr Sara Hamilton",
-                "purpose": "Dr Sara Hamilton, Psychologist, Clinical Director. What she wants every new client to know in week one. Needs her one sentence in her own words.",
-                "observance": null,
-                "cta_page": "https://www.bariatriccounselingcenter.com/about/",
-                "captions": {
-                  "FB": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nDr Hamilton is part of our experienced and compassionate team of behavioral healthcare professionals serving clients in San Antonio and virtual across Texas.\n\nLink in the first comment.",
-                  "IG": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nOur team serves clients in San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
-                  "YT": {
-                    "title": "Meet Dr Sara Hamilton, Clinical Director",
-                    "description": "Dr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center in San Antonio, Texas. As a clinical psychologist, she leads behavioral therapy programming for people struggling with weight-loss, obesity, binge eating, and chronic over-eating. Our experienced team provides group and individual therapy, dietary guidance, cooking classes, and movement education in one comprehensive program, serving clients in San Antonio and virtual across Texas."
-                  }
-                },
-                "on_image": [
-                  "Dr Sara Hamilton",
-                  "Clinical Psychologist, Clinical Director",
-                  "Leading behavioral therapy programming",
-                  "San Antonio and virtual across Texas",
-                  "bariatriccounselingcenter.com"
-                ],
-                "alt_text": "Dr Sara Hamilton, Clinical Psychologist and Clinical Director at Bariatric Counseling Center in San Antonio, Texas.",
-                "why_now": "Veterans Day week is an appropriate time to spotlight clinical leadership without competing messaging.",
-                "asset": {
-                  "format": "carousel",
-                  "kind": "carousel",
-                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
-                },
-                "sheet_tab": "November Content Calendar",
-                "replaces_row": null,
-                "replaces_tab": null,
-                "date_platforms": "Wed 11/11: FB, IG",
-                "postiz_mode": "schedule",
-                "needs_rewrite": []
-              },
-              "source": "social-plan",
-              "status": "built",
-              "created": "2026-09-24T05:33:46",
-              "decided": "2026-10-21T07:39:05",
-              "note": "in the draft to Todd 2026-10-21; waiting for his OK (sheet box or reply)",
-              "result": {
-                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\a07785591a-wed-11-11-staff-spotlight-dr-sara-hamilton.json",
-                "sheet": "November Content Calendar!15",
-                "draft": " Social posts to approve: week of October 26",
-                "asset": "social/plan/cards/render/png/nov11-sara-01-feed.png",
-                "built": "2026-10-21",
-                "drafted": "2026-10-21"
-              },
-              "check": {
-                "at": "2026-10-20T09:16:50",
-                "level": "ok",
-                "text": "Slot is free; 22 days of notice."
               }
             },
             {
@@ -18229,75 +18237,6 @@
                 "at": "2026-10-20T09:16:50",
                 "level": "ok",
                 "text": "Slot is free; 20 days of notice."
-              }
-            },
-            {
-              "id": "a07785591a",
-              "kind": "social",
-              "key": "social:2026-11-11:FB+IG",
-              "title": "Wed 11/11: Staff Spotlight: Dr Sara Hamilton",
-              "why": "November is not planned yet; this keeps the FB/IG cadence going",
-              "payload": {
-                "date": "2026-11-11",
-                "weekday": "Wed",
-                "times": "FB 10:30 AM, IG 12:15 PM",
-                "platforms": [
-                  "FB",
-                  "IG"
-                ],
-                "type": "Staff Spotlight",
-                "pillar": "People",
-                "format": "carousel",
-                "title": "Wed 11/11: Staff Spotlight: Dr Sara Hamilton",
-                "purpose": "Dr Sara Hamilton, Psychologist, Clinical Director. What she wants every new client to know in week one. Needs her one sentence in her own words.",
-                "observance": null,
-                "cta_page": "https://www.bariatriccounselingcenter.com/about/",
-                "captions": {
-                  "FB": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nDr Hamilton is part of our experienced and compassionate team of behavioral healthcare professionals serving clients in San Antonio and virtual across Texas.\n\nLink in the first comment.",
-                  "IG": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nOur team serves clients in San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
-                  "YT": {
-                    "title": "Meet Dr Sara Hamilton, Clinical Director",
-                    "description": "Dr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center in San Antonio, Texas. As a clinical psychologist, she leads behavioral therapy programming for people struggling with weight-loss, obesity, binge eating, and chronic over-eating. Our experienced team provides group and individual therapy, dietary guidance, cooking classes, and movement education in one comprehensive program, serving clients in San Antonio and virtual across Texas."
-                  }
-                },
-                "on_image": [
-                  "Dr Sara Hamilton",
-                  "Clinical Psychologist, Clinical Director",
-                  "Leading behavioral therapy programming",
-                  "San Antonio and virtual across Texas",
-                  "bariatriccounselingcenter.com"
-                ],
-                "alt_text": "Dr Sara Hamilton, Clinical Psychologist and Clinical Director at Bariatric Counseling Center in San Antonio, Texas.",
-                "why_now": "Veterans Day week is an appropriate time to spotlight clinical leadership without competing messaging.",
-                "asset": {
-                  "format": "carousel",
-                  "kind": "carousel",
-                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
-                },
-                "sheet_tab": "November Content Calendar",
-                "replaces_row": null,
-                "replaces_tab": null,
-                "date_platforms": "Wed 11/11: FB, IG",
-                "postiz_mode": "schedule",
-                "needs_rewrite": []
-              },
-              "source": "social-plan",
-              "status": "built",
-              "created": "2026-09-24T05:33:46",
-              "decided": "2026-10-21T07:39:05",
-              "note": "in the draft to Todd 2026-10-21; waiting for his OK (sheet box or reply)",
-              "result": {
-                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\a07785591a-wed-11-11-staff-spotlight-dr-sara-hamilton.json",
-                "sheet": "November Content Calendar!15",
-                "draft": " Social posts to approve: week of October 26",
-                "asset": "social/plan/cards/render/png/nov11-sara-01-feed.png",
-                "built": "2026-10-21",
-                "drafted": "2026-10-21"
-              },
-              "check": {
-                "at": "2026-10-20T09:16:50",
-                "level": "ok",
-                "text": "Slot is free; 22 days of notice."
               }
             },
             {
@@ -24156,13 +24095,13 @@
       "model": {
         "connected": true,
         "data": {
-          "fetched": "2026-11-04",
+          "fetched": "2026-11-05",
           "site": "https://www.bariatriccounselingcenter.com/",
           "window_days": 28,
           "errors": [],
           "summary": {
-            "clicks": 6,
-            "impressions": 712,
+            "clicks": 5,
+            "impressions": 760,
             "avg_position": 4.7
           },
           "top_queries": [
@@ -24179,16 +24118,16 @@
               "position": 3.0
             },
             {
-              "query": "staying hydrated while cutting weight",
-              "clicks": 1,
-              "impressions": 1,
-              "position": 3.0
-            },
-            {
               "query": "weight loss surgery mental health preparation",
               "clicks": 1,
               "impressions": 1,
               "position": 1.0
+            },
+            {
+              "query": "staying hydrated while cutting weight",
+              "clicks": 1,
+              "impressions": 1,
+              "position": 3.0
             },
             {
               "query": "am i mentally ready for gastric bypass surgery",
@@ -24314,7 +24253,7 @@
               "impressions": 2
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/glp-1-behavioral-support-in-san-antonio-tx/",
+              "page": "https://www.bariatriccounselingcenter.com/category/staff/",
               "clicks": 0,
               "impressions": 1
             },
@@ -24324,22 +24263,17 @@
               "impressions": 1
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/category/staff/",
+              "page": "https://www.bariatriccounselingcenter.com/glp-1-behavioral-support-in-san-antonio-tx/",
               "clicks": 0,
               "impressions": 1
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+              "page": "https://www.bariatriccounselingcenter.com/eating-disorder-counseling-in-san-antonio-tx/",
               "clicks": 0,
               "impressions": 1
             }
           ],
           "daily": [
-            {
-              "date": "2026-10-07",
-              "clicks": 1,
-              "impressions": 36
-            },
             {
               "date": "2026-10-08",
               "clicks": 0,
@@ -24464,6 +24398,16 @@
               "date": "2026-11-01",
               "clicks": 0,
               "impressions": 18
+            },
+            {
+              "date": "2026-11-02",
+              "clicks": 0,
+              "impressions": 48
+            },
+            {
+              "date": "2026-11-03",
+              "clicks": 0,
+              "impressions": 36
             }
           ],
           "crawl": {
@@ -30010,6 +29954,83 @@
                 "level": "warn",
                 "text": "Approved but not built yet, and it posts in 1 day."
               }
+            },
+            {
+              "id": "a07785591a",
+              "kind": "social",
+              "key": "social:2026-11-11:FB+IG",
+              "title": "Wed 11/11: Staff Spotlight: Dr Sara Hamilton",
+              "why": "November is not planned yet; this keeps the FB/IG cadence going",
+              "payload": {
+                "date": "2026-11-11",
+                "weekday": "Wed",
+                "times": "FB 10:30 AM, IG 12:15 PM",
+                "platforms": [
+                  "FB",
+                  "IG"
+                ],
+                "type": "Staff Spotlight",
+                "pillar": "People",
+                "format": "carousel",
+                "title": "Wed 11/11: Staff Spotlight: Dr Sara Hamilton",
+                "purpose": "Dr Sara Hamilton, Psychologist, Clinical Director. What she wants every new client to know in week one. Needs her one sentence in her own words.",
+                "observance": null,
+                "cta_page": "https://www.bariatriccounselingcenter.com/about/",
+                "captions": {
+                  "FB": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nDr Hamilton is part of our experienced and compassionate team of behavioral healthcare professionals serving clients in San Antonio and virtual across Texas.\n\nLink in the first comment.",
+                  "IG": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nOur team serves clients in San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+                  "YT": {
+                    "title": "Meet Dr Sara Hamilton, Clinical Director",
+                    "description": "Dr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center in San Antonio, Texas. As a clinical psychologist, she leads behavioral therapy programming for people struggling with weight-loss, obesity, binge eating, and chronic over-eating. Our experienced team provides group and individual therapy, dietary guidance, cooking classes, and movement education in one comprehensive program, serving clients in San Antonio and virtual across Texas."
+                  }
+                },
+                "on_image": [
+                  "Dr Sara Hamilton",
+                  "Clinical Psychologist, Clinical Director",
+                  "Leading behavioral therapy programming",
+                  "San Antonio and virtual across Texas",
+                  "bariatriccounselingcenter.com"
+                ],
+                "alt_text": "Dr Sara Hamilton, Clinical Psychologist and Clinical Director at Bariatric Counseling Center in San Antonio, Texas.",
+                "why_now": "Veterans Day week is an appropriate time to spotlight clinical leadership without competing messaging.",
+                "asset": {
+                  "format": "carousel",
+                  "kind": "carousel",
+                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+                },
+                "sheet_tab": "November Content Calendar",
+                "replaces_row": null,
+                "replaces_tab": null,
+                "date_platforms": "Wed 11/11: FB, IG",
+                "postiz_mode": "schedule",
+                "needs_rewrite": [],
+                "review_notes": [
+                  {
+                    "date": "2026-11-05 07:07",
+                    "note": "sara: 11/11 is Veterans Day, rather have a post recognizing mental health needs of veterans that day and push back my post. I edited the text content directly on your email. I'm working on getting the quote from the alumna.",
+                    "about": "Wed 11/11: Staff Spotlight: Dr Sara Hamilton"
+                  }
+                ],
+                "draft_stage": "rewrite"
+              },
+              "source": "social-plan",
+              "status": "approved",
+              "created": "2026-09-24T05:33:46",
+              "decided": "2026-11-05T07:07:45",
+              "note": "rewrite: sara: 11/11 is Veterans Day, rather have a post recognizing mental health needs of veterans that day and push back my post. I edited the text content directly on your email. I'm working on getting the quote from the alumna. (2026-11-05)",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\a07785591a-wed-11-11-staff-spotlight-dr-sara-hamilton.json",
+                "sheet": "November Content Calendar!15",
+                "draft": " Social posts to approve: week of October 26",
+                "asset": "social/plan/cards/render/png/nov11-sara-01-feed.png",
+                "built": "2026-10-21",
+                "drafted": "2026-10-21"
+              },
+              "check": {
+                "at": "2026-10-20T09:16:50",
+                "level": "ok",
+                "text": "Slot is free; 22 days of notice."
+              }
             }
           ],
           "placed_30d": 1,
@@ -32828,5 +32849,5 @@
     }
   ],
   "snapshot_count": 48,
-  "generated_at": "2026-11-05T11:35:57.934381Z"
+  "generated_at": "2026-11-05T13:07:48.160076Z"
 }
