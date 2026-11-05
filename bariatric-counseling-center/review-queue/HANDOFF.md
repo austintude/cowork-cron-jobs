@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-11-05 07:07 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-11-05 13:27 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -195,9 +195,18 @@ Generated 2026-11-05 07:07 by queue_apply.py. Daniel approved these on the dashb
   - Remove the link from the image and keep the image (decided by Daniel 2026-10-20). Do not replace it with another link.
   - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/
 
-## Items waiting on Daniel or on Todd/Sara (4): not for Claude, except the Gmail confirmations below.
+## Action items from the Action Items sheet (1): work each, then --done or --needs-you
+
+- id `246e095047`: **Stress Eating keyword** (9/24 call list, sheet row 6). Approved 2026-11-05.
+  - HISTORY (continue from here; do not redo what is done):
+    - 2026-10-21 07:49 claude: Added 'stress eating' (national-primary, priority 2) and 'how to stop stress eating' (national-long-tail, priority 2) to seo-tools/keywords-master.json, both pointed at /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/. Neither was tracked; 'stress eating' is about 4,400 searches a month in the US.
+    - 2026-10-21 07:49 claude: Wrote the brief and the page copy: content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md (a 'What is stress eating?' answer for the top of the post, a 3-question FAQ with schema, two internal links).
+    - 2026-10-21 07:49 claude: Found: the post's new title and description were made on staging14 (queue item 843c7ca564); production still shows the old 110-character title.
+    - 2026-11-05 13:27 daniel: Chose 'Place it on staging14'. Told Claude: Add the 'What is stress eating?' H2 and paragraph, the 3-question Rank Math FAQ block and the two internal links from content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md to /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ on staging14 through the block process, and confirm the staged title 'How To Stop Stress Eating: Behavioral Strategies' and its description are on staging14 too.
+  - NOW: daniel: Add the 'What is stress eating?' H2 and paragraph, the 3-question Rank Math FAQ block and the two internal links from content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md to /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ on staging14 through the block process, and confirm the staged title 'How To Stop Stress Eating: Behavioral Strategies' and its description are on staging14 too.
+
+## Items waiting on Daniel or on Todd/Sara (3): not for Claude, except the Gmail confirmations below.
 - For Overeaters, position us as Professional / Licensed virtual group support covered by health insurance: Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)
-- Stress Eating keyword: Read the stress eating brief and choose.
 - Calendar staff anniversary posts: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)
 - Texas-wide geographic strategy: Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.
 
