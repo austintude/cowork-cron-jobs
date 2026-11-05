@@ -11496,6 +11496,40 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "c83111a567",
+   "kind": "fix",
+   "key": "fix:broken image:https://www.bariatriccounselingcenter.com/wp-content/uploads/bcc-medley-thumbcard-v2-1280.jpg",
+   "title": "Broken image on 7 pages: /wp-content/uploads/bcc-medley-thumbcard-v2-1280.jpg",
+   "why": "broken image on production, carried by 7 pages (first seen 2026-11-05); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "https://www.bariatriccounselingcenter.com/wp-content/uploads/bcc-medley-thumbcard-v2-1280.jpg",
+    "fix_type": "broken image",
+    "detail": "HTTP 404",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/",
+     "https://www.bariatriccounselingcenter.com/?kadence_element=ahrefs",
+     "https://www.bariatriccounselingcenter.com/?kadence_element=author-bios",
+     "https://www.bariatriccounselingcenter.com/?kadence_element=clickrank",
+     "https://www.bariatriccounselingcenter.com/?kadence_element=landing-page",
+     "https://www.bariatriccounselingcenter.com/?kadence_element=search-atlas-2-2",
+     "https://www.bariatriccounselingcenter.com/?kadence_element=video-lightbox"
+    ],
+    "suggest": null,
+    "steps": [
+     "https://www.bariatriccounselingcenter.com/wp-content/uploads/bcc-medley-thumbcard-v2-1280.jpg answers HTTP 404. Re-upload the file to the media library or swap the block for a working file, on staging14."
+    ],
+    "first_seen": "2026-11-05",
+    "video": null,
+    "service": null
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-11-05T05:29:46",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
