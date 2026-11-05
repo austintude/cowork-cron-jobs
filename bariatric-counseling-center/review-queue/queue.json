@@ -11428,6 +11428,40 @@
    "decided": "2026-11-04T14:54:38",
    "note": "auto: post held, media change requested on the sheet",
    "result": null
+  },
+  {
+   "id": "95fa01dcd4",
+   "kind": "fix",
+   "key": "fix:dead video embed:youtube:doubleclick",
+   "title": "Dead video on 7 pages: youtube doubleclick",
+   "why": "dead video embed on production, carried by 7 pages (first seen 2026-11-05); dead links and media hurt visitors, crawl budget and AI answers alike",
+   "payload": {
+    "url": "youtube:doubleclick",
+    "fix_type": "dead video embed",
+    "detail": "youtube: gone (deleted or never existed)",
+    "pages": [
+     "https://www.bariatriccounselingcenter.com/",
+     "https://www.bariatriccounselingcenter.com/?kadence_element=ahrefs",
+     "https://www.bariatriccounselingcenter.com/?kadence_element=author-bios",
+     "https://www.bariatriccounselingcenter.com/?kadence_element=clickrank",
+     "https://www.bariatriccounselingcenter.com/?kadence_element=landing-page",
+     "https://www.bariatriccounselingcenter.com/?kadence_element=search-atlas-2-2",
+     "https://www.bariatriccounselingcenter.com/?kadence_element=video-lightbox"
+    ],
+    "suggest": null,
+    "steps": [
+     "The youtube video doubleclick is gone (deleted or never existed). On each page below, open the editor on staging14, find the embed or lightbox link carrying that id, and replace it with the current video id (check the BCC YouTube channel and the Videos catalog) or remove the block."
+    ],
+    "first_seen": "2026-11-05",
+    "video": "doubleclick",
+    "service": "youtube"
+   },
+   "source": "link-check",
+   "status": "pending",
+   "created": "2026-11-05T05:29:46",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
