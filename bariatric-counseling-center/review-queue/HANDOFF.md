@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-11-05 07:06 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-11-05 07:07 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -242,19 +242,23 @@ Generated 2026-11-05 07:06 by queue_apply.py. Daniel approved these on the dashb
   - asked for: a new image in column N
   - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/1mt2uLrE7mnnN4tj6L4j-juHVPRzHlsig?v=9ff02617",1)
 
-## Social posts to build and write to the sheet (1); the draft to Todd is a separate weekly step
+## Social posts to build and write to the sheet (2); the draft to Todd is a separate weekly step
 
 - id `55ec40f611`: **Fri 11/6: Food Friday reel from Leila's clips (Salmon with sesame orange glaze, Eggroll in** on 2026-11-06 (FB, IG, YT) at FB 12:00 PM, IG 6:00 PM, YT 6:00 PM, reel. Approved 2026-10-20. Why: no Food Friday planned and 3 unused weeks of kitchen footage sit in Drive
   - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\55ec40f611-fri-11-6-food-friday-reel-from-leila-s-clips-salmon-with-ses.json`
   - asset: reel https://drive.google.com/drive/folders/1Oxs1OVu05rvOABXKa392DZ6wSSeEZPA3
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/ourprogram/learn-to-cook-differently/
+- id `a07785591a`: **Wed 11/11: Staff Spotlight: Dr Sara Hamilton** on 2026-11-11 (FB, IG) at FB 10:30 AM, IG 12:15 PM, carousel. Approved 2026-11-05. Why: November is not planned yet; this keeps the FB/IG cadence going
+  - spec file (captions, on_image lines, asset plan, sheet tab): `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\a07785591a-wed-11-11-staff-spotlight-dr-sara-hamilton.json`
+  - asset: carousel
+  - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/about/
+  - SENT BACK: rewrite: sara: 11/11 is Veterans Day, rather have a post recognizing mental health needs of veterans that day and push back my post. I edited the text content directly on your email. I'm working on getting the quote from the alumna. (2026-11-05) (rebuild with this change, then a fresh draft to Todd)
 
 ## Draft day: Wednesday. Today is Thursday, not draft day: build only, no email to Todd.
 
-## Social posts with Todd (8): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
+## Social posts with Todd (7): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
 - id `67ff8aa4bd`: **Mon 11/9: What a grocery store tour is for** on 2026-11-09 (FB, IG); sheet November Content Calendar!13; draft  Social posts to approve: week of October 26 (2026-10-21)
-- id `a07785591a`: **Wed 11/11: Staff Spotlight: Dr Sara Hamilton** on 2026-11-11 (FB, IG); sheet November Content Calendar!15; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `3ac415f444`: **Thu 11/12: Q4 workload and the holiday calendar** on 2026-11-12 (LI); sheet November Content Calendar!16; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `337fc6aea8`: **Mon 11/16: Eating at one table again** on 2026-11-16 (FB, IG); sheet November Content Calendar!17; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `7a78357dd4`: **Tue 11/17: Referring providers: behavioral care alongside medical care** on 2026-11-17 (LI, GBP); sheet November Content Calendar!18; draft  Social posts to approve: week of October 26 (2026-10-21)
