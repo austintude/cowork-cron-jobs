@@ -8604,10 +8604,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A6"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "approved",
    "created": "2026-10-10T07:00:24",
-   "decided": "2026-10-21T07:49:49",
-   "note": "Read the stress eating brief and choose.",
+   "decided": "2026-11-05T13:27:06",
+   "note": "rewrite: daniel: Add the 'What is stress eating?' H2 and paragraph, the 3-question Rank Math FAQ block and the two internal links from content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md to /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ on staging14 through the block process, and confirm the staged title 'How To Stop Stress Eating: Behavioral Strategies' and its description are on staging14 too.",
    "result": {
     "followup": {
      "trail": [
@@ -8625,6 +8625,11 @@
        "at": "2026-10-21 07:49",
        "by": "claude",
        "text": "Found: the post's new title and description were made on staging13 (queue item 843c7ca564); production still shows the old 110-character title."
+      },
+      {
+       "at": "2026-11-05 13:27",
+       "by": "daniel",
+       "text": "Chose 'Place it on staging14'. Told Claude: Add the 'What is stress eating?' H2 and paragraph, the 3-question Rank Math FAQ block and the two internal links from content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md to /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ on staging14 through the block process, and confirm the staged title 'How To Stop Stress Eating: Behavioral Strategies' and its description are on staging14 too."
       }
      ],
      "steps": [
@@ -8652,7 +8657,10 @@
        ],
        "due": "2026-10-28",
        "id": "s1",
-       "status": "open"
+       "status": "done",
+       "done_at": "2026-11-05 13:27",
+       "via": "Daniel on the dashboard",
+       "evidence": "chose: Place it on staging14"
       },
       {
        "owner": "claude",
@@ -8664,8 +8672,8 @@
        "status": "open"
       }
      ],
-     "state": "your_move",
-     "state_text": "Read the stress eating brief and choose.",
+     "state": "with_claude",
+     "state_text": "With Claude: Add the 'What is stress eating?' H2 and paragraph, the 3-question Rank Math FAQ block and the two internal links from content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md to /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ on staging14 through the block process, and confirm the staged title 'How To Stop Stress Eating: Behavioral Strategies' and its description are on staging14 too.",
      "checked_at": "2026-11-05 07:00"
     },
     "needs_you": "Stress eating is now tracked; read the brief (content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md) and say whether to place the new copy on staging14",
