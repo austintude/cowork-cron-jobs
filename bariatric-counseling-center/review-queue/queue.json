@@ -8697,10 +8697,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A7"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "approved",
    "created": "2026-10-10T07:00:25",
-   "decided": "2026-10-22T07:00:45",
-   "note": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)",
+   "decided": "2026-11-05T13:27:37",
+   "note": "rewrite: daniel: draft this to todd",
    "result": {
     "followup": {
      "trail": [
@@ -8728,6 +8728,11 @@
        "at": "2026-10-22 07:00",
        "by": "check",
        "text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)"
+      },
+      {
+       "at": "2026-11-05 13:27",
+       "by": "daniel",
+       "text": "Told Claude: draft this to todd"
       }
      ],
      "steps": [
@@ -8798,8 +8803,8 @@
        "status": "open"
       }
      ],
-     "state": "problem",
-     "state_text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)",
+     "state": "with_claude",
+     "state_text": "With Claude: draft this to todd",
      "checked_at": "2026-11-05 07:00"
     },
     "needs_you": "Send Todd the Gmail draft 'Quick check: phone and address on the overeaters page' (live page shows (210) 934-3420), then approve the positioning copy in content-drafts/action-items-2026-10-21",
