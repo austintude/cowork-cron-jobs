@@ -12501,7 +12501,7 @@
             "action": "Action item",
             "asset": "Asset revision"
           },
-          "handoff": 56,
+          "handoff": 60,
           "top": [
             "Social post: Re-book: IG Wed 11/04, Stress eating at night\n\nA long day doesn't ma (failed in Postiz)",
             "Content block: AI Overview answer for \"eating disorder therapist san antonio\" on /eating-disorder-therapi"
@@ -15453,12 +15453,12 @@
           "applied": 70,
           "placed": 43,
           "written": 6,
-          "go": 4,
-          "approved": 52,
-          "built": 7,
+          "go": 5,
+          "approved": 55,
+          "built": 6,
           "resolved": 15,
           "expired": 11,
-          "needs": 4,
+          "needs": 2,
           "pending": 64
         },
         "handoff": {
@@ -17076,10 +17076,137 @@
               "decided": "2026-11-04T07:00:42",
               "note": "auto: post held, media change requested on the sheet",
               "result": null
+            },
+            {
+              "id": "9a9a32a5d9",
+              "kind": "asset",
+              "key": "nov-r29-20261105132532",
+              "title": "Revise media: Wed 11/25 Staff Spotlight",
+              "why": "Todd/Sara: new image in column N",
+              "payload": {
+                "change": "nov-r29-20261105132532",
+                "month": "November",
+                "row": 29,
+                "date": "Wed 11/25",
+                "type": "Staff Spotlight",
+                "platforms": [
+                  "FB",
+                  "IG"
+                ],
+                "note": "",
+                "image_cell_changed": true,
+                "image_cell": "=IMAGE(\"https://pub-b8baca918f1f43dab003fedf39ab2c64.r2.dev/PTzMxoCGac.png\",1)",
+                "assets": [
+                  "nov25-sara-01-feed.png",
+                  "nov25-sara-02-feed.png",
+                  "nov25-sara-03-feed.png",
+                  "nov25-sara-04-feed.png",
+                  "nov25-sara-05-feed.png"
+                ],
+                "notes_col": "BOOKED 2026-11-05. Postiz FB Wed 11/25 10:30 AM CT (16:30Z) with first comment to /about/, IG 12:15 PM CT (18:15Z). 5-slide carousel re-rendered with Sara's edits (Virtual across Texas on cover, slide 4 and end card; fax added). Image above is slide 1 from R2; not on Drive.\nInstagram + Facebook carousel, 5 slides 1080x1350: nov25-sara-01-feed.png, nov25-sara-02-feed.png, nov25-sara-03-feed.png, nov25-sara-04-feed.png, nov25-sara-05-feed.png\nRepo: social/plan/cards/render_2026-11-05/png (branch veterans-sara-2026-11-05).\nAlt text: Dr Sara Hamilton, Clinical Psychologist and Clinical Director at Bariatric Counseling Center.\nSara OK'd the text by editing it herself (Nov 4 reply on the social review thread)."
+              },
+              "source": "social_changes",
+              "status": "approved",
+              "created": "2026-11-06T07:00:26",
+              "decided": "2026-11-06T07:00:26",
+              "note": "auto: post held, media change requested on the sheet",
+              "result": null
             }
           ],
-          "action": [],
-          "action_needs": [
+          "action": [
+            {
+              "id": "246e095047",
+              "kind": "action",
+              "key": "ai:294d7208f954",
+              "title": "Stress Eating keyword",
+              "why": "Action Items sheet, 9/24 call list, row 24",
+              "payload": {
+                "text": "Stress Eating keyword",
+                "notes": "",
+                "section": "Daniel",
+                "label": "9/24 call",
+                "row": 6,
+                "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
+                "tab": "Sheet1",
+                "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A6"
+              },
+              "source": "action-items",
+              "status": "approved",
+              "created": "2026-10-10T07:00:24",
+              "decided": "2026-11-05T13:27:06",
+              "note": "rewrite: daniel: Add the 'What is stress eating?' H2 and paragraph, the 3-question Rank Math FAQ block and the two internal links from content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md to /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ on staging14 through the block process, and confirm the staged title 'How To Stop Stress Eating: Behavioral Strategies' and its description are on staging14 too.",
+              "result": {
+                "followup": {
+                  "trail": [
+                    {
+                      "at": "2026-10-21 07:49",
+                      "by": "claude",
+                      "text": "Added 'stress eating' (national-primary, priority 2) and 'how to stop stress eating' (national-long-tail, priority 2) to seo-tools/keywords-master.json, both pointed at /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/. Neither was tracked; 'stress eating' is about 4,400 searches a month in the US."
+                    },
+                    {
+                      "at": "2026-10-21 07:49",
+                      "by": "claude",
+                      "text": "Wrote the brief and the page copy: content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md (a 'What is stress eating?' answer for the top of the post, a 3-question FAQ with schema, two internal links)."
+                    },
+                    {
+                      "at": "2026-10-21 07:49",
+                      "by": "claude",
+                      "text": "Found: the post's new title and description were made on staging13 (queue item 843c7ca564); production still shows the old 110-character title."
+                    },
+                    {
+                      "at": "2026-11-05 13:27",
+                      "by": "daniel",
+                      "text": "Chose 'Place it on staging14'. Told Claude: Add the 'What is stress eating?' H2 and paragraph, the 3-question Rank Math FAQ block and the two internal links from content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md to /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ on staging14 through the block process, and confirm the staged title 'How To Stop Stress Eating: Behavioral Strategies' and its description are on staging14 too."
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "owner": "daniel",
+                      "do": "Read the stress eating brief and choose.",
+                      "links": [
+                        {
+                          "label": "Open the brief",
+                          "path": "content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md"
+                        }
+                      ],
+                      "check": {
+                        "type": "manual"
+                      },
+                      "options": [
+                        {
+                          "label": "Place it on staging14",
+                          "tell": "Add the 'What is stress eating?' H2 and paragraph, the 3-question Rank Math FAQ block and the two internal links from content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md to /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ on staging14 through the block process, and confirm the staged title 'How To Stop Stress Eating: Behavioral Strategies' and its description are on staging14 too."
+                        },
+                        {
+                          "label": "Tracking is enough",
+                          "tell": "DONE_NO_ACTION"
+                        }
+                      ],
+                      "due": "2026-10-28",
+                      "id": "s1",
+                      "status": "done",
+                      "done_at": "2026-11-05 13:27",
+                      "via": "Daniel on the dashboard",
+                      "evidence": "chose: Place it on staging14"
+                    },
+                    {
+                      "owner": "claude",
+                      "do": "Place the approved copy on staging14, verify the H2 and the FAQPage schema on the staging page, and report the URL. It reaches production with the next push.",
+                      "check": {
+                        "type": "manual"
+                      },
+                      "id": "s2",
+                      "status": "open"
+                    }
+                  ],
+                  "state": "with_claude",
+                  "state_text": "With Claude: Add the 'What is stress eating?' H2 and paragraph, the 3-question Rank Math FAQ block and the two internal links from content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md to /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ on staging14 through the block process, and confirm the staged title 'How To Stop Stress Eating: Behavioral Strategies' and its description are on staging14 too.",
+                  "checked_at": "2026-11-05 07:00"
+                },
+                "needs_you": "Stress eating is now tracked; read the brief (content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md) and say whether to place the new copy on staging14",
+                "needs_since": "2026-10-21"
+              }
+            },
             {
               "id": "4b6c3e5294",
               "kind": "action",
@@ -17097,10 +17224,10 @@
                 "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A7"
               },
               "source": "action-items",
-              "status": "needs",
+              "status": "approved",
               "created": "2026-10-10T07:00:25",
-              "decided": "2026-10-22T07:00:45",
-              "note": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)",
+              "decided": "2026-11-05T13:27:37",
+              "note": "rewrite: daniel: draft this to todd",
               "result": {
                 "followup": {
                   "trail": [
@@ -17128,6 +17255,11 @@
                       "at": "2026-10-22 07:00",
                       "by": "check",
                       "text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)"
+                    },
+                    {
+                      "at": "2026-11-05 13:27",
+                      "by": "daniel",
+                      "text": "Told Claude: draft this to todd"
                     }
                   ],
                   "steps": [
@@ -17198,99 +17330,16 @@
                       "status": "open"
                     }
                   ],
-                  "state": "problem",
-                  "state_text": "Read and send the Gmail draft 'Quick check: phone and address on the overeaters page'.: not sent, and no longer in your Drafts (deleted?)",
+                  "state": "with_claude",
+                  "state_text": "With Claude: draft this to todd",
                   "checked_at": "2026-11-05 07:00"
                 },
                 "needs_you": "Send Todd the Gmail draft 'Quick check: phone and address on the overeaters page' (live page shows (210) 934-3420), then approve the positioning copy in content-drafts/action-items-2026-10-21",
                 "needs_since": "2026-10-21"
               }
-            },
-            {
-              "id": "246e095047",
-              "kind": "action",
-              "key": "ai:294d7208f954",
-              "title": "Stress Eating keyword",
-              "why": "Action Items sheet, 9/24 call list, row 24",
-              "payload": {
-                "text": "Stress Eating keyword",
-                "notes": "",
-                "section": "Daniel",
-                "label": "9/24 call",
-                "row": 6,
-                "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-                "tab": "Sheet1",
-                "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A6"
-              },
-              "source": "action-items",
-              "status": "needs",
-              "created": "2026-10-10T07:00:24",
-              "decided": "2026-10-21T07:49:49",
-              "note": "Read the stress eating brief and choose.",
-              "result": {
-                "followup": {
-                  "trail": [
-                    {
-                      "at": "2026-10-21 07:49",
-                      "by": "claude",
-                      "text": "Added 'stress eating' (national-primary, priority 2) and 'how to stop stress eating' (national-long-tail, priority 2) to seo-tools/keywords-master.json, both pointed at /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/. Neither was tracked; 'stress eating' is about 4,400 searches a month in the US."
-                    },
-                    {
-                      "at": "2026-10-21 07:49",
-                      "by": "claude",
-                      "text": "Wrote the brief and the page copy: content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md (a 'What is stress eating?' answer for the top of the post, a 3-question FAQ with schema, two internal links)."
-                    },
-                    {
-                      "at": "2026-10-21 07:49",
-                      "by": "claude",
-                      "text": "Found: the post's new title and description were made on staging13 (queue item 843c7ca564); production still shows the old 110-character title."
-                    }
-                  ],
-                  "steps": [
-                    {
-                      "owner": "daniel",
-                      "do": "Read the stress eating brief and choose.",
-                      "links": [
-                        {
-                          "label": "Open the brief",
-                          "path": "content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md"
-                        }
-                      ],
-                      "check": {
-                        "type": "manual"
-                      },
-                      "options": [
-                        {
-                          "label": "Place it on staging14",
-                          "tell": "Add the 'What is stress eating?' H2 and paragraph, the 3-question Rank Math FAQ block and the two internal links from content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md to /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/ on staging14 through the block process, and confirm the staged title 'How To Stop Stress Eating: Behavioral Strategies' and its description are on staging14 too."
-                        },
-                        {
-                          "label": "Tracking is enough",
-                          "tell": "DONE_NO_ACTION"
-                        }
-                      ],
-                      "due": "2026-10-28",
-                      "id": "s1",
-                      "status": "open"
-                    },
-                    {
-                      "owner": "claude",
-                      "do": "Place the approved copy on staging14, verify the H2 and the FAQPage schema on the staging page, and report the URL. It reaches production with the next push.",
-                      "check": {
-                        "type": "manual"
-                      },
-                      "id": "s2",
-                      "status": "open"
-                    }
-                  ],
-                  "state": "your_move",
-                  "state_text": "Read the stress eating brief and choose.",
-                  "checked_at": "2026-11-05 07:00"
-                },
-                "needs_you": "Stress eating is now tracked; read the brief (content-drafts/action-items-2026-10-21/stress-eating-keyword-brief.md) and say whether to place the new copy on staging14",
-                "needs_since": "2026-10-21"
-              }
-            },
+            }
+          ],
+          "action_needs": [
             {
               "id": "aed8090d11",
               "kind": "action",
@@ -17310,10 +17359,10 @@
               "source": "action-items",
               "status": "needs",
               "created": "2026-09-24T12:23:36",
-              "decided": "2026-10-17T07:00:40",
-              "note": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)",
+              "decided": "2026-11-06T07:14:35",
+              "note": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
               "result": {
-                "needs_you": "Send the reminder draft to Todd (reply on 'Staff anniversary posts: Laura, Aaron and Leloni'). Leloni's post stays parked until Todd's info arrives.",
+                "needs_you": "Send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni",
                 "needs_since": "2026-09-25",
                 "followup": {
                   "trail": [
@@ -17341,48 +17390,54 @@
                       "at": "2026-10-17 07:00",
                       "by": "check",
                       "text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)"
+                    },
+                    {
+                      "at": "2026-11-05 13:28",
+                      "by": "daniel",
+                      "text": "Told Claude: draft a remninder email for todd"
+                    },
+                    {
+                      "at": "2026-11-06 07:14",
+                      "by": "claude",
+                      "text": "2026-11-06: Gmail reply draft built in the existing thread, subject Re: Staff anniversary posts: Laura, Aaron and Leloni, to Todd, asking for dates, lines and photos."
+                    },
+                    {
+                      "at": "2026-11-06 07:14",
+                      "by": "check",
+                      "text": "Todd replies with dates, a few lines each and photos.: Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \""
                     }
                   ],
                   "steps": [
                     {
                       "owner": "daniel",
-                      "do": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.",
+                      "do": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
                       "check": {
                         "type": "gmail_sent",
-                        "subject": "Re: Staff anniversary posts: Laura, Aaron and Leloni",
-                        "after": "2026-10-15"
+                        "subject": "Re: Staff anniversary posts: Laura, Aaron and Leloni"
                       },
-                      "due": "2026-10-16",
                       "id": "s1",
-                      "status": "gone",
-                      "evidence": "not sent, and no longer in your Drafts (deleted?)"
+                      "status": "open",
+                      "evidence": "still in your Gmail Drafts, not sent"
                     },
                     {
                       "owner": "todd",
-                      "do": "Todd sends dates, a few lines and a photo for Laura, Aaron and Leloni.",
+                      "do": "Todd replies with dates, a few lines each and photos.",
                       "check": {
                         "type": "gmail_reply",
                         "subject": "Staff anniversary posts",
-                        "from": "bccsanantonio.com",
-                        "after": "2026-10-15"
+                        "from": "bccsanantonio.com"
                       },
                       "id": "s2",
-                      "status": "open",
-                      "evidence": "no reply yet"
-                    },
-                    {
-                      "owner": "claude",
-                      "do": "Build the anniversary posts through the social pipeline once Todd's info is in.",
-                      "check": {
-                        "type": "manual"
-                      },
-                      "id": "s3",
-                      "status": "open"
+                      "status": "done",
+                      "evidence": "Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \"",
+                      "done_at": "2026-11-06 07:14",
+                      "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0d9d7746da1d27",
+                      "via": "checked automatically"
                     }
                   ],
-                  "state": "problem",
-                  "state_text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)",
-                  "checked_at": "2026-11-05 07:00"
+                  "state": "your_move",
+                  "state_text": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
+                  "checked_at": "2026-11-06 07:14"
                 }
               }
             },
@@ -17504,7 +17559,7 @@
                   ],
                   "state": "waiting",
                   "state_text": "Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.",
-                  "checked_at": "2026-11-05 07:00"
+                  "checked_at": "2026-11-06 07:00"
                 }
               }
             }
@@ -17685,75 +17740,6 @@
             }
           ],
           "social_built": [
-            {
-              "id": "67ff8aa4bd",
-              "kind": "social",
-              "key": "social:2026-11-09:FB+IG",
-              "title": "Mon 11/9: What a grocery store tour is for",
-              "why": "November is not planned yet; this keeps the FB/IG cadence going",
-              "payload": {
-                "date": "2026-11-09",
-                "weekday": "Mon",
-                "times": "FB 10:30 AM, IG 12:15 PM",
-                "platforms": [
-                  "FB",
-                  "IG"
-                ],
-                "type": "Education",
-                "pillar": "Education",
-                "format": "carousel",
-                "title": "Mon 11/9: What a grocery store tour is for",
-                "purpose": "Grocery Store Tours: what the dietitians look at with clients in the aisles and why it changes the week.",
-                "observance": null,
-                "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
-                "captions": {
-                  "FB": "Grocery Store Tours at the Bariatric Counseling Center aren't just about finding healthier foods. Our registered dietitians walk the aisles with clients, practicing real-world skills that make the rest of the week easier. You learn how to read labels, compare options, and plan meals without feeling overwhelmed. It's one session that changes how you approach every shopping trip after. We provide group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas. One program, not four. Link in the first comment.",
-                  "IG": "Grocery store tours with registered dietitians\n\nAt the Bariatric Counseling Center, Grocery Store Tours are hands-on sessions where our registered dietitians walk the aisles with clients. You practice reading labels, comparing options, and planning meals in the moment. It's not about memorizing rules. It's about building confidence for every trip after that one. Our program includes group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport #MindfulRecovery #SanAntonio",
-                  "YT": {
-                    "title": "What Happens During a Grocery Store Tour at BCC",
-                    "description": "Grocery Store Tours at the Bariatric Counseling Center are hands-on sessions where registered dietitians walk the aisles with clients. You practice reading labels, comparing options, and planning meals in real time. One session changes how you approach every shopping trip after. We provide group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas. One program, not four."
-                  }
-                },
-                "on_image": [
-                  "Grocery Store Tours",
-                  "Real aisles with registered dietitians",
-                  "Labels, choices, meal planning",
-                  "One session that changes the week",
-                  "bariatriccounselingcenter.com"
-                ],
-                "alt_text": "Carousel post explaining how grocery store tours with registered dietitians help clients practice meal planning and label reading in real time.",
-                "why_now": "Monday education post introducing a specific pillar service in plain language that demystifies what happens during the tour.",
-                "asset": {
-                  "format": "carousel",
-                  "kind": "carousel",
-                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
-                },
-                "sheet_tab": "November Content Calendar",
-                "replaces_row": null,
-                "replaces_tab": null,
-                "date_platforms": "Mon 11/9: FB, IG",
-                "postiz_mode": "schedule",
-                "needs_rewrite": []
-              },
-              "source": "social-plan",
-              "status": "built",
-              "created": "2026-09-22T09:58:38",
-              "decided": "2026-10-21T07:39:04",
-              "note": "in the draft to Todd 2026-10-21; waiting for his OK (sheet box or reply)",
-              "result": {
-                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\67ff8aa4bd-mon-11-9-what-a-grocery-store-tour-is-for.json",
-                "sheet": "November Content Calendar!13",
-                "draft": " Social posts to approve: week of October 26",
-                "asset": "social/plan/cards/render/png/nov09-grocery-01-feed.png",
-                "built": "2026-10-21",
-                "drafted": "2026-10-21"
-              },
-              "check": {
-                "at": "2026-10-20T09:16:50",
-                "level": "ok",
-                "text": "Slot is free; 20 days of notice."
-              }
-            },
             {
               "id": "3ac415f444",
               "kind": "social",
@@ -18170,75 +18156,6 @@
           ],
           "social_undrafted": [],
           "social_with_todd": [
-            {
-              "id": "67ff8aa4bd",
-              "kind": "social",
-              "key": "social:2026-11-09:FB+IG",
-              "title": "Mon 11/9: What a grocery store tour is for",
-              "why": "November is not planned yet; this keeps the FB/IG cadence going",
-              "payload": {
-                "date": "2026-11-09",
-                "weekday": "Mon",
-                "times": "FB 10:30 AM, IG 12:15 PM",
-                "platforms": [
-                  "FB",
-                  "IG"
-                ],
-                "type": "Education",
-                "pillar": "Education",
-                "format": "carousel",
-                "title": "Mon 11/9: What a grocery store tour is for",
-                "purpose": "Grocery Store Tours: what the dietitians look at with clients in the aisles and why it changes the week.",
-                "observance": null,
-                "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
-                "captions": {
-                  "FB": "Grocery Store Tours at the Bariatric Counseling Center aren't just about finding healthier foods. Our registered dietitians walk the aisles with clients, practicing real-world skills that make the rest of the week easier. You learn how to read labels, compare options, and plan meals without feeling overwhelmed. It's one session that changes how you approach every shopping trip after. We provide group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas. One program, not four. Link in the first comment.",
-                  "IG": "Grocery store tours with registered dietitians\n\nAt the Bariatric Counseling Center, Grocery Store Tours are hands-on sessions where our registered dietitians walk the aisles with clients. You practice reading labels, comparing options, and planning meals in the moment. It's not about memorizing rules. It's about building confidence for every trip after that one. Our program includes group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport #MindfulRecovery #SanAntonio",
-                  "YT": {
-                    "title": "What Happens During a Grocery Store Tour at BCC",
-                    "description": "Grocery Store Tours at the Bariatric Counseling Center are hands-on sessions where registered dietitians walk the aisles with clients. You practice reading labels, comparing options, and planning meals in real time. One session changes how you approach every shopping trip after. We provide group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas. One program, not four."
-                  }
-                },
-                "on_image": [
-                  "Grocery Store Tours",
-                  "Real aisles with registered dietitians",
-                  "Labels, choices, meal planning",
-                  "One session that changes the week",
-                  "bariatriccounselingcenter.com"
-                ],
-                "alt_text": "Carousel post explaining how grocery store tours with registered dietitians help clients practice meal planning and label reading in real time.",
-                "why_now": "Monday education post introducing a specific pillar service in plain language that demystifies what happens during the tour.",
-                "asset": {
-                  "format": "carousel",
-                  "kind": "carousel",
-                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
-                },
-                "sheet_tab": "November Content Calendar",
-                "replaces_row": null,
-                "replaces_tab": null,
-                "date_platforms": "Mon 11/9: FB, IG",
-                "postiz_mode": "schedule",
-                "needs_rewrite": []
-              },
-              "source": "social-plan",
-              "status": "built",
-              "created": "2026-09-22T09:58:38",
-              "decided": "2026-10-21T07:39:04",
-              "note": "in the draft to Todd 2026-10-21; waiting for his OK (sheet box or reply)",
-              "result": {
-                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\67ff8aa4bd-mon-11-9-what-a-grocery-store-tour-is-for.json",
-                "sheet": "November Content Calendar!13",
-                "draft": " Social posts to approve: week of October 26",
-                "asset": "social/plan/cards/render/png/nov09-grocery-01-feed.png",
-                "built": "2026-10-21",
-                "drafted": "2026-10-21"
-              },
-              "check": {
-                "at": "2026-10-20T09:16:50",
-                "level": "ok",
-                "text": "Slot is free; 20 days of notice."
-              }
-            },
             {
               "id": "3ac415f444",
               "kind": "social",
@@ -18875,6 +18792,75 @@
                 "at": "2026-10-20T09:16:50",
                 "level": "ok",
                 "text": "Slot is free; 16 days of notice."
+              }
+            },
+            {
+              "id": "67ff8aa4bd",
+              "kind": "social",
+              "key": "social:2026-11-09:FB+IG",
+              "title": "Mon 11/9: What a grocery store tour is for",
+              "why": "November is not planned yet; this keeps the FB/IG cadence going",
+              "payload": {
+                "date": "2026-11-09",
+                "weekday": "Mon",
+                "times": "FB 10:30 AM, IG 12:15 PM",
+                "platforms": [
+                  "FB",
+                  "IG"
+                ],
+                "type": "Education",
+                "pillar": "Education",
+                "format": "carousel",
+                "title": "Mon 11/9: What a grocery store tour is for",
+                "purpose": "Grocery Store Tours: what the dietitians look at with clients in the aisles and why it changes the week.",
+                "observance": null,
+                "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+                "captions": {
+                  "FB": "Grocery Store Tours at the Bariatric Counseling Center aren't just about finding healthier foods. Our registered dietitians walk the aisles with clients, practicing real-world skills that make the rest of the week easier. You learn how to read labels, compare options, and plan meals without feeling overwhelmed. It's one session that changes how you approach every shopping trip after. We provide group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas. One program, not four. Link in the first comment.",
+                  "IG": "Grocery store tours with registered dietitians\n\nAt the Bariatric Counseling Center, Grocery Store Tours are hands-on sessions where our registered dietitians walk the aisles with clients. You practice reading labels, comparing options, and planning meals in the moment. It's not about memorizing rules. It's about building confidence for every trip after that one. Our program includes group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport #MindfulRecovery #SanAntonio",
+                  "YT": {
+                    "title": "What Happens During a Grocery Store Tour at BCC",
+                    "description": "Grocery Store Tours at the Bariatric Counseling Center are hands-on sessions where registered dietitians walk the aisles with clients. You practice reading labels, comparing options, and planning meals in real time. One session changes how you approach every shopping trip after. We provide group and individual therapy, dietary guidance, cooking classes and movement education in San Antonio and virtual across Texas. One program, not four."
+                  }
+                },
+                "on_image": [
+                  "Grocery Store Tours",
+                  "Real aisles with registered dietitians",
+                  "Labels, choices, meal planning",
+                  "One session that changes the week",
+                  "bariatriccounselingcenter.com"
+                ],
+                "alt_text": "Carousel post explaining how grocery store tours with registered dietitians help clients practice meal planning and label reading in real time.",
+                "why_now": "Monday education post introducing a specific pillar service in plain language that demystifies what happens during the tour.",
+                "asset": {
+                  "format": "carousel",
+                  "kind": "carousel",
+                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+                },
+                "sheet_tab": "November Content Calendar",
+                "replaces_row": null,
+                "replaces_tab": null,
+                "date_platforms": "Mon 11/9: FB, IG",
+                "postiz_mode": "schedule",
+                "needs_rewrite": []
+              },
+              "source": "social-plan",
+              "status": "go",
+              "created": "2026-09-22T09:58:38",
+              "decided": "2026-11-06T07:00:20",
+              "note": "Todd OK (silence) 2026-11-06: no reply by 3 days before; drafted 2026-10-21 (19 days notice); Todd's rule: silence is a go",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\67ff8aa4bd-mon-11-9-what-a-grocery-store-tour-is-for.json",
+                "sheet": "November Content Calendar!13",
+                "draft": " Social posts to approve: week of October 26",
+                "asset": "social/plan/cards/render/png/nov09-grocery-01-feed.png",
+                "built": "2026-10-21",
+                "drafted": "2026-10-21"
+              },
+              "check": {
+                "at": "2026-10-20T09:16:50",
+                "level": "ok",
+                "text": "Slot is free; 20 days of notice."
               }
             },
             {
@@ -24093,13 +24079,13 @@
       "model": {
         "connected": true,
         "data": {
-          "fetched": "2026-11-05",
+          "fetched": "2026-11-06",
           "site": "https://www.bariatriccounselingcenter.com/",
           "window_days": 28,
           "errors": [],
           "summary": {
             "clicks": 5,
-            "impressions": 760,
+            "impressions": 718,
             "avg_position": 4.7
           },
           "top_queries": [
@@ -24116,16 +24102,16 @@
               "position": 3.0
             },
             {
-              "query": "weight loss surgery mental health preparation",
-              "clicks": 1,
-              "impressions": 1,
-              "position": 1.0
-            },
-            {
               "query": "staying hydrated while cutting weight",
               "clicks": 1,
               "impressions": 1,
               "position": 3.0
+            },
+            {
+              "query": "weight loss surgery mental health preparation",
+              "clicks": 1,
+              "impressions": 1,
+              "position": 1.0
             },
             {
               "query": "am i mentally ready for gastric bypass surgery",
@@ -24251,7 +24237,7 @@
               "impressions": 2
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/category/staff/",
+              "page": "https://www.bariatriccounselingcenter.com/glp-1-behavioral-support-in-san-antonio-tx/",
               "clicks": 0,
               "impressions": 1
             },
@@ -24261,22 +24247,17 @@
               "impressions": 1
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/glp-1-behavioral-support-in-san-antonio-tx/",
+              "page": "https://www.bariatriccounselingcenter.com/category/staff/",
               "clicks": 0,
               "impressions": 1
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/eating-disorder-counseling-in-san-antonio-tx/",
+              "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
               "clicks": 0,
               "impressions": 1
             }
           ],
           "daily": [
-            {
-              "date": "2026-10-08",
-              "clicks": 0,
-              "impressions": 42
-            },
             {
               "date": "2026-10-09",
               "clicks": 2,
@@ -24409,10 +24390,10 @@
             }
           ],
           "crawl": {
-            "as_of": "2026-11-01",
-            "crawl_errors": 2,
+            "as_of": "2026-11-02",
+            "crawl_errors": 3,
             "indexed_pages": 257,
-            "crawled_pages": 64
+            "crawled_pages": 59
           }
         }
       },
@@ -25166,6 +25147,161 @@
               "Q": "da39a3ee5e6b"
             },
             "asset_item": "a43f6e0907"
+          },
+          {
+            "id": "nov-r30-20261105132532",
+            "month": "November",
+            "row": 30,
+            "title": "Alumni Story Clip (draft for review)",
+            "when": "Mon 11/30",
+            "platforms": [
+              "FB",
+              "IG",
+              "LI",
+              "YT"
+            ],
+            "affected": [
+              "FB",
+              "IG",
+              "LI",
+              "YT"
+            ],
+            "status": "ready",
+            "kinds": [
+              "edit"
+            ],
+            "detected": "2026-11-05T13:25:32",
+            "updated": "2026-11-05T13:25:32",
+            "initial": {
+              "C": "Wed 11/11: FB, IG",
+              "D": "FB 10:30 AM\nIG 12:15 PM",
+              "F": "Veterans Day post on veterans' mental health, at Sara's request (Nov 4). Replaces the staff spotlight, which moved to Wed 11/25. No clinical claim, statistic or staff quote, so no OK needed.",
+              "G": "Today is Veterans Day. Thank you to every veteran and military family.\n\nService can leave marks no one else sees, and mental health matters long after the uniform comes off. Asking for support is a sign of strength.\n\nIf you need someone to talk to right now, the Veterans Crisis Line is there any time, day or night: dial 988, then press 1, or text 838255.\n\nAt the Bariatric Counseling Center, our licensed mental health professionals and Registered Dietitians work with people whose stress shows up in how they eat, in group and individual therapy. Virtual across Texas.\n\nLink in the first comment.",
+              "H": "Veterans Day\n\nThank you to every veteran and military family. Mental health matters long after service, and asking for support is a sign of strength.\n\nNeed someone now? Veterans Crisis Line: dial 988, then press 1, or text 838255.\n\nOur licensed mental health professionals and Registered Dietitians work with people whose stress shows up in how they eat. Virtual across Texas. Link in bio.\n\n#VeteransDay #BariatricCounseling #VirtualTherapyTexas",
+              "I": "not applicable",
+              "J": "not applicable",
+              "K": "not applicable",
+              "L": "not applicable",
+              "M": "FB: post the carousel, put the link in the FIRST COMMENT. Comment links are exempt from Meta's 2-link-a-month test for Pages, so this keeps the quota free. Link: bariatriccounselingcenter.com/\nIG: link in bio (bcctx.link/start). Caption links are not tappable.\nCard: the last slide carries bariatriccounselingcenter.com.",
+              "N": "",
+              "O": "ASSETS (built 2026-11-05). Instagram + Facebook carousel, 5 slides 1080x1350: nov11-veterans-01-feed.png, nov11-veterans-02-feed.png, nov11-veterans-03-feed.png, nov11-veterans-04-feed.png, nov11-veterans-05-feed.png\nRepo: social/plan/cards/render_2026-11-05/png (branch veterans-sara-2026-11-05). NOT ON DRIVE YET: upload on the PC, then the image formula goes in column N.\nAlt text: Veterans Day card from Bariatric Counseling Center: You took care of us. Who takes care of you?\nCrisis line wording checked against VA pages Nov 5 (dial 988 then press 1; text 838255).",
+              "P": "FALSE",
+              "Q": "",
+              "A": "FALSE"
+            },
+            "todd": {
+              "cells": {
+                "C": {
+                  "before": "Wed 11/11: FB, IG",
+                  "after": "Mon 11/30: FB, IG, YT\nTue 12/1: LI"
+                },
+                "D": {
+                  "before": "FB 10:30 AM\nIG 12:15 PM",
+                  "after": "FB / IG / YT Shorts 7:00 PM\nLI 9:30 AM Tue"
+                },
+                "F": {
+                  "before": "Veterans Day post on veterans' mental health, at Sara's request (Nov 4). Replaces the staff spotlight, which moved to Wed 11/25. No clinical claim, statistic or staff quote, so no OK needed.",
+                  "after": "Finished 9:16 clip kim-clip6-9x16_learned-to-trust-myself_COVERED.mp4 (Kim K., BCC Alumna) from the Ford CURRENT folder, never posted. Covers the week of 11/30 until a December tab exists."
+                },
+                "G": {
+                  "before": "Today is Veterans Day. Thank you to every veteran and military family.\n\nService can leave marks no one else sees, and mental health matters long after the uniform comes off. Asking for support is a sign of strength.\n\nIf you need someone to talk to right now, the Veterans Crisis Line is there any time, day or night: dial 988, then press 1, or text 838255.\n\nAt the Bariatric Counseling Center, our licensed mental health professionals and Registered Dietitians work with people whose stress shows up in how they eat, in group and individual therapy. Virtual across Texas.\n\nLink in the first comment.",
+                  "after": "\"I really learned to trust myself and know that I'm worth putting the time and effort into.\"\n\nKim K., BCC Alumna, on the self-doubt she lived with, and what changed over her time at the Bariatric Counseling Center.\n\nGroup and individual therapy, dietary guidance, cooking classes and movement education, with one team. One Program, Four Pillars.\n\nIndividual experiences vary. This reflects one alumna's experience.\n\nVirtual across Texas. Link in the first comment."
+                },
+                "H": {
+                  "before": "Veterans Day\n\nThank you to every veteran and military family. Mental health matters long after service, and asking for support is a sign of strength.\n\nNeed someone now? Veterans Crisis Line: dial 988, then press 1, or text 838255.\n\nOur licensed mental health professionals and Registered Dietitians work with people whose stress shows up in how they eat. Virtual across Texas. Link in bio.\n\n#VeteransDay #BariatricCounseling #VirtualTherapyTexas",
+                  "after": "\"I learned to trust myself.\" Kim K., BCC Alumna\n\nOne Program, Four Pillars.\n\nIndividual experiences vary. This reflects one alumna's experience.\n\nVirtual across Texas. Link in bio.\n\n#EmotionalEating #BariatricCounseling #VirtualTherapyTexas #MindfulRecovery"
+                },
+                "I": {
+                  "before": "not applicable",
+                  "after": "Kim K., BCC Alumna: \"I really learned to trust myself and know that I'm worth putting the time and effort into.\"\n\nSelf-doubt is one of the quieter barriers to change, and one that behavioral care can work on directly. The Bariatric Counseling Center brings licensed mental health professionals, Registered Dietitians, movement therapists and a professional chef together in one program. One Program, Four Pillars.\n\nIndividual experiences vary. This reflects one alumna's experience.\n\nLearn more at bariatriccounselingcenter.com/testimonials/.\n\n#BehavioralHealth"
+                },
+                "K": {
+                  "before": "not applicable",
+                  "after": "\"I Learned to Trust Myself\" | Kim K., BCC Alumna\n\nKim K. on the self-doubt she lived with and what changed over her time at BCC. Part of her full testimonial, available on this channel.\n\nIndividual experiences vary. This reflects one alumna's experience.\n\nbariatriccounselingcenter.com/testimonials/\n\n#BariatricCounseling #SelfTrust #Shorts"
+                },
+                "M": {
+                  "before": "FB: post the carousel, put the link in the FIRST COMMENT. Comment links are exempt from Meta's 2-link-a-month test for Pages, so this keeps the quota free. Link: bariatriccounselingcenter.com/\nIG: link in bio (bcctx.link/start). Caption links are not tappable.\nCard: the last slide carries bariatriccounselingcenter.com.",
+                  "after": "FB: post the 9:16 clip, link in the FIRST COMMENT: bariatriccounselingcenter.com/testimonials/\nIG: Reel, link in bio (bcctx.link/start).\nYT: Short, the same 9:16 file.\nLI: same 9:16 file Tue morning, link in the body."
+                },
+                "O": {
+                  "before": "ASSETS (built 2026-11-05). Instagram + Facebook carousel, 5 slides 1080x1350: nov11-veterans-01-feed.png, nov11-veterans-02-feed.png, nov11-veterans-03-feed.png, nov11-veterans-04-feed.png, nov11-veterans-05-feed.png\nRepo: social/plan/cards/render_2026-11-05/png (branch veterans-sara-2026-11-05). NOT ON DRIVE YET: upload on the PC, then the image formula goes in column N.\nAlt text: Veterans Day card from Bariatric Counseling Center: You took care of us. Who takes care of you?\nCrisis line wording checked against VA pages Nov 5 (dial 988 then press 1; text 838255).",
+                  "after": "BOOKED 2026-10-29. Postiz FB, IG, YT Mon 11/30 7:00 PM CT (12/01 01:00Z). Publer LinkedIn Tue 12/1 9:30 AM CT. Video, so no Todd or Sara sign-off needed.\nCLIP: kim-clip6-9x16_learned-to-trust-myself_COVERED.mp4, 22 s, with the 'One Program, Four Pillars' end card (CTA v5). On Drive and R2.\nAlt text: Kim K., BCC Alumna, talks about learning to trust herself at the Bariatric Counseling Center."
+                }
+              },
+              "ok": null,
+              "notes": ""
+            },
+            "final": {
+              "ready": true,
+              "by": "cell edit",
+              "channels": {
+                "FB": {
+                  "text": "\"I really learned to trust myself and know that I'm worth putting the time and effort into.\"\n\nKim K., BCC Alumna, on the self-doubt she lived with, and what changed over her time at the Bariatric Counseling Center.\n\nGroup and individual therapy, dietary guidance, cooking classes and movement education, with one team. One Program, Four Pillars.\n\nIndividual experiences vary. This reflects one alumna's experience.\n\nVirtual across Texas. Link in the first comment."
+                },
+                "IG": {
+                  "text": "\"I learned to trust myself.\" Kim K., BCC Alumna\n\nOne Program, Four Pillars.\n\nIndividual experiences vary. This reflects one alumna's experience.\n\nVirtual across Texas. Link in bio.\n\n#EmotionalEating #BariatricCounseling #VirtualTherapyTexas #MindfulRecovery"
+                },
+                "LI": {
+                  "text": "Kim K., BCC Alumna: \"I really learned to trust myself and know that I'm worth putting the time and effort into.\"\n\nSelf-doubt is one of the quieter barriers to change, and one that behavioral care can work on directly. The Bariatric Counseling Center brings licensed mental health professionals, Registered Dietitians, movement therapists and a professional chef together in one program. One Program, Four Pillars.\n\nIndividual experiences vary. This reflects one alumna's experience.\n\nLearn more at bariatriccounselingcenter.com/testimonials/.\n\n#BehavioralHealth"
+                },
+                "YT": {
+                  "text": "\"I Learned to Trust Myself\" | Kim K., BCC Alumna\n\nKim K. on the self-doubt she lived with and what changed over her time at BCC. Part of her full testimonial, available on this channel.\n\nIndividual experiences vary. This reflects one alumna's experience.\n\nbariatriccounselingcenter.com/testimonials/\n\n#BariatricCounseling #SelfTrust #Shorts"
+                }
+              },
+              "media": null,
+              "link": null
+            },
+            "scheduler": {
+              "FB": {
+                "tool": "postiz",
+                "state": "manual_hold",
+                "detail": "Not in the Postiz state file (booked another way). Move it to draft in Postiz by hand."
+              },
+              "IG": {
+                "tool": "postiz",
+                "state": "manual_hold",
+                "detail": "Not in the Postiz state file (booked another way). Move it to draft in Postiz by hand."
+              },
+              "LI": {
+                "tool": "postiz",
+                "state": "manual_hold",
+                "detail": "Not in the Postiz state file (booked another way). Move it to draft in Postiz by hand."
+              },
+              "YT": {
+                "tool": "postiz",
+                "state": "manual_hold",
+                "detail": "Not in the Postiz state file (booked another way). Move it to draft in Postiz by hand."
+              }
+            },
+            "history": [
+              {
+                "at": "2026-11-05T13:25:32",
+                "who": "sheet",
+                "what": "changed Date and platforms (C), Time (D), Purpose (F), FB caption (G), IG caption (H), LinkedIn caption (I), YouTube (K), CTA (M), Notes / support (O)"
+              },
+              {
+                "at": "2026-11-05T13:25:32",
+                "who": "system",
+                "what": "hold: FB manual_hold, IG manual_hold, LI manual_hold, YT manual_hold"
+              }
+            ],
+            "notified": true,
+            "seen": {
+              "C": "4ce7517f474d",
+              "D": "828fe41171d1",
+              "F": "7320e3d65d98",
+              "G": "db1398243e7b",
+              "H": "b41219d280f0",
+              "I": "5bad73e9f1e9",
+              "J": "b4d1e1bdf71f",
+              "K": "d56ec3e36ee4",
+              "L": "b4d1e1bdf71f",
+              "M": "054ca150c90b",
+              "N": "da39a3ee5e6b",
+              "O": "c7315836e2e8",
+              "P": "0ed2d7b5cdb7",
+              "Q": "da39a3ee5e6b"
+            }
           },
           {
             "id": "nov-r13-20261029091555",
@@ -26219,7 +26355,7 @@
               "edit"
             ],
             "detected": "2026-10-29T09:16:43",
-            "updated": "2026-11-04T14:54:43",
+            "updated": "2026-11-06T07:00:25",
             "initial": {
               "C": "Tue 11/17: LI, GBP",
               "D": "LI 11:00 AM\nGBP 9:00 AM",
@@ -26261,11 +26397,11 @@
                 },
                 "N": {
                   "before": "=IMAGE(\"https://lh3.googleusercontent.com/d/1h9dAX2KTI3vb81tp0mNJQcwYy6aNxiCH?v=c6c7d9e2\",1)",
-                  "after": "=IMAGE(\"https://lh3.googleusercontent.com/d/1sLFe0zGH1Rs4pfuOG9bfyx4VYT2xMbsg?v=8b5f6143\",1)"
+                  "after": "=IMAGE(\"https://pub-b8baca918f1f43dab003fedf39ab2c64.r2.dev/UcALSHgYnj.png\",1)"
                 },
                 "O": {
                   "before": "ASSETS (built 2026-10-21). The image above is nov23-diet-01-feed.png.\n  Instagram + Facebook carousel, 5 slides 1080x1350: nov23-diet-01-feed.png, nov23-diet-02-feed.png, nov23-diet-03-feed.png, nov23-diet-04-feed.png, nov23-diet-05-feed.png\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Carousel explaining the difference between diet culture and behavioral treatment for weight loss and binge eating.",
-                  "after": "ASSETS (built 2026-10-21). The image above is nov11-sara-01-feed.png.\n  Instagram + Facebook carousel, 5 slides 1080x1350: nov11-sara-01-feed.png, nov11-sara-02-feed.png, nov11-sara-03-feed.png, nov11-sara-04-feed.png, nov11-sara-05-feed.png\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Dr Sara Hamilton, Clinical Psychologist and Clinical Director at Bariatric Counseling Center in San Antonio, Texas.\nCHECK BEFORE BOOKING: the quote in the FB and IG captions (\"You're not broken...\") must be Dr Hamilton's own words; the plan asked for her sentence. It is not on the cards. No portrait of her is on file, so the cover is text only; add her photo if Todd or Sara send one."
+                  "after": "BOOKED 2026-11-05. Postiz FB Wed 11/11 10:30 AM CT (16:30Z) with first comment, IG 12:15 PM CT (18:15Z). 5-slide carousel, uploaded to Postiz media (R2). Image above is slide 1 from R2; not on Drive.\nInstagram + Facebook carousel, 5 slides 1080x1350: nov11-veterans-01-feed.png, nov11-veterans-02-feed.png, nov11-veterans-03-feed.png, nov11-veterans-04-feed.png, nov11-veterans-05-feed.png\nRepo: social/plan/cards/render_2026-11-05/png (branch veterans-sara-2026-11-05).\nAlt text: Veterans Day card from Bariatric Counseling Center: You took care of us. Who takes care of you?\nCrisis line wording checked on militaryonesource.mil Nov 5 (dial 988 then press 1; text 838255)."
                 }
               },
               "ok": null,
@@ -26276,13 +26412,13 @@
               "by": "cell edit",
               "channels": {
                 "FB": {
-                  "text": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food! Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part of their healing.\"\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment."
+                  "text": "Today is Veterans Day. Thank you to every veteran and military family.\n\nService can leave marks no one else sees, and mental health matters long after the uniform comes off. Asking for support is a sign of strength.\n\nIf you need someone to talk to right now, the Veterans Crisis Line is there any time, day or night: dial 988, then press 1, or text 838255.\n\nAt the Bariatric Counseling Center, our licensed mental health professionals and Registered Dietitians work with people whose stress shows up in how they eat, in group and individual therapy. Virtual across Texas.\n\nLink in the first comment."
                 },
                 "GBP": {
                   "text": "not applicable"
                 },
                 "IG": {
-                  "text": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You are not alone in your struggles with food! Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part of their healing.\"\n\nOur team serves clients on-site in San Antonio and virtually across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport"
+                  "text": "Veterans Day\n\nThank you to every veteran and military family. Mental health matters long after service, and asking for support is a sign of strength.\n\nNeed someone now? Veterans Crisis Line: dial 988, then press 1, or text 838255.\n\nOur licensed mental health professionals and Registered Dietitians work with people whose stress shows up in how they eat. Virtual across Texas. Link in bio.\n\n#VeteransDay #BariatricCounseling #VirtualTherapyTexas"
                 },
                 "LI": {
                   "text": "not applicable"
@@ -26359,6 +26495,16 @@
                 "at": "2026-11-04T14:54:43",
                 "who": "system",
                 "what": "hold: LI held, GBP not_scheduled, FB manual_hold, IG manual_hold"
+              },
+              {
+                "at": "2026-11-06T07:00:23",
+                "who": "sheet",
+                "what": "changed Image (N), Notes / support (O)"
+              },
+              {
+                "at": "2026-11-06T07:00:25",
+                "who": "system",
+                "what": "hold: LI held, GBP not_scheduled, FB manual_hold, IG manual_hold"
               }
             ],
             "notified": true,
@@ -26391,16 +26537,16 @@
             "seen": {
               "C": "bb9dc2753558",
               "D": "53998f6f5050",
-              "F": "29e1607a4dd5",
-              "G": "ee9b70a8bd54",
-              "H": "0cf644d9dd1c",
+              "F": "784ca55843ff",
+              "G": "aec4d4b91acc",
+              "H": "118f9ae1ad71",
               "I": "b4d1e1bdf71f",
               "J": "b4d1e1bdf71f",
               "K": "b4d1e1bdf71f",
               "L": "b4d1e1bdf71f",
-              "M": "0f75e8b79401",
-              "N": "dd4e26f23ead",
-              "O": "b396e2b05087",
+              "M": "5c202947157d",
+              "N": "747810202260",
+              "O": "5efa840b8179",
               "P": "0ed2d7b5cdb7",
               "Q": "da39a3ee5e6b"
             },
@@ -27157,6 +27303,149 @@
               "Q": "da39a3ee5e6b"
             },
             "asset_item": "139b51cc94"
+          },
+          {
+            "id": "nov-r29-20261105132532",
+            "month": "November",
+            "row": 29,
+            "title": "Staff Spotlight",
+            "when": "Wed 11/25",
+            "platforms": [
+              "FB",
+              "IG"
+            ],
+            "affected": [
+              "FB",
+              "IG"
+            ],
+            "status": "ready",
+            "kinds": [
+              "edit"
+            ],
+            "detected": "2026-11-05T13:25:32",
+            "updated": "2026-11-06T07:00:29",
+            "initial": {
+              "C": "Wed 11/11: FB, IG",
+              "D": "FB 10:30 AM\nIG 12:15 PM",
+              "F": "Veterans Day post on veterans' mental health, at Sara's request (Nov 4). Replaces the staff spotlight, which moved to Wed 11/25. No clinical claim, statistic or staff quote, so no OK needed.",
+              "G": "Today is Veterans Day. Thank you to every veteran and military family.\n\nService can leave marks no one else sees, and mental health matters long after the uniform comes off. Asking for support is a sign of strength.\n\nIf you need someone to talk to right now, the Veterans Crisis Line is there any time, day or night: dial 988, then press 1, or text 838255.\n\nAt the Bariatric Counseling Center, our licensed mental health professionals and Registered Dietitians work with people whose stress shows up in how they eat, in group and individual therapy. Virtual across Texas.\n\nLink in the first comment.",
+              "H": "Veterans Day\n\nThank you to every veteran and military family. Mental health matters long after service, and asking for support is a sign of strength.\n\nNeed someone now? Veterans Crisis Line: dial 988, then press 1, or text 838255.\n\nOur licensed mental health professionals and Registered Dietitians work with people whose stress shows up in how they eat. Virtual across Texas. Link in bio.\n\n#VeteransDay #BariatricCounseling #VirtualTherapyTexas",
+              "I": "not applicable",
+              "J": "not applicable",
+              "K": "not applicable",
+              "L": "not applicable",
+              "M": "FB: post the carousel, put the link in the FIRST COMMENT. Comment links are exempt from Meta's 2-link-a-month test for Pages, so this keeps the quota free. Link: bariatriccounselingcenter.com/\nIG: link in bio (bcctx.link/start). Caption links are not tappable.\nCard: the last slide carries bariatriccounselingcenter.com.",
+              "N": "",
+              "O": "ASSETS (built 2026-11-05). Instagram + Facebook carousel, 5 slides 1080x1350: nov11-veterans-01-feed.png, nov11-veterans-02-feed.png, nov11-veterans-03-feed.png, nov11-veterans-04-feed.png, nov11-veterans-05-feed.png\nRepo: social/plan/cards/render_2026-11-05/png (branch veterans-sara-2026-11-05). NOT ON DRIVE YET: upload on the PC, then the image formula goes in column N.\nAlt text: Veterans Day card from Bariatric Counseling Center: You took care of us. Who takes care of you?\nCrisis line wording checked against VA pages Nov 5 (dial 988 then press 1; text 838255).",
+              "P": "FALSE",
+              "Q": "",
+              "A": "FALSE"
+            },
+            "todd": {
+              "cells": {
+                "C": {
+                  "before": "Wed 11/11: FB, IG",
+                  "after": "Wed 11/25: FB, IG"
+                },
+                "F": {
+                  "before": "Veterans Day post on veterans' mental health, at Sara's request (Nov 4). Replaces the staff spotlight, which moved to Wed 11/25. No clinical claim, statistic or staff quote, so no OK needed.",
+                  "after": "Dr Sara Hamilton, Psychologist, Clinical Director. Moved from Wed 11/11 to Wed 11/25 at Sara's request (Nov 4), so 11/11 can carry the Veterans Day post. Captions are Sara's own edits from her Nov 4 reply; the quote is in her words."
+                },
+                "G": {
+                  "before": "Today is Veterans Day. Thank you to every veteran and military family.\n\nService can leave marks no one else sees, and mental health matters long after the uniform comes off. Asking for support is a sign of strength.\n\nIf you need someone to talk to right now, the Veterans Crisis Line is there any time, day or night: dial 988, then press 1, or text 838255.\n\nAt the Bariatric Counseling Center, our licensed mental health professionals and Registered Dietitians work with people whose stress shows up in how they eat, in group and individual therapy. Virtual across Texas.\n\nLink in the first comment.",
+                  "after": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food. Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part of their healing.\"\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients across Texas.\n\nLink in the first comment."
+                },
+                "H": {
+                  "before": "Veterans Day\n\nThank you to every veteran and military family. Mental health matters long after service, and asking for support is a sign of strength.\n\nNeed someone now? Veterans Crisis Line: dial 988, then press 1, or text 838255.\n\nOur licensed mental health professionals and Registered Dietitians work with people whose stress shows up in how they eat. Virtual across Texas. Link in bio.\n\n#VeteransDay #BariatricCounseling #VirtualTherapyTexas",
+                  "after": "Clinical psychologist Dr. Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, binge eating, chronic over-eating and various mental health conditions.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop self-compassion and coping skills. Her approach centers on understanding patterns, changing self-talk, and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You are not alone in your struggles with food. Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part of their healing.\"\n\nOur team serves clients across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport"
+                },
+                "M": {
+                  "before": "FB: post the carousel, put the link in the FIRST COMMENT. Comment links are exempt from Meta's 2-link-a-month test for Pages, so this keeps the quota free. Link: bariatriccounselingcenter.com/\nIG: link in bio (bcctx.link/start). Caption links are not tappable.\nCard: the last slide carries bariatriccounselingcenter.com.",
+                  "after": "FB: post the carousel, put the link in the FIRST COMMENT. Comment links are exempt from Meta's 2-link-a-month test for Pages, so this keeps the quota free. Link: bariatriccounselingcenter.com/about/\nIG: link in bio (bcctx.link/start). Caption links are not tappable.\nCard: the last slide carries bariatriccounselingcenter.com/about."
+                },
+                "O": {
+                  "before": "ASSETS (built 2026-11-05). Instagram + Facebook carousel, 5 slides 1080x1350: nov11-veterans-01-feed.png, nov11-veterans-02-feed.png, nov11-veterans-03-feed.png, nov11-veterans-04-feed.png, nov11-veterans-05-feed.png\nRepo: social/plan/cards/render_2026-11-05/png (branch veterans-sara-2026-11-05). NOT ON DRIVE YET: upload on the PC, then the image formula goes in column N.\nAlt text: Veterans Day card from Bariatric Counseling Center: You took care of us. Who takes care of you?\nCrisis line wording checked against VA pages Nov 5 (dial 988 then press 1; text 838255).",
+                  "after": "BOOKED 2026-11-05. Postiz FB Wed 11/25 10:30 AM CT (16:30Z) with first comment to /about/, IG 12:15 PM CT (18:15Z). 5-slide carousel re-rendered with Sara's edits (Virtual across Texas on cover, slide 4 and end card; fax added). Image above is slide 1 from R2; not on Drive.\nInstagram + Facebook carousel, 5 slides 1080x1350: nov25-sara-01-feed.png, nov25-sara-02-feed.png, nov25-sara-03-feed.png, nov25-sara-04-feed.png, nov25-sara-05-feed.png\nRepo: social/plan/cards/render_2026-11-05/png (branch veterans-sara-2026-11-05).\nAlt text: Dr Sara Hamilton, Clinical Psychologist and Clinical Director at Bariatric Counseling Center.\nSara OK'd the text by editing it herself (Nov 4 reply on the social review thread)."
+                },
+                "N": {
+                  "before": "=IMAGE(\"https://lh3.googleusercontent.com/d/1sLFe0zGH1Rs4pfuOG9bfyx4VYT2xMbsg?v=8b5f6143\",1)",
+                  "after": "=IMAGE(\"https://pub-b8baca918f1f43dab003fedf39ab2c64.r2.dev/PTzMxoCGac.png\",1)"
+                }
+              },
+              "ok": null,
+              "notes": ""
+            },
+            "final": {
+              "ready": true,
+              "by": "cell edit",
+              "channels": {
+                "FB": {
+                  "text": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food. Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part of their healing.\"\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients across Texas.\n\nLink in the first comment."
+                },
+                "IG": {
+                  "text": "Clinical psychologist Dr. Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, binge eating, chronic over-eating and various mental health conditions.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop self-compassion and coping skills. Her approach centers on understanding patterns, changing self-talk, and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You are not alone in your struggles with food. Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part of their healing.\"\n\nOur team serves clients across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport"
+                }
+              },
+              "media": null,
+              "link": null
+            },
+            "scheduler": {
+              "FB": {
+                "tool": "postiz",
+                "state": "manual_hold",
+                "detail": "Not in the Postiz state file (booked another way). Move it to draft in Postiz by hand."
+              },
+              "IG": {
+                "tool": "postiz",
+                "state": "manual_hold",
+                "detail": "Not in the Postiz state file (booked another way). Move it to draft in Postiz by hand."
+              }
+            },
+            "history": [
+              {
+                "at": "2026-11-05T13:25:32",
+                "who": "sheet",
+                "what": "changed Date and platforms (C), Purpose (F), FB caption (G), IG caption (H), CTA (M), Notes / support (O)"
+              },
+              {
+                "at": "2026-11-05T13:25:32",
+                "who": "system",
+                "what": "hold: FB manual_hold, IG manual_hold"
+              },
+              {
+                "at": "2026-11-06T07:00:25",
+                "who": "sheet",
+                "what": "changed Date and platforms (C), Purpose (F), FB caption (G), IG caption (H), Image (N), Notes / support (O)"
+              },
+              {
+                "at": "2026-11-06T07:00:25",
+                "who": "system",
+                "what": "hold: FB manual_hold, IG manual_hold"
+              },
+              {
+                "at": "2026-11-06T07:00:29",
+                "who": "system",
+                "what": "media change requested: queued for a Claude session (item 9a9a32a5d9)"
+              }
+            ],
+            "notified": true,
+            "seen": {
+              "C": "a387766a0ee9",
+              "D": "53998f6f5050",
+              "F": "e4336af5f286",
+              "G": "0917324b77a6",
+              "H": "dba8f3170e2e",
+              "I": "b4d1e1bdf71f",
+              "J": "b4d1e1bdf71f",
+              "K": "b4d1e1bdf71f",
+              "L": "b4d1e1bdf71f",
+              "M": "0f75e8b79401",
+              "N": "c4cb8c5b5b66",
+              "O": "086efddf9456",
+              "P": "0ed2d7b5cdb7",
+              "Q": "da39a3ee5e6b"
+            },
+            "asset_item": "9a9a32a5d9"
           },
           {
             "id": "nov-r11-20261029091545",
@@ -27927,14 +28216,14 @@
           }
         ],
         "log": [
-          "2026-11-04T07:01:00  nov-r20-20261029091731 | Date and platforms, Purpose, FB caption, IG caption, Image, Notes / su: Education",
-          "2026-11-04T07:01:00  nov-r21-20261029091737 | Date and platforms, Time, Purpose, FB caption, IG caption, LinkedIn ca: Referring Providers: Document Post",
-          "2026-11-04T07:01:01  nov-r22-20261104070052 | Date and platforms, Time, Purpose, FB caption, IG caption, LinkedIn ca: Alumni Story Clip (draft for review)",
-          "2026-11-04T07:01:01  nov-r23-20261104070052 | Date and platforms, Time, Purpose, FB caption, IG caption, LinkedIn ca: Alumni Words: Written Testimonial",
-          "2026-11-04T07:01:03  nov-r24-20261104070054 | Date and platforms, Time, Purpose, FB caption, IG caption, LinkedIn ca: Professionals",
           "2026-11-04T14:54:40  new row 14 Food Friday: Dish of the Week on November",
           "2026-11-04T14:54:48  nov-r9-20261029091507 | Date and platforms, Purpose, LinkedIn caption, GBP caption, Image, Not: Referring Providers: Document Post",
-          "2026-11-04T14:54:48  nov-r18-20261029091643 | FB caption, IG caption: Staff Spotlight"
+          "2026-11-04T14:54:48  nov-r18-20261029091643 | FB caption, IG caption: Staff Spotlight",
+          "2026-11-05T13:25:32  new row 18 Veterans Day on November",
+          "2026-11-05T13:25:32  nov-r29-20261105132532 | Date and platforms, Purpose, FB caption, IG caption, CTA, Notes / supp: Staff Spotlight",
+          "2026-11-05T13:25:33  nov-r30-20261105132532 | Date and platforms, Time, Purpose, FB caption, IG caption, LinkedIn ca: Alumni Story Clip (draft for review)",
+          "2026-11-06T07:00:29  nov-r18-20261029091643 | Image, Notes / support: Veterans Day",
+          "2026-11-06T07:00:30  nov-r29-20261105132532 | Date and platforms, Purpose, FB caption, IG caption, Image, Notes / su: Staff Spotlight"
         ],
         "baselines": [
           "baseline-november.json",
@@ -32847,5 +33136,5 @@
     }
   ],
   "snapshot_count": 48,
-  "generated_at": "2026-11-05T17:47:14.798220Z"
+  "generated_at": "2026-11-06T13:14:38.031243Z"
 }
