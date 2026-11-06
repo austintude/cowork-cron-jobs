@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-11-06 07:13 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-11-06 07:14 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -195,18 +195,8 @@ Generated 2026-11-06 07:13 by queue_apply.py. Daniel approved these on the dashb
   - Remove the link from the image and keep the image (decided by Daniel 2026-10-20). Do not replace it with another link.
   - pages (1): https://www.bariatriccounselingcenter.com/self-improvement/behavioral-patterns/sustaining-the-impact-of-ozempic-and-other-sema-glutide-injectables-with-behavioral-support/
 
-## Action items from the Action Items sheet (3): work each, then --done or --needs-you
+## Action items from the Action Items sheet (2): work each, then --done or --needs-you
 
-- id `aed8090d11`: **Calendar staff anniversary posts** (9/24 call list, sheet row 3). Approved 2026-11-05.
-  - Daniel's notes: Laura and Aaron in October; Leloni's 5-year is overdue. Todd writes them, Daniel schedules and reminds him.
-  - HISTORY (continue from here; do not redo what is done):
-    - 2026-09-25 07:30 claude: Worked by the morning Claude run: Gmail draft ready: 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd asking for dates, a few lines each and photos by Thu Oct 1. Left for you: send it. Leloni already has a staff spotlight on 10/7; her anniversary could ride on that post.
-    - 2026-09-25 14:09 check: Send the Gmail draft 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd: sent Sep 25 2:09 PM to Todd
-    - 2026-10-09 15:14 daniel: Told Claude: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send.
-    - 2026-10-15 10:06 claude: 2026-10-15: no reply from Todd with dates, lines or photos since his 'Will do' on Sep 25. Reminder built as a Gmail draft reply in the same thread, subject 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.
-    - 2026-10-17 07:00 check: Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)
-    - 2026-11-05 13:28 daniel: Told Claude: draft a remninder email for todd
-  - NOW: daniel: draft a remninder email for todd
 - id `246e095047`: **Stress Eating keyword** (9/24 call list, sheet row 6). Approved 2026-11-05.
   - HISTORY (continue from here; do not redo what is done):
     - 2026-10-21 07:49 claude: Added 'stress eating' (national-primary, priority 2) and 'how to stop stress eating' (national-long-tail, priority 2) to seo-tools/keywords-master.json, both pointed at /eating-disorders/how-to-stop-stress-eating-simple-strategies-to-take-control-of-your-habits/. Neither was tracked; 'stress eating' is about 4,400 searches a month in the US.
@@ -224,7 +214,8 @@ Generated 2026-11-06 07:13 by queue_apply.py. Daniel approved these on the dashb
     - 2026-11-05 13:27 daniel: Told Claude: draft this to todd
   - NOW: daniel: draft this to todd
 
-## Items waiting on Daniel or on Todd/Sara (1): not for Claude, except the Gmail confirmations below.
+## Items waiting on Daniel or on Todd/Sara (2): not for Claude, except the Gmail confirmations below.
+- Calendar staff anniversary posts: Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.
 - Texas-wide geographic strategy: Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.
 
 ## Asset revisions (12): posts held until the revised media is everywhere and the change is approved
