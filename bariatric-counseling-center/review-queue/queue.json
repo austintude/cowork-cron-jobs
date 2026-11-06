@@ -5042,12 +5042,12 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A3"
    },
    "source": "action-items",
-   "status": "approved",
+   "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-11-05T13:28:02",
-   "note": "rewrite: daniel: draft a remninder email for todd",
+   "decided": "2026-11-06T07:14:29",
+   "note": "Send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni",
    "result": {
-    "needs_you": "Send the reminder draft to Todd (reply on 'Staff anniversary posts: Laura, Aaron and Leloni'). Leloni's post stays parked until Todd's info arrives.",
+    "needs_you": "Send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni",
     "needs_since": "2026-09-25",
     "followup": {
      "trail": [
@@ -5080,42 +5080,33 @@
        "at": "2026-11-05 13:28",
        "by": "daniel",
        "text": "Told Claude: draft a remninder email for todd"
+      },
+      {
+       "at": "2026-11-06 07:14",
+       "by": "claude",
+       "text": "2026-11-06: Gmail reply draft built in the existing thread, subject Re: Staff anniversary posts: Laura, Aaron and Leloni, to Todd, asking for dates, lines and photos."
       }
      ],
      "steps": [
       {
        "owner": "daniel",
-       "do": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.",
+       "do": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
        "check": {
         "type": "gmail_sent",
-        "subject": "Re: Staff anniversary posts: Laura, Aaron and Leloni",
-        "after": "2026-10-15"
+        "subject": "Re: Staff anniversary posts: Laura, Aaron and Leloni"
        },
-       "due": "2026-10-16",
        "id": "s1",
-       "status": "gone",
-       "evidence": "not sent, and no longer in your Drafts (deleted?)"
+       "status": "open"
       },
       {
        "owner": "todd",
-       "do": "Todd sends dates, a few lines and a photo for Laura, Aaron and Leloni.",
+       "do": "Todd replies with dates, a few lines each and photos.",
        "check": {
         "type": "gmail_reply",
         "subject": "Staff anniversary posts",
-        "from": "bccsanantonio.com",
-        "after": "2026-10-15"
+        "from": "bccsanantonio.com"
        },
        "id": "s2",
-       "status": "open",
-       "evidence": "no reply yet"
-      },
-      {
-       "owner": "claude",
-       "do": "Build the anniversary posts through the social pipeline once Todd's info is in.",
-       "check": {
-        "type": "manual"
-       },
-       "id": "s3",
        "status": "open"
       }
      ],
