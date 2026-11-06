@@ -227,7 +227,7 @@ Generated 2026-11-06 07:00 by queue_apply.py. Daniel approved these on the dashb
 ## Items waiting on Daniel or on Todd/Sara (1): not for Claude, except the Gmail confirmations below.
 - Texas-wide geographic strategy: Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.
 
-## Asset revisions (11): posts held until the revised media is everywhere and the change is approved
+## Asset revisions (12): posts held until the revised media is everywhere and the change is approved
 
 - id `642ba7fe7c`: **Revise media: Mon 11/2 Referring Providers: Document Post** (November tab, row 9, change `nov-r9-20261029091507`, platforms LI, GBP)
   - asked for: a new image in column N
@@ -267,6 +267,10 @@ Generated 2026-11-06 07:00 by queue_apply.py. Daniel approved these on the dashb
 - id `123f1cb5f6`: **Revise media: Wed 11/18 Professionals** (November tab, row 19, change `nov-r19-20261029091729`, platforms LI)
   - asked for: a new image in column N
   - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/1mt2uLrE7mnnN4tj6L4j-juHVPRzHlsig?v=9ff02617",1)
+- id `9a9a32a5d9`: **Revise media: Wed 11/25 Staff Spotlight** (November tab, row 29, change `nov-r29-20261105132532`, platforms FB, IG)
+  - asked for: a new image in column N
+  - column N now holds: =IMAGE("https://pub-b8baca918f1f43dab003fedf39ab2c64.r2.dev/PTzMxoCGac.png",1)
+  - current files: nov25-sara-01-feed.png, nov25-sara-02-feed.png, nov25-sara-03-feed.png, nov25-sara-04-feed.png, nov25-sara-05-feed.png
 
 ## Social posts to build and write to the sheet (2); the draft to Todd is a separate weekly step
 
