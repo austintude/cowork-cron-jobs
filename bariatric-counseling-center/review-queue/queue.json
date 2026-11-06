@@ -5044,8 +5044,8 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-11-06T07:14:29",
-   "note": "Send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni",
+   "decided": "2026-11-06T07:14:35",
+   "note": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
    "result": {
     "needs_you": "Send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni",
     "needs_since": "2026-09-25",
@@ -5085,6 +5085,11 @@
        "at": "2026-11-06 07:14",
        "by": "claude",
        "text": "2026-11-06: Gmail reply draft built in the existing thread, subject Re: Staff anniversary posts: Laura, Aaron and Leloni, to Todd, asking for dates, lines and photos."
+      },
+      {
+       "at": "2026-11-06 07:14",
+       "by": "check",
+       "text": "Todd replies with dates, a few lines each and photos.: Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \""
       }
      ],
      "steps": [
@@ -5096,7 +5101,8 @@
         "subject": "Re: Staff anniversary posts: Laura, Aaron and Leloni"
        },
        "id": "s1",
-       "status": "open"
+       "status": "open",
+       "evidence": "still in your Gmail Drafts, not sent"
       },
       {
        "owner": "todd",
@@ -5107,12 +5113,16 @@
         "from": "bccsanantonio.com"
        },
        "id": "s2",
-       "status": "open"
+       "status": "done",
+       "evidence": "Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \"",
+       "done_at": "2026-11-06 07:14",
+       "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0d9d7746da1d27",
+       "via": "checked automatically"
       }
      ],
-     "state": "with_claude",
-     "state_text": "With Claude: draft a remninder email for todd",
-     "checked_at": "2026-11-05 07:00"
+     "state": "your_move",
+     "state_text": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
+     "checked_at": "2026-11-06 07:14"
     }
    }
   },
