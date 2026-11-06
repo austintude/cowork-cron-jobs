@@ -12115,6 +12115,41 @@
    "decided": "2026-11-06T07:00:26",
    "note": "auto: post held, media change requested on the sheet",
    "result": null
+  },
+  {
+   "id": "acb931bbf2",
+   "kind": "asset",
+   "key": "nov-r26-20261106112551",
+   "title": "Revise media: Mon 11/23 Education",
+   "why": "Todd/Sara: new image in column N",
+   "payload": {
+    "change": "nov-r26-20261106112551",
+    "month": "November",
+    "row": 26,
+    "date": "Mon 11/23",
+    "type": "Education",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "note": "",
+    "image_cell_changed": true,
+    "image_cell": "=IMAGE(\"https://lh3.googleusercontent.com/d/1h9dAX2KTI3vb81tp0mNJQcwYy6aNxiCH?v=c6c7d9e2\",1)",
+    "assets": [
+     "nov23-diet-01-feed.png",
+     "nov23-diet-02-feed.png",
+     "nov23-diet-03-feed.png",
+     "nov23-diet-04-feed.png",
+     "nov23-diet-05-feed.png"
+    ],
+    "notes_col": "ASSETS (built 2026-10-21). The image above is nov23-diet-01-feed.png.\n  Instagram + Facebook carousel, 5 slides 1080x1350: nov23-diet-01-feed.png, nov23-diet-02-feed.png, nov23-diet-03-feed.png, nov23-diet-04-feed.png, nov23-diet-05-feed.png\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Carousel explaining the difference between diet culture and behavioral treatment for weight loss and binge eating."
+   },
+   "source": "social_changes",
+   "status": "pending",
+   "created": "2026-11-06T11:25:52",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
