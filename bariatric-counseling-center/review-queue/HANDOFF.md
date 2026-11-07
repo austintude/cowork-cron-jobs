@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-11-06 11:25 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-11-07 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -214,8 +214,7 @@ Generated 2026-11-06 11:25 by queue_apply.py. Daniel approved these on the dashb
     - 2026-11-05 13:27 daniel: Told Claude: draft this to todd
   - NOW: daniel: draft this to todd
 
-## Items waiting on Daniel or on Todd/Sara (2): not for Claude, except the Gmail confirmations below.
-- Calendar staff anniversary posts: Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.
+## Items waiting on Daniel or on Todd/Sara (1): not for Claude, except the Gmail confirmations below.
 - Texas-wide geographic strategy: Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.
 
 ## Asset revisions (13): posts held until the revised media is everywhere and the change is approved
@@ -279,7 +278,7 @@ Generated 2026-11-06 11:25 by queue_apply.py. Daniel approved these on the dashb
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/about/
   - SENT BACK: rewrite: sara: 11/11 is Veterans Day, rather have a post recognizing mental health needs of veterans that day and push back my post. I edited the text content directly on your email. I'm working on getting the quote from the alumna. (2026-11-05) (rebuild with this change, then a fresh draft to Todd)
 
-## Draft day: Wednesday. Today is Friday, not draft day: build only, no email to Todd.
+## Draft day: Wednesday. Today is Saturday, not draft day: build only, no email to Todd.
 
 ## Social posts with Todd (6): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
