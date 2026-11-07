@@ -5042,10 +5042,10 @@
     "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A3"
    },
    "source": "action-items",
-   "status": "needs",
+   "status": "applied",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-11-07T07:00:42",
-   "note": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
+   "decided": "2026-11-07T07:00:43",
+   "note": "all steps confirmed: Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni. (sent 2026-11-06 14:49 to tmccord@bccsanantonio.com); Todd replies with dates, a few lines each and photos. (Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \")",
    "result": {
     "needs_you": "Send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni",
     "needs_since": "2026-09-25",
@@ -5095,6 +5095,11 @@
        "at": "2026-11-07 07:00",
        "by": "check",
        "text": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.: sent 2026-11-06 14:49 to tmccord@bccsanantonio.com"
+      },
+      {
+       "at": "2026-11-07 07:00",
+       "by": "claude",
+       "text": "Done: all steps confirmed: Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni. (sent 2026-11-06 14:49 to tmccord@bccsanantonio.com); Todd replies with dates, a few lines each and photos. (Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \"). could not tick the sheet: HTTP Error 400: Bad Request"
       }
      ],
      "steps": [
@@ -5129,9 +5134,13 @@
       }
      ],
      "state": "done",
-     "state_text": "Everything is done.",
+     "state_text": "Done",
      "checked_at": "2026-11-07 07:00"
-    }
+    },
+    "done": "2026-11-07",
+    "done_by": "the follow-up check",
+    "sheet_tick": "could not tick the sheet: HTTP Error 400: Bad Request",
+    "tick_pending": true
    }
   },
   {
