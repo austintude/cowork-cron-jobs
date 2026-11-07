@@ -5044,7 +5044,7 @@
    "source": "action-items",
    "status": "needs",
    "created": "2026-09-24T12:23:36",
-   "decided": "2026-11-06T07:14:35",
+   "decided": "2026-11-07T07:00:42",
    "note": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
    "result": {
     "needs_you": "Send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni",
@@ -5090,6 +5090,11 @@
        "at": "2026-11-06 07:14",
        "by": "check",
        "text": "Todd replies with dates, a few lines each and photos.: Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \""
+      },
+      {
+       "at": "2026-11-07 07:00",
+       "by": "check",
+       "text": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.: sent 2026-11-06 14:49 to tmccord@bccsanantonio.com"
       }
      ],
      "steps": [
@@ -5101,8 +5106,11 @@
         "subject": "Re: Staff anniversary posts: Laura, Aaron and Leloni"
        },
        "id": "s1",
-       "status": "open",
-       "evidence": "still in your Gmail Drafts, not sent"
+       "status": "done",
+       "evidence": "sent 2026-11-06 14:49 to tmccord@bccsanantonio.com",
+       "done_at": "2026-11-07 07:00",
+       "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0d9d7746da1d27",
+       "via": "checked automatically"
       },
       {
        "owner": "todd",
@@ -5120,9 +5128,9 @@
        "via": "checked automatically"
       }
      ],
-     "state": "your_move",
-     "state_text": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
-     "checked_at": "2026-11-06 07:14"
+     "state": "done",
+     "state_text": "Everything is done.",
+     "checked_at": "2026-11-07 07:00"
     }
    }
   },
