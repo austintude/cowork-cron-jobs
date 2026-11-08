@@ -12501,7 +12501,7 @@
             "action": "Action item",
             "asset": "Asset revision"
           },
-          "handoff": 60,
+          "handoff": 61,
           "top": [
             "Social post: Re-book: IG Wed 11/04, Stress eating at night\n\nA long day doesn't ma (failed in Postiz)",
             "Content block: AI Overview answer for \"eating disorder therapist san antonio\" on /eating-disorder-therapi"
@@ -14694,6 +14694,124 @@
         ],
         "recent": [
           {
+            "id": "aed8090d11",
+            "kind": "action",
+            "key": "ai:33377721ec83",
+            "title": "Calendar staff anniversary posts",
+            "why": "Action Items sheet, 9/24 call list, row 19",
+            "payload": {
+              "text": "Calendar staff anniversary posts",
+              "notes": "Laura and Aaron in October; Leloni's 5-year is overdue. Todd writes them, Daniel schedules and reminds him.",
+              "section": "Daniel",
+              "label": "9/24 call",
+              "row": 3,
+              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
+              "tab": "Sheet1",
+              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A3"
+            },
+            "source": "action-items",
+            "status": "applied",
+            "created": "2026-09-24T12:23:36",
+            "decided": "2026-11-07T07:00:43",
+            "note": "all steps confirmed: Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni. (sent 2026-11-06 14:49 to tmccord@bccsanantonio.com); Todd replies with dates, a few lines each and photos. (Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \")",
+            "result": {
+              "needs_you": "Send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni",
+              "needs_since": "2026-09-25",
+              "followup": {
+                "trail": [
+                  {
+                    "at": "2026-09-25 07:30",
+                    "by": "claude",
+                    "text": "Worked by the morning Claude run: Gmail draft ready: 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd asking for dates, a few lines each and photos by Thu Oct 1. Left for you: send it. Leloni already has a staff spotlight on 10/7; her anniversary could ride on that post."
+                  },
+                  {
+                    "at": "2026-09-25 14:09",
+                    "by": "check",
+                    "text": "Send the Gmail draft 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd: sent Sep 25 2:09 PM to Todd"
+                  },
+                  {
+                    "at": "2026-10-09 15:14",
+                    "by": "daniel",
+                    "text": "Told Claude: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send."
+                  },
+                  {
+                    "at": "2026-10-15 10:06",
+                    "by": "claude",
+                    "text": "2026-10-15: no reply from Todd with dates, lines or photos since his 'Will do' on Sep 25. Reminder built as a Gmail draft reply in the same thread, subject 'Re: Staff anniversary posts: Laura, Aaron and Leloni'."
+                  },
+                  {
+                    "at": "2026-10-17 07:00",
+                    "by": "check",
+                    "text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)"
+                  },
+                  {
+                    "at": "2026-11-05 13:28",
+                    "by": "daniel",
+                    "text": "Told Claude: draft a remninder email for todd"
+                  },
+                  {
+                    "at": "2026-11-06 07:14",
+                    "by": "claude",
+                    "text": "2026-11-06: Gmail reply draft built in the existing thread, subject Re: Staff anniversary posts: Laura, Aaron and Leloni, to Todd, asking for dates, lines and photos."
+                  },
+                  {
+                    "at": "2026-11-06 07:14",
+                    "by": "check",
+                    "text": "Todd replies with dates, a few lines each and photos.: Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \""
+                  },
+                  {
+                    "at": "2026-11-07 07:00",
+                    "by": "check",
+                    "text": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.: sent 2026-11-06 14:49 to tmccord@bccsanantonio.com"
+                  },
+                  {
+                    "at": "2026-11-07 07:00",
+                    "by": "claude",
+                    "text": "Done: all steps confirmed: Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni. (sent 2026-11-06 14:49 to tmccord@bccsanantonio.com); Todd replies with dates, a few lines each and photos. (Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \"). could not tick the sheet: HTTP Error 400: Bad Request"
+                  }
+                ],
+                "steps": [
+                  {
+                    "owner": "daniel",
+                    "do": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
+                    "check": {
+                      "type": "gmail_sent",
+                      "subject": "Re: Staff anniversary posts: Laura, Aaron and Leloni"
+                    },
+                    "id": "s1",
+                    "status": "done",
+                    "evidence": "sent 2026-11-06 14:49 to tmccord@bccsanantonio.com",
+                    "done_at": "2026-11-07 07:00",
+                    "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0d9d7746da1d27",
+                    "via": "checked automatically"
+                  },
+                  {
+                    "owner": "todd",
+                    "do": "Todd replies with dates, a few lines each and photos.",
+                    "check": {
+                      "type": "gmail_reply",
+                      "subject": "Staff anniversary posts",
+                      "from": "bccsanantonio.com"
+                    },
+                    "id": "s2",
+                    "status": "done",
+                    "evidence": "Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \"",
+                    "done_at": "2026-11-06 07:14",
+                    "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0d9d7746da1d27",
+                    "via": "checked automatically"
+                  }
+                ],
+                "state": "done",
+                "state_text": "Done",
+                "checked_at": "2026-11-07 07:00"
+              },
+              "done": "2026-11-07",
+              "done_by": "the follow-up check",
+              "sheet_tick": "could not tick the sheet: HTTP Error 400: Bad Request",
+              "tick_pending": true
+            }
+          },
+          {
             "id": "f4fff6b7eb",
             "kind": "social",
             "key": "social:2026-11-05:FB+IG+YT",
@@ -15229,167 +15347,19 @@
               "level": "ok",
               "text": "Slot is free; 9 days of notice."
             }
-          },
-          {
-            "id": "d8d67dff97",
-            "kind": "action",
-            "key": "ai:ac6cd069a024",
-            "title": "Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1",
-            "why": "Action Items sheet, 8/27 meeting list, row 62",
-            "payload": {
-              "text": "Build binge-eating-telehealth content using obesity, bariatric, weight regain, GLP-1",
-              "notes": "The gap ERC, Alsana and Monte Nido cannot use",
-              "section": "Daniel - from 8/27 meeting",
-              "label": "8/27 meeting",
-              "row": 69,
-              "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-              "tab": "Sheet1",
-              "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A69"
-            },
-            "source": "action-items",
-            "status": "applied",
-            "created": "2026-09-24T12:23:36",
-            "decided": "2026-10-23T11:45:22",
-            "note": "done",
-            "result": {
-              "followup": {
-                "trail": [
-                  {
-                    "at": "2026-09-25 07:30",
-                    "by": "claude",
-                    "text": "Worked by the morning Claude run: Brief and article ready: C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\content-drafts\\action-items-2026-09-25\\binge-eating-telehealth-brief-and-article.md (target 'virtual binge eating disorder treatment Texas', bariatric, weight regain and weight loss medication angles ERC does not use). Left for you: Sara to check the one statistic and the clinical descriptions; then it goes through the block process on staging13."
-                  },
-                  {
-                    "at": "2026-09-29 15:48",
-                    "by": "daniel",
-                    "text": "Chose 'Draft the note to Sara for me'. Told Claude: Draft a short Gmail from daniel@drbdig.com to Sara (cc Todd), subject 'Quick clinical check: binge eating telehealth article', asking her to check the one statistic and the clinical descriptions (quote them inline) in content-drafts/action-items-2026-09-25/binge-eating-telehealth-brief-and-article.md. Then hand it back with a gmail_sent check and a gmail_reply step for Sara, followed by a Claude step to place it on staging13 through the block process."
-                  },
-                  {
-                    "at": "2026-09-29 16:39",
-                    "by": "claude",
-                    "text": "Gmail draft from daniel@drbdig.com to Sara, cc Todd: 'Quick clinical check: binge eating telehealth article' (the STEP 1 statistic and four clinical passages quoted inline)."
-                  },
-                  {
-                    "at": "2026-10-02 07:00",
-                    "by": "check",
-                    "text": "Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.: not sent, and no longer in your Drafts (deleted?)"
-                  },
-                  {
-                    "at": "2026-10-06 07:00",
-                    "by": "check",
-                    "text": "Read and send the Gmail draft 'Quick clinical check: binge eating telehealth article'.: sent 2026-10-05 08:00 to Sara Hamilton <shamilton@bccsanantonio.com>"
-                  },
-                  {
-                    "at": "2026-10-09 15:15",
-                    "by": "daniel",
-                    "text": "Told Claude: check email replies from sara I believe she has replied to this and is ok but am uncertain. maybe i misremember. if she has greenlit this. move it directly into staging"
-                  },
-                  {
-                    "at": "2026-10-15 10:06",
-                    "by": "claude",
-                    "text": "Sara replied Oct 5 on 'Quick clinical check: binge eating telehealth article': point 3 inaccurate, remove it and reword as binge eating behaviors coming back when food noise returns after stopping the medication; otherwise looks good."
-                  },
-                  {
-                    "at": "2026-10-15 10:06",
-                    "by": "claude",
-                    "text": "The article is already staged on staging14: https://www.staging14.bariatriccounselingcenter.com/eating-disorders/binge-eating-treatment-by-telehealth/ (listed in Daniel's Oct 14 email 'Four BCC pages staged: yes/no questions for Sara')."
-                  },
-                  {
-                    "at": "2026-10-15 10:06",
-                    "by": "claude",
-                    "text": "Oct 14 reply from Sara on that thread: 'Please send me this article in another format so I can edit.' Same request for the ARFID page."
-                  },
-                  {
-                    "at": "2026-10-21 07:00",
-                    "by": "check",
-                    "text": "Sara returns her edits.: Todd McCord replied 2026-10-20 14:53: \"Daniel, re number of sessions, doesn&#39;t have to be the exact same. Edit below reads well, and what it currently says on the website is fine. It is not an abs\""
-                  },
-                  {
-                    "at": "2026-10-23 11:45",
-                    "by": "daniel",
-                    "text": "Resolved as complete: the article is live and indexable on production (post 6664). Queue status set to applied to match."
-                  }
-                ],
-                "steps": [
-                  {
-                    "owner": "daniel",
-                    "do": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
-                    "links": [
-                      {
-                        "label": "Staging page",
-                        "url": "https://www.staging14.bariatriccounselingcenter.com/eating-disorders/binge-eating-treatment-by-telehealth/"
-                      }
-                    ],
-                    "options": [
-                      {
-                        "label": "Make the Google Docs for me",
-                        "tell": "Export the staged binge eating telehealth article and the ARFID page from staging14 into two Google Docs in the BCC Drive (Sara can edit), confirm Sara's Oct 5 point 3 change is in the binge article, and draft a short Gmail to Sara with both links."
-                      }
-                    ],
-                    "check": {
-                      "type": "manual"
-                    },
-                    "id": "s1",
-                    "status": "open"
-                  },
-                  {
-                    "owner": "sara",
-                    "do": "Sara returns her edits.",
-                    "check": {
-                      "type": "gmail_reply",
-                      "subject": "binge eating",
-                      "from": "bccsanantonio.com",
-                      "after": "2026-10-15"
-                    },
-                    "id": "s2",
-                    "status": "done",
-                    "evidence": "Todd McCord replied 2026-10-20 14:53: \"Daniel, re number of sessions, doesn&#39;t have to be the exact same. Edit below reads well, and what it currently says on the website is fine. It is not an abs\"",
-                    "done_at": "2026-10-21 07:00",
-                    "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0da0976c938f72",
-                    "via": "checked automatically"
-                  },
-                  {
-                    "owner": "claude",
-                    "do": "Apply Sara's edits on staging14 through the block editor (author Sara Hamilton).",
-                    "check": {
-                      "type": "manual"
-                    },
-                    "id": "s3",
-                    "status": "open"
-                  }
-                ],
-                "state": "your_move",
-                "state_text": "Send Sara an editable copy of the binge eating telehealth article (and the ARFID page), e.g. a Google Doc, so she can edit.",
-                "checked_at": "2026-10-23 07:01"
-              },
-              "done": "2026-10-23",
-              "done_by": "Daniel: resolved as complete 2026-10-23 (article live and indexable on production, post 6664 /eating-disorders/binge-eating-treatment-by-telehealth/; Sara Oct 5 point-3 reword applied; Todd Oct 20 OK on sessions wording)",
-              "production": {
-                "post_id": 6664,
-                "url": "https://www.bariatriccounselingcenter.com/eating-disorders/binge-eating-treatment-by-telehealth/",
-                "robots": "index, follow",
-                "live_since": "2026-10-08",
-                "wording_refresh": "2026-10-23"
-              }
-            },
-            "check": {
-              "at": "2026-10-23T11:45:22",
-              "level": "done",
-              "text": "Daniel: resolved as complete 2026-10-23 (article live and indexable on production, post 6664 /eating-disorders/binge-eating-treatment-by-telehealth/; Sara Oct 5 point-3 reword applied; Todd Oct 20 OK on sessions wording)"
-            }
           }
         ],
         "counts": {
           "rejected": 4,
-          "applied": 70,
+          "applied": 71,
           "placed": 43,
           "written": 6,
           "go": 5,
-          "approved": 55,
+          "approved": 56,
           "built": 6,
           "resolved": 15,
           "expired": 12,
-          "needs": 2,
+          "needs": 1,
           "pending": 63
         },
         "handoff": {
@@ -16691,6 +16661,41 @@
               "result": null
             },
             {
+              "id": "acb931bbf2",
+              "kind": "asset",
+              "key": "nov-r26-20261106112551",
+              "title": "Revise media: Mon 11/23 Education",
+              "why": "Todd/Sara: new image in column N",
+              "payload": {
+                "change": "nov-r26-20261106112551",
+                "month": "November",
+                "row": 26,
+                "date": "Mon 11/23",
+                "type": "Education",
+                "platforms": [
+                  "FB",
+                  "IG"
+                ],
+                "note": "",
+                "image_cell_changed": true,
+                "image_cell": "=IMAGE(\"https://lh3.googleusercontent.com/d/1h9dAX2KTI3vb81tp0mNJQcwYy6aNxiCH?v=c6c7d9e2\",1)",
+                "assets": [
+                  "nov23-diet-01-feed.png",
+                  "nov23-diet-02-feed.png",
+                  "nov23-diet-03-feed.png",
+                  "nov23-diet-04-feed.png",
+                  "nov23-diet-05-feed.png"
+                ],
+                "notes_col": "ASSETS (built 2026-10-21). The image above is nov23-diet-01-feed.png.\n  Instagram + Facebook carousel, 5 slides 1080x1350: nov23-diet-01-feed.png, nov23-diet-02-feed.png, nov23-diet-03-feed.png, nov23-diet-04-feed.png, nov23-diet-05-feed.png\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Carousel explaining the difference between diet culture and behavioral treatment for weight loss and binge eating."
+              },
+              "source": "social_changes",
+              "status": "approved",
+              "created": "2026-11-06T11:25:52",
+              "decided": "2026-11-06T11:25:53",
+              "note": "auto: post held, media change requested on the sheet",
+              "result": null
+            },
+            {
               "id": "a43f6e0907",
               "kind": "asset",
               "key": "nov-r21-20261029091737",
@@ -17272,107 +17277,6 @@
           ],
           "action_needs": [
             {
-              "id": "aed8090d11",
-              "kind": "action",
-              "key": "ai:33377721ec83",
-              "title": "Calendar staff anniversary posts",
-              "why": "Action Items sheet, 9/24 call list, row 19",
-              "payload": {
-                "text": "Calendar staff anniversary posts",
-                "notes": "Laura and Aaron in October; Leloni's 5-year is overdue. Todd writes them, Daniel schedules and reminds him.",
-                "section": "Daniel",
-                "label": "9/24 call",
-                "row": 3,
-                "sheet_id": "1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE",
-                "tab": "Sheet1",
-                "url": "https://docs.google.com/spreadsheets/d/1cDCO3tuleCItq1H2iYcfSBTvSUTwXrknXZmuaJXHMzE/edit#gid=0&range=A3"
-              },
-              "source": "action-items",
-              "status": "needs",
-              "created": "2026-09-24T12:23:36",
-              "decided": "2026-11-06T07:14:35",
-              "note": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
-              "result": {
-                "needs_you": "Send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni",
-                "needs_since": "2026-09-25",
-                "followup": {
-                  "trail": [
-                    {
-                      "at": "2026-09-25 07:30",
-                      "by": "claude",
-                      "text": "Worked by the morning Claude run: Gmail draft ready: 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd asking for dates, a few lines each and photos by Thu Oct 1. Left for you: send it. Leloni already has a staff spotlight on 10/7; her anniversary could ride on that post."
-                    },
-                    {
-                      "at": "2026-09-25 14:09",
-                      "by": "check",
-                      "text": "Send the Gmail draft 'Staff anniversary posts: Laura, Aaron and Leloni' to Todd: sent Sep 25 2:09 PM to Todd"
-                    },
-                    {
-                      "at": "2026-10-09 15:14",
-                      "by": "daniel",
-                      "text": "Told Claude: send todd a quick email reminder that we are waiting on this. just build the draft email. I'll push send."
-                    },
-                    {
-                      "at": "2026-10-15 10:06",
-                      "by": "claude",
-                      "text": "2026-10-15: no reply from Todd with dates, lines or photos since his 'Will do' on Sep 25. Reminder built as a Gmail draft reply in the same thread, subject 'Re: Staff anniversary posts: Laura, Aaron and Leloni'."
-                    },
-                    {
-                      "at": "2026-10-17 07:00",
-                      "by": "check",
-                      "text": "Send the Gmail draft 'Re: Staff anniversary posts: Laura, Aaron and Leloni'.: not sent, and no longer in your Drafts (deleted?)"
-                    },
-                    {
-                      "at": "2026-11-05 13:28",
-                      "by": "daniel",
-                      "text": "Told Claude: draft a remninder email for todd"
-                    },
-                    {
-                      "at": "2026-11-06 07:14",
-                      "by": "claude",
-                      "text": "2026-11-06: Gmail reply draft built in the existing thread, subject Re: Staff anniversary posts: Laura, Aaron and Leloni, to Todd, asking for dates, lines and photos."
-                    },
-                    {
-                      "at": "2026-11-06 07:14",
-                      "by": "check",
-                      "text": "Todd replies with dates, a few lines each and photos.: Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \""
-                    }
-                  ],
-                  "steps": [
-                    {
-                      "owner": "daniel",
-                      "do": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
-                      "check": {
-                        "type": "gmail_sent",
-                        "subject": "Re: Staff anniversary posts: Laura, Aaron and Leloni"
-                      },
-                      "id": "s1",
-                      "status": "open",
-                      "evidence": "still in your Gmail Drafts, not sent"
-                    },
-                    {
-                      "owner": "todd",
-                      "do": "Todd replies with dates, a few lines each and photos.",
-                      "check": {
-                        "type": "gmail_reply",
-                        "subject": "Staff anniversary posts",
-                        "from": "bccsanantonio.com"
-                      },
-                      "id": "s2",
-                      "status": "done",
-                      "evidence": "Todd McCord replied 2026-09-25 14:11: \"Will do From: Daniel Bisett &lt;daniel@drbdig.com&gt; Sent: Friday, September 25, 2026 2:10 PM To: Todd McCord &lt;tmccord@bccsanantonio.com&gt; Subject: Staff \"",
-                      "done_at": "2026-11-06 07:14",
-                      "link": "https://mail.google.com/mail/?authuser=daniel@drbdig.com#all/1a0d9d7746da1d27",
-                      "via": "checked automatically"
-                    }
-                  ],
-                  "state": "your_move",
-                  "state_text": "Read and send the Gmail draft Re: Staff anniversary posts: Laura, Aaron and Leloni.",
-                  "checked_at": "2026-11-06 07:14"
-                }
-              }
-            },
-            {
               "id": "6d29cbea90",
               "kind": "action",
               "key": "ai:790b09907479",
@@ -17490,7 +17394,7 @@
                   ],
                   "state": "waiting",
                   "state_text": "Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.",
-                  "checked_at": "2026-11-06 07:00"
+                  "checked_at": "2026-11-08 07:00"
                 }
               }
             }
@@ -24080,14 +23984,14 @@
       "model": {
         "connected": true,
         "data": {
-          "fetched": "2026-11-06",
+          "fetched": "2026-11-08",
           "site": "https://www.bariatriccounselingcenter.com/",
           "window_days": 28,
           "errors": [],
           "summary": {
-            "clicks": 5,
-            "impressions": 718,
-            "avg_position": 4.7
+            "clicks": 3,
+            "impressions": 751,
+            "avg_position": 5.0
           },
           "top_queries": [
             {
@@ -24103,13 +24007,7 @@
               "position": 3.0
             },
             {
-              "query": "staying hydrated while cutting weight",
-              "clicks": 1,
-              "impressions": 1,
-              "position": 3.0
-            },
-            {
-              "query": "weight loss surgery mental health preparation",
+              "query": "emotionally preparing for bariatric surgery",
               "clicks": 1,
               "impressions": 1,
               "position": 1.0
@@ -24121,21 +24019,15 @@
               "position": 1.0
             },
             {
-              "query": "emotionally preparing for bariatric surgery",
-              "clicks": 1,
-              "impressions": 1,
-              "position": 1.0
-            },
-            {
               "query": "bcc",
               "clicks": 0,
-              "impressions": 28,
-              "position": 3.9
+              "impressions": 26,
+              "position": 4.0
             },
             {
               "query": "bariatric counseling center of san antonio",
               "clicks": 0,
-              "impressions": 26,
+              "impressions": 16,
               "position": 2.0
             },
             {
@@ -24157,9 +24049,15 @@
               "position": 1.0
             },
             {
-              "query": "bcc counseling",
+              "query": "why is psychological counseling important prior to bariatric surgery?#R##N##R##N##R##N#bariatric surgery requires behavior modification to make a commitment to a lifelong dietary change.#R##N##R##N#bariatric surgery requires a lifelong commitment to a daily exercise program.#R##N##R##N#bariatric surgery requires a significant period of preoperative dietary modification.#R##N##R##N#bariatric surgery requires a significant period of intense postoperative pain and lifestyle modification.",
               "clicks": 0,
-              "impressions": 3,
+              "impressions": 4,
+              "position": 7.0
+            },
+            {
+              "query": "bariatric counceing center",
+              "clicks": 0,
+              "impressions": 4,
               "position": 2.0
             },
             {
@@ -24167,6 +24065,12 @@
               "clicks": 0,
               "impressions": 3,
               "position": 4.0
+            },
+            {
+              "query": "bcc counseling",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 2.0
             },
             {
               "query": "losing weight and dehydration",
@@ -24185,27 +24089,22 @@
             {
               "page": "https://www.bariatriccounselingcenter.com/",
               "clicks": 3,
-              "impressions": 45
+              "impressions": 34
             },
             {
               "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/preparing-for-bariatric-surgery-a-mental-health-checklist/",
-              "clicks": 3,
-              "impressions": 9
+              "clicks": 2,
+              "impressions": 7
             },
             {
               "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
-              "clicks": 1,
-              "impressions": 81
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/about/",
               "clicks": 0,
-              "impressions": 10
+              "impressions": 59
             },
             {
               "page": "https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/",
               "clicks": 0,
-              "impressions": 8
+              "impressions": 7
             },
             {
               "page": "https://www.bariatriccounselingcenter.com/bariatric-counseling-near-me/",
@@ -24213,24 +24112,19 @@
               "impressions": 5
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
-              "clicks": 0,
-              "impressions": 4
-            },
-            {
               "page": "https://www.bariatriccounselingcenter.com/diet-and-nutrition/dietitians-or-nutritionists-breaking-down-the-differences/",
               "clicks": 0,
               "impressions": 4
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/dietitian-vs-nutritionist-for-weight-loss-whats-the-difference/",
+              "page": "https://www.bariatriccounselingcenter.com/about/",
               "clicks": 0,
-              "impressions": 2
+              "impressions": 3
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/weight-loss-journey/how-family-support-impacts-weight-loss-a-guide-for-loved-ones/",
+              "page": "https://www.bariatriccounselingcenter.com/understanding-weight-loss-medications-wegovy-ozempic-zepbound-and-mounjaro/",
               "clicks": 0,
-              "impressions": 2
+              "impressions": 3
             },
             {
               "page": "https://www.bariatriccounselingcenter.com/what-is-a-weight-loss-counselor/",
@@ -24238,17 +24132,12 @@
               "impressions": 2
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/glp-1-behavioral-support-in-san-antonio-tx/",
+              "page": "https://www.bariatriccounselingcenter.com/weight-loss-journey/how-family-support-impacts-weight-loss-a-guide-for-loved-ones/",
               "clicks": 0,
               "impressions": 1
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/overeaters-anonymous-support-san-antonio-tx/",
-              "clicks": 0,
-              "impressions": 1
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/category/staff/",
+              "page": "https://www.bariatriccounselingcenter.com/eating-disorder-counseling-in-san-antonio-tx/",
               "clicks": 0,
               "impressions": 1
             },
@@ -24256,19 +24145,24 @@
               "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
               "clicks": 0,
               "impressions": 1
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-psychotherapy-and-mental-health-counseling-support-sustainable-weight-loss/",
+              "clicks": 0,
+              "impressions": 1
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/bariatric-therapy-in-san-antonio-tx/",
+              "clicks": 0,
+              "impressions": 1
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/author/shamilton/",
+              "clicks": 0,
+              "impressions": 1
             }
           ],
           "daily": [
-            {
-              "date": "2026-10-09",
-              "clicks": 2,
-              "impressions": 33
-            },
-            {
-              "date": "2026-10-10",
-              "clicks": 0,
-              "impressions": 7
-            },
             {
               "date": "2026-10-11",
               "clicks": 0,
@@ -24388,13 +24282,23 @@
               "date": "2026-11-03",
               "clicks": 0,
               "impressions": 36
+            },
+            {
+              "date": "2026-11-04",
+              "clicks": 0,
+              "impressions": 34
+            },
+            {
+              "date": "2026-11-05",
+              "clicks": 0,
+              "impressions": 39
             }
           ],
           "crawl": {
-            "as_of": "2026-11-02",
-            "crawl_errors": 3,
-            "indexed_pages": 257,
-            "crawled_pages": 59
+            "as_of": "2026-11-03",
+            "crawl_errors": 2,
+            "indexed_pages": 258,
+            "crawled_pages": 51
           }
         }
       },
@@ -24973,7 +24877,7 @@
               "edit"
             ],
             "detected": "2026-10-29T09:17:37",
-            "updated": "2026-11-04T07:00:51",
+            "updated": "2026-11-06T11:25:51",
             "initial": {
               "C": "Mon 11/23: FB, IG",
               "D": "FB 10:30 AM\nIG 12:15 PM",
@@ -25015,7 +24919,7 @@
                 },
                 "I": {
                   "before": "not applicable",
-                  "after": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Treatment updates as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth"
+                  "after": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics.  We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth"
                 },
                 "J": {
                   "before": "not applicable",
@@ -25051,7 +24955,7 @@
                   "text": "not applicable"
                 },
                 "LI": {
-                  "text": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Treatment updates as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth"
+                  "text": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics.  We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth"
                 }
               },
               "media": null,
@@ -25115,6 +25019,16 @@
                 "at": "2026-11-04T07:00:51",
                 "who": "system",
                 "what": "media change requested: queued for a Claude session (item a43f6e0907)"
+              },
+              {
+                "at": "2026-11-06T11:25:51",
+                "who": "sheet",
+                "what": "changed Date and platforms (C), Purpose (F), LinkedIn caption (I), GBP caption (J), Image (N), Notes / support (O)"
+              },
+              {
+                "at": "2026-11-06T11:25:51",
+                "who": "system",
+                "what": "hold: FB manual_hold, IG manual_hold, GBP not_scheduled, LI manual_hold"
               }
             ],
             "notified": true,
@@ -25137,7 +25051,7 @@
               "F": "55c0d34d3f73",
               "G": "b4d1e1bdf71f",
               "H": "b4d1e1bdf71f",
-              "I": "a58888824e57",
+              "I": "e14e53c8b79c",
               "J": "2b6bf439a656",
               "K": "b4d1e1bdf71f",
               "L": "b4d1e1bdf71f",
@@ -25148,6 +25062,151 @@
               "Q": "da39a3ee5e6b"
             },
             "asset_item": "a43f6e0907"
+          },
+          {
+            "id": "nov-r26-20261106112551",
+            "month": "November",
+            "row": 26,
+            "title": "Education",
+            "when": "Mon 11/23",
+            "platforms": [
+              "FB",
+              "IG"
+            ],
+            "affected": [
+              "FB",
+              "IG"
+            ],
+            "status": "ready",
+            "kinds": [
+              "edit"
+            ],
+            "detected": "2026-11-06T11:25:51",
+            "updated": "2026-11-06T11:25:55",
+            "initial": {
+              "C": "Tue 11/3: LI, GBP",
+              "D": "LI 11:00 AM\nGBP 9:00 AM",
+              "F": "Coordination with the referring provider and the discharge summary of behavioral progress (assessment scores: nutrition quality of life, disordered eating, anxiety, depression). LinkedIn document post, Todd's sentences verbatim.",
+              "G": "not applicable",
+              "H": "not applicable",
+              "I": "When you refer a patient to the Bariatric Counseling Center, you receive consistent coordination throughout their care and a detailed discharge summary at program completion.\n\nOur team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics.\n\nThe staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four.\n\nThe program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We accept most health insurances.\n\nSan Antonio and virtual across Texas.\n\n#BehavioralHealth",
+              "J": "Referring providers: when you refer a patient to the Bariatric Counseling Center, you receive consistent coordination throughout their care and a detailed discharge summary at program completion. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.",
+              "K": "not applicable",
+              "L": "not applicable",
+              "M": "LI: document post (upload the PDF), so no preview card is possible. Put the URL in the first comment: bariatriccounselingcenter.com/refer-a-patient/\nGBP: post the 1200x900 card with the Learn more button to bariatriccounselingcenter.com/refer-a-patient/\nCard: page 5 carries bariatriccounselingcenter.com/refer-a-patient",
+              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/19oHh2cB_RAfOzuf2W11h8kKzV1LRwkvO?v=c3b771d3\",1)",
+              "O": "ASSETS (built 2026-09-23). The image above is nov03-providers-01-doc.png.\n  LinkedIn document (PDF, 5 pages): nov03-providers-linkedin-document.pdf, Drive: https://drive.google.com/file/d/1q7dx2XbmDWe66LIiO75MCvEvmsw3WVWg/view\n  Document pages 1080x1350: nov03-providers-01-doc.png, nov03-providers-02-doc.png, nov03-providers-03-doc.png, nov03-providers-04-doc.png, nov03-providers-05-doc.png\n  GBP card 1200x900: nov03-providers-gbp-01-gbp.png, Drive: https://drive.google.com/file/d/1dg-739GM1iePZsHzC3WYQnWJRkAxwe53/view\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\nAlt text: Document post explaining coordination and discharge summaries that referring providers receive from the Bariatric Counseling Center.",
+              "P": "FALSE",
+              "Q": "",
+              "A": "TRUE"
+            },
+            "todd": {
+              "cells": {
+                "C": {
+                  "before": "Tue 11/3: LI, GBP",
+                  "after": "Mon 11/23: FB, IG"
+                },
+                "D": {
+                  "before": "LI 11:00 AM\nGBP 9:00 AM",
+                  "after": "FB 10:30 AM\nIG 12:15 PM"
+                },
+                "F": {
+                  "before": "Coordination with the referring provider and the discharge summary of behavioral progress (assessment scores: nutrition quality of life, disordered eating, anxiety, depression). LinkedIn document post, Todd's sentences verbatim.",
+                  "after": "The difference between diet culture and behavioral treatment: skills that hold up on a bad week."
+                },
+                "G": {
+                  "before": "not applicable",
+                  "after": "A diet ends the moment you have a hard week. A behavioral plan does not.\n\nAt the Bariatric Counseling Center, we teach coping skills that hold up when life gets difficult. Recovery and goal setting. Mindful eating. Family engagement. Behavioral therapy and counseling. Dietary guidance and support. Culinary classes. Mindful movement. One program, not four.\n\nWe serve people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas.\n\nLink in the first comment."
+                },
+                "H": {
+                  "before": "not applicable",
+                  "after": "Difference between a diet and behavioral treatment\n\nA diet ends the moment you have a hard week. A behavioral plan does not.\n\nWe teach coping skills that hold up when life gets difficult. Recovery and goal setting. Mindful eating. Family engagement.\n\nBehavioral therapy and counseling. Dietary guidance and support. Culinary classes. Mindful movement. One program, not four.\n\nThe Bariatric Counseling Center serves people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport #MindfulRecovery #SanAntonio"
+                },
+                "I": {
+                  "before": "When you refer a patient to the Bariatric Counseling Center, you receive consistent coordination throughout their care and a detailed discharge summary at program completion.\n\nOur team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics.\n\nThe staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four.\n\nThe program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We accept most health insurances.\n\nSan Antonio and virtual across Texas.\n\n#BehavioralHealth",
+                  "after": "not applicable"
+                },
+                "J": {
+                  "before": "Referring providers: when you refer a patient to the Bariatric Counseling Center, you receive consistent coordination throughout their care and a detailed discharge summary at program completion. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers.",
+                  "after": "not applicable"
+                },
+                "M": {
+                  "before": "LI: document post (upload the PDF), so no preview card is possible. Put the URL in the first comment: bariatriccounselingcenter.com/refer-a-patient/\nGBP: post the 1200x900 card with the Learn more button to bariatriccounselingcenter.com/refer-a-patient/\nCard: page 5 carries bariatriccounselingcenter.com/refer-a-patient",
+                  "after": "FB: post the carousel, put the link in the FIRST COMMENT. Comment links are exempt from Meta's 2-link-a-month test for Pages, so this keeps the quota free. Link: bariatriccounselingcenter.com/ourprogram/\nIG: link in bio (bcctx.link/start). Caption links are not tappable.\nCard: the last slide carries bariatriccounselingcenter.com/ourprogram."
+                },
+                "N": {
+                  "before": "=IMAGE(\"https://lh3.googleusercontent.com/d/19oHh2cB_RAfOzuf2W11h8kKzV1LRwkvO?v=c3b771d3\",1)",
+                  "after": "=IMAGE(\"https://lh3.googleusercontent.com/d/1h9dAX2KTI3vb81tp0mNJQcwYy6aNxiCH?v=c6c7d9e2\",1)"
+                },
+                "O": {
+                  "before": "ASSETS (built 2026-09-23). The image above is nov03-providers-01-doc.png.\n  LinkedIn document (PDF, 5 pages): nov03-providers-linkedin-document.pdf, Drive: https://drive.google.com/file/d/1q7dx2XbmDWe66LIiO75MCvEvmsw3WVWg/view\n  Document pages 1080x1350: nov03-providers-01-doc.png, nov03-providers-02-doc.png, nov03-providers-03-doc.png, nov03-providers-04-doc.png, nov03-providers-05-doc.png\n  GBP card 1200x900: nov03-providers-gbp-01-gbp.png, Drive: https://drive.google.com/file/d/1dg-739GM1iePZsHzC3WYQnWJRkAxwe53/view\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\nAlt text: Document post explaining coordination and discharge summaries that referring providers receive from the Bariatric Counseling Center.",
+                  "after": "ASSETS (built 2026-10-21). The image above is nov23-diet-01-feed.png.\n  Instagram + Facebook carousel, 5 slides 1080x1350: nov23-diet-01-feed.png, nov23-diet-02-feed.png, nov23-diet-03-feed.png, nov23-diet-04-feed.png, nov23-diet-05-feed.png\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Carousel explaining the difference between diet culture and behavioral treatment for weight loss and binge eating."
+                }
+              },
+              "ok": null,
+              "notes": ""
+            },
+            "final": {
+              "ready": true,
+              "by": "cell edit",
+              "channels": {
+                "FB": {
+                  "text": "A diet ends the moment you have a hard week. A behavioral plan does not.\n\nAt the Bariatric Counseling Center, we teach coping skills that hold up when life gets difficult. Recovery and goal setting. Mindful eating. Family engagement. Behavioral therapy and counseling. Dietary guidance and support. Culinary classes. Mindful movement. One program, not four.\n\nWe serve people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas.\n\nLink in the first comment."
+                },
+                "IG": {
+                  "text": "Difference between a diet and behavioral treatment\n\nA diet ends the moment you have a hard week. A behavioral plan does not.\n\nWe teach coping skills that hold up when life gets difficult. Recovery and goal setting. Mindful eating. Family engagement.\n\nBehavioral therapy and counseling. Dietary guidance and support. Culinary classes. Mindful movement. One program, not four.\n\nThe Bariatric Counseling Center serves people who struggle with weight loss, binge eating and chronic overeating. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport #MindfulRecovery #SanAntonio"
+                }
+              },
+              "media": null,
+              "link": null
+            },
+            "scheduler": {
+              "FB": {
+                "tool": "postiz",
+                "state": "manual_hold",
+                "detail": "Not in the Postiz state file (booked another way). Move it to draft in Postiz by hand."
+              },
+              "IG": {
+                "tool": "postiz",
+                "state": "manual_hold",
+                "detail": "Not in the Postiz state file (booked another way). Move it to draft in Postiz by hand."
+              }
+            },
+            "history": [
+              {
+                "at": "2026-11-06T11:25:51",
+                "who": "sheet",
+                "what": "changed Date and platforms (C), Time (D), Purpose (F), FB caption (G), IG caption (H), LinkedIn caption (I), GBP caption (J), CTA (M), Image (N), Notes / support (O)"
+              },
+              {
+                "at": "2026-11-06T11:25:51",
+                "who": "system",
+                "what": "hold: FB manual_hold, IG manual_hold"
+              },
+              {
+                "at": "2026-11-06T11:25:55",
+                "who": "system",
+                "what": "media change requested: queued for a Claude session (item acb931bbf2)"
+              }
+            ],
+            "notified": true,
+            "seen": {
+              "C": "9ca79a2d7da7",
+              "D": "53998f6f5050",
+              "F": "5c48c9c3c013",
+              "G": "39fc96f75364",
+              "H": "0143ce5c3b9a",
+              "I": "b4d1e1bdf71f",
+              "J": "b4d1e1bdf71f",
+              "K": "b4d1e1bdf71f",
+              "L": "b4d1e1bdf71f",
+              "M": "0977ae4fff4a",
+              "N": "5e2434904967",
+              "O": "eda9d39277a3",
+              "P": "0ed2d7b5cdb7",
+              "Q": "da39a3ee5e6b"
+            },
+            "asset_item": "acb931bbf2"
           },
           {
             "id": "nov-r30-20261105132532",
@@ -27632,6 +27691,116 @@
         ],
         "closed": [
           {
+            "id": "nov-r25-20261106112818",
+            "month": "November",
+            "row": 25,
+            "title": "MEN'S HEALTH MONTH (draft for review): Men in the program carousel",
+            "when": "Thu 11/19",
+            "platforms": [
+              "FB",
+              "IG",
+              "LI"
+            ],
+            "affected": [
+              "FB",
+              "IG",
+              "LI"
+            ],
+            "status": "done",
+            "kinds": [
+              "edit"
+            ],
+            "detected": "2026-11-06T11:28:18",
+            "updated": "2026-11-06T11:28:20",
+            "initial": {
+              "C": "Thu 11/19: FB, IG\nFri 11/20: LI (document)",
+              "D": "FB 10:30 AM\nIG 12:15 PM\nLI 9:30 AM Fri",
+              "F": "International Men's Day. Sara's ask: show how many men BCC has served this year and point to their stories. Carousel for FB and IG; LinkedIn document the next morning because Thu 11/19 LI is already taken. Large-text standard.",
+              "G": "Today is International Men's Day.\n\nMen are now about 25 to 30% of the Bariatric Counseling Center program, up from about 10% a year ago. Emotional eating, binge eating and chronic overeating affect men too, and men are part of every group here.\n\nThey work alongside women with the same licensed mental health professionals, Registered Dietitians, movement therapists and professional chef. One program, not four.\n\nVirtual across Texas. Link in the first comment.",
+              "H": "International Men's Day\n\nMen are now about 25 to 30% of our program, up from about 10% a year ago. Emotional eating, binge eating and chronic overeating affect men too.\n\nSame groups. Same team. One program, not four.\n\nVirtual across Texas. Link in bio.\n\n#InternationalMensDay #MensHealthMonth #BariatricCounseling #VirtualTherapyTexas",
+              "I": "Yesterday was International Men's Day, and November is Men's Health Awareness Month.\n\nMen are now about 25 to 30% of the Bariatric Counseling Center program, up from about 10% a year ago. Emotional eating, binge eating and chronic overeating are often framed as women's issues, which can keep men from asking for help.\n\nOur program brings together group and individual therapy, dietary guidance, cooking classes and movement education, led by licensed mental health professionals and Registered Dietitians. One program, not four. Virtual across Texas.\n\nLearn more at bariatriccounselingcenter.com.\n\n#MensHealthMonth #BehavioralHealth",
+              "J": "not applicable",
+              "K": "not applicable",
+              "L": "not applicable",
+              "M": "FB: post the carousel, link in the FIRST COMMENT: bariatriccounselingcenter.com/testimonials/\nIG: link in bio (bcctx.link/start).\nLI: document PDF from the same slides, link in the body.\nCard: the last slide carries bariatriccounselingcenter.com.",
+              "N": "",
+              "O": "DRAFT FOR REVIEW, added 2026-10-29. Not scheduled.\nNEEDS FROM BCC: the number of men served in the program this year (Sara's ask). Caption and cover slide hold a placeholder until then. It is a count of people, not weights; drop it if you would rather not use a figure.\nCARDS (rendered 2026-10-29 at the bigger-type standard, not on Drive yet): FB/IG carousel nov19-menshealth-01 to 05-feed.png; LinkedIn document nov20-menshealth-li-linkedin-document.pdf (5 pages, Refer a patient end card with the fax line). Project folder bcc-social/menshealth-2026-11. Re-render once the count is in.\n  1. International Men's Day: ## men in our program this year (placeholder)\n  2. Often called a women's issue. It isn't.\n  3. Same groups. Same team.\n  4. One team, every week: therapy, Registered Dietitians, cooking and movement classes\n  5. End card: Hear their stories. bariatriccounselingcenter.com/testimonials\nAlt text: to write once the count is in.",
+              "P": "FALSE",
+              "Q": "",
+              "A": "FALSE"
+            },
+            "todd": {
+              "cells": {
+                "G": {
+                  "before": "Today is International Men's Day.\n\nMen are now about 25 to 30% of the Bariatric Counseling Center program, up from about 10% a year ago. Emotional eating, binge eating and chronic overeating affect men too, and men are part of every group here.\n\nThey work alongside women with the same licensed mental health professionals, Registered Dietitians, movement therapists and professional chef. One program, not four.\n\nVirtual across Texas. Link in the first comment.",
+                  "after": "Today is International Men's Day.\n\nMen are now approximately 30% of the Bariatric Counseling Center program, up from about 10% a year ago. Emotional eating, binge eating and chronic overeating affect men too, and men are part of every group here.\n\nThey work alongside women with the same licensed mental health professionals, Registered Dietitians, movement therapists and professional chef. One program, not four.\n\nVirtual across Texas. Link in the first comment."
+                },
+                "H": {
+                  "before": "International Men's Day\n\nMen are now about 25 to 30% of our program, up from about 10% a year ago. Emotional eating, binge eating and chronic overeating affect men too.\n\nSame groups. Same team. One program, not four.\n\nVirtual across Texas. Link in bio.\n\n#InternationalMensDay #MensHealthMonth #BariatricCounseling #VirtualTherapyTexas",
+                  "after": "International Men's Day\n\nMen are now approximately 30% of our program, up from about 10% a year ago. Emotional eating, binge eating and chronic overeating affect men too.\n\nSame groups. Same team. One program, not four.\n\nVirtual across Texas. Link in bio.\n\n#InternationalMensDay #MensHealthMonth #BariatricCounseling #VirtualTherapyTexas"
+                },
+                "I": {
+                  "before": "Yesterday was International Men's Day, and November is Men's Health Awareness Month.\n\nMen are now about 25 to 30% of the Bariatric Counseling Center program, up from about 10% a year ago. Emotional eating, binge eating and chronic overeating are often framed as women's issues, which can keep men from asking for help.\n\nOur program brings together group and individual therapy, dietary guidance, cooking classes and movement education, led by licensed mental health professionals and Registered Dietitians. One program, not four. Virtual across Texas.\n\nLearn more at bariatriccounselingcenter.com.\n\n#MensHealthMonth #BehavioralHealth",
+                  "after": "Yesterday was International Men's Day, and November is Men's Health Awareness Month.\n\nMen are now approximately 30% of the Bariatric Counseling Center program, up from about 10% a year ago. Emotional eating, binge eating and chronic overeating are often framed as women's issues, which can keep men from asking for help.\n\nOur program brings together group and individual therapy, dietary guidance, cooking classes and movement education, led by licensed mental health professionals and Registered Dietitians. One program, not four. Virtual across Texas.\n\nLearn more at bariatriccounselingcenter.com.\n\n#MensHealthMonth #BehavioralHealth"
+                }
+              },
+              "ok": null,
+              "notes": ""
+            },
+            "final": {
+              "ready": true,
+              "by": "cell edit",
+              "channels": {
+                "FB": {
+                  "text": "Today is International Men's Day.\n\nMen are now approximately 30% of the Bariatric Counseling Center program, up from about 10% a year ago. Emotional eating, binge eating and chronic overeating affect men too, and men are part of every group here.\n\nThey work alongside women with the same licensed mental health professionals, Registered Dietitians, movement therapists and professional chef. One program, not four.\n\nVirtual across Texas. Link in the first comment."
+                },
+                "IG": {
+                  "text": "International Men's Day\n\nMen are now approximately 30% of our program, up from about 10% a year ago. Emotional eating, binge eating and chronic overeating affect men too.\n\nSame groups. Same team. One program, not four.\n\nVirtual across Texas. Link in bio.\n\n#InternationalMensDay #MensHealthMonth #BariatricCounseling #VirtualTherapyTexas"
+                },
+                "LI": {
+                  "text": "Yesterday was International Men's Day, and November is Men's Health Awareness Month.\n\nMen are now approximately 30% of the Bariatric Counseling Center program, up from about 10% a year ago. Emotional eating, binge eating and chronic overeating are often framed as women's issues, which can keep men from asking for help.\n\nOur program brings together group and individual therapy, dietary guidance, cooking classes and movement education, led by licensed mental health professionals and Registered Dietitians. One program, not four. Virtual across Texas.\n\nLearn more at bariatriccounselingcenter.com.\n\n#MensHealthMonth #BehavioralHealth"
+                }
+              },
+              "media": null,
+              "link": null
+            },
+            "scheduler": {},
+            "history": [
+              {
+                "at": "2026-11-06T11:28:18",
+                "who": "laustintransl8n@gmail.com",
+                "what": "changed FB caption (G), IG caption (H), LinkedIn caption (I)"
+              },
+              {
+                "at": "2026-11-06T11:28:20",
+                "who": "system",
+                "what": "minor edit: FB: not booked by the sheet tool; TO DO, update it in Postiz by hand; IG: not booked by the sheet tool; TO DO, update it in Postiz by hand; LI: not booked by the sheet tool; TO DO, update it in Postiz by hand"
+              }
+            ],
+            "notified": true,
+            "seen": {
+              "C": "5e354a991cf6",
+              "D": "dbe0c07fc0b2",
+              "F": "fbcadbcec0ec",
+              "G": "39e93f5305c2",
+              "H": "600463b27c74",
+              "I": "6f09b06faced",
+              "J": "b4d1e1bdf71f",
+              "K": "b4d1e1bdf71f",
+              "L": "b4d1e1bdf71f",
+              "M": "48216154b659",
+              "N": "da39a3ee5e6b",
+              "O": "d618836b2d41",
+              "P": "0ed2d7b5cdb7",
+              "Q": "da39a3ee5e6b"
+            },
+            "minor": [
+              "FB: not booked by the sheet tool; TO DO, update it in Postiz by hand",
+              "IG: not booked by the sheet tool; TO DO, update it in Postiz by hand",
+              "LI: not booked by the sheet tool; TO DO, update it in Postiz by hand"
+            ]
+          },
+          {
             "id": "nov-r27-20261104145445",
             "month": "November",
             "row": 27,
@@ -28114,117 +28283,17 @@
             "minor": [
               "LI: not booked yet; it will be booked from the sheet as it is now"
             ]
-          },
-          {
-            "id": "nov-r15-20261022164806",
-            "month": "November",
-            "row": 15,
-            "title": "Staff Spotlight",
-            "when": "Wed 11/11",
-            "platforms": [
-              "FB",
-              "IG"
-            ],
-            "affected": [
-              "FB",
-              "IG"
-            ],
-            "status": "done",
-            "kinds": [
-              "edit"
-            ],
-            "detected": "2026-10-22T16:48:06",
-            "updated": "2026-10-22T16:48:08",
-            "initial": {
-              "C": "Wed 11/11: FB, IG",
-              "D": "FB 10:30 AM\nIG 12:15 PM",
-              "F": "Dr Sara Hamilton, Psychologist, Clinical Director. What she wants every new client to know in week one. Needs her one sentence in her own words.",
-              "G": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been crucial to healing.\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment.",
-              "H": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nOur team serves clients on-site in San Antonio and virtually across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
-              "I": "not applicable",
-              "J": "not applicable",
-              "K": "not applicable",
-              "L": "not applicable",
-              "M": "FB: post the carousel, put the link in the FIRST COMMENT. Comment links are exempt from Meta's 2-link-a-month test for Pages, so this keeps the quota free. Link: bariatriccounselingcenter.com/about/\nIG: link in bio (bcctx.link/start). Caption links are not tappable.\nCard: the last slide carries bariatriccounselingcenter.com/about.",
-              "N": "=IMAGE(\"https://lh3.googleusercontent.com/d/1sLFe0zGH1Rs4pfuOG9bfyx4VYT2xMbsg\")",
-              "O": "ASSETS (built 2026-10-21). The image above is nov11-sara-01-feed.png.\n  Instagram + Facebook carousel, 5 slides 1080x1350: nov11-sara-01-feed.png, nov11-sara-02-feed.png, nov11-sara-03-feed.png, nov11-sara-04-feed.png, nov11-sara-05-feed.png\nAll plan files: https://drive.google.com/drive/folders/1abb_JCA3Kk6l31Rcy0_GaIC9AXjVmo02\nOn disk: C:\\Users\\danie\\Documents\\Claude\\Projects\\bariatric-counseling-center\\social\\plan\\cards\\render\\png\nAlt text: Dr Sara Hamilton, Clinical Psychologist and Clinical Director at Bariatric Counseling Center in San Antonio, Texas.\nCHECK BEFORE BOOKING: the quote in the FB and IG captions (\"You're not broken...\") must be Dr Hamilton's own words; the plan asked for her sentence. It is not on the cards. No portrait of her is on file, so the cover is text only; add her photo if Todd or Sara send one.",
-              "P": "FALSE",
-              "Q": "",
-              "A": "FALSE"
-            },
-            "todd": {
-              "cells": {
-                "G": {
-                  "before": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been crucial to healing.\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment.",
-                  "after": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part  of their healing. \"\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment."
-                },
-                "H": {
-                  "before": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one: \"You're not broken. You're learning a new way to relate to food, and that takes practice.\"\n\nOur team serves clients on-site in San Antonio and virtually across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
-                  "after": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one:\"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part of their healing.\"\n\nOur team serves clients on-site in San Antonio and virtually across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport"
-                }
-              },
-              "ok": null,
-              "notes": ""
-            },
-            "final": {
-              "ready": true,
-              "by": "cell edit",
-              "channels": {
-                "FB": {
-                  "text": "Meet Dr Sara Hamilton, Clinical Director at the Bariatric Counseling Center.\n\nDr Hamilton is a clinical psychologist who leads our behavioral therapy programming. She works with clients one-on-one and in group sessions, helping them understand and modify their relationship with food.\n\nWhat she wants every new client to know: \"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part  of their healing. \"\n\nDr Hamilton leads our experienced and compassionate team of behavioral healthcare professionals serving clients on-site in San Antonio and virtually across Texas.\n\nLink in the first comment."
-                },
-                "IG": {
-                  "text": "Clinical psychologist Dr Sara Hamilton\n\nDr Sara Hamilton is the Clinical Director at the Bariatric Counseling Center. As a clinical psychologist, she leads our behavioral therapy programming for people who struggle with weight-loss, obesity, binge eating, and chronic over-eating.\n\nDr Hamilton works with clients in individual sessions and group therapy, helping them develop recovery and coping skills. Her approach centers on understanding patterns and building sustainable change.\n\nWhat she wants every new client to know in week one:\"You are not alone in your struggles with food!  Most clients join our program afraid of group therapy and leave saying that connecting with other people who 'get it' has been an essential part of their healing.\"\n\nOur team serves clients on-site in San Antonio and virtually across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport"
-                }
-              },
-              "media": null,
-              "link": null
-            },
-            "scheduler": {},
-            "history": [
-              {
-                "at": "2026-10-22T16:48:06",
-                "who": "sheet",
-                "what": "changed FB caption (G), IG caption (H)"
-              },
-              {
-                "at": "2026-10-22T16:48:08",
-                "who": "system",
-                "what": "minor edit: FB: not booked by the sheet tool; TO DO, update it in Postiz by hand; IG: not booked by the sheet tool; TO DO, update it in Postiz by hand"
-              }
-            ],
-            "notified": true,
-            "seen": {
-              "C": "bb9dc2753558",
-              "D": "53998f6f5050",
-              "F": "29e1607a4dd5",
-              "G": "cf650816a1ae",
-              "H": "3062921557b8",
-              "I": "b4d1e1bdf71f",
-              "J": "b4d1e1bdf71f",
-              "K": "b4d1e1bdf71f",
-              "L": "b4d1e1bdf71f",
-              "M": "0f75e8b79401",
-              "N": "85ea1a627ad6",
-              "O": "b396e2b05087",
-              "P": "0ed2d7b5cdb7",
-              "Q": "da39a3ee5e6b"
-            },
-            "minor": [
-              "FB: not booked by the sheet tool; TO DO, update it in Postiz by hand",
-              "IG: not booked by the sheet tool; TO DO, update it in Postiz by hand"
-            ]
           }
         ],
         "log": [
-          "2026-11-04T14:54:40  new row 14 Food Friday: Dish of the Week on November",
-          "2026-11-04T14:54:48  nov-r9-20261029091507 | Date and platforms, Purpose, LinkedIn caption, GBP caption, Image, Not: Referring Providers: Document Post",
-          "2026-11-04T14:54:48  nov-r18-20261029091643 | FB caption, IG caption: Staff Spotlight",
-          "2026-11-05T13:25:32  new row 18 Veterans Day on November",
-          "2026-11-05T13:25:32  nov-r29-20261105132532 | Date and platforms, Purpose, FB caption, IG caption, CTA, Notes / supp: Staff Spotlight",
-          "2026-11-05T13:25:33  nov-r30-20261105132532 | Date and platforms, Time, Purpose, FB caption, IG caption, LinkedIn ca: Alumni Story Clip (draft for review)",
           "2026-11-06T07:00:29  nov-r18-20261029091643 | Image, Notes / support: Veterans Day",
-          "2026-11-06T07:00:30  nov-r29-20261105132532 | Date and platforms, Purpose, FB caption, IG caption, Image, Notes / su: Staff Spotlight"
+          "2026-11-06T07:00:30  nov-r29-20261105132532 | Date and platforms, Purpose, FB caption, IG caption, Image, Notes / su: Staff Spotlight",
+          "2026-11-06T11:25:30  hook: edit on November Content Calendar row 21 col 9 by unknown",
+          "2026-11-06T11:25:57  nov-r21-20261029091737 | Date and platforms, Purpose, LinkedIn caption, GBP caption, Image, Not: Referring Providers: Document Post",
+          "2026-11-06T11:25:57  nov-r26-20261106112551 | Date and platforms, Time, Purpose, FB caption, IG caption, LinkedIn ca: Education",
+          "2026-11-06T11:27:39  hook: edit on November Content Calendar row 25 col 7 by laustintransl8n@gmail.com",
+          "2026-11-06T11:27:48  hook: edit on November Content Calendar row 25 col 8 by laustintransl8n@gmail.com",
+          "2026-11-06T11:27:57  hook: edit on November Content Calendar row 25 col 9 by laustintransl8n@gmail.com"
         ],
         "baselines": [
           "baseline-november.json",
@@ -33068,5 +33137,5 @@
     }
   ],
   "snapshot_count": 48,
-  "generated_at": "2026-11-06T17:21:50.584687Z"
+  "generated_at": "2026-11-08T13:10:36.308390Z"
 }
