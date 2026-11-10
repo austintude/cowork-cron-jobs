@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-11-09 07:10 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-11-10 07:10 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -278,7 +278,7 @@ Generated 2026-11-09 07:10 by queue_apply.py. Daniel approved these on the dashb
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/about/
   - SENT BACK: rewrite: sara: 11/11 is Veterans Day, rather have a post recognizing mental health needs of veterans that day and push back my post. I edited the text content directly on your email. I'm working on getting the quote from the alumna. (2026-11-05) (rebuild with this change, then a fresh draft to Todd)
 
-## Draft day: Wednesday. Today is Monday, not draft day: build only, no email to Todd.
+## Draft day: Wednesday. Today is Tuesday, not draft day: build only, no email to Todd.
 
 ## Social posts with Todd (5): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
