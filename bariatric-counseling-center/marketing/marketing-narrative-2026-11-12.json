@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-11-12",
+  "summary": "Direct (51.0%) and Organic Search (33.2%) drive 33,815 window sessions, and the Nov 10 eNews lifted daily sessions 54.1% with 41 Email-credited sessions. GSC is slipping (weighted position 12.72 to 16.94, clicks 24 to 11) and Email still shows only 245 sessions (0.7%) versus about 6,488 Direct sessions in the 3-day windows after sends, which points to missing UTM tags.",
+  "working": [
+    "Nov 10 Staff-Client eNews (8,077 sends) and Referring Partners eNews (685 sends) lifted daily sessions +54.1% with 41 Email-credited sessions in 3 days, the best UTM-attributed result of the last three sends.",
+    "Alumni eNews - Day Of: October 2026 lifted +90.0% with 46.44% open and 1.66% click, and 39 Email sessions in 3 days; the Alumni 'Day Of' format is the most reliable recent lift.",
+    "Open rates beat the 25-35% benchmark: average open is 48.95% across 100 campaigns (Staff-Client Oct 41.65%, Alumni Oct 46.44%, Nov Staff-Client 40.26%).",
+    "Best historical sends for lift and click: Client eNews - August (2024-09-21) +1263.2% lift at 3.63% click (9,440 sends); Client eNews - January 2025 +444.6%; Client eNews - July 2025 +122.2% at 1.59% click.",
+    "Organic Search grew to 11,220 sessions (33.2%) from 11,200 since the Nov 9 run, and total window sessions rose from 33,720 to 33,815."
+  ],
+  "not_working": [
+    "UTM leakage: across the 100 sends, Email gets only 283 sessions in 3-day windows while Direct gets 6,488, and most older sends show 0 email_sessions_3d against 40 to 163 direct (for example Client eNews December(2): 0 email vs 163 direct). Newsletter links are mostly untagged, so GA4 credits Email as Direct.",
+    "Click rates are weak: average click is 1.66% and the Nov 10 Staff-Client eNews got only 0.51% click (40.26% open, click-to-open well under 2%), the lowest of the recent sends.",
+    "Several recent sends show negative lift: Staff-Client eNews Oct 25 (-35.4%, both arms), Alumni Reminder Oct 16 (-29.0%), Alumni Oct 11 (-20.3%), Alumni Sep 15 (-28.4%). The A/B arm B (3:30 PM) matched arm A at -35.4% so send time was not the lever.",
+    "Search is slipping: GSC weighted average position moved from 12.72 to 16.94, clicks fell from 24 to 11 and impressions from 4,504 to 2,792 (7-day window Nov 4 to 11); tracked keywords with data dropped from 28 to 23.",
+    "Organic Social is only 5.1% (1,718 sessions), Email 0.7% (245), Paid Search 2.7% (925); none of these is a meaningful growth driver yet."
+  ],
+  "do_next": [
+    "Add utm_source=constantcontact&utm_medium=email&utm_campaign=<send-name> to every link in the December Staff-Client, Alumni and Referring Partners eNews so GA4 stops crediting Email as Direct (6,488 vs 283 sessions today).",
+    "Rework the Staff-Client eNews for clicks: one clear primary CTA above the fold and a subject/preview test, since 40%+ opens are converting at only 0.51% click.",
+    "Repromote the themes behind the top lifts (Client eNews August 2024, January 2025, July 2025: 3.63%, 1.53%, 1.59% click) in the December send, and keep the Alumni 'Day Of' reminder format that delivered +90.0%.",
+    "Mondays (avg lift +52.6% across 12 sends) and Sundays/Tuesdays/Wednesdays (+91.4%, +43.7%, +43.9%) outperform Thursdays (+1.6%) and Fridays (-2.5%); schedule the December sends early in the week.",
+    "Investigate the GSC position drop (12.72 to 16.94): check the 40 discovery-candidate queries, refresh the pages losing impressions, and re-run the SEO audit before the next pulse."
+  ]
+}
