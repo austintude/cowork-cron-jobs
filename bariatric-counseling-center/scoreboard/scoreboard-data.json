@@ -12417,7 +12417,7 @@
             "action": "Action item",
             "asset": "Asset revision"
           },
-          "handoff": 62,
+          "handoff": 63,
           "top": [
             "Social post: Re-book: IG Wed 11/04, Stress eating at night\n\nA long day doesn't ma (failed in Postiz)",
             "Content block: AI Overview answer for \"eating disorder therapist san antonio\" on /eating-disorder-therapi"
@@ -15196,9 +15196,9 @@
           "applied": 71,
           "placed": 43,
           "written": 6,
-          "go": 6,
+          "go": 7,
           "approved": 56,
-          "built": 5,
+          "built": 4,
           "resolved": 15,
           "expired": 13,
           "needs": 1,
@@ -17236,7 +17236,7 @@
                   ],
                   "state": "waiting",
                   "state_text": "Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.",
-                  "checked_at": "2026-11-11 07:00"
+                  "checked_at": "2026-11-13 07:00"
                 }
               }
             }
@@ -17417,76 +17417,6 @@
             }
           ],
           "social_built": [
-            {
-              "id": "337fc6aea8",
-              "kind": "social",
-              "key": "social:2026-11-16:FB+IG",
-              "title": "Mon 11/16: Eating at one table again",
-              "why": "November is not planned yet; this keeps the FB/IG cadence going",
-              "payload": {
-                "date": "2026-11-16",
-                "weekday": "Mon",
-                "times": "FB 10:30 AM, IG 12:15 PM",
-                "platforms": [
-                  "FB",
-                  "IG"
-                ],
-                "type": "Education",
-                "pillar": "Education",
-                "format": "carousel",
-                "title": "Mon 11/16: Eating at one table again",
-                "purpose": "Family Engagement: how the program brings the people around a client into the work, gently.",
-                "observance": null,
-                "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
-                "captions": {
-                  "FB": "Family engagement in behavioral healthcare for obesity\n\nAt the Bariatric Counseling Center, family engagement is part of the work. Not every session, not mandatory, but available when it helps.\n\nA spouse learning how to support without monitoring. A parent understanding the difference between care and control. Adult children finding new ways to talk about food at gatherings.\n\nFamily sessions happen when a client asks, or when a counselor suggests it might help move something forward. The people around you don't need to be experts. They just need to understand what you're working on.\n\nWe provide group and individual therapy, dietary guidance, cooking classes and movement education in a unique, all-inclusive format. One program, not four. Serving clients in San Antonio and virtual across Texas.\n\nLink in the first comment.",
-                  "IG": "family support for weight loss and behavioral health\n\nFamily engagement is part of the program at the Bariatric Counseling Center. Not every session, not mandatory, but there when it matters.\n\nA spouse learning to support without hovering. A parent shifting from control to care. Adult children finding better ways to navigate holiday meals together.\n\nThese sessions happen when a client requests them, or when a counselor sees an opening. The goal is simple. Help the people around you understand the work you're doing, so home becomes easier, not harder.\n\nWe offer group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #SanAntonio",
-                  "YT": {
-                    "title": "Family Engagement in Behavioral Treatment for Obesity",
-                    "description": "Family engagement is part of the comprehensive behavioral healthcare at Bariatric Counseling Center. Sessions help spouses, parents and adult children understand the behavioral work their loved one is doing. Not mandatory, but available when it supports progress. The program includes group and individual therapy, dietary guidance, cooking classes and movement education in one intensive outpatient format. Serving clients in San Antonio and virtual across Texas. Learn more at bariatriccounselingcenter.com."
-                  }
-                },
-                "on_image": [
-                  "Family engagement is part of the work",
-                  "Not mandatory, but there when it helps",
-                  "Support without monitoring",
-                  "Care instead of control",
-                  "San Antonio and virtual across Texas",
-                  "bariatriccounselingcenter.com"
-                ],
-                "alt_text": "Carousel post about family engagement services at Bariatric Counseling Center in San Antonio, Texas.",
-                "why_now": "Week before Thanksgiving, families gathering, timing for family dynamics content.",
-                "asset": {
-                  "format": "carousel",
-                  "kind": "carousel",
-                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
-                },
-                "sheet_tab": "November Content Calendar",
-                "replaces_row": null,
-                "replaces_tab": null,
-                "date_platforms": "Mon 11/16: FB, IG",
-                "postiz_mode": "schedule",
-                "needs_rewrite": []
-              },
-              "source": "social-plan",
-              "status": "built",
-              "created": "2026-09-24T05:34:08",
-              "decided": "2026-10-21T07:39:06",
-              "note": "in the draft to Todd 2026-10-21; waiting for his OK (sheet box or reply)",
-              "result": {
-                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\337fc6aea8-mon-11-16-eating-at-one-table-again.json",
-                "sheet": "November Content Calendar!17",
-                "draft": " Social posts to approve: week of October 26",
-                "asset": "social/plan/cards/render/png/nov16-table-01-feed.png",
-                "built": "2026-10-21",
-                "drafted": "2026-10-21"
-              },
-              "check": {
-                "at": "2026-10-20T09:16:50",
-                "level": "ok",
-                "text": "Slot is free; 27 days of notice."
-              }
-            },
             {
               "id": "7a78357dd4",
               "kind": "social",
@@ -17765,76 +17695,6 @@
           ],
           "social_undrafted": [],
           "social_with_todd": [
-            {
-              "id": "337fc6aea8",
-              "kind": "social",
-              "key": "social:2026-11-16:FB+IG",
-              "title": "Mon 11/16: Eating at one table again",
-              "why": "November is not planned yet; this keeps the FB/IG cadence going",
-              "payload": {
-                "date": "2026-11-16",
-                "weekday": "Mon",
-                "times": "FB 10:30 AM, IG 12:15 PM",
-                "platforms": [
-                  "FB",
-                  "IG"
-                ],
-                "type": "Education",
-                "pillar": "Education",
-                "format": "carousel",
-                "title": "Mon 11/16: Eating at one table again",
-                "purpose": "Family Engagement: how the program brings the people around a client into the work, gently.",
-                "observance": null,
-                "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
-                "captions": {
-                  "FB": "Family engagement in behavioral healthcare for obesity\n\nAt the Bariatric Counseling Center, family engagement is part of the work. Not every session, not mandatory, but available when it helps.\n\nA spouse learning how to support without monitoring. A parent understanding the difference between care and control. Adult children finding new ways to talk about food at gatherings.\n\nFamily sessions happen when a client asks, or when a counselor suggests it might help move something forward. The people around you don't need to be experts. They just need to understand what you're working on.\n\nWe provide group and individual therapy, dietary guidance, cooking classes and movement education in a unique, all-inclusive format. One program, not four. Serving clients in San Antonio and virtual across Texas.\n\nLink in the first comment.",
-                  "IG": "family support for weight loss and behavioral health\n\nFamily engagement is part of the program at the Bariatric Counseling Center. Not every session, not mandatory, but there when it matters.\n\nA spouse learning to support without hovering. A parent shifting from control to care. Adult children finding better ways to navigate holiday meals together.\n\nThese sessions happen when a client requests them, or when a counselor sees an opening. The goal is simple. Help the people around you understand the work you're doing, so home becomes easier, not harder.\n\nWe offer group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #SanAntonio",
-                  "YT": {
-                    "title": "Family Engagement in Behavioral Treatment for Obesity",
-                    "description": "Family engagement is part of the comprehensive behavioral healthcare at Bariatric Counseling Center. Sessions help spouses, parents and adult children understand the behavioral work their loved one is doing. Not mandatory, but available when it supports progress. The program includes group and individual therapy, dietary guidance, cooking classes and movement education in one intensive outpatient format. Serving clients in San Antonio and virtual across Texas. Learn more at bariatriccounselingcenter.com."
-                  }
-                },
-                "on_image": [
-                  "Family engagement is part of the work",
-                  "Not mandatory, but there when it helps",
-                  "Support without monitoring",
-                  "Care instead of control",
-                  "San Antonio and virtual across Texas",
-                  "bariatriccounselingcenter.com"
-                ],
-                "alt_text": "Carousel post about family engagement services at Bariatric Counseling Center in San Antonio, Texas.",
-                "why_now": "Week before Thanksgiving, families gathering, timing for family dynamics content.",
-                "asset": {
-                  "format": "carousel",
-                  "kind": "carousel",
-                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
-                },
-                "sheet_tab": "November Content Calendar",
-                "replaces_row": null,
-                "replaces_tab": null,
-                "date_platforms": "Mon 11/16: FB, IG",
-                "postiz_mode": "schedule",
-                "needs_rewrite": []
-              },
-              "source": "social-plan",
-              "status": "built",
-              "created": "2026-09-24T05:34:08",
-              "decided": "2026-10-21T07:39:06",
-              "note": "in the draft to Todd 2026-10-21; waiting for his OK (sheet box or reply)",
-              "result": {
-                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\337fc6aea8-mon-11-16-eating-at-one-table-again.json",
-                "sheet": "November Content Calendar!17",
-                "draft": " Social posts to approve: week of October 26",
-                "asset": "social/plan/cards/render/png/nov16-table-01-feed.png",
-                "built": "2026-10-21",
-                "drafted": "2026-10-21"
-              },
-              "check": {
-                "at": "2026-10-20T09:16:50",
-                "level": "ok",
-                "text": "Slot is free; 27 days of notice."
-              }
-            },
             {
               "id": "7a78357dd4",
               "kind": "social",
@@ -18539,6 +18399,76 @@
                 "at": "2026-10-20T09:16:50",
                 "level": "ok",
                 "text": "Slot is free; 23 days of notice."
+              }
+            },
+            {
+              "id": "337fc6aea8",
+              "kind": "social",
+              "key": "social:2026-11-16:FB+IG",
+              "title": "Mon 11/16: Eating at one table again",
+              "why": "November is not planned yet; this keeps the FB/IG cadence going",
+              "payload": {
+                "date": "2026-11-16",
+                "weekday": "Mon",
+                "times": "FB 10:30 AM, IG 12:15 PM",
+                "platforms": [
+                  "FB",
+                  "IG"
+                ],
+                "type": "Education",
+                "pillar": "Education",
+                "format": "carousel",
+                "title": "Mon 11/16: Eating at one table again",
+                "purpose": "Family Engagement: how the program brings the people around a client into the work, gently.",
+                "observance": null,
+                "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+                "captions": {
+                  "FB": "Family engagement in behavioral healthcare for obesity\n\nAt the Bariatric Counseling Center, family engagement is part of the work. Not every session, not mandatory, but available when it helps.\n\nA spouse learning how to support without monitoring. A parent understanding the difference between care and control. Adult children finding new ways to talk about food at gatherings.\n\nFamily sessions happen when a client asks, or when a counselor suggests it might help move something forward. The people around you don't need to be experts. They just need to understand what you're working on.\n\nWe provide group and individual therapy, dietary guidance, cooking classes and movement education in a unique, all-inclusive format. One program, not four. Serving clients in San Antonio and virtual across Texas.\n\nLink in the first comment.",
+                  "IG": "family support for weight loss and behavioral health\n\nFamily engagement is part of the program at the Bariatric Counseling Center. Not every session, not mandatory, but there when it matters.\n\nA spouse learning to support without hovering. A parent shifting from control to care. Adult children finding better ways to navigate holiday meals together.\n\nThese sessions happen when a client requests them, or when a counselor sees an opening. The goal is simple. Help the people around you understand the work you're doing, so home becomes easier, not harder.\n\nWe offer group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #SanAntonio",
+                  "YT": {
+                    "title": "Family Engagement in Behavioral Treatment for Obesity",
+                    "description": "Family engagement is part of the comprehensive behavioral healthcare at Bariatric Counseling Center. Sessions help spouses, parents and adult children understand the behavioral work their loved one is doing. Not mandatory, but available when it supports progress. The program includes group and individual therapy, dietary guidance, cooking classes and movement education in one intensive outpatient format. Serving clients in San Antonio and virtual across Texas. Learn more at bariatriccounselingcenter.com."
+                  }
+                },
+                "on_image": [
+                  "Family engagement is part of the work",
+                  "Not mandatory, but there when it helps",
+                  "Support without monitoring",
+                  "Care instead of control",
+                  "San Antonio and virtual across Texas",
+                  "bariatriccounselingcenter.com"
+                ],
+                "alt_text": "Carousel post about family engagement services at Bariatric Counseling Center in San Antonio, Texas.",
+                "why_now": "Week before Thanksgiving, families gathering, timing for family dynamics content.",
+                "asset": {
+                  "format": "carousel",
+                  "kind": "carousel",
+                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+                },
+                "sheet_tab": "November Content Calendar",
+                "replaces_row": null,
+                "replaces_tab": null,
+                "date_platforms": "Mon 11/16: FB, IG",
+                "postiz_mode": "schedule",
+                "needs_rewrite": []
+              },
+              "source": "social-plan",
+              "status": "go",
+              "created": "2026-09-24T05:34:08",
+              "decided": "2026-11-13T07:00:28",
+              "note": "Todd OK (silence) 2026-11-13: no reply by 3 days before; drafted 2026-10-21 (26 days notice); Todd's rule: silence is a go",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\337fc6aea8-mon-11-16-eating-at-one-table-again.json",
+                "sheet": "November Content Calendar!17",
+                "draft": " Social posts to approve: week of October 26",
+                "asset": "social/plan/cards/render/png/nov16-table-01-feed.png",
+                "built": "2026-10-21",
+                "drafted": "2026-10-21"
+              },
+              "check": {
+                "at": "2026-10-20T09:16:50",
+                "level": "ok",
+                "text": "Slot is free; 27 days of notice."
               }
             }
           ],
@@ -23734,13 +23664,13 @@
       "model": {
         "connected": true,
         "data": {
-          "fetched": "2026-11-11",
+          "fetched": "2026-11-13",
           "site": "https://www.bariatriccounselingcenter.com/",
           "window_days": 28,
           "errors": [],
           "summary": {
-            "clicks": 2,
-            "impressions": 725,
+            "clicks": 1,
+            "impressions": 731,
             "avg_position": 5.0
           },
           "top_queries": [
@@ -23757,13 +23687,13 @@
               "position": 3.0
             },
             {
-              "query": "am i mentally ready for gastric bypass surgery",
+              "query": "emotionally preparing for bariatric surgery",
               "clicks": 1,
               "impressions": 1,
               "position": 1.0
             },
             {
-              "query": "emotionally preparing for bariatric surgery",
+              "query": "am i mentally ready for gastric bypass surgery",
               "clicks": 1,
               "impressions": 1,
               "position": 1.0
@@ -23811,16 +23741,16 @@
               "position": 7.0
             },
             {
-              "query": "bcc counseling",
-              "clicks": 0,
-              "impressions": 3,
-              "position": 2.0
-            },
-            {
               "query": "will staying hydrated help me control my weight",
               "clicks": 0,
               "impressions": 3,
               "position": 4.0
+            },
+            {
+              "query": "bcc counseling",
+              "clicks": 0,
+              "impressions": 3,
+              "position": 2.0
             },
             {
               "query": "losing weight and dehydration",
@@ -23892,12 +23822,12 @@
               "impressions": 2
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/eating-disorders/emotional-eating-vs-disordered-eating-how-do-you-know-the-difference/",
+              "page": "https://www.bariatriccounselingcenter.com/bariatric-therapist-near-me/",
               "clicks": 0,
               "impressions": 2
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/bariatric-therapist-near-me/",
+              "page": "https://www.bariatriccounselingcenter.com/eating-disorders/emotional-eating-vs-disordered-eating-how-do-you-know-the-difference/",
               "clicks": 0,
               "impressions": 2
             },
@@ -23907,22 +23837,12 @@
               "impressions": 1
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/eating-disorder-counseling-in-san-antonio-tx/",
+              "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
               "clicks": 0,
               "impressions": 1
             }
           ],
           "daily": [
-            {
-              "date": "2026-10-14",
-              "clicks": 1,
-              "impressions": 33
-            },
-            {
-              "date": "2026-10-15",
-              "clicks": 0,
-              "impressions": 23
-            },
             {
               "date": "2026-10-16",
               "clicks": 0,
@@ -24042,12 +23962,22 @@
               "date": "2026-11-08",
               "clicks": 0,
               "impressions": 21
+            },
+            {
+              "date": "2026-11-09",
+              "clicks": 0,
+              "impressions": 31
+            },
+            {
+              "date": "2026-11-10",
+              "clicks": 0,
+              "impressions": 31
             }
           ],
           "crawl": {
-            "as_of": "2026-11-03",
-            "crawl_errors": 2,
-            "indexed_pages": 258,
+            "as_of": "2026-11-07",
+            "crawl_errors": 5,
+            "indexed_pages": 255,
             "crawled_pages": 51
           }
         }
@@ -32769,5 +32699,5 @@
     }
   ],
   "snapshot_count": 49,
-  "generated_at": "2026-11-12T14:26:20.053085Z"
+  "generated_at": "2026-11-13T15:27:47.382348Z"
 }
