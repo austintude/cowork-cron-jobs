@@ -12417,7 +12417,7 @@
             "action": "Action item",
             "asset": "Asset revision"
           },
-          "handoff": 63,
+          "handoff": 64,
           "top": [
             "Social post: Re-book: IG Wed 11/04, Stress eating at night\n\nA long day doesn't ma (failed in Postiz)",
             "Content block: AI Overview answer for \"eating disorder therapist san antonio\" on /eating-disorder-therapi"
@@ -15196,11 +15196,11 @@
           "applied": 71,
           "placed": 43,
           "written": 6,
-          "go": 7,
+          "go": 8,
           "approved": 56,
-          "built": 4,
           "resolved": 15,
           "expired": 13,
+          "built": 3,
           "needs": 1,
           "pending": 62
         },
@@ -17236,7 +17236,7 @@
                   ],
                   "state": "waiting",
                   "state_text": "Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.",
-                  "checked_at": "2026-11-13 07:00"
+                  "checked_at": "2026-11-14 07:00"
                 }
               }
             }
@@ -17417,75 +17417,6 @@
             }
           ],
           "social_built": [
-            {
-              "id": "7a78357dd4",
-              "kind": "social",
-              "key": "social:2026-11-17:LI+GBP",
-              "title": "Tue 11/17: Referring providers: behavioral care alongside medical care",
-              "why": "World Diabetes Day (Nov 14, posted the following Tuesday) falls in this week; mentioned once, not the whole post",
-              "payload": {
-                "date": "2026-11-17",
-                "weekday": "Tue",
-                "times": "LI 11:00 AM, GBP 9:00 AM",
-                "platforms": [
-                  "LI",
-                  "GBP"
-                ],
-                "type": "Referring Providers: Document Post",
-                "pillar": "Referring providers",
-                "format": "document",
-                "title": "Tue 11/17: Referring providers: behavioral care alongside medical care",
-                "purpose": "For endocrinology and primary care: the behavioral half of obesity treatment, coordinated with the medical provider. LinkedIn document post.",
-                "observance": "World Diabetes Day (Nov 14, posted the following Tuesday)",
-                "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
-                "captions": {
-                  "LI": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Progress notes as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth",
-                  "GBP": "Behavioral treatment for obesity San Antonio. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. Our team includes a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, a registered nurse, and a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We coordinate care with referring medical providers and provide a detailed discharge summary of the patient's behavioral progress, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression. We accept most health insurances. San Antonio and virtual across Texas.",
-                  "YT": {
-                    "title": "Behavioral Treatment for Obesity | Provider Referrals",
-                    "description": "The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. Our team coordinates care with referring medical providers and provides detailed discharge summaries of patient progress. The program can be standalone behavioral treatment or in addition to bariatric surgery or weight loss medication. San Antonio and virtual across Texas."
-                  }
-                },
-                "on_image": [
-                  "Behavioral treatment for obesity",
-                  "Coordinated with your medical provider",
-                  "One program, not four",
-                  "San Antonio and virtual across Texas",
-                  "bariatriccounselingcenter.com"
-                ],
-                "alt_text": "Document outlining behavioral healthcare services for obesity treatment at Bariatric Counseling Center for referring medical providers.",
-                "why_now": "Posted the Tuesday following World Diabetes Day to reach providers considering comprehensive obesity care for their patients.",
-                "asset": {
-                  "format": "document",
-                  "kind": "linkedin-document",
-                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
-                },
-                "sheet_tab": "November Content Calendar",
-                "replaces_row": null,
-                "replaces_tab": null,
-                "date_platforms": "Tue 11/17: LI, GBP",
-                "postiz_mode": "schedule",
-                "needs_rewrite": []
-              },
-              "source": "social-plan",
-              "status": "built",
-              "created": "2026-09-22T09:58:59",
-              "decided": "2026-10-21T07:39:06",
-              "note": "in the draft to Todd 2026-10-21; waiting for his OK (sheet box or reply)",
-              "result": {
-                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\7a78357dd4-tue-11-17-referring-providers-behavioral-care-alongside-medi.json",
-                "sheet": "November Content Calendar!18",
-                "draft": " Social posts to approve: week of October 26",
-                "asset": "social/plan/cards/render/pdf/nov17-providers-linkedin-document.pdf",
-                "built": "2026-10-21",
-                "drafted": "2026-10-21"
-              },
-              "check": {
-                "at": "2026-10-20T09:16:50",
-                "level": "ok",
-                "text": "Slot is free; 28 days of notice."
-              }
-            },
             {
               "id": "8c10f61a84",
               "kind": "social",
@@ -17695,75 +17626,6 @@
           ],
           "social_undrafted": [],
           "social_with_todd": [
-            {
-              "id": "7a78357dd4",
-              "kind": "social",
-              "key": "social:2026-11-17:LI+GBP",
-              "title": "Tue 11/17: Referring providers: behavioral care alongside medical care",
-              "why": "World Diabetes Day (Nov 14, posted the following Tuesday) falls in this week; mentioned once, not the whole post",
-              "payload": {
-                "date": "2026-11-17",
-                "weekday": "Tue",
-                "times": "LI 11:00 AM, GBP 9:00 AM",
-                "platforms": [
-                  "LI",
-                  "GBP"
-                ],
-                "type": "Referring Providers: Document Post",
-                "pillar": "Referring providers",
-                "format": "document",
-                "title": "Tue 11/17: Referring providers: behavioral care alongside medical care",
-                "purpose": "For endocrinology and primary care: the behavioral half of obesity treatment, coordinated with the medical provider. LinkedIn document post.",
-                "observance": "World Diabetes Day (Nov 14, posted the following Tuesday)",
-                "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
-                "captions": {
-                  "LI": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Progress notes as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth",
-                  "GBP": "Behavioral treatment for obesity San Antonio. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. Our team includes a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, a registered nurse, and a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We coordinate care with referring medical providers and provide a detailed discharge summary of the patient's behavioral progress, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression. We accept most health insurances. San Antonio and virtual across Texas.",
-                  "YT": {
-                    "title": "Behavioral Treatment for Obesity | Provider Referrals",
-                    "description": "The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. Our team coordinates care with referring medical providers and provides detailed discharge summaries of patient progress. The program can be standalone behavioral treatment or in addition to bariatric surgery or weight loss medication. San Antonio and virtual across Texas."
-                  }
-                },
-                "on_image": [
-                  "Behavioral treatment for obesity",
-                  "Coordinated with your medical provider",
-                  "One program, not four",
-                  "San Antonio and virtual across Texas",
-                  "bariatriccounselingcenter.com"
-                ],
-                "alt_text": "Document outlining behavioral healthcare services for obesity treatment at Bariatric Counseling Center for referring medical providers.",
-                "why_now": "Posted the Tuesday following World Diabetes Day to reach providers considering comprehensive obesity care for their patients.",
-                "asset": {
-                  "format": "document",
-                  "kind": "linkedin-document",
-                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
-                },
-                "sheet_tab": "November Content Calendar",
-                "replaces_row": null,
-                "replaces_tab": null,
-                "date_platforms": "Tue 11/17: LI, GBP",
-                "postiz_mode": "schedule",
-                "needs_rewrite": []
-              },
-              "source": "social-plan",
-              "status": "built",
-              "created": "2026-09-22T09:58:59",
-              "decided": "2026-10-21T07:39:06",
-              "note": "in the draft to Todd 2026-10-21; waiting for his OK (sheet box or reply)",
-              "result": {
-                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\7a78357dd4-tue-11-17-referring-providers-behavioral-care-alongside-medi.json",
-                "sheet": "November Content Calendar!18",
-                "draft": " Social posts to approve: week of October 26",
-                "asset": "social/plan/cards/render/pdf/nov17-providers-linkedin-document.pdf",
-                "built": "2026-10-21",
-                "drafted": "2026-10-21"
-              },
-              "check": {
-                "at": "2026-10-20T09:16:50",
-                "level": "ok",
-                "text": "Slot is free; 28 days of notice."
-              }
-            },
             {
               "id": "8c10f61a84",
               "kind": "social",
@@ -18470,6 +18332,75 @@
                 "level": "ok",
                 "text": "Slot is free; 27 days of notice."
               }
+            },
+            {
+              "id": "7a78357dd4",
+              "kind": "social",
+              "key": "social:2026-11-17:LI+GBP",
+              "title": "Tue 11/17: Referring providers: behavioral care alongside medical care",
+              "why": "World Diabetes Day (Nov 14, posted the following Tuesday) falls in this week; mentioned once, not the whole post",
+              "payload": {
+                "date": "2026-11-17",
+                "weekday": "Tue",
+                "times": "LI 11:00 AM, GBP 9:00 AM",
+                "platforms": [
+                  "LI",
+                  "GBP"
+                ],
+                "type": "Referring Providers: Document Post",
+                "pillar": "Referring providers",
+                "format": "document",
+                "title": "Tue 11/17: Referring providers: behavioral care alongside medical care",
+                "purpose": "For endocrinology and primary care: the behavioral half of obesity treatment, coordinated with the medical provider. LinkedIn document post.",
+                "observance": "World Diabetes Day (Nov 14, posted the following Tuesday)",
+                "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+                "captions": {
+                  "LI": "Many patients receiving medical treatment for obesity benefit from behavioral support alongside their care. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Progress notes as requested. We accept most health insurances. Our Director of Admissions is Leloni Gonzales: lgonzales@bccsanantonio.com and 210-634-2200. San Antonio and virtual across Texas. #BehavioralHealth",
+                  "GBP": "Behavioral treatment for obesity San Antonio. The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. Our team includes a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, a registered nurse, and a professional chef. The program can be standalone behavioral treatment for obesity, or in addition to bariatric surgery or weight loss medication that patients receive from their medical providers. We coordinate care with referring medical providers and provide a detailed discharge summary of the patient's behavioral progress, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression. We accept most health insurances. San Antonio and virtual across Texas.",
+                  "YT": {
+                    "title": "Behavioral Treatment for Obesity | Provider Referrals",
+                    "description": "The Bariatric Counseling Center is a behavioral health facility focused exclusively on the behavioral treatment of obesity. Our team coordinates care with referring medical providers and provides detailed discharge summaries of patient progress. The program can be standalone behavioral treatment or in addition to bariatric surgery or weight loss medication. San Antonio and virtual across Texas."
+                  }
+                },
+                "on_image": [
+                  "Behavioral treatment for obesity",
+                  "Coordinated with your medical provider",
+                  "One program, not four",
+                  "San Antonio and virtual across Texas",
+                  "bariatriccounselingcenter.com"
+                ],
+                "alt_text": "Document outlining behavioral healthcare services for obesity treatment at Bariatric Counseling Center for referring medical providers.",
+                "why_now": "Posted the Tuesday following World Diabetes Day to reach providers considering comprehensive obesity care for their patients.",
+                "asset": {
+                  "format": "document",
+                  "kind": "linkedin-document",
+                  "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+                },
+                "sheet_tab": "November Content Calendar",
+                "replaces_row": null,
+                "replaces_tab": null,
+                "date_platforms": "Tue 11/17: LI, GBP",
+                "postiz_mode": "schedule",
+                "needs_rewrite": []
+              },
+              "source": "social-plan",
+              "status": "go",
+              "created": "2026-09-22T09:58:59",
+              "decided": "2026-11-14T07:00:17",
+              "note": "Todd OK (silence) 2026-11-14: no reply by 3 days before; drafted 2026-10-21 (27 days notice); Todd's rule: silence is a go",
+              "result": {
+                "file": "C:\\Users\\danie\\Documents\\Claude\\Projects\\cron-jobs\\bariatric-counseling-center\\review-queue\\approved-social\\7a78357dd4-tue-11-17-referring-providers-behavioral-care-alongside-medi.json",
+                "sheet": "November Content Calendar!18",
+                "draft": " Social posts to approve: week of October 26",
+                "asset": "social/plan/cards/render/pdf/nov17-providers-linkedin-document.pdf",
+                "built": "2026-10-21",
+                "drafted": "2026-10-21"
+              },
+              "check": {
+                "at": "2026-10-20T09:16:50",
+                "level": "ok",
+                "text": "Slot is free; 28 days of notice."
+              }
             }
           ],
           "todd": {
@@ -18784,75 +18715,6 @@
               "at": "2026-11-11T13:44:09",
               "level": "done",
               "text": "Its date (2026-11-10) has passed."
-            }
-          },
-          {
-            "id": "f4fff6b7eb",
-            "kind": "social",
-            "key": "social:2026-11-05:FB+IG+YT",
-            "title": "Thu 11/5: alumni clip, Kim K. (learned to trust myself)",
-            "why": "Tue/Thu 7 PM is where the alumni clips ran in September; nothing is planned there",
-            "payload": {
-              "date": "2026-11-05",
-              "weekday": "Thu",
-              "times": "7:00 PM",
-              "platforms": [
-                "FB",
-                "IG",
-                "YT"
-              ],
-              "type": "Alumni Story Clip",
-              "pillar": "Alumni clip",
-              "format": "clip",
-              "title": "Thu 11/5: alumni clip, Kim K. (learned to trust myself)",
-              "purpose": "Finished 9:16 clip kim-clip6-9x16_learned-to-trust-myself_COVERED.mp4 (Kim K., BCC Alumna) from the CURRENT folder. Cover card and the BCC end card are already on the file; no further editing. LinkedIn takes the same 9:16 file the next morning.",
-              "observance": null,
-              "cta_page": "https://www.bariatriccounselingcenter.com/testimonials/",
-              "captions": {
-                "FB": "Recovery means learning to trust yourself again. Kim K., BCC Alumna, shares how the Bariatric Counseling Center helped her rebuild that trust through group and individual therapy, dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas. Link in the first comment.",
-                "IG": "Learning to trust yourself in recovery\n\nKim K., BCC Alumna, shares how the program at the Bariatric Counseling Center helped her learn to trust herself again. Watch Kim in her own words.\n\nWe provide group and individual therapy, dietary guidance, cooking classes and movement education in a unique, all-inclusive format. One program, not four.\n\nSan Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #MindfulRecovery",
-                "YT": {
-                  "title": "Learning to Trust Yourself in Recovery | Kim K., BCC Alumna",
-                  "description": "Kim K., BCC Alumna, shares how the Bariatric Counseling Center helped her learn to trust herself again. The Bariatric Counseling Center provides group and individual therapy, dietary guidance, cooking classes and movement education in a unique, all-inclusive format. One program, not four. San Antonio and virtual across Texas."
-                }
-              },
-              "on_image": [
-                "Learning to trust yourself",
-                "Kim K., BCC Alumna",
-                "One program, not four",
-                "San Antonio and virtual statewide",
-                "bariatriccounselingcenter.com"
-              ],
-              "alt_text": "Video testimonial from Kim K., BCC Alumna, discussing learning to trust herself in recovery.",
-              "why_now": "Alumni testimonial highlighting the trust-building aspect of comprehensive behavioral treatment for obesity.",
-              "asset": {
-                "format": "clip",
-                "kind": "clip",
-                "file_9x16": "Videos/Ford/CURRENT-portrait-clips-9x16/kim-clip6-9x16_learned-to-trust-myself_COVERED.mp4",
-                "file_16x9": null,
-                "folder_rule": "only files in Videos/Ford/CURRENT-portrait-clips-9x16 are finished; never substitute a clip from another folder",
-                "alumnus": "Kim K.",
-                "honorific": "BCC Alumna",
-                "topic": "learned to trust myself",
-                "ran_on_sheet_before": false
-              },
-              "sheet_tab": "November Content Calendar",
-              "replaces_row": null,
-              "replaces_tab": null,
-              "date_platforms": "Thu 11/5: FB, IG, YT",
-              "postiz_mode": "schedule",
-              "needs_rewrite": []
-            },
-            "source": "social-plan",
-            "status": "expired",
-            "created": "2026-10-22T05:27:38",
-            "decided": "2026-11-06T11:21:38",
-            "note": "recheck 2026-11-06: Its date (2026-11-05) has passed.",
-            "result": null,
-            "check": {
-              "at": "2026-11-06T11:21:38",
-              "level": "done",
-              "text": "Its date (2026-11-05) has passed."
             }
           }
         ]
@@ -23664,22 +23526,16 @@
       "model": {
         "connected": true,
         "data": {
-          "fetched": "2026-11-13",
+          "fetched": "2026-11-14",
           "site": "https://www.bariatriccounselingcenter.com/",
           "window_days": 28,
           "errors": [],
           "summary": {
             "clicks": 1,
-            "impressions": 731,
-            "avg_position": 5.0
+            "impressions": 749,
+            "avg_position": 4.8
           },
           "top_queries": [
-            {
-              "query": "the bariatric counseling center intensive out patient program",
-              "clicks": 2,
-              "impressions": 1,
-              "position": 1.0
-            },
             {
               "query": "bariatric counseling center of san antonio zoom link",
               "clicks": 1,
@@ -23687,21 +23543,9 @@
               "position": 3.0
             },
             {
-              "query": "emotionally preparing for bariatric surgery",
-              "clicks": 1,
-              "impressions": 1,
-              "position": 1.0
-            },
-            {
-              "query": "am i mentally ready for gastric bypass surgery",
-              "clicks": 1,
-              "impressions": 1,
-              "position": 1.0
-            },
-            {
               "query": "bcc",
               "clicks": 0,
-              "impressions": 26,
+              "impressions": 20,
               "position": 4.0
             },
             {
@@ -23717,22 +23561,10 @@
               "position": 4.0
             },
             {
-              "query": "dehydrating yourself is a good way to loss weight? true false",
-              "clicks": 0,
-              "impressions": 6,
-              "position": 8.0
-            },
-            {
               "query": "mentally preparing for gastric bypass",
               "clicks": 0,
               "impressions": 4,
               "position": 1.0
-            },
-            {
-              "query": "bariatric counceing center",
-              "clicks": 0,
-              "impressions": 4,
-              "position": 2.0
             },
             {
               "query": "why is psychological counseling important prior to bariatric surgery?#R##N##R##N##R##N#bariatric surgery requires behavior modification to make a commitment to a lifelong dietary change.#R##N##R##N#bariatric surgery requires a lifelong commitment to a daily exercise program.#R##N##R##N#bariatric surgery requires a significant period of preoperative dietary modification.#R##N##R##N#bariatric surgery requires a significant period of intense postoperative pain and lifestyle modification.",
@@ -23741,45 +23573,75 @@
               "position": 7.0
             },
             {
-              "query": "will staying hydrated help me control my weight",
+              "query": "bariatric counceing center",
               "clicks": 0,
-              "impressions": 3,
-              "position": 4.0
-            },
-            {
-              "query": "bcc counseling",
-              "clicks": 0,
-              "impressions": 3,
+              "impressions": 4,
               "position": 2.0
-            },
-            {
-              "query": "losing weight and dehydration",
-              "clicks": 0,
-              "impressions": 2,
-              "position": 8.0
             },
             {
               "query": "reddit can lack of fluids slow weight loss",
               "clicks": 0,
               "impressions": 2,
               "position": 9.0
+            },
+            {
+              "query": "can driking fluids cause weightloss",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 5.0
+            },
+            {
+              "query": "9618 suite 320 san ntonio tx 78240",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 2.0
+            },
+            {
+              "query": "dehydrating yourself is a good way to loss weight? group of answer choices true false",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 5.0
+            },
+            {
+              "query": "bcc san antonio",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 3.0
+            },
+            {
+              "query": "what%27s+better+olympic+or+manjaro",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 8.0
+            },
+            {
+              "query": "bcc san antinio",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 3.0
+            },
+            {
+              "query": "bcc:",
+              "clicks": 0,
+              "impressions": 2,
+              "position": 4.0
             }
           ],
           "top_pages": [
             {
               "page": "https://www.bariatriccounselingcenter.com/",
-              "clicks": 3,
-              "impressions": 41
-            },
-            {
-              "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/preparing-for-bariatric-surgery-a-mental-health-checklist/",
-              "clicks": 2,
-              "impressions": 13
+              "clicks": 1,
+              "impressions": 32
             },
             {
               "page": "https://www.bariatriccounselingcenter.com/healthy-living-2/why-hydration-is-essential-for-weight-loss-and-management/",
               "clicks": 0,
-              "impressions": 67
+              "impressions": 33
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/self-improvement/mental-health/preparing-for-bariatric-surgery-a-mental-health-checklist/",
+              "clicks": 0,
+              "impressions": 10
             },
             {
               "page": "https://www.bariatriccounselingcenter.com/weight-management-program-in-san-antonio-tx/",
@@ -23822,32 +23684,27 @@
               "impressions": 2
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/bariatric-therapist-near-me/",
-              "clicks": 0,
-              "impressions": 2
-            },
-            {
               "page": "https://www.bariatriccounselingcenter.com/eating-disorders/emotional-eating-vs-disordered-eating-how-do-you-know-the-difference/",
               "clicks": 0,
               "impressions": 2
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/weight-loss-journey/how-family-support-impacts-weight-loss-a-guide-for-loved-ones/",
+              "page": "https://www.bariatriccounselingcenter.com/bariatric-therapist-near-me/",
+              "clicks": 0,
+              "impressions": 2
+            },
+            {
+              "page": "https://www.bariatriccounselingcenter.com/weight-loss-counseling/how-psychotherapy-and-mental-health-counseling-support-sustainable-weight-loss/",
               "clicks": 0,
               "impressions": 1
             },
             {
-              "page": "https://www.bariatriccounselingcenter.com/bariatric-surgery-counseling-in-san-antonio-tx/",
+              "page": "https://www.bariatriccounselingcenter.com/author/shamilton/",
               "clicks": 0,
               "impressions": 1
             }
           ],
           "daily": [
-            {
-              "date": "2026-10-16",
-              "clicks": 0,
-              "impressions": 20
-            },
             {
               "date": "2026-10-17",
               "clicks": 0,
@@ -23972,13 +23829,18 @@
               "date": "2026-11-10",
               "clicks": 0,
               "impressions": 31
+            },
+            {
+              "date": "2026-11-11",
+              "clicks": 0,
+              "impressions": 38
             }
           ],
           "crawl": {
-            "as_of": "2026-11-07",
-            "crawl_errors": 5,
+            "as_of": "2026-11-09",
+            "crawl_errors": 14,
             "indexed_pages": 255,
-            "crawled_pages": 51
+            "crawled_pages": 46
           }
         }
       },
@@ -27966,14 +27828,14 @@
           }
         ],
         "log": [
-          "2026-11-06T11:25:57  nov-r26-20261106112551 | Date and platforms, Time, Purpose, FB caption, IG caption, LinkedIn ca: Education",
-          "2026-11-06T11:27:39  hook: edit on November Content Calendar row 25 col 7 by laustintransl8n@gmail.com",
           "2026-11-06T11:27:48  hook: edit on November Content Calendar row 25 col 8 by laustintransl8n@gmail.com",
           "2026-11-06T11:27:57  hook: edit on November Content Calendar row 25 col 9 by laustintransl8n@gmail.com",
           "2026-11-11T13:41:29  hook listener on 127.0.0.1:8788",
           "2026-11-11T13:42:01  hook listener on 127.0.0.1:8788",
           "2026-11-12T08:08:41  hook listener on 127.0.0.1:8788",
-          "2026-11-12T08:08:42  hook listener on 127.0.0.1:8788"
+          "2026-11-12T08:08:42  hook listener on 127.0.0.1:8788",
+          "2026-11-13T22:31:30  hook listener on 127.0.0.1:8788",
+          "2026-11-13T22:32:05  hook listener on 127.0.0.1:8788"
         ],
         "baselines": [
           "baseline-november.json",
@@ -32699,5 +32561,5 @@
     }
   ],
   "snapshot_count": 49,
-  "generated_at": "2026-11-13T15:27:47.382348Z"
+  "generated_at": "2026-11-14T22:46:39.692784Z"
 }
