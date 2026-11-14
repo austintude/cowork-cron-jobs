@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-11-13 09:27 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-11-14 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -278,16 +278,15 @@ Generated 2026-11-13 09:27 by queue_apply.py. Daniel approved these on the dashb
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/about/
   - SENT BACK: rewrite: sara: 11/11 is Veterans Day, rather have a post recognizing mental health needs of veterans that day and push back my post. I edited the text content directly on your email. I'm working on getting the quote from the alumna. (2026-11-05) (rebuild with this change, then a fresh draft to Todd)
 
-## Draft day: Wednesday. Today is Friday, not draft day: build only, no email to Todd.
+## Draft day: Wednesday. Today is Saturday, not draft day: build only, no email to Todd.
 
-## Social posts with Todd (4): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
+## Social posts with Todd (3): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
-- id `7a78357dd4`: **Tue 11/17: Referring providers: behavioral care alongside medical care** on 2026-11-17 (LI, GBP); sheet November Content Calendar!18; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `8c10f61a84`: **Wed 11/18: Alumni words: never made to feel judged** on 2026-11-18 (FB, IG); sheet November Content Calendar!19; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `3f9fded114`: **Thu 11/19: Virtual across Texas, on your calendar** on 2026-11-19 (LI); sheet November Content Calendar!20; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `018f9727b9`: **Mon 11/23: A diet ends. A plan does not.** on 2026-11-23 (FB, IG); sheet November Content Calendar!21; draft  Social posts to approve: week of October 26 (2026-10-21)
 
-## Social posts Todd has OK'd: book each one now, then --placed (7)
+## Social posts Todd has OK'd: book each one now, then --placed (8)
 
 - id `1b94c31012`: **Thu 10/22: alumni clip, Jessica B. (struggled my whole life)** on 2026-10-22 (FB, IG, YT) at 7:00 PM; postiz mode schedule; sheet October Content Calendar!35; asset Videos/Ford/CURRENT-portrait-clips-9x16/jessica-clip2-9x16_struggled-my-whole-life_COVERED.mp4; Todd: Todd OK (Daniel on the dashboard) 2026-10-29
   - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\1b94c31012-thu-10-22-alumni-clip-jessica-b-struggled-my-whole-life.json`
@@ -303,6 +302,8 @@ Generated 2026-11-13 09:27 by queue_apply.py. Daniel approved these on the dashb
   - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\3ac415f444-thu-11-12-q4-workload-and-the-holiday-calendar.json`
 - id `337fc6aea8`: **Mon 11/16: Eating at one table again** on 2026-11-16 (FB, IG) at FB 10:30 AM, IG 12:15 PM; postiz mode schedule; sheet November Content Calendar!17; asset social/plan/cards/render/png/nov16-table-01-feed.png; Todd: Todd OK (silence) 2026-11-13: no reply by 3 days before; drafted 2026-10-21 (26 days notice); Todd's rule: silence is a go
   - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\337fc6aea8-mon-11-16-eating-at-one-table-again.json`
+- id `7a78357dd4`: **Tue 11/17: Referring providers: behavioral care alongside medical care** on 2026-11-17 (LI, GBP) at LI 11:00 AM, GBP 9:00 AM; postiz mode schedule; sheet November Content Calendar!18; asset social/plan/cards/render/pdf/nov17-providers-linkedin-document.pdf; Todd: Todd OK (silence) 2026-11-14: no reply by 3 days before; drafted 2026-10-21 (27 days notice); Todd's rule: silence is a go
+  - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\7a78357dd4-tue-11-17-referring-providers-behavioral-care-alongside-medi.json`
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
