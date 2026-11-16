@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-11-15 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-11-16 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -278,14 +278,13 @@ Generated 2026-11-15 07:00 by queue_apply.py. Daniel approved these on the dashb
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/about/
   - SENT BACK: rewrite: sara: 11/11 is Veterans Day, rather have a post recognizing mental health needs of veterans that day and push back my post. I edited the text content directly on your email. I'm working on getting the quote from the alumna. (2026-11-05) (rebuild with this change, then a fresh draft to Todd)
 
-## Draft day: Wednesday. Today is Sunday, not draft day: build only, no email to Todd.
+## Draft day: Wednesday. Today is Monday, not draft day: build only, no email to Todd.
 
-## Social posts with Todd (2): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
+## Social posts with Todd (1): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
-- id `3f9fded114`: **Thu 11/19: Virtual across Texas, on your calendar** on 2026-11-19 (LI); sheet November Content Calendar!20; draft  Social posts to approve: week of October 26 (2026-10-21)
 - id `018f9727b9`: **Mon 11/23: A diet ends. A plan does not.** on 2026-11-23 (FB, IG); sheet November Content Calendar!21; draft  Social posts to approve: week of October 26 (2026-10-21)
 
-## Social posts Todd has OK'd: book each one now, then --placed (9)
+## Social posts Todd has OK'd: book each one now, then --placed (10)
 
 - id `1b94c31012`: **Thu 10/22: alumni clip, Jessica B. (struggled my whole life)** on 2026-10-22 (FB, IG, YT) at 7:00 PM; postiz mode schedule; sheet October Content Calendar!35; asset Videos/Ford/CURRENT-portrait-clips-9x16/jessica-clip2-9x16_struggled-my-whole-life_COVERED.mp4; Todd: Todd OK (Daniel on the dashboard) 2026-10-29
   - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\1b94c31012-thu-10-22-alumni-clip-jessica-b-struggled-my-whole-life.json`
@@ -305,6 +304,8 @@ Generated 2026-11-15 07:00 by queue_apply.py. Daniel approved these on the dashb
   - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\7a78357dd4-tue-11-17-referring-providers-behavioral-care-alongside-medi.json`
 - id `8c10f61a84`: **Wed 11/18: Alumni words: never made to feel judged** on 2026-11-18 (FB, IG) at FB 10:30 AM, IG 12:15 PM; postiz mode schedule; sheet November Content Calendar!19; asset social/plan/cards/render/png/nov18-samantha-01-feed.png; Todd: Todd OK (silence) 2026-11-15: no reply by 3 days before; drafted 2026-10-21 (28 days notice); Todd's rule: silence is a go
   - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\8c10f61a84-wed-11-18-alumni-words-never-made-to-feel-judged.json`
+- id `3f9fded114`: **Thu 11/19: Virtual across Texas, on your calendar** on 2026-11-19 (LI) at 9:30 AM; postiz mode schedule; sheet November Content Calendar!20; asset social/plan/cards/render/png/nov19-virtual-li-01-linkedin.png; Todd: Todd OK (silence) 2026-11-16: no reply by 3 days before; drafted 2026-10-21 (29 days notice); Todd's rule: silence is a go
+  - spec file: `C:\Users\danie\Documents\Claude\Projects\cron-jobs\bariatric-counseling-center\review-queue\approved-social\3f9fded114-thu-11-19-virtual-across-texas-on-your-calendar.json`
 
 ## Notes written, waiting for Daniel to read on the dashboard (6): not for Claude.
 - Partner link note: texasdigestive.com (channel form)
