@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-11-16",
+  "working": [
+    "Staff-Client eNews - November 2026 (Nov 15) lifted daily sessions +150.9% (27.5 baseline to 69.0), and Alumni eNews - November 2026 (Nov 13) lifted +148.2% (25.5 to 63.3). November sends are the strongest recent run.",
+    "Referring Partners eNews - November 2026 (Nov 10) lifted +96.1% with 45 Email-credited sessions in 3 days, and its 2.96% click-to-open beat the 1.38% of the Nov 15 Staff-Client send.",
+    "Open rates are well above the ~25-35% benchmark: 49.2% average across 100 campaigns, with the Nov 15 Staff-Client send at 49.45% and Alumni at 43.77%.",
+    "Organic Search is steady at 11,212 sessions (33.0% of 33,963), second only to Direct. Window sessions grew from 33,815 at the last run.",
+    "Alumni eNews - Day Of: October 2026 (Oct 21) lifted +90.0% with 39 Email-credited sessions, so day-of reminders can work."
+  ],
+  "not_working": [
+    "UTM leakage persists: the 100 sends in the window show 322 Email-credited sessions in their 3-day windows against 6,656 Direct, and Email is only 290 sessions (0.9%) of the window. The Nov 13 Alumni send had 40 Email vs 125 Direct.",
+    "Several October sends show no lift: Staff-Client Oct (-35.4%, 11 Email vs 28 Direct), Alumni Reminder Oct 16 (-29.0%, 0 Email sessions), Alumni Oct 11 (-20.3%, 0 Email sessions), Referring Partners Oct (-10.1%).",
+    "Click rates are low even with strong opens: 1.65% average click rate, and the Nov 15 Staff-Client send got only 0.68% clicks (1.38% click-to-open) despite a 49.45% open rate.",
+    "Organic Social is 5.1% (1,716 sessions) and Paid Social 2.4% (827), so social is not a meaningful traffic driver yet.",
+    "GSC is weak and slipping: impression-weighted position moved from 16.94 to 19.58, with 7 clicks on 2,341 impressions (previous run: 11 clicks on 2,792 impressions)."
+  ],
+  "do_next": [
+    "Add utm_source=constantcontact&utm_medium=email (plus a utm_campaign per send) to every link in newsletter templates so GA4 credits Email instead of Direct. Test with the December sends and compare Email vs Direct 3-day sessions.",
+    "Repeat the November pattern: the Nov 10-15 sends (Tue, Fri, Sun) all lifted roughly 96-151%, while the October Sun/Tue sends were flat or negative. Content and topic mix, not send day alone, likely matter, so review the November issue topics and reuse them.",
+    "Raise click-through on the Staff-Client eNews (0.68% CTR): put one clear call-to-action near the top and fewer links, since opens are already ~49%.",
+    "Keep the Day Of reminder format for Alumni events (Oct 21 +90.0%), but skip generic reminders that showed 0 Email sessions (Oct 11, Oct 16).",
+    "SEO: weighted position slipped to 19.58 with only 7 clicks. Refresh titles and meta descriptions on the top impression pages, and check the 40 discovery-candidate queries for quick wins."
+  ],
+  "summary": "Direct (51.1%) and Organic Search (33.0%) drive 33,963 window sessions, and the November sends lifted daily sessions 96-151% after a flat October. Email still shows only 322 credited sessions vs 6,656 Direct after sends (missing UTM tags), and GSC position slipped from 16.94 to 19.58."
+}

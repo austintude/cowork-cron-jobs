@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-12T09:12:09",
+  "generated_at": "2026-11-16T04:04:20",
   "window_days": 1100,
-  "timeline_start": "2023-11-08",
-  "timeline_end": "2026-11-12",
+  "timeline_start": "2023-11-12",
+  "timeline_end": "2026-11-16",
   "channels": [
     "AI Assistant",
     "Cross-network",
@@ -21,41 +21,6 @@
     "Unassigned"
   ],
   "timeline": [
-    {
-      "date": "2023-11-08",
-      "total": 33,
-      "channels": {
-        "Direct": 20,
-        "Organic Search": 11,
-        "Referral": 2
-      }
-    },
-    {
-      "date": "2023-11-09",
-      "total": 23,
-      "channels": {
-        "Organic Search": 12,
-        "Direct": 11
-      }
-    },
-    {
-      "date": "2023-11-10",
-      "total": 16,
-      "channels": {
-        "Organic Search": 8,
-        "Direct": 6,
-        "Organic Social": 2
-      }
-    },
-    {
-      "date": "2023-11-11",
-      "total": 9,
-      "channels": {
-        "Direct": 4,
-        "Organic Search": 4,
-        "Referral": 1
-      }
-    },
     {
       "date": "2023-11-12",
       "total": 9,
@@ -9875,31 +9840,71 @@
     },
     {
       "date": "2026-11-12",
-      "total": 1,
+      "total": 33,
       "channels": {
-        "Organic Search": 1
+        "Direct": 18,
+        "Organic Search": 10,
+        "Email": 4,
+        "Referral": 1
+      }
+    },
+    {
+      "date": "2026-11-13",
+      "total": 28,
+      "channels": {
+        "Organic Search": 13,
+        "Direct": 10,
+        "Email": 4,
+        "Referral": 1
+      }
+    },
+    {
+      "date": "2026-11-14",
+      "total": 31,
+      "channels": {
+        "Direct": 27,
+        "Organic Search": 3,
+        "Email": 1
+      }
+    },
+    {
+      "date": "2026-11-15",
+      "total": 131,
+      "channels": {
+        "Direct": 88,
+        "Email": 35,
+        "Unassigned": 6,
+        "Organic Search": 2
+      }
+    },
+    {
+      "date": "2026-11-16",
+      "total": 7,
+      "channels": {
+        "Direct": 6,
+        "Email": 1
       }
     }
   ],
   "channel_mix": [
     {
       "channel": "Direct",
-      "sessions": 17235,
-      "pct": 51.0
+      "sessions": 17343,
+      "pct": 51.1
     },
     {
       "channel": "Organic Search",
-      "sessions": 11220,
-      "pct": 33.2
+      "sessions": 11212,
+      "pct": 33.0
     },
     {
       "channel": "Organic Social",
-      "sessions": 1718,
+      "sessions": 1716,
       "pct": 5.1
     },
     {
       "channel": "Referral",
-      "sessions": 1142,
+      "sessions": 1141,
       "pct": 3.4
     },
     {
@@ -9913,14 +9918,14 @@
       "pct": 2.4
     },
     {
-      "channel": "Unassigned",
-      "sessions": 264,
-      "pct": 0.8
+      "channel": "Email",
+      "sessions": 290,
+      "pct": 0.9
     },
     {
-      "channel": "Email",
-      "sessions": 245,
-      "pct": 0.7
+      "channel": "Unassigned",
+      "sessions": 270,
+      "pct": 0.8
     },
     {
       "channel": "Display",
@@ -9958,35 +9963,49 @@
       "pct": 0.0
     }
   ],
-  "window_total_sessions": 33815,
+  "window_total_sessions": 33963,
   "newsletters": [
     {
       "campaign_id": "10e5c716-80d5-4b3c-9aa7-d9c9b0dcb3b9",
       "name": "Staff-Client eNews - November 2026",
-      "send_date": "2026-11-10",
-      "open_rate": 40.26,
-      "click_rate": 0.51,
-      "click_to_open_rate": 1.26,
+      "send_date": "2026-11-15",
+      "open_rate": 49.45,
+      "click_rate": 0.68,
+      "click_to_open_rate": 1.38,
       "sends": 8077,
+      "baseline_daily_sessions": 27.5,
+      "spike_mean_daily_sessions": 69.0,
+      "lift_pct": 150.9,
+      "email_sessions_3d": 36,
+      "direct_sessions_3d": 94
+    },
+    {
+      "campaign_id": "0ff4f6e0-8526-4837-b570-8ef46ad7de7c",
+      "name": "Alumni eNews - November 2026",
+      "send_date": "2026-11-13",
+      "open_rate": 43.77,
+      "click_rate": 0.94,
+      "click_to_open_rate": 2.15,
+      "sends": 955,
       "baseline_daily_sessions": 25.5,
-      "spike_mean_daily_sessions": 39.3,
-      "lift_pct": 54.1,
-      "email_sessions_3d": 41,
-      "direct_sessions_3d": 48
+      "spike_mean_daily_sessions": 63.3,
+      "lift_pct": 148.2,
+      "email_sessions_3d": 40,
+      "direct_sessions_3d": 125
     },
     {
       "campaign_id": "4c82940f-3dca-4d16-ad3d-8d7875d185cb",
       "name": "Referring Partners eNews - November 2026",
       "send_date": "2026-11-10",
-      "open_rate": 24.09,
+      "open_rate": 24.67,
       "click_rate": 0.73,
-      "click_to_open_rate": 3.03,
+      "click_to_open_rate": 2.96,
       "sends": 685,
       "baseline_daily_sessions": 25.5,
-      "spike_mean_daily_sessions": 39.3,
-      "lift_pct": 54.1,
-      "email_sessions_3d": 41,
-      "direct_sessions_3d": 48
+      "spike_mean_daily_sessions": 50.0,
+      "lift_pct": 96.1,
+      "email_sessions_3d": 45,
+      "direct_sessions_3d": 66
     },
     {
       "campaign_id": "218a61d9-c79e-4bd8-83f5-2af288f0b5b6",
@@ -11345,20 +11364,6 @@
       "lift_pct": 24.6,
       "email_sessions_3d": 0,
       "direct_sessions_3d": 74
-    },
-    {
-      "campaign_id": "3cc68734-33d1-4c99-ba73-133e0b768a29",
-      "name": "Physician eNews - Fall eNewsletter (2)",
-      "send_date": "2023-11-22",
-      "open_rate": 24.31,
-      "click_rate": 1.74,
-      "click_to_open_rate": 7.14,
-      "sends": 288,
-      "baseline_daily_sessions": 22.0,
-      "spike_mean_daily_sessions": 37.0,
-      "lift_pct": 68.2,
-      "email_sessions_3d": 0,
-      "direct_sessions_3d": 21
     }
   ],
   "cc_campaigns": [
@@ -11366,16 +11371,31 @@
       "campaign_id": "10e5c716-80d5-4b3c-9aa7-d9c9b0dcb3b9",
       "name": "Staff-Client eNews - November 2026",
       "type": "Custom Code Email",
-      "last_sent_date": "2026-11-10T14:31:09.000Z",
+      "last_sent_date": "2026-11-15T21:30:45.000Z",
       "sends": 8077,
-      "opens": 3252,
-      "clicks": 41,
-      "bounces": 16,
-      "optouts": 15,
-      "open_rate": 40.26,
-      "click_rate": 0.51,
-      "click_to_open_rate": 1.26,
-      "bounce_rate": 0.2
+      "opens": 3994,
+      "clicks": 55,
+      "bounces": 24,
+      "optouts": 19,
+      "open_rate": 49.45,
+      "click_rate": 0.68,
+      "click_to_open_rate": 1.38,
+      "bounce_rate": 0.3
+    },
+    {
+      "campaign_id": "0ff4f6e0-8526-4837-b570-8ef46ad7de7c",
+      "name": "Alumni eNews - November 2026",
+      "type": "Custom Code Email",
+      "last_sent_date": "2026-11-13T15:04:44.000Z",
+      "sends": 955,
+      "opens": 418,
+      "clicks": 9,
+      "bounces": 0,
+      "optouts": 1,
+      "open_rate": 43.77,
+      "click_rate": 0.94,
+      "click_to_open_rate": 2.15,
+      "bounce_rate": 0.0
     },
     {
       "campaign_id": "4c82940f-3dca-4d16-ad3d-8d7875d185cb",
@@ -11383,14 +11403,14 @@
       "type": "Custom Code Email",
       "last_sent_date": "2026-11-10T14:30:42.000Z",
       "sends": 685,
-      "opens": 165,
+      "opens": 169,
       "clicks": 5,
-      "bounces": 5,
+      "bounces": 7,
       "optouts": 0,
-      "open_rate": 24.09,
+      "open_rate": 24.67,
       "click_rate": 0.73,
-      "click_to_open_rate": 3.03,
-      "bounce_rate": 0.73
+      "click_to_open_rate": 2.96,
+      "bounce_rate": 1.02
     },
     {
       "campaign_id": "218a61d9-c79e-4bd8-83f5-2af288f0b5b6",
@@ -12846,48 +12866,33 @@
       "click_rate": 2.96,
       "click_to_open_rate": 6.09,
       "bounce_rate": 1.85
-    },
-    {
-      "campaign_id": "3cc68734-33d1-4c99-ba73-133e0b768a29",
-      "name": "Physician eNews - Fall eNewsletter (2)",
-      "type": "Newsletter",
-      "last_sent_date": "2023-11-22T14:32:01.000Z",
-      "sends": 288,
-      "opens": 70,
-      "clicks": 5,
-      "bounces": 55,
-      "optouts": 1,
-      "open_rate": 24.31,
-      "click_rate": 1.74,
-      "click_to_open_rate": 7.14,
-      "bounce_rate": 19.1
     }
   ],
   "data_earliest": {
-    "ga4": "2023-11-08",
-    "cc": "2023-11-22",
-    "gsc": "2026-11-04"
+    "ga4": "2023-11-12",
+    "cc": "2023-11-28",
+    "gsc": "2026-11-08"
   },
   "cc_summary": {
     "n_campaigns": 100,
     "n_sent": 100,
-    "avg_open_rate": 48.95,
-    "avg_click_rate": 1.66,
-    "total_sends": 337446,
-    "most_recent_send": "2026-11-10T14:31:09.000Z"
+    "avg_open_rate": 49.24,
+    "avg_click_rate": 1.65,
+    "total_sends": 338113,
+    "most_recent_send": "2026-11-15T21:30:45.000Z"
   },
   "gsc_summary": {
     "total_queries": 500,
-    "total_pages": 79,
-    "total_clicks": 11,
-    "total_impressions": 2792,
-    "avg_position_impression_weighted": 16.94,
+    "total_pages": 83,
+    "total_clicks": 7,
+    "total_impressions": 2341,
+    "avg_position_impression_weighted": 19.58,
     "discovery_candidates_count": 40,
-    "tracked_keywords_with_data": 23
+    "tracked_keywords_with_data": 30
   },
   "gsc_window": {
-    "start": "2026-11-04",
-    "end": "2026-11-11",
+    "start": "2026-11-08",
+    "end": "2026-11-15",
     "days": 7
   },
   "data_sources": {
