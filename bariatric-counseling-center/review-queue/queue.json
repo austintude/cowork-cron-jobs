@@ -12289,6 +12289,63 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "9d32340427",
+   "kind": "social",
+   "key": "social:2026-12-15:LI+GBP",
+   "title": "Tue 12/15: Referring providers: who is the right referral",
+   "why": "December is not planned yet; this keeps the GBP/LI cadence going",
+   "payload": {
+    "date": "2026-12-15",
+    "weekday": "Tue",
+    "times": "LI 11:00 AM, GBP 9:00 AM",
+    "platforms": [
+     "LI",
+     "GBP"
+    ],
+    "type": "Referring Providers: Document Post",
+    "pillar": "Referring providers",
+    "format": "document",
+    "title": "Tue 12/15: Referring providers: who is the right referral",
+    "purpose": "Standalone behavioral treatment for obesity, or alongside bariatric surgery or weight loss medication. Pre and post bariatric patients in one bullet.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/refer-a-patient/",
+    "captions": {
+     "LI": "The Bariatric Counseling Center serves patients at every stage of their weight management journey. Our intensive outpatient program provides standalone behavioral treatment for obesity, or works alongside bariatric surgery or weight loss medication that patients receive from their medical providers. We support pre-surgical patients preparing for bariatric procedures, post-surgical patients navigating recovery, and patients on weight loss medications who need comprehensive behavioral support. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. Healthcare professionals in four disciplines. One program, not four. Our team coordinates care with referring medical providers and, at patient discharge, we give referring providers a detailed summary of the patient's behavioral progress during the time in our intensive outpatient program, including changes in assessment scores measuring nutrition quality of life, disordered eating, anxiety, and depression, among other metrics. Progress notes as requested, typically within two business days. We accept most health insurances; our claims are processed under patients' mental health benefits. San Antonio and virtual across Texas. Our Director of Admissions is Leloni Gonzales at lgonzales@bccsanantonio.com and 210-634-2200. #BehavioralHealth",
+     "GBP": "The Bariatric Counseling Center serves patients at every stage of their weight management journey. Our intensive outpatient program provides standalone behavioral treatment for obesity, or works alongside bariatric surgery or weight loss medication that patients receive from their medical providers. We support pre-surgical and post-surgical bariatric patients, as well as patients on weight loss medications who need comprehensive behavioral support. The staff is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four. We coordinate care with referring medical providers and provide detailed discharge summaries. We accept most health insurances; our claims are processed under patients' mental health benefits. San Antonio and virtual across Texas.",
+     "YT": {
+      "title": "Who Is the Right Referral | Bariatric Counseling Center",
+      "description": "The Bariatric Counseling Center serves patients at every stage of their weight management journey. Our intensive outpatient program provides standalone behavioral treatment for obesity, or works alongside bariatric surgery or weight loss medication. We support pre-surgical and post-surgical bariatric patients, as well as patients on weight loss medications. Healthcare professionals in four disciplines. One program, not four. San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Standalone or alongside surgery",
+     "Pre and post bariatric patients",
+     "Patients on weight loss medications",
+     "Comprehensive behavioral treatment for obesity",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Infographic showing the Bariatric Counseling Center serves patients through standalone treatment or alongside surgery and weight loss medications.",
+    "why_now": "Mid-December timing allows providers to refer patients before the new year when many begin weight management efforts.",
+    "asset": {
+     "format": "document",
+     "kind": "linkedin-document",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "December Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Tue 12/15: LI, GBP",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-11-17T10:01:39",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
