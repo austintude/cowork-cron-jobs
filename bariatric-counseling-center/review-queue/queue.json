@@ -12346,6 +12346,63 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "6852684aa1",
+   "kind": "social",
+   "key": "social:2026-12-16:FB+IG",
+   "title": "Wed 12/16: Staff Spotlight: Alicia Coderoni, Registered Nurse",
+   "why": "December is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-12-16",
+    "weekday": "Wed",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Staff Spotlight",
+    "pillar": "People",
+    "format": "carousel",
+    "title": "Wed 12/16: Staff Spotlight: Alicia Coderoni, Registered Nurse",
+    "purpose": "Alicia Coderoni, Registered Nurse: the person who coordinates care with medical providers. Not yet spotlighted this year.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/about/",
+    "captions": {
+     "FB": "Meet Alicia Coderoni, Registered Nurse at the Bariatric Counseling Center.\n\nAlicia coordinates care with your medical providers. She bridges behavioral treatment and medical care, ensuring continuity as you work through our intensive outpatient program.\n\nOur team includes a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four.\n\nSan Antonio and virtual across Texas.\n\nLink in the first comment.",
+     "IG": "Staff spotlight Alicia Coderoni registered nurse\n\nMeet Alicia Coderoni, Registered Nurse at the Bariatric Counseling Center.\n\nAlicia coordinates care with your medical providers. She bridges behavioral treatment and medical care, ensuring continuity as you work through our intensive outpatient program.\n\nOur team includes a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four.\n\nSan Antonio and virtual across Texas.\n\n#BariatricCounseling #BariatricSupport #SanAntonio",
+     "YT": {
+      "title": "Meet Alicia Coderoni, RN: Care Coordination at BCC",
+      "description": "Alicia Coderoni, Registered Nurse at the Bariatric Counseling Center, coordinates care with your medical providers. She bridges behavioral treatment and medical care, ensuring continuity as you work through our intensive outpatient program. Our team includes a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "Meet Alicia Coderoni",
+     "Registered Nurse",
+     "Coordinates care with medical providers",
+     "Bridges behavioral and medical treatment",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Alicia Coderoni, Registered Nurse at Bariatric Counseling Center, coordinates care with medical providers and bridges behavioral and medical treatment.",
+    "why_now": "Alicia has not been spotlighted this year and her role coordinating with medical providers deserves visibility.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "December Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Wed 12/16: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-11-17T10:01:48",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
