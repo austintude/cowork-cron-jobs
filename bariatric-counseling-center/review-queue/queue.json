@@ -12231,6 +12231,64 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "3c46c3c4c0",
+   "kind": "social",
+   "key": "social:2026-12-14:FB+IG",
+   "title": "Mon 12/14: Coping skills that are not food",
+   "why": "December is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-12-14",
+    "weekday": "Mon",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Mon 12/14: Coping skills that are not food",
+    "purpose": "Recovery & Coping Skills: three ideas from the program for the hard hour of the day.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "When the hard hour hits, food doesn't have to be the answer.\n\nAt the Bariatric Counseling Center, we teach Recovery & Coping Skills as part of our Behavioral Therapy & Counseling pillar. Here are three ideas from the program:\n\nName the feeling. Sometimes just saying it out loud takes the edge off. Angry, lonely, tired. You don't have to fix it right away. You just have to know what it is.\n\nMove your body for five minutes. Not to burn anything off. Just to shift the energy. A walk around the block. Stretching in your living room. Movement can break the loop.\n\nCall someone who gets it. Not to solve it. Just to hear a voice that reminds you that you're not alone in this.\n\nThese are small tools, but they add up. We teach them in group and individual therapy, alongside dietary guidance, cooking classes and movement education. One program, not four.\n\nBariatric Counseling Center. San Antonio and virtual across Texas.\n\nLink in the first comment.",
+     "IG": "Coping skills that are not food\n\nWhen the hard hour hits, food doesn't have to be the answer. At the Bariatric Counseling Center, we teach Recovery & Coping Skills as part of our Behavioral Therapy & Counseling pillar. Here are three ideas from the program: Name the feeling. Move your body for five minutes. Call someone who gets it. These are small tools, but they add up. We teach them in group and individual therapy, alongside dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas.\n\n#BariatricCounseling #VirtualTherapyTexas #BariatricSupport",
+     "YT": {
+      "title": "Coping Skills That Are Not Food | Bariatric Counseling Center",
+      "description": "When the hard hour hits, food doesn't have to be the answer. At the Bariatric Counseling Center, we teach Recovery & Coping Skills as part of our Behavioral Therapy & Counseling pillar. Three ideas from the program: name the feeling out loud, move your body for five minutes, and call someone who gets it. These are small tools, but they add up. We teach them in group and individual therapy, alongside dietary guidance, cooking classes and movement education. One program, not four. San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "When the hard hour hits",
+     "Name the feeling out loud",
+     "Move your body five minutes",
+     "Call someone who gets it",
+     "Recovery & Coping Skills",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Carousel post about coping skills that are not food, including naming feelings, moving your body, and calling someone for support.",
+    "why_now": "Mid-December brings holiday stress and emotional eating triggers, making coping skills education especially relevant.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "December Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Mon 12/14: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-11-17T10:01:27",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
