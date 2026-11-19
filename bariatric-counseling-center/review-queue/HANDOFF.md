@@ -1,6 +1,6 @@
 # Hand-off: approved items waiting to be placed on staging14
 
-Generated 2026-11-17 07:08 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
+Generated 2026-11-19 07:00 by queue_apply.py. Daniel approved these on the dashboard. Nothing below is on any site yet.
 
 ## Rules
 
@@ -217,7 +217,7 @@ Generated 2026-11-17 07:08 by queue_apply.py. Daniel approved these on the dashb
 ## Items waiting on Daniel or on Todd/Sara (1): not for Claude, except the Gmail confirmations below.
 - Texas-wide geographic strategy: Waiting on Todd since 2026-10-22: Todd replies with the three decisions: who calls people back, $1,500 or $3,000 a month, announcement date.
 
-## Asset revisions (13): posts held until the revised media is everywhere and the change is approved
+## Asset revisions (14): posts held until the revised media is everywhere and the change is approved
 
 - id `642ba7fe7c`: **Revise media: Mon 11/2 Referring Providers: Document Post** (November tab, row 9, change `nov-r9-20261029091507`, platforms LI, GBP)
   - asked for: a new image in column N
@@ -235,6 +235,9 @@ Generated 2026-11-17 07:08 by queue_apply.py. Daniel approved these on the dashb
 - id `0074cfa095`: **Revise media: Thu 11/12 Referring Providers: Document Post** (November tab, row 16, change `nov-r16-20261029091633`, platforms LI, GBP)
   - asked for: a new image in column N
   - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/1KlctW32X-Gg3kTeM-8rMsf-yTrMFpQVA?v=e97425e3",1)
+- id `ebad3dac7b`: **Revise media: Thu 11/19 MEN'S HEALTH MONTH (draft for review): Men in the ** (November tab, row 25, change `nov-r25-20261119070019`, platforms FB, IG, LI)
+  - asked for: a new image in column N
+  - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/13BrNMfhanp6QG8V60aDamTjusDh6Wrhg",1)
 - id `ff73d4cd74`: **Revise media: Thu 11/19 Professionals** (November tab, row 24, change `nov-r24-20261104070054`, platforms LI)
   - asked for: a new image in column N
   - column N now holds: =IMAGE("https://lh3.googleusercontent.com/d/1VQXUBO9l0NIjwUE1YaQ4z1DKmxbAPkw4?v=5c44b0b8",1)
@@ -278,7 +281,7 @@ Generated 2026-11-17 07:08 by queue_apply.py. Daniel approved these on the dashb
   - sheet tab: November Content Calendar; postiz mode: schedule; link destination: https://www.bariatriccounselingcenter.com/about/
   - SENT BACK: rewrite: sara: 11/11 is Veterans Day, rather have a post recognizing mental health needs of veterans that day and push back my post. I edited the text content directly on your email. I'm working on getting the quote from the alumna. (2026-11-05) (rebuild with this change, then a fresh draft to Todd)
 
-## Draft day: Wednesday. Today is Tuesday, not draft day: build only, no email to Todd.
+## Draft day: Wednesday. Today is Thursday, not draft day: build only, no email to Todd.
 
 ## Social posts with Todd (1): in a draft to him, on the sheet. Check column P and his replies (stage 2); do not book yet.
 
