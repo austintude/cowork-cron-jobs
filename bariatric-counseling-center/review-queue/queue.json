@@ -12874,6 +12874,61 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "37aee91ae5",
+   "kind": "social",
+   "key": "social:2026-12-17:LI",
+   "title": "Thu 12/17: The evening track fits a workday",
+   "why": "December is not planned yet; this keeps the LI cadence going",
+   "payload": {
+    "date": "2026-12-17",
+    "weekday": "Thu",
+    "times": "9:30 AM",
+    "platforms": [
+     "LI"
+    ],
+    "type": "Professionals",
+    "pillar": "Working professionals",
+    "format": "image",
+    "title": "Thu 12/17: The evening track fits a workday",
+    "purpose": "Evening 5:30 to 8:30, Monday to Thursday, Zoom or onsite. For people who cannot take the middle of the day.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/program-schedule/",
+    "captions": {
+     "LI": "Evening sessions for working professionals.\n\nThe Bariatric Counseling Center runs an Intensive Outpatient Program that serves people who struggle with binge eating, chronic overeating, and weight loss. We provide group and individual therapy, dietary guidance, cooking classes, and movement education in a unique, all-inclusive format.\n\nOur evening track meets Monday to Thursday, 5:30 to 8:30 p.m., both onsite in San Antonio and virtual across Texas. The program is designed for people who cannot take time during the workday.\n\nWe accept most health insurances. Our team is comprised of a clinical psychologist, licensed professional counselors, registered dietitians, movement therapists, and a registered nurse, as well as a professional chef. One program, not four.\n\nLearn more about the schedule at bariatriccounselingcenter.com/program-schedule/\n\n#BehavioralHealth",
+     "YT": {
+      "title": "",
+      "description": ""
+     }
+    },
+    "on_image": [
+     "Evening sessions for working professionals",
+     "Monday to Thursday, 5:30 to 8:30 p.m.",
+     "Zoom or onsite in San Antonio",
+     "Comprehensive behavioral healthcare for obesity",
+     "Learn more at bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Text graphic promoting evening therapy sessions for working professionals at the Bariatric Counseling Center.",
+    "why_now": "Mid-December timing reaches people planning healthcare for the new year who need evening-compatible scheduling.",
+    "asset": {
+     "format": "image",
+     "kind": "image",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "December Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Thu 12/17: LI",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-11-26T05:36:05",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
