@@ -12929,6 +12929,63 @@
    "decided": null,
    "note": null,
    "result": null
+  },
+  {
+   "id": "6327e78649",
+   "kind": "social",
+   "key": "social:2026-12-21:FB+IG",
+   "title": "Mon 12/21: Do not wait for January",
+   "why": "December is not planned yet; this keeps the FB/IG cadence going",
+   "payload": {
+    "date": "2026-12-21",
+    "weekday": "Mon",
+    "times": "FB 10:30 AM, IG 12:15 PM",
+    "platforms": [
+     "FB",
+     "IG"
+    ],
+    "type": "Education",
+    "pillar": "Education",
+    "format": "carousel",
+    "title": "Mon 12/21: Do not wait for January",
+    "purpose": "Sara's theme: the 'I will start over in January' trap, and why the program takes people in any month.",
+    "observance": null,
+    "cta_page": "https://www.bariatriccounselingcenter.com/ourprogram/",
+    "captions": {
+     "FB": "You do not have to wait for January.\n\nThe idea that change begins on January 1st is powerful, but it is also a delay tactic. The Bariatric Counseling Center starts new groups year-round because progress does not follow a calendar.\n\nIf you are ready now, we are here now. Our intensive outpatient program offers group and individual therapy, dietary guidance, cooking classes and movement education in one place. We serve clients in San Antonio and virtual across Texas.\n\nThis program may already be covered at no cost to you under your mental health benefits. Link in the first comment.",
+     "IG": "Starting over in the new year\n\nYou do not have to wait for January. The idea that change begins on January 1st is powerful, but it is also a delay tactic.\n\nThe Bariatric Counseling Center starts new groups year-round because progress does not follow a calendar. If you are ready now, we are here now.\n\nOur intensive outpatient program offers group and individual therapy, dietary guidance, cooking classes and movement education. We serve clients in San Antonio and virtual across Texas. This program may already be covered at no cost to you under your mental health benefits.\n\n#BariatricCounseling #VirtualTherapyTexas #SanAntonio",
+     "YT": {
+      "title": "You Do Not Have to Wait for January to Start",
+      "description": "The idea that change begins on January 1st is powerful, but it is also a delay tactic. The Bariatric Counseling Center starts new groups year-round because progress does not follow a calendar. Our intensive outpatient program offers group and individual therapy, dietary guidance, cooking classes and movement education for people struggling with overeating, emotional eating and weight loss. We serve clients in San Antonio and virtual across Texas."
+     }
+    },
+    "on_image": [
+     "You do not need January",
+     "Progress does not follow a calendar",
+     "New groups start year-round",
+     "San Antonio and virtual across Texas",
+     "bariatriccounselingcenter.com"
+    ],
+    "alt_text": "Carousel post about not waiting for January to begin behavioral healthcare for obesity at the Bariatric Counseling Center.",
+    "why_now": "Posted the week before Christmas to counter the common belief that people must wait until the new year to start treatment.",
+    "asset": {
+     "format": "carousel",
+     "kind": "carousel",
+     "build_with": "social/oct/cards rig (cards_oct.py pattern, templates/oct-slide.html), one slide per on_image line; LinkedIn documents through make_docs.py"
+    },
+    "sheet_tab": "December Content Calendar",
+    "replaces_row": null,
+    "replaces_tab": null,
+    "date_platforms": "Mon 12/21: FB, IG",
+    "postiz_mode": "schedule",
+    "needs_rewrite": []
+   },
+   "source": "social-plan",
+   "status": "pending",
+   "created": "2026-11-26T05:36:16",
+   "decided": null,
+   "note": null,
+   "result": null
   }
  ]
 }
